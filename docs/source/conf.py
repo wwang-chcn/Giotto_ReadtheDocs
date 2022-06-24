@@ -45,7 +45,7 @@ extensions = [
 'sphinx_toolbox', 
 'sphinx_toolbox.shields',
 'sphinx_toolbox.github',
-'m2r2',
+#'m2r2', -- moved to requirements.txt
 #'sphinxcontrib.images'
 #'myst_parser' #myst_parser caused a fatal error
 #'sphinxcontrib.spelling' #spell checker fatal error
