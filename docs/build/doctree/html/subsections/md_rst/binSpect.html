@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>binSpect &mdash; Giotto 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-toolbox-code.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx-toolbox.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_edits.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx_toolbox_installation.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_edits.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/sphinx_toolbox_installation.js"></script>
+        <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="spatialDE" href="spatialDE.html" />
+    <link rel="prev" title="binSpectMulti" href="binSpectMulti.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/GiottoLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../documentation.html">Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-environment">Giotto Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-instructions">Giotto Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#import-raw-data">Import Raw Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#images">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-object">Giotto Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-helper-functions">Giotto Helper Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-getters-setters">Giotto Getters &amp; Setters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-show-slots">Giotto Show Slots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#modify-giotto-object">Modify Giotto Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#dimension-reduction">Dimension Reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-enrichment">Spatial Enrichment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-deconvolution">Spatial Deconvolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-network-or-grid">Spatial Network or Grid</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../documentation.html#spatial-expression-patterns">Spatial Expression Patterns</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="binSpectSingleMatrix.html">binSpectSingleMatrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="binSpectSingle.html">binSpectSingle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="binSpectMulti.html">binSpectMulti</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">binSpect</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arguments">Arguments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#details">Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#value">Value</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spatialDE.html">spatialDE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spatialAEH.html">spatialAEH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trendSceek.html">trendSceek</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spark.html">spark</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#simulate-spatial-expression-patterns">Simulate Spatial Expression Patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-co-expression-modules">Spatial Co-Expression Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#hidden-markov-random-field-hmrf">Hidden Markov Random Field (HMRF)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-expression-space">2D Visualization In Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-spatial-space">2D Visualization in Spatial Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-both-spatial-and-expression-space">2D Visualization In Both Spatial And Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-dimension-reduction">3D Visualization Dimension Reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#id2">3D Visualization In Spatial Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-spatial-and-expression-space">3D visualization in Spatial and Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#cell-neighborhood-cell-type-cell-type-enrichment">Cell Neighborhood: Cell-Type/Cell-Type Enrichment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#cell-neighborhood-spatial-interaction-changed-genes-icg">Cell Neighborhood: Spatial Interaction Changed Genes (ICG)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#cell-neighborhood-ligand-receptor-cell-communication">Cell Neighborhood: Ligand-Receptor Cell Communication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/NEWS.html">NEWS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../detailed_workflow.html">Detailed Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tipsandtricks.html">HowTos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trygiotto.html">Try Giotto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Issues</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Common Errors and Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../github_issues.html">Report a Bug</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Giotto</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../documentation.html">Function Documentation</a> &raquo;</li>
+      <li><code class="docutils literal notranslate"><span class="pre">binSpect</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/subsections/md_rst/binSpect.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="binspect">
+<span id="id1"></span><h1><code class="docutils literal notranslate"><span class="pre">binSpect</span></code><a class="headerlink" href="#binspect" title="Permalink to this headline"></a></h1>
+<p>binSpect</p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
+<dl class="simple">
+<dt>Previously: binGetSpatialGenes. BinSpect (Binary Spatial Extraction of genes) is a fast computational method</dt><dd><p>that identifies genes with a spatially coherent expression pattern.</p>
+</dd>
+</dl>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">binSpect</span><span class="p">(</span>
+  <span class="n">gobject</span><span class="p">,</span>
+  <span class="n">spat_unit</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">feat_type</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">bin_method</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;kmeans&quot;</span><span class="p">,</span> <span class="s">&quot;rank&quot;</span><span class="p">),</span>
+  <span class="n">expression_values</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;normalized&quot;</span><span class="p">,</span> <span class="s">&quot;scaled&quot;</span><span class="p">,</span> <span class="s">&quot;custom&quot;</span><span class="p">),</span>
+  <span class="n">subset_feats</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">subset_genes</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">spatial_network_name</span> <span class="o">=</span> <span class="s">&quot;Delaunay_network&quot;</span><span class="p">,</span>
+  <span class="n">spatial_network_k</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">reduce_network</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span>
+  <span class="n">kmeans_algo</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;kmeans&quot;</span><span class="p">,</span> <span class="s">&quot;kmeans_arma&quot;</span><span class="p">,</span> <span class="s">&quot;kmeans_arma_subset&quot;</span><span class="p">),</span>
+  <span class="n">nstart</span> <span class="o">=</span> <span class="m">3</span><span class="p">,</span>
+  <span class="n">iter_max</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span>
+  <span class="n">extreme_nr</span> <span class="o">=</span> <span class="m">50</span><span class="p">,</span>
+  <span class="n">sample_nr</span> <span class="o">=</span> <span class="m">50</span><span class="p">,</span>
+  <span class="n">percentage_rank</span> <span class="o">=</span> <span class="m">30</span><span class="p">,</span>
+  <span class="n">do_fisher_test</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+  <span class="n">adjust_method</span> <span class="o">=</span> <span class="s">&quot;fdr&quot;</span><span class="p">,</span>
+  <span class="n">calc_hub</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span>
+  <span class="n">hub_min_int</span> <span class="o">=</span> <span class="m">3</span><span class="p">,</span>
+  <span class="n">get_av_expr</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+  <span class="n">get_high_expr</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+  <span class="n">implementation</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;data.table&quot;</span><span class="p">,</span> <span class="s">&quot;simple&quot;</span><span class="p">,</span> <span class="s">&quot;matrix&quot;</span><span class="p">),</span>
+  <span class="n">group_size</span> <span class="o">=</span> <span class="s">&quot;automatic&quot;</span><span class="p">,</span>
+  <span class="n">do_parallel</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+  <span class="n">cores</span> <span class="o">=</span> <span class="kc">NA</span><span class="p">,</span>
+  <span class="n">verbose</span> <span class="o">=</span> <span class="bp">T</span><span class="p">,</span>
+  <span class="n">knn_params</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">set.seed</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">bin_matrix</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">summarize</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;p.value&quot;</span><span class="p">,</span> <span class="s">&quot;adj.p.value&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="arguments">
+<h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Argument</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">gobject</span></code></p></td>
+<td><p>giotto object</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">spat_unit</span></code></p></td>
+<td><p>spatial unit</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">feat_type</span></code></p></td>
+<td><p>feature type</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">bin_method</span></code></p></td>
+<td><p>method to binarize gene expression</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">expression_values</span></code></p></td>
+<td><p>expression values to use</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">subset_feats</span></code></p></td>
+<td><p>only select a subset of features to test</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">subset_genes</span></code></p></td>
+<td><p>deprecated, use subset_feats</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">spatial_network_name</span></code></p></td>
+<td><p>name of spatial network to use (default = ‘spatial_network’)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">spatial_network_k</span></code></p></td>
+<td><p>different k’s for a spatial kNN to evaluate</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">reduce_network</span></code></p></td>
+<td><p>default uses the full network</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">kmeans_algo</span></code></p></td>
+<td><p>kmeans algorithm to use (kmeans, kmeans_arma, kmeans_arma_subset)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">nstart</span></code></p></td>
+<td><p>kmeans: nstart parameter</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">iter_max</span></code></p></td>
+<td><p>kmeans: iter.max parameter</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">extreme_nr</span></code></p></td>
+<td><p>number of top and bottom cells (see details)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">sample_nr</span></code></p></td>
+<td><p>total number of cells to sample (see details)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">percentage_rank</span></code></p></td>
+<td><p>percentage of top cells for binarization</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">do_fisher_test</span></code></p></td>
+<td><p>perform fisher test</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">adjust_method</span></code></p></td>
+<td><p>p-value adjusted method to use (see <cite>``p.adjust`</cite> &lt;#p.adjust&gt;`_ )</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">calc_hub</span></code></p></td>
+<td><p>calculate the number of hub cells</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">hub_min_int</span></code></p></td>
+<td><p>minimum number of cell-cell interactions for a hub cell</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">get_av_expr</span></code></p></td>
+<td><p>calculate the average expression per gene of the high expressing cells</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">get_high_expr</span></code></p></td>
+<td><p>calculate the number of high expressing cells  per gene</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">implementation</span></code></p></td>
+<td><p>enrichment implementation (data.table, simple, matrix)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">group_size</span></code></p></td>
+<td><p>number of genes to process together with data.table implementation (default = automatic)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">do_parallel</span></code></p></td>
+<td><p>run calculations in parallel with mclapply</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cores</span></code></p></td>
+<td><p>number of cores to use if do_parallel = TRUE</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">verbose</span></code></p></td>
+<td><p>be verbose</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">knn_params</span></code></p></td>
+<td><p>list of parameters to create spatial kNN network</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">set.seed</span></code></p></td>
+<td><p>set a seed before kmeans binarization</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">bin_matrix</span></code></p></td>
+<td><p>a binarized matrix, when provided it will skip the binarization process</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">summarize</span></code></p></td>
+<td><p>summarize the p-values or adjusted p-values</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline"></a></h2>
+<dl class="simple">
+<dt>We provide two ways to identify spatial genes based on gene expression binarization.</dt><dd><p>Both methods are identicial except for how binarization is performed.</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>list(“1. binarize: “) list(“Each gene is binarized (0 or 1) in each cell with “, list(“kmeans”), ” (k = 2) or based on “, list(“rank”), ” percentile”)</p></li>
+<li><p>list(“2. network: “) list(“Alll cells are connected through a spatial network based on the physical coordinates”)</p></li>
+<li><p>list(“3. contingency table: “) list(“A contingency table is calculated based on all edges of neighboring cells and the binarized expression (0-0, 0-1, 1-0 or 1-1)”)</p></li>
+<li><p>list(“4. For each gene an odds-ratio (OR) and fisher.test (optional) is calculated”)<span class="raw-html-m2r"><br></span>
+Three different kmeans algorithmes have been implemented:</p></li>
+<li><p>list(“1. kmeans: “) list(“default, see “, list(list(“kmeans”)), ” “)</p></li>
+<li><p>list(“2. kmeans_arma: “) list(“from ClusterR, see “, list(list(“KMeans_arma”)), ” “)</p></li>
+<li><p>list(“3. kmeans_arma_subst: “) list(“from ClusterR, see “, list(list(“KMeans_arma”)), “,n”, ”   but random subsetting the vector for each gene to increase speed. Change extreme_nr and sample_nr for control.  “)<span class="raw-html-m2r"><br></span>
+Other statistics are provided (optional):</p></li>
+<li><p>Number of cells with high expression (binary = 1)</p></li>
+<li><p>Average expression of each gene within high expressing cells</p></li>
+<li><p>Number of hub cells, these are high expressing cells that have a user defined number of high expressing neighbors<span class="raw-html-m2r"><br></span>
+By selecting a subset of likely spatial genes (e.g. soft thresholding highly variable genes) can accelerate the speed.
+The simple implementation is usually faster, but lacks the possibility to run in parallel and to calculate hub cells.
+The data.table implementation might be more appropriate for large datasets by setting the group_size (number of genes) parameter to divide the workload.</p></li>
+</ul>
+</section>
+<section id="value">
+<h2>Value<a class="headerlink" href="#value" title="Permalink to this headline"></a></h2>
+<p>data.table with results (see details)</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="binSpectMulti.html" class="btn btn-neutral float-left" title="binSpectMulti" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="spatialDE.html" class="btn btn-neutral float-right" title="spatialDE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

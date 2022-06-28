@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>binSpectMulti &mdash; Giotto 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -68,6 +69,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-network-or-grid">Spatial Network or Grid</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../documentation.html#spatial-expression-patterns">Spatial Expression Patterns</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="binSpectSingleMatrix.html">binSpectSingleMatrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="binSpectMultiMatrix.html">binSpectMultiMatrix</a></li>
 <li class="toctree-l3"><a class="reference internal" href="binSpectSingle.html">binSpectSingle</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">binSpectMulti</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
@@ -140,14 +142,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="binspectmulti">
+  <section id="binspectmulti">
 <span id="id1"></span><h1><code class="docutils literal notranslate"><span class="pre">binSpectMulti</span></code><a class="headerlink" href="#binspectmulti" title="Permalink to this headline"></a></h1>
 <p>binSpectMulti</p>
-<div class="section" id="description">
+<section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
 <p>binSpect for multiple spatial kNN networks</p>
-</div>
-<div class="section" id="usage">
+</section>
+<section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">binSpectMulti</span><span class="p">(</span>
   <span class="n">gobject</span><span class="p">,</span>
@@ -182,8 +184,8 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="arguments">
+</section>
+<section id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline"></a></h2>
 <table class="docutils align-default">
 <colgroup>
@@ -285,8 +287,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="details">
+</section>
+<section id="details">
 <h2>Details<a class="headerlink" href="#details" title="Permalink to this headline"></a></h2>
 <dl class="simple">
 <dt>We provide two ways to identify spatial genes based on gene expression binarization.</dt><dd><p>Both methods are identicial except for how binarization is performed.</p>
@@ -309,12 +311,12 @@ By selecting a subset of likely spatial genes (e.g. soft thresholding highly var
 The simple implementation is usually faster, but lacks the possibility to run in parallel and to calculate hub cells.
 The data.table implementation might be more appropriate for large datasets by setting the group_size (number of genes) parameter to divide the workload.</p></li>
 </ul>
-</div>
-<div class="section" id="value">
+</section>
+<section id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline"></a></h2>
 <p>data.table with results (see details)</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

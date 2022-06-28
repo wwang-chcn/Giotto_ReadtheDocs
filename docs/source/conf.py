@@ -10,8 +10,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-#import os
-#import sys
+import os
+import sys
+
 #sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -32,12 +33,14 @@ release = '1.0'
 # ones.
 #import os 
 #import sys 
-#from sphinx.application import Sphinx
+# from sphinx.application import Sphinx
 
 import sphinx_rtd_theme
 
+master_dox = 'index'
 extensions = [
-'sphinx.ext.autosectionlabel', 
+'sphinx_rtd_theme', #added to fix bullet-point issue
+'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
 'sphinx_rtd_theme',
 'sphinx_design',
@@ -45,6 +48,7 @@ extensions = [
 'sphinx_toolbox', 
 'sphinx_toolbox.shields',
 'sphinx_toolbox.github',
+#'recommonmark',
 #'m2r2', -- moved to requirements.txt
 #'sphinxcontrib.images'
 #'myst_parser' #myst_parser caused a fatal error
@@ -65,8 +69,10 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
-suppress_warnings = ["Unknown directive type dropdown", 
-'autosectionlabel.*']
+suppress_warnings = [
+#'Unknown directive type dropdown', 
+'autosectionlabel.*',
+'epub.duplicated_toc_entry']
 
 # -- Options for HTML output -------------------------------------------------
 

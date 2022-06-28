@@ -1,6 +1,8 @@
 
-  ``binSpectMultiMatrix``
-  ===========================
+***************************
+``binSpectMultiMatrix``
+***************************
+
 
   binSpectMultiMatrix
 

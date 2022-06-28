@@ -114,7 +114,7 @@ Images
 	addGiottoImageToSpatPlot </subsections/md_rst/addGiottoImageToSpatPlot.rst>
 	showGiottoImageNames </subsections/md_rst/showGiottoImageNames.rst>
 	updateGiottoImage </subsections/md_rst/updateGiottoImage.rst>
-	getGiottoImage </subsections/md_rst/getGiottoImage.rst>
+	getGiottoImage </subsections/md_rst/get_giottoImage.rst>
 	plotGiottoImage </subsections/md_rst/plotGiottoImage.rst>
 
 .. list-table:: 
@@ -137,7 +137,7 @@ Images
 	  - showGiottoImageNames
 	* - :doc:`updateGiottoImage </subsections/md_rst/updateGiottoImage>`
 	  - updateGiottoImage
-	* - :doc:`getGiottoImage </subsections/md_rst/getGiottoImage>`
+	* - :doc:`getGiottoImage </subsections/md_rst/get_giottoImage>`
 	  - getGiottoImage
 	* - :doc:`plotGiottoImage </subsections/md_rst/plotGiottoImage>`
 	  - plotGiottoImage

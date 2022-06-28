@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>get_giottoImage &mdash; Giotto 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -28,7 +29,9 @@
         <script src="../../_static/design-tabs.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="plotGiottoImage" href="plotGiottoImage.html" />
+    <link rel="prev" title="updateGiottoImage" href="updateGiottoImage.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -48,9 +51,55 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">General</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../documentation.html">Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-environment">Giotto Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-instructions">Giotto Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#import-raw-data">Import Raw Data</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../documentation.html#images">Images</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="estimateImageBg.html">estimateImageBg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changeImageBg.html">changeImageBg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="createGiottoImage.html">createGiottoImage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="addGiottoImage.html">addGiottoImage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="addGiottoImageToSpatPlot.html">addGiottoImageToSpatPlot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="showGiottoImageNames.html">showGiottoImageNames</a></li>
+<li class="toctree-l3"><a class="reference internal" href="updateGiottoImage.html">updateGiottoImage</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">getGiottoImage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arguments">Arguments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#value">Value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#seealso">Seealso</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="plotGiottoImage.html">plotGiottoImage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-object">Giotto Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-helper-functions">Giotto Helper Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-getters-setters">Giotto Getters &amp; Setters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-show-slots">Giotto Show Slots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#modify-giotto-object">Modify Giotto Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#dimension-reduction">Dimension Reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-enrichment">Spatial Enrichment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-deconvolution">Spatial Deconvolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-network-or-grid">Spatial Network or Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-expression-patterns">Spatial Expression Patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#simulate-spatial-expression-patterns">Simulate Spatial Expression Patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-co-expression-modules">Spatial Co-Expression Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#hidden-markov-random-field-hmrf">Hidden Markov Random Field (HMRF)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-expression-space">2D Visualization In Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-spatial-space">2D Visualization in Spatial Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-both-spatial-and-expression-space">2D Visualization In Both Spatial And Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-dimension-reduction">3D Visualization Dimension Reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#id2">3D Visualization In Spatial Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-spatial-and-expression-space">3D visualization in Spatial and Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#cell-neighborhood-cell-type-cell-type-enrichment">Cell Neighborhood: Cell-Type/Cell-Type Enrichment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#cell-neighborhood-spatial-interaction-changed-genes-icg">Cell Neighborhood: Spatial Interaction Changed Genes (ICG)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#cell-neighborhood-ligand-receptor-cell-communication">Cell Neighborhood: Ligand-Receptor Cell Communication</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../development.html">Development</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/NEWS.html">NEWS</a></li>
@@ -82,6 +131,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../documentation.html">Function Documentation</a> &raquo;</li>
       <li><code class="docutils literal notranslate"><span class="pre">get_giottoImage</span></code></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/subsections/md_rst/get_giottoImage.rst.txt" rel="nofollow"> View page source</a>
@@ -92,14 +142,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="get-giottoimage">
+  <section id="get-giottoimage">
 <h1><code class="docutils literal notranslate"><span class="pre">get_giottoImage</span></code><a class="headerlink" href="#get-giottoimage" title="Permalink to this headline"></a></h1>
 <p>Get giotto image object</p>
-<div class="section" id="description">
+<section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
 <p>Get giotto image object from gobject</p>
-</div>
-<div class="section" id="usage">
+</section>
+<section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">get_giottoImage</span><span class="p">(</span>
   <span class="n">gobject</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
@@ -108,8 +158,8 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="arguments">
+</section>
+<section id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline"></a></h2>
 <table class="docutils align-default">
 <colgroup>
@@ -133,12 +183,12 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="value">
+</section>
+<section id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline"></a></h2>
 <p>a giotto image object</p>
-</div>
-<div class="section" id="seealso">
+</section>
+<section id="seealso">
 <h2>Seealso<a class="headerlink" href="#seealso" title="Permalink to this headline"></a></h2>
 <dl>
 <dt>Other image data accessor functions:</dt><dd><p><cite>``set_giottoImage`</cite> &lt;#setgiottoimage&gt;`_</p>
@@ -154,13 +204,16 @@
 <cite>``get_spatial_locations`</cite> &lt;#getspatiallocations&gt;`_</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="updateGiottoImage.html" class="btn btn-neutral float-left" title="updateGiottoImage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="plotGiottoImage.html" class="btn btn-neutral float-right" title="plotGiottoImage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

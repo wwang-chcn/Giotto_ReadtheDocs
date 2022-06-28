@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; Giotto 1.0 documentation</title>
+  <title>binSpectMultiMatrix &mdash; Giotto 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
@@ -50,9 +51,48 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">General</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../documentation.html">Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-environment">Giotto Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-instructions">Giotto Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#import-raw-data">Import Raw Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#images">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-object">Giotto Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-helper-functions">Giotto Helper Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-getters-setters">Giotto Getters &amp; Setters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#giotto-show-slots">Giotto Show Slots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#modify-giotto-object">Modify Giotto Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#dimension-reduction">Dimension Reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-enrichment">Spatial Enrichment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-deconvolution">Spatial Deconvolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-network-or-grid">Spatial Network or Grid</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../documentation.html#spatial-expression-patterns">Spatial Expression Patterns</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="binSpectSingleMatrix.html">binSpectSingleMatrix</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">binSpectMultiMatrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="binSpectSingle.html">binSpectSingle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="binSpectMulti.html">binSpectMulti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="binSpect.html">binSpect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spatialDE.html">spatialDE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spatialAEH.html">spatialAEH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trendSceek.html">trendSceek</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spark.html">spark</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#simulate-spatial-expression-patterns">Simulate Spatial Expression Patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#spatial-co-expression-modules">Spatial Co-Expression Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#hidden-markov-random-field-hmrf">Hidden Markov Random Field (HMRF)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-expression-space">2D Visualization In Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-spatial-space">2D Visualization in Spatial Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-both-spatial-and-expression-space">2D Visualization In Both Spatial And Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-dimension-reduction">3D Visualization Dimension Reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#id2">3D Visualization In Spatial Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#d-visualization-in-spatial-and-expression-space">3D visualization in Spatial and Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#cell-neighborhood-cell-type-cell-type-enrichment">Cell Neighborhood: Cell-Type/Cell-Type Enrichment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#cell-neighborhood-spatial-interaction-changed-genes-icg">Cell Neighborhood: Spatial Interaction Changed Genes (ICG)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation.html#cell-neighborhood-ligand-receptor-cell-communication">Cell Neighborhood: Ligand-Receptor Cell Communication</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../development.html">Development</a></li>
 <li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/NEWS.html">NEWS</a></li>
@@ -85,7 +125,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../documentation.html">Function Documentation</a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li><code class="docutils literal notranslate"><span class="pre">binSpectMultiMatrix</span></code></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/subsections/md_rst/binSpectMultiMatrix.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -95,7 +135,128 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="binspectmultimatrix">
+<h1><code class="docutils literal notranslate"><span class="pre">binSpectMultiMatrix</span></code><a class="headerlink" href="#binspectmultimatrix" title="Permalink to this headline"></a></h1>
+<blockquote>
+<div><p>binSpectMultiMatrix</p>
+<p>binSpect for a single spatial network and a provided expression matrix</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">binSpectMultiMatrix</span><span class="p">(</span>
+  <span class="n">expression_matrix</span><span class="p">,</span>
+  <span class="n">spatial_networks</span><span class="p">,</span>
+  <span class="n">bin_method</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;kmeans&quot;</span><span class="p">,</span> <span class="s">&quot;rank&quot;</span><span class="p">),</span>
+  <span class="n">subset_feats</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">kmeans_algo</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;kmeans&quot;</span><span class="p">,</span> <span class="s">&quot;kmeans_arma&quot;</span><span class="p">,</span> <span class="s">&quot;kmeans_arma_subset&quot;</span><span class="p">),</span>
+  <span class="n">nstart</span> <span class="o">=</span> <span class="m">3</span><span class="p">,</span>
+  <span class="n">iter_max</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span>
+  <span class="n">extreme_nr</span> <span class="o">=</span> <span class="m">50</span><span class="p">,</span>
+  <span class="n">sample_nr</span> <span class="o">=</span> <span class="m">50</span><span class="p">,</span>
+  <span class="n">percentage_rank</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">10</span><span class="p">,</span> <span class="m">30</span><span class="p">),</span>
+  <span class="n">do_fisher_test</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+  <span class="n">adjust_method</span> <span class="o">=</span> <span class="s">&quot;fdr&quot;</span><span class="p">,</span>
+  <span class="n">calc_hub</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span>
+  <span class="n">hub_min_int</span> <span class="o">=</span> <span class="m">3</span><span class="p">,</span>
+  <span class="n">get_av_expr</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+  <span class="n">get_high_expr</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+  <span class="n">implementation</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;data.table&quot;</span><span class="p">,</span> <span class="s">&quot;simple&quot;</span><span class="p">,</span> <span class="s">&quot;matrix&quot;</span><span class="p">),</span>
+  <span class="n">group_size</span> <span class="o">=</span> <span class="s">&quot;automatic&quot;</span><span class="p">,</span>
+  <span class="n">do_parallel</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+  <span class="n">cores</span> <span class="o">=</span> <span class="kc">NA</span><span class="p">,</span>
+  <span class="n">verbose</span> <span class="o">=</span> <span class="bp">T</span><span class="p">,</span>
+  <span class="n">knn_params</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">set.seed</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">summarize</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;adj.p.value&quot;</span><span class="p">,</span> <span class="s">&quot;p.value&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Argument</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">expression_matrix</span></code></p></td>
+<td><p>expression matrix</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">spatial_networks</span></code></p></td>
+<td><p>list of spatial networks in data.table format</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bin_method</span></code></p></td>
+<td><p>method to binarize gene expression</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">subset_feats</span></code></p></td>
+<td><p>only select a subset of features to test</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">kmeans_algo</span></code></p></td>
+<td><p>kmeans algorithm to use (kmeans, kmeans_arma, kmeans_arma_subset)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">nstart</span></code></p></td>
+<td><p>kmeans: nstart parameter</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">iter_max</span></code></p></td>
+<td><p>kmeans: iter.max parameter</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">extreme_nr</span></code></p></td>
+<td><p>number of top and bottom cells (see details)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">sample_nr</span></code></p></td>
+<td><p>total number of cells to sample (see details)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">percentage_rank</span></code></p></td>
+<td><p>vector of percentages of top cells for binarization</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">do_fisher_test</span></code></p></td>
+<td><p>perform fisher test</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">adjust_method</span></code></p></td>
+<td><p>p-value adjusted method to use (see <cite>``p.adjust`</cite> &lt;#p.adjust&gt;`_ )</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">calc_hub</span></code></p></td>
+<td><p>calculate the number of hub cells</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">hub_min_int</span></code></p></td>
+<td><p>minimum number of cell-cell interactions for a hub cell</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">get_av_expr</span></code></p></td>
+<td><p>calculate the average expression per gene of the high expressing cells</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">get_high_expr</span></code></p></td>
+<td><p>calculate the number of high expressing cells  per gene</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">implementation</span></code></p></td>
+<td><p>enrichment implementation (data.table, simple, matrix)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">group_size</span></code></p></td>
+<td><p>number of genes to process together with data.table implementation (default = automatic)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">do_parallel</span></code></p></td>
+<td><p>run calculations in parallel with mclapply</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cores</span></code></p></td>
+<td><p>number of cores to use if do_parallel = TRUE</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">verbose</span></code></p></td>
+<td><p>be verbose</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">knn_params</span></code></p></td>
+<td><p>list of parameters to create spatial kNN network</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">set.seed</span></code></p></td>
+<td><p>set a seed before kmeans binarization</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">summarize</span></code></p></td>
+<td><p>summarize the p-values or adjusted p-values</p></td>
+</tr>
+</tbody>
+</table>
+<p>data.table with results</p>
+</div></blockquote>
+</section>
+
 
            </div>
           </div>

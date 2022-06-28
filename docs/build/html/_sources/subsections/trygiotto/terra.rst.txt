@@ -22,7 +22,7 @@ Creating a Billing Account
 - Set Terra as a billing user on your account.
 - Select your Google account to create your billing project on Terra.
 
-For additional information about billing account go to this `link <https://support.terra.bio/hc/en-us/articles/360048632271-Understanding-Terra-costs-and-billing>`_ .
+For additional information about billing account go to this `link <https://support.terra.bio/hc/en-us/articles/360048632271-Understanding-Terra-costs-and-billing>`__ .
 
 
 Create A Workspace

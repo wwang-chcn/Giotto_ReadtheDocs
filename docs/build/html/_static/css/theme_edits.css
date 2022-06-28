@@ -97,3 +97,9 @@ This did not work
 .wy-nav-content {
     max-width: none;
 }
+
+/* add bullet points */ 
+.rst-content section ul li {
+    list-style:disc;
+    margin-left:24px
+    }

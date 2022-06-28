@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>binSpectSingleMatrix &mdash; Giotto 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -29,7 +30,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="binSpectMultiMatrix.html" />
+    <link rel="next" title="binSpectMultiMatrix" href="binSpectMultiMatrix.html" />
     <link rel="prev" title="createSpatialGrid" href="createSpatialGrid.html" /> 
 </head>
 
@@ -75,6 +76,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#value">Value</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="binSpectMultiMatrix.html">binSpectMultiMatrix</a></li>
 <li class="toctree-l3"><a class="reference internal" href="binSpectSingle.html">binSpectSingle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="binSpectMulti.html">binSpectMulti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="binSpect.html">binSpect</a></li>
@@ -140,14 +142,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="binspectsinglematrix">
+  <section id="binspectsinglematrix">
 <span id="id1"></span><h1><code class="docutils literal notranslate"><span class="pre">binSpectSingleMatrix</span></code><a class="headerlink" href="#binspectsinglematrix" title="Permalink to this headline"></a></h1>
 <p>binSpectSingleMatrix</p>
-<div class="section" id="description">
+<section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
 <p>binSpect for a single spatial network and a provided expression matrix</p>
-</div>
-<div class="section" id="usage">
+</section>
+<section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">binSpectSingleMatrix</span><span class="p">(</span>
   <span class="n">expression_matrix</span><span class="p">,</span>
@@ -176,8 +178,8 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="arguments">
+</section>
+<section id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline"></a></h2>
 <table class="docutils align-default">
 <colgroup>
@@ -261,8 +263,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="details">
+</section>
+<section id="details">
 <h2>Details<a class="headerlink" href="#details" title="Permalink to this headline"></a></h2>
 <dl class="simple">
 <dt>We provide two ways to identify spatial genes based on gene expression binarization.</dt><dd><p>Both methods are identicial except for how binarization is performed.</p>
@@ -285,19 +287,19 @@ By selecting a subset of likely spatial genes (e.g. soft thresholding highly var
 The simple implementation is usually faster, but lacks the possibility to run in parallel and to calculate hub cells.
 The data.table implementation might be more appropriate for large datasets by setting the group_size (number of genes) parameter to divide the workload.</p></li>
 </ul>
-</div>
-<div class="section" id="value">
+</section>
+<section id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline"></a></h2>
 <p>data.table with results (see details)</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="createSpatialGrid.html" class="btn btn-neutral float-left" title="createSpatialGrid" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="binSpectMultiMatrix.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="binSpectMultiMatrix.html" class="btn btn-neutral float-right" title="binSpectMultiMatrix" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
