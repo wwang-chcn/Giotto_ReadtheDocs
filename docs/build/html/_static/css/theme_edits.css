@@ -88,9 +88,7 @@ div.highlight  {
     background-color: rgb(187, 187, 187);
 }
 
-/* change the width of the page */ 
-/* 
-This did not work
+/* change the width of the page --  this did not work
 .wy-nav-content {
     max-width: 1200px !important;
 }*/
@@ -98,8 +96,8 @@ This did not work
     max-width: none;
 }
 
-/* add bullet points */ 
+/* add bullet points -- this did not work 
 .rst-content section ul li {
     list-style:disc;
     margin-left:24px
-    }
+    }*/

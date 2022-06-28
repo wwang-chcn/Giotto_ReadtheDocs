@@ -39,7 +39,7 @@ import sphinx_rtd_theme
 
 master_dox = 'index'
 extensions = [
-'sphinx_rtd_theme', #added to fix bullet-point issue
+#'sphinx_rtd_theme', #added to fix bullet-point issue
 'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
 'sphinx_rtd_theme',
@@ -121,3 +121,6 @@ def get_link_badge_inputs(link, text=None, type="link", cls: str = "", tooltip=N
 #Place the image in the _static/ folder of your site.
 #Set the copybutton_image_path variable in your conf.py to be the path to your image file, relative to _static/.
 #copybutton_image_path = "_static/AdditionalImages/copyclipboard.png"
+
+# EXCLUDE DOCUMENTS #
+exclude_patterns = ['subsections/datasets']
