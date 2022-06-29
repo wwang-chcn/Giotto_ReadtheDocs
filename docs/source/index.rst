@@ -30,6 +30,7 @@ GIOTTO SUITE
    
    Common Errors and Solutions <errorsfaqsandtips.rst>
    Report a Bug <github_issues.rst>
+   FAQs <faqs>
 
 .. page text .. 
 

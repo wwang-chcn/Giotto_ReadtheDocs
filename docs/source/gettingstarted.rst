@@ -83,6 +83,8 @@ You can install Giotto Suite on any platform in 2 easy steps which are outlined 
 In-Depth installation
 **************************
 
+.. _first_time_r_installation:
+
 Part 1: R Giotto Requirements
 ============================== 
 
@@ -350,20 +352,20 @@ Part 2: Python Giotto Requirements
 Tutorials for Giotto Specific Tasks 
 ======================================
 
-
 .. grid:: 4
 
     .. grid-item-card::
+		:link: mini_visium
+		:link-type: ref
 
         .. image:: images/getting_started/icons_configuration.png
-            :target: /../build/html/subsections/tipsandtricks/howtovisualizeandsaveplots.html
+			:target: :ref:`mini_visium`
 
-        
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_giotto.png
-            :target: ../../build/html/subsections/datasets/mini_3D_STARmap.html 
+            :target: ../build/html/subsections/datasets/mini_visium.html
 
 
     .. grid-item-card::
@@ -377,7 +379,6 @@ Tutorials for Giotto Specific Tasks
         .. image:: images/getting_started/icons_clustering.png
             :target: ../../build/html/subsections/datasets/mini_visium.html
 
-.. grid:: 4
 
     .. grid-item-card::
 
@@ -401,18 +402,19 @@ Analyses
 Tutorials for Spatial analyses that can be performed with Giotto Suite.
 Full dataset examples can be found in the `Datasets <datasets>`_ tab.
 
-.. grid:: 3
+			
+.. grid:: 4
 
     .. grid-item-card::
 
-        .. image:: images/getting_started/icons_image_analysis.png
+        .. image:: images/getting_started/icons_distribution.png
             :target: ../../build/html/subsections/tipsandtricks/howtovisualizeandsaveplots.html
         
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_cell_type.png
-            :target: ../build/html/subsections/datasets/mini_3D_STARmap.html 
+            :target: ../../build/html/subsections/datasets/mini_3D_STARmap.html 
 
 
     .. grid-item-card::
@@ -420,7 +422,6 @@ Full dataset examples can be found in the `Datasets <datasets>`_ tab.
         .. image:: images/getting_started/icons_deconvolution.png
             :target: ../../build/html/subsections/datasets/mini_visium.html
 
-.. grid:: 3
 
     .. grid-item-card::
 
@@ -439,21 +440,19 @@ Full dataset examples can be found in the `Datasets <datasets>`_ tab.
         .. image:: images/getting_started/icons_patterns.png
             :target: ../../build/html/subsections/datasets/mini_visium.html
 
-.. grid:: 3
-
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_subcellular.png
             :target: ../../build/html/subsections/tipsandtricks/howtovisualizeandsaveplots.html
 
-.. tip:: 
+.. .. tip:: 
 	
 	Check out the :ref:`Examples Section <datasets>` to get a better understanding of the Giotto workflow.
 
 
 
 
-.. dropdown:: Tips and Tricks
+.. .. dropdown:: Tips and Tricks
 
 	* :ref:`Different ways of subsetting Giotto results? <ways-of-subsetting>`
 	* :ref:`How to create global instructions and show or save your created plots? <global-instructions-and-save-plots>`
@@ -464,7 +463,7 @@ Full dataset examples can be found in the `Datasets <datasets>`_ tab.
 	* :ref:`Adding and Working with Images in Giotto <working-with-giotto-images>`
 
 
-.. dropdown:: :doc:`Giotto Workflow Analyses Guided Steps</giottoworkflowanalyses>`
+.. .. dropdown:: :doc:`Giotto Workflow Analyses Guided Steps</giottoworkflowanalyses>`
 	:animate: fade-in 
 	
 	0. :ref:`*Optional* Install a Giotto Environment <install_a_giotto_environment>` 
@@ -485,7 +484,7 @@ Full dataset examples can be found in the `Datasets <datasets>`_ tab.
 	#. :ref:`Export Giotto results to use in Giotto viewer <giotto-viewer-export>`
 
 
-.. dropdown:: :ref:`HowTos <howtosection>`
+.. .. dropdown:: :ref:`HowTos <howtosection>`
 	:animate: fade-in 
 	
 	* :ref:`Different ways of subsetting Giotto results? <ways-of-subsetting>`
@@ -497,11 +496,11 @@ Full dataset examples can be found in the `Datasets <datasets>`_ tab.
 	* :ref:`Adding and Working with Images in Giotto <working-with-giotto-images>`
 
 
-.. dropdown:: Giotto Analyzer and Viewer interaction [*work in progress*] :octicon:`alert`
+.. .. dropdown:: Giotto Analyzer and Viewer interaction [*work in progress*] :octicon:`alert`
 	:color: warning
 
 	* How to switch between Giotto Analyzer and Viewer?
 
 
-.. seealso:: 
+.. .. seealso:: 
 	:ref:`FAQs <faqs>` for more help.

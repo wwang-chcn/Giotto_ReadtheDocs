@@ -139,7 +139,7 @@ algorithm.
 3. Use python code as if R code:
 
 .. seealso::
-        `doLeidenCLuster <doLeidenCLuster>`_ for more detailed information. 
+        :doc:`doLeidenCluster </subsections/md_rst/doLeidenCluster>` for more detailed information. 
 
 .. code-block::
 

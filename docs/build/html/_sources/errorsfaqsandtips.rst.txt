@@ -1,8 +1,8 @@
-.. _faqs:
+##################################
+Solutions to Installation Errors
+##################################
 
-################################
-FAQs and Solutions to Errors
-################################
+.. _error_on_mac: 
 
 ************************
 Errors on MacOS
@@ -13,6 +13,8 @@ The Giotto branch **cless** is a version of Giotto without C++ code, which shoul
 .. code-block:: 
 
     remotes::install_github("RubD/Giotto@cless") 
+
+.. _clang_error_mac:
 
 Issue 1: Clang Error
 ========================
@@ -75,6 +77,8 @@ If you see this error on your MacOS:
 
 *“This worked for me in Mac OS Catalina as well! I used the gfortran 8.2 Mojave installation github.com/fxcoudert/gfortran-for-macOS/releases” – Danny*
 
+.. _R_363_and_catalina_error: 
+
 Issue 3: R 3.6.3 and MacOS Catalina
 ========================================
 If you use the latest MacOS ‘Catalina’ and the latest R version 3.6.3 then you will need to install Clang 7.0.0 and GNU Fortran 6.1 `as per instructions <https://cran.rstudio.com/bin/macosx/>`_.
@@ -92,10 +96,14 @@ Additionally, you might have to specify some flags in “~/.R/Makevars”
 
 *We hope that these issues will be resolved soon.*
 
+.. _error_on_windows:
 
 ************************
 Errors on Windows
 ************************
+
+.. _make_not_found: 
+
 Issue 1: ‘Make’ not found error on windows
 ============================================
 If you encounter this error:
@@ -112,6 +120,8 @@ If you encounter this error:
 	## you can set the paths manually
 	Sys.setenv(PATH = paste("C:/Rtools/bin","C:/Rtools/mingw_64/bin", Sys.getenv("PATH"), sep=";"))
 	Sys.setenv(BINPREF = "C:/Rtools/mingw_$(WIN)/bin/")
+
+.. _error_converted_warning: 
 
 Issue 2: Error Converted from Warning
 ============================================
@@ -133,7 +143,7 @@ If you encounter this or similar error:
 	library(remotes) # if not installed do install.package('remotes')
 	remotes::install_github("RubD/Giotto", build_vignettes = F)
 
-.. admonition:: Giotto HowTos
+.. .. admonition:: Giotto HowTos
 
    * :ref:`Different ways of subsetting Giotto results? <ways-of-subsetting>`
    * :ref:`How to create global instructions and show or save your created plots? <global-instructions-and-save-plots>`

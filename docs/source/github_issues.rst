@@ -1,3 +1,4 @@
+:orphan:
 .. _SubmittingGitHubIssues: 
 
 ################################
@@ -244,4 +245,4 @@ Example of a Bad GitHub issue
 > I am having trouble adjusting my Giotto matrix. My error says that the covariate column name(s) were not found in the cell meta data. What do I do?
 
 
-:bdg-link-danger:`Report Issue <https://github.com/RubD/Giotto/issues>`
+:bdg-link-danger:`Report An Issue <https://github.com/RubD/Giotto/issues>`
