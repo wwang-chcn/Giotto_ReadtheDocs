@@ -9,18 +9,16 @@ GIOTTO SUITE
  
    Installation <gettingstarted.rst> 
    Documentation <documentation.rst>
-   Development <development.rst> 
+   Contribute <contribute.rst> 
    Giotto Viewer <http://spatial.rc.fas.harvard.edu/giotto-viewer/>
-   NEWS <subsections/tipsandtricks/NEWS.rst>
 
 .. toctree::
    :maxdepth: 2
    :caption: Guides
    :hidden:
 
-   Detailed Workflow <subsections/detailed_workflow.rst>
-   HowTos <tipsandtricks.rst>
-   Examples <datasets.rst>  
+   Datasets <datasets.rst> 
+   FAQs <faqs> 
    Try Giotto <trygiotto.rst>
    
 .. toctree::
@@ -84,11 +82,18 @@ Cite Giotto
 *******************************
 License
 *******************************
+:doc:`Full License </subsections/license>`
 
 .. github-shield:: 
     :username: RubD
     :repository: Giotto
     :license: 
+
+*******************************
+Community
+*******************************
+
+:doc:`Code of Conduct <subsections/code_of_conduct>`
 
 ****************************
 Authors and Developers 
