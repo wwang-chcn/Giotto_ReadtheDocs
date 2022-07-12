@@ -1,3 +1,22 @@
+
+.. github-shield:: 
+   :username: RubD
+   :repository: Giotto
+   :branch: suite
+   :last-commit:
+
+.. rtfd-shield:: 
+   :project: giotto
+
+.. pypi-shield:: 
+   :version:
+
+.. pypi-shield:: 
+   :project: giotto
+   :downloads: month
+
+.. maintained-shield:: 2022
+
 ##########################################
 GIOTTO SUITE
 ##########################################
@@ -30,7 +49,7 @@ GIOTTO SUITE
    Report a Bug <github_issues.rst>
    FAQs <faqs>
 
-.. page text .. 
+
 
 **********************************************
 Multi-Level Spatial Biology Exploration 
@@ -86,6 +105,7 @@ License
 .. github-shield:: 
     :username: RubD
     :repository: Giotto
+    :branch: suite
     :license: 
 
 *******************************
@@ -114,5 +134,3 @@ Authors and Developers
 
 .. _Ruben Dries: https://www.drieslab.com
 
-Latest updated
-----------------
