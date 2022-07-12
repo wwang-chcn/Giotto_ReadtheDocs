@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Going Further into Sphinx &mdash; Giotto 1.0 documentation</title>
+      <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/sphinx-toolbox-code.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/sphinx-toolbox.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme_edits.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/sphinx_toolbox_installation.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme_edits.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+        <script src="../../../../../_static/sphinx_toolbox_installation.js"></script>
+        <script src="../../../../../_static/design-tabs.js"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../../index.html">
+            <img src="../../../../../_static/GiottoLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../gettingstarted.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../datasets.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../trygiotto.html">Try Giotto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Issues</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../errorsfaqsandtips.html">Common Errors and Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../github_issues.html">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../faqs.html">FAQs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">Giotto</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Going Further into Sphinx</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../../_sources/subsections/md_rst/quick-sphinx-tutorial/docs/source/advanced.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="going-further-into-sphinx">
+<span id="advanced"></span><h1>Going Further into Sphinx<a class="headerlink" href="#going-further-into-sphinx" title="Permalink to this headline"></a></h1>
+<section id="automatic-build-with-travis">
+<h2>Automatic build with travis<a class="headerlink" href="#automatic-build-with-travis" title="Permalink to this headline"></a></h2>
+<p><a class="reference external" href="https://travis-ci.org/">Travis CI</a> is a continuous integration service used to build and test software projects hosted at GitHub (Wikipedia).</p>
+<p>Add a <code class="docutils literal notranslate"><span class="pre">.travis.yml</span></code> file to the top level directory of your GitHub
+repository with instructions how to build and test your software:</p>
+<div class="highlight-YAML notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="nt">branches</span><span class="p">:</span><span class="w"></span>
+<span class="linenos"> 3</span><span class="w">  </span><span class="nt">only</span><span class="p">:</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="nt">python</span><span class="p">:</span><span class="w"></span>
+<span class="linenos"> 6</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;2.7&quot;</span><span class="w"></span>
+<span class="linenos"> 7</span><span class="nt">sudo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="nt">install</span><span class="p">:</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -r requirements.txt</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install -r requirements-dev.txt</span><span class="w"></span>
+<span class="linenos">11</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python setup.py install</span><span class="w"></span>
+<span class="linenos">12</span><span class="nt">script</span><span class="p">:</span><span class="w"></span>
+<span class="linenos">13</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">py.test -v giza</span><span class="w"> </span>
+<span class="hll"><span class="linenos">14</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cd docs; make html linkcheck</span><span class="w"></span>
+</span></pre></div>
+</div>
+<p>Add the instruction to build your Sphinx documentation with the
+<code class="docutils literal notranslate"><span class="pre">linkcheck</span></code> target. The travis build will be run (in a docker
+container) each time you push to GitHub. When somethings fails
+(install, tests, docs, linkcheck) then travis will inform the person
+who made the last commit via eMail.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>See the travis build status for this tutorial: <a class="reference external" href="https://travis-ci.org/cehbrecht/quick-sphinx-tutorial"><img alt="Travis Build" src="https://travis-ci.org/cehbrecht/quick-sphinx-tutorial.svg?branch=master" /></a></p>
+</div>
+<p>You can add an image with a link to the status of the travis build to your documenation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. image:: https://travis-ci.org/my-orga/my-repo.svg?branch=master
+   :target: https://travis-ci.org/my-orga/my-repo
+   :alt: Travis Build
+</pre></div>
+</div>
+</section>
+<section id="configure-theme-for-rtd">
+<h2>Configure theme for rtd<a class="headerlink" href="#configure-theme-for-rtd" title="Permalink to this headline"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx_rtd_theme
+</pre></div>
+</div>
+<p>Or:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda install sphinx_rtd_theme
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">on_rtd</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;READTHEDOCS&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;True&#39;</span>
+
+<span class="k">if</span> <span class="n">on_rtd</span><span class="p">:</span>
+    <span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span>
+<span class="k">else</span><span class="p">:</span>  <span class="c1"># only import and set the theme if we&#39;re building docs locally</span>
+    <span class="kn">import</span> <span class="nn">sphinx_rtd_theme</span>
+    <span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+    <span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinx_rtd_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">()]</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">on_rtd</span></code> is whether we are on readthedocs.org, this line of code grabbed from <a class="reference external" href="http://docs.readthedocs.org/en/latest/faq.html?highlight=autodoc#how-do-i-change-behavior-for-read-the-docs">docs.readthedocs.org</a></p>
+</section>
+<section id="use-sphinx-for-github-pages">
+<h2>Use Sphinx for GitHub Pages<a class="headerlink" href="#use-sphinx-for-github-pages" title="Permalink to this headline"></a></h2>
+<p>Include the extension <a class="reference external" href="http://www.sphinx-doc.org/en/stable/ext/githubpages.html">githubpages</a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx.ext.githubpages&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>This extension creates .nojekyll file on generated HTML directory to publish the document on GitHub Pages.</p>
+<p>See also: <a class="reference external" href="http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html">http://gisellezeno.com/tutorials/sphinx-for-python-documentation.html</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

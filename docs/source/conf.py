@@ -39,7 +39,7 @@ import sphinx_rtd_theme
 
 master_dox = 'index'
 extensions = [
-#'sphinx_rtd_theme', #added to fix bullet-point issue
+'sphinx_rtd_theme', #added to fix bullet-point issue
 'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
 'sphinx_rtd_theme',
@@ -48,6 +48,7 @@ extensions = [
 'sphinx_toolbox', 
 'sphinx_toolbox.shields',
 'sphinx_toolbox.github',
+'sphinx_last_updated_by_git',
 #'recommonmark',
 #'m2r2', -- moved to requirements.txt
 #'sphinxcontrib.images'
