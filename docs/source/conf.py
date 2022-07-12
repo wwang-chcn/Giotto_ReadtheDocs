@@ -48,7 +48,7 @@ extensions = [
 'sphinx_toolbox', 
 'sphinx_toolbox.shields',
 'sphinx_toolbox.github',
-'sphinx_last_updated_by_git',
+#'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',
 #'m2r2', -- moved to requirements.txt
 #'sphinxcontrib.images'
