@@ -57,7 +57,7 @@ Multi-Level Spatial Biology Exploration
 
 :octicon:`alert` **under construction** Giotto Suite is the new and updated version of Giotto.
 
-.. image:: images/index/giotto_suite.svg
+.. image:: images/index/giotto_suite.png
    :width: 400
 
 Giotto Suite is being developed as a suite of software tools, including data structures and methods, for the comprehensive analysis and visualization of spatial multi-omics data at all scales and multiple resolutions. It extends and improves our previous R package Giotto. The underlying framework is generalizable to virtually all current and emerging spatial technologies which may differ in resolution(subcellular, single cell or multiple cells), spatial dimension (2D vs 3D), molecular modality (protein, RNA, DNA, …), and throughput (number of cells and analytes). This will ensure that our spatial analysis solutions remain compatible with all current and future developed spatial technologies and platforms. It will also aid in the further integration with other external analysis pipelines and tools.
