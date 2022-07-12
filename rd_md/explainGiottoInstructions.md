@@ -1,0 +1,22 @@
+# `explainGiottoInstructions`
+
+explainGiottoInstructions
+
+
+## Description
+
+Simple function to explain how to use [`createGiottoInstructions`](#creategiottoinstructions)
+
+
+## Usage
+
+```r
+explainGiottoInstructions()
+```
+
+
+## Value
+
+Instructions in txt format
+
+

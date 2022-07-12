@@ -1,0 +1,30 @@
+
+``do_cell_proximity_test``
+==============================
+
+do_cell_proximity_test
+
+Description
+-----------
+
+Performs a selected differential test on subsets of a matrix
+
+Usage
+-----
+
+.. code-block:: r
+
+   do_cell_proximity_test(
+     expr_values,
+     select_ind,
+     other_ind,
+     diff_test = c("permutation", "limma", "t.test", "wilcox"),
+     mean_method = c("arithmic", "geometric"),
+     offset = 0.1,
+     n_perm = 100,
+     adjust_method = c("bonferroni", "BH", "holm", "hochberg", "hommel", "BY", "fdr",
+       "none"),
+     cores = 2,
+     set_seed = TRUE,
+     seed_number = 1234
+   )

@@ -1,0 +1,66 @@
+
+``createSpatialGrid``
+=========================
+
+createSpatialGrid
+
+Description
+-----------
+
+Create a spatial grid using the default method
+
+Usage
+-----
+
+.. code-block:: r
+
+   createSpatialGrid(
+     gobject,
+     name = NULL,
+     method = c("default"),
+     sdimx_stepsize = NULL,
+     sdimy_stepsize = NULL,
+     sdimz_stepsize = NULL,
+     minimum_padding = 1,
+     return_gobject = TRUE
+   )
+
+Arguments
+---------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Argument
+     - Description
+   * - ``gobject``
+     - giotto object
+   * - ``name``
+     - name for spatial grid
+   * - ``method``
+     - method to create a spatial grid
+   * - ``sdimx_stepsize``
+     - stepsize along the x-axis
+   * - ``sdimy_stepsize``
+     - stepsize along the y-axis
+   * - ``sdimz_stepsize``
+     - stepsize along the z-axis
+   * - ``minimum_padding``
+     - minimum padding on the edges
+   * - ``return_gobject``
+     - boolean: return giotto object (default = TRUE)
+
+
+Details
+-------
+
+Creates a spatial grid with defined x, y (and z) dimensions.
+ The dimension units are based on the provided spatial location units.
+
+
+* default method:  list(list("createSpatialDefaultGrid"))
+
+Value
+-----
+
+giotto object with updated spatial grid slot

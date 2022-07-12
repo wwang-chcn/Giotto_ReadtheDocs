@@ -10,8 +10,8 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-#import os
-#import sys
+import os
+import sys
 #sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -30,14 +30,19 @@ release = '1.0'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-#import os 
-#import sys 
+import os 
+import sys 
 #from sphinx.application import Sphinx
+#sys.path.insert(0, os.path.abspath('..'))
 
 import sphinx_rtd_theme
 
+
+master_doc = 'index'
+
 extensions = [
-'sphinx.ext.autosectionlabel', 
+'sphinx_rtd_theme', #added to fix bullet-point issue
+'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
 'sphinx_rtd_theme',
 'sphinx_design',
@@ -45,9 +50,15 @@ extensions = [
 'sphinx_toolbox', 
 'sphinx_toolbox.shields',
 'sphinx_toolbox.github',
+#'recommonmark',
+#'m2r2', -- moved to requirements.txt
+#'sphinxcontrib.images'
 #'myst_parser' #myst_parser caused a fatal error
 #'sphinxcontrib.spelling' #spell checker fatal error
 ]
+
+#Added for m2r2 extension
+source_suffix = ['.rst', '.md']
 
 # Configuration for sphinx_toolbox
 github_repository = "Giotto"
