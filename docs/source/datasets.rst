@@ -11,27 +11,23 @@ Array Based
 Visium datasets
 =================
 
-.. figure:: images/dataset_page/visium_kidney_image_summary.png
-    :target: ../build/
-
-
 .. grid:: 3
 
     .. grid-item-card::
 
         .. image:: images/dataset_page/visium_kidney_image_summary.png
-            :target: ../build/html/subsections/datasets/seqFISH_cortex.html
+            :target: ./subsections/datasets/seqFISH_cortex.html
 
     .. grid-item-card::
 
         .. image:: images/dataset_page/visium_brain_image_summary.png
-            :target: ../../build/html/html/subsections/datasets/mouse_visium_brain.html
+            :target: ../../build/html/subsections/datasets/mouse_visium_brain.html
 
 
     .. grid-item-card::
         
         .. image:: images/dataset_page/visium_prostate_summary.png
-            :target: ../../build/html/html/subsections/datasets/mouse_visium_brain.html
+            :target: ../build/html/html/subsections/datasets/mouse_visium_brain.html
 
 Other Technologies 
 ====================
