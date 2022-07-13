@@ -75,6 +75,9 @@ suppress_warnings = [
 'autosectionlabel.*',
 'epub.duplicated_toc_entry']
 
+#autosectionlabel_prefix_document = True #caused many warnings 
+#autosectionlabel_maxdepth = 1 #caused many warnings
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
