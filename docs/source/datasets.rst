@@ -17,17 +17,22 @@ Visium datasets
 
         .. image:: images/dataset_page/visium_kidney_image_summary.png
             :target: ./subsections/datasets/seqFISH_cortex.html
-
-    .. grid-item-card::
-
-        .. image:: images/dataset_page/visium_brain_image_summary.png
-            :target: ../../build/html/subsections/datasets/mouse_visium_brain.html
-
+        
+        .. button-ref:: /subsections/datasets/seqFISH_cortex
+            :ref-type: doc
+            :color: muted
+            :click-parent:
 
     .. grid-item-card::
         
         .. image:: images/dataset_page/visium_prostate_summary.png
             :target: ../build/html/html/subsections/datasets/mouse_visium_brain.html
+    
+    .. grid-item-card::
+        
+        .. image:: images/dataset_page/visium_prostate_summary.png
+            :target: ../build/html/html/subsections/datasets/mouse_visium_brain.html
+
 
 Other Technologies 
 ====================
@@ -53,7 +58,11 @@ Single-Cell
         .. image:: images/dataset_page/cortex_image_summary.png
             :target: ../../build/html/html/subsections/datasets/seqFISH_cortex.html
         
+    .. grid-item-card::
 
+        .. image:: images/dataset_page/cortex_image_summary.png
+            :target: ../../build/html/html/subsections/datasets/seqFISH_cortex.html
+        
     .. grid-item-card::
 
         .. image:: images/dataset_page/osmFISH_SS_cortex_image_summary.png
@@ -67,12 +76,12 @@ Single-Cell
 
     .. grid-item-card::
 
-        .. image:: images/dataset_page/cortex_image_summary.png
+        .. image:: images/dataset_page/merFISH_hypoth_image_summary.png
             :target: ../../build/html/html/subsections/datasets/seqFISH_cortex.html
         
 
     .. grid-item-card::
 
-        .. image:: images/dataset_page/osmFISH_SS_cortex_image_summary.png
+        .. image:: images/dataset_page/starmap_cortex_image_summary.png
             :target: ../../build/html/subsections/datasets/osmFISH_mouse_SS_cortex.html
 
