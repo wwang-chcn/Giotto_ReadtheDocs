@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integration between Multiple spatial datasets and single cell sequencing data &mdash; Giotto 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-toolbox-code.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx-toolbox.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_edits.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx_toolbox_installation.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_edits.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/sphinx_toolbox_installation.js"></script>
+        <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/GiottoLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trygiotto.html">Try Giotto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Issues</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Common Errors and Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../github_issues.html">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faqs.html">FAQs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Giotto</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Integration between Multiple spatial datasets and single cell sequencing data</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/subsections/datasets/visium_prostate_integration.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="integration-between-multiple-spatial-datasets-and-single-cell-sequencing-data">
+<h1>Integration between Multiple spatial datasets and single cell sequencing data<a class="headerlink" href="#integration-between-multiple-spatial-datasets-and-single-cell-sequencing-data" title="Permalink to this headline"></a></h1>
+<section id="set-up-giotto-environment">
+<h2>Set-Up Giotto Environment<a class="headerlink" href="#set-up-giotto-environment" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">Giotto</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="set-a-working-directory">
+<h3>Set A Working Directory<a class="headerlink" href="#set-a-working-directory" title="Permalink to this headline"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#results_folder = &#39;/path/to/directory/&#39;</span>
+<span class="n">results_folder</span> <span class="o">=</span> <span class="s1">&#39;/Volumes/Ruben_Seagate/Dropbox (Personal)/Projects/GC_lab/Ruben_Dries/190225_spatial_package/Results/Visium/Brain/201226_results//&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="set-a-giotto-python-path">
+<h3>Set A Giotto Python Path<a class="headerlink" href="#set-a-giotto-python-path" title="Permalink to this headline"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># set python path to your preferred python version path</span>
+<span class="c1"># set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment</span>
+<span class="n">python_path</span> <span class="o">=</span> <span class="n">NULL</span>
+<span class="k">if</span><span class="p">(</span><span class="ow">is</span><span class="o">.</span><span class="n">null</span><span class="p">(</span><span class="n">python_path</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">installGiottoEnvironment</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="dataset-explanation">
+<h2>Dataset Explanation<a class="headerlink" href="#dataset-explanation" title="Permalink to this headline"></a></h2>
+<p><cite>10X genomics &lt;https://www.10xgenomics.com/spatial-transcriptomics&gt;</cite> recently launched a new platform to obtain spatial expression data using a Visium Spatial Gene Expression slide.</p>
+<p>The Visium Cancer Prostate data to run this tutorial can be found <a class="reference external" href="https://www.10xgenomics.com/welcome?closeUrl=%2Fresources%2Fdatasets&amp;lastTouchOfferName=Human%20Prostate%20Cancer%2C%20Adenocarcinoma%20with%20Invasive%20Carcinoma%20%28FFPE%29&amp;lastTouchOfferType=Dataset&amp;redirectUrl=%2Fresources%2Fdatasets%2Fhuman-prostate-cancer-adenocarcinoma-with-invasive-carcinoma-ffpe-1-standard-1-3-0">here</a>. The Visium Normal Prostate data to run this tutorial can be found <a class="reference external" href="https://www.10xgenomics.com/welcome?closeUrl=%2Fresources%2Fdatasets&amp;lastTouchOfferName=Normal%20Human%20Prostate%20%28FFPE%29&amp;lastTouchOfferType=Dataset&amp;redirectUrl=%2Fresources%2Fdatasets%2Fnormal-human-prostate-ffpe-1-standard-1-3-0">here</a>.</p>
+<div class="dropdown admonition note">
+<p class="admonition-title">Note</p>
+<p>Visium Technology</p>
+<a class="reference internal image-reference" href="../../_images/visium_technology.png"><img alt="Visium Technology" src="../../_images/visium_technology.png" style="width: 500px;" /></a>
+</div>
+<p>High resolution png from original tissue:</p>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-2 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="../../_images/Visium_FFPE_Human_Normal_Prostate_image.png" src="../../_images/Visium_FFPE_Human_Normal_Prostate_image.png" />
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="../../_images/Visium_FFPE_Human_Prostate_Cancer_image.png" src="../../_images/Visium_FFPE_Human_Prostate_Cancer_image.png" />
+</div>
+</div>
+</div>
+</section>
+<section id="create-giotto-object-and-join">
+<h2>1. Create Giotto Object And Join<a class="headerlink" href="#create-giotto-object-and-join" title="Permalink to this headline"></a></h2>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">dataDir</span> <span class="o">&lt;-</span> <span class="s">&#39;path/to/data&#39;</span>
+<span class="c1">## obese upper</span>
+<span class="n">N_pros</span> <span class="o">=</span> <span class="nf">createGiottoVisiumObject</span><span class="p">(</span>
+    <span class="n">visium_dir</span> <span class="o">=</span> <span class="nf">paste0</span><span class="p">(</span><span class="n">dataDir</span><span class="p">,</span><span class="s">&#39;/Visium_FFPE_Human_Normal_Prostate/&#39;</span><span class="p">),</span>
+    <span class="n">expr_data</span> <span class="o">=</span> <span class="s">&#39;raw&#39;</span><span class="p">,</span>
+    <span class="n">png_name</span> <span class="o">=</span> <span class="s">&#39;tissue_lowres_image.png&#39;</span><span class="p">,</span>
+    <span class="n">gene_column_index</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span>
+    <span class="n">instructions</span> <span class="o">=</span> <span class="n">instrs</span>
+<span class="p">)</span>
+
+<span class="c1">## obese lower</span>
+<span class="n">C_pros</span> <span class="o">=</span> <span class="nf">createGiottoVisiumObject</span><span class="p">(</span>
+    <span class="n">visium_dir</span> <span class="o">=</span> <span class="nf">paste0</span><span class="p">(</span><span class="n">dataDir</span><span class="p">,</span><span class="s">&#39;/Visium_FFPE_Human_Prostate_Cancer/&#39;</span><span class="p">),</span>
+    <span class="n">expr_data</span> <span class="o">=</span> <span class="s">&#39;raw&#39;</span><span class="p">,</span>
+    <span class="n">png_name</span> <span class="o">=</span> <span class="s">&#39;tissue_lowres_image.png&#39;</span><span class="p">,</span>
+    <span class="n">gene_column_index</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span>
+    <span class="n">instructions</span> <span class="o">=</span> <span class="n">instrs</span>
+<span class="p">)</span>
+<span class="c1"># join giotto objects</span>
+<span class="c1"># joining with x_shift has the advantage that you can join both 2D and 3D data</span>
+<span class="c1"># x_padding determines how much distance is between each dataset</span>
+<span class="c1"># if x_shift = NULL, then the total shift will be guessed from the giotto image</span>
+<span class="n">testcombo</span> <span class="o">=</span> <span class="nf">joinGiottoObjects</span><span class="p">(</span><span class="n">gobject_list</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">N_pros</span><span class="p">,</span> <span class="n">C_pros</span><span class="p">),</span>
+    <span class="n">gobject_names</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#39;NP&#39;</span><span class="p">,</span> <span class="s">&#39;CP&#39;</span><span class="p">),</span>
+    <span class="n">join_method</span> <span class="o">=</span> <span class="s">&#39;shift&#39;</span><span class="p">,</span> <span class="n">x_padding</span> <span class="o">=</span> <span class="m">1000</span><span class="p">)</span>
+
+
+<span class="c1"># join info is stored in this slot</span>
+<span class="c1"># simple list for now</span>
+<span class="n">testcombo</span><span class="o">@</span><span class="n">join_info</span>
+
+
+<span class="c1"># check joined Giotto object</span>
+<span class="nf">fDataDT</span><span class="p">(</span><span class="n">testcombo</span><span class="p">)</span>
+<span class="nf">pDataDT</span><span class="p">(</span><span class="n">testcombo</span><span class="p">)</span>
+<span class="nf">showGiottoImageNames</span><span class="p">(</span><span class="n">testcombo</span><span class="p">)</span>
+<span class="nf">showGiottoSpatLocs</span><span class="p">(</span><span class="n">testcombo</span><span class="p">)</span>
+<span class="nf">showGiottoExpression</span><span class="p">(</span><span class="n">testcombo</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="c1"># this plots all the images by list_ID</span>
+<span class="nf">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s">&#39;in_tissue&#39;</span><span class="p">,</span>
+    <span class="n">show_image</span> <span class="o">=</span> <span class="bp">T</span><span class="p">,</span> <span class="n">image_name</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;NP-image&quot;</span><span class="p">,</span> <span class="s">&quot;CP-image&quot;</span><span class="p">),</span>
+    <span class="n">group_by</span> <span class="o">=</span> <span class="s">&#39;list_ID&#39;</span><span class="p">,</span> <span class="n">point_alpha</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">,</span>
+    <span class="n">save_param</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s">&quot;1a_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/1a_plot.png" src="../../_images/1a_plot.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># this plots one selected image</span>
+<span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;in_tissue&#39;</span><span class="p">,</span>
+    <span class="n">show_image</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">image_name</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;NP-image&quot;</span><span class="p">),</span> <span class="n">point_alpha</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span>
+    <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;1b_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/1b_plot.png" src="../../_images/1b_plot.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># this plots two selected images</span>
+<span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;in_tissue&#39;</span><span class="p">,</span>
+    <span class="n">show_image</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">image_name</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span> <span class="s2">&quot;NP-image&quot;</span><span class="p">,</span> <span class="s2">&quot;CP-image&quot;</span><span class="p">),</span>
+    <span class="n">point_alpha</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span>
+    <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;1c_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/1c_plot.png" src="../../_images/1c_plot.png" />
+</section>
+<section id="process-giotto-objects">
+<h2>2. Process Giotto Objects<a class="headerlink" href="#process-giotto-objects" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>     # subset on in-tissue spots
+     metadata = pDataDT(testcombo)
+     in_tissue_barcodes = metadata[in_tissue == 1]$cell_ID
+     testcombo = subsetGiotto(testcombo, cell_ids = in_tissue_barcodes)
+
+## filter
+testcombo &lt;- filterGiotto(gobject = testcombo,
+    expression_threshold = 1,
+    feat_det_in_min_cells = 50,
+    min_det_feats_per_cell = 500,
+    expression_values = c(&#39;raw&#39;),
+    verbose = T)
+
+## normalize
+testcombo &lt;- normalizeGiotto(gobject = testcombo, scalefactor = 6000)
+
+## add gene &amp; cell statistics
+testcombo &lt;- addStatistics(gobject = testcombo, expression_values = &#39;raw&#39;)
+
+fmeta = fDataDT(testcombo)
+testfeats = fmeta[perc_cells &gt; 20 &amp; perc_cells &lt; 50][100:110]$feat_ID
+
+violinPlot(testcombo, feats = testfeats, cluster_column = &#39;list_ID&#39;, save_param = list(save_name = &quot;2a_plot&quot;))
+plotMetaDataHeatmap(testcombo, selected_feats = testfeats, metadata_cols = &#39;list_ID&#39;, save_param = list(save_name = &quot;2b_plot&quot;))
+</pre></div>
+</div>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-2 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="../../_images/2a_plot.png" src="../../_images/2a_plot.png" />
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="../../_images/2b_plot.png" src="../../_images/2b_plot.png" />
+</div>
+</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## visualize</span>
+<span class="c1">#fDataDT(testcombo)</span>
+<span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span> <span class="n">group_by</span> <span class="o">=</span> <span class="s1">&#39;list_ID&#39;</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;nr_feats&#39;</span><span class="p">,</span> <span class="n">color_as_factor</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.75</span><span class="p">,</span> <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;2c_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/2c_plot.png" src="../../_images/2c_plot.png" />
+</section>
+<section id="dimension-reduction">
+<h2>3. Dimension Reduction<a class="headerlink" href="#dimension-reduction" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## PCA ##</span>
+<span class="n">testcombo</span> <span class="o">&lt;-</span> <span class="n">calculateHVF</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">)</span>
+<span class="n">testcombo</span> <span class="o">&lt;-</span> <span class="n">runPCA</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span> <span class="n">center</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">scale_unit</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span>
+<span class="n">screePlot</span><span class="p">(</span><span class="n">testcombo</span><span class="p">,</span> <span class="n">ncp</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;3a_screeplot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/3a_screeplot.png" src="../../_images/3a_screeplot.png" />
+</section>
+<section id="clustering">
+<h2>4. Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline"></a></h2>
+<section id="without-integration">
+<h3>4.1 Without Integration<a class="headerlink" href="#without-integration" title="Permalink to this headline"></a></h3>
+<p>Integration is usually needed for dataset of different conditions to minimize batch effects. Without integration means without using any integration methods.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## cluster and run UMAP ##</span>
+<span class="c1"># sNN network (default)</span>
+<span class="n">testcombo</span> <span class="o">&lt;-</span> <span class="n">createNearestNetwork</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+    <span class="n">dim_reduction_to_use</span> <span class="o">=</span> <span class="s1">&#39;pca&#39;</span><span class="p">,</span> <span class="n">dim_reduction_name</span> <span class="o">=</span> <span class="s1">&#39;pca&#39;</span><span class="p">,</span>
+    <span class="n">dimensions_to_use</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+
+<span class="c1"># Leiden clustering</span>
+<span class="n">testcombo</span> <span class="o">&lt;-</span> <span class="n">doLeidenCluster</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span> <span class="n">resolution</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">n_iterations</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># UMAP</span>
+<span class="n">testcombo</span> <span class="o">=</span> <span class="n">runUMAP</span><span class="p">(</span><span class="n">testcombo</span><span class="p">)</span>
+
+<span class="n">plotUMAP</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+    <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span> <span class="n">show_NN_network</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span>
+    <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;4.1a_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/4.1a_plot.png" src="../../_images/4.1a_plot.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span> <span class="n">group_by</span> <span class="o">=</span> <span class="s1">&#39;list_ID&#39;</span><span class="p">,</span>
+<span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span>
+<span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span>
+<span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;4.1b_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/4.1b_plot.png" src="../../_images/4.1b_plot.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">spatDimPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+<span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span>
+<span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;4.1c_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/4.1c_plot.png" src="../../_images/4.1c_plot.png" />
+</section>
+<section id="with-harmony-integration">
+<h3>4.2 With Harmony integration<a class="headerlink" href="#with-harmony-integration" title="Permalink to this headline"></a></h3>
+<p>Harmony is a integration algorithm developed by <a class="reference external" href="https://www.nature.com/articles/s41592-019-0619-0">Korsunsky, I. et al.</a>. It was designed for integration of single cell data but also work well on spatial datasets.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## data integration, cluster and run UMAP ##</span>
+
+<span class="c1"># harmony</span>
+<span class="c1">#library(devtools)</span>
+<span class="c1">#install_github(&quot;immunogenomics/harmony&quot;)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">harmony</span><span class="p">)</span>
+
+<span class="c1">## run harmony integration</span>
+<span class="n">testcombo</span> <span class="o">=</span> <span class="n">runGiottoHarmony</span><span class="p">(</span><span class="n">testcombo</span><span class="p">,</span> <span class="n">vars_use</span> <span class="o">=</span> <span class="s1">&#39;list_ID&#39;</span><span class="p">,</span> <span class="n">do_pca</span> <span class="o">=</span> <span class="n">F</span><span class="p">)</span>
+
+
+<span class="c1">## sNN network (default)</span>
+<span class="n">testcombo</span> <span class="o">&lt;-</span> <span class="n">createNearestNetwork</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+    <span class="n">dim_reduction_to_use</span> <span class="o">=</span> <span class="s1">&#39;harmony&#39;</span><span class="p">,</span> <span class="n">dim_reduction_name</span> <span class="o">=</span> <span class="s1">&#39;harmony&#39;</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;NN.harmony&#39;</span><span class="p">,</span>
+    <span class="n">dimensions_to_use</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
+
+<span class="c1">## Leiden clustering</span>
+<span class="n">testcombo</span> <span class="o">&lt;-</span> <span class="n">doLeidenCluster</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+    <span class="n">network_name</span> <span class="o">=</span> <span class="s1">&#39;NN.harmony&#39;</span><span class="p">,</span> <span class="n">resolution</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">n_iterations</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;leiden_harmony&#39;</span><span class="p">)</span>
+
+<span class="c1"># UMAP dimension reduction</span>
+<span class="n">testcombo</span> <span class="o">=</span> <span class="n">runUMAP</span><span class="p">(</span><span class="n">testcombo</span><span class="p">,</span> <span class="n">dim_reduction_name</span> <span class="o">=</span> <span class="s1">&#39;harmony&#39;</span><span class="p">,</span> <span class="n">dim_reduction_to_use</span> <span class="o">=</span> <span class="s1">&#39;harmony&#39;</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;umap_harmony&#39;</span><span class="p">)</span>
+
+
+<span class="n">plotUMAP</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+    <span class="n">dim_reduction_name</span> <span class="o">=</span> <span class="s1">&#39;umap_harmony&#39;</span><span class="p">,</span>
+    <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_harmony&#39;</span><span class="p">,</span>
+    <span class="n">show_NN_network</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span>
+    <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span>
+    <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;4.2a_plot&quot;</span><span class="p">))</span>
+<span class="c1"># If you want to show NN network information, you will need to specify these arguments in the plotUMAP function</span>
+<span class="c1"># show_NN_network = T, nn_network_to_use = &#39;sNN&#39; , network_name = &#39;NN.harmony&#39;</span>
+</pre></div>
+</div>
+<img alt="../../_images/4.2a_plot.png" src="../../_images/4.2a_plot.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span> <span class="n">group_by</span> <span class="o">=</span> <span class="s1">&#39;list_ID&#39;</span><span class="p">,</span>
+<span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_harmony&#39;</span><span class="p">,</span>
+<span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span>
+<span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;4.2b_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/4.2b_plot.png" src="../../_images/4.2b_plot.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">spatDimPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+<span class="n">dim_reduction_to_use</span> <span class="o">=</span> <span class="s1">&#39;umap&#39;</span><span class="p">,</span> <span class="n">dim_reduction_name</span> <span class="o">=</span> <span class="s1">&#39;umap_harmony&#39;</span><span class="p">,</span>
+<span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_harmony&#39;</span><span class="p">,</span>
+<span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;4.2c_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/4.2c_plot.png" src="../../_images/4.2c_plot.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># compare to previous results</span>
+<span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+    <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span>
+    <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;4_w_o_integration_plot&quot;</span><span class="p">))</span>
+<span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+    <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_harmony&#39;</span><span class="p">,</span>
+    <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;4_w_integration_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/4_w_o_integration_plot.png" src="../../_images/4_w_o_integration_plot.png" />
+</section>
+</section>
+<section id="cell-type-annotation">
+<h2>5. Cell-Type Annotation<a class="headerlink" href="#cell-type-annotation" title="Permalink to this headline"></a></h2>
+<dl class="simple">
+<dt>Visium spatial transcriptomics does not provide single-cell resolution, making cell type annotation a harder problem. Giotto provides several ways to calculate enrichment of specific cell-type signature gene list:</dt><dd><ul class="simple">
+<li><p>PAGE</p></li>
+<li><p>hypergeometric test</p></li>
+<li><p>Rank</p></li>
+<li><p><cite>DWLS Deconvolution &lt;https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7&gt;`__</cite></p></li>
+</ul>
+</dd>
+</dl>
+<p>This is also the easiest way to integrate Visium datasets with single cell data. Example shown here is from <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/33032611/">Ma et al.</a> from two prostate cancer patients. The raw dataset can be found <a class="reference external" href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157703">here</a> Giotto_SC is processed variable in the <a class="reference internal" href="singlecell_prostate_standard.html"><span class="doc">single cell RNAseq tutorial</span></a>. You can also get access to the processed files of this dataset using <a class="reference internal" href="../md_rst/getSpatialDataset.html"><span class="doc">getSpatialDataset</span></a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

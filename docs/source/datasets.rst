@@ -39,7 +39,7 @@ Visium datasets
 .. card-carousel:: 3
 
     .. card:: 
-        :link: /subsections/datasets/seqFISH_cortex
+        :link: /subsections/datasets/mouse_visium_kidney
         :link-type: doc 
         
         .. image:: images/dataset_page/visium_kidney_image_summary.png 
@@ -51,7 +51,7 @@ Visium datasets
         .. image:: images/dataset_page/visium_prostate_summary.png
     
     .. card:: 
-        :link: subsections/datasets/mouse_visium_brain
+        :link: subsections/datasets/visium_prostate_integration
         :link-type: doc 
         
         .. image:: images/dataset_page/visium_prostate_summary.png
