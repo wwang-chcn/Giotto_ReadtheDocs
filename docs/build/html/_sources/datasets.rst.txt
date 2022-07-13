@@ -11,7 +11,8 @@ Array Based
 Visium datasets
 =================
 
-.. grid:: 3
+..  
+    .. grid:: 
 
     .. grid-item-card::
 
@@ -22,6 +23,7 @@ Visium datasets
             :ref-type: doc
             :color: muted
             :click-parent:
+            :expand:
 
     .. grid-item-card::
         
@@ -34,16 +36,51 @@ Visium datasets
             :target: ../build/html/html/subsections/datasets/mouse_visium_brain.html
 
 
+.. card-carousel:: 3
+
+    .. card:: 
+        :link: /subsections/datasets/seqFISH_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/visium_kidney_image_summary.png 
+
+    .. card:: 
+        :link: /subsections/datasets/mouse_visium_brain
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/visium_prostate_summary.png
+    
+    .. card:: 
+        :link: subsections/datasets/mouse_visium_brain
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/visium_prostate_summary.png
+ 
+
 Other Technologies 
 ====================
 
-.. grid:: 3
+.. .. grid:: 3
 
     .. grid-item-card::
 
         .. image:: images/dataset_page/coming_soon_summary.png
             :target: ../../build/html/html/subsections/datasets/mouse_visium_kidney.html
         
+.. card-carousel:: 3
+
+    .. card:: 
+        :link: /subsections/datasets/seqFISH_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/coming_soon_summary.png
+
+    .. card:: 
+        :link: /subsections/datasets/mouse_visium_brain
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/coming_soon_summary.png
+    
 
 Single-Cell 
 ==============
@@ -51,7 +88,7 @@ Single-Cell
 2D Datasets
 ----------------
 
-.. grid:: 3
+.. .. grid:: 3
 
     .. grid-item-card::
 
@@ -68,11 +105,29 @@ Single-Cell
         .. image:: images/dataset_page/osmFISH_SS_cortex_image_summary.png
             :target: ../../build/html/subsections/datasets/osmFISH_mouse_SS_cortex.html
 
+.. card-carousel:: 3
+
+    .. card:: 
+        :link: subsections/datasets/seqFISH_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/cortex_image_summary.png
+
+    .. card:: 
+        :link: subsections/datasets/seqFISH_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/cortex_image_summary.png
+    
+    .. card:: 
+        :link: subsections/datasets/osmFISH_mouse_SS_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/osmFISH_SS_cortex_image_summary.png
 
 3D Datasets
 ----------------
-
-.. grid:: 3
+.. .. grid:: 3
 
     .. grid-item-card::
 
@@ -85,3 +140,17 @@ Single-Cell
         .. image:: images/dataset_page/starmap_cortex_image_summary.png
             :target: ../../build/html/subsections/datasets/osmFISH_mouse_SS_cortex.html
 
+.. card-carousel:: 3
+
+    .. card:: 
+        :link: /subsections/datasets/seqFISH_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/merFISH_hypoth_image_summary.png
+
+    .. card:: 
+        :link: subsections/datasets/osmFISH_mouse_SS_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/starmap_cortex_image_summary.png
+    
