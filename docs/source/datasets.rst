@@ -70,13 +70,13 @@ Other Technologies
 .. card-carousel:: 3
 
     .. card:: 
-        :link: /subsections/datasets/seqFISH_cortex
-        :link-type: doc 
+        :link: /subsections/datasets/other_technologies_coming_soon
+        :link-type: doc
         
         .. image:: images/dataset_page/coming_soon_summary.png
 
     .. card:: 
-        :link: /subsections/datasets/mouse_visium_brain
+        :link: /subsections/datasets/other_technologies_coming_soon
         :link-type: doc 
         
         .. image:: images/dataset_page/coming_soon_summary.png
@@ -86,7 +86,7 @@ Single-Cell
 **************
 
 2D Datasets
-----------------
+==============
 
 .. .. grid:: 3
 
@@ -126,7 +126,7 @@ Single-Cell
         .. image:: images/dataset_page/osmFISH_SS_cortex_image_summary.png
 
 3D Datasets
-----------------
+================
 .. .. grid:: 3
 
     .. grid-item-card::
@@ -140,7 +140,7 @@ Single-Cell
         .. image:: images/dataset_page/starmap_cortex_image_summary.png
             :target: ../../build/html/subsections/datasets/osmFISH_mouse_SS_cortex.html
 
-.. card-carousel:: 2
+.. card-carousel:: 3
 
     .. card:: 
         :link: /subsections/datasets/seqFISH_cortex
@@ -182,10 +182,10 @@ Subcellular
 Protein Multiplexing
 **********************
 
-.. card-carousel:: 2
+.. card-carousel:: 3
 
     .. card:: 
-        :link: subsections/datasets/seqFISH_cortex
+        :link: subsections/datasets/mouse_CODEX_spleen
         :link-type: doc 
         
         .. image:: images/dataset_page/CODEX_spleen_image_summary.png
@@ -200,16 +200,16 @@ Protein Multiplexing
 Single Cell RNA Sequencing
 *****************************
 
-.. card-carousel:: 2
+.. card-carousel:: 3
 
     .. card:: 
-        :link: subsections/datasets/seqFISH_cortex
+        :link: subsections/datasets/singlecell_prostate_standard
         :link-type: doc 
         
         .. image:: images/dataset_page/SC_RNAseq_standard.png
 
     .. card:: 
-        :link: subsections/datasets/seqFISH_cortex
+        :link: subsections/datasets/singlecell_prostate_integration
         :link-type: doc 
         
         .. image:: images/dataset_page/SC_RNAseq_integration.png
