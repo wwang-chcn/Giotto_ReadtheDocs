@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resolve Bioscience Breast Cancer Subcellular &mdash; Giotto 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-toolbox-code.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx-toolbox.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_edits.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx_toolbox_installation.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_edits.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/sphinx_toolbox_installation.js"></script>
+        <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/GiottoLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trygiotto.html">Try Giotto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Issues</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Common Errors and Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../github_issues.html">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faqs.html">FAQs</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Giotto</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Resolve Bioscience Breast Cancer Subcellular</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/subsections/datasets/resolve_bc_210928.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="resolve-bioscience-breast-cancer-subcellular">
+<h1>Resolve Bioscience Breast Cancer Subcellular<a class="headerlink" href="#resolve-bioscience-breast-cancer-subcellular" title="Permalink to this headline"></a></h1>
+<section id="start-giotto">
+<h2>Start Giotto<a class="headerlink" href="#start-giotto" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. set working directory</span>
+<span class="n">my_working_dir</span> <span class="o">=</span> <span class="s1">&#39;/path/to/directory&#39;</span>
+
+<span class="c1"># 2. set giotto python path</span>
+<span class="c1"># set python path to your preferred python version path</span>
+<span class="c1"># set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment</span>
+<span class="n">python_path</span> <span class="o">=</span> <span class="n">NULL</span>
+<span class="k">if</span><span class="p">(</span><span class="ow">is</span><span class="o">.</span><span class="n">null</span><span class="p">(</span><span class="n">python_path</span><span class="p">))</span> <span class="p">{</span>
+<span class="n">installGiottoEnvironment</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="input-files">
+<h2>Input Files<a class="headerlink" href="#input-files" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## provide path to resolve bioscience folder</span>
+<span class="n">data_path</span> <span class="o">=</span> <span class="s1">&#39;/path/to/Resolve_bioscience_cancer&#39;</span>
+
+
+<span class="c1"># 1. original image as png</span>
+<span class="n">original_DAPI_image</span> <span class="o">=</span> <span class="n">paste0</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="s1">&#39;sample2_DAPI.jpg&#39;</span><span class="p">)</span>
+
+<span class="c1"># 2. input cell segmentation as mask file</span>
+<span class="c1"># can also be provided as a 3-column polygon file</span>
+<span class="c1"># to be used as image background AND to store segmentations as polygons</span>
+<span class="c1"># can be obtained through Fiji / QuPath / Ilastik / Cellpose / ...</span>
+<span class="n">segmentation_mask</span> <span class="o">=</span> <span class="n">paste0</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="s1">&#39;Mask3.png&#39;</span><span class="p">)</span>
+
+<span class="c1"># 3. input features coordinates</span>
+<span class="n">tx_coord</span> <span class="o">=</span> <span class="n">fread</span><span class="p">(</span><span class="n">paste0</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="s1">&#39;data_sample2.txt&#39;</span><span class="p">))</span>
+<span class="n">colnames</span><span class="p">(</span><span class="n">tx_coord</span><span class="p">)</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="s1">&#39;gene_id&#39;</span><span class="p">)</span>
+<span class="n">tx_coord</span> <span class="o">=</span> <span class="n">tx_coord</span><span class="p">[,</span><span class="o">.</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">gene_id</span><span class="p">)]</span>
+</pre></div>
+</div>
+</section>
+<section id="part-1-create-subcellular-giotto-object">
+<h2>Part 1: Create Subcellular Giotto Object<a class="headerlink" href="#part-1-create-subcellular-giotto-object" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">testobj</span> <span class="o">=</span> <span class="n">createGiottoObjectSubcellular</span><span class="p">(</span><span class="n">gpoints</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;rna&#39;</span> <span class="o">=</span> <span class="n">tx_coord</span><span class="p">),</span>
+                    <span class="n">gpolygons</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;cell&#39;</span> <span class="o">=</span> <span class="n">segmentation_mask</span><span class="p">),</span>
+                    <span class="n">instructions</span> <span class="o">=</span> <span class="n">instrs</span><span class="p">,</span>
+                    <span class="n">verbose</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span>
+                    <span class="n">cores</span> <span class="o">=</span> <span class="mi">32</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="part-2-create-spatial-locations">
+<h2>Part 2: Create Spatial Locations<a class="headerlink" href="#part-2-create-spatial-locations" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># centroids are now used to provide the spatial locations (centroid of each cell)</span>
+<span class="c1"># needed for certain downstream spatial analyses</span>
+<span class="n">testobj</span> <span class="o">=</span> <span class="n">addSpatialCentroidLocations</span><span class="p">(</span><span class="n">testobj</span><span class="p">,</span>
+                    <span class="n">poly_info</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="part-3-add-image-information">
+<h2>Part 3: Add Image Information<a class="headerlink" href="#part-3-add-image-information" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># create Giotto images</span>
+<span class="n">DAPI_image</span> <span class="o">=</span> <span class="n">createGiottoImage</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testobj</span><span class="p">,</span>
+                <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;DAPI&#39;</span><span class="p">,</span>
+                <span class="n">do_manual_adj</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span>
+                <span class="n">xmax_adj</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="n">ymax_adj</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="n">xmin_adj</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="n">ymin_adj</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="n">image_transformations</span> <span class="o">=</span> <span class="s1">&#39;flip_x_axis&#39;</span><span class="p">,</span>
+                <span class="n">mg_object</span> <span class="o">=</span> <span class="n">original_DAPI_image</span><span class="p">)</span>
+
+<span class="n">segm_image</span> <span class="o">=</span> <span class="n">createGiottoImage</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testobj</span><span class="p">,</span>
+                <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;segmentation&#39;</span><span class="p">,</span>
+                <span class="n">do_manual_adj</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span>
+                <span class="n">xmax_adj</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="n">ymax_adj</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="n">xmin_adj</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="n">ymin_adj</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="n">image_transformations</span> <span class="o">=</span> <span class="s1">&#39;flip_x_axis&#39;</span><span class="p">,</span>
+                <span class="n">mg_object</span> <span class="o">=</span> <span class="n">segmentation_mask</span><span class="p">)</span>
+
+<span class="c1"># add images to Giotto object</span>
+<span class="n">testobj</span> <span class="o">=</span> <span class="n">addGiottoImage</span><span class="p">(</span><span class="n">testobj</span><span class="p">,</span>
+            <span class="n">images</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">DAPI_image</span><span class="p">,</span> <span class="n">segm_image</span><span class="p">))</span>
+
+<span class="c1"># provides an overview of available images</span>
+<span class="n">showGiottoImageNames</span><span class="p">(</span><span class="n">testobj</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="part-4-visualize-original-images">
+<h2>Part 4: Visualize Original Images<a class="headerlink" href="#part-4-visualize-original-images" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># visualize overlay of calculated cell centroid with original image and segmentation mask file</span>
+ <span class="c1"># by setting show_plot to FALSE and save_plot to TRUE you can save quite some time when creating plots</span>
+ <span class="c1"># with big images it sometimes takes quite long for R/Rstudio to render them</span>
+ <span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testobj</span><span class="p">,</span> <span class="n">image_name</span> <span class="o">=</span> <span class="s1">&#39;DAPI&#39;</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/0-spatPlot2D1.png" src="../../_images/0-spatPlot2D1.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testobj</span><span class="p">,</span> <span class="n">image_name</span> <span class="o">=</span> <span class="s1">&#39;segmentation&#39;</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/1-spatPlot2D1.png" src="../../_images/1-spatPlot2D1.png" />
+</section>
+<section id="part-5-calculate-cell-shape-overlap">
+<h2>Part 5: Calculate Cell Shape Overlap<a class="headerlink" href="#part-5-calculate-cell-shape-overlap" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tictoc</span><span class="p">::</span><span class="n">tic</span><span class="p">()</span>
+<span class="n">testobj</span> <span class="o">=</span> <span class="n">calculateOverlap</span><span class="p">(</span><span class="n">testobj</span><span class="p">,</span>
+            <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;parallel&#39;</span><span class="p">,</span>
+            <span class="n">x_step</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span>
+            <span class="n">y_step</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span>
+            <span class="n">poly_info</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">feat_info</span> <span class="o">=</span> <span class="s1">&#39;rna&#39;</span><span class="p">)</span>
+<span class="n">tictoc</span><span class="p">::</span><span class="n">toc</span><span class="p">()</span>
+<span class="c1">#convert overlap to matrix</span>
+<span class="n">testobj</span> <span class="o">=</span> <span class="n">overlapToMatrix</span><span class="p">(</span><span class="n">testobj</span><span class="p">,</span>
+            <span class="n">poly_info</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">feat_info</span> <span class="o">=</span> <span class="s1">&#39;rna&#39;</span><span class="p">,</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;raw&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="part-6-filter-data">
+<h2>Part 6: Filter Data<a class="headerlink" href="#part-6-filter-data" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># features can be filtered individually</span>
+<span class="c1"># cells will be filtered across features</span>
+
+<span class="c1"># first filter on rna</span>
+<span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">filterGiotto</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testobj</span><span class="p">,</span>
+            <span class="n">expression_threshold</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">feat_det_in_min_cells</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span>
+            <span class="n">min_det_feats_per_cell</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span>
+    <span class="n">image_name</span> <span class="o">=</span> <span class="s1">&#39;segmentation&#39;</span><span class="p">,</span> <span class="n">show_image</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+    <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/69-spatPlot2D.png" src="../../_images/69-spatPlot2D.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># rna data, default.</span>
+ <span class="c1"># other feature modalities can be processed and filtered in an anologous manner</span>
+ <span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">normalizeGiotto</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span> <span class="n">scalefactor</span> <span class="o">=</span> <span class="mi">6000</span><span class="p">,</span> <span class="n">verbose</span> <span class="o">=</span> <span class="n">T</span><span class="p">)</span>
+ <span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">addStatistics</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">)</span>
+ <span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">adjustGiottoMatrix</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span>
+                 <span class="n">expression_values</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s1">&#39;normalized&#39;</span><span class="p">),</span>
+                 <span class="n">covariate_columns</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s1">&#39;nr_feats&#39;</span><span class="p">,</span> <span class="s1">&#39;total_expr&#39;</span><span class="p">))</span>
+
+ <span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">normalizeGiotto</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span> <span class="n">norm_methods</span> <span class="o">=</span> <span class="s1">&#39;pearson_resid&#39;</span><span class="p">,</span> <span class="n">update_slot</span> <span class="o">=</span> <span class="s1">&#39;pearson&#39;</span><span class="p">)</span>
+ <span class="n">showGiottoExpression</span><span class="p">(</span><span class="n">subc_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="part-8-dimension-reduction">
+<h2>Part 8: Dimension Reduction<a class="headerlink" href="#part-8-dimension-reduction" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Find highly valuable Features</span>
+
+<span class="c1"># typical way of calculating HVF</span>
+<span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">calculateHVF</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span> <span class="n">HVFname</span><span class="o">=</span> <span class="s1">&#39;hvg_orig&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/4-HVFplot.png" src="../../_images/4-HVFplot.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># new method based on variance of pearson residuals for each gene</span>
+<span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">calculateHVF</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span>
+            <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;var_p_resid&#39;</span><span class="p">,</span> <span class="n">expression_values</span> <span class="o">=</span> <span class="s1">&#39;pearson&#39;</span><span class="p">,</span>
+            <span class="n">show_plot</span> <span class="o">=</span> <span class="n">T</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/5-HVFplot.png" src="../../_images/5-HVFplot.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#run PCA</span>
+<span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">runPCA</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span>
+            <span class="n">expression_values</span> <span class="o">=</span> <span class="s1">&#39;pearson&#39;</span><span class="p">,</span>
+            <span class="n">scale_unit</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span> <span class="n">center</span> <span class="o">=</span> <span class="n">F</span><span class="p">)</span>
+
+<span class="n">screePlot</span><span class="p">(</span><span class="n">subc_test</span><span class="p">,</span> <span class="n">ncp</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/6-screePlot.png" src="../../_images/6-screePlot.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plotPCA</span><span class="p">(</span><span class="n">subc_test</span><span class="p">,</span>
+    <span class="n">dim1_to_use</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="n">dim2_to_use</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/7-PCA.png" src="../../_images/7-PCA.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># run UMAP</span>
+<span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">runUMAP</span><span class="p">(</span><span class="n">subc_test</span><span class="p">,</span> <span class="n">dimensions_to_use</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_threads</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plotUMAP</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/8-UMAP.png" src="../../_images/8-UMAP.png" />
+</section>
+<section id="part-9-cluster">
+<h2>Part 9: Cluster<a class="headerlink" href="#part-9-cluster" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">createNearestNetwork</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span> <span class="n">dimensions_to_use</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">subc_test</span> <span class="o">&lt;-</span> <span class="n">doLeidenCluster</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span> <span class="n">resolution</span> <span class="o">=</span> <span class="mf">0.05</span><span class="p">,</span> <span class="n">n_iterations</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;leiden_0.05&#39;</span><span class="p">)</span>
+
+<span class="c1"># Create color palettes, or proceed with Giotto defaults</span>
+<span class="n">devtools</span><span class="p">::</span><span class="n">install_github</span><span class="p">(</span><span class="s2">&quot;alyssafrazee/RSkittleBrewer&quot;</span><span class="p">)</span>
+<span class="n">colorcode</span> <span class="o">=</span> <span class="n">lacroix_palette</span><span class="p">(</span><span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;paired&quot;</span><span class="p">)</span>
+<span class="n">featcolor</span> <span class="o">=</span> <span class="n">lacroix_palette</span><span class="p">(</span><span class="s2">&quot;KeyLime&quot;</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;discrete&quot;</span><span class="p">)</span>
+
+<span class="c1"># visualize UMAP cluster results</span>
+<span class="n">plotUMAP</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span>
+    <span class="n">show_NN_network</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">2.5</span><span class="p">,</span> <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">colorcode</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/39-UMAP.png" src="../../_images/39-UMAP.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># visualize UMAP and spatial results</span>
+<span class="n">spatDimPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span>
+        <span class="n">show_image</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">image_name</span> <span class="o">=</span> <span class="s1">&#39;segmentation&#39;</span><span class="p">,</span>
+        <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span>
+        <span class="n">spat_point_size</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">colorcode</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/51-spatDimPlot2D.png" src="../../_images/51-spatDimPlot2D.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot a cluster heatmap</span>
+<span class="n">showClusterHeatmap</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span> <span class="n">cluster_column</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span>
+        <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_format</span> <span class="o">=</span> <span class="s1">&#39;pdf&#39;</span><span class="p">,</span><span class="n">base_height</span> <span class="o">=</span> <span class="mi">6</span><span class="p">,</span> <span class="n">base_width</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span> <span class="n">units</span> <span class="o">=</span> <span class="s1">&#39;cm&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/72-Heatmap.png" src="../../_images/72-Heatmap.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># See cluster relationships in a dendogram</span>
+<span class="n">showClusterDendrogram</span><span class="p">(</span><span class="n">subc_test</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">rotate</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">cluster_column</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/12-showClusterDendrogram.png" src="../../_images/12-showClusterDendrogram.png" />
+</section>
+<section id="part-10-create-a-spatial-network">
+<h2>Part 10: Create a Spatial Network<a class="headerlink" href="#part-10-create-a-spatial-network" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">subc_test</span> <span class="o">=</span> <span class="n">createSpatialNetwork</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span>
+                 <span class="n">spat_loc_name</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+                 <span class="n">minimum_k</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+                 <span class="n">maximum_distance_delaunay</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">subc_test</span><span class="p">,</span>
+    <span class="n">image_name</span> <span class="o">=</span> <span class="s1">&#39;segmentation&#39;</span><span class="p">,</span> <span class="n">show_image</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+    <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> <span class="n">show_network</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/13-spatPlot2D.png" src="../../_images/13-spatPlot2D.png" />
+</section>
+<section id="part-11-visualize-subcellular-data">
+<h2>Part 11: Visualize SubCellular Data<a class="headerlink" href="#part-11-visualize-subcellular-data" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Visualize clustered cells</span>
+<span class="n">spatInSituPlotPoints</span><span class="p">(</span><span class="n">subc_test</span><span class="p">,</span>
+            <span class="n">show_polygon</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+            <span class="n">polygon_feat_type</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">polygon_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+            <span class="n">polygon_line_size</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
+            <span class="n">polygon_fill</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span>
+            <span class="n">polygon_fill_as_factor</span> <span class="o">=</span> <span class="n">T</span> <span class="p">,</span>
+            <span class="n">polygon_fill_code</span> <span class="o">=</span> <span class="n">colorcode</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/54-spatInSituPlotPoints.png" src="../../_images/54-spatInSituPlotPoints.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># individual plotting of transcripts and polygon information</span>
+
+<span class="c1"># all cells</span>
+<span class="n">spatInSituPlotPoints</span><span class="p">(</span><span class="n">testobj</span><span class="p">,</span>
+            <span class="n">feats</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;rna&#39;</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;MMP2&quot;</span><span class="p">,</span> <span class="s2">&quot;VEGFA&quot;</span><span class="p">,</span> <span class="s2">&quot;IGF1R&quot;</span><span class="p">,</span> <span class="s1">&#39;CDH2&#39;</span><span class="p">,</span> <span class="s1">&#39;MKI67&#39;</span><span class="p">)),</span>
+            <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
+            <span class="n">show_polygon</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+            <span class="n">polygon_feat_type</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">polygon_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+            <span class="n">polygon_line_size</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/16-spatInSituPlotPoints.png" src="../../_images/16-spatInSituPlotPoints.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># filtered cells</span>
+<span class="n">spatInSituPlotPoints</span><span class="p">(</span><span class="n">subc_test</span><span class="p">,</span>
+            <span class="n">feats</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;rna&#39;</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;MMP2&quot;</span><span class="p">,</span> <span class="s2">&quot;VEGFA&quot;</span><span class="p">,</span> <span class="s2">&quot;IGF1R&quot;</span><span class="p">,</span> <span class="s1">&#39;CDH2&#39;</span><span class="p">,</span> <span class="s1">&#39;MKI67&#39;</span><span class="p">)),</span>
+            <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
+            <span class="n">show_polygon</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+            <span class="n">polygon_feat_type</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">polygon_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+            <span class="n">polygon_line_size</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/17-spatInSituPlotPoints.png" src="../../_images/17-spatInSituPlotPoints.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># faster plotting method if you have many points</span>
+<span class="n">spatInSituPlotPoints</span><span class="p">(</span><span class="n">subc_test</span><span class="p">,</span>
+            <span class="n">plot_method</span> <span class="o">=</span> <span class="s1">&#39;scattermore&#39;</span><span class="p">,</span>
+            <span class="n">feats</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;rna&#39;</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;MMP2&quot;</span><span class="p">,</span> <span class="s2">&quot;VEGFA&quot;</span><span class="p">,</span> <span class="s2">&quot;IGF1R&quot;</span><span class="p">,</span> <span class="s1">&#39;CDH2&#39;</span><span class="p">,</span> <span class="s1">&#39;MKI67&#39;</span><span class="p">)),</span>
+            <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
+            <span class="n">show_polygon</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+            <span class="n">polygon_feat_type</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">polygon_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+            <span class="n">polygon_line_size</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/18-spatInSituPlotPoints.png" src="../../_images/18-spatInSituPlotPoints.png" />
+<section id="subset-by-location">
+<h3>11.1 Subset by Location<a class="headerlink" href="#subset-by-location" title="Permalink to this headline"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># can be used to focus on specific spatial structures</span>
+<span class="c1"># to zoom in on niche environments</span>
+
+<span class="n">subloc</span> <span class="o">=</span> <span class="n">subsetGiottoLocs</span><span class="p">(</span><span class="n">subc_test</span><span class="p">,</span>
+            <span class="n">x_min</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">x_max</span> <span class="o">=</span> <span class="mi">2000</span><span class="p">,</span>
+            <span class="n">y_min</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">y_max</span> <span class="o">=</span> <span class="mi">2000</span><span class="p">,</span>
+            <span class="n">poly_info</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">)</span>
+
+<span class="c1"># show subset of genes</span>
+<span class="n">spatInSituPlotPoints</span><span class="p">(</span><span class="n">subloc</span><span class="p">,</span>
+            <span class="n">feats</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;rna&#39;</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;MMP2&quot;</span><span class="p">,</span> <span class="s2">&quot;VEGFA&quot;</span><span class="p">,</span> <span class="s2">&quot;IGF1R&quot;</span><span class="p">,</span> <span class="s1">&#39;CDH2&#39;</span><span class="p">,</span> <span class="s1">&#39;MKI67&#39;</span><span class="p">)),</span>
+            <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.6</span><span class="p">,</span>
+            <span class="n">show_polygon</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+            <span class="n">polygon_feat_type</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">polygon_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+            <span class="n">polygon_line_size</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/19-spatInSituPlotPoints.png" src="../../_images/19-spatInSituPlotPoints.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># show subset of genes and color cells according to clusters</span>
+<span class="n">spatInSituPlotPoints</span><span class="p">(</span><span class="n">subloc</span><span class="p">,</span>
+            <span class="n">feats</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;rna&#39;</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;MMP2&quot;</span><span class="p">,</span> <span class="s2">&quot;VEGFA&quot;</span><span class="p">,</span> <span class="s2">&quot;IGF1R&quot;</span><span class="p">,</span> <span class="s1">&#39;CDH2&#39;</span><span class="p">,</span> <span class="s1">&#39;MKI67&#39;</span><span class="p">)),</span>
+            <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.6</span><span class="p">,</span>
+            <span class="n">show_polygon</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+            <span class="n">polygon_feat_type</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">polygon_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+            <span class="n">polygon_line_size</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
+            <span class="n">polygon_fill</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span>
+            <span class="n">polygon_fill_as_factor</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span>
+            <span class="n">polygon_fill_code</span> <span class="o">=</span> <span class="n">colorcode</span><span class="p">,</span>
+            <span class="n">feats_color_code</span> <span class="o">=</span> <span class="n">featcolor</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/21-spatInSituPlotPoints.png" src="../../_images/21-spatInSituPlotPoints.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># show subset of genes and color cells according to total expression</span>
+<span class="c1"># use a faster and more efficient point plotting method = scattermore</span>
+<span class="n">spatInSituPlotPoints</span><span class="p">(</span><span class="n">subloc</span><span class="p">,</span>
+            <span class="n">plot_method</span> <span class="o">=</span> <span class="s1">&#39;scattermore&#39;</span><span class="p">,</span>
+            <span class="n">feats</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;rna&#39;</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;MMP2&quot;</span><span class="p">,</span> <span class="s2">&quot;VEGFA&quot;</span><span class="p">,</span> <span class="s2">&quot;IGF1R&quot;</span><span class="p">,</span> <span class="s1">&#39;CDH2&#39;</span><span class="p">,</span> <span class="s1">&#39;MKI67&#39;</span><span class="p">)),</span>
+            <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.6</span><span class="p">,</span>
+            <span class="n">show_polygon</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+            <span class="n">polygon_feat_type</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">polygon_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+            <span class="n">polygon_line_size</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
+            <span class="n">polygon_fill</span> <span class="o">=</span> <span class="s1">&#39;total_expr&#39;</span><span class="p">,</span>
+            <span class="n">polygon_fill_as_factor</span> <span class="o">=</span> <span class="n">F</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/61-spatInSituPlotPoints.png" src="../../_images/61-spatInSituPlotPoints.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># show cells and color them according to total expression</span>
+<span class="n">spatInSituPlotPoints</span><span class="p">(</span><span class="n">subloc</span><span class="p">,</span>
+            <span class="n">show_polygon</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+            <span class="n">polygon_feat_type</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">polygon_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+            <span class="n">polygon_line_size</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
+            <span class="n">polygon_fill</span> <span class="o">=</span> <span class="s1">&#39;total_expr&#39;</span><span class="p">,</span>
+            <span class="n">polygon_fill_as_factor</span> <span class="o">=</span> <span class="n">F</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/22-spatInSituPlotPoints.png" src="../../_images/22-spatInSituPlotPoints.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># show cells and color them according to total cluster information</span>
+<span class="n">spatInSituPlotPoints</span><span class="p">(</span><span class="n">subloc</span><span class="p">,</span>
+            <span class="n">show_polygon</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span>
+            <span class="n">polygon_feat_type</span> <span class="o">=</span> <span class="s1">&#39;cell&#39;</span><span class="p">,</span>
+            <span class="n">polygon_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span>
+            <span class="n">polygon_line_size</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
+            <span class="n">polygon_fill</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span>
+            <span class="n">polygon_fill_as_factor</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span>
+            <span class="n">polygon_fill_code</span> <span class="o">=</span> <span class="n">colorcode</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../../_images/66-spatInSituPlotPoints.png" src="../../_images/66-spatInSituPlotPoints.png" />
+</section>
+</section>
+</section>
+<section id="part-12-find-interaction-changed-genes">
+<h1>Part 12: Find Interaction Changed Genes<a class="headerlink" href="#part-12-find-interaction-changed-genes" title="Permalink to this headline"></a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># find interaction changed genes
+# genes whose expression difference is associated with a neighboring cell type
+future::plan(&#39;multisession&#39;, workers = 4) # sometimes unstable, restart R session
+
+test = findInteractionChangedFeats(gobject = subc_test,
+                cluster_column = &#39;leiden_clus&#39;)
+
+test$CPGscores[type_int == &#39;hetero&#39;]
+
+spatInSituPlotPoints(subc_test,
+            feats = list(&#39;rna&#39; = c(&quot;CTSD&quot;, &quot;BMP1&quot;)),
+            point_size = 0.6,
+            show_polygon = TRUE,
+            polygon_feat_type = &#39;cell&#39;,
+            polygon_color = &#39;black&#39;,
+            polygon_line_size = 0.1,
+            polygon_fill = &#39;leiden_clus&#39;,
+            polygon_fill_as_factor = T,
+            polygon_fill_code = colorcode,
+            feats_color_code = featcolor)
+</pre></div>
+</div>
+<img alt="../../_images/43-spatInSituPlotPoints.png" src="../../_images/43-spatInSituPlotPoints.png" />
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

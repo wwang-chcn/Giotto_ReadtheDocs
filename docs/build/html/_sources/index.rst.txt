@@ -29,7 +29,7 @@ GIOTTO SUITE
    Installation <gettingstarted.rst> 
    Documentation <documentation.rst>
    Contribute <contribute.rst> 
-   Giotto Viewer <http://spatial.rc.fas.harvard.edu/giotto-viewer/>
+   Giotto Viewer [work-in-progress] <http://spatial.rc.fas.harvard.edu/giotto-viewer/>
 
 .. toctree::
    :maxdepth: 2
@@ -47,7 +47,6 @@ GIOTTO SUITE
    
    Common Errors and Solutions <errorsfaqsandtips.rst>
    Report a Bug <github_issues.rst>
-   FAQs <faqs>
 
 
 

@@ -81,9 +81,9 @@ Other Technologies
         
         .. image:: images/dataset_page/coming_soon_summary.png
     
-
+**************
 Single-Cell 
-==============
+**************
 
 2D Datasets
 ----------------
@@ -140,7 +140,7 @@ Single-Cell
         .. image:: images/dataset_page/starmap_cortex_image_summary.png
             :target: ../../build/html/subsections/datasets/osmFISH_mouse_SS_cortex.html
 
-.. card-carousel:: 3
+.. card-carousel:: 2
 
     .. card:: 
         :link: /subsections/datasets/seqFISH_cortex
@@ -154,3 +154,62 @@ Single-Cell
         
         .. image:: images/dataset_page/starmap_cortex_image_summary.png
     
+**********************
+Subcellular
+**********************
+
+.. card-carousel:: 3
+
+    .. card:: 
+        :link: subsections/datasets/vizgen_mouse_brain
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/vizgen_brain_summary.png
+
+    .. card:: 
+        :link: subsections/datasets/resolve_bc_210928
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/resolve_bioscience_cancer_summary.png
+    
+    .. card:: 
+        :link: subsections/datasets/nanostring_overview
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/nanostring_overview_icon.png
+
+**********************
+Protein Multiplexing
+**********************
+
+.. card-carousel:: 2
+
+    .. card:: 
+        :link: subsections/datasets/seqFISH_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/CODEX_spleen_image_summary.png
+
+    .. card:: 
+        :link: subsections/datasets/seqFISH_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/cyCIF_PDAC_image_summary.png
+
+*****************************
+Single Cell RNA Sequencing
+*****************************
+
+.. card-carousel:: 2
+
+    .. card:: 
+        :link: subsections/datasets/seqFISH_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/SC_RNAseq_standard.png
+
+    .. card:: 
+        :link: subsections/datasets/seqFISH_cortex
+        :link-type: doc 
+        
+        .. image:: images/dataset_page/SC_RNAseq_integration.png
