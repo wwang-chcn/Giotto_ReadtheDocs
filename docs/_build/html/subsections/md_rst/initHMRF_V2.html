@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>initHMRF_V2 &mdash; Giotto 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-toolbox-code.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/sphinx-toolbox.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_edits.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx_toolbox_installation.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_edits.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/sphinx_toolbox_installation.js"></script>
+        <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/GiottoLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tipsandtricks.html">HowTos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trygiotto.html">Try Giotto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Issues</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Common Errors and Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../github_issues.html">Report a Bug</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Giotto</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><code class="docutils literal notranslate"><span class="pre">initHMRF_V2</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/subsections/md_rst/initHMRF_V2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="inithmrf-v2">
+<h1><code class="docutils literal notranslate"><span class="pre">initHMRF_V2</span></code><a class="headerlink" href="#inithmrf-v2" title="Permalink to this headline"></a></h1>
+<p>initHMRF_V2</p>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
+<p>Run initialzation for HMRF model</p>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">initHMRF_V2</span><span class="p">(</span>
+  <span class="n">gobject</span><span class="p">,</span>
+  <span class="n">expression_values</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;scaled&quot;</span><span class="p">,</span> <span class="s">&quot;normalized&quot;</span><span class="p">,</span> <span class="s">&quot;custom&quot;</span><span class="p">),</span>
+  <span class="n">spatial_network_name</span> <span class="o">=</span> <span class="s">&quot;Delaunay_network&quot;</span><span class="p">,</span>
+  <span class="n">use_spatial_genes</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;binSpect&quot;</span><span class="p">,</span> <span class="s">&quot;silhouetteRank&quot;</span><span class="p">),</span>
+  <span class="n">gene_samples</span> <span class="o">=</span> <span class="m">500</span><span class="p">,</span>
+  <span class="n">gene_sampling_rate</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span>
+  <span class="n">gene_sampling_seed</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span>
+  <span class="n">gene_sampling_from_top</span> <span class="o">=</span> <span class="m">2500</span><span class="p">,</span>
+  <span class="n">filter_method</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;none&quot;</span><span class="p">,</span> <span class="s">&quot;elbow&quot;</span><span class="p">),</span>
+  <span class="n">user_gene_list</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+  <span class="n">use_score</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span>
+  <span class="n">hmrf_seed</span> <span class="o">=</span> <span class="m">100</span><span class="p">,</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span>
+  <span class="n">tolerance</span> <span class="o">=</span> <span class="m">1e-05</span><span class="p">,</span>
+  <span class="n">zscore</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;none&quot;</span><span class="p">,</span> <span class="s">&quot;rowcol&quot;</span><span class="p">,</span> <span class="s">&quot;colrow&quot;</span><span class="p">),</span>
+  <span class="n">nstart</span> <span class="o">=</span> <span class="m">1000</span><span class="p">,</span>
+  <span class="n">factor_step</span> <span class="o">=</span> <span class="m">1.05</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="arguments">
+<h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Argument</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">gobject</span></code></p></td>
+<td><p>giotto object</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">expression_values</span></code></p></td>
+<td><p>expression values to use</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">spatial_network_name</span></code></p></td>
+<td><p>name of spatial network to use for HMRF</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">use_spatial_genes</span></code></p></td>
+<td><p>which of Giotto’s spatial genes to use</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">gene_samples</span></code></p></td>
+<td><p>number of spatial gene subset to use for HMRF</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">gene_sampling_rate</span></code></p></td>
+<td><p>parameter (1-50) controlling proportion of gene samples from different module when sampling, 1 corresponding to equal gene samples between different modules; 50 corresponding to gene samples proportional to module size.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">gene_sampling_seed</span></code></p></td>
+<td><p>random number seed to sample spatial genes</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">gene_sampling_from_top</span></code></p></td>
+<td><p>total spatial genes before sampling</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">filter_method</span></code></p></td>
+<td><p>filter genes by top or by elbow method, prior to sampling</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">user_gene_list</span></code></p></td>
+<td><p>user-specified genes (optional)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">use_score</span></code></p></td>
+<td><p>use score as gene selection criterion (applies when use_spatial_genes=silhouetteRank)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">hmrf_seed</span></code></p></td>
+<td><p>random number seed to generate initial mean vector of HMRF model</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">k</span></code></p></td>
+<td><p>number of HMRF domains</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tolerance</span></code></p></td>
+<td><p>error tolerance threshold</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">nstart</span></code></p></td>
+<td><p>number of Kmeans initializations from which to select the best initialization</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">factor_step</span></code></p></td>
+<td><p>dampened factor step</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline"></a></h2>
+<dl class="simple">
+<dt>There are two steps to running HMRF. This is the first step, the initialization.</dt><dd><p>First, user specify which of Giotto’s spatial genes to run, through use_spatial_genes.
+Spatial genes have been stored in the gene metadata table. A first pass of genes will filter genes
+that are not significantly spatial, as determined by filter_method. If filter_method is none,
+then top 2500 (gene_sampling_from_top) genes ranked by pvalue are considered spatial.
+If filter_method is elbow, then the exact cutoff is determined by the elbow in the
+-log10Pvalue vs. gene rank plot.
+Second, the filtered gene set is subject to sampling to select 500
+(controlled by gene_samples) genes for running HMRF.
+Third, once spatial genes are finalized, we are ready to initialize HMRF.
+This consists of running a K-means algorithm to determine initial centroids (nstart, hmrf_seed) of HMRF.
+The initialization is then finished.
+This function returns a list containing y (expression), nei (neighborhood structure), numnei (number of neighbors), blocks (graph colors), damp (dampened factor), mu (mean), sigma (covariance), k, genes, edgelist. This information is needed for the second step, doHMRF.</p>
+</dd>
+</dl>
+</section>
+<section id="value">
+<h2>Value<a class="headerlink" href="#value" title="Permalink to this headline"></a></h2>
+<p>A list (see details)</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
