@@ -17,3 +17,7 @@ formats:
 python:
    install:
    - requirements: requirements.txt
+
+#build instructions 
+build:
+  os: ubuntu-20.04
