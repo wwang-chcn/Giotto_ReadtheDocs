@@ -372,14 +372,118 @@ plotMetaDataHeatmap(testcombo, selected_feats = testfeats, metadata_cols = &#39;
 <li><p>PAGE</p></li>
 <li><p>hypergeometric test</p></li>
 <li><p>Rank</p></li>
-<li><p><cite>DWLS Deconvolution &lt;https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7&gt;`__</cite></p></li>
+<li><p><a class="reference external" href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7">DWLS Deconvolution</a></p></li>
 </ul>
 </dd>
 </dl>
 <p>This is also the easiest way to integrate Visium datasets with single cell data. Example shown here is from <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/33032611/">Ma et al.</a> from two prostate cancer patients. The raw dataset can be found <a class="reference external" href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157703">here</a> Giotto_SC is processed variable in the <a class="reference internal" href="singlecell_prostate_standard.html"><span class="doc">single cell RNAseq tutorial</span></a>. You can also get access to the processed files of this dataset using <a class="reference internal" href="../md_rst/getSpatialDataset.html"><span class="doc">getSpatialDataset</span></a></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># download data to results directory ####</span>
+<span class="c1"># if wget is installed, set method = &#39;wget&#39;</span>
+<span class="c1"># if you run into authentication issues with wget, then add &quot; extra = &#39;--no-check-certificate&#39; &quot;</span>
+<span class="n">getSpatialDataset</span><span class="p">(</span><span class="n">dataset</span> <span class="o">=</span> <span class="s1">&#39;Human_PCa_scRNAseq&#39;</span><span class="p">,</span> <span class="n">directory</span> <span class="o">=</span> <span class="n">results_folder</span><span class="p">)</span>
+
+<span class="n">sc_expression</span> <span class="o">=</span> <span class="n">paste0</span><span class="p">(</span><span class="n">results_folder</span><span class="p">,</span> <span class="s2">&quot;/prostate_sc_expression_matrix.csv.gz&quot;</span><span class="p">)</span>
+<span class="n">sc_metadata</span> <span class="o">=</span> <span class="n">paste</span><span class="p">(</span><span class="n">results_folder</span><span class="p">,</span><span class="s2">&quot;/prostate_sc_metadata.csv&quot;</span><span class="p">)</span>
+
+<span class="n">giotto_SC</span> <span class="o">&lt;-</span> <span class="n">createGiottoObject</span><span class="p">(</span>
+<span class="n">expression</span> <span class="o">=</span> <span class="n">sc_expression</span><span class="p">,</span>
+<span class="n">instructions</span> <span class="o">=</span> <span class="n">instrs</span>
+<span class="p">)</span>
+
+<span class="n">giotto_SC</span> <span class="o">&lt;-</span> <span class="n">addCellMetadata</span><span class="p">(</span><span class="n">giotto_SC</span><span class="p">,</span>
+                            <span class="n">new_metadata</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">table</span><span class="p">::</span><span class="n">fread</span><span class="p">(</span><span class="n">sc_metadata</span><span class="p">))</span>
+
+<span class="n">giotto_SC</span><span class="o">&lt;-</span> <span class="n">normalizeGiotto</span><span class="p">(</span><span class="n">giotto_SC</span><span class="p">)</span>
 </pre></div>
 </div>
+<section id="page-enrichment">
+<h3>5.1 PAGE Enrichment<a class="headerlink" href="#page-enrichment" title="Permalink to this headline"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Create PAGE matrix
+# PAGE matrix should be a binary matrix with each row represent a gene marker and each column represent a cell type
+# markers_scran is generated from single cell analysis ()
+markers_scran = findMarkers_one_vs_all(gobject=giotto_SC, method=&quot;scran&quot;,
+                                    expression_values=&quot;normalized&quot;, cluster_column=&#39;prostate_labels&#39;, min_feats=3)
+top_markers &lt;- markers_scran[, head(.SD, 10), by=&quot;cluster&quot;]
+celltypes&lt;-levels(factor(markers_scran$cluster))
+sign_list&lt;-list()
+for (i in 1:length(celltypes)){
+sign_list[[i]]&lt;-top_markers[which(top_markers$cluster == celltypes[i]),]$feats
+}
+
+PAGE_matrix = makeSignMatrixPAGE(sign_names = celltypes,
+                                sign_list = sign_list)
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">testcombo</span> <span class="o">=</span> <span class="n">runPAGEEnrich</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+          <span class="n">sign_matrix</span> <span class="o">=</span> <span class="n">PAGE_matrix</span><span class="p">,</span>
+          <span class="n">min_overlap_genes</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="n">cell_types_subset</span> <span class="o">=</span> <span class="n">colnames</span><span class="p">(</span><span class="n">PAGE_matrix</span><span class="p">)</span>
+
+<span class="c1"># Plot PAGE enrichment result</span>
+<span class="n">spatCellPlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+            <span class="n">spat_enr_names</span> <span class="o">=</span> <span class="s1">&#39;PAGE&#39;</span><span class="p">,</span>
+            <span class="n">cell_annotation_values</span> <span class="o">=</span> <span class="n">cell_types_subset</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span>
+            <span class="n">cow_n_col</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span><span class="n">coord_fix_ratio</span> <span class="o">=</span> <span class="n">NULL</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.25</span><span class="p">,</span>
+            <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;5a_PAGE_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/5a_PAGE_plot.png" src="../../_images/5a_PAGE_plot.png" />
+</section>
+<section id="hypergeometric-test">
+<h3>5.2 Hypergeometric test<a class="headerlink" href="#hypergeometric-test" title="Permalink to this headline"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">testcombo</span> <span class="o">=</span> <span class="n">runHyperGeometricEnrich</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+                <span class="n">expression_values</span> <span class="o">=</span> <span class="s2">&quot;normalized&quot;</span><span class="p">,</span>
+                <span class="n">sign_matrix</span> <span class="o">=</span> <span class="n">PAGE_matrix</span><span class="p">)</span>
+<span class="n">cell_types_subset</span> <span class="o">=</span> <span class="n">colnames</span><span class="p">(</span><span class="n">PAGE_matrix</span><span class="p">)</span>
+<span class="n">spatCellPlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">testcombo</span><span class="p">,</span>
+            <span class="n">spat_enr_names</span> <span class="o">=</span> <span class="s1">&#39;hypergeometric&#39;</span><span class="p">,</span>
+            <span class="n">cell_annotation_values</span> <span class="o">=</span> <span class="n">cell_types_subset</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span>
+            <span class="n">cow_n_col</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span><span class="n">coord_fix_ratio</span> <span class="o">=</span> <span class="n">NULL</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.75</span><span class="p">,</span>
+            <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s2">&quot;5b_HyperGeometric_plot&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<img alt="../../_images/5b_HyperGeometric_plot.png" src="../../_images/5b_HyperGeometric_plot.png" />
+</section>
+<section id="rank-enrichment">
+<h3>5.3 Rank Enrichment<a class="headerlink" href="#rank-enrichment" title="Permalink to this headline"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Create rank matrix, not that rank matrix is different from PAGE
+# A count matrix and a vector for all cell labels will be needed
+rank_matrix = makeSignMatrixRank(sc_matrix = get_expression_values(giotto_SC,values = &quot;normalized&quot;),
+                                sc_cluster_ids = pDataDT(giotto_SC)$prostate_label)
+colnames(rank_matrix)&lt;-levels(factor(pDataDT(giotto_SC)$prostate_label))
+testcombo = runRankEnrich(gobject = testcombo, sign_matrix = rank_matrix,expression_values = &quot;normalized&quot;)
+
+# Plot Rank enrichment result
+spatCellPlot2D(gobject = testcombo,
+            spat_enr_names = &#39;rank&#39;,
+            cell_annotation_values = cell_types_subset[1:4],
+            cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1,
+            save_param = list(save_name = &quot;5c_Rank_plot&quot;))
+</pre></div>
+</div>
+<img alt="../../_images/5c_Rank_plot.png" src="../../_images/5c_Rank_plot.png" />
+</section>
+<section id="dwls-deconvolution">
+<h3>5.4 DWLS Deconvolution<a class="headerlink" href="#dwls-deconvolution" title="Permalink to this headline"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Create DWLS matrix, not that DWLS matrix is different from PAGE and rank
+# A count matrix a vector for a list of gene signatures and a vector for all cell labels will be needed
+DWLS_matrix&lt;-makeSignMatrixDWLSfromMatrix(matrix = as.matrix(get_expression_values(giotto_SC,values = &quot;normalized&quot;)),
+                                        cell_type = pDataDT(giotto_SC)$prostate_label,
+                                        sign_gene = top_markers$feats)
+testcombo = runDWLSDeconv(gobject = testcombo, sign_matrix = DWLS_matrix)
+
+
+# Plot DWLS deconvolution result
+spatCellPlot2D(gobject = testcombo,
+            spat_enr_names = &#39;DWLS&#39;,
+            cell_annotation_values = levels(factor(pDataDT(giotto_SC)$prostate_label))[1:4],
+            cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1,
+            save_param = list(save_name = &quot;5d_DWLS_plot&quot;))
+</pre></div>
+</div>
+<img alt="../../_images/5d_DWLS_plot.png" src="../../_images/5d_DWLS_plot.png" />
+</section>
 </section>
 </section>
 

@@ -326,8 +326,125 @@ Visium spatial transcriptomics does not provide single-cell resolution, making c
    - PAGE
    - hypergeometric test
    - Rank
-   - `DWLS Deconvolution <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7>`__`
+   - `DWLS Deconvolution <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7>`__
 
 This is also the easiest way to integrate Visium datasets with single cell data. Example shown here is from `Ma et al. <https://pubmed.ncbi.nlm.nih.gov/33032611/>`__ from two prostate cancer patients. The raw dataset can be found `here <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157703>`__ Giotto_SC is processed variable in the :doc:`single cell RNAseq tutorial <singlecell_prostate_standard>`. You can also get access to the processed files of this dataset using :doc:`getSpatialDataset </subsections/md_rst/getSpatialDataset>`
 
 .. code-block:: 
+
+	# download data to results directory ####
+	# if wget is installed, set method = 'wget'
+	# if you run into authentication issues with wget, then add " extra = '--no-check-certificate' "
+	getSpatialDataset(dataset = 'Human_PCa_scRNAseq', directory = results_folder)
+
+	sc_expression = paste0(results_folder, "/prostate_sc_expression_matrix.csv.gz")
+	sc_metadata = paste(results_folder,"/prostate_sc_metadata.csv")
+
+	giotto_SC <- createGiottoObject(
+	expression = sc_expression,
+	instructions = instrs
+	)
+
+	giotto_SC <- addCellMetadata(giotto_SC, 
+								new_metadata = data.table::fread(sc_metadata))
+
+	giotto_SC<- normalizeGiotto(giotto_SC)
+
+5.1 PAGE Enrichment 
+=====================
+
+.. code-block:: 
+
+	# Create PAGE matrix
+	# PAGE matrix should be a binary matrix with each row represent a gene marker and each column represent a cell type
+	# markers_scran is generated from single cell analysis ()
+	markers_scran = findMarkers_one_vs_all(gobject=giotto_SC, method="scran",
+										expression_values="normalized", cluster_column='prostate_labels', min_feats=3)
+	top_markers <- markers_scran[, head(.SD, 10), by="cluster"]
+	celltypes<-levels(factor(markers_scran$cluster))
+	sign_list<-list()
+	for (i in 1:length(celltypes)){
+	sign_list[[i]]<-top_markers[which(top_markers$cluster == celltypes[i]),]$feats
+	}
+
+	PAGE_matrix = makeSignMatrixPAGE(sign_names = celltypes,
+									sign_list = sign_list)
+
+.. code-block:: 
+
+	testcombo = runPAGEEnrich(gobject = testcombo,
+                          sign_matrix = PAGE_matrix,
+                          min_overlap_genes = 2)
+
+	cell_types_subset = colnames(PAGE_matrix)
+
+	# Plot PAGE enrichment result
+	spatCellPlot(gobject = testcombo,
+				spat_enr_names = 'PAGE',
+				cell_annotation_values = cell_types_subset[1:4],
+				cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1.25,
+				save_param = list(save_name = "5a_PAGE_plot"))
+
+.. image:: /images/other/visium_prostate_integration/5a_PAGE_plot.png 
+
+5.2 Hypergeometric test
+============================
+
+.. code-block:: 
+
+	testcombo = runHyperGeometricEnrich(gobject = testcombo,
+                                    expression_values = "normalized",
+                                    sign_matrix = PAGE_matrix)
+	cell_types_subset = colnames(PAGE_matrix)
+	spatCellPlot(gobject = testcombo, 
+				spat_enr_names = 'hypergeometric',
+				cell_annotation_values = cell_types_subset[1:4],
+				cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1.75,
+				save_param = list(save_name = "5b_HyperGeometric_plot"))
+
+
+.. image:: /images/other/visium_prostate_integration/5b_HyperGeometric_plot.png 
+
+5.3 Rank Enrichment
+=======================
+
+.. code-block:: 
+
+	# Create rank matrix, not that rank matrix is different from PAGE
+	# A count matrix and a vector for all cell labels will be needed
+	rank_matrix = makeSignMatrixRank(sc_matrix = get_expression_values(giotto_SC,values = "normalized"),
+									sc_cluster_ids = pDataDT(giotto_SC)$prostate_label)
+	colnames(rank_matrix)<-levels(factor(pDataDT(giotto_SC)$prostate_label))
+	testcombo = runRankEnrich(gobject = testcombo, sign_matrix = rank_matrix,expression_values = "normalized")
+
+	# Plot Rank enrichment result
+	spatCellPlot2D(gobject = testcombo,
+				spat_enr_names = 'rank',
+				cell_annotation_values = cell_types_subset[1:4],
+				cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1,
+				save_param = list(save_name = "5c_Rank_plot"))
+
+.. image:: /images/other/visium_prostate_integration/5c_Rank_plot.png 
+
+
+5.4 DWLS Deconvolution
+============================
+
+.. code-block:: 
+	
+	# Create DWLS matrix, not that DWLS matrix is different from PAGE and rank
+	# A count matrix a vector for a list of gene signatures and a vector for all cell labels will be needed
+	DWLS_matrix<-makeSignMatrixDWLSfromMatrix(matrix = as.matrix(get_expression_values(giotto_SC,values = "normalized")),
+											cell_type = pDataDT(giotto_SC)$prostate_label,
+											sign_gene = top_markers$feats)
+	testcombo = runDWLSDeconv(gobject = testcombo, sign_matrix = DWLS_matrix)
+
+
+	# Plot DWLS deconvolution result
+	spatCellPlot2D(gobject = testcombo,
+				spat_enr_names = 'DWLS',
+				cell_annotation_values = levels(factor(pDataDT(giotto_SC)$prostate_label))[1:4],
+				cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1,
+				save_param = list(save_name = "5d_DWLS_plot"))
+
+.. image:: /images/other/visium_prostate_integration/5d_DWLS_plot.png 
