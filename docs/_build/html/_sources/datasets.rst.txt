@@ -62,7 +62,28 @@ Mini Datasets
     Mini Visium </subsections/datasets/mini_visium.rst>
     Mini 3D STARmap </subsections/datasets/mini_3D_STARmap.rst>
 
-.. grid:: 
+.. card-carousel:: 3
+
+    .. card:: 
+        :link: /subsections/datasets/mini_seqFISH
+        :link-type: doc
+
+        .. image:: images/dataset_page/mini_seqFISH.png
+
+    .. card:: 
+        :link: /subsections/datasets/mini_3D_STARmap
+        :link-type: doc
+
+        .. image:: images/dataset_page/mini_STARmap.png  
+
+    .. card:: 
+        :link: /subsections/datasets/mini_visium
+        :link-type: doc
+
+        .. image:: images/dataset_page/mini_visium.png  
+
+.. 
+    .. grid:: 
 
     .. grid-item-card::
 
@@ -126,7 +147,60 @@ Full Datasets
 	Mouse osmFISH SScortex </subsections/datasets/osmFISH_mouse_SS_cortex.rst>
 	Human CyCIF PDAC </subsections/datasets/human_CyCIF_PDAC.rst>
 
-.. grid::
+.. card-carousel:: 3
+
+    .. card:: 
+        :link: /subsections/datasets/seqFISH_cortex
+        :link-type: doc
+
+        .. image:: images/dataset_page/mouse_SS_cortex_and_subventricular.png 
+    
+    .. card:: 
+        :link: /subsections/datasets/merFISH_hypot_preopt_region
+        :link-type: doc
+
+        .. image:: images/dataset_page/merFISH_hypoth_image_summary.png 
+    
+    .. card:: 
+        :link: /subsections/datasets/STARmap_mouse_cortex
+        :link-type: doc
+
+        .. image:: images/dataset_page/starmap_cortex_image_summary.png 
+    
+    .. card:: 
+        :link: /subsections/datasets/mouse_visium_brain
+        :link-type: doc
+
+        .. image:: images/dataset_page/visium_brain_image_summary.png 
+
+    .. card:: 
+        :link: /subsections/datasets/mouse_visium_kidney
+        :link-type: doc
+
+        .. image:: images/dataset_page/visium_kidney_image_summary.png 
+    
+    .. card:: 
+        :link: /subsections/datasets/mouse_CODEX_spleen
+        :link-type: doc
+
+        .. image:: images/dataset_page/CODEX_spleen_image_summary.png
+
+    .. card:: 
+        :link: /subsections/datasets/osmFISH_mouse_SS_cortex
+        :link-type: doc
+
+        .. image:: images/dataset_page/osmFISH_SS_cortex_image_summary.png
+    
+    .. card:: 
+        :link: /subsections/datasets/human_CyCIF_PDAC
+        :link-type: doc
+
+        .. image:: images/dataset_page/human_cyCIF_PDAC_image_summary.png
+         
+.. ----------------------------------------------
+.. below -- grid method 
+.. 
+    .. grid::
 
     .. grid-item-card::
         
@@ -169,8 +243,8 @@ Full Datasets
             :expand:
         
             Mouse Codex Spleen
-
-.. grid:: 
+.. 
+    .. grid:: 
 
     .. grid-item-card::
         
@@ -216,21 +290,23 @@ Full Datasets
             :expand:
     
             Mouse osmFISH SS Cortex  
-    
-.. grid:: 
 
-    .. grid-item-card::
-        :columns: 4
-        
-        .. image:: images/dataset_page/mouse_SS_cortex_and_subventricular.png 
-            :width: 300
-            :target: ../../build/html/subsections/datasets/seqFISH_cortex.html
+..   
+    .. grid:: 
 
-        .. button-ref:: seqFISH_cortex
-            :ref-type: any
-            :click-parent:
-            :color: dark
-            :shadow:
-            :expand:
+        .. grid-item-card::
+            :columns: 4
+            
+            .. image:: images/dataset_page/mouse_SS_cortex_and_subventricular.png 
+                :width: 300
+                :target: ../../build/html/subsections/datasets/seqFISH_cortex.html
 
-            seqFISh+ Cortex  
+            .. button-ref:: seqFISH_cortex
+                :ref-type: any
+                :click-parent:
+                :color: dark
+                :shadow:
+                :expand:
+
+                seqFISh+ Cortex  
+
