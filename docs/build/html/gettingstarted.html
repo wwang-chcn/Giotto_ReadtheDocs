@@ -70,7 +70,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="documentation.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a></li>
-<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer [work-in-progress]</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Guides</span></p>
 <ul>
@@ -82,7 +82,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="errorsfaqsandtips.html">Common Errors and Solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="github_issues.html">Report a Bug</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
 </ul>
 
         </div>
@@ -133,8 +132,8 @@ In order to use Giotto successfully, users <strong>must</strong> have both the G
 <section id="giotto-installation-workflow">
 <span id="giottoinstallationworkflow"></span><h3>Giotto Installation Workflow<a class="headerlink" href="#giotto-installation-workflow" title="Permalink to this headline"></a></h3>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="471057d9-1836-4e51-ab50-85f0123c1372" name="f5f4d77a-2dd3-4711-b269-741e9eae1b18" type="radio">
-</input><label class="sd-tab-label" for="471057d9-1836-4e51-ab50-85f0123c1372">
+<input checked="checked" id="ccea1cc0-8f17-4cce-bde4-b6e827a7a01b" name="0c41f778-718d-48c0-bc27-4282929b3400" type="radio">
+</input><label class="sd-tab-label" for="ccea1cc0-8f17-4cce-bde4-b6e827a7a01b">
 Giotto Installation Workflow</label><div class="sd-tab-content docutils">
 <p>This workflow image is designed to help with Giotto Installation.
 Users should follow the installation process by answering Yes or No to the following quetions.
@@ -157,16 +156,16 @@ Workflow Diagram<div class="sd-summary-down docutils">
 <h3>Quickest Installation [Automatic]<a class="headerlink" href="#quickest-installation-automatic" title="Permalink to this headline"></a></h3>
 <p>You can install Giotto Suite on any platform in 2 easy steps which are outlined in more detail in the section below.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="5788780d-62c9-479a-82e5-3eed54ca4d7b" name="a8ee7470-bb8e-459b-9551-f5e2f7fce2f8" type="radio">
-</input><label class="sd-tab-label" for="5788780d-62c9-479a-82e5-3eed54ca4d7b">
+<input checked="checked" id="7cac8b05-9d2b-4179-bb21-a5be36be82fc" name="7090f4ea-3ce1-47dd-8122-bf396880a185" type="radio">
+</input><label class="sd-tab-label" for="7cac8b05-9d2b-4179-bb21-a5be36be82fc">
 Step 1: Install Giotto Suite</label><div class="sd-tab-content docutils">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">remotes</span><span class="p">)</span>
 <span class="n">remotes</span><span class="o">::</span><span class="nf">install_github</span><span class="p">(</span><span class="s">&quot;RubD/Giotto@suite&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<input id="9bfbd859-f724-4150-9f9c-e9586f8566d1" name="a8ee7470-bb8e-459b-9551-f5e2f7fce2f8" type="radio">
-</input><label class="sd-tab-label" for="9bfbd859-f724-4150-9f9c-e9586f8566d1">
+<input id="1c796f89-c1d8-4bf4-a2e0-b18d00724cee" name="7090f4ea-3ce1-47dd-8122-bf396880a185" type="radio">
+</input><label class="sd-tab-label" for="1c796f89-c1d8-4bf4-a2e0-b18d00724cee">
 Step 2: Instal the Giotto Python Environment</label><div class="sd-tab-content docutils">
 <p><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-alert" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg> The python environment only needs to be installed once.</p>
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">Giotto</span><span class="p">)</span>
@@ -183,8 +182,8 @@ Step 2: Instal the Giotto Python Environment</label><div class="sd-tab-content d
 <section id="part-1-r-giotto-requirements">
 <span id="first-time-r-installation"></span><h3>Part 1: R Giotto Requirements<a class="headerlink" href="#part-1-r-giotto-requirements" title="Permalink to this headline"></a></h3>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="bccbaefa-a0d8-4746-b046-3469b960142d" name="8579e1e0-9880-47b3-86bb-ec9633c2cc6f" type="radio">
-</input><label class="sd-tab-label" for="bccbaefa-a0d8-4746-b046-3469b960142d">
+<input checked="checked" id="bd3f0509-d72e-4c68-99fd-aab2fe3e06fd" name="fac11309-65ce-4eb0-accf-194e5a8abdfb" type="radio">
+</input><label class="sd-tab-label" for="bd3f0509-d72e-4c68-99fd-aab2fe3e06fd">
 1.1: R Package Installation</label><div class="sd-tab-content docutils">
 <p><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-question" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 019 6.25c0 .177-.04.264-.077.318a.956.956 0 01-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 00-.313.195 2.416 2.416 0 00-.692.661.75.75 0 001.248.832.956.956 0 01.276-.245 6.3 6.3 0 01.26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 008 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 101.342.67z"></path></svg> <strong>Have you ever installed an R package that is in development?</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -211,8 +210,8 @@ To specifically install the command-line tools of Xcode for Mac OSX you might al
 <p class="sd-card-text"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-arrow-right" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06l2.97-2.97H3.75a.75.75 0 010-1.5h7.44L8.22 4.03a.75.75 0 010-1.06z"></path></svg> Move on to the next step: Giotto Installation</p>
 </div>
 </details></div>
-<input id="54c5074c-46ad-44d4-95fa-4ebed63ac648" name="8579e1e0-9880-47b3-86bb-ec9633c2cc6f" type="radio">
-</input><label class="sd-tab-label" for="54c5074c-46ad-44d4-95fa-4ebed63ac648">
+<input id="f07ab909-25c4-445b-90f4-f89b01514ac5" name="fac11309-65ce-4eb0-accf-194e5a8abdfb" type="radio">
+</input><label class="sd-tab-label" for="f07ab909-25c4-445b-90f4-f89b01514ac5">
 1.2: Giotto Installation</label><div class="sd-tab-content docutils">
 <p><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-question" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 019 6.25c0 .177-.04.264-.077.318a.956.956 0 01-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 00-.313.195 2.416 2.416 0 00-.692.661.75.75 0 001.248.832.956.956 0 01.276-.245 6.3 6.3 0 01.26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 008 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 101.342.67z"></path></svg> <strong>Have you installed Giotto before?</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -263,8 +262,8 @@ Giotto can be installed within 1-5 mins.</p>
 <section id="part-2-python-giotto-requirements">
 <span id="part2-python-giotto-requirements"></span><h3>Part 2: Python Giotto Requirements<a class="headerlink" href="#part-2-python-giotto-requirements" title="Permalink to this headline"></a></h3>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="601d8f0b-dda8-412c-ad0c-6a60d20c112d" name="9b055ec2-e82f-4dbe-9f4b-fa23c2385989" type="radio">
-</input><label class="sd-tab-label" for="601d8f0b-dda8-412c-ad0c-6a60d20c112d">
+<input checked="checked" id="6c992c21-2050-4582-aeb6-6bd02ec18bf1" name="fe3ac0dd-4e55-4ac3-b38a-46a2dccfce90" type="radio">
+</input><label class="sd-tab-label" for="6c992c21-2050-4582-aeb6-6bd02ec18bf1">
 2.1: Python Package Installation</label><div class="sd-tab-content docutils">
 <p><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-question" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 019 6.25c0 .177-.04.264-.077.318a.956.956 0 01-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 00-.313.195 2.416 2.416 0 00-.692.661.75.75 0 001.248.832.956.956 0 01.276-.245 6.3 6.3 0 01.26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 008 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 101.342.67z"></path></svg> <strong>Have you ever installed a Python Package?</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -287,8 +286,8 @@ No<div class="sd-summary-down docutils">
 Once you have read through the information <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-arrow-right" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06l2.97-2.97H3.75a.75.75 0 010-1.5h7.44L8.22 4.03a.75.75 0 010-1.06z"></path></svg> proceeed to the next step: Giotto-Specific Python Packages.</p>
 </div>
 </details></div>
-<input id="51a1a14f-b863-41a7-b096-6c5b7bb25d5c" name="9b055ec2-e82f-4dbe-9f4b-fa23c2385989" type="radio">
-</input><label class="sd-tab-label" for="51a1a14f-b863-41a7-b096-6c5b7bb25d5c">
+<input id="c5462418-d7be-4f7e-b7e1-40e221597546" name="fe3ac0dd-4e55-4ac3-b38a-46a2dccfce90" type="radio">
+</input><label class="sd-tab-label" for="c5462418-d7be-4f7e-b7e1-40e221597546">
 2.2: Giotto-Specific Python Packages</label><div class="sd-tab-content docutils">
 <p><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-question" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 019 6.25c0 .177-.04.264-.077.318a.956.956 0 01-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 00-.313.195 2.416 2.416 0 00-.692.661.75.75 0 001.248.832.956.956 0 01.276-.245 6.3 6.3 0 01.26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 008 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 101.342.67z"></path></svg> <strong>Have you installed the python modules necessary for Giotto to run?</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -499,8 +498,8 @@ For Linux<div class="sd-summary-down docutils">
 <p class="sd-card-text">Please <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-arrow-right" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 2.97a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06l2.97-2.97H3.75a.75.75 0 010-1.5h7.44L8.22 4.03a.75.75 0 010-1.06z"></path></svg> move on to the next step: 2.3 Python Path Specification</p>
 </div>
 </details></div>
-<input id="f6474688-789b-4da5-9178-746986e6e21f" name="9b055ec2-e82f-4dbe-9f4b-fa23c2385989" type="radio">
-</input><label class="sd-tab-label" for="f6474688-789b-4da5-9178-746986e6e21f">
+<input id="d14f454c-3283-493f-9580-3f26afd43588" name="fe3ac0dd-4e55-4ac3-b38a-46a2dccfce90" type="radio">
+</input><label class="sd-tab-label" for="d14f454c-3283-493f-9580-3f26afd43588">
 2.3 Python Path Specification</label><div class="sd-tab-content docutils">
 <p><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-question" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 019 6.25c0 .177-.04.264-.077.318a.956.956 0 01-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 00-.313.195 2.416 2.416 0 00-.692.661.75.75 0 001.248.832.956.956 0 01.276-.245 6.3 6.3 0 01.26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 008 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 101.342.67z"></path></svg> <strong>Have you specified your python path in R?</strong></p>
 <div class="admonition note">

@@ -53,7 +53,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contribute.html">Contribute</a></li>
-<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer [work-in-progress]</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Guides</span></p>
 <ul>
@@ -65,7 +65,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Common Errors and Solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../github_issues.html">Report a Bug</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../faqs.html">FAQs</a></li>
 </ul>
 
         </div>
@@ -169,14 +168,14 @@ If you do not have Giotto installed, you can do so by running the following code
        <span class="n">save_plot</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">show_saved_plot</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">))</span>
 </pre></div>
 </div>
-<img alt="../../_images/0-spatPlot2D.png" src="../../_images/0-spatPlot2D.png" />
+<img alt="../../_images/0-spatPlot2D1.png" src="../../_images/0-spatPlot2D1.png" />
 <p>Visualize cells by FOV.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot2D</span><span class="p">(</span><span class="n">vizgen</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;fov&#39;</span><span class="p">,</span> <span class="n">show_legend</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span>
        <span class="n">show_plot</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span> <span class="n">return_plot</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span> <span class="n">save_plot</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span>
        <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">show_saved_plot</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">))</span>
 </pre></div>
 </div>
-<img alt="../../_images/1-spatPlot2D.png" src="../../_images/1-spatPlot2D.png" />
+<img alt="../../_images/1-spatPlot2D1.png" src="../../_images/1-spatPlot2D1.png" />
 <p>Processing steps.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vizgen</span> <span class="o">&lt;-</span> <span class="n">filterGiotto</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">vizgen</span><span class="p">,</span>
            <span class="n">expression_threshold</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
@@ -356,7 +355,7 @@ spatInSituPlotPoints(vizgen_subset,
             <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">show_saved_plot</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">))</span>
 </pre></div>
 </div>
-<img alt="../../_images/12-spatInSituPlotPoints.png" src="../../_images/12-spatInSituPlotPoints.png" />
+<img alt="../../_images/12-spatInSituPlotPoints1.png" src="../../_images/12-spatInSituPlotPoints1.png" />
 </section>
 </section>
 

@@ -53,7 +53,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contribute.html">Contribute</a></li>
-<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer</a></li>
+<li class="toctree-l1"><a class="reference external" href="http://spatial.rc.fas.harvard.edu/giotto-viewer/">Giotto Viewer [work-in-progress]</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Guides</span></p>
 <ul>
@@ -65,7 +65,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Common Errors and Solutions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../github_issues.html">Report a Bug</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../faqs.html">FAQs</a></li>
 </ul>
 
         </div>
@@ -330,7 +329,7 @@ hist(cellmeta$nr_feats, 100)
 <span class="n">fov_join</span> <span class="o">&lt;-</span> <span class="n">calculateHVF</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">fov_join</span><span class="p">,</span> <span class="n">HVFname</span> <span class="o">=</span> <span class="s1">&#39;hvg_orig&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/4-HVFplot1.png" src="../../_images/4-HVFplot1.png" />
+<img alt="../../_images/4-HVFplot.png" src="../../_images/4-HVFplot.png" />
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># new method based on variance of pearson residuals for each gene</span>
 <span class="n">fov_join</span> <span class="o">&lt;-</span> <span class="n">calculateHVF</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">fov_join</span><span class="p">,</span>
             <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;var_p_resid&#39;</span><span class="p">,</span>
@@ -338,7 +337,7 @@ hist(cellmeta$nr_feats, 100)
             <span class="n">show_plot</span> <span class="o">=</span> <span class="n">T</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/5-HVFplot1.png" src="../../_images/5-HVFplot1.png" />
+<img alt="../../_images/5-HVFplot.png" src="../../_images/5-HVFplot.png" />
 </section>
 <section id="view-highly-variable-features">
 <h3>View Highly Variable Features<a class="headerlink" href="#view-highly-variable-features" title="Permalink to this headline"></a></h3>
@@ -355,7 +354,7 @@ hist(cellmeta$nr_feats, 100)
 <span class="n">screePlot</span><span class="p">(</span><span class="n">fov_join</span><span class="p">,</span> <span class="n">ncp</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/6-screePlot1.png" src="../../_images/6-screePlot1.png" />
+<img alt="../../_images/6-screePlot.png" src="../../_images/6-screePlot.png" />
 </section>
 <section id="plot-pca">
 <h3>Plot PCA<a class="headerlink" href="#plot-pca" title="Permalink to this headline"></a></h3>
@@ -364,7 +363,7 @@ hist(cellmeta$nr_feats, 100)
     <span class="n">dim2_to_use</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/7-PCA1.png" src="../../_images/7-PCA1.png" />
+<img alt="../../_images/7-PCA.png" src="../../_images/7-PCA.png" />
 </section>
 <section id="run-umap">
 <h3>Run UMAP<a class="headerlink" href="#run-umap" title="Permalink to this headline"></a></h3>
@@ -372,7 +371,7 @@ hist(cellmeta$nr_feats, 100)
 <span class="n">plotUMAP</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">fov_join</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/8-UMAP1.png" src="../../_images/8-UMAP1.png" />
+<img alt="../../_images/8-UMAP.png" src="../../_images/8-UMAP.png" />
 </section>
 </section>
 <section id="cluster">
@@ -435,7 +434,7 @@ spatInSituPlotPoints(test,
             show_legend = FALSE)
 </pre></div>
 </div>
-<img alt="../../_images/12-spatInSituPlotPoints1.png" src="../../_images/12-spatInSituPlotPoints1.png" />
+<img alt="../../_images/12-spatInSituPlotPoints.png" src="../../_images/12-spatInSituPlotPoints.png" />
 </section>
 <section id="spatial-expression-patterns">
 <h2>12. Spatial Expression Patterns<a class="headerlink" href="#spatial-expression-patterns" title="Permalink to this headline"></a></h2>
@@ -522,7 +521,7 @@ violinPlot(fov_join, feats = topgini_genes, cluster_column = &#39;leiden_clus&#3
          <span class="n">polygon_fill_code</span> <span class="o">=</span> <span class="n">colorcode</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/17-spatInSituPlotPoints1.png" src="../../_images/17-spatInSituPlotPoints1.png" />
+<img alt="../../_images/17-spatInSituPlotPoints.png" src="../../_images/17-spatInSituPlotPoints.png" />
 </section>
 </section>
 <section id="interaction-changed-genes">
@@ -548,7 +547,7 @@ spatInSituPlotPoints(fov_join,
             polygon_fill_code = pal)
 </pre></div>
 </div>
-<img alt="../../_images/18-spatInSituPlotPoints1.png" src="../../_images/18-spatInSituPlotPoints1.png" />
+<img alt="../../_images/18-spatInSituPlotPoints.png" src="../../_images/18-spatInSituPlotPoints.png" />
 </section>
 </section>
 
