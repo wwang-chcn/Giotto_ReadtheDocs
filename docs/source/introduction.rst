@@ -71,6 +71,10 @@ Authors and Developers
 +---------------+---------------------+
 | Guo-Cheng Yuan|*Author*             |
 +---------------+---------------------+
+| Joselyn Chávez|*Author*             |
++---------------+---------------------+
+| Adriana Sistig|*Author*             |
++---------------+---------------------+
 
 .. _Ruben Dries: https://www.drieslab.com
 
