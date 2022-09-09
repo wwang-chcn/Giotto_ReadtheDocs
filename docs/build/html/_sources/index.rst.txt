@@ -8,8 +8,7 @@
 .. rtfd-shield:: 
    :project: giotto
 
-.. pypi-shield:: 
-   :version:
+.. .. pypi-shield::   :version:
 
 .. pypi-shield:: 
    :project: giotto
