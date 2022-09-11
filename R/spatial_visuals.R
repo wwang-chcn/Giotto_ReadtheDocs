@@ -1091,8 +1091,8 @@ dimPlot2D_single <- function(gobject,
 #' @param axis_text size of axis text
 #' @param axis_title size of axis title
 #' @param cow_n_col cowplot param: how many columns
-#' @param cow_rel_h cowplot param: relative height
-#' @param cow_rel_w cowplot param: relative width
+#' @param cow_rel_h cowplot param: relative heights of rows (e.g. c(1,2))
+#' @param cow_rel_w cowplot param: relative widths of columns (e.g. c(1,2))
 #' @param cow_align cowplot param: how to align
 #' @param show_plot show plot
 #' @param return_plot return ggplot object
@@ -2773,7 +2773,6 @@ spatPlot2D_single = function(gobject,
   ## extract spatial network
   if(show_network == TRUE) {
     spatial_network = get_spatialNetwork(gobject,
-                                         feat_type = feat_type,
                                          spat_unit = spat_unit,
                                          name = spatial_network_name,
                                          return_network_Obj = FALSE)
@@ -2785,6 +2784,7 @@ spatPlot2D_single = function(gobject,
   if(show_grid == TRUE) {
     spatial_grid = get_spatialGrid(gobject = gobject,
                                    spat_unit = spat_unit,
+                                   feat_type = feat_type,
                                    name = spatial_grid_name)
   } else {
     spatial_grid = NULL
@@ -4170,8 +4170,8 @@ spatFeatPlot2D_single <- function(gobject,
   # expression values
   values = match.arg(expression_values, unique(c('normalized', 'scaled', 'custom', expression_values)))
   expr_values = get_expression_values(gobject = gobject,
-                                      feat_type = feat_type,
                                       spat_unit = spat_unit,
+                                      feat_type = feat_type,
                                       values = values)
 
   # only keep feats that are in the dataset
@@ -4211,7 +4211,6 @@ spatFeatPlot2D_single <- function(gobject,
   ## extract spatial network
   if(show_network == TRUE) {
     spatial_network = get_spatialNetwork(gobject,
-                                         feat_type = feat_type,
                                          spat_unit = spat_unit,
                                          name = spatial_network_name,
                                          return_network_Obj = FALSE)
@@ -4222,7 +4221,10 @@ spatFeatPlot2D_single <- function(gobject,
   ## extract spatial grid
   if(show_grid == TRUE) {
     spatial_grid = get_spatialGrid(gobject,
-                                      spatial_grid_name)
+                                   spat_unit = spat_unit,
+                                   feat_type = feat_type,
+                                   name = spatial_grid_name)
+
   } else {
     spatial_grid = NULL
   }
@@ -4956,8 +4958,8 @@ dimFeatPlot2D <- function(gobject,
   # expression values
   values = match.arg(expression_values, unique(c('normalized', 'scaled', 'custom', expression_values)))
   expr_values = get_expression_values(gobject = gobject,
-                                      feat_type = feat_type,
                                       spat_unit = spat_unit,
+                                      feat_type = feat_type,
                                       values = values)
 
   # only keep feats that are in the dataset
@@ -6493,7 +6495,7 @@ dimPlot_2D_plotly <- function(gobject,
                                   reduction_method = dim_reduction_to_use,
                                   name = dim_reduction_name,
                                   return_dimObj = TRUE)
-    eigenvalues = pca_object$misc$eigenvalues
+    eigenvalues = slot(pca_object, 'misc')$eigenvalues
 
     if(!is.null(eigenvalues)) {
       total = sum(eigenvalues)
@@ -6757,7 +6759,7 @@ dimPlot_3D_plotly <- function(gobject,
                                   name = dim_reduction_name,
                                   return_dimObj = TRUE)
 
-    eigenvalues = pca_object$misc$eigenvalues
+    eigenvalues = slot(pca_object, 'misc')$eigenvalues
     if(!is.null(eigenvalues)) {
       total = sum(eigenvalues)
       var_expl_vec = (eigenvalues/total) * 100
@@ -7231,7 +7233,6 @@ spatPlot_2D_plotly = function(gobject,
   ## extract spatial network
   if(show_network == TRUE) {
     spatial_network = get_spatialNetwork(gobject,
-                                         feat_type = feat_type,
                                          spat_unit = spat_unit,
                                          name = spatial_network_name,
                                          return_network_Obj = FALSE)
@@ -7241,7 +7242,10 @@ spatPlot_2D_plotly = function(gobject,
 
   ## extract spatial grid
   if(show_grid == TRUE) {
-    spatial_grid = get_spatialGrid(gobject, spatial_grid_name)
+    spatial_grid = get_spatialGrid(gobject,
+                                   spat_unit = spat_unit,
+                                   feat_type = feat_type,
+                                   spatial_grid_name)
   } else {
     spatial_grid = NULL
   }
@@ -7471,7 +7475,6 @@ spatPlot_3D_plotly = function(gobject,
   ## extract spatial network
   if(show_network == TRUE) {
     spatial_network = get_spatialNetwork(gobject,
-                                         feat_type = feat_type,
                                          spat_unit = spat_unit,
                                          name = spatial_network_name,
                                          return_network_Obj = FALSE)
@@ -7481,7 +7484,10 @@ spatPlot_3D_plotly = function(gobject,
 
   ## extract spatial grid
   if(show_grid == TRUE) {
-    spatial_grid = get_spatialGrid(gobject, spatial_grid_name)
+    spatial_grid = get_spatialGrid(gobject,
+                                   spat_unit = spat_unit,
+                                   feat_type = feat_type,
+                                   spatial_grid_name)
   } else {
     spatial_grid = NULL
   }
@@ -7984,7 +7990,7 @@ spatDimPlot3D <- function(gobject,
                                   reduction_method = dim_reduction_to_use,
                                   name = dim_reduction_name,
                                   return_dimObj = TRUE)
-    eigenvalues = pca_object$misc$eigenvalues
+    eigenvalues = slot(pca_object, 'misc')$eigenvalues
 
     if(!is.null(eigenvalues)) {
       total = sum(eigenvalues)
@@ -8031,7 +8037,6 @@ spatDimPlot3D <- function(gobject,
   ## extract spatial network
   if(show_spatial_network == TRUE) {
     spatial_network = get_spatialNetwork(gobject,
-                                         feat_type = feat_type,
                                          spat_unit = spat_unit,
                                          name = spatial_network_name,
                                          return_network_Obj = FALSE)
@@ -8042,7 +8047,10 @@ spatDimPlot3D <- function(gobject,
 
   ## extract spatial grid
   if(show_spatial_grid == TRUE) {
-    spatial_grid = get_spatialGrid(gobject, spatial_grid_name)
+    spatial_grid = get_spatialGrid(gobject,
+                                   spat_unit = spat_unit,
+                                   feat_type = feat_type,
+                                   spatial_grid_name)
   } else {
     spatial_grid = NULL
   }
@@ -8718,8 +8726,8 @@ spatGenePlot3D <- function(gobject,
 
   values = match.arg(expression_values, c('normalized', 'scaled', 'custom'))
   expr_values = get_expression_values(gobject = gobject,
-                                      feat_type = feat_type,
                                       spat_unit = spat_unit,
+                                      feat_type = feat_type,
                                       values = values)
 
   # only keep genes that are in the dataset
@@ -8747,7 +8755,6 @@ spatGenePlot3D <- function(gobject,
   ## extract spatial network
   if(show_network == TRUE) {
     spatial_network = get_spatialNetwork(gobject,
-                                         feat_type = feat_type,
                                          spat_unit = spat_unit,
                                          name = spatial_network_name,
                                          return_network_Obj = FALSE)
@@ -8757,7 +8764,10 @@ spatGenePlot3D <- function(gobject,
 
   ## extract spatial grid
   if(show_grid == TRUE) {
-    spatial_grid = get_spatialGrid(gobject, spatial_grid_name)
+    spatial_grid = get_spatialGrid(gobject,
+                                   spat_unit = spat_unit,
+                                   feat_type = feat_type,
+                                   spatial_grid_name)
   } else {
     spatial_grid = NULL
   }
@@ -9081,8 +9091,8 @@ dimGenePlot3D <- function(gobject,
   selected_genes = genes
   values = match.arg(expression_values, c('normalized', 'scaled', 'custom'))
   expr_values = get_expression_values(gobject = gobject,
-                                      feat_type = feat_type,
                                       spat_unit = spat_unit,
+                                      feat_type = feat_type,
                                       values = values)
 
   # only keep genes that are in the dataset
@@ -9473,8 +9483,8 @@ spatDimGenePlot3D <- function(gobject,
   selected_genes = genes
   values = match.arg(expression_values, c('normalized', 'scaled', 'custom'))
   expr_values = get_expression_values(gobject = gobject,
-                                      feat_type = feat_type,
                                       spat_unit = spat_unit,
+                                      feat_type = feat_type,
                                       values = values)
 
   # only keep genes that are in the dataset
@@ -9536,7 +9546,6 @@ spatDimGenePlot3D <- function(gobject,
   ## extract spatial network
   if(show_spatial_network == TRUE) {
     spatial_network = get_spatialNetwork(gobject,
-                                         feat_type = feat_type,
                                          spat_unit = spat_unit,
                                          name = spatial_network_name,
                                          return_network_Obj = FALSE)
@@ -9546,7 +9555,10 @@ spatDimGenePlot3D <- function(gobject,
 
   ## extract spatial grid
   if(show_spatial_grid == TRUE) {
-    spatial_grid = get_spatialGrid(gobject, spatial_grid_name)
+    spatial_grid = get_spatialGrid(gobject,
+                                   spat_unit = spat_unit,
+                                   feat_type = feat_type,
+                                   spatial_grid_name)
   } else {
     spatial_grid = NULL
   }
@@ -10150,4 +10162,90 @@ addCellsFromPolygon <- function(gobject,
 }
 
 
+#' Compare gene expression between polygon areas
+#'
+#' @param gobject A Giotto object
+#' @param spat_unit spatial unit (e.g. "cell")
+#' @param feat_type feature type (e.g. "rna", "dna", "protein")
+#' @param selected_feats vector of selected features to plot
+#' @param expression_values gene expression values to use ("normalized", "scaled", "custom")
+#' @param method method to use to detect differentially expressed feats ("scran", "gini", "mast")
+#' @param \dots Arguments passed to \link[ComplexHeatmap]{Heatmap}
+#'
+#' @return A ComplexHeatmap::Heatmap object
+#' @export
+comparePolygonExpression <- function(gobject,
+                                     spat_unit = "cell",
+                                     feat_type = "rna",
+                                     selected_feats = "top_genes",
+                                     expression_values = "normalized",
+                                     method = "scran",
+                                     ...) {
+
+  # verify gobject
+  if (!inherits(gobject, "giotto")) {
+    stop("gobject needs to be a giotto object")
+  }
+
+  # get expression
+  my_expression <- gobject@expression[[spat_unit]][[feat_type]][[expression_values]]
+
+  # get cell_ID and poly_ID from metadata
+  my_metadata <- gobject@cell_metadata[[spat_unit]][[feat_type]]
+  my_metadata <- my_metadata[,c("cell_ID", "poly_ID")]
+
+  if (length(selected_feats) == 1 && selected_feats == "top_genes") {
+    # find top features
+    scran_results <- findMarkers_one_vs_all(gobject,
+                                            spat_unit = "cell",
+                                            feat_type = "rna",
+                                            method = method,
+                                            expression_values = "normalized",
+                                            cluster_column = "poly_ID",
+                                            min_feats = 10)
+
+    selected_feats <- scran_results[, head(.SD, 2), by = 'cluster']$feats
+  }
+  # select features
+  my_expression <- my_expression[selected_feats,]
+
+  # convert to data frame
+  my_rownames <- rownames(my_expression)
+
+  # calculate zscore
+
+  my_zscores <- my_expression
+
+  for (gene in my_rownames) {
+    mean_expression_gene <- mean(my_expression[gene,])
+    sd_expression_gene <- stats::sd(my_expression[gene,])
+    for (cell in colnames(my_expression)) {
+      my_zscores[gene, cell] <- (my_expression[gene, cell]-mean_expression_gene)/sd_expression_gene
+    }
+
+  }
+
+  # calculate mean zscore per polygon
+  my_zscores_mean <- data.table::data.table(feat_ID = my_rownames)
+
+  for(i in unique(my_metadata$poly_ID)) {
+    my_cells <- my_metadata[my_metadata$poly_ID == i, "cell_ID" ]
+    my_sub_zscores <- my_zscores[,my_cells$cell_ID]
+    mean_zscores <- Matrix::rowMeans(my_sub_zscores)
+    my_zscores_mean <- cbind(my_zscores_mean, mean_zscores)
+  }
+
+  my_zscores_mean <- as.matrix(my_zscores_mean[,-1])
+  colnames(my_zscores_mean) <- unique(my_metadata$poly_ID)
+  rownames(my_zscores_mean) <- my_rownames
+
+  # plot heatmap
+  my_heatmap <- ComplexHeatmap::Heatmap(my_zscores_mean,
+                                        heatmap_legend_param = list(title = "Normalized mean z score"),
+                                        cluster_rows = FALSE,
+                                        cluster_columns = FALSE,
+                                        column_order = sort(colnames(my_zscores_mean)),
+                                        ...)
+  return(my_heatmap)
+}
 

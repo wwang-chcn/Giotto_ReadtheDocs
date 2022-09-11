@@ -163,7 +163,7 @@ create_segm_polygons = function(maskfile,
     stop('path : ', maskfile, ' does not exist \n')
   }
 
-  terra_rast = terra::rast(maskfile)
+  terra_rast = create_terra_spatRaster(maskfile)
   rast_dimensions = dim(terra_rast)
 
   terra_polygon = terra::as.polygons(x = terra_rast, value = TRUE)
@@ -329,7 +329,7 @@ fix_multipart_geoms = function(spatVector) {
 #' @param remove_background_polygon try to remove background polygon (default: FALSE)
 #' @param background_algo algorithm to remove background polygon
 #' @param fill_holes fill holes within created polygons
-#' @param poly_IDs unique nanes for each polygon in the mask file
+#' @param poly_IDs unique names for each polygon in the mask file
 #' @param flip_vertical flip mask figure in a vertical manner
 #' @param shift_vertical_step shift vertical (boolean or numerical)
 #' @param flip_horizontal flip mask figure in a horizontal manner
@@ -371,11 +371,11 @@ createGiottoPolygonsFromMask = function(maskfile,
 
   # mask method
   # single: single mask value for all segmented cells
-  # multiple: multiple maks values and thus a unique value for each segmented cell
+  # multiple: multiple mask values and thus a unique value for each segmented cell
   mask_method = match.arg(mask_method, choices = c('guess', 'single', 'multiple'))
 
   # create polygons from mask
-  terra_rast = terra::rast(maskfile)
+  terra_rast = create_terra_spatRaster(maskfile)
   rast_dimensions = dim(terra_rast)
   terra_polygon = terra::as.polygons(x = terra_rast, value = TRUE)
 
@@ -994,7 +994,7 @@ create_giotto_points_object = function(feat_type = 'rna',
                           networks = NULL)
 
   ## 1. check terra spatVector object
-  if(!methods::is(spatVector, 'SpatVector')) {
+  if(!inherits(spatVector, 'SpatVector')) {
     stop("spatVector needs to be a spatVector object from the terra package")
   }
 
@@ -1015,18 +1015,48 @@ create_giotto_points_object = function(feat_type = 'rna',
 
 #' @title Create terra spatvector object from a data.frame
 #' @name create_spatvector_object_from_dfr
-#' @description create terra spatvector from a data.frame
+#' @description create terra spatvector from a data.frame where cols 1 and 2 must
+#' be x and y coordinates respectively. Additional columns are set as attributes
+#' to the points where the first additional should be the feat_ID.
 #' @param x data.frame object
 #' @keywords internal
 create_spatvector_object_from_dfr = function(x) {
 
+
+  x = data.table::as.data.table(x)
+
   # data.frame like object needs to have 2 coordinate columns and
   # at least one other column as the feat_ID
-  loc_dfr = data.table::as.data.table(x[, 1:2])
-  att_dfr = data.table::as.data.table(x[, -c(1:2)])
+  col_classes = sapply(x, class)
+  ## find feat_ID as either first character col or named column
+  if('feat_ID' %in% colnames(x)) {
+    feat_ID_col = which(colnames(x) == 'feat_ID')
+  } else {
+    feat_ID_col = which(col_classes == 'character')[[1]]
+  }
+  cat(paste0('Selecting "',colnames(x[, feat_ID_col, with = FALSE]),'" as feat_ID column\n'))
+  colnames(x)[feat_ID_col] = 'feat_ID'
 
-  spatvec = terra::vect(as.matrix(x[,1:2]), type = 'points', atts = att_dfr)
-  names(spatvec)[1] = 'feat_ID'
+  ## find first two numeric cols as x and y respectively or named column
+  if(all(c('x','y') %in% colnames(x))) {
+    x_col = which(colnames(x) == 'x')
+    y_col = which(colnames(x) == 'y')
+  } else {
+    x_col = which(col_classes == 'numeric')[1]
+    y_col = which(col_classes == 'numeric')[2]
+  }
+  cat(paste0('Selecting "',colnames(x[, x_col, with = FALSE]),'" and "', colnames(x[, y_col, with = FALSE]),'" as x and y respectively\n'))
+  colnames(x)[x_col] = 'x'
+  colnames(x)[y_col] = 'y'
+
+  ## select location and attribute dataframes
+  # Use unique() to set column order
+  ordered_colnames = unique(c('feat_ID','x','y', colnames(x)))
+  x = x[, ordered_colnames, with = FALSE]
+  loc_dfr = x[,2:3]
+  att_dfr = x[,-c(2:3)]
+
+  spatvec = terra::vect(as.matrix(loc_dfr), type = 'points', atts = att_dfr)
 
   # will be given and is a unique numerical barcode for each feature
   spatvec[['feat_ID_uniq']] = 1:nrow(spatvec)
@@ -1230,7 +1260,7 @@ addGiottoPoints3D <- function (gobject, coords, feat_type = "rna")
 #' @keywords internal
 extract_points_list = function(pointslist) {
 
-  # if polygonlist is not a named list
+  # if pointslist is not a named list
   # try to make list and give default names
   if(!is.list(pointslist)) {
     pointslist = as.list(pointslist)
