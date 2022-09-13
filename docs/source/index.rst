@@ -1,18 +1,12 @@
 
 .. github-shield:: 
-   :username: RubD
-   :repository: Giotto
+   :username: drieslab
+   :repository: Giotto_ReadtheDocs
    :branch: suite
    :last-commit:
 
 .. rtfd-shield:: 
    :project: giotto
-
-.. .. pypi-shield::   :version:
-
-.. pypi-shield:: 
-   :project: giotto
-   :downloads: month
 
 .. maintained-shield:: 2022
 
