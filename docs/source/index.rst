@@ -1,15 +1,3 @@
-
-.. github-shield:: 
-   :username: drieslab
-   :repository: Giotto_ReadtheDocs
-   :branch: suite
-   :last-commit:
-
-.. rtfd-shield:: 
-   :project: giotto
-
-.. maintained-shield:: 2022
-
 ##########################################
 GIOTTO SUITE
 ##########################################
