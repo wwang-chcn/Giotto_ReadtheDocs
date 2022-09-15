@@ -22,18 +22,19 @@ Requirements
 Installation
 *************
 
-Step 1: Install Giotto Suite
+**Step 1: Install Giotto Suite**
 
 .. code-block:: r
 
     library(remotes)
     remotes::install_github("RubD/Giotto@suite") 
 
-Step 2: Install the Giotto Python environment
+**Step 2: Install the Giotto Python environment**
 
 This step only needs to be run once. Giotto Suite will automatically detect the environment in the future.
 
 .. code-block:: r
+
     library(Giotto)
     installGiottoEnvironment()
 
