@@ -88,8 +88,10 @@ Learn more about Giotto Suite
         .. image:: images/getting_started/icons_saving.png
             :target: ../../build/html/subsections/datasets/mini_visium.html
 
+**************************
 Analyses
-============
+**************************
+
 Tutorials for Spatial analyses that can be performed with Giotto Suite.
 Full dataset examples can be found in the `Datasets <datasets>`_ tab.
 
