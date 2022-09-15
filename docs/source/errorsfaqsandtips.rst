@@ -174,23 +174,6 @@ If you see this error on your MacOS:
 
 .. _R_363_and_catalina_error: 
 
-Issue 3: R 3.6.3 and MacOS Catalina
-========================================
-If you use the latest MacOS ‘Catalina’ and the latest R version 3.6.3 then you will need to install Clang 7.0.0 and GNU Fortran 6.1 `as per instructions <https://cran.rstudio.com/bin/macosx/>`_.
-
-Additionally, you might have to specify some flags in “~/.R/Makevars”
-
-.. code-block:: 
-
-	# clang: start
-	CFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
-	CCFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
-	CXXFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
-	CPPFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
-	# clang: end
-
-*We hope that these issues will be resolved soon.*
-
 .. _error_on_windows:
 
 ************************
