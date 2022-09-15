@@ -51,7 +51,7 @@ Learn more about Giotto Suite
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_configuration.png
-			:target: ../build/html/subsections/datasets/mini_visium.html
+			:target: ../build/html/subsections/datasets/configuration.html
 
 
     .. grid-item-card::
