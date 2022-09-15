@@ -108,7 +108,7 @@ Single-Cell
     .. grid-item-card::
 
         .. image:: images/dataset_page/merFISH_hypoth_image_summary.png
-            :target: ../../build/html/html/subsections/datasets/seqFISH_cortex.html
+            :target: ../../build/html/html/subsections/datasets/merFISH_hypot_preopt_region.html
         
 
     .. grid-item-card::
