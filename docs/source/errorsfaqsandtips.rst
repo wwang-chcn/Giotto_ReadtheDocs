@@ -16,7 +16,7 @@ The Giotto branch **cless** is a version of Giotto without C++ code, which shoul
 
 .. _package_not_found_mac:
 
-Issue 1: Troubleshooting Packages not Found
+Issue 1: Packages not Found
 ========================
 
 In the event that packages are inaccessible in the default installation
