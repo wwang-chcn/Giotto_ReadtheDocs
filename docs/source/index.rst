@@ -1,5 +1,5 @@
 ##########################################
-GIOTTO SUITE
+Giotto Suite
 ##########################################
 
 .. toctree::
@@ -29,7 +29,7 @@ GIOTTO SUITE
    Report a Bug <github_issues.rst>
 
 **********************************************
-Multi-Level Spatial Biology Exploration 
+Overview 
 **********************************************
 
 .. image:: images/index/giotto_suite.png
