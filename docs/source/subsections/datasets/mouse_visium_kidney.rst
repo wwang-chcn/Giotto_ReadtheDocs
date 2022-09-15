@@ -1,8 +1,8 @@
 ==========================
-mouse_visium_kidney_210830
+Mouse Visium Kidney
 ==========================
 
-:Date: 2022-09-14
+:Date: 2021-08-30
 
 .. raw:: html
 
