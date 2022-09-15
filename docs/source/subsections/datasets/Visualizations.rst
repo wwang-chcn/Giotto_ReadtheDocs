@@ -1,6 +1,6 @@
-==============
-Visualizations
-==============
+=======================================
+How to make visualizations with Giotto?
+=======================================
 
 :Date: 2022-09-14
 
@@ -77,7 +77,7 @@ Creating your Giotto Object
                                stat_params = list(expression_values = 'normalized'),
                                adjust_params = NULL)
 
-1. Visualizing your Dataset.
+1. Visualizing your dataset
 ============================
 
 This dataset includes eight sequential slices. As such it can be
@@ -105,7 +105,7 @@ and 3D
 .. image:: ../inst/images/getting_started_figs/visualizations/1-spatPlot3D.png
    :width: 50.0%
 
-2. Visualizing your Clusters
+2. Visualizing your clusters
 ============================
 
 .. container:: cell
