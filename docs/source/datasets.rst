@@ -166,12 +166,6 @@ Protein Multiplexing
         
         .. image:: images/dataset_page/CODEX_spleen_image_summary.png
 
-    .. card:: 
-        :link: subsections/datasets/seqFISH_cortex
-        :link-type: doc 
-        
-        .. image:: images/dataset_page/cyCIF_PDAC_image_summary.png
-
 
 *****************************
 Single Cell RNA Sequencing
