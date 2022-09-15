@@ -14,9 +14,104 @@ The Giotto branch **cless** is a version of Giotto without C++ code, which shoul
 
     remotes::install_github("RubD/Giotto@cless") 
 
+.. _package_not_found_mac:
+
+Issue 1: Troubleshooting Packages not Found
+========================
+
+In the event that packages are inaccessible in the default installation
+of the Giotto miniconda environment, one troubleshooting method is
+provided here.
+
+.. container:: cell
+
+   .. code:: r
+
+      # Restart the R session, while maintaining workspace variables.
+      # If using RStudio, the following command will do exactly that:
+      .rs.restartR()
+      # Direct reticulate to use Python within the Giotto Environment
+      reticulate::use_python(default_python_path)
+      # Check if packages exist again. Ensure function from above code block is defined.
+      missing_packages <- pkg_check()
+      retry_install <- length(missing_packages) > 0
+      if(retry_install){
+        
+        # Attempt to reinstall all packages.
+        pkgs_w_versions <- c('pandas==1.1.5',
+                           'networkx==2.6.3',
+                           'python-igraph==0.9.6',
+                           'leidenalg==0.8.7',
+                           'python-louvain==0.15',
+                           'scikit-learn==0.24.2',
+                           'python.app==2')
+        
+        py_pkgs = c('pandas','networkx', 
+                    'igraph', 'leidenalg',
+                    'community','sklearn','python.app')
+        
+        if(Sys.info()[['sysname']] != "Darwin"){
+          pkgs_w_versions = pkgs_w_versions[!grepl(pattern = 'python.app', x = pkgs_w_versions)]
+          py_pkgs = py_pkgs[!grepl(pattern = 'python.app', x = py_pkgs)]
+        }
+        
+        env_location <- reticulate::py_discover_config()$pythonhome
+        partial_path_to_conda <- paste0(reticulate::miniconda_path(),'/envs/giotto_env')
+        
+        if(.Platform[['OS.type']] == 'unix') {
+          
+          conda_full_path = paste0(partial_conda_path,'/','bin/conda')
+          
+          # Remove all previous installations
+          reticulate::conda_remove(envname = env_location,
+                                   packages = py_pkgs,
+                                   conda = conda_full_path)
+          
+          # Reinstall
+          reticulate::conda_install(packages = pkgs_w_versions,
+                                    envname = env_location,
+                                    method = 'conda',
+                                    conda = conda_full_path,
+                                    python_version = 3.6)
+          
+          # Reinstall smfishhmrf with pip
+          reticulate::conda_install(packages = 'smfishhmrf==1.3.3',
+                                    envname = env_location,
+                                    method = 'conda',
+                                    conda = conda_full_path,
+                                    pip = TRUE,
+                                    python_version = 3.6)
+        }
+        else if(.Platform[['OS.type']] == 'windows'){
+          conda_full_path = paste0(partial_conda_path,'/','condabin/conda.bat')
+          
+          # Remove all previous installations
+          reticulate::conda_remove(envname = env_location,
+                                   packages = py_pkgs,
+                                   conda = conda_full_path)
+          
+          # Reinstall
+          reticulate::conda_install(packages = pkgs_w_versions,
+                                    envname = env_location,
+                                    method = 'conda',
+                                    conda = conda_full_path,
+                                    python_version = 3.6,
+                                    channel = c('conda-forge', 'vtraag'))
+          
+          # Reinstall smfishhmrf with pip
+          reticulate::conda_install(packages = 'smfishhmrf==1.3.3',
+                                    envname = env_location,
+                                    method = 'conda',
+                                    conda = conda_full_path,
+                                    pip = TRUE,
+                                    python_version = 3.6)
+          
+        }
+      }
+      
 .. _clang_error_mac:
 
-Issue 1: Clang Error
+Issue 2: Clang Error
 ========================
 
 If you see this error on your MacOS:
@@ -57,7 +152,7 @@ You can install another clang and point R to use that clang, which supports the 
     LDFLAGS=-L/usr/local/opt/gettext/lib -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib
     CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include
 
-Issue 2: Clang Error
+Issue 3: Clang Error
 =======================
 If you see this error on your MacOS:
 
