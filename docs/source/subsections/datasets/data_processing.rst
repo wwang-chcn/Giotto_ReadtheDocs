@@ -1,10 +1,10 @@
 ===============
-data_processing
+Data Processing
 ===============
 
 :Date: 2022-09-14
 
-After creating the Giotto object, it must be prepared for downstream
+After creating the Giotto object, there are several steps for performing downstream
 analysis. This tutorial walks through filtering, normalizing, adjusting
 for batch effects, adding statistics and metadata to a Giotto object, as
 well as high efficiency options for data processing.
@@ -28,13 +28,13 @@ Create the Giotto Object
 
       library(Giotto)
 
-      # Specify path from which data may be retrieved/stored
+      # Specify path from which data may be retrieved or stored
       data_directory = paste0(getwd(),'/gobject_processing_data/')
-      # alternatively, "/path/to/where/your/data/lives/"
+      # "/path/to/where/your/data/lives/"
 
       # Specify path to which results may be saved
       results_directory = paste0(getwd(),'/gobject_processing_results/') 
-      # alternatively, "/path/to/store/your/results/"
+      # "/path/to/store/your/results/"
 
       genv_exists = checkGiottoEnvironment()
       if(!genv_exists){
@@ -196,7 +196,7 @@ data by cells or genes, specified by scale_order.
                                  scale_order = 'first_feats', # Default, alternatively 'first_cells'
                                  verbose = T)
 
-The ‘pearson_resid’ method uses the Lause/Kobak et al. method. Fist,
+The ‘pearson_resid’ method uses the Lause/Kobak et al. method. Fist,
 expected values are calculated based on Pearson correlations. Next,
 z-scores are calculated based on observed and expected values. *Note
 that normalizing with this method will save the data within the “scaled”
