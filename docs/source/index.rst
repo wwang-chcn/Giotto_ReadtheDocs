@@ -7,7 +7,7 @@ Giotto Suite
    :caption: General
    :hidden:
  
-   Installation <gettingstarted.rst> 
+   Getting Started <gettingstarted.rst> 
    Documentation <documentation.rst>
    Contribute <contribute.rst> 
 
@@ -16,7 +16,7 @@ Giotto Suite
    :caption: Guides
    :hidden:
 
-   Datasets <datasets.rst> 
+   Tutorials <datasets.rst> 
    FAQs <faqs> 
    Try Giotto <trygiotto.rst>
    
