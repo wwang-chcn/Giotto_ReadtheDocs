@@ -114,7 +114,7 @@ Single-Cell
     .. grid-item-card::
 
         .. image:: images/dataset_page/starmap_cortex_image_summary.png
-            :target: ../../build/html/subsections/datasets/osmFISH_mouse_SS_cortex.html
+            :target: ../../build/html/subsections/datasets/mini_starmap.html
 
 .. card-carousel:: 3
 
