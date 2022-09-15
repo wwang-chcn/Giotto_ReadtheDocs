@@ -27,7 +27,7 @@ Visium datasets
 
     .. grid-item-card::
         
-        .. image:: images/dataset_page/visium_prostate_summary.png
+        .. image:: images/dataset_page/visium_brain_image_summary.png
             :target: ../build/html/html/subsections/datasets/mouse_visium_brain.html
     
     .. grid-item-card::
@@ -56,30 +56,6 @@ Visium datasets
         
         .. image:: images/dataset_page/visium_prostate_summary.png
  
-
-Other Technologies 
-====================
-
-.. .. grid:: 3
-
-    .. grid-item-card::
-
-        .. image:: images/dataset_page/coming_soon_summary.png
-            :target: ../../build/html/html/subsections/datasets/mouse_visium_kidney.html
-        
-.. card-carousel:: 3
-
-    .. card:: 
-        :link: /subsections/datasets/other_technologies_coming_soon
-        :link-type: doc
-        
-        .. image:: images/dataset_page/coming_soon_summary.png
-
-    .. card:: 
-        :link: /subsections/datasets/other_technologies_coming_soon
-        :link-type: doc 
-        
-        .. image:: images/dataset_page/coming_soon_summary.png
     
 **************
 Single-Cell 
@@ -196,6 +172,7 @@ Protein Multiplexing
         
         .. image:: images/dataset_page/cyCIF_PDAC_image_summary.png
 
+
 *****************************
 Single Cell RNA Sequencing
 *****************************
@@ -213,3 +190,23 @@ Single Cell RNA Sequencing
         :link-type: doc 
         
         .. image:: images/dataset_page/SC_RNAseq_integration.png
+        
+
+*****************************
+Other Technologies 
+*****************************
+
+.. .. grid:: 3
+
+    .. grid-item-card::
+
+        .. image:: images/dataset_page/coming_soon_summary.png
+            :target: ../../build/html/html/subsections/datasets/mouse_visium_kidney.html
+        
+.. card-carousel:: 3
+
+    .. card:: 
+        :link: /subsections/datasets/other_technologies_coming_soon
+        :link-type: doc
+        
+        .. image:: images/dataset_page/coming_soon_summary.png
