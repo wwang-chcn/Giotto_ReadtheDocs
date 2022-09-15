@@ -48,6 +48,7 @@ extensions = [
 'sphinx_toolbox', 
 'sphinx_toolbox.shields',
 'sphinx_toolbox.github',
+'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',
 #'m2r2', -- moved to requirements.txt
@@ -55,6 +56,9 @@ extensions = [
 #'myst_parser' #myst_parser caused a fatal error
 #'sphinxcontrib.spelling' #spell checker fatal error
 ]
+
+# user starts in light mode
+default_dark_mode = False
 
 #Added for m2r2 extension
 source_suffix = ['.rst', '.md']
