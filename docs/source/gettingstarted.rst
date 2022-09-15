@@ -57,13 +57,13 @@ Learn more about Giotto Suite
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_giotto.png
-            :target: ../build/html/subsections/datasets/mini_visium.html
+            :target: https://ed2uiz-giotto-readthedocs.readthedocs.io/en/latest/subsections/datasets/getting_started_gobject.html
 
 
     .. grid-item-card::
         
         .. image:: images/getting_started/icons_processing.png
-            :target: ../../build/html/subsections/datasets/mini_visium.html
+            :target: https://ed2uiz-giotto-readthedocs.readthedocs.io/en/latest/subsections/datasets/getting_started_gobject.html
     
 
     .. grid-item-card::
