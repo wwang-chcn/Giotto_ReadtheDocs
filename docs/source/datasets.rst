@@ -149,7 +149,7 @@ Subcellular
         .. image:: images/dataset_page/resolve_bioscience_cancer_summary.png
     
     .. card:: 
-        :link: subsections/datasets/nanostring_overview
+        :link: subsections/datasets/Nanostring_Lung12_jan26_21
         :link-type: doc 
         
         .. image:: images/dataset_page/nanostring_overview_icon.png
