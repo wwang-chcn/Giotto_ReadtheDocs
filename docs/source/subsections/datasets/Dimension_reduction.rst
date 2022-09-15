@@ -1,11 +1,11 @@
 ===================
-Dimension_reduction
+How to cluster my Giotto object?
 ===================
 
 :Date: 2022-09-14
 
 This tutorial walks through the dimension reduction and clustering
-capabilities of Giotto. We begin this tutorial with the Giotto Object
+capabilities of Giotto Suite. We begin this tutorial with the Giotto Object
 processed in the previous tutorial, `data
 processing <./data_processing.html>`__. For convenience, the code to
 create this object is provided below. However, we encourage new users to
@@ -216,7 +216,7 @@ neighbor network.
       ## create a shared nearest neighbor network (sNN), where k is the number of k neighbors to use
       testobj <- createNearestNetwork(gobject = testobj, dimensions_to_use = 1:15, k = 15)
 
-Cells can be clustered in Giotto using k-means, Leiden, or Louvain
+Cells can be clustered in Giotto Suite using k-means, Leiden, or Louvain
 clustering. These clustering algorithms return cluster information
 within cell_metadata, which is named accordingly by default. The name
 may be changed by providing the name argument, as shown in the code
