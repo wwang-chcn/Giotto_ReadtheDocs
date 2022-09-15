@@ -31,8 +31,9 @@ Step 1: Install Giotto Suite
 
 Step 2: Install the Giotto Python environment
 
+This step only needs to be run once. Giotto Suite will automatically detect the environment in the future.
+
 .. code-block:: r
-    :caption: This step only needs to be run once. Giotto Suite will automatically detect the environment in the future.
     library(Giotto)
     installGiottoEnvironment()
 
