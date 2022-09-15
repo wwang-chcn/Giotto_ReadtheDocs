@@ -48,7 +48,7 @@ Visium datasets
         :link: /subsections/datasets/mouse_visium_brain
         :link-type: doc 
         
-        .. image:: images/dataset_page/visium_brain_image_summary
+        .. image:: images/dataset_page/visium_brain_image_summary.png
     
     .. card:: 
         :link: subsections/datasets/visium_prostate_integration
