@@ -63,31 +63,31 @@ Learn more about Giotto Suite
     .. grid-item-card::
         
         .. image:: images/getting_started/icons_processing.png
-            :target: https://ed2uiz-giotto-readthedocs.readthedocs.io/en/latest/subsections/datasets/getting_started_gobject.html
+            :target: https://ed2uiz-giotto-readthedocs.readthedocs.io/en/latest/subsections/datasets/data_processing.html
     
 
     .. grid-item-card::
         
         .. image:: images/getting_started/icons_clustering.png
-            :target: ../../build/html/subsections/datasets/mini_visium.html
+            :target: https://ed2uiz-giotto-readthedocs.readthedocs.io/en/latest/subsections/datasets/Dimension_reduction.html
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_images.png
-            :target: ../../build/html/subsections/tipsandtricks/howtovisualizeandsaveplots.html
+            :target: https://ed2uiz-giotto-readthedocs.readthedocs.io/en/latest/subsections/datasets/getting_started_images.html
         
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_visualizations.png
-            :target: ../../build/html/subsections/datasets/mini_3D_STARmap.html 
+            :target: https://ed2uiz-giotto-readthedocs.readthedocs.io/en/latest/subsections/datasets/Visualizations.html
 
 
     .. grid-item-card::
         
         .. image:: images/getting_started/icons_saving.png
-            :target: ../../build/html/subsections/datasets/mini_visium.html
+            :target: https://ed2uiz-giotto-readthedocs.readthedocs.io/en/latest/subsections/datasets/getting_started_saving.html
 
 **************************
 Analyses
