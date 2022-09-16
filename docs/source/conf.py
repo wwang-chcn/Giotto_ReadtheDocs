@@ -18,12 +18,12 @@ import sys
 
 # -- Project information -----------------------------------------------------
 
-project = 'Giotto'
+project = 'Giotto Suite'
 copyright = '2021, Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan'
 author = 'Developed by Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan.'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0'
+release = '1.1.0'
 
 
 # -- General configuration ---------------------------------------------------
