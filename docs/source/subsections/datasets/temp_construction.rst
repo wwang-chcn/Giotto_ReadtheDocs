@@ -2,7 +2,7 @@
 temp_construction
 =================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 .. raw:: html
 
@@ -13,5 +13,5 @@ Come back soon!
 
 [|image1|]
 
-.. |image1| image:: ../inst/images/general_figs/construction-boy.png
+.. |image1| image:: /images/images_pkgdown/general_figs/construction-boy.png
    :width: 75.0%

@@ -2,7 +2,7 @@
 mouse_visium_brain_Sep30_21
 ===========================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 Set up Giotto Environment
 =========================
@@ -60,7 +60,7 @@ Part 1: Create Giotto Visium Object and check spatial information by visualizing
       spatPlot2D(gobject = visium_brain, cell_color = 'in_tissue', show_image = T, point_alpha = 0.7,
                save_param = list(save_name = '2_a_spatplot_image'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/2_a_spatplot_image.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/2_a_spatplot_image.png
    :width: 50.0%
 
 .. container:: cell
@@ -78,7 +78,7 @@ Part 1: Create Giotto Visium Object and check spatial information by visualizing
       spatPlot2D(gobject = visium_brain, cell_color = 'in_tissue', show_image = T, point_alpha = 0.7,
                save_param = list(save_name = '2_b_spatplot_image_adjusted'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/2_b_spatplot_image_adjusted.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/2_b_spatplot_image_adjusted.png
    :width: 50.0%
 
 .. container:: cell
@@ -93,7 +93,7 @@ Part 1: Create Giotto Visium Object and check spatial information by visualizing
                cell_color_code = c('0' = 'lightgrey', '1' = 'blue'),
                save_param = list(save_name = '2_c_in_tissue'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/2_c_in_tissue.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/2_c_in_tissue.png
    :width: 50.0%
 
 Part 2: Process Giotto Visium Object
@@ -126,7 +126,7 @@ Part 2: Process Giotto Visium Object
       spatPlot2D(gobject = visium_brain, show_image = T, point_alpha = 0.7,
                  save_param = list(save_name = '2_d_spatial_locations'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/2_d_spatial_locations.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/2_d_spatial_locations.png
    :width: 50.0%
 
 .. container:: cell
@@ -137,7 +137,7 @@ Part 2: Process Giotto Visium Object
                  cell_color = 'nr_feats', color_as_factor = F,
                  save_param = list(save_name = '2_e_nr_genes'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/2_e_nr_genes.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/2_e_nr_genes.png
    :width: 50.0%
 
 Part 3: Dimention Reduction
@@ -152,7 +152,7 @@ Part 3: Dimention Reduction
                                    save_plot = TRUE,
                                    save_param = list(save_name = '3_a_HVGplot'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/3_a_HVGplot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/3_a_HVGplot.png
    :width: 50.0%
 
 .. container:: cell
@@ -170,7 +170,7 @@ Part 3: Dimention Reduction
 
       screePlot(visium_brain, ncp = 30, save_param = list(save_name = '3_b_screeplot'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/3_b_screeplot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/3_b_screeplot.png
    :width: 50.0%
 
 .. container:: cell
@@ -180,7 +180,7 @@ Part 3: Dimention Reduction
       plotPCA(gobject = visium_brain,
               save_param = list(save_name = '3_c_PCA_reduction'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/3_c_PCA_reduction.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/3_c_PCA_reduction.png
    :width: 50.0%
 
 .. container:: cell
@@ -192,7 +192,7 @@ Part 3: Dimention Reduction
       plotUMAP(gobject = visium_brain,
                save_param = list(save_name = '3_d_UMAP_reduction'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/3_d_UMAP_reduction.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/3_d_UMAP_reduction.png
    :width: 50.0%
 
 .. container:: cell
@@ -203,7 +203,7 @@ Part 3: Dimention Reduction
       plotTSNE(gobject = visium_brain,
                save_param = list(save_name = '3_e_tSNE_reduction'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/3_e_tSNE_reduction.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/3_e_tSNE_reduction.png
    :width: 50.0%
 
 Part 4: Cluster
@@ -221,7 +221,7 @@ Part 4: Cluster
                cell_color = 'leiden_clus', show_NN_network = T, point_size = 2.5,
                save_param = list(save_name = '4_a_UMAP_leiden'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/4_a_UMAP_leiden.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/4_a_UMAP_leiden.png
    :width: 50.0%
 
 Part 5: co-visualize
@@ -239,7 +239,7 @@ Part 5: co-visualize
                   dim_point_size = 2, spat_point_size = 2.5,
                   save_param = list(save_name = '5_a_covis_leiden'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/5_a_covis_leiden.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/5_a_covis_leiden.png
    :width: 50.0%
 
 .. container:: cell
@@ -250,7 +250,7 @@ Part 5: co-visualize
                   dim_point_size = 2, spat_point_size = 2.5,
                   save_param = list(save_name = '5_b_nr_genes'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/5_b_nr_genes.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/5_b_nr_genes.png
    :width: 50.0%
 
 5.2 selected region
@@ -269,7 +269,7 @@ Part 5: co-visualize
                   cell_color = 'leiden_clus', spat_point_size = 5, 
                   save_param = list(save_name = '5_c_DEG_subset'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/5_c_DEG_subset.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/5_c_DEG_subset.png
    :width: 50.0%
 
 Part 6: Differential Expression
@@ -295,7 +295,7 @@ Part 6: Differential Expression
                  strip_text = 8, strip_position = 'right',
                  save_param = list(save_name = '6_a_violinplot_gini', base_width = 5, base_height = 10))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/6_a_violinplot_gini.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/6_a_violinplot_gini.png
    :width: 50.0%
 
 .. container:: cell
@@ -308,7 +308,7 @@ Part 6: Differential Expression
                           x_text_size = 10, y_text_size = 10,
                           save_param = list(save_name = '6_b_metaheatmap_gini'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/6_b_metaheatmap_gini.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/6_b_metaheatmap_gini.png
    :width: 50.0%
 
 .. container:: cell
@@ -321,7 +321,7 @@ Part 6: Differential Expression
                     cow_n_col = 3, point_size = 1,
                     save_param = list(save_name = '6_c_gini_umap', base_width = 8, base_height = 5))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/6_c_gini_umap.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/6_c_gini_umap.png
    :width: 50.0%
 
 .. container:: cell
@@ -341,7 +341,7 @@ Part 6: Differential Expression
                  strip_text = 10, strip_position = 'right',
                  save_param = list(save_name = '6_d_violinplot_scran', base_width = 5))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/6_d_violinplot_scran.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/6_d_violinplot_scran.png
    :width: 50.0%
 
 .. container:: cell
@@ -353,7 +353,7 @@ Part 6: Differential Expression
                           metadata_cols = c('leiden_clus'),
                           save_param = list(save_name = '6_e_metaheatmap_scran'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/6_e_metaheatmap_scran.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/6_e_metaheatmap_scran.png
    :width: 50.0%
 
 .. container:: cell
@@ -366,7 +366,7 @@ Part 6: Differential Expression
                   cow_n_col = 3, point_size = 1,
                   save_param = list(save_name = '6_f_scran_umap', base_width = 8, base_height = 5))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/6_f_scran_umap.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/6_f_scran_umap.png
    :width: 50.0%
 
 Part 7: Deconvolution
@@ -459,7 +459,7 @@ Part 7: Deconvolution
                                y_text_size = 8,
                                save_param = list(save_name="7_a_metaheatmap"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/7_a_metaheatmap.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/7_a_metaheatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -473,7 +473,7 @@ Part 7: Deconvolution
                    cow_n_col = 2,coord_fix_ratio = NULL, point_size = 0.75, show_legend = F,
                    save_param = list(save_name="7_b_spatcellplot_1"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/7_b_spatcellplot_1.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/7_b_spatcellplot_1.png
    :width: 50.0%
 
 .. container:: cell
@@ -487,7 +487,7 @@ Part 7: Deconvolution
                       plot_alignment = 'horizontal', 
                       save_param = list(save_name="7_d_spatDimCellPlot", base_width=7, base_height=10))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/7_d_spatDimCellPlot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/7_d_spatDimCellPlot.png
    :width: 50.0%
 
 7.2 HyperGeometric test
@@ -509,7 +509,7 @@ Part 7: Deconvolution
                    cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1.75,
                    save_param = list(save_name = "7.2b_HyperGeometric_plot"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/7.2b_HyperGeometric_plot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/7.2b_HyperGeometric_plot.png
    :width: 50.0%
 
 7.3 Rank
@@ -530,7 +530,7 @@ Part 7: Deconvolution
                    cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1,
                    save_param = list(save_name = "7.3a_Rank_plot"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/7.3a_Rank_plot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/7.3a_Rank_plot.png
    :width: 50.0%
 
 7.4 Deconvolution
@@ -553,7 +553,7 @@ Part 7: Deconvolution
                    cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1,
                    save_param = list(save_name = "7.4_DWLS_plot"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/7.4_DWLS_plot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/7.4_DWLS_plot.png
    :width: 50.0%
 
 Part 8: Spatial Grid
@@ -571,7 +571,7 @@ Part 8: Spatial Grid
                grid_color = 'red', spatial_grid_name = 'spatial_grid', 
                save_param = list(save_name = '8_grid'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/8_grid.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/8_grid.png
    :width: 50.0%
 
 Part 9: spatial network
@@ -592,7 +592,7 @@ Part 9: spatial network
                network_color = 'blue', spatial_network_name = 'spatial_network',
                save_param = list(save_name = '9_a_knn_network'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/9_a_knn_network.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/9_a_knn_network.png
    :width: 50.0%
 
 Part 10: Spatial Genes and Spatial Patterns
@@ -609,7 +609,7 @@ Part 10: Spatial Genes and Spatial Patterns
                    feats  = kmtest$feats[1:6], cow_n_col = 2, point_size = 1.5,
                    save_param = list(save_name = '10_a_spatial_genes_km'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/10_a_spatial_genes_km.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/10_a_spatial_genes_km.png
    :width: 50.0%
 
 .. container:: cell
@@ -624,7 +624,7 @@ Part 10: Spatial Genes and Spatial Patterns
                    feats = ranktest$feats[1:6], cow_n_col = 2, point_size = 1.5,
                    save_param = list(save_name = '10_b_spatial_genes_rank'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/10_b_spatial_genes_rank.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/10_b_spatial_genes_rank.png
    :width: 50.0%
 
 .. container:: cell
@@ -651,7 +651,7 @@ Part 10: Spatial Genes and Spatial Patterns
                            save_param = list(save_name="10_c_heatmap",
                                              base_height = 6, base_width = 8, units = 'cm'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/10_c_heatmap.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/10_c_heatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -686,7 +686,7 @@ Part 10: Spatial Genes and Spatial Patterns
       spatPlot2D(gobject = visium_brain, cell_color = 'HMRF_k20_b.40',
                point_size = 2, save_param=c(save_name="10_d_spatPlot2D_HMRF"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_sep29_2021/10_d_spatPlot2D_HMRF.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_sep29_2021/10_d_spatPlot2D_HMRF.png
    :width: 50.0%
 
 Export and create Giotto Viewer
@@ -716,7 +716,7 @@ Export and create Giotto Viewer
                          expression_rounding = 2,
                          overwrite_dir = T)
 
-.. |image1| image:: ../inst/images/general_figs/visium_technology.png
+.. |image1| image:: /images/images_pkgdown/general_figs/visium_technology.png
    :width: 50.0%
-.. |image2| image:: ../inst/images/general_figs/mouse_brain_highres.png
+.. |image2| image:: /images/images_pkgdown/general_figs/mouse_brain_highres.png
    :width: 50.0%

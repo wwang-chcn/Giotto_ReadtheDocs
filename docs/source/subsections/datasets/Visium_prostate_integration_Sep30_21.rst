@@ -2,7 +2,7 @@
 Visium_prostate_integration_Sep30_21
 ====================================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 Set up Giotto Environment
 =========================
@@ -106,7 +106,7 @@ Part 1: Create Giotto objects and join
           group_by = 'list_ID', point_alpha = 0.5,
           save_param = list(save_name = "1a_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/1a_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/1a_plot.png
    :width: 50.0%
 
 .. container:: cell
@@ -118,7 +118,7 @@ Part 1: Create Giotto objects and join
           show_image = T, image_name = c("NP-image"), point_alpha = 0.3,
           save_param = list(save_name = "1b_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/1b_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/1b_plot.png
    :width: 50.0%
 
 .. container:: cell
@@ -131,7 +131,7 @@ Part 1: Create Giotto objects and join
           point_alpha = 0.3,
           save_param = list(save_name = "1c_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/1c_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/1c_plot.png
    :width: 50.0%
 
 Part 2: Process Giotto Objects
@@ -180,7 +180,7 @@ Part 2: Process Giotto Objects
       #fDataDT(testcombo)
       spatPlot2D(gobject = testcombo, group_by = 'list_ID', cell_color = 'nr_feats', color_as_factor = F, point_size = 0.75, save_param = list(save_name = "2c_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/2c_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/2c_plot.png
    :width: 50.0%
 
 Part 3: Dimention Reduction
@@ -195,7 +195,7 @@ Part 3: Dimention Reduction
       testcombo <- runPCA(gobject = testcombo, center = TRUE, scale_unit = TRUE)
       screePlot(testcombo, ncp = 30, save_param = list(save_name = "3a_screeplot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/3a_screeplot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/3a_screeplot.png
    :width: 50.0%
 
 Part 4: Clustering
@@ -228,7 +228,7 @@ integration methods.
           cell_color = 'leiden_clus', show_NN_network = T, point_size = 1.5,
           save_param = list(save_name = "4.1a_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/4.1a_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.1a_plot.png
    :width: 50.0%
 
 .. container:: cell
@@ -240,7 +240,7 @@ integration methods.
           point_size = 1.5,
           save_param = list(save_name = "4.1b_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/4.1b_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.1b_plot.png
    :width: 50.0%
 
 .. container:: cell
@@ -251,7 +251,7 @@ integration methods.
           cell_color = 'leiden_clus',
           save_param = list(save_name = "4.1c_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/4.1c_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.1c_plot.png
    :width: 50.0%
 
 4.2 With Harmony integration
@@ -299,7 +299,7 @@ spatial datasets.
       # If you want to show NN network information, you will need to specify these arguments in the plotUMAP function
       # show_NN_network = T, nn_network_to_use = 'sNN' , network_name = 'NN.harmony'
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/4.2a_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.2a_plot.png
    :width: 50.0%
 
 .. container:: cell
@@ -311,7 +311,7 @@ spatial datasets.
           point_size = 1.5,
           save_param = list(save_name = "4.2b_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/4.2b_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.2b_plot.png
    :width: 50.0%
 
 .. container:: cell
@@ -323,7 +323,7 @@ spatial datasets.
           cell_color = 'leiden_harmony',
           save_param = list(save_name = "4.2c_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/4.2c_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.2c_plot.png
    :width: 50.0%
 
 .. container:: cell
@@ -424,7 +424,7 @@ getSpatialDataset
                    cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1.25,
                    save_param = list(save_name = "5a_PAGE_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/5a_PAGE_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/5a_PAGE_plot.png
    :width: 50.0%
 
 5.2 Hypergeometric test
@@ -444,7 +444,7 @@ getSpatialDataset
                    cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1.75,
                    save_param = list(save_name = "5b_HyperGeometric_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/5b_HyperGeometric_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/5b_HyperGeometric_plot.png
    :width: 50.0%
 
 5.3 Rank Enrichment
@@ -468,7 +468,7 @@ getSpatialDataset
                      cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1,
                      save_param = list(save_name = "5c_Rank_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/5c_Rank_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/5c_Rank_plot.png
    :width: 50.0%
 
 5.4 DWLS Deconvolution
@@ -493,20 +493,20 @@ getSpatialDataset
                      cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1,
                      save_param = list(save_name = "5d_DWLS_plot"))
 
-.. image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/5d_DWLS_plot.png
+.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/5d_DWLS_plot.png
    :width: 50.0%
 
-.. |image1| image:: ../inst/images/general_figs/visium_technology.png
+.. |image1| image:: /images/images_pkgdown/general_figs/visium_technology.png
    :width: 50.0%
-.. |image2| image:: ../inst/images/general_figs/Visium_FFPE_Human_Normal_Prostate_image.png
+.. |image2| image:: /images/images_pkgdown/general_figs/Visium_FFPE_Human_Normal_Prostate_image.png
    :width: 50.0%
-.. |image3| image:: ../inst/images/general_figs/Visium_FFPE_Human_Prostate_Cancer_image.png
+.. |image3| image:: /images/images_pkgdown/general_figs/Visium_FFPE_Human_Prostate_Cancer_image.png
    :width: 50.0%
-.. |image4| image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/2a_plot.png
+.. |image4| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/2a_plot.png
    :width: 50.0%
-.. |image5| image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/2b_plot.png
+.. |image5| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/2b_plot.png
    :width: 50.0%
-.. |image6| image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/4_w_o_integration_plot.png
+.. |image6| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4_w_o_integration_plot.png
    :width: 50.0%
-.. |image7| image:: ../inst/images/visium_prostate_integration/vignette_sep29_2021/4_w_integration_plot.png
+.. |image7| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4_w_integration_plot.png
    :width: 50.0%

@@ -2,7 +2,7 @@
 Mouse Visium Brain
 =========================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 Set up Giotto Environment
 =========================
@@ -21,15 +21,16 @@ Set up Giotto Environment
       # set python path to conda env/bin/ directory if manually installed Giotto python dependencies by conda
       # python_path = '/path_to_conda/.conda/envs/giotto/bin/python'
       # set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-      # python_path = NULL
-      # if(is.null(python_path)) {
-      #  installGiottoEnvironment()
-      #}
+      python_path = NULL
+      if(is.null(python_path)) {
+        installGiottoEnvironment()
+      }
 
       # 3. Create Giotto Instructions
       instrs = createGiottoInstructions(save_dir = results_folder,
                                         save_plot = TRUE,
-                                        show_plot = FALSE)
+                                        show_plot = FALSE,
+                                        python_path = python_path)
 
 Dataset explanation
 ===================
@@ -75,7 +76,7 @@ Part 1: Create Giotto Visium Object and visualize
                  cell_color_code = c('0' = 'lightgrey', '1' = 'blue'), 
                  show_image = T, image_name = 'image')
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/0-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/0-spatPlot2D.png
    :width: 50.0%
 
 Part 2: Process Giotto Visium Object
@@ -108,7 +109,7 @@ Part 2: Process Giotto Visium Object
       spatPlot2D(gobject = visium_brain, show_image = T, point_alpha = 0.7,
                  cell_color = 'nr_feats', color_as_factor = F)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/1-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/1-spatPlot2D.png
    :width: 50.0%
 
 Part 3: Dimention Reduction
@@ -121,7 +122,7 @@ Part 3: Dimention Reduction
       ## highly variable features / genes (HVF)
       visium_brain <- calculateHVF(gobject = visium_brain, save_plot = TRUE)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/2-HVFplot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/2-HVFplot.png
    :width: 50.0%
 
 .. container:: cell
@@ -138,7 +139,7 @@ Part 3: Dimention Reduction
 
       screePlot(visium_brain, ncp = 30)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/3-screePlot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/3-screePlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -147,7 +148,7 @@ Part 3: Dimention Reduction
 
       dimPlot2D(gobject = visium_brain,dim_reduction_to_use = "pca")
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/4-PCA.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/4-PCA.png
    :width: 50.0%
 
 .. container:: cell
@@ -158,7 +159,7 @@ Part 3: Dimention Reduction
       visium_brain <- runUMAP(visium_brain, dimensions_to_use = 1:10)
       plotUMAP(gobject = visium_brain)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/5-UMAP.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/5-UMAP.png
    :width: 50.0%
 
 .. container:: cell
@@ -168,7 +169,7 @@ Part 3: Dimention Reduction
       visium_brain <- runtSNE(visium_brain, dimensions_to_use = 1:10)
       plotTSNE(gobject = visium_brain)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/6-tSNE.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/6-tSNE.png
    :width: 50.0%
 
 Part 4: Cluster
@@ -187,7 +188,7 @@ Part 4: Cluster
       plotUMAP(gobject = visium_brain,
                cell_color = 'leiden_clus', show_NN_network = T, point_size = 2.5)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/7-UMAP.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/7-UMAP.png
    :width: 50.0%
 
 .. container:: cell
@@ -198,7 +199,7 @@ Part 4: Cluster
       spatDimPlot(gobject = visium_brain, cell_color = 'leiden_clus',
                   dim_point_size = 2, spat_point_size = 2.5)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/8-spatDimPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/8-spatDimPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -208,7 +209,7 @@ Part 4: Cluster
       spatDimPlot(gobject = visium_brain, cell_color = 'nr_feats', color_as_factor = F,
                   dim_point_size = 2, spat_point_size = 2.5)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/9-spatDimPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/9-spatDimPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -219,7 +220,7 @@ Part 4: Cluster
       spatPlot2D(visium_brain, cell_color = 'leiden_clus',
                  coord_fix_ratio = 1)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/10-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/10-spatPlot2D.png
    :width: 50.0%
 
 Plot with group by:
@@ -233,7 +234,7 @@ Plot with group by:
                  cow_n_col = 6, show_legend = F,
                  save_param = list(base_width = 14, base_height = 14))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/11-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/11-spatPlot2D.png
    :width: 50.0%
 
 Highlight one or more groups:
@@ -247,7 +248,7 @@ Highlight one or more groups:
                  cell_color_code = c('8' = 'red'), other_cell_color = "grey", other_point_size = 1.5,
                  save_param = list(base_width = 7, base_height = 7))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/12-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/12-spatPlot2D.png
    :width: 50.0%
 
 Part 5: subset data
@@ -266,7 +267,7 @@ Part 5: subset data
       spatDimPlot(gobject = DG_subset,
                   cell_color = 'leiden_clus', spat_point_size = 5)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/13-spatDimPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/13-spatDimPlot2D.png
    :width: 50.0%
 
 Part 6: marker gene detection for clusters
@@ -292,7 +293,7 @@ Part 6: marker gene detection for clusters
                  strip_text = 8, strip_position = 'right',
                  save_param = list(base_width = 5, base_height = 10))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/14-violinPlot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/14-violinPlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -304,7 +305,7 @@ Part 6: marker gene detection for clusters
                           metadata_cols = c('leiden_clus'),
                           x_text_size = 10, y_text_size = 10)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/15-plotMetaDataHeatmap.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/15-plotMetaDataHeatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -317,7 +318,7 @@ Part 6: marker gene detection for clusters
                     cow_n_col = 4, point_size = 0.75,
                     save_param = list(base_width = 8, base_height = 8))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/16-dimFeatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/16-dimFeatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -337,7 +338,7 @@ Part 6: marker gene detection for clusters
                  strip_text = 10, strip_position = 'right',
                  save_param = list(base_width = 5))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/17-violinPlot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/17-violinPlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -348,7 +349,7 @@ Part 6: marker gene detection for clusters
       plotMetaDataHeatmap(visium_brain, selected_feats = topgenes_scran,
                           metadata_cols = c('leiden_clus'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/18-plotMetaDataHeatmap.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/18-plotMetaDataHeatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -361,7 +362,7 @@ Part 6: marker gene detection for clusters
                     cow_n_col = 3, point_size = 1,
                     save_param = list(base_width = 8, base_height = 8))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/19-dimFeatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/19-dimFeatPlot2D.png
    :width: 50.0%
 
 Part 7: Cell type enrichment
@@ -377,10 +378,9 @@ Part 7: Cell type enrichment
 | - `DWLS
   Deconvolution <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7>`__
   Corresponded Single cell dataset can be generated from
-  `here <http://mousebrain.org/downloads.html>`__. Giotto_SC is
-  processed from the downsampled
-  `Loom <https://satijalab.org/loomr/loomr_tutorial>`__ file and can
-  also be downloaded from getSpatialDataset.
+  `here <http://mousebrain.org/>`__. Giotto_SC is processed from the
+  downsampled `Loom <https://satijalab.org/loomr/loomr_tutorial>`__ file
+  and can also be downloaded from getSpatialDataset.
 
 .. container:: cell
 
@@ -475,7 +475,7 @@ Part 7: Cell type enrichment
                                x_text_size = 8,
                                y_text_size = 8)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/20-plotMetaDataCellsHeatmap.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/20-plotMetaDataCellsHeatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -488,7 +488,7 @@ Part 7: Cell type enrichment
                      cell_annotation_values = cell_types_PAGE[1:4],
                      cow_n_col = 2,coord_fix_ratio = 1, point_size = 1.25, show_legend = T)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/21-spatCellPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/21-spatCellPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -502,7 +502,7 @@ Part 7: Cell type enrichment
                         plot_alignment = 'horizontal',
                         save_param = list(base_width=7, base_height=10))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/22-spatDimCellPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/22-spatDimCellPlot2D.png
    :width: 50.0%
 
 7.2 HyperGeometric test
@@ -522,7 +522,7 @@ Part 7: Cell type enrichment
                    cell_annotation_values = cell_types_HyperGeometric[1:4],
                    cow_n_col = 2,coord_fix_ratio = NULL, point_size = 1.75)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/23-spatCellPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/23-spatCellPlot2D.png
    :width: 50.0%
 
 7.3 Rank Enrichment
@@ -546,7 +546,7 @@ Part 7: Cell type enrichment
                      cow_n_col = 2,coord_fix_ratio = 1, point_size = 1,
                      save_param = list(save_name = "spat_enr_Rank_plot"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220426/spat_enr_Rank_plot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220426/spat_enr_Rank_plot.png
    :width: 50.0%
 
 7.4 DWLS spatial deconvolution
@@ -571,7 +571,7 @@ Part 7: Cell type enrichment
                      cow_n_col = 2,coord_fix_ratio = 1, point_size = 1,
                      save_param = list(save_name = "DWLS_plot"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220426/DWLS_plot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220426/DWLS_plot.png
    :width: 50.0%
 
 Part 8: Spatial Grid
@@ -591,7 +591,7 @@ Part 8: Spatial Grid
       spatPlot2D(visium_brain, cell_color = 'leiden_clus', show_grid = T,
                  grid_color = 'red', spatial_grid_name = 'spatial_grid')
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/24-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/24-spatPlot2D.png
    :width: 50.0%
 
 Part 9: spatial network
@@ -611,7 +611,7 @@ Part 9: spatial network
       spatPlot2D(gobject = visium_brain,  show_network= T,
                  network_color = 'blue', spatial_network_name = 'spatial_network')
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/25-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/25-spatPlot2D.png
    :width: 50.0%
 
 Part 10: Spatial Genes
@@ -629,7 +629,7 @@ Part 10: Spatial Genes
       spatFeatPlot2D(visium_brain, expression_values = 'scaled',
                      feats = ranktest$feats[1:6], cow_n_col = 2, point_size = 1.5)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/26-spatFeatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/26-spatFeatPlot2D.png
    :width: 50.0%
 
 Part 11: Spatial Co-Expression modules
@@ -654,7 +654,7 @@ Part 11: Spatial Co-Expression modules
       spatFeatPlot2D(visium_brain, expression_values = 'scaled',
                      feats = top10_genes$variable[1:4], point_size = 3)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/27-spatFeatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/27-spatFeatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -671,7 +671,7 @@ Part 11: Spatial Co-Expression modules
                            heatmap_legend_param = list(title = NULL),
                            save_param = list(base_height = 6, base_width = 8, units = 'cm'))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/28-heatmSpatialCorFeats.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/28-heatmSpatialCorFeats.png
    :width: 50.0%
 
 .. container:: cell
@@ -688,7 +688,7 @@ Part 11: Spatial Co-Expression modules
       top_netw_spat_cluster = showSpatialCorFeats(spat_cor_netw_DT, use_clus_name = 'spat_netw_clus',
                                                   selected_clusters = 6, show_top_feats = 1)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/29-rankSpatialCorGroups.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/29-rankSpatialCorGroups.png
    :width: 50.0%
 
 .. container:: cell
@@ -708,7 +708,7 @@ Part 11: Spatial Co-Expression modules
                    cell_annotation_values = netw_ranks$clusters,
                    point_size = 1, cow_n_col = 5, save_param = list(base_width = 15))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/30-spatCellPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/30-spatCellPlot2D.png
    :width: 50.0%
 
 Part 12: Spatially informed clusters
@@ -750,7 +750,7 @@ Part 12: Spatially informed clusters
 
       spatPlot2D(visium_brain, cell_color = 'custom_leiden', cell_color_code = selected_colors, coord_fix_ratio = 1)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/31-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/31-spatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -759,7 +759,7 @@ Part 12: Spatially informed clusters
 
       plotUMAP(gobject = visium_brain, cell_color = 'custom_leiden', cell_color_code = selected_colors, point_size = 1.5)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/32-UMAP.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/32-UMAP.png
    :width: 50.0%
 
 Part 13: Spatial domains with HMRF
@@ -786,10 +786,10 @@ Part 13: Spatial domains with HMRF
 
       spatPlot2D(gobject = visium_brain, cell_color = 'HMRF_k20_b.40')
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/33-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/33-spatPlot2D.png
    :width: 50.0%
 
-.. |image1| image:: ../inst/images/general_figs/visium_technology.png
+.. |image1| image:: /images/images_pkgdown/general_figs/visium_technology.png
    :width: 50.0%
-.. |image2| image:: ../inst/images/general_figs/mouse_brain_highres.png
+.. |image2| image:: /images/images_pkgdown/general_figs/mouse_brain_highres.png
    :width: 50.0%

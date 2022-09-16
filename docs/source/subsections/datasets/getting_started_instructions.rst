@@ -2,7 +2,7 @@
 getting_started_instructions
 ============================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 How to visualize and save plots in Giotto?
 ==========================================
@@ -196,5 +196,5 @@ save_param. The following examples illustrate:
                          base_height = 10, 
                          base_width = 10)
 
-.. image:: ../inst/images/getting_started_figs/getting_started_instructions/original_clusters_black.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_instructions/original_clusters_black.png
    :width: 50.0%

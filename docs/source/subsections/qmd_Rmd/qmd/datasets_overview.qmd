@@ -1,0 +1,57 @@
+--- 
+title: datasets_overview 
+format: rst 
+date: 2022-09-16 
+--- 
+
+
+## Array based
+
+#### Visium datasets
+
+[![](/images/images_pkgdown/icons/datasets/visium_kidney_image_summary.png){width=30%}](./mouse_visium_kidney_210830.html)
+[![](/images/images_pkgdown/icons/datasets/visium_brain_image_summary.png){width=30%}](./mouse_visium_brain_220426.html)
+[![](/images/images_pkgdown/icons/datasets/visium_prostate_summary.png){width=30%}](./Visium_prostate_integration_Sep30_21.html)
+
+#### Other technologies
+
+[![](/images/images_pkgdown/icons/datasets/coming_soon_summary.png){width=30%}](./temp_construction.html)
+[![](/images/images_pkgdown/icons/datasets/coming_soon_summary.png){width=30%}](./temp_construction.html)
+
+<br>
+
+## Single-cell
+
+#### 2D datasets
+
+[![](https://github.com/drieslab/Giotto_site_suite/blob/master/inst/images/icons/datasets/miniseqFISH.png?raw=true){width=30%}](./mini_seqfish.html)
+[![](/images/images_pkgdown/icons/datasets/cortex_image_summary.png){width=30%}](./SeqFISH_cortex_210923.html)
+[![](/images/images_pkgdown/icons/datasets/osmFISH_SS_cortex_image_summary.png){width=30%}](./osmFISH_mouse_SScortex_Sep29_21.html)
+
+#### 3D datasets
+
+[![](/images/images_pkgdown/icons/datasets/merFISH_hypoth_image_summary.png){width=30%}](./merFISH_hypoth_210924.html)
+[![](/images/images_pkgdown/icons/datasets/starmap_cortex_image_summary.png){width=30%}](./temp_construction.html)
+
+<br>
+
+## Subcellular datasets
+
+[![](/images/images_pkgdown/icons/datasets/vizgen_brain_summary.png){width=30%}](./vizgen_mouse_brain_210929.html)
+[![](/images/images_pkgdown/icons/datasets/resolve_bioscience_cancer_summary.png){width=30%}](./Resolve_bc_210928.html)
+[![](/images/images_pkgdown/icons/datasets/nanostring_overview_icon.png){width=30%}](./nanostring_examples_overview.html)
+
+<br>
+
+## Protein multiplexing
+
+[![](/images/images_pkgdown/icons/datasets/CODEX_spleen_image_summary.png){width=30%}](./mouse_codex_spleen_Sep29_21.html)
+[![](/images/images_pkgdown/icons/datasets/cyCIF_PDAC_image_summary.png){width=30%}](./temp_construction.html)
+
+<br>
+
+## Single Cell RNA sequencing data
+
+[![](/images/images_pkgdown/icons/datasets/SC_RNAseq_standard.png){width=30%}](./singlecell_prostate_standard_Sep29_21.html)
+[![](/images/images_pkgdown/icons/datasets/SC_RNAseq_integration.png){width=30%}](./singlecell_prostate_integration_Sep30_21.html)
+

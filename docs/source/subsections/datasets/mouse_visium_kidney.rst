@@ -87,7 +87,7 @@ part 2: Create Giotto object & process data
       ## show aligned image
       spatPlot(gobject = visium_kidney, cell_color = 'in_tissue', show_image = T, point_alpha = 0.7)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/0-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/0-spatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -116,7 +116,7 @@ part 2: Create Giotto object & process data
       ## visualize
       spatPlot2D(gobject = visium_kidney, show_image = T, point_alpha = 0.7)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/1-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/1-spatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -126,7 +126,7 @@ part 2: Create Giotto object & process data
       spatPlot2D(gobject = visium_kidney, show_image = T, point_alpha = 0.7,
                  cell_color = 'nr_feats', color_as_factor = F)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/2-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/2-spatPlot2D.png
    :width: 50.0%
 
 part 3: dimension reduction
@@ -139,7 +139,7 @@ part 3: dimension reduction
       ## highly variable features (genes)
       visium_kidney <- calculateHVF(gobject = visium_kidney)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/3-HVFplot.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/3-HVFplot.png
    :width: 50.0%
 
 .. container:: cell
@@ -150,7 +150,7 @@ part 3: dimension reduction
       visium_kidney <- runPCA(gobject = visium_kidney)
       screePlot(visium_kidney, ncp = 30)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/4-screePlot.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/4-screePlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -159,7 +159,7 @@ part 3: dimension reduction
 
       plotPCA(gobject = visium_kidney)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/5-PCA.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/5-PCA.png
    :width: 50.0%
 
 .. container:: cell
@@ -170,7 +170,7 @@ part 3: dimension reduction
       visium_kidney <- runUMAP(visium_kidney, dimensions_to_use = 1:10)
       plotUMAP(gobject = visium_kidney)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/6-UMAP.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/6-UMAP.png
    :width: 50.0%
 
 .. container:: cell
@@ -180,7 +180,7 @@ part 3: dimension reduction
       visium_kidney <- runtSNE(visium_kidney, dimensions_to_use = 1:10)
       plotTSNE(gobject = visium_kidney)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/7-tSNE.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/7-tSNE.png
    :width: 50.0%
 
 part 4: cluster
@@ -196,7 +196,7 @@ part 4: cluster
       visium_kidney <- doLeidenCluster(gobject = visium_kidney, resolution = 0.4, n_iterations = 1000)
       plotUMAP(gobject = visium_kidney, cell_color = 'leiden_clus', show_NN_network = T, point_size = 2.5)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/8-UMAP.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/8-UMAP.png
    :width: 50.0%
 
 part 5: co-visualize
@@ -210,7 +210,7 @@ part 5: co-visualize
       spatDimPlot(gobject = visium_kidney, cell_color = 'leiden_clus',
                   dim_point_size = 2, spat_point_size = 2.5)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/9-spatDimPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/9-spatDimPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -220,7 +220,7 @@ part 5: co-visualize
       spatDimPlot(gobject = visium_kidney, cell_color = 'nr_feats', color_as_factor = F,
                   dim_point_size = 2, spat_point_size = 2.5)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/10-spatDimPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/10-spatDimPlot2D.png
    :width: 50.0%
 
 part 6: cell type marker gene detection
@@ -246,7 +246,7 @@ gini
       violinPlot(visium_kidney, feats = unique(topgenes_gini), cluster_column = 'leiden_clus',
                  strip_text = 8, strip_position = 'right')
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/11-violinPlot.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/11-violinPlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -257,7 +257,7 @@ gini
                  strip_text = 8, strip_position = 'right',
                  save_param = c(save_name = '11-z1-violinplot_gini', base_width = 5, base_height = 10))
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/11-z1-violinplot_gini.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/11-z1-violinplot_gini.png
    :width: 50.0%
 
 .. container:: cell
@@ -270,7 +270,7 @@ gini
                           metadata_cols = c('leiden_clus'),
                           x_text_size = 10, y_text_size = 10)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/12-plotMetaDataHeatmap.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/12-plotMetaDataHeatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -283,7 +283,7 @@ gini
                     feats = gini_markers_subclusters[, head(.SD, 1), by = 'cluster']$feats,
                     cow_n_col = 3, point_size = 1)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/13-dimFeatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/13-dimFeatPlot2D.png
    :width: 50.0%
 
 scran
@@ -303,7 +303,7 @@ scran
                  cluster_column = 'leiden_clus',
                  strip_text = 10, strip_position = 'right')
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/14-violinPlot.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/14-violinPlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -314,7 +314,7 @@ scran
       plotMetaDataHeatmap(visium_kidney, selected_feats = topgenes_scran,
                           metadata_cols = c('leiden_clus'))
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/15-plotMetaDataHeatmap.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/15-plotMetaDataHeatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -326,7 +326,7 @@ scran
                     feats = scran_markers_subclusters[, head(.SD, 1), by = 'cluster']$genes,
                     cow_n_col = 3, point_size = 1)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/16-dimFeatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/16-dimFeatPlot2D.png
    :width: 50.0%
 
 part 7: cell-type annotation
@@ -357,7 +357,7 @@ part 8: spatial grid
       spatPlot(visium_kidney, cell_color = 'leiden_clus', show_grid = T,
                grid_color = 'red', spatial_grid_name = 'spatial_grid')
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/17-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/17-spatPlot2D.png
    :width: 50.0%
 
 part 9: spatial network
@@ -370,7 +370,7 @@ part 9: spatial network
       ## delaunay network: stats + creation
       plotStatDelaunayNetwork(gobject = visium_kidney, maximum_distance = 400)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/18-plotStatDelaunayNetwork.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/18-plotStatDelaunayNetwork.png
    :width: 50.0%
 
 .. container:: cell
@@ -382,7 +382,7 @@ part 9: spatial network
       spatPlot(gobject = visium_kidney, show_network = T,
                network_color = 'blue', spatial_network_name = 'Delaunay_network')
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/19-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/19-spatPlot2D.png
    :width: 50.0%
 
 part 10: spatial genes
@@ -400,7 +400,7 @@ Spatial genes
       spatFeatPlot2D(visium_kidney, expression_values = 'scaled',
                    feats = kmtest$feats[1:6], cow_n_col = 2, point_size = 1.5)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/20-spatFeatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/20-spatFeatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -412,7 +412,7 @@ Spatial genes
       spatFeatPlot2D(visium_kidney, expression_values = 'scaled',
                    feats = ranktest$feats[1:6], cow_n_col = 2, point_size = 1.5)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/21-spatFeatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/21-spatFeatPlot2D.png
    :width: 50.0%
 
 Spatial co-expression patterns
@@ -438,7 +438,7 @@ Spatial co-expression patterns
       spatFeatPlot2D(visium_kidney, expression_values = 'scaled',
                      feats = c('Napsa', 'Kap', 'Defb29', 'Prdx1'), point_size = 3)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/22-spatFeatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/22-spatFeatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -453,7 +453,7 @@ Spatial co-expression patterns
                                           base_height = 6, base_width = 8, units = 'cm'),
                            heatmap_legend_param = list(title = NULL))
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/22-z1-heatmap_correlated_genes.pdf
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/22-z1-heatmap_correlated_genes.pdf
    :width: 50.0%
 
 .. container:: cell
@@ -465,7 +465,7 @@ Spatial co-expression patterns
                                         save_param = c(save_name = '22-z2-rank_correlated_groups',
                                                        base_height = 3, base_width = 5))
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/22-z2-rank_correlated_groups.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/22-z2-rank_correlated_groups.png
    :width: 50.0%
 
 .. container:: cell
@@ -488,7 +488,7 @@ Spatial co-expression patterns
                    cell_annotation_values = netw_ranks$clusters,
                    point_size = 1.5, cow_n_col = 4)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/23-spatCellPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/23-spatCellPlot2D.png
    :width: 50.0%
 
 part 11: HMRF domains
@@ -540,7 +540,7 @@ part 11: HMRF domains
       ## visualize
       spatPlot(gobject = visium_kidney, cell_color = 'HMRF_k5_b.0', point_size = 5)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/24-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/24-spatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -549,7 +549,7 @@ part 11: HMRF domains
 
       spatPlot(gobject = visium_kidney, cell_color = 'HMRF_k5_b.2', point_size = 5)
 
-.. image:: ../inst/images/mouse_visium_kidney/210830_results/25-spatPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_kidney/210830_results/25-spatPlot2D.png
    :width: 50.0%
 
 Export and create Giotto Viewer
@@ -576,7 +576,7 @@ Export and create Giotto Viewer
                          expression_rounding = 2,
                          overwrite_dir = T)
 
-.. |image1| image:: ../inst/images/general_figs/visium_technology.png
+.. |image1| image:: /images/images_pkgdown/general_figs/visium_technology.png
    :width: 50.0%
-.. |image2| image:: ../inst/images/general_figs/mouse_kidney_highres.png
+.. |image2| image:: /images/images_pkgdown/general_figs/mouse_kidney_highres.png
    :width: 50.0%
