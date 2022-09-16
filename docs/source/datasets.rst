@@ -84,10 +84,10 @@ Single-Cell
 .. card-carousel:: 3
 
     .. card:: 
-        :link: subsections/datasets/seqFISH_cortex
+        :link: subsections/datasets/mini_seqFISH
         :link-type: doc 
         
-        .. image:: images/dataset_page/cortex_image_summary.png
+        .. image:: images/dataset_page/mini_seqFISH.png
 
     .. card:: 
         :link: subsections/datasets/seqFISH_cortex
