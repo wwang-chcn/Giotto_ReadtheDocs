@@ -1,5 +1,5 @@
 ===========================
-mouse_codex_spleen_Sep29_21
+Codex Mouse Spleen
 ===========================
 
 :Date: 2022-09-16
