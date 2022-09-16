@@ -12,7 +12,7 @@ functionality of the
 `reticulate <https://rstudio.github.io/reticulate/>`__ package and
 miniconda, Giotto Suite creates a Python environment with the required
 Python packages installed. Once this function
-`installGiottoEnvironment <../reference/installGiottoEnvironment.html>`__
+`installGiottoEnvironment <../md_rst/installGiottoEnvironment.html>`__
 has been run, Giotto Suite will automatically default to this Python
 environment.
 
@@ -27,7 +27,7 @@ environment.
       }
 
 The function
-`installGiottoEnvironment <../reference/installGiottoEnvironment.html>`__
+`installGiottoEnvironment <../md_rst/installGiottoEnvironment.html>`__
 has two particular arguments that are most useful for re-installation,
 if necessary:
 
@@ -37,7 +37,7 @@ if necessary:
    environment, default is FALSE
 
 **Note that, by default,**
-`installGiottoEnvironment <../reference/installGiottoEnvironment.html>`__
+`installGiottoEnvironment <../md_rst/installGiottoEnvironment.html>`__
 **installs a specific version of Python and each required package. At
 the time of this tutorial’s creation, the following versions are
 utilized:**
@@ -86,7 +86,7 @@ Using a non-default Conda environment
 
 To use a specific Conda environment, a path to a system-specific Python
 executable within a Conda environment must be provided to
-`createGiottoInstructions <../reference/createGiottoInstructions.html>`__.
+`createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__.
 This will direct reticulate to activate and utilize that environment
 within that R session. See `How to Create a Giotto
 Object <./getting_started_gobject.html>`__ for more details.
@@ -249,10 +249,10 @@ solutions:
 -  Remove and attempt to re-install the Giotto environment.
 
    -  Run
-      `removeGiottoEnvironment <../reference/removeGiottoEnvironment.html>`__,
+      `removeGiottoEnvironment <../md_rst/removeGiottoEnvironment.html>`__,
       then terminate R.
    -  Open a completely new R session, and run
-      `installGiottoEnvironment <../reference/installGiottoEnvironment.html>`__
+      `installGiottoEnvironment <../md_rst/installGiottoEnvironment.html>`__
 
 -  Post to an issue to the Giotto GitHub page
    `here <https://github.com/RubD/Giotto>`__.
@@ -260,4 +260,4 @@ solutions:
    -  Please include the version numbers of R, Giotto, and the OS in use
       at the time of the issue.
 
--  See `FAQ <./suite/docs/source/faqs.rst>`__.
+-  See `FAQ <.././../faqs.html>`__.
