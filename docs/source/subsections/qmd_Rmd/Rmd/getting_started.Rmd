@@ -1,0 +1,84 @@
+---
+output: html_document
+---
+
+
+Giotto provides a lot of analyses, visualizations and other options to facilitate your spatial dataset analysis.
+We are working on providing easy-to-understand examples or tutorials, but if anything is not clear or if there is something you would like to see in particular, then do not hesitate to contact [us](https://github.com/RubD/Giotto/issues).
+
+\  
+
+## Installation
+
+You can install Giotto Suite on any platform in 2 easy steps:
+
+#### Step 1: install Giotto Suite
+``` r
+library(remotes)
+remotes::install_github("RubD/Giotto@suite") 
+```
+
+#### Step 2: install the Giotto python environment
+The python environment only needs to be installed once.
+
+``` r
+library(Giotto)
+installGiottoEnvironment()
+```
+
+This command only needs to be run once and then Giotto will automatically detect the environment in the future.  
+
+For more information:   
+
+* See [Installation](https://giottosuite.com/articles/temp_construction.html) for alternative (manual) installation options.  
+* See [Giotto Environment](https://giottosuite.com/articles/temp_construction.html) to learn more about the Giotto environment.  
+* See [FAQ](https://giottosuite.com/articles/faq.html) for troubleshooting.  
+
+
+
+
+<br> 
+
+
+\ 
+
+ 
+## Getting started
+
+[under construction]  
+ 
+Tutorials for Giotto specific tasks and functionalities.
+
+[![](/images/images_pkgdown/icons/getting_started/icons_configuration.png){width=20%}](./configuration.html)
+[![](/images/images_pkgdown/icons/getting_started/icons_giotto.png){width=20%}](./getting_started_gobject.html)
+[![](/images/images_pkgdown/icons/getting_started/icons_processing.png){width=20%}](./data_processing.html)
+[![](/images/images_pkgdown/icons/getting_started/icons_clustering.png){width=20%}](./Dimension_reduction.html)
+
+[![](/images/images_pkgdown/icons/getting_started/icons_images.png){width=20%}](./getting_started_images.html)
+[![](/images/images_pkgdown/icons/getting_started/icons_visualizations.png){width=20%}](./Visualizations.html)
+[![](/images/images_pkgdown/icons/getting_started/icons_saving.png){width=20%}](./getting_started_saving.html)
+ 
+
+
+
+\  
+
+
+## Analyses
+
+Tutorials for Spatial analyses that can be performed with Giotto Suite.  
+Full dataset examples can be found in the [Datasets](../articles/datasets_overview.html) tab.
+
+[![](/images/images_pkgdown/icons/analyses/icons_image_analysis.png){width=30%}](./temp_construction.html)
+[![](/images/images_pkgdown/icons/analyses/icons_cell_type.png){width=30%}](./temp_construction.html)
+[![](/images/images_pkgdown/icons/analyses/icons_deconvolution.png){width=30%}](./analyses_deconvolution_Oct2021.html)    
+
+[![](/images/images_pkgdown/icons/analyses/icons_distribution.png){width=30%}](./temp_construction.html)
+[![](/images/images_pkgdown/icons/analyses/icons_interaction.png){width=30%}](./temp_construction.html)
+[![](/images/images_pkgdown/icons/analyses/icons_patterns.png){width=30%}](./temp_construction.html)    
+
+[![](/images/images_pkgdown/icons/analyses/icons_subcellular.png){width=30%}](./temp_construction.html)
+\  
+
+ 
+
