@@ -2,7 +2,7 @@
 singlecell_prostate_integration_Sep30_21
 ========================================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 Set up Giotto Environment
 =========================
@@ -50,12 +50,15 @@ Part 1: Create Giotto object from 10X dataset and join
    .. code:: r
 
       giotto_P1<-createGiottoObject(expression = get10Xmatrix("path/to/P1_result/outs/filtered_feature_bc_matrix", 
-                                      gene_column_index = 2, remove_zero_rows = TRUE),
-                                      instructions = instrs) 
+          gene_column_index = 2,
+          remove_zero_rows = TRUE),
+          instructions = instrs) 
 
       giotto_P2<-createGiottoObject(expression = get10Xmatrix("path/to/P2_result/outs/filtered_feature_bc_matrix", 
-                                                                gene_column_index = 2, remove_zero_rows = TRUE),
-                                      instructions = instrs) 
+          gene_column_index = 2,
+          remove_zero_rows = TRUE),
+          instructions = instrs) 
+
       giotto_SC_join = joinGiottoObjects(gobject_list = list(giotto_P1, giotto_P2),
                                          gobject_names = c('P1', 'P2'),
                                          join_method = "z_stack")
@@ -68,19 +71,21 @@ Part 2: Process Joined object
    .. code:: r
 
       giotto_SC_join <- filterGiotto(gobject = giotto_SC_join,
-          expression_threshold = 1,
-          feat_det_in_min_cells = 50,
-          min_det_feats_per_cell = 500,
-          expression_values = c('raw'),
-          verbose = T)
+                                     expression_threshold = 1,
+                                     feat_det_in_min_cells = 50,
+                                     min_det_feats_per_cell = 500,
+                                     expression_values = c('raw'),
+                                     verbose = T)
 
       ## normalize
-      giotto_SC_join <- normalizeGiotto(gobject = giotto_SC_join, scalefactor = 6000)
+      giotto_SC_join <- normalizeGiotto(gobject = giotto_SC_join,
+                                        scalefactor = 6000)
 
       ## add gene & cell statistics
-      giotto_SC_join <- addStatistics(gobject = giotto_SC_join, expression_values = 'raw')
+      giotto_SC_join <- addStatistics(gobject = giotto_SC_join,
+                                      expression_values = 'raw')
 
-Part 3: Dimention reduction and clustering
+Part 3: Dimension reduction and clustering
 ==========================================
 
 .. container:: cell
@@ -89,7 +94,9 @@ Part 3: Dimention reduction and clustering
 
       ## PCA ##
       giotto_SC_join <- calculateHVF(gobject = giotto_SC_join)
-      giotto_SC_join <- runPCA(gobject = giotto_SC_join, center = TRUE, scale_unit = TRUE)
+      giotto_SC_join <- runPCA(gobject = giotto_SC_join,
+                               center = TRUE,
+                               scale_unit = TRUE)
       # Check screeplot to select number of PCs for clustering
       # screePlot(giotto_SC_join, ncp = 30, save_param = list(save_name = '3_scree_plot'))
 
@@ -100,32 +107,44 @@ Part 3: Dimention reduction and clustering
       # sNN network (default)
       showGiottoDimRed(giotto_SC_join)
       giotto_SC_join <- createNearestNetwork(gobject = giotto_SC_join,
-          dim_reduction_to_use = 'pca', dim_reduction_name = 'pca',
-          dimensions_to_use = 1:10, k = 15)
+                                             dim_reduction_to_use = 'pca',
+                                             dim_reduction_name = 'pca',
+                                             dimensions_to_use = 1:10,
+                                             k = 15)
 
       # Leiden clustering
-      giotto_SC_join <- doLeidenCluster(gobject = giotto_SC_join, resolution = 0.2, n_iterations = 1000)
+      giotto_SC_join <- doLeidenCluster(gobject = giotto_SC_join,
+                                        resolution = 0.2,
+                                        n_iterations = 1000)
 
       # UMAP
       giotto_SC_join = runUMAP(giotto_SC_join)
 
       plotUMAP(gobject = giotto_SC_join,
-          cell_color = 'leiden_clus', show_NN_network = T, point_size = 1.5,
-          save_param = list(save_name = "4_cluster_without_integration"))
+               cell_color = 'leiden_clus',
+               show_NN_network = T,
+               point_size = 1.5,
+               save_param = list(save_name = "4_cluster_without_integration"))
 
-.. image:: ../inst/images/singlecell_prostate_integration/vignette_sep29_2021/4_cluster_without_integration.png
+.. image:: /images/images_pkgdown/singlecell_prostate_integration/vignette_sep29_2021/4_cluster_without_integration.png
    :width: 50.0%
 
 .. container:: cell
 
    .. code:: r
 
-      dimPlot2D(gobject = giotto_SC_join, dim_reduction_name = 'umap', point_shape = 'no_border',
-          cell_color = "leiden_clus", group_by = "list_ID", show_NN_network = F, point_size = 0.5, 
-          show_center_label = F, show_legend =F,
-          save_param = list(save_name = "4_list_without_integration"))
+      dimPlot2D(gobject = giotto_SC_join,
+                dim_reduction_name = 'umap',
+                point_shape = 'no_border',
+                cell_color = "leiden_clus",
+                group_by = "list_ID",
+                show_NN_network = F,
+                point_size = 0.5, 
+                show_center_label = F,
+                show_legend =F,
+                save_param = list(save_name = "4_list_without_integration"))
 
-.. image:: ../inst/images/singlecell_prostate_integration/vignette_sep29_2021/4_list_without_integration.png
+.. image:: /images/images_pkgdown/singlecell_prostate_integration/vignette_sep29_2021/4_list_without_integration.png
    :width: 50.0%
 
 Harmony is a integration algorithm developed by `Korsunsky, I. et
@@ -148,37 +167,58 @@ spatial datasets.
       library(harmony)
 
       #pDataDT(giotto_SC_join)
-      giotto_SC_join = runGiottoHarmony(giotto_SC_join, vars_use = 'list_ID', do_pca = F)
+      giotto_SC_join = runGiottoHarmony(giotto_SC_join,
+                                        vars_use = 'list_ID',
+                                        do_pca = F)
 
 
       ## sNN network (default)
       #showGiottoDimRed(giotto_SC_join)
       giotto_SC_join <- createNearestNetwork(gobject = giotto_SC_join,
-          dim_reduction_to_use = 'harmony', dim_reduction_name = 'harmony', name = 'NN.harmony',
-          dimensions_to_use = 1:10, k = 15)
+                                             dim_reduction_to_use = 'harmony',
+                                             dim_reduction_name = 'harmony',
+                                             name = 'NN.harmony',
+                                             dimensions_to_use = 1:10,
+                                             k = 15)
 
       ## Leiden clustering
       giotto_SC_join <- doLeidenCluster(gobject = giotto_SC_join,
-          network_name = 'NN.harmony', resolution = 0.2, n_iterations = 1000, name = 'leiden_harmony')
+                                        network_name = 'NN.harmony',
+                                        resolution = 0.2,
+                                        n_iterations = 1000,
+                                        name = 'leiden_harmony')
 
       # UMAP dimension reduction
       #showGiottoDimRed(giotto_SC_join)
-      giotto_SC_join = runUMAP(giotto_SC_join, dim_reduction_name = 'harmony', dim_reduction_to_use = 'harmony', name = 'umap_harmony')
-      plotUMAP(gobject = giotto_SC_join,
-          dim_reduction_name = 'umap_harmony',
-          cell_color = 'leiden_harmony', show_NN_network = T, point_size = 1.5,
-          save_param = list(save_name = "4_cluster_with_integration"))
+      giotto_SC_join = runUMAP(giotto_SC_join,
+                               dim_reduction_name = 'harmony',
+                               dim_reduction_to_use = 'harmony',
+                               name = 'umap_harmony')
 
-.. image:: ../inst/images/singlecell_prostate_integration/vignette_sep29_2021/4_cluster_with_integration.png
+      plotUMAP(gobject = giotto_SC_join,
+               dim_reduction_name = 'umap_harmony',
+               cell_color = 'leiden_harmony',
+               show_NN_network = T,
+               point_size = 1.5,
+               save_param = list(save_name = "4_cluster_with_integration"))
+
+.. image:: /images/images_pkgdown/singlecell_prostate_integration/vignette_sep29_2021/4_cluster_with_integration.png
    :width: 50.0%
 
 .. container:: cell
 
    .. code:: r
 
-      dimPlot2D(gobject = giotto_SC_join,     dim_reduction_name = 'umap_harmony', point_shape = 'no_border',
-          cell_color = "leiden_harmony", group_by = "list_ID", show_NN_network = F, point_size = 0.5, 
-          show_center_label = F, show_legend =F , save_param = list(save_name = "4_list_with_integration"))
+      dimPlot2D(gobject = giotto_SC_join,
+                dim_reduction_name = 'umap_harmony',
+                point_shape = 'no_border',
+                cell_color = "leiden_harmony",
+                group_by = "list_ID",
+                show_NN_network = F,
+                point_size = 0.5, 
+                show_center_label = F,
+                show_legend =F ,
+                save_param = list(save_name = "4_list_with_integration"))
 
-.. image:: ../inst/images/singlecell_prostate_integration/vignette_sep29_2021/4_list_with_integration.png
+.. image:: /images/images_pkgdown/singlecell_prostate_integration/vignette_sep29_2021/4_list_with_integration.png
    :width: 50.0%

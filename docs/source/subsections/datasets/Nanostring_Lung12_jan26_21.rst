@@ -2,7 +2,7 @@
 Nanostring_Lung12_jan26_21
 ==========================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 **Note:** *Figures were produced Jan 26, 2021. The functions used here
 can be expected to work in the same ways, but differences in package
@@ -220,7 +220,7 @@ Choose field of view for analysis
                            coord_fix_ratio = TRUE,
                            background_color = NA)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1272022/Rplot1.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1272022/Rplot1.png
    :width: 175.0%
 
 Visualize Cells
@@ -236,7 +236,7 @@ Visualize Cells
                  point_size = 0.2,
                  coord_fix_ratio = 1)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1272022/Rplot2.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1272022/Rplot2.png
    :width: 150.0%
 
 6. Extract Data from your Giotto Object
@@ -308,7 +308,7 @@ Visualize Cells
       cellmeta = pDataDT(fov_join, feat_type = 'rna')
       hist(cellmeta$nr_feats, 100)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1262022/Rplothist.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1262022/Rplothist.png
    :width: 50.0%
 
 .. container:: cell
@@ -324,7 +324,7 @@ Visualize Cells
                  point_alpha = 0.75,
                  coord_fix_ratio = T)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1272022/Rplot3.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1272022/Rplot3.png
    :width: 150.0%
 
 .. container:: cell
@@ -339,7 +339,7 @@ Visualize Cells
                            polygon_fill_as_factor = F,
                            coord_fix_ratio = T)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1272022/Rplot5.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1272022/Rplot5.png
    :width: 150.0%
 
 9. Dimension Reduction
@@ -356,7 +356,7 @@ Calculate Highly Variable Genes
       fov_join <- calculateHVF(gobject = fov_join,
                                HVFname = 'hvg_orig')
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/4-HVFplot.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/4-HVFplot.png
    :width: 50.0%
 
 .. container:: cell
@@ -369,7 +369,7 @@ Calculate Highly Variable Genes
                                expression_values = 'pearson',
                                show_plot = T)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/5-HVFplot.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/5-HVFplot.png
    :width: 50.0%
 
 View Highly Variable Features
@@ -395,7 +395,7 @@ Run PCA
                          center = F)
       screePlot(fov_join, ncp = 20)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/6-screePlot.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/6-screePlot.png
    :width: 50.0%
 
 Plot PCA
@@ -409,7 +409,7 @@ Plot PCA
               dim1_to_use = 1,
               dim2_to_use = 2)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/7-PCA.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/7-PCA.png
    :width: 50.0%
 
 Run UMAP
@@ -424,7 +424,7 @@ Run UMAP
                           n_threads = 4)
       plotUMAP(gobject = fov_join)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/8-UMAP.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/8-UMAP.png
    :width: 50.0%
 
 10. Cluster
@@ -447,7 +447,7 @@ Run UMAP
                show_NN_network = T,
                point_size = 2.5)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/9-UMAP.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/9-UMAP.png
    :width: 50.0%
 
 .. container:: cell
@@ -461,7 +461,7 @@ Run UMAP
                     cell_color = 'leiden_clus',
                     spat_point_size = 2)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/10-spatDimPlot2D.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/10-spatDimPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -479,7 +479,7 @@ Run UMAP
                            polygon_fill_as_factor = T,
                            coord_fix_ratio = TRUE)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1272022/spatinsituclustered.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1272022/spatinsituclustered.png
    :width: 150.0%
 
 11. Small Subset Visiualization
@@ -513,7 +513,7 @@ Run UMAP
                            coord_fix_ratio = TRUE,
                            show_legend = FALSE)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/12-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/12-spatInSituPlotPoints.png
    :width: 75.0%
 
 12. Spatial Expression Patterns
@@ -546,7 +546,7 @@ Run UMAP
                      point_size = 1.2,
                      cow_n_col = 2)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/13-spatFeatPlot2D.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/13-spatFeatPlot2D.png
    :width: 50.0%
 
 13. Identify Clusters
@@ -574,7 +574,7 @@ Violin plot
                  cluster_column = 'leiden_clus',
                  strip_position = 'right')
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/14-violinPlot.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/14-violinPlot.png
    :width: 50.0%
 
 Heatmap
@@ -591,7 +591,7 @@ Heatmap
                           selected_feats = topgini_genes,
                           custom_cluster_order = cluster_order)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1262022/6-plotMetaDataHeatmap.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1262022/6-plotMetaDataHeatmap.png
    :width: 50.0%
 
 Annotate Giotto Object
@@ -615,7 +615,7 @@ Annotate Giotto Object
                cell_color = 'cell_types',
                point_size = 1.5)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/15-UMAP.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/15-UMAP.png
    :width: 50.0%
 
 Visualize
@@ -631,7 +631,7 @@ Visualize
                     cell_color = 'cell_types',
                     spat_point_size = 2)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/16-spatDimPlot2D.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/16-spatDimPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -647,7 +647,7 @@ Visualize
                            polygon_fill_as_factor = TRUE,
                            coord_fix_ratio = TRUE)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/17-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/17-spatInSituPlotPoints.png
    :width: 50.0%
 
 14. Interaction Changed Genes
@@ -678,5 +678,5 @@ Visualize
                            polygon_fill_code = pal,
                            coord_fix_ratio = TRUE)
 
-.. image:: ../inst/images/nanostring_CosMx_Lung12/Emma/results-1252022/18-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/18-spatInSituPlotPoints.png
    :width: 50.0%

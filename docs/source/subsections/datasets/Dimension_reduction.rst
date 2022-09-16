@@ -1,19 +1,19 @@
 ===================
-How to cluster my Giotto object?
+Dimension_reduction
 ===================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 This tutorial walks through the dimension reduction and clustering
-capabilities of Giotto Suite. We begin this tutorial with the Giotto Object
-processed in the previous tutorial, `data
-processing <./data_processing.html>`__. For convenience, the code to
-create this object is provided below. However, we encourage new users to
-review the data processing tutorial prior to beginning this tutorial.
+capabilities of Giotto and begins with the Giotto Object processed in
+the previous tutorial, `data processing <./data_processing.html>`__. For
+convenience, the code to create this object is provided below. However,
+new users are encouraged to review the data processing tutorial prior to
+beginning this tutorial.
 
 This tutorial uses a SeqFISH+ dataset of a murine cortex and
 subventrical zone. A complete walkthrough of that dataset can be found
-`here <./seqFISH_cortex.html>`__. To download the data used to
+`here <./SeqFISH_cortex_210923.html>`__. To download the data used to
 create the Giotto Object below, please ensure that
 `wget <https://www.gnu.org/software/wget/?>`__ is installed locally.
 
@@ -25,18 +25,26 @@ Creating and Processing a Giotto Object
    .. code:: r
 
       library(Giotto)
-      data_directory = '/path/to/data/directory/'
-      results_directory = '/path/to/results/directory/'
 
+      # Specify path from which data may be retrieved/stored
+      data_directory = paste0(getwd(),'/gobject_clustering_data/')
+      # alternatively, "/path/to/where/the/data/lives/"
+
+      # Specify path to which results may be saved
+      results_directory = paste0(getwd(),'/gobject_clustering_results/') 
+      # alternatively, "/path/to/store/the/results/"
+
+      # Ensure Giotto environment lives local to the machine
       genv_exists = checkGiottoEnvironment()
       if(!genv_exists){
         # The following command need only be run once to install the Giotto environment.
         installGiottoEnvironment()
       }
 
-      # Optional: Specify a Python path. If set to NULL (default), the previously installed
-      # Giotto environment will be used.
-      my_python_path = NULL # alternatively, "/your/python/path/" if desired.
+      # Optional: Specify a path to a Python executable within a conda or miniconda 
+      # environment. If set to NULL (default), the Python executable within the previously
+      # installed Giotto environment will be used.
+      my_python_path = NULL # alternatively, "/local/python/path/python" if desired.
 
       getSpatialDataset(dataset = 'seqfish_SS_cortex', directory = data_directory, method = 'wget')
 
@@ -122,7 +130,7 @@ computation with the **method** parameter.
       # Calculate HVF using coefficient of variance within groups
       testobj <- calculateHVF(gobject = testobj, method = 'cov_groups')
 
-.. image:: ../inst/images/getting_started_figs/dimension_reduction/0-HVFplot_covgroups.png
+.. image:: /images/images_pkgdown/getting_started_figs/dimension_reduction/0-HVFplot_covgroups.png
    :width: 50.0%
 
 .. container:: cell
@@ -132,7 +140,7 @@ computation with the **method** parameter.
       # Calculate HVF using variance of Pearson residuals
       testobj <- calculateHVF(gobject = testobj, method = 'var_p_resid')
 
-.. image:: ../inst/images/getting_started_figs/dimension_reduction/1-HVFplot_varpresid.png
+.. image:: /images/images_pkgdown/getting_started_figs/dimension_reduction/1-HVFplot_varpresid.png
    :width: 50.0%
 
 .. container:: cell
@@ -142,7 +150,7 @@ computation with the **method** parameter.
       #calculate HVF using the loess regression prediction model
       testobj <- calculateHVF(gobject = testobj, method = 'cov_loess')
 
-.. image:: ../inst/images/getting_started_figs/dimension_reduction/2-HVFplot_covloess.png
+.. image:: /images/images_pkgdown/getting_started_figs/dimension_reduction/2-HVFplot_covloess.png
    :width: 50.0%
 
 PCA can be run based on the highly variable genes. After PCA, a tSNE, a
@@ -164,7 +172,7 @@ been identified using Loess Regression predictions.
       # plot a scree plot
       screePlot(testobj)
 
-.. image:: ../inst/images/getting_started_figs/dimension_reduction/3-screePlot.png
+.. image:: /images/images_pkgdown/getting_started_figs/dimension_reduction/3-screePlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -174,7 +182,7 @@ been identified using Loess Regression predictions.
       # Plot a PCA
       plotPCA(gobject = testobj)
 
-.. image:: ../inst/images/getting_started_figs/dimension_reduction/4-PCA.png
+.. image:: /images/images_pkgdown/getting_started_figs/dimension_reduction/4-PCA.png
    :width: 50.0%
 
 .. container:: cell
@@ -186,7 +194,7 @@ been identified using Loess Regression predictions.
       # Plot tSNE of data
       plotTSNE(gobject = testobj)
 
-.. image:: ../inst/images/getting_started_figs/dimension_reduction/5-tSNE.png
+.. image:: /images/images_pkgdown/getting_started_figs/dimension_reduction/5-tSNE.png
    :width: 50.0%
 
 .. container:: cell
@@ -198,7 +206,7 @@ been identified using Loess Regression predictions.
       # View pre-clustering UMAP
       plotUMAP(gobject = testobj)
 
-.. image:: ../inst/images/getting_started_figs/dimension_reduction/6-UMAP.png
+.. image:: /images/images_pkgdown/getting_started_figs/dimension_reduction/6-UMAP.png
    :width: 50.0%
 
 2. Clustering
@@ -216,7 +224,7 @@ neighbor network.
       ## create a shared nearest neighbor network (sNN), where k is the number of k neighbors to use
       testobj <- createNearestNetwork(gobject = testobj, dimensions_to_use = 1:15, k = 15)
 
-Cells can be clustered in Giotto Suite using k-means, Leiden, or Louvain
+Cells can be clustered in Giotto using k-means, Leiden, or Louvain
 clustering. These clustering algorithms return cluster information
 within cell_metadata, which is named accordingly by default. The name
 may be changed by providing the name argument, as shown in the code
@@ -252,7 +260,7 @@ as an argument to cell_color within plotUMAP for enhanced visualization.
                show_NN_network = T, 
                point_size = 2.5)
 
-.. image:: ../inst/images/getting_started_figs/dimension_reduction/7-UMAP.png
+.. image:: /images/images_pkgdown/getting_started_figs/dimension_reduction/7-UMAP.png
    :width: 50.0%
 
 Clusters of interest can be further sub-clustered. Choose the clusters
@@ -278,8 +286,8 @@ consistent sub-clustering.
                                    selected_clusters = c(5, 6, 7),
                                    name = 'sub_leiden_clus_select')
 
-      #Plot a UMAP to visualize your sub-clustering
+      #Plot a UMAP to visualize sub-clusters
       plotUMAP(gobject = testobj, cell_color = 'sub_leiden_clus_select', show_NN_network = T)
 
-.. image:: ../inst/images/getting_started_figs/dimension_reduction/12-UMAP.png
+.. image:: /images/images_pkgdown/getting_started_figs/dimension_reduction/12-UMAP.png
    :width: 50.0%
