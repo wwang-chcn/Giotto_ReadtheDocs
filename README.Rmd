@@ -15,10 +15,7 @@ output: github_document
 [![R-CMD-check](https://github.com/yeung-jsn/Giotto/actions/workflows/R-CMD-check.yaml/badge.svg?branch=ci-unittest)](https://github.com/yeung-jsn/Giotto/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-Giotto Suite is a major upgrade to the Giotto package that provides tools to process, analyze and visualize **spatial multi-omics data at all scales and multiple resolutions**. The underlying framework is generalizable to virtually all current and emerging spatial technologies. Our Giotto Suite prototype pipeline is generally applicable on various different datasets, such as those created by state-of-the-art spatial technologies, including *in situ* hybridization (seqFISH+, merFISH, osmFISH, CosMx), sequencing (Slide-seq, Visium, STARmap, Seq-Scope, Stereo-Seq) and imaging-based multiplexing/proteomics (CyCIF, MIBI, CODEX).  
-These technologies differ in terms of resolution (subcellular, single cell or multiple cells), spatial dimension (2D vs 3D), molecular modality (protein, RNA, DNA, ...), and throughput (number of cells and analytes). More information and documentation about Giotto Suite can be found at http://giottosuite.com/index.html.
-
-The package is in heavy development. Please check back often!
+Giotto Suite is a collection of open source software tools, including data structures and methods, for the comprehensive analysis and visualization of spatial multi-omics data at multiple scales and resolutions. It extends and improves our previous R package Giotto. The underlying framework of Giotto Suite is generalizable to virtually all current and emerging spatial technologies which may differ in resolution (e.g. subcellular, single cell, or multiple cells), spatial dimension (i.e. 2D vs. 3D), molecular modality (e.g. protein, RNA, DNA, …), and throughput (i.e. number of cells and analytes). Giotto Suite is designed to ensure spatial analysis solutions remain compatible with current and future spatial -omics technologies and platforms. It will also aid in the further integration of spatial -omics with external analysis pipelines and tools. More information and documentation about Giotto Suite can be found at http://giottosuite.com.
 
 <!-- <img src="inst/images/general_figs/overview_datasets.png" /> -->
 
