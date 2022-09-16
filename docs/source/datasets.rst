@@ -27,7 +27,7 @@ Visium datasets
 
     .. grid-item-card::
         
-        .. image:: images/dataset_page/visium_prostate_summary.png
+        .. image:: images/dataset_page/visium_brain_image_summary.png
             :target: ../build/html/html/subsections/datasets/mouse_visium_brain.html
     
     .. grid-item-card::
@@ -48,7 +48,7 @@ Visium datasets
         :link: /subsections/datasets/mouse_visium_brain
         :link-type: doc 
         
-        .. image:: images/dataset_page/visium_prostate_summary.png
+        .. image:: images/dataset_page/visium_brain_image_summary.png
     
     .. card:: 
         :link: subsections/datasets/visium_prostate_integration
@@ -56,30 +56,6 @@ Visium datasets
         
         .. image:: images/dataset_page/visium_prostate_summary.png
  
-
-Other Technologies 
-====================
-
-.. .. grid:: 3
-
-    .. grid-item-card::
-
-        .. image:: images/dataset_page/coming_soon_summary.png
-            :target: ../../build/html/html/subsections/datasets/mouse_visium_kidney.html
-        
-.. card-carousel:: 3
-
-    .. card:: 
-        :link: /subsections/datasets/other_technologies_coming_soon
-        :link-type: doc
-        
-        .. image:: images/dataset_page/coming_soon_summary.png
-
-    .. card:: 
-        :link: /subsections/datasets/other_technologies_coming_soon
-        :link-type: doc 
-        
-        .. image:: images/dataset_page/coming_soon_summary.png
     
 **************
 Single-Cell 
@@ -132,13 +108,13 @@ Single-Cell
     .. grid-item-card::
 
         .. image:: images/dataset_page/merFISH_hypoth_image_summary.png
-            :target: ../../build/html/html/subsections/datasets/seqFISH_cortex.html
+            :target: ../../build/html/html/subsections/datasets/merFISH_hypot_preopt_region.html
         
 
     .. grid-item-card::
 
         .. image:: images/dataset_page/starmap_cortex_image_summary.png
-            :target: ../../build/html/subsections/datasets/osmFISH_mouse_SS_cortex.html
+            :target: ../../build/html/subsections/datasets/mini_starmap.html
 
 .. card-carousel:: 3
 
@@ -173,7 +149,7 @@ Subcellular
         .. image:: images/dataset_page/resolve_bioscience_cancer_summary.png
     
     .. card:: 
-        :link: subsections/datasets/nanostring_overview
+        :link: subsections/datasets/Nanostring_Lung12_jan26_21
         :link-type: doc 
         
         .. image:: images/dataset_page/nanostring_overview_icon.png
@@ -190,11 +166,6 @@ Protein Multiplexing
         
         .. image:: images/dataset_page/CODEX_spleen_image_summary.png
 
-    .. card:: 
-        :link: subsections/datasets/seqFISH_cortex
-        :link-type: doc 
-        
-        .. image:: images/dataset_page/cyCIF_PDAC_image_summary.png
 
 *****************************
 Single Cell RNA Sequencing
@@ -213,3 +184,23 @@ Single Cell RNA Sequencing
         :link-type: doc 
         
         .. image:: images/dataset_page/SC_RNAseq_integration.png
+        
+
+*****************************
+Other Technologies 
+*****************************
+
+.. .. grid:: 3
+
+    .. grid-item-card::
+
+        .. image:: images/dataset_page/coming_soon_summary.png
+            :target: ../../build/html/html/subsections/datasets/mouse_visium_kidney.html
+        
+.. card-carousel:: 3
+
+    .. card:: 
+        :link: /subsections/datasets/other_technologies_coming_soon
+        :link-type: doc
+        
+        .. image:: images/dataset_page/coming_soon_summary.png

@@ -9,3 +9,4 @@ sphinx-design
 sphinx-copybutton
 sphinx-toolbox
 m2r2 
+sphinx_rtd_dark_mode

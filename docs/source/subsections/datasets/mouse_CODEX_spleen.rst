@@ -1,477 +1,459 @@
-.. _mouse_CODEX_spleen:
+===========================
+mouse_codex_spleen_Sep29_21
+===========================
 
-####################
-Mouse CODEX Spleen
-####################
+:Date: 2022-09-14
 
-.. warning::
+Set up Giotto environment
+=========================
 
-	This tutorial was written with **Giotto version 0.3.6.9046**, your version is **1.0.3**. This is a more recent version and results should be reproducible. 
+.. container:: cell
 
-***************************************
-Install Python and R Modules
-***************************************
+   .. code:: r
 
-To run this vignette you need to install **all** of the necessary Python modules. 
+      library(Giotto)
 
-.. important::
-	
-	Python module installation can be done either **automatically** via our installation tool (from within R) (see step 2.2A) or **manually** (see step 2.2B). 
+      # 1. set working directory
+      results_folder = 'path/to/result'
 
-	:octicon:`eye` See :ref:`Part 2.2 Giotto-Specific Python Packages <part2_python_giotto_requirements>` of our Giotto Installation section for step-by-step instructions. 
+      # 2. set giotto python path
+      # set python path to your preferred python version path
+      # set python path to conda env/bin/ directory if manually installed Giotto python dependencies by conda
+      # python_path = '/path_to_conda/.conda/envs/giotto/bin/python'
+      # set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
+      python_path = NULL
+      if(is.null(python_path)) {
+        installGiottoEnvironment()
+      }
 
-***************************
-Set-Up Giotto 
-***************************
+Dataset explanation
+===================
 
-.. code-block:: 
+The CODEX data to run this tutorial can be found
+`here <https://github.com/RubD/spatial-datasets/tree/master/data/2018_codex_spleen>`__
+Alternatively you can use the **getSpatialDataset** to automatically
+download this dataset like we do in this example.
 
-	library(Giotto)
+`Goltsev et
+al. <https://www.cell.com/cell/pdf/S0092-8674(18)30904-8.pdf>`__ created
+a multiplexed datasets of normal and lupus (MRL/lpr) murine spleens
+using CODEX technique. The dataset consists of 30 protein markers from
+734,101 single cells. In this tutorial, 83,787 cells from sample
+“BALBc-3” were selected for the analysis.
 
-Set A Working Directory 
-========================
-.. code-block::
+.. container:: cell
 
-	#results_folder = '/path/to/directory/'
-	results_folder = '/Volumes/Ruben_Seagate/Dropbox (Personal)/Projects/GC_lab/Ruben_Dries/190225_spatial_package/Results/Visium/Brain/201226_results//'
+   .. code:: r
 
-Set A Giotto Python Path
-==========================
+      # download data to working directory
+      # use method = 'wget' if wget is available. This should be much faster.
+      # if you run into authentication issues with wget, then add " extra = '--no-check-certificate' "
+      getSpatialDataset(dataset = 'codex_spleen', directory = results_folder, method = 'wget')
 
-.. code-block::
+Part 1: Giotto global instructions and preparations
+===================================================
 
-	# set python path to your preferred python version path
-	# set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-	python_path = NULL 
-	if(is.null(python_path)) {
-  		installGiottoEnvironment()
-	}
+.. container:: cell
 
-	
-*********************
-Dataset Explanation 
-*********************
+   .. code:: r
 
-The CODEX data to run this tutorial can be found `here <https://github.com/RubD/spatial-datasets/tree/master/data/2018_codex_spleen>`__. Alternatively you can use the **getSpatialDataset** to automatically download this dataset like we do in this example.
+      # 1. (optional) set Giotto instructions
+      instrs = createGiottoInstructions(show_plot = FALSE,
+                                        save_plot = TRUE,
+                                        save_dir = results_folder,
+                                        python_path = python_path)
 
-`Goltsev et al. <https://www.cell.com/cell/pdf/S0092-8674(18)30904-8.pdf>`__ created a multiplexed datasets of normal and lupus (MRL/lpr) murine spleens using CODEX technique. The dataset consists of 30 protein markers from 734,101 single cells. In this tutorial, 83,787 cells from sample “BALBc-3” were selected for the analysis.
+      # 2. create giotto object from provided paths ####
+      expr_path = paste0(results_folder, "codex_BALBc_3_expression.txt.gz")
+      loc_path = paste0(results_folder, "codex_BALBc_3_coord.txt")
+      meta_path = paste0(results_folder, "codex_BALBc_3_annotation.txt")
 
-****************************
-Download Dataset
-****************************
+Part 2: Create Giotto object & process data
+===========================================
 
-.. code-block::
-	
-	# download data to working directory
-	# use method = 'wget' if wget is available. This should be much faster.
-	# if you run into authentication issues with wget, then add " extra = '--no-check-certificate' "
-	getSpatialDataset(dataset = 'codex_spleen', directory = results_folder, method = 'wget')
+.. container:: cell
 
-****************************************************
-1. Giotto Global Instructions and Preparations 
-****************************************************
+   .. code:: r
 
-1.1 *Optional: Set Giotto Instructions*
-==========================================
+      # read in data information
 
-.. code-block::
+      # expression info
+      codex_expression = readExprMatrix(expr_path, transpose = F)
+      # cell coordinate info
+      codex_locations = data.table::fread(loc_path)
+      # metadata
+      codex_metadata = data.table::fread(meta_path)
 
-	instrs = createGiottoInstructions(show_plot = FALSE,
-                                  save_plot = TRUE,
-                                  save_dir = results_folder,
-                                  python_path = python_path)
 
-1.2 Giotto Object 
+
+      ## stitch x.y tile coordinates to global coordinates 
+      xtilespan = 1344;
+      ytilespan = 1008;
+      # TODO: expand the documentation and input format of stitchTileCoordinates. Probably not enough information for new users.
+      stitch_file = stitchTileCoordinates(location_file = codex_metadata, Xtilespan = xtilespan, Ytilespan = ytilespan);
+      codex_locations = stitch_file[,.(Xcoord, Ycoord)]
+
+      # create Giotto object
+      codex_test <- createGiottoObject(expression = codex_expression, 
+                                       spatial_locs = codex_locations,
+                                       instructions = instrs)
+      codex_metadata$cell_ID<- as.character(codex_metadata$cellID)
+      codex_test<-addCellMetadata(codex_test, new_metadata = codex_metadata,
+                                 by_column = T, column_cell_ID = "cell_ID")
+      # subset Giotto object
+      cell_meta = pDataDT(codex_test)
+      cell_IDs_to_keep = cell_meta[Imaging_phenotype_cell_type != "dirt" & Imaging_phenotype_cell_type != "noid" & Imaging_phenotype_cell_type != "capsule",]$cell_ID
+      codex_test = subsetGiotto(codex_test, cell_ids = cell_IDs_to_keep)
+
+      ## filter
+      codex_test <- filterGiotto(gobject = codex_test,
+                                 expression_threshold = 1,
+                                 feat_det_in_min_cells = 10,
+                                 min_det_feats_per_cell = 2,
+                                 expression_values = c('raw'),
+                                 verbose = T)
+
+      codex_test <- normalizeGiotto(gobject = codex_test, scalefactor = 6000, verbose = T,
+                                    log_norm = FALSE,library_size_norm = FALSE,
+                                    scale_feats = FALSE, scale_cells = TRUE)
+
+      ## add gene & cell statistics
+      codex_test <- addStatistics(gobject = codex_test,expression_values = "normalized")
+
+      ## adjust expression matrix for technical or known variables
+      codex_test <- adjustGiottoMatrix(gobject = codex_test, 
+                                       expression_values = c('normalized'),
+                                       batch_columns = NULL, 
+                                       covariate_columns = NULL,
+                                       return_gobject = TRUE,
+                                       update_slot = c('custom'))
+
+      ## visualize
+      spatPlot(gobject = codex_test,point_size = 0.1, 
+               coord_fix_ratio = NULL,point_shape = 'no_border',
+               save_param = list(save_name = '2_a_spatPlot'))
+
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/2_a_spatPlot.png
+   :width: 50.0%
+
+Show different regions of the dataset
+
+.. container:: cell
+
+   .. code:: r
+
+      spatPlot(gobject = codex_test, point_size = 0.2,
+               coord_fix_ratio = 1, cell_color = 'sample_Xtile_Ytile',
+               legend_symbol_size = 3,legend_text = 5,
+               save_param = list(save_name = '2_b_spatPlot'))
+
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/2_b_spatPlot.png
+   :width: 50.0%
+
+Part 3: Dimension reduction
+===========================
+
+.. container:: cell
+
+   .. code:: r
+
+      # use all Abs
+
+      # PCA
+      codex_test <- runPCA(gobject = codex_test, expression_values = 'normalized', scale_unit = T, method = "factominer")
+      signPCA(codex_test, scale_unit = T, scree_ylim = c(0, 3),
+              save_param = list(save_name = '3_a_spatPlot'))
+
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/3_a_spatPlot.png
+   :width: 50.0%
+
+.. container:: cell
+
+   .. code:: r
+
+      plotPCA(gobject = codex_test, point_shape = 'no_border', point_size = 0.2,
+              save_param = list(save_name = '3_b_PCA'))
+
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/3_b_PCA.png
+   :width: 50.0%
+
+.. container:: cell
+
+   .. code:: r
+
+      # UMAP
+      codex_test <- runUMAP(codex_test, dimensions_to_use = 1:14, n_components = 2, n_threads = 12)
+      plotUMAP(gobject = codex_test, point_shape = 'no_border', point_size = 0.2,
+               save_param = list(save_name = '3_c_UMAP'))
+
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/3_c_UMAP.png
+   :width: 50.0%
+
+Part 4: Cluster
+===============
+
+.. container:: cell
+
+   .. code:: r
+
+      ## sNN network (default)
+      codex_test <- createNearestNetwork(gobject = codex_test, dimensions_to_use = 1:14, k = 20)
+
+      ## 0.1 resolution
+      codex_test <- doLeidenCluster(gobject = codex_test, resolution = 0.5, n_iterations = 100, name = 'leiden')
+
+      codex_metadata = pDataDT(codex_test)
+      leiden_colors = Giotto:::getDistinctColors(length(unique(codex_metadata$leiden)))
+      names(leiden_colors) = unique(codex_metadata$leiden)
+
+      plotUMAP(gobject = codex_test, 
+               cell_color = 'leiden', point_shape = 'no_border', point_size = 0.2, cell_color_code = leiden_colors,
+               save_param = list(save_name = '4_a_UMAP'))
+
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/4_a_UMAP.png
+   :width: 50.0%
+
+.. container:: cell
+
+   .. code:: r
+
+      spatPlot(gobject = codex_test, cell_color = 'leiden', point_shape = 'no_border', point_size = 0.2, 
+               cell_color_code = leiden_colors, coord_fix_ratio = 1,label_size =2,
+               legend_text = 5,legend_symbol_size = 2,
+               save_param = list(save_name = '4_b_spatplot'))
+
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/4_b_spatplot.png
+   :width: 50.0%
+
+Part 5: Co-visualize
 ====================
-Create Giotto Object from the provided path 
-
-.. code-block::
 
-	expr_path = paste0(results_folder, "codex_BALBc_3_expression.txt.gz")
-	loc_path = paste0(results_folder, "codex_BALBc_3_coord.txt")
-	meta_path = paste0(results_folder, "codex_BALBc_3_annotation.txt")
+.. container:: cell
 
-********************************************
-2. Create Giotto Object and Process Data 
-********************************************
+   .. code:: r
 
-.. code-block::
+      spatDimPlot2D(gobject = codex_test, cell_color = 'leiden', spat_point_shape = 'no_border', 
+                    spat_point_size = 0.2, dim_point_shape = 'no_border', dim_point_size = 0.2, 
+                    cell_color_code = leiden_colors,plot_alignment = c("horizontal"),
+                    save_param = list(save_name = '5_a_spatdimplot'))
 
-	# read in data information
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/5_a_spatdimplot.png
+   :width: 50.0%
 
-	# expression info
-	codex_expression = readExprMatrix(expr_path, transpose = F)
-	# cell coordinate info
-	codex_locations = data.table::fread(loc_path)
-	# metadata
-	codex_metadata = data.table::fread(meta_path)
+Part 6: Differential expression
+===============================
 
+.. container:: cell
 
+   .. code:: r
 
-	## stitch x.y tile coordinates to global coordinates 
-	xtilespan = 1344;
-	ytilespan = 1008;
-	# TODO: expand the documentation and input format of stitchTileCoordinates. Probably not enough information for new users.
-	stitch_file = stitchTileCoordinates(location_file = codex_metadata, Xtilespan = xtilespan, Ytilespan = ytilespan);
-	codex_locations = stitch_file[,.(Xcoord, Ycoord)]
+      cluster_column = 'leiden'
+      markers_scran = findMarkers_one_vs_all(gobject=codex_test, method="scran",
+                                             expression_values="normalized", cluster_column=cluster_column, min_feats=3)
+      markergenes_scran = unique(markers_scran[, head(.SD, 5), by="cluster"][["feats"]])
 
-	# create Giotto object
-	codex_test <- createGiottoObject(raw_exprs = codex_expression, 
-                                 spatial_locs = codex_locations,
-                                 instructions = instrs,
-                                 cell_metadata = codex_metadata)
+      plotMetaDataHeatmap(codex_test, expression_values = "normalized", metadata_cols = c(cluster_column), 
+                          selected_feats = markergenes_scran,
+                          y_text_size = 8, show_values = 'zscores_rescaled',
+                          save_param = list(save_name = '6_a_metaheatmap'))
 
-	# subset Giotto object
-	cell_meta = pDataDT(codex_test)
-	cell_IDs_to_keep = cell_meta[Imaging_phenotype_cell_type != "dirt" & Imaging_phenotype_cell_type != "noid" & 					Imaging_phenotype_cell_type != "capsule",]								$cell_ID
-	codex_test = subsetGiotto(codex_test, cell_ids = cell_IDs_to_keep)
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/6_a_metaheatmap.png
+   :width: 50.0%
 
-	## filter
-	codex_test <- filterGiotto(gobject = codex_test,
-                           expression_threshold = 1,
-                           gene_det_in_min_cells = 10,
-                           min_det_genes_per_cell = 2,
-                           expression_values = c('raw'),
-                           verbose = T)
+.. container:: cell
 
-	codex_test <- normalizeGiotto(gobject = codex_test, scalefactor = 6000, verbose = T,
-                              log_norm = FALSE,library_size_norm = FALSE,
-                              scale_genes = FALSE, scale_cells = TRUE)
+   .. code:: r
 
-	## add gene & cell statistics
-	codex_test <- addStatistics(gobject = codex_test,expression_values = "normalized")
+      topgenes_scran = markers_scran[, head(.SD, 1), by = 'cluster']$feats
+      violinPlot(codex_test, feats = unique(topgenes_scran)[1:8], cluster_column = cluster_column,
+                 strip_text = 8, strip_position = 'right',
+                 save_param = list(save_name = '6_b_violinplot'))
 
-	## adjust expression matrix for technical or known variables
-	codex_test <- adjustGiottoMatrix(gobject = codex_test, 
-                                 expression_values = c('normalized'),
-                                 batch_columns = NULL, 
-                                 covariate_columns = NULL,
-                                 return_gobject = TRUE,
-                                 update_slot = c('custom'))
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/6_b_violinplot.png
+   :width: 50.0%
 
-	## visualize
-	spatPlot(gobject = codex_test,point_size = 0.1, 
-         	coord_fix_ratio = NULL,point_shape = 'no_border',
-         	save_param = list(save_name = '2_a_spatPlot'))
+.. container:: cell
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/2_a_spatPlot.png
-		:width: 400	
-		:alt: 2_a_spatPlot.png
+   .. code:: r
 
-.. code-block::
+      # gini
+      markers_gini = findMarkers_one_vs_all(gobject=codex_test, method="gini", expression_values="normalized",
+                                            cluster_column=cluster_column, min_feats=5)
+      markergenes_gini = unique(markers_gini[, head(.SD, 5), by="cluster"][["feats"]])
+      plotMetaDataHeatmap(codex_test, expression_values = "normalized", 
+                          metadata_cols = c(cluster_column), selected_feats = markergenes_gini,
+                          show_values = 'zscores_rescaled',
+                          save_param = list(save_name = '6_c_metaheatmap'))
 
-	spatPlot(gobject = codex_test, point_size = 0.2,
-         	coord_fix_ratio = 1, cell_color = 'sample_Xtile_Ytile',
-         	legend_symbol_size = 3,legend_text = 5,
-         	save_param = list(save_name = '2_b_spatPlot'))
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/6_c_metaheatmap.png
+   :width: 50.0%
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/2_b_spatPlot.png
-		:width: 400	
-		:alt: 2_b_spatPlot.png
+.. container:: cell
 
-****************************
-3. Dimension Reduction 
-****************************
+   .. code:: r
 
-.. code-block::
+      topgenes_gini = markers_gini[, head(.SD, 1), by = 'cluster']$feats
+      violinPlot(codex_test, feats = unique(topgenes_gini), cluster_column = cluster_column,
+                 strip_text = 8, strip_position = 'right',
+                 save_param = list(save_name = '6_d_violinplot'))
 
-	# use all Abs
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/6_d_violinplot.png
+   :width: 50.0%
 
-	# PCA
-	codex_test <- runPCA(gobject = codex_test, expression_values = 'normalized', scale_unit = T, method = "factominer")
-	signPCA(codex_test, scale_unit = T, scree_ylim = c(0, 3),
-        		save_param = list(save_name = '3_a_spatPlot'))
+Part 7: Cell type annotation
+============================
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/3_a_spatPlot.png
-		:width: 400	
-		:alt: 3_a_spatPlot.png
+.. container:: cell
 
-.. code-block::
+   .. code:: r
 
-	plotPCA(gobject = codex_test, point_shape = 'no_border', point_size = 0.2,
-        		save_param = list(save_name = '3_b_PCA'))
+      clusters_cell_types<-c("naive B cells","B cells","B cells","naive B cells","B cells",
+                             "macrophages","erythroblasts","erythroblasts","erythroblasts","CD8 + T cells",
+                             "Naive T cells","CD4+ T cells","Naive T cells", "CD4+ T cells","Dendritic cells",
+                             "NK cells","Dendritic cells","Plasma cells","endothelial cells","monocytes")
+      names(clusters_cell_types) = c(2,15,13,5,8,9,19,1,10,3,12,14,4,6,7,16,17,18,11,20)
+      codex_test = annotateGiotto(gobject = codex_test, annotation_vector = clusters_cell_types,
+                                  cluster_column = 'leiden', name = 'cell_types')
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/3_b_PCA.png
-		:width: 400	
-		:alt: 3_b_PCA.png
+      plotUMAP(gobject = codex_test, cell_color = 'cell_types',point_shape = 'no_border',   point_size = 0.2,
+               show_center_label = F,
+               label_size =2,
+               legend_text = 5,
+               legend_symbol_size = 2,
+               save_param = list(save_name = '7_a_umap_celltypes'))
 
-.. code-block::
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/7_a_umap_celltypes.png
+   :width: 50.0%
 
-	# UMAP
-	codex_test <- runUMAP(codex_test, dimensions_to_use = 1:14, n_components = 2, n_threads = 12)
-	plotUMAP(gobject = codex_test, point_shape = 'no_border', point_size = 0.2,
-         	save_param = list(save_name = '3_c_UMAP'))
+Or, this dataset comes with the imaging phenotype annotation
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/3_c_UMAP.png
-		:width: 400	
-		:alt: 3_c_UMAP.png
+.. container:: cell
 
-**********************
-4. Cluster 
-**********************
+   .. code:: r
 
-.. code-block::
-	
-	## sNN network (default)
-	codex_test <- createNearestNetwork(gobject = codex_test, dimensions_to_use = 1:14, k = 20)
+      plotUMAP(gobject = codex_test, cell_color = 'Imaging_phenotype_cell_type',point_shape = 'no_border',   point_size = 0.2,
+               show_center_label = F,
+               label_size =2,
+               legend_text = 5,
+               legend_symbol_size = 2,
+               save_param = list(save_name = '7_b_umap'))
 
-	## 0.1 resolution
-	codex_test <- doLeidenCluster(gobject = codex_test, resolution = 0.5, n_iterations = 100, name = 	'leiden',python_path = python_path)
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/7_b_umap.png
+   :width: 50.0%
 
-	codex_metadata = pDataDT(codex_test)
-	leiden_colors = Giotto:::getDistinctColors(length(unique(codex_metadata$leiden)))
-	names(leiden_colors) = unique(codex_metadata$leiden)
+.. container:: cell
 
-	plotUMAP(gobject = codex_test, 
-         	cell_color = 'leiden', point_shape = 'no_border', point_size = 0.2, cell_color_code = leiden_colors,
-         	save_param = list(save_name = '4_a_UMAP'))
+   .. code:: r
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/4_a_UMAP.png
-		:width: 400	
-		:alt: 4_a_UMAP.png
+      spatPlot(gobject = codex_test, cell_color = 'Imaging_phenotype_cell_type', point_shape = 'no_border', point_size = 0.2, 
+               coord_fix_ratio = 1,
+               label_size =2,
+               legend_text = 5,
+               legend_symbol_size = 2,
+               save_param = list(save_name = '7_c_spatplot'))
 
-.. code-block::
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/7_c_spatplot.png
+   :width: 50.0%
 
-	spatPlot(gobject = codex_test, cell_color = 'leiden', point_shape = 'no_border', point_size = 0.2, 
-         	cell_color_code = leiden_colors, coord_fix_ratio = 1,label_size =2,
-         	legend_text = 5,legend_symbol_size = 2,
-         	save_param = list(save_name = '4_b_spatplot'))
+Part 8: Visualize cell types and gene expression in selected zones
+==================================================================
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/4_b_spatplot.png
-		:width: 400	
-		:alt: 4_b_spatplot.png
+.. container:: cell
 
-**********************
-5. Co-Visualize 
-**********************
+   .. code:: r
 
-.. code-block::
+      cell_metadata = pDataDT(codex_test)
+      subset_cell_ids = cell_metadata[sample_Xtile_Ytile=="BALBc-3_X04_Y08"]$cell_ID
 
-	spatDimPlot2D(gobject = codex_test, cell_color = 'leiden', spat_point_shape = 'no_border', 
-              spat_point_size = 0.2, dim_point_shape = 'no_border', dim_point_size = 0.2, 
-              cell_color_code = leiden_colors,plot_alignment = c("horizontal"),
-              save_param = list(save_name = '5_a_spatdimplot'))
+      codex_test_zone1 = subsetGiotto(codex_test, cell_ids = subset_cell_ids)
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/5_a_spatdimplot.png
-		:width: 400	
-		:alt: 5_a_spatdimplot.png
+      plotUMAP(gobject = codex_test_zone1, 
+               cell_color = 'Imaging_phenotype_cell_type', point_shape = 'no_border',   point_size = 1,
+               show_center_label = F,
+               label_size =2,
+               legend_text = 5,
+               legend_symbol_size = 2,
+               save_param = list(save_name = '8_a_umap'))
 
-**************************************************
-6. Differential Expression 
-**************************************************
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/8_a_umap.png
+   :width: 50.0%
 
-.. code-block::
+.. container:: cell
 
+   .. code:: r
 
-	# resolution 0.5
-	cluster_column = 'leiden'
-	markers_scran = findMarkers_one_vs_all(gobject=codex_test, method="scran",
-                                       expression_values="norm", cluster_column=cluster_column, min_genes=3)
-	markergenes_scran = unique(markers_scran[, head(.SD, 5), by="cluster"][["genes"]])
+      spatPlot(gobject = codex_test_zone1, 
+               cell_color = 'Imaging_phenotype_cell_type', point_shape = 'no_border', point_size = 1, 
+               coord_fix_ratio = 1,
+               label_size =2,
+               legend_text = 5,
+               legend_symbol_size = 2,
+               save_param = list(save_name = '8_b_spatplot'))
 
-	plotMetaDataHeatmap(codex_test, expression_values = "norm", metadata_cols = c(cluster_column), 
-                    selected_genes = markergenes_scran,
-                    y_text_size = 8, show_values = 'zscores_rescaled',
-                    save_param = list(save_name = '6_a_metaheatmap'))
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/8_b_spatplot.png
+   :width: 50.0%
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/6_a_metaheatmap.png
-		:width: 400	
-		:alt: 6_a_metaheatmap.png
+.. container:: cell
 
-.. code-block::
+   .. code:: r
 
-	topgenes_scran = markers_scran[, head(.SD, 1), by = 'cluster']$genes
-	violinPlot(codex_test, genes = unique(topgenes_scran)[1:8], cluster_column = cluster_column,
-           strip_text = 8, strip_position = 'right',
-           save_param = list(save_name = '6_b_violinplot'))
+      spatDimFeatPlot2D(codex_test_zone1, 
+                      expression_values = 'scaled',
+                      feats = c("CD8a","CD19"),
+                      spat_point_shape = 'no_border',
+                      dim_point_shape = 'no_border',
+                      cell_color_gradient = c("darkblue", "white", "red"),
+                      save_param = list(save_name = '8_c_spatdimplot'))
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/6_b_violinplot.png
-		:width: 400	
-		:alt: 6_b_violinplot.png
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/8_c_spatdimplot.png
+   :width: 50.0%
 
+Test on another region:
 
-.. code-block::
+.. container:: cell
 
-	# gini
-	markers_gini = findMarkers_one_vs_all(gobject=codex_test, method="gini", expression_values="norm",
-                                      cluster_column=cluster_column, min_genes=5)
-	markergenes_gini = unique(markers_gini[, head(.SD, 5), by="cluster"][["genes"]])
-	plotMetaDataHeatmap(codex_test, expression_values = "norm", 
-                    metadata_cols = c(cluster_column), selected_genes = markergenes_gini,
-                    show_values = 'zscores_rescaled',
-                    save_param = list(save_name = '6_c_metaheatmap'))
+   .. code:: r
 
+      cell_metadata = pDataDT(codex_test)
+      subset_cell_ids = cell_metadata[sample_Xtile_Ytile=="BALBc-3_X04_Y03"]$cell_ID
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/6_c_metaheatmap.png
-		:width: 400	
-		:alt: 6_c_metaheatmap.png
+      codex_test_zone2 = subsetGiotto(codex_test, cell_ids = subset_cell_ids)
 
-.. code-block::
+      plotUMAP(gobject = codex_test_zone2, cell_color = 'Imaging_phenotype_cell_type',point_shape = 'no_border',   point_size = 1,
+               show_center_label = F,
+               label_size =2,
+               legend_text = 5,
+               legend_symbol_size = 2,
+               save_param = list(save_name = '8_d_umap'))
 
-	topgenes_gini = markers_gini[, head(.SD, 1), by = 'cluster']$genes
-	violinPlot(codex_test, genes = unique(topgenes_gini), cluster_column = cluster_column,
-           	strip_text = 8, strip_position = 'right',
-           	save_param = list(save_name = '6_d_violinplot'))
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/8_d_umap.png
+   :width: 50.0%
 
+.. container:: cell
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/6_d_violinplot.png
-		:width: 400	
-		:alt: 6_d_violinplot.png
+   .. code:: r
 
-***************************
-7. Cell-Type Annotation 
-***************************
+      spatPlot(gobject = codex_test_zone2, cell_color = 'Imaging_phenotype_cell_type', point_shape = 'no_border', point_size = 1, 
+               coord_fix_ratio = 1,
+               label_size =2,
+               legend_text = 5,
+               legend_symbol_size = 2,
+               save_param = list(save_name = '8_e_spatPlot'))
 
-.. code-block::
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/8_e_spatPlot.png
+   :width: 50.0%
 
-	clusters_cell_types = c('erythroblasts-F4/80(+) mphs','B cells','CD8(+) T cells', 
-                        'CD4(+) T cells', 'B cells','CD11c(+)MHCII(+) cells',
-                        'CD4(+) T cells','Ter119(+)', 'marginal zone mphs', 
-                        'CD31(+)ERTR7(+)', 'FDCs', 'B220(+) DN T cells',
-                        'CD3(+) other markers','NK cells','granulocytes',
-                        'plasma cells','ambiguous','CD44(+)CD1632(+)Ly6C(+) cells')
+.. container:: cell
 
-	names(clusters_cell_types) = c(1:18)
-	codex_test = annotateGiotto(gobject = codex_test, annotation_vector = clusters_cell_types,
-                            cluster_column = 'leiden', name = 'cell_types')
+   .. code:: r
 
-	plotMetaDataHeatmap(codex_test, expression_values = 'scaled',
-                    metadata_cols = c('cell_types'),y_text_size = 6,
-                    save_param = list(save_name = '7_a_metaheatmap'))
+      spatDimFeatPlot2D(codex_test_zone2, 
+                      expression_values = 'scaled',
+                      feats = c("CD4", "CD106"),
+                      spat_point_shape = 'no_border',
+                      dim_point_shape = 'no_border',
+                      cell_color_gradient = c("darkblue", "white", "red"),
+                      save_param = list(save_name = '8_f_spatdimgeneplot'))
 
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/7_a_metaheatmap.png
-		:width: 400	
-		:alt: 7_a_metaheatmap.png
-
-.. code-block::
-
-	# create consistent color code
-	mynames = unique(pDataDT(codex_test)$cell_types)
-	mycolorcode = Giotto:::getDistinctColors(n = length(mynames))
-	names(mycolorcode) = mynames
-
-	plotUMAP(gobject = codex_test, cell_color = 'cell_types',point_shape = 'no_border',   point_size = 0.2,
-         	cell_color_code = mycolorcode,
-         	show_center_label = F,
-         	label_size =2,
-         	legend_text = 5,
-         	legend_symbol_size = 2,
-         	save_param = list(save_name = '7_b_umap'))
-
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/7_b_umap.png
-		:width: 400	
-		:alt: 7_b_umap.png
-
-.. code-block::
-
-	spatPlot(gobject = codex_test, cell_color = 'cell_types', point_shape = 'no_border', point_size = 0.2, 
-         	cell_color_code = mycolorcode,
-         	coord_fix_ratio = 1,
-         	label_size =2,
-        	 	legend_text = 5,
-         	legend_symbol_size = 2,
-         	save_param = list(save_name = '7_c_spatplot'))
-
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/7_c_spatplot.png
-		:width: 400	
-		:alt: 7_c_spatplot.png
-
-**********************************************************************
-8. Cell-Type Visualization and Gene Expression of Selected Zones
-**********************************************************************
-
-.. code-block::
-
-	cell_metadata = pDataDT(codex_test)
-	subset_cell_ids = cell_metadata[sample_Xtile_Ytile=="BALBc-3_X04_Y08"]$cell_ID
-
-	codex_test_zone1 = subsetGiotto(codex_test, cell_ids = subset_cell_ids)
-
-	plotUMAP(gobject = codex_test_zone1, 
-         	cell_color = 'cell_types', point_shape = 'no_border',   point_size = 1,
-         	cell_color_code = mycolorcode,
-         	show_center_label = F,
-         	label_size =2,
-        	 	legend_text = 5,
-         	legend_symbol_size = 2,
-         	save_param = list(save_name = '8_a_umap'))
-
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/8_a_umap.png
-		:width: 400	
-		:alt: 8_a_umap.png
-
-.. code-block::
-
-	spatPlot(gobject = codex_test_zone1, 
-         	cell_color = 'cell_types', point_shape = 'no_border', point_size = 1, 
-         	cell_color_code = mycolorcode,
-         	coord_fix_ratio = 1,
-         	label_size =2,
-         	legend_text = 5,
-         	legend_symbol_size = 2,
-         	save_param = list(save_name = '8_b_spatplot'))
-
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/8_b_spatplot.png
-		:width: 400	
-		:alt: 8_b_spatplot.png
-
-.. code-block::
-
-	spatDimGenePlot(codex_test_zone1, 
-                expression_values = 'scaled',
-                genes = c("CD8a","CD19"),
-                spat_point_shape = 'no_border',
-                dim_point_shape = 'no_border',
-                cell_color_gradient = c("darkblue", "white", "red"),
-                save_param = list(save_name = '8_c_spatdimplot'))
-
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/8_c_spatdimplot.png
-		:width: 400	
-		:alt: 8_c_spatdimplot.png
-
-.. code-block::
-	
-	cell_metadata = pDataDT(codex_test)
-	subset_cell_ids = cell_metadata[sample_Xtile_Ytile=="BALBc-3_X04_Y03"]$cell_ID
-
-	codex_test_zone2 = subsetGiotto(codex_test, cell_ids = subset_cell_ids)
-
-	plotUMAP(gobject = codex_test_zone2, cell_color = 'cell_types',point_shape = 'no_border',   point_size = 1,
-         	cell_color_code = mycolorcode,
-         	show_center_label = F,
-         	label_size =2,
-         	legend_text = 5,
-         	legend_symbol_size = 2,
-         	save_param = list(save_name = '8_d_umap'))
-
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/8_d_umap.png
-		:width: 400	
-		:alt: 8_d_umap.png
-
-.. code-block::
-
-	spatPlot(gobject = codex_test_zone2, cell_color = 'cell_types', point_shape = 'no_border', point_size = 1, 
-         	cell_color_code = mycolorcode,
-         	coord_fix_ratio = 1,
-         	label_size =2,
-         	legend_text = 5,
-         	legend_symbol_size = 2,
-        		save_param = list(save_name = '8_e_spatPlot'))
-
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/8_e_spatPlot.png
-		:width: 400	
-		:alt: 8_e_spatPlot.png
-
-.. code-block::
-
-	spatDimGenePlot(codex_test_zone2, 
-                expression_values = 'scaled',
-                genes = c("CD4", "CD106"),
-                spat_point_shape = 'no_border',
-                dim_point_shape = 'no_border',
-                cell_color_gradient = c("darkblue", "white", "red"),
-                save_param = list(save_name = '8_f_spatdimgeneplot'))
-
-.. image:: /images/other/mouse_codex_spleen/vignette_200921/8_f_spatdimgeneplot.png
-		:width: 400	
-		:alt: 8_f_spatdimgeneplot.png
+.. image:: ../inst/images/mouse_codex_spleen/vignette_sep29_2021/8_f_spatdimgeneplot.png
+   :width: 50.0%

@@ -1,499 +1,421 @@
+=====================
+merFISH_hypoth_210924
+=====================
 
-.. _merFISH_hypot_preopt_region:
+:Date: 2022-09-14
 
-###############################################
-merFISH Mouse Hypothalamus Preoptic Region
-###############################################
+Start Giotto
+============
 
+.. container:: cell
 
-.. code-block:: 
+   .. code:: r
 
-    library(Giotto)
+      # 1. set working directory
+      my_working_dir = '/path/to/directory'
 
-************************
-Install Python Modules
-************************
+      # 2. set giotto python path
+      # set python path to your preferred python version path
+      # set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
+      python_path = NULL 
+      if(is.null(python_path)) {
+        installGiottoEnvironment()
+      }
 
-.. warning::
+Dataset Explanation
+===================
 
-	This tutorial was written with **Giotto version 0.3.6.9046**, your version is **1.0.3**. This is a more recent version and results should be reproducible. 
+Moffitt et al. created a 3D spatial expression dataset consisting of 155
+genes from ~1 million single cells acquired over the mouse hypothalamic
+preoptic regions
 
-To run this vignette you need to install **all** of the necessary Python modules. 
+Dataset Download
+================
 
-.. important::
-	
-	Python module installation can be done either **automatically** via our installation tool (from within R) (see step 2.2A) or **manually** (see step 2.2B). 
+.. container:: cell
 
-	:octicon:`eye` See :ref:`Part 2.2 Giotto-Specific Python Packages <part2_python_giotto_requirements>` of our Giotto Installation section for step-by-step instructions. 
+   .. code:: r
 
-*********************
-Dataset Explanation 
-*********************
+      # download data to working directory 
+      # if wget is installed, set method = 'wget'
+      # if you run into authentication issues with wget, then add " extra = '--no-check-certificate' "
+      getSpatialDataset(dataset = 'merfish_preoptic', directory = my_working_dir, method = 'wget')
 
-`Moffitt et al. <https://science.sciencemag.org/content/362/6416/eaau5324>`_ created a 3D spatial expression dataset consisting of 155 genes from ~1 million single cells acquired over the mouse hypothalamic preoptic regions.
+Part 1: Giotto global instructions and preparations
+===================================================
 
+.. container:: cell
 
-*********************
-Dataset Download 
-*********************
-The merFISH data to run this tutorial can be found `here <https://github.com/RubD/spatial-datasets/tree/master/data/2018_merFISH_science_hypo_preoptic>`_. Alternatively you can use the **getSpatialDataset** to automatically download this dataset like we do in this example.
+   .. code:: r
 
-.. code-block::
+      # 1. (optional) set Giotto instructions
+      instrs = createGiottoInstructions(save_plot = TRUE, 
+                                        save_dir = my_working_dir, 
+                                        python_path = python_path)
 
-	# download data to working directory 
-	# if wget is installed, set method = 'wget'
-	# if you run into authentication issues with wget, then add " extra = '--no-check-certificate' "
-	getSpatialDataset(dataset = 'merfish_preoptic', directory = my_working_dir, method = 'wget')
+      # 2. create giotto object from provided paths ####
+      expr_path = paste0(my_working_dir, "merFISH_3D_data_expression.txt.gz")
+      loc_path = paste0(my_working_dir, "merFISH_3D_data_cell_locations.txt")
+      meta_path = paste0(my_working_dir, "merFISH_3D_metadata.txt")
 
-*************************************************
-1. Giotto Global Instructions and Preparations
-*************************************************
+Part 2: Create Giotto Object & Process Data
+===========================================
 
-****************************************
-1.1 *Optional: Set Giotto Instructions*
-****************************************
+.. container:: cell
 
-.. code-block::
+   .. code:: r
 
-    # to automatically save figures in save_dir set save_plot to TRUE
-    temp_dir = getwd()
-    temp_dir = '~/Temp/'
-    myinstructions = createGiottoInstructions(save_dir = temp_dir,
-                                          save_plot = TRUE, 
-                                          show_plot = FALSE)
+       ## create Giotto object
+      merFISH_test <- createGiottoObject(expression = expr_path,
+                                         spatial_locs = loc_path,
+                                         instructions = instrs)
 
 
-*******************************
-1.2 Giotto Object 
-*******************************
+      ## add additional metadata if wanted
+      metadata = data.table::fread(meta_path)
+      merFISH_test = addCellMetadata(merFISH_test, new_metadata = metadata$layer_ID, vector_name = 'layer_ID')
+      merFISH_test = addCellMetadata(merFISH_test, new_metadata = metadata$orig_cell_types, vector_name = 'orig_cell_types')
 
-.. code-block::
+      ## filter raw data
+      # 1. pre-test filter parameters
+      filterDistributions(merFISH_test, detection = 'feats')
 
-	# 2. create giotto object from provided paths ####
-	expr_path = paste0(my_working_dir, "merFISH_3D_data_expression.txt.gz")
-	loc_path = paste0(my_working_dir, "merFISH_3D_data_cell_locations.txt")
-	meta_path = paste0(my_working_dir, "merFISH_3D_metadata.txt")
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/0-filterDistributions.png
+   :width: 50.0%
 
-**********************************************
-2. Create Giotto Object and Process The Data
-**********************************************
+.. container:: cell
 
-.. code-block::
+   .. code:: r
 
-	## create Giotto object
-	merFISH_test <- createGiottoObject(raw_exprs = expr_path,
-                                   spatial_locs = loc_path,
-                                   instructions = instrs)
+       filterDistributions(merFISH_test, detection = 'cells')
 
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/1-filterDistributions.png
+   :width: 50.0%
 
-	## add additional metadata if wanted
-	metadata = data.table::fread(meta_path)
-	merFISH_test = addCellMetadata(merFISH_test, new_metadata = metadata$layer_ID, vector_name = 	'layer_ID')
-	merFISH_test = addCellMetadata(merFISH_test, new_metadata = metadata$orig_cell_types, vector_name = 	'orig_cell_types')
+.. container:: cell
 
-	## filter raw data
-	# 1. pre-test filter parameters
-	filterDistributions(merFISH_test, detection = 'genes',
-                    save_param = list(save_name = '2_a_distribution_genes'))
+   .. code:: r
 
+       filterCombinations(merFISH_test,
+                         expression_thresholds = c(0,1e-6,1e-5),
+                         feat_det_in_min_cells = c(500, 1000, 1500),
+                         min_det_feats_per_cell = c(1, 5, 10))
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/2_a_distribution_genes.png
-			:width: 400
-			:alt: 2_a_distribution_genes.png
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/2-filterCombinations.png
+   :width: 50.0%
 
+.. container:: cell
 
-.. code-block::
+   .. code:: r
 
-	filterDistributions(merFISH_test, detection = 'cells',
-                    save_param = list(save_name = '2_b_distribution_cells'))
+       # 2. filter data
+      merFISH_test <- filterGiotto(gobject = merFISH_test,
+                                   feat_det_in_min_cells = 0,
+                                   min_det_feats_per_cell = 0)
+      ## normalize
+      merFISH_test <- normalizeGiotto(gobject = merFISH_test, scalefactor = 10000, verbose = T)
+      merFISH_test <- addStatistics(gobject = merFISH_test)
+      merFISH_test <- adjustGiottoMatrix(gobject = merFISH_test, expression_values = c('normalized'),
+                                         batch_columns = NULL, covariate_columns = c('layer_ID'),
+                                         return_gobject = TRUE,
+                                         update_slot = c('custom'))
 
+      # save according to giotto instructions
+      # 2D
+      spatPlot(gobject = merFISH_test, point_size = 1.5)
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/2_b_distribution_cells.png
-			:width: 400
-			:alt: 2_b_distribution_cells.png
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/3-spatPlot2D.png
+   :width: 50.0%
 
-.. code-block::
+.. container:: cell
 
-	filterCombinations(merFISH_test,
-                   expression_thresholds = c(0,1e-6,1e-5),
-                   gene_det_in_min_cells = c(500, 1000, 1500),
-                   min_det_genes_per_cell = c(1, 5, 10), 
-                   save_param = list(save_name = '2_c_filter_combos'))
+   .. code:: r
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/2_c_filter_combos.png	
-			:width: 400
-			:alt: 2_c_filter_combos.png	
+       # 3D
+      spatPlot3D(gobject = merFISH_test, point_size = 2.0, axis_scale = 'real')
 
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/4-spat3D.png
+   :width: 50.0%
 
+Part 3: Dimension Reduction
+===========================
 
-.. code-block::
+.. container:: cell
 
-	# 2. filter data
-	merFISH_test <- filterGiotto(gobject = merFISH_test,
-                             gene_det_in_min_cells = 0,
-                             min_det_genes_per_cell = 0)
-	## normalize
-	merFISH_test <- normalizeGiotto(gobject = merFISH_test, scalefactor = 10000, verbose = T)
-	merFISH_test <- addStatistics(gobject = merFISH_test)
-	merFISH_test <- adjustGiottoMatrix(gobject = merFISH_test, expression_values = c('normalized'),
-                                   batch_columns = NULL, covariate_columns = c('nr_genes', 'total_expr'),
-                                   return_gobject = TRUE,
-                                   update_slot = c('custom'))
+   .. code:: r
 
-	# save according to giotto instructions
-	# 2D
-	spatPlot(gobject = merFISH_test, point_size = 1.5, 
-         	ave_param = list(save_name = '2_d_spatial_locations2D'))
+       # only 155 genes, use them all (default)
+      merFISH_test <- runPCA(gobject = merFISH_test, genes_to_use = NULL, scale_unit = FALSE, center = TRUE)
+      screePlot(merFISH_test)
 
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/5-screePlot.png
+   :width: 50.0%
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/2_d_spatial_locations2D.png
-			:width: 400
-			:alt: 2_d_spatial_locations2D.png	
+.. container:: cell
 
-.. code-block::
+   .. code:: r
 
-	# 3D
-	spatPlot3D(gobject = merFISH_test, point_size = 2.0, axis_scale = 'real',
-           	save_param = list(save_name = '2_e_spatial_locations3D'))
+      merFISH_test <- runUMAP(merFISH_test, dimensions_to_use = 1:8, n_components = 3, n_threads = 4)
 
+      plotUMAP_3D(gobject = merFISH_test, point_size = 1.5) 
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/2_e_spatial_locations3D.png
-			:width: 400
-			:alt: 2_e_spatial_locations3D.png	
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/6-UMAP_3D.png
+   :width: 50.0%
 
-***********************
-3. Dimension Reduction 
-***********************
+Part 4: Cluster
+===============
 
-.. code-block::
+.. container:: cell
 
-	# only 155 genes, use them all (default)
-	merFISH_test <- runPCA(gobject = merFISH_test, genes_to_use = NULL, scale_unit = FALSE, center = TRUE)
-	screePlot(merFISH_test, save_param = list(save_name = '3_a_screeplot'))
+   .. code:: r
 
+       ## sNN network (default)
+      merFISH_test <- createNearestNetwork(gobject = merFISH_test, dimensions_to_use = 1:8, k = 15)
+      ## Leiden clustering
+      merFISH_test <- doLeidenCluster(gobject = merFISH_test, resolution = 0.2, n_iterations = 200,
+                                      name = 'leiden_0.2')
+      plotUMAP_3D(gobject = merFISH_test, cell_color = 'leiden_0.2', point_size = 1.5, show_center_label = F)
 
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/7-UMAP_3D.png
+   :width: 50.0%
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/3_a_screeplot.png
-			:width: 400
-			:alt: 3_a_screeplot.png
+Part 5: Co-Visualize
+====================
 
+.. container:: cell
 
-.. code-block::
+   .. code:: r
 
-	merFISH_test <- runUMAP(merFISH_test, dimensions_to_use = 1:8, n_components = 3, n_threads = 4)
+       spatPlot2D(gobject = merFISH_test, point_size = 1.5, 
+                 cell_color = 'leiden_0.2', 
+                 group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(260, 160, 60, -40, -140, -240))
 
-	plotUMAP_3D(gobject = merFISH_test, point_size = 1.5,
-            	save_param = list(save_name = '3_b_UMAP_reduction'))
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/8-spatPlot2D.png
+   :width: 50.0%
 
+Part 6: Cell Type Marker Gene Detection
+=======================================
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/3_b_UMAP_reduction.png	
-			:width: 400
-			:alt: 3_b_UMAP_reduction.png	
+.. container:: cell
 
-***********************
-4. Clustering
-***********************
+   .. code:: r
 
-.. code-block::
+       markers = findMarkers_one_vs_all(gobject = merFISH_test,
+                                       method = 'gini',
+                                       expression_values = 'normalized',
+                                       cluster_column = 'leiden_0.2',
+                                       min_feats = 1, rank_score = 2)
+      markers[, head(.SD, 2), by = 'cluster']
 
-	## sNN network (default)
-	merFISH_test <- createNearestNetwork(gobject = merFISH_test, dimensions_to_use = 1:8, k = 15)
-	## Leiden clustering
-	merFISH_test <- doLeidenCluster(gobject = merFISH_test, resolution = 0.2, n_iterations = 200,
-                                name = 'leiden_0.2')
-	plotUMAP_3D(gobject = merFISH_test, cell_color = 'leiden_0.2', point_size = 1.5, show_center_label = F,
-            	save_param = list(save_name = '4_a_UMAP_leiden'))
+      # violinplot
+      topgini_genes = unique(markers[, head(.SD, 2), by = 'cluster']$feats)
+      violinPlot(merFISH_test, feats = topgini_genes, cluster_column = 'leiden_0.2', strip_position = 'right')
 
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/9-violinPlot.png
+   :width: 50.0%
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/4_a_UMAP_leiden.png	
-			:width: 400
-			:alt: 4_a_UMAP_leiden.png	
+.. container:: cell
 
-***********************
-5. Co-Visualization 
-***********************
+   .. code:: r
 
-.. code-block::
+       topgini_genes = unique(markers[, head(.SD, 6), by = 'cluster']$feats)
+      plotMetaDataHeatmap(merFISH_test, expression_values = 'scaled',
+                          metadata_cols = c('leiden_0.2'),
+                          selected_feats = topgini_genes)
 
-	
-	spatDimPlot3D(gobject = merFISH_test, show_center_label = F,
-              cell_color = 'leiden_0.2', dim3_to_use = 3,
-              axis_scale = 'real', spatial_point_size = 2.0,
-              save_param = list(save_name = '5_a_covis_leiden'))
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/10-plotMetaDataHeatmap.png
+   :width: 50.0%
 
-	spatPlot2D(gobject = merFISH_test, point_size = 1.5, 
-           cell_color = 'leiden_0.2', 
-           group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(260, 160, 60, -40, -140, -240),
-           save_param = list(save_name = '5_b_leiden_2D'))
+Part 7: Cell-Type Annotation
+============================
 
+.. container:: cell
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/5_b_leiden_2D.png
-			:width: 400
-			:alt: 5_b_leiden_2D.png
+   .. code:: r
 
-***************************************
-6. Cell-Type Marker Gene Detection 
-***************************************
+       # known markers and DEGs
+      selected_genes = c('Myh11', 'Klf4', 'Fn1', 'Cd24a', 'Cyr61', 'Nnat', 'Trh', 'Selplg', 'Pou3f2', 'Aqp4', 'Traf4',
+                         'Pdgfra', 'Opalin', 'Mbp', 'Ttyh2', 'Fezf1', 'Cbln1', 'Slc17a6', 'Scg2', 'Isl1', 'Gad1')
+      cluster_order = c(6, 11, 9, 12, 4, 8, 7, 5, 13, 3, 1, 2, 10)
 
-.. code-block::
+      plotMetaDataHeatmap(merFISH_test, expression_values = 'scaled',
+                          metadata_cols = c('leiden_0.2'),
+                          selected_feats = selected_genes,
+                          custom_feat_order = rev(selected_genes),
+                          custom_cluster_order = cluster_order)
 
-	markers = findMarkers_one_vs_all(gobject = merFISH_test,
-                                 method = 'gini',
-                                 expression_values = 'normalized',
-                                 cluster_column = 'leiden_0.2',
-                                 min_genes = 1, rank_score = 2)
-	markers[, head(.SD, 2), by = 'cluster']
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/12-plotMetaDataHeatmap.png
+   :width: 50.0%
 
-	# violinplot
-	topgini_genes = unique(markers[, head(.SD, 2), by = 'cluster']$genes)
-	violinPlot(merFISH_test, genes = topgini_genes, cluster_column = 'leiden_0.2', strip_position = 'right',
-           	save_param = c(save_name = '6_a_violinplot'))
+.. container:: cell
 
+   .. code:: r
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/6_a_violinplot.png	
-			:width: 400
-			:alt: 6_a_violinplot.png
+       ## name clusters
+      clusters_cell_types_hypo = c('Inhibitory', 'Inhibitory', 'Excitatory', 'Astrocyte','OD Mature', 'Endothelial',
+                                   'OD Mature', 'OD Immature', 'Ependymal', 'Ambiguous', 'Endothelial', 'Microglia', 'OD Mature')
+      names(clusters_cell_types_hypo) = as.character(sort(cluster_order))
+      merFISH_test = annotateGiotto(gobject = merFISH_test, annotation_vector = clusters_cell_types_hypo,
+                                    cluster_column = 'leiden_0.2', name = 'cell_types')
 
-.. code-block::
+      ## show heatmap
+      plotMetaDataHeatmap(merFISH_test, expression_values = 'scaled',
+                          metadata_cols = c('cell_types'),
+                          selected_feats = selected_genes,
+                          custom_feat_order = rev(selected_genes),
+                          custom_cluster_order = clusters_cell_types_hypo)
 
-	topgini_genes = unique(markers[, head(.SD, 6), by = 'cluster']$genes)
-	plotMetaDataHeatmap(merFISH_test, expression_values = 'scaled',
-                    metadata_cols = c('leiden_0.2'),
-                    selected_genes = topgini_genes,
-                    save_param = c(save_name = '6_b_clusterheatmap_markers'))
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/13-plotMetaDataHeatmap.png
+   :width: 50.0%
 
+Visualization
+-------------
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/6_b_clusterheatmap_markers.png	
-			:width: 400
-			:alt: 6_b_clusterheatmap_markers.png	
+.. container:: cell
 
-********************************************
-7. Cell-Type Annotation and Visualization 
-********************************************
+   .. code:: r
 
-7.1 Annotation  
-============================================
+       ## visualize ##
+      mycolorcode = c('red', 'lightblue', 'yellowgreen','purple', 'darkred', 'magenta', 'mediumblue', 'yellow', 'gray')
+      names(mycolorcode) = c('Inhibitory', 'Excitatory','OD Mature', 'OD Immature', 'Astrocyte', 'Microglia', 'Ependymal','Endothelial', 'Ambiguous')
 
-.. code-block::
+      plotUMAP_3D(merFISH_test, cell_color = 'cell_types', point_size = 1.5, cell_color_code = mycolorcode)
 
-	
-	# known markers and DEGs
-	selected_genes = c('Myh11', 'Klf4', 'Fn1', 'Cd24a', 'Cyr61', 'Nnat', 'Trh', 'Selplg', 'Pou3f2', 'Aqp4', 'Traf4',
-                   'Pdgfra', 'Opalin', 'Mbp', 'Ttyh2', 'Fezf1', 'Cbln1', 'Slc17a6', 'Scg2', 'Isl1', 'Gad1')
-	cluster_order = c(6, 11, 9, 12, 4, 8, 7, 5, 13, 3, 1, 2, 10)
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/14-UMAP3D.png
+   :width: 50.0%
 
-	plotMetaDataHeatmap(merFISH_test, expression_values = 'scaled',
-                    metadata_cols = c('leiden_0.2'),
-                    selected_genes = selected_genes,
-                    custom_gene_order = rev(selected_genes),
-                    custom_cluster_order = cluster_order,
-                    save_param = c(save_name = '7_a_clusterheatmap_markers'))
+.. container:: cell
 
+   .. code:: r
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_a_clusterheatmap_markers.png
-			:width: 400
-			:alt: 7_a_clusterheatmap_markers.png
+       spatPlot3D(merFISH_test,
+                 cell_color = 'cell_types', axis_scale = 'real',
+                 sdimx = 'sdimx', sdimy = 'sdimy', sdimz = 'sdimz',
+                 show_grid = F, cell_color_code = mycolorcode)
 
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/15-spatplot3D.png
+   :width: 50.0%
 
-.. code-block::
+.. container:: cell
 
-	## name clusters
-	clusters_cell_types_hypo = c('Inhibitory', 'Inhibitory', 'Excitatory', 'Astrocyte','OD Mature', 'Endothelial',
-                             'OD Mature', 'OD Immature', 'Ependymal', 'Ambiguous', 'Endothelial', 'Microglia', 'OD Mature')
-	names(clusters_cell_types_hypo) = as.character(sort(cluster_order))
-	merFISH_test = annotateGiotto(gobject = merFISH_test, annotation_vector = clusters_cell_types_hypo,
-                              cluster_column = 'leiden_0.2', name = 'cell_types')
+   .. code:: r
 
-	## show heatmap
-	plotMetaDataHeatmap(merFISH_test, expression_values = 'scaled',
-                    metadata_cols = c('cell_types'),
-                    selected_genes = selected_genes,
-                    custom_gene_order = rev(selected_genes),
-                    custom_cluster_order = clusters_cell_types_hypo,
-                    save_param = c(save_name = '7_b_clusterheatmap_markers_celltypes'))
+       spatPlot2D(gobject = merFISH_test, point_size = 1.0,
+                 cell_color = 'cell_types', cell_color_code = mycolorcode,
+                 group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(seq(260, -290, -100)))
 
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/16-spatPlot2D.png
+   :width: 50.0%
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_b_clusterheatmap_markers_celltypes.png
-			:width: 400
-			:alt: 7_b_clusterheatmap_markers_celltypes.png
+Excitatory Cells Only
+---------------------
 
-7.1 Visualization   
-============================================
+.. container:: cell
 
+   .. code:: r
 
-.. code-block::
+      spatPlot3D(merFISH_test,
+                 cell_color = 'cell_types', axis_scale = 'real',
+                 sdimx = 'sdimx', sdimy = 'sdimy', sdimz = 'sdimz',
+                 show_grid = F, cell_color_code = mycolorcode,
+                 select_cell_groups = 'Excitatory', show_other_cells = F)
 
-	## visualize ##
-	mycolorcode = c('red', 'lightblue', 'yellowgreen','purple', 'darkred', 'magenta', 'mediumblue', 'yellow', 'gray')
-	names(mycolorcode) = c('Inhibitory', 'Excitatory','OD Mature', 'OD Immature', 'Astrocyte', 'Microglia', 	'Ependymal','Endothelial', 'Ambiguous')
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/17-spat3D.png
+   :width: 50.0%
 
-	plotUMAP_3D(merFISH_test, cell_color = 'cell_types', point_size = 1.5, cell_color_code = mycolorcode,
-            	save_param = c(save_name = '7_c_umap_cell_types'))
+.. container:: cell
 
+   .. code:: r
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_c_umap_cell_types.png	
-			:width: 400
-			:alt: 7_c_umap_cell_types.png	
+      spatPlot2D(gobject = merFISH_test, point_size = 1.0, 
+                 cell_color = 'cell_types', cell_color_code = mycolorcode,
+                 select_cell_groups = 'Excitatory', show_other_cells = F,
+                 group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(seq(260, -290, -100)))
 
-.. code-block::
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/18-spatPlot2D.png
+   :width: 50.0%
 
-	spatPlot3D(merFISH_test,
-           	cell_color = 'cell_types', axis_scale = 'real',
-           	sdimx = 'sdimx', sdimy = 'sdimy', sdimz = 'sdimz',
-           	show_grid = F, cell_color_code = mycolorcode,
-           	save_param = c(save_name = '7_d_spatPlot_cell_types_all'))
+Inhibitory Cells Only
+---------------------
 
+.. container:: cell
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_d_spatPlot_cell_types_all.png
-			:width: 400
-			:alt: 7_d_spatPlot_cell_types_all.png
+   .. code:: r
 
+      # inhibitory
+      spatPlot3D(merFISH_test,
+                 cell_color = 'cell_types', axis_scale = 'real',
+                 sdimx = 'sdimx', sdimy = 'sdimy', sdimz = 'sdimz',
+                 show_grid = F, cell_color_code = mycolorcode,
+                 select_cell_groups = 'Inhibitory', show_other_cells = F)
 
-.. code-block::
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/19-spat3D.png
+   :width: 50.0%
 
-	spatPlot2D(gobject = merFISH_test, point_size = 1.0,
-           	cell_color = 'cell_types', cell_color_code = mycolorcode,
-           	group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(seq(260, -290, -100)),
-           	save_param = c(save_name = '7_e_spatPlot2D_cell_types_all'))
+.. container:: cell
 
+   .. code:: r
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_e_spatPlot2D_cell_types_all.png
-			:width: 400
-			:alt: 7_e_spatPlot2D_cell_types_all.png
+      spatPlot2D(gobject = merFISH_test, point_size = 1.0, 
+                 cell_color = 'cell_types', cell_color_code = mycolorcode,
+                 select_cell_groups = 'Inhibitory', show_other_cells = F,
+                 group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(seq(260, -290, -100)))
 
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/20-spatPlot2D.png
+   :width: 50.0%
 
-7.3 Excitatory Cells Only 
-=============================
+OD and Astrocytes Only
+----------------------
 
-.. code-block::
+.. container:: cell
 
-	spatPlot3D(merFISH_test,
-           	cell_color = 'cell_types', axis_scale = 'real',
-           	sdimx = 'sdimx', sdimy = 'sdimy', sdimz = 'sdimz',
-           	show_grid = F, cell_color_code = mycolorcode,
-           	select_cell_groups = 'Excitatory', show_other_cells = F,
-           	save_param = c(save_name = '7_f_spatPlot_cell_types_excit'))
+   .. code:: r
 
+      spatPlot3D(merFISH_test,
+                 cell_color = 'cell_types', axis_scale = 'real',
+                 sdimx = 'sdimx', sdimy = 'sdimy', sdimz = 'sdimz',
+                 show_grid = F, cell_color_code = mycolorcode,
+                 select_cell_groups = c('Astrocyte', 'OD Mature', 'OD Immature'), show_other_cells = F)
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_f_spatPlot_cell_types_excit.png
-			:width: 400
-			:alt: 7_f_spatPlot_cell_types_excit.png
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/21-spat3D.png
+   :width: 50.0%
 
+.. container:: cell
 
-.. code-block::
+   .. code:: r
 
-	spatPlot2D(gobject = merFISH_test, point_size = 1.0, 
-           	cell_color = 'cell_types', cell_color_code = mycolorcode,
-           	select_cell_groups = 'Excitatory', show_other_cells = F,
-           	group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(seq(260, -290, -100)),
-           	save_param = c(save_name = '7_g_spatPlot2D_cell_types_excit'))
+      spatPlot2D(gobject = merFISH_test, point_size = 1.0, 
+                 cell_color = 'cell_types', cell_color_code = mycolorcode,
+                 select_cell_groups = c('Astrocyte', 'OD Mature', 'OD Immature'), show_other_cells = F,
+                 group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(seq(260, -290, -100)))
 
+.. image:: ../inst/images/MerFISH_hypoth/210924_results/22-spatPlot2D.png
+   :width: 50.0%
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_g_spatPlot2D_cell_types_excit.png
-			:width: 400
-			:alt: 7_g_spatPlot2D_cell_types_excit.png
+Other Cells Only
+----------------
 
+.. container:: cell
 
+   .. code:: r
 
-7.3 Inhibitory Cells Only 
-=============================
+      spatPlot3D(merFISH_test,
+                 cell_color = 'cell_types', axis_scale = 'real',
+                 sdimx = 'sdimx', sdimy = 'sdimy', sdimz = 'sdimz',
+                 show_grid = F, cell_color_code = mycolorcode,
+                 select_cell_groups = c('Microglia', 'Ependymal', 'Endothelial'), show_other_cells = F)
 
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/23-spatplot3D.png
+   :width: 50.0%
 
-.. code-block::
+.. container:: cell
 
-	# inhibitory
-	spatPlot3D(merFISH_test,
-           	cell_color = 'cell_types', axis_scale = 'real',
-           	sdimx = 'sdimx', sdimy = 'sdimy', sdimz = 'sdimz',
-           	show_grid = F, cell_color_code = mycolorcode,
-           	select_cell_groups = 'Inhibitory', show_other_cells = F,
-           	save_param = c(save_name = '7_h_spatPlot_cell_types_inhib'))
+   .. code:: r
 
+      spatPlot2D(gobject = merFISH_test, point_size = 1.0, 
+                 cell_color = 'cell_types', cell_color_code = mycolorcode,
+                 select_cell_groups = c('Microglia', 'Ependymal', 'Endothelial'), show_other_cells = F,
+                 group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(seq(260, -290, -100)))
 
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_h_spatPlot_cell_types_inhib.png
-			:width: 400
-			:alt: 7_h_spatPlot_cell_types_inhib.png
-
-
-.. code-block::
-
-	spatPlot2D(gobject = merFISH_test, point_size = 1.0, 
-           	cell_color = 'cell_types', cell_color_code = mycolorcode,
-           	select_cell_groups = 'Inhibitory', show_other_cells = F,
-           	group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(seq(260, -290, -100)),
-           	save_param = c(save_name = '7_i_spatPlot2D_cell_types_inhib'))
-
-
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_i_spatPlot2D_cell_types_inhib.png
-			:width: 400
-			:alt: 7_i_spatPlot2D_cell_types_inhib.png
-
-
-
-
-7.4 OD and Astrocytes Only
-=============================
-
-
-.. code-block::
-
-	spatPlot3D(merFISH_test,
-           	cell_color = 'cell_types', axis_scale = 'real',
-           	sdimx = 'sdimx', sdimy = 'sdimy', sdimz = 'sdimz',
-           	show_grid = F, cell_color_code = mycolorcode,
-           	select_cell_groups = c('Astrocyte', 'OD Mature', 'OD Immature'), show_other_cells = F,
-           	save_param = c(save_name = '7_j_spatPlot_cell_types_ODandAstro'))
-
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_j_spatPlot_cell_types_ODandAstro.png
-			:width: 400
-			:alt: 7_j_spatPlot_cell_types_ODandAstro.png
-
-
-.. code-block::
-
-	spatPlot2D(gobject = merFISH_test, point_size = 1.0, 
-           	cell_color = 'cell_types', cell_color_code = mycolorcode,
-           	select_cell_groups = c('Astrocyte', 'OD Mature', 'OD Immature'), show_other_cells = F,
-           	group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(seq(260, -290, -100)),
-           	save_param = c(save_name = '7_k_spatPlot2D_cell_types_ODandAstro'))
-
-
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_k_spatPlot2D_cell_types_ODandAstro.png
-			:width: 400
-			:alt: 7_k_spatPlot2D_cell_types_ODandAstro.png
-
-7.5 Other Cells Only 
-=============================
-
-
-.. code-block::
-
-	spatPlot3D(merFISH_test,
-           	cell_color = 'cell_types', axis_scale = 'real',
-           	sdimx = 'sdimx', sdimy = 'sdimy', sdimz = 'sdimz',
-           	show_grid = F, cell_color_code = mycolorcode,
-           	select_cell_groups = c('Microglia', 'Ependymal', 'Endothelial'), show_other_cells = F,
-           	save_param = c(save_name = '7_l_spatPlot_cell_types_other'))
-
-
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_l_spatPlot_cell_types_other.png
-			:width: 400
-			:alt: 7_l_spatPlot_cell_types_other.png
-
-.. code-block::
-
-	spatPlot2D(gobject = merFISH_test, point_size = 1.0, 
-           	cell_color = 'cell_types', cell_color_code = mycolorcode,
-           	select_cell_groups = c('Microglia', 'Ependymal', 'Endothelial'), show_other_cells = F,
-           	group_by = 'layer_ID', cow_n_col = 2, group_by_subset = c(seq(260, -290, -100)),
-           	save_param = c(save_name = '7_m_spatPlot2D_cell_types_other'))
-
-.. image:: /images/other/mouse_merFISH_hypoth/vignette_200909/7_m_spatPlot2D_cell_types_other.png
-			:width: 400
-			:alt: 7_m_spatPlot2D_cell_types_other.png
-
-
-
-
-
-
+.. image:: ../inst/images/MerFISH_hypoth/210927_results/24-spatPlot2D.png
+   :width: 50.0%
