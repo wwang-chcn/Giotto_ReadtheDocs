@@ -119,13 +119,13 @@ Single-Cell
 .. card-carousel:: 3
 
     .. card:: 
-        :link: /subsections/datasets/seqFISH_cortex
+        :link: /subsections/datasets/merFISH_hypot_preopt_region
         :link-type: doc 
         
         .. image:: images/dataset_page/merFISH_hypoth_image_summary.png
 
     .. card:: 
-        :link: subsections/datasets/osmFISH_mouse_SS_cortex
+        :link: subsections/datasets/mini_starmap
         :link-type: doc 
         
         .. image:: images/dataset_page/starmap_cortex_image_summary.png
