@@ -1,5 +1,5 @@
 =====================
-merFISH_hypoth_220915
+merFISH Mouse Hypothalmic Preoptic Region
 =====================
 
 :Date: 2022-09-16
