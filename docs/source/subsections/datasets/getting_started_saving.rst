@@ -7,7 +7,7 @@ Saving Options
 Saving Spatial Data in Plots
 ============================
 
-*Please see the* `Configuration <>`__ *and* `Giotto
+*Please see the* `Configuration <./configuration.html>`__ *and* `Giotto
 Object <./getting_started_gobject.html>`__ *vignettes before walking
 through this tutorial.*
 
@@ -111,7 +111,7 @@ The default save folder is the current working directory. This will be
 the case if instructions are not provided, or if a *save_dir* is not
 specified within **giottoInstructions**. See the
 `createGiottoInstructions
-documentation <http://giottosuite.com/reference/createGiottoInstructions.html>`__
+documentation <../md_rst/createGiottoInstructions.html>`__
 and `Giotto Object <./getting_started_gobject.html>`__ for default
 arguments and more details.
 

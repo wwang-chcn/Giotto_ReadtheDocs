@@ -11,7 +11,7 @@ well as high efficiency options for data processing.
 
 This tutorial uses a SeqFISH+ dataset of a murine cortex and
 subventrical zone. A complete walkthrough of that dataset can be found
-`here <./SeqFISH_cortex_210923.html>`__. To download the data used to
+`here <./seqFISH_cortex.html>`__. To download the data used to
 create the Giotto Object below, please ensure that
 `wget <https://www.gnu.org/software/wget/?>`__ is installed locally.
 
@@ -222,8 +222,8 @@ cells are individually normalized by dividing the normalized feature
 counts by the total feature counts per cell, and then are scaled by the
 total number of cells.
 
-Since the data in this tutorial is not in-situ RNA data, we will not
-show this method here. It may be utilized by specifying the norm_methods
+Since the data in this tutorial is not in-situ RNA data, this method will not
+be shown here. It may be utilized by specifying the norm_methods
 argument as ‘osmFISH’.
 
 Add Statistics and Metadata to the Giotto Object
