@@ -59,7 +59,7 @@ Analysis
 .. image:: images/index/analysis.png
    :width: 400
 
-More technical information can be found in the `detailed workflow section <detailed_workflow>`_.
+More technical information can be found in the `getting started section <https://giottosuite.readthedocs.io/en/latest/gettingstarted.html#learn-more-about-giotto-suite>`_.
 
 References 
 =============
