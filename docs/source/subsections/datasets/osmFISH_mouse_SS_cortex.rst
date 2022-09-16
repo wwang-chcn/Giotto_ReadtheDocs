@@ -1,5 +1,5 @@
 ===============================
-osmFISH_mouse_SScortex_Sep29_21
+osmFISH Mouse SS Cortex
 ===============================
 
 :Date: 2022-09-16
