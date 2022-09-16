@@ -297,7 +297,7 @@ scran
                                                          method = 'scran',
                                                          expression_values = 'normalized',
                                                          cluster_column = 'leiden_clus')
-      topgenes_scran = scran_markers_subclusters[, head(.SD, 2), by = 'cluster']$genes
+      topgenes_scran = scran_markers_subclusters[, head(.SD, 2), by = 'cluster']$feats
 
       violinPlot(visium_kidney, feats = unique(topgenes_scran),
                  cluster_column = 'leiden_clus',
@@ -323,7 +323,7 @@ scran
 
       # umap plots
       dimFeatPlot2D(visium_kidney, expression_values = 'scaled',
-                    feats = scran_markers_subclusters[, head(.SD, 1), by = 'cluster']$genes,
+                    feats = scran_markers_subclusters[, head(.SD, 1), by = 'cluster']$feats,
                     cow_n_col = 3, point_size = 1)
 
 .. image:: ../inst/images/mouse_visium_kidney/210830_results/16-dimFeatPlot2D.png
