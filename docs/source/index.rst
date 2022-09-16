@@ -28,9 +28,6 @@ Giotto Suite
    Common Errors and Solutions <errorsfaqsandtips.rst>
    Report a Bug <github_issues.rst>
 
-**********************************************
-Overview 
-**********************************************
 
 .. image:: images/index/giotto_suite.png
    :align: center
