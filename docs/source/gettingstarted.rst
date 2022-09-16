@@ -39,7 +39,7 @@ This step only needs to be run once. Giotto Suite will automatically detect the 
     installGiottoEnvironment()
 
 
-:octicon:`light-bulb` Encountering errors? Checkout out the :ref:`Common Errors and Solutions <faqs>` for installation troubleshooting help.  
+:octicon:`light-bulb` Encountering errors? Checkout out the :ref:`Common Errors and Solutions <https://giottosuite.readthedocs.io/en/latest/faqs.html>` for installation troubleshooting help.  
 
 
 **************************
