@@ -111,10 +111,6 @@ Single-Cell
             :target: ../../build/html/html/subsections/datasets/merFISH_hypot_preopt_region.html
         
 
-    .. grid-item-card::
-
-        .. image:: images/dataset_page/starmap_cortex_image_summary.png
-            :target: ../../build/html/subsections/datasets/mini_starmap.html
 
 .. card-carousel:: 3
 
@@ -123,12 +119,6 @@ Single-Cell
         :link-type: doc 
         
         .. image:: images/dataset_page/merFISH_hypoth_image_summary.png
-
-    .. card:: 
-        :link: subsections/datasets/mini_starmap
-        :link-type: doc 
-        
-        .. image:: images/dataset_page/starmap_cortex_image_summary.png
     
 **********************
 Subcellular
