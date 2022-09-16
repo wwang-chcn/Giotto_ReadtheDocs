@@ -131,7 +131,7 @@ Part 2: Create Giotto object & process data
       ## adjust expression matrix for technical or known variables
       codex_test <- adjustGiottoMatrix(gobject = codex_test, 
                                        expression_values = c('normalized'),
-                                       batch_columns = NULL, 
+                                       batch_columns = 'sample_Xtile_Ytile', 
                                        covariate_columns = NULL,
                                        return_gobject = TRUE,
                                        update_slot = c('custom'))
