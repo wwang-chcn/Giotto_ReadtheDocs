@@ -1,8 +1,8 @@
 ======================
-Imaging
+getting_started_images
 ======================
 
-:Date: 2022-09-09
+:Date: 2022-09-16
 
 Giotto and Image Data
 =====================
@@ -22,7 +22,7 @@ for both the Visium (automatic) and manual adjustment workflows.
 For an example of working with high definition images that may require
 ROI alignment and or stitching, please see the Nanostring CosMx lung
 data
-`analysis <./nanostring_lung12.html>`__.
+`analysis <https://giottosuite.com/articles/Nanostring_Lung12_jan26_21.html>`__.
 
 Conceptual Overview
 ===================
@@ -129,8 +129,8 @@ either by providing spatial locations directly when calling
   original dimensions)
 | - **ymax_adj** = 0 - (spatial location ymax)
 
-For instance, assume we have already created a **giottoImage** object
-named GImage:
+For instance, assume a **giottoImage** object named GImage has already
+been created:
 
 .. container:: cell
 
@@ -210,22 +210,22 @@ Giotto object using **createGiottoVisiumObject()** for the purposes of
 this tutorial will be shown. Nonetheless, this procedure is standard
 practice for using Giotto with Visium Data.
 
-First create a new directory. This will be your Visium Directory. Then,
+First create a new directory. This will be the Visium Directory. Then,
 open a terminal within that directory, and enter the following commands:
 
 .. container:: cell
 
-   .. code:: r
+   .. code:: bash
 
         wget https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Normal_Prostate/Visium_FFPE_Human_Normal_Prostate_raw_feature_bc_matrix.tar.gz
         tar -xzvf Visium_FFPE_Human_Normal_Prostate_raw_feature_bc_matrix.tar.gz
         wget https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Normal_Prostate/Visium_FFPE_Human_Normal_Prostate_spatial.tar.gz
         tar -xzvf Visium_FFPE_Human_Normal_Prostate_spatial.tar.gz
 
-This will create two subdirectories within your Visium Directory, titled
+This will create two subdirectories within the Visium Directory, titled
 “raw_feature_bc_matrix” and “spatial”. These subdirectories will contain
 barcode and expression information, or images and scaling information,
-respectively. Now, your Visium Directory may be inputted to
+respectively. Now, the Visium Directory may be inputted to
 **createGiottoVisiumObject()**!
 
 .. raw:: html
@@ -239,19 +239,21 @@ respectively. Now, your Visium Directory may be inputted to
 A giotto object using either the hires or lowres image will be loaded
 depending on whether “\ **tissue_hires_image.png”** or
 **“tissue_lowres_image.png”** is provided to the **png_name** argument.
-In this example, we will use and plot the hires image.
+In this example, the hires image will be plotted.
 
 .. container:: cell
 
    .. code:: r
 
       library(Giotto)
-      VisiumDir = '/path/to/visium/directory/'
-      results_directory = '/path/to/results/directory/'
 
-      # Optional: Specify a Python path. If set to NULL (default), the previously installed
-      # Giotto environment will be used.
-      my_python_path = NULL # alternatively, "/your/python/path/" if desired.
+      VisiumDir = '/path/to/visium/directory/'
+      results_directory = paste0(getwd(),'/gobject_imaging_results/')
+
+      # Optional: Specify a path to a Python executable within a conda or miniconda 
+      # environment. If set to NULL (default), the Python executable within the previously
+      # installed Giotto environment will be used.
+      my_python_path = NULL # alternatively, "/local/python/path/python" if desired.
 
       # Optional: Set Giotto instructions
       instrs = createGiottoInstructions(save_plot = TRUE, 
@@ -287,7 +289,7 @@ values negative. This inversion is necessary for the spatial locations
 to appear in the same orientation as the image. This transformation of
 the spatial locations is automatically done for Visium datasets during
 **createGiottoVisiumObject()**. In the standard workflow, it is
-important to determine if this is necessary for your data.
+important to determine if this is necessary for the data at hand.
 
 .. raw:: html
 
@@ -342,7 +344,7 @@ aligned.
                                           spat_loc_name = my_spatlocs,
                                           spatlocs = spatlocs)
 
-.. image:: ../inst/images/getting_started_figs/getting_started_images/images_inverty.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_images/images_inverty.png
    :width: 70.0%
 
 .. raw:: html
@@ -630,7 +632,7 @@ specified. The name that the image is referred to as within the
                  cell_color = "in_tissue",
                  save_param = list(save_name = 'low_res_IT'))
 
-.. image:: ../inst/images/getting_started_figs/getting_started_images/low_res_IT.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_images/low_res_IT.png
    :width: 50.0%
 
 Manual Adjustment
@@ -671,7 +673,7 @@ During giottoImage creation
                  cell_color = "in_tissue",
                  save_param = list(save_name = 'low_res_update_manual_IT'))
 
-.. image:: ../inst/images/getting_started_figs/getting_started_images/low_res_update_manual_IT.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_images/low_res_update_manual_IT.png
    :width: 50.0%
 
 After giottoImage creation, within the giottoObject
@@ -701,7 +703,7 @@ After giottoImage creation, within the giottoObject
                  cell_color = "in_tissue",
                  save_param = list(save_name = 'low_res_before_update_IT'))
 
-.. image:: ../inst/images/getting_started_figs/getting_started_images/low_res_before_update_IT.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_images/low_res_before_update_IT.png
    :width: 50.0%
 
 .. container:: cell
@@ -722,12 +724,12 @@ After giottoImage creation, within the giottoObject
                  cell_color = "in_tissue",
                  save_param = list(save_name = 'low_res_after_update_IT'))
 
-.. image:: ../inst/images/getting_started_figs/getting_started_images/low_res_after_update_IT.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_images/low_res_after_update_IT.png
    :width: 50.0%
 
-.. |image1| image:: ../inst/images/getting_started_figs/getting_started_images/images_adjust.png
+.. |image1| image:: /images/images_pkgdown/getting_started_figs/getting_started_images/images_adjust.png
    :width: 60.0%
-.. |image2| image:: ../inst/images/getting_started_figs/getting_started_images/high_res_IT.png
+.. |image2| image:: /images/images_pkgdown/getting_started_figs/getting_started_images/high_res_IT.png
    :width: 50.0%
-.. |image3| image:: ../inst/images/getting_started_figs/getting_started_images/images_coord_diffs.png
+.. |image3| image:: /images/images_pkgdown/getting_started_figs/getting_started_images/images_coord_diffs.png
    :width: 70.0%

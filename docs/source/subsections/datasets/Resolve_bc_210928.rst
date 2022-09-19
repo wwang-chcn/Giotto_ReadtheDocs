@@ -2,7 +2,7 @@
 Resolve_bc_210928
 =================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 Start Giotto
 ============
@@ -115,7 +115,7 @@ Part 4: Visualize Original Images
       # with big images it sometimes takes quite long for R/Rstudio to render them
       spatPlot2D(gobject = testobj, image_name = 'DAPI', point_size = 1.5)
 
-.. image:: ../inst/images/Resolve_bc/210928/0-spatPlot2D.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/0-spatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -124,7 +124,7 @@ Part 4: Visualize Original Images
 
       spatPlot2D(gobject = testobj, image_name = 'segmentation', point_size = 1.5)
 
-.. image:: ../inst/images/Resolve_bc/210928/1-spatPlot2D.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/1-spatPlot2D.png
    :width: 50.0%
 
 Part 5: Calculate Cell Shape Overlap
@@ -168,7 +168,7 @@ Part 6: Filter Data
                  image_name = 'segmentation', show_image = TRUE,
                  point_size = 1.5)
 
-.. image:: ../inst/images/Resolve_bc/210928/69-spatPlot2D.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/69-spatPlot2D.png
    :width: 50.0%
 
 Part 7: Process Giotto Object
@@ -201,7 +201,7 @@ Part 8: Dimension Reduction
       # typical way of calculating HVF
       subc_test <- calculateHVF(gobject = subc_test, HVFname= 'hvg_orig')
 
-.. image:: ../inst/images/Resolve_bc/210928/4-HVFplot.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/4-HVFplot.png
    :width: 50.0%
 
 .. container:: cell
@@ -213,7 +213,7 @@ Part 8: Dimension Reduction
                                 method = 'var_p_resid', expression_values = 'pearson',
                                 show_plot = T)
 
-.. image:: ../inst/images/Resolve_bc/210928/5-HVFplot.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/5-HVFplot.png
    :width: 50.0%
 
 .. container:: cell
@@ -227,7 +227,7 @@ Part 8: Dimension Reduction
 
       screePlot(subc_test, ncp = 20)
 
-.. image:: ../inst/images/Resolve_bc/210928/6-screePlot.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/6-screePlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -238,7 +238,7 @@ Part 8: Dimension Reduction
               dim1_to_use = 1,
               dim2_to_use = 2)
 
-.. image:: ../inst/images/Resolve_bc/210928/7-PCA.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/7-PCA.png
    :width: 50.0%
 
 .. container:: cell
@@ -249,7 +249,7 @@ Part 8: Dimension Reduction
       subc_test <- runUMAP(subc_test, dimensions_to_use = 1:5, n_threads = 2)
       plotUMAP(gobject = subc_test)
 
-.. image:: ../inst/images/Resolve_bc/210928/8-UMAP.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/8-UMAP.png
    :width: 50.0%
 
 Part 9: Cluster
@@ -271,7 +271,7 @@ Part 9: Cluster
       plotUMAP(gobject = subc_test, cell_color = 'leiden_clus',
                show_NN_network = T, point_size = 2.5, cell_color_code = colorcode)
 
-.. image:: ../inst/images/Resolve_bc/210928/39-UMAP.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/39-UMAP.png
    :width: 50.0%
 
 .. container:: cell
@@ -284,7 +284,7 @@ Part 9: Cluster
                     cell_color = 'leiden_clus',
                     spat_point_size = 2, cell_color_code = colorcode)
 
-.. image:: ../inst/images/Resolve_bc/210928/51-spatDimPlot2D.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/51-spatDimPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -295,7 +295,7 @@ Part 9: Cluster
       showClusterHeatmap(gobject = subc_test, cluster_column = 'leiden_clus',
                          save_param = list(save_format = 'pdf',base_height = 6, base_width = 8, units = 'cm'))
 
-.. image:: ../inst/images/Resolve_bc/210928/72-Heatmap.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/72-Heatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -305,7 +305,7 @@ Part 9: Cluster
       # See cluster relationships in a dendogram
       showClusterDendrogram(subc_test, h = 0.5, rotate = T, cluster_column = 'leiden_clus')
 
-.. image:: ../inst/images/Resolve_bc/210928/12-showClusterDendrogram.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/12-showClusterDendrogram.png
    :width: 50.0%
 
 Part 10: Create a Spatial Network
@@ -324,7 +324,7 @@ Part 10: Create a Spatial Network
                  image_name = 'segmentation', show_image = TRUE,
                  point_size = 1.5, show_network = TRUE)
 
-.. image:: ../inst/images/Resolve_bc/210928/13-spatPlot2D.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/13-spatPlot2D.png
    :width: 50.0%
 
 Part 11: Visualize SubCellular Data
@@ -344,7 +344,7 @@ Part 11: Visualize SubCellular Data
                            polygon_fill_as_factor = T , 
                            polygon_fill_code = colorcode)
 
-.. image:: ../inst/images/Resolve_bc/210928/54-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/54-spatInSituPlotPoints.png
    :width: 50.0%
 
 .. container:: cell
@@ -362,7 +362,7 @@ Part 11: Visualize SubCellular Data
                            polygon_color = 'white',
                            polygon_line_size = 0.1)
 
-.. image:: ../inst/images/Resolve_bc/210928/16-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/16-spatInSituPlotPoints.png
    :width: 50.0%
 
 .. container:: cell
@@ -378,7 +378,7 @@ Part 11: Visualize SubCellular Data
                            polygon_color = 'white',
                            polygon_line_size = 0.1)
 
-.. image:: ../inst/images/Resolve_bc/210928/17-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/17-spatInSituPlotPoints.png
    :width: 50.0%
 
 .. container:: cell
@@ -395,7 +395,7 @@ Part 11: Visualize SubCellular Data
                            polygon_color = 'white',
                            polygon_line_size = 0.1)
 
-.. image:: ../inst/images/Resolve_bc/210928/18-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/18-spatInSituPlotPoints.png
    :width: 50.0%
 
 Subset by Loaction
@@ -422,7 +422,7 @@ Subset by Loaction
                            polygon_color = 'white',
                            polygon_line_size = 0.1)
 
-.. image:: ../inst/images/Resolve_bc/210928/19-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/19-spatInSituPlotPoints.png
    :width: 50.0%
 
 .. container:: cell
@@ -442,7 +442,7 @@ Subset by Loaction
                            polygon_fill_code = colorcode,
                            feats_color_code = featcolor)
 
-.. image:: ../inst/images/Resolve_bc/210928/61-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/61-spatInSituPlotPoints.png
    :width: 50.0%
 
 .. container:: cell
@@ -462,7 +462,7 @@ Subset by Loaction
                            polygon_fill = 'total_expr',
                            polygon_fill_as_factor = F)
 
-.. image:: ../inst/images/Resolve_bc/210928/21-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/21-spatInSituPlotPoints.png
    :width: 50.0%
 
 .. container:: cell
@@ -478,7 +478,7 @@ Subset by Loaction
                            polygon_fill = 'total_expr',
                            polygon_fill_as_factor = F)
 
-.. image:: ../inst/images/Resolve_bc/210928/22-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/22-spatInSituPlotPoints.png
    :width: 50.0%
 
 .. container:: cell
@@ -495,7 +495,7 @@ Subset by Loaction
                            polygon_fill_as_factor = T, 
                            polygon_fill_code = colorcode)
 
-.. image:: ../inst/images/Resolve_bc/210928/66-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/66-spatInSituPlotPoints.png
    :width: 50.0%
 
 Part 12: Find Interaction Changed Genes
@@ -526,5 +526,5 @@ Part 12: Find Interaction Changed Genes
                            polygon_fill_code = colorcode,
                            feats_color_code = featcolor)
 
-.. image:: ../inst/images/Resolve_bc/210928/43-spatInSituPlotPoints.png
+.. image:: /images/images_pkgdown/Resolve_bc/210928/43-spatInSituPlotPoints.png
    :width: 50.0%

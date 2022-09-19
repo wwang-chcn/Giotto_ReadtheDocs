@@ -1,8 +1,8 @@
-=================
-The Giotto Object
-=================
+=======================
+getting_started_gobject
+=======================
 
-:Date: 2022-09-09
+:Date: 2022-09-16
 
 How to create a Giotto Object
 =============================
@@ -11,7 +11,7 @@ In this tutorial, the methodology and syntax to create a
 **giottoObject** is shown and osmFISH data is used throughout the
 tutorial.
 
-Import Giotto and download the data
+Import Giotto and Download the Data
 -----------------------------------
 
 To download this data, please ensure that
@@ -24,7 +24,6 @@ To download this data, please ensure that
       library(Giotto)
 
       genv_exists = checkGiottoEnvironment()
-
       if(!genv_exists){
         # The following command need only be run once to install the Giotto environment.
         installGiottoEnvironment()
@@ -59,12 +58,15 @@ block.
       # Create a Giotto object using data directly from file paths 
       osm_exprs = paste0(data_directory, "osmFISH_prep_expression.txt")
       osm_locs = paste0(data_directory, "osmFISH_prep_cell_coordinates.txt")
+
       minimum_gobject1 = createGiottoObject(expression = osm_exprs,
                                             spatial_locs = osm_locs)
+
       # Example 2.
       # Create a Giotto object using objects already loaded into workspace
       expression_matrix = readExprMatrix(path = osm_exprs) # fast method to read expression matrix
       cell_locations = data.table::fread(file = osm_locs)
+
       minimum_gobject2 = createGiottoObject(expression = expression_matrix,
                                             spatial_locs = cell_locations)
 
@@ -154,6 +156,7 @@ Giotto object creation by using a named list.
       # Arbitrary modifications
       scaled_matrix = expression_matrix * 1.2
       custom_matrix = expression_matrix * 0.5
+
       # Provide multiple expression matrices at once to the Giotto Object
       # If these matrices are stored in files rather than in the workspace,
       # file paths may be provided instead of variables
@@ -169,19 +172,19 @@ By providing values to other **createGiottoObject** parameters, it is
 possible to add:
 
 -  **Cell** or **feature (gene) metadata**: see
-   `addCellMetadata <../md_rst/addCellMetadata.html>`__ and
-   `addFeatMetadata <../md_rst/addFeatMetadata.html>`__
+   `addCellMetadata <../reference/addCellMetadata.html>`__ and
+   `addFeatMetadata <../reference/addFeatMetadata.html>`__
 
 -  **Spatial networks** or **grids**: see
    `Visualizations <./Visualizations.html>`__
 
 -  **Dimension reduction**: see
-   `Clustering <./Dimension_reduction.html>`__
+   `Clustering <./dimension_reduction.html>`__
 
 -  **Images**: see `Imaging <./getting_started_images.html>`__
 
 -  **giottoInstructions**: see
-   `createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__
+   `createGiottoInstructions <../docs/reference/createGiottoInstructions.html>`__
    and below
 
 Providing **giottoInstructions** allows the specification of:
@@ -212,25 +215,31 @@ Here is an example of a more customized Giotto object.
       osm_exprs = paste0(data_directory, "osmFISH_prep_expression.txt")
       osm_locs = paste0(data_directory, "osmFISH_prep_cell_coordinates.txt")
       meta_path = paste0(data_directory, "osmFISH_prep_cell_metadata.txt")
+
       # Create instructions
+
       # Optional: Specify a path to a Python executable within a conda or miniconda 
       # environment. If set to NULL (default), the Python executable within the previously
       # installed Giotto environment will be used.
       my_python_path = NULL # alternatively, "/local/python/path/python" if desired.
+
       instrs = createGiottoInstructions(python_path = my_python_path,
                                         save_dir = results_directory,
                                         plot_format = 'png',
                                         dpi = 200,
                                         height = 9,
                                         width = 9)
+
       # Create Giotto object
       custom_gobject = createGiottoObject(expression = osm_exprs,
                                           spatial_locs = osm_locs,                                      
                                           instructions = instrs)
+
       # Add field annotations as cell metadata
       metadata = data.table::fread(file = meta_path)
       custom_gobject = addCellMetadata(custom_gobject, new_metadata = metadata,
                                        by_column = T, column_cell_ID = 'CellID')
+
       # Check which Giotto instructions are associated with the Giotto object
       showGiottoInstructions(custom_gobject)
 
@@ -245,7 +254,7 @@ execution.
 Alternatively, a named list may also be provided to the *instructions*
 argument of **createGiottoObject**. However, ensure that all arguments
 to
-`createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__
+`createGiottoInstructions <../docs/reference/createGiottoInstructions.html>`__
 are defined when providing instructions as a named list, since default
 values are only applied to instructions when made with
 **createGiottoInstructions**. *Note that python_path must be specified
@@ -262,8 +271,10 @@ The **giottoInstructions** may be changed, or completely replaced:
       custom_gobject = changeGiottoInstructions(custom_gobject, 
                                                 param = 'dpi', 
                                                 new_value = 300)
+
       # Observe that the instructions have changed
       showGiottoInstructions(custom_gobject)
+
       # Create new instructions using a named list
       sub_results_directory = paste0(results_directory, 'specific_results/')
       my_python_path = custom_gobject@instructions$python_path
@@ -278,9 +289,11 @@ The **giottoInstructions** may be changed, or completely replaced:
                         height = 12,
                         width = 12,
                         is_docker = FALSE)
+
       # Change all instructions
       custom_gobject = replaceGiottoInstructions(custom_gobject,
                                                  instructions = new_instrs)
+
       # Observe that the instructions have changed
       showGiottoInstructions(custom_gobject)
 
@@ -299,7 +312,7 @@ plotting functions accordingly. To change these parameters from the
 default values, the instructions may be changed or replaced, or these
 parameters may be *manually overwritten* within plotting functions.
 
-See `showSaveParameters <../md_rst/showSaveParameters.html>`__
+See `showSaveParameters <../docs/reference/showSaveParameters.html>`__
 and the `Saving Options <./getting_started_saving.html>`__ tutorial for
 alternative methods to save plots.
 
@@ -309,6 +322,7 @@ alternative methods to save plots.
 
       # Plot according to Giotto Instructions (default)
       spatPlot(custom_gobject)
+
       # Plot clusters, create, and save to a new subdirectory, all while overwriting formatting
       spatPlot(custom_gobject, 
                cell_color = 'ClusterName', 
@@ -322,7 +336,7 @@ alternative methods to save plots.
                                  base_height = 9,
                                  base_width = 9))
 
-.. image:: ../inst/images/getting_started_figs/getting_started_gobject/cell_clusters.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/cell_clusters.png
 
 Giotto Object Structure
 =======================
@@ -357,255 +371,20 @@ Nested Organization of the Giotto Object
   users and contributors/developers, accessor functions for the slots
   are also provided.
 
-Slots and Sub-nesting
----------------------
+Slots and Subnesting
+--------------------
 
-+---+---------------------------+------------------------+------------+
-| S | Nested                    | Example                | Accessors  |
-| l |                           |                        |            |
-| o |                           |                        |            |
-| t |                           |                        |            |
-+===+===========================+========================+============+
-| @ | spat_unit-feat_type-name  | cell-rna-raw           | get_expr   |
-| e |                           |                        | ession_val |
-| x |                           |                        | ues()set_e |
-| p |                           |                        | xpression_ |
-| r |                           |                        | values()sh |
-| e |                           |                        | owGiottoEx |
-| s |                           |                        | pression() |
-| s |                           |                        |            |
-| i |                           |                        |            |
-| o |                           |                        |            |
-| n |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | spat_unit-feat_type       | cell-rna               | pDataD     |
-| c |                           |                        | T()addCell |
-| e |                           |                        | Metadata() |
-| l |                           |                        |            |
-| l |                           |                        |            |
-| _ |                           |                        |            |
-| m |                           |                        |            |
-| e |                           |                        |            |
-| t |                           |                        |            |
-| a |                           |                        |            |
-| d |                           |                        |            |
-| a |                           |                        |            |
-| t |                           |                        |            |
-| a |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | spat_unit-feat_type       | cell-rna               | fDataD     |
-| f |                           |                        | T()addFeat |
-| e |                           |                        | Metadata() |
-| a |                           |                        |            |
-| t |                           |                        |            |
-| _ |                           |                        |            |
-| m |                           |                        |            |
-| e |                           |                        |            |
-| t |                           |                        |            |
-| a |                           |                        |            |
-| d |                           |                        |            |
-| a |                           |                        |            |
-| t |                           |                        |            |
-| a |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | spat_unit-name            | grid-grid              | get_s      |
-| s |                           |                        | patialGrid |
-| p |                           |                        | ()set_spat |
-| a |                           |                        | ialGrid()s |
-| t |                           |                        | howGiottoS |
-| i |                           |                        | patGrids() |
-| a |                           |                        |            |
-| l |                           |                        |            |
-| _ |                           |                        |            |
-| g |                           |                        |            |
-| r |                           |                        |            |
-| i |                           |                        |            |
-| d |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | spat_unit-method-name     | cell-sNN-sNN_results1  | get_Neares |
-| n |                           |                        | tNetwork() |
-| n |                           |                        | set_Neares |
-| _ |                           |                        | tNetwork() |
-| n |                           |                        |            |
-| e |                           |                        |            |
-| t |                           |                        |            |
-| w |                           |                        |            |
-| o |                           |                        |            |
-| r |                           |                        |            |
-| k |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | approach-spat_u           | cells-cell-rna-pca-pca | get_       |
-| d | nit-feat_type-method-name |                        | dimReducti |
-| i |                           |                        | on()set_di |
-| m |                           |                        | mReduction |
-| e |                           |                        | ()showGiot |
-| n |                           |                        | toDimRed() |
-| s |                           |                        |            |
-| i |                           |                        |            |
-| o |                           |                        |            |
-| n |                           |                        |            |
-| _ |                           |                        |            |
-| r |                           |                        |            |
-| e |                           |                        |            |
-| d |                           |                        |            |
-| u |                           |                        |            |
-| c |                           |                        |            |
-| t |                           |                        |            |
-| i |                           |                        |            |
-| o |                           |                        |            |
-| n |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | spat_unit-feat_type-name  | cell-rna-results1      | get_s      |
-| s |                           |                        | patial_enr |
-| p |                           |                        | ichment()s |
-| a |                           |                        | et_spatial |
-| t |                           |                        | _enrichmen |
-| i |                           |                        | t()showGio |
-| a |                           |                        | ttoSpatEnr |
-| l |                           |                        | ichments() |
-| _ |                           |                        |            |
-| e |                           |                        |            |
-| n |                           |                        |            |
-| r |                           |                        |            |
-| i |                           |                        |            |
-| c |                           |                        |            |
-| h |                           |                        |            |
-| m |                           |                        |            |
-| e |                           |                        |            |
-| n |                           |                        |            |
-| t |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | spat_unit                 | cell                   | get_polyg  |
-| s |                           |                        | on_info()s |
-| p |                           |                        | et_polygon |
-| a |                           |                        | _info()sho |
-| t |                           |                        | wGiottoSpa |
-| i |                           |                        | tialInfo() |
-| a |                           |                        |            |
-| l |                           |                        |            |
-| _ |                           |                        |            |
-| i |                           |                        |            |
-| n |                           |                        |            |
-| f |                           |                        |            |
-| o |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | spat_unit-name            | cell-raw               | get_sp     |
-| s |                           |                        | atial_loca |
-| p |                           |                        | tions()set |
-| a |                           |                        | _spatial_l |
-| t |                           |                        | ocations() |
-| i |                           |                        | showGiotto |
-| a |                           |                        | SpatLocs() |
-| l |                           |                        |            |
-| _ |                           |                        |            |
-| l |                           |                        |            |
-| o |                           |                        |            |
-| c |                           |                        |            |
-| s |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | spat_unit-name            | cell-Delaunay_network1 | get_       |
-| s |                           |                        | spatialNet |
-| p |                           |                        | work()set_ |
-| a |                           |                        | spatialNet |
-| t |                           |                        | work()show |
-| i |                           |                        | GiottoSpat |
-| a |                           |                        | Networks() |
-| l |                           |                        |            |
-| _ |                           |                        |            |
-| n |                           |                        |            |
-| e |                           |                        |            |
-| t |                           |                        |            |
-| w |                           |                        |            |
-| o |                           |                        |            |
-| r |                           |                        |            |
-| k |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | feat_type                 | rna                    | get_fe     |
-| f |                           |                        | ature_info |
-| e |                           |                        | ()set_feat |
-| a |                           |                        | ure_info() |
-| t |                           |                        | showGiotto |
-| _ |                           |                        | FeatInfo() |
-| i |                           |                        |            |
-| n |                           |                        |            |
-| f |                           |                        |            |
-| o |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | name                      | image                  | getG       |
-| i |                           |                        | iottoImage |
-| m |                           |                        | ()addGiott |
-| a |                           |                        | oImage()sh |
-| g |                           |                        | owGiottoIm |
-| e |                           |                        | ageNames() |
-| s |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ | name                      | image                  | getG       |
-| l |                           |                        | iottoImage |
-| a |                           |                        | ()addGiott |
-| r |                           |                        | oImage()sh |
-| g |                           |                        | owGiottoIm |
-| e |                           |                        | ageNames() |
-| I |                           |                        |            |
-| m |                           |                        |            |
-| a |                           |                        |            |
-| g |                           |                        |            |
-| e |                           |                        |            |
-| s |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ |                           |                        | r          |
-| i |                           |                        | eplaceGiot |
-| n |                           |                        | toInstruct |
-| s |                           |                        | ions()show |
-| t |                           |                        | GiottoInst |
-| r |                           |                        | ructions() |
-| u |                           |                        |            |
-| c |                           |                        |            |
-| t |                           |                        |            |
-| i |                           |                        |            |
-| o |                           |                        |            |
-| n |                           |                        |            |
-| s |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ |                           |                        |            |
-| O |                           |                        |            |
-| S |                           |                        |            |
-| _ |                           |                        |            |
-| p |                           |                        |            |
-| l |                           |                        |            |
-| a |                           |                        |            |
-| t |                           |                        |            |
-| f |                           |                        |            |
-| o |                           |                        |            |
-| r |                           |                        |            |
-| m |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ |                           |                        |            |
-| j |                           |                        |            |
-| o |                           |                        |            |
-| i |                           |                        |            |
-| n |                           |                        |            |
-| _ |                           |                        |            |
-| i |                           |                        |            |
-| n |                           |                        |            |
-| f |                           |                        |            |
-| o |                           |                        |            |
-+---+---------------------------+------------------------+------------+
-| @ |                           |                        |            |
-| p |                           |                        |            |
-| a |                           |                        |            |
-| r |                           |                        |            |
-| a |                           |                        |            |
-| m |                           |                        |            |
-| e |                           |                        |            |
-| t |                           |                        |            |
-| e |                           |                        |            |
-| r |                           |                        |            |
-| s |                           |                        |            |
-+---+---------------------------+------------------------+------------+
+Slot Nested Example Accessors ————————
+————————————————————————————————————————————————————————————————————————————————————————-
+————————————————————————————————————————————————————————————————————————————————————————————-
+———————————————————————————– ————————
+————————————————————————————————————————————————————————————————————————————————————————-
+————————————————————————————————————————————————————————————————————————————————————————————–
+———————————————————————————–
 
-.. |image1| image:: ../inst/images/getting_started_figs/getting_started_gobject/Giotto_suite_object-01.svg
+.. |image1| image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-01.svg
    :width: 100.0%
-.. |image2| image:: ../inst/images/getting_started_figs/getting_started_gobject/Giotto_suite_object-02.svg
+.. |image2| image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-02.svg
    :width: 100.0%
-.. |image3| image:: ../inst/images/getting_started_figs/getting_started_gobject/Giotto_suite_object-03.svg
+.. |image3| image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-03.svg
    :width: 100.0%

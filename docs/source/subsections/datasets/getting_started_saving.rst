@@ -1,23 +1,22 @@
 ======================
-Saving Options
+getting_started_saving
 ======================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 Saving Spatial Data in Plots
 ============================
 
-*Please see the* `Configuration <./configuration.html>`__ *and* `Giotto
+*Please see the* `Configuration <>`__ *and* `Giotto
 Object <./getting_started_gobject.html>`__ *vignettes before walking
 through this tutorial.*
 
-R/Rstudio and Giotto provide different ways to save your spatial data.
-Here, we will create a **giottoObject** without using
-**giottoInstructions** so that the save parameters for plotting
-functions within Giotto as well as the default saving methods built into
-R/Rstudio may be emphasized here. Note that for plotting functions, all
-parameters available to the *save_param* argument may be found by
-running **showSaveParameters()**.
+R/Rstudio and Giotto provide different ways to save spatial data. Here,
+a **giottoObject** will be created without using **giottoInstructions**
+so that the save parameters for plotting functions within Giotto as well
+as the default saving methods built into R/Rstudio may be emphasized
+here. Note that for plotting functions, all parameters available to the
+*save_param* argument may be found by running **showSaveParameters()**.
 
 Creating the Giotto Object without Instructions:
 ================================================
@@ -102,7 +101,7 @@ may be saved or further manipulated.
                          base_height = 10, 
                          base_width = 10)
 
-.. image:: ../inst/images/getting_started_figs/getting_started_saving/clusters_black.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/clusters_black.png
 
 2. Save plot directly to the default folder
 -------------------------------------------
@@ -111,7 +110,7 @@ The default save folder is the current working directory. This will be
 the case if instructions are not provided, or if a *save_dir* is not
 specified within **giottoInstructions**. See the
 `createGiottoInstructions
-documentation <../md_rst/createGiottoInstructions.html>`__
+documentation <http://giottosuite.com/reference/createGiottoInstructions.html>`__
 and `Giotto Object <./getting_started_gobject.html>`__ for default
 arguments and more details.
 
@@ -124,7 +123,7 @@ arguments and more details.
                cell_color = 'ClusterName', 
                save_plot = TRUE)
 
-.. image:: ../inst/images/getting_started_figs/getting_started_saving/-SpatPlot2D.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/-SpatPlot2D.png
 
 3. Save plot directly, but overwrite default save parameters
 ------------------------------------------------------------
@@ -159,7 +158,7 @@ with the file name “my_name”
                                  base_height = 9,
                                  base_width = 9))
 
-.. image:: ../inst/images/getting_started_figs/getting_started_saving/my_name.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/my_name.png
 
 4. Just view the plot
 ---------------------
@@ -194,4 +193,4 @@ with the file name “my_name”
                save_plot = TRUE, return_plot = FALSE, show_plot = FALSE,
                save_param = list(save_name = 'only_save'))
 
-.. image:: ../inst/images/getting_started_figs/getting_started_saving/only_save.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/only_save.png

@@ -1,23 +1,23 @@
 ===============
-Data Processing
+data_processing
 ===============
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
-After creating the Giotto object, there are several steps for performing downstream
+After creating the Giotto object, it must be prepared for downstream
 analysis. This tutorial walks through filtering, normalizing, adjusting
 for batch effects, adding statistics and metadata to a Giotto object, as
 well as high efficiency options for data processing.
 
 This tutorial uses a SeqFISH+ dataset of a murine cortex and
 subventrical zone. A complete walkthrough of that dataset can be found
-`here <./seqFISH_cortex.html>`__. To download the data used to
+`here <./SeqFISH_cortex_210923.html>`__. To download the data used to
 create the Giotto Object below, please ensure that
 `wget <https://www.gnu.org/software/wget/?>`__ is installed locally.
 
-This dataset contains multiple field of views; here, we illustrate a
-workflow to bring the FOVs together for holistic analysis, and then
-subset the Giotto Object to analyze the cortex.
+This dataset contains multiple field of views; here, a workflow to bring
+the FOVs together for holistic analysis is illustrated, and then a
+subset of the Giotto Object is taken to analyze the cortex.
 
 Create the Giotto Object
 ========================
@@ -28,13 +28,13 @@ Create the Giotto Object
 
       library(Giotto)
 
-      # Specify path from which data may be retrieved or stored
+      # Specify path from which data may be retrieved/stored
       data_directory = paste0(getwd(),'/gobject_processing_data/')
-      # "/path/to/where/your/data/lives/"
+      # alternatively, "/path/to/where/the/data/lives/"
 
       # Specify path to which results may be saved
       results_directory = paste0(getwd(),'/gobject_processing_results/') 
-      # "/path/to/store/your/results/"
+      # alternatively, "/path/to/store/the/results/"
 
       genv_exists = checkGiottoEnvironment()
       if(!genv_exists){
@@ -42,9 +42,10 @@ Create the Giotto Object
         installGiottoEnvironment()
       }
 
-      # Optional: Specify a Python path. If set to NULL (default), the previously installed
-      # Giotto environment will be used.
-      my_python_path = NULL # alternatively, "/your/python/path/" if desired.
+      # Optional: Specify a path to a Python executable within a conda or miniconda 
+      # environment. If set to NULL (default), the Python executable within the previously
+      # installed Giotto environment will be used.
+      my_python_path = NULL # alternatively, "/local/python/path/python" if desired.
 
       getSpatialDataset(dataset = 'seqfish_SS_cortex', directory = data_directory, method = 'wget')
 
@@ -135,7 +136,7 @@ accordingly:
 
       filterDistributions(testobj, detection = 'cells')
 
-.. image:: ../inst/images/getting_started_figs/data_processing/0-filterDistributions_cells.png
+.. image:: /images/images_pkgdown/getting_started_figs/data_processing/0-filterDistributions_cells.png
    :width: 50.0%
 
 .. container:: cell
@@ -144,7 +145,7 @@ accordingly:
 
        filterDistributions(testobj, detection = 'feats')
 
-.. image:: ../inst/images/getting_started_figs/data_processing/1-filterDistributions_feats.png
+.. image:: /images/images_pkgdown/getting_started_figs/data_processing/1-filterDistributions_feats.png
    :width: 50.0%
 
 **filterCombinations** may be used to test how different filtering
@@ -160,7 +161,7 @@ data:
                          feat_det_in_min_cells = c(50, 100, 200),
                          min_det_feats_per_cell = c(5, 10, 25))
 
-.. image:: ../inst/images/getting_started_figs/data_processing/2-filterCombinations.png
+.. image:: /images/images_pkgdown/getting_started_figs/data_processing/2-filterCombinations.png
    :width: 50.0%
 
 When a consensus on appropriate filtering parameters has been reached,
@@ -196,7 +197,7 @@ data by cells or genes, specified by scale_order.
                                  scale_order = 'first_feats', # Default, alternatively 'first_cells'
                                  verbose = T)
 
-The ‘pearson_resid’ method uses the Lause/Kobak et al. method. Fist,
+The ‘pearson_resid’ method uses the Lause/Kobak et al. method. Fist,
 expected values are calculated based on Pearson correlations. Next,
 z-scores are calculated based on observed and expected values. *Note
 that normalizing with this method will save the data within the “scaled”
@@ -222,9 +223,9 @@ cells are individually normalized by dividing the normalized feature
 counts by the total feature counts per cell, and then are scaled by the
 total number of cells.
 
-Since the data in this tutorial is not in-situ RNA data, this method will not
-be shown here. It may be utilized by specifying the norm_methods
-argument as ‘osmFISH’.
+Since the data in this tutorial is not in-situ RNA data, this method
+will not be shown here. It may be utilized by specifying the
+norm_methods argument as ‘osmFISH’.
 
 Add Statistics and Metadata to the Giotto Object
 ================================================

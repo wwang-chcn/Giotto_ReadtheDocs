@@ -2,7 +2,7 @@
 singlecell_prostate_standard_Sep29_21
 =====================================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 Set up Giotto Environment
 =========================
@@ -103,7 +103,7 @@ Part 3: Dimention reduction
       giotto_SC <- runPCA(gobject = giotto_SC, center = TRUE, scale_unit = TRUE)
       screePlot(giotto_SC, ncp = 30, save_param = list(save_name = '3_scree_plot'))
 
-.. image:: ../inst/images/singlecell_prostate_standard/vignette_sep29_2021/3_scree_plot.png
+.. image:: /images/images_pkgdown/singlecell_prostate_standard/vignette_sep29_2021/3_scree_plot.png
    :width: 50.0%
 
 Part 4: Cluster
@@ -131,7 +131,7 @@ Part 4: Cluster
           cell_color = 'leiden_clus', show_NN_network = T, point_size = 1.5,
           save_param = list(save_name = "4_Cluster"))
 
-.. image:: ../inst/images/singlecell_prostate_standard/vignette_sep29_2021/4_Cluster.png
+.. image:: /images/images_pkgdown/singlecell_prostate_standard/vignette_sep29_2021/4_Cluster.png
    :width: 50.0%
 
 Part 5: Differential Expression
@@ -150,7 +150,7 @@ Part 5: Differential Expression
                           y_text_size = 8, show_values = 'zscores_rescaled',
                           save_param = list(save_name = '5_a_metaheatmap'))
 
-.. image:: ../inst/images/singlecell_prostate_standard/vignette_sep29_2021/5_a_metaheatmap.png
+.. image:: /images/images_pkgdown/singlecell_prostate_standard/vignette_sep29_2021/5_a_metaheatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -163,7 +163,7 @@ Part 5: Differential Expression
                  strip_text = 10, strip_position = 'right',
                  save_param = list(save_name = '5_b_violinplot_scran', base_width = 5))
 
-.. image:: ../inst/images/singlecell_prostate_standard/vignette_sep29_2021/5_b_violinplot_scran.png
+.. image:: /images/images_pkgdown/singlecell_prostate_standard/vignette_sep29_2021/5_b_violinplot_scran.png
    :width: 50.0%
 
 Part 6: FeaturePlot
@@ -177,7 +177,7 @@ Part 6: FeaturePlot
       # DPP4(CD26) for Epithelial luminal cells, PECAM1(CD31) for Endothelial cells and CD3D for T cells
       dimFeatPlot2D(giotto_SC, feats = c("EPCAM","DPP4","PECAM1","CD3D"), cow_n_col = 2, save_param = list(save_name = "6_featureplot"))
 
-.. image:: ../inst/images/singlecell_prostate_standard/vignette_sep29_2021/6_featureplot.png
+.. image:: /images/images_pkgdown/singlecell_prostate_standard/vignette_sep29_2021/6_featureplot.png
    :width: 50.0%
 
 Part 7: Cell type annotation
@@ -207,7 +207,7 @@ Part 7: Cell type annotation
           cell_color = "prostate_labels", show_NN_network = T, point_size = 1.5,
           save_param = list(save_name = "7_Annotation"))
 
-.. image:: ../inst/images/singlecell_prostate_standard/vignette_sep29_2021/7_Annotation.png
+.. image:: /images/images_pkgdown/singlecell_prostate_standard/vignette_sep29_2021/7_Annotation.png
    :width: 50.0%
 
 Part 8: Subset and Recluster
@@ -225,7 +225,7 @@ Part 8: Subset and Recluster
       Subset_giotto_T <- runPCA(gobject = Subset_giotto_T, center = TRUE, scale_unit = TRUE)
       screePlot(Subset_giotto_T, ncp = 20, save_param = list(save_name = '8a_scree_plot'))
 
-.. image:: ../inst/images/singlecell_prostate_standard/vignette_sep29_2021/8a_scree_plot.png
+.. image:: /images/images_pkgdown/singlecell_prostate_standard/vignette_sep29_2021/8a_scree_plot.png
    :width: 50.0%
 
 .. container:: cell
@@ -247,7 +247,7 @@ Part 8: Subset and Recluster
           cell_color = 'leiden_clus', show_NN_network = T, point_size = 1.5,
           save_param = list(save_name = "8b_Cluster"))
 
-.. image:: ../inst/images/singlecell_prostate_standard/vignette_sep29_2021/8b_Cluster.png
+.. image:: /images/images_pkgdown/singlecell_prostate_standard/vignette_sep29_2021/8b_Cluster.png
    :width: 50.0%
 
 .. container:: cell
@@ -263,7 +263,7 @@ Part 8: Subset and Recluster
                           y_text_size = 8, show_values = 'zscores_rescaled',
                           save_param = list(save_name = '8_c_metaheatmap'))
 
-.. image:: ../inst/images/singlecell_prostate_standard/vignette_sep29_2021/8_c_metaheatmap.png
+.. image:: /images/images_pkgdown/singlecell_prostate_standard/vignette_sep29_2021/8_c_metaheatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -282,5 +282,5 @@ Part 8: Subset and Recluster
           cell_color = "subset_labels", show_NN_network = T, point_size = 1.5,
           save_param = list(save_name = "8d_Annotation"))
 
-.. image:: ../inst/images/singlecell_prostate_standard/vignette_sep29_2021/8d_Annotation.png
+.. image:: /images/images_pkgdown/singlecell_prostate_standard/vignette_sep29_2021/8d_Annotation.png
    :width: 50.0%

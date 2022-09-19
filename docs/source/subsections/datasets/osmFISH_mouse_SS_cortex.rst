@@ -1,8 +1,8 @@
 ===============================
-osmFISH_mouse_SScortex_Sep29_21
+osmFISH Mouse SS Cortex
 ===============================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 Dataset explanation
 ===================
@@ -12,7 +12,7 @@ created a cyclic single-molecule fluorescence in situ hybridization
 (osmFISH) technology and define the cellular organization of the
 somatosensory cortex with the expression of 33 genes in 5,328 cells.
 
-.. image:: ../inst/images/general_figs/osmfish_image_demo.png
+.. image:: /images/images_pkgdown/general_figs/osmfish_image_demo.png
    :width: 50.0%
 
 Set up Giotto environment
@@ -115,7 +115,7 @@ Part 2: Create Giotto object & process data
       spatPlot2D(gobject = osm_test, cell_color = 'ClusterName', point_size = 1.5,
                save_param = list(save_name = '2_a_original_clusters'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/2_a_original_clusters.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/2_a_original_clusters.png
    :width: 50.0%
 
 .. container:: cell
@@ -125,7 +125,7 @@ Part 2: Create Giotto object & process data
       spatPlot2D(gobject = osm_test, cell_color = 'Region',
                save_param = list(save_name = '2_b_original_regions'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/2_b_original_regions.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/2_b_original_regions.png
    :width: 50.0%
 
 .. container:: cell
@@ -135,7 +135,7 @@ Part 2: Create Giotto object & process data
       spatPlot2D(gobject = osm_test, cell_color = 'ClusterID',
                save_param = list(save_name = '2_c_clusterID'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/2_c_clusterID.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/2_c_clusterID.png
    :width: 50.0%
 
 .. container:: cell
@@ -146,7 +146,7 @@ Part 2: Create Giotto object & process data
                gradient_limits = c(120,220),
                save_param = list(save_name = '2_d_total_expr_limits'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/2_d_total_expr_limits.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/2_d_total_expr_limits.png
    :width: 50.0%
 
 Part 3: Dimension reduction
@@ -164,7 +164,7 @@ Part 3: Dimension reduction
       screePlot(osm_test, ncp = 30,
                 save_param = list(save_name = '3_a_screeplot'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/3_a_screeplot.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/3_a_screeplot.png
    :width: 50.0%
 
 .. container:: cell
@@ -174,7 +174,7 @@ Part 3: Dimension reduction
       plotPCA(osm_test,
               save_param = list(save_name = '3_b_PCA_reduction'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/3_b_PCA_reduction.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/3_b_PCA_reduction.png
    :width: 50.0%
 
 .. container:: cell
@@ -186,7 +186,7 @@ Part 3: Dimension reduction
       plotUMAP(gobject = osm_test,
                save_param = list(save_name = '3_c_UMAP_reduction.png'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/3_c_UMAP_reduction.png.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/3_c_UMAP_reduction.png.png
    :width: 50.0%
 
 .. container:: cell
@@ -197,7 +197,7 @@ Part 3: Dimension reduction
                cell_color = 'total_expr', color_as_factor = F, gradient_midpoint = 180, gradient_limits = c(120, 220),
                save_param = list(save_name = '3_d_UMAP_reduction_expression.png'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/3_d_UMAP_reduction_expression.png.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/3_d_UMAP_reduction_expression.png.png
    :width: 50.0%
 
 .. container:: cell
@@ -207,7 +207,7 @@ Part 3: Dimension reduction
       osm_test <- runtSNE(osm_test, dimensions_to_use = 1:31, perplexity = 70, check_duplicates = F)
       plotTSNE(gobject = osm_test,  save_param = list(save_name = '3_e_tSNE_reduction'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/3_e_tSNE_reduction.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/3_e_tSNE_reduction.png
    :width: 50.0%
 
 Part 4: Cluster
@@ -223,7 +223,7 @@ Part 4: Cluster
                show_NN_network = F, edge_alpha = 0.05,
                save_param = list(save_name = '4_a_UMAP_hclust'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_a_UMAP_hclust.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_a_UMAP_hclust.png
    :width: 50.0%
 
 .. container:: cell
@@ -236,7 +236,7 @@ Part 4: Cluster
                point_size = 2.5, show_NN_network = F, edge_alpha = 0.05, 
                save_param =  list(save_name = '4_b_UMAP_kmeans'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_b_UMAP_kmeans.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_b_UMAP_kmeans.png
    :width: 50.0%
 
 .. container:: cell
@@ -255,7 +255,7 @@ Part 4: Cluster
                show_NN_network = F, edge_alpha = 0.05,
                save_param = list(save_name = '4_c_UMAP_leiden'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_c_UMAP_leiden.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_c_UMAP_leiden.png
    :width: 50.0%
 
 .. container:: cell
@@ -280,7 +280,7 @@ Part 4: Cluster
                show_NN_network = F, edge_alpha = 0.05,
                save_param = list(save_name = '4_d_UMAP_leiden_merged'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_d_UMAP_leiden_merged.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_d_UMAP_leiden_merged.png
    :width: 50.0%
 
 .. container:: cell
@@ -292,7 +292,7 @@ Part 4: Cluster
                          save_param = list(save_name = '4_e_heatmap', units = 'cm'),
                          row_names_gp = grid::gpar(fontsize = 6), column_names_gp = grid::gpar(fontsize = 6))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_e_heatmap.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_e_heatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -302,7 +302,7 @@ Part 4: Cluster
       showClusterDendrogram(osm_test, cluster_column = 'leiden_clus_m', h = 1, rotate = T,
                             save_param = list(save_name = '4_f_dendro', units = 'cm'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_f_dendro.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/4_f_dendro.png
    :width: 50.0%
 
 Part 5: Co-visualize
@@ -316,7 +316,7 @@ Part 5: Co-visualize
       spatDimPlot2D(gobject = osm_test, cell_color = 'leiden_clus', spat_point_size = 2,
                     save_param = list(save_name = '5_a_covis_leiden'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/5_a_covis_leiden.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/5_a_covis_leiden.png
    :width: 50.0%
 
 .. container:: cell
@@ -326,7 +326,7 @@ Part 5: Co-visualize
       spatDimPlot2D(gobject = osm_test, cell_color = 'leiden_clus_m', spat_point_size = 2,
                     save_param = list(save_name = '5_b_covis_leiden_m'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/5_b_covis_leiden_m.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/5_b_covis_leiden_m.png
    :width: 50.0%
 
 .. container:: cell
@@ -337,7 +337,7 @@ Part 5: Co-visualize
                     dim_point_size = 2, spat_point_size = 2, select_cell_groups = 'm_8',
                     save_param = list(save_name = '5_c_covis_leiden_merged_selected'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/5_c_covis_leiden_merged_selected.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/5_c_covis_leiden_merged_selected.png
    :width: 50.0%
 
 .. container:: cell
@@ -348,7 +348,7 @@ Part 5: Co-visualize
                     gradient_midpoint = 160, gradient_limits = c(120,220),
                     save_param = list(save_name = '5_d_total_expr'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/5_d_total_expr.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/5_d_total_expr.png
    :width: 50.0%
 
 Part 6: Differential expression
@@ -368,7 +368,7 @@ Part 6: Differential expression
                                                cluster_column = 'leiden_clus_m',
       group_1 = unlist(dendsplits[3]$tree_1), group_2 = unlist(dendsplits[3]$tree_2))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/6_a_dendrogram.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/6_a_dendrogram.png
    :width: 50.0%
 
 .. container:: cell
@@ -387,7 +387,7 @@ Part 6: Differential expression
                  strip_text = 5, strip_position = 'right',
                  save_param = c(save_name = '6_a_violinplot'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/6_a_violinplot.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/6_a_violinplot.png
    :width: 50.0%
 
 .. container:: cell
@@ -398,7 +398,7 @@ Part 6: Differential expression
                           metadata_cols = c('leiden_clus_m'), 
                           save_param = c(save_name = '6_b_metaheatmap'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/6_b_metaheatmap.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/6_b_metaheatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -409,7 +409,7 @@ Part 6: Differential expression
                           metadata_cols = c('leiden_clus_m'), 
                           save_param = c(save_name = '6_e_metaheatmap_all_genes'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/6_e_metaheatmap_all_genes.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/6_e_metaheatmap_all_genes.png
    :width: 50.0%
 
 .. container:: cell
@@ -420,7 +420,7 @@ Part 6: Differential expression
                           metadata_cols = c('ClusterName'), 
                           save_param = c(save_name = '6_f_metaheatmap_all_genes_names'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/6_f_metaheatmap_all_genes_names.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/6_f_metaheatmap_all_genes_names.png
    :width: 50.0%
 
 Part 7: Cell type annotation
@@ -448,7 +448,7 @@ Part 8: Spatial grid
                  point_size = 1.5,
                  save_param = c(save_name = '8_grid_det_cell_types'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/8_grid_det_cell_types.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/8_grid_det_cell_types.png
    :width: 50.0%
 
 Part 9: Spatial network
@@ -464,7 +464,7 @@ Part 9: Spatial network
                  point_size = 1.5, cell_color = 'ClusterName', legend_symbol_size = 2,
                  save_param = c(save_name = '9_spatial_network_k10'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/9_spatial_network_k10.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/9_spatial_network_k10.png
    :width: 50.0%
 
 Part 10: Spatial genes
@@ -483,7 +483,7 @@ Part 10: Spatial genes
                      cow_n_col = 1,
                      save_param = c(save_name = '10_a_spatial_genes_km'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/10_a_spatial_genes_km.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/10_a_spatial_genes_km.png
    :width: 50.0%
 
 Part 12. cell-cell preferential proximity
@@ -501,7 +501,7 @@ Part 12. cell-cell preferential proximity
       cellProximityBarplot(gobject = osm_test, CPscore = cell_proximities, min_orig_ints = 25, min_sim_ints = 25,
                            save_param = c(save_name = '12_a_barplot_cell_cell_enrichment'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/12_a_barplot_cell_cell_enrichment.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/12_a_barplot_cell_cell_enrichment.png
    :width: 50.0%
 
 .. container:: cell
@@ -513,7 +513,7 @@ Part 12. cell-cell preferential proximity
                            color_breaks = c(-1.5, 0, 1.5), color_names = c('blue', 'white', 'red'),
                            save_param = c(save_name = '12_b_heatmap_cell_cell_enrichment', unit = 'in'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/12_b_heatmap_cell_cell_enrichment.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/12_b_heatmap_cell_cell_enrichment.png
    :width: 50.0%
 
 .. container:: cell
@@ -524,7 +524,7 @@ Part 12. cell-cell preferential proximity
       cellProximityNetwork(gobject = osm_test, CPscore = cell_proximities, remove_self_edges = T, only_show_enrichment_edges = T,
                            save_param = c(save_name = '12_c_network_cell_cell_enrichment'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/12_c_network_cell_cell_enrichment.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/12_c_network_cell_cell_enrichment.png
    :width: 50.0%
 
 .. container:: cell
@@ -540,5 +540,5 @@ Part 12. cell-cell preferential proximity
                             coord_fix_ratio = 0.5,  point_size_select = 3, point_size_other = 1.5,
                             save_param = c(save_name = '12_d_cell_cell_enrichment_selected'))
 
-.. image:: ../inst/images/osmFISH_mouse_SS_cortex/vignette_sep29_2021/12_d_cell_cell_enrichment_selected.png
+.. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/12_d_cell_cell_enrichment_selected.png
    :width: 50.0%

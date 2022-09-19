@@ -2,7 +2,7 @@
 Installation_issues_python_env
 ==============================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 1. Install Giotto python Environment within R
 =============================================

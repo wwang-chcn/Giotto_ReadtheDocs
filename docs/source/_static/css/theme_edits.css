@@ -6,7 +6,7 @@
  * Order matters. If something is moved further down --> it gains priority.
  */
  .wy-side-nav-search, .wy-nav-top {
-    background: #000000;
+    background: #FFFFFF;
 }
 
 .wy-side-nav-search input[type="text"] {
@@ -21,7 +21,7 @@
 
 /*navigation bar header color*/
 .wy-menu-vertical p.caption {
-    color: #6EFAFF;
+    color: #7E69AE;
 }
 
 /* Color of links -- not clicked */
@@ -36,7 +36,7 @@ a:visited {
 
 /*navigation bar (non header) text*/
 .wy-menu-vertical a {
-    color: #eceef4;
+    color: #EDEDED;
 }
 
 /* Type of cursor that hovers above links */

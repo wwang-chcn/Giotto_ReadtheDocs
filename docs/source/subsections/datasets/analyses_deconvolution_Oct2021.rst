@@ -2,7 +2,7 @@
 analyses_deconvolution_Oct2021
 ==============================
 
-:Date: 2022-09-14
+:Date: 2022-09-16
 
 | Technologies like Visium spatial transcriptomics does not provide
   single-cell resolution, making cell type annotation a harder problem.
@@ -121,7 +121,7 @@ PAGE enrichment
                                x_text_size = 8,
                                y_text_size = 8)
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/20-plotMetaDataCellsHeatmap.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/20-plotMetaDataCellsHeatmap.png
    :width: 50.0%
 
 PAGE enrichment stats will be stored in the
@@ -142,7 +142,7 @@ spatplot by adding the spat_enr_names argument.
                      cow_n_col = 2,coord_fix_ratio = 1, point_size = 1.25, show_legend = T,
                      save_param = list(save_name="spat_enr_PAGE_spatcellplot"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/21-spatCellPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/21-spatCellPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -156,7 +156,7 @@ spatplot by adding the spat_enr_names argument.
                         plot_alignment = 'horizontal',
                         save_param = list(base_width=7, base_height=10, save_name="spat_enr_PAGE_spatdimplot"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/22-spatDimCellPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/22-spatDimCellPlot2D.png
    :width: 50.0%
 
 HyperGeometric test
@@ -189,7 +189,7 @@ spatplot by adding the spat_enr_names argument.
                    cow_n_col = 2,coord_fix_ratio = 1, point_size = 1.75,
                    save_param = list(save_name="spat_enr_HyperGeometric_spatplot"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220328/23-spatCellPlot2D.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220328/23-spatCellPlot2D.png
    :width: 50.0%
 
 Rank
@@ -222,7 +222,7 @@ spatplot by adding the spat_enr_names argument.
                      cow_n_col = 2,coord_fix_ratio = 1, point_size = 1,
                      save_param = list(save_name = "spat_enr_Rank_plot"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220426/spat_enr_Rank_plot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220426/spat_enr_Rank_plot.png
    :width: 50.0%
 
 Deconvolution
@@ -254,5 +254,5 @@ spatplot by adding the spat_enr_names argument.
                      cow_n_col = 2,coord_fix_ratio = 1, point_size = 1,
                      save_param = list(save_name = "DWLS_plot"))
 
-.. image:: ../inst/images/mouse_visium_brain/vignette_220426/DWLS_plot.png
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220426/DWLS_plot.png
    :width: 50.0%

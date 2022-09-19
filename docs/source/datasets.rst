@@ -84,10 +84,10 @@ Single-Cell
 .. card-carousel:: 3
 
     .. card:: 
-        :link: subsections/datasets/seqFISH_cortex
+        :link: subsections/datasets/mini_seqFISH
         :link-type: doc 
         
-        .. image:: images/dataset_page/cortex_image_summary.png
+        .. image:: images/dataset_page/mini_seqFISH.png
 
     .. card:: 
         :link: subsections/datasets/seqFISH_cortex
@@ -111,24 +111,14 @@ Single-Cell
             :target: ../../build/html/html/subsections/datasets/merFISH_hypot_preopt_region.html
         
 
-    .. grid-item-card::
-
-        .. image:: images/dataset_page/starmap_cortex_image_summary.png
-            :target: ../../build/html/subsections/datasets/mini_starmap.html
 
 .. card-carousel:: 3
 
     .. card:: 
-        :link: /subsections/datasets/seqFISH_cortex
+        :link: /subsections/datasets/merFISH_hypot_preopt_region
         :link-type: doc 
         
         .. image:: images/dataset_page/merFISH_hypoth_image_summary.png
-
-    .. card:: 
-        :link: subsections/datasets/osmFISH_mouse_SS_cortex
-        :link-type: doc 
-        
-        .. image:: images/dataset_page/starmap_cortex_image_summary.png
     
 **********************
 Subcellular
