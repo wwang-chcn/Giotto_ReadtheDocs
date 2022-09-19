@@ -14,9 +14,6 @@ Latest](https://img.shields.io/github/commits-since/RubD/Giotto/latest/suite)
 [![R-CMD-check](https://github.com/yeung-jsn/Giotto/actions/workflows/R-CMD-check.yaml/badge.svg?branch=ci-unittest)](https://github.com/yeung-jsn/Giotto/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-<<<<<<< HEAD
-Giotto Suite is a collection of open source software tools, including data structures and methods, for the comprehensive analysis and visualization of spatial multi-omics data at multiple scales and resolutions. It extends and improves our previous R package Giotto. The underlying framework of Giotto Suite is generalizable to virtually all current and emerging spatial technologies which may differ in resolution (e.g. subcellular, single cell, or multiple cells), spatial dimension (i.e. 2D vs. 3D), molecular modality (e.g. protein, RNA, DNA, …), and throughput (i.e. number of cells and analytes). Giotto Suite is designed to ensure spatial analysis solutions remain compatible with current and future spatial -omics technologies and platforms. It will also aid in the further integration of spatial -omics with external analysis pipelines and tools. More information and documentation about Giotto Suite can be found at http://giottosuite.com.
-=======
 **Website change!**  
 We have created a new [readthedocs
 website](https://giottosuite.readthedocs.io/en/latest/#) to further
@@ -48,7 +45,6 @@ spatial dimension (2D vs 3D), molecular modality (protein, RNA, DNA, …),
 and throughput (number of cells and analytes).
 
 The package is in heavy development. Please check back often!
->>>>>>> 9f329888527a5dea43187d4a0757e6d6d811098a
 
 <!-- <img src="inst/images/general_figs/overview_datasets.png" /> -->
 
