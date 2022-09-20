@@ -1,6 +1,11 @@
+================
+writeHMRFresults
+================
+
+:Date: ymd
 
 ``writeHMRFresults``
-========================
+====================
 
 writeHMRFresults
 
@@ -12,7 +17,7 @@ write results from doHMRF to a data.table.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    writeHMRFresults(
      gobject,
@@ -25,22 +30,20 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``HMRFoutput``
-     - HMRF output from doHMRF
-   * - ``k``
-     - k to write results for
-   * - ``betas_to_view``
-     - results from different betas that you want to view
-   * - ``print_command``
-     - see the python command
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``HMRFoutput``                | HMRF output from doHMRF              |
++-------------------------------+--------------------------------------+
+| ``k``                         | k to write results for               |
++-------------------------------+--------------------------------------+
+| ``betas_to_view``             | results from different betas that    |
+|                               | you want to view                     |
++-------------------------------+--------------------------------------+
+| ``print_command``             | see the python command               |
++-------------------------------+--------------------------------------+
 
 Value
 -----

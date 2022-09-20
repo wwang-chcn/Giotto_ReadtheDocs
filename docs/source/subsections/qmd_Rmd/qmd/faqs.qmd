@@ -1,6 +1,11 @@
 --- 
 title: faqs 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: faqs 
+format: rst 
 date: 2022-09-16 
 --- 
 

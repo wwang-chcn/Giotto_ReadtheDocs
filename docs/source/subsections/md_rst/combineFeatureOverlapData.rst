@@ -1,6 +1,11 @@
-.. _combineFeatureOverlapData:
+=========================
+combineFeatureOverlapData
+=========================
+
+:Date: ymd
+
 ``combineFeatureOverlapData``
-=================================
+=============================
 
 combineFeatureOverlapData
 
@@ -12,7 +17,7 @@ combine feature data information
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    combineFeatureOverlapData(
      gobject,
@@ -24,20 +29,18 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feat_type``
-     - feature type
-   * - ``sel_feats``
-     - selected features (default: NULL or no selection)
-   * - ``poly_info``
-     - polygon information name
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``sel_feats``                 | selected features (default: NULL or  |
+|                               | no selection)                        |
++-------------------------------+--------------------------------------+
+| ``poly_info``                 | polygon information name             |
++-------------------------------+--------------------------------------+
 
 Value
 -----

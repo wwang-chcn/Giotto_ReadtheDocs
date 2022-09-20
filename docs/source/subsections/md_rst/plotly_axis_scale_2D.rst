@@ -1,6 +1,11 @@
+====================
+plotly_axis_scale_2D
+====================
+
+:Date: ymd
 
 ``plotly_axis_scale_2D``
-============================
+========================
 
 plotly_axis_scale_2D
 
@@ -12,7 +17,7 @@ adjust the axis scale in 2D plotly plot
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotly_axis_scale_2D(
      cell_locations,
@@ -25,22 +30,15 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``cell_locations``
-     - spatial_loc in giotto object
-   * - ``sdimx``
-     - x axis of cell spatial location
-   * - ``sdimy``
-     - y axis of cell spatial location
-   * - ``mode``
-     - axis adjustment mode
-   * - ``custom_ratio``
-     - set the ratio artificially
-
+================== ===============================
+Argument           Description
+================== ===============================
+``cell_locations`` spatial_loc in giotto object
+``sdimx``          x axis of cell spatial location
+``sdimy``          y axis of cell spatial location
+``mode``           axis adjustment mode
+``custom_ratio``   set the ratio artificially
+================== ===============================
 
 Value
 -----

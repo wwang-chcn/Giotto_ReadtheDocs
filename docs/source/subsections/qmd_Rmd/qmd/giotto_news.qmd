@@ -1,6 +1,11 @@
 --- 
 title: giotto_news 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: giotto_news 
+format: rst 
 date: 2022-09-16 
 --- 
 

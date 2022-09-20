@@ -1,6 +1,11 @@
+========
+FSV_show
+========
+
+:Date: ymd
 
 ``FSV_show``
-================
+============
 
 FSV_show
 
@@ -12,7 +17,7 @@ Visualize spatial varible genes caculated by spatial_DE
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    FSV_show(
      results,
@@ -26,24 +31,16 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``results``
-     - results caculated by spatial_DE
-   * - ``ms_results``
-     - ms_results caculated by spatial_DE
-   * - ``size``
-     - indicate different levels of qval
-   * - ``color``
-     - indicate different SV features
-   * - ``sig_alpha``
-     - transparency of significant genes
-   * - ``unsig_alpha``
-     - transparency of unsignificant genes
-
+=============== ===================================
+Argument        Description
+=============== ===================================
+``results``     results caculated by spatial_DE
+``ms_results``  ms_results caculated by spatial_DE
+``size``        indicate different levels of qval
+``color``       indicate different SV features
+``sig_alpha``   transparency of significant genes
+``unsig_alpha`` transparency of unsignificant genes
+=============== ===================================
 
 Details
 -------

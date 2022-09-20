@@ -13,6 +13,7 @@ compute highly variable genes
 ```r
 exportGiottoViewer(
   gobject,
+  spat_unit = NULL,
   feat_type = NULL,
   spat_loc_name = "raw",
   output_directory = NULL,
@@ -36,6 +37,7 @@ exportGiottoViewer(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
+`spat_unit`     |     spatial unit
 `feat_type`     |     feature types
 `spat_loc_name`     |     name of spatial locations to export
 `output_directory`     |     directory where to save the files

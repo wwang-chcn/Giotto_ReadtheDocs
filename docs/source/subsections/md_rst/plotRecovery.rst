@@ -1,18 +1,24 @@
+============
+plotRecovery
+============
+
+:Date: ymd
 
 ``plotRecovery``
-====================
+================
 
 plotRecovery
 
 Description
 -----------
 
-Plots recovery plot to compare ligand-receptor rankings from spatial and expression information
+Plots recovery plot to compare ligand-receptor rankings from spatial and
+expression information
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotRecovery(
      gobject,
@@ -30,32 +36,37 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``combCC``
-     - combined communinication scores from `\ ``combCCcom`` <#combcccom>`_
-   * - ``expr_rnk_column``
-     - column with expression rank information to use
-   * - ``spat_rnk_column``
-     - column with spatial rank information to use
-   * - ``ground_truth``
-     - what to consider as ground truth (default: spatial)
-   * - ``show_plot``
-     - show plots
-   * - ``return_plot``
-     - return plotting object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``combCC``                    | combined communinication scores from |
+|                               | ```combCCcom`` <#combcccom>`__       |
++-------------------------------+--------------------------------------+
+| ``expr_rnk_column``           | column with expression rank          |
+|                               | information to use                   |
++-------------------------------+--------------------------------------+
+| ``spat_rnk_column``           | column with spatial rank information |
+|                               | to use                               |
++-------------------------------+--------------------------------------+
+| ``ground_truth``              | what to consider as ground truth     |
+|                               | (default: spatial)                   |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plots                           |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return plotting object               |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

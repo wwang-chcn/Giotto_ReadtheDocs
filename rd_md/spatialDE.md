@@ -54,7 +54,8 @@ Argument      |Description
 
 ## Details
 
-This function is a wrapper for the SpatialDE method implemented in the ...
+This function is a wrapper for the SpatialDE method originally implemented
+ in python. See publication c("\\Sexpr[results=rd]{tools:::Rd_expr_doi(\"#1\")}", "10.1038/nmeth.4636") list("tools:::Rd_expr_doi(\"10.1038/nmeth.4636\")")
 
 
 ## Value

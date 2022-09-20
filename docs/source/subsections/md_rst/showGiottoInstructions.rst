@@ -1,6 +1,11 @@
+======================
+showGiottoInstructions
+======================
+
+:Date: ymd
 
 ``showGiottoInstructions``
-==============================
+==========================
 
 Show giotto instructions associated with giotto object
 
@@ -12,21 +17,18 @@ Function to display all instructions from giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    showGiottoInstructions(gobject)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-
+=========== =============
+Argument    Description
+=========== =============
+``gobject`` giotto object
+=========== =============
 
 Value
 -----

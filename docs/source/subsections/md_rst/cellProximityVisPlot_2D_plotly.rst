@@ -1,18 +1,24 @@
-.. _cellProximityVisPlot_2D_plotly:
+==============================
+cellProximityVisPlot_2D_plotly
+==============================
+
+:Date: ymd
+
 ``cellProximityVisPlot_2D_plotly``
-======================================
+==================================
 
 cellProximityVisPlot_2D_plotly
 
 Description
 -----------
 
-Visualize 2D cell-cell interactions according to spatial coordinates in plotly mode
+Visualize 2D cell-cell interactions according to spatial coordinates in
+plotly mode
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    cellProximityVisPlot_2D_plotly(
      gobject,

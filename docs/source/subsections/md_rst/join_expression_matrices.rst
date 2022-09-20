@@ -1,6 +1,11 @@
+========================
+join_expression_matrices
+========================
+
+:Date: ymd
 
 ``join_expression_matrices``
-================================
+============================
 
 join_expression_matrices
 
@@ -12,6 +17,6 @@ join_expression_matrices
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    join_expression_matrices(matrix_list)

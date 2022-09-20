@@ -1,6 +1,11 @@
-.. _exportGiottoViewer:
+==================
+exportGiottoViewer
+==================
+
+:Date: ymd
+
 ``exportGiottoViewer``
-==========================
+======================
 
 exportGiottoViewer
 
@@ -12,10 +17,11 @@ compute highly variable genes
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    exportGiottoViewer(
      gobject,
+     spat_unit = NULL,
      feat_type = NULL,
      spat_loc_name = "raw",
      output_directory = NULL,
@@ -35,50 +41,58 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feat_type``
-     - feature types
-   * - ``spat_loc_name``
-     - name of spatial locations to export
-   * - ``output_directory``
-     - directory where to save the files
-   * - ``spat_enr_names``
-     - spatial enrichment results to include for annotations
-   * - ``factor_annotations``
-     - giotto cell annotations to view as factor
-   * - ``numeric_annotations``
-     - giotto cell annotations to view as numeric
-   * - ``dim_reductions``
-     - high level dimension reductions to view
-   * - ``dim_reduction_names``
-     - specific dimension reduction names
-   * - ``expression_values``
-     - expression values to use in Viewer
-   * - ``dim_red_rounding``
-     - numerical indicating how to round the coordinates
-   * - ``dim_red_rescale``
-     - numericals to rescale the coordinates
-   * - ``expression_rounding``
-     - numerical indicating how to round the expression data
-   * - ``overwrite_dir``
-     - overwrite files in the directory if it already existed
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature types                        |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name of spatial locations to export  |
++-------------------------------+--------------------------------------+
+| ``output_directory``          | directory where to save the files    |
++-------------------------------+--------------------------------------+
+| ``spat_enr_names``            | spatial enrichment results to        |
+|                               | include for annotations              |
++-------------------------------+--------------------------------------+
+| ``factor_annotations``        | giotto cell annotations to view as   |
+|                               | factor                               |
++-------------------------------+--------------------------------------+
+| ``numeric_annotations``       | giotto cell annotations to view as   |
+|                               | numeric                              |
++-------------------------------+--------------------------------------+
+| ``dim_reductions``            | high level dimension reductions to   |
+|                               | view                                 |
++-------------------------------+--------------------------------------+
+| ``dim_reduction_names``       | specific dimension reduction names   |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use in Viewer   |
++-------------------------------+--------------------------------------+
+| ``dim_red_rounding``          | numerical indicating how to round    |
+|                               | the coordinates                      |
++-------------------------------+--------------------------------------+
+| ``dim_red_rescale``           | numericals to rescale the            |
+|                               | coordinates                          |
++-------------------------------+--------------------------------------+
+| ``expression_rounding``       | numerical indicating how to round    |
+|                               | the expression data                  |
++-------------------------------+--------------------------------------+
+| ``overwrite_dir``             | overwrite files in the directory if  |
+|                               | it already existed                   |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-Giotto Viewer expects the results from Giotto Analyzer in a specific format,
- which is provided by this function. To include enrichment results from list(list("createSpatialEnrich")) 
- include the provided spatial enrichment name (default PAGE or rank)
- and add the gene signature names (.e.g cell types) to the numeric annotations parameter.
+Giotto Viewer expects the results from Giotto Analyzer in a specific
+format, which is provided by this function. To include enrichment
+results from list(list(“createSpatialEnrich”)) include the provided
+spatial enrichment name (default PAGE or rank) and add the gene
+signature names (.e.g cell types) to the numeric annotations parameter.
 
 Value
 -----
@@ -88,7 +102,7 @@ writes the necessary output to use in Giotto Viewer
 Examples
 --------
 
-.. code-block:: r
+.. code:: r
 
    data(mini_giotto_single_cell)
    exportGiottoViewer(mini_giotto_single_cell)

@@ -1,6 +1,15 @@
+===========
+flex_lapply
+===========
+
+:Date: ymd
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 ``flex_lapply``
-===================
+===============
 
 flex_lapply
 
@@ -12,23 +21,34 @@ flex_lapply
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    flex_lapply(X, FUN, cores = NA, fun = NULL, ...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``...``
-     - Arguments passed on to `\ ``lapply_flex`` <#lapplyflex>`_   list("\n", "    ", list(list(list("X")), list("list to use")), "\n", "    ", list(list(list("FUN")), list("function to be performed")), "\n", "    ", list(list(list("cores")), list("cores to use")), "\n", "    ", list(list(list("fun")), list("deprecated. Backwards compatibility for FUN")), "\n", "  ")
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``...``                       | Arguments passed on to               |
+|                               | ```lapply_flex`` <#lapplyflex>`__    |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”X”)), list(“list to  |
+|                               | use”)), “:raw-latex:`\n`”, ” “,      |
+|                               | list(list(list(”FUN”)),              |
+|                               | list(“function to be performed”)),   |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”cores”)),            |
+|                               | list(“cores to use”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”fun”)),              |
+|                               | list(“deprecated. Backwards          |
+|                               | compatibility for FUN”)),            |
+|                               | “:raw-latex:`\n`”, ” “)              |
++-------------------------------+--------------------------------------+
 
 Seealso
 -------
 
-`\ ``lapply_flex`` <#lapplyflex>`_
+```lapply_flex`` <#lapplyflex>`__

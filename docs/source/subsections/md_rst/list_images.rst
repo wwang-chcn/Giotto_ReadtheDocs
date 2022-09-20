@@ -1,34 +1,36 @@
+===========
+list_images
+===========
+
+:Date: ymd
 
 ``list_images``
-===================
+===============
 
 list_images
 
 Description
 -----------
 
-Prints the available giotto images that are attached to the Giotto object
+Prints the available giotto images that are attached to the Giotto
+object
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    list_images(gobject, img_type = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``img_type``
-     - image or largeImage
-
+============ =======================
+Argument     Description
+============ =======================
+``gobject``  giotto object
+``img_type`` “image” or “largeImage”
+============ =======================
 
 Value
 -----

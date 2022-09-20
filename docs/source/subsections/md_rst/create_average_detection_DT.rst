@@ -1,18 +1,24 @@
-.. _create_average_detection_DT:
+===========================
+create_average_detection_DT
+===========================
+
+:Date: ymd
+
 ``create_average_detection_DT``
-===================================
+===============================
 
 create_average_detection_DT
 
 Description
 -----------
 
-calculates average gene detection for a cell metadata factor (e.g. cluster)
+calculates average gene detection for a cell metadata factor
+(e.g. cluster)
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_average_detection_DT(
      gobject,
@@ -26,24 +32,22 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``meta_data_name``
-     - name of metadata column to use
-   * - ``expression_values``
-     - which expression values to use
-   * - ``detection_threshold``
-     - detection threshold to consider a gene detected
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``meta_data_name``            | name of metadata column to use       |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | which expression values to use       |
++-------------------------------+--------------------------------------+
+| ``detection_threshold``       | detection threshold to consider a    |
+|                               | gene detected                        |
++-------------------------------+--------------------------------------+
 
 Value
 -----

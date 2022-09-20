@@ -1,6 +1,11 @@
+==============
+spatDeconvPlot
+==============
+
+:Date: ymd
 
 ``spatDeconvPlot``
-======================
+==================
 
 spatDeconvPlot
 
@@ -12,7 +17,7 @@ Visualize cell type enrichment / deconvolution results in a scatterpie
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatDeconvPlot(
      gobject,
@@ -46,64 +51,68 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``deconv_name``
-     - name of deconvolution results to use
-   * - ``show_image``
-     - show a tissue background image
-   * - ``gimage``
-     - a giotto image
-   * - ``image_name``
-     - name of a giotto image
-   * - ``largeImage_name``
-     - name of a giottoLargeImage
-   * - ``spat_loc_name``
-     - name of spatial locations
-   * - ``sdimx``
-     - x-axis dimension name (default = 'sdimx')
-   * - ``sdimy``
-     - y-axis dimension name (default = 'sdimy')
-   * - ``cell_color_code``
-     - named vector with colors
-   * - ``line_color``
-     - color of line within pie charts
-   * - ``radius``
-     - radios of pie charts
-   * - ``alpha``
-     - alpha of pie charts
-   * - ``legend_text``
-     - size of legend text
-   * - ``background_color``
-     - color of plot background
-   * - ``title``
-     - title for plot (default = deconv_name)
-   * - ``axis_text``
-     - size of axis text
-   * - ``axis_title``
-     - size of axis title
-   * - ``coord_fix_ratio``
-     - fix ratio between x and y-axis
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``deconv_name``               | name of deconvolution results to use |
++-------------------------------+--------------------------------------+
+| ``show_image``                | show a tissue background image       |
++-------------------------------+--------------------------------------+
+| ``gimage``                    | a giotto image                       |
++-------------------------------+--------------------------------------+
+| ``image_name``                | name of a giotto image               |
++-------------------------------+--------------------------------------+
+| ``largeImage_name``           | name of a giottoLargeImage           |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name of spatial locations            |
++-------------------------------+--------------------------------------+
+| ``sdimx``                     | x-axis dimension name (default =     |
+|                               | ‘sdimx’)                             |
++-------------------------------+--------------------------------------+
+| ``sdimy``                     | y-axis dimension name (default =     |
+|                               | ‘sdimy’)                             |
++-------------------------------+--------------------------------------+
+| ``cell_color_code``           | named vector with colors             |
++-------------------------------+--------------------------------------+
+| ``line_color``                | color of line within pie charts      |
++-------------------------------+--------------------------------------+
+| ``radius``                    | radios of pie charts                 |
++-------------------------------+--------------------------------------+
+| ``alpha``                     | alpha of pie charts                  |
++-------------------------------+--------------------------------------+
+| ``legend_text``               | size of legend text                  |
++-------------------------------+--------------------------------------+
+| ``background_color``          | color of plot background             |
++-------------------------------+--------------------------------------+
+| ``title``                     | title for plot (default =            |
+|                               | deconv_name)                         |
++-------------------------------+--------------------------------------+
+| ``axis_text``                 | size of axis text                    |
++-------------------------------+--------------------------------------+
+| ``axis_title``                | size of axis title                   |
++-------------------------------+--------------------------------------+
+| ``coord_fix_ratio``           | fix ratio between x and y-axis       |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot                            |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------

@@ -1,6 +1,11 @@
+===========
+my_rowMeans
+===========
+
+:Date: ymd
 
 ``my_rowMeans``
-===================
+===============
 
 my_rowMeans
 
@@ -12,7 +17,7 @@ arithmic or geometric rowMeans that works for a single column
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    my_rowMeans(x, method = c("arithmic", "geometric"), offset = 0.1)
    my_rowMeans(x, method = c("arithmic", "geometric"), offset = 0.1)
@@ -20,15 +25,10 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``x``
-     - data to use
-   * - ``method``
-     - method is either "arithmic" or "geometric"
-   * - ``offset``
-     - offset
-
+========== ==========================================
+Argument   Description
+========== ==========================================
+``x``      data to use
+``method`` method is either “arithmic” or “geometric”
+``offset`` offset
+========== ==========================================

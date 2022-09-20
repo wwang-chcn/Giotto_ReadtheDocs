@@ -1,6 +1,11 @@
-.. _DT_removeNA;
+===========
+DT_removeNA
+===========
+
+:Date: ymd
+
 ``DT_removeNA``
-===================
+===============
 
 DT_removeNA
 
@@ -12,6 +17,6 @@ set NA values to 0 in a data.table object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    DT_removeNA(DT)

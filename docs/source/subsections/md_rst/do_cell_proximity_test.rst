@@ -1,6 +1,11 @@
-.. _do_cell_proximity_test:
+======================
+do_cell_proximity_test
+======================
+
+:Date: ymd
+
 ``do_cell_proximity_test``
-==============================
+==========================
 
 Do cell proximity test
 
@@ -12,7 +17,7 @@ Performs a selected differential test on subsets of a matrix
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    do_cell_proximity_test(
      expr_values,

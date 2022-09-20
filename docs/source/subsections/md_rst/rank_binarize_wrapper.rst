@@ -1,6 +1,11 @@
+=====================
+rank_binarize_wrapper
+=====================
+
+:Date: ymd
 
 ``rank_binarize_wrapper``
-=============================
+=========================
 
 rank_binarize_wrapper
 
@@ -12,6 +17,6 @@ wrapper for rank binarization function
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    rank_binarize_wrapper(expr_values, subset_feats = NULL, percentage_rank = 30)

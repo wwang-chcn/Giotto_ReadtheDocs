@@ -1,6 +1,11 @@
+===========
+spline_poly
+===========
+
+:Date: ymd
 
 ``spline_poly``
-===================
+===============
 
 Convert spline to polygon
 
@@ -12,24 +17,18 @@ spline polynomial to smooth polygon
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spline_poly(xy, vertices = 20, k = 3, ...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``xy``
-     - xy
-   * - ``vertices``
-     - vertices
-   * - ``k``
-     - k
-   * - ``...``
-     - additional params to pass
-
+============ =========================
+Argument     Description
+============ =========================
+``xy``       xy
+``vertices`` vertices
+``k``        k
+``...``      additional params to pass
+============ =========================

@@ -1,6 +1,11 @@
-.. _filterGiotto:
+============
+filterGiotto
+============
+
+:Date: ymd
+
 ``filterGiotto``
-====================
+================
 
 filterGiotto
 
@@ -12,7 +17,7 @@ filter Giotto object based on expression threshold
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    filterGiotto(
      gobject,
@@ -31,39 +36,42 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``expression_threshold``
-     - threshold to consider a gene expressed
-   * - ``feat_det_in_min_cells``
-     - minimum # of cells that need to express a feature
-   * - ``gene_det_in_min_cells``
-     - deprecated, use feat_det_in_min_cells
-   * - ``min_det_feats_per_cell``
-     - minimum # of features that need to be detected in a cell
-   * - ``min_det_genes_per_cell``
-     - deprecated, use min_det_feats_per_cell
-   * - ``poly_info``
-     - polygon information to use
-   * - ``verbose``
-     - verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``expression_threshold``      | threshold to consider a gene         |
+|                               | expressed                            |
++-------------------------------+--------------------------------------+
+| ``feat_det_in_min_cells``     | minimum # of cells that need to      |
+|                               | express a feature                    |
++-------------------------------+--------------------------------------+
+| ``gene_det_in_min_cells``     | deprecated, use                      |
+|                               | feat_det_in_min_cells                |
++-------------------------------+--------------------------------------+
+| ``min_det_feats_per_cell``    | minimum # of features that need to   |
+|                               | be detected in a cell                |
++-------------------------------+--------------------------------------+
+| ``min_det_genes_per_cell``    | deprecated, use                      |
+|                               | min_det_feats_per_cell               |
++-------------------------------+--------------------------------------+
+| ``poly_info``                 | polygon information to use           |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | verbose                              |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-The function `\ ``filterCombinations`` <#filtercombinations>`_ can be used to explore the effect of different parameter values.
+The function ```filterCombinations`` <#filtercombinations>`__ can be
+used to explore the effect of different parameter values.
 
 Value
 -----

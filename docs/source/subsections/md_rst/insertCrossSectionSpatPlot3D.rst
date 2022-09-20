@@ -1,6 +1,11 @@
+============================
+insertCrossSectionSpatPlot3D
+============================
+
+:Date: ymd
 
 ``insertCrossSectionSpatPlot3D``
-====================================
+================================
 
 insertCrossSectionSpatPlot3D
 
@@ -12,7 +17,7 @@ Visualize the meshgrid lines of cross section together with cells
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    insertCrossSectionSpatPlot3D(
      gobject,
@@ -36,44 +41,47 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_loc_name``
-     - name of spatial locations
-   * - ``crossSection_obj``
-     - cross section object as alternative input. default = NULL.
-   * - ``name``
-     - name of virtual cross section to use
-   * - ``spatial_network_name``
-     - name of spatial network to use
-   * - ``mesh_grid_color``
-     - color for the meshgrid lines
-   * - ``mesh_grid_width``
-     - width for the meshgrid lines
-   * - ``mesh_grid_style``
-     - style for the meshgrid lines
-   * - ``sdimx``
-     - x-axis dimension name (default = 'sdimx')
-   * - ``sdimy``
-     - y-axis dimension name (default = 'sdimy')
-   * - ``sdimz``
-     - z-axis dimension name (default = 'sdimy')
-   * - ``show_other_cells``
-     - display not selected cells
-   * - ``axis_scale``
-     - axis_scale
-   * - ``custom_ratio``
-     - custom_ratio
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-   * - ``...``
-     - parameters for spatPlot3D
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name of spatial locations            |
++-------------------------------+--------------------------------------+
+| ``crossSection_obj``          | cross section object as alternative  |
+|                               | input. default = NULL.               |
++-------------------------------+--------------------------------------+
+| ``name``                      | name of virtual cross section to use |
++-------------------------------+--------------------------------------+
+| ``spatial_network_name``      | name of spatial network to use       |
++-------------------------------+--------------------------------------+
+| ``mesh_grid_color``           | color for the meshgrid lines         |
++-------------------------------+--------------------------------------+
+| ``mesh_grid_width``           | width for the meshgrid lines         |
++-------------------------------+--------------------------------------+
+| ``mesh_grid_style``           | style for the meshgrid lines         |
++-------------------------------+--------------------------------------+
+| ``sdimx``                     | x-axis dimension name (default =     |
+|                               | ‘sdimx’)                             |
++-------------------------------+--------------------------------------+
+| ``sdimy``                     | y-axis dimension name (default =     |
+|                               | ‘sdimy’)                             |
++-------------------------------+--------------------------------------+
+| ``sdimz``                     | z-axis dimension name (default =     |
+|                               | ‘sdimy’)                             |
++-------------------------------+--------------------------------------+
+| ``show_other_cells``          | display not selected cells           |
++-------------------------------+--------------------------------------+
+| ``axis_scale``                | axis_scale                           |
++-------------------------------+--------------------------------------+
+| ``custom_ratio``              | custom_ratio                         |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
+| ``...``                       | parameters for spatPlot3D            |
++-------------------------------+--------------------------------------+
 
 Details
 -------

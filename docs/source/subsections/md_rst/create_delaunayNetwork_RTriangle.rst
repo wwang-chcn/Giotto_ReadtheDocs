@@ -1,6 +1,11 @@
-.. _create_delaunayNetwork_RTriangle:
+================================
+create_delaunayNetwork_RTriangle
+================================
+
+:Date: ymd
+
 ``create_delaunayNetwork_RTriangle``
-========================================
+====================================
 
 create_delaunayNetwork_RTriangle
 
@@ -12,7 +17,7 @@ Create a spatial Delaunay network with RTriangle
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_delaunayNetwork_RTriangle(
      spatial_locations,

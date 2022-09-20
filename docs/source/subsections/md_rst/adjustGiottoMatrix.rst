@@ -1,18 +1,24 @@
-.. _adjustGiottoMatrix:
+==================
+adjustGiottoMatrix
+==================
+
+:Date: ymd
+
 ``adjustGiottoMatrix``
-==========================
+======================
 
 Adjust expression values
 
 Description
 -----------
 
-Adjust expression values to account for known batch effects or technological covariates.
+Adjust expression values to account for known batch effects or
+technological covariates.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    adjustGiottoMatrix(
      gobject,
@@ -28,34 +34,37 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``batch_columns``
-     - metadata columns that represent different batch (max = 2)
-   * - ``covariate_columns``
-     - metadata columns that represent covariates to regress out
-   * - ``return_gobject``
-     - boolean: return giotto object (default = TRUE)
-   * - ``update_slot``
-     - expression slot that will be updated (default = custom)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``batch_columns``             | metadata columns that represent      |
+|                               | different batch (max = 2)            |
++-------------------------------+--------------------------------------+
+| ``covariate_columns``         | metadata columns that represent      |
+|                               | covariates to regress out            |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | boolean: return giotto object        |
+|                               | (default = TRUE)                     |
++-------------------------------+--------------------------------------+
+| ``update_slot``               | expression slot that will be updated |
+|                               | (default = custom)                   |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-This function implements the `\ ``removeBatchEffect`` <#removebatcheffect>`_ function to
- remove known batch effects and to adjust expression values according to provided covariates.
+This function implements the
+```removeBatchEffect`` <#removebatcheffect>`__ function to remove known
+batch effects and to adjust expression values according to provided
+covariates.
 
 Value
 -----

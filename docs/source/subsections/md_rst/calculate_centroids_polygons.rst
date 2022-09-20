@@ -1,6 +1,11 @@
-.. _calculate_centroids_polygons:
+============================
+calculate_centroids_polygons
+============================
+
+:Date: ymd
+
 ``calculate_centroids_polygons``
-====================================
+================================
 
 Calculate polygon centroids
 
@@ -12,7 +17,7 @@ calculates centroids from selected polygons
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calculate_centroids_polygons(
      gpolygon,

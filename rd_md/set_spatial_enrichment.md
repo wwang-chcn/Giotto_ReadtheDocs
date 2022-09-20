@@ -26,9 +26,9 @@ set_spatial_enrichment(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
-`enrichm_name`     |     name of spatial enrichment results
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
+`enrichm_name`     |     name of spatial enrichment results. Default "DWLS"
 `spatenrichment`     |     spatial enrichment results
 
 

@@ -1,6 +1,11 @@
-.. _create_spatialGrid_default_3D:
+=============================
+create_spatialGrid_default_3D
+=============================
+
+:Date: ymd
+
 ``create_spatialGrid_default_3D``
-=====================================
+=================================
 
 create_spatialGrid_default_3D
 
@@ -12,7 +17,7 @@ create a 3D spatial grid
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_spatialGrid_default_3D(
      gobject,

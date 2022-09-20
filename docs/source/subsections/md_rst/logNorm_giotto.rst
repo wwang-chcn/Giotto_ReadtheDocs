@@ -1,6 +1,11 @@
+==============
+logNorm_giotto
+==============
+
+:Date: ymd
 
 ``logNorm_giotto``
-======================
+==================
 
 logNorm_giotto
 
@@ -12,6 +17,6 @@ logNorm_giotto
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    logNorm_giotto(mymatrix, base, offset)

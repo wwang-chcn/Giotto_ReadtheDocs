@@ -1,6 +1,11 @@
-.. _dimPlot2D_single:
+================
+dimPlot2D_single
+================
+
+:Date: ymd
+
 ``dimPlot2D_single``
-========================
+====================
 
 dimPlot2D_single
 
@@ -12,7 +17,7 @@ Visualize cells according to dimension reduction coordinates
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    dimPlot2D_single(
      gobject,
@@ -67,107 +72,117 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``dim_reduction_to_use``
-     - dimension reduction to use
-   * - ``dim_reduction_name``
-     - dimension reduction name
-   * - ``dim1_to_use``
-     - dimension to use on x-axis
-   * - ``dim2_to_use``
-     - dimension to use on y-axis
-   * - ``spat_enr_names``
-     - names of spatial enrichment results to include
-   * - ``show_NN_network``
-     - show underlying NN network
-   * - ``nn_network_to_use``
-     - type of NN network to use (kNN vs sNN)
-   * - ``network_name``
-     - name of NN network to use, if show_NN_network = TRUE
-   * - ``cell_color``
-     - color for cells (see details)
-   * - ``color_as_factor``
-     - convert color column to factor
-   * - ``cell_color_code``
-     - named vector with colors
-   * - ``cell_color_gradient``
-     - vector with 3 colors for numeric data
-   * - ``gradient_midpoint``
-     - midpoint for color gradient
-   * - ``gradient_limits``
-     - vector with lower and upper limits
-   * - ``select_cell_groups``
-     - select subset of cells/clusters based on cell_color parameter
-   * - ``select_cells``
-     - select subset of cells based on cell IDs
-   * - ``show_other_cells``
-     - display not selected cells
-   * - ``other_cell_color``
-     - color of not selected cells
-   * - ``other_point_size``
-     - size of not selected cells
-   * - ``show_cluster_center``
-     - plot center of selected clusters
-   * - ``show_center_label``
-     - plot label of selected clusters
-   * - ``center_point_size``
-     - size of center points
-   * - ``label_size``
-     - size of labels
-   * - ``label_fontface``
-     - font of labels
-   * - ``edge_alpha``
-     - column to use for alpha of the edges
-   * - ``point_shape``
-     - point with border or not (border or no_border)
-   * - ``point_size``
-     - size of point (cell)
-   * - ``point_alpha``
-     - transparancy of point
-   * - ``point_border_col``
-     - color of border around points
-   * - ``point_border_stroke``
-     - stroke size of border around points
-   * - ``title``
-     - title for plot, defaults to cell_color parameter
-   * - ``show_legend``
-     - show legend
-   * - ``legend_text``
-     - size of legend text
-   * - ``legend_symbol_size``
-     - size of legend symbols
-   * - ``background_color``
-     - color of plot background
-   * - ``axis_text``
-     - size of axis text
-   * - ``axis_title``
-     - size of axis title
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``dim_reduction_to_use``      | dimension reduction to use           |
++-------------------------------+--------------------------------------+
+| ``dim_reduction_name``        | dimension reduction name             |
++-------------------------------+--------------------------------------+
+| ``dim1_to_use``               | dimension to use on x-axis           |
++-------------------------------+--------------------------------------+
+| ``dim2_to_use``               | dimension to use on y-axis           |
++-------------------------------+--------------------------------------+
+| ``spat_enr_names``            | names of spatial enrichment results  |
+|                               | to include                           |
++-------------------------------+--------------------------------------+
+| ``show_NN_network``           | show underlying NN network           |
++-------------------------------+--------------------------------------+
+| ``nn_network_to_use``         | type of NN network to use (kNN vs    |
+|                               | sNN)                                 |
++-------------------------------+--------------------------------------+
+| ``network_name``              | name of NN network to use, if        |
+|                               | show_NN_network = TRUE               |
++-------------------------------+--------------------------------------+
+| ``cell_color``                | color for cells (see details)        |
++-------------------------------+--------------------------------------+
+| ``color_as_factor``           | convert color column to factor       |
++-------------------------------+--------------------------------------+
+| ``cell_color_code``           | named vector with colors             |
++-------------------------------+--------------------------------------+
+| ``cell_color_gradient``       | vector with 3 colors for numeric     |
+|                               | data                                 |
++-------------------------------+--------------------------------------+
+| ``gradient_midpoint``         | midpoint for color gradient          |
++-------------------------------+--------------------------------------+
+| ``gradient_limits``           | vector with lower and upper limits   |
++-------------------------------+--------------------------------------+
+| ``select_cell_groups``        | select subset of cells/clusters      |
+|                               | based on cell_color parameter        |
++-------------------------------+--------------------------------------+
+| ``select_cells``              | select subset of cells based on cell |
+|                               | IDs                                  |
++-------------------------------+--------------------------------------+
+| ``show_other_cells``          | display not selected cells           |
++-------------------------------+--------------------------------------+
+| ``other_cell_color``          | color of not selected cells          |
++-------------------------------+--------------------------------------+
+| ``other_point_size``          | size of not selected cells           |
++-------------------------------+--------------------------------------+
+| ``show_cluster_center``       | plot center of selected clusters     |
++-------------------------------+--------------------------------------+
+| ``show_center_label``         | plot label of selected clusters      |
++-------------------------------+--------------------------------------+
+| ``center_point_size``         | size of center points                |
++-------------------------------+--------------------------------------+
+| ``label_size``                | size of labels                       |
++-------------------------------+--------------------------------------+
+| ``label_fontface``            | font of labels                       |
++-------------------------------+--------------------------------------+
+| ``edge_alpha``                | column to use for alpha of the edges |
++-------------------------------+--------------------------------------+
+| ``point_shape``               | point with border or not (border or  |
+|                               | no_border)                           |
++-------------------------------+--------------------------------------+
+| ``point_size``                | size of point (cell)                 |
++-------------------------------+--------------------------------------+
+| ``point_alpha``               | transparancy of point                |
++-------------------------------+--------------------------------------+
+| ``point_border_col``          | color of border around points        |
++-------------------------------+--------------------------------------+
+| ``point_border_stroke``       | stroke size of border around points  |
++-------------------------------+--------------------------------------+
+| ``title``                     | title for plot, defaults to          |
+|                               | cell_color parameter                 |
++-------------------------------+--------------------------------------+
+| ``show_legend``               | show legend                          |
++-------------------------------+--------------------------------------+
+| ``legend_text``               | size of legend text                  |
++-------------------------------+--------------------------------------+
+| ``legend_symbol_size``        | size of legend symbols               |
++-------------------------------+--------------------------------------+
+| ``background_color``          | color of plot background             |
++-------------------------------+--------------------------------------+
+| ``axis_text``                 | size of axis text                    |
++-------------------------------+--------------------------------------+
+| ``axis_title``                | size of axis title                   |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot                            |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-Description of parameters. For 3D plots see `\ ``dimPlot3D`` <#dimplot3d>`_
+Description of parameters. For 3D plots see
+```dimPlot3D`` <#dimplot3d>`__
 
 Value
 -----

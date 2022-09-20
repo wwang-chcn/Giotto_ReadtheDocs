@@ -1,6 +1,11 @@
+================
+get_feature_info
+================
+
+:Date: ymd
 
 ``get_feature_info``
-========================
+====================
 
 Get feature info
 
@@ -12,37 +17,33 @@ Get giotto points spatVector
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_feature_info(gobject, feat_type = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feat_type``
-     - name of feature
-
+============= ==============================================
+Argument      Description
+============= ==============================================
+``gobject``   giotto object
+``feat_type`` name of feature (e.g. “rna”, “dna”, “protein”)
+============= ==============================================
 
 Seealso
 -------
 
 Other feature info data accessor functions:
- `\ ``set_feature_info`` <#setfeatureinfo>`_ 
+```set_feature_info`` <#setfeatureinfo>`__
 
- Other functions to get data from giotto object:
- `\ ``get_NearestNetwork`` <#getnearestnetwork>`_ ,
- `\ ``get_dimReduction`` <#getdimreduction>`_ ,
- `\ ``get_expression_values`` <#getexpressionvalues>`_ ,
- `\ ``get_giottoImage`` <#getgiottoimage>`_ ,
- `\ ``get_polygon_info`` <#getpolygoninfo>`_ ,
- `\ ``get_spatialGrid`` <#getspatialgrid>`_ ,
- `\ ``get_spatialNetwork`` <#getspatialnetwork>`_ ,
- `\ ``get_spatial_enrichment`` <#getspatialenrichment>`_ ,
- `\ ``get_spatial_locations`` <#getspatiallocations>`_
+Other functions to get data from giotto object:
+```get_NearestNetwork`` <#getnearestnetwork>`__ ,
+```get_dimReduction`` <#getdimreduction>`__ ,
+```get_expression_values`` <#getexpressionvalues>`__ ,
+```get_giottoImage`` <#getgiottoimage>`__ ,
+```get_polygon_info`` <#getpolygoninfo>`__ ,
+```get_spatialGrid`` <#getspatialgrid>`__ ,
+```get_spatialNetwork`` <#getspatialnetwork>`__ ,
+```get_spatial_enrichment`` <#getspatialenrichment>`__ ,
+```get_spatial_locations`` <#getspatiallocations>`__

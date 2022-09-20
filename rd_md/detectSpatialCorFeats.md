@@ -13,8 +13,8 @@ Detect features that are spatially correlated
 ```r
 detectSpatialCorFeats(
   gobject,
-  feat_type = NULL,
   spat_unit = NULL,
+  feat_type = NULL,
   spat_loc_name = "raw",
   method = c("grid", "network"),
   expression_values = c("normalized", "scaled", "custom"),
@@ -33,8 +33,8 @@ detectSpatialCorFeats(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`feat_type`     |     feature type
 `spat_unit`     |     spatial unit
+`feat_type`     |     feature type
 `spat_loc_name`     |     name for spatial locations
 `method`     |     method to use for spatial averaging
 `expression_values`     |     gene expression values to use

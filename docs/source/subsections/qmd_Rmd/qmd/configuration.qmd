@@ -1,6 +1,11 @@
 --- 
 title: configuration 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: configuration 
+format: rst 
 date: 2022-09-16 
 --- 
 ## Configuring the Giotto Environment

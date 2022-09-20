@@ -14,7 +14,6 @@ Function to get a spatial network
 get_spatialNetwork(
   gobject,
   spat_unit = NULL,
-  feat_type = NULL,
   name = NULL,
   return_network_Obj = FALSE
 )
@@ -26,8 +25,7 @@ get_spatialNetwork(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
+`spat_unit`     |     spatial unit (e.g. "cell")
 `name`     |     name of spatial network
 `return_network_Obj`     |     return network object (default = FALSE)
 

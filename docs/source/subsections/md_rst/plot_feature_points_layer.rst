@@ -1,6 +1,11 @@
+=========================
+plot_feature_points_layer
+=========================
+
+:Date: ymd
 
 ``plot_feature_points_layer``
-=================================
+=============================
 
 plot_feature_points_layer
 
@@ -12,7 +17,7 @@ low level function to plot a points at the spatial in situ level
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plot_feature_points_layer(
      ggobject,
@@ -32,7 +37,8 @@ Usage
 Details
 -------
 
-This function can plot multiple features over multiple modalities. These plots can get very big very fast.
+This function can plot multiple features over multiple modalities. These
+plots can get very big very fast.
 
 Value
 -----

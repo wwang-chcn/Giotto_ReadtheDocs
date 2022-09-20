@@ -1,6 +1,11 @@
+==================
+spatPlot_3D_plotly
+==================
+
+:Date: ymd
 
 ``spatPlot_3D_plotly``
-==========================
+======================
 
 spatPlot_3D_plotly
 
@@ -12,7 +17,7 @@ Visualize cells at their 3D spatial locations with plotly
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatPlot_3D_plotly(
      gobject,

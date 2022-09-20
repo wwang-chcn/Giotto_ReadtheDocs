@@ -1,19 +1,24 @@
-.. _cellProximityVisPlot_2D_ggplot:
+==============================
+cellProximityVisPlot_2D_ggplot
+==============================
+
+:Date: ymd
 
 ``cellProximityVisPlot_2D_ggplot``
-======================================
+==================================
 
 cellProximityVisPlot_2D_ggplot
 
 Description
 -----------
 
-Visualize 2D cell-cell interactions according to spatial coordinates in ggplot mode
+Visualize 2D cell-cell interactions according to spatial coordinates in
+ggplot mode
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    cellProximityVisPlot_2D_ggplot(
      gobject,

@@ -1,18 +1,24 @@
+=========================
+plot_network_layer_ggplot
+=========================
+
+:Date: ymd
 
 ``plot_network_layer_ggplot``
-=================================
+=============================
 
 plot_network_layer_ggplot
 
 Description
 -----------
 
-Visualize cells in network layer according to dimension reduction coordinates
+Visualize cells in network layer according to dimension reduction
+coordinates
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plot_network_layer_ggplot(
      ggobject,
@@ -24,20 +30,18 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``annotated_network_DT``
-     - annotated network data.table of selected cells
-   * - ``edge_alpha``
-     - alpha of network edges
-   * - ``show_legend``
-     - show legend
-   * - ``gobject``
-     - giotto object
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``annotated_network_DT``      | annotated network data.table of      |
+|                               | selected cells                       |
++-------------------------------+--------------------------------------+
+| ``edge_alpha``                | alpha of network edges               |
++-------------------------------+--------------------------------------+
+| ``show_legend``               | show legend                          |
++-------------------------------+--------------------------------------+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
 
 Details
 -------

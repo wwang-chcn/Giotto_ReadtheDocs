@@ -1,6 +1,11 @@
+==============
+spatGenePlot3D
+==============
+
+:Date: ymd
 
 ``spatGenePlot3D``
-======================
+==================
 
 spatGenePlot3D
 
@@ -12,7 +17,7 @@ Visualize cells and gene expression according to spatial coordinates
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatGenePlot3D(
      gobject,
@@ -53,78 +58,86 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``spat_loc_name``
-     - name of spatial locations to use
-   * - ``expression_values``
-     - gene expression values to use
-   * - ``genes``
-     - genes to show
-   * - ``show_network``
-     - show underlying spatial network
-   * - ``network_color``
-     - color of spatial network
-   * - ``spatial_network_name``
-     - name of spatial network to use
-   * - ``edge_alpha``
-     - alpha of edges
-   * - ``cluster_column``
-     - cluster column to select groups
-   * - ``select_cell_groups``
-     - select subset of cells/clusters based on cell_color parameter
-   * - ``select_cells``
-     - select subset of cells based on cell IDs
-   * - ``show_other_cells``
-     - display not selected cells
-   * - ``other_cell_color``
-     - color of not selected cells
-   * - ``other_point_size``
-     - size of not selected cells
-   * - ``genes_high_color``
-     - color represents high gene expression
-   * - ``genes_mid_color``
-     - color represents middle gene expression
-   * - ``genes_low_color``
-     - color represents low gene expression
-   * - ``show_grid``
-     - show spatial grid
-   * - ``spatial_grid_name``
-     - name of spatial grid to use
-   * - ``point_size``
-     - size of point (cell)
-   * - ``show_legend``
-     - show legend
-   * - ``axis_scale``
-     - the way to scale the axis
-   * - ``custom_ratio``
-     - customize the scale of the plot
-   * - ``x_ticks``
-     - set the number of ticks on the x-axis
-   * - ``y_ticks``
-     - set the number of ticks on the y-axis
-   * - ``z_ticks``
-     - set the number of ticks on the z-axis
-   * - ``show_plot``
-     - show plots
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters, see `\ ``showSaveParameters`` <#showsaveparameters>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name of spatial locations to use     |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | gene expression values to use        |
++-------------------------------+--------------------------------------+
+| ``genes``                     | genes to show                        |
++-------------------------------+--------------------------------------+
+| ``show_network``              | show underlying spatial network      |
++-------------------------------+--------------------------------------+
+| ``network_color``             | color of spatial network             |
++-------------------------------+--------------------------------------+
+| ``spatial_network_name``      | name of spatial network to use       |
++-------------------------------+--------------------------------------+
+| ``edge_alpha``                | alpha of edges                       |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | cluster column to select groups      |
++-------------------------------+--------------------------------------+
+| ``select_cell_groups``        | select subset of cells/clusters      |
+|                               | based on cell_color parameter        |
++-------------------------------+--------------------------------------+
+| ``select_cells``              | select subset of cells based on cell |
+|                               | IDs                                  |
++-------------------------------+--------------------------------------+
+| ``show_other_cells``          | display not selected cells           |
++-------------------------------+--------------------------------------+
+| ``other_cell_color``          | color of not selected cells          |
++-------------------------------+--------------------------------------+
+| ``other_point_size``          | size of not selected cells           |
++-------------------------------+--------------------------------------+
+| ``genes_high_color``          | color represents high gene           |
+|                               | expression                           |
++-------------------------------+--------------------------------------+
+| ``genes_mid_color``           | color represents middle gene         |
+|                               | expression                           |
++-------------------------------+--------------------------------------+
+| ``genes_low_color``           | color represents low gene expression |
++-------------------------------+--------------------------------------+
+| ``show_grid``                 | show spatial grid                    |
++-------------------------------+--------------------------------------+
+| ``spatial_grid_name``         | name of spatial grid to use          |
++-------------------------------+--------------------------------------+
+| ``point_size``                | size of point (cell)                 |
++-------------------------------+--------------------------------------+
+| ``show_legend``               | show legend                          |
++-------------------------------+--------------------------------------+
+| ``axis_scale``                | the way to scale the axis            |
++-------------------------------+--------------------------------------+
+| ``custom_ratio``              | customize the scale of the plot      |
++-------------------------------+--------------------------------------+
+| ``x_ticks``                   | set the number of ticks on the       |
+|                               | x-axis                               |
++-------------------------------+--------------------------------------+
+| ``y_ticks``                   | set the number of ticks on the       |
+|                               | y-axis                               |
++-------------------------------+--------------------------------------+
+| ``z_ticks``                   | set the number of ticks on the       |
+|                               | z-axis                               |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plots                           |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters, see       |
+|                               | ```showSaveP                         |
+|                               | arameters`` <#showsaveparameters>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
@@ -140,5 +153,5 @@ Seealso
 -------
 
 Other spatial gene expression visualizations:
- `\ ``spatGenePlot2D`` <#spatgeneplot2d>`_ ,
- `\ ``spatGenePlot`` <#spatgeneplot>`_
+```spatGenePlot2D`` <#spatgeneplot2d>`__ ,
+```spatGenePlot`` <#spatgeneplot>`__

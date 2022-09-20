@@ -11,7 +11,7 @@ Function to get expression values from giotto object
 ## Usage
 
 ```r
-get_expression_values(gobject, feat_type = NULL, spat_unit = NULL, values)
+get_expression_values(gobject, spat_unit = NULL, feat_type = NULL, values)
 ```
 
 
@@ -20,9 +20,9 @@ get_expression_values(gobject, feat_type = NULL, spat_unit = NULL, values)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`feat_type`     |     feature type
-`spat_unit`     |     spatial unit
-`values`     |     expression values to extract
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
+`values`     |     expression values to extract (e.g. "raw", "normalized", "scaled")
 
 
 ## Value

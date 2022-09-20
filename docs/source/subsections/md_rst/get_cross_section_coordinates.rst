@@ -1,6 +1,11 @@
+=============================
+get_cross_section_coordinates
+=============================
+
+:Date: ymd
 
 ``get_cross_section_coordinates``
-=====================================
+=================================
 
 get_cross_section_coordinates
 
@@ -12,18 +17,16 @@ get local coordinates within cross section plane
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_cross_section_coordinates(cell_subset_projection_locations)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``cell_subset_projection_locations``
-     - cell_subset_projection_locations
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``cell_                       | cell_subset_projection_locations     |
+| subset_projection_locations`` |                                      |
++-------------------------------+--------------------------------------+

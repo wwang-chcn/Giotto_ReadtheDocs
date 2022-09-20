@@ -90,7 +90,7 @@ See [http://giottosuite.com/articles/getting_started_gobject.html](http://giotto
 
 *  spatial networks   
 
-*  spatial girds   
+*  spatial grids   
 
 *  spatial enrichments   
 

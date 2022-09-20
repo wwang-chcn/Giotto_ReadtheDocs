@@ -1,6 +1,11 @@
-.. _addGiottoLargeImage:
+===================
+addGiottoLargeImage
+===================
+
+:Date: ymd
+
 ``addGiottoLargeImage``
-===========================
+=======================
 
 addGiottoLargeImage
 
@@ -12,7 +17,7 @@ Adds giotto image objects to your giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    addGiottoLargeImage(
      gobject = NULL,
@@ -26,24 +31,27 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``largeImages``
-     - list of giottoLargeImage objects
-   * - ``spat_loc_name``
-     - provide spatial location slot in Giotto to align images. (optional)
-   * - ``scale_factor``
-     - provide scale of image pixel dimensions relative to spatial coordinates.
-   * - ``negative_y``
-     - map image to negative y spatial values if TRUE during automatic alignment. Meaning that origin is in upper left instead of lower left.
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``largeImages``               | list of giottoLargeImage objects     |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | provide spatial location slot in     |
+|                               | Giotto to align images. (optional)   |
++-------------------------------+--------------------------------------+
+| ``scale_factor``              | provide scale of image pixel         |
+|                               | dimensions relative to spatial       |
+|                               | coordinates.                         |
++-------------------------------+--------------------------------------+
+| ``negative_y``                | map image to negative y spatial      |
+|                               | values if TRUE during automatic      |
+|                               | alignment. Meaning that origin is in |
+|                               | upper left instead of lower left.    |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

@@ -33,6 +33,7 @@ Other functions to show data in giotto object:
  [`showGiottoDimRed`](#showgiottodimred) ,
  [`showGiottoExpression`](#showgiottoexpression) ,
  [`showGiottoFeatInfo`](#showgiottofeatinfo) ,
+ [`showGiottoNearestNetworks`](#showgiottonearestnetworks) ,
  [`showGiottoSpatEnrichments`](#showgiottospatenrichments) ,
  [`showGiottoSpatGrids`](#showgiottospatgrids) ,
  [`showGiottoSpatLocs`](#showgiottospatlocs) ,

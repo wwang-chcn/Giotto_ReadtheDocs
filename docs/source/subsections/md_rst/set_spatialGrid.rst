@@ -1,6 +1,11 @@
+===============
+set_spatialGrid
+===============
+
+:Date: ymd
 
 ``set_spatialGrid``
-=======================
+===================
 
 Set spatial grid
 
@@ -12,7 +17,7 @@ Function to set a spatial grid
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    set_spatialGrid(
      gobject,
@@ -25,22 +30,15 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``name``
-     - name of spatial grid
-   * - ``spatial_grid``
-     - spatial grid object
-
+================ ===========================================
+Argument         Description
+================ ===========================================
+``gobject``      giotto object
+``spat_unit``    spatial unit (e.g. “cell”)
+``feat_type``    feature type (e.g. “rna”, “dna”, “protein”)
+``name``         name of spatial grid
+``spatial_grid`` spatial grid object
+================ ===========================================
 
 Value
 -----
@@ -51,15 +49,15 @@ Seealso
 -------
 
 Other spatial grid data accessor functions:
- `\ ``get_spatialGrid`` <#getspatialgrid>`_ 
+```get_spatialGrid`` <#getspatialgrid>`__
 
- Other functions to set data in giotto object:
- `\ ``set_NearestNetwork`` <#setnearestnetwork>`_ ,
- `\ ``set_dimReduction`` <#setdimreduction>`_ ,
- `\ ``set_expression_values`` <#setexpressionvalues>`_ ,
- `\ ``set_feature_info`` <#setfeatureinfo>`_ ,
- `\ ``set_giottoImage`` <#setgiottoimage>`_ ,
- `\ ``set_polygon_info`` <#setpolygoninfo>`_ ,
- `\ ``set_spatialNetwork`` <#setspatialnetwork>`_ ,
- `\ ``set_spatial_enrichment`` <#setspatialenrichment>`_ ,
- `\ ``set_spatial_locations`` <#setspatiallocations>`_
+Other functions to set data in giotto object:
+```set_NearestNetwork`` <#setnearestnetwork>`__ ,
+```set_dimReduction`` <#setdimreduction>`__ ,
+```set_expression_values`` <#setexpressionvalues>`__ ,
+```set_feature_info`` <#setfeatureinfo>`__ ,
+```set_giottoImage`` <#setgiottoimage>`__ ,
+```set_polygon_info`` <#setpolygoninfo>`__ ,
+```set_spatialNetwork`` <#setspatialnetwork>`__ ,
+```set_spatial_enrichment`` <#setspatialenrichment>`__ ,
+```set_spatial_locations`` <#setspatiallocations>`__

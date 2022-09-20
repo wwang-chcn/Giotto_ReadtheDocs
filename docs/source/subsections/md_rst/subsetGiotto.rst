@@ -1,6 +1,11 @@
+============
+subsetGiotto
+============
+
+:Date: ymd
 
 ``subsetGiotto``
-====================
+================
 
 subsetGiotto
 
@@ -12,7 +17,7 @@ Subsets Giotto object including previous analyses.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    subsetGiotto(
      gobject,
@@ -33,32 +38,31 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type to use
-   * - ``cell_ids``
-     - cell IDs to keep
-   * - ``feat_ids``
-     - feature IDs to keep
-   * - ``gene_ids``
-     - deprecated, use feat_ids
-   * - ``poly_info``
-     - polygon information to use
-   * - ``x_max, x_min, y_max, y_min``
-     - minimum and maximum x and y coordinates to keep for feature coordinates
-   * - ``verbose``
-     - be verbose
-   * - ``toplevel_params``
-     - parameters to extract
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type to use                  |
++-------------------------------+--------------------------------------+
+| ``cell_ids``                  | cell IDs to keep                     |
++-------------------------------+--------------------------------------+
+| ``feat_ids``                  | feature IDs to keep                  |
++-------------------------------+--------------------------------------+
+| ``gene_ids``                  | deprecated, use feat_ids             |
++-------------------------------+--------------------------------------+
+| ``poly_info``                 | polygon information to use           |
++-------------------------------+--------------------------------------+
+| `                             | minimum and maximum x and y          |
+| `x_max, x_min, y_max, y_min`` | coordinates to keep for feature      |
+|                               | coordinates                          |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
+| ``toplevel_params``           | parameters to extract                |
++-------------------------------+--------------------------------------+
 
 Details
 -------

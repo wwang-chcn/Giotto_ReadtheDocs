@@ -1,6 +1,11 @@
+==================
+giottoPoints-class
+==================
+
+:Date: ymd
 
 ``giottoPoints-class``
-==========================
+======================
 
 S4 giotto points Class
 

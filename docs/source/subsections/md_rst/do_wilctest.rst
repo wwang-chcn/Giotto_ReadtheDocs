@@ -1,6 +1,11 @@
-.. _do_wilctest:
+===========
+do_wilctest
+===========
+
+:Date: ymd
+
 ``do_wilctest``
-===================
+===============
 
 do_wilctest
 
@@ -12,7 +17,7 @@ Performs wilcoxon on subsets of a matrix
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    do_wilctest(
      expr_values,

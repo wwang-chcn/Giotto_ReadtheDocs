@@ -1,6 +1,11 @@
+===================
+getDendrogramSplits
+===================
+
+:Date: ymd
 
 ``getDendrogramSplits``
-===========================
+=======================
 
 getDendrogramSplits
 
@@ -12,7 +17,7 @@ Split dendrogram at each node and keep the leave (label) information..
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    getDendrogramSplits(
      gobject,
@@ -31,42 +36,42 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``cluster_column``
-     - name of column to use for clusters
-   * - ``cor``
-     - correlation score to calculate distance
-   * - ``distance``
-     - distance method to use for hierarchical clustering
-   * - ``h``
-     - height of horizontal lines to plot
-   * - ``h_color``
-     - color of horizontal lines
-   * - ``show_dend``
-     - show dendrogram
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | name of column to use for clusters   |
++-------------------------------+--------------------------------------+
+| ``cor``                       | correlation score to calculate       |
+|                               | distance                             |
++-------------------------------+--------------------------------------+
+| ``distance``                  | distance method to use for           |
+|                               | hierarchical clustering              |
++-------------------------------+--------------------------------------+
+| ``h``                         | height of horizontal lines to plot   |
++-------------------------------+--------------------------------------+
+| ``h_color``                   | color of horizontal lines            |
++-------------------------------+--------------------------------------+
+| ``show_dend``                 | show dendrogram                      |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-Creates a data.table with three columns and each row represents a node in the
- dendrogram. For each node the height of the node is given together with the two
- subdendrograms. This information can be used to determine in a hierarchical manner
- differentially expressed marker genes at each node.
+Creates a data.table with three columns and each row represents a node
+in the dendrogram. For each node the height of the node is given
+together with the two subdendrograms. This information can be used to
+determine in a hierarchical manner differentially expressed marker genes
+at each node.
 
 Value
 -----

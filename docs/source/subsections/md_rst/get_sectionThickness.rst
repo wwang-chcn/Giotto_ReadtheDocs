@@ -1,6 +1,11 @@
+====================
+get_sectionThickness
+====================
+
+:Date: ymd
 
 ``get_sectionThickness``
-============================
+========================
 
 get_sectionThickness
 
@@ -12,7 +17,7 @@ get section thickness
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_sectionThickness(
      gobject,
@@ -26,19 +31,17 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - gobject
-   * - ``thickness_unit``
-     - thickness_unit
-   * - ``spatial_network_name``
-     - spatial_network_name
-   * - ``cell_distance_estimate_method``
-     - cell_distance_estimate_method
-   * - ``plane_equation``
-     - plane_equation
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | gobject                              |
++-------------------------------+--------------------------------------+
+| ``thickness_unit``            | thickness_unit                       |
++-------------------------------+--------------------------------------+
+| ``spatial_network_name``      | spatial_network_name                 |
++-------------------------------+--------------------------------------+
+| ``ce                          | cell_distance_estimate_method        |
+| ll_distance_estimate_method`` |                                      |
++-------------------------------+--------------------------------------+
+| ``plane_equation``            | plane_equation                       |
++-------------------------------+--------------------------------------+

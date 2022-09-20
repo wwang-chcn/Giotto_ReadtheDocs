@@ -1,6 +1,11 @@
+================================
+plotCombineCellCellCommunication
+================================
+
+:Date: ymd
 
 ``plotCombineCellCellCommunication``
-========================================
+====================================
 
 plotCombineCellCellCommunication
 
@@ -12,7 +17,7 @@ Create visualization for combined (pairwise) cell proximity gene scores
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotCombineCellCellCommunication(
      gobject,
@@ -36,44 +41,49 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``combCCcom``
-     - combined communcation scores, output from combCCcom()
-   * - ``selected_LR``
-     - selected ligand-receptor pair
-   * - ``selected_cell_LR``
-     - selected cell-cell interaction pair for ligand-receptor pair
-   * - ``detail_plot``
-     - show detailed info in both interacting cell types
-   * - ``simple_plot``
-     - show a simplified plot
-   * - ``simple_plot_facet``
-     - facet on interactions or genes with simple plot
-   * - ``facet_scales``
-     - ggplot facet scales paramter
-   * - ``facet_ncol``
-     - ggplot facet ncol parameter
-   * - ``facet_nrow``
-     - ggplot facet nrow parameter
-   * - ``colors``
-     - vector with two colors to use
-   * - ``show_plot``
-     - show plots
-   * - ``return_plot``
-     - return plotting object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``combCCcom``                 | combined communcation scores, output |
+|                               | from combCCcom()                     |
++-------------------------------+--------------------------------------+
+| ``selected_LR``               | selected ligand-receptor pair        |
++-------------------------------+--------------------------------------+
+| ``selected_cell_LR``          | selected cell-cell interaction pair  |
+|                               | for ligand-receptor pair             |
++-------------------------------+--------------------------------------+
+| ``detail_plot``               | show detailed info in both           |
+|                               | interacting cell types               |
++-------------------------------+--------------------------------------+
+| ``simple_plot``               | show a simplified plot               |
++-------------------------------+--------------------------------------+
+| ``simple_plot_facet``         | facet on interactions or genes with  |
+|                               | simple plot                          |
++-------------------------------+--------------------------------------+
+| ``facet_scales``              | ggplot facet scales paramter         |
++-------------------------------+--------------------------------------+
+| ``facet_ncol``                | ggplot facet ncol parameter          |
++-------------------------------+--------------------------------------+
+| ``facet_nrow``                | ggplot facet nrow parameter          |
++-------------------------------+--------------------------------------+
+| ``colors``                    | vector with two colors to use        |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plots                           |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return plotting object               |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

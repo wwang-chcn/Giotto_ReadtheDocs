@@ -1,6 +1,11 @@
-.. _dimPlot_3D_plotly:
+=================
+dimPlot_3D_plotly
+=================
+
+:Date: ymd
+
 ``dimPlot_3D_plotly``
-=========================
+=====================
 
 dimPlot_3D_plotly
 
@@ -12,7 +17,7 @@ Visualize cells at their 3D dimension reduction coordinates with plotly
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    dimPlot_3D_plotly(
      gobject,

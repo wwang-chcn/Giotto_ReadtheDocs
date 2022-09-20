@@ -1,6 +1,11 @@
+=================
+updateGiottoImage
+=================
+
+:Date: ymd
 
 ``updateGiottoImage``
-=========================
+=====================
 
 updateGiottoImage
 
@@ -8,12 +13,12 @@ Description
 -----------
 
 Updates the spatial positioning and sizing of a giotto ``image`` or
-  ``largeImage`` attached to a giotto object.
+``largeImage`` attached to a giotto object.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    updateGiottoImage(
      gobject = NULL,
@@ -40,34 +45,42 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - gobject containing desired image object
-   * - ``image_name``
-     - name of giotto ``image`` object
-   * - ``largeImage_name``
-     - name of giotto ``largeImage`` object
-   * - ``xmax_adj, xmin_adj, ymax_adj, ymin_adj``
-     - adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
-   * - ``x_shift, y_shift``
-     - shift entire image along xy axes
-   * - ``scale_factor``
-     - set ``scale_x`` and ``scale_y`` params at the same time
-   * - ``scale_x, scale_y``
-     - independently scale x or y axis image mapping from coordinate origin
-   * - ``order``
-     - order of operations between fine adjustments (adjustment and shift parameters) and scaling
-   * - ``xmin_set, xmax_set, ymin_set, ymax_set``
-     - directly set xy image boundaries. Overrides minmax values as spatial anchor.
-   * - ``return_gobject``
-     - return a giotto object if ``TRUE`` , a giotto image object if ``FALSE``
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | gobject containing desired image     |
+|                               | object                               |
++-------------------------------+--------------------------------------+
+| ``image_name``                | name of giotto ``image`` object      |
++-------------------------------+--------------------------------------+
+| ``largeImage_name``           | name of giotto ``largeImage`` object |
++-------------------------------+--------------------------------------+
+| ``xmax_adj, x                 | adjust image boundaries by           |
+| min_adj, ymax_adj, ymin_adj`` | increasing maximum and decreasing    |
+|                               | minimum bounds respectively of xy    |
+|                               | bounds                               |
++-------------------------------+--------------------------------------+
+| ``x_shift, y_shift``          | shift entire image along xy axes     |
++-------------------------------+--------------------------------------+
+| ``scale_factor``              | set ``scale_x`` and ``scale_y``      |
+|                               | params at the same time              |
++-------------------------------+--------------------------------------+
+| ``scale_x, scale_y``          | independently scale x or y axis      |
+|                               | image mapping from coordinate origin |
++-------------------------------+--------------------------------------+
+| ``order``                     | order of operations between fine     |
+|                               | adjustments (adjustment and shift    |
+|                               | parameters) and scaling              |
++-------------------------------+--------------------------------------+
+| ``xmin_set, x                 | directly set xy image boundaries.    |
+| max_set, ymin_set, ymax_set`` | Overrides minmax values as spatial   |
+|                               | anchor.                              |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | return a giotto object if ``TRUE`` , |
+|                               | a giotto image object if ``FALSE``   |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
@@ -82,7 +95,6 @@ a giotto object or an updated giotto image object if return_gobject = F
 Seealso
 -------
 
-Other basic image functions:
- `\ ``addGiottoImage`` <#addgiottoimage>`_ ,
- `\ ``plotGiottoImage`` <#plotgiottoimage>`_ ,
- `\ ``reconnectGiottoImage`` <#reconnectgiottoimage>`_
+Other basic image functions: ```addGiottoImage`` <#addgiottoimage>`__ ,
+```plotGiottoImage`` <#plotgiottoimage>`__ ,
+```reconnectGiottoImage`` <#reconnectgiottoimage>`__

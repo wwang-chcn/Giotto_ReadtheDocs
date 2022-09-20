@@ -1,6 +1,11 @@
-.. _calc_spatial_enrichment_minimum:
+===============================
+calc_spatial_enrichment_minimum
+===============================
+
+:Date: ymd
+
 ``calc_spatial_enrichment_minimum``
-=======================================
+===================================
 
 calc_spatial_enrichment_minimum
 
@@ -12,7 +17,7 @@ calculate spatial enrichment using a simple and efficient for loop
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calc_spatial_enrichment_minimum(
      spatial_network,

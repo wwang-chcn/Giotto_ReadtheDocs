@@ -1,6 +1,15 @@
+=====
+spark
+=====
+
+:Date: ymd
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 ``spark``
-=============
+=========
 
 spark
 
@@ -12,7 +21,7 @@ Compute spatially expressed genes with SPARK method
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spark(
      gobject,
@@ -31,49 +40,57 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_loc_name``
-     - name for spatial locations
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``percentage``
-     - The percentage of cells that are expressed for analysis
-   * - ``min_count``
-     - minimum number of counts for a gene to be included
-   * - ``expression_values``
-     - type of values to use (raw by default)
-   * - ``num_core``
-     - number of cores to use
-   * - ``covariates``
-     - The covariates in experiments, i.e. confounding factors/batch effect. Column name of giotto cell metadata.
-   * - ``return_object``
-     - type of result to return (data.table or spark object)
-   * - ``list()``
-     - Additional parameters to the `\ ``spark.vc`` <#spark.vc>`_ function
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name for spatial locations           |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``percentage``                | The percentage of cells that are     |
+|                               | expressed for analysis               |
++-------------------------------+--------------------------------------+
+| ``min_count``                 | minimum number of counts for a gene  |
+|                               | to be included                       |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | type of values to use (raw by        |
+|                               | default)                             |
++-------------------------------+--------------------------------------+
+| ``num_core``                  | number of cores to use               |
++-------------------------------+--------------------------------------+
+| ``covariates``                | The covariates in experiments,       |
+|                               | i.e. confounding factors/batch       |
+|                               | effect. Column name of giotto cell   |
+|                               | metadata.                            |
++-------------------------------+--------------------------------------+
+| ``return_object``             | type of result to return (data.table |
+|                               | or spark object)                     |
++-------------------------------+--------------------------------------+
+| ``list()``                    | Additional parameters to the         |
+|                               | ```spark.vc`` <#spark.vc>`__         |
+|                               | function                             |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-This function is a wrapper for the method implemented in the SPARK package:
+This function is a wrapper for the method implemented in the SPARK
+package:
 
+-  list(“1. CreateSPARKObject”) list(“create a SPARK object from a
+   Giotto object”)
 
-* 
-  list("1. CreateSPARKObject ") list("create a SPARK object from a Giotto object")   
+-  list(“2. spark.vc”) list(” Fits the count-based spatial model to
+   estimate the parameters,:raw-latex:`\n`“,” see “,
+   list(list(”spark.vc”)), ” for additional parameters”)
 
-* 
-  list("2. spark.vc ") list(" Fits the count-based spatial model to estimate the parameters,\n", " see ", list(list("spark.vc")), " for additional parameters")   
-
-* 
-  list("3. spark.test ") list(" Testing multiple kernel matrices")
+-  | list(“3. spark.test”) list(” Testing multiple kernel matrices”)
+   | Publication: c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,
+     “10.1101/810903”) list(“tools:::Rd_expr_doi("10.1101/810903")”)
 
 Value
 -----

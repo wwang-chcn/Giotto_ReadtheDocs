@@ -1,18 +1,24 @@
+=======================
+runHyperGeometricEnrich
+=======================
+
+:Date: ymd
 
 ``runHyperGeometricEnrich``
-===============================
+===========================
 
 runHyperGeometricEnrich
 
 Description
 -----------
 
-Function to calculate gene signature enrichment scores per spatial position using a hypergeometric test.
+Function to calculate gene signature enrichment scores per spatial
+position using a hypergeometric test.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    runHyperGeometricEnrich(
      gobject,
@@ -32,42 +38,46 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - Giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``sign_matrix``
-     - Matrix of signature genes for each cell type / process
-   * - ``expression_values``
-     - expression values to use
-   * - ``reverse_log_scale``
-     - reverse expression values from log scale
-   * - ``logbase``
-     - log base to use if reverse_log_scale = TRUE
-   * - ``top_percentage``
-     - percentage of cells that will be considered to have gene expression with matrix binarization
-   * - ``output_enrichment``
-     - how to return enrichment output
-   * - ``p_value``
-     - calculate p-values (boolean, default = FALSE)
-   * - ``name``
-     - to give to spatial enrichment results, default = rank
-   * - ``return_gobject``
-     - return giotto object
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | Giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``sign_matrix``               | Matrix of signature genes for each   |
+|                               | cell type / process                  |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``reverse_log_scale``         | reverse expression values from log   |
+|                               | scale                                |
++-------------------------------+--------------------------------------+
+| ``logbase``                   | log base to use if reverse_log_scale |
+|                               | = TRUE                               |
++-------------------------------+--------------------------------------+
+| ``top_percentage``            | percentage of cells that will be     |
+|                               | considered to have gene expression   |
+|                               | with matrix binarization             |
++-------------------------------+--------------------------------------+
+| ``output_enrichment``         | how to return enrichment output      |
++-------------------------------+--------------------------------------+
+| ``p_value``                   | calculate p-values (boolean, default |
+|                               | = FALSE)                             |
++-------------------------------+--------------------------------------+
+| ``name``                      | to give to spatial enrichment        |
+|                               | results, default = rank              |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | return giotto object                 |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
 The enrichment score is calculated based on the p-value from the
- hypergeometric test, -log10(p-value).
+hypergeometric test, -log10(p-value).
 
 Value
 -----

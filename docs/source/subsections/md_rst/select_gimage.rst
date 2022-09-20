@@ -1,6 +1,11 @@
+=============
+select_gimage
+=============
+
+:Date: ymd
 
 ``select_gimage``
-=====================
+=================
 
 select_gimage
 
@@ -12,7 +17,7 @@ selects and creates giotto images for plotting
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    select_gimage(
      gobject,

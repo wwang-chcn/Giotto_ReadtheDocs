@@ -44,15 +44,10 @@ Argument      |Description
 `gobject`     |     `giotto` object containing giotto `image` object
 `image_name`     |     name of giotto `image` object
 `giottoImage`     |     `image` object to directly update
-`xmax_adj`     |     adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
-`xmin_adj`     |     adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
-`ymax_adj`     |     adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
-`ymin_adj`     |     adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
-`x_shift`     |     shift entire image along xy axes
-`y_shift`     |     shift entire image along xy axes
+`xmax_adj, xmin_adj, ymax_adj, ymin_adj`     |     adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
+`x_shift, y_shift`     |     shift entire image along xy axes
 `scale_factor`     |     set `scale_x` and `scale_y` params at the same time
-`scale_x`     |     independently scale x or y axis image mapping from coordinate origin
-`scale_y`     |     independently scale x or y axis image mapping from coordinate origin
+`scale_x, scale_y`     |     independently scale x or y axis image mapping from coordinate origin
 `order`     |     order of operations between fine adjustments (adjustment and shift parameters) and scaling
 `xmin_set`     |     set image xmin boundary. Applied before adjustments
 `xmax_set`     |     set image xmax boundary. Applied before adjustments

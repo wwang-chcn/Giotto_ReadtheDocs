@@ -1,18 +1,24 @@
+==================
+silhouetteRankTest
+==================
+
+:Date: ymd
 
 ``silhouetteRankTest``
-==========================
+======================
 
 silhouetteRankTest
 
 Description
 -----------
 
-Multi parameter aggregator version of `\ ``silhouetteRank`` <#silhouetterank>`_
+Multi parameter aggregator version of
+```silhouetteRank`` <#silhouetterank>`__
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    silhouetteRankTest(
      gobject,
@@ -32,36 +38,22 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``expression_values``
-     - expression values to use
-   * - ``subset_genes``
-     - only run on this subset of genes
-   * - ``overwrite_input_bin``
-     - overwrite input bin
-   * - ``rbp_ps``
-     - fractional binarization thresholds
-   * - ``examine_tops``
-     - top fractions to evaluate with silhouette
-   * - ``matrix_type``
-     - type of matrix
-   * - ``num_core``
-     - number of cores to use
-   * - ``parallel_path``
-     - path to GNU parallel function
-   * - ``output``
-     - output directory
-   * - ``query_sizes``
-     - size of query
-   * - ``verbose``
-     - be verbose
-
+======================= =========================================
+Argument                Description
+======================= =========================================
+``gobject``             giotto object
+``expression_values``   expression values to use
+``subset_genes``        only run on this subset of genes
+``overwrite_input_bin`` overwrite input bin
+``rbp_ps``              fractional binarization thresholds
+``examine_tops``        top fractions to evaluate with silhouette
+``matrix_type``         type of matrix
+``num_core``            number of cores to use
+``parallel_path``       path to GNU parallel function
+``output``              output directory
+``query_sizes``         size of query
+``verbose``             be verbose
+======================= =========================================
 
 Value
 -----

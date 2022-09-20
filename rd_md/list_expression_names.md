@@ -11,7 +11,7 @@ lists the available matrices names for a given spatial unit and feature type
 ## Usage
 
 ```r
-list_expression_names(gobject, spat_unit, feat_type)
+list_expression_names(gobject, spat_unit = NULL, feat_type = NULL)
 ```
 
 
@@ -20,8 +20,8 @@ list_expression_names(gobject, spat_unit, feat_type)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
 
 
 ## Value

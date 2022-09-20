@@ -1,6 +1,11 @@
+=====================
+get_spatial_locations
+=====================
+
+:Date: ymd
 
 ``get_spatial_locations``
-=============================
+=========================
 
 Get spatial locations
 
@@ -12,25 +17,24 @@ Function to get a spatial location data.table
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_spatial_locations(gobject, spat_unit = NULL, spat_loc_name = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spat_loc_name``
-     - name of spatial locations (defaults to first name in spatial_locs slot)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name of spatial locations (defaults  |
+|                               | to first name in spatial_locs slot,  |
+|                               | e.g. “raw”)                          |
++-------------------------------+--------------------------------------+
 
 Value
 -----
@@ -41,15 +45,15 @@ Seealso
 -------
 
 Other spatial location data accessor functions:
- `\ ``set_spatial_locations`` <#setspatiallocations>`_ 
+```set_spatial_locations`` <#setspatiallocations>`__
 
- Other functions to get data from giotto object:
- `\ ``get_NearestNetwork`` <#getnearestnetwork>`_ ,
- `\ ``get_dimReduction`` <#getdimreduction>`_ ,
- `\ ``get_expression_values`` <#getexpressionvalues>`_ ,
- `\ ``get_feature_info`` <#getfeatureinfo>`_ ,
- `\ ``get_giottoImage`` <#getgiottoimage>`_ ,
- `\ ``get_polygon_info`` <#getpolygoninfo>`_ ,
- `\ ``get_spatialGrid`` <#getspatialgrid>`_ ,
- `\ ``get_spatialNetwork`` <#getspatialnetwork>`_ ,
- `\ ``get_spatial_enrichment`` <#getspatialenrichment>`_
+Other functions to get data from giotto object:
+```get_NearestNetwork`` <#getnearestnetwork>`__ ,
+```get_dimReduction`` <#getdimreduction>`__ ,
+```get_expression_values`` <#getexpressionvalues>`__ ,
+```get_feature_info`` <#getfeatureinfo>`__ ,
+```get_giottoImage`` <#getgiottoimage>`__ ,
+```get_polygon_info`` <#getpolygoninfo>`__ ,
+```get_spatialGrid`` <#getspatialgrid>`__ ,
+```get_spatialNetwork`` <#getspatialnetwork>`__ ,
+```get_spatial_enrichment`` <#getspatialenrichment>`__

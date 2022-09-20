@@ -1,6 +1,11 @@
 --- 
 title: mini_seqfish 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: mini_seqfish 
+format: rst 
 date: 2022-09-16 
 --- 
 

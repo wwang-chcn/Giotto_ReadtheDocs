@@ -1,6 +1,15 @@
+========
+spatPlot
+========
+
+:Date: ymd
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 ``spatPlot``
-================
+============
 
 spatPlot
 
@@ -12,23 +21,41 @@ Visualize cells according to spatial coordinates
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatPlot(...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``...``                       | Arguments passed on to               |
+|                               | ```spatPlot2D`` <#spatplot2d>`__     |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”gobject”)),          |
+|                               | list(“giotto object”)),              |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”spat_unit”)),        |
+|                               | list(“spatial unit”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”feat_type”)),        |
+|                               | list(“feature type”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”show_image”)),       |
+|                               | list(“show a tissue background       |
+|                               | image”)), “:raw-latex:`\n`”, ” “,    |
+|                               | list(list(list(”gimage”)), list(“a   |
+|                               | giotto image”)), “:raw-latex:`\n`”,  |
+|                               | ” “, list(list(list(”image_name”)),  |
+|                               | list(“name of a giotto image or      |
+|                               | multiple images with group_by”)),    |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”largeImage_name”)),  |
++-------------------------------+--------------------------------------+
 
-   * - Argument
-     - Description
-   * - ``...``
-     - Arguments passed on to `\ ``spatPlot2D`` <#spatplot2d>`_   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit")), "\n", "    ", list(list(list("feat_type")), list("feature type")), "\n", "    ", list(list(list("show_image")), list("show a tissue background image")), "\n", "    ", list(list(list("gimage")), list("a giotto image")), "\n", "    ", list(list(list("image_name")), list("name of a giotto image or multiple images with group_by")), "\n", "    ", list(list(list("largeImage_name")), 
-
-
-.. code-block::
+::
 
    list("name of a giottoLargeImage or multiple images with group_by")), "\n", "    ", list(list(list("group_by")), list("create multiple plots based on cell annotation column")), "\n", "    ", list(list(list("group_by_subset")), list("subset the group_by factor column")), "\n", "    ", list(list(list("spat_loc_name")), list("name of spatial locations")), "\n", "    ", list(list(list("sdimx")), list("x-axis dimension name (default = 'sdimx')")), "\n", "    ", list(list(list("sdimy")), list("y-axis dimension name (default = 'sdimy')")), 
    "\n", "    ", list(list(list("spat_enr_names")), list("names of spatial enrichment results to include")), "\n", "    ", list(list(list("cell_color")), list("color for cells (see details)")), "\n", "    ", list(list(list("color_as_factor")), list("convert color column to factor")), "\n", "    ", list(list(list("cell_color_code")), list("named vector with colors")), "\n", "    ", list(list(list("cell_color_gradient")), list("vector with 3 colors for numeric data")), "\n", "    ", list(list(list(
@@ -41,8 +68,6 @@ Arguments
    "\n", "    ", list(list(list("vor_alpha")), list("transparancy of voronoi 'cells'")), "\n", "    ", list(list(list("axis_text")), list("size of axis text")), "\n", "    ", list(list(list("axis_title")), list("size of axis title")), "\n", "    ", list(list(list("cow_n_col")), list("cowplot param: how many columns")), "\n", "    ", list(list(list("cow_rel_h")), list("cowplot param: relative height")), "\n", "    ", list(list(list("cow_rel_w")), list("cowplot param: relative width")), "\n", "    ", 
    list(list(list("cow_align")), list("cowplot param: how to align")), "\n", "    ", list(list(list("show_plot")), list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), 
    "\n", "  ")
-
-
 
 Details
 -------
@@ -57,8 +82,7 @@ ggplot
 Seealso
 -------
 
-`\ ``spatPlot3D`` <#spatplot3d>`_ 
+```spatPlot3D`` <#spatplot3d>`__
 
- Other spatial visualizations:
- `\ ``spatPlot2D`` <#spatplot2d>`_ ,
- `\ ``spatPlot3D`` <#spatplot3d>`_
+Other spatial visualizations: ```spatPlot2D`` <#spatplot2d>`__ ,
+```spatPlot3D`` <#spatplot3d>`__

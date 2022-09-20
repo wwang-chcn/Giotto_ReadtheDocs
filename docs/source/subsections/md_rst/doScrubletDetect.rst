@@ -1,6 +1,11 @@
-.. _doScrubletDetect:
+================
+doScrubletDetect
+================
+
+:Date: ymd
+
 ``doScrubletDetect``
-========================
+====================
 
 doScrubletDetect
 
@@ -12,7 +17,7 @@ run scrublet doublet detection for raw expression.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    doScrubletDetect(
      gobject,
@@ -30,34 +35,50 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object containing expression data
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``expression_values``
-     - expression values to use
-   * - ``expected_doublet_rate``
-     - expected transcriptomes that are doublets. 0.06 is from 10x Chromium guide.
-   * - ``min_counts``
-     - scrublet internal data filtering, min counts found to be considered a cell
-   * - ``min_cells``
-     - scrublet internal data filtering. min cells expressed to be considered a feat
-   * - ``min_gene_variability_pctl``
-     - scrublet internal PCA generation. highly variable gene percentile cutoff
-   * - ``n_prin_comps``
-     - number of PCs to use in PCA for detection
-   * - ``return_gobject``
-     - return as gobject if TRUE, data.frame with cell_ID if fALSE
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object containing expression  |
+|                               | data                                 |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``expected_doublet_rate``     | expected transcriptomes that are     |
+|                               | doublets. 0.06 is from 10x Chromium  |
+|                               | guide.                               |
++-------------------------------+--------------------------------------+
+| ``min_counts``                | scrublet internal data filtering,    |
+|                               | min counts found to be considered a  |
+|                               | cell                                 |
++-------------------------------+--------------------------------------+
+| ``min_cells``                 | scrublet internal data filtering.    |
+|                               | min cells expressed to be considered |
+|                               | a feat                               |
++-------------------------------+--------------------------------------+
+| ``min_gene_variability_pctl`` | scrublet internal PCA generation.    |
+|                               | highly variable gene percentile      |
+|                               | cutoff                               |
++-------------------------------+--------------------------------------+
+| ``n_prin_comps``              | number of PCs to use in PCA for      |
+|                               | detection                            |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | return as gobject if TRUE,           |
+|                               | data.frame with cell_ID if FALSE     |
++-------------------------------+--------------------------------------+
 
 Value
 -----
 
 list including doublet scores and classifications
+
+Seealso
+-------
+
+This function wraps the python package scrublet
+c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,
+“10.1016/j.cels.2018.11.005”)
+list(“tools:::Rd_expr_doi("10.1016/j.cels.2018.11.005")”)

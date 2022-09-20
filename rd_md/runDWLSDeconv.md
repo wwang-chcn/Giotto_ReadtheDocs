@@ -51,7 +51,7 @@ giotto object or deconvolution results
 
 ## Seealso
 
-[https://github.com/dtsoucas/DWLS](https://github.com/dtsoucas/DWLS) for the DWLS bulk deconvolution method,
- and [https://doi.org/10.1186/s13059-021-02362-7](https://doi.org/10.1186/s13059-021-02362-7) for spatialDWLS , the spatial implementation used here.
+[https://github.com/dtsoucas/DWLS](https://github.com/dtsoucas/DWLS) for the list("DWLS") bulk deconvolution method,
+ and c("\\Sexpr[results=rd]{tools:::Rd_expr_doi(\"#1\")}", "10.1186/s13059-021-02362-7") list("tools:::Rd_expr_doi(\"10.1186/s13059-021-02362-7\")") for list("spatialDWLS") , the spatial implementation used here.
 
 

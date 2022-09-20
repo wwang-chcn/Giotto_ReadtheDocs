@@ -1,37 +1,40 @@
+============================
+makeSignMatrixDWLSfromMatrix
+============================
+
+:Date: ymd
 
 ``makeSignMatrixDWLSfromMatrix``
-====================================
+================================
 
 makeSignMatrixDWLSfromMatrix
 
 Description
 -----------
 
-Function to convert a single-cell RNAseq matrix into a format
- that can be used with `\ ``runDWLSDeconv`` <#rundwlsdeconv>`_ .
+Function to convert a single-cell RNAseq matrix into a format that can
+be used with ```runDWLSDeconv`` <#rundwlsdeconv>`__ .
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    makeSignMatrixDWLSfromMatrix(matrix, sign_gene, cell_type_vector)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``matrix``
-     - scRNA-seq matrix
-   * - ``sign_gene``
-     - genes to use (e.g. marker genes)
-   * - ``cell_type_vector``
-     - vector with cell types (length = ncol(matrix))
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``matrix``                    | scRNA-seq matrix                     |
++-------------------------------+--------------------------------------+
+| ``sign_gene``                 | genes to use (e.g. marker genes)     |
++-------------------------------+--------------------------------------+
+| ``cell_type_vector``          | vector with cell types (length =     |
+|                               | ncol(matrix))                        |
++-------------------------------+--------------------------------------+
 
 Value
 -----
@@ -41,4 +44,4 @@ matrix
 Seealso
 -------
 
-`\ ``runDWLSDeconv`` <#rundwlsdeconv>`_
+```runDWLSDeconv`` <#rundwlsdeconv>`__

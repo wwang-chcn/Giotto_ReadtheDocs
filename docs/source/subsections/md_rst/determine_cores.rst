@@ -1,6 +1,11 @@
-.. _determine_cores:
+===============
+determine_cores
+===============
+
+:Date: ymd
+
 ``determine_cores``
-=======================
+===================
 
 determine_cores
 
@@ -12,7 +17,7 @@ guesses how many cores to use
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    determine_cores(cores, min_cores = 1, max_cores = 10)
 

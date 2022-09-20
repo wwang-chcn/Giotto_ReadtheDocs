@@ -1,18 +1,24 @@
+=====================
+spatInSituPlotDensity
+=====================
+
+:Date: ymd
 
 ``spatInSituPlotDensity``
-=============================
+=========================
 
 spatInSituPlotDensity
 
 Description
 -----------
 
-Function for density plots for features for multiple modalities at the spatial in situ level
+Function for density plots for features for multiple modalities at the
+spatial in situ level
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatInSituPlotDensity(
      gobject,
@@ -45,62 +51,65 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feats``
-     - features to plot
-   * - ``feat_type``
-     - feature types of the feats
-   * - ``sdimx``
-     - spatial dimension x
-   * - ``sdimy``
-     - spatial dimension y
-   * - ``alpha``
-     - alpha of density plot
-   * - ``show_polygon``
-     - overlay polygon information (cell shape)
-   * - ``polygon_feat_type``
-     - feature type associated with polygon information
-   * - ``polygon_color``
-     - color for polygon border
-   * - ``polygon_fill``
-     - fill color or column for polygon
-   * - ``polygon_fill_as_factor``
-     - is fill color a factor
-   * - ``polygon_alpha``
-     - alpha of polygon
-   * - ``axis_text``
-     - axis text size
-   * - ``axis_title``
-     - title text size
-   * - ``legend_text``
-     - legend text size
-   * - ``background_color``
-     - background color
-   * - ``cow_n_col``
-     - cowplot param: how many columns
-   * - ``cow_rel_h``
-     - cowplot param: relative height
-   * - ``cow_rel_w``
-     - cowplot param: relative width
-   * - ``cow_align``
-     - cowplot param: how to align
-   * - ``show_plot``
-     - show plots
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters, see `\ ``showSaveParameters`` <#showsaveparameters>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``feats``                     | features to plot                     |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature types of the feats           |
++-------------------------------+--------------------------------------+
+| ``sdimx``                     | spatial dimension x                  |
++-------------------------------+--------------------------------------+
+| ``sdimy``                     | spatial dimension y                  |
++-------------------------------+--------------------------------------+
+| ``alpha``                     | alpha of density plot                |
++-------------------------------+--------------------------------------+
+| ``show_polygon``              | overlay polygon information (cell    |
+|                               | shape)                               |
++-------------------------------+--------------------------------------+
+| ``polygon_feat_type``         | feature type associated with polygon |
+|                               | information                          |
++-------------------------------+--------------------------------------+
+| ``polygon_color``             | color for polygon border             |
++-------------------------------+--------------------------------------+
+| ``polygon_fill``              | fill color or column for polygon     |
++-------------------------------+--------------------------------------+
+| ``polygon_fill_as_factor``    | is fill color a factor               |
++-------------------------------+--------------------------------------+
+| ``polygon_alpha``             | alpha of polygon                     |
++-------------------------------+--------------------------------------+
+| ``axis_text``                 | axis text size                       |
++-------------------------------+--------------------------------------+
+| ``axis_title``                | title text size                      |
++-------------------------------+--------------------------------------+
+| ``legend_text``               | legend text size                     |
++-------------------------------+--------------------------------------+
+| ``background_color``          | background color                     |
++-------------------------------+--------------------------------------+
+| ``cow_n_col``                 | cowplot param: how many columns      |
++-------------------------------+--------------------------------------+
+| ``cow_rel_h``                 | cowplot param: relative height       |
++-------------------------------+--------------------------------------+
+| ``cow_rel_w``                 | cowplot param: relative width        |
++-------------------------------+--------------------------------------+
+| ``cow_align``                 | cowplot param: how to align          |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plots                           |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters, see       |
+|                               | ```showSaveP                         |
+|                               | arameters`` <#showsaveparameters>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
@@ -116,5 +125,5 @@ Seealso
 -------
 
 Other In Situ visualizations:
- `\ ``spatInSituPlotHex`` <#spatinsituplothex>`_ ,
- `\ ``spatInSituPlotPoints`` <#spatinsituplotpoints>`_
+```spatInSituPlotHex`` <#spatinsituplothex>`__ ,
+```spatInSituPlotPoints`` <#spatinsituplotpoints>`__

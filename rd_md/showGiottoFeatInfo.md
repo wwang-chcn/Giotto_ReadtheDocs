@@ -28,6 +28,7 @@ Other functions to show data in giotto object:
  [`showGiottoDimRed`](#showgiottodimred) ,
  [`showGiottoExpression`](#showgiottoexpression) ,
  [`showGiottoImageNames`](#showgiottoimagenames) ,
+ [`showGiottoNearestNetworks`](#showgiottonearestnetworks) ,
  [`showGiottoSpatEnrichments`](#showgiottospatenrichments) ,
  [`showGiottoSpatGrids`](#showgiottospatgrids) ,
  [`showGiottoSpatLocs`](#showgiottospatlocs) ,

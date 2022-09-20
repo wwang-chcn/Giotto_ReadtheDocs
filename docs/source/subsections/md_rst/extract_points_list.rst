@@ -1,6 +1,11 @@
-.. _extract_points_list:
+===================
+extract_points_list
+===================
+
+:Date: ymd
+
 ``extract_points_list``
-===========================
+=======================
 
 Extract list of giotto points objects
 
@@ -12,18 +17,16 @@ to extract list of giotto points
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    extract_points_list(pointslist)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``pointslist``
-     - list of inputs from which to create giotto points objects
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``pointslist``                | list of inputs from which to create  |
+|                               | giotto points objects                |
++-------------------------------+--------------------------------------+

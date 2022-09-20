@@ -5,7 +5,10 @@ Evaluate expression matrix
 
 ## Description
 
-Evaluate expression matrices that are provided as input.
+Evaluate expression matrices that are provided as input and converts
+ them to preferred format for Giotto object. A filepath can also be provided through
+ `inputmatrix` param. If this is done, the function will attempt to read the
+ matrix file in using [`readExprMatrix`](#readexprmatrix) .
 
 
 ## Usage

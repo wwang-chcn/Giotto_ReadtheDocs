@@ -1,6 +1,11 @@
+==================
+showClusterHeatmap
+==================
+
+:Date: ymd
 
 ``showClusterHeatmap``
-==========================
+======================
 
 showClusterHeatmap
 
@@ -12,7 +17,7 @@ Creates heatmap based on identified clusters
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    showClusterHeatmap(
      gobject,
@@ -35,42 +40,55 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``feats``
-     - vector of features to use, default to 'all'
-   * - ``genes``
-     - deprecated. Replaced by ``feats`` param
-   * - ``cluster_column``
-     - name of column to use for clusters
-   * - ``cor``
-     - correlation score to calculate distance
-   * - ``distance``
-     - distance method to use for hierarchical clustering
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters, see `\ ``showSaveParameters`` <#showsaveparameters>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-   * - ``...``
-     - additional parameters for the Heatmap function from ComplexHeatmap
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
+|                               | “protein”)                           |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
+|                               | (e.g. “normalized”, “scaled”,        |
+|                               | “custom”)                            |
++-------------------------------+--------------------------------------+
+| ``feats``                     | vector of features to use, default   |
+|                               | to ‘all’                             |
++-------------------------------+--------------------------------------+
+| ``genes``                     | deprecated. Replaced by ``feats``    |
+|                               | param                                |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | name of column to use for clusters   |
+|                               | (e.g. “leiden_clus”)                 |
++-------------------------------+--------------------------------------+
+| ``cor``                       | correlation score to calculate       |
+|                               | distance (e.g. “pearson”,            |
+|                               | “spearman”)                          |
++-------------------------------+--------------------------------------+
+| ``distance``                  | distance method to use for           |
+|                               | hierarchical clustering, default to  |
+|                               | “ward.D”                             |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot. TRUE or FALSE             |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object. TRUE or FALSE  |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot. TRUE or      |
+|                               | FALSE                                |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters, see       |
+|                               | ```showSaveP                         |
+|                               | arameters`` <#showsaveparameters>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
+| ``...``                       | additional parameters passed to      |
+|                               | ```Heatmap`` <#heatmap>`__ function  |
++-------------------------------+--------------------------------------+
 
 Details
 -------

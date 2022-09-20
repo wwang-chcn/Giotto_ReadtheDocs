@@ -1,6 +1,11 @@
+=======
+plotCPG
+=======
+
+:Date: ymd
 
 ``plotCPG``
-===============
+===========
 
 plotCPG
 
@@ -12,13 +17,12 @@ Create visualization for cell proximity gene scores
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotCPG(
      gobject,
      cpgObject,
-     method = c("volcano", "cell_barplot", "cell-cell", "cell_sankey", "heatmap",
-       "dotplot"),
+     method = c("volcano", "cell_barplot", "cell-cell", "cell_sankey", "heatmap", "dotplot"),
      min_cells = 5,
      min_cells_expr = 1,
      min_int_cells = 3,
@@ -40,50 +44,59 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``cpgObject``
-     - ICG (interaction changed gene) score object
-   * - ``method``
-     - plotting method to use
-   * - ``min_cells``
-     - minimum number of source cell type
-   * - ``min_cells_expr``
-     - minimum expression level for source cell type
-   * - ``min_int_cells``
-     - minimum number of interacting neighbor cell type
-   * - ``min_int_cells_expr``
-     - minimum expression level for interacting neighbor cell type
-   * - ``min_fdr``
-     - minimum adjusted p-value
-   * - ``min_spat_diff``
-     - minimum absolute spatial expression difference
-   * - ``min_log2_fc``
-     - minimum log2 fold-change
-   * - ``min_zscore``
-     - minimum z-score change
-   * - ``zscores_column``
-     - calculate z-scores over cell types or genes
-   * - ``direction``
-     - differential expression directions to keep
-   * - ``cell_color_code``
-     - vector of colors with cell types as names
-   * - ``show_plot``
-     - show plots
-   * - ``return_plot``
-     - return plotting object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``cpgObject``                 | ICG (interaction changed gene) score |
+|                               | object                               |
++-------------------------------+--------------------------------------+
+| ``method``                    | plotting method to use               |
++-------------------------------+--------------------------------------+
+| ``min_cells``                 | minimum number of source cell type   |
++-------------------------------+--------------------------------------+
+| ``min_cells_expr``            | minimum expression level for source  |
+|                               | cell type                            |
++-------------------------------+--------------------------------------+
+| ``min_int_cells``             | minimum number of interacting        |
+|                               | neighbor cell type                   |
++-------------------------------+--------------------------------------+
+| ``min_int_cells_expr``        | minimum expression level for         |
+|                               | interacting neighbor cell type       |
++-------------------------------+--------------------------------------+
+| ``min_fdr``                   | minimum adjusted p-value             |
++-------------------------------+--------------------------------------+
+| ``min_spat_diff``             | minimum absolute spatial expression  |
+|                               | difference                           |
++-------------------------------+--------------------------------------+
+| ``min_log2_fc``               | minimum log2 fold-change             |
++-------------------------------+--------------------------------------+
+| ``min_zscore``                | minimum z-score change               |
++-------------------------------+--------------------------------------+
+| ``zscores_column``            | calculate z-scores over cell types   |
+|                               | or genes                             |
++-------------------------------+--------------------------------------+
+| ``direction``                 | differential expression directions   |
+|                               | to keep                              |
++-------------------------------+--------------------------------------+
+| ``cell_color_code``           | vector of colors with cell types as  |
+|                               | names                                |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plots                           |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return plotting object               |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

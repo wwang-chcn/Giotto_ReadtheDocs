@@ -1,6 +1,11 @@
+==================
+solve_OLS_internal
+==================
+
+:Date: ymd
 
 ``solve_OLS_internal``
-==========================
+======================
 
 solve_OLS_internal
 
@@ -12,6 +17,6 @@ basic functions for dwls
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    solve_OLS_internal(S, B)

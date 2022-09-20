@@ -1,18 +1,24 @@
-.. _calculateOverlapSerial:
+======================
+calculateOverlapSerial
+======================
+
+:Date: ymd
+
 ``calculateOverlapSerial``
-==============================
+==========================
 
 calculateOverlapSerial
 
 Description
 -----------
 
-calculate overlap between cellular structures (polygons) and features (points)
+calculate overlap between cellular structures (polygons) and features
+(points)
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calculateOverlapSerial(
      gobject,
@@ -28,34 +34,33 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``name_overlap``
-     - name for the overlap results (default to feat_info parameter)
-   * - ``spatial_info``
-     - polygon information
-   * - ``feat_info``
-     - feature information
-   * - ``poly_ID_names``
-     - list of poly_IDs to use
-   * - ``polygon_group_size``
-     - number of polygons to process per group
-   * - ``return_gobject``
-     - return giotto object (default: TRUE)
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``name_overlap``              | name for the overlap results         |
+|                               | (default to feat_info parameter)     |
++-------------------------------+--------------------------------------+
+| ``spatial_info``              | polygon information                  |
++-------------------------------+--------------------------------------+
+| ``feat_info``                 | feature information                  |
++-------------------------------+--------------------------------------+
+| ``poly_ID_names``             | list of poly_IDs to use              |
++-------------------------------+--------------------------------------+
+| ``polygon_group_size``        | number of polygons to process per    |
+|                               | group                                |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | return giotto object (default: TRUE) |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
 Serial overlapping function that works on groups of polygons at a time.
- Number of polygons per group is defined by ``polygon_group_size`` param
+Number of polygons per group is defined by ``polygon_group_size`` param
 
 Value
 -----

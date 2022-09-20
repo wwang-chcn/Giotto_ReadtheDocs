@@ -1,6 +1,15 @@
+===========
+showPattern
+===========
+
+:Date: ymd
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 ``showPattern``
-===================
+===============
 
 showPattern
 
@@ -12,31 +21,49 @@ show patterns for 2D spatial data
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    showPattern(gobject, spatPatObj, ...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spatPatObj``                | Output from detectSpatialPatterns    |
++-------------------------------+--------------------------------------+
+| ``...``                       | Arguments passed on to               |
+|                               | ``                                   |
+|                               | `showPattern2D`` <#showpattern2d>`__ |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”dimension”)),        |
+|                               | list(“dimension to plot”)),          |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”trim”)), list(“Trim  |
+|                               | ends of the PC values.”)),           |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”background_color”)), |
+|                               | list(“background color for plot”)),  |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | l                                    |
+|                               | ist(list(list(”grid_border_color”)), |
+|                               | list(“color for grid”)),             |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”show_legend”)),      |
+|                               | list(“show legend of ggplot”)),      |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”point_size”)),       |
+|                               | list(“size of points”)),             |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”show_plot”)),        |
++-------------------------------+--------------------------------------+
 
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spatPatObj``
-     - Output from detectSpatialPatterns
-   * - ``...``
-     - Arguments passed on to `\ ``showPattern2D`` <#showpattern2d>`_   list("\n", "    ", list(list(list("dimension")), list("dimension to plot")), "\n", "    ", list(list(list("trim")), list("Trim ends of the PC values.")), "\n", "    ", list(list(list("background_color")), list("background color for plot")), "\n", "    ", list(list(list("grid_border_color")), list("color for grid")), "\n", "    ", list(list(list("show_legend")), list("show legend of ggplot")), "\n", "    ", list(list(list("point_size")), list("size of points")), "\n", "    ", list(list(list("show_plot")), 
-
-
-.. code-block::
+::
 
    list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
-
-
 
 Value
 -----
@@ -46,4 +73,4 @@ ggplot
 Seealso
 -------
 
-`\ ``showPattern2D`` <#showpattern2d>`_
+```showPattern2D`` <#showpattern2d>`__

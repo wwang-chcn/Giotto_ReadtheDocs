@@ -1,6 +1,11 @@
-.. _do_permuttest_original:
+======================
+do_permuttest_original
+======================
+
+:Date: ymd
+
 ``do_permuttest_original``
-==============================
+==========================
 
 do_permuttest_original
 
@@ -12,7 +17,7 @@ calculate original values
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    do_permuttest_original(
      expr_values,

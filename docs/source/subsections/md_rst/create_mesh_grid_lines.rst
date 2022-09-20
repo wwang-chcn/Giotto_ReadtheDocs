@@ -1,6 +1,11 @@
-.. _create_mesh_grid_lines:
+======================
+create_mesh_grid_lines
+======================
+
+:Date: ymd
+
 ``create_mesh_grid_lines``
-==============================
+==========================
 
 create_mesh_grid_lines
 
@@ -12,7 +17,7 @@ create mesh grid lines for cross section
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_mesh_grid_lines(
      cell_subset_projection_locations,
@@ -23,15 +28,13 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``cell_subset_projection_locations``
-     - cell_subset_projection_locations
-   * - ``extend_ratio``
-     - extend_ratio
-   * - ``mesh_grid_n``
-     - mesh_grid_n
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``cell_                       | cell_subset_projection_locations     |
+| subset_projection_locations`` |                                      |
++-------------------------------+--------------------------------------+
+| ``extend_ratio``              | extend_ratio                         |
++-------------------------------+--------------------------------------+
+| ``mesh_grid_n``               | mesh_grid_n                          |
++-------------------------------+--------------------------------------+

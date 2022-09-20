@@ -1,6 +1,11 @@
+==================
+set_giottoImage_MG
+==================
+
+:Date: ymd
 
 ``set_giottoImage_MG``
-==========================
+======================
 
 Set magick -based giotto ``image``
 
@@ -12,27 +17,21 @@ Set a giottoImage for a giotto object with no additional modifications
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    set_giottoImage_MG(gobject, image_object, name = NULL, verbose = TRUE)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``image_object``
-     - a giottoImage object
-   * - ``name``
-     - name to assign giottoImage
-   * - ``verbose``
-     - be verbose
-
+================ ==========================
+Argument         Description
+================ ==========================
+``gobject``      giotto object
+``image_object`` a giottoImage object
+``name``         name to assign giottoImage
+``verbose``      be verbose
+================ ==========================
 
 Value
 -----

@@ -1,6 +1,11 @@
-.. _convert_mgImage_to_array_DT:
+===========================
+convert_mgImage_to_array_DT
+===========================
+
+:Date: ymd
+
 ``convert_mgImage_to_array_DT``
-===================================
+===============================
 
 convert_mgImage_to_array_DT
 
@@ -12,21 +17,18 @@ converts a magick image object to a data.table
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    convert_mgImage_to_array_DT(mg_object)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``mg_object``
-     - magick image or Giotto image object
-
+============= ===================================
+Argument      Description
+============= ===================================
+``mg_object`` magick image or Giotto image object
+============= ===================================
 
 Value
 -----

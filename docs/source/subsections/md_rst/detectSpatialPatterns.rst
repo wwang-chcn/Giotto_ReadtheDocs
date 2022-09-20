@@ -1,18 +1,24 @@
-.. _detectSpatialPatterns:
+=====================
+detectSpatialPatterns
+=====================
+
+:Date: ymd
+
 ``detectSpatialPatterns``
-=============================
+=========================
 
 detectSpatialPatterns
 
 Description
 -----------
 
-Identify spatial patterns through PCA on average expression in a spatial grid.
+Identify spatial patterns through PCA on average expression in a spatial
+grid.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    detectSpatialPatterns(
      gobject,
@@ -28,48 +34,50 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``expression_values``
-     - expression values to use
-   * - ``spatial_grid_name``
-     - name of spatial grid to use (default = 'spatial_grid')
-   * - ``min_cells_per_grid``
-     - minimum number of cells in a grid to be considered
-   * - ``scale_unit``
-     - scale features
-   * - ``ncp``
-     - number of principal components to calculate
-   * - ``show_plot``
-     - show plots
-   * - ``PC_zscore``
-     - minimum z-score of variance explained by a PC
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``spatial_grid_name``         | name of spatial grid to use (default |
+|                               | = ‘spatial_grid’)                    |
++-------------------------------+--------------------------------------+
+| ``min_cells_per_grid``        | minimum number of cells in a grid to |
+|                               | be considered                        |
++-------------------------------+--------------------------------------+
+| ``scale_unit``                | scale features                       |
++-------------------------------+--------------------------------------+
+| ``ncp``                       | number of principal components to    |
+|                               | calculate                            |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plots                           |
++-------------------------------+--------------------------------------+
+| ``PC_zscore``                 | minimum z-score of variance          |
+|                               | explained by a PC                    |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
 Steps to identify spatial patterns:
 
+-  
 
-* 
+   1. average gene expression for cells within a grid, see
+      createSpatialGrid
 
-  #. average gene expression for cells within a grid, see createSpatialGrid   
+-  
 
-* 
+   2. perform PCA on the average grid expression profiles
 
-  #. perform PCA on the average grid expression profiles   
+-  
 
-* 
-
-  #. convert variance of principlal components (PCs) to z-scores and select PCs based on a z-score threshold
+   3. convert variance of principlal components (PCs) to z-scores and
+      select PCs based on a z-score threshold
 
 Value
 -----
 
-spatial pattern object 'spatPatObj'
+spatial pattern object ‘spatPatObj’

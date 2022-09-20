@@ -1,6 +1,11 @@
+============================
+subset_giotto_polygon_object
+============================
+
+:Date: ymd
 
 ``subset_giotto_polygon_object``
-====================================
+================================
 
 Subset giotto polygon object
 
@@ -12,6 +17,6 @@ Subset a single giotto polygon object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    subset_giotto_polygon_object(gpolygon, cell_ids, feat_ids, feat_type)

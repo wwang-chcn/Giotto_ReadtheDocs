@@ -1,6 +1,11 @@
+=======================
+kmeans_binarize_wrapper
+=======================
+
+:Date: ymd
 
 ``kmeans_binarize_wrapper``
-===============================
+===========================
 
 kmeans_binarize_wrapper
 
@@ -12,7 +17,7 @@ wrapper for different binarization functions
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    kmeans_binarize_wrapper(
      expr_values,

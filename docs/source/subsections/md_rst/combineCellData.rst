@@ -1,6 +1,11 @@
-.. _combineCellData:
+===============
+combineCellData
+===============
+
+:Date: ymd
+
 ``combineCellData``
-=======================
+===================
 
 combineCellData
 
@@ -12,7 +17,7 @@ combine cell data information
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    combineCellData(
      gobject,
@@ -26,24 +31,22 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feat_type``
-     - feature type
-   * - ``include_spat_locs``
-     - include information about spatial locations
-   * - ``spat_loc_name``
-     - spatial location name
-   * - ``include_poly_info``
-     - include information about polygon
-   * - ``poly_info``
-     - polygon information name
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``include_spat_locs``         | include information about spatial    |
+|                               | locations                            |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | spatial location name                |
++-------------------------------+--------------------------------------+
+| ``include_poly_info``         | include information about polygon    |
++-------------------------------+--------------------------------------+
+| ``poly_info``                 | polygon information name             |
++-------------------------------+--------------------------------------+
 
 Value
 -----

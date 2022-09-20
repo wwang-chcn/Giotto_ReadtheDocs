@@ -1,6 +1,11 @@
+==============
+plotly_network
+==============
+
+:Date: ymd
 
 ``plotly_network``
-======================
+==================
 
 plotly_network
 
@@ -12,7 +17,7 @@ provide network segment to draw in 3D plot_ly()
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotly_network(
      network,
@@ -27,14 +32,17 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - network in giotto object
-
+=========== ========================
+Argument    Description
+=========== ========================
+``network`` network object
+``x``       default to “sdimx_begin”
+``y``       default to “sdimy_begin”
+``z``       default to “sdimz_begin”
+``x_end``   default to “sdimx_end”
+``y_end``   default to “sdimy_end”
+``z_end``   default to “sdimz_end”
+=========== ========================
 
 Value
 -----

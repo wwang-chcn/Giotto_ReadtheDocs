@@ -1,6 +1,11 @@
+=======
+plotICG
+=======
+
+:Date: ymd
 
 ``plotICG``
-===============
+===========
 
 plotICG
 
@@ -12,7 +17,7 @@ Create barplot to visualize interaction changed genes
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotICG(
      gobject,
@@ -31,34 +36,37 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``cpgObject``
-     - ICG (interaction changed gene) score object
-   * - ``source_type``
-     - cell type of the source cell
-   * - ``source_markers``
-     - markers for the source cell type
-   * - ``ICG_genes``
-     - named character vector of ICG genes
-   * - ``cell_color_code``
-     - cell color code for the interacting cell types
-   * - ``show_plot``
-     - show plots
-   * - ``return_plot``
-     - return plotting object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``cpgObject``                 | ICG (interaction changed gene) score |
+|                               | object                               |
++-------------------------------+--------------------------------------+
+| ``source_type``               | cell type of the source cell         |
++-------------------------------+--------------------------------------+
+| ``source_markers``            | markers for the source cell type     |
++-------------------------------+--------------------------------------+
+| ``ICG_genes``                 | named character vector of ICG genes  |
++-------------------------------+--------------------------------------+
+| ``cell_color_code``           | cell color code for the interacting  |
+|                               | cell types                           |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plots                           |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return plotting object               |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

@@ -1,6 +1,11 @@
-.. _evaluate_spatial_info:
+=====================
+evaluate_spatial_info
+=====================
+
+:Date: ymd
+
 ``evaluate_spatial_info``
-=============================
+=========================
 
 Evaluate spatial info
 
@@ -12,25 +17,23 @@ Evaluate spatial information input
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    evaluate_spatial_info(spatial_info, cores = 1, spatial_locs)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``spatial_info``
-     - spatial information to evaluate
-   * - ``cores``
-     - how many cores to use
-   * - ``spatial_locs``
-     - spatial location data.table to compare the cell IDs with
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``spatial_info``              | spatial information to evaluate      |
++-------------------------------+--------------------------------------+
+| ``cores``                     | how many cores to use                |
++-------------------------------+--------------------------------------+
+| ``spatial_locs``              | spatial location data.table to       |
+|                               | compare the cell IDs with            |
++-------------------------------+--------------------------------------+
 
 Value
 -----

@@ -1,18 +1,23 @@
-.. _anndataToGiotto:
+===============
+anndataToGiotto
+===============
+
+:Date: ymd
+
 ``anndataToGiotto``
-=======================
+===================
 
 Convert anndata to Giotto
 
 Description
 -----------
 
-Converts a spatial anndata (e.g. scanpy) .h5ad file into a Giotto object
+Converts a spatial anndata (e.g. scanpy) .h5ad file into a Giotto object
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    anndataToGiotto(
      anndata_path,
@@ -24,20 +29,19 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``anndata_path``
-     - path to the .h5ad file
-   * - ``metadata_cols``
-     - metadata columns to include
-   * - ``instructions``
-     - giotto instructions
-   * - ``list()``
-     - additional parameters to `\ ``createGiottoObject`` <#creategiottoobject>`_
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``anndata_path``              | path to the .h5ad file               |
++-------------------------------+--------------------------------------+
+| ``metadata_cols``             | metadata columns to include          |
++-------------------------------+--------------------------------------+
+| ``instructions``              | giotto instructions                  |
++-------------------------------+--------------------------------------+
+| ``list()``                    | additional parameters to             |
+|                               | ```createGio                         |
+|                               | ttoObject`` <#creategiottoobject>`__ |
++-------------------------------+--------------------------------------+
 
 Details
 -------

@@ -1,6 +1,11 @@
-.. _do_rank_permutation:
+===================
+do_rank_permutation
+===================
+
+:Date: ymd
+
 ``do_rank_permutation``
-===========================
+=======================
 
 do_rank_permutation
 
@@ -12,6 +17,6 @@ creates permutation for the rankEnrich test
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    do_rank_permutation(sc_gene, n)

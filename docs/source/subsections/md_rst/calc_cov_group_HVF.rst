@@ -1,6 +1,11 @@
-.. _calc_cov_group_HVF:
+==================
+calc_cov_group_HVF
+==================
+
+:Date: ymd
+
 ``calc_cov_group_HVF``
-==========================
+======================
 
 calc_cov_group_HVF
 
@@ -12,7 +17,7 @@ calc_cov_group_HVF
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calc_cov_group_HVF(
      feat_in_cells_detected,

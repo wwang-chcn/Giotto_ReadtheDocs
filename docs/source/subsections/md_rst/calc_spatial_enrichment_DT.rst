@@ -1,6 +1,11 @@
-.. _calc_spatial_enrichment_DT:
+==========================
+calc_spatial_enrichment_DT
+==========================
+
+:Date: ymd
+
 ``calc_spatial_enrichment_DT``
-==================================
+==============================
 
 calc_spatial_enrichment_DT
 
@@ -12,7 +17,7 @@ calculate spatial enrichment using the data.table implementation
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calc_spatial_enrichment_DT(
      bin_matrix,

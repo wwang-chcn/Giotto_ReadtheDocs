@@ -1,6 +1,11 @@
+====================
+update_giotto_params
+====================
+
+:Date: ymd
 
 ``update_giotto_params``
-============================
+========================
 
 Update giotto parameters
 
@@ -12,7 +17,7 @@ Update giotto parameters
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    update_giotto_params(
      gobject,

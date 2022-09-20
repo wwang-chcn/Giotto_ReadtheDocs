@@ -1,6 +1,11 @@
-.. _find_grid_z:
+===========
+find_grid_z
+===========
+
+:Date: ymd
+
 ``find_grid_z``
-===================
+===============
 
 find_grid_z
 
@@ -12,6 +17,6 @@ find grid location on z-axis
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    find_grid_z(grid_DT, z_loc)

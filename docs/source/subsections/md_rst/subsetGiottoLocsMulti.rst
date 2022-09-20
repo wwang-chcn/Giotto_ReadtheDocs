@@ -1,8 +1,13 @@
+=====================
+subsetGiottoLocsMulti
+=====================
+
+:Date: ymd
 
 ``subsetGiottoLocsMulti``
-=============================
+=========================
 
-Subset by spatial locations -- multi
+Subset by spatial locations – multi
 
 Description
 -----------
@@ -12,7 +17,7 @@ Subsets Giotto object based on spatial locations
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    subsetGiottoLocsMulti(
      gobject,
@@ -33,44 +38,33 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type to use
-   * - ``spat_loc_name``
-     - name of spatial locations to use
-   * - ``x_max``
-     - minimum and maximum x, y, and z coordinates to subset to
-   * - ``x_min``
-     - minimum and maximum x, y, and z coordinates to subset to
-   * - ``y_max``
-     - minimum and maximum x, y, and z coordinates to subset to
-   * - ``y_min``
-     - minimum and maximum x, y, and z coordinates to subset to
-   * - ``z_max``
-     - minimum and maximum x, y, and z coordinates to subset to
-   * - ``z_min``
-     - minimum and maximum x, y, and z coordinates to subset to
-   * - ``poly_info``
-     - polygon information to use
-   * - ``return_gobject``
-     - return Giotto object
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type to use                  |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name of spatial locations to use     |
++-------------------------------+--------------------------------------+
+| ``x_max, x_min,               | minimum and maximum x, y, and z      |
+|  y_max, y_min, z_max, z_min`` | coordinates to subset to             |
++-------------------------------+--------------------------------------+
+| ``poly_info``                 | polygon information to use           |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | return Giotto object                 |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
 Subsets a Giotto based on spatial locations for multiple spatial units
- if return_gobject = FALSE, then a filtered combined metadata data.table will be returned
+if return_gobject = FALSE, then a filtered combined metadata data.table
+will be returned
 
 Value
 -----

@@ -1,6 +1,15 @@
+==============
+spatGenePlot2D
+==============
+
+:Date: ymd
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 ``spatGenePlot2D``
-======================
+==================
 
 spatGenePlot2D
 
@@ -12,29 +21,49 @@ Visualize cells and gene expression according to spatial coordinates
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatGenePlot2D(gobject, genes, default_save_name = "spatGenePlot2D", ...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``genes``                     | genes to show                        |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
+| ``...``                       | Arguments passed on to               |
+|                               | ```s                                 |
+|                               | patFeatPlot2D`` <#spatfeatplot2d>`__ |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”feat_type”)),        |
+|                               | list(“feature type”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”spat_unit”)),        |
+|                               | list(“spatial unit”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”show_image”)),       |
+|                               | list(“show a tissue background       |
+|                               | image”)), “:raw-latex:`\n`”, ” “,    |
+|                               | list(list(list(”gimage”)), list(“a   |
+|                               | giotto image”)), “:raw-latex:`\n`”,  |
+|                               | ” “, list(list(list(”image_name”)),  |
+|                               | list(“name of a giotto image or      |
+|                               | multiple images if group_by”)),      |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”largeImage_name”)),  |
+|                               | list(“name of a giottoLargeImage or  |
+|                               | multiple images if group by”)),      |
++-------------------------------+--------------------------------------+
 
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``genes``
-     - genes to show
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-   * - ``...``
-     - Arguments passed on to `\ ``spatFeatPlot2D`` <#spatfeatplot2d>`_   list("\n", "    ", list(list(list("feat_type")), list("feature type")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit")), "\n", "    ", list(list(list("show_image")), list("show a tissue background image")), "\n", "    ", list(list(list("gimage")), list("a giotto image")), "\n", "    ", list(list(list("image_name")), list("name of a giotto image or multiple images if group_by")), "\n", "    ", list(list(list("largeImage_name")), list("name of a giottoLargeImage or multiple images if group by")), 
-
-
-.. code-block::
+::
 
    "\n", "    ", list(list(list("spat_loc_name")), list("name of spatial locations")), "\n", "    ", list(list(list("group_by")), list("create multiple plots based on cell annotation column")), "\n", "    ", list(list(list("group_by_subset")), list("subset the group_by factor column")), "\n", "    ", list(list(list("sdimx")), list("x-axis dimension name (default = 'sdimx')")), "\n", "    ", list(list(list("sdimy")), list("y-axis dimension name (default = 'sdimy')")), "\n", "    ", list(list(list(
        "expression_values")), list("gene expression values to use")), "\n", "    ", list(list(list("cell_color_gradient")), list("vector with 3 colors for numeric data")), "\n", "    ", list(list(list("gradient_midpoint")), list("midpoint for color gradient")), "\n", "    ", list(list(list("gradient_limits")), list("vector with lower and upper limits")), "\n", "    ", list(list(list("show_network")), list("show underlying spatial network")), "\n", "    ", list(list(list("network_color")), list("color of spatial network")), 
@@ -44,12 +73,10 @@ Arguments
        list("size of legend text")), "\n", "    ", list(list(list("background_color")), list("color of plot background")), "\n", "    ", list(list(list("vor_border_color")), list("border colorr for voronoi plot")), "\n", "    ", list(list(list("vor_max_radius")), list("maximum radius for voronoi 'cells'")), "\n", "    ", list(list(list("vor_alpha")), list("transparancy of voronoi 'cells'")), "\n", "    ", list(list(list("axis_text")), list("size of axis text")), "\n", "    ", list(list(list("axis_title")), 
        list("size of axis title")), "\n", "    ", list(list(list("show_plot")), list("show plots")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "  ")
 
-
-
 Details
 -------
 
-Description of parameters, see `\ ``spatFeatPlot2D`` <#spatfeatplot2d>`_
+Description of parameters, see ```spatFeatPlot2D`` <#spatfeatplot2d>`__
 
 Value
 -----
@@ -60,5 +87,5 @@ Seealso
 -------
 
 Other spatial gene expression visualizations:
- `\ ``spatGenePlot3D`` <#spatgeneplot3d>`_ ,
- `\ ``spatGenePlot`` <#spatgeneplot>`_
+```spatGenePlot3D`` <#spatgeneplot3d>`__ ,
+```spatGenePlot`` <#spatgeneplot>`__

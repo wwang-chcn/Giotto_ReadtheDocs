@@ -12,7 +12,7 @@ Framework of giotto object to store and work with spatial expression data
 
 [ expression ] There are several ways to provide expression information:
  
- [ expression_feat ] The different featurs or modalities such as rna, protein, metabolites, ...
+ [ expression_feat ] The different features or modalities such as rna, protein, metabolites, ...
  that are provided in the expression slot.
 
 

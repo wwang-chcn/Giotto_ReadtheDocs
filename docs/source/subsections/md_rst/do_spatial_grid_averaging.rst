@@ -1,6 +1,11 @@
-.. _do_spatial_grid_averaging:
+=========================
+do_spatial_grid_averaging
+=========================
+
+:Date: ymd
+
 ``do_spatial_grid_averaging``
-=================================
+=============================
 
 do_spatial_grid_averaging
 
@@ -12,7 +17,7 @@ smooth gene expression over a defined spatial grid
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    do_spatial_grid_averaging(
      expression_matrix,

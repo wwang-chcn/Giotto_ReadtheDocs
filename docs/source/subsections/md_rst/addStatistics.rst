@@ -1,6 +1,11 @@
-.. _addStatistics:
+=============
+addStatistics
+=============
+
+:Date: ymd
+
 ``addStatistics``
-=====================
+=================
 
 addStatistics
 
@@ -12,7 +17,7 @@ Adds feature and cell statistics to the giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    addStatistics(
      gobject,
@@ -26,29 +31,29 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``expression_values``
-     - expression values to use
-   * - ``detection_threshold``
-     - detection threshold to consider a feature detected
-   * - ``return_gobject``
-     - boolean: return giotto object (default = TRUE)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``detection_threshold``       | detection threshold to consider a    |
+|                               | feature detected                     |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | boolean: return giotto object        |
+|                               | (default = TRUE)                     |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-See `\ ``addFeatStatistics`` <#addfeatstatistics>`_ and `\ ``addCellStatistics`` <#addcellstatistics>`_
+See ```addFeatStatistics`` <#addfeatstatistics>`__ and
+```addCellStatistics`` <#addcellstatistics>`__
 
 Value
 -----

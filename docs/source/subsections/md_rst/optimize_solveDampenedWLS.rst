@@ -1,6 +1,11 @@
+=========================
+optimize_solveDampenedWLS
+=========================
+
+:Date: ymd
 
 ``optimize_solveDampenedWLS``
-=================================
+=============================
 
 optimize_solveDampenedWLS
 
@@ -12,6 +17,6 @@ Rui to fill in
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    optimize_solveDampenedWLS(S, B, constant_J)

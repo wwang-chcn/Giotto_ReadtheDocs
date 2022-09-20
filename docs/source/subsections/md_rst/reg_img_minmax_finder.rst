@@ -1,6 +1,11 @@
+=====================
+reg_img_minmax_finder
+=====================
+
+:Date: ymd
 
 ``reg_img_minmax_finder``
-=============================
+=========================
 
 reg_img_minmax_finder
 
@@ -12,7 +17,7 @@ finds new minmax boundaries of registration transformed images
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    reg_img_minmax_finder(
      gobject_list,
@@ -26,21 +31,20 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject_list``
-     - list of gobjects to use
-   * - ``image_unreg``
-     - name of original unregistered images
-   * - ``largeImage_unreg``
-     - name of original unregistered largeImages
-   * - ``scale_factor``
-     - scale factors for registered images relative to spatlocs.
-   * - ``transform_values``
-     - transformation values to use
-   * - ``method``
-     - method of registration
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject_list``              | list of gobjects to use              |
++-------------------------------+--------------------------------------+
+| ``image_unreg``               | name of original unregistered images |
++-------------------------------+--------------------------------------+
+| ``largeImage_unreg``          | name of original unregistered        |
+|                               | largeImages                          |
++-------------------------------+--------------------------------------+
+| ``scale_factor``              | scale factors for registered images  |
+|                               | relative to spatlocs.                |
++-------------------------------+--------------------------------------+
+| ``transform_values``          | transformation values to use         |
++-------------------------------+--------------------------------------+
+| ``method``                    | method of registration               |
++-------------------------------+--------------------------------------+

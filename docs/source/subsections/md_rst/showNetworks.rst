@@ -1,6 +1,15 @@
+============
+showNetworks
+============
+
+:Date: ymd
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 ``showNetworks``
-====================
+================
 
 Show networks
 
@@ -12,23 +21,28 @@ Show networks
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    showNetworks(...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``...``
-     - Arguments passed on to `\ ``showGiottoSpatNetworks`` <#showgiottospatnetworks>`_   list("\n", "    ", list(list(list("gobject")), list("a giotto object")), "\n", "    ", list(list(list("nrows")), list("number of rows to print")), "\n", "  ")
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``...``                       | Arguments passed on to               |
+|                               | ```showGiottoSpatNet                 |
+|                               | works`` <#showgiottospatnetworks>`__ |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”gobject”)), list(“a  |
+|                               | giotto object”)), “:raw-latex:`\n`”, |
+|                               | ” “, list(list(list(”nrows”)),       |
+|                               | list(“number of rows to print”)),    |
+|                               | “:raw-latex:`\n`”, ” “)              |
++-------------------------------+--------------------------------------+
 
 Seealso
 -------
 
-`\ ``showGiottoSpatNetworks`` <#showgiottospatnetworks>`_
+```showGiottoSpatNetworks`` <#showgiottospatnetworks>`__

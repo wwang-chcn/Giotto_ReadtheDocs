@@ -1,6 +1,11 @@
+===========================
+list_spatial_networks_names
+===========================
+
+:Date: ymd
 
 ``list_spatial_networks_names``
-===================================
+===============================
 
 list_spatial_networks_names
 
@@ -12,25 +17,19 @@ return the available names for giotto feature information
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
-   list_spatial_networks_names(gobject, spat_unit = NULL, feat_type = NULL)
+   list_spatial_networks_names(gobject, spat_unit = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-
+============= ==========================
+Argument      Description
+============= ==========================
+``gobject``   giotto object
+``spat_unit`` spatial unit (e.g. “cell”)
+============= ==========================
 
 Value
 -----

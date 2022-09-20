@@ -1,18 +1,24 @@
-.. _findGiniMarkers_one_vs_all:
+==========================
+findGiniMarkers_one_vs_all
+==========================
+
+:Date: ymd
+
 ``findGiniMarkers_one_vs_all``
-==================================
+==============================
 
 findGiniMarkers_one_vs_all
 
 Description
 -----------
 
-Identify marker feats for all clusters in a one vs all manner based on gini detection and expression scores.
+Identify marker feats for all clusters in a one vs all manner based on
+gini detection and expression scores.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    findGiniMarkers_one_vs_all(
      gobject,
@@ -33,38 +39,40 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``expression_values``
-     - feat expression values to use
-   * - ``cluster_column``
-     - clusters to use
-   * - ``subset_clusters``
-     - selection of clusters to compare
-   * - ``min_expr_gini_score``
-     - filter on minimum gini coefficient on expression
-   * - ``min_det_gini_score``
-     - filter on minimum gini coefficient on detection
-   * - ``detection_threshold``
-     - detection threshold for feat expression
-   * - ``rank_score``
-     - rank scores for both detection and expression to include
-   * - ``min_feats``
-     - minimum number of top feats to return
-   * - ``min_genes``
-     - deprecated, use min_feats
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | feat expression values to use        |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | clusters to use                      |
++-------------------------------+--------------------------------------+
+| ``subset_clusters``           | selection of clusters to compare     |
++-------------------------------+--------------------------------------+
+| ``min_expr_gini_score``       | filter on minimum gini coefficient   |
+|                               | on expression                        |
++-------------------------------+--------------------------------------+
+| ``min_det_gini_score``        | filter on minimum gini coefficient   |
+|                               | on detection                         |
++-------------------------------+--------------------------------------+
+| ``detection_threshold``       | detection threshold for feat         |
+|                               | expression                           |
++-------------------------------+--------------------------------------+
+| ``rank_score``                | rank scores for both detection and   |
+|                               | expression to include                |
++-------------------------------+--------------------------------------+
+| ``min_feats``                 | minimum number of top feats to       |
+|                               | return                               |
++-------------------------------+--------------------------------------+
+| ``min_genes``                 | deprecated, use min_feats            |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----
@@ -74,4 +82,4 @@ data.table with marker feats
 Seealso
 -------
 
-`\ ``findGiniMarkers`` <#findginimarkers>`_
+```findGiniMarkers`` <#findginimarkers>`__

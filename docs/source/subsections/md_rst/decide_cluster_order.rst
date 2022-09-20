@@ -1,6 +1,11 @@
-.. _decide_cluster_order:
+====================
+decide_cluster_order
+====================
+
+:Date: ymd
+
 ``decide_cluster_order``
-============================
+========================
 
 decide_cluster_order
 
@@ -12,7 +17,7 @@ creates order for clusters
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    decide_cluster_order(
      gobject,
@@ -31,34 +36,39 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``feats``
-     - features to use (e.g. genes)
-   * - ``genes``
-     - deprecated, use feats
-   * - ``cluster_column``
-     - name of column to use for clusters
-   * - ``cluster_order``
-     - method to determine cluster order
-   * - ``cluster_custom_order``
-     - custom order for clusters
-   * - ``cor_method``
-     - method for correlation
-   * - ``hclust_method``
-     - method for hierarchical clustering
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
+|                               | “protein”)                           |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
+|                               | (e.g. “normalized”, “scaled”,        |
+|                               | “custom”)                            |
++-------------------------------+--------------------------------------+
+| ``feats``                     | features to use (e.g. genes)         |
++-------------------------------+--------------------------------------+
+| ``genes``                     | deprecated, use feats                |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | name of column to use for clusters   |
+|                               | (e.g. “leiden_clus”)                 |
++-------------------------------+--------------------------------------+
+| ``cluster_order``             | method to determine cluster order    |
+|                               | (e.g. “size”, “correlation”,         |
+|                               | “custom”)                            |
++-------------------------------+--------------------------------------+
+| ``cluster_custom_order``      | custom order for clusters            |
++-------------------------------+--------------------------------------+
+| ``cor_method``                | method for correlation, default to   |
+|                               | ‘pearson’                            |
++-------------------------------+--------------------------------------+
+| ``hclust_method``             | method for hierarchical clustering,  |
+|                               | default to ‘ward.D’                  |
++-------------------------------+--------------------------------------+
 
 Details
 -------

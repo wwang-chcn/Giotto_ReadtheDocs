@@ -36,15 +36,15 @@ doLeidenCluster(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
-`name`     |     name for cluster
-`nn_network_to_use`     |     type of NN network to use (kNN vs sNN)
-`network_name`     |     name of NN network to use
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
+`name`     |     name for cluster, default to "leiden_clus"
+`nn_network_to_use`     |     type of NN network to use (kNN vs sNN), default to "sNN"
+`network_name`     |     name of NN network to use, default to "sNN.pca"
 `python_path`     |     specify specific path to python if required
-`resolution`     |     resolution
-`weight_col`     |     weight column to use for edges
-`partition_type`     |     The type of partition to use for optimisation.
+`resolution`     |     resolution, default = 1
+`weight_col`     |     weight column to use for edges, default to "weight"
+`partition_type`     |     The type of partition to use for optimisation. (e.g. "RBConfigurationVertexPartition", "ModularityVertexPartition")
 `init_membership`     |     initial membership of cells for the partition
 `n_iterations`     |     number of interations to run the Leiden algorithm. If the number of iterations is negative, the Leiden algorithm is run until an iteration in which there was no improvement.
 `return_gobject`     |     boolean: return giotto object (default = TRUE)

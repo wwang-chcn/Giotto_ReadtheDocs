@@ -38,6 +38,6 @@ Argument      |Description
 
 ## Value
 
-number of distinct colors
+a dimObj
 
 

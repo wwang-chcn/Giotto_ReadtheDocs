@@ -1,6 +1,11 @@
+====================
+heatmSpatialCorFeats
+====================
+
+:Date: ymd
 
 ``heatmSpatialCorFeats``
-============================
+========================
 
 heatmSpatialCorFeats
 
@@ -12,7 +17,7 @@ Create heatmap of spatially correlated features
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    heatmSpatialCorFeats(
      gobject,
@@ -34,40 +39,45 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spatCorObject``
-     - spatial correlation object
-   * - ``use_clus_name``
-     - name of clusters to visualize (from clusterSpatialCorFeats())
-   * - ``show_cluster_annot``
-     - show cluster annotation on top of heatmap
-   * - ``show_row_dend``
-     - show row dendrogram
-   * - ``show_column_dend``
-     - show column dendrogram
-   * - ``show_row_names``
-     - show row names
-   * - ``show_column_names``
-     - show column names
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters, see `\ ``showSaveParameters`` <#showsaveparameters>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-   * - ``list()``
-     - additional parameters to the `\ ``Heatmap`` <#heatmap>`_ function from ComplexHeatmap
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spatCorObject``             | spatial correlation object           |
++-------------------------------+--------------------------------------+
+| ``use_clus_name``             | name of clusters to visualize (from  |
+|                               | clusterSpatialCorFeats())            |
++-------------------------------+--------------------------------------+
+| ``show_cluster_annot``        | show cluster annotation on top of    |
+|                               | heatmap                              |
++-------------------------------+--------------------------------------+
+| ``show_row_dend``             | show row dendrogram                  |
++-------------------------------+--------------------------------------+
+| ``show_column_dend``          | show column dendrogram               |
++-------------------------------+--------------------------------------+
+| ``show_row_names``            | show row names                       |
++-------------------------------+--------------------------------------+
+| ``show_column_names``         | show column names                    |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot                            |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters, see       |
+|                               | ```showSaveP                         |
+|                               | arameters`` <#showsaveparameters>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
+| ``list()``                    | additional parameters to the         |
+|                               | ```Heatmap`` <#heatmap>`__ function  |
+|                               | from ComplexHeatmap                  |
++-------------------------------+--------------------------------------+
 
 Value
 -----

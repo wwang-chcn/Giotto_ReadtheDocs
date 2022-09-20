@@ -1,6 +1,11 @@
+==========
+mygini_fun
+==========
+
+:Date: ymd
 
 ``mygini_fun``
-==================
+==============
 
 mygini_fun
 
@@ -12,7 +17,7 @@ calculate gini coefficient
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    mygini_fun(x, weights = rep(1, length(x)))
 

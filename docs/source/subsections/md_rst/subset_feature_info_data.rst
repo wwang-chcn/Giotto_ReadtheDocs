@@ -1,18 +1,23 @@
+========================
+subset_feature_info_data
+========================
+
+:Date: ymd
 
 ``subset_feature_info_data``
-================================
+============================
 
 Subset feature info data
 
 Description
 -----------
 
-Subset  all spatial feature (points) data
+Subset all spatial feature (points) data
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    subset_feature_info_data(
      feat_info,

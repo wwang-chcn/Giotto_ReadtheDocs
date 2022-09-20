@@ -1,6 +1,11 @@
-.. _enrich_analysis:
+===============
+enrich_analysis
+===============
+
+:Date: ymd
+
 ``enrich_analysis``
-=======================
+===================
 
 enrich_analysis
 
@@ -12,6 +17,6 @@ Rui to fill in
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    enrich_analysis(expr_values, sign_matrix)

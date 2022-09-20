@@ -1,6 +1,11 @@
-.. _colSums_flex:
+============
+colSums_flex
+============
+
+:Date: ymd
+
 ``colSums_flex``
-====================
+================
 
 colSums_flex
 
@@ -12,18 +17,15 @@ colSums_flex
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    colSums_flex(mymatrix)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``mymatrix``
-     - matrix to use
-
+============ =============
+Argument     Description
+============ =============
+``mymatrix`` matrix to use
+============ =============

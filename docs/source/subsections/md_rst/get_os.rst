@@ -1,18 +1,24 @@
+======
+get_os
+======
+
+:Date: ymd
 
 ``get_os``
-==============
+==========
 
 get_os
 
 Description
 -----------
 
-return the type of operating system, see https://conjugateprior.org/2015/06/identifying-the-os-from-r/
+return the type of operating system, see
+https://conjugateprior.org/2015/06/identifying-the-os-from-r/
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_os()
 

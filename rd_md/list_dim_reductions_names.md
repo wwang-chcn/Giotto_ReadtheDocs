@@ -14,9 +14,9 @@ return the available dimension reductions object names
 list_dim_reductions_names(
   gobject,
   data_type = "cells",
-  spat_unit,
-  feat_type,
-  dim_type
+  spat_unit = NULL,
+  feat_type = NULL,
+  dim_type = NULL
 )
 ```
 
@@ -27,8 +27,8 @@ Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
 `data_type`     |     cells or feats dim reduction
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
 `dim_type`     |     dimensional reduction type (method)
 
 
@@ -39,6 +39,6 @@ function that can be used to find which names have been used
 
 ## Value
 
-names pf dimension reduction object
+names of dimension reduction object
 
 

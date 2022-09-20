@@ -1,6 +1,11 @@
+=====================
+read_spatial_networks
+=====================
+
+:Date: ymd
 
 ``read_spatial_networks``
-=============================
+=========================
 
 Read spatial networks
 
@@ -12,6 +17,6 @@ read spatial networks from list
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    read_spatial_networks(gobject, spatial_network)

@@ -1,6 +1,11 @@
+=========================
+plot_feature_hexbin_layer
+=========================
+
+:Date: ymd
 
 ``plot_feature_hexbin_layer``
-=================================
+=============================
 
 plot_feature_hexbin_layer
 
@@ -12,7 +17,7 @@ low level function to plot hexbins at the spatial in situ level
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plot_feature_hexbin_layer(
      ggobject = NULL,

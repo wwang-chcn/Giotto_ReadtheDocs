@@ -27,9 +27,9 @@ set_NearestNetwork(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
-`nn_network_to_use`     |     kNN or sNN
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
+`nn_network_to_use`     |     "kNN" or "sNN"
 `network_name`     |     name of NN network to be used
 `nn_network`     |     nearest network
 

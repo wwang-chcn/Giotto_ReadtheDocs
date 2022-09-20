@@ -5,7 +5,8 @@ Subset spatial network
 
 ## Description
 
-subset spatial networks from giotto object
+subset ALL spatial networks from giotto object of the given
+ spat_unit
 
 
 ## Usage

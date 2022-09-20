@@ -20,8 +20,8 @@ get_spatial_locations(gobject, spat_unit = NULL, spat_loc_name = NULL)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`spat_loc_name`     |     name of spatial locations (defaults to first name in spatial_locs slot)
+`spat_unit`     |     spatial unit (e.g. "cell")
+`spat_loc_name`     |     name of spatial locations (defaults to first name in spatial_locs slot, e.g. "raw")
 
 
 ## Value

@@ -1,6 +1,15 @@
-.. _dimCellPlot:
+===========
+dimCellPlot
+===========
+
+:Date: ymd
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
+
 ``dimCellPlot``
-===================
+===============
 
 dimCellPlot
 
@@ -12,25 +21,45 @@ Visualize cells according to dimension reduction coordinates
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    dimCellPlot(gobject, ...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``...``                       | Arguments passed on to               |
+|                               | ``                                   |
+|                               | `dimCellPlot2D`` <#dimcellplot2d>`__ |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”spat_unit”)),        |
+|                               | list(“spatial unit”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”feat_type”)),        |
+|                               | list(“feature type”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list                                 |
+|                               | (list(list(”dim_reduction_to_use”)), |
+|                               | list(“dimension reduction to use”)), |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | li                                   |
+|                               | st(list(list(”dim_reduction_name”)), |
+|                               | list(“dimension reduction name”)),   |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”dim1_to_use”)),      |
+|                               | list(“dimension to use on x-axis”)), |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”dim2_to_use”)),      |
+|                               | list(“dimension to use on y-axis”)), |
+|                               | “:raw-latex:`\n`”, ” “, list(        |
++-------------------------------+--------------------------------------+
 
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``...``
-     - Arguments passed on to `\ ``dimCellPlot2D`` <#dimcellplot2d>`_   list("\n", "    ", list(list(list("spat_unit")), list("spatial unit")), "\n", "    ", list(list(list("feat_type")), list("feature type")), "\n", "    ", list(list(list("dim_reduction_to_use")), list("dimension reduction to use")), "\n", "    ", list(list(list("dim_reduction_name")), list("dimension reduction name")), "\n", "    ", list(list(list("dim1_to_use")), list("dimension to use on x-axis")), "\n", "    ", list(list(list("dim2_to_use")), list("dimension to use on y-axis")), "\n", "    ", list(
-
-
-.. code-block::
+::
 
    list(list("spat_enr_names")), list("names of spatial enrichment results to include")), "\n", "    ", list(list(list("cell_annotation_values")), list("numeric cell annotation columns")), "\n", "    ", list(list(list("show_NN_network")), list("show underlying NN network")), "\n", "    ", list(list(list("nn_network_to_use")), list("type of NN network to use (kNN vs sNN)")), "\n", "    ", list(list(list("network_name")), list("name of NN network to use, if show_NN_network = TRUE")), "\n", "    ", 
    list(list(list("cell_color_code")), list("named vector with colors for cell annotation values")), "\n", "    ", list(list(list("cell_color_gradient")), list("vector with 3 colors for numeric data")), "\n", "    ", list(list(list("gradient_midpoint")), list("midpoint for color gradient")), "\n", "    ", list(list(list("gradient_limits")), list("vector with lower and upper limits")), "\n", "    ", list(list(list("select_cell_groups")), list("select subset of cells/clusters based on cell_color parameter")), 
@@ -41,12 +70,11 @@ Arguments
    "\n", "    ", list(list(list("cow_n_col")), list("cowplot param: how many columns")), "\n", "    ", list(list(list("cow_rel_h")), list("cowplot param: relative height")), "\n", "    ", list(list(list("cow_rel_w")), list("cowplot param: relative width")), "\n", "    ", list(list(list("cow_align")), list("cowplot param: how to align")), "\n", "    ", list(list(list("show_plot")), list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(
        list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
-
-
 Details
 -------
 
-Description of parameters. For 3D plots see `\ ``dimCellPlot2D`` <#dimcellplot2d>`_
+Description of parameters. For 3D plots see
+```dimCellPlot2D`` <#dimcellplot2d>`__
 
 Value
 -----
@@ -57,4 +85,4 @@ Seealso
 -------
 
 Other dimension reduction cell annotation visualizations:
- `\ ``dimCellPlot2D`` <#dimcellplot2d>`_
+```dimCellPlot2D`` <#dimcellplot2d>`__

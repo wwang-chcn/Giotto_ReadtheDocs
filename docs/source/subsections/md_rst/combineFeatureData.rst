@@ -1,6 +1,11 @@
-.. _combineFeatureData:
+==================
+combineFeatureData
+==================
+
+:Date: ymd
+
 ``combineFeatureData``
-==========================
+======================
 
 combineFeatureData
 
@@ -12,7 +17,7 @@ combine feature data information
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    combineFeatureData(
      gobject,
@@ -24,20 +29,18 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``sel_feats``
-     - selected features (default: NULL or no selection)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``sel_feats``                 | selected features (default: NULL or  |
+|                               | no selection)                        |
++-------------------------------+--------------------------------------+
 
 Value
 -----

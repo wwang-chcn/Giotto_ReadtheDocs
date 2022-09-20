@@ -1,6 +1,11 @@
-.. _create_jackstrawplot:
+====================
+create_jackstrawplot
+====================
+
+:Date: ymd
+
 ``create_jackstrawplot``
-============================
+========================
 
 create_jackstrawplot
 
@@ -12,7 +17,7 @@ create jackstrawplot with ggplot
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_jackstrawplot(
      jackstraw_data,
@@ -24,20 +29,14 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``jackstraw_data``
-     - result from jackstraw function
-   * - ``ncp``
-     - number of principal components to calculate
-   * - ``ylim``
-     - y-axis limits on jackstraw plot
-   * - ``threshold``
-     - p.value threshold to call a PC significant
-
+================== ===========================================
+Argument           Description
+================== ===========================================
+``jackstraw_data`` result from jackstraw function
+``ncp``            number of principal components to calculate
+``ylim``           y-axis limits on jackstraw plot
+``threshold``      p.value threshold to call a PC significant
+================== ===========================================
 
 Value
 -----

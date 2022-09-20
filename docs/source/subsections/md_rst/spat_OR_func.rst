@@ -1,6 +1,11 @@
+============
+spat_OR_func
+============
+
+:Date: ymd
 
 ``spat_OR_func``
-====================
+================
 
 spat_OR_func
 
@@ -12,6 +17,6 @@ calculate odds-ratio
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spat_OR_func(feat, bin_matrix, spat_mat, calc_hub = F, hub_min_int = 3)

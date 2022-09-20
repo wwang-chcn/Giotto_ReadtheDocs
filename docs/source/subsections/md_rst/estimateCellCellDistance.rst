@@ -1,6 +1,11 @@
-.. _estimateCellCellDistance:
+========================
+estimateCellCellDistance
+========================
+
+:Date: ymd
+
 ``estimateCellCellDistance``
-================================
+============================
 
 estimateCellCellDistance
 
@@ -12,7 +17,7 @@ estimate average distance between neighboring cells
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    estimateCellCellDistance(
      gobject,
@@ -23,15 +28,10 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - gobject
-   * - ``spatial_network_name``
-     - spatial_network_name
-   * - ``method``
-     - method
-
+======================== ====================
+Argument                 Description
+======================== ====================
+``gobject``              gobject
+``spatial_network_name`` spatial_network_name
+``method``               method
+======================== ====================

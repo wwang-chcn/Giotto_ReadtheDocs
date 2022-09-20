@@ -1,6 +1,11 @@
-.. _dt_to_spatVector_polygon:
+========================
+dt_to_spatVector_polygon
+========================
+
+:Date: ymd
+
 ``dt_to_spatVector_polygon``
-================================
+============================
 
 Convert data.table to polygon spatVector
 
@@ -12,6 +17,6 @@ convert data.table to spatVector for polygons
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    dt_to_spatVector_polygon(dt, include_values = TRUE, specific_values = NULL)

@@ -1,6 +1,11 @@
-.. _addGiottoImageToSpatPlot:
+========================
+addGiottoImageToSpatPlot
+========================
+
+:Date: ymd
+
 ``addGiottoImageToSpatPlot``
-================================
+============================
 
 addGiottoImageToSpatPlot
 
@@ -12,7 +17,7 @@ Add a giotto image to a spatial ggplot object post creation
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    addGiottoImageToSpatPlot(
      spatpl = NULL,
@@ -24,20 +29,25 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``spatpl``
-     - a spatial ggplot object
-   * - ``gimage``
-     - a giotto image, see `\ ``createGiottoImage`` <#creategiottoimage>`_
-   * - ``layer``
-     - numeric layer on which to add the giotto image. OR takes 'bg' or 'overlay' as input to designate last (bottom/background) or first (top/overlay)
-   * - ``alpha``
-     - (optional) add giotto image to plot with transparency. Numeric. From 0 (transparent) to 1 (fully visible)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``spatpl``                    | a spatial ggplot object              |
++-------------------------------+--------------------------------------+
+| ``gimage``                    | a giotto image, see                  |
+|                               | ```createG                           |
+|                               | iottoImage`` <#creategiottoimage>`__ |
++-------------------------------+--------------------------------------+
+| ``layer``                     | numeric layer on which to add the    |
+|                               | giotto image. OR takes ‘bg’ or       |
+|                               | ‘overlay’ as input to designate last |
+|                               | (bottom/background) or first         |
+|                               | (top/overlay)                        |
++-------------------------------+--------------------------------------+
+| ``alpha``                     | (optional) add giotto image to plot  |
+|                               | with transparency. Numeric. From 0   |
+|                               | (transparent) to 1 (fully visible)   |
++-------------------------------+--------------------------------------+
 
 Value
 -----

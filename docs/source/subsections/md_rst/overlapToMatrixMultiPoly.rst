@@ -1,19 +1,28 @@
+========================
+overlapToMatrixMultiPoly
+========================
+
+:Date: ymd
 
 ``overlapToMatrixMultiPoly``
-================================
+============================
 
 overlapToMatrixMultiPoly
 
 Description
 -----------
 
-create a count matrix based on overlap results from `\ ``calculateOverlapRaster`` <#calculateoverlapraster>`_ , `\ ``calculateOverlapSerial`` <#calculateoverlapserial>`_ , or `\ ``calculateOverlapParallel`` <#calculateoverlapparallel>`_ 
- and aggregate information from multiple polygon layers (e.g. z-stacks) together
+create a count matrix based on overlap results from
+```calculateOverlapRaster`` <#calculateoverlapraster>`__ ,
+```calculateOverlapSerial`` <#calculateoverlapserial>`__ , or
+```calculateOverlapParallel`` <#calculateoverlapparallel>`__ and
+aggregate information from multiple polygon layers (e.g. z-stacks)
+together
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    overlapToMatrixMultiPoly(
      gobject,
@@ -27,24 +36,16 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``name``
-     - name for the overlap count matrix
-   * - ``poly_info``
-     - vector with polygon information
-   * - ``feat_info``
-     - feature information
-   * - ``new_poly_info``
-     - name for new aggregated polygon information
-   * - ``return_gobject``
-     - return giotto object (default: TRUE)
-
+================== ===========================================
+Argument           Description
+================== ===========================================
+``gobject``        giotto object
+``name``           name for the overlap count matrix
+``poly_info``      vector with polygon information
+``feat_info``      feature information
+``new_poly_info``  name for new aggregated polygon information
+``return_gobject`` return giotto object (default: TRUE)
+================== ===========================================
 
 Value
 -----

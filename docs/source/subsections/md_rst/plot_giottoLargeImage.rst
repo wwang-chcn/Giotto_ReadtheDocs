@@ -1,18 +1,24 @@
+=====================
+plot_giottoLargeImage
+=====================
+
+:Date: ymd
 
 ``plot_giottoLargeImage``
-=============================
+=========================
 
 plot_giottoLargeImage
 
 Description
 -----------
 
-Plot a downsampled version of giottoLargeImage. Cropping can increase plot resolution of region of interest.
+Plot a downsampled version of giottoLargeImage. Cropping can increase
+plot resolution of region of interest.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plot_giottoLargeImage(
      gobject = NULL,
@@ -24,32 +30,39 @@ Usage
      ymax_crop = NULL,
      ymin_crop = NULL,
      max_intensity = NULL,
-     asRGB = FALSE
+     asRGB = FALSE,
+     stretch = NULL
    )
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``largeImage_name``
-     - name of giottoLargeImage
-   * - ``giottoLargeImage``
-     - giottoLargeImage object
-   * - ``crop_extent``
-     - (optional) extent object to focus on specific region of image
-   * - ``xmax_crop, xmin_crop, ymax_crop, ymin_crop``
-     - (optional) crop min/max x and y bounds
-   * - ``max_intensity``
-     - (optional) value to treat as maximum intensity in color scale
-   * - ``asRGB``
-     - (optional) [boolean] force RGB plotting if not automatically detected
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``largeImage_name``           | name of giottoLargeImage             |
++-------------------------------+--------------------------------------+
+| ``giottoLargeImage``          | giottoLargeImage object              |
++-------------------------------+--------------------------------------+
+| ``crop_extent``               | (optional) extent object to focus on |
+|                               | specific region of image             |
++-------------------------------+--------------------------------------+
+| ``xmax_crop, xmin             | (optional) crop min/max x and y      |
+| _crop, ymax_crop, ymin_crop`` | bounds                               |
++-------------------------------+--------------------------------------+
+| ``max_intensity``             | (optional) value to treat as maximum |
+|                               | intensity in color scale             |
++-------------------------------+--------------------------------------+
+| ``asRGB``                     | (optional) [boolean] force RGB       |
+|                               | plotting if not automatically        |
+|                               | detected                             |
++-------------------------------+--------------------------------------+
+| ``stretch``                   | character. Option to stretch the     |
+|                               | values to increase contrast: “lin”   |
+|                               | linear or “hist” (histogram)         |
++-------------------------------+--------------------------------------+
 
 Value
 -----

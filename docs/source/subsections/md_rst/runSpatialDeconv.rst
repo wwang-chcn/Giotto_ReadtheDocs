@@ -1,6 +1,11 @@
+================
+runSpatialDeconv
+================
+
+:Date: ymd
 
 ``runSpatialDeconv``
-========================
+====================
 
 runSpatialDeconv
 
@@ -12,7 +17,7 @@ Function to perform deconvolution based on single cell expression data
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    runSpatialDeconv(
      gobject,
@@ -32,36 +37,22 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``deconv_method``
-     - method to use for deconvolution
-   * - ``expression_values``
-     - expression values to use
-   * - ``logbase``
-     - base used for log normalization
-   * - ``cluster_column``
-     - name of cluster column
-   * - ``sign_matrix``
-     - signature matrix for deconvolution
-   * - ``n_cell``
-     - number of cells per spot
-   * - ``cutoff``
-     - cut off (default = 2)
-   * - ``name``
-     - name to give to spatial deconvolution results
-   * - ``return_gobject``
-     - return giotto object
-
+===================== =============================================
+Argument              Description
+===================== =============================================
+``gobject``           giotto object
+``spat_unit``         spatial unit
+``feat_type``         feature type
+``deconv_method``     method to use for deconvolution
+``expression_values`` expression values to use
+``logbase``           base used for log normalization
+``cluster_column``    name of cluster column
+``sign_matrix``       signature matrix for deconvolution
+``n_cell``            number of cells per spot
+``cutoff``            cut off (default = 2)
+``name``              name to give to spatial deconvolution results
+``return_gobject``    return giotto object
+===================== =============================================
 
 Value
 -----
@@ -71,4 +62,4 @@ giotto object or deconvolution results
 Seealso
 -------
 
-`\ ``runDWLSDeconv`` <#rundwlsdeconv>`_
+```runDWLSDeconv`` <#rundwlsdeconv>`__

@@ -1,6 +1,11 @@
-.. _combineCellProximityGenes_per_interaction:
+=========================================
+combineCellProximityGenes_per_interaction
+=========================================
+
+:Date: ymd
+
 ``combineCellProximityGenes_per_interaction``
-=================================================
+=============================================
 
 combineCellProximityGenes_per_interaction
 
@@ -12,7 +17,7 @@ Combine CPG scores per interaction
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    combineCellProximityGenes_per_interaction(
      cpgObject,

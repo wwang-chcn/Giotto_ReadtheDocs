@@ -14,8 +14,8 @@ Creates an additional metadata column with information about interacting and non
 ```r
 addCellIntMetadata(
   gobject,
-  feat_type = NULL,
   spat_unit = NULL,
+  feat_type = NULL,
   spatial_network = "spatial_network",
   cluster_column,
   cell_interaction,
@@ -30,8 +30,8 @@ addCellIntMetadata(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`feat_type`     |     feature type
 `spat_unit`     |     spatial unit
+`feat_type`     |     feature type
 `spatial_network`     |     name of spatial network to use
 `cluster_column`     |     column of cell types
 `cell_interaction`     |     cell-cell interaction to use

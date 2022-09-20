@@ -1,6 +1,11 @@
 --- 
 title: getting_started_images 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: getting_started_images 
+format: rst 
 date: 2022-09-16 
 --- 
 

@@ -1,6 +1,11 @@
-.. _dt_to_matrix:
+============
+dt_to_matrix
+============
+
+:Date: ymd
+
 ``dt_to_matrix``
-====================
+================
 
 dt_to_matrix
 
@@ -12,18 +17,15 @@ converts data.table to matrix
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    dt_to_matrix(x)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``x``
-     - data.table object
-
+======== =================
+Argument Description
+======== =================
+``x``    data.table object
+======== =================

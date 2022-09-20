@@ -1,18 +1,26 @@
+===============
+overlapToMatrix
+===============
+
+:Date: ymd
 
 ``overlapToMatrix``
-=======================
+===================
 
 overlapToMatrix
 
 Description
 -----------
 
-create a count matrix based on overlap results from `\ ``calculateOverlapRaster`` <#calculateoverlapraster>`_ , `\ ``calculateOverlapSerial`` <#calculateoverlapserial>`_ , or `\ ``calculateOverlapParallel`` <#calculateoverlapparallel>`_
+create a count matrix based on overlap results from
+```calculateOverlapRaster`` <#calculateoverlapraster>`__ ,
+```calculateOverlapSerial`` <#calculateoverlapserial>`__ , or
+```calculateOverlapParallel`` <#calculateoverlapparallel>`__
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    overlapToMatrix(
      gobject,
@@ -25,22 +33,15 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``name``
-     - name for the overlap count matrix
-   * - ``poly_info``
-     - polygon information
-   * - ``feat_info``
-     - feature information
-   * - ``return_gobject``
-     - return giotto object (default: TRUE)
-
+================== ====================================
+Argument           Description
+================== ====================================
+``gobject``        giotto object
+``name``           name for the overlap count matrix
+``poly_info``      polygon information
+``feat_info``      feature information
+``return_gobject`` return giotto object (default: TRUE)
+================== ====================================
 
 Value
 -----

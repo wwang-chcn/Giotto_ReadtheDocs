@@ -1,6 +1,11 @@
+==========================
+rna_standard_normalization
+==========================
+
+:Date: ymd
 
 ``rna_standard_normalization``
-==================================
+==============================
 
 RNA standard normalization
 
@@ -12,7 +17,7 @@ standard function for RNA normalization
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    rna_standard_normalization(
      gobject,

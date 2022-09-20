@@ -1,6 +1,11 @@
+======================
+readGiottoInstructions
+======================
+
+:Date: ymd
 
 ``readGiottoInstructions``
-==============================
+==========================
 
 Read giotto instructions associated with giotto object
 
@@ -12,23 +17,21 @@ Retrieves the instruction associated with the provided parameter
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    readGiottoInstructions(giotto_instructions, param = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``giotto_instructions``
-     - giotto object or result from createGiottoInstructions()
-   * - ``param``
-     - parameter to retrieve
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``giotto_instructions``       | giotto object or result from         |
+|                               | createGiottoInstructions()           |
++-------------------------------+--------------------------------------+
+| ``param``                     | parameter to retrieve                |
++-------------------------------+--------------------------------------+
 
 Value
 -----

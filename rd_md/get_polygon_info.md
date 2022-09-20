@@ -20,7 +20,7 @@ get_polygon_info(gobject, polygon_name = "cell", polygon_overlap = NULL)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`polygon_name`     |     name of polygons
+`polygon_name`     |     name of polygons. Default "cell"
 `polygon_overlap`     |     include polygon overlap information
 
 

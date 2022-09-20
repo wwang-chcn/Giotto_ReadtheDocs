@@ -30,7 +30,7 @@ Argument      |Description
 `filter_params`     |     additional parameters to filterGiotto
 `norm_params`     |     additional parameters to normalizeGiotto
 `stat_params`     |     additional parameters to addStatistics
-`adjust_params`     |     additional parameters to adjustGiottoMatrix
+`adjust_params`     |     additional parameters to adjustGiottoMatrix; set to NULL if not required
 `verbose`     |     be verbose (default is TRUE)
 
 
@@ -39,7 +39,7 @@ Argument      |Description
 See [`filterGiotto`](#filtergiotto) , [`normalizeGiotto`](#normalizegiotto) ,
  [`addStatistics`](#addstatistics) , and [`adjustGiottoMatrix`](#adjustgiottomatrix) . For more
  information about the different parameters in each step. If you do not provide
- them it will use the default values.
+ them it will use the default values. If no adjustment is required, adjust_params must be set to NULL
 
 
 ## Value

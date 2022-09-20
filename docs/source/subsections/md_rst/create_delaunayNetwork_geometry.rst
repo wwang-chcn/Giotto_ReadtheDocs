@@ -1,6 +1,11 @@
-.. _create_delaunayNetwork_geometry:
+===============================
+create_delaunayNetwork_geometry
+===============================
+
+:Date: ymd
+
 ``create_delaunayNetwork_geometry``
-=======================================
+===================================
 
 create_delaunayNetwork_geometry
 
@@ -12,7 +17,7 @@ Create a spatial Delaunay network.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_delaunayNetwork_geometry(
      spatial_locations,

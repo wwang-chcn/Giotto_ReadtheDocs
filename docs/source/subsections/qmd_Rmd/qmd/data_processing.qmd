@@ -1,6 +1,11 @@
 --- 
 title: data_processing 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: data_processing 
+format: rst 
 date: 2022-09-16 
 --- 
 

@@ -1,20 +1,25 @@
-.. _find_terra_writeRaster_dataType:
+===============================
+find_terra_writeRaster_dataType
+===============================
+
+:Date: ymd
+
 ``find_terra_writeRaster_dataType``
-=======================================
+===================================
 
 find_terra_writeRaster_dataType
 
 Description
 -----------
 
-find likely compatible datatype for given image characteristics.
- Values given in arguments take priority over those found from giottoLargeImage
- metadata
+find likely compatible datatype for given image characteristics. Values
+given in arguments take priority over those found from giottoLargeImage
+metadata
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    find_terra_writeRaster_dataType(
      giottoLargeImage = NULL,
@@ -30,26 +35,29 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``giottoLargeImage``
-     - giottoLargeImage object to determine max_intensity, min_intensity, is_int settings from
-   * - ``max_intensity, min_intensity``
-     - value given as image maximum/minimum intensity
-   * - ``is_int``
-     - if image is integer (TRUE) or floating point (FALSE)
-   * - ``signed``
-     - if image is signed (TRUE) or unsigned (TRUE)
-   * - ``bitDepth``
-     - image bitDepth
-   * - ``verbose``
-     - be verbose
-   * - ``quick_INTU_maxval``
-     - Treat as maximum intensity to find compatible unsigned integer settings
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``giottoLargeImage``          | giottoLargeImage object to determine |
+|                               | max_intensity, min_intensity, is_int |
+|                               | settings from                        |
++-------------------------------+--------------------------------------+
+| ``m                           | value given as image maximum/minimum |
+| ax_intensity, min_intensity`` | intensity                            |
++-------------------------------+--------------------------------------+
+| ``is_int``                    | if image is integer (TRUE) or        |
+|                               | floating point (FALSE)               |
++-------------------------------+--------------------------------------+
+| ``signed``                    | if image is signed (TRUE) or         |
+|                               | unsigned (TRUE)                      |
++-------------------------------+--------------------------------------+
+| ``bitDepth``                  | image bitDepth                       |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
+| ``quick_INTU_maxval``         | Treat as maximum intensity to find   |
+|                               | compatible unsigned integer settings |
++-------------------------------+--------------------------------------+
 
 Value
 -----

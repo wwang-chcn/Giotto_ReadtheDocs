@@ -1,6 +1,11 @@
+=========================
+optimize_deconvolute_dwls
+=========================
+
+:Date: ymd
 
 ``optimize_deconvolute_dwls``
-=================================
+=============================
 
 optimize_deconvolute_dwls
 
@@ -12,6 +17,6 @@ Rui to fill in
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    optimize_deconvolute_dwls(exp, Signature)

@@ -26,6 +26,10 @@ plotly_grid(
 Argument      |Description
 ------------- |----------------
 `spatial_grid`     |     spatial_grid in giotto object
+`x_start`     |     default to "x_start"
+`y_start`     |     default to "y_start"
+`x_end`     |     default to "x_end"
+`y_end`     |     default to "y_end"
 
 
 ## Value

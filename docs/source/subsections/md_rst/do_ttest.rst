@@ -1,6 +1,11 @@
-.. _do_ttest:
+========
+do_ttest
+========
+
+:Date: ymd
+
 ``do_ttest``
-================
+============
 
 do_ttest
 
@@ -12,7 +17,7 @@ Performs t.test on subsets of a matrix
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    do_ttest(
      expr_values,

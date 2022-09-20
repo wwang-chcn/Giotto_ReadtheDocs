@@ -1,6 +1,16 @@
 --- 
 title: Visualizations 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: Visualizations 
+format: rst 
+date: ymd 
+--- 
+--- 
+title: Visualizations 
+format: rst 
 date: 2022-09-16 
 --- 
 

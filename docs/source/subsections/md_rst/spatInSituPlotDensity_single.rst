@@ -1,6 +1,11 @@
+============================
+spatInSituPlotDensity_single
+============================
+
+:Date: ymd
 
 ``spatInSituPlotDensity_single``
-====================================
+================================
 
 spatInSituPlotDensity_single
 
@@ -12,7 +17,7 @@ low level function to plot density plots at the spatial in situ level
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatInSituPlotDensity_single(
      gobject,

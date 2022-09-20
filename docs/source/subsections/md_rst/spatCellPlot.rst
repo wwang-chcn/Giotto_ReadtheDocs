@@ -1,6 +1,15 @@
+============
+spatCellPlot
+============
+
+:Date: ymd
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 ``spatCellPlot``
-====================
+================
 
 spatCellPlot
 
@@ -12,23 +21,42 @@ Visualize cells according to spatial coordinates
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatCellPlot(...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``...``                       | Arguments passed on to               |
+|                               | ```s                                 |
+|                               | patCellPlot2D`` <#spatcellplot2d>`__ |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”gobject”)),          |
+|                               | list(“giotto object”)),              |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”feat_type”)),        |
+|                               | list(“feature type”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”spat_unit”)),        |
+|                               | list(“spatial unit”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”show_image”)),       |
+|                               | list(“show a tissue background       |
+|                               | image”)), “:raw-latex:`\n`”, ” “,    |
+|                               | list(list(list(”gimage”)), list(“a   |
+|                               | giotto image”)), “:raw-latex:`\n`”,  |
+|                               | ” “, list(list(list(”image_name”)),  |
+|                               | list(“name of a giotto image”)),     |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”largeImage_name”)),  |
+|                               | list(“name of a giottoLargeImage”)), |
++-------------------------------+--------------------------------------+
 
-   * - Argument
-     - Description
-   * - ``...``
-     - Arguments passed on to `\ ``spatCellPlot2D`` <#spatcellplot2d>`_   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("feat_type")), list("feature type")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit")), "\n", "    ", list(list(list("show_image")), list("show a tissue background image")), "\n", "    ", list(list(list("gimage")), list("a giotto image")), "\n", "    ", list(list(list("image_name")), list("name of a giotto image")), "\n", "    ", list(list(list("largeImage_name")), list("name of a giottoLargeImage")), 
-
-
-.. code-block::
+::
 
    "\n", "    ", list(list(list("sdimx")), list("x-axis dimension name (default = 'sdimx')")), "\n", "    ", list(list(list("sdimy")), list("y-axis dimension name (default = 'sdimy')")), "\n", "    ", list(list(list("spat_enr_names")), list("names of spatial enrichment results to include")), "\n", "    ", list(list(list("cell_annotation_values")), list("numeric cell annotation columns")), "\n", "    ", list(list(list("cell_color_gradient")), list("vector with 3 colors for numeric data")), "\n", 
    "    ", list(list(list("gradient_midpoint")), list("midpoint for color gradient")), "\n", "    ", list(list(list("gradient_limits")), list("vector with lower and upper limits")), "\n", "    ", list(list(list("select_cell_groups")), list("select subset of cells/clusters based on cell_color parameter")), "\n", "    ", list(list(list("select_cells")), list("select subset of cells based on cell IDs")), "\n", "    ", list(list(list("point_shape")), list("shape of points (border, no_border or voronoi)")), 
@@ -40,8 +68,6 @@ Arguments
    "\n", "    ", list(list(list("vor_alpha")), list("transparancy of voronoi 'cells'")), "\n", "    ", list(list(list("axis_text")), list("size of axis text")), "\n", "    ", list(list(list("axis_title")), list("size of axis title")), "\n", "    ", list(list(list("cow_n_col")), list("cowplot param: how many columns")), "\n", "    ", list(list(list("cow_rel_h")), list("cowplot param: relative height")), "\n", "    ", list(list(list("cow_rel_w")), list("cowplot param: relative width")), "\n", "    ", 
    list(list(list("cow_align")), list("cowplot param: how to align")), "\n", "    ", list(list(list("show_plot")), list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), 
    "\n", "  ")
-
-
 
 Details
 -------
@@ -57,4 +83,4 @@ Seealso
 -------
 
 Other spatial cell annotation visualizations:
- `\ ``spatCellPlot2D`` <#spatcellplot2d>`_
+```spatCellPlot2D`` <#spatcellplot2d>`__

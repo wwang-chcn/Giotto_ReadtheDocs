@@ -40,22 +40,22 @@ violinPlot(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
-`expression_values`     |     expression values to use
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
+`expression_values`     |     expression values to use (e.g. "normalized", "scaled", "custom")
 `feats`     |     features to plot
 `genes`     |     deprecated, use feats argument
-`cluster_column`     |     name of column to use for clusters
+`cluster_column`     |     name of column to use for clusters (e.g. "leiden_clus")
 `cluster_custom_order`     |     custom order of clusters
-`color_violin`     |     color violin according to genes or clusters
+`color_violin`     |     color violin according to "genes" or "clusters"
 `cluster_color_code`     |     color code for clusters
-`strip_position`     |     position of gene labels
+`strip_position`     |     position of gene labels (e.g. "top", "right", "left", "bottom")
 `strip_text`     |     size of strip text
 `axis_text_x_size`     |     size of x-axis text
 `axis_text_y_size`     |     size of y-axis text
-`show_plot`     |     show plot
-`return_plot`     |     return ggplot object
-`save_plot`     |     directly save the plot [boolean]
+`show_plot`     |     show plot. TRUE or FALSE
+`return_plot`     |     return ggplot object. TRUE or FALSE
+`save_plot`     |     directly save the plot. TRUE or FALSE
 `save_param`     |     list of saving parameters, see [`showSaveParameters`](#showsaveparameters)
 `default_save_name`     |     default save name for saving, don't change, change save_name in save_param
 

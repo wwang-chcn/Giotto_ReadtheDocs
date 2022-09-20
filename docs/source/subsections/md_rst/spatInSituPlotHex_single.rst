@@ -1,6 +1,11 @@
+========================
+spatInSituPlotHex_single
+========================
+
+:Date: ymd
 
 ``spatInSituPlotHex_single``
-================================
+============================
 
 spatInSituPlotHex_single
 
@@ -12,7 +17,7 @@ function to plot hexbins at the spatial in situ level
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatInSituPlotHex_single(
      gobject,

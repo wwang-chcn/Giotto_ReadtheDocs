@@ -1,6 +1,11 @@
+=================
+list_feature_info
+=================
+
+:Date: ymd
 
 ``list_feature_info``
-=========================
+=====================
 
 list_feature_info
 
@@ -12,21 +17,18 @@ return the available giotto spatial feature information
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    list_feature_info(gobject)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-
+=========== =============
+Argument    Description
+=========== =============
+``gobject`` giotto object
+=========== =============
 
 Value
 -----

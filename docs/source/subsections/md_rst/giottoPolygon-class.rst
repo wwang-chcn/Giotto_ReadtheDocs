@@ -1,6 +1,11 @@
+===================
+giottoPolygon-class
+===================
+
+:Date: ymd
 
 ``giottoPolygon-class``
-===========================
+=======================
 
 S4 giotto polygon Class
 

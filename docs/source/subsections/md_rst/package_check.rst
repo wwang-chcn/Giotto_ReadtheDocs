@@ -1,18 +1,24 @@
+=============
+package_check
+=============
+
+:Date: ymd
 
 ``package_check``
-=====================
+=================
 
 package_check
 
 Description
 -----------
 
-check if package is available and provide installation instruction if not available
+check if package is available and provide installation instruction if
+not available
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    package_check(
      pkg_name,
@@ -23,15 +29,10 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``pkg_name``
-     - name of package
-   * - ``repository``
-     - where is the package
-   * - ``github_repo``
-     - name of github repository if needed
-
+=============== ===================================
+Argument        Description
+=============== ===================================
+``pkg_name``    name of package
+``repository``  where is the package
+``github_repo`` name of github repository if needed
+=============== ===================================

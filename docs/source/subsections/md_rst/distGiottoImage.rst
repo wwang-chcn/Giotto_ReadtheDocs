@@ -1,20 +1,25 @@
-.. _distGiottoImage:
+===============
+distGiottoImage
+===============
+
+:Date: ymd
+
 ``distGiottoImage``
-=======================
+===================
 
 Plot distribution of image intensity values
 
 Description
 -----------
 
-Plot distribution of intensity values using either a density plot
- or a histogram. Useful for finding image artefact outliers and determining
- reasonable scaling cutoffs.
+Plot distribution of intensity values using either a density plot or a
+histogram. Useful for finding image artefact outliers and determining
+reasonable scaling cutoffs.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    distGiottoImage(
      gobject = NULL,
@@ -27,22 +32,21 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``image_type``
-     - image object type (only supports largeImage and is set as default)
-   * - ``image_name``
-     - name of image object to use
-   * - ``giottoLargeImage``
-     - giotto large image object
-   * - ``method``
-     - plot type to show image intensity distribution
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``image_type``                | image object type (only supports     |
+|                               | largeImage and is set as default)    |
++-------------------------------+--------------------------------------+
+| ``image_name``                | name of image object to use          |
++-------------------------------+--------------------------------------+
+| ``giottoLargeImage``          | giotto large image object            |
++-------------------------------+--------------------------------------+
+| ``method``                    | plot type to show image intensity    |
+|                               | distribution                         |
++-------------------------------+--------------------------------------+
 
 Details
 -------

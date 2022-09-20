@@ -1,6 +1,11 @@
+======================
+giottoLargeImage-class
+======================
+
+:Date: ymd
 
 ``giottoLargeImage-class``
-==============================
+==========================
 
 S4 giottoLargeImage Class
 

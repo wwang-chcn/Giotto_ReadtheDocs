@@ -1,6 +1,11 @@
+==============================
+return_giotto_environment_path
+==============================
+
+:Date: ymd
 
 ``return_giotto_environment_path``
-======================================
+==================================
 
 return_giotto_environment_path
 
@@ -12,7 +17,7 @@ returns the path to the detected giotto environment
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    return_giotto_environment_path()
 

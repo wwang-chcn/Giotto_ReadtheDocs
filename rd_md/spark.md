@@ -53,7 +53,8 @@ This function is a wrapper for the method implemented in the SPARK package:
 
 *  list("2. spark.vc ") list(" Fits the count-based spatial model to estimate the parameters,\n", " see ", list(list("spark.vc")), " for additional parameters")   
 
-*  list("3. spark.test ") list(" Testing multiple kernel matrices")
+*  list("3. spark.test ") list(" Testing multiple kernel matrices")  
+ Publication: c("\\Sexpr[results=rd]{tools:::Rd_expr_doi(\"#1\")}", "10.1101/810903") list("tools:::Rd_expr_doi(\"10.1101/810903\")")
 
 
 ## Value

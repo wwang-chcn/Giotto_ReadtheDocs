@@ -1,18 +1,24 @@
-.. _calculateOverlapRaster:
+======================
+calculateOverlapRaster
+======================
+
+:Date: ymd
+
 ``calculateOverlapRaster``
-==============================
+==========================
 
 calculateOverlapRaster
 
 Description
 -----------
 
-calculate overlap between cellular structures (polygons) and features (points)
+calculate overlap between cellular structures (polygons) and features
+(points)
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calculateOverlapRaster(
      gobject,
@@ -29,30 +35,30 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``name_overlap``
-     - name for the overlap results (default to feat_info parameter)
-   * - ``spatial_info``
-     - polygon information
-   * - ``poly_ID_names``
-     - (optional) list of poly_IDs to use
-   * - ``feat_info``
-     - feature information
-   * - ``feat_subset_column``
-     - feature info column to subset features with
-   * - ``feat_subset_ids``
-     - ids within feature info column to use for subsetting
-   * - ``return_gobject``
-     - return giotto object (default: TRUE)
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``name_overlap``              | name for the overlap results         |
+|                               | (default to feat_info parameter)     |
++-------------------------------+--------------------------------------+
+| ``spatial_info``              | polygon information                  |
++-------------------------------+--------------------------------------+
+| ``poly_ID_names``             | (optional) list of poly_IDs to use   |
++-------------------------------+--------------------------------------+
+| ``feat_info``                 | feature information                  |
++-------------------------------+--------------------------------------+
+| ``feat_subset_column``        | feature info column to subset        |
+|                               | features with                        |
++-------------------------------+--------------------------------------+
+| ``feat_subset_ids``           | ids within feature info column to    |
+|                               | use for subsetting                   |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | return giotto object (default: TRUE) |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------

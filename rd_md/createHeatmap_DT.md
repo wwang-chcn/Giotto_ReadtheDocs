@@ -40,23 +40,23 @@ createHeatmap_DT(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
-`expression_values`     |     expression values to use
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
+`expression_values`     |     expression values to use (e.g. "normalized", "scaled", "custom")
 `feats`     |     features to use
 `genes`     |     deprecated, use feats
-`cluster_column`     |     name of column to use for clusters
-`cluster_order`     |     method to determine cluster order
+`cluster_column`     |     name of column to use for clusters (e.g. "leiden_clus")
+`cluster_order`     |     method to determine cluster order (e.g. "size", "correlation", "custom")
 `cluster_custom_order`     |     custom order for clusters
-`cluster_cor_method`     |     method for cluster correlation
-`cluster_hclust_method`     |     method for hierarchical clustering of clusters
-`feat_order`     |     method to determine features order
+`cluster_cor_method`     |     method for cluster correlation, default to "pearson"
+`cluster_hclust_method`     |     method for hierarchical clustering of clusters, default to "ward.D"
+`feat_order`     |     method to determine features order (e.g. "correlation", "custom")
 `gene_order`     |     deprecated, use feat_order in the future
 `feat_custom_order`     |     custom order for features
 `gene_custom_order`     |     deprecated, use feat_custom_order in the future
-`feat_cor_method`     |     method for features correlation
+`feat_cor_method`     |     method for features correlation, default to "pearson"
 `gene_cor_method`     |     deprecated, use feat_cor_method in the future
-`feat_hclust_method`     |     method for hierarchical clustering of features
+`feat_hclust_method`     |     method for hierarchical clustering of features, default to "complete"
 `gene_hclust_method`     |     deprecated, use feat_hclust_method in the future
 
 

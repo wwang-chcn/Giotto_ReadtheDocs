@@ -1,7 +1,11 @@
-.. _cellProximityBarplot: 
+====================
+cellProximityBarplot
+====================
+
+:Date: ymd
 
 ``cellProximityBarplot``
-============================
+========================
 
 cellProximityBarplot
 
@@ -13,7 +17,7 @@ Create barplot from cell-cell proximity scores
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    cellProximityBarplot(
      gobject,
@@ -31,38 +35,42 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``CPscore``
-     - CPscore, output from cellProximityEnrichment()
-   * - ``min_orig_ints``
-     - filter on minimum original cell-cell interactions
-   * - ``min_sim_ints``
-     - filter on minimum simulated cell-cell interactions
-   * - ``p_val``
-     - p-value
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``CPscore``                   | CPscore, output from                 |
+|                               | cellProximityEnrichment()            |
++-------------------------------+--------------------------------------+
+| ``min_orig_ints``             | filter on minimum original cell-cell |
+|                               | interactions                         |
++-------------------------------+--------------------------------------+
+| ``min_sim_ints``              | filter on minimum simulated          |
+|                               | cell-cell interactions               |
++-------------------------------+--------------------------------------+
+| ``p_val``                     | p-value                              |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot                            |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-This function creates a barplot that shows the  spatial proximity
- enrichment or depletion of cell type pairs.
+This function creates a barplot that shows the spatial proximity
+enrichment or depletion of cell type pairs.
 
 Value
 -----

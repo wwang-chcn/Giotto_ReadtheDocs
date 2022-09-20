@@ -1,6 +1,11 @@
-.. _cluster_enrich_analysis:
+=======================
+cluster_enrich_analysis
+=======================
+
+:Date: ymd
+
 ``cluster_enrich_analysis``
-===============================
+===========================
 
 cluster_enrich_analysis
 
@@ -12,6 +17,6 @@ Rui to fill in
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    cluster_enrich_analysis(exp_matrix, cluster_info, enrich_sig_matrix)

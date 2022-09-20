@@ -1,6 +1,11 @@
-.. _colMeans_flex:
+=============
+colMeans_flex
+=============
+
+:Date: ymd
+
 ``colMeans_flex``
-=====================
+=================
 
 colMeans_flex
 
@@ -12,18 +17,15 @@ colMeans_flex
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    colMeans_flex(mymatrix)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``mymatrix``
-     - matrix to use
-
+============ =============
+Argument     Description
+============ =============
+``mymatrix`` matrix to use
+============ =============

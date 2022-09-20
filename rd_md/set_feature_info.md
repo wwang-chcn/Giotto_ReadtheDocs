@@ -20,7 +20,7 @@ set_feature_info(gobject, feat_type = NULL, gpolygon)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`feat_type`     |     name of feat
+`feat_type`     |     name of feat (e.g. "rna", "dna", "protein")
 `gpolygon`     |     giotto polygon
 
 

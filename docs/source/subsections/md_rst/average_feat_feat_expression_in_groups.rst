@@ -1,6 +1,11 @@
-.. _average_feat_feat_expression_in_groups:
+======================================
+average_feat_feat_expression_in_groups
+======================================
+
+:Date: ymd
+
 ``average_feat_feat_expression_in_groups``
-==============================================
+==========================================
 
 average_feat_feat_expression_in_groups
 
@@ -12,7 +17,7 @@ calculate average expression per cluster
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    average_feat_feat_expression_in_groups(
      gobject,
@@ -26,24 +31,16 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object to use
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``cluster_column``
-     - cluster column with cell type information
-   * - ``feat_set_1``
-     - first specific feat set from feat pairs
-   * - ``feat_set_2``
-     - second specific feat set from feat pairs
-
+================== =========================================
+Argument           Description
+================== =========================================
+``gobject``        giotto object to use
+``spat_unit``      spatial unit
+``feat_type``      feature type
+``cluster_column`` cluster column with cell type information
+``feat_set_1``     first specific feat set from feat pairs
+``feat_set_2``     second specific feat set from feat pairs
+================== =========================================
 
 Value
 -----

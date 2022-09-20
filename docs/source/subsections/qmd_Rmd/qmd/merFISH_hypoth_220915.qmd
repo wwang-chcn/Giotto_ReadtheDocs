@@ -1,6 +1,11 @@
 --- 
 title: merFISH_hypoth_220915 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: merFISH_hypoth_220915 
+format: rst 
 date: 2022-09-16 
 --- 
 

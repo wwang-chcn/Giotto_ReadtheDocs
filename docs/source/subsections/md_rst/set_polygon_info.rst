@@ -1,6 +1,11 @@
+================
+set_polygon_info
+================
+
+:Date: ymd
 
 ``set_polygon_info``
-========================
+====================
 
 Set polygon info
 
@@ -12,25 +17,20 @@ Set giotto polygon spatVector
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    set_polygon_info(gobject, polygon_name = "cell", gpolygon)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``polygon_name``
-     - name of polygons
-   * - ``gpolygon``
-     - giotto polygon
-
+================ ================================
+Argument         Description
+================ ================================
+``gobject``      giotto object
+``polygon_name`` name of polygons. Default “cell”
+``gpolygon``     giotto polygon
+================ ================================
 
 Value
 -----
@@ -41,15 +41,15 @@ Seealso
 -------
 
 Other polygon info data accessor functions:
- `\ ``get_polygon_info`` <#getpolygoninfo>`_ 
+```get_polygon_info`` <#getpolygoninfo>`__
 
- Other functions to set data in giotto object:
- `\ ``set_NearestNetwork`` <#setnearestnetwork>`_ ,
- `\ ``set_dimReduction`` <#setdimreduction>`_ ,
- `\ ``set_expression_values`` <#setexpressionvalues>`_ ,
- `\ ``set_feature_info`` <#setfeatureinfo>`_ ,
- `\ ``set_giottoImage`` <#setgiottoimage>`_ ,
- `\ ``set_spatialGrid`` <#setspatialgrid>`_ ,
- `\ ``set_spatialNetwork`` <#setspatialnetwork>`_ ,
- `\ ``set_spatial_enrichment`` <#setspatialenrichment>`_ ,
- `\ ``set_spatial_locations`` <#setspatiallocations>`_
+Other functions to set data in giotto object:
+```set_NearestNetwork`` <#setnearestnetwork>`__ ,
+```set_dimReduction`` <#setdimreduction>`__ ,
+```set_expression_values`` <#setexpressionvalues>`__ ,
+```set_feature_info`` <#setfeatureinfo>`__ ,
+```set_giottoImage`` <#setgiottoimage>`__ ,
+```set_spatialGrid`` <#setspatialgrid>`__ ,
+```set_spatialNetwork`` <#setspatialnetwork>`__ ,
+```set_spatial_enrichment`` <#setspatialenrichment>`__ ,
+```set_spatial_locations`` <#setspatiallocations>`__

@@ -1,6 +1,11 @@
+====
+pipe
+====
+
+:Date: ymd
 
 ``%>%``
-===========
+=======
 
 Pipe operator
 
@@ -12,6 +17,6 @@ See ``magrittr::`` for details.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    lhs %>% rhs

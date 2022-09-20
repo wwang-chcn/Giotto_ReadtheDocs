@@ -1,6 +1,11 @@
+===================
+runPCA_prcomp_irlba
+===================
+
+:Date: ymd
 
 ``runPCA_prcomp_irlba``
-===========================
+=======================
 
 runPCA_prcomp_irlba
 
@@ -12,7 +17,7 @@ performs PCA based on the irlba package
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    runPCA_prcomp_irlba(
      x,
@@ -28,26 +33,17 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``x``
-     - matrix or object that can be converted to matrix
-   * - ``ncp``
-     - number of principal components to calculate
-   * - ``center``
-     - center data
-   * - ``scale``
-     - scale features
-   * - ``rev``
-     - reverse PCA
-   * - ``set_seed``
-     - use of seed
-   * - ``seed_number``
-     - seed number to use
-
+=============== ================================================
+Argument        Description
+=============== ================================================
+``x``           matrix or object that can be converted to matrix
+``ncp``         number of principal components to calculate
+``center``      center data
+``scale``       scale features
+``rev``         reverse PCA
+``set_seed``    use of seed
+``seed_number`` seed number to use
+=============== ================================================
 
 Value
 -----

@@ -1,6 +1,11 @@
+===========================
+run_spatial_sim_tests_multi
+===========================
+
+:Date: ymd
 
 ``run_spatial_sim_tests_multi``
-===================================
+===============================
 
 run_spatial_sim_tests_multi
 
@@ -12,7 +17,7 @@ runs all spatial tests for multiple probabilities and repetitions
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    run_spatial_sim_tests_multi(
      gobject,

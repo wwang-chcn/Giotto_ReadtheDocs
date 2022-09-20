@@ -1,6 +1,11 @@
+====================
+set_feature_metadata
+====================
+
+:Date: ymd
 
 ``set_feature_metadata``
-============================
+========================
 
 Set feature metadata
 
@@ -12,6 +17,6 @@ Set feature metadata
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    set_feature_metadata(gobject, feat_metadata)

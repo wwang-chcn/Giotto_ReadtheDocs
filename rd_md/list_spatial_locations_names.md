@@ -11,7 +11,7 @@ lists the available spatial location names for a given spatial unit
 ## Usage
 
 ```r
-list_spatial_locations_names(gobject, spat_unit)
+list_spatial_locations_names(gobject, spat_unit = NULL)
 ```
 
 
@@ -20,7 +20,7 @@ list_spatial_locations_names(gobject, spat_unit)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
+`spat_unit`     |     spatial unit (e.g. "cell")
 
 
 ## Value

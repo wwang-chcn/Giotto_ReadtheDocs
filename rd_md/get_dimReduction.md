@@ -28,12 +28,12 @@ get_dimReduction(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
-`reduction`     |     reduction on cells or features
-`reduction_method`     |     reduction method (e.g. pca)
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
+`reduction`     |     reduction on cells or features (e.g. "cells", "feats")
+`reduction_method`     |     reduction method (e.g. "pca", "umap", "tsne")
 `name`     |     name of reduction results
-`return_dimObj`     |     return full dimension object result
+`return_dimObj`     |     return full dimension object result. Default = FALSE
 
 
 ## Value

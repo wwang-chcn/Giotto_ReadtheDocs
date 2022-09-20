@@ -1,6 +1,11 @@
+================
+get_polygon_info
+================
+
+:Date: ymd
 
 ``get_polygon_info``
-========================
+====================
 
 Get polygon info
 
@@ -12,39 +17,34 @@ Get giotto polygon spatVector
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_polygon_info(gobject, polygon_name = "cell", polygon_overlap = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``polygon_name``
-     - name of polygons
-   * - ``polygon_overlap``
-     - include polygon overlap information
-
+=================== ===================================
+Argument            Description
+=================== ===================================
+``gobject``         giotto object
+``polygon_name``    name of polygons. Default “cell”
+``polygon_overlap`` include polygon overlap information
+=================== ===================================
 
 Seealso
 -------
 
 Other polygon info data accessor functions:
- `\ ``set_polygon_info`` <#setpolygoninfo>`_ 
+```set_polygon_info`` <#setpolygoninfo>`__
 
- Other functions to get data from giotto object:
- `\ ``get_NearestNetwork`` <#getnearestnetwork>`_ ,
- `\ ``get_dimReduction`` <#getdimreduction>`_ ,
- `\ ``get_expression_values`` <#getexpressionvalues>`_ ,
- `\ ``get_feature_info`` <#getfeatureinfo>`_ ,
- `\ ``get_giottoImage`` <#getgiottoimage>`_ ,
- `\ ``get_spatialGrid`` <#getspatialgrid>`_ ,
- `\ ``get_spatialNetwork`` <#getspatialnetwork>`_ ,
- `\ ``get_spatial_enrichment`` <#getspatialenrichment>`_ ,
- `\ ``get_spatial_locations`` <#getspatiallocations>`_
+Other functions to get data from giotto object:
+```get_NearestNetwork`` <#getnearestnetwork>`__ ,
+```get_dimReduction`` <#getdimreduction>`__ ,
+```get_expression_values`` <#getexpressionvalues>`__ ,
+```get_feature_info`` <#getfeatureinfo>`__ ,
+```get_giottoImage`` <#getgiottoimage>`__ ,
+```get_spatialGrid`` <#getspatialgrid>`__ ,
+```get_spatialNetwork`` <#getspatialnetwork>`__ ,
+```get_spatial_enrichment`` <#getspatialenrichment>`__ ,
+```get_spatial_locations`` <#getspatiallocations>`__

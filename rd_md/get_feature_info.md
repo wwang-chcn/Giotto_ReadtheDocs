@@ -20,7 +20,7 @@ get_feature_info(gobject, feat_type = NULL)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`feat_type`     |     name of feature
+`feat_type`     |     name of feature (e.g. "rna", "dna", "protein")
 
 
 ## Seealso

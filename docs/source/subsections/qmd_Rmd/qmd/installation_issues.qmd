@@ -1,6 +1,11 @@
 --- 
 title: installation_issues 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: installation_issues 
+format: rst 
 date: 2022-09-16 
 --- 
 

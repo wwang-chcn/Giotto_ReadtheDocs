@@ -1,7 +1,11 @@
-.. _adapt_aspect_ratio:
+==================
+adapt_aspect_ratio
+==================
+
+:Date: ymd
 
 ``adapt_aspect_ratio``
-==========================
+======================
 
 adapt_aspect_ratio
 
@@ -13,7 +17,7 @@ adapt the aspact ratio after inserting cross section mesh grid lines
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    adapt_aspect_ratio(
      current_ratio,
@@ -27,21 +31,13 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``current_ratio``
-     - current_ratio
-   * - ``cell_locations``
-     - cell_locations
-   * - ``sdimx``
-     - sdimx
-   * - ``sdimy``
-     - sdimy
-   * - ``sdimz``
-     - sdimz
-   * - ``mesh_obj``
-     - mesh_obj
-
+================== ==============
+Argument           Description
+================== ==============
+``current_ratio``  current_ratio
+``cell_locations`` cell_locations
+``sdimx``          sdimx
+``sdimy``          sdimy
+``sdimz``          sdimz
+``mesh_obj``       mesh_obj
+================== ==============

@@ -27,7 +27,7 @@ Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
 `image`     |     giotto image object to be attached without modification to the giotto object
-`image_type`     |     type of giotto image object
+`image_type`     |     type of giotto image object. Either "image" or "largeImage"
 `name`     |     name of giotto image object
 `verbose`     |     be verbose
 

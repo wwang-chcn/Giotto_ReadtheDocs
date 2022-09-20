@@ -1,6 +1,11 @@
-.. _create_featureNetwork_object:
+============================
+create_featureNetwork_object
+============================
+
+:Date: ymd
+
 ``create_featureNetwork_object``
-====================================
+================================
 
 Create feature network object
 
@@ -12,7 +17,7 @@ Create feature network object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_featureNetwork_object(
      name = "feat_network",
@@ -24,17 +29,11 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``name``
-     - name to assign the created feature network object
-   * - ``network_datatable``
-     - network data.table object
-   * - ``network_lookup_id``
-     - network lookup id
-   * - ``full``
-     - fully connected status
-
+===================== =================================================
+Argument              Description
+===================== =================================================
+``name``              name to assign the created feature network object
+``network_datatable`` network data.table object
+``network_lookup_id`` network lookup id
+``full``              fully connected status
+===================== =================================================

@@ -1,6 +1,11 @@
+=================================
+plot_feature_raster_density_layer
+=================================
+
+:Date: ymd
 
 ``plot_feature_raster_density_layer``
-=========================================
+=====================================
 
 plot_feature_raster_density_layer
 
@@ -12,7 +17,7 @@ low level function to plot density plots at the spatial in situ level
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plot_feature_raster_density_layer(
      ggobject = NULL,
