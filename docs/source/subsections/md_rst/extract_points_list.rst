@@ -2,7 +2,7 @@
 extract_points_list
 ===================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``extract_points_list``
 =======================

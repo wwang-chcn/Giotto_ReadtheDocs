@@ -2,7 +2,7 @@
 DT_removeNA
 ===========
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``DT_removeNA``
 ===============

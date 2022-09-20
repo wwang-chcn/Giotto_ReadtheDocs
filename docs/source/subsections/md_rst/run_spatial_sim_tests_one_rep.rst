@@ -2,7 +2,7 @@
 run_spatial_sim_tests_one_rep
 =============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``run_spatial_sim_tests_one_rep``
 =================================

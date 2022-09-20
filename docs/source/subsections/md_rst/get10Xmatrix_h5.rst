@@ -2,7 +2,7 @@
 get10Xmatrix_h5
 ===============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``get10Xmatrix_h5``
 ===================

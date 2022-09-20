@@ -2,7 +2,7 @@
 list_dim_reductions
 ===================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``list_dim_reductions``
 =======================

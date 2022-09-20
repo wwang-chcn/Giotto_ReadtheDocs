@@ -2,7 +2,7 @@
 Visium_prostate_integration_Sep30_21
 ====================================
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 Set up Giotto Environment
 =========================

@@ -2,7 +2,7 @@
 xy_translate_spatial_locations
 ==============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``xy_translate_spatial_locations``
 ==================================

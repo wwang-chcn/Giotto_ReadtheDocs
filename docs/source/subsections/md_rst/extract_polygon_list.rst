@@ -2,7 +2,7 @@
 extract_polygon_list
 ====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``extract_polygon_list``
 ========================

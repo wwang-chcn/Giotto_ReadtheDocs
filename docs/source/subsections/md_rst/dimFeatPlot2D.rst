@@ -2,7 +2,7 @@
 dimFeatPlot2D
 =============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``dimFeatPlot2D``
 =================

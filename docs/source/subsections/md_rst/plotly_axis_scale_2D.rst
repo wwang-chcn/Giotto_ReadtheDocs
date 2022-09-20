@@ -2,7 +2,7 @@
 plotly_axis_scale_2D
 ====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``plotly_axis_scale_2D``
 ========================

@@ -2,7 +2,7 @@
 compatible_spatial_network
 ==========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``compatible_spatial_network``
 ==============================

@@ -2,7 +2,7 @@
 nnDT_to_kNN
 ===========
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``nnDT_to_kNN``
 ===============

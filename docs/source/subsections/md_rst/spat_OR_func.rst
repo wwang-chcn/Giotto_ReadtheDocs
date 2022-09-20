@@ -2,7 +2,7 @@
 spat_OR_func
 ============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``spat_OR_func``
 ================

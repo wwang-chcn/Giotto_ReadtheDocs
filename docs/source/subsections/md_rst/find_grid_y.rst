@@ -2,7 +2,7 @@
 find_grid_y
 ===========
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``find_grid_y``
 ===============

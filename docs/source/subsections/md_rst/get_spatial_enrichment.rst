@@ -2,7 +2,7 @@
 get_spatial_enrichment
 ======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``get_spatial_enrichment``
 ==========================

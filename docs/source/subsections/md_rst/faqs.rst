@@ -2,7 +2,7 @@
 faqs
 ====
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 \*\* Copied from old Giotto, likely needs to be updated for Giotto Suite
 \*\*

@@ -2,7 +2,7 @@
 extend_vector
 =============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``extend_vector``
 =================

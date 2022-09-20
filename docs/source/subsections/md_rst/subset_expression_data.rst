@@ -2,7 +2,7 @@
 subset_expression_data
 ======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``subset_expression_data``
 ==========================

@@ -2,7 +2,7 @@
 read_nearest_networks
 =====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``read_nearest_networks``
 =========================

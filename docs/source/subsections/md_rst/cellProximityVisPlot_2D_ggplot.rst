@@ -2,7 +2,7 @@
 cellProximityVisPlot_2D_ggplot
 ==============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``cellProximityVisPlot_2D_ggplot``
 ==================================

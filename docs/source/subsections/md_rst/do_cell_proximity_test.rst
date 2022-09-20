@@ -2,7 +2,7 @@
 do_cell_proximity_test
 ======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``do_cell_proximity_test``
 ==========================

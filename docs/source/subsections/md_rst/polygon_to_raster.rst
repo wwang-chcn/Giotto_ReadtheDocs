@@ -2,7 +2,7 @@
 polygon_to_raster
 =================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``polygon_to_raster``
 =====================

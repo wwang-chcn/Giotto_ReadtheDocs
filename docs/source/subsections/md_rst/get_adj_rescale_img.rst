@@ -2,7 +2,7 @@
 get_adj_rescale_img
 ===================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``get_adj_rescale_img``
 =======================

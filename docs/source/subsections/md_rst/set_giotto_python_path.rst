@@ -2,7 +2,7 @@
 set_giotto_python_path
 ======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``set_giotto_python_path``
 ==========================

@@ -2,7 +2,7 @@
 spatVector_to_dt
 ================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``spatVector_to_dt``
 ====================

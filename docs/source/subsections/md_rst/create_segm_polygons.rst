@@ -2,7 +2,7 @@
 create_segm_polygons
 ====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``create_segm_polygons``
 ========================

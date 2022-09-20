@@ -2,7 +2,7 @@
 calculate_distance_and_weight
 =============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``calculate_distance_and_weight``
 =================================

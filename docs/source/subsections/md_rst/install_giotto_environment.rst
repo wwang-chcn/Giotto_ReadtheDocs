@@ -2,7 +2,7 @@
 install_giotto_environment
 ==========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``install_giotto_environment``
 ==============================

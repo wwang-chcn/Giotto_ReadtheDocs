@@ -2,7 +2,7 @@
 S3toS4dimObj
 ============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``S3toS4dimObj``
 ================

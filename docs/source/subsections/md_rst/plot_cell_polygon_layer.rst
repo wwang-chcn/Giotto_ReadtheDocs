@@ -2,7 +2,7 @@
 plot_cell_polygon_layer
 =======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``plot_cell_polygon_layer``
 ===========================

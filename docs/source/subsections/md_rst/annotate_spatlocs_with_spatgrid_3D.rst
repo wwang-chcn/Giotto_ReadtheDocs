@@ -2,7 +2,7 @@
 annotate_spatlocs_with_spatgrid_3D
 ==================================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``annotate_spatlocs_with_spatgrid_3D``
 ======================================

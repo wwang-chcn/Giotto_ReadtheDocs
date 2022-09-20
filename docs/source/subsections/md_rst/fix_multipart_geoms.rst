@@ -2,7 +2,7 @@
 fix_multipart_geoms
 ===================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``fix_multipart_geoms``
 =======================

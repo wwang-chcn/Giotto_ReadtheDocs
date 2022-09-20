@@ -2,7 +2,7 @@
 decide_cluster_order
 ====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``decide_cluster_order``
 ========================

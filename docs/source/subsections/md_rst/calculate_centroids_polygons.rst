@@ -2,7 +2,7 @@
 calculate_centroids_polygons
 ============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``calculate_centroids_polygons``
 ================================

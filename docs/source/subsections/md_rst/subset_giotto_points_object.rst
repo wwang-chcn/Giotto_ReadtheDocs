@@ -2,7 +2,7 @@
 subset_giotto_points_object
 ===========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``subset_giotto_points_object``
 ===============================

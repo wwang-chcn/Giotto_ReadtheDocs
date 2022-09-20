@@ -2,7 +2,7 @@
 cor_flex
 ========
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``cor_flex``
 ============

@@ -2,7 +2,7 @@
 subset_feature_info_data
 ========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``subset_feature_info_data``
 ============================

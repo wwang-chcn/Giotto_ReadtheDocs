@@ -2,6 +2,7 @@
 ``mini_giotto_3D``
 ======================
 
+:Date: 2022-09-20
 mini Giotto object for spatial single-cell 3D data
 
 Description

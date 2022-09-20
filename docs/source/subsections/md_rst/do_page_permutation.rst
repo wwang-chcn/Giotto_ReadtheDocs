@@ -2,7 +2,7 @@
 do_page_permutation
 ===================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``do_page_permutation``
 =======================

@@ -2,7 +2,7 @@
 get_spatialNetwork
 ==================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``get_spatialNetwork``
 ======================

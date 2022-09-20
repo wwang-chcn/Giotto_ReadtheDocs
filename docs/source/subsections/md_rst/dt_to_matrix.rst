@@ -2,7 +2,7 @@
 dt_to_matrix
 ============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``dt_to_matrix``
 ================

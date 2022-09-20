@@ -2,7 +2,7 @@
 identify_background_range_polygons
 ==================================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``identify_background_range_polygons``
 ======================================

@@ -2,7 +2,7 @@
 spatDimPlot3D
 =============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``spatDimPlot3D``
 =================

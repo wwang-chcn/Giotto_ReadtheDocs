@@ -2,7 +2,7 @@
 get_feature_info
 ================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``get_feature_info``
 ====================

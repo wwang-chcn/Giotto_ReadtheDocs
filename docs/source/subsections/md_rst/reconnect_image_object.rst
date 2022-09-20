@@ -2,7 +2,7 @@
 reconnect_image_object
 ======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``reconnect_image_object``
 ==========================

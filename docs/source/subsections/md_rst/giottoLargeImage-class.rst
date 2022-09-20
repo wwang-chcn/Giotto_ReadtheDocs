@@ -2,7 +2,7 @@
 giottoLargeImage-class
 ======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``giottoLargeImage-class``
 ==========================

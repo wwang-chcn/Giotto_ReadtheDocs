@@ -2,7 +2,7 @@
 return_giotto_environment_path_executable
 =========================================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``return_giotto_environment_path_executable``
 =============================================

@@ -2,7 +2,7 @@
 evaluate_feat_info
 ==================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``evaluate_feat_info``
 ======================

@@ -2,7 +2,7 @@
 rna_pears_resid_normalization
 =============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``rna_pears_resid_normalization``
 =================================

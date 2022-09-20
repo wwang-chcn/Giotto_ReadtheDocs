@@ -2,7 +2,7 @@
 make_simulated_network
 ======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``make_simulated_network``
 ==========================

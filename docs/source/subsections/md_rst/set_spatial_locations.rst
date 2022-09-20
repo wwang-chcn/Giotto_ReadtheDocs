@@ -2,7 +2,7 @@
 set_spatial_locations
 =====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``set_spatial_locations``
 =========================

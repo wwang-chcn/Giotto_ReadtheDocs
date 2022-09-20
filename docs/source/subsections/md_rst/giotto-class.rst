@@ -2,7 +2,7 @@
 giotto-class
 ============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``giotto-class``
 ================

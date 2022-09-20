@@ -2,7 +2,7 @@
 dt_to_spatVector_points
 =======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``dt_to_spatVector_points``
 ===========================

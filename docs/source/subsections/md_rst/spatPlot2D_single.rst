@@ -2,7 +2,7 @@
 spatPlot2D_single
 =================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``spatPlot2D_single``
 =====================

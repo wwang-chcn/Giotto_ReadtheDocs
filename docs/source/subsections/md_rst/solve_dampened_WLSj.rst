@@ -2,7 +2,7 @@
 solve_dampened_WLSj
 ===================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``solve_dampened_WLSj``
 =======================

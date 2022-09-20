@@ -2,7 +2,7 @@
 add_img_array_alpha
 ===================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``add_img_array_alpha``
 =======================

@@ -2,7 +2,7 @@
 plot_giottoImage_MG
 ===================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``plot_giottoImage_MG``
 =======================

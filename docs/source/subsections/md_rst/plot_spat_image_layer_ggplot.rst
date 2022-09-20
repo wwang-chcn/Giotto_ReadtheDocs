@@ -2,7 +2,7 @@
 plot_spat_image_layer_ggplot
 ============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``plot_spat_image_layer_ggplot``
 ================================

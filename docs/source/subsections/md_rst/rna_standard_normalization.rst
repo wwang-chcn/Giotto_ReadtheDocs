@@ -2,7 +2,7 @@
 rna_standard_normalization
 ==========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``rna_standard_normalization``
 ==============================

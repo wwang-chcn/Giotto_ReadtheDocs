@@ -2,7 +2,7 @@
 Visualizations
 ==============
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 This tutorial walks through the visualization capabilities of Giotto.
 The clustering and dimension reduction methods focused on within the

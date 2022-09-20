@@ -2,7 +2,7 @@
 check_spatial_location_data
 ===========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``check_spatial_location_data``
 ===============================

@@ -2,7 +2,7 @@
 set_default_spat_unit
 =====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``set_default_spat_unit``
 =========================

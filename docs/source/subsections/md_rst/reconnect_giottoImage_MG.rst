@@ -2,7 +2,7 @@
 reconnect_giottoImage_MG
 ========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``reconnect_giottoImage_MG``
 ============================

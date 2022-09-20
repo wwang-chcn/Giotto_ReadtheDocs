@@ -2,7 +2,7 @@
 plot_auto_largeImage_resample
 =============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 .. role:: raw-latex(raw)
    :format: latex

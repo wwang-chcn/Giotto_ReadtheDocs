@@ -2,7 +2,7 @@
 calc_spatial_enrichment_matrix
 ==============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``calc_spatial_enrichment_matrix``
 ==================================

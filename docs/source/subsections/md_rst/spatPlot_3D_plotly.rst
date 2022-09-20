@@ -2,7 +2,7 @@
 spatPlot_3D_plotly
 ==================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``spatPlot_3D_plotly``
 ======================

@@ -2,7 +2,7 @@
 getting_started
 ===============
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 Giotto provides a lot of analyses, visualizations and other options to
 facilitate your spatial dataset analysis. We are working on providing

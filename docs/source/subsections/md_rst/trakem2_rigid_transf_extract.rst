@@ -2,7 +2,7 @@
 trakem2_rigid_transf_extract
 ============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``trakem2_rigid_transf_extract``
 ================================

@@ -2,7 +2,7 @@
 mean_flex
 =========
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``mean_flex``
 =============

@@ -2,7 +2,7 @@
 combineCellProximityGenes_per_interaction
 =========================================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``combineCellProximityGenes_per_interaction``
 =============================================

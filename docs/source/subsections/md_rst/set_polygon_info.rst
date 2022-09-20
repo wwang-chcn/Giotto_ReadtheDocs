@@ -2,7 +2,7 @@
 set_polygon_info
 ================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``set_polygon_info``
 ====================

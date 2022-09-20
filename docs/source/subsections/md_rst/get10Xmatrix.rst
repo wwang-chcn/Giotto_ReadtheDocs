@@ -2,7 +2,7 @@
 get10Xmatrix
 ============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``get10Xmatrix``
 ================

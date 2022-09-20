@@ -2,7 +2,7 @@
 sort_combine_two_DT_columns
 ===========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``sort_combine_two_DT_columns``
 ===============================

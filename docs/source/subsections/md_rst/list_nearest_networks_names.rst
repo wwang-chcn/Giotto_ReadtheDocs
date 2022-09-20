@@ -2,7 +2,7 @@
 list_nearest_networks_names
 ===========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``list_nearest_networks_names``
 ===============================

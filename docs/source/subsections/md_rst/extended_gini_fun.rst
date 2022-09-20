@@ -2,7 +2,7 @@
 extended_gini_fun
 =================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``extended_gini_fun``
 =====================

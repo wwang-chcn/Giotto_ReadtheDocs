@@ -2,7 +2,7 @@
 get_img_corners
 ===============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``get_img_corners``
 ===================

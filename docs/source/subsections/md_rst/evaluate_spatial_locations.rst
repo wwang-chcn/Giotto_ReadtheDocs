@@ -2,7 +2,7 @@
 evaluate_spatial_locations
 ==========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``evaluate_spatial_locations``
 ==============================

@@ -2,7 +2,7 @@
 reshape_to_data_point
 =====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``reshape_to_data_point``
 =========================

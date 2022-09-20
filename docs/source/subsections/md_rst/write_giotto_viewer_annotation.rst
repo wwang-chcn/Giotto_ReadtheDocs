@@ -2,7 +2,7 @@
 write_giotto_viewer_annotation
 ==============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``write_giotto_viewer_annotation``
 ==================================

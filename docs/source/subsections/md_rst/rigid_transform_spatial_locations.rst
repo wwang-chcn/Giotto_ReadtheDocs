@@ -2,7 +2,7 @@
 rigid_transform_spatial_locations
 =================================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``rigid_transform_spatial_locations``
 =====================================

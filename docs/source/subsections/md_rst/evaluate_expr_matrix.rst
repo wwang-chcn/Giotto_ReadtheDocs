@@ -2,7 +2,7 @@
 evaluate_expr_matrix
 ====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``evaluate_expr_matrix``
 ========================

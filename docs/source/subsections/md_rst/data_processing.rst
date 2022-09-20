@@ -2,7 +2,7 @@
 data_processing
 ===============
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 After creating the Giotto object, it must be prepared for downstream
 analysis. This tutorial walks through filtering, normalizing, adjusting

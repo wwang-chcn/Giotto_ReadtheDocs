@@ -2,7 +2,7 @@
 merge_spatial_locs_feat_info
 ============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``merge_spatial_locs_feat_info``
 ================================

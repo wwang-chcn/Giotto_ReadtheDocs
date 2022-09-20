@@ -2,7 +2,7 @@
 get_giottoImage_MG
 ==================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``get_giottoImage_MG``
 ======================

@@ -2,7 +2,7 @@
 create_average_DT
 =================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``create_average_DT``
 =====================

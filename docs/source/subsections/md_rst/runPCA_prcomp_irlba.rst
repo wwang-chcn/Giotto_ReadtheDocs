@@ -2,7 +2,7 @@
 runPCA_prcomp_irlba
 ===================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``runPCA_prcomp_irlba``
 =======================

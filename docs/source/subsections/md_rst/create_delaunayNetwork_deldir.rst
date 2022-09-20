@@ -2,7 +2,7 @@
 create_delaunayNetwork_deldir
 =============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``create_delaunayNetwork_deldir``
 =================================

@@ -2,7 +2,7 @@
 plot_feature_raster_density_layer
 =================================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``plot_feature_raster_density_layer``
 =====================================

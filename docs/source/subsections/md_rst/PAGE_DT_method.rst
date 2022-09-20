@@ -2,7 +2,7 @@
 PAGE_DT_method
 ==============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``PAGE_DT_method``
 ==================

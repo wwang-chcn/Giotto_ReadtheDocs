@@ -2,7 +2,7 @@
 list_spatial_info
 =================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``list_spatial_info``
 =====================

@@ -2,7 +2,7 @@
 create_giotto_polygon_object
 ============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``create_giotto_polygon_object``
 ================================

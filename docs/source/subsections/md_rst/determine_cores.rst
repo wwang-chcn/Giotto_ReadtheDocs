@@ -2,7 +2,7 @@
 determine_cores
 ===============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``determine_cores``
 ===================

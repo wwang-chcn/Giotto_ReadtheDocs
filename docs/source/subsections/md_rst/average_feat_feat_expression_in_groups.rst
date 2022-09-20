@@ -2,7 +2,7 @@
 average_feat_feat_expression_in_groups
 ======================================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``average_feat_feat_expression_in_groups``
 ==========================================

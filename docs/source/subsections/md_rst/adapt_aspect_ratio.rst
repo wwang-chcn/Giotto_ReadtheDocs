@@ -2,7 +2,7 @@
 adapt_aspect_ratio
 ==================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``adapt_aspect_ratio``
 ======================

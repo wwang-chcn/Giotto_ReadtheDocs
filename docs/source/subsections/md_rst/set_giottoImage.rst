@@ -2,7 +2,7 @@
 set_giottoImage
 ===============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``set_giottoImage``
 ===================

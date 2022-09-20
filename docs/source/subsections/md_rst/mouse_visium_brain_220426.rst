@@ -2,7 +2,7 @@
 mouse_visium_brain_220426
 =========================
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 Set up Giotto Environment
 =========================

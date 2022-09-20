@@ -2,7 +2,7 @@
 S3toS4spatNetObj
 ================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``S3toS4spatNetObj``
 ====================

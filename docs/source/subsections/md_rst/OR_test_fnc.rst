@@ -2,7 +2,7 @@
 OR_test_fnc
 ===========
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``OR_test_fnc``
 ===============

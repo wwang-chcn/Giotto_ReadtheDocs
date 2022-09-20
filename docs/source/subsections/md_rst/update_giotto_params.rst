@@ -2,7 +2,7 @@
 update_giotto_params
 ====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``update_giotto_params``
 ========================

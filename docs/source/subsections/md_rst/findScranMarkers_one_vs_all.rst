@@ -2,7 +2,7 @@
 findScranMarkers_one_vs_all
 ===========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``findScranMarkers_one_vs_all``
 ===============================

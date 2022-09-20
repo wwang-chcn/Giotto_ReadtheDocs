@@ -2,7 +2,7 @@
 subset_dimension_reduction
 ==========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``subset_dimension_reduction``
 ==============================

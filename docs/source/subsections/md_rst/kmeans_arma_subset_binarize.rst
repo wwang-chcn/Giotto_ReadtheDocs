@@ -2,7 +2,7 @@
 kmeans_arma_subset_binarize
 ===========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``kmeans_arma_subset_binarize``
 ===============================

@@ -2,7 +2,7 @@
 convert_to_full_spatial_network
 ===============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``convert_to_full_spatial_network``
 ===================================

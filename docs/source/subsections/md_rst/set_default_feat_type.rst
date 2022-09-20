@@ -2,7 +2,7 @@
 set_default_feat_type
 =====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``set_default_feat_type``
 =========================

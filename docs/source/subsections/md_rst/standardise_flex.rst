@@ -2,7 +2,7 @@
 standardise_flex
 ================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``standardise_flex``
 ====================

@@ -2,7 +2,7 @@
 package_check
 =============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``package_check``
 =================

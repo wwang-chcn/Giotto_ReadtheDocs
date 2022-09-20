@@ -2,7 +2,7 @@
 pca_giotto
 ==========
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``pca_giotto``
 ==============

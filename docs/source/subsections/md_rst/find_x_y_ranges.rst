@@ -2,7 +2,7 @@
 find_x_y_ranges
 ===============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``find_x_y_ranges``
 ===================

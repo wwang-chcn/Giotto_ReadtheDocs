@@ -2,7 +2,7 @@
 join_cell_meta
 ==============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``join_cell_meta``
 ==================

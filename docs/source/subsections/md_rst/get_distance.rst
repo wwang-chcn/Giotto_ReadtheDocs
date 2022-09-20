@@ -2,7 +2,7 @@
 get_distance
 ============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``get_distance``
 ================

@@ -2,7 +2,7 @@
 convert_mgImage_to_array_DT
 ===========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``convert_mgImage_to_array_DT``
 ===============================

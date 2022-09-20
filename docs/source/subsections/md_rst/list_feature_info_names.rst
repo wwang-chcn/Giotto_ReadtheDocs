@@ -2,7 +2,7 @@
 list_feature_info_names
 =======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``list_feature_info_names``
 ===========================

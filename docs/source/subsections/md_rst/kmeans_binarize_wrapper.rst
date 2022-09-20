@@ -2,7 +2,7 @@
 kmeans_binarize_wrapper
 =======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``kmeans_binarize_wrapper``
 ===========================

@@ -2,7 +2,7 @@
 installation_issues
 ===================
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 0. First time R package installation
 ====================================

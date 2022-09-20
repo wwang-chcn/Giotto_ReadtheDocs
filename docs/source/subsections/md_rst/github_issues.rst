@@ -2,7 +2,7 @@
 github_issues
 =============
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 Github Issues Guidelines
 ========================

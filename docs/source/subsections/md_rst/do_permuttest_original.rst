@@ -2,7 +2,7 @@
 do_permuttest_original
 ======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``do_permuttest_original``
 ==========================

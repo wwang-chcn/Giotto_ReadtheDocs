@@ -2,7 +2,7 @@
 findCellProximityFeats_per_interaction
 ======================================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``findCellProximityFeats_per_interaction``
 ==========================================

@@ -2,7 +2,7 @@
 dt_to_spatVector_polygon
 ========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``dt_to_spatVector_polygon``
 ============================

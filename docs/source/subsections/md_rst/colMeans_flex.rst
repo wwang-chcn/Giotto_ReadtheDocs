@@ -2,7 +2,7 @@
 colMeans_flex
 =============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``colMeans_flex``
 =================

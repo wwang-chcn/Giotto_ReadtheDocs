@@ -2,7 +2,7 @@
 create_spatvector_object_from_dfr
 =================================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``create_spatvector_object_from_dfr``
 =====================================

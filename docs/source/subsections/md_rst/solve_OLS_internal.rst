@@ -2,7 +2,7 @@
 solve_OLS_internal
 ==================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``solve_OLS_internal``
 ======================

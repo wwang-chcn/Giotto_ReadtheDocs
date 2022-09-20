@@ -2,7 +2,7 @@
 do_spatial_knn_smoothing
 ========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``do_spatial_knn_smoothing``
 ============================

@@ -2,7 +2,7 @@
 find_terra_writeRaster_dataType
 ===============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``find_terra_writeRaster_dataType``
 ===================================

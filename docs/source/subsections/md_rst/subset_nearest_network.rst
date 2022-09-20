@@ -2,7 +2,7 @@
 subset_nearest_network
 ======================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``subset_nearest_network``
 ==========================

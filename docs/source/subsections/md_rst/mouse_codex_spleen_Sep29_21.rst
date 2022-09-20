@@ -2,7 +2,7 @@
 mouse_codex_spleen_Sep29_21
 ===========================
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 Set up Giotto environment
 =========================

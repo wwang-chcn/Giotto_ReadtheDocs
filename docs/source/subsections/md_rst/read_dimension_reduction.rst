@@ -2,7 +2,7 @@
 read_dimension_reduction
 ========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``read_dimension_reduction``
 ============================

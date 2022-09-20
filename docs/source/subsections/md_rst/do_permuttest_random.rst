@@ -2,7 +2,7 @@
 do_permuttest_random
 ====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``do_permuttest_random``
 ========================

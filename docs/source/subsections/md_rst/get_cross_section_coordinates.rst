@@ -2,7 +2,7 @@
 get_cross_section_coordinates
 =============================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``get_cross_section_coordinates``
 =================================

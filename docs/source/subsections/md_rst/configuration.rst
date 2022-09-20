@@ -2,7 +2,7 @@
 configuration
 =============
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 Configuring the Giotto Environment
 ==================================

@@ -2,7 +2,7 @@
 readPolygonFilesVizgenHDF5
 ==========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``readPolygonFilesVizgenHDF5``
 ==============================

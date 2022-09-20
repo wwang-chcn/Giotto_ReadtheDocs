@@ -2,7 +2,7 @@
 getting_started_gobject
 =======================
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 How to create a Giotto Object
 =============================

@@ -2,7 +2,7 @@
 create_cell_type_random_cell_IDs
 ================================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``create_cell_type_random_cell_IDs``
 ====================================

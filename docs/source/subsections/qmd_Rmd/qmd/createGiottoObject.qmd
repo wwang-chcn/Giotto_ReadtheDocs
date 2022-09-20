@@ -1,6 +1,11 @@
 --- 
 title: createGiottoObject 
 format: rst 
+date: 2022-09-20 
+--- 
+--- 
+title: createGiottoObject 
+format: rst 
 date: ymd 
 --- 
 # `createGiottoObject`

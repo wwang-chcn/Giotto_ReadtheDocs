@@ -2,7 +2,7 @@
 mean_expr_det_test
 ==================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``mean_expr_det_test``
 ======================

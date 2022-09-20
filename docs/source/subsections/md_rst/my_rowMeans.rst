@@ -2,7 +2,7 @@
 my_rowMeans
 ===========
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``my_rowMeans``
 ===============

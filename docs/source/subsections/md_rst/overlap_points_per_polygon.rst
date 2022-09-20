@@ -2,7 +2,7 @@
 overlap_points_per_polygon
 ==========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``overlap_points_per_polygon``
 ==============================

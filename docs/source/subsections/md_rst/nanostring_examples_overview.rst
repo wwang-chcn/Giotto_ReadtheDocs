@@ -2,7 +2,7 @@
 nanostring_examples_overview
 ============================
 
-:Date: 2022-09-16
+:Date: 2022-09-20
 
 These examples were created from FFPE embedded Non-small-cell lung
 cancer (NSCLC) samples using the Nanostring CosMx Spatial Molecular

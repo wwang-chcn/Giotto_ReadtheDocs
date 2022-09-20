@@ -2,7 +2,7 @@
 reg_img_minmax_finder
 =====================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``reg_img_minmax_finder``
 =========================

@@ -2,7 +2,7 @@
 optimize_deconvolute_dwls
 =========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``optimize_deconvolute_dwls``
 =============================

@@ -2,7 +2,7 @@
 join_spatlocs
 =============
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``join_spatlocs``
 =================

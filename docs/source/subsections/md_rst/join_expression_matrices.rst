@@ -2,7 +2,7 @@
 join_expression_matrices
 ========================
 
-:Date: ymd
+:Date: 2022-09-20
 
 ``join_expression_matrices``
 ============================
