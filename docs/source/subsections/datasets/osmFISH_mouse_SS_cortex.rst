@@ -521,7 +521,7 @@ Part 12. cell-cell preferential proximity
    .. code:: r
 
       ## network
-      cellProximityNetwork(gobject = osm_test, CPscore = cell_proximities, remove_self_edges = T, only_show_enrichment_edges = T,
+      cellProximityNetwork(gobject = osm_test, CPscore = cell_proximities, remove_self_edges = F, only_show_enrichment_edges = T,
                            save_param = c(save_name = '12_c_network_cell_cell_enrichment'))
 
 .. image:: /images/images_pkgdown/osmFISH_mouse_SS_cortex/vignette_sep29_2021/12_c_network_cell_cell_enrichment.png

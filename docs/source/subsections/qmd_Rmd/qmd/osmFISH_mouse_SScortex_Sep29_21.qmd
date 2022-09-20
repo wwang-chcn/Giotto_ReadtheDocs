@@ -390,7 +390,7 @@ cellProximityHeatmap(gobject = osm_test, CPscore = cell_proximities, order_cell_
 
 ```{r eval = FALSE}
 ## network
-cellProximityNetwork(gobject = osm_test, CPscore = cell_proximities, remove_self_edges = T, only_show_enrichment_edges = T,
+cellProximityNetwork(gobject = osm_test, CPscore = cell_proximities, remove_self_edges = F, only_show_enrichment_edges = T,
                      save_param = c(save_name = '12_c_network_cell_cell_enrichment'))
 ```
 

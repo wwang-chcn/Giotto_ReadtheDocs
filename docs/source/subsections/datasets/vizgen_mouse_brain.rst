@@ -685,7 +685,7 @@ objects which can be previewed by directly plotting them.
       # fovs param is optional
       # polygon_feat_types determines which Vizgen polygon z slices are loaded (There are z0 - z6)
       polys = readPolygonFilesVizgenHDF5(boundaries_path = bound_path,
-                                         polygon_feat_types = c('z0','z6')
+                                         polygon_feat_types = c('z0','z6'),
                                          flip_y_axis = TRUE,
                                          fovs = subsetFOVs)
 
