@@ -1,6 +1,11 @@
+====================
+create_segm_polygons
+====================
+
+:Date: 2022-09-20
 
 ``create_segm_polygons``
-============================
+========================
 
 Create segmentation polygons
 
@@ -12,7 +17,7 @@ creates giotto polygons from segmentation mask data
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_segm_polygons(
      maskfile,

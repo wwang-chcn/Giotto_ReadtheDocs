@@ -1,6 +1,11 @@
-.. _convert_to_full_spatial_network:
+===============================
+convert_to_full_spatial_network
+===============================
+
+:Date: 2022-09-20
+
 ``convert_to_full_spatial_network``
-=======================================
+===================================
 
 convert_to_full_spatial_network
 
@@ -12,18 +17,16 @@ convert to a full spatial network
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    convert_to_full_spatial_network(reduced_spatial_network_DT)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``reduced_spatial_network_DT``
-     - reduced spatial network in data.table format
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| `                             | reduced spatial network in           |
+| `reduced_spatial_network_DT`` | data.table format                    |
++-------------------------------+--------------------------------------+

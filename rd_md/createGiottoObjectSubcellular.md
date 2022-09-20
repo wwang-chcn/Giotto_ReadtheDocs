@@ -14,8 +14,8 @@ Function to create a giotto object starting from subcellular polygon (e.g. cell)
 createGiottoObjectSubcellular(
   gpoints = NULL,
   gpolygons = NULL,
-  polygon_mask_list_params = NA,
-  polygon_dfr_list_params = NA,
+  polygon_mask_list_params = NULL,
+  polygon_dfr_list_params = NULL,
   cell_metadata = NULL,
   feat_metadata = NULL,
   spatial_network = NULL,

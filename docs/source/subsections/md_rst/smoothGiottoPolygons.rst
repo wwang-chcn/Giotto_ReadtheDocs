@@ -1,6 +1,11 @@
+====================
+smoothGiottoPolygons
+====================
+
+:Date: 2022-09-20
 
 ``smoothGiottoPolygons``
-============================
+========================
 
 smoothGiottoPolygons
 
@@ -12,7 +17,7 @@ Smooths Giotto polygon object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    smoothGiottoPolygons(
      gpolygon,
@@ -25,22 +30,21 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gpolygon``
-     - giotto polygon object
-   * - ``vertices``
-     - number of vertices
-   * - ``k``
-     - k
-   * - ``set_neg_to_zero``
-     - set negative values to zero (default: TRUE)
-   * - ``...``
-     - additional params to pass to ``spline``
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gpolygon``                  | giotto polygon object                |
++-------------------------------+--------------------------------------+
+| ``vertices``                  | number of vertices                   |
++-------------------------------+--------------------------------------+
+| ``k``                         | k                                    |
++-------------------------------+--------------------------------------+
+| ``set_neg_to_zero``           | set negative values to zero          |
+|                               | (default: TRUE)                      |
++-------------------------------+--------------------------------------+
+| ``...``                       | additional params to pass to         |
+|                               | ``spline``                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----
@@ -50,4 +54,4 @@ Smoothed Giotto polygon object with reduced vertices
 Seealso
 -------
 
-`\ ``spline`` <#spline>`_
+```spline`` <#spline>`__

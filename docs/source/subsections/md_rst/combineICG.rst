@@ -1,6 +1,11 @@
-.. _combineICG:
+==========
+combineICG
+==========
+
+:Date: 2022-09-20
+
 ``combineICG``
-==================
+==============
 
 combineICG
 
@@ -12,7 +17,7 @@ Combine ICG scores in a pairwise manner.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    combineICG(
      cpgObject,
@@ -32,36 +37,40 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``cpgObject``
-     - ICG (interaction changed gene) score object
-   * - ``selected_ints``
-     - subset of selected cell-cell interactions (optional)
-   * - ``selected_genes``
-     - subset of selected genes (optional)
-   * - ``specific_genes_1``
-     - specific geneset combo (need to position match specific_genes_2)
-   * - ``specific_genes_2``
-     - specific geneset combo (need to position match specific_genes_1)
-   * - ``min_cells``
-     - minimum number of target cell type
-   * - ``min_int_cells``
-     - minimum number of interacting cell type
-   * - ``min_fdr``
-     - minimum adjusted p-value
-   * - ``min_spat_diff``
-     - minimum absolute spatial expression difference
-   * - ``min_log2_fc``
-     - minimum absolute log2 fold-change
-   * - ``do_parallel``
-     - run calculations in parallel with mclapply
-   * - ``verbose``
-     - verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``cpgObject``                 | ICG (interaction changed gene) score |
+|                               | object                               |
++-------------------------------+--------------------------------------+
+| ``selected_ints``             | subset of selected cell-cell         |
+|                               | interactions (optional)              |
++-------------------------------+--------------------------------------+
+| ``selected_genes``            | subset of selected genes (optional)  |
++-------------------------------+--------------------------------------+
+| ``specific_genes_1``          | specific geneset combo (need to      |
+|                               | position match specific_genes_2)     |
++-------------------------------+--------------------------------------+
+| ``specific_genes_2``          | specific geneset combo (need to      |
+|                               | position match specific_genes_1)     |
++-------------------------------+--------------------------------------+
+| ``min_cells``                 | minimum number of target cell type   |
++-------------------------------+--------------------------------------+
+| ``min_int_cells``             | minimum number of interacting cell   |
+|                               | type                                 |
++-------------------------------+--------------------------------------+
+| ``min_fdr``                   | minimum adjusted p-value             |
++-------------------------------+--------------------------------------+
+| ``min_spat_diff``             | minimum absolute spatial expression  |
+|                               | difference                           |
++-------------------------------+--------------------------------------+
+| ``min_log2_fc``               | minimum absolute log2 fold-change    |
++-------------------------------+--------------------------------------+
+| ``do_parallel``               | run calculations in parallel with    |
+|                               | mclapply                             |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | verbose                              |
++-------------------------------+--------------------------------------+
 
 Value
 -----

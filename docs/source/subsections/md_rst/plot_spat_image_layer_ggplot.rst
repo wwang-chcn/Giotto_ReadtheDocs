@@ -1,6 +1,11 @@
+============================
+plot_spat_image_layer_ggplot
+============================
+
+:Date: 2022-09-20
 
 ``plot_spat_image_layer_ggplot``
-====================================
+================================
 
 plot_spat_image_layer_ggplot
 
@@ -12,7 +17,7 @@ create background image in ggplot
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plot_spat_image_layer_ggplot(
      ggplot,
@@ -28,26 +33,17 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``gimage``
-     - a giotto image or a list/vector of giotto images
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spat_loc_name``
-     - name for spatial locations
-   * - ``sdimx``
-     - x-axis dimension name (default = 'sdimx')
-   * - ``sdimy``
-     - y-axis dimension name (default = 'sdimy')
-
+================= ================================================
+Argument          Description
+================= ================================================
+``gobject``       giotto object
+``gimage``        a giotto image or a list/vector of giotto images
+``feat_type``     feature type
+``spat_unit``     spatial unit
+``spat_loc_name`` name for spatial locations
+``sdimx``         x-axis dimension name (default = ‘sdimx’)
+``sdimy``         y-axis dimension name (default = ‘sdimy’)
+================= ================================================
 
 Value
 -----

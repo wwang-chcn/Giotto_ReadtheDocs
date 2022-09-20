@@ -1,34 +1,36 @@
+=============
+node_clusters
+=============
+
+:Date: 2022-09-20
 
 ``node_clusters``
-=====================
+=================
 
 node_clusters
 
 Description
 -----------
 
-Merge selected clusters based on pairwise correlation scores and size of cluster.
+Merge selected clusters based on pairwise correlation scores and size of
+cluster.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    node_clusters(hclus_obj, verbose = TRUE)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``hclus_obj``
-     - hclus object
-   * - ``verbose``
-     - be verbose
-
+============= ============
+Argument      Description
+============= ============
+``hclus_obj`` hclus object
+``verbose``   be verbose
+============= ============
 
 Value
 -----

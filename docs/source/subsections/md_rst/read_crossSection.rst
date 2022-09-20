@@ -1,6 +1,11 @@
+=================
+read_crossSection
+=================
+
+:Date: 2022-09-20
 
 ``read_crossSection``
-=========================
+=====================
 
 read_crossSection
 
@@ -12,22 +17,17 @@ read a cross section object from a giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    read_crossSection(gobject, name = NULL, spatial_network_name = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - gobject
-   * - ``name``
-     - name
-   * - ``spatial_network_name``
-     - spatial_network_name
-
+======================== ====================
+Argument                 Description
+======================== ====================
+``gobject``              gobject
+``name``                 name
+``spatial_network_name`` spatial_network_name
+======================== ====================

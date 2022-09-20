@@ -1,6 +1,11 @@
+===================
+getCellsFromPolygon
+===================
+
+:Date: 2022-09-20
 
 ``getCellsFromPolygon``
-===========================
+=======================
 
 Get cells located within the polygons area
 
@@ -12,7 +17,7 @@ Get cells located within the polygons area
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    getCellsFromPolygon(
      gobject,
@@ -23,29 +28,28 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - A Giotto object
-   * - ``polygon_slot``
-     - Slot name where polygon coordinates are stored in Giotto object
-   * - ``cells_loc_slot``
-     - Slot name where cell coordinates are stored in Giotto object
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | A Giotto object                      |
++-------------------------------+--------------------------------------+
+| ``polygon_slot``              | Slot name where polygon coordinates  |
+|                               | are stored in Giotto object          |
++-------------------------------+--------------------------------------+
+| ``cells_loc_slot``            | Slot name where cell coordinates are |
+|                               | stored in Giotto object              |
++-------------------------------+--------------------------------------+
 
 Value
 -----
 
 A ``SpatVector`` with cell IDs, x,y coordinates, and polygon name where
- each cell is located in.
+each cell is located in.
 
 Examples
 --------
 
-.. code-block:: r
+.. code:: r
 
    ## Plot interactive polygons
    my_spatPlot <- spatPlot2D(gobject = my_giotto_object,

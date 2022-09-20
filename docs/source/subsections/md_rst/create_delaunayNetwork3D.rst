@@ -1,6 +1,11 @@
-.. _create_delaunayNetwork3D:
+========================
+create_delaunayNetwork3D
+========================
+
+:Date: 2022-09-20
+
 ``create_delaunayNetwork3D``
-================================
+============================
 
 create_delaunayNetwork3D
 
@@ -12,7 +17,7 @@ Create a spatial 3D Delaunay network.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_delaunayNetwork3D(
      gobject,

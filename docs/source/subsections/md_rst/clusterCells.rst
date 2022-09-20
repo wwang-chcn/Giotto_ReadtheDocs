@@ -1,6 +1,11 @@
-.. _clusterCells:
+============
+clusterCells
+============
+
+:Date: 2022-09-20
+
 ``clusterCells``
-====================
+================
 
 clusterCells
 
@@ -12,7 +17,7 @@ cluster cells using a variety of different methods
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    clusterCells(
      gobject,
@@ -23,8 +28,7 @@ Usage
      network_name = "sNN.pca",
      pyth_leid_resolution = 1,
      pyth_leid_weight_col = "weight",
-     pyth_leid_part_type = c("RBConfigurationVertexPartition",
-       "ModularityVertexPartition"),
+     pyth_leid_part_type = c("RBConfigurationVertexPartition", "ModularityVertexPartition"),
      pyth_leid_init_memb = NULL,
      pyth_leid_iterations = 1000,
      pyth_louv_resolution = 1,
@@ -63,90 +67,90 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``cluster_method``
-     - community cluster method to use
-   * - ``name``
-     - name for new clustering result
-   * - ``nn_network_to_use``
-     - type of NN network to use (kNN vs sNN)
-   * - ``network_name``
-     - name of NN network to use
-   * - ``pyth_leid_resolution``
-     - resolution for leiden
-   * - ``pyth_leid_weight_col``
-     - column to use for weights
-   * - ``pyth_leid_part_type``
-     - partition type to use
-   * - ``pyth_leid_init_memb``
-     - initial membership
-   * - ``pyth_leid_iterations``
-     - number of iterations
-   * - ``pyth_louv_resolution``
-     - resolution for louvain
-   * - ``pyth_louv_weight_col``
-     - python louvain param: weight column
-   * - ``python_louv_random``
-     - python louvain param: random
-   * - ``python_path``
-     - specify specific path to python if required
-   * - ``louvain_gamma``
-     - louvain param: gamma or resolution
-   * - ``louvain_omega``
-     - louvain param: omega
-   * - ``walk_steps``
-     - randomwalk: number of steps
-   * - ``walk_clusters``
-     - randomwalk: number of clusters
-   * - ``walk_weights``
-     - randomwalk: weight column
-   * - ``sNNclust_k``
-     - SNNclust: k neighbors to use
-   * - ``sNNclust_eps``
-     - SNNclust: epsilon
-   * - ``sNNclust_minPts``
-     - SNNclust: min points
-   * - ``borderPoints``
-     - SNNclust: border points
-   * - ``expression_values``
-     - expression values to use
-   * - ``genes_to_use``
-     - = NULL,
-   * - ``dim_reduction_to_use``
-     - dimension reduction to use
-   * - ``dim_reduction_name``
-     - name of reduction 'pca',
-   * - ``dimensions_to_use``
-     - dimensions to use
-   * - ``distance_method``
-     - distance method
-   * - ``km_centers``
-     - kmeans centers
-   * - ``km_iter_max``
-     - kmeans iterations
-   * - ``km_nstart``
-     - kmeans random starting points
-   * - ``km_algorithm``
-     - kmeans algorithm
-   * - ``hc_agglomeration_method``
-     - hierarchical clustering method
-   * - ``hc_k``
-     - hierachical number of clusters
-   * - ``hc_h``
-     - hierarchical tree cutoff
-   * - ``return_gobject``
-     - boolean: return giotto object (default = TRUE)
-   * - ``set_seed``
-     - set seed
-   * - ``seed_number``
-     - number for seed
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``cluster_method``            | community cluster method to use      |
++-------------------------------+--------------------------------------+
+| ``name``                      | name for new clustering result       |
++-------------------------------+--------------------------------------+
+| ``nn_network_to_use``         | type of NN network to use (kNN vs    |
+|                               | sNN)                                 |
++-------------------------------+--------------------------------------+
+| ``network_name``              | name of NN network to use            |
++-------------------------------+--------------------------------------+
+| ``pyth_leid_resolution``      | resolution for leiden                |
++-------------------------------+--------------------------------------+
+| ``pyth_leid_weight_col``      | column to use for weights            |
++-------------------------------+--------------------------------------+
+| ``pyth_leid_part_type``       | partition type to use                |
++-------------------------------+--------------------------------------+
+| ``pyth_leid_init_memb``       | initial membership                   |
++-------------------------------+--------------------------------------+
+| ``pyth_leid_iterations``      | number of iterations                 |
++-------------------------------+--------------------------------------+
+| ``pyth_louv_resolution``      | resolution for louvain               |
++-------------------------------+--------------------------------------+
+| ``pyth_louv_weight_col``      | python louvain param: weight column  |
++-------------------------------+--------------------------------------+
+| ``python_louv_random``        | python louvain param: random         |
++-------------------------------+--------------------------------------+
+| ``python_path``               | specify specific path to python if   |
+|                               | required                             |
++-------------------------------+--------------------------------------+
+| ``louvain_gamma``             | louvain param: gamma or resolution   |
++-------------------------------+--------------------------------------+
+| ``louvain_omega``             | louvain param: omega                 |
++-------------------------------+--------------------------------------+
+| ``walk_steps``                | randomwalk: number of steps          |
++-------------------------------+--------------------------------------+
+| ``walk_clusters``             | randomwalk: number of clusters       |
++-------------------------------+--------------------------------------+
+| ``walk_weights``              | randomwalk: weight column            |
++-------------------------------+--------------------------------------+
+| ``sNNclust_k``                | SNNclust: k neighbors to use         |
++-------------------------------+--------------------------------------+
+| ``sNNclust_eps``              | SNNclust: epsilon                    |
++-------------------------------+--------------------------------------+
+| ``sNNclust_minPts``           | SNNclust: min points                 |
++-------------------------------+--------------------------------------+
+| ``borderPoints``              | SNNclust: border points              |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``genes_to_use``              | = NULL,                              |
++-------------------------------+--------------------------------------+
+| ``dim_reduction_to_use``      | dimension reduction to use           |
++-------------------------------+--------------------------------------+
+| ``dim_reduction_name``        | name of reduction ‘pca’,             |
++-------------------------------+--------------------------------------+
+| ``dimensions_to_use``         | dimensions to use                    |
++-------------------------------+--------------------------------------+
+| ``distance_method``           | distance method                      |
++-------------------------------+--------------------------------------+
+| ``km_centers``                | kmeans centers                       |
++-------------------------------+--------------------------------------+
+| ``km_iter_max``               | kmeans iterations                    |
++-------------------------------+--------------------------------------+
+| ``km_nstart``                 | kmeans random starting points        |
++-------------------------------+--------------------------------------+
+| ``km_algorithm``              | kmeans algorithm                     |
++-------------------------------+--------------------------------------+
+| ``hc_agglomeration_method``   | hierarchical clustering method       |
++-------------------------------+--------------------------------------+
+| ``hc_k``                      | hierachical number of clusters       |
++-------------------------------+--------------------------------------+
+| ``hc_h``                      | hierarchical tree cutoff             |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | boolean: return giotto object        |
+|                               | (default = TRUE)                     |
++-------------------------------+--------------------------------------+
+| ``set_seed``                  | set seed                             |
++-------------------------------+--------------------------------------+
+| ``seed_number``               | number for seed                      |
++-------------------------------+--------------------------------------+
 
 Details
 -------
@@ -161,6 +165,10 @@ giotto object with new clusters appended to cell metadata
 Seealso
 -------
 
-`\ ``doLeidenCluster`` <#doleidencluster>`_ , `\ ``doLouvainCluster_community`` <#dolouvainclustercommunity>`_ , `\ ``doLouvainCluster_multinet`` <#dolouvainclustermultinet>`_ ,
- `\ ``doLouvainCluster`` <#dolouvaincluster>`_ , `\ ``doRandomWalkCluster`` <#dorandomwalkcluster>`_ , `\ ``doSNNCluster`` <#dosnncluster>`_ ,
- `\ ``doKmeans`` <#dokmeans>`_ , `\ ``doHclust`` <#dohclust>`_
+```doLeidenCluster`` <#doleidencluster>`__ ,
+```doLouvainCluster_community`` <#dolouvainclustercommunity>`__ ,
+```doLouvainCluster_multinet`` <#dolouvainclustermultinet>`__ ,
+```doLouvainCluster`` <#dolouvaincluster>`__ ,
+```doRandomWalkCluster`` <#dorandomwalkcluster>`__ ,
+```doSNNCluster`` <#dosnncluster>`__ , ```doKmeans`` <#dokmeans>`__ ,
+```doHclust`` <#dohclust>`__

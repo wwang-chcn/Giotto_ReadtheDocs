@@ -1,6 +1,11 @@
+==================
+showGiottoFeatInfo
+==================
+
+:Date: 2022-09-20
 
 ``showGiottoFeatInfo``
-==========================
+======================
 
 showGiottoFeatInfo
 
@@ -12,31 +17,29 @@ show the available giotto spatial feature information
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    showGiottoFeatInfo(gobject)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-
+=========== =============
+Argument    Description
+=========== =============
+``gobject`` giotto object
+=========== =============
 
 Seealso
 -------
 
 Other functions to show data in giotto object:
- `\ ``showGiottoDimRed`` <#showgiottodimred>`_ ,
- `\ ``showGiottoExpression`` <#showgiottoexpression>`_ ,
- `\ ``showGiottoImageNames`` <#showgiottoimagenames>`_ ,
- `\ ``showGiottoSpatEnrichments`` <#showgiottospatenrichments>`_ ,
- `\ ``showGiottoSpatGrids`` <#showgiottospatgrids>`_ ,
- `\ ``showGiottoSpatLocs`` <#showgiottospatlocs>`_ ,
- `\ ``showGiottoSpatNetworks`` <#showgiottospatnetworks>`_ ,
- `\ ``showGiottoSpatialInfo`` <#showgiottospatialinfo>`_
+```showGiottoDimRed`` <#showgiottodimred>`__ ,
+```showGiottoExpression`` <#showgiottoexpression>`__ ,
+```showGiottoImageNames`` <#showgiottoimagenames>`__ ,
+```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
+```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,
+```showGiottoSpatGrids`` <#showgiottospatgrids>`__ ,
+```showGiottoSpatLocs`` <#showgiottospatlocs>`__ ,
+```showGiottoSpatNetworks`` <#showgiottospatnetworks>`__ ,
+```showGiottoSpatialInfo`` <#showgiottospatialinfo>`__

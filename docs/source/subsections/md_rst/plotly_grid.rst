@@ -1,6 +1,11 @@
+===========
+plotly_grid
+===========
+
+:Date: 2022-09-20
 
 ``plotly_grid``
-===================
+===============
 
 plotly_grid
 
@@ -12,7 +17,7 @@ provide grid segment to draw in plot_ly()
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotly_grid(
      spatial_grid,
@@ -25,14 +30,15 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``spatial_grid``
-     - spatial_grid in giotto object
-
+================ =============================
+Argument         Description
+================ =============================
+``spatial_grid`` spatial_grid in giotto object
+``x_start``      default to “x_start”
+``y_start``      default to “y_start”
+``x_end``        default to “x_end”
+``y_end``        default to “y_end”
+================ =============================
 
 Value
 -----

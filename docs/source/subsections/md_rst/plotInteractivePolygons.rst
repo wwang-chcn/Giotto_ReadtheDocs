@@ -1,36 +1,42 @@
+=======================
+plotInteractivePolygons
+=======================
+
+:Date: 2022-09-20
 
 ``plotInteractivePolygons``
-===============================
+===========================
 
 Select image regions by plotting interactive polygons
 
 Description
 -----------
 
-Plot interactive polygons on an image and retrieve the polygons coordinates.
+Plot interactive polygons on an image and retrieve the polygons
+coordinates.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotInteractivePolygons(x, width = "auto", height = "auto", ...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``x``
-     - A ``ggplot`` or ``rast`` plot object to draw polygons on
-   * - ``width, height``
-     - An integer, defining the width/height in pixels.
-   * - ``...``
-     - Graphical parameters passed on to ``polygon`` or ``geom_point``.
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``x``                         | A ``ggplot`` or ``rast`` plot object |
+|                               | to draw polygons on                  |
++-------------------------------+--------------------------------------+
+| ``width, height``             | An integer, defining the             |
+|                               | width/height in pixels.              |
++-------------------------------+--------------------------------------+
+| ``...``                       | Graphical parameters passed on to    |
+|                               | ``polygon`` or ``geom_point``.       |
++-------------------------------+--------------------------------------+
 
 Value
 -----
@@ -40,7 +46,7 @@ A ``data.table`` containing x,y coordinates from the plotted polygons.
 Examples
 --------
 
-.. code-block:: r
+.. code:: r
 
    # Using a ggplot2 plot
    library(ggplot2)

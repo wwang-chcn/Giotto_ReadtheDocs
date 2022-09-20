@@ -1,18 +1,24 @@
-.. _createGiottoLargeImageList:
+==========================
+createGiottoLargeImageList
+==========================
+
+:Date: 2022-09-20
+
 ``createGiottoLargeImageList``
-==================================
+==============================
 
 createGiottoLargeImageList
 
 Description
 -----------
 
-Creates a list of large giotto images that can be added to a Giotto object. Generates deep copy of SpatRaster
+Creates a list of large giotto images that can be added to a Giotto
+object. Generates deep copy of SpatRaster
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    createGiottoLargeImageList(
      raster_objects,
@@ -32,35 +38,41 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``raster_objects``
-     - vector of image paths or terra SpatRaster image objects
-   * - ``names``
-     - vector of names for the images
-   * - ``negative_y``
-     - Map image to negative y spatial values if TRUE. Meaning that origin is in upper left instead of lower left.
-   * - ``extent``
-     - SpatExtent object to assign spatial extent. Takes priority unless use_rast_ext is TRUE.
-   * - ``use_rast_ext``
-     - Use extent from input raster object
-   * - ``image_transformations``
-     - vector of sequential image transformations - under construction
-   * - ``xmax_bound, xmin_bound, ymax_bound, ymin_bound``
-     - assign min and max x and y values for image spatial placement
-   * - ``scale_factor``
-     - scaling of image dimensions relative to spatial coordinates
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``raster_objects``            | vector of image paths or terra       |
+|                               | SpatRaster image objects             |
++-------------------------------+--------------------------------------+
+| ``names``                     | vector of names for the images       |
++-------------------------------+--------------------------------------+
+| ``negative_y``                | Map image to negative y spatial      |
+|                               | values if TRUE. Meaning that origin  |
+|                               | is in upper left instead of lower    |
+|                               | left.                                |
++-------------------------------+--------------------------------------+
+| ``extent``                    | SpatExtent object to assign spatial  |
+|                               | extent. Takes priority unless        |
+|                               | use_rast_ext is TRUE.                |
++-------------------------------+--------------------------------------+
+| ``use_rast_ext``              | Use extent from input raster object  |
++-------------------------------+--------------------------------------+
+| ``image_transformations``     | vector of sequential image           |
+|                               | transformations - under construction |
++-------------------------------+--------------------------------------+
+| ``xmax_bound, xmin_bo         | assign min and max x and y values    |
+| und, ymax_bound, ymin_bound`` | for image spatial placement          |
++-------------------------------+--------------------------------------+
+| ``scale_factor``              | scaling of image dimensions relative |
+|                               | to spatial coordinates               |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-See `\ ``createGiottoLargeImage`` <#creategiottolargeimage>`_
+See ```createGiottoLargeImage`` <#creategiottolargeimage>`__
 
 Value
 -----

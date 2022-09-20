@@ -1,6 +1,11 @@
+==================
+get_spatialNetwork
+==================
+
+:Date: 2022-09-20
 
 ``get_spatialNetwork``
-==========================
+======================
 
 Get spatial network
 
@@ -12,12 +17,11 @@ Function to get a spatial network
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_spatialNetwork(
      gobject,
      spat_unit = NULL,
-     feat_type = NULL,
      name = NULL,
      return_network_Obj = FALSE
    )
@@ -25,36 +29,28 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``name``
-     - name of spatial network
-   * - ``return_network_Obj``
-     - return network object (default = FALSE)
-
+====================== =======================================
+Argument               Description
+====================== =======================================
+``gobject``            giotto object
+``spat_unit``          spatial unit (e.g. “cell”)
+``name``               name of spatial network
+``return_network_Obj`` return network object (default = FALSE)
+====================== =======================================
 
 Seealso
 -------
 
 Other spatial network data accessor functions:
- `\ ``set_spatialNetwork`` <#setspatialnetwork>`_ 
+```set_spatialNetwork`` <#setspatialnetwork>`__
 
- Other functions to get data from giotto object:
- `\ ``get_NearestNetwork`` <#getnearestnetwork>`_ ,
- `\ ``get_dimReduction`` <#getdimreduction>`_ ,
- `\ ``get_expression_values`` <#getexpressionvalues>`_ ,
- `\ ``get_feature_info`` <#getfeatureinfo>`_ ,
- `\ ``get_giottoImage`` <#getgiottoimage>`_ ,
- `\ ``get_polygon_info`` <#getpolygoninfo>`_ ,
- `\ ``get_spatialGrid`` <#getspatialgrid>`_ ,
- `\ ``get_spatial_enrichment`` <#getspatialenrichment>`_ ,
- `\ ``get_spatial_locations`` <#getspatiallocations>`_
+Other functions to get data from giotto object:
+```get_NearestNetwork`` <#getnearestnetwork>`__ ,
+```get_dimReduction`` <#getdimreduction>`__ ,
+```get_expression_values`` <#getexpressionvalues>`__ ,
+```get_feature_info`` <#getfeatureinfo>`__ ,
+```get_giottoImage`` <#getgiottoimage>`__ ,
+```get_polygon_info`` <#getpolygoninfo>`__ ,
+```get_spatialGrid`` <#getspatialgrid>`__ ,
+```get_spatial_enrichment`` <#getspatialenrichment>`__ ,
+```get_spatial_locations`` <#getspatiallocations>`__

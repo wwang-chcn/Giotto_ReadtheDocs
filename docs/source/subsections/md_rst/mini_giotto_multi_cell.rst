@@ -2,6 +2,7 @@
 ``mini_giotto_multi_cell``
 ==============================
 
+:Date: 2022-09-20
 mini Giotto object for spatial multi-cell resolution data
 
 Description

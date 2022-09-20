@@ -1,19 +1,24 @@
-.. _calculateMetaTable:
+==================
+calculateMetaTable
+==================
+
+:Date: 2022-09-20
 
 ``calculateMetaTable``
-==========================
+======================
 
 calculateMetaTable
 
 Description
 -----------
 
-calculates the average gene expression for one or more (combined) annotation columns.
+calculates the average gene expression for one or more (combined)
+annotation columns.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calculateMetaTable(
      gobject,
@@ -28,28 +33,27 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``metadata_cols``
-     - annotation columns found in ``pDataDT(gobject)``
-   * - ``selected_feats``
-     - subset of features to use
-   * - ``selected_genes``
-     - subset of genes to use (deprecated)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``metadata_cols``             | annotation columns found in          |
+|                               | ``pDataDT(gobject)``                 |
++-------------------------------+--------------------------------------+
+| ``selected_feats``            | subset of features to use            |
++-------------------------------+--------------------------------------+
+| ``selected_genes``            | subset of genes to use (deprecated)  |
++-------------------------------+--------------------------------------+
 
 Value
 -----
 
-data.table with average expression values for each gene per (combined) annotation
+data.table with average expression values for each gene per (combined)
+annotation

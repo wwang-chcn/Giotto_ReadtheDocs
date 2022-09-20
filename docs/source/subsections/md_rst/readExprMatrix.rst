@@ -1,6 +1,11 @@
+==============
+readExprMatrix
+==============
+
+:Date: 2022-09-20
 
 ``readExprMatrix``
-======================
+==================
 
 Read expression matrix
 
@@ -12,30 +17,26 @@ Function to read an expression matrix into a sparse matrix.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    readExprMatrix(path, cores = NA, transpose = FALSE)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``path``
-     - path to the expression matrix
-   * - ``cores``
-     - number of cores to use
-   * - ``transpose``
-     - transpose matrix
-
+============= =============================
+Argument      Description
+============= =============================
+``path``      path to the expression matrix
+``cores``     number of cores to use
+``transpose`` transpose matrix
+============= =============================
 
 Details
 -------
 
-The expression matrix needs to have both unique column names and row names
+The expression matrix needs to have both unique column names and row
+names
 
 Value
 -----

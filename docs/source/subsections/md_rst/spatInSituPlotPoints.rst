@@ -1,18 +1,24 @@
+====================
+spatInSituPlotPoints
+====================
+
+:Date: 2022-09-20
 
 ``spatInSituPlotPoints``
-============================
+========================
 
 spatInSituPlotPoints
 
 Description
 -----------
 
-Function to plot multiple features for multiple modalities at the spatial in situ level
+Function to plot multiple features for multiple modalities at the
+spatial in situ level
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatInSituPlotPoints(
      gobject,
@@ -58,88 +64,98 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``show_image``
-     - show a tissue background image
-   * - ``gimage``
-     - a giotto image
-   * - ``image_name``
-     - name of a giotto image
-   * - ``largeImage_name``
-     - name of a giottoLargeImage
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spat_loc_name``
-     - name of spatial locations
-   * - ``feats``
-     - features to plot
-   * - ``feat_type``
-     - feature types of the feats
-   * - ``feats_color_code``
-     - code to color the provided features
-   * - ``feat_shape_code``
-     - code to shape the provided feature types
-   * - ``sdimx``
-     - spatial dimension x
-   * - ``sdimy``
-     - spatial dimension y
-   * - ``point_size``
-     - size of the points
-   * - ``show_polygon``
-     - overlay polygon information (e.g. cell shape)
-   * - ``use_overlap``
-     - use polygon and feature coordinates overlap results
-   * - ``polygon_feat_type``
-     - feature type associated with polygon information
-   * - ``polygon_color``
-     - color for polygon border
-   * - ``polygon_bg_color``
-     - color for polygon background (overruled by polygon_fill)
-   * - ``polygon_fill``
-     - fill color or column for polygon
-   * - ``polygon_fill_gradient``
-     - polygon fill gradient colors given in order from low to high
-   * - ``polygon_fill_gradient_midpoint``
-     - value to set as gradient midpoint (optional). If left as ``NULL`` , the median value detected will be chosen
-   * - ``polygon_fill_as_factor``
-     - is fill color a factor
-   * - ``polygon_fill_code``
-     - code to color the fill column
-   * - ``polygon_alpha``
-     - alpha of polygon
-   * - ``polygon_line_size``
-     - line width of the polygon's outline
-   * - ``axis_text``
-     - axis text size
-   * - ``axis_title``
-     - title text size
-   * - ``legend_text``
-     - legend text size
-   * - ``coord_fix_ratio``
-     - fix ratio of coordinates
-   * - ``background_color``
-     - background color
-   * - ``show_legend``
-     - show legend
-   * - ``plot_method``
-     - method to plot points
-   * - ``show_plot``
-     - show plots
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters, see `\ ``showSaveParameters`` <#showsaveparameters>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``show_image``                | show a tissue background image       |
++-------------------------------+--------------------------------------+
+| ``gimage``                    | a giotto image                       |
++-------------------------------+--------------------------------------+
+| ``image_name``                | name of a giotto image               |
++-------------------------------+--------------------------------------+
+| ``largeImage_name``           | name of a giottoLargeImage           |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name of spatial locations            |
++-------------------------------+--------------------------------------+
+| ``feats``                     | features to plot                     |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature types of the feats           |
++-------------------------------+--------------------------------------+
+| ``feats_color_code``          | code to color the provided features  |
++-------------------------------+--------------------------------------+
+| ``feat_shape_code``           | code to shape the provided feature   |
+|                               | types                                |
++-------------------------------+--------------------------------------+
+| ``sdimx``                     | spatial dimension x                  |
++-------------------------------+--------------------------------------+
+| ``sdimy``                     | spatial dimension y                  |
++-------------------------------+--------------------------------------+
+| ``point_size``                | size of the points                   |
++-------------------------------+--------------------------------------+
+| ``show_polygon``              | overlay polygon information          |
+|                               | (e.g. cell shape)                    |
++-------------------------------+--------------------------------------+
+| ``use_overlap``               | use polygon and feature coordinates  |
+|                               | overlap results                      |
++-------------------------------+--------------------------------------+
+| ``polygon_feat_type``         | feature type associated with polygon |
+|                               | information                          |
++-------------------------------+--------------------------------------+
+| ``polygon_color``             | color for polygon border             |
++-------------------------------+--------------------------------------+
+| ``polygon_bg_color``          | color for polygon background         |
+|                               | (overruled by polygon_fill)          |
++-------------------------------+--------------------------------------+
+| ``polygon_fill``              | fill color or column for polygon     |
++-------------------------------+--------------------------------------+
+| ``polygon_fill_gradient``     | polygon fill gradient colors given   |
+|                               | in order from low to high            |
++-------------------------------+--------------------------------------+
+| ``pol                         | value to set as gradient midpoint    |
+| ygon_fill_gradient_midpoint`` | (optional). If left as ``NULL`` ,    |
+|                               | the median value detected will be    |
+|                               | chosen                               |
++-------------------------------+--------------------------------------+
+| ``polygon_fill_as_factor``    | is fill color a factor               |
++-------------------------------+--------------------------------------+
+| ``polygon_fill_code``         | code to color the fill column        |
++-------------------------------+--------------------------------------+
+| ``polygon_alpha``             | alpha of polygon                     |
++-------------------------------+--------------------------------------+
+| ``polygon_line_size``         | line width of the polygon’s outline  |
++-------------------------------+--------------------------------------+
+| ``axis_text``                 | axis text size                       |
++-------------------------------+--------------------------------------+
+| ``axis_title``                | title text size                      |
++-------------------------------+--------------------------------------+
+| ``legend_text``               | legend text size                     |
++-------------------------------+--------------------------------------+
+| ``coord_fix_ratio``           | fix ratio of coordinates             |
++-------------------------------+--------------------------------------+
+| ``background_color``          | background color                     |
++-------------------------------+--------------------------------------+
+| ``show_legend``               | show legend                          |
++-------------------------------+--------------------------------------+
+| ``plot_method``               | method to plot points                |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plots                           |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters, see       |
+|                               | ```showSaveP                         |
+|                               | arameters`` <#showsaveparameters>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
@@ -155,5 +171,5 @@ Seealso
 -------
 
 Other In Situ visualizations:
- `\ ``spatInSituPlotDensity`` <#spatinsituplotdensity>`_ ,
- `\ ``spatInSituPlotHex`` <#spatinsituplothex>`_
+```spatInSituPlotDensity`` <#spatinsituplotdensity>`__ ,
+```spatInSituPlotHex`` <#spatinsituplothex>`__

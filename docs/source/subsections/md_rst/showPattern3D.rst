@@ -1,6 +1,11 @@
+=============
+showPattern3D
+=============
+
+:Date: 2022-09-20
 
 ``showPattern3D``
-=====================
+=================
 
 showPattern3D
 
@@ -12,7 +17,7 @@ show patterns for 3D spatial data
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    showPattern3D(
      gobject,
@@ -38,48 +43,49 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spatPatObj``
-     - Output from detectSpatialPatterns
-   * - ``dimension``
-     - dimension to plot
-   * - ``trim``
-     - Trim ends of the PC values.
-   * - ``background_color``
-     - background color for plot
-   * - ``grid_border_color``
-     - color for grid
-   * - ``show_legend``
-     - show legend of plot
-   * - ``point_size``
-     - adjust the point size
-   * - ``axis_scale``
-     - scale the axis
-   * - ``custom_ratio``
-     - cutomize the scale of the axis
-   * - ``x_ticks``
-     - the tick number of x_axis
-   * - ``y_ticks``
-     - the tick number of y_axis
-   * - ``z_ticks``
-     - the tick number of z_axis
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return plot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters, see `\ ``showSaveParameters`` <#showsaveparameters>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spatPatObj``                | Output from detectSpatialPatterns    |
++-------------------------------+--------------------------------------+
+| ``dimension``                 | dimension to plot                    |
++-------------------------------+--------------------------------------+
+| ``trim``                      | Trim ends of the PC values.          |
++-------------------------------+--------------------------------------+
+| ``background_color``          | background color for plot            |
++-------------------------------+--------------------------------------+
+| ``grid_border_color``         | color for grid                       |
++-------------------------------+--------------------------------------+
+| ``show_legend``               | show legend of plot                  |
++-------------------------------+--------------------------------------+
+| ``point_size``                | adjust the point size                |
++-------------------------------+--------------------------------------+
+| ``axis_scale``                | scale the axis                       |
++-------------------------------+--------------------------------------+
+| ``custom_ratio``              | cutomize the scale of the axis       |
++-------------------------------+--------------------------------------+
+| ``x_ticks``                   | the tick number of x_axis            |
++-------------------------------+--------------------------------------+
+| ``y_ticks``                   | the tick number of y_axis            |
++-------------------------------+--------------------------------------+
+| ``z_ticks``                   | the tick number of z_axis            |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot                            |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return plot object                   |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters, see       |
+|                               | ```showSaveP                         |
+|                               | arameters`` <#showsaveparameters>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

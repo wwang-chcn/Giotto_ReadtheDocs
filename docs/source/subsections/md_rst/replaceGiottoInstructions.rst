@@ -1,6 +1,11 @@
+=========================
+replaceGiottoInstructions
+=========================
+
+:Date: 2022-09-20
 
 ``replaceGiottoInstructions``
-=================================
+=============================
 
 Replace all giotto instructions in giotto object
 
@@ -12,23 +17,21 @@ Function to replace all instructions from giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    replaceGiottoInstructions(gobject, instructions = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``instructions``
-     - new instructions (e.g. result from createGiottoInstructions)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``instructions``              | new instructions (e.g. result from   |
+|                               | createGiottoInstructions)            |
++-------------------------------+--------------------------------------+
 
 Value
 -----

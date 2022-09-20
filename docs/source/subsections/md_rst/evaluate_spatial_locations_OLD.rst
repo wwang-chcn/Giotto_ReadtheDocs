@@ -1,6 +1,11 @@
-.. _evaluate_spatial_locations_OLD:
+==============================
+evaluate_spatial_locations_OLD
+==============================
+
+:Date: 2022-09-20
+
 ``evaluate_spatial_locations_OLD``
-======================================
+==================================
 
 evaluate_spatial_locations_OLD
 
@@ -12,7 +17,7 @@ Evaluate spatial location input
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    evaluate_spatial_locations_OLD(
      spatial_locs,
@@ -24,20 +29,14 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``spatial_locs``
-     - spatial locations to evaluate
-   * - ``cores``
-     - how many cores to use
-   * - ``dummy_n``
-     - number of rows to create dummy spaial locations
-   * - ``expr_matrix``
-     - expression matrix to compare the cell IDs with
-
+================ ===============================================
+Argument         Description
+================ ===============================================
+``spatial_locs`` spatial locations to evaluate
+``cores``        how many cores to use
+``dummy_n``      number of rows to create dummy spaial locations
+``expr_matrix``  expression matrix to compare the cell IDs with
+================ ===============================================
 
 Value
 -----

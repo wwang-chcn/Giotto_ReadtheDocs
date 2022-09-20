@@ -1,6 +1,11 @@
+==================
+showGiottoSpatLocs
+==================
+
+:Date: 2022-09-20
 
 ``showGiottoSpatLocs``
-==========================
+======================
 
 showGiottoSpatLocs
 
@@ -12,23 +17,21 @@ shows the available spatial locations
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    showGiottoSpatLocs(gobject, nrows = 4)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``nrows``
-     - number of rows to print for each spatial location data.table
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``nrows``                     | number of rows to print for each     |
+|                               | spatial location data.table          |
++-------------------------------+--------------------------------------+
 
 Value
 -----
@@ -39,11 +42,12 @@ Seealso
 -------
 
 Other functions to show data in giotto object:
- `\ ``showGiottoDimRed`` <#showgiottodimred>`_ ,
- `\ ``showGiottoExpression`` <#showgiottoexpression>`_ ,
- `\ ``showGiottoFeatInfo`` <#showgiottofeatinfo>`_ ,
- `\ ``showGiottoImageNames`` <#showgiottoimagenames>`_ ,
- `\ ``showGiottoSpatEnrichments`` <#showgiottospatenrichments>`_ ,
- `\ ``showGiottoSpatGrids`` <#showgiottospatgrids>`_ ,
- `\ ``showGiottoSpatNetworks`` <#showgiottospatnetworks>`_ ,
- `\ ``showGiottoSpatialInfo`` <#showgiottospatialinfo>`_
+```showGiottoDimRed`` <#showgiottodimred>`__ ,
+```showGiottoExpression`` <#showgiottoexpression>`__ ,
+```showGiottoFeatInfo`` <#showgiottofeatinfo>`__ ,
+```showGiottoImageNames`` <#showgiottoimagenames>`__ ,
+```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
+```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,
+```showGiottoSpatGrids`` <#showgiottospatgrids>`__ ,
+```showGiottoSpatNetworks`` <#showgiottospatnetworks>`__ ,
+```showGiottoSpatialInfo`` <#showgiottospatialinfo>`__

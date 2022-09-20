@@ -1,6 +1,11 @@
-.. _featureNetwork-class:
+====================
+featureNetwork-class
+====================
+
+:Date: 2022-09-20
+
 ``featureNetwork-class``
-============================
+========================
 
 S4 giotto feature network Class
 

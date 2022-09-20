@@ -1,7 +1,11 @@
-.. _addCellStatistics:
+=================
+addCellStatistics
+=================
+
+:Date: 2022-09-20
 
 ``addCellStatistics``
-=========================
+=====================
 
 addCellStatistics
 
@@ -13,7 +17,7 @@ adds cells statistics to the giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    addCellStatistics(
      gobject,
@@ -27,39 +31,34 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``expression_values``
-     - expression values to use
-   * - ``detection_threshold``
-     - detection threshold to consider a gene detected
-   * - ``return_gobject``
-     - boolean: return giotto object (default = TRUE)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``detection_threshold``       | detection threshold to consider a    |
+|                               | gene detected                        |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | boolean: return giotto object        |
+|                               | (default = TRUE)                     |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
 This function will add the following statistics to cell metadata:
 
+-  nr_feats: Denotes in how many features are detected per cell
 
-* 
-  nr_feats:  Denotes in how many features are detected per cell   
+-  perc_feats: Denotes what percentage of features is detected per cell
 
-* 
-  perc_feats:  Denotes what percentage of features is detected per cell   
-
-* 
-  total_expr:  Shows the total sum of feature expression per cell
+-  total_expr: Shows the total sum of feature expression per cell
 
 Value
 -----

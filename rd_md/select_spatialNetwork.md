@@ -19,7 +19,7 @@ select_spatialNetwork(...)
 
 Argument      |Description
 ------------- |----------------
-`...`     |      Arguments passed on to [`get_spatialNetwork`](#getspatialnetwork)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit")), "\n", "    ", list(list(list("feat_type")), list("feature type")), "\n", "    ", list(list(list("name")), list("name of spatial network")), "\n", "    ", list(list(list("return_network_Obj")), list("return network object (default = FALSE)")), "\n", "  ")
+`...`     |      Arguments passed on to [`get_spatialNetwork`](#getspatialnetwork)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit (e.g. \"cell\")")), "\n", "    ", list(list(list("name")), list("name of spatial network")), "\n", "    ", list(list(list("return_network_Obj")), list("return network object (default = FALSE)")), "\n", "  ")
 
 
 ## Seealso

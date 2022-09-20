@@ -1,6 +1,11 @@
-.. _calc_spatial_enrichment_matrix:
+==============================
+calc_spatial_enrichment_matrix
+==============================
+
+:Date: 2022-09-20
+
 ``calc_spatial_enrichment_matrix``
-======================================
+==================================
 
 calc_spatial_enrichment_matrix
 
@@ -12,7 +17,7 @@ calculate spatial enrichment using a matrix approach
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calc_spatial_enrichment_matrix(
      spatial_network,

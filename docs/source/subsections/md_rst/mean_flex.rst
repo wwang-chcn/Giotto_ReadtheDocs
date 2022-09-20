@@ -1,6 +1,11 @@
+=========
+mean_flex
+=========
+
+:Date: 2022-09-20
 
 ``mean_flex``
-=================
+=============
 
 mean_flex
 
@@ -12,20 +17,16 @@ mean_flex
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    mean_flex(x, ...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``x``
-     - data to use
-   * - ``...``
-     - other arguments to pass
-
+======== =======================
+Argument Description
+======== =======================
+``x``    data to use
+``...``  other arguments to pass
+======== =======================

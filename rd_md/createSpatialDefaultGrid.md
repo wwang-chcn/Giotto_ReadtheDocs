@@ -14,6 +14,7 @@ Create a spatial grid using the default method
 createSpatialDefaultGrid(
   gobject,
   spat_unit = NULL,
+  feat_type = NULL,
   spat_loc_name = "raw",
   sdimx_stepsize = NULL,
   sdimy_stepsize = NULL,
@@ -31,6 +32,7 @@ Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
 `spat_unit`     |     spatial unit
+`feat_type`     |     feature type
 `spat_loc_name`     |     spatial location name
 `sdimx_stepsize`     |     stepsize along the x-axis
 `sdimy_stepsize`     |     stepsize along the y-axis

@@ -1,7 +1,11 @@
-.. _addCellMetadata: 
+===================
+addCellsFromPolygon
+===================
+
+:Date: 2022-09-20
 
 ``addCellsFromPolygon``
-===========================
+=======================
 
 Add corresponding polygon IDs to cell metadata
 
@@ -13,37 +17,36 @@ Add corresponding polygon IDs to cell metadata
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    addCellsFromPolygon(gobject, cellsFromPolygon, feat_type = "rna")
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - A Giotto object
-   * - ``cellsFromPolygon``
-     - A ``SpatVector`` with cell IDs located inside each polygon
-   * - ``feat_type``
-     - feature name where metadata will be added
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | A Giotto object                      |
++-------------------------------+--------------------------------------+
+| ``cellsFromPolygon``          | A ``SpatVector`` with cell IDs       |
+|                               | located inside each polygon          |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature name where metadata will be  |
+|                               | added                                |
++-------------------------------+--------------------------------------+
 
 Value
 -----
 
 A Giotto object with a modified cell_metadata slot that includes the
- polygon name where each cell is located or NA if the cell is not located
- within a polygon area
+polygon name where each cell is located or NA if the cell is not located
+within a polygon area
 
 Examples
 --------
 
-.. code-block:: r
+.. code:: r
 
    ## Plot interactive polygons
    my_polygon_coords <- plotInteractivePolygons(my_spatPlot)

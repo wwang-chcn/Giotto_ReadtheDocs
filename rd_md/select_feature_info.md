@@ -19,7 +19,7 @@ select_feature_info(...)
 
 Argument      |Description
 ------------- |----------------
-`...`     |      Arguments passed on to [`get_feature_info`](#getfeatureinfo)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("feat_type")), list("name of feature")), "\n", "  ")
+`...`     |      Arguments passed on to [`get_feature_info`](#getfeatureinfo)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("feat_type")), list("name of feature (e.g. \"rna\", \"dna\", \"protein\")")), "\n", "  ")
 
 
 ## Seealso

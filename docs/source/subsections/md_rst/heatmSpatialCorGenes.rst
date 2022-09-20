@@ -1,6 +1,15 @@
+====================
+heatmSpatialCorGenes
+====================
+
+:Date: 2022-09-20
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 ``heatmSpatialCorGenes``
-============================
+========================
 
 heatmSpatialCorGenes
 
@@ -12,30 +21,46 @@ Create heatmap of spatially correlated genes
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    heatmSpatialCorGenes(...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``...``                       | Arguments passed on to               |
+|                               | ```heatmSpatialC                     |
+|                               | orFeats`` <#heatmspatialcorfeats>`__ |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”gobject”)),          |
+|                               | list(“giotto object”)),              |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”spatCorObject”)),    |
+|                               | list(“spatial correlation object”)), |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”use_clus_name”)),    |
+|                               | list(“name of clusters to visualize  |
+|                               | (from clusterSpatialCorFeats())”)),  |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | li                                   |
+|                               | st(list(list(”show_cluster_annot”)), |
+|                               | list(“show cluster annotation on top |
+|                               | of heatmap”)), “:raw-latex:`\n`”, ”  |
+|                               | “, list(list(list(”show_row_dend”)), |
+|                               | list(“show row dendrogram”)),        |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”show_column_dend”)), |
++-------------------------------+--------------------------------------+
 
-   * - Argument
-     - Description
-   * - ``...``
-     - Arguments passed on to `\ ``heatmSpatialCorFeats`` <#heatmspatialcorfeats>`_   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spatCorObject")), list("spatial correlation object")), "\n", "    ", list(list(list("use_clus_name")), list("name of clusters to visualize (from clusterSpatialCorFeats())")), "\n", "    ", list(list(list("show_cluster_annot")), list("show cluster annotation on top of heatmap")), "\n", "    ", list(list(list("show_row_dend")), list("show row dendrogram")), "\n", "    ", list(list(list("show_column_dend")), 
-
-
-.. code-block::
+::
 
    list("show column dendrogram")), "\n", "    ", list(list(list("show_row_names")), list("show row names")), "\n", "    ", list(list(list("show_column_names")), list("show column names")), "\n", "    ", list(list(list("show_plot")), list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", 
    list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
-
-
 Seealso
 -------
 
-`\ ``heatmSpatialCorFeats`` <#heatmspatialcorfeats>`_
+```heatmSpatialCorFeats`` <#heatmspatialcorfeats>`__

@@ -1,6 +1,11 @@
-.. _calc_var_HVF:
+============
+calc_var_HVF
+============
+
+:Date: 2022-09-20
+
 ``calc_var_HVF``
-====================
+================
 
 calc_var_HVF
 
@@ -12,7 +17,7 @@ calc_var_HVF
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calc_var_HVF(
      scaled_matrix,

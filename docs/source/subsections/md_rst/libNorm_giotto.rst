@@ -1,6 +1,11 @@
+==============
+libNorm_giotto
+==============
+
+:Date: 2022-09-20
 
 ``libNorm_giotto``
-======================
+==================
 
 libNorm_giotto
 
@@ -12,6 +17,6 @@ libNorm_giotto
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    libNorm_giotto(mymatrix, scalefactor)

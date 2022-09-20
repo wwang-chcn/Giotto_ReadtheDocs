@@ -1,6 +1,11 @@
+===================
+giottoPolygon-class
+===================
+
+:Date: 2022-09-20
 
 ``giottoPolygon-class``
-===========================
+=======================
 
 S4 giotto polygon Class
 

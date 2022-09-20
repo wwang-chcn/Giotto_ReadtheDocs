@@ -1,6 +1,11 @@
+==================
+selectPatternGenes
+==================
+
+:Date: 2022-09-20
 
 ``selectPatternGenes``
-==========================
+======================
 
 selectPatternGenes
 
@@ -12,7 +17,7 @@ Select genes correlated with spatial patterns
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    selectPatternGenes(
      spatPatObj,
@@ -27,26 +32,27 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``spatPatObj``
-     - Output from detectSpatialPatterns
-   * - ``dimensions``
-     - dimensions to identify correlated genes for.
-   * - ``top_pos_genes``
-     - Top positively correlated genes.
-   * - ``top_neg_genes``
-     - Top negatively correlated genes.
-   * - ``min_pos_cor``
-     - Minimum positive correlation score to include a gene.
-   * - ``min_neg_cor``
-     - Minimum negative correlation score to include a gene.
-   * - ``return_top_selection``
-     - only return selection based on correlation criteria (boolean)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``spatPatObj``                | Output from detectSpatialPatterns    |
++-------------------------------+--------------------------------------+
+| ``dimensions``                | dimensions to identify correlated    |
+|                               | genes for.                           |
++-------------------------------+--------------------------------------+
+| ``top_pos_genes``             | Top positively correlated genes.     |
++-------------------------------+--------------------------------------+
+| ``top_neg_genes``             | Top negatively correlated genes.     |
++-------------------------------+--------------------------------------+
+| ``min_pos_cor``               | Minimum positive correlation score   |
+|                               | to include a gene.                   |
++-------------------------------+--------------------------------------+
+| ``min_neg_cor``               | Minimum negative correlation score   |
+|                               | to include a gene.                   |
++-------------------------------+--------------------------------------+
+| ``return_top_selection``      | only return selection based on       |
+|                               | correlation criteria (boolean)       |
++-------------------------------+--------------------------------------+
 
 Details
 -------

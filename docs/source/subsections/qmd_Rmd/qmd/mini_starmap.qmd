@@ -1,6 +1,11 @@
 --- 
 title: mini_starmap 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: mini_starmap 
+format: rst 
 date: 2022-09-16 
 --- 
 

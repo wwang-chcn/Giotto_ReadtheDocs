@@ -1,6 +1,11 @@
+======
+t_flex
+======
+
+:Date: 2022-09-20
 
 ``t_flex``
-==============
+==========
 
 t_flex
 
@@ -12,18 +17,15 @@ t_flex
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    t_flex(mymatrix)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``mymatrix``
-     - matrix to use
-
+============ =============
+Argument     Description
+============ =============
+``mymatrix`` matrix to use
+============ =============

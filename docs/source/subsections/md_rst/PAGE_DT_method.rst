@@ -1,6 +1,11 @@
+==============
+PAGE_DT_method
+==============
+
+:Date: 2022-09-20
 
 ``PAGE_DT_method``
-======================
+==================
 
 PAGE_DT_method
 
@@ -12,7 +17,7 @@ PAGE data.table method
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    PAGE_DT_method(
      sign_matrix,

@@ -1,6 +1,11 @@
+=========================
+list_dim_reductions_names
+=========================
+
+:Date: 2022-09-20
 
 ``list_dim_reductions_names``
-=================================
+=============================
 
 list_dim_reductions_names
 
@@ -12,35 +17,28 @@ return the available dimension reductions object names
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    list_dim_reductions_names(
      gobject,
      data_type = "cells",
-     spat_unit,
-     feat_type,
-     dim_type
+     spat_unit = NULL,
+     feat_type = NULL,
+     dim_type = NULL
    )
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``data_type``
-     - cells or feats dim reduction
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``dim_type``
-     - dimensional reduction type (method)
-
+============= ===========================================
+Argument      Description
+============= ===========================================
+``gobject``   giotto object
+``data_type`` cells or feats dim reduction
+``spat_unit`` spatial unit (e.g. “cell”)
+``feat_type`` feature type (e.g. “rna”, “dna”, “protein”)
+``dim_type``  dimensional reduction type (method)
+============= ===========================================
 
 Details
 -------
@@ -50,4 +48,4 @@ function that can be used to find which names have been used
 Value
 -----
 
-names pf dimension reduction object
+names of dimension reduction object

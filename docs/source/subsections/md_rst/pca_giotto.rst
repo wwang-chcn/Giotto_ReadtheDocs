@@ -1,6 +1,11 @@
+==========
+pca_giotto
+==========
+
+:Date: 2022-09-20
 
 ``pca_giotto``
-==================
+==============
 
 pca_giotto
 
@@ -12,27 +17,21 @@ performs PCA based on Rfast
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    pca_giotto(mymatrix, center = T, scale = T, k = 50)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``mymatrix``
-     - matrix or object that can be converted to matrix
-   * - ``center``
-     - center data
-   * - ``scale``
-     - scale features
-   * - ``k``
-     - number of principal components to calculate
-
+============ ================================================
+Argument     Description
+============ ================================================
+``mymatrix`` matrix or object that can be converted to matrix
+``center``   center data
+``scale``    scale features
+``k``        number of principal components to calculate
+============ ================================================
 
 Value
 -----

@@ -1,6 +1,11 @@
+=====================
+set_cell_and_feat_IDs
+=====================
+
+:Date: 2022-09-20
 
 ``set_cell_and_feat_IDs``
-=============================
+=========================
 
 Set cell and feature IDs
 
@@ -12,6 +17,6 @@ sets cell and feature IDs based on provided expression data
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    set_cell_and_feat_IDs(gobject)

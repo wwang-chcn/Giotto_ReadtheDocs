@@ -20,7 +20,7 @@ list_giotto_data(gobject = NULL, slot = NULL, ...)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`slot`     |     giotto object slot of interest
+`slot`     |     giotto object slot of interest (e.g. "expression", "spatial_locs", etc.)
 `...`     |     additional params to pass
 
 

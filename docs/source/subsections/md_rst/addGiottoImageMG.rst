@@ -1,6 +1,11 @@
-.. _addGiottoImageMG:
+================
+addGiottoImageMG
+================
+
+:Date: 2022-09-20
+
 ``addGiottoImageMG``
-========================
+====================
 
 addGiottoImageMG
 
@@ -12,7 +17,7 @@ Adds giotto image objects to your giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    addGiottoImageMG(
      gobject,
@@ -26,24 +31,30 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``images``
-     - list of giotto image objects, see `\ ``createGiottoImage`` <#creategiottoimage>`_
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spat_loc_name``
-     - provide spatial location slot in Giotto to align images. Defaults to first one
-   * - ``scale_factor``
-     - provide scale of image pixel dimensions relative to spatial coordinates.
-   * - ``negative_y``
-     - Map image to negative y spatial values if TRUE during automatic alignment. Meaning that origin is in upper left instead of lower left.
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``images``                    | list of giotto image objects, see    |
+|                               | ```createG                           |
+|                               | iottoImage`` <#creategiottoimage>`__ |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | provide spatial location slot in     |
+|                               | Giotto to align images. Defaults to  |
+|                               | first one                            |
++-------------------------------+--------------------------------------+
+| ``scale_factor``              | provide scale of image pixel         |
+|                               | dimensions relative to spatial       |
+|                               | coordinates.                         |
++-------------------------------+--------------------------------------+
+| ``negative_y``                | Map image to negative y spatial      |
+|                               | values if TRUE during automatic      |
+|                               | alignment. Meaning that origin is in |
+|                               | upper left instead of lower left.    |
++-------------------------------+--------------------------------------+
 
 Value
 -----

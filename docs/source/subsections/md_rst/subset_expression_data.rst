@@ -1,6 +1,11 @@
+======================
+subset_expression_data
+======================
+
+:Date: 2022-09-20
 
 ``subset_expression_data``
-==============================
+==========================
 
 Subset expression data
 
@@ -12,7 +17,7 @@ Subset expression data from giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    subset_expression_data(
      gobject,

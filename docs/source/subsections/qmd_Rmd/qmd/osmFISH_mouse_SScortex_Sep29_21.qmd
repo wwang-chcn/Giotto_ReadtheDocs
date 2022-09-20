@@ -1,6 +1,11 @@
 --- 
 title: osmFISH_mouse_SScortex_Sep29_21 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: osmFISH_mouse_SScortex_Sep29_21 
+format: rst 
 date: 2022-09-16 
 --- 
 

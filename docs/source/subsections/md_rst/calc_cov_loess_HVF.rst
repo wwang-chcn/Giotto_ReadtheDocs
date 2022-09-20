@@ -1,6 +1,11 @@
-.. _calc_cov_loess_HVF:
+==================
+calc_cov_loess_HVF
+==================
+
+:Date: 2022-09-20
+
 ``calc_cov_loess_HVF``
-==========================
+======================
 
 calc_cov_loess_HVF
 
@@ -12,7 +17,7 @@ calc_cov_loess_HVF
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calc_cov_loess_HVF(
      feat_in_cells_detected,

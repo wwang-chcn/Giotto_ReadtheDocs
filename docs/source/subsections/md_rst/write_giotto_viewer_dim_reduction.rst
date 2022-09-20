@@ -1,6 +1,11 @@
+=================================
+write_giotto_viewer_dim_reduction
+=================================
+
+:Date: 2022-09-20
 
 ``write_giotto_viewer_dim_reduction``
-=========================================
+=====================================
 
 write_giotto_viewer_dim_reduction
 
@@ -12,7 +17,7 @@ write out dimensional reduction data from a giotto object for the Viewer
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    write_giotto_viewer_dim_reduction(
      dim_reduction_cell,
@@ -26,24 +31,26 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``dim_reduction_cell``
-     - dimension reduction slot from giotto object
-   * - ``dim_red``
-     - high level name of dimension reduction
-   * - ``dim_red_name``
-     - specific name of dimension reduction to use
-   * - ``dim_red_rounding``
-     - numerical indicating how to round the coordinates
-   * - ``dim_red_rescale``
-     - numericals to rescale the coordinates
-   * - ``output_directory``
-     - directory where to save the files
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``dim_reduction_cell``        | dimension reduction slot from giotto |
+|                               | object                               |
++-------------------------------+--------------------------------------+
+| ``dim_red``                   | high level name of dimension         |
+|                               | reduction                            |
++-------------------------------+--------------------------------------+
+| ``dim_red_name``              | specific name of dimension reduction |
+|                               | to use                               |
++-------------------------------+--------------------------------------+
+| ``dim_red_rounding``          | numerical indicating how to round    |
+|                               | the coordinates                      |
++-------------------------------+--------------------------------------+
+| ``dim_red_rescale``           | numericals to rescale the            |
+|                               | coordinates                          |
++-------------------------------+--------------------------------------+
+| ``output_directory``          | directory where to save the files    |
++-------------------------------+--------------------------------------+
 
 Value
 -----

@@ -1,18 +1,24 @@
+===============================
+spatNetwDistributionsKneighbors
+===============================
+
+:Date: 2022-09-20
 
 ``spatNetwDistributionsKneighbors``
-=======================================
+===================================
 
 spatNetwDistributionsKneighbors
 
 Description
 -----------
 
-This function returns a histogram displaying the number of k-neighbors distribution for each cell
+This function returns a histogram displaying the number of k-neighbors
+distribution for each cell
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatNetwDistributionsKneighbors(
      gobject,
@@ -29,30 +35,32 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - Giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spatial_network_name``
-     - name of spatial network
-   * - ``hist_bins``
-     - number of binds to use for the histogram
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, alternatively change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | Giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``spatial_network_name``      | name of spatial network              |
++-------------------------------+--------------------------------------+
+| ``hist_bins``                 | number of binds to use for the       |
+|                               | histogram                            |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot                            |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving,        |
+|                               | alternatively change save_name in    |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

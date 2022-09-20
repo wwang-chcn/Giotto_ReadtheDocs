@@ -1,18 +1,24 @@
+=============================
+spatNetwDistributionsDistance
+=============================
+
+:Date: 2022-09-20
 
 ``spatNetwDistributionsDistance``
-=====================================
+=================================
 
 Plot spatial distance distribution
 
 Description
 -----------
 
-This function return histograms displaying the distance distribution for each spatial k-neighbor
+This function return histograms displaying the distance distribution for
+each spatial k-neighbor
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatNetwDistributionsDistance(
      gobject,
@@ -31,34 +37,38 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - Giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spatial_network_name``
-     - name of spatial network
-   * - ``hist_bins``
-     - number of binds to use for the histogram
-   * - ``test_distance_limit``
-     - effect of different distance threshold on k-neighbors
-   * - ``ncol``
-     - number of columns to visualize the histograms in
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, alternatively change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | Giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``spatial_network_name``      | name of spatial network              |
++-------------------------------+--------------------------------------+
+| ``hist_bins``                 | number of binds to use for the       |
+|                               | histogram                            |
++-------------------------------+--------------------------------------+
+| ``test_distance_limit``       | effect of different distance         |
+|                               | threshold on k-neighbors             |
++-------------------------------+--------------------------------------+
+| ``ncol``                      | number of columns to visualize the   |
+|                               | histograms in                        |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot                            |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving,        |
+|                               | alternatively change save_name in    |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

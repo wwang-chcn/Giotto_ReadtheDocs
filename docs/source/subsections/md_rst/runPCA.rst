@@ -1,9 +1,11 @@
-.. role:: raw-html-m2r(raw)
-   :format: html
+======
+runPCA
+======
 
+:Date: 2022-09-20
 
 ``runPCA``
-==============
+==========
 
 runPCA
 
@@ -15,7 +17,7 @@ runs a Principal Component Analysis
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    runPCA(
      gobject,
@@ -42,65 +44,66 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``reduction``
-     - cells or genes
-   * - ``name``
-     - arbitrary name for PCA run
-   * - ``feats_to_use``
-     - subset of features to use for PCA
-   * - ``genes_to_use``
-     - deprecated use feats_to_use
-   * - ``return_gobject``
-     - boolean: return giotto object (default = TRUE)
-   * - ``center``
-     - center data first (default = TRUE)
-   * - ``scale_unit``
-     - scale features before PCA (default = TRUE)
-   * - ``ncp``
-     - number of principal components to calculate
-   * - ``method``
-     - which implementation to use
-   * - ``method_params``
-     - additional parameters
-   * - ``rev``
-     - do a reverse PCA
-   * - ``set_seed``
-     - use of seed
-   * - ``seed_number``
-     - seed number to use
-   * - ``verbose``
-     - verbosity of the function
-   * - ``...``
-     - additional parameters for PCA (see details)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``reduction``                 | cells or genes                       |
++-------------------------------+--------------------------------------+
+| ``name``                      | arbitrary name for PCA run           |
++-------------------------------+--------------------------------------+
+| ``feats_to_use``              | subset of features to use for PCA    |
++-------------------------------+--------------------------------------+
+| ``genes_to_use``              | deprecated use feats_to_use          |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | boolean: return giotto object        |
+|                               | (default = TRUE)                     |
++-------------------------------+--------------------------------------+
+| ``center``                    | center data first (default = TRUE)   |
++-------------------------------+--------------------------------------+
+| ``scale_unit``                | scale features before PCA (default = |
+|                               | TRUE)                                |
++-------------------------------+--------------------------------------+
+| ``ncp``                       | number of principal components to    |
+|                               | calculate                            |
++-------------------------------+--------------------------------------+
+| ``method``                    | which implementation to use          |
++-------------------------------+--------------------------------------+
+| ``method_params``             | additional parameters                |
++-------------------------------+--------------------------------------+
+| ``rev``                       | do a reverse PCA                     |
++-------------------------------+--------------------------------------+
+| ``set_seed``                  | use of seed                          |
++-------------------------------+--------------------------------------+
+| ``seed_number``               | seed number to use                   |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | verbosity of the function            |
++-------------------------------+--------------------------------------+
+| ``...``                       | additional parameters for PCA (see   |
+|                               | details)                             |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-See `\ ``runPCA`` <#runpca>`_ and `\ ``PCA`` <#pca>`_ for more information about other parameters.
+See ```runPCA`` <#runpca>`__ and ```PCA`` <#pca>`__ for more information
+about other parameters.
 
+-  feats_to_use = NULL: will use all features from the selected matrix
 
-* 
-  feats_to_use = NULL: will use all features from the selected matrix  
+-  feats_to_use = : can be used to select a column name of highly
+   variable features, created by (see
+   ```calculateHVF`` <#calculatehvf>`__ )
 
-* 
-  feats_to_use = :raw-html-m2r:`<hvg name>`\ : can be used to select a column name of highly variable features, created by (see `\ ``calculateHVF`` <#calculatehvf>`_ )  
-
-* 
-  feats_to_use = c('geneA', 'geneB', ...): will use all manually provided features
+-  feats_to_use = c(‘geneA’, ‘geneB’, …): will use all manually provided
+   features
 
 Value
 -----

@@ -1,6 +1,11 @@
-.. _annotateSpatialNetwork:
+======================
+annotateSpatialNetwork
+======================
+
+:Date: 2022-09-20
+
 ``annotateSpatialNetwork``
-==============================
+==========================
 
 annotateSpatialNetwork
 
@@ -12,12 +17,12 @@ Annotate spatial network with cell metadata information.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    annotateSpatialNetwork(
      gobject,
-     feat_type = NULL,
      spat_unit = NULL,
+     feat_type = NULL,
      spatial_network_name = "Delaunay_network",
      cluster_column,
      create_full_network = FALSE
@@ -26,24 +31,22 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spatial_network_name``
-     - name of spatial network to use
-   * - ``cluster_column``
-     - name of column to use for clusters
-   * - ``create_full_network``
-     - convert from reduced to full network representation
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spatial_network_name``      | name of spatial network to use       |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | name of column to use for clusters   |
++-------------------------------+--------------------------------------+
+| ``create_full_network``       | convert from reduced to full network |
+|                               | representation                       |
++-------------------------------+--------------------------------------+
 
 Value
 -----

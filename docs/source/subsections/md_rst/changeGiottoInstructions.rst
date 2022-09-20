@@ -1,6 +1,11 @@
-.. _changeGiottoInstructions:
+========================
+changeGiottoInstructions
+========================
+
+:Date: 2022-09-20
+
 ``changeGiottoInstructions``
-================================
+============================
 
 Change giotto instruction(s) associated with giotto object
 
@@ -12,7 +17,7 @@ Function to change one or more instructions from giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    changeGiottoInstructions(
      gobject,
@@ -24,20 +29,14 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``params``
-     - parameter(s) to change
-   * - ``new_values``
-     - new value(s) for parameter(s)
-   * - ``return_gobject``
-     - (boolean) return giotto object
-
+================== ==============================
+Argument           Description
+================== ==============================
+``gobject``        giotto object
+``params``         parameter(s) to change
+``new_values``     new value(s) for parameter(s)
+``return_gobject`` (boolean) return giotto object
+================== ==============================
 
 Value
 -----

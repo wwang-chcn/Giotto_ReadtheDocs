@@ -1,6 +1,11 @@
+===============
+spat_OR_func_DT
+===============
+
+:Date: 2022-09-20
 
 ``spat_OR_func_DT``
-=======================
+===================
 
 spat_OR_func_DT
 
@@ -12,7 +17,7 @@ calculate odds-ratio with data.table implementation
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spat_OR_func_DT(
      bin_matrix_DTm,

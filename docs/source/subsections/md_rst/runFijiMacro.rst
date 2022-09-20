@@ -1,42 +1,44 @@
-
-``fiji``
+============
+runFijiMacro
 ============
 
-fiji
+:Date: 2022-09-20
+
+``fiji``
+========
+
+Find Fiji location
 
 Description
 -----------
 
-``fiji`` returns path to preferred Fiji executable
+``fiji`` returns path to preferred Fiji executable. list() This function
+is modified from jimpipeline by jefferislab
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    fiji(fijiPath = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``fijiPath``
-     - manually set filepath to Fiji executable
-
+============ ========================================
+Argument     Description
+============ ========================================
+``fijiPath`` manually set filepath to Fiji executable
+============ ========================================
 
 Examples
 --------
 
-.. code-block:: r
+.. code:: r
 
    # Path to current Fiji executable
-   list("\n", "fiji()\n")
+   fiji()
 
-   # This function was taken and modified from jimpipeline by jefferislab #
    # Set path to preferred Fiji executable (this will be remembered)
    # you can also set options(giotto.fiji="/some/path")
    fiji("/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx")

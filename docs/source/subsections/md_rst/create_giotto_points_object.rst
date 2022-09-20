@@ -1,6 +1,11 @@
-.. _create_giotto_points_object:
+===========================
+create_giotto_points_object
+===========================
+
+:Date: 2022-09-20
+
 ``create_giotto_points_object``
-===================================
+===============================
 
 Create giotto points object
 
@@ -12,7 +17,7 @@ Create giotto points object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_giotto_points_object(
      feat_type = "rna",
@@ -23,15 +28,10 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``feat_type``
-     - feature type
-   * - ``spatVector``
-     - terra spatVector object containing point data
-   * - ``networks``
-     - feature network object
-
+============== =============================================
+Argument       Description
+============== =============================================
+``feat_type``  feature type
+``spatVector`` terra spatVector object containing point data
+``networks``   feature network object
+============== =============================================

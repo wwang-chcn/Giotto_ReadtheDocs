@@ -1,18 +1,23 @@
+========================
+subset_spatial_info_data
+========================
+
+:Date: 2022-09-20
 
 ``subset_spatial_info_data``
-================================
+============================
 
 Subset spatial info data
 
 Description
 -----------
 
-Subset  all spatial info (polygon) data
+Subset all spatial info (polygon) data
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    subset_spatial_info_data(
      spatial_info,

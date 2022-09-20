@@ -43,6 +43,7 @@ Argument      |Description
 ## Details
 
 This function is a wrapper for the trendsceek_test method implemented in the trendsceek package
+ Publication: c("\\Sexpr[results=rd]{tools:::Rd_expr_doi(\"#1\")}", "10.1038/nmeth.4634") list("tools:::Rd_expr_doi(\"10.1038/nmeth.4634\")")
 
 
 ## Value

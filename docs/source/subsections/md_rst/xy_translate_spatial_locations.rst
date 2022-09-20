@@ -1,6 +1,11 @@
+==============================
+xy_translate_spatial_locations
+==============================
+
+:Date: 2022-09-20
 
 ``xy_translate_spatial_locations``
-======================================
+==================================
 
 xy_translate_spatial_locations
 
@@ -12,22 +17,21 @@ Translate given X Y coordinates by given x and y translation values
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    xy_translate_spatial_locations(spatlocs, xtranslate, ytranslate)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``spatlocs``
-     - spatial locations to use
-   * - ``xtranslate``
-     - value to translate coordinates in the positive x direction
-   * - ``ytranslate``
-     - value to translate coordinates in the positive y direction
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``spatlocs``                  | spatial locations to use             |
++-------------------------------+--------------------------------------+
+| ``xtranslate``                | value to translate coordinates in    |
+|                               | the positive x direction             |
++-------------------------------+--------------------------------------+
+| ``ytranslate``                | value to translate coordinates in    |
+|                               | the positive y direction             |
++-------------------------------+--------------------------------------+

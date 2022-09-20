@@ -1,6 +1,11 @@
+================
+get_dimReduction
+================
+
+:Date: 2022-09-20
 
 ``get_dimReduction``
-========================
+====================
 
 Get dimension reduction
 
@@ -12,7 +17,7 @@ Function to get a dimension reduction object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_dimReduction(
      gobject,
@@ -27,26 +32,27 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``reduction``
-     - reduction on cells or features
-   * - ``reduction_method``
-     - reduction method (e.g. pca)
-   * - ``name``
-     - name of reduction results
-   * - ``return_dimObj``
-     - return full dimension object result
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
+|                               | “protein”)                           |
++-------------------------------+--------------------------------------+
+| ``reduction``                 | reduction on cells or features       |
+|                               | (e.g. “cells”, “feats”)              |
++-------------------------------+--------------------------------------+
+| ``reduction_method``          | reduction method (e.g. “pca”,        |
+|                               | “umap”, “tsne”)                      |
++-------------------------------+--------------------------------------+
+| ``name``                      | name of reduction results            |
++-------------------------------+--------------------------------------+
+| ``return_dimObj``             | return full dimension object result. |
+|                               | Default = FALSE                      |
++-------------------------------+--------------------------------------+
 
 Value
 -----
@@ -57,15 +63,15 @@ Seealso
 -------
 
 Other dimensional reduction data accessor functions:
- `\ ``set_dimReduction`` <#setdimreduction>`_ 
+```set_dimReduction`` <#setdimreduction>`__
 
- Other functions to get data from giotto object:
- `\ ``get_NearestNetwork`` <#getnearestnetwork>`_ ,
- `\ ``get_expression_values`` <#getexpressionvalues>`_ ,
- `\ ``get_feature_info`` <#getfeatureinfo>`_ ,
- `\ ``get_giottoImage`` <#getgiottoimage>`_ ,
- `\ ``get_polygon_info`` <#getpolygoninfo>`_ ,
- `\ ``get_spatialGrid`` <#getspatialgrid>`_ ,
- `\ ``get_spatialNetwork`` <#getspatialnetwork>`_ ,
- `\ ``get_spatial_enrichment`` <#getspatialenrichment>`_ ,
- `\ ``get_spatial_locations`` <#getspatiallocations>`_
+Other functions to get data from giotto object:
+```get_NearestNetwork`` <#getnearestnetwork>`__ ,
+```get_expression_values`` <#getexpressionvalues>`__ ,
+```get_feature_info`` <#getfeatureinfo>`__ ,
+```get_giottoImage`` <#getgiottoimage>`__ ,
+```get_polygon_info`` <#getpolygoninfo>`__ ,
+```get_spatialGrid`` <#getspatialgrid>`__ ,
+```get_spatialNetwork`` <#getspatialnetwork>`__ ,
+```get_spatial_enrichment`` <#getspatialenrichment>`__ ,
+```get_spatial_locations`` <#getspatiallocations>`__

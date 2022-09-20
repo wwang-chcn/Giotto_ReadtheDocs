@@ -1,6 +1,11 @@
+=============
+rank_binarize
+=============
+
+:Date: 2022-09-20
 
 ``rank_binarize``
-=====================
+=================
 
 rank_binarize
 
@@ -12,6 +17,6 @@ create binarized scores from a vector using arbitrary rank
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    rank_binarize(x, max_rank = 200)

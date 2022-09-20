@@ -11,13 +11,7 @@ Function to set a spatial network
 ## Usage
 
 ```r
-set_spatialNetwork(
-  gobject,
-  spat_unit = NULL,
-  feat_type = NULL,
-  name = NULL,
-  spatial_network
-)
+set_spatialNetwork(gobject, spat_unit = NULL, name = NULL, spatial_network)
 ```
 
 
@@ -26,8 +20,7 @@ set_spatialNetwork(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
+`spat_unit`     |     spatial unit  (e.g. "cell")
 `name`     |     name of spatial network
 `spatial_network`     |     spatial network
 

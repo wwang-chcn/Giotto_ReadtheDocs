@@ -44,20 +44,12 @@ Argument      |Description
 `gobject`     |     `giotto` object containing giotto `largeImage` object
 `largeImage_name`     |     name of giotto `largeImage` object
 `giottoLargeImage`     |     `largeImage` object to directly update
-`xmax_adj`     |     adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
-`xmin_adj`     |     adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
-`ymax_adj`     |     adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
-`ymin_adj`     |     adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
-`x_shift`     |     shift entire image along xy axes
-`y_shift`     |     shift entire image along xy axes
+`xmax_adj, xmin_adj, ymax_adj, ymin_adj`     |     adjust image boundaries by increasing maximum and decreasing minimum bounds respectively of xy bounds
+`x_shift, y_shift`     |     shift entire image along xy axes
 `scale_factor`     |     set `scale_x` and `scale_y` params at the same time
-`scale_x`     |     independently scale x or y axis image mapping from coordinate origin
-`scale_y`     |     independently scale x or y axis image mapping from coordinate origin
+`scale_x, scale_y`     |     independently scale x or y axis image mapping from coordinate origin
 `order`     |     order of operations between fine adjustments (adjustment and shift parameters) and scaling
-`xmin_set`     |     directly set xy image boundaries. Overrides minmax values as spatial anchor.
-`xmax_set`     |     directly set xy image boundaries. Overrides minmax values as spatial anchor.
-`ymin_set`     |     directly set xy image boundaries. Overrides minmax values as spatial anchor.
-`ymax_set`     |     directly set xy image boundaries. Overrides minmax values as spatial anchor.
+`xmin_set, xmax_set, ymin_set, ymax_set`     |     directly set xy image boundaries. Overrides minmax values as spatial anchor.
 `return_gobject`     |     return a `giotto` object if `TRUE` , a giotto `largeImage` object if `FALSE`
 `verbose`     |     be verbose
 

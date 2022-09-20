@@ -1,6 +1,11 @@
 --- 
 title: mouse_visium_kidney_210830 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: mouse_visium_kidney_210830 
+format: rst 
 date: 2022-09-16 
 --- 
 

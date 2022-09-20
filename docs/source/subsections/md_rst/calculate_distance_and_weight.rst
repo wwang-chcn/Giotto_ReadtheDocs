@@ -1,6 +1,11 @@
-.. _calculate_distance_and_weight:
+=============================
+calculate_distance_and_weight
+=============================
+
+:Date: 2022-09-20
+
 ``calculate_distance_and_weight``
-=====================================
+=================================
 
 calculate_distance_and_weight
 
@@ -12,7 +17,7 @@ calculate_distance_and_weight
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    calculate_distance_and_weight(
      networkDT = NULL,
@@ -25,19 +30,12 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``networkDT``
-     - spatial network as data.table
-   * - ``sdimx``
-     - spatial dimension x
-   * - ``sdimy``
-     - spatial dimension y
-   * - ``sdimz``
-     - spatial dimension z
-   * - ``d2_or_d3``
-     - number of dimensions
-
+============= =============================
+Argument      Description
+============= =============================
+``networkDT`` spatial network as data.table
+``sdimx``     spatial dimension x
+``sdimy``     spatial dimension y
+``sdimz``     spatial dimension z
+``d2_or_d3``  number of dimensions
+============= =============================

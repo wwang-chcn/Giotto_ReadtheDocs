@@ -1,6 +1,11 @@
+=============
+rowMeans_flex
+=============
+
+:Date: 2022-09-20
 
 ``rowMeans_flex``
-=====================
+=================
 
 rowMeans_flex
 
@@ -12,18 +17,15 @@ rowMeans_flex
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    rowMeans_flex(mymatrix)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``mymatrix``
-     - matrix to use
-
+============ =============
+Argument     Description
+============ =============
+``mymatrix`` matrix to use
+============ =============

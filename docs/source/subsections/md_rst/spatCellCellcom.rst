@@ -1,18 +1,24 @@
+===============
+spatCellCellcom
+===============
+
+:Date: 2022-09-20
 
 ``spatCellCellcom``
-=======================
+===================
 
 spatCellCellcom
 
 Description
 -----------
 
-Spatial Cell-Cell communication scores based on spatial expression of interacting cells
+Spatial Cell-Cell communication scores based on spatial expression of
+interacting cells
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatCellCellcom(
      gobject,
@@ -41,119 +47,113 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object to use
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spatial_network_name``
-     - spatial network to use for identifying interacting cells
-   * - ``cluster_column``
-     - cluster column with cell type information
-   * - ``random_iter``
-     - number of iterations
-   * - ``feat_set_1``
-     - first specific feature set from feature pairs
-   * - ``feat_set_2``
-     - second specific feature set from feature pairs
-   * - ``gene_set_1``
-     - deprecated, use feat_set_1
-   * - ``gene_set_2``
-     - deprecated, use feat_set_2
-   * - ``log2FC_addendum``
-     - addendum to add when calculating log2FC
-   * - ``min_observations``
-     - minimum number of interactions needed to be considered
-   * - ``detailed``
-     - provide more detailed information (random variance and z-score)
-   * - ``adjust_method``
-     - which method to adjust p-values
-   * - ``adjust_target``
-     - adjust multiple hypotheses at the cell or feature level
-   * - ``do_parallel``
-     - run calculations in parallel with mclapply
-   * - ``cores``
-     - number of cores to use if do_parallel = TRUE
-   * - ``set_seed``
-     - set a seed for reproducibility
-   * - ``seed_number``
-     - seed number
-   * - ``verbose``
-     - verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object to use                 |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``spatial_network_name``      | spatial network to use for           |
+|                               | identifying interacting cells        |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | cluster column with cell type        |
+|                               | information                          |
++-------------------------------+--------------------------------------+
+| ``random_iter``               | number of iterations                 |
++-------------------------------+--------------------------------------+
+| ``feat_set_1``                | first specific feature set from      |
+|                               | feature pairs                        |
++-------------------------------+--------------------------------------+
+| ``feat_set_2``                | second specific feature set from     |
+|                               | feature pairs                        |
++-------------------------------+--------------------------------------+
+| ``gene_set_1``                | deprecated, use feat_set_1           |
++-------------------------------+--------------------------------------+
+| ``gene_set_2``                | deprecated, use feat_set_2           |
++-------------------------------+--------------------------------------+
+| ``log2FC_addendum``           | addendum to add when calculating     |
+|                               | log2FC                               |
++-------------------------------+--------------------------------------+
+| ``min_observations``          | minimum number of interactions       |
+|                               | needed to be considered              |
++-------------------------------+--------------------------------------+
+| ``detailed``                  | provide more detailed information    |
+|                               | (random variance and z-score)        |
++-------------------------------+--------------------------------------+
+| ``adjust_method``             | which method to adjust p-values      |
++-------------------------------+--------------------------------------+
+| ``adjust_target``             | adjust multiple hypotheses at the    |
+|                               | cell or feature level                |
++-------------------------------+--------------------------------------+
+| ``do_parallel``               | run calculations in parallel with    |
+|                               | mclapply                             |
++-------------------------------+--------------------------------------+
+| ``cores``                     | number of cores to use if            |
+|                               | do_parallel = TRUE                   |
++-------------------------------+--------------------------------------+
+| ``set_seed``                  | set a seed for reproducibility       |
++-------------------------------+--------------------------------------+
+| ``seed_number``               | seed number                          |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | verbose                              |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-Statistical framework to identify if pairs of genes (such as ligand-receptor combinations)
- are expressed at higher levels than expected based on a reshuffled null distribution
- of feature expression values in cells that are spatially in proximity to eachother..
+Statistical framework to identify if pairs of genes (such as
+ligand-receptor combinations) are expressed at higher levels than
+expected based on a reshuffled null distribution of feature expression
+values in cells that are spatially in proximity to eachother..
 
+-  LR_comb: Pair of ligand and receptor
 
-* 
-  LR_comb: Pair of ligand and receptor   
+-  lig_cell_type: cell type to assess expression level of ligand
 
-* 
-  lig_cell_type:  cell type to assess expression level of ligand    
+-  lig_expr: average expression of ligand in lig_cell_type
 
-* 
-  lig_expr:  average expression of ligand in lig_cell_type    
+-  ligand: ligand name
 
-* 
-  ligand:  ligand name    
+-  rec_cell_type: cell type to assess expression level of receptor
 
-* 
-  rec_cell_type:  cell type to assess expression level of receptor    
+-  rec_expr: average expression of receptor in rec_cell_type
 
-* 
-  rec_expr:  average expression of receptor in rec_cell_type   
+-  receptor: receptor name
 
-* 
-  receptor:  receptor name    
+-  LR_expr: combined average ligand and receptor expression
 
-* 
-  LR_expr:  combined average ligand and receptor expression    
+-  lig_nr: total number of cells from lig_cell_type that spatially
+   interact with cells from rec_cell_type
 
-* 
-  lig_nr:  total number of cells from lig_cell_type that spatially interact with cells from rec_cell_type    
+-  rec_nr: total number of cells from rec_cell_type that spatially
+   interact with cells from lig_cell_type
 
-* 
-  rec_nr:  total number of cells from rec_cell_type that spatially interact with cells from lig_cell_type    
+-  rand_expr: average combined ligand and receptor expression from
+   random spatial permutations
 
-* 
-  rand_expr:  average combined ligand and receptor expression from random spatial permutations    
+-  av_diff: average difference between LR_expr and rand_expr over all
+   random spatial permutations
 
-* 
-  av_diff:  average difference between LR_expr and rand_expr over all random spatial permutations    
+-  sd_diff: (optional) standard deviation of the difference between
+   LR_expr and rand_expr over all random spatial permutations
 
-* 
-  sd_diff:  (optional) standard deviation of the difference between LR_expr and rand_expr over all random spatial permutations    
+-  z_score: (optinal) z-score
 
-* 
-  z_score:  (optinal) z-score    
+-  log2fc: log2 fold-change (LR_expr/rand_expr)
 
-* 
-  log2fc:  log2 fold-change (LR_expr/rand_expr)    
+-  pvalue: p-value
 
-* 
-  pvalue:  p-value    
+-  LR_cell_comb: cell type pair combination
 
-* 
-  LR_cell_comb:  cell type pair combination    
+-  p.adj: adjusted p-value
 
-* 
-  p.adj:  adjusted p-value    
-
-* 
-  PI:  significanc score: log2fc * -log10(p.adj)
+-  PI: significanc score: log2fc \* -log10(p.adj)
 
 Value
 -----
 
-Cell-Cell communication scores for feature pairs based on spatial interaction
+Cell-Cell communication scores for feature pairs based on spatial
+interaction

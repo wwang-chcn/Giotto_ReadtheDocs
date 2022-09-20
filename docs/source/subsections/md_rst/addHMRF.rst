@@ -1,6 +1,11 @@
-.. _addHMRF:
+=======
+addHMRF
+=======
+
+:Date: 2022-09-20
+
 ``addHMRF``
-===============
+===========
 
 addHMRF
 
@@ -12,7 +17,7 @@ Add selected results from doHMRF to the giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    addHMRF(
      gobject,
@@ -27,26 +32,24 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``HMRFoutput``
-     - HMRF output from doHMRF()
-   * - ``k``
-     - number of domains
-   * - ``betas_to_add``
-     - results from different betas that you want to add
-   * - ``hmrf_name``
-     - specify a custom name
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``HMRFoutput``                | HMRF output from doHMRF()            |
++-------------------------------+--------------------------------------+
+| ``k``                         | number of domains                    |
++-------------------------------+--------------------------------------+
+| ``betas_to_add``              | results from different betas that    |
+|                               | you want to add                      |
++-------------------------------+--------------------------------------+
+| ``hmrf_name``                 | specify a custom name                |
++-------------------------------+--------------------------------------+
 
 Value
 -----

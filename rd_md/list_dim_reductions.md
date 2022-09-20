@@ -26,10 +26,10 @@ list_dim_reductions(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`data_type`     |     cells or feats data used in dim reduction
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
-`dim_type`     |     dimensional reduction method
+`data_type`     |     "cells" or "feats" data used in dim reduction
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
+`dim_type`     |     dimensional reduction method (e.g. "pca", "umap")
 
 
 ## Value

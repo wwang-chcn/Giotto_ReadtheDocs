@@ -1,6 +1,11 @@
+=============
+join_spatlocs
+=============
+
+:Date: 2022-09-20
 
 ``join_spatlocs``
-=====================
+=================
 
 join_spatlocs
 
@@ -12,6 +17,6 @@ join_spatlocs
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    join_spatlocs(dt_list)

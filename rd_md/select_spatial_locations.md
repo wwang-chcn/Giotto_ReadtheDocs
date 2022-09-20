@@ -19,7 +19,7 @@ select_spatial_locations(...)
 
 Argument      |Description
 ------------- |----------------
-`...`     |      Arguments passed on to [`get_spatial_locations`](#getspatiallocations)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit")), "\n", "    ", list(list(list("spat_loc_name")), list("name of spatial locations (defaults to first name in spatial_locs slot)")), "\n", "  ")
+`...`     |      Arguments passed on to [`get_spatial_locations`](#getspatiallocations)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit (e.g. \"cell\")")), "\n", "    ", list(list(list("spat_loc_name")), list("name of spatial locations (defaults to first name in spatial_locs slot, e.g. \"raw\")")), "\n", "  ")
 
 
 ## Seealso

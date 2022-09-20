@@ -26,8 +26,8 @@ set_spatial_locations(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`spat_loc_name`     |     name of spatial locations
+`spat_unit`     |     spatial unit (e.g. "cell")
+`spat_loc_name`     |     name of spatial locations, default "raw"
 `spatlocs`     |     spatial locations
 `verbose`     |     be verbose
 

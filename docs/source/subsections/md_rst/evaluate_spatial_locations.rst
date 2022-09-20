@@ -1,6 +1,11 @@
-.. _evaluate_spatial_locations:
+==========================
+evaluate_spatial_locations
+==========================
+
+:Date: 2022-09-20
+
 ``evaluate_spatial_locations``
-==================================
+==============================
 
 Evaluate spatial locations
 
@@ -12,23 +17,19 @@ Evaluate spatial location input
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    evaluate_spatial_locations(spatial_locs, cores = 1)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``spatial_locs``
-     - spatial locations to evaluate
-   * - ``cores``
-     - how many cores to use
-
+================ =============================
+Argument         Description
+================ =============================
+``spatial_locs`` spatial locations to evaluate
+``cores``        how many cores to use
+================ =============================
 
 Value
 -----

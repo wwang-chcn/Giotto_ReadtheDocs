@@ -1,6 +1,11 @@
 --- 
 title: singlecell_prostate_standard_Sep29_21 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: singlecell_prostate_standard_Sep29_21 
+format: rst 
 date: 2022-09-16 
 --- 
 

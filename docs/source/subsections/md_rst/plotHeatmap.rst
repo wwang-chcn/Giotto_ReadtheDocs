@@ -1,6 +1,11 @@
+===========
+plotHeatmap
+===========
+
+:Date: 2022-09-20
 
 ``plotHeatmap``
-===================
+===============
 
 plotHeatmap
 
@@ -12,7 +17,7 @@ Creates heatmap for genes and clusters.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotHeatmap(
      gobject,
@@ -52,90 +57,103 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``feats``
-     - features to use
-   * - ``genes``
-     - deprecated, use feats
-   * - ``cluster_column``
-     - name of column to use for clusters
-   * - ``cluster_order``
-     - method to determine cluster order
-   * - ``cluster_custom_order``
-     - custom order for clusters
-   * - ``cluster_color_code``
-     - color code for clusters
-   * - ``cluster_cor_method``
-     - method for cluster correlation
-   * - ``cluster_hclust_method``
-     - method for hierarchical clustering of clusters
-   * - ``feat_order``
-     - method to determine features order
-   * - ``gene_order``
-     - deprecated, use feat_order
-   * - ``feat_custom_order``
-     - custom order for features
-   * - ``gene_custom_order``
-     - deprecated, use feat_custom_order
-   * - ``feat_cor_method``
-     - method for features correlation
-   * - ``gene_cor_method``
-     - deprecated, use feat_cor_method
-   * - ``feat_hclust_method``
-     - method for hierarchical clustering of features
-   * - ``gene_hclust_method``
-     - deprecated, use feat_hclust_method
-   * - ``show_values``
-     - which values to show on heatmap
-   * - ``size_vertical_lines``
-     - sizes for vertical lines
-   * - ``gradient_colors``
-     - colors for heatmap gradient
-   * - ``feat_label_selection``
-     - subset of features to show on y-axis
-   * - ``gene_label_selection``
-     - deprecated, use feat_label_selection
-   * - ``axis_text_y_size``
-     - size for y-axis text
-   * - ``legend_nrows``
-     - number of rows for the cluster legend
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters, see `\ ``showSaveParameters`` <#showsaveparameters>`_
-   * - ``default_save_name``
-     - default save name
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
+|                               | “protein”)                           |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
+|                               | (e.g. “normalized”, “scaled”,        |
+|                               | “custom”)                            |
++-------------------------------+--------------------------------------+
+| ``feats``                     | features to use                      |
++-------------------------------+--------------------------------------+
+| ``genes``                     | deprecated, use feats                |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | name of column to use for clusters   |
+|                               | (e.g. “leiden_clus”)                 |
++-------------------------------+--------------------------------------+
+| ``cluster_order``             | method to determine cluster order    |
+|                               | (e.g. “size”, “correlation”,         |
+|                               | “custom”)                            |
++-------------------------------+--------------------------------------+
+| ``cluster_custom_order``      | custom order for clusters            |
++-------------------------------+--------------------------------------+
+| ``cluster_color_code``        | color code for clusters              |
++-------------------------------+--------------------------------------+
+| ``cluster_cor_method``        | method for cluster correlation,      |
+|                               | default to “pearson”                 |
++-------------------------------+--------------------------------------+
+| ``cluster_hclust_method``     | method for hierarchical clustering   |
+|                               | of clusters, default to “ward.D”     |
++-------------------------------+--------------------------------------+
+| ``feat_order``                | method to determine features order   |
+|                               | (e.g. “correlation”, “custom”)       |
++-------------------------------+--------------------------------------+
+| ``gene_order``                | deprecated, use feat_order           |
++-------------------------------+--------------------------------------+
+| ``feat_custom_order``         | custom order for features            |
++-------------------------------+--------------------------------------+
+| ``gene_custom_order``         | deprecated, use feat_custom_order    |
++-------------------------------+--------------------------------------+
+| ``feat_cor_method``           | method for features correlation,     |
+|                               | default to “pearson”                 |
++-------------------------------+--------------------------------------+
+| ``gene_cor_method``           | deprecated, use feat_cor_method      |
++-------------------------------+--------------------------------------+
+| ``feat_hclust_method``        | method for hierarchical clustering   |
+|                               | of features, default to “complete”   |
++-------------------------------+--------------------------------------+
+| ``gene_hclust_method``        | deprecated, use feat_hclust_method   |
++-------------------------------+--------------------------------------+
+| ``show_values``               | which values to show on heatmap      |
+|                               | (e.g. “rescaled”, “z-scaled”,        |
+|                               | “original”)                          |
++-------------------------------+--------------------------------------+
+| ``size_vertical_lines``       | sizes for vertical lines             |
++-------------------------------+--------------------------------------+
+| ``gradient_colors``           | colors for heatmap gradient          |
++-------------------------------+--------------------------------------+
+| ``feat_label_selection``      | subset of features to show on y-axis |
++-------------------------------+--------------------------------------+
+| ``gene_label_selection``      | deprecated, use feat_label_selection |
++-------------------------------+--------------------------------------+
+| ``axis_text_y_size``          | size for y-axis text                 |
++-------------------------------+--------------------------------------+
+| ``legend_nrows``              | number of rows for the cluster       |
+|                               | legend                               |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot. TRUE or FALSE             |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object. TRUE or FALSE  |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot. TRUE or      |
+|                               | FALSE                                |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters, see       |
+|                               | ```showSaveP                         |
+|                               | arameters`` <#showsaveparameters>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name                    |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
 If you want to display many genes there are 2 ways to proceed:
 
+-  
 
-* 
+   1. set axis_text_y_size to a really small value and show all features
 
-  #. set axis_text_y_size to a really small value and show all features   
+-  
 
-* 
-
-  #. provide a subset of features to display to feat_label_selection
+   2. provide a subset of features to display to feat_label_selection
 
 Value
 -----

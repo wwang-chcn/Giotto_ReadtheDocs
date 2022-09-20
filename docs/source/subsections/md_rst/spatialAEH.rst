@@ -1,6 +1,11 @@
+==========
+spatialAEH
+==========
+
+:Date: 2022-09-20
 
 ``spatialAEH``
-==================
+==============
 
 spatialAEH
 
@@ -12,7 +17,7 @@ Compute spatial variable genes with spatialDE method
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatialAEH(
      gobject = NULL,
@@ -31,39 +36,42 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - Giotto object
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spat_loc_name``
-     - name for spatial locations
-   * - ``SpatialDE_results``
-     - results of `\ ``spatialDE`` <#spatialde>`_ function
-   * - ``name_pattern``
-     - name for the computed spatial patterns
-   * - ``expression_values``
-     - gene expression values to use
-   * - ``pattern_num``
-     - number of spatial patterns to look for
-   * - ``l``
-     - lengthscale
-   * - ``python_path``
-     - specify specific path to python if required
-   * - ``return_gobject``
-     - show plot
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | Giotto object                        |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name for spatial locations           |
++-------------------------------+--------------------------------------+
+| ``SpatialDE_results``         | results of                           |
+|                               | ```spatialDE`` <#spatialde>`__       |
+|                               | function                             |
++-------------------------------+--------------------------------------+
+| ``name_pattern``              | name for the computed spatial        |
+|                               | patterns                             |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | gene expression values to use        |
++-------------------------------+--------------------------------------+
+| ``pattern_num``               | number of spatial patterns to look   |
+|                               | for                                  |
++-------------------------------+--------------------------------------+
+| ``l``                         | lengthscale                          |
++-------------------------------+--------------------------------------+
+| ``python_path``               | specify specific path to python if   |
+|                               | required                             |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | show plot                            |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-This function is a wrapper for the SpatialAEH method implemented in the ...
+This function is a wrapper for the SpatialAEH method implemented in the
+…
 
 Value
 -----

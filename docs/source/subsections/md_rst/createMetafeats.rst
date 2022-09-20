@@ -1,6 +1,11 @@
-.. _createMetafeats:
+===============
+createMetafeats
+===============
+
+:Date: 2022-09-20
+
 ``createMetafeats``
-=======================
+===================
 
 createMetafeats
 
@@ -12,7 +17,7 @@ This function creates an average metafeat/metagene/module for clusters.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    createMetafeats(
      gobject,
@@ -27,32 +32,24 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - Giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``feat_clusters``
-     - numerical vector with features as names
-   * - ``name``
-     - name of the metagene results
-   * - ``return_gobject``
-     - return giotto object
-
+===================== =======================================
+Argument              Description
+===================== =======================================
+``gobject``           Giotto object
+``spat_unit``         spatial unit
+``feat_type``         feature type
+``expression_values`` expression values to use
+``feat_clusters``     numerical vector with features as names
+``name``              name of the metagene results
+``return_gobject``    return giotto object
+===================== =======================================
 
 Details
 -------
 
-An example for the 'gene_clusters' could be like this:
- cluster_vector = c(1, 1, 2, 2); names(cluster_vector) = c('geneA', 'geneB', 'geneC', 'geneD')
+An example for the ‘gene_clusters’ could be like this: cluster_vector =
+c(1, 1, 2, 2); names(cluster_vector) = c(‘geneA’, ‘geneB’, ‘geneC’,
+‘geneD’)
 
 Value
 -----

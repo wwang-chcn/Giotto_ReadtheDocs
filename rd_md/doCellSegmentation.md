@@ -15,7 +15,8 @@ doCellSegmentation(
   raster_img,
   folder_path,
   reduce_resolution = 4,
-  overlapping_pixels = 50
+  overlapping_pixels = 50,
+  python_path = NULL
 )
 ```
 
@@ -28,6 +29,7 @@ Argument      |Description
 `folder_path`     |     character; where to save the file
 `reduce_resolution`     |     numeric; the original Dapi image from Vizgen works better in the Mesmer algorithm if its resolution is reduced 4 times.
 `overlapping_pixels`     |     numeric; the number of pixels to overlap when calculating the rolling window
+`python_path`     |     specify specific path to python if required
 
 
 ## Details

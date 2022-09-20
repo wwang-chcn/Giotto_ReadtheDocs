@@ -1,6 +1,11 @@
-.. _doLouvainSubCluster:
+===================
+doLouvainSubCluster
+===================
+
+:Date: 2022-09-20
+
 ``doLouvainSubCluster``
-===========================
+=======================
 
 doLouvainSubCluster
 
@@ -12,7 +17,7 @@ subcluster cells using a NN-network and the Louvain algorithm
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    doLouvainSubCluster(
      gobject,
@@ -42,81 +47,86 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``name``
-     - name for new clustering result
-   * - ``version``
-     - version of Louvain algorithm to use
-   * - ``cluster_column``
-     - cluster column to subcluster
-   * - ``selected_clusters``
-     - only do subclustering on these clusters
-   * - ``hvg_param``
-     - parameters for calculateHVG
-   * - ``hvg_min_perc_cells``
-     - threshold for detection in min percentage of cells
-   * - ``hvg_mean_expr_det``
-     - threshold for mean expression level in cells with detection
-   * - ``use_all_genes_as_hvg``
-     - forces all genes to be HVG and to be used as input for PCA
-   * - ``min_nr_of_hvg``
-     - minimum number of HVG, or all genes will be used as input for PCA
-   * - ``pca_param``
-     - parameters for runPCA
-   * - ``nn_param``
-     - parameters for parameters for createNearestNetwork
-   * - ``k_neighbors``
-     - number of k for createNearestNetwork
-   * - ``resolution``
-     - resolution for community algorithm
-   * - ``gamma``
-     - gamma
-   * - ``omega``
-     - omega
-   * - ``python_path``
-     - specify specific path to python if required
-   * - ``nn_network_to_use``
-     - type of NN network to use (kNN vs sNN)
-   * - ``network_name``
-     - name of NN network to use
-   * - ``return_gobject``
-     - boolean: return giotto object (default = TRUE)
-   * - ``verbose``
-     - verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``name``                      | name for new clustering result       |
++-------------------------------+--------------------------------------+
+| ``version``                   | version of Louvain algorithm to use  |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | cluster column to subcluster         |
++-------------------------------+--------------------------------------+
+| ``selected_clusters``         | only do subclustering on these       |
+|                               | clusters                             |
++-------------------------------+--------------------------------------+
+| ``hvg_param``                 | parameters for calculateHVG          |
++-------------------------------+--------------------------------------+
+| ``hvg_min_perc_cells``        | threshold for detection in min       |
+|                               | percentage of cells                  |
++-------------------------------+--------------------------------------+
+| ``hvg_mean_expr_det``         | threshold for mean expression level  |
+|                               | in cells with detection              |
++-------------------------------+--------------------------------------+
+| ``use_all_genes_as_hvg``      | forces all genes to be HVG and to be |
+|                               | used as input for PCA                |
++-------------------------------+--------------------------------------+
+| ``min_nr_of_hvg``             | minimum number of HVG, or all genes  |
+|                               | will be used as input for PCA        |
++-------------------------------+--------------------------------------+
+| ``pca_param``                 | parameters for runPCA                |
++-------------------------------+--------------------------------------+
+| ``nn_param``                  | parameters for parameters for        |
+|                               | createNearestNetwork                 |
++-------------------------------+--------------------------------------+
+| ``k_neighbors``               | number of k for createNearestNetwork |
++-------------------------------+--------------------------------------+
+| ``resolution``                | resolution for community algorithm   |
++-------------------------------+--------------------------------------+
+| ``gamma``                     | gamma                                |
++-------------------------------+--------------------------------------+
+| ``omega``                     | omega                                |
++-------------------------------+--------------------------------------+
+| ``python_path``               | specify specific path to python if   |
+|                               | required                             |
++-------------------------------+--------------------------------------+
+| ``nn_network_to_use``         | type of NN network to use (kNN vs    |
+|                               | sNN)                                 |
++-------------------------------+--------------------------------------+
+| ``network_name``              | name of NN network to use            |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | boolean: return giotto object        |
+|                               | (default = TRUE)                     |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | verbose                              |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-This function performs subclustering using the Louvain algorithm on selected clusters.
- The systematic steps are:
+This function performs subclustering using the Louvain algorithm on
+selected clusters. The systematic steps are:
 
+-  
 
-* 
+   1. subset Giotto object
 
-  #. subset Giotto object   
+-  
 
-* 
+   2. identify highly variable genes
 
-  #. identify highly variable genes   
+-  
 
-* 
+   3. run PCA
 
-  #. run PCA   
+-  
 
-* 
+   4. create nearest neighbouring network
 
-  #. create nearest neighbouring network   
+-  
 
-* 
-
-  #. do Louvain clustering
+   5. do Louvain clustering
 
 Value
 -----
@@ -126,4 +136,5 @@ giotto object with new subclusters appended to cell metadata
 Seealso
 -------
 
-`\ ``doLouvainCluster_multinet`` <#dolouvainclustermultinet>`_ and `\ ``doLouvainCluster_community`` <#dolouvainclustercommunity>`_
+```doLouvainCluster_multinet`` <#dolouvainclustermultinet>`__ and
+```doLouvainCluster_community`` <#dolouvainclustercommunity>`__

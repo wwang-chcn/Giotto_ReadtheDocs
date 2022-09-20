@@ -1,6 +1,11 @@
-.. _clusterSpatialCorGenes:
+======================
+clusterSpatialCorGenes
+======================
+
+:Date: 2022-09-20
+
 ``clusterSpatialCorGenes``
-==============================
+==========================
 
 clusterSpatialCorGenes
 
@@ -12,7 +17,7 @@ Cluster based on spatially correlated genes
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    clusterSpatialCorGenes(
      spatCorObject,
@@ -25,22 +30,20 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``spatCorObject``
-     - spatial correlation object
-   * - ``name``
-     - name for spatial clustering results
-   * - ``hclust_method``
-     - method for hierarchical clustering
-   * - ``k``
-     - number of clusters to extract
-   * - ``return_obj``
-     - return spatial correlation object (spatCorObject)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``spatCorObject``             | spatial correlation object           |
++-------------------------------+--------------------------------------+
+| ``name``                      | name for spatial clustering results  |
++-------------------------------+--------------------------------------+
+| ``hclust_method``             | method for hierarchical clustering   |
++-------------------------------+--------------------------------------+
+| ``k``                         | number of clusters to extract        |
++-------------------------------+--------------------------------------+
+| ``return_obj``                | return spatial correlation object    |
+|                               | (spatCorObject)                      |
++-------------------------------+--------------------------------------+
 
 Value
 -----

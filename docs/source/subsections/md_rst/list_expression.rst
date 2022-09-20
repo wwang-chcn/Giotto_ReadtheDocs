@@ -1,6 +1,11 @@
+===============
+list_expression
+===============
+
+:Date: 2022-09-20
 
 ``list_expression``
-=======================
+===================
 
 list_expression
 
@@ -12,27 +17,23 @@ lists the available matrices
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    list_expression(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-
+============= ===========================================
+Argument      Description
+============= ===========================================
+``gobject``   giotto object
+``spat_unit`` spatial unit (e.g. “cell”)
+``feat_type`` feature type (e.g. “rna”, “dna”, “protein”)
+============= ===========================================
 
 Value
 -----
 
-names and locations of available matrices as data.table. col order matters.
+names and locations of available matrices as data.table. col order
+matters.

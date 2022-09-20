@@ -1,6 +1,11 @@
+========
+get_args
+========
+
+:Date: 2022-09-20
 
 ``get_args``
-================
+============
 
 Log args used
 
@@ -12,6 +17,6 @@ Log args used
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_args(toplevel = 2, verbose = FALSE)

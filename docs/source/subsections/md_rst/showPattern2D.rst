@@ -1,6 +1,11 @@
+=============
+showPattern2D
+=============
+
+:Date: 2022-09-20
 
 ``showPattern2D``
-=====================
+=================
 
 showPattern2D
 
@@ -12,7 +17,7 @@ show patterns for 2D spatial data
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    showPattern2D(
      gobject,
@@ -33,38 +38,39 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spatPatObj``
-     - Output from detectSpatialPatterns
-   * - ``dimension``
-     - dimension to plot
-   * - ``trim``
-     - Trim ends of the PC values.
-   * - ``background_color``
-     - background color for plot
-   * - ``grid_border_color``
-     - color for grid
-   * - ``show_legend``
-     - show legend of ggplot
-   * - ``point_size``
-     - size of points
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters, see `\ ``showSaveParameters`` <#showsaveparameters>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spatPatObj``                | Output from detectSpatialPatterns    |
++-------------------------------+--------------------------------------+
+| ``dimension``                 | dimension to plot                    |
++-------------------------------+--------------------------------------+
+| ``trim``                      | Trim ends of the PC values.          |
++-------------------------------+--------------------------------------+
+| ``background_color``          | background color for plot            |
++-------------------------------+--------------------------------------+
+| ``grid_border_color``         | color for grid                       |
++-------------------------------+--------------------------------------+
+| ``show_legend``               | show legend of ggplot                |
++-------------------------------+--------------------------------------+
+| ``point_size``                | size of points                       |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot                            |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters, see       |
+|                               | ```showSaveP                         |
+|                               | arameters`` <#showsaveparameters>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

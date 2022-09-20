@@ -1,6 +1,11 @@
+==================================
+simulateOneGenePatternGiottoObject
+==================================
+
+:Date: 2022-09-20
 
 ``simulateOneGenePatternGiottoObject``
-==========================================
+======================================
 
 simulateOneGenePatternGiottoObject
 
@@ -12,7 +17,7 @@ Create a simulated spatial pattern for one selected gnee
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    simulateOneGenePatternGiottoObject(
      gobject,
@@ -29,32 +34,35 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``pattern_name``
-     - name of spatial pattern
-   * - ``pattern_cell_ids``
-     - cell ids that make up the spatial pattern
-   * - ``gene_name``
-     - selected gene
-   * - ``spatial_prob``
-     - probability for a high expressing gene value to be part of the spatial pattern
-   * - ``gradient_direction``
-     - direction of gradient
-   * - ``show_pattern``
-     - show the discrete spatial pattern
-   * - ``pattern_colors``
-     - 2 color vector for the spatial pattern
-   * - ``list()``
-     - additional parameters for (re-)normalizing
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``pattern_name``              | name of spatial pattern              |
++-------------------------------+--------------------------------------+
+| ``pattern_cell_ids``          | cell ids that make up the spatial    |
+|                               | pattern                              |
++-------------------------------+--------------------------------------+
+| ``gene_name``                 | selected gene                        |
++-------------------------------+--------------------------------------+
+| ``spatial_prob``              | probability for a high expressing    |
+|                               | gene value to be part of the spatial |
+|                               | pattern                              |
++-------------------------------+--------------------------------------+
+| ``gradient_direction``        | direction of gradient                |
++-------------------------------+--------------------------------------+
+| ``show_pattern``              | show the discrete spatial pattern    |
++-------------------------------+--------------------------------------+
+| ``pattern_colors``            | 2 color vector for the spatial       |
+|                               | pattern                              |
++-------------------------------+--------------------------------------+
+| ``list()``                    | additional parameters for            |
+|                               | (re-)normalizing                     |
++-------------------------------+--------------------------------------+
 
 Value
 -----
 
-Reprocessed Giotto object for which one gene has a forced spatial pattern
+Reprocessed Giotto object for which one gene has a forced spatial
+pattern

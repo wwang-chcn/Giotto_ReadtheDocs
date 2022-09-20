@@ -1,6 +1,11 @@
+=================
+getDistinctColors
+=================
+
+:Date: 2022-09-20
 
 ``getDistinctColors``
-=========================
+=====================
 
 getDistinctColors
 
@@ -12,21 +17,18 @@ Returns a number of distint colors based on the RGB scale
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    getDistinctColors(n)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``n``
-     - number of colors wanted
-
+======== =======================
+Argument Description
+======== =======================
+``n``    number of colors wanted
+======== =======================
 
 Value
 -----

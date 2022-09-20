@@ -20,7 +20,7 @@ doRandomWalkCluster(
   walk_clusters = 10,
   walk_weights = NA,
   return_gobject = TRUE,
-  set_seed = F,
+  set_seed = FALSE,
   seed_number = 1234
 )
 ```
@@ -31,14 +31,14 @@ doRandomWalkCluster(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`name`     |     name for cluster
-`nn_network_to_use`     |     type of NN network to use (kNN vs sNN)
-`network_name`     |     name of NN network to use
-`walk_steps`     |     number of walking steps
-`walk_clusters`     |     number of final clusters
+`name`     |     name for cluster, default to "random_walk_clus"
+`nn_network_to_use`     |     type of NN network to use (kNN vs sNN), default to "sNN"
+`network_name`     |     name of NN network to use, default to "sNN.pca"
+`walk_steps`     |     number of walking steps, default = 4
+`walk_clusters`     |     number of final clusters, default =  10
 `walk_weights`     |     cluster column defining the walk weights
 `return_gobject`     |     boolean: return giotto object (default = TRUE)
-`set_seed`     |     set seed
+`set_seed`     |     set seed (default = FALSE)
 `seed_number`     |     number for seed
 
 

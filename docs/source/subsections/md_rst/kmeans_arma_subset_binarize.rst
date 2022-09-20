@@ -1,6 +1,11 @@
+===========================
+kmeans_arma_subset_binarize
+===========================
+
+:Date: 2022-09-20
 
 ``kmeans_arma_subset_binarize``
-===================================
+===============================
 
 kmeans_arma_subset_binarize
 
@@ -12,7 +17,7 @@ create binarized scores from a subsetted vector using kmeans_arma
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    kmeans_arma_subset_binarize(
      x,

@@ -1,6 +1,11 @@
+======================
+set_spatial_enrichment
+======================
+
+:Date: 2022-09-20
 
 ``set_spatial_enrichment``
-==============================
+==========================
 
 Set spatial enrichment
 
@@ -12,7 +17,7 @@ Function to set a spatial enrichment slot
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    set_spatial_enrichment(
      gobject,
@@ -25,22 +30,21 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``enrichm_name``
-     - name of spatial enrichment results
-   * - ``spatenrichment``
-     - spatial enrichment results
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
+|                               | “protein”)                           |
++-------------------------------+--------------------------------------+
+| ``enrichm_name``              | name of spatial enrichment results.  |
+|                               | Default “DWLS”                       |
++-------------------------------+--------------------------------------+
+| ``spatenrichment``            | spatial enrichment results           |
++-------------------------------+--------------------------------------+
 
 Value
 -----
@@ -51,15 +55,15 @@ Seealso
 -------
 
 Other spatial enrichment data accessor functions:
- `\ ``get_spatial_enrichment`` <#getspatialenrichment>`_ 
+```get_spatial_enrichment`` <#getspatialenrichment>`__
 
- Other functions to set data in giotto object:
- `\ ``set_NearestNetwork`` <#setnearestnetwork>`_ ,
- `\ ``set_dimReduction`` <#setdimreduction>`_ ,
- `\ ``set_expression_values`` <#setexpressionvalues>`_ ,
- `\ ``set_feature_info`` <#setfeatureinfo>`_ ,
- `\ ``set_giottoImage`` <#setgiottoimage>`_ ,
- `\ ``set_polygon_info`` <#setpolygoninfo>`_ ,
- `\ ``set_spatialGrid`` <#setspatialgrid>`_ ,
- `\ ``set_spatialNetwork`` <#setspatialnetwork>`_ ,
- `\ ``set_spatial_locations`` <#setspatiallocations>`_
+Other functions to set data in giotto object:
+```set_NearestNetwork`` <#setnearestnetwork>`__ ,
+```set_dimReduction`` <#setdimreduction>`__ ,
+```set_expression_values`` <#setexpressionvalues>`__ ,
+```set_feature_info`` <#setfeatureinfo>`__ ,
+```set_giottoImage`` <#setgiottoimage>`__ ,
+```set_polygon_info`` <#setpolygoninfo>`__ ,
+```set_spatialGrid`` <#setspatialgrid>`__ ,
+```set_spatialNetwork`` <#setspatialnetwork>`__ ,
+```set_spatial_locations`` <#setspatiallocations>`__

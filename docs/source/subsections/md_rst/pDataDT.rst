@@ -1,6 +1,11 @@
+=======
+pDataDT
+=======
+
+:Date: 2022-09-20
 
 ``pDataDT``
-===============
+===========
 
 pDataDT
 
@@ -12,25 +17,20 @@ show cell metadata
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    pDataDT(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-
+============= =============
+Argument      Description
+============= =============
+``gobject``   giotto object
+``spat_unit`` spatial unit
+``feat_type`` feature type
+============= =============
 
 Value
 -----

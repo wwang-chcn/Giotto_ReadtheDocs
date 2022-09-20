@@ -1,6 +1,11 @@
-.. _annotateGiotto:
+==============
+annotateGiotto
+==============
+
+:Date: 2022-09-20
+
 ``annotateGiotto``
-======================
+==================
 
 Annotate giotto clustering
 
@@ -12,7 +17,7 @@ Converts cluster results into a user provided annotation.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    annotateGiotto(
      gobject,
@@ -26,43 +31,43 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``annotation_vector``
-     - named annotation vector (names = cluster ids)
-   * - ``cluster_column``
-     - cluster column to convert to annotation names
-   * - ``name``
-     - new name for annotation column
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``annotation_vector``         | named annotation vector (names =     |
+|                               | cluster ids)                         |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | cluster column to convert to         |
+|                               | annotation names                     |
++-------------------------------+--------------------------------------+
+| ``name``                      | new name for annotation column       |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-You need to specifify which (cluster) column you want to annotate
- and you need to provide an annotation vector like this:
+You need to specifify which (cluster) column you want to annotate and
+you need to provide an annotation vector like this:
 
+-  
 
-* 
+   1. identify the cell type of each cluster
 
-  #. identify the cell type of each cluster   
+-  
 
-* 
+   2. create a vector of these cell types, e.g. cell_types = c(‘T-cell’,
+      ‘B-cell’, ‘Stromal’)
 
-  #. create a vector of these cell types, e.g. cell_types =  c('T-cell', 'B-cell', 'Stromal')   
+-  
 
-* 
-
-  #. provide original cluster names to previous vector, e.g. names(cell_types) = c(2, 1, 3)
+   3. provide original cluster names to previous vector,
+      e.g. names(cell_types) = c(2, 1, 3)
 
 Value
 -----

@@ -1,6 +1,11 @@
+============================
+merge_spatial_locs_feat_info
+============================
+
+:Date: 2022-09-20
 
 ``merge_spatial_locs_feat_info``
-====================================
+================================
 
 merge_spatial_locs_feat_info
 
@@ -12,6 +17,6 @@ merge spatial cell and feature location information
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    merge_spatial_locs_feat_info(spatial_info, feature_info)

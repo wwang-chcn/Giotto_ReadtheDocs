@@ -1,18 +1,24 @@
+====================
+removeCellAnnotation
+====================
+
+:Date: 2022-09-20
 
 ``removeCellAnnotation``
-============================
+========================
 
 Remove cell annotation
 
 Description
 -----------
 
-Removes cell annotation from a Giotto object for a specific feature modality (default = 'rna')
+Removes cell annotation from a Giotto object for a specific feature
+modality (default = ‘rna’)
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    removeCellAnnotation(
      gobject,
@@ -25,22 +31,20 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``columns``
-     - names of columns to remove
-   * - ``return_gobject``
-     - boolean: return giotto object (default = TRUE)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``columns``                   | names of columns to remove           |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | boolean: return giotto object        |
+|                               | (default = TRUE)                     |
++-------------------------------+--------------------------------------+
 
 Details
 -------

@@ -40,7 +40,7 @@ Argument      |Description
 `remove_background_polygon`     |     try to remove background polygon (default: FALSE)
 `background_algo`     |     algorithm to remove background polygon
 `fill_holes`     |     fill holes within created polygons
-`poly_IDs`     |     unique nanes for each polygon in the mask file
+`poly_IDs`     |     unique names for each polygon in the mask file
 `flip_vertical`     |     flip mask figure in a vertical manner
 `shift_vertical_step`     |     shift vertical (boolean or numerical)
 `flip_horizontal`     |     flip mask figure in a horizontal manner

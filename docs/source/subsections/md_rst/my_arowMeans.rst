@@ -1,6 +1,11 @@
+============
+my_arowMeans
+============
+
+:Date: 2022-09-20
 
 ``my_arowMeans``
-====================
+================
 
 my_arowMeans
 
@@ -12,7 +17,7 @@ arithmic rowMeans that works for a single column
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    my_arowMeans(x)
    my_arowMeans(x)
@@ -20,11 +25,8 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``x``
-     - data to use
-
+======== ===========
+Argument Description
+======== ===========
+``x``    data to use
+======== ===========

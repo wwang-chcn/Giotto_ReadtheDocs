@@ -1,18 +1,24 @@
+=============
+runDWLSDeconv
+=============
+
+:Date: 2022-09-20
 
 ``runDWLSDeconv``
-=====================
+=================
 
 runDWLSDeconv
 
 Description
 -----------
 
-Function to perform DWLS deconvolution based on single cell expression data
+Function to perform DWLS deconvolution based on single cell expression
+data
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    runDWLSDeconv(
      gobject,
@@ -31,34 +37,33 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``logbase``
-     - base used for log normalization
-   * - ``cluster_column``
-     - name of cluster column
-   * - ``sign_matrix``
-     - sig matrix for deconvolution
-   * - ``n_cell``
-     - number of cells per spot
-   * - ``cutoff``
-     - cut off (default = 2)
-   * - ``name``
-     - name to give to spatial deconvolution results, default = DWLS
-   * - ``return_gobject``
-     - return giotto object
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``logbase``                   | base used for log normalization      |
++-------------------------------+--------------------------------------+
+| ``cluster_column``            | name of cluster column               |
++-------------------------------+--------------------------------------+
+| ``sign_matrix``               | sig matrix for deconvolution         |
++-------------------------------+--------------------------------------+
+| ``n_cell``                    | number of cells per spot             |
++-------------------------------+--------------------------------------+
+| ``cutoff``                    | cut off (default = 2)                |
++-------------------------------+--------------------------------------+
+| ``name``                      | name to give to spatial              |
+|                               | deconvolution results, default =     |
+|                               | DWLS                                 |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | return giotto object                 |
++-------------------------------+--------------------------------------+
 
 Value
 -----
@@ -68,5 +73,8 @@ giotto object or deconvolution results
 Seealso
 -------
 
-`https://github.com/dtsoucas/DWLS <https://github.com/dtsoucas/DWLS>`_ for the DWLS bulk deconvolution method,
- and `https://doi.org/10.1186/s13059-021-02362-7 <https://doi.org/10.1186/s13059-021-02362-7>`_ for spatialDWLS , the spatial implementation used here.
+https://github.com/dtsoucas/DWLS for the list(“DWLS”) bulk deconvolution
+method, and c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,
+“10.1186/s13059-021-02362-7”)
+list(“tools:::Rd_expr_doi("10.1186/s13059-021-02362-7")”) for
+list(“spatialDWLS”) , the spatial implementation used here.

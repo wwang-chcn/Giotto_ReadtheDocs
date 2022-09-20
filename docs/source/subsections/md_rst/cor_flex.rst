@@ -1,6 +1,11 @@
-.. _cor_flex:
+========
+cor_flex
+========
+
+:Date: 2022-09-20
+
 ``cor_flex``
-================
+============
 
 cor_flex
 
@@ -12,20 +17,16 @@ cor_flex
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    cor_flex(x, ...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``x``
-     - data to use
-   * - ``...``
-     - other arguments passed to stats::cor()
-
+======== ======================================
+Argument Description
+======== ======================================
+``x``    data to use
+``...``  other arguments passed to stats::cor()
+======== ======================================

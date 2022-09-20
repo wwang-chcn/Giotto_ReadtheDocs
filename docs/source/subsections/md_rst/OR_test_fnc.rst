@@ -1,6 +1,11 @@
+===========
+OR_test_fnc
+===========
+
+:Date: 2022-09-20
 
 ``OR_test_fnc``
-===================
+===============
 
 OR_test_fnc
 
@@ -12,6 +17,6 @@ calculate odds-ratio from a 2x2 matrix
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    OR_test_fnc(matrix)

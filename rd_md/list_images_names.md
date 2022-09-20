@@ -20,7 +20,7 @@ list_images_names(gobject, img_type)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     a giotto object
-`img_type`     |     image or largeImage
+`img_type`     |     "image" or "largeImage"
 
 
 ## Value

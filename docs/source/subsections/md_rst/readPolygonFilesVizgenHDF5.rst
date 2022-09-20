@@ -1,6 +1,11 @@
+==========================
+readPolygonFilesVizgenHDF5
+==========================
+
+:Date: 2022-09-20
 
 ``readPolygonFilesVizgenHDF5``
-==================================
+==============================
 
 readPolygonFilesVizgenHDF5
 
@@ -12,7 +17,7 @@ Read and create polygons for all cells, or for only selected FOVs.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    readPolygonFilesVizgenHDF5(
      boundaries_path,
@@ -30,34 +35,36 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``boundaries_path``
-     - path to the cell_boundaries folder
-   * - ``fovs``
-     - subset of fovs to use
-   * - ``polygon_feat_types``
-     - a vector containing the polygon feature types
-   * - ``custom_polygon_names``
-     - a character vector to provide custom polygon names (optional)
-   * - ``flip_x_axis``
-     - flip x axis of polygon coordinates (multiply by -1)
-   * - ``flip_y_axis``
-     - flip y axis of polygon coordinates (multiply by -1)
-   * - ``smooth_polygons``
-     - smooth polygons (default = TRUE)
-   * - ``smooth_vertices``
-     - number of vertices for smoothing
-   * - ``set_neg_to_zero``
-     - set negative values to zero when smoothing
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``boundaries_path``           | path to the cell_boundaries folder   |
++-------------------------------+--------------------------------------+
+| ``fovs``                      | subset of fovs to use                |
++-------------------------------+--------------------------------------+
+| ``polygon_feat_types``        | a vector containing the polygon      |
+|                               | feature types                        |
++-------------------------------+--------------------------------------+
+| ``custom_polygon_names``      | a character vector to provide custom |
+|                               | polygon names (optional)             |
++-------------------------------+--------------------------------------+
+| ``flip_x_axis``               | flip x axis of polygon coordinates   |
+|                               | (multiply by -1)                     |
++-------------------------------+--------------------------------------+
+| ``flip_y_axis``               | flip y axis of polygon coordinates   |
+|                               | (multiply by -1)                     |
++-------------------------------+--------------------------------------+
+| ``smooth_polygons``           | smooth polygons (default = TRUE)     |
++-------------------------------+--------------------------------------+
+| ``smooth_vertices``           | number of vertices for smoothing     |
++-------------------------------+--------------------------------------+
+| ``set_neg_to_zero``           | set negative values to zero when     |
+|                               | smoothing                            |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Seealso
 -------
 
-`\ ``smoothGiottoPolygons`` <#smoothgiottopolygons>`_
+```smoothGiottoPolygons`` <#smoothgiottopolygons>`__

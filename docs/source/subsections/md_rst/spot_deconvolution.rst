@@ -1,6 +1,11 @@
+==================
+spot_deconvolution
+==================
+
+:Date: 2022-09-20
 
 ``spot_deconvolution``
-==========================
+======================
 
 spot_deconvolution
 
@@ -12,6 +17,6 @@ Rui to fill in
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spot_deconvolution(expr, cluster_info, ct_exp, binary_matrix)

@@ -2,6 +2,7 @@
 ``create_spatialNetworkObject``
 ===================================
 
+:Date: 2022-09-20
 create_spatialNetworkObject
 
 Description

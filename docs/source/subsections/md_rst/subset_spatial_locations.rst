@@ -1,6 +1,11 @@
+========================
+subset_spatial_locations
+========================
+
+:Date: 2022-09-20
 
 ``subset_spatial_locations``
-================================
+============================
 
 Subset spatial locations
 
@@ -12,6 +17,6 @@ Subset location data from giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    subset_spatial_locations(gobject, filter_bool_cells, spat_unit)

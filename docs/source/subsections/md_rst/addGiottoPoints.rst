@@ -1,6 +1,11 @@
-.. _addGiottoPoints:
+===============
+addGiottoPoints
+===============
+
+:Date: 2022-09-20
+
 ``addGiottoPoints``
-=======================
+===================
 
 Add giotto points object to giotto object
 
@@ -12,23 +17,22 @@ Adds Giotto points to an existing Giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    addGiottoPoints(gobject, gpoints)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``gpoints``
-     - list of giotto point objects, see `\ ``createGiottoPoints`` <#creategiottopoints>`_
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``gpoints``                   | list of giotto point objects, see    |
+|                               | ```createGio                         |
+|                               | ttoPoints`` <#creategiottopoints>`__ |
++-------------------------------+--------------------------------------+
 
 Value
 -----

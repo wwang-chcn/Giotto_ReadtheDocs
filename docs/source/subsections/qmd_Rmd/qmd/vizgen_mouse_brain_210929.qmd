@@ -1,6 +1,11 @@
 --- 
 title: vizgen_mouse_brain_210929 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: vizgen_mouse_brain_210929 
+format: rst 
 date: 2022-09-16 
 --- 
 

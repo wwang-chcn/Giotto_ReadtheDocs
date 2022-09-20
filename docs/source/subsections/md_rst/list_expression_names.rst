@@ -1,36 +1,37 @@
+=====================
+list_expression_names
+=====================
+
+:Date: 2022-09-20
 
 ``list_expression_names``
-=============================
+=========================
 
 list_expression_names
 
 Description
 -----------
 
-lists the available matrices names for a given spatial unit and feature type
+lists the available matrices names for a given spatial unit and feature
+type
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
-   list_expression_names(gobject, spat_unit, feat_type)
+   list_expression_names(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-
+============= ===========================================
+Argument      Description
+============= ===========================================
+``gobject``   giotto object
+``spat_unit`` spatial unit (e.g. “cell”)
+``feat_type`` feature type (e.g. “rna”, “dna”, “protein”)
+============= ===========================================
 
 Value
 -----

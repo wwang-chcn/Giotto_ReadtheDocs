@@ -1,6 +1,11 @@
+====================
+plotly_axis_scale_3D
+====================
+
+:Date: 2022-09-20
 
 ``plotly_axis_scale_3D``
-============================
+========================
 
 plotly_axis_scale_3D
 
@@ -12,7 +17,7 @@ adjust the axis scale in 3D plotly plot
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotly_axis_scale_3D(
      cell_locations,
@@ -26,24 +31,16 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``cell_locations``
-     - spatial_loc in giotto object
-   * - ``sdimx``
-     - x axis of cell spatial location
-   * - ``sdimy``
-     - y axis of cell spatial location
-   * - ``sdimz``
-     - z axis of cell spatial location
-   * - ``mode``
-     - axis adjustment mode
-   * - ``custom_ratio``
-     - set the ratio artificially
-
+================== ===============================
+Argument           Description
+================== ===============================
+``cell_locations`` spatial_loc in giotto object
+``sdimx``          x axis of cell spatial location
+``sdimy``          y axis of cell spatial location
+``sdimz``          z axis of cell spatial location
+``mode``           axis adjustment mode
+``custom_ratio``   set the ratio artificially
+================== ===============================
 
 Value
 -----

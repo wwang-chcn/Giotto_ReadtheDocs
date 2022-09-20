@@ -1,6 +1,11 @@
-.. _create_KNNnetwork_dbscan:
+========================
+create_KNNnetwork_dbscan
+========================
+
+:Date: 2022-09-20
+
 ``create_KNNnetwork_dbscan``
-================================
+============================
 
 create_KNNnetwork_dbscan
 
@@ -12,7 +17,7 @@ Create a spatial knn network with dbscan
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_KNNnetwork_dbscan(
      spatial_locations,

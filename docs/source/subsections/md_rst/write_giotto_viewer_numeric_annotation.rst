@@ -1,6 +1,11 @@
+======================================
+write_giotto_viewer_numeric_annotation
+======================================
+
+:Date: 2022-09-20
 
 ``write_giotto_viewer_numeric_annotation``
-==============================================
+==========================================
 
 write_giotto_viewer_numeric_annotation
 
@@ -12,7 +17,7 @@ write out numeric annotation data from a giotto object for the Viewer
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    write_giotto_viewer_numeric_annotation(
      annotation,
@@ -23,18 +28,16 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``annotation``
-     - annotation from the data.table from giotto object
-   * - ``annot_name``
-     - name of the annotation
-   * - ``output_directory``
-     - directory where to save the files
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``annotation``                | annotation from the data.table from  |
+|                               | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``annot_name``                | name of the annotation               |
++-------------------------------+--------------------------------------+
+| ``output_directory``          | directory where to save the files    |
++-------------------------------+--------------------------------------+
 
 Value
 -----

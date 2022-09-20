@@ -1,6 +1,11 @@
-.. _create_cluster_matrix:
+=====================
+create_cluster_matrix
+=====================
+
+:Date: 2022-09-20
+
 ``create_cluster_matrix``
-=============================
+=========================
 
 create_cluster_matrix
 
@@ -12,7 +17,7 @@ creates aggregated matrix for a given clustering column
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_cluster_matrix(
      gobject,

@@ -1,6 +1,11 @@
 --- 
 title: github_issues 
 format: rst 
+date: ymd 
+--- 
+--- 
+title: github_issues 
+format: rst 
 date: 2022-09-16 
 --- 
 

@@ -21,7 +21,8 @@ plot_giottoLargeImage(
   ymax_crop = NULL,
   ymin_crop = NULL,
   max_intensity = NULL,
-  asRGB = FALSE
+  asRGB = FALSE,
+  stretch = NULL
 )
 ```
 
@@ -37,6 +38,7 @@ Argument      |Description
 `xmax_crop, xmin_crop, ymax_crop, ymin_crop`     |     (optional) crop min/max x and y bounds
 `max_intensity`     |     (optional) value to treat as maximum intensity in color scale
 `asRGB`     |     (optional) [boolean] force RGB plotting if not automatically detected
+`stretch`     |     character. Option to stretch the values to increase contrast: "lin" linear or "hist" (histogram)
 
 
 ## Value

@@ -1,6 +1,11 @@
+================
+standardise_flex
+================
+
+:Date: 2022-09-20
 
 ``standardise_flex``
-========================
+====================
 
 standardise_flex
 
@@ -12,25 +17,20 @@ standardizes a matrix
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    standardise_flex(x, center = TRUE, scale = TRUE)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``x``
-     - matrix
-   * - ``center``
-     - center data
-   * - ``scale``
-     - scale data
-
+========== ===========
+Argument   Description
+========== ===========
+``x``      matrix
+``center`` center data
+``scale``  scale data
+========== ===========
 
 Value
 -----

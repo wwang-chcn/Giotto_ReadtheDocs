@@ -1,18 +1,24 @@
+====================
+getClusterSimilarity
+====================
+
+:Date: 2022-09-20
 
 ``getClusterSimilarity``
-============================
+========================
 
 getClusterSimilarity
 
 Description
 -----------
 
-Creates data.table with pairwise correlation scores between each cluster.
+Creates data.table with pairwise correlation scores between each
+cluster.
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    getClusterSimilarity(
      gobject,
@@ -26,31 +32,24 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``cluster_column``
-     - name of column to use for clusters
-   * - ``cor``
-     - correlation score to calculate distance
-
+===================== =======================================
+Argument              Description
+===================== =======================================
+``gobject``           giotto object
+``spat_unit``         spatial unit
+``feat_type``         feature type
+``expression_values`` expression values to use
+``cluster_column``    name of column to use for clusters
+``cor``               correlation score to calculate distance
+===================== =======================================
 
 Details
 -------
 
-Creates data.table with pairwise correlation scores between each cluster and
- the group size (# of cells) for each cluster. This information can be used together
- with mergeClusters to combine very similar or small clusters into bigger clusters.
+Creates data.table with pairwise correlation scores between each cluster
+and the group size (# of cells) for each cluster. This information can
+be used together with mergeClusters to combine very similar or small
+clusters into bigger clusters.
 
 Value
 -----

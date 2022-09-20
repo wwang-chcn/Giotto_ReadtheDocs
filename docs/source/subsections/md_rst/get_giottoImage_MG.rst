@@ -1,6 +1,11 @@
+==================
+get_giottoImage_MG
+==================
+
+:Date: 2022-09-20
 
 ``get_giottoImage_MG``
-==========================
+======================
 
 Get magick -based giotto ``image``
 
@@ -12,23 +17,22 @@ Get a giottoImage from a giotto object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_giottoImage_MG(gobject = NULL, name = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``name``
-     - name of giottoImage `\ ``showGiottoImageNames`` <#showgiottoimagenames>`_
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``name``                      | name of giottoImage                  |
+|                               | ```showGiottoIma                     |
+|                               | geNames`` <#showgiottoimagenames>`__ |
++-------------------------------+--------------------------------------+
 
 Value
 -----

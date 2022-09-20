@@ -1,6 +1,11 @@
+=============
+jackstrawPlot
+=============
+
+:Date: 2022-09-20
 
 ``jackstrawPlot``
-=====================
+=================
 
 jackstrawPlot
 
@@ -12,7 +17,7 @@ identify significant prinicipal components (PCs)
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    jackstrawPlot(
      gobject,
@@ -39,57 +44,59 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``reduction``
-     - cells or genes
-   * - ``feats_to_use``
-     - subset of features to use for PCA
-   * - ``genes_to_use``
-     - deprecated, use feats_to_use
-   * - ``center``
-     - center data before PCA
-   * - ``scale_unit``
-     - scale features before PCA
-   * - ``ncp``
-     - number of principal components to calculate
-   * - ``ylim``
-     - y-axis limits on jackstraw plot
-   * - ``iter``
-     - number of interations for jackstraw
-   * - ``threshold``
-     - p-value threshold to call a PC significant
-   * - ``verbose``
-     - show progress of jackstraw method
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from all_plots_save_function()
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``reduction``                 | cells or genes                       |
++-------------------------------+--------------------------------------+
+| ``feats_to_use``              | subset of features to use for PCA    |
++-------------------------------+--------------------------------------+
+| ``genes_to_use``              | deprecated, use feats_to_use         |
++-------------------------------+--------------------------------------+
+| ``center``                    | center data before PCA               |
++-------------------------------+--------------------------------------+
+| ``scale_unit``                | scale features before PCA            |
++-------------------------------+--------------------------------------+
+| ``ncp``                       | number of principal components to    |
+|                               | calculate                            |
++-------------------------------+--------------------------------------+
+| ``ylim``                      | y-axis limits on jackstraw plot      |
++-------------------------------+--------------------------------------+
+| ``iter``                      | number of interations for jackstraw  |
++-------------------------------+--------------------------------------+
+| ``threshold``                 | p-value threshold to call a PC       |
+|                               | significant                          |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | show progress of jackstraw method    |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot                            |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | all_plots_save_function()            |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-The Jackstraw method uses the `\ ``permutationPA`` <#permutationpa>`_ function. By
- systematically permuting genes it identifies robust, and thus significant, PCs.
-  list()
+The Jackstraw method uses the ```permutationPA`` <#permutationpa>`__
+function. By systematically permuting genes it identifies robust, and
+thus significant, PCs. list()
 
 Value
 -----

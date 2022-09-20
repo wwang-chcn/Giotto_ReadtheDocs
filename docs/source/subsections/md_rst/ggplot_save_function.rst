@@ -1,6 +1,11 @@
+====================
+ggplot_save_function
+====================
+
+:Date: 2022-09-20
 
 ``ggplot_save_function``
-============================
+========================
 
 ggplot_save_function
 
@@ -12,7 +17,7 @@ Function to automatically save plots to directory of interest
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    ggplot_save_function(
      gobject,
@@ -39,50 +44,51 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``plot_object``
-     - ggplot object to plot
-   * - ``save_dir``
-     - directory to save to
-   * - ``save_folder``
-     - folder in save_dir to save to
-   * - ``save_name``
-     - name of plot
-   * - ``save_format``
-     - format (e.g. png, tiff, pdf, ...)
-   * - ``show_saved_plot``
-     - load & display the saved plot
-   * - ``ncol``
-     - number of columns
-   * - ``nrow``
-     - number of rows
-   * - ``scale``
-     - scale
-   * - ``base_width``
-     - width
-   * - ``base_height``
-     - height
-   * - ``base_aspect_ratio``
-     - aspect ratio
-   * - ``units``
-     - units
-   * - ``dpi``
-     - Plot resolution
-   * - ``limitsize``
-     - When TRUE (the default), ggsave will not save images larger than 50x50 inches, to prevent the common error of specifying dimensions in pixels.
-   * - ``plot_count``
-     - count number for plot
-   * - ``list()``
-     - additional parameters to cowplot::save_plot
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``plot_object``               | ggplot object to plot                |
++-------------------------------+--------------------------------------+
+| ``save_dir``                  | directory to save to                 |
++-------------------------------+--------------------------------------+
+| ``save_folder``               | folder in save_dir to save to        |
++-------------------------------+--------------------------------------+
+| ``save_name``                 | name of plot                         |
++-------------------------------+--------------------------------------+
+| ``save_format``               | format (e.g. png, tiff, pdf, …)      |
++-------------------------------+--------------------------------------+
+| ``show_saved_plot``           | load & display the saved plot        |
++-------------------------------+--------------------------------------+
+| ``ncol``                      | number of columns                    |
++-------------------------------+--------------------------------------+
+| ``nrow``                      | number of rows                       |
++-------------------------------+--------------------------------------+
+| ``scale``                     | scale                                |
++-------------------------------+--------------------------------------+
+| ``base_width``                | width                                |
++-------------------------------+--------------------------------------+
+| ``base_height``               | height                               |
++-------------------------------+--------------------------------------+
+| ``base_aspect_ratio``         | aspect ratio                         |
++-------------------------------+--------------------------------------+
+| ``units``                     | units                                |
++-------------------------------+--------------------------------------+
+| ``dpi``                       | Plot resolution                      |
++-------------------------------+--------------------------------------+
+| ``limitsize``                 | When TRUE (the default), ggsave will |
+|                               | not save images larger than 50x50    |
+|                               | inches, to prevent the common error  |
+|                               | of specifying dimensions in pixels.  |
++-------------------------------+--------------------------------------+
+| ``plot_count``                | count number for plot                |
++-------------------------------+--------------------------------------+
+| ``list()``                    | additional parameters to             |
+|                               | cowplot::save_plot                   |
++-------------------------------+--------------------------------------+
 
 Seealso
 -------
 
-`\ ``save_plot`` <#saveplot>`_
+```save_plot`` <#saveplot>`__

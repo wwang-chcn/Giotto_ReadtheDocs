@@ -1,20 +1,26 @@
+=================
+polygon_to_raster
+=================
+
+:Date: 2022-09-20
 
 ``polygon_to_raster``
-=========================
+=====================
 
 Convert polygon to raster
 
 Description
 -----------
 
-function to convert terra SpatVector Polygon shape into a terra SpatRaster
+function to convert terra SpatVector Polygon shape into a terra
+SpatRaster
 
- convert polygon to raster
+convert polygon to raster
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    polygon_to_raster(polygon, field = NULL)
    polygon_to_raster(polygon, field = NULL)

@@ -1,17 +1,22 @@
+======================
+subset_spatial_network
+======================
+
+:Date: 2022-09-20
 
 ``subset_spatial_network``
-==============================
+==========================
 
 Subset spatial network
 
 Description
 -----------
 
-subset spatial networks from giotto object
+subset ALL spatial networks from giotto object of the given spat_unit
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    subset_spatial_network(gobject, spat_unit, cells_to_keep)

@@ -1,6 +1,11 @@
-.. _annotateSpatialGrid:
+===================
+annotateSpatialGrid
+===================
+
+:Date: 2022-09-20
+
 ``annotateSpatialGrid``
-===========================
+=======================
 
 annotateSpatialGrid
 
@@ -12,11 +17,12 @@ annotate spatial grid with cell ID and cell metadata (optional)
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    annotateSpatialGrid(
      gobject,
      spat_unit = NULL,
+     feat_type = NULL,
      spat_loc_name = "raw",
      spatial_grid_name = "spatial_grid",
      cluster_columns = NULL
@@ -25,22 +31,24 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - Giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spat_loc_name``
-     - name of spatial locations
-   * - ``spatial_grid_name``
-     - name of spatial grid, see `\ ``showGiottoSpatGrids`` <#showgiottospatgrids>`_
-   * - ``cluster_columns``
-     - names of cell metadata, see `\ ``pDataDT`` <#pdatadt>`_
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | Giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name of spatial locations            |
++-------------------------------+--------------------------------------+
+| ``spatial_grid_name``         | name of spatial grid, see            |
+|                               | ```showGiottoS                       |
+|                               | patGrids`` <#showgiottospatgrids>`__ |
++-------------------------------+--------------------------------------+
+| ``cluster_columns``           | names of cell metadata, see          |
+|                               | ```pDataDT`` <#pdatadt>`__           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

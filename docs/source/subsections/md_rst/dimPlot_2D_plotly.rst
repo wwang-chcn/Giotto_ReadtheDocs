@@ -1,6 +1,11 @@
-.. _dimPlot_2D_plotly:
+=================
+dimPlot_2D_plotly
+=================
+
+:Date: 2022-09-20
+
 ``dimPlot_2D_plotly``
-=========================
+=====================
 
 dimPlot_2D_plotly
 
@@ -12,7 +17,7 @@ Visualize cells at their 2D dimension reduction coordinates with plotly
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    dimPlot_2D_plotly(
      gobject,

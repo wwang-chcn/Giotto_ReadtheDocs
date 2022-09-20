@@ -1,6 +1,11 @@
+==============
+projection_fun
+==============
+
+:Date: 2022-09-20
 
 ``projection_fun``
-======================
+==================
 
 projection_fun
 
@@ -12,22 +17,17 @@ project a point onto a plane
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    projection_fun(point_to_project, plane_point, plane_norm)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``point_to_project``
-     - point_to_project
-   * - ``plane_point``
-     - plane_point
-   * - ``plane_norm``
-     - plane_norm
-
+==================== ================
+Argument             Description
+==================== ================
+``point_to_project`` point_to_project
+``plane_point``      plane_point
+``plane_norm``       plane_norm
+==================== ================

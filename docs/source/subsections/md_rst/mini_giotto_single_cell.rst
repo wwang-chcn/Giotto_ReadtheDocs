@@ -2,6 +2,7 @@
 ``mini_giotto_single_cell``
 ===============================
 
+:Date: 2022-09-20
 mini Giotto object for spatial single-cell resolution data
 
 Description

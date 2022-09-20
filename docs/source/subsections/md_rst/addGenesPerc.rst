@@ -1,18 +1,24 @@
-.. _addGenesPerc:
+============
+addGenesPerc
+============
+
+:Date: 2022-09-20
+
 ``addGenesPerc``
-====================
+================
 
 addGenesPerc
 
 Description
 -----------
 
-calculates the total percentage of (normalized) counts for a subset of selected genes
+calculates the total percentage of (normalized) counts for a subset of
+selected genes
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    addGenesPerc(
      gobject,
@@ -27,28 +33,28 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``expression_values``
-     - expression values to use
-   * - ``genes``
-     - vector of selected genes
-   * - ``vector_name``
-     - column name as seen in `\ ``pDataDT`` <#pdatadt>`_
-   * - ``return_gobject``
-     - boolean: return giotto object (default = TRUE)
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | expression values to use             |
++-------------------------------+--------------------------------------+
+| ``genes``                     | vector of selected genes             |
++-------------------------------+--------------------------------------+
+| ``vector_name``               | column name as seen in               |
+|                               | ```pDataDT`` <#pdatadt>`__           |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | boolean: return giotto object        |
+|                               | (default = TRUE)                     |
++-------------------------------+--------------------------------------+
 
 Value
 -----
 
-giotto object if ``return_gobject = TRUE`` , else a vector with % results
+giotto object if ``return_gobject = TRUE`` , else a vector with %
+results

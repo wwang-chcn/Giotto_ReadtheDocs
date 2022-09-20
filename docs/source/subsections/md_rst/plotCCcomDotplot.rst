@@ -1,18 +1,24 @@
+================
+plotCCcomDotplot
+================
+
+:Date: 2022-09-20
 
 ``plotCCcomDotplot``
-========================
+====================
 
 plotCCcomDotplot
 
 Description
 -----------
 
-Plots dotplot for ligand-receptor communication scores in cell-cell interactions
+Plots dotplot for ligand-receptor communication scores in cell-cell
+interactions
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotCCcomDotplot(
      gobject,
@@ -35,40 +41,50 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``comScores``
-     - communinication scores from `\ ``exprCellCellcom`` <#exprcellcellcom>`_ or `\ ``spatCellCellcom`` <#spatcellcellcom>`_
-   * - ``selected_LR``
-     - selected ligand-receptor combinations
-   * - ``selected_cell_LR``
-     - selected cell-cell combinations for ligand-receptor combinations
-   * - ``show_LR_names``
-     - show ligand-receptor names
-   * - ``show_cell_LR_names``
-     - show cell-cell names
-   * - ``cluster_on``
-     - values to use for clustering of cell-cell and ligand-receptor pairs
-   * - ``cor_method``
-     - correlation method used for clustering
-   * - ``aggl_method``
-     - agglomeration method used by hclust
-   * - ``show_plot``
-     - show plots
-   * - ``return_plot``
-     - return plotting object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``comScores``                 | communinication scores from          |
+|                               | ```exp                               |
+|                               | rCellCellcom`` <#exprcellcellcom>`__ |
+|                               | or                                   |
+|                               | ```spa                               |
+|                               | tCellCellcom`` <#spatcellcellcom>`__ |
++-------------------------------+--------------------------------------+
+| ``selected_LR``               | selected ligand-receptor             |
+|                               | combinations                         |
++-------------------------------+--------------------------------------+
+| ``selected_cell_LR``          | selected cell-cell combinations for  |
+|                               | ligand-receptor combinations         |
++-------------------------------+--------------------------------------+
+| ``show_LR_names``             | show ligand-receptor names           |
++-------------------------------+--------------------------------------+
+| ``show_cell_LR_names``        | show cell-cell names                 |
++-------------------------------+--------------------------------------+
+| ``cluster_on``                | values to use for clustering of      |
+|                               | cell-cell and ligand-receptor pairs  |
++-------------------------------+--------------------------------------+
+| ``cor_method``                | correlation method used for          |
+|                               | clustering                           |
++-------------------------------+--------------------------------------+
+| ``aggl_method``               | agglomeration method used by hclust  |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plots                           |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return plotting object               |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

@@ -1,57 +1,51 @@
-.. _combineSpatialCellMetadataInfo:
+==============================
+combineSpatialCellMetadataInfo
+==============================
+
+:Date: 2022-09-20
+
 ``combineSpatialCellMetadataInfo``
-======================================
+==================================
 
 combineSpatialCellMetadataInfo
 
 Description
 -----------
 
-Combine cell metadata with spatial cell information (e.g. polygon)
+Combine cell metadata with spatial cell information (e.g. polygon)
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    combineSpatialCellMetadataInfo(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - Giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type(s)
-
+============= ===============
+Argument      Description
+============= ===============
+``gobject``   Giotto object
+``spat_unit`` spatial unit
+``feat_type`` feature type(s)
+============= ===============
 
 Details
 -------
 
-The returned data.table has the following columns: list() 
+The returned data.table has the following columns: list()
 
+-  sdimx: spatial feature location on the x-axis
 
-* 
-  sdimx: spatial feature location on the x-axis   
+-  sdimy: spatial feature location on the y-axis
 
-* 
-  sdimy: spatial feature location on the y-axis   
+-  cell_ID: unique cell ID
 
-* 
-  cell_ID: unique cell ID   
+-  feat: selected feature(s)
 
-* 
-  feat: selected feature(s)   
-
-* 
-  other columns that are part of the cell metadata
+-  other columns that are part of the cell metadata
 
 Value
 -----

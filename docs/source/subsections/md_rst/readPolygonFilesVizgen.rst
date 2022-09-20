@@ -1,19 +1,24 @@
+======================
+readPolygonFilesVizgen
+======================
+
+:Date: 2022-09-20
 
 ``readPolygonFilesVizgen``
-==============================
+==========================
 
 readPolygonFilesVizgen
 
 Description
 -----------
 
-Read selected polygon files for the FOVs present in the Giotto
- object and add the smoothed polygons to the object
+Read selected polygon files for the FOVs present in the Giotto object
+and add the smoothed polygons to the object
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    readPolygonFilesVizgen(
      gobject,
@@ -32,36 +37,38 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``boundaries_path``
-     - path to the cell_boundaries folder
-   * - ``fovs``
-     - selected fovs, if NULL select all fovs within Giotto object
-   * - ``polygon_feat_types``
-     - a vector containing the polygon feature types
-   * - ``flip_x_axis``
-     - flip x axis of polygon coordinates (multiply by -1)
-   * - ``flip_y_axis``
-     - flip y axis of polygon coordinates (multiply by -1)
-   * - ``smooth_polygons``
-     - smooth polygons (default = TRUE)
-   * - ``smooth_vertices``
-     - number of vertices for smoothing
-   * - ``set_neg_to_zero``
-     - set negative values to zero when smoothing
-   * - ``return_gobject``
-     - return giotto object
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``boundaries_path``           | path to the cell_boundaries folder   |
++-------------------------------+--------------------------------------+
+| ``fovs``                      | selected fovs, if NULL select all    |
+|                               | fovs within Giotto object            |
++-------------------------------+--------------------------------------+
+| ``polygon_feat_types``        | a vector containing the polygon      |
+|                               | feature types                        |
++-------------------------------+--------------------------------------+
+| ``flip_x_axis``               | flip x axis of polygon coordinates   |
+|                               | (multiply by -1)                     |
++-------------------------------+--------------------------------------+
+| ``flip_y_axis``               | flip y axis of polygon coordinates   |
+|                               | (multiply by -1)                     |
++-------------------------------+--------------------------------------+
+| ``smooth_polygons``           | smooth polygons (default = TRUE)     |
++-------------------------------+--------------------------------------+
+| ``smooth_vertices``           | number of vertices for smoothing     |
++-------------------------------+--------------------------------------+
+| ``set_neg_to_zero``           | set negative values to zero when     |
+|                               | smoothing                            |
++-------------------------------+--------------------------------------+
+| ``return_gobject``            | return giotto object                 |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Seealso
 -------
 
-`\ ``smoothGiottoPolygons`` <#smoothgiottopolygons>`_
+```smoothGiottoPolygons`` <#smoothgiottopolygons>`__

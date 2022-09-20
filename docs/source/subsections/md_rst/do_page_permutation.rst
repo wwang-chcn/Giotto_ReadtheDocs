@@ -1,6 +1,11 @@
-.. _do_page_permutation:
+===================
+do_page_permutation
+===================
+
+:Date: 2022-09-20
+
 ``do_page_permutation``
-===========================
+=======================
 
 do_page_permutation
 
@@ -12,6 +17,6 @@ creates permutation for the PAGEEnrich test
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    do_page_permutation(gobject, sig_gene, ntimes)

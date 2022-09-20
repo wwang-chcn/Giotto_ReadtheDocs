@@ -1,6 +1,11 @@
+=======================
+removeGiottoEnvironment
+=======================
+
+:Date: 2022-09-20
 
 ``removeGiottoEnvironment``
-===============================
+===========================
 
 removeGiottoEnvironment
 
@@ -12,24 +17,21 @@ removeGiottoEnvironment
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    removeGiottoEnvironment(verbose = TRUE)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``verbose``
-     - be verbose
-
+=========== ===========
+Argument    Description
+=========== ===========
+``verbose`` be verbose
+=========== ===========
 
 Details
 -------
 
-Removes a previously installed giotto environment.
- See `\ ``installGiottoEnvironment`` <#installgiottoenvironment>`_ .
+Removes a previously installed giotto environment. See
+```installGiottoEnvironment`` <#installgiottoenvironment>`__ .

@@ -1,6 +1,11 @@
-.. _do_permuttest_random:
+====================
+do_permuttest_random
+====================
+
+:Date: 2022-09-20
+
 ``do_permuttest_random``
-============================
+========================
 
 do_permuttest_random
 
@@ -9,12 +14,12 @@ Description
 
 calculate random values
 
- Performs permutation test on subsets of a matrix
+Performs permutation test on subsets of a matrix
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    do_permuttest_random(
      expr_values,

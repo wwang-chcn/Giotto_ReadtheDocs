@@ -1,6 +1,11 @@
+====================
+get_giottoLargeImage
+====================
+
+:Date: 2022-09-20
 
 ``get_giottoLargeImage``
-============================
+========================
 
 Get terra -based giotto ``largeImage``
 
@@ -12,23 +17,22 @@ Set a giottoLargeImage from a giottoObject
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    get_giottoLargeImage(gobject = NULL, name = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``name``
-     - name of giottoLargeImage `\ ``showGiottoImageNames`` <#showgiottoimagenames>`_
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``name``                      | name of giottoLargeImage             |
+|                               | ```showGiottoIma                     |
+|                               | geNames`` <#showgiottoimagenames>`__ |
++-------------------------------+--------------------------------------+
 
 Value
 -----

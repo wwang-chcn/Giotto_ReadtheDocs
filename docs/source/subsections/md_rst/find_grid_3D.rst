@@ -1,6 +1,11 @@
-.. _find_grid_3D:
+============
+find_grid_3D
+============
+
+:Date: 2022-09-20
+
 ``find_grid_3D``
-====================
+================
 
 find_grid_3D
 
@@ -12,6 +17,6 @@ find grid location in 3D
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    find_grid_3D(grid_DT, x_loc, y_loc, z_loc)

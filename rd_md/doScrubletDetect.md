@@ -39,11 +39,16 @@ Argument      |Description
 `min_cells`     |     scrublet internal data filtering. min cells expressed to be considered a feat
 `min_gene_variability_pctl`     |     scrublet internal PCA generation. highly variable gene percentile cutoff
 `n_prin_comps`     |     number of PCs to use in PCA for detection
-`return_gobject`     |     return as gobject if TRUE, data.frame with cell_ID if fALSE
+`return_gobject`     |     return as gobject if TRUE, data.frame with cell_ID if FALSE
 
 
 ## Value
 
 list including doublet scores and classifications
+
+
+## Seealso
+
+This function wraps the python package scrublet c("\\Sexpr[results=rd]{tools:::Rd_expr_doi(\"#1\")}", "10.1016/j.cels.2018.11.005") list("tools:::Rd_expr_doi(\"10.1016/j.cels.2018.11.005\")")
 
 

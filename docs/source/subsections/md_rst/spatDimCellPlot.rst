@@ -1,34 +1,63 @@
+===============
+spatDimCellPlot
+===============
+
+:Date: 2022-09-20
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 ``spatDimCellPlot``
-=======================
+===================
 
 spatDimCellPlot
 
 Description
 -----------
 
-Visualize numerical features of cells according to spatial AND dimension reduction coordinates in 2D
+Visualize numerical features of cells according to spatial AND dimension
+reduction coordinates in 2D
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatDimCellPlot(...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``...``                       | Arguments passed on to               |
+|                               | ```spatDim                           |
+|                               | CellPlot2D`` <#spatdimcellplot2d>`__ |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”gobject”)),          |
+|                               | list(“giotto object”)),              |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”spat_unit”)),        |
+|                               | list(“spatial unit”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”feat_type”)),        |
+|                               | list(“feature type”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”show_image”)),       |
+|                               | list(“show a tissue background       |
+|                               | image”)), “:raw-latex:`\n`”, ” “,    |
+|                               | list(list(list(”gimage”)), list(“a   |
+|                               | giotto image”)), “:raw-latex:`\n`”,  |
+|                               | ” “, list(list(list(”image_name”)),  |
+|                               | list(“name of a giotto image”)),     |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”largeImage_name”)),  |
+|                               | list(“name of a giottoLargeImage”)), |
++-------------------------------+--------------------------------------+
 
-   * - Argument
-     - Description
-   * - ``...``
-     - Arguments passed on to `\ ``spatDimCellPlot2D`` <#spatdimcellplot2d>`_   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit")), "\n", "    ", list(list(list("feat_type")), list("feature type")), "\n", "    ", list(list(list("show_image")), list("show a tissue background image")), "\n", "    ", list(list(list("gimage")), list("a giotto image")), "\n", "    ", list(list(list("image_name")), list("name of a giotto image")), "\n", "    ", list(list(list("largeImage_name")), list("name of a giottoLargeImage")), 
-
-
-.. code-block::
+::
 
    "\n", "    ", list(list(list("plot_alignment")), list("direction to align plot")), "\n", "    ", list(list(list("spat_enr_names")), list("names of spatial enrichment results to include")), "\n", "    ", list(list(list("cell_annotation_values")), list("numeric cell annotation columns")), "\n", "    ", list(list(list("dim_reduction_to_use")), list("dimension reduction to use")), "\n", "    ", list(list(list("dim_reduction_name")), list("dimension reduction name")), "\n", "    ", list(list(list(
        "dim1_to_use")), list("dimension to use on x-axis")), "\n", "    ", list(list(list("dim2_to_use")), list("dimension to use on y-axis")), "\n", "    ", list(list(list("sdimx")), list("= spatial dimension to use on x-axis")), "\n", "    ", list(list(list("sdimy")), list("= spatial dimension to use on y-axis")), "\n", "    ", list(list(list("cell_color_gradient")), list("vector with 3 colors for numeric data")), "\n", "    ", list(list(list("gradient_midpoint")), list("midpoint for color gradient")), 
@@ -45,8 +74,6 @@ Arguments
        list("border colorr for voronoi plot")), "\n", "    ", list(list(list("vor_max_radius")), list("maximum radius for voronoi 'cells'")), "\n", "    ", list(list(list("vor_alpha")), list("transparancy of voronoi 'cells'")), "\n", "    ", list(list(list("axis_text")), list("size of axis text")), "\n", "    ", list(list(list("axis_title")), list("size of axis title")), "\n", "    ", list(list(list("show_plot")), list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), 
    "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
-
-
 Details
 -------
 
@@ -61,4 +88,4 @@ Seealso
 -------
 
 Other spatial and dimension reduction cell annotation visualizations:
- `\ ``spatDimCellPlot2D`` <#spatdimcellplot2d>`_
+```spatDimCellPlot2D`` <#spatdimcellplot2d>`__

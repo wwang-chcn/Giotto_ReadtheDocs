@@ -1,40 +1,71 @@
+=================
+spatDimGenePlot2D
+=================
+
+:Date: 2022-09-20
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 ``spatDimGenePlot2D``
-=========================
+=====================
 
 spatDimGenePlot2D
 
 Description
 -----------
 
-Visualize cells according to spatial AND dimension reduction coordinates in ggplot mode
+Visualize cells according to spatial AND dimension reduction coordinates
+in ggplot mode
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatDimGenePlot2D(gobject, genes, default_save_name = "spatDimGenePlot2D", ...)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``genes``                     | genes to show                        |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
+| ``...``                       | Arguments passed on to               |
+|                               | ```spatDim                           |
+|                               | FeatPlot2D`` <#spatdimfeatplot2d>`__ |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”spat_unit”)),        |
+|                               | list(“spatial unit”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”feat_type”)),        |
+|                               | list(“feature type”)),               |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”show_image”)),       |
+|                               | list(“show a tissue background       |
+|                               | image”)), “:raw-latex:`\n`”, ” “,    |
+|                               | list(list(list(”gimage”)), list(“a   |
+|                               | giotto image”)), “:raw-latex:`\n`”,  |
+|                               | ” “, list(list(list(”image_name”)),  |
+|                               | list(“name of a giotto image”)),     |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”largeImage_name”)),  |
+|                               | list(“name of a giottoLargeImage”)), |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | l                                    |
+|                               | ist(list(list(”expression_values”)), |
++-------------------------------+--------------------------------------+
 
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``genes``
-     - genes to show
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-   * - ``...``
-     - Arguments passed on to `\ ``spatDimFeatPlot2D`` <#spatdimfeatplot2d>`_   list("\n", "    ", list(list(list("spat_unit")), list("spatial unit")), "\n", "    ", list(list(list("feat_type")), list("feature type")), "\n", "    ", list(list(list("show_image")), list("show a tissue background image")), "\n", "    ", list(list(list("gimage")), list("a giotto image")), "\n", "    ", list(list(list("image_name")), list("name of a giotto image")), "\n", "    ", list(list(list("largeImage_name")), list("name of a giottoLargeImage")), "\n", "    ", list(list(list("expression_values")), 
-
-
-.. code-block::
+::
 
    list("feat expression values to use")), "\n", "    ", list(list(list("plot_alignment")), list("direction to align plot")), "\n", "    ", list(list(list("dim_reduction_to_use")), list("dimension reduction to use")), "\n", "    ", list(list(list("dim_reduction_name")), list("dimension reduction name")), "\n", "    ", list(list(list("dim1_to_use")), list("dimension to use on x-axis")), "\n", "    ", list(list(list("dim2_to_use")), list("dimension to use on y-axis")), "\n", "    ", list(list(list(
    "dim_point_shape")), list("dim reduction points with border or not (border or no_border)")), "\n", "    ", list(list(list("dim_point_size")), list("dim reduction plot: point size")), "\n", "    ", list(list(list("dim_point_alpha")), list("transparancy of dim. reduction points")), "\n", "    ", list(list(list("dim_point_border_col")), list("color of border around points")), "\n", "    ", list(list(list("dim_point_border_stroke")), list("stroke size of border around points")), "\n", "    ", list(
@@ -46,8 +77,6 @@ Arguments
    "\n", "    ", list(list(list("vor_border_color")), list("border colorr for voronoi plot")), "\n", "    ", list(list(list("vor_max_radius")), list("maximum radius for voronoi 'cells'")), "\n", "    ", list(list(list("vor_alpha")), list("transparancy of voronoi 'cells'")), "\n", "    ", list(list(list("axis_text")), list("size of axis text")), "\n", "    ", list(list(list("axis_title")), list("size of axis title")), "\n", "    ", list(list(list("cow_n_col")), list("cowplot param: how many columns")), 
    "\n", "    ", list(list(list("cow_rel_h")), list("cowplot param: relative height")), "\n", "    ", list(list(list("cow_rel_w")), list("cowplot param: relative width")), "\n", "    ", list(list(list("cow_align")), list("cowplot param: how to align")), "\n", "    ", list(list(list("show_plot")), list("show plots")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(
        list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "  ")
-
-
 
 Details
 -------
@@ -62,8 +91,8 @@ ggplot
 Seealso
 -------
 
-`\ ``spatDimGenePlot3D`` <#spatdimgeneplot3d>`_ 
+```spatDimGenePlot3D`` <#spatdimgeneplot3d>`__
 
- Other spatial and dimension reduction gene expression visualizations:
- `\ ``spatDimGenePlot3D`` <#spatdimgeneplot3d>`_ ,
- `\ ``spatDimGenePlot`` <#spatdimgeneplot>`_
+Other spatial and dimension reduction gene expression visualizations:
+```spatDimGenePlot3D`` <#spatdimgeneplot3d>`__ ,
+```spatDimGenePlot`` <#spatdimgeneplot>`__

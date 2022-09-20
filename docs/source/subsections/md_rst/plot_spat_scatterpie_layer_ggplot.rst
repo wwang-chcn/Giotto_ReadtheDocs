@@ -1,6 +1,11 @@
+=================================
+plot_spat_scatterpie_layer_ggplot
+=================================
+
+:Date: 2022-09-20
 
 ``plot_spat_scatterpie_layer_ggplot``
-=========================================
+=====================================
 
 plot_spat_scatterpie_layer_ggplot
 
@@ -12,7 +17,7 @@ create scatterpie in ggplot
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plot_spat_scatterpie_layer_ggplot(
      ggobject,
@@ -29,28 +34,18 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``sdimx``
-     - x-axis dimension name (default = 'sdimx')
-   * - ``sdimy``
-     - y-axis dimension name (default = 'sdimy')
-   * - ``spatial_locations``
-     - spatial locations
-   * - ``spatial_enrichment``
-     - spatial enrichment results
-   * - ``radius``
-     - radius of scatterpie
-   * - ``color``
-     - color of lines within pie chart
-   * - ``cell_color_code``
-     - color code for the cell types
-   * - ``gobject``
-     - giotto object
-
+====================== =========================================
+Argument               Description
+====================== =========================================
+``sdimx``              x-axis dimension name (default = ‘sdimx’)
+``sdimy``              y-axis dimension name (default = ‘sdimy’)
+``spatial_locations``  spatial locations
+``spatial_enrichment`` spatial enrichment results
+``radius``             radius of scatterpie
+``color``              color of lines within pie chart
+``cell_color_code``    color code for the cell types
+``gobject``            giotto object
+====================== =========================================
 
 Value
 -----

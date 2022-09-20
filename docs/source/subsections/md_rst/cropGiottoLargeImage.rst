@@ -1,6 +1,11 @@
-.. _cropGiottoLargeImage:
+====================
+cropGiottoLargeImage
+====================
+
+:Date: 2022-09-20
+
 ``cropGiottoLargeImage``
-============================
+========================
 
 Crop a giotto largeImage object
 
@@ -12,7 +17,7 @@ Crop a giottoLargeImage based on crop_extent argument or given values
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    cropGiottoLargeImage(
      gobject = NULL,
@@ -29,24 +34,28 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - gobject holding the giottoLargeImage
-   * - ``largeImage_name``
-     - name of giottoLargeImage within gobject
-   * - ``giottoLargeImage``
-     - alternative input param using giottoLargeImage object instead of through ``gobject`` and ``largeImage_name`` params
-   * - ``crop_name``
-     - arbitrary name for cropped giottoLargeImage
-   * - ``crop_extent``
-     - terra extent object used to crop the giottoLargeImage
-   * - ``xmax_crop, xmin_crop, ymax_crop, ymin_crop``
-     - crop min/max x and y bounds
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | gobject holding the giottoLargeImage |
++-------------------------------+--------------------------------------+
+| ``largeImage_name``           | name of giottoLargeImage within      |
+|                               | gobject                              |
++-------------------------------+--------------------------------------+
+| ``giottoLargeImage``          | alternative input param using        |
+|                               | giottoLargeImage object instead of   |
+|                               | through ``gobject`` and              |
+|                               | ``largeImage_name`` params           |
++-------------------------------+--------------------------------------+
+| ``crop_name``                 | arbitrary name for cropped           |
+|                               | giottoLargeImage                     |
++-------------------------------+--------------------------------------+
+| ``crop_extent``               | terra extent object used to crop the |
+|                               | giottoLargeImage                     |
++-------------------------------+--------------------------------------+
+| ``xmax_crop, xmin             | crop min/max x and y bounds          |
+| _crop, ymax_crop, ymin_crop`` |                                      |
++-------------------------------+--------------------------------------+
 
 Value
 -----

@@ -1,6 +1,11 @@
-.. _create_giotto_polygon_object:
+============================
+create_giotto_polygon_object
+============================
+
+:Date: 2022-09-20
+
 ``create_giotto_polygon_object``
-====================================
+================================
 
 Create a giotto polygon object
 
@@ -12,7 +17,7 @@ Create a giotto polygon object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_giotto_polygon_object(
      name = "cell",

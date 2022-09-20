@@ -1,6 +1,11 @@
+===========================
+subset_giotto_points_object
+===========================
+
+:Date: 2022-09-20
 
 ``subset_giotto_points_object``
-===================================
+===============================
 
 Subset giotto points object
 
@@ -12,7 +17,7 @@ Subset a single giotto points object
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    subset_giotto_points_object(
      gpoints,

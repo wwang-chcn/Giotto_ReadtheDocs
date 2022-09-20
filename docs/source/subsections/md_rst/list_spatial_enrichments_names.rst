@@ -1,6 +1,11 @@
+==============================
+list_spatial_enrichments_names
+==============================
+
+:Date: 2022-09-20
 
 ``list_spatial_enrichments_names``
-======================================
+==================================
 
 list_spatial_enrichments_names
 
@@ -12,25 +17,20 @@ returns the available spatial enrichment names for a given spatial unit
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
-   list_spatial_enrichments_names(gobject, spat_unit, feat_type)
+   list_spatial_enrichments_names(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-
+============= ===========================================
+Argument      Description
+============= ===========================================
+``gobject``   giotto object
+``spat_unit`` spatial unit (e.g. “cell”)
+``feat_type`` feature type (e.g. “rna”, “dna”, “protein”)
+============= ===========================================
 
 Value
 -----

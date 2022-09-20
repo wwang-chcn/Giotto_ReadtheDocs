@@ -1,6 +1,11 @@
+====================
+read_expression_data
+====================
+
+:Date: 2022-09-20
 
 ``read_expression_data``
-============================
+========================
 
 Read expression data
 
@@ -12,7 +17,7 @@ Read expression data
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    read_expression_data(
      expr_list = NULL,
@@ -25,36 +30,32 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``expr_list``
-     - (nested) list with expression data
-   * - ``sparse``
-     - read matrix data in a sparse manner
-   * - ``cores``
-     - number of cores to use
-   * - ``default_feat_type``
-     - default feature type if nothing is provided
-   * - ``verbose``
-     - be verbose
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``expr_list``                 | (nested) list with expression data   |
++-------------------------------+--------------------------------------+
+| ``sparse``                    | read matrix data in a sparse manner  |
++-------------------------------+--------------------------------------+
+| ``cores``                     | number of cores to use               |
++-------------------------------+--------------------------------------+
+| ``default_feat_type``         | default feature type if nothing is   |
+|                               | provided                             |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-mylistA = list('a' = matrix(1:5), 'b' = matrix(1:5))
- depth(mylistA)
+mylistA = list(‘a’ = matrix(1:5), ‘b’ = matrix(1:5)) depth(mylistA)
 
- mylistB = list(A = list('a' = matrix(1:5), 'b' = matrix(1:5)),
- B = list('c' = matrix(1:5),'d' = matrix(1:5)))
- depth(mylistB)
+mylistB = list(A = list(‘a’ = matrix(1:5), ‘b’ = matrix(1:5)), B =
+list(‘c’ = matrix(1:5),‘d’ = matrix(1:5))) depth(mylistB)
 
- mylistC = list('RNA' = list('RAW' = list('cell' = matrix(1:5), 'nucleus' = matrix(6:10)),
- 'NORM' = list('cell' = matrix(11:15),'nucleus' = matrix(20:25))),
- 'PROT' = list('RAW' = list('cell' = matrix(16:20))))
- depth(mylistC)
+mylistC = list(‘RNA’ = list(‘RAW’ = list(‘cell’ = matrix(1:5), ‘nucleus’
+= matrix(6:10)), ‘NORM’ = list(‘cell’ = matrix(11:15),‘nucleus’ =
+matrix(20:25))), ‘PROT’ = list(‘RAW’ = list(‘cell’ = matrix(16:20))))
+depth(mylistC)
 
- mymatD = matrix(data = 1:4)
+mymatD = matrix(data = 1:4)

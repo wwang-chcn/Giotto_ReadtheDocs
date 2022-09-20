@@ -1,18 +1,24 @@
-.. _create_average_DT:
+=================
+create_average_DT
+=================
+
+:Date: 2022-09-20
+
 ``create_average_DT``
-=========================
+=====================
 
 create_average_DT
 
 Description
 -----------
 
-calculates average gene expression for a cell metadata factor (e.g. cluster)
+calculates average gene expression for a cell metadata factor
+(e.g. cluster)
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_average_DT(
      gobject,
@@ -25,22 +31,15 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``meta_data_name``
-     - name of metadata column to use
-   * - ``expression_values``
-     - which expression values to use
-
+===================== ==============================
+Argument              Description
+===================== ==============================
+``gobject``           giotto object
+``spat_unit``         spatial unit
+``feat_type``         feature type
+``meta_data_name``    name of metadata column to use
+``expression_values`` which expression values to use
+===================== ==============================
 
 Value
 -----

@@ -1,18 +1,24 @@
+==================
+plotRankSpatvsExpr
+==================
+
+:Date: 2022-09-20
 
 ``plotRankSpatvsExpr``
-==========================
+======================
 
 plotRankSpatvsExpr
 
 Description
 -----------
 
-Plots dotplot to compare ligand-receptor rankings from spatial and expression information
+Plots dotplot to compare ligand-receptor rankings from spatial and
+expression information
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    plotRankSpatvsExpr(
      gobject,
@@ -34,40 +40,46 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - giotto object
-   * - ``combCC``
-     - combined communinication scores from `\ ``combCCcom`` <#combcccom>`_
-   * - ``expr_rnk_column``
-     - column with expression rank information to use
-   * - ``spat_rnk_column``
-     - column with spatial rank information to use
-   * - ``midpoint``
-     - midpoint of colors
-   * - ``size_range``
-     - size ranges of dotplot
-   * - ``xlims``
-     - x-limits, numerical vector of 2
-   * - ``ylims``
-     - y-limits, numerical vector of 2
-   * - ``selected_ranks``
-     - numerical vector, will be used to print out the percentage of top spatial ranks are recovered
-   * - ``show_plot``
-     - show plots
-   * - ``return_plot``
-     - return plotting object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters from `\ ``all_plots_save_function`` <#allplotssavefunction>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``combCC``                    | combined communinication scores from |
+|                               | ```combCCcom`` <#combcccom>`__       |
++-------------------------------+--------------------------------------+
+| ``expr_rnk_column``           | column with expression rank          |
+|                               | information to use                   |
++-------------------------------+--------------------------------------+
+| ``spat_rnk_column``           | column with spatial rank information |
+|                               | to use                               |
++-------------------------------+--------------------------------------+
+| ``midpoint``                  | midpoint of colors                   |
++-------------------------------+--------------------------------------+
+| ``size_range``                | size ranges of dotplot               |
++-------------------------------+--------------------------------------+
+| ``xlims``                     | x-limits, numerical vector of 2      |
++-------------------------------+--------------------------------------+
+| ``ylims``                     | y-limits, numerical vector of 2      |
++-------------------------------+--------------------------------------+
+| ``selected_ranks``            | numerical vector, will be used to    |
+|                               | print out the percentage of top      |
+|                               | spatial ranks are recovered          |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plots                           |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return plotting object               |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters from       |
+|                               | ```all_plots_save_f                  |
+|                               | unction`` <#allplotssavefunction>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Value
 -----

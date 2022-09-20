@@ -20,7 +20,7 @@ set_polygon_info(gobject, polygon_name = "cell", gpolygon)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`polygon_name`     |     name of polygons
+`polygon_name`     |     name of polygons. Default "cell"
 `gpolygon`     |     giotto polygon
 
 

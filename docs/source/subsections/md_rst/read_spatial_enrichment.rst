@@ -1,6 +1,11 @@
+=======================
+read_spatial_enrichment
+=======================
+
+:Date: 2022-09-20
 
 ``read_spatial_enrichment``
-===============================
+===========================
 
 Read spatial enrichment
 
@@ -12,6 +17,6 @@ read spatial enrichment results from list
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    read_spatial_enrichment(gobject, spatial_enrichment)

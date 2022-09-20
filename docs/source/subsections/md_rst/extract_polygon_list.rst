@@ -1,6 +1,11 @@
-.. _extract_polygon_list:
+====================
+extract_polygon_list
+====================
+
+:Date: 2022-09-20
+
 ``extract_polygon_list``
-============================
+========================
 
 Extract list of polygons
 
@@ -12,7 +17,7 @@ to extract list of polygons
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    extract_polygon_list(
      polygonlist,

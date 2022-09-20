@@ -1,6 +1,11 @@
+=========
+spatialDE
+=========
+
+:Date: 2022-09-20
 
 ``spatialDE``
-=================
+=============
 
 spatialDE
 
@@ -12,7 +17,7 @@ Compute spatial variable genes with spatialDE method
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    spatialDE(
      gobject = NULL,
@@ -35,47 +40,53 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``gobject``
-     - Giotto object
-   * - ``feat_type``
-     - feature type
-   * - ``spat_unit``
-     - spatial unit
-   * - ``spat_loc_name``
-     - name for spatial locations
-   * - ``expression_values``
-     - gene expression values to use
-   * - ``size``
-     - size of plot
-   * - ``color``
-     - low/medium/high color scheme for plot
-   * - ``sig_alpha``
-     - alpha value for significance
-   * - ``unsig_alpha``
-     - alpha value for unsignificance
-   * - ``python_path``
-     - specify specific path to python if required
-   * - ``show_plot``
-     - show plot
-   * - ``return_plot``
-     - return ggplot object
-   * - ``save_plot``
-     - directly save the plot [boolean]
-   * - ``save_param``
-     - list of saving parameters, see `\ ``showSaveParameters`` <#showsaveparameters>`_
-   * - ``default_save_name``
-     - default save name for saving, don't change, change save_name in save_param
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | Giotto object                        |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name for spatial locations           |
++-------------------------------+--------------------------------------+
+| ``expression_values``         | gene expression values to use        |
++-------------------------------+--------------------------------------+
+| ``size``                      | size of plot                         |
++-------------------------------+--------------------------------------+
+| ``color``                     | low/medium/high color scheme for     |
+|                               | plot                                 |
++-------------------------------+--------------------------------------+
+| ``sig_alpha``                 | alpha value for significance         |
++-------------------------------+--------------------------------------+
+| ``unsig_alpha``               | alpha value for unsignificance       |
++-------------------------------+--------------------------------------+
+| ``python_path``               | specify specific path to python if   |
+|                               | required                             |
++-------------------------------+--------------------------------------+
+| ``show_plot``                 | show plot                            |
++-------------------------------+--------------------------------------+
+| ``return_plot``               | return ggplot object                 |
++-------------------------------+--------------------------------------+
+| ``save_plot``                 | directly save the plot [boolean]     |
++-------------------------------+--------------------------------------+
+| ``save_param``                | list of saving parameters, see       |
+|                               | ```showSaveP                         |
+|                               | arameters`` <#showsaveparameters>`__ |
++-------------------------------+--------------------------------------+
+| ``default_save_name``         | default save name for saving, don’t  |
+|                               | change, change save_name in          |
+|                               | save_param                           |
++-------------------------------+--------------------------------------+
 
 Details
 -------
 
-This function is a wrapper for the SpatialDE method implemented in the ...
+This function is a wrapper for the SpatialDE method originally
+implemented in python. See publication
+c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,
+“10.1038/nmeth.4636”) list(“tools:::Rd_expr_doi("10.1038/nmeth.4636")”)
 
 Value
 -----

@@ -1,18 +1,24 @@
-.. _changeImageBg:
+=============
+changeImageBg
+=============
+
+:Date: 2022-09-20
+
 ``changeImageBg``
-=====================
+=================
 
 changeImageBg
 
 Description
 -----------
 
-Function to change the background color of a magick image plot to another color
+Function to change the background color of a magick image plot to
+another color
 
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    changeImageBg(
      mg_object,
@@ -25,22 +31,20 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``mg_object``
-     - magick image or giotto image object
-   * - ``bg_color``
-     - estimated current background color
-   * - ``perc_range``
-     - range around estimated background color to include (percentage)
-   * - ``new_color``
-     - new background color
-   * - ``new_name``
-     - change name of Giotto image
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``mg_object``                 | magick image or giotto image object  |
++-------------------------------+--------------------------------------+
+| ``bg_color``                  | estimated current background color   |
++-------------------------------+--------------------------------------+
+| ``perc_range``                | range around estimated background    |
+|                               | color to include (percentage)        |
++-------------------------------+--------------------------------------+
+| ``new_color``                 | new background color                 |
++-------------------------------+--------------------------------------+
+| ``new_name``                  | change name of Giotto image          |
++-------------------------------+--------------------------------------+
 
 Value
 -----

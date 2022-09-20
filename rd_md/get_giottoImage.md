@@ -24,7 +24,7 @@ get_giottoImage(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`image_type`     |     type of giotto image object
+`image_type`     |     type of giotto image object. Either "image" or "largeImage"
 `name`     |     name of a giotto image object [`showGiottoImageNames`](#showgiottoimagenames)
 
 

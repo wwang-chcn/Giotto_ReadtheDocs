@@ -1,6 +1,11 @@
-.. _create_delaunayNetwork3D:
+================
+create_dimObject
+================
+
+:Date: 2022-09-20
+
 ``create_dimObject``
-========================
+====================
 
 create_dimObject
 
@@ -12,7 +17,7 @@ Creates an object that stores a dimension reduction output
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    create_dimObject(
      name = "test",
@@ -27,28 +32,27 @@ Usage
 Arguments
 ---------
 
-.. list-table::
-   :header-rows: 1
-
-   * - Argument
-     - Description
-   * - ``name``
-     - arbitrary name for object
-   * - ``spat_unit``
-     - spatial unit
-   * - ``feat_type``
-     - feature type
-   * - ``reduction_method``
-     - method used to reduce dimensions
-   * - ``coordinates``
-     - accepts the coordinates after dimension reduction
-   * - ``misc``
-     - any additional information will be added to this slot
-   * - ``my_rownames``
-     - rownames
-
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``name``                      | arbitrary name for object            |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit                         |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``reduction_method``          | method used to reduce dimensions     |
++-------------------------------+--------------------------------------+
+| ``coordinates``               | accepts the coordinates after        |
+|                               | dimension reduction                  |
++-------------------------------+--------------------------------------+
+| ``misc``                      | any additional information will be   |
+|                               | added to this slot                   |
++-------------------------------+--------------------------------------+
+| ``my_rownames``               | rownames                             |
++-------------------------------+--------------------------------------+
 
 Value
 -----
 
-number of distinct colors
+a dimObj

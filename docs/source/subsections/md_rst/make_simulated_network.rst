@@ -1,6 +1,11 @@
+======================
+make_simulated_network
+======================
+
+:Date: 2022-09-20
 
 ``make_simulated_network``
-==============================
+==========================
 
 make_simulated_network
 
@@ -12,7 +17,7 @@ Simulate random network.
 Usage
 -----
 
-.. code-block:: r
+.. code:: r
 
    make_simulated_network(
      gobject,

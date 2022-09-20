@@ -20,8 +20,8 @@ list_expression(gobject, spat_unit = NULL, feat_type = NULL)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit
-`feat_type`     |     feature type
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
 
 
 ## Value
