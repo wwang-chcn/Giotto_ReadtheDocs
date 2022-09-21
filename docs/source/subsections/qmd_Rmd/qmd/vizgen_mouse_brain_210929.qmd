@@ -419,7 +419,7 @@ spatFeatPlot2D(vizgen,
 ![](/images/images_pkgdown/vizgen_mouse_brain//11-spatFeatPlot2D.png){width="60%"}
 <br>  
 
-## Working with subcellular information
+## Working with subcellular information {#sec-subcellular}
 
 *These steps may require a strong computer.*  
 Vizgen provides the raw information used to generate the aggregated data through the detected_transcripts.csv and cell_boundaries hdf5 files. Giotto can also work directly with this information.  
@@ -440,6 +440,8 @@ subsetFOVs = unique(subsetFOVs)
 print(subsetFOVs)
 ```
 </details>
+
+**Note:** The following steps will be assuming that this step was run.
 
 ### Creating a giottoPolygon object
 
@@ -484,7 +486,7 @@ plot(gpoints,
 
 ![](/images/images_pkgdown/vizgen_mouse_brain//14-point.png){width="65%"}
 
-### Creating a subcellular Giotto object {#sec-subcellular}
+### Creating a subcellular Giotto object
 
 ```{r, eval=FALSE}
 # Create new giotto instructions to set different save directory if desired

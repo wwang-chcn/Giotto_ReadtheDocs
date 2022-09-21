@@ -197,7 +197,7 @@ Define plot saving behavior and project data paths
 
 **Pre-aggregated** information can be loaded into Giotto with the usual
 generic ``createGiottoObject()`` function. For starting from the raw
-subcellular information, skip to `Section 10.4 <#sec-subcellular>`__. To
+subcellular information, skip to `Section 10 <#sec-subcellular>`__. To
 create the Giotto object, the ``cell_by_gene`` expression matrix and the
 ``cell_metadata`` information are first read into R. Since Giotto
 accepts the expression information with features (in this case
@@ -618,6 +618,8 @@ Preview km_spatialgenes
 
 |image3|
 
+.. _sec-subcellular:
+
 10 Working with subcellular information
 =======================================
 
@@ -671,6 +673,8 @@ FOVs needed
 
    </details>
 
+**Note:** The following steps will be assuming that this step was run.
+
 10.2 Creating a giottoPolygon object
 ------------------------------------
 
@@ -723,8 +727,6 @@ Giotto represents single-molecule transcript level spatial data as
 
 .. image:: /images/images_pkgdown/vizgen_mouse_brain//14-point.png
    :width: 65.0%
-
-.. _sec-subcellular:
 
 10.4 Creating a subcellular Giotto object
 -----------------------------------------
