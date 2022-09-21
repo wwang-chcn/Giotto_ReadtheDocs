@@ -801,6 +801,10 @@ with the pre-aggregated information.
                                              # boundaries_path = bound_path,
                                              # polygon_feat_types = c(0,6)) # Defines which z slices (polys) are read in
 
+      # Calculate centroid locations
+      vizgen_subset = addSpatialCentroidLocations(vizgen_subset,
+                                                  poly_info = c('z0', 'z6'))
+
 **Visualize subset**
 
 .. container:: cell
@@ -808,6 +812,7 @@ with the pre-aggregated information.
    .. code:: r
 
       spatPlot2D(gobject = vizgen_subset,
+                 show_image = TRUE,
                  largeImage_name = 'image',
                  cell_color = 'leiden_clus',
                  point_size = 2.5)
