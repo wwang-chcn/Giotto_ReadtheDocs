@@ -1,15 +1,15 @@
-==============================
+===============================
 Vizgen Mouse Brain Receptor Map
-==============================
+===============================
 
 :Date: 2021-09-29
 
-Updated ``9/12/2022``. *Giotto* version ``2.0.0.998``.
+Updated ``9/21/2022``. *Giotto* version ``2.0.0.998``.
 
 Please check the version you are using to get the same results.
 
-1. Set up Giotto
-================
+1 Set up Giotto
+===============
 
 .. container:: cell
 
@@ -28,8 +28,8 @@ Please check the version you are using to get the same results.
         installGiottoEnvironment()
       }
 
-2. Dataset explanation
-======================
+2 Dataset explanation
+=====================
 
 This vignette covers Giotto object creation and simple exploratory
 analysis with the subcellular `MERFISH Mouse Brain Receptor Map
@@ -155,8 +155,8 @@ slice 1, replicate 1.
 
 ``Vizgen Data Release V1.0. May 2021``
 
-3. Giotto global instructions and preparations
-==============================================
+3 Giotto global instructions and preparations
+=============================================
 
 Define plot saving behavior and project data paths
 
@@ -184,8 +184,8 @@ Define plot saving behavior and project data paths
       # provide path to the dapi image of slice 1 replicate 1
       img_path = 'path/to/mosaic_DAPI_z0.tif'
 
-4. Create Giotto object from aggregated data
-============================================
+4 Create Giotto object from aggregated data
+===========================================
 
 | Vizgen provides a cell by transcript output matrix
   (``cell_by_gene.csv``) with the subcellular spatial transcript
@@ -197,12 +197,12 @@ Define plot saving behavior and project data paths
 
 **Pre-aggregated** information can be loaded into Giotto with the usual
 generic ``createGiottoObject()`` function. For starting from the raw
-subcellular information, skip to `step 10 <>`__. To create the Giotto
-object, the ``cell_by_gene`` expression matrix and the ``cell_metadata``
-information are first read into R. Since Giotto accepts the expression
-information with features (in this case genes/transcript counts) as rows
-and cells as columns, the expression matrix must first be transposed to
-create the object.
+subcellular information, skip to `Section 10 <#sec-subcellular>`__. To
+create the Giotto object, the ``cell_by_gene`` expression matrix and the
+``cell_metadata`` information are first read into R. Since Giotto
+accepts the expression information with features (in this case
+genes/transcript counts) as rows and cells as columns, the expression
+matrix must first be transposed to create the object.
 
 \*Addtionally for this dataset, y values should be inverted when loaded
 to match the included images. `For more
@@ -224,8 +224,8 @@ information <https://giottosuite.com/articles/getting_started_images.html#standa
       vizgen <- addCellMetadata(vizgen,
                                 new_metadata = meta_dt[,.(fov, volume)])
 
-Visualize cells in space.
--------------------------
+4.1 Visualize cells in space.
+-----------------------------
 
 .. container:: cell
 
@@ -237,8 +237,8 @@ Visualize cells in space.
 .. image:: /images/images_pkgdown/vizgen_mouse_brain//0-overview_spatplot.png
    :width: 60.0%
 
-Visualize cells by FOV.
------------------------
+4.2 Visualize cells by FOV.
+---------------------------
 
 .. container:: cell
 
@@ -258,8 +258,8 @@ Visualize cells by FOV.
 
 |image1| |image2|
 
-5. Attaching images
-===================
+5 Attaching images
+==================
 
 Images for confocal planes z0 to z6 are provided for both **DAPI** (cell
 nucleus staining) and **polyT** for all datasets.
@@ -344,8 +344,8 @@ coordinates which are in microns.
                                       scale_y = 1/y_scale,
                                       order = 'first_adj')
 
-Check image alignment
----------------------
+5.1 Check image alignment
+-------------------------
 
 .. container:: cell
 
@@ -359,8 +359,8 @@ Check image alignment
 .. image:: /images/images_pkgdown/vizgen_mouse_brain//3-img_overlay.png
    :width: 60.0%
 
-Zooming in by subsetting the dataset
-------------------------------------
+5.2 Zooming in by subsetting the dataset
+----------------------------------------
 
 .. container:: cell
 
@@ -380,8 +380,8 @@ Zooming in by subsetting the dataset
 .. image:: /images/images_pkgdown/vizgen_mouse_brain//4-img_overlay_zoom.png
    :width: 60.0%
 
-6. Data processing
-==================
+6 Data processing
+=================
 
 .. container:: cell
 
@@ -399,8 +399,8 @@ Zooming in by subsetting the dataset
       # add gene and cell statistics
       vizgen <- addStatistics(gobject = vizgen)
 
-Visualize the number of features per cell.
-------------------------------------------
+6.1 Visualize the number of features per cell.
+----------------------------------------------
 
 .. container:: cell
 
@@ -418,8 +418,8 @@ Visualize the number of features per cell.
 .. image:: /images/images_pkgdown/vizgen_mouse_brain//5-nr_feats.png
    :width: 60.0%
 
-7. Dimension reduction
-======================
+7 Dimension reduction
+=====================
 
 Skipping highly variable feature (HVF) detection. PCA will be calculated
 based on all available genes.
@@ -461,8 +461,8 @@ based on all available genes.
 .. image:: /images/images_pkgdown/vizgen_mouse_brain//8-UMAP.png
    :width: 50.0%
 
-8. Leiden Clustering
-====================
+8 Leiden Clustering
+===================
 
 Calculate nearest neighbor network and perform Leiden clustering.
 
@@ -548,8 +548,8 @@ Visualize the leiden clustering mapped onto the spatial data.
 .. image:: /images/images_pkgdown/vizgen_mouse_brain//10-spatPlot2D.png
    :width: 60.0%
 
-9. Spatial expression patterns
-==============================
+9 Spatial expression patterns
+=============================
 
 Spatially interesting gene expression can be detected by first
 generating a spatial network then performing Binary Spatial Extraction
@@ -618,16 +618,18 @@ Preview km_spatialgenes
 
 |image3|
 
-10. Working with subcellular information
-========================================
+.. _sec-subcellular:
+
+10 Working with subcellular information
+=======================================
 
 | *These steps may require a strong computer.*
 | Vizgen provides the raw information used to generate the aggregated
   data through the detected_transcripts.csv and cell_boundaries hdf5
   files. Giotto can also work directly with this information.
 
-(Optional) Define region of interest and find FOVs needed
----------------------------------------------------------
+10.1 (Optional) Define region of interest and find FOVs needed
+--------------------------------------------------------------
 
 Loading information by only grabbing the needed FOVs can cut down on
 computational requirements.
@@ -671,8 +673,10 @@ FOVs needed
 
    </details>
 
-Creating a giottoPolygon object
--------------------------------
+**Note:** The following steps will be assuming that this step was run.
+
+10.2 Creating a giottoPolygon object
+------------------------------------
 
 Cell boundary annotations are represented in Giotto as ``giottoPolygon``
 objects which can be previewed by directly plotting them.
@@ -683,9 +687,9 @@ objects which can be previewed by directly plotting them.
 
       # read polygons and add them to Giotto
       # fovs param is optional
-      # polygon_feat_types determines which Vizgen polygon z slices are loaded (There are z0 - z6)
+      # polygon_feat_types determines which Vizgen polygon z slices are loaded (There are 0 - 6)
       polys = readPolygonFilesVizgenHDF5(boundaries_path = bound_path,
-                                         polygon_feat_types = c('z0','z6'),
+                                         polygon_feat_types = c(0,6),
                                          flip_y_axis = TRUE,
                                          fovs = subsetFOVs)
 
@@ -696,8 +700,8 @@ objects which can be previewed by directly plotting them.
 .. image:: /images/images_pkgdown/vizgen_mouse_brain//13-poly.png
    :width: 50.0%
 
-Creating a giottoPoints object
-------------------------------
+10.3 Creating a giottoPoints object
+-----------------------------------
 
 Giotto represents single-molecule transcript level spatial data as
 ``giottoPoints`` objects.
@@ -724,8 +728,8 @@ Giotto represents single-molecule transcript level spatial data as
 .. image:: /images/images_pkgdown/vizgen_mouse_brain//14-point.png
    :width: 65.0%
 
-Creating a subcellular Giotto object
-------------------------------------
+10.4 Creating a subcellular Giotto object
+-----------------------------------------
 
 .. container:: cell
 
@@ -744,7 +748,20 @@ Creating a subcellular Giotto object
 
       # Find polygon centroids and generate associated spatial locations
       vizgen_subcellular = addSpatialCentroidLocations(vizgen_subcellular,
-                                                       poly_info = c('z0', 'z6))
+                                                       poly_info = c('z0', 'z6'))
+
+
+      # Append images **(Details about these functions can be found in step 5)**
+      # Run following two commented lines if skipping to this step
+      # dapi0 = createGiottoLargeImage(raster_object = img_path, name = 'image')
+      # img_scale_DT = data.table::fread(img_scale_path)
+      vizgen_subcellular = addGiottoImage(gobject = vizgen_subcellular,
+        largeImages = list(dapi0), negative_y = TRUE)
+      x_scale = img_scale_DT$V1[[1]] ; y_scale = img_scale_DT$V2[[2]]
+      x_shift = img_scale_DT$V3[[1]] ; y_shift = -img_scale_DT$V3[[2]]
+      vizgen_subcellular = updateGiottoLargeImage(gobject = vizgen_subcellular,
+        largeImage_name = 'image', x_shift = -x_shift, y_shift = -y_shift,
+        scale_x = 1/x_scale, scale_y = 1/y_scale, order = 'first_adj')
 
 .. raw:: html
 
@@ -786,6 +803,10 @@ with the pre-aggregated information.
                                              # boundaries_path = bound_path,
                                              # polygon_feat_types = c(0,6)) # Defines which z slices (polys) are read in
 
+      # Calculate centroid locations
+      vizgen_subset = addSpatialCentroidLocations(vizgen_subset,
+                                                  poly_info = c('z0', 'z6'))
+
 **Visualize subset**
 
 .. container:: cell
@@ -793,6 +814,7 @@ with the pre-aggregated information.
    .. code:: r
 
       spatPlot2D(gobject = vizgen_subset,
+                 show_image = TRUE,
                  largeImage_name = 'image',
                  cell_color = 'leiden_clus',
                  point_size = 2.5)
@@ -842,25 +864,20 @@ with the pre-aggregated information.
 
    .. code:: r
 
-      # identify genes for visualization
-      gene_meta = fDataDT(vizgen_subset)
-      data.table::setorder(gene_meta, perc_cells)
-      gene_meta[perc_cells > 25 & perc_cells < 50]
-
-      # visualize points with z0 polygons (confocal plane)
-      > spatInSituPlotPoints(gsub,
-                             feats = list('rna' = c("Oxgr1", "Htr1a", "Gjc3", "Axl",
-                                                    'Gfap', "Olig1", "Epha7")),
-                             polygon_feat_type = 'z0',
-                             use_overlap = FALSE,
-                             point_size = 0.1,
-                             polygon_line_size = 0.1,
-                             show_polygon = TRUE,
-                             polygon_bg_color = 'white',
-                             polygon_color = 'white',
-                             coord_fix_ratio = TRUE,
-                             save_param = list(base_height = 10,
-                                               base_width = 10))
+      # visualize select genes with z0 polygons (confocal plane)
+      spatInSituPlotPoints(vizgen_subcellular,
+                           feats = list('rna' = c("Oxgr1", "Htr1a", "Gjc3", "Axl",
+                                                 'Gfap', "Olig1", "Epha7")),
+                           polygon_feat_type = 'z0',
+                           use_overlap = FALSE,
+                           point_size = 0.1,
+                           polygon_line_size = 0.1,
+                           show_polygon = TRUE,
+                           polygon_bg_color = 'white',
+                           polygon_color = 'white',
+                           coord_fix_ratio = TRUE,
+                           save_param = list(base_height = 10,
+                                             base_width = 10))
 
 .. image:: /images/images_pkgdown/vizgen_mouse_brain//15-spatInSituPlotPoints.png
    :width: 100.0%
@@ -871,6 +888,7 @@ with the pre-aggregated information.
 
       # Zoom in further and visualize with image
       vizgen_subcellular_zoom = subsetGiottoLocs(vizgen_subcellular,
+                                                 poly_info = c('z0','z6'),
                                                  x_min = 2400, x_max = 2600,
                                                  y_min = -3200, y_max = -3000)
 
