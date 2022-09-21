@@ -140,7 +140,7 @@ img_path = 'path/to/mosaic_DAPI_z0.tif'
 Vizgen provides a cell by transcript output matrix (`cell_by_gene.csv`) with the subcellular spatial transcript information already aggregated by the provided polygon cell annotations into a count matrix.  
 Along with the count matrix, metadata information about the field of view (FOV), spatial location, and volume of the cell (annotation polygons) is also provided through the `cell_metadata.csv`.  
 
-**Pre-aggregated** information can be loaded into Giotto with the usual generic `createGiottoObject()` function. For starting from the raw subcellular information, skip to @sec-subcellular steps. To create the Giotto object, the `cell_by_gene` expression matrix and the `cell_metadata` information are first read into R. Since Giotto accepts the expression information with features (in this case genes/transcript counts) as rows and cells as columns, the expression matrix must first be transposed to create the object.  
+**Pre-aggregated** information can be loaded into Giotto with the usual generic `createGiottoObject()` function. For starting from the raw subcellular information, skip to @sec-subcellular. To create the Giotto object, the `cell_by_gene` expression matrix and the `cell_metadata` information are first read into R. Since Giotto accepts the expression information with features (in this case genes/transcript counts) as rows and cells as columns, the expression matrix must first be transposed to create the object.  
   
 *Addtionally for this dataset, y values should be inverted when loaded to match the included images. [For more information](https://giottosuite.com/articles/getting_started_images.html#standard-workflow)
 

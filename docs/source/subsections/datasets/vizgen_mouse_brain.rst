@@ -197,12 +197,12 @@ Define plot saving behavior and project data paths
 
 **Pre-aggregated** information can be loaded into Giotto with the usual
 generic ``createGiottoObject()`` function. For starting from the raw
-subcellular information, skip to `Section 10.4 <#sec-subcellular>`__
-steps. To create the Giotto object, the ``cell_by_gene`` expression
-matrix and the ``cell_metadata`` information are first read into R.
-Since Giotto accepts the expression information with features (in this
-case genes/transcript counts) as rows and cells as columns, the
-expression matrix must first be transposed to create the object.
+subcellular information, skip to `Section 10.4 <#sec-subcellular>`__. To
+create the Giotto object, the ``cell_by_gene`` expression matrix and the
+``cell_metadata`` information are first read into R. Since Giotto
+accepts the expression information with features (in this case
+genes/transcript counts) as rows and cells as columns, the expression
+matrix must first be transposed to create the object.
 
 \*Addtionally for this dataset, y values should be inverted when loaded
 to match the included images. `For more
