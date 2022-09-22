@@ -1,12 +1,8 @@
 --- 
 title: dimPlot2D 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `dimPlot2D`
-
-Plot dimension reduction 2D
-
 
 ## Description
 

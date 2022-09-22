@@ -2,20 +2,15 @@
 mean_expr_det_test
 ==================
 
-:Date: 2022-09-20
-
-``mean_expr_det_test``
-======================
-
-mean_expr_det_test
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 mean_expr_det_test
 
 Usage
------
+=====
 
 .. code:: r
 

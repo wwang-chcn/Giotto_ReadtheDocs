@@ -1,12 +1,8 @@
 --- 
 title: my_arowMeans 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `my_arowMeans`
-
-my_arowMeans
-
 
 ## Description
 

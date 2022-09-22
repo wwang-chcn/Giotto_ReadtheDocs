@@ -1,12 +1,8 @@
 --- 
 title: dimPlot2D_single 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `dimPlot2D_single`
-
-dimPlot2D_single
-
 
 ## Description
 

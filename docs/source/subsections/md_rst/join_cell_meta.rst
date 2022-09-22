@@ -2,20 +2,15 @@
 join_cell_meta
 ==============
 
-:Date: 2022-09-20
-
-``join_cell_meta``
-==================
-
-join_cell_meta
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 join_cell_meta
 
 Usage
------
+=====
 
 .. code:: r
 

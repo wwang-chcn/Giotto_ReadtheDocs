@@ -2,20 +2,15 @@
 doKmeans
 ========
 
-:Date: 2022-09-20
-
-``doKmeans``
-============
-
-doKmeans
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 cluster cells using kmeans algorithm
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -42,7 +37,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -99,16 +94,16 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description on how to use Kmeans clustering method.
 
 Value
------
+=====
 
 giotto object with new clusters appended to cell metadata
 
 Seealso
--------
+=======
 
 ```kmeans`` <#kmeans>`__

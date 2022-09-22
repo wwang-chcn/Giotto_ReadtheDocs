@@ -2,20 +2,15 @@
 createMetafeats
 ===============
 
-:Date: 2022-09-20
-
-``createMetafeats``
-===================
-
-createMetafeats
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 This function creates an average metafeat/metagene/module for clusters.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ===================== =======================================
 Argument              Description
@@ -45,13 +40,13 @@ Argument              Description
 ===================== =======================================
 
 Details
--------
+=======
 
 An example for the ‘gene_clusters’ could be like this: cluster_vector =
 c(1, 1, 2, 2); names(cluster_vector) = c(‘geneA’, ‘geneB’, ‘geneC’,
 ‘geneD’)
 
 Value
------
+=====
 
 giotto object

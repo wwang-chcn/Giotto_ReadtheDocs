@@ -2,20 +2,15 @@
 plot_cell_polygon_layer
 =======================
 
-:Date: 2022-09-20
-
-``plot_cell_polygon_layer``
-===========================
-
-Plot cell polygon layer
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Low level function to plot a polygon
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -37,12 +32,12 @@ Usage
    )
 
 Details
--------
+=======
 
 This functions plots a polygon based on spatial cell information. This
 is most likely a polygon that corresponds to the cell shape.
 
 Value
------
+=====
 
 ggplot

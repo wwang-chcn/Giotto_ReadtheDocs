@@ -1,12 +1,8 @@
 --- 
 title: showSaveParameters 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `showSaveParameters`
-
-showSaveParameters
-
 
 ## Description
 

@@ -2,27 +2,22 @@
 get_img_minmax
 ==============
 
-:Date: 2022-09-20
-
-``get_img_minmax``
-==================
-
-get_img_minmax
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 get_img_minmax
 
 Usage
------
+=====
 
 .. code:: r
 
    get_img_minmax(mg_img, negative_y = TRUE)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

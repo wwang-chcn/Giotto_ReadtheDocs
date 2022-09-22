@@ -1,12 +1,8 @@
 --- 
 title: createSpatialFeaturesKNNnetwork 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `createSpatialFeaturesKNNnetwork`
-
-Create kNN spatial feature network
-
 
 ## Description
 

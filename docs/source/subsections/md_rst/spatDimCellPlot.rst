@@ -2,32 +2,27 @@
 spatDimCellPlot
 ===============
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``spatDimCellPlot``
-===================
-
-spatDimCellPlot
-
 Description
------------
+===========
 
 Visualize numerical features of cells according to spatial AND dimension
 reduction coordinates in 2D
 
 Usage
------
+=====
 
 .. code:: r
 
    spatDimCellPlot(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -75,17 +70,17 @@ Arguments
    "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 Other spatial and dimension reduction cell annotation visualizations:
 ```spatDimCellPlot2D`` <#spatdimcellplot2d>`__

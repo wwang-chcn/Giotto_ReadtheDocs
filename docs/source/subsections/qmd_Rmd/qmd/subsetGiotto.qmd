@@ -1,12 +1,8 @@
 --- 
 title: subsetGiotto 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `subsetGiotto`
-
-subsetGiotto
-
 
 ## Description
 

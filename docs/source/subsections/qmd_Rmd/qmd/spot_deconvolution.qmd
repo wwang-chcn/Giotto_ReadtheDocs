@@ -1,12 +1,8 @@
 --- 
 title: spot_deconvolution 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spot_deconvolution`
-
-spot_deconvolution
-
 
 ## Description
 

@@ -1,12 +1,8 @@
 --- 
 title: nnDT_to_kNN 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `nnDT_to_kNN`
-
-nnDT_to_kNN
-
 
 ## Description
 

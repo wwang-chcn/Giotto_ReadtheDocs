@@ -2,20 +2,15 @@
 subset_cell_metadata
 ====================
 
-:Date: 2022-09-20
-
-``subset_cell_metadata``
-========================
-
-Subset cell metadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subset cell metadata from giotto object
 
 Usage
------
+=====
 
 .. code:: r
 

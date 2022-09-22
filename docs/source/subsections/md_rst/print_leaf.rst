@@ -2,27 +2,22 @@
 print_leaf
 ==========
 
-:Date: 2022-09-20
-
-``print_leaf``
-==============
-
-Hierarchical tree printing
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Hierarchical tree printing
 
 Usage
------
+=====
 
 .. code:: r
 
    print_leaf(level_index, availableDT, inherit_last = TRUE, indent)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -43,6 +38,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Much inspiration taken from https://rdrr.io/cran/fs/src/R/tree.R

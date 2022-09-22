@@ -2,20 +2,15 @@
 join_spatlocs
 =============
 
-:Date: 2022-09-20
-
-``join_spatlocs``
-=================
-
-join_spatlocs
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 join_spatlocs
 
 Usage
------
+=====
 
 .. code:: r
 

@@ -2,20 +2,15 @@
 install_giotto_environment
 ==========================
 
-:Date: 2022-09-20
-
-``install_giotto_environment``
-==============================
-
-install_giotto_environment
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 installation options of giotto environment
 
 Usage
------
+=====
 
 .. code:: r
 

@@ -1,12 +1,8 @@
 --- 
 title: dt_to_matrix 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `dt_to_matrix`
-
-dt_to_matrix
-
 
 ## Description
 

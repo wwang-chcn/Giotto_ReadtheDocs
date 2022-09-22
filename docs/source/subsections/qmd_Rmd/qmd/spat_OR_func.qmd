@@ -1,12 +1,8 @@
 --- 
 title: spat_OR_func 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spat_OR_func`
-
-spat_OR_func
-
 
 ## Description
 

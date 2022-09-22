@@ -1,12 +1,8 @@
 --- 
 title: get_spatialNetwork 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `get_spatialNetwork`
-
-Get spatial network
-
 
 ## Description
 

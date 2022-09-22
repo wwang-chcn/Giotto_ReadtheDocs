@@ -1,12 +1,8 @@
 --- 
 title: checkGiottoEnvironment 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `checkGiottoEnvironment`
-
-checkGiottoEnvironment
-
 
 ## Description
 

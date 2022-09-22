@@ -2,27 +2,22 @@
 replaceGiottoInstructions
 =========================
 
-:Date: 2022-09-20
-
-``replaceGiottoInstructions``
-=============================
-
-Replace all giotto instructions in giotto object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to replace all instructions from giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
    replaceGiottoInstructions(gobject, instructions = NULL)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -34,6 +29,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto object with replaces instructions

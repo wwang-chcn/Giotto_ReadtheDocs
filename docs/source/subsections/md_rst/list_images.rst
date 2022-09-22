@@ -2,28 +2,23 @@
 list_images
 ===========
 
-:Date: 2022-09-20
-
-``list_images``
-===============
-
-list_images
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Prints the available giotto images that are attached to the Giotto
 object
 
 Usage
------
+=====
 
 .. code:: r
 
    list_images(gobject, img_type = NULL)
 
 Arguments
----------
+=========
 
 ============ =======================
 Argument     Description
@@ -33,6 +28,6 @@ Argument     Description
 ============ =======================
 
 Value
------
+=====
 
 data.table of giotto image names attached to the giotto object

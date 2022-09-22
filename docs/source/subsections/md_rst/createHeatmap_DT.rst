@@ -2,20 +2,15 @@
 createHeatmap_DT
 ================
 
-:Date: 2022-09-20
-
-``createHeatmap_DT``
-====================
-
-createHeatmap_DT
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 creates order for clusters
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -42,7 +37,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -102,11 +97,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Creates input data.tables for plotHeatmap function.
 
 Value
------
+=====
 
 list

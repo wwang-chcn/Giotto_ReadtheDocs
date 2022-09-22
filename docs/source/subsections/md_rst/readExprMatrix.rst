@@ -2,27 +2,22 @@
 readExprMatrix
 ==============
 
-:Date: 2022-09-20
-
-``readExprMatrix``
-==================
-
-Read expression matrix
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to read an expression matrix into a sparse matrix.
 
 Usage
------
+=====
 
 .. code:: r
 
    readExprMatrix(path, cores = NA, transpose = FALSE)
 
 Arguments
----------
+=========
 
 ============= =============================
 Argument      Description
@@ -33,12 +28,12 @@ Argument      Description
 ============= =============================
 
 Details
--------
+=======
 
 The expression matrix needs to have both unique column names and row
 names
 
 Value
------
+=====
 
 sparse matrix

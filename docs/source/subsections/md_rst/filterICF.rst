@@ -2,20 +2,15 @@
 filterICF
 =========
 
-:Date: 2022-09-20
-
-``filterICF``
-=============
-
-filterICF
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Filter Interaction Changed Feature scores.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -34,7 +29,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -70,6 +65,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 cpgObject that contains the filtered differential feature scores

@@ -2,21 +2,16 @@
 plotRecovery
 ============
 
-:Date: 2022-09-20
-
-``plotRecovery``
-================
-
-plotRecovery
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Plots recovery plot to compare ligand-receptor rankings from spatial and
 expression information
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -34,7 +29,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -69,6 +64,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot

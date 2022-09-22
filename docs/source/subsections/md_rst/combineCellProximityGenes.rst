@@ -2,31 +2,26 @@
 combineCellProximityGenes
 =========================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``combineCellProximityGenes``
-=============================
-
-combineCellProximityGenes
-
 Description
------------
+===========
 
 Combine ICG scores in a pairwise manner.
 
 Usage
------
+=====
 
 .. code:: r
 
    combineCellProximityGenes(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -64,6 +59,6 @@ Arguments
        list("run calculations in parallel with mclapply")), "\n", "    ", list(list(list("verbose")), list("verbose")), "\n", "  ")
 
 Seealso
--------
+=======
 
 ```combineInteractionChangedGenes`` <#combineinteractionchangedgenes>`__

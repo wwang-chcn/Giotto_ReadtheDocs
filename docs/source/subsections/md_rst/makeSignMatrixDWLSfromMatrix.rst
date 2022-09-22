@@ -2,28 +2,23 @@
 makeSignMatrixDWLSfromMatrix
 ============================
 
-:Date: 2022-09-20
-
-``makeSignMatrixDWLSfromMatrix``
-================================
-
-makeSignMatrixDWLSfromMatrix
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to convert a single-cell RNAseq matrix into a format that can
 be used with ```runDWLSDeconv`` <#rundwlsdeconv>`__ .
 
 Usage
------
+=====
 
 .. code:: r
 
    makeSignMatrixDWLSfromMatrix(matrix, sign_gene, cell_type_vector)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -37,11 +32,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 matrix
 
 Seealso
--------
+=======
 
 ```runDWLSDeconv`` <#rundwlsdeconv>`__

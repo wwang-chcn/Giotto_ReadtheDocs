@@ -2,20 +2,15 @@
 create_dimObject
 ================
 
-:Date: 2022-09-20
-
-``create_dimObject``
-====================
-
-create_dimObject
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates an object that stores a dimension reduction output
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -53,6 +48,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 a dimObj

@@ -2,21 +2,16 @@
 findGiniMarkers
 ===============
 
-:Date: 2022-09-20
-
-``findGiniMarkers``
-===================
-
-findGiniMarkers
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Identify marker feats for selected clusters based on gini detection and
 expression scores.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -40,7 +35,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -88,7 +83,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Detection of marker feats using the
 https://en.wikipedia.org/wiki/Gini_coefficient gini coefficient is based
@@ -142,6 +137,6 @@ group it is recommend to provide names for both groups to group_1_name
 and group_2_name
 
 Value
------
+=====
 
 data.table with marker feats

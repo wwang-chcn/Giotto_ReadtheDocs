@@ -1,12 +1,8 @@
 --- 
 title: do_wilctest 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `do_wilctest`
-
-do_wilctest
-
 
 ## Description
 

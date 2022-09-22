@@ -2,28 +2,23 @@
 showProcessingSteps
 ===================
 
-:Date: 2022-09-20
-
-``showProcessingSteps``
-=======================
-
-showProcessingSteps
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 shows the sequential processing steps that were performed on a Giotto
 object in a summarized format
 
 Usage
------
+=====
 
 .. code:: r
 
    showProcessingSteps(gobject)
 
 Arguments
----------
+=========
 
 =========== =============
 Argument    Description
@@ -32,6 +27,6 @@ Argument    Description
 =========== =============
 
 Value
------
+=====
 
 list of processing steps and names

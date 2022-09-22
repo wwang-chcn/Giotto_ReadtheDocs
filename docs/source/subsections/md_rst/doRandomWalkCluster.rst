@@ -2,20 +2,15 @@
 doRandomWalkCluster
 ===================
 
-:Date: 2022-09-20
-
-``doRandomWalkCluster``
-=======================
-
-doRandomWalkCluster
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Cluster cells using a random walk approach.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -66,12 +61,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 See ```cluster_walktrap`` <#clusterwalktrap>`__ function from the igraph
 package in R for more information.
 
 Value
------
+=====
 
 giotto object with new clusters appended to cell metadata

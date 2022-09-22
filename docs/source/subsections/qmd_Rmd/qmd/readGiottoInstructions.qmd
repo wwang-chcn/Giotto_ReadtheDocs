@@ -1,12 +1,8 @@
 --- 
 title: readGiottoInstructions 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `readGiottoInstructions`
-
-Read giotto instructions associated with giotto object
-
 
 ## Description
 

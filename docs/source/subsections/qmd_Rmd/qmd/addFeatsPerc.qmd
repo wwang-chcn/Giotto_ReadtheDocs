@@ -1,12 +1,8 @@
 --- 
 title: addFeatsPerc 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `addFeatsPerc`
-
-addFeatsPerc
-
 
 ## Description
 

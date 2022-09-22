@@ -1,12 +1,8 @@
 --- 
 title: set_expression_values 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `set_expression_values`
-
-Set expression values
-
 
 ## Description
 

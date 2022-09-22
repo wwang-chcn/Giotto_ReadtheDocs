@@ -2,28 +2,23 @@
 node_clusters
 =============
 
-:Date: 2022-09-20
-
-``node_clusters``
-=================
-
-node_clusters
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Merge selected clusters based on pairwise correlation scores and size of
 cluster.
 
 Usage
------
+=====
 
 .. code:: r
 
    node_clusters(hclus_obj, verbose = TRUE)
 
 Arguments
----------
+=========
 
 ============= ============
 Argument      Description
@@ -33,6 +28,6 @@ Argument      Description
 ============= ============
 
 Value
------
+=====
 
 list of splitted dendrogram nodes from high to low node height

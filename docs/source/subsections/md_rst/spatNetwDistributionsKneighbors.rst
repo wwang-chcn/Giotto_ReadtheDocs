@@ -2,21 +2,16 @@
 spatNetwDistributionsKneighbors
 ===============================
 
-:Date: 2022-09-20
-
-``spatNetwDistributionsKneighbors``
-===================================
-
-spatNetwDistributionsKneighbors
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 This function returns a histogram displaying the number of k-neighbors
 distribution for each cell
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -63,6 +58,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot plot

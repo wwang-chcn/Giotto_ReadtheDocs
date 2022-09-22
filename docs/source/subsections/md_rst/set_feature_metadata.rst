@@ -2,20 +2,15 @@
 set_feature_metadata
 ====================
 
-:Date: 2022-09-20
-
-``set_feature_metadata``
-========================
-
-Set feature metadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Set feature metadata
 
 Usage
------
+=====
 
 .. code:: r
 

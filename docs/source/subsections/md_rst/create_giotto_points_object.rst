@@ -2,20 +2,15 @@
 create_giotto_points_object
 ===========================
 
-:Date: 2022-09-20
-
-``create_giotto_points_object``
-===============================
-
-Create giotto points object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create giotto points object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -26,7 +21,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ============== =============================================
 Argument       Description

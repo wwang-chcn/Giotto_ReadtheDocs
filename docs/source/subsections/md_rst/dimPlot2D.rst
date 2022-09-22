@@ -2,20 +2,15 @@
 dimPlot2D
 =========
 
-:Date: 2022-09-20
-
-``dimPlot2D``
-=============
-
-Plot dimension reduction 2D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells according to dimension reduction coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -76,7 +71,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -205,18 +200,18 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters. For 3D plots see
 ```dimPlot3D`` <#dimplot3d>`__
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 Other reduced dimension visualizations: ```dimPlot3D`` <#dimplot3d>`__ ,
 ```dimPlot`` <#dimplot>`__ , ```plotPCA_2D`` <#plotpca2d>`__ ,

@@ -2,31 +2,26 @@
 heatmSpatialCorGenes
 ====================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``heatmSpatialCorGenes``
-========================
-
-heatmSpatialCorGenes
-
 Description
------------
+===========
 
 Create heatmap of spatially correlated genes
 
 Usage
------
+=====
 
 .. code:: r
 
    heatmSpatialCorGenes(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -61,6 +56,6 @@ Arguments
    list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
 Seealso
--------
+=======
 
 ```heatmSpatialCorFeats`` <#heatmspatialcorfeats>`__

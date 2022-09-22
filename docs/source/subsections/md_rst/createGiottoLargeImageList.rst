@@ -2,21 +2,16 @@
 createGiottoLargeImageList
 ==========================
 
-:Date: 2022-09-20
-
-``createGiottoLargeImageList``
-==============================
-
-createGiottoLargeImageList
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates a list of large giotto images that can be added to a Giotto
 object. Generates deep copy of SpatRaster
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -70,11 +65,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 See ```createGiottoLargeImage`` <#creategiottolargeimage>`__
 
 Value
------
+=====
 
 a list with giottoLargeImage objects

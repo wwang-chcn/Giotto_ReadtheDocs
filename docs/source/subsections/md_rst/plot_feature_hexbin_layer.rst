@@ -2,20 +2,15 @@
 plot_feature_hexbin_layer
 =========================
 
-:Date: 2022-09-20
-
-``plot_feature_hexbin_layer``
-=============================
-
-plot_feature_hexbin_layer
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 low level function to plot hexbins at the spatial in situ level
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,11 +25,11 @@ Usage
    )
 
 Details
--------
+=======
 
 This function can plot one feature for one modality.
 
 Value
------
+=====
 
 ggplot

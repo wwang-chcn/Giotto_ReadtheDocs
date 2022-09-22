@@ -1,12 +1,8 @@
 --- 
 title: spatDimPlot2D 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spatDimPlot2D`
-
-spatDimPlot2D
-
 
 ## Description
 

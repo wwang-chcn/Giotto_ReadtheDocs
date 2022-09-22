@@ -2,27 +2,22 @@
 get_spatial_locations
 =====================
 
-:Date: 2022-09-20
-
-``get_spatial_locations``
-=========================
-
-Get spatial locations
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to get a spatial location data.table
 
 Usage
------
+=====
 
 .. code:: r
 
    get_spatial_locations(gobject, spat_unit = NULL, spat_loc_name = NULL)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -37,12 +32,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with coordinates
 
 Seealso
--------
+=======
 
 Other spatial location data accessor functions:
 ```set_spatial_locations`` <#setspatiallocations>`__

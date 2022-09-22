@@ -2,20 +2,15 @@
 spat_fish_func_DT
 =================
 
-:Date: 2022-09-20
-
-``spat_fish_func_DT``
-=====================
-
-spat_fish_func_DT
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 performs fisher exact test with data.table implementation
 
 Usage
------
+=====
 
 .. code:: r
 

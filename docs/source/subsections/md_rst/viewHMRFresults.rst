@@ -2,20 +2,15 @@
 viewHMRFresults
 ===============
 
-:Date: 2022-09-20
-
-``viewHMRFresults``
-===================
-
-viewHMRFresults
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 View results from doHMRF.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,11 +44,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 spatial plots with HMRF domains
 
 Seealso
--------
+=======
 
 ```spatPlot2D`` <#spatplot2d>`__ and ```spatPlot3D`` <#spatplot3d>`__

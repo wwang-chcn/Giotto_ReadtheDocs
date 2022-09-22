@@ -1,12 +1,8 @@
 --- 
 title: DT_removeNA 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `DT_removeNA`
-
-DT_removeNA
-
 
 ## Description
 

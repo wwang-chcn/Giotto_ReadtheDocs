@@ -2,20 +2,15 @@
 seuratToGiotto
 ==============
 
-:Date: 2022-09-20
-
-``seuratToGiotto``
-==================
-
-Convert a Seurat object to a Giotto object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Convert a Seurat object to a Giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,7 +45,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 A Giotto object converted from Seurat object with all computations
 stored in it.

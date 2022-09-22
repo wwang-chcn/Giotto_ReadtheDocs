@@ -2,20 +2,15 @@
 cellProximityBarplot
 ====================
 
-:Date: 2022-09-20
-
-``cellProximityBarplot``
-========================
-
-cellProximityBarplot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create barplot from cell-cell proximity scores
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -67,12 +62,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function creates a barplot that shows the spatial proximity
 enrichment or depletion of cell type pairs.
 
 Value
------
+=====
 
 ggplot barplot

@@ -1,12 +1,8 @@
 --- 
 title: annotate_spatlocs_with_spatgrid_3D 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `annotate_spatlocs_with_spatgrid_3D`
-
-annotate_spatlocs_with_spatgrid_3D
-
 
 ## Description
 

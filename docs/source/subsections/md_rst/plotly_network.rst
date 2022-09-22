@@ -2,20 +2,15 @@
 plotly_network
 ==============
 
-:Date: 2022-09-20
-
-``plotly_network``
-==================
-
-plotly_network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 provide network segment to draw in 3D plot_ly()
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 =========== ========================
 Argument    Description
@@ -45,6 +40,6 @@ Argument    Description
 =========== ========================
 
 Value
------
+=====
 
 edges in network as data.table()

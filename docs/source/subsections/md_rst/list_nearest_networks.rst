@@ -2,20 +2,15 @@
 list_nearest_networks
 =====================
 
-:Date: 2022-09-20
-
-``list_nearest_networks``
-=========================
-
-list_nearest_networks
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the available nearest neighbor network information
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,6 +44,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 names and locations of nearest neighbor networks as a data.table

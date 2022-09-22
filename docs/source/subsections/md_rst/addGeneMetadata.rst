@@ -2,27 +2,22 @@
 addGeneMetadata
 ===============
 
-:Date: 2022-09-20
-
-``addGeneMetadata``
-===================
-
-Add gene metadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 adds gene metadata to the giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
    addGeneMetadata(gobject, new_metadata, by_column = F, column_gene_ID = NULL)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -39,7 +34,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 You can add additional gene metadata in two manners: 1. Provide a
 data.table or data.frame with gene annotations in the same order as the
@@ -48,6 +43,6 @@ with gene annotations and specify which column contains the gene IDs,
 these gene IDs need to match with the gene_ID column in fDataDT(gobject)
 
 Value
------
+=====
 
 giotto object

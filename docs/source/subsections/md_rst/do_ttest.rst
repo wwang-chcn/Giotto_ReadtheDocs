@@ -2,20 +2,15 @@
 do_ttest
 ========
 
-:Date: 2022-09-20
-
-``do_ttest``
-============
-
-do_ttest
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Performs t.test on subsets of a matrix
 
 Usage
------
+=====
 
 .. code:: r
 

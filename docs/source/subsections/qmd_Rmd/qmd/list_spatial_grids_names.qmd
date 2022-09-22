@@ -1,12 +1,8 @@
 --- 
 title: list_spatial_grids_names 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `list_spatial_grids_names`
-
-list_spatial_grids_names
-
 
 ## Description
 

@@ -1,12 +1,8 @@
 --- 
 title: cellProximityNetwork 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `cellProximityNetwork`
-
-cellProximityNetwork
-
 
 ## Description
 

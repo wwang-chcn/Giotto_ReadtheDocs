@@ -1,12 +1,8 @@
 --- 
 title: general_save_function 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `general_save_function`
-
-general_save_function
-
 
 ## Description
 

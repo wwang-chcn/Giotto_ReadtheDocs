@@ -2,31 +2,26 @@
 select_feature_info
 ===================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``select_feature_info``
-=======================
-
-Select feature info
-
 Description
------------
+===========
 
 Select feature info
 
 Usage
------
+=====
 
 .. code:: r
 
    select_feature_info(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -45,6 +40,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```get_feature_info`` <#getfeatureinfo>`__

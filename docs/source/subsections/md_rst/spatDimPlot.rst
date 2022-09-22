@@ -2,32 +2,27 @@
 spatDimPlot
 ===========
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``spatDimPlot``
-===============
-
-spatDimPlot
-
 Description
------------
+===========
 
 Visualize cells according to spatial AND dimension reduction coordinates
 2D
 
 Usage
------
+=====
 
 .. code:: r
 
    spatDimPlot(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -75,17 +70,17 @@ Arguments
    "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```spatDimPlot2D`` <#spatdimplot2d>`__ and
 ```spatDimPlot3D`` <#spatdimplot3d>`__ for 3D visualization.

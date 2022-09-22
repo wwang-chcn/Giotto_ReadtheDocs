@@ -2,24 +2,19 @@
 binSpectSingle
 ==============
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``binSpectSingle``
-==================
-
-binSpectSingle
-
 Description
------------
+===========
 
 binSpect for a single spatial network
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -55,7 +50,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -135,7 +130,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 We provide two ways to identify spatial genes based on gene expression
 binarization. Both methods are identicial except for how binarization is
@@ -182,6 +177,6 @@ performed.
      workload.
 
 Value
------
+=====
 
 data.table with results (see details)

@@ -2,21 +2,16 @@
 plotCCcomHeatmap
 ================
 
-:Date: 2022-09-20
-
-``plotCCcomHeatmap``
-====================
-
-plotCCcomHeatmap
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Plots heatmap for ligand-receptor communication scores in cell-cell
 interactions
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -39,7 +34,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -86,6 +81,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot

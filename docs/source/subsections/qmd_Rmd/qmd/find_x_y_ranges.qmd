@@ -1,12 +1,8 @@
 --- 
 title: find_x_y_ranges 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `find_x_y_ranges`
-
-find_x_y_ranges
-
 
 ## Description
 

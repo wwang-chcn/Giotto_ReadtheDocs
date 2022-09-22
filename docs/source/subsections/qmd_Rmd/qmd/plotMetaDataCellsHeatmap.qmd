@@ -1,12 +1,8 @@
 --- 
 title: plotMetaDataCellsHeatmap 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plotMetaDataCellsHeatmap`
-
-plotMetaDataCellsHeatmap
-
 
 ## Description
 

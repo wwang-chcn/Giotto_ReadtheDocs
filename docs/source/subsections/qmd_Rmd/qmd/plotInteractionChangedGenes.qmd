@@ -1,12 +1,8 @@
 --- 
 title: plotInteractionChangedGenes 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plotInteractionChangedGenes`
-
-Plot interaction changed genes
-
 
 ## Description
 

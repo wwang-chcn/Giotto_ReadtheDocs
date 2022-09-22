@@ -2,20 +2,15 @@
 update_giotto_params
 ====================
 
-:Date: 2022-09-20
-
-``update_giotto_params``
-========================
-
-Update giotto parameters
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Update giotto parameters
 
 Usage
------
+=====
 
 .. code:: r
 

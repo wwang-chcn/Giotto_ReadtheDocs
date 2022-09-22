@@ -2,20 +2,15 @@
 get_spatialGrid
 ===============
 
-:Date: 2022-09-20
-
-``get_spatialGrid``
-===================
-
-Get spatial grid
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to get spatial grid
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 =================== ===========================================
 Argument            Description
@@ -41,7 +36,7 @@ Argument            Description
 =================== ===========================================
 
 Seealso
--------
+=======
 
 Other spatial grid data accessor functions:
 ```set_spatialGrid`` <#setspatialgrid>`__

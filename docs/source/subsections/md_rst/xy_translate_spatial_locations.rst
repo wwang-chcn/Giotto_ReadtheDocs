@@ -2,27 +2,22 @@
 xy_translate_spatial_locations
 ==============================
 
-:Date: 2022-09-20
-
-``xy_translate_spatial_locations``
-==================================
-
-xy_translate_spatial_locations
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Translate given X Y coordinates by given x and y translation values
 
 Usage
------
+=====
 
 .. code:: r
 
    xy_translate_spatial_locations(spatlocs, xtranslate, ytranslate)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

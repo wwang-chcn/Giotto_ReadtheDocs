@@ -1,12 +1,8 @@
 --- 
 title: findCPG 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `findCPG`
-
-findCPG
-
 
 ## Description
 

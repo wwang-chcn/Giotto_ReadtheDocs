@@ -1,12 +1,8 @@
 --- 
 title: annotateGiotto 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `annotateGiotto`
-
-Annotate giotto clustering
-
 
 ## Description
 

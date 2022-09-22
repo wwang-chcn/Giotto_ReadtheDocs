@@ -1,12 +1,8 @@
 --- 
 title: combineCellProximityGenes_per_interaction 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `combineCellProximityGenes_per_interaction`
-
-combineCellProximityGenes_per_interaction
-
 
 ## Description
 

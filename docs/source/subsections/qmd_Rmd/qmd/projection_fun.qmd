@@ -1,12 +1,8 @@
 --- 
 title: projection_fun 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `projection_fun`
-
-projection_fun
-
 
 ## Description
 

@@ -2,20 +2,15 @@
 logNorm_giotto
 ==============
 
-:Date: 2022-09-20
-
-``logNorm_giotto``
-==================
-
-logNorm_giotto
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 logNorm_giotto
 
 Usage
------
+=====
 
 .. code:: r
 

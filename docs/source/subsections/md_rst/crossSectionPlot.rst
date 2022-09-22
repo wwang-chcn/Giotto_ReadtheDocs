@@ -2,21 +2,16 @@
 crossSectionPlot
 ================
 
-:Date: 2022-09-20
-
-``crossSectionPlot``
-====================
-
-crossSectionPlot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells in a virtual cross section according to spatial
 coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -58,16 +53,16 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```crossSectionPlot`` <#crosssectionplot>`__

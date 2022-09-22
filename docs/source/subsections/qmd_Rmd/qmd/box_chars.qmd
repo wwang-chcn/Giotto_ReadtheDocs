@@ -1,12 +1,8 @@
 --- 
 title: box_chars 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `box_chars`
-
-Box characters
-
 
 ## Description
 

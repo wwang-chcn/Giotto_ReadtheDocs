@@ -2,25 +2,20 @@
 doLeidenCluster
 ===============
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``doLeidenCluster``
-===================
-
-doLeidenCluster
-
 Description
------------
+===========
 
 cluster cells using a NN-network and the Leiden community detection
 algorithm
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -43,7 +38,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -96,7 +91,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function is a wrapper for the Leiden algorithm implemented in
 python, which can detect communities in graphs of millions of nodes
@@ -121,6 +116,6 @@ Partition types available and information:
 Set weight_col = NULL to give equal weight (=1) to each edge.
 
 Value
------
+=====
 
 giotto object with new clusters appended to cell metadata

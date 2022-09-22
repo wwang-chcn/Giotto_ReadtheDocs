@@ -2,31 +2,26 @@
 flex_lapply
 ===========
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``flex_lapply``
-===============
-
-flex_lapply
-
 Description
------------
+===========
 
 flex_lapply
 
 Usage
------
+=====
 
 .. code:: r
 
    flex_lapply(X, FUN, cores = NA, fun = NULL, ...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,6 +44,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```lapply_flex`` <#lapplyflex>`__

@@ -1,12 +1,8 @@
 --- 
 title: subset_spatial_info_data 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `subset_spatial_info_data`
-
-Subset spatial info data
-
 
 ## Description
 

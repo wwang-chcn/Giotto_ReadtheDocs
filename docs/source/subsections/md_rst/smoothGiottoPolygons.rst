@@ -2,20 +2,15 @@
 smoothGiottoPolygons
 ====================
 
-:Date: 2022-09-20
-
-``smoothGiottoPolygons``
-========================
-
-smoothGiottoPolygons
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Smooths Giotto polygon object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,11 +42,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 Smoothed Giotto polygon object with reduced vertices
 
 Seealso
--------
+=======
 
 ```spline`` <#spline>`__

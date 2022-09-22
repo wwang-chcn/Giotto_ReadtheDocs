@@ -1,12 +1,8 @@
 --- 
 title: read_nearest_networks 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `read_nearest_networks`
-
-Read nearest neighbor networks
-
 
 ## Description
 

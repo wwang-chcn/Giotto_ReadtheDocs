@@ -2,27 +2,22 @@
 lapply_flex
 ===========
 
-:Date: 2022-09-20
-
-``lapply_flex``
-===============
-
-lapply_flex
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 lapply_flex
 
 Usage
------
+=====
 
 .. code:: r
 
    lapply_flex(X, FUN, cores = NA, fun = NULL, ...)
 
 Arguments
----------
+=========
 
 ========= ===========================================
 Argument  Description

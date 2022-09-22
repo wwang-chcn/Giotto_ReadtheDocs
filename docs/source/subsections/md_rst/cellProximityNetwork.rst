@@ -2,20 +2,15 @@
 cellProximityNetwork
 ====================
 
-:Date: 2022-09-20
-
-``cellProximityNetwork``
-========================
-
-cellProximityNetwork
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create network from cell-cell proximity scores
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -43,7 +38,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -103,12 +98,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function creates a network that shows the spatial proximity
 enrichment or depletion of cell type pairs.
 
 Value
------
+=====
 
 igraph plot

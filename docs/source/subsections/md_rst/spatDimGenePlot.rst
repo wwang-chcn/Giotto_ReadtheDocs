@@ -2,32 +2,27 @@
 spatDimGenePlot
 ===============
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``spatDimGenePlot``
-===================
-
-spatDimGenePlot
-
 Description
------------
+===========
 
 Visualize cells according to spatial AND dimension reduction coordinates
 in ggplot mode
 
 Usage
------
+=====
 
 .. code:: r
 
    spatDimGenePlot(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -51,17 +46,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```spatDimGenePlot3D`` <#spatdimgeneplot3d>`__
 

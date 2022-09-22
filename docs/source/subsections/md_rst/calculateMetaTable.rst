@@ -2,21 +2,16 @@
 calculateMetaTable
 ==================
 
-:Date: 2022-09-20
-
-``calculateMetaTable``
-======================
-
-calculateMetaTable
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculates the average gene expression for one or more (combined)
 annotation columns.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -31,7 +26,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -53,7 +48,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with average expression values for each gene per (combined)
 annotation

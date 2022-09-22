@@ -2,20 +2,15 @@
 general_save_function
 =====================
 
-:Date: 2022-09-20
-
-``general_save_function``
-=========================
-
-general_save_function
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to automatically save plots to directory of interest
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -38,7 +33,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ===================== ===============================
 Argument              Description

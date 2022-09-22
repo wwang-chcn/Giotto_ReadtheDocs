@@ -2,20 +2,15 @@
 read_nearest_networks
 =====================
 
-:Date: 2022-09-20
-
-``read_nearest_networks``
-=========================
-
-Read nearest neighbor networks
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 read nearest network results from list
 
 Usage
------
+=====
 
 .. code:: r
 

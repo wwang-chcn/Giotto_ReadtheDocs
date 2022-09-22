@@ -2,28 +2,23 @@
 stitchTileCoordinates
 =====================
 
-:Date: 2022-09-20
-
-``stitchTileCoordinates``
-=========================
-
-stitchTileCoordinates
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Helper function to stitch tile coordinates together to form one complete
 picture
 
 Usage
------
+=====
 
 .. code:: r
 
    stitchTileCoordinates(location_file, Xtilespan, Ytilespan)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

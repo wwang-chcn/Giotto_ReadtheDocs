@@ -1,12 +1,8 @@
 --- 
 title: calc_var_HVF 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `calc_var_HVF`
-
-calc_var_HVF
-
 
 ## Description
 

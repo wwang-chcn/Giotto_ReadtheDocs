@@ -2,20 +2,15 @@
 create_delaunayNetwork_RTriangle
 ================================
 
-:Date: 2022-09-20
-
-``create_delaunayNetwork_RTriangle``
-====================================
-
-create_delaunayNetwork_RTriangle
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a spatial Delaunay network with RTriangle
 
 Usage
------
+=====
 
 .. code:: r
 

@@ -2,20 +2,15 @@
 binSpectMultiMatrix
 ===================
 
-:Date: 2022-09-20
-
-``binSpectMultiMatrix``
-=======================
-
-binSpectMultiMatrix
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 binSpect for a single spatial network and a provided expression matrix
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -47,7 +42,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -120,6 +115,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with results

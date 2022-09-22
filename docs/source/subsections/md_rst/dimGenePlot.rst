@@ -2,31 +2,26 @@
 dimGenePlot
 ===========
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``dimGenePlot``
-===============
-
-dimGenePlot
-
 Description
------------
+===========
 
 Visualize gene expression according to dimension reduction coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
    dimGenePlot(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,17 +45,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```dimGenePlot3D`` <#dimgeneplot3d>`__
 

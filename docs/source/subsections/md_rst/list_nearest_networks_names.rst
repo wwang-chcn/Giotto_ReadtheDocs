@@ -2,20 +2,15 @@
 list_nearest_networks_names
 ===========================
 
-:Date: 2022-09-20
-
-``list_nearest_networks_names``
-===============================
-
-list_nearest_networks_names
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the available nearest neighbor network object names
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ============= ===========================================
 Argument      Description
@@ -39,11 +34,11 @@ Argument      Description
 ============= ===========================================
 
 Details
--------
+=======
 
 function that can be used to find which names have been used
 
 Value
------
+=====
 
 names of nearest neighbor network object

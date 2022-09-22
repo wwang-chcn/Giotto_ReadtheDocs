@@ -2,21 +2,16 @@
 updateGiottoImage
 =================
 
-:Date: 2022-09-20
-
-``updateGiottoImage``
-=====================
-
-updateGiottoImage
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Updates the spatial positioning and sizing of a giotto ``image`` or
 ``largeImage`` attached to a giotto object.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -43,7 +38,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -83,17 +78,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function works for all image objects associated with Giotto.
 
 Value
------
+=====
 
 a giotto object or an updated giotto image object if return_gobject = F
 
 Seealso
--------
+=======
 
 Other basic image functions: ```addGiottoImage`` <#addgiottoimage>`__ ,
 ```plotGiottoImage`` <#plotgiottoimage>`__ ,

@@ -1,12 +1,8 @@
 --- 
 title: calc_spatial_enrichment_DT 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `calc_spatial_enrichment_DT`
-
-calc_spatial_enrichment_DT
-
 
 ## Description
 

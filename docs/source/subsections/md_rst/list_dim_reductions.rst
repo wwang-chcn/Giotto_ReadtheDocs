@@ -2,20 +2,15 @@
 list_dim_reductions
 ===================
 
-:Date: 2022-09-20
-
-``list_dim_reductions``
-=======================
-
-list_dim_reductions
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the available dimension reductions
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ============= =================================================
 Argument      Description
@@ -41,6 +36,6 @@ Argument      Description
 ============= =================================================
 
 Value
------
+=====
 
 names and locations of dimension reduction as a data.table

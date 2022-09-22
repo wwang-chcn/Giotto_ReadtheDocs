@@ -2,20 +2,15 @@
 run_spatial_sim_tests_multi
 ===========================
 
-:Date: 2022-09-20
-
-``run_spatial_sim_tests_multi``
-===============================
-
-run_spatial_sim_tests_multi
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 runs all spatial tests for multiple probabilities and repetitions
 
 Usage
------
+=====
 
 .. code:: r
 

@@ -2,20 +2,15 @@
 spatialAEH
 ==========
 
-:Date: 2022-09-20
-
-``spatialAEH``
-==============
-
-spatialAEH
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Compute spatial variable genes with spatialDE method
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -34,7 +29,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -68,12 +63,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function is a wrapper for the SpatialAEH method implemented in the
 …
 
 Value
------
+=====
 
 An updated giotto object

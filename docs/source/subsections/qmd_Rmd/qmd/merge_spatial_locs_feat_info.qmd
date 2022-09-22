@@ -1,12 +1,8 @@
 --- 
 title: merge_spatial_locs_feat_info 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `merge_spatial_locs_feat_info`
-
-merge_spatial_locs_feat_info
-
 
 ## Description
 

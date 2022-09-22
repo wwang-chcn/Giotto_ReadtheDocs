@@ -2,22 +2,17 @@
 do_permuttest_random
 ====================
 
-:Date: 2022-09-20
-
-``do_permuttest_random``
-========================
-
-do_permuttest_random
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate random values
 
 Performs permutation test on subsets of a matrix
 
 Usage
------
+=====
 
 .. code:: r
 

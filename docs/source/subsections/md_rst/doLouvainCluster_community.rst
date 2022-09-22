@@ -2,21 +2,16 @@
 doLouvainCluster_community
 ==========================
 
-:Date: 2022-09-20
-
-``doLouvainCluster_community``
-==============================
-
-doLouvainCluster_community
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 cluster cells using a NN-network and the Louvain algorithm from the
 community module in Python
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -72,7 +67,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function is a wrapper for the Louvain algorithm implemented in
 Python, which can detect communities in graphs of nodes (cells). See the
@@ -82,6 +77,6 @@ page for more information.
 Set weight_col = NULL to give equal weight (=1) to each edge.
 
 Value
------
+=====
 
 giotto object with new clusters appended to cell metadata

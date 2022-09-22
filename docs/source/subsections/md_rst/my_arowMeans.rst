@@ -2,20 +2,15 @@
 my_arowMeans
 ============
 
-:Date: 2022-09-20
-
-``my_arowMeans``
-================
-
-my_arowMeans
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 arithmic rowMeans that works for a single column
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -23,7 +18,7 @@ Usage
    my_arowMeans(x)
 
 Arguments
----------
+=========
 
 ======== ===========
 Argument Description

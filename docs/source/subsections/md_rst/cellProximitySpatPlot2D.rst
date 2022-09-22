@@ -2,21 +2,16 @@
 cellProximitySpatPlot2D
 =======================
 
-:Date: 2022-09-20
-
-``cellProximitySpatPlot2D``
-===========================
-
-cellProximitySpatPlot2D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize 2D cell-cell interactions according to spatial coordinates in
 ggplot mode
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -57,7 +52,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -139,11 +134,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot

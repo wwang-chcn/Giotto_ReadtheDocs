@@ -2,20 +2,15 @@
 ggplot_save_function
 ====================
 
-:Date: 2022-09-20
-
-``ggplot_save_function``
-========================
-
-ggplot_save_function
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to automatically save plots to directory of interest
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -42,7 +37,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -89,6 +84,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```save_plot`` <#saveplot>`__

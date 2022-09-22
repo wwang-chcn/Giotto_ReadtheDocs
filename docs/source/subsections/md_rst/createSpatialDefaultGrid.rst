@@ -2,20 +2,15 @@
 createSpatialDefaultGrid
 ========================
 
-:Date: 2022-09-20
-
-``createSpatialDefaultGrid``
-============================
-
-createSpatialDefaultGrid
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a spatial grid using the default method
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -62,12 +57,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Creates a spatial grid with defined x, y (and z) dimensions. The
 dimension units are based on the provided spatial location units.
 
 Value
------
+=====
 
 giotto object with updated spatial grid slot

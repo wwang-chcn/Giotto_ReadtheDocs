@@ -1,12 +1,8 @@
 --- 
 title: set_giotto_python_path 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `set_giotto_python_path`
-
-set_giotto_python_path
-
 
 ## Description
 

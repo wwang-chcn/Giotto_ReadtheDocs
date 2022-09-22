@@ -1,12 +1,8 @@
 --- 
 title: rna_standard_normalization 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `rna_standard_normalization`
-
-RNA standard normalization
-
 
 ## Description
 

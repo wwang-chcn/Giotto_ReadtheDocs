@@ -2,21 +2,16 @@
 createGiottoObjectSubcellular
 =============================
 
-:Date: 2022-09-20
-
-``createGiottoObjectSubcellular``
-=================================
-
-Create a giotto object from subcellular data
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to create a giotto object starting from subcellular polygon
 (e.g. cell) and points (e.g. transcripts) information
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -42,7 +37,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -96,6 +91,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto object

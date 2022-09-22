@@ -2,20 +2,15 @@
 selectPatternGenes
 ==================
 
-:Date: 2022-09-20
-
-``selectPatternGenes``
-======================
-
-selectPatternGenes
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Select genes correlated with spatial patterns
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -55,11 +50,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description.
 
 Value
------
+=====
 
 Data.table with genes associated with selected dimension (PC).

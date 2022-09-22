@@ -1,12 +1,8 @@
 --- 
 title: showGiottoInstructions 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `showGiottoInstructions`
-
-Show giotto instructions associated with giotto object
-
 
 ## Description
 

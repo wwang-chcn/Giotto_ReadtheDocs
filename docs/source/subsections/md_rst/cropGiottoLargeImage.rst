@@ -2,20 +2,15 @@
 cropGiottoLargeImage
 ====================
 
-:Date: 2022-09-20
-
-``cropGiottoLargeImage``
-========================
-
-Crop a giotto largeImage object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Crop a giottoLargeImage based on crop_extent argument or given values
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -58,6 +53,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 a giottoLargeImage object

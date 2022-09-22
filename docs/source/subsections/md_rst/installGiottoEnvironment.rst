@@ -2,20 +2,15 @@
 installGiottoEnvironment
 ========================
 
-:Date: 2022-09-20
-
-``installGiottoEnvironment``
-============================
-
-installGiottoEnvironment
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Installs a giotto environment
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,7 +45,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function will install a local giotto environment using the
 miniconda system as implemented by reticulate. Once this giotto
@@ -62,12 +57,12 @@ the instructions to the ```createGiottoObject`` <#creategiottoobject>`__
 function.
 
 Value
------
+=====
 
 installs a giotto environment using the reticulate miniconda system
 
 Examples
---------
+========
 
 .. code:: r
 

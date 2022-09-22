@@ -1,12 +1,8 @@
 --- 
 title: findMarkers_one_vs_all 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `findMarkers_one_vs_all`
-
-findMarkers_one_vs_all
-
 
 ## Description
 

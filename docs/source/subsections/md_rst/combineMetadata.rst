@@ -2,21 +2,16 @@
 combineMetadata
 ===============
 
-:Date: 2022-09-20
-
-``combineMetadata``
-===================
-
-combineMetadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 This function combines the cell metadata with spatial locations and
 enrichment results from ```runSpatialEnrich`` <#runspatialenrich>`__
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,6 +42,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 Extended cell metadata in data.table format.

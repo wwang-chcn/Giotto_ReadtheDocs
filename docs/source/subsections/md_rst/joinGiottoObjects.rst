@@ -2,20 +2,15 @@
 joinGiottoObjects
 =================
 
-:Date: 2022-09-20
-
-``joinGiottoObjects``
-=====================
-
-Join giotto objects
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to join multiple giotto objects together
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -64,7 +59,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function joins both the expression and spatial information of
 multiple giotto objects into a single one. Giotto supports multiple ways
@@ -93,6 +88,6 @@ input will be treated as a z step value.
 datasets when joining.
 
 Value
------
+=====
 
 giotto object

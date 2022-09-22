@@ -2,20 +2,15 @@
 createNearestNetwork
 ====================
 
-:Date: 2022-09-20
-
-``createNearestNetwork``
-========================
-
-createNearestNetwork
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 create a nearest neighbour (NN) network
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -40,7 +35,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -85,7 +80,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function creates a k-nearest neighbour (kNN) or shared nearest
 neighbour (sNN) network based on the provided dimension reduction space.
@@ -126,6 +121,6 @@ Output for sNN:
    irrespective of minimum_shared setting
 
 Value
------
+=====
 
 giotto object with updated NN network

@@ -1,12 +1,8 @@
 --- 
 title: filter_network 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `filter_network`
-
-filter_network
-
 
 ## Description
 

@@ -2,21 +2,16 @@
 detectSpatialPatterns
 =====================
 
-:Date: 2022-09-20
-
-``detectSpatialPatterns``
-=========================
-
-detectSpatialPatterns
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Identify spatial patterns through PCA on average expression in a spatial
 grid.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -59,7 +54,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Steps to identify spatial patterns:
 
@@ -78,6 +73,6 @@ Steps to identify spatial patterns:
       select PCs based on a z-score threshold
 
 Value
------
+=====
 
 spatial pattern object ‘spatPatObj’

@@ -1,12 +1,8 @@
 --- 
 title: runPCA 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `runPCA`
-
-runPCA
-
 
 ## Description
 

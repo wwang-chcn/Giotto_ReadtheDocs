@@ -2,20 +2,15 @@
 data_access
 ===========
 
-:Date: 2022-09-20
-
-``data_access``
-===============
-
-Giotto object data accessors
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Access or examine slots within the giotto object
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

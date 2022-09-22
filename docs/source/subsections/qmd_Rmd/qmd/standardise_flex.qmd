@@ -1,12 +1,8 @@
 --- 
 title: standardise_flex 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `standardise_flex`
-
-standardise_flex
-
 
 ## Description
 

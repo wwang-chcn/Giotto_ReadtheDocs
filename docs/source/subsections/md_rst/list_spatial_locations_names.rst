@@ -2,27 +2,22 @@
 list_spatial_locations_names
 ============================
 
-:Date: 2022-09-20
-
-``list_spatial_locations_names``
-================================
-
-list_spatial_locations_names
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 lists the available spatial location names for a given spatial unit
 
 Usage
------
+=====
 
 .. code:: r
 
    list_spatial_locations_names(gobject, spat_unit = NULL)
 
 Arguments
----------
+=========
 
 ============= ==========================
 Argument      Description
@@ -32,6 +27,6 @@ Argument      Description
 ============= ==========================
 
 Value
------
+=====
 
 vector with names of available spatial locations

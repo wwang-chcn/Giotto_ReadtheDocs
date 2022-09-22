@@ -2,20 +2,15 @@
 doHMRF
 ======
 
-:Date: 2022-09-20
-
-``doHMRF``
-==========
-
-doHMRF
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Run HMRF
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -44,7 +39,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -101,11 +96,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of HMRF parameters …
 
 Value
------
+=====
 
 Creates a directory with results that can be viewed with viewHMRFresults

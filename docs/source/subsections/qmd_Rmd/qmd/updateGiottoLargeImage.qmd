@@ -1,12 +1,8 @@
 --- 
 title: updateGiottoLargeImage 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `updateGiottoLargeImage`
-
-updateGiottoLargeImage
-
 
 ## Description
 

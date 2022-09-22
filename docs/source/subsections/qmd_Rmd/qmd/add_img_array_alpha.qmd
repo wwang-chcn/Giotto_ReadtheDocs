@@ -1,12 +1,8 @@
 --- 
 title: add_img_array_alpha 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `add_img_array_alpha`
-
-Add alpha channel to image array
-
 
 ## Description
 

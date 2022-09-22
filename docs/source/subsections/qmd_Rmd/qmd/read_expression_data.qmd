@@ -1,12 +1,8 @@
 --- 
 title: read_expression_data 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `read_expression_data`
-
-Read expression data
-
 
 ## Description
 

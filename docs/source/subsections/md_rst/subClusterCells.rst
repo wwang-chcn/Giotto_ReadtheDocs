@@ -2,20 +2,15 @@
 subClusterCells
 ===============
 
-:Date: 2022-09-20
-
-``subClusterCells``
-===================
-
-subClusterCells
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 subcluster cells
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -46,7 +41,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -107,7 +102,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function performs subclustering on selected clusters. The
 systematic steps are:
@@ -133,12 +128,12 @@ systematic steps are:
    5. do clustering
 
 Value
------
+=====
 
 giotto object with new subclusters appended to cell metadata
 
 Seealso
--------
+=======
 
 ```doLouvainCluster_multinet`` <#dolouvainclustermultinet>`__ ,
 ```doLouvainCluster_community`` <#dolouvainclustercommunity>`__ and

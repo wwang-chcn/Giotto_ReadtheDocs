@@ -2,21 +2,16 @@
 spatDimPlot3D
 =============
 
-:Date: 2022-09-20
-
-``spatDimPlot3D``
-=================
-
-spatDimPlot3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells according to spatial AND dimension reduction coordinates
 in plotly mode
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -76,7 +71,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -200,17 +195,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 plotly
 
 Seealso
--------
+=======
 
 Other spatial and dimension reduction visualizations:
 ```spatDimPlot2D`` <#spatdimplot2d>`__ ,

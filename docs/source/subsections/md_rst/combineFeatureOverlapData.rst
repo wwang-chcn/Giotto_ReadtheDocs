@@ -2,20 +2,15 @@
 combineFeatureOverlapData
 =========================
 
-:Date: 2022-09-20
-
-``combineFeatureOverlapData``
-=============================
-
-combineFeatureOverlapData
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 combine feature data information
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -43,6 +38,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with combined spatial polygon information

@@ -2,21 +2,16 @@
 spatDimPlot2D
 =============
 
-:Date: 2022-09-20
-
-``spatDimPlot2D``
-=================
-
-spatDimPlot2D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells according to spatial AND dimension reduction coordinates
 2D
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -104,7 +99,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -293,17 +288,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```spatDimPlot3D`` <#spatdimplot3d>`__
 

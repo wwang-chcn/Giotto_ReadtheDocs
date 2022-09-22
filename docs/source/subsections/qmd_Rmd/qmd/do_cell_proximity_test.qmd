@@ -1,12 +1,8 @@
 --- 
 title: do_cell_proximity_test 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `do_cell_proximity_test`
-
-Do cell proximity test
-
 
 ## Description
 

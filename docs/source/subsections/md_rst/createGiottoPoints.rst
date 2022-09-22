@@ -2,27 +2,22 @@
 createGiottoPoints
 ==================
 
-:Date: 2022-09-20
-
-``createGiottoPoints``
-======================
-
-Create giotto points object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates Giotto point object from a structured dataframe-like object
 
 Usage
------
+=====
 
 .. code:: r
 
    createGiottoPoints(x, feat_type = "rna")
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -35,6 +30,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giottoPoints

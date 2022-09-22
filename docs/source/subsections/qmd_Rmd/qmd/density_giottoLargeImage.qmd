@@ -1,12 +1,8 @@
 --- 
 title: density_giottoLargeImage 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `density_giottoLargeImage`
-
-Plot smoothed curve of giotto largeImage intensity values
-
 
 ## Description
 

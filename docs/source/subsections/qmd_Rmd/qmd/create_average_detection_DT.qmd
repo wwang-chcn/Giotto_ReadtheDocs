@@ -1,12 +1,8 @@
 --- 
 title: create_average_detection_DT 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `create_average_detection_DT`
-
-create_average_detection_DT
-
 
 ## Description
 

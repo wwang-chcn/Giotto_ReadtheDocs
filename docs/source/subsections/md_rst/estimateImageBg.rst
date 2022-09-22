@@ -2,27 +2,22 @@
 estimateImageBg
 ===============
 
-:Date: 2022-09-20
-
-``estimateImageBg``
-===================
-
-estimateImageBg
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 helps to estimate which color is the background color of your plot
 
 Usage
------
+=====
 
 .. code:: r
 
    estimateImageBg(mg_object, top_color_range = 1:50)
 
 Arguments
----------
+=========
 
 =================== ========================================
 Argument            Description
@@ -32,6 +27,6 @@ Argument            Description
 =================== ========================================
 
 Value
------
+=====
 
 vector of pixel color frequencies and an associated barplot

@@ -2,20 +2,15 @@
 doScrubletDetect
 ================
 
-:Date: 2022-09-20
-
-``doScrubletDetect``
-====================
-
-doScrubletDetect
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 run scrublet doublet detection for raw expression.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -71,12 +66,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 list including doublet scores and classifications
 
 Seealso
--------
+=======
 
 This function wraps the python package scrublet
 c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,

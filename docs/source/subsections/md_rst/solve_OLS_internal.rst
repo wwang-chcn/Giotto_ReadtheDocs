@@ -2,20 +2,15 @@
 solve_OLS_internal
 ==================
 
-:Date: 2022-09-20
-
-``solve_OLS_internal``
-======================
-
-solve_OLS_internal
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 basic functions for dwls
 
 Usage
------
+=====
 
 .. code:: r
 

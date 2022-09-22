@@ -2,20 +2,15 @@
 plot-generic
 ============
 
-:Date: 2022-09-20
-
-``plot-generic``
-================
-
-Preview a Giotto spatial object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 S4 generic for previewing Giotto’s image and subcellular objects.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -25,7 +20,7 @@ Usage
    list(list("plot"), list("giottoPoints,missing"))(x, y, point_size = 0.1, feats = NULL, ...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

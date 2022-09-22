@@ -2,15 +2,10 @@
 show-methods
 ============
 
-:Date: 2022-09-20
-
-``show,dimObj-method``
-======================
-
-show method for dimObj class
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 show method for dimObj class
 
@@ -25,7 +20,7 @@ show method for spatialNetworkObj class
 show method for spatialGridObj class
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -38,7 +33,7 @@ Usage
    list(list("show"), list("spatialGridObj"))(object)
 
 Arguments
----------
+=========
 
 ========== ===================
 Argument   Description

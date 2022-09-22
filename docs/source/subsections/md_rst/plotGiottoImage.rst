@@ -2,15 +2,10 @@
 plotGiottoImage
 ===============
 
-:Date: 2022-09-20
-
-``plotGiottoImage``
-===================
-
-Plot a giotto image object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Display a giotto image in the viewer panel. Image object to plot can be
 specified by providing the giotto object containing the image (
@@ -19,7 +14,7 @@ object type ( ``image_type`` ). Alternatively, image objects can be
 directly plotted through their respective associated params.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -65,7 +60,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 Other basic image functions: ```addGiottoImage`` <#addgiottoimage>`__ ,
 ```reconnectGiottoImage`` <#reconnectgiottoimage>`__ ,

@@ -2,20 +2,15 @@
 do_spatial_knn_smoothing
 ========================
 
-:Date: 2022-09-20
-
-``do_spatial_knn_smoothing``
-============================
-
-do_spatial_knn_smoothing
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 smooth gene expression over a kNN spatial network
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +--------------------------+------------------------------------------+
 | Argument                 | Description                              |
@@ -45,7 +40,7 @@ Arguments
 +--------------------------+------------------------------------------+
 
 Details
--------
+=======
 
 This function will smoothen the gene expression values per cell
 according to its neighbors in the selected spatial network. list() b is
@@ -55,7 +50,7 @@ means no smoothing and b = 1 means no contribution from its own
 expression.
 
 Value
------
+=====
 
 matrix with smoothened gene expression values based on kNN spatial
 network

@@ -1,12 +1,8 @@
 --- 
 title: plotInteractionChangedFeats 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plotInteractionChangedFeats`
-
-Plot interaction changed features
-
 
 ## Description
 

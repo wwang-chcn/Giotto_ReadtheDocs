@@ -2,20 +2,15 @@
 spatPlot3D
 ==========
 
-:Date: 2022-09-20
-
-``spatPlot3D``
-==============
-
-spatPlot3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells according to spatial coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -59,7 +54,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -151,12 +146,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 Other spatial visualizations: ```spatPlot2D`` <#spatplot2d>`__ ,
 ```spatPlot`` <#spatplot>`__

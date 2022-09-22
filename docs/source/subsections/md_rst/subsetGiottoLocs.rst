@@ -2,20 +2,15 @@
 subsetGiottoLocs
 ================
 
-:Date: 2022-09-20
-
-``subsetGiottoLocs``
-====================
-
-Subset by spatial locations
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subsets Giotto object based on spatial locations
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -60,13 +55,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Subsets a Giotto based on spatial locations and for one provided spatial
 unit if return_gobject = FALSE, then a filtered combined metadata
 data.table will be returned
 
 Value
------
+=====
 
 giotto object

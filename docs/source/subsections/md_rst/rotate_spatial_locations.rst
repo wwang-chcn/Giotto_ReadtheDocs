@@ -2,28 +2,23 @@
 rotate_spatial_locations
 ========================
 
-:Date: 2022-09-20
-
-``rotate_spatial_locations``
-============================
-
-rotate_spatial_locations
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Rotate given X Y coordinates by given radians in counter clockwise
 manner about the coordinate origin
 
 Usage
------
+=====
 
 .. code:: r
 
    rotate_spatial_locations(spatlocs, rotateradians)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

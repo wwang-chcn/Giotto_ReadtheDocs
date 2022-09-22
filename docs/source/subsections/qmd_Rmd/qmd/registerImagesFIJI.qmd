@@ -1,12 +1,8 @@
 --- 
 title: registerImagesFIJI 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `registerImagesFIJI`
-
-registerImagesFIJI
-
 
 ## Description
 

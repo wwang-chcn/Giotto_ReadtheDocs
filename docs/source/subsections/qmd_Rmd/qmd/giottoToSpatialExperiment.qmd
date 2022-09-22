@@ -1,12 +1,8 @@
 --- 
 title: giottoToSpatialExperiment 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `giottoToSpatialExperiment`
-
-Utility function to convert a Giotto object to a SpatialExperiment object.
-
 
 ## Description
 

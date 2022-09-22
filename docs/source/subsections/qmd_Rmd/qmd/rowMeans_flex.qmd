@@ -1,12 +1,8 @@
 --- 
 title: rowMeans_flex 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `rowMeans_flex`
-
-rowMeans_flex
-
 
 ## Description
 

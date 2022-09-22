@@ -2,27 +2,22 @@
 list_spatial_enrichments
 ========================
 
-:Date: 2022-09-20
-
-``list_spatial_enrichments``
-============================
-
-list_spatial_enrichments
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the available spatial enrichment results
 
 Usage
------
+=====
 
 .. code:: r
 
    list_spatial_enrichments(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
----------
+=========
 
 ============= ===========================================
 Argument      Description
@@ -33,6 +28,6 @@ Argument      Description
 ============= ===========================================
 
 Value
------
+=====
 
 names and locations of available data as data.table

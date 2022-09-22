@@ -2,20 +2,15 @@
 libNorm_giotto
 ==============
 
-:Date: 2022-09-20
-
-``libNorm_giotto``
-==================
-
-libNorm_giotto
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 libNorm_giotto
 
 Usage
------
+=====
 
 .. code:: r
 

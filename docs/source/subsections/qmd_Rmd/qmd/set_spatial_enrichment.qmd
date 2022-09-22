@@ -1,12 +1,8 @@
 --- 
 title: set_spatial_enrichment 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `set_spatial_enrichment`
-
-Set spatial enrichment
-
 
 ## Description
 

@@ -2,31 +2,26 @@
 select_dimReduction
 ===================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``select_dimReduction``
-=======================
-
-select_dimReduction
-
 Description
------------
+===========
 
 select_dimReduction
 
 Usage
------
+=====
 
 .. code:: r
 
    select_dimReduction(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -60,6 +55,6 @@ Arguments
    list(list("name")), list("name of reduction results")), "\n", "    ", list(list(list("return_dimObj")), list("return full dimension object result. Default = FALSE")), "\n", "  ")
 
 Seealso
--------
+=======
 
 ```get_dimReduction`` <#getdimreduction>`__

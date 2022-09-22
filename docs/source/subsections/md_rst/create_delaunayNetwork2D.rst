@@ -2,20 +2,15 @@
 create_delaunayNetwork2D
 ========================
 
-:Date: 2022-09-20
-
-``create_delaunayNetwork2D``
-============================
-
-create_delaunayNetwork2D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a spatial 2D Delaunay network.
 
 Usage
------
+=====
 
 .. code:: r
 

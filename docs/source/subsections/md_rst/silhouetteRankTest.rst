@@ -2,21 +2,16 @@
 silhouetteRankTest
 ==================
 
-:Date: 2022-09-20
-
-``silhouetteRankTest``
-======================
-
-silhouetteRankTest
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Multi parameter aggregator version of
 ```silhouetteRank`` <#silhouetterank>`__
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ======================= =========================================
 Argument                Description
@@ -56,6 +51,6 @@ Argument                Description
 ======================= =========================================
 
 Value
------
+=====
 
 data.table with spatial scores

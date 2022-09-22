@@ -2,20 +2,15 @@
 changeGiottoInstructions
 ========================
 
-:Date: 2022-09-20
-
-``changeGiottoInstructions``
-============================
-
-Change giotto instruction(s) associated with giotto object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to change one or more instructions from giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================== ==============================
 Argument           Description
@@ -39,6 +34,6 @@ Argument           Description
 ================== ==============================
 
 Value
------
+=====
 
 giotto object with one or more changed instructions

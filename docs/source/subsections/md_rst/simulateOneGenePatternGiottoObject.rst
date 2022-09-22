@@ -2,20 +2,15 @@
 simulateOneGenePatternGiottoObject
 ==================================
 
-:Date: 2022-09-20
-
-``simulateOneGenePatternGiottoObject``
-======================================
-
-simulateOneGenePatternGiottoObject
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a simulated spatial pattern for one selected gnee
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -62,7 +57,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 Reprocessed Giotto object for which one gene has a forced spatial
 pattern

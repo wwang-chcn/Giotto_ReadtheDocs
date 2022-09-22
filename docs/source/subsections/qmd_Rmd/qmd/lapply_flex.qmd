@@ -1,12 +1,8 @@
 --- 
 title: lapply_flex 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `lapply_flex`
-
-lapply_flex
-
 
 ## Description
 

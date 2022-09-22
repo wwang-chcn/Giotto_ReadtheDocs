@@ -1,12 +1,8 @@
 --- 
 title: write_giotto_viewer_numeric_annotation 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `write_giotto_viewer_numeric_annotation`
-
-write_giotto_viewer_numeric_annotation
-
 
 ## Description
 

@@ -2,20 +2,15 @@
 showPattern3D
 =============
 
-:Date: 2022-09-20
-
-``showPattern3D``
-=================
-
-showPattern3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 show patterns for 3D spatial data
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -41,7 +36,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -88,6 +83,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 plotly

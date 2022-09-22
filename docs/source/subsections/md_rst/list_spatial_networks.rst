@@ -2,28 +2,23 @@
 list_spatial_networks
 =====================
 
-:Date: 2022-09-20
-
-``list_spatial_networks``
-=========================
-
-list_spatial_networks
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the available spatial networks that are attached to the Giotto
 object
 
 Usage
------
+=====
 
 .. code:: r
 
    list_spatial_networks(gobject, spat_unit = NULL, return_uniques = FALSE)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -38,7 +33,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table of names and locations of available spatial networks, col
 order matters or list of unique nestings

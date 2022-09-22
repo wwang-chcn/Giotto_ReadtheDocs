@@ -1,12 +1,8 @@
 --- 
 title: doLouvainSubCluster_community 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `doLouvainSubCluster_community`
-
-doLouvainSubCluster_community
-
 
 ## Description
 

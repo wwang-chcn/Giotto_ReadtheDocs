@@ -2,20 +2,15 @@
 average_feat_feat_expression_in_groups
 ======================================
 
-:Date: 2022-09-20
-
-``average_feat_feat_expression_in_groups``
-==========================================
-
-average_feat_feat_expression_in_groups
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate average expression per cluster
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================== =========================================
 Argument           Description
@@ -43,6 +38,6 @@ Argument           Description
 ================== =========================================
 
 Value
------
+=====
 
 data.table with average expression scores for each cluster

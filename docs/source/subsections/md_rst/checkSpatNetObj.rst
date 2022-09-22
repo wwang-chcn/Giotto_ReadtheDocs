@@ -2,27 +2,22 @@
 checkSpatNetObj
 ===============
 
-:Date: 2022-09-20
-
-``checkSpatNetObj``
-===================
-
-Check spatialNetworkObj
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Check function for S4 spatialNetworkObj
 
 Usage
------
+=====
 
 .. code:: r
 
    checkSpatNetObj(object)
 
 Arguments
----------
+=========
 
 ========== =============================
 Argument   Description

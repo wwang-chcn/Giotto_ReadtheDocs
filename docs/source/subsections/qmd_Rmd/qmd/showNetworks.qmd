@@ -1,12 +1,8 @@
 --- 
 title: showNetworks 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `showNetworks`
-
-Show networks
-
 
 ## Description
 

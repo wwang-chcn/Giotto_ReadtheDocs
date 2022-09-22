@@ -2,20 +2,15 @@
 violinPlot
 ==========
 
-:Date: 2022-09-20
-
-``violinPlot``
-==============
-
-violinPlot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates violinplot for selected clusters
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -42,7 +37,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -98,6 +93,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot

@@ -2,21 +2,16 @@
 calculateOverlapParallel
 ========================
 
-:Date: 2022-09-20
-
-``calculateOverlapParallel``
-============================
-
-calculateOverlapParallel
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate overlap between cellular structures (polygons) and features
 (points)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -57,13 +52,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 parallel follows the future approach. This means that plan(multisession)
 does not work, since the underlying terra objects are internal C
 pointers. plan(multicore) is also not supported for Rstudio users.
 
 Value
------
+=====
 
 giotto object or spatVector with overlapping information

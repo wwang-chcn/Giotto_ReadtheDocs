@@ -2,24 +2,19 @@
 detectSpatialCorGenes
 =====================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``detectSpatialCorGenes``
-=========================
-
-detectSpatialCorGenes
-
 Description
------------
+===========
 
 Detect genes that are spatially correlated
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -39,7 +34,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -72,7 +67,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 For method = network, it expects a fully connected spatial network. You
 can make sure to create a fully connected network by setting minimal_k >
@@ -93,11 +88,11 @@ can make sure to create a fully connected network by setting minimal_k >
      showSpatialCorGenes()
 
 Value
------
+=====
 
 returns a spatial correlation object: “spatCorObject”
 
 Seealso
--------
+=======
 
 ```showSpatialCorGenes`` <#showspatialcorgenes>`__

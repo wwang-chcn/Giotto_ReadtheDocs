@@ -2,31 +2,26 @@
 showGrids
 =========
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``showGrids``
-=============
-
-Show Spatial Grids
-
 Description
------------
+===========
 
 Show Spatial Grids
 
 Usage
------
+=====
 
 .. code:: r
 
    showGrids(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -44,6 +39,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```showGiottoSpatGrids`` <#showgiottospatgrids>`__

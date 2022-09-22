@@ -2,22 +2,17 @@
 distGiottoImage
 ===============
 
-:Date: 2022-09-20
-
-``distGiottoImage``
-===================
-
-Plot distribution of image intensity values
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Plot distribution of intensity values using either a density plot or a
 histogram. Useful for finding image artefact outliers and determining
 reasonable scaling cutoffs.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,6 +44,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Plot is generated from a downsampling of the original image

@@ -2,20 +2,15 @@
 addGiottoLargeImage
 ===================
 
-:Date: 2022-09-20
-
-``addGiottoLargeImage``
-=======================
-
-addGiottoLargeImage
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Adds giotto image objects to your giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -54,6 +49,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 an updated Giotto object with access to the list of images

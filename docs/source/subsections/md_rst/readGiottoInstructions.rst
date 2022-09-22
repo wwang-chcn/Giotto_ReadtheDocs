@@ -2,27 +2,22 @@
 readGiottoInstructions
 ======================
 
-:Date: 2022-09-20
-
-``readGiottoInstructions``
-==========================
-
-Read giotto instructions associated with giotto object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Retrieves the instruction associated with the provided parameter
 
 Usage
------
+=====
 
 .. code:: r
 
    readGiottoInstructions(giotto_instructions, param = NULL)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -34,6 +29,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 specific parameter

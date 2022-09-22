@@ -2,20 +2,15 @@
 plotCombineInteractionChangedGenes
 ==================================
 
-:Date: 2022-09-20
-
-``plotCombineInteractionChangedGenes``
-======================================
-
-plotCombineInteractionChangedGenes
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create visualization for combined (pairwise) ICG scores
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -39,7 +34,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -85,6 +80,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot

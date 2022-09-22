@@ -1,12 +1,8 @@
 --- 
 title: get_cross_section_coordinates 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `get_cross_section_coordinates`
-
-get_cross_section_coordinates
-
 
 ## Description
 

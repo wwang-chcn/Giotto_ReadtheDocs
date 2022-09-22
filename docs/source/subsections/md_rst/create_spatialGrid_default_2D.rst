@@ -2,20 +2,15 @@
 create_spatialGrid_default_2D
 =============================
 
-:Date: 2022-09-20
-
-``create_spatialGrid_default_2D``
-=================================
-
-create_spatialGrid_default_2D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 create a 2D spatial grid
 
 Usage
------
+=====
 
 .. code:: r
 

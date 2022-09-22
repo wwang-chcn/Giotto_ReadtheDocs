@@ -2,27 +2,22 @@
 filter_network
 ==============
 
-:Date: 2022-09-20
-
-``filter_network``
-==================
-
-filter_network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 function to filter a spatial network
 
 Usage
------
+=====
 
 .. code:: r
 
    filter_network(networkDT = NULL, maximum_distance = NULL, minimum_k = NULL)
 
 Arguments
----------
+=========
 
 ==================== =======================================
 Argument             Description

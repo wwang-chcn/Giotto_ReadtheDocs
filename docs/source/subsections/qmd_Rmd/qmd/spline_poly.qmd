@@ -1,12 +1,8 @@
 --- 
 title: spline_poly 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spline_poly`
-
-Convert spline to polygon
-
 
 ## Description
 

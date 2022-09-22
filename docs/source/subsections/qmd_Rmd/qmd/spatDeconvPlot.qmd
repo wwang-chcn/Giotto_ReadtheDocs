@@ -1,12 +1,8 @@
 --- 
 title: spatDeconvPlot 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spatDeconvPlot`
-
-spatDeconvPlot
-
 
 ## Description
 

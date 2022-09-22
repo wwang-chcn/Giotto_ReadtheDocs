@@ -1,12 +1,8 @@
 --- 
 title: binSpectSingle 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `binSpectSingle`
-
-binSpectSingle
-
 
 ## Description
 

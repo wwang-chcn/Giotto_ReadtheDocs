@@ -1,12 +1,8 @@
 --- 
 title: subset_expression_data 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `subset_expression_data`
-
-Subset expression data
-
 
 ## Description
 

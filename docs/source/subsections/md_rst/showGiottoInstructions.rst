@@ -2,27 +2,22 @@
 showGiottoInstructions
 ======================
 
-:Date: 2022-09-20
-
-``showGiottoInstructions``
-==========================
-
-Show giotto instructions associated with giotto object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to display all instructions from giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
    showGiottoInstructions(gobject)
 
 Arguments
----------
+=========
 
 =========== =============
 Argument    Description
@@ -31,6 +26,6 @@ Argument    Description
 =========== =============
 
 Value
------
+=====
 
 named vector with giotto instructions

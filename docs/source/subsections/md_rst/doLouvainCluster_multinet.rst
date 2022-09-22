@@ -2,21 +2,16 @@
 doLouvainCluster_multinet
 =========================
 
-:Date: 2022-09-20
-
-``doLouvainCluster_multinet``
-=============================
-
-doLouvainCluster_multinet
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 cluster cells using a NN-network and the Louvain algorithm from the
 multinet package in R.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -66,12 +61,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 See ```glouvain_ml`` <#glouvainml>`__ from the multinet package in R for
 more information.
 
 Value
------
+=====
 
 giotto object with new clusters appended to cell metadata

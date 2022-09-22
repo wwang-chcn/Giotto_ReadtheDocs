@@ -2,21 +2,16 @@
 runPatternSimulation
 ====================
 
-:Date: 2022-09-20
-
-``runPatternSimulation``
-========================
-
-runPatternSimulation
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates a known spatial pattern for selected genes one-by-one and runs
 the different spatial gene detection tests
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -47,7 +42,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -111,6 +106,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with results

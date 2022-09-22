@@ -2,20 +2,15 @@
 runtSNE
 =======
 
-:Date: 2022-09-20
-
-``runtSNE``
-===========
-
-Run tSNE dimensional reduction
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 run tSNE
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -43,7 +38,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -96,7 +91,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 See ```Rtsne`` <#rtsne>`__ for more information about these and other
 parameters. list()
@@ -115,6 +110,6 @@ parameters. list()
    analysis
 
 Value
------
+=====
 
 giotto object with updated tSNE dimension recuction

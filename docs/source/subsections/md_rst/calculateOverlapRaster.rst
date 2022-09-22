@@ -2,21 +2,16 @@
 calculateOverlapRaster
 ======================
 
-:Date: 2022-09-20
-
-``calculateOverlapRaster``
-==========================
-
-calculateOverlapRaster
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate overlap between cellular structures (polygons) and features
 (points)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -61,11 +56,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Serial overlapping function.
 
 Value
------
+=====
 
 giotto object or spatVector with overlapping information

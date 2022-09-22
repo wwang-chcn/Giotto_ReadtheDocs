@@ -1,12 +1,8 @@
 --- 
 title: set_polygon_info 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `set_polygon_info`
-
-Set polygon info
-
 
 ## Description
 

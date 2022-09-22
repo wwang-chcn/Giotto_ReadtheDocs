@@ -2,27 +2,22 @@
 showGiottoSpatLocs
 ==================
 
-:Date: 2022-09-20
-
-``showGiottoSpatLocs``
-======================
-
-showGiottoSpatLocs
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 shows the available spatial locations
 
 Usage
------
+=====
 
 .. code:: r
 
    showGiottoSpatLocs(gobject, nrows = 4)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -34,12 +29,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 prints the name and small subset of available data.table
 
 Seealso
--------
+=======
 
 Other functions to show data in giotto object:
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,

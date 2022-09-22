@@ -2,20 +2,15 @@
 list_dim_reductions_names
 =========================
 
-:Date: 2022-09-20
-
-``list_dim_reductions_names``
-=============================
-
-list_dim_reductions_names
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the available dimension reductions object names
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ============= ===========================================
 Argument      Description
@@ -41,11 +36,11 @@ Argument      Description
 ============= ===========================================
 
 Details
--------
+=======
 
 function that can be used to find which names have been used
 
 Value
------
+=====
 
 names of dimension reduction object

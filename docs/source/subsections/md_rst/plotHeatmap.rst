@@ -2,20 +2,15 @@
 plotHeatmap
 ===========
 
-:Date: 2022-09-20
-
-``plotHeatmap``
-===============
-
-plotHeatmap
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates heatmap for genes and clusters.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -55,7 +50,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -143,7 +138,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 If you want to display many genes there are 2 ways to proceed:
 
@@ -156,6 +151,6 @@ If you want to display many genes there are 2 ways to proceed:
    2. provide a subset of features to display to feat_label_selection
 
 Value
------
+=====
 
 ggplot

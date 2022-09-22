@@ -1,12 +1,8 @@
 --- 
 title: list_giotto_data 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `list_giotto_data`
-
-list_giotto_data
-
 
 ## Description
 

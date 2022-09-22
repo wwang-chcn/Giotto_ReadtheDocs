@@ -1,12 +1,8 @@
 --- 
 title: plotStatDelaunayNetwork 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plotStatDelaunayNetwork`
-
-plotStatDelaunayNetwork
-
 
 ## Description
 

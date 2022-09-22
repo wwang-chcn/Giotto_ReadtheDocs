@@ -2,20 +2,15 @@
 showPattern2D
 =============
 
-:Date: 2022-09-20
-
-``showPattern2D``
-=================
-
-showPattern2D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 show patterns for 2D spatial data
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -73,6 +68,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot

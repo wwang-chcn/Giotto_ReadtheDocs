@@ -1,12 +1,8 @@
 --- 
 title: dimCellPlot2D 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `dimCellPlot2D`
-
-dimCellPlot2D
-
 
 ## Description
 

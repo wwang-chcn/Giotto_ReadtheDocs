@@ -2,20 +2,15 @@
 spat_OR_func
 ============
 
-:Date: 2022-09-20
-
-``spat_OR_func``
-================
-
-spat_OR_func
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate odds-ratio
 
 Usage
------
+=====
 
 .. code:: r
 

@@ -2,20 +2,15 @@
 calc_spatial_enrichment_matrix
 ==============================
 
-:Date: 2022-09-20
-
-``calc_spatial_enrichment_matrix``
-==================================
-
-calc_spatial_enrichment_matrix
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate spatial enrichment using a matrix approach
 
 Usage
------
+=====
 
 .. code:: r
 

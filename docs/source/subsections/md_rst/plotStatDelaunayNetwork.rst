@@ -2,20 +2,15 @@
 plotStatDelaunayNetwork
 =======================
 
-:Date: 2022-09-20
-
-``plotStatDelaunayNetwork``
-===========================
-
-plotStatDelaunayNetwork
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Plots network statistics for a Delaunay network..
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -40,7 +35,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -101,6 +96,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto object with updated spatial network slot

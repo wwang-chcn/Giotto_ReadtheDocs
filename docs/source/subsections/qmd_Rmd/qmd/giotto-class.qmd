@@ -1,12 +1,8 @@
 --- 
 title: giotto-class 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `giotto-class`
-
-S4 giotto Class
-
 
 ## Description
 

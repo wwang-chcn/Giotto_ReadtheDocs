@@ -2,20 +2,15 @@
 create_delaunayNetwork_geometry
 ===============================
 
-:Date: 2022-09-20
-
-``create_delaunayNetwork_geometry``
-===================================
-
-create_delaunayNetwork_geometry
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a spatial Delaunay network.
 
 Usage
------
+=====
 
 .. code:: r
 

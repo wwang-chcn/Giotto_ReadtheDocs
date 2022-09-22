@@ -1,12 +1,8 @@
 --- 
 title: subset_giotto_polygon_object 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `subset_giotto_polygon_object`
-
-Subset giotto polygon object
-
 
 ## Description
 

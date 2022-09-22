@@ -2,24 +2,19 @@
 createGiottoCosMxObject
 =======================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``createGiottoCosMxObject``
-===========================
-
-Create Nanostring CosMx Giotto Object
-
 Description
------------
+===========
 
 Given the path to a CosMx experiment directory, creates a Giotto object.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -65,7 +60,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 [ Expected Directory ] This function generates a giotto object when
 given a link to a cosmx output directory. It expects the following items
@@ -112,6 +107,6 @@ accessing them from a server.
 the available images.
 
 Value
------
+=====
 
 a giotto object

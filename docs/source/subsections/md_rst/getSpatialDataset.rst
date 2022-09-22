@@ -2,15 +2,10 @@
 getSpatialDataset
 =================
 
-:Date: 2022-09-20
-
-``getSpatialDataset``
-=====================
-
-getSpatialDataset
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 This package will automatically download the spatial locations and
 expression matrix for the chosen dataset. These files are already in the
@@ -19,7 +14,7 @@ machine, you can add ‘method = wget’ to the parameters to download files
 faster.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

@@ -1,12 +1,8 @@
 --- 
 title: addGenesPerc 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `addGenesPerc`
-
-addGenesPerc
-
 
 ## Description
 

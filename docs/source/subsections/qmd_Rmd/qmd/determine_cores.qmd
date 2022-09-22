@@ -1,12 +1,8 @@
 --- 
 title: determine_cores 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `determine_cores`
-
-determine_cores
-
 
 ## Description
 

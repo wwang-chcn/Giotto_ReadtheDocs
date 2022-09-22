@@ -2,20 +2,15 @@
 get_args
 ========
 
-:Date: 2022-09-20
-
-``get_args``
-============
-
-Log args used
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Log args used
 
 Usage
------
+=====
 
 .. code:: r
 

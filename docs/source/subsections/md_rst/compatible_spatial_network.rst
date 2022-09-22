@@ -2,21 +2,16 @@
 compatible_spatial_network
 ==========================
 
-:Date: 2022-09-20
-
-``compatible_spatial_network``
-==============================
-
-Compatible spatial network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to evaluate if a spatial network is compatible with a provided
 expression matrix
 
 Usage
------
+=====
 
 .. code:: r
 

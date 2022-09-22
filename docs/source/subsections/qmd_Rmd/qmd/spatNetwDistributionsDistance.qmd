@@ -1,12 +1,8 @@
 --- 
 title: spatNetwDistributionsDistance 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spatNetwDistributionsDistance`
-
-Plot spatial distance distribution
-
 
 ## Description
 

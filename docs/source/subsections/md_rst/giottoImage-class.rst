@@ -2,21 +2,16 @@
 giottoImage-class
 =================
 
-:Date: 2022-09-20
-
-``giottoImage-class``
-=====================
-
-S4 giottoImage Class
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Framework of giotto object to store and work with spatial expression
 data
 
 Details
--------
+=======
 
 [ mg_object ] Core object is any image that can be read by the magick
 package

@@ -1,12 +1,8 @@
 --- 
 title: get10Xmatrix 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `get10Xmatrix`
-
-get10Xmatrix
-
 
 ## Description
 

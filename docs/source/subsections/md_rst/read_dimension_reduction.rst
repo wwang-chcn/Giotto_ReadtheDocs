@@ -2,20 +2,15 @@
 read_dimension_reduction
 ========================
 
-:Date: 2022-09-20
-
-``read_dimension_reduction``
-============================
-
-Read dimensional reduction
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 read dimension reduction results from list
 
 Usage
------
+=====
 
 .. code:: r
 

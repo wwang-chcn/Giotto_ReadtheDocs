@@ -1,12 +1,8 @@
 --- 
 title: calculate_centroids_polygons 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `calculate_centroids_polygons`
-
-Calculate polygon centroids
-
 
 ## Description
 

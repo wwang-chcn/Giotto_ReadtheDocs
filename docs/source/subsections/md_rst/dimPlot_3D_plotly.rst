@@ -2,20 +2,15 @@
 dimPlot_3D_plotly
 =================
 
-:Date: 2022-09-20
-
-``dimPlot_3D_plotly``
-=====================
-
-dimPlot_3D_plotly
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells at their 3D dimension reduction coordinates with plotly
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -49,6 +44,6 @@ Usage
    )
 
 Value
------
+=====
 
 plotly object

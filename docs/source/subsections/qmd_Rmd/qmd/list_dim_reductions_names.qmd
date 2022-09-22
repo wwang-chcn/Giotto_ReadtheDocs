@@ -1,12 +1,8 @@
 --- 
 title: list_dim_reductions_names 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `list_dim_reductions_names`
-
-list_dim_reductions_names
-
 
 ## Description
 

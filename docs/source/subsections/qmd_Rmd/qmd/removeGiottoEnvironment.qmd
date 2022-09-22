@@ -1,12 +1,8 @@
 --- 
 title: removeGiottoEnvironment 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `removeGiottoEnvironment`
-
-removeGiottoEnvironment
-
 
 ## Description
 

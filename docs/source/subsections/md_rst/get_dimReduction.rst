@@ -2,20 +2,15 @@
 get_dimReduction
 ================
 
-:Date: 2022-09-20
-
-``get_dimReduction``
-====================
-
-Get dimension reduction
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to get a dimension reduction object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -55,12 +50,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 dim reduction coordinates (default) or dim reduction object
 
 Seealso
--------
+=======
 
 Other dimensional reduction data accessor functions:
 ```set_dimReduction`` <#setdimreduction>`__

@@ -1,12 +1,8 @@
 --- 
 title: plotly_grid 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plotly_grid`
-
-plotly_grid
-
 
 ## Description
 

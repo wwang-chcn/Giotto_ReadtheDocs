@@ -1,12 +1,8 @@
 --- 
 title: combineICG 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `combineICG`
-
-combineICG
-
 
 ## Description
 

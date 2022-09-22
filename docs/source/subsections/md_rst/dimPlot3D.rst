@@ -2,20 +2,15 @@
 dimPlot3D
 =========
 
-:Date: 2022-09-20
-
-``dimPlot3D``
-=============
-
-dimPlot3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells according to dimension reduction coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -54,7 +49,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -132,17 +127,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 plotly
 
 Seealso
--------
+=======
 
 Other reduced dimension visualizations: ```dimPlot2D`` <#dimplot2d>`__ ,
 ```dimPlot`` <#dimplot>`__ , ```plotPCA_2D`` <#plotpca2d>`__ ,

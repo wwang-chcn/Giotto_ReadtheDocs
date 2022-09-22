@@ -2,24 +2,19 @@
 spark
 =====
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``spark``
-=========
-
-spark
-
 Description
------------
+===========
 
 Compute spatially expressed genes with SPARK method
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -38,7 +33,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -76,7 +71,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function is a wrapper for the method implemented in the SPARK
 package:
@@ -93,6 +88,6 @@ package:
      “10.1101/810903”) list(“tools:::Rd_expr_doi("10.1101/810903")”)
 
 Value
------
+=====
 
 data.table with SPARK spatial genes results or the SPARK object

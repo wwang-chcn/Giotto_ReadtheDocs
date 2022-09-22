@@ -1,12 +1,8 @@
 --- 
 title: run_spatial_sim_tests_one_rep 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `run_spatial_sim_tests_one_rep`
-
-run_spatial_sim_tests_one_rep
-
 
 ## Description
 

@@ -1,12 +1,8 @@
 --- 
 title: create_2d_mesh_grid_line_obj 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `create_2d_mesh_grid_line_obj`
-
-create_2d_mesh_grid_line_obj
-
 
 ## Description
 

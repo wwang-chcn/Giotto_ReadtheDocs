@@ -1,12 +1,8 @@
 --- 
 title: nullOrChar-class 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `nullOrChar-class`
-
-NULL or char class union
-
 
 ## Description
 

@@ -2,20 +2,15 @@
 createCrossSection
 ==================
 
-:Date: 2022-09-20
-
-``createCrossSection``
-======================
-
-createCrossSection
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a virtual 2D cross section.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -42,7 +37,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -135,13 +130,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Creates a virtual 2D cross section object for a given spatial network
 object. The users need to provide the definition of the cross section
 plane (see method).
 
 Value
------
+=====
 
 giotto object with updated spatial network slot

@@ -1,12 +1,8 @@
 --- 
 title: calculateMetaTable 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `calculateMetaTable`
-
-calculateMetaTable
-
 
 ## Description
 

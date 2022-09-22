@@ -2,20 +2,15 @@
 clusterSpatialCorFeats
 ======================
 
-:Date: 2022-09-20
-
-``clusterSpatialCorFeats``
-==========================
-
-clusterSpatialCorFeats
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Cluster based on spatially correlated features
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -46,6 +41,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 spatCorObject or cluster results

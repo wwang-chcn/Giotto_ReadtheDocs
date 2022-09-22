@@ -2,29 +2,23 @@
 giottoToSpatialExperiment
 =========================
 
-:Date: 2022-09-20
-
-``giottoToSpatialExperiment``
-=============================
-
-Utility function to convert a Giotto object to a SpatialExperiment
-object.
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Utility function to convert a Giotto object to a SpatialExperiment
 object.
 
 Usage
------
+=====
 
 .. code:: r
 
    giottoToSpatialExperiment(giottoObj)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -34,7 +28,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 A SpatialExperiment object that contains data from the input Giotto
 object.

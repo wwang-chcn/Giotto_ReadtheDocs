@@ -2,27 +2,22 @@
 checkSpatGridObj
 ================
 
-:Date: 2022-09-20
-
-``checkSpatGridObj``
-====================
-
-Check spatialGridObj
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Check function for S4 spatialGridObj
 
 Usage
------
+=====
 
 .. code:: r
 
    checkSpatGridObj(object)
 
 Arguments
----------
+=========
 
 ========== ==========================
 Argument   Description

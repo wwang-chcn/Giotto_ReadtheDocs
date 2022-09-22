@@ -2,20 +2,15 @@
 runGiottoHarmony
 ================
 
-:Date: 2022-09-20
-
-``runGiottoHarmony``
-====================
-
-runGiottoHarmony
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 run UMAP
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -39,7 +34,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -88,7 +83,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This is a simple wrapper for the HarmonyMatrix function in the Harmony
 package c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,
@@ -96,6 +91,6 @@ package c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,
 list(“tools:::Rd_expr_doi("10.1038/s41592-019-0619-0")”) .
 
 Value
------
+=====
 
 giotto object with updated Harmony dimension recuction

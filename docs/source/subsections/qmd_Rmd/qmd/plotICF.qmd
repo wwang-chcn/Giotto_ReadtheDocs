@@ -1,12 +1,8 @@
 --- 
 title: plotICF 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plotICF`
-
-Plot interaction changed features
-
 
 ## Description
 

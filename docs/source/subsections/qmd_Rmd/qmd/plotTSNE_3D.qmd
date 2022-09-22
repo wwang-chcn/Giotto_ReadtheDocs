@@ -1,12 +1,8 @@
 --- 
 title: plotTSNE_3D 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plotTSNE_3D`
-
-plotTSNE_3D
-
 
 ## Description
 

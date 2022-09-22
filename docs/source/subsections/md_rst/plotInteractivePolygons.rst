@@ -2,28 +2,23 @@
 plotInteractivePolygons
 =======================
 
-:Date: 2022-09-20
-
-``plotInteractivePolygons``
-===========================
-
-Select image regions by plotting interactive polygons
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Plot interactive polygons on an image and retrieve the polygons
 coordinates.
 
 Usage
------
+=====
 
 .. code:: r
 
    plotInteractivePolygons(x, width = "auto", height = "auto", ...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -39,12 +34,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 A ``data.table`` containing x,y coordinates from the plotted polygons.
 
 Examples
---------
+========
 
 .. code:: r
 

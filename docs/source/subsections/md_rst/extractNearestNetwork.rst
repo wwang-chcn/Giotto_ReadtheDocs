@@ -2,31 +2,26 @@
 extractNearestNetwork
 =====================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``extractNearestNetwork``
-=========================
-
-Extract nearest network
-
 Description
------------
+===========
 
 Extract nearest network
 
 Usage
------
+=====
 
 .. code:: r
 
    extractNearestNetwork(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -62,6 +57,6 @@ Arguments
    "\n", "  ")
 
 Seealso
--------
+=======
 
 ```get_NearestNetwork`` <#getnearestnetwork>`__

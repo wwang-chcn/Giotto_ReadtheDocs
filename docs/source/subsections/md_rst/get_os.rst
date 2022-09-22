@@ -2,27 +2,22 @@
 get_os
 ======
 
-:Date: 2022-09-20
-
-``get_os``
-==========
-
-get_os
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the type of operating system, see
 https://conjugateprior.org/2015/06/identifying-the-os-from-r/
 
 Usage
------
+=====
 
 .. code:: r
 
    get_os()
 
 Value
------
+=====
 
 character osx, linux or windows

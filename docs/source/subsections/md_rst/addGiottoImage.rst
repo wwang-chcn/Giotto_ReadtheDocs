@@ -2,20 +2,15 @@
 addGiottoImage
 ==============
 
-:Date: 2022-09-20
-
-``addGiottoImage``
-==================
-
-addGiottoImage
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Adds lists of giottoImages and giottoLargeImages to gobjects
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -55,12 +50,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 an updated Giotto object with access to the list of images
 
 Seealso
--------
+=======
 
 Other basic image functions: ```plotGiottoImage`` <#plotgiottoimage>`__
 , ```reconnectGiottoImage`` <#reconnectgiottoimage>`__ ,

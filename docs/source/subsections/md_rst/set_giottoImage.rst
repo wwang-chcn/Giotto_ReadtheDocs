@@ -2,20 +2,15 @@
 set_giottoImage
 ===============
 
-:Date: 2022-09-20
-
-``set_giottoImage``
-===================
-
-Set giotto image object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Directly attach a giotto image to giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -48,7 +43,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 list(list(“Use with care!”)) This function directly attaches giotto
 image objects to the gobject without further modifications of spatial
@@ -58,12 +53,12 @@ modalities of spatial data. list() For the more general-purpose method
 of attaching image objects, see ```addGiottoImage`` <#addgiottoimage>`__
 
 Value
------
+=====
 
 giotto object
 
 Seealso
--------
+=======
 
 ```addGiottoImage`` <#addgiottoimage>`__
 

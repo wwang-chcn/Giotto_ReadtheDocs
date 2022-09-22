@@ -1,12 +1,8 @@
 --- 
 title: read_spatial_networks 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `read_spatial_networks`
-
-Read spatial networks
-
 
 ## Description
 

@@ -2,20 +2,15 @@
 extract_polygon_list
 ====================
 
-:Date: 2022-09-20
-
-``extract_polygon_list``
-========================
-
-Extract list of polygons
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 to extract list of polygons
 
 Usage
------
+=====
 
 .. code:: r
 

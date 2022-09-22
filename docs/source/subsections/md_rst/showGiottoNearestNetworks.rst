@@ -2,27 +2,22 @@
 showGiottoNearestNetworks
 =========================
 
-:Date: 2022-09-20
-
-``showGiottoNearestNetworks``
-=============================
-
-showGiottoNearestNetworks
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 shows the available nearest neighbor networks
 
 Usage
------
+=====
 
 .. code:: r
 
    showGiottoNearestNetworks(gobject, nrows = 3)
 
 Arguments
----------
+=========
 
 =========== ===============================
 Argument    Description
@@ -32,13 +27,13 @@ Argument    Description
 =========== ===============================
 
 Value
------
+=====
 
 prints the name and small subset of available nearest neighbor network
 info
 
 Seealso
--------
+=======
 
 Other functions to show data in giotto object:
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,

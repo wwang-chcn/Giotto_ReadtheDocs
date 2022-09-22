@@ -1,12 +1,8 @@
 --- 
 title: list_nearest_networks_names 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `list_nearest_networks_names`
-
-list_nearest_networks_names
-
 
 ## Description
 

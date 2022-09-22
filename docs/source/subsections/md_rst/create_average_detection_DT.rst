@@ -2,21 +2,16 @@
 create_average_detection_DT
 ===========================
 
-:Date: 2022-09-20
-
-``create_average_detection_DT``
-===============================
-
-create_average_detection_DT
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculates average gene detection for a cell metadata factor
 (e.g. cluster)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,6 +45,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with average gene epression values for each factor

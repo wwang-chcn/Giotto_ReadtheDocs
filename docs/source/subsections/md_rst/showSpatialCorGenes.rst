@@ -2,20 +2,15 @@
 showSpatialCorGenes
 ===================
 
-:Date: 2022-09-20
-
-``showSpatialCorGenes``
-=======================
-
-showSpatialCorGenes
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Shows and filters spatially correlated genes
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -61,6 +56,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with filtered information

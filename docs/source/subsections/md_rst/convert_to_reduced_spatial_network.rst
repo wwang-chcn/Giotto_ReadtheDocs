@@ -2,27 +2,22 @@
 convert_to_reduced_spatial_network
 ==================================
 
-:Date: 2022-09-20
-
-``convert_to_reduced_spatial_network``
-======================================
-
-convert_to_reduced_spatial_network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 convert to a reduced spatial network
 
 Usage
------
+=====
 
 .. code:: r
 
    convert_to_reduced_spatial_network(full_spatial_network_DT)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

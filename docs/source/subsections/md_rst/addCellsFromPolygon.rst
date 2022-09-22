@@ -2,27 +2,22 @@
 addCellsFromPolygon
 ===================
 
-:Date: 2022-09-20
-
-``addCellsFromPolygon``
-=======================
-
-Add corresponding polygon IDs to cell metadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Add corresponding polygon IDs to cell metadata
 
 Usage
------
+=====
 
 .. code:: r
 
    addCellsFromPolygon(gobject, cellsFromPolygon, feat_type = "rna")
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -37,14 +32,14 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 A Giotto object with a modified cell_metadata slot that includes the
 polygon name where each cell is located or NA if the cell is not located
 within a polygon area
 
 Examples
---------
+========
 
 .. code:: r
 

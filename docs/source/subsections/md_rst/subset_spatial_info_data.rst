@@ -2,20 +2,15 @@
 subset_spatial_info_data
 ========================
 
-:Date: 2022-09-20
-
-``subset_spatial_info_data``
-============================
-
-Subset spatial info data
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subset all spatial info (polygon) data
 
 Usage
------
+=====
 
 .. code:: r
 

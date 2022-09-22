@@ -2,20 +2,15 @@
 loadHMRF
 ========
 
-:Date: 2022-09-20
-
-``loadHMRF``
-============
-
-loadHMRF
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 load previous HMRF
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ====================== ======================================
 Argument               Description
@@ -41,11 +36,11 @@ Argument               Description
 ====================== ======================================
 
 Details
--------
+=======
 
 Description of HMRF parameters …
 
 Value
------
+=====
 
 reloads a previous ran HMRF from doHRMF

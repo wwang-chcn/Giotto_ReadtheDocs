@@ -2,31 +2,26 @@
 spatCellPlot
 ============
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``spatCellPlot``
-================
-
-spatCellPlot
-
 Description
------------
+===========
 
 Visualize cells according to spatial coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
    spatCellPlot(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -70,17 +65,17 @@ Arguments
    "\n", "  ")
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 Other spatial cell annotation visualizations:
 ```spatCellPlot2D`` <#spatcellplot2d>`__

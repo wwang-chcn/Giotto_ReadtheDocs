@@ -2,20 +2,15 @@
 doLouvainSubCluster
 ===================
 
-:Date: 2022-09-20
-
-``doLouvainSubCluster``
-=======================
-
-doLouvainSubCluster
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 subcluster cells using a NN-network and the Louvain algorithm
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -45,7 +40,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -103,7 +98,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function performs subclustering using the Louvain algorithm on
 selected clusters. The systematic steps are:
@@ -129,12 +124,12 @@ selected clusters. The systematic steps are:
    5. do Louvain clustering
 
 Value
------
+=====
 
 giotto object with new subclusters appended to cell metadata
 
 Seealso
--------
+=======
 
 ```doLouvainCluster_multinet`` <#dolouvainclustermultinet>`__ and
 ```doLouvainCluster_community`` <#dolouvainclustercommunity>`__

@@ -2,20 +2,15 @@
 set_dimReduction
 ================
 
-:Date: 2022-09-20
-
-``set_dimReduction``
-====================
-
-Set dimension reduction
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to set a dimension reduction slot
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ==================== ===========================================
 Argument             Description
@@ -45,12 +40,12 @@ Argument             Description
 ==================== ===========================================
 
 Value
------
+=====
 
 giotto object
 
 Seealso
--------
+=======
 
 Other dimensional reduction data accessor functions:
 ```get_dimReduction`` <#getdimreduction>`__

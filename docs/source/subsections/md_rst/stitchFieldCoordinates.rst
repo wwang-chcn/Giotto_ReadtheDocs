@@ -2,21 +2,16 @@
 stitchFieldCoordinates
 ======================
 
-:Date: 2022-09-20
-
-``stitchFieldCoordinates``
-==========================
-
-stitchFieldCoordinates
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Helper function to stitch field coordinates together to form one
 complete picture
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -67,7 +62,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Stitching of fields:
 
@@ -84,7 +79,7 @@ Stitching of fields:
    list(list(“createGiottoObject”)))
 
 Value
------
+=====
 
 Updated location dataframe with new X [‘X_final’] and Y [‘Y_final’]
 coordinates

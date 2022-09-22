@@ -1,12 +1,8 @@
 --- 
 title: readPolygonFilesVizgenHDF5 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `readPolygonFilesVizgenHDF5`
-
-readPolygonFilesVizgenHDF5
-
 
 ## Description
 

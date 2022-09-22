@@ -2,20 +2,15 @@
 reg_img_minmax_finder
 =====================
 
-:Date: 2022-09-20
-
-``reg_img_minmax_finder``
-=========================
-
-reg_img_minmax_finder
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 finds new minmax boundaries of registration transformed images
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

@@ -1,12 +1,8 @@
 --- 
 title: changeGiottoInstructions 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `changeGiottoInstructions`
-
-Change giotto instruction(s) associated with giotto object
-
 
 ## Description
 

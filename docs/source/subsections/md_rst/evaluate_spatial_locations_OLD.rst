@@ -2,20 +2,15 @@
 evaluate_spatial_locations_OLD
 ==============================
 
-:Date: 2022-09-20
-
-``evaluate_spatial_locations_OLD``
-==================================
-
-evaluate_spatial_locations_OLD
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Evaluate spatial location input
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================ ===============================================
 Argument         Description
@@ -39,6 +34,6 @@ Argument         Description
 ================ ===============================================
 
 Value
------
+=====
 
 data.table

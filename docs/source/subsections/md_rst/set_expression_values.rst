@@ -2,20 +2,15 @@
 set_expression_values
 =====================
 
-:Date: 2022-09-20
-
-``set_expression_values``
-=========================
-
-Set expression values
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to set expression values for giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ============= ===========================================
 Argument      Description
@@ -41,12 +36,12 @@ Argument      Description
 ============= ===========================================
 
 Value
------
+=====
 
 giotto object
 
 Seealso
--------
+=======
 
 Other expression accessor functions:
 ```get_expression_values`` <#getexpressionvalues>`__

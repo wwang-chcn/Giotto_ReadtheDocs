@@ -2,20 +2,15 @@
 dimFeatPlot2D
 =============
 
-:Date: 2022-09-20
-
-``dimFeatPlot2D``
-=================
-
-dimFeatPlot2D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize gene expression according to dimension reduction coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -60,7 +55,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -150,11 +145,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot

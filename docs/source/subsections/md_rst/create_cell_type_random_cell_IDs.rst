@@ -2,20 +2,15 @@
 create_cell_type_random_cell_IDs
 ================================
 
-:Date: 2022-09-20
-
-``create_cell_type_random_cell_IDs``
-====================================
-
-create_cell_type_random_cell_IDs
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 creates randomized cell ids within a selection of cell types
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -51,6 +46,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 list of randomly sampled cell ids with same cell type composition

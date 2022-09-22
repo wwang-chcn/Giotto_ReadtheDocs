@@ -2,21 +2,16 @@
 combineSpatialCellFeatureInfo
 =============================
 
-:Date: 2022-09-20
-
-``combineSpatialCellFeatureInfo``
-=================================
-
-combineSpatialCellFeatureInfo
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Combine spatial cell information (e.g. polygon) and spatial feature
 information (e.g. transcript locations)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ===================== ======================
 Argument              Description
@@ -40,7 +35,7 @@ Argument              Description
 ===================== ======================
 
 Details
--------
+=======
 
 The returned data.table has the following columns: list()
 
@@ -57,6 +52,6 @@ The returned data.table has the following columns: list()
 -  feat: selected feature(s)
 
 Value
------
+=====
 
 list of data.table(s)

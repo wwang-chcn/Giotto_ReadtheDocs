@@ -1,12 +1,8 @@
 --- 
 title: plotCombineCellCellCommunication 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plotCombineCellCellCommunication`
-
-plotCombineCellCellCommunication
-
 
 ## Description
 

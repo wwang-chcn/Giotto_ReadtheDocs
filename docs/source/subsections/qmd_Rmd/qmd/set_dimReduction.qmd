@@ -1,12 +1,8 @@
 --- 
 title: set_dimReduction 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `set_dimReduction`
-
-Set dimension reduction
-
 
 ## Description
 

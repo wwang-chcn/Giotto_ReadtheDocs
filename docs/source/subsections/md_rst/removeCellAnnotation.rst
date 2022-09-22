@@ -2,21 +2,16 @@
 removeCellAnnotation
 ====================
 
-:Date: 2022-09-20
-
-``removeCellAnnotation``
-========================
-
-Remove cell annotation
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Removes cell annotation from a Giotto object for a specific feature
 modality (default = ‘rna’)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,11 +42,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 if ``return_gobject = FALSE`` , it will return the cell metadata
 
 Value
------
+=====
 
 giotto object

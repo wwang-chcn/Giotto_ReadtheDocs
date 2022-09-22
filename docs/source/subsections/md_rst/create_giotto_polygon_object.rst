@@ -2,20 +2,15 @@
 create_giotto_polygon_object
 ============================
 
-:Date: 2022-09-20
-
-``create_giotto_polygon_object``
-================================
-
-Create a giotto polygon object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a giotto polygon object
 
 Usage
------
+=====
 
 .. code:: r
 

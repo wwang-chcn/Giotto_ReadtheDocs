@@ -1,12 +1,8 @@
 --- 
 title: spatPlot 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spatPlot`
-
-spatPlot
-
 
 ## Description
 

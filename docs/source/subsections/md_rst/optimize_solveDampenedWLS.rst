@@ -2,20 +2,15 @@
 optimize_solveDampenedWLS
 =========================
 
-:Date: 2022-09-20
-
-``optimize_solveDampenedWLS``
-=============================
-
-optimize_solveDampenedWLS
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Rui to fill in
 
 Usage
------
+=====
 
 .. code:: r
 

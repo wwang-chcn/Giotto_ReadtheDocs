@@ -2,27 +2,22 @@
 spline_poly
 ===========
 
-:Date: 2022-09-20
-
-``spline_poly``
-===============
-
-Convert spline to polygon
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 spline polynomial to smooth polygon
 
 Usage
------
+=====
 
 .. code:: r
 
    spline_poly(xy, vertices = 20, k = 3, ...)
 
 Arguments
----------
+=========
 
 ============ =========================
 Argument     Description

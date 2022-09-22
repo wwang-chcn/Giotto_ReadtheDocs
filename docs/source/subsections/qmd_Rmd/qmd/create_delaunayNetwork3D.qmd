@@ -1,12 +1,8 @@
 --- 
 title: create_delaunayNetwork3D 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `create_delaunayNetwork3D`
-
-create_delaunayNetwork3D
-
 
 ## Description
 

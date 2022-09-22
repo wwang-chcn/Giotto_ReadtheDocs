@@ -2,28 +2,23 @@
 showGiottoSpatNetworks
 ======================
 
-:Date: 2022-09-20
-
-``showGiottoSpatNetworks``
-==========================
-
-showGiottoSpatNetworks
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Prints the available spatial networks that are attached to the Giotto
 object
 
 Usage
------
+=====
 
 .. code:: r
 
    showGiottoSpatNetworks(gobject, nrows = 4)
 
 Arguments
----------
+=========
 
 =========== =======================
 Argument    Description
@@ -33,12 +28,12 @@ Argument    Description
 =========== =======================
 
 Value
------
+=====
 
 prints names and small subset of available spatial network info
 
 Seealso
--------
+=======
 
 Other functions to show data in giotto object:
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,

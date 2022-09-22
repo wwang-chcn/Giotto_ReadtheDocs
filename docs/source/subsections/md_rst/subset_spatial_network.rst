@@ -2,20 +2,15 @@
 subset_spatial_network
 ======================
 
-:Date: 2022-09-20
-
-``subset_spatial_network``
-==========================
-
-Subset spatial network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 subset ALL spatial networks from giotto object of the given spat_unit
 
 Usage
------
+=====
 
 .. code:: r
 

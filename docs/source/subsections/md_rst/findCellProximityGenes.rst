@@ -2,32 +2,27 @@
 findCellProximityGenes
 ======================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``findCellProximityGenes``
-==========================
-
-findCellProximityGenes
-
 Description
------------
+===========
 
 Identifies cell-to-cell Interaction Changed Features (ICF), i.e. genes
 that are differentially expressed due to proximity to other cell types.
 
 Usage
------
+=====
 
 .. code:: r
 
    findCellProximityGenes(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -66,6 +61,6 @@ Arguments
    list(list(list("set_seed")), list("set a seed for reproducibility")), "\n", "    ", list(list(list("seed_number")), list("seed number")), "\n", "  ")
 
 Seealso
--------
+=======
 
 ```findInteractionChangedFeats`` <#findinteractionchangedfeats>`__

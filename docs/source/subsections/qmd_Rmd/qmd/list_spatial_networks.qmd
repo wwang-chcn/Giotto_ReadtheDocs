@@ -1,12 +1,8 @@
 --- 
 title: list_spatial_networks 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `list_spatial_networks`
-
-list_spatial_networks
-
 
 ## Description
 

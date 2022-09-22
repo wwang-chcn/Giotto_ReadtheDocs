@@ -1,12 +1,8 @@
 --- 
 title: plotRecovery_sub 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plotRecovery_sub`
-
-plotRecovery_sub
-
 
 ## Description
 

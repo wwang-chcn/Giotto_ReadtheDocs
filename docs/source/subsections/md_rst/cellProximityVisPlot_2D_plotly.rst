@@ -2,21 +2,16 @@
 cellProximityVisPlot_2D_plotly
 ==============================
 
-:Date: 2022-09-20
-
-``cellProximityVisPlot_2D_plotly``
-==================================
-
-cellProximityVisPlot_2D_plotly
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize 2D cell-cell interactions according to spatial coordinates in
 plotly mode
 
 Usage
------
+=====
 
 .. code:: r
 

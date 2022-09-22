@@ -1,12 +1,8 @@
 --- 
 title: spatNetwDistributionsKneighbors 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spatNetwDistributionsKneighbors`
-
-spatNetwDistributionsKneighbors
-
 
 ## Description
 

@@ -1,12 +1,8 @@
 --- 
 title: install_giotto_environment 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `install_giotto_environment`
-
-install_giotto_environment
-
 
 ## Description
 

@@ -2,20 +2,15 @@
 calc_spatial_enrichment_minimum
 ===============================
 
-:Date: 2022-09-20
-
-``calc_spatial_enrichment_minimum``
-===================================
-
-calc_spatial_enrichment_minimum
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate spatial enrichment using a simple and efficient for loop
 
 Usage
------
+=====
 
 .. code:: r
 

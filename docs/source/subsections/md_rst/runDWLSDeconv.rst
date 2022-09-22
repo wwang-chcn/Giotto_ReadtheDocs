@@ -2,21 +2,16 @@
 runDWLSDeconv
 =============
 
-:Date: 2022-09-20
-
-``runDWLSDeconv``
-=================
-
-runDWLSDeconv
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to perform DWLS deconvolution based on single cell expression
 data
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -66,12 +61,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto object or deconvolution results
 
 Seealso
--------
+=======
 
 https://github.com/dtsoucas/DWLS for the list(“DWLS”) bulk deconvolution
 method, and c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,

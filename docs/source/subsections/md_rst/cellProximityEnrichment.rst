@@ -2,20 +2,15 @@
 cellProximityEnrichment
 =======================
 
-:Date: 2022-09-20
-
-``cellProximityEnrichment``
-===========================
-
-cellProximityEnrichment
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Compute cell-cell interaction enrichment (observed vs expected)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -59,7 +54,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Spatial proximity enrichment or depletion between pairs of cell types is
 calculated by calculating the observed over the expected frequency of
@@ -69,7 +64,7 @@ individual simulation is obtained by reshuffling the cell type labels of
 each node (cell) in the spatial network.
 
 Value
------
+=====
 
 List of cell Proximity scores (CPscores) in data.table format. The first
 data.table (raw_sim_table) shows the raw observations of both the

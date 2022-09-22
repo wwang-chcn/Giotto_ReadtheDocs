@@ -1,12 +1,8 @@
 --- 
 title: trakem2_rigid_transf_extract 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `trakem2_rigid_transf_extract`
-
-trakem2_rigid_transf_extract
-
 
 ## Description
 

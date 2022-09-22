@@ -2,14 +2,9 @@
 spatialNetworkObj-class
 =======================
 
-:Date: 2022-09-20
-
-``spatialNetworkObj-class``
-===========================
-
-S4 spatialNetworkObj Class
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Framework to store spatial network information

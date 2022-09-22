@@ -2,20 +2,15 @@
 addHMRF
 =======
 
-:Date: 2022-09-20
-
-``addHMRF``
-===========
-
-addHMRF
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Add selected results from doHMRF to the giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -52,6 +47,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto object

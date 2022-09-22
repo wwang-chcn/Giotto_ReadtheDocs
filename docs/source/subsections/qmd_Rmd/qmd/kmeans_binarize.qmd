@@ -1,12 +1,8 @@
 --- 
 title: kmeans_binarize 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `kmeans_binarize`
-
-kmeans_binarize
-
 
 ## Description
 

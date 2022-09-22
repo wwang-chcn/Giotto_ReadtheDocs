@@ -1,12 +1,8 @@
 --- 
 title: list_element_exists 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `list_element_exists`
-
-Test if list element exists
-
 
 ## Description
 

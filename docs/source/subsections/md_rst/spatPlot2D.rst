@@ -2,20 +2,15 @@
 spatPlot2D
 ==========
 
-:Date: 2022-09-20
-
-``spatPlot2D``
-==============
-
-spatPlot2D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells according to spatial coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -87,7 +82,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -238,18 +233,18 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters. coord_fix_ratio: set to NULL to use default
 ggplot parameters
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```spatPlot3D`` <#spatplot3d>`__
 

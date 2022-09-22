@@ -2,27 +2,22 @@
 fDataDT
 =======
 
-:Date: 2022-09-20
-
-``fDataDT``
-===========
-
-fDataDT
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 show gene metadata
 
 Usage
------
+=====
 
 .. code:: r
 
    fDataDT(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
----------
+=========
 
 ============= =============
 Argument      Description
@@ -33,6 +28,6 @@ Argument      Description
 ============= =============
 
 Value
------
+=====
 
 data.table with gene metadata

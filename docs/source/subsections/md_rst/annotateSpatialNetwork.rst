@@ -2,20 +2,15 @@
 annotateSpatialNetwork
 ======================
 
-:Date: 2022-09-20
-
-``annotateSpatialNetwork``
-==========================
-
-annotateSpatialNetwork
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Annotate spatial network with cell metadata information.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,6 +44,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 annotated network in data.table format

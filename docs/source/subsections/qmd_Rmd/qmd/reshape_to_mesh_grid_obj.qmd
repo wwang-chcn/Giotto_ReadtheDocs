@@ -1,12 +1,8 @@
 --- 
 title: reshape_to_mesh_grid_obj 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `reshape_to_mesh_grid_obj`
-
-reshape_to_mesh_grid_obj
-
 
 ## Description
 

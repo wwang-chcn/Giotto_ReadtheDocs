@@ -2,20 +2,15 @@
 findMarkers
 ===========
 
-:Date: 2022-09-20
-
-``findMarkers``
-===============
-
-findMarkers
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Identify marker feats for selected clusters.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -42,7 +37,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -101,18 +96,18 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Wrapper for all individual functions to detect marker feats for
 clusters.
 
 Value
------
+=====
 
 data.table with marker feats
 
 Seealso
--------
+=======
 
 ```findScranMarkers`` <#findscranmarkers>`__ ,
 ```findGiniMarkers`` <#findginimarkers>`__ and

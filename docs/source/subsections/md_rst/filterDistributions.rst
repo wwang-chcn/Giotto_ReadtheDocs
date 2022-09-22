@@ -2,20 +2,15 @@
 filterDistributions
 ===================
 
-:Date: 2022-09-20
-
-``filterDistributions``
-=======================
-
-filterDistributions
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 show gene or cell distribution after filtering on expression threshold
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -39,7 +34,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -86,6 +81,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot object

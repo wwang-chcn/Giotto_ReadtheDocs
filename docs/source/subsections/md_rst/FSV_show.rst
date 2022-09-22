@@ -2,20 +2,15 @@
 FSV_show
 ========
 
-:Date: 2022-09-20
-
-``FSV_show``
-============
-
-FSV_show
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize spatial varible genes caculated by spatial_DE
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 =============== ===================================
 Argument        Description
@@ -43,11 +38,11 @@ Argument        Description
 =============== ===================================
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot object

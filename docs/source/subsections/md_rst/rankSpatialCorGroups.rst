@@ -2,20 +2,15 @@
 rankSpatialCorGroups
 ====================
 
-:Date: 2022-09-20
-
-``rankSpatialCorGroups``
-========================
-
-rankSpatialCorGroups
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Rank spatial correlated clusters according to correlation structure
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -31,7 +26,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -59,7 +54,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with positive (within group) and negative (outside group)
 scores

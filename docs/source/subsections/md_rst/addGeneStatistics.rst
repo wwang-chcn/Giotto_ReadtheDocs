@@ -2,20 +2,15 @@
 addGeneStatistics
 =================
 
-:Date: 2022-09-20
-
-``addGeneStatistics``
-=====================
-
-Add gene statistics
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 adds gene statistics to the giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -44,7 +39,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function will add the following statistics to gene metadata:
 
@@ -60,6 +55,6 @@ This function will add the following statistics to gene metadata:
    levels of the gene
 
 Value
------
+=====
 
 giotto object if return_gobject = TRUE

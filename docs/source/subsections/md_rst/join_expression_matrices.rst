@@ -2,20 +2,15 @@
 join_expression_matrices
 ========================
 
-:Date: 2022-09-20
-
-``join_expression_matrices``
-============================
-
-join_expression_matrices
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 join_expression_matrices
 
 Usage
------
+=====
 
 .. code:: r
 
