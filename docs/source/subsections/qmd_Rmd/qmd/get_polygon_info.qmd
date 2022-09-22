@@ -1,12 +1,8 @@
 --- 
 title: get_polygon_info 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `get_polygon_info`
-
-Get polygon info
-
 
 ## Description
 

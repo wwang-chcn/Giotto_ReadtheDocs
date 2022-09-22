@@ -1,12 +1,8 @@
 --- 
 title: enrich_deconvolution 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `enrich_deconvolution`
-
-enrich_deconvolution
-
 
 ## Description
 

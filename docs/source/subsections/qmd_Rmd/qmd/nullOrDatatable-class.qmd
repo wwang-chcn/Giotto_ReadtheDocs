@@ -1,12 +1,8 @@
 --- 
 title: nullOrDatatable-class 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `nullOrDatatable-class`
-
-NULL or data.table class union
-
 
 ## Description
 

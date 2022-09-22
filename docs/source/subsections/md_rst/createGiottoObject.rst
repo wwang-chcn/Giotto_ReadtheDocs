@@ -2,20 +2,15 @@
 createGiottoObject
 ==================
 
-:Date: 2022-09-20
-
-``createGiottoObject``
-======================
-
-Create a giotto object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to create a giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -42,7 +37,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -106,7 +101,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 See http://giottosuite.com/articles/getting_started_gobject.html for
 more details
@@ -156,6 +151,6 @@ appropriate slots:
 -  images
 
 Value
------
+=====
 
 giotto object

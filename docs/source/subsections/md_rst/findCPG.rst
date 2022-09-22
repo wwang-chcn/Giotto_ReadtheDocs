@@ -2,32 +2,27 @@
 findCPG
 =======
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``findCPG``
-===========
-
-findCPG
-
 Description
------------
+===========
 
 Identifies cell-to-cell Interaction Changed Genes (ICG), i.e. genes that
 are differentially expressed due to proximity to other cell types.
 
 Usage
------
+=====
 
 .. code:: r
 
    findCPG(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -65,6 +60,6 @@ Arguments
    list(list(list("set_seed")), list("set a seed for reproducibility")), "\n", "    ", list(list(list("seed_number")), list("seed number")), "\n", "  ")
 
 Seealso
--------
+=======
 
 ```findICG`` <#findicg>`__

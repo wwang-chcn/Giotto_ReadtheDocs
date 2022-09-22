@@ -1,12 +1,8 @@
 --- 
 title: runPAGEEnrich_OLD 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `runPAGEEnrich_OLD`
-
-runPAGEEnrich_OLD
-
 
 ## Description
 

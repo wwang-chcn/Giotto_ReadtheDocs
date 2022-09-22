@@ -2,21 +2,16 @@
 findCellProximityFeats_per_interaction
 ======================================
 
-:Date: 2022-09-20
-
-``findCellProximityFeats_per_interaction``
-==========================================
-
-findCellProximityFeats_per_interaction
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Identifies features that are differentially expressed due to proximity
 to other cell types.
 
 Usage
------
+=====
 
 .. code:: r
 

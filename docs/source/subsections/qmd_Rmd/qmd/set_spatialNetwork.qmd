@@ -1,12 +1,8 @@
 --- 
 title: set_spatialNetwork 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `set_spatialNetwork`
-
-Set spatial network
-
 
 ## Description
 

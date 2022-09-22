@@ -2,20 +2,15 @@
 evaluate_provided_spatial_locations
 ===================================
 
-:Date: 2022-09-20
-
-``evaluate_provided_spatial_locations``
-=======================================
-
-Evaluate provided spatial locations
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Evaluate provided spatial locations
 
 Usage
------
+=====
 
 .. code:: r
 

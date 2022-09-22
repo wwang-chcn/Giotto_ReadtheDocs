@@ -1,12 +1,8 @@
 --- 
 title: viewHMRFresults2D 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `viewHMRFresults2D`
-
-viewHMRFresults2D
-
 
 ## Description
 

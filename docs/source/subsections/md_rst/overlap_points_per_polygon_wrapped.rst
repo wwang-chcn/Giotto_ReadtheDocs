@@ -2,20 +2,15 @@
 overlap_points_per_polygon_wrapped
 ==================================
 
-:Date: 2022-09-20
-
-``overlap_points_per_polygon_wrapped``
-======================================
-
-Overlap points per polygon – wrapped
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 overlap wrapped polygons
 
 Usage
------
+=====
 
 .. code:: r
 

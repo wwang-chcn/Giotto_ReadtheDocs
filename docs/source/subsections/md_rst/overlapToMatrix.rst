@@ -2,15 +2,10 @@
 overlapToMatrix
 ===============
 
-:Date: 2022-09-20
-
-``overlapToMatrix``
-===================
-
-overlapToMatrix
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 create a count matrix based on overlap results from
 ```calculateOverlapRaster`` <#calculateoverlapraster>`__ ,
@@ -18,7 +13,7 @@ create a count matrix based on overlap results from
 ```calculateOverlapParallel`` <#calculateoverlapparallel>`__
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -31,7 +26,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================== ====================================
 Argument           Description
@@ -44,6 +39,6 @@ Argument           Description
 ================== ====================================
 
 Value
------
+=====
 
 giotto object or count matrix

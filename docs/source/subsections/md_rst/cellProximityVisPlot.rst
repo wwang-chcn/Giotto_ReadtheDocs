@@ -2,20 +2,15 @@
 cellProximityVisPlot
 ====================
 
-:Date: 2022-09-20
-
-``cellProximityVisPlot``
-========================
-
-cellProximityVisPlot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cell-cell interactions according to spatial coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -56,7 +51,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -134,11 +129,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot or plotly

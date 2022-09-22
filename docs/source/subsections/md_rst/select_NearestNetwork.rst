@@ -2,31 +2,26 @@
 select_NearestNetwork
 =====================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``select_NearestNetwork``
-=========================
-
-Select nearest network
-
 Description
------------
+===========
 
 Select nearest network
 
 Usage
------
+=====
 
 .. code:: r
 
    select_NearestNetwork(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -62,6 +57,6 @@ Arguments
    "\n", "  ")
 
 Seealso
--------
+=======
 
 ```get_NearestNetwork`` <#getnearestnetwork>`__

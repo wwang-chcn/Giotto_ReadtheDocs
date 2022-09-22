@@ -1,12 +1,8 @@
 --- 
 title: do_permuttest_random 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `do_permuttest_random`
-
-do_permuttest_random
-
 
 ## Description
 

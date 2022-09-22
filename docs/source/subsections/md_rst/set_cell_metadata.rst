@@ -2,27 +2,22 @@
 set_cell_metadata
 =================
 
-:Date: 2022-09-20
-
-``set_cell_metadata``
-=====================
-
-Set cell metadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Set cell metadata
 
 Usage
------
+=====
 
 .. code:: r
 
    set_cell_metadata(gobject, cell_metadata)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

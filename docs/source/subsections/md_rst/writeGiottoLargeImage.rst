@@ -2,22 +2,17 @@
 writeGiottoLargeImage
 =====================
 
-:Date: 2022-09-20
-
-``writeGiottoLargeImage``
-=========================
-
-writeGiottoLargeImage
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Write full resolution image to file. Filetype extension should be
 included in ``filename`` argument. Be careful if write time and disk
 space needed if image is very large.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

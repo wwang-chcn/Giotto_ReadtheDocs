@@ -2,28 +2,23 @@
 set_giottoLargeImage
 ====================
 
-:Date: 2022-09-20
-
-``set_giottoLargeImage``
-========================
-
-Set terra -based giotto ``largeImage``
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Set a giottoLargeImage for a giotto object with no additional
 modifications
 
 Usage
------
+=====
 
 .. code:: r
 
    set_giottoLargeImage(gobject, largeImage_object, name = NULL, verbose = TRUE)
 
 Arguments
----------
+=========
 
 ===================== ===============================
 Argument              Description
@@ -35,6 +30,6 @@ Argument              Description
 ===================== ===============================
 
 Value
------
+=====
 
 giotto object

@@ -2,20 +2,15 @@
 set_spatial_enrichment
 ======================
 
-:Date: 2022-09-20
-
-``set_spatial_enrichment``
-==========================
-
-Set spatial enrichment
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to set a spatial enrichment slot
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,12 +42,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto object
 
 Seealso
--------
+=======
 
 Other spatial enrichment data accessor functions:
 ```get_spatial_enrichment`` <#getspatialenrichment>`__

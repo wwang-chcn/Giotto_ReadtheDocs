@@ -2,20 +2,15 @@
 plotMetaDataCellsHeatmap
 ========================
 
-:Date: 2022-09-20
-
-``plotMetaDataCellsHeatmap``
-============================
-
-plotMetaDataCellsHeatmap
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates heatmap for numeric cell metadata within aggregated clusters.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -48,7 +43,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -122,18 +117,18 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Creates heatmap for the average values of selected value columns in the
 different annotation groups.
 
 Value
------
+=====
 
 ggplot or data.table
 
 Seealso
--------
+=======
 
 ```plotMetaDataHeatmap`` <#plotmetadataheatmap>`__ for gene expression
 instead of numeric cell annotation data.

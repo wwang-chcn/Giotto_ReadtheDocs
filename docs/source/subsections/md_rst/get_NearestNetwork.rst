@@ -2,20 +2,15 @@
 get_NearestNetwork
 ==================
 
-:Date: 2022-09-20
-
-``get_NearestNetwork``
-======================
-
-Get nearest network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Get a NN-network from a Giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,12 +45,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 igraph or data.table object
 
 Seealso
--------
+=======
 
 Other expression space nearest network accessor functions:
 ```set_NearestNetwork`` <#setnearestnetwork>`__

@@ -1,12 +1,8 @@
 --- 
 title: smoothGiottoPolygons 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `smoothGiottoPolygons`
-
-smoothGiottoPolygons
-
 
 ## Description
 

@@ -1,12 +1,8 @@
 --- 
 title: spatGenePlot2D 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spatGenePlot2D`
-
-spatGenePlot2D
-
 
 ## Description
 

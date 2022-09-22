@@ -1,12 +1,8 @@
 --- 
 title: create_terra_spatRaster 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `create_terra_spatRaster`
-
-Load image as a terra spatRaster object
-
 
 ## Description
 

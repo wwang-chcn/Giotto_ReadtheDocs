@@ -2,27 +2,22 @@
 extend_vector
 =============
 
-:Date: 2022-09-20
-
-``extend_vector``
-=================
-
-extend_vector
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 extend the range of a vector by a given ratio
 
 Usage
------
+=====
 
 .. code:: r
 
    extend_vector(x, extend_ratio)
 
 Arguments
----------
+=========
 
 ================ ============
 Argument         Description

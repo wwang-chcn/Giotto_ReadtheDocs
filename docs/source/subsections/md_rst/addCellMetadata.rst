@@ -2,20 +2,15 @@
 addCellMetadata
 ===============
 
-:Date: 2022-09-20
-
-``addCellMetadata``
-===================
-
-Add cell metadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Adds cell metadata to the giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -56,7 +51,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 You can add additional cell metadata in two manners:
 
@@ -69,6 +64,6 @@ You can add additional cell metadata in two manners:
    match with the”, list(“cell_ID”), ” column in pDataDT(gobject)“)
 
 Value
------
+=====
 
 giotto object

@@ -2,20 +2,15 @@
 createSpatialKNNnetwork
 =======================
 
-:Date: 2022-09-20
-
-``createSpatialKNNnetwork``
-===========================
-
-createSpatialKNNnetwork
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a spatial knn network.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -77,7 +72,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto object with updated spatial network slot
 

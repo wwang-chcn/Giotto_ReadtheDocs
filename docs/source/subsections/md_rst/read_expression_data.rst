@@ -2,20 +2,15 @@
 read_expression_data
 ====================
 
-:Date: 2022-09-20
-
-``read_expression_data``
-========================
-
-Read expression data
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Read expression data
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -46,7 +41,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 mylistA = list(‘a’ = matrix(1:5), ‘b’ = matrix(1:5)) depth(mylistA)
 

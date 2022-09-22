@@ -1,12 +1,8 @@
 --- 
 title: select_spatialNetwork 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `select_spatialNetwork`
-
-Select spatial network
-
 
 ## Description
 

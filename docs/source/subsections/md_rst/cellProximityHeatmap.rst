@@ -2,20 +2,15 @@
 cellProximityHeatmap
 ====================
 
-:Date: 2022-09-20
-
-``cellProximityHeatmap``
-========================
-
-cellProximityHeatmap
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create heatmap from cell-cell proximity scores
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -34,7 +29,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -71,12 +66,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function creates a heatmap that shows the spatial proximity
 enrichment or depletion of cell type pairs.
 
 Value
------
+=====
 
 ggplot heatmap

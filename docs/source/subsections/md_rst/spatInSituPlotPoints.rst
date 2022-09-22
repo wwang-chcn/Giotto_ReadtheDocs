@@ -2,21 +2,16 @@
 spatInSituPlotPoints
 ====================
 
-:Date: 2022-09-20
-
-``spatInSituPlotPoints``
-========================
-
-spatInSituPlotPoints
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to plot multiple features for multiple modalities at the
 spatial in situ level
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -62,7 +57,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -158,17 +153,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 TODO
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 Other In Situ visualizations:
 ```spatInSituPlotDensity`` <#spatinsituplotdensity>`__ ,

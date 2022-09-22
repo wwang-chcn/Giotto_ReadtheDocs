@@ -2,20 +2,15 @@
 createSpatialFeaturesKNNnetwork_dbscan
 ======================================
 
-:Date: 2022-09-20
-
-``createSpatialFeaturesKNNnetwork_dbscan``
-==========================================
-
-Create kNN spatial feature network using dbscan
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 to create a feature kNN spatial network using dbscan
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ==================== ===================================================
 Argument             Description

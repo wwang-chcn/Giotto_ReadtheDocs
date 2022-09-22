@@ -2,20 +2,15 @@
 kmeans_binarize
 ===============
 
-:Date: 2022-09-20
-
-``kmeans_binarize``
-===================
-
-kmeans_binarize
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 create binarized scores from a vector using kmeans
 
 Usage
------
+=====
 
 .. code:: r
 

@@ -2,20 +2,15 @@
 runPCA
 ======
 
-:Date: 2022-09-20
-
-``runPCA``
-==========
-
-runPCA
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 runs a Principal Component Analysis
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -42,7 +37,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -91,7 +86,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 See ```runPCA`` <#runpca>`__ and ```PCA`` <#pca>`__ for more information
 about other parameters.
@@ -106,6 +101,6 @@ about other parameters.
    features
 
 Value
------
+=====
 
 giotto object with updated PCA dimension recuction

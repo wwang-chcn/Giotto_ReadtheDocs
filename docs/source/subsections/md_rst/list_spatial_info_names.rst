@@ -2,27 +2,22 @@
 list_spatial_info_names
 =======================
 
-:Date: 2022-09-20
-
-``list_spatial_info_names``
-===========================
-
-list_spatial_info_names
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the available names for giotto spatial polygon information
 
 Usage
------
+=====
 
 .. code:: r
 
    list_spatial_info_names(gobject)
 
 Arguments
----------
+=========
 
 =========== =============
 Argument    Description
@@ -31,6 +26,6 @@ Argument    Description
 =========== =============
 
 Value
------
+=====
 
 vector with names of available spatial polygon information

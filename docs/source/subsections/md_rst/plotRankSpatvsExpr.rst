@@ -2,21 +2,16 @@
 plotRankSpatvsExpr
 ==================
 
-:Date: 2022-09-20
-
-``plotRankSpatvsExpr``
-======================
-
-plotRankSpatvsExpr
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Plots dotplot to compare ligand-receptor rankings from spatial and
 expression information
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -38,7 +33,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -82,6 +77,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot

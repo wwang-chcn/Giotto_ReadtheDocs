@@ -2,31 +2,26 @@
 spatPlot
 ========
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``spatPlot``
-============
-
-spatPlot
-
 Description
------------
+===========
 
 Visualize cells according to spatial coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
    spatPlot(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -70,17 +65,17 @@ Arguments
    "\n", "  ")
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```spatPlot3D`` <#spatplot3d>`__
 

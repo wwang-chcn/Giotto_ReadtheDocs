@@ -2,20 +2,15 @@
 spatCellPlot2D
 ==============
 
-:Date: 2022-09-20
-
-``spatCellPlot2D``
-==================
-
-spatCellPlot2D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells according to spatial coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -81,7 +76,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -216,17 +211,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 Other spatial cell annotation visualizations:
 ```spatCellPlot`` <#spatcellplot>`__

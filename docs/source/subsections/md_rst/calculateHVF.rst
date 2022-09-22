@@ -2,20 +2,15 @@
 calculateHVF
 ============
 
-:Date: 2022-09-20
-
-``calculateHVF``
-================
-
-calculateHVF
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 compute highly variable features
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -43,7 +38,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -105,7 +100,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Currently we provide 2 ways to calculate highly variable genes:
 
@@ -122,7 +117,7 @@ predicted COV is calculated for each feature using loess regression
 COV ( list(“difference_in_cov”) ) are considered highly variable. list()
 
 Value
------
+=====
 
 giotto object highly variable features appended to feature metadata
 (fDataDT)

@@ -1,12 +1,8 @@
 --- 
 title: createGiottoImage 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `createGiottoImage`
-
-createGiottoImage
-
 
 ## Description
 

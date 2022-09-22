@@ -1,12 +1,8 @@
 --- 
 title: set_cell_metadata 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `set_cell_metadata`
-
-Set cell metadata
-
 
 ## Description
 

@@ -1,12 +1,8 @@
 --- 
 title: PAGE_DT_method 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `PAGE_DT_method`
-
-PAGE_DT_method
-
 
 ## Description
 

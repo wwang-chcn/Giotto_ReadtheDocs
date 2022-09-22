@@ -1,12 +1,8 @@
 --- 
 title: annotateSpatialNetwork 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `annotateSpatialNetwork`
-
-annotateSpatialNetwork
-
 
 ## Description
 

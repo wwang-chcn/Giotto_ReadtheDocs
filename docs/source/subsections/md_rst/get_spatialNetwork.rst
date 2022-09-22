@@ -2,20 +2,15 @@
 get_spatialNetwork
 ==================
 
-:Date: 2022-09-20
-
-``get_spatialNetwork``
-======================
-
-Get spatial network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to get a spatial network
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ====================== =======================================
 Argument               Description
@@ -39,7 +34,7 @@ Argument               Description
 ====================== =======================================
 
 Seealso
--------
+=======
 
 Other spatial network data accessor functions:
 ```set_spatialNetwork`` <#setspatialnetwork>`__

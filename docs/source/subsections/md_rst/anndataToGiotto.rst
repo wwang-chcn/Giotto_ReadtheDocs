@@ -2,20 +2,15 @@
 anndataToGiotto
 ===============
 
-:Date: 2022-09-20
-
-``anndataToGiotto``
-===================
-
-Convert anndata to Giotto
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Converts a spatial anndata (e.g. scanpy) .h5ad file into a Giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -44,11 +39,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Function in beta. Converts a .h5ad file into a Giotto object.
 
 Value
------
+=====
 
 Giotto object

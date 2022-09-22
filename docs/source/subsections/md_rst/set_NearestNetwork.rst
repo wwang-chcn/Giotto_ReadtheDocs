@@ -2,20 +2,15 @@
 set_NearestNetwork
 ==================
 
-:Date: 2022-09-20
-
-``set_NearestNetwork``
-======================
-
-Set nearest network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Set a NN-network for a Giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ===================== ===========================================
 Argument              Description
@@ -43,12 +38,12 @@ Argument              Description
 ===================== ===========================================
 
 Value
------
+=====
 
 giotto object
 
 Seealso
--------
+=======
 
 Other expression space nearest network accessor functions:
 ```get_NearestNetwork`` <#getnearestnetwork>`__

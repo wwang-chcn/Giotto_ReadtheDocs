@@ -2,27 +2,22 @@
 showGiottoSpatialInfo
 =====================
 
-:Date: 2022-09-20
-
-``showGiottoSpatialInfo``
-=========================
-
-showGiottoSpatialInfo
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 show the available giotto spatial polygon information
 
 Usage
------
+=====
 
 .. code:: r
 
    showGiottoSpatialInfo(gobject)
 
 Arguments
----------
+=========
 
 =========== =============
 Argument    Description
@@ -31,7 +26,7 @@ Argument    Description
 =========== =============
 
 Seealso
--------
+=======
 
 Other functions to show data in giotto object:
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,

@@ -2,31 +2,26 @@
 showNetworks
 ============
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``showNetworks``
-================
-
-Show networks
-
 Description
------------
+===========
 
 Show networks
 
 Usage
------
+=====
 
 .. code:: r
 
    showNetworks(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -43,6 +38,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```showGiottoSpatNetworks`` <#showgiottospatnetworks>`__

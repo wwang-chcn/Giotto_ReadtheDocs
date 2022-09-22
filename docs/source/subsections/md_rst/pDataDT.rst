@@ -2,27 +2,22 @@
 pDataDT
 =======
 
-:Date: 2022-09-20
-
-``pDataDT``
-===========
-
-pDataDT
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 show cell metadata
 
 Usage
------
+=====
 
 .. code:: r
 
    pDataDT(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
----------
+=========
 
 ============= =============
 Argument      Description
@@ -33,6 +28,6 @@ Argument      Description
 ============= =============
 
 Value
------
+=====
 
 data.table with cell metadata

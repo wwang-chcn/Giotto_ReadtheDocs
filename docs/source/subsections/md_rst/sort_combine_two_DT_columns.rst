@@ -2,20 +2,15 @@
 sort_combine_two_DT_columns
 ===========================
 
-:Date: 2022-09-20
-
-``sort_combine_two_DT_columns``
-===============================
-
-sort_combine_two_DT_columns
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 fast sorting and pasting of 2 character columns in a data.table
 
 Usage
------
+=====
 
 .. code:: r
 

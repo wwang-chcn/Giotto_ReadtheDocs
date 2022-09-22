@@ -2,28 +2,23 @@
 showGiottoSpatGrids
 ===================
 
-:Date: 2022-09-20
-
-``showGiottoSpatGrids``
-=======================
-
-showGiottoSpatGrids
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Prints the available spatial grids that are attached to the Giotto
 object
 
 Usage
------
+=====
 
 .. code:: r
 
    showGiottoSpatGrids(gobject, nrows = 4)
 
 Arguments
----------
+=========
 
 =========== =======================
 Argument    Description
@@ -33,12 +28,12 @@ Argument    Description
 =========== =======================
 
 Value
------
+=====
 
 prints name of available spatial grids
 
 Seealso
--------
+=======
 
 Other functions to show data in giotto object:
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,

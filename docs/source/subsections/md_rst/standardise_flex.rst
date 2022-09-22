@@ -2,27 +2,22 @@
 standardise_flex
 ================
 
-:Date: 2022-09-20
-
-``standardise_flex``
-====================
-
-standardise_flex
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 standardizes a matrix
 
 Usage
------
+=====
 
 .. code:: r
 
    standardise_flex(x, center = TRUE, scale = TRUE)
 
 Arguments
----------
+=========
 
 ========== ===========
 Argument   Description
@@ -33,6 +28,6 @@ Argument   Description
 ========== ===========
 
 Value
------
+=====
 
 standardized matrix

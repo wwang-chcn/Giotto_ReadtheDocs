@@ -1,12 +1,8 @@
 --- 
 title: spat_fish_func_DT 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spat_fish_func_DT`
-
-spat_fish_func_DT
-
 
 ## Description
 

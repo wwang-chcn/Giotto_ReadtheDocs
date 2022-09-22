@@ -1,12 +1,8 @@
 --- 
 title: plot_feature_points_layer 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plot_feature_points_layer`
-
-plot_feature_points_layer
-
 
 ## Description
 

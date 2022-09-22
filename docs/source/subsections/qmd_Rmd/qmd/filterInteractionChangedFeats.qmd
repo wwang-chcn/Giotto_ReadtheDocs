@@ -1,12 +1,8 @@
 --- 
 title: filterInteractionChangedFeats 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `filterInteractionChangedFeats`
-
-filterInteractionChangedFeats
-
 
 ## Description
 

@@ -1,12 +1,8 @@
 --- 
 title: show-methods 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `show,dimObj-method`
-
-show method for dimObj class
-
 
 ## Description
 

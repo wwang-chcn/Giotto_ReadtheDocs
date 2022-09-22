@@ -1,12 +1,8 @@
 --- 
 title: filterICG 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `filterICG`
-
-filterICG
-
 
 ## Description
 

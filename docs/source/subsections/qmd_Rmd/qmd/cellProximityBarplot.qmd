@@ -1,12 +1,8 @@
 --- 
 title: cellProximityBarplot 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `cellProximityBarplot`
-
-cellProximityBarplot
-
 
 ## Description
 

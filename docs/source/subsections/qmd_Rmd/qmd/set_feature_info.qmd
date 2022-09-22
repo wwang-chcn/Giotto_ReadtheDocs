@@ -1,12 +1,8 @@
 --- 
 title: set_feature_info 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `set_feature_info`
-
-Set feature info
-
 
 ## Description
 

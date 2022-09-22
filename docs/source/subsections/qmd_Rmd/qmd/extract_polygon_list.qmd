@@ -1,12 +1,8 @@
 --- 
 title: extract_polygon_list 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `extract_polygon_list`
-
-Extract list of polygons
-
 
 ## Description
 

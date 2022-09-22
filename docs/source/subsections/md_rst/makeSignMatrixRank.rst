@@ -2,22 +2,17 @@
 makeSignMatrixRank
 ==================
 
-:Date: 2022-09-20
-
-``makeSignMatrixRank``
-======================
-
-makeSignMatrixRank
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to convert a single-cell count matrix and a corresponding
 single-cell cluster vector into a rank matrix that can be used with the
 Rank enrichment option.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,11 +42,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 matrix
 
 Seealso
--------
+=======
 
 ```rankEnrich`` <#rankenrich>`__

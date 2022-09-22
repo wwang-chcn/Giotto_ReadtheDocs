@@ -2,20 +2,15 @@
 spatVector_to_dt
 ================
 
-:Date: 2022-09-20
-
-``spatVector_to_dt``
-====================
-
-Convert spatVector to data.table
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 convert spatVector to data.table
 
 Usage
------
+=====
 
 .. code:: r
 

@@ -1,12 +1,8 @@
 --- 
 title: aggregateExprObj-class 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `aggregateExprObj-class`
-
-S4 aggregateExprObj
-
 
 ## Description
 

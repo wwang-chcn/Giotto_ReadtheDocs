@@ -2,27 +2,22 @@
 viewHMRFresults3D
 =================
 
-:Date: 2022-09-20
-
-``viewHMRFresults3D``
-=====================
-
-viewHMRFresults3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 View results from doHMRF.
 
 Usage
------
+=====
 
 .. code:: r
 
    viewHMRFresults3D(gobject, HMRFoutput, k = NULL, betas_to_view = NULL, ...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -41,11 +36,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 spatial plots with HMRF domains
 
 Seealso
--------
+=======
 
 ```spatPlot3D`` <#spatplot3d>`__

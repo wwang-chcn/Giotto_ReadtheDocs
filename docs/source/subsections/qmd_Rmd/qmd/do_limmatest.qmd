@@ -1,12 +1,8 @@
 --- 
 title: do_limmatest 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `do_limmatest`
-
-do_limmatest
-
 
 ## Description
 

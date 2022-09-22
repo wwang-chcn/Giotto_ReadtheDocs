@@ -2,20 +2,15 @@
 doCellSegmentation
 ==================
 
-:Date: 2022-09-20
-
-``doCellSegmentation``
-======================
-
-doCellSegmentation
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 segment cells in Dapi image
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -51,7 +46,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function is a wrapper for the Mesmer algorithm implemented in
 python. It segments the cells in tissue by applying a rolling window on

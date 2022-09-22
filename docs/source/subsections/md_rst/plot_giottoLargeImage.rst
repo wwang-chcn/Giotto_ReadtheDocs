@@ -2,21 +2,16 @@
 plot_giottoLargeImage
 =====================
 
-:Date: 2022-09-20
-
-``plot_giottoLargeImage``
-=========================
-
-plot_giottoLargeImage
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Plot a downsampled version of giottoLargeImage. Cropping can increase
 plot resolution of region of interest.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -65,6 +60,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 plot

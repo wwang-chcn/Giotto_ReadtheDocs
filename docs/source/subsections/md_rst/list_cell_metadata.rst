@@ -2,20 +2,15 @@
 list_cell_metadata
 ==================
 
-:Date: 2022-09-20
-
-``list_cell_metadata``
-======================
-
-list_cell_metadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 lists the available cell metadata
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -45,6 +40,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 names and locations of available cell metadata as data.table

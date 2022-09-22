@@ -1,12 +1,8 @@
 --- 
 title: clusterSpatialCorFeats 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `clusterSpatialCorFeats`
-
-clusterSpatialCorFeats
-
 
 ## Description
 

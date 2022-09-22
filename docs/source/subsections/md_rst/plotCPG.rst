@@ -2,20 +2,15 @@
 plotCPG
 =======
 
-:Date: 2022-09-20
-
-``plotCPG``
-===========
-
-plotCPG
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create visualization for cell proximity gene scores
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -42,7 +37,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -99,6 +94,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 plot

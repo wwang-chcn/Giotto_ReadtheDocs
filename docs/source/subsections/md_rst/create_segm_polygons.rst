@@ -2,20 +2,15 @@
 create_segm_polygons
 ====================
 
-:Date: 2022-09-20
-
-``create_segm_polygons``
-========================
-
-Create segmentation polygons
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 creates giotto polygons from segmentation mask data
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -31,6 +26,6 @@ Usage
    )
 
 Value
------
+=====
 
 giotto polygon

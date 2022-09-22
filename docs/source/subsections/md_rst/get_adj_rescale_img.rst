@@ -2,20 +2,15 @@
 get_adj_rescale_img
 ===================
 
-:Date: 2022-09-20
-
-``get_adj_rescale_img``
-=======================
-
-get_adj_rescale_img
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 get_adj_rescale_img
 
 Usage
------
+=====
 
 .. code:: r
 

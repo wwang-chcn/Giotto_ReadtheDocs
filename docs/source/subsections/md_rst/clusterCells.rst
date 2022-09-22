@@ -2,20 +2,15 @@
 clusterCells
 ============
 
-:Date: 2022-09-20
-
-``clusterCells``
-================
-
-clusterCells
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 cluster cells using a variety of different methods
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -65,7 +60,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -153,17 +148,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Wrapper for the different clustering methods.
 
 Value
------
+=====
 
 giotto object with new clusters appended to cell metadata
 
 Seealso
--------
+=======
 
 ```doLeidenCluster`` <#doleidencluster>`__ ,
 ```doLouvainCluster_community`` <#dolouvainclustercommunity>`__ ,

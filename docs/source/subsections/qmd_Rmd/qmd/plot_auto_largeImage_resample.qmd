@@ -1,12 +1,8 @@
 --- 
 title: plot_auto_largeImage_resample 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plot_auto_largeImage_resample`
-
-Optimized largeImage resampling
-
 
 ## Description
 

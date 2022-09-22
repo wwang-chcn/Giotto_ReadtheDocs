@@ -1,12 +1,8 @@
 --- 
 title: cellProximityVisPlot_2D_plotly 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `cellProximityVisPlot_2D_plotly`
-
-cellProximityVisPlot_2D_plotly
-
 
 ## Description
 

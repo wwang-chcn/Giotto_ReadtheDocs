@@ -2,27 +2,22 @@
 get_polygon_info
 ================
 
-:Date: 2022-09-20
-
-``get_polygon_info``
-====================
-
-Get polygon info
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Get giotto polygon spatVector
 
 Usage
------
+=====
 
 .. code:: r
 
    get_polygon_info(gobject, polygon_name = "cell", polygon_overlap = NULL)
 
 Arguments
----------
+=========
 
 =================== ===================================
 Argument            Description
@@ -33,7 +28,7 @@ Argument            Description
 =================== ===================================
 
 Seealso
--------
+=======
 
 Other polygon info data accessor functions:
 ```set_polygon_info`` <#setpolygoninfo>`__

@@ -2,20 +2,15 @@
 registerImagesFIJI
 ==================
 
-:Date: 2022-09-20
-
-``registerImagesFIJI``
-======================
-
-registerImagesFIJI
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Wrapper function for Register Virtual Stack Slices plugin in FIJI
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -48,7 +43,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -117,13 +112,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function was adapted from runFijiMacro function in jimpipeline by
 jefferislab
 
 Value
------
+=====
 
 list of registered giotto objects where the registered images and
 spatial locations

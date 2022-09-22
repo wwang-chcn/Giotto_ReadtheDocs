@@ -2,20 +2,15 @@
 subset_feature_metadata
 =======================
 
-:Date: 2022-09-20
-
-``subset_feature_metadata``
-===========================
-
-Subset feature metadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subset feature metadata from giotto object
 
 Usage
------
+=====
 
 .. code:: r
 

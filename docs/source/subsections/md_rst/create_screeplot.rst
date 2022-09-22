@@ -2,27 +2,22 @@
 create_screeplot
 ================
 
-:Date: 2022-09-20
-
-``create_screeplot``
-====================
-
-create_screeplot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 create screeplot with ggplot
 
 Usage
------
+=====
 
 .. code:: r
 
    create_screeplot(pca_obj, ncp = 20, ylim = c(0, 20))
 
 Arguments
----------
+=========
 
 =========== ===========================================
 Argument    Description
@@ -33,6 +28,6 @@ Argument    Description
 =========== ===========================================
 
 Value
------
+=====
 
 ggplot

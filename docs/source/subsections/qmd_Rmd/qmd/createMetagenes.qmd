@@ -1,12 +1,8 @@
 --- 
 title: createMetagenes 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `createMetagenes`
-
-Create metagenes
-
 
 ## Description
 

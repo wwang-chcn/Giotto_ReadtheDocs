@@ -2,20 +2,15 @@
 subsetGiotto
 ============
 
-:Date: 2022-09-20
-
-``subsetGiotto``
-================
-
-subsetGiotto
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subsets Giotto object including previous analyses.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -65,11 +60,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Subsets a Giotto object for a specific spatial unit and feature type
 
 Value
------
+=====
 
 giotto object

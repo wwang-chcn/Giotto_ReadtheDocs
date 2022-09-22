@@ -2,20 +2,15 @@
 comparePolygonExpression
 ========================
 
-:Date: 2022-09-20
-
-``comparePolygonExpression``
-============================
-
-Compare gene expression between polygon areas
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Compare gene expression between polygon areas
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -56,6 +51,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 A ComplexHeatmap::Heatmap object

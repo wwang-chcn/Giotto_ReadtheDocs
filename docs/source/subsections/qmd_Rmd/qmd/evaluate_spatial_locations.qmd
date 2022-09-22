@@ -1,12 +1,8 @@
 --- 
 title: evaluate_spatial_locations 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `evaluate_spatial_locations`
-
-Evaluate spatial locations
-
 
 ## Description
 

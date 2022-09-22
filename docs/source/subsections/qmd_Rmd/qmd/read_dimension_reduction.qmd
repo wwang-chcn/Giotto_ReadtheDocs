@@ -1,12 +1,8 @@
 --- 
 title: read_dimension_reduction 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `read_dimension_reduction`
-
-Read dimensional reduction
-
 
 ## Description
 

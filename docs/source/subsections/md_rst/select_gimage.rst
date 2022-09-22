@@ -2,20 +2,15 @@
 select_gimage
 =============
 
-:Date: 2022-09-20
-
-``select_gimage``
-=================
-
-select_gimage
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 selects and creates giotto images for plotting
 
 Usage
------
+=====
 
 .. code:: r
 

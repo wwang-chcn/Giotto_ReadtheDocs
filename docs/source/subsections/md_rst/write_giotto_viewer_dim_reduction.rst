@@ -2,20 +2,15 @@
 write_giotto_viewer_dim_reduction
 =================================
 
-:Date: 2022-09-20
-
-``write_giotto_viewer_dim_reduction``
-=====================================
-
-write_giotto_viewer_dim_reduction
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 write out dimensional reduction data from a giotto object for the Viewer
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -53,6 +48,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 write a .txt and .annot file for the selection annotation

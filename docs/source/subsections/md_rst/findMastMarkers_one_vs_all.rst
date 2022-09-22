@@ -2,21 +2,16 @@
 findMastMarkers_one_vs_all
 ==========================
 
-:Date: 2022-09-20
-
-``findMastMarkers_one_vs_all``
-==============================
-
-findMastMarkers_one_vs_all
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Identify marker feats for all clusters in a one vs all manner based on
 the MAST package.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -37,7 +32,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -73,11 +68,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with marker feats
 
 Seealso
--------
+=======
 
 ```findMastMarkers`` <#findmastmarkers>`__

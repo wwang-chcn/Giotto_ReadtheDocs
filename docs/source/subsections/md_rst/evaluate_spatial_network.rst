@@ -2,20 +2,15 @@
 evaluate_spatial_network
 ========================
 
-:Date: 2022-09-20
-
-``evaluate_spatial_network``
-============================
-
-Evaluate spatial network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 function to evaluate a spatial network
 
 Usage
------
+=====
 
 .. code:: r
 

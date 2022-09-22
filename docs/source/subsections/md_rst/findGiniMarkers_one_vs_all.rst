@@ -2,21 +2,16 @@
 findGiniMarkers_one_vs_all
 ==========================
 
-:Date: 2022-09-20
-
-``findGiniMarkers_one_vs_all``
-==============================
-
-findGiniMarkers_one_vs_all
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Identify marker feats for all clusters in a one vs all manner based on
 gini detection and expression scores.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -37,7 +32,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -75,11 +70,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with marker feats
 
 Seealso
--------
+=======
 
 ```findGiniMarkers`` <#findginimarkers>`__

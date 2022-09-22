@@ -2,31 +2,26 @@
 plotCombineCellProximityGenes
 =============================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``plotCombineCellProximityGenes``
-=================================
-
-plotCombineCellProximityGenes
-
 Description
------------
+===========
 
 Create visualization for combined (pairwise) ICG scores
 
 Usage
------
+=====
 
 .. code:: r
 
    plotCombineCellProximityGenes(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -64,6 +59,6 @@ Arguments
    "  ")
 
 Seealso
--------
+=======
 
 ```plotCombineInteractionChangedGenes`` <#plotcombineinteractionchangedgenes>`__

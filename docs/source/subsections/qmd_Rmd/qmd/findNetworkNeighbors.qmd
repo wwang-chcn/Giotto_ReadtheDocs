@@ -1,12 +1,8 @@
 --- 
 title: findNetworkNeighbors 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `findNetworkNeighbors`
-
-Find network neighbors
-
 
 ## Description
 

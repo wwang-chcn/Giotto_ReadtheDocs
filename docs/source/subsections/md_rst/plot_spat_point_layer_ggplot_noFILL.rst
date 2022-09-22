@@ -2,20 +2,15 @@
 plot_spat_point_layer_ggplot_noFILL
 ===================================
 
-:Date: 2022-09-20
-
-``plot_spat_point_layer_ggplot_noFILL``
-=======================================
-
-plot_spat_point_layer_ggplot_noFILL
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 creat ggplot point layer for spatial coordinates without borders
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -47,7 +42,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -109,11 +104,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot

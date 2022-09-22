@@ -2,27 +2,22 @@
 list_expression
 ===============
 
-:Date: 2022-09-20
-
-``list_expression``
-===================
-
-list_expression
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 lists the available matrices
 
 Usage
------
+=====
 
 .. code:: r
 
    list_expression(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
----------
+=========
 
 ============= ===========================================
 Argument      Description
@@ -33,7 +28,7 @@ Argument      Description
 ============= ===========================================
 
 Value
------
+=====
 
 names and locations of available matrices as data.table. col order
 matters.

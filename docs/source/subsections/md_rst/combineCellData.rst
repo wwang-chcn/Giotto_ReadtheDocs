@@ -2,20 +2,15 @@
 combineCellData
 ===============
 
-:Date: 2022-09-20
-
-``combineCellData``
-===================
-
-combineCellData
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 combine cell data information
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,6 +44,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with combined spatial information

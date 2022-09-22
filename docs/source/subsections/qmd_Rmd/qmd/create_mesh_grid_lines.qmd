@@ -1,12 +1,8 @@
 --- 
 title: create_mesh_grid_lines 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `create_mesh_grid_lines`
-
-create_mesh_grid_lines
-
 
 ## Description
 

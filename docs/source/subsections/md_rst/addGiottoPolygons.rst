@@ -2,27 +2,22 @@
 addGiottoPolygons
 =================
 
-:Date: 2022-09-20
-
-``addGiottoPolygons``
-=====================
-
-Add giotto polygons to giotto object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Adds Giotto polygon to an existing Giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
    addGiottoPolygons(gobject, gpolygons)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -38,6 +33,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto object

@@ -2,21 +2,16 @@
 spatNetwDistributionsDistance
 =============================
 
-:Date: 2022-09-20
-
-``spatNetwDistributionsDistance``
-=================================
-
-Plot spatial distance distribution
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 This function return histograms displaying the distance distribution for
 each spatial k-neighbor
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -71,6 +66,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot plot

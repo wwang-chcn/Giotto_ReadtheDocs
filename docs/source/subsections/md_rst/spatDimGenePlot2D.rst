@@ -2,32 +2,27 @@
 spatDimGenePlot2D
 =================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``spatDimGenePlot2D``
-=====================
-
-spatDimGenePlot2D
-
 Description
------------
+===========
 
 Visualize cells according to spatial AND dimension reduction coordinates
 in ggplot mode
 
 Usage
------
+=====
 
 .. code:: r
 
    spatDimGenePlot2D(gobject, genes, default_save_name = "spatDimGenePlot2D", ...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -79,17 +74,17 @@ Arguments
        list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "  ")
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```spatDimGenePlot3D`` <#spatdimgeneplot3d>`__
 

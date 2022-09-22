@@ -2,20 +2,15 @@
 kmeans_binarize_wrapper
 =======================
 
-:Date: 2022-09-20
-
-``kmeans_binarize_wrapper``
-===========================
-
-kmeans_binarize_wrapper
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 wrapper for different binarization functions
 
 Usage
------
+=====
 
 .. code:: r
 

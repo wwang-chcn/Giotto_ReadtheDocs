@@ -1,12 +1,8 @@
 --- 
 title: ggplot_save_function 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `ggplot_save_function`
-
-ggplot_save_function
-
 
 ## Description
 

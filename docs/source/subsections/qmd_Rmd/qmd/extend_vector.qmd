@@ -1,12 +1,8 @@
 --- 
 title: extend_vector 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `extend_vector`
-
-extend_vector
-
 
 ## Description
 

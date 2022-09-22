@@ -2,27 +2,22 @@
 mean_flex
 =========
 
-:Date: 2022-09-20
-
-``mean_flex``
-=============
-
-mean_flex
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 mean_flex
 
 Usage
------
+=====
 
 .. code:: r
 
    mean_flex(x, ...)
 
 Arguments
----------
+=========
 
 ======== =======================
 Argument Description

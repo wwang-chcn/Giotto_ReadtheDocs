@@ -2,27 +2,22 @@
 addGiottoPoints3D
 =================
 
-:Date: 2022-09-20
-
-``addGiottoPoints3D``
-=====================
-
-Add sub cellular 3D coordinates to Giotto object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Add sub cellular 3D coordinates to Giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
    addGiottoPoints3D(gobject, coords, feat_type = "rna")
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -39,6 +34,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 A Giotto object with a ``spatVector`` object in the feat_info slot

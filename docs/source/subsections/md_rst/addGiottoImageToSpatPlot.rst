@@ -2,20 +2,15 @@
 addGiottoImageToSpatPlot
 ========================
 
-:Date: 2022-09-20
-
-``addGiottoImageToSpatPlot``
-============================
-
-addGiottoImageToSpatPlot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Add a giotto image to a spatial ggplot object post creation
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,6 +45,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 an updated spatial ggplot object

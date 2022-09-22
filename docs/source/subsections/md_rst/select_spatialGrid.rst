@@ -2,31 +2,26 @@
 select_spatialGrid
 ==================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``select_spatialGrid``
-======================
-
-Select spatial grid
-
 Description
------------
+===========
 
 Select spatial grid
 
 Usage
------
+=====
 
 .. code:: r
 
    select_spatialGrid(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -54,6 +49,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```get_spatialGrid`` <#getspatialgrid>`__

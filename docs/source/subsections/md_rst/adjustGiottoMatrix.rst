@@ -2,21 +2,16 @@
 adjustGiottoMatrix
 ==================
 
-:Date: 2022-09-20
-
-``adjustGiottoMatrix``
-======================
-
-Adjust expression values
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Adjust expression values to account for known batch effects or
 technological covariates.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -59,7 +54,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function implements the
 ```removeBatchEffect`` <#removebatcheffect>`__ function to remove known
@@ -67,6 +62,6 @@ batch effects and to adjust expression values according to provided
 covariates.
 
 Value
------
+=====
 
 giotto object

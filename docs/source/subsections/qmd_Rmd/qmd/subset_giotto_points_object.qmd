@@ -1,12 +1,8 @@
 --- 
 title: subset_giotto_points_object 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `subset_giotto_points_object`
-
-Subset giotto points object
-
 
 ## Description
 

@@ -2,31 +2,26 @@
 select_spatialNetwork
 =====================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``select_spatialNetwork``
-=========================
-
-Select spatial network
-
 Description
------------
+===========
 
 Select spatial network
 
 Usage
------
+=====
 
 .. code:: r
 
    select_spatialNetwork(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -51,6 +46,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```get_spatialNetwork`` <#getspatialnetwork>`__

@@ -2,20 +2,15 @@
 subset_dimension_reduction
 ==========================
 
-:Date: 2022-09-20
-
-``subset_dimension_reduction``
-==============================
-
-Subset dimension reduction
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subset dimension reduction results from giotto object
 
 Usage
------
+=====
 
 .. code:: r
 

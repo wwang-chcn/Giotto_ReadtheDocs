@@ -2,20 +2,15 @@
 combineCellProximityGenes_per_interaction
 =========================================
 
-:Date: 2022-09-20
-
-``combineCellProximityGenes_per_interaction``
-=============================================
-
-combineCellProximityGenes_per_interaction
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Combine CPG scores per interaction
 
 Usage
------
+=====
 
 .. code:: r
 

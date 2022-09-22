@@ -2,21 +2,16 @@
 plot_point_layer_ggplot
 =======================
 
-:Date: 2022-09-20
-
-``plot_point_layer_ggplot``
-===========================
-
-plot_point_layer_ggplot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells in point layer according to dimension reduction
 coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -51,7 +46,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -113,11 +108,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot

@@ -2,27 +2,22 @@
 combineSpatialCellMetadataInfo
 ==============================
 
-:Date: 2022-09-20
-
-``combineSpatialCellMetadataInfo``
-==================================
-
-combineSpatialCellMetadataInfo
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Combine cell metadata with spatial cell information (e.g. polygon)
 
 Usage
------
+=====
 
 .. code:: r
 
    combineSpatialCellMetadataInfo(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
----------
+=========
 
 ============= ===============
 Argument      Description
@@ -33,7 +28,7 @@ Argument      Description
 ============= ===============
 
 Details
--------
+=======
 
 The returned data.table has the following columns: list()
 
@@ -48,6 +43,6 @@ The returned data.table has the following columns: list()
 -  other columns that are part of the cell metadata
 
 Value
------
+=====
 
 list of data.table(s)

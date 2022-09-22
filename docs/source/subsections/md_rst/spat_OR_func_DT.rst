@@ -2,20 +2,15 @@
 spat_OR_func_DT
 ===============
 
-:Date: 2022-09-20
-
-``spat_OR_func_DT``
-===================
-
-spat_OR_func_DT
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate odds-ratio with data.table implementation
 
 Usage
------
+=====
 
 .. code:: r
 

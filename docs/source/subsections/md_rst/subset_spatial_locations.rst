@@ -2,20 +2,15 @@
 subset_spatial_locations
 ========================
 
-:Date: 2022-09-20
-
-``subset_spatial_locations``
-============================
-
-Subset spatial locations
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subset location data from giotto object
 
 Usage
------
+=====
 
 .. code:: r
 

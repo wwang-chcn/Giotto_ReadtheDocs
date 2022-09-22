@@ -2,27 +2,22 @@
 set_giottoImage_MG
 ==================
 
-:Date: 2022-09-20
-
-``set_giottoImage_MG``
-======================
-
-Set magick -based giotto ``image``
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Set a giottoImage for a giotto object with no additional modifications
 
 Usage
------
+=====
 
 .. code:: r
 
    set_giottoImage_MG(gobject, image_object, name = NULL, verbose = TRUE)
 
 Arguments
----------
+=========
 
 ================ ==========================
 Argument         Description
@@ -34,6 +29,6 @@ Argument         Description
 ================ ==========================
 
 Value
------
+=====
 
 giotto object

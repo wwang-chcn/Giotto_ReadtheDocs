@@ -2,20 +2,15 @@
 runPCA_prcomp_irlba
 ===================
 
-:Date: 2022-09-20
-
-``runPCA_prcomp_irlba``
-=======================
-
-runPCA_prcomp_irlba
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 performs PCA based on the irlba package
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -31,7 +26,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 =============== ================================================
 Argument        Description
@@ -46,6 +41,6 @@ Argument        Description
 =============== ================================================
 
 Value
------
+=====
 
 list of eigenvalues, loadings and pca coordinates

@@ -2,20 +2,15 @@
 annotateSpatialGrid
 ===================
 
-:Date: 2022-09-20
-
-``annotateSpatialGrid``
-=======================
-
-annotateSpatialGrid
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 annotate spatial grid with cell ID and cell metadata (optional)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -51,6 +46,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 annotated spatial grid data.table

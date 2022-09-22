@@ -1,12 +1,8 @@
 --- 
 title: calculate_distance_and_weight 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `calculate_distance_and_weight`
-
-calculate_distance_and_weight
-
 
 ## Description
 

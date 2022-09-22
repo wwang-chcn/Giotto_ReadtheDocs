@@ -2,20 +2,15 @@
 calculate_distance_and_weight
 =============================
 
-:Date: 2022-09-20
-
-``calculate_distance_and_weight``
-=================================
-
-calculate_distance_and_weight
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate_distance_and_weight
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ============= =============================
 Argument      Description

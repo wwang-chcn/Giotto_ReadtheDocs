@@ -1,12 +1,8 @@
 --- 
 title: node_clusters 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `node_clusters`
-
-node_clusters
-
 
 ## Description
 

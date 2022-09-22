@@ -2,21 +2,16 @@
 findScranMarkers
 ================
 
-:Date: 2022-09-20
-
-``findScranMarkers``
-====================
-
-findScranMarkers
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Identify marker genes for all or selected clusters based on scran’s
 implementation of findMarkers.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -72,7 +67,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This is a minimal convenience wrapper around the
 ```findMarkers`` <#findmarkers>`__ function from the scran package.
@@ -88,6 +83,6 @@ group it is recommend to provide names for both groups to group_1_name
 and group_2_name
 
 Value
------
+=====
 
 data.table with marker genes

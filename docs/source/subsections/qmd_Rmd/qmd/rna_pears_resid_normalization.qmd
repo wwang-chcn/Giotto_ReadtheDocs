@@ -1,12 +1,8 @@
 --- 
 title: rna_pears_resid_normalization 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `rna_pears_resid_normalization`
-
-RNA pearson residuals normalization
-
 
 ## Description
 

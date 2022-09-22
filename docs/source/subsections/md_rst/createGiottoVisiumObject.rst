@@ -2,20 +2,15 @@
 createGiottoVisiumObject
 ========================
 
-:Date: 2022-09-20
-
-``createGiottoVisiumObject``
-============================
-
-Create a giotto object from 10x visium data
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 creates Giotto object directly from a 10X visium folder
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -40,7 +35,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -95,7 +90,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 If starting from a Visium 10X directory:
 
@@ -125,6 +120,6 @@ If starting from a Visium 10X .h5 file
    /your/path/to/scalefactors_json.json
 
 Value
------
+=====
 
 giotto object

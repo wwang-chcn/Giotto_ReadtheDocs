@@ -1,12 +1,8 @@
 --- 
 title: rigid_transform_spatial_locations 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `rigid_transform_spatial_locations`
-
-rigid_transform_spatial_locations
-
 
 ## Description
 

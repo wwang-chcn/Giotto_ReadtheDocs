@@ -2,20 +2,15 @@
 findMarkers_one_vs_all
 ======================
 
-:Date: 2022-09-20
-
-``findMarkers_one_vs_all``
-==========================
-
-findMarkers_one_vs_all
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Identify marker feats for all clusters in a one vs all manner.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -41,7 +36,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -93,18 +88,18 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Wrapper for all one vs all functions to detect marker feats for
 clusters.
 
 Value
------
+=====
 
 data.table with marker feats
 
 Seealso
--------
+=======
 
 ```findScranMarkers_one_vs_all`` <#findscranmarkersonevsall>`__ ,
 ```findGiniMarkers_one_vs_all`` <#findginimarkersonevsall>`__ and

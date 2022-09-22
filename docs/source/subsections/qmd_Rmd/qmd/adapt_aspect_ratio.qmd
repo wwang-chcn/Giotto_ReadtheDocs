@@ -1,12 +1,8 @@
 --- 
 title: adapt_aspect_ratio 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `adapt_aspect_ratio`
-
-adapt_aspect_ratio
-
 
 ## Description
 

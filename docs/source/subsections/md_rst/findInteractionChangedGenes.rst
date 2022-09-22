@@ -2,21 +2,16 @@
 findInteractionChangedGenes
 ===========================
 
-:Date: 2022-09-20
-
-``findInteractionChangedGenes``
-===============================
-
-findInteractionChangedGenes
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Identifies cell-to-cell Interaction Changed Genes (ICG), i.e. genes that
 are differentially expressed due to proximity to other cell types.#’
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -43,7 +38,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -92,7 +87,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Function to calculate if genes are differentially expressed in cell
 types when they interact (approximated by physical proximity) with other
@@ -130,6 +125,6 @@ cell types. The results data.table in the cpgObject contains - at least
 -  unif_int: cell-cell interaction
 
 Value
------
+=====
 
 cpgObject that contains the Interaction Changed differential gene scores

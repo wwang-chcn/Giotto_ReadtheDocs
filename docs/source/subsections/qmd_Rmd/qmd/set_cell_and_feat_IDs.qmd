@@ -1,12 +1,8 @@
 --- 
 title: set_cell_and_feat_IDs 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `set_cell_and_feat_IDs`
-
-Set cell and feature IDs
-
 
 ## Description
 

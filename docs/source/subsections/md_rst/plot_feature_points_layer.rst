@@ -2,20 +2,15 @@
 plot_feature_points_layer
 =========================
 
-:Date: 2022-09-20
-
-``plot_feature_points_layer``
-=============================
-
-plot_feature_points_layer
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 low level function to plot a points at the spatial in situ level
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,12 +30,12 @@ Usage
    )
 
 Details
--------
+=======
 
 This function can plot multiple features over multiple modalities. These
 plots can get very big very fast.
 
 Value
------
+=====
 
 ggplot

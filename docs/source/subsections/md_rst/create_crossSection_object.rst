@@ -2,20 +2,15 @@
 create_crossSection_object
 ==========================
 
-:Date: 2022-09-20
-
-``create_crossSection_object``
-==============================
-
-create_crossSection_object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 create a crossSection object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -37,7 +32,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

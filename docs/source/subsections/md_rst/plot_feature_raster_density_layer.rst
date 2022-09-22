@@ -2,20 +2,15 @@
 plot_feature_raster_density_layer
 =================================
 
-:Date: 2022-09-20
-
-``plot_feature_raster_density_layer``
-=====================================
-
-plot_feature_raster_density_layer
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 low level function to plot density plots at the spatial in situ level
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,11 +24,11 @@ Usage
    )
 
 Details
--------
+=======
 
 This function can plot one feature for one modality.
 
 Value
------
+=====
 
 ggplot

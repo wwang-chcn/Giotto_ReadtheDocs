@@ -2,21 +2,16 @@
 crossSectionGenePlot
 ====================
 
-:Date: 2022-09-20
-
-``crossSectionGenePlot``
-========================
-
-crossSectionGenePlot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells and gene expression in a virtual cross section according
 to spatial coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -31,7 +26,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -54,17 +49,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```spatGenePlot3D`` <#spatgeneplot3d>`__ and
 ```spatGenePlot2D`` <#spatgeneplot2d>`__

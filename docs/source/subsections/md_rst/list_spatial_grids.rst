@@ -2,21 +2,16 @@
 list_spatial_grids
 ==================
 
-:Date: 2022-09-20
-
-``list_spatial_grids``
-======================
-
-list_spatial_grids
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the available spatial grids that are attached to the Giotto
 object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -46,7 +41,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table of names and locations of available spatial grids. col order
 matters

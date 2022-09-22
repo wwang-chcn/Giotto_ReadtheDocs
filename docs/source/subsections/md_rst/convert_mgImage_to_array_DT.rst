@@ -2,27 +2,22 @@
 convert_mgImage_to_array_DT
 ===========================
 
-:Date: 2022-09-20
-
-``convert_mgImage_to_array_DT``
-===============================
-
-convert_mgImage_to_array_DT
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 converts a magick image object to a data.table
 
 Usage
------
+=====
 
 .. code:: r
 
    convert_mgImage_to_array_DT(mg_object)
 
 Arguments
----------
+=========
 
 ============= ===================================
 Argument      Description
@@ -31,6 +26,6 @@ Argument      Description
 ============= ===================================
 
 Value
------
+=====
 
 data.table with image pixel information

@@ -2,20 +2,15 @@
 nrow-generic
 ============
 
-:Date: 2022-09-20
-
-``nrow-generic``
-================
-
-Dimensions of giotto points and polygon objects
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Get the number of rows (nrow)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -23,7 +18,7 @@ Usage
    list(list("nrow"), list("giottoPolygon"))(x)
 
 Arguments
----------
+=========
 
 ======== ====================================
 Argument Description

@@ -1,12 +1,8 @@
 --- 
 title: check_spatial_location_data 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `check_spatial_location_data`
-
-Check spatial location data
-
 
 ## Description
 

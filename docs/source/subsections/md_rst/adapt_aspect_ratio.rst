@@ -2,20 +2,15 @@
 adapt_aspect_ratio
 ==================
 
-:Date: 2022-09-20
-
-``adapt_aspect_ratio``
-======================
-
-adapt_aspect_ratio
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 adapt the aspact ratio after inserting cross section mesh grid lines
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================== ==============
 Argument           Description

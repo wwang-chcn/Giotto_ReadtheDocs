@@ -1,12 +1,8 @@
 --- 
 title: create_cluster_matrix 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `create_cluster_matrix`
-
-create_cluster_matrix
-
 
 ## Description
 

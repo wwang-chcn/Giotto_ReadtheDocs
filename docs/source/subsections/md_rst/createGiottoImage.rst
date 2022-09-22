@@ -2,21 +2,16 @@
 createGiottoImage
 =================
 
-:Date: 2022-09-20
-
-``createGiottoImage``
-=====================
-
-createGiottoImage
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates a giotto image that can be added to a Giotto object and/or used
 to add an image to the spatial plotting functions
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -48,7 +43,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -101,7 +96,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 image_transformations: transformation options from magick library [
 flip_x_axis ] flip x-axis ( ```image_flop`` <#imageflop>`__ ) [
@@ -110,6 +105,6 @@ image_transformations = c(flip_x_axis, flip_y_axis); first flip x-axis
 and then y-axis
 
 Value
------
+=====
 
 a giottoImage object

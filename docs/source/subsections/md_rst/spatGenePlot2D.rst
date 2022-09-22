@@ -2,31 +2,26 @@
 spatGenePlot2D
 ==============
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``spatGenePlot2D``
-==================
-
-spatGenePlot2D
-
 Description
------------
+===========
 
 Visualize cells and gene expression according to spatial coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
    spatGenePlot2D(gobject, genes, default_save_name = "spatGenePlot2D", ...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -74,17 +69,17 @@ Arguments
        list("size of axis title")), "\n", "    ", list(list(list("show_plot")), list("show plots")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "  ")
 
 Details
--------
+=======
 
 Description of parameters, see ```spatFeatPlot2D`` <#spatfeatplot2d>`__
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 Other spatial gene expression visualizations:
 ```spatGenePlot3D`` <#spatgeneplot3d>`__ ,

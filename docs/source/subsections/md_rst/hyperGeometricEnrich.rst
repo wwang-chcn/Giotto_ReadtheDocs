@@ -2,32 +2,27 @@
 hyperGeometricEnrich
 ====================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``hyperGeometricEnrich``
-========================
-
-hyperGeometricEnrich
-
 Description
------------
+===========
 
 Function to calculate gene signature enrichment scores per spatial
 position using a hypergeometric test.
 
 Usage
------
+=====
 
 .. code:: r
 
    hyperGeometricEnrich(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -65,6 +60,6 @@ Arguments
    "\n", "    ", list(list(list("return_gobject")), list("return giotto object")), "\n", "  ")
 
 Seealso
--------
+=======
 
 ```runHyperGeometricEnrich`` <#runhypergeometricenrich>`__

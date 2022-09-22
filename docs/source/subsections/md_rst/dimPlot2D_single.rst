@@ -2,20 +2,15 @@
 dimPlot2D_single
 ================
 
-:Date: 2022-09-20
-
-``dimPlot2D_single``
-====================
-
-dimPlot2D_single
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells according to dimension reduction coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -70,7 +65,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -179,12 +174,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters. For 3D plots see
 ```dimPlot3D`` <#dimplot3d>`__
 
 Value
------
+=====
 
 ggplot

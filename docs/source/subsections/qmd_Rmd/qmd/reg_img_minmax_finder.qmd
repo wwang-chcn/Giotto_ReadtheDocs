@@ -1,12 +1,8 @@
 --- 
 title: reg_img_minmax_finder 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `reg_img_minmax_finder`
-
-reg_img_minmax_finder
-
 
 ## Description
 

@@ -1,12 +1,8 @@
 --- 
 title: silhouetteRank 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `silhouetteRank`
-
-silhouetteRank
-
 
 ## Description
 

@@ -2,20 +2,15 @@
 read_spatial_networks
 =====================
 
-:Date: 2022-09-20
-
-``read_spatial_networks``
-=========================
-
-Read spatial networks
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 read spatial networks from list
 
 Usage
------
+=====
 
 .. code:: r
 

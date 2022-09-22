@@ -2,20 +2,15 @@
 create_delaunayNetwork_deldir
 =============================
 
-:Date: 2022-09-20
-
-``create_delaunayNetwork_deldir``
-=================================
-
-create_delaunayNetwork_deldir
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a spatial Delaunay network with deldir
 
 Usage
------
+=====
 
 .. code:: r
 

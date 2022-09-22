@@ -2,21 +2,16 @@
 addCellIntMetadata
 ==================
 
-:Date: 2022-09-20
-
-``addCellIntMetadata``
-======================
-
-addCellIntMetadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates an additional metadata column with information about interacting
 and non-interacting cell types of the selected cell-cell interaction.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ==================== ================================
 Argument             Description
@@ -48,7 +43,7 @@ Argument             Description
 ==================== ================================
 
 Details
--------
+=======
 
 This function will create an additional metadata column which selects
 interacting cell types for a specific cell-cell interaction. For
@@ -59,6 +54,6 @@ oligodendrocytes it will create a new metadata column with the values
 types found within the selected cell type column.
 
 Value
------
+=====
 
 Giotto object

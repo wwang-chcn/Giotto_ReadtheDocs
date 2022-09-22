@@ -2,21 +2,16 @@
 spatInSituPlotDensity
 =====================
 
-:Date: 2022-09-20
-
-``spatInSituPlotDensity``
-=========================
-
-spatInSituPlotDensity
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function for density plots for features for multiple modalities at the
 spatial in situ level
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -49,7 +44,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -112,17 +107,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 TODO
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 Other In Situ visualizations:
 ```spatInSituPlotHex`` <#spatinsituplothex>`__ ,

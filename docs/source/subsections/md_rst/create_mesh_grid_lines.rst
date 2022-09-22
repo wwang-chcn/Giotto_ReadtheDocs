@@ -2,20 +2,15 @@
 create_mesh_grid_lines
 ======================
 
-:Date: 2022-09-20
-
-``create_mesh_grid_lines``
-==========================
-
-create_mesh_grid_lines
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 create mesh grid lines for cross section
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -26,7 +21,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

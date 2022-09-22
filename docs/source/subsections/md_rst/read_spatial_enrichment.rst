@@ -2,20 +2,15 @@
 read_spatial_enrichment
 =======================
 
-:Date: 2022-09-20
-
-``read_spatial_enrichment``
-===========================
-
-Read spatial enrichment
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 read spatial enrichment results from list
 
 Usage
------
+=====
 
 .. code:: r
 

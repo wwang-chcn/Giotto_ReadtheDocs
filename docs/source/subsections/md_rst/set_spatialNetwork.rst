@@ -2,27 +2,22 @@
 set_spatialNetwork
 ==================
 
-:Date: 2022-09-20
-
-``set_spatialNetwork``
-======================
-
-Set spatial network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to set a spatial network
 
 Usage
------
+=====
 
 .. code:: r
 
    set_spatialNetwork(gobject, spat_unit = NULL, name = NULL, spatial_network)
 
 Arguments
----------
+=========
 
 =================== ==========================
 Argument            Description
@@ -34,12 +29,12 @@ Argument            Description
 =================== ==========================
 
 Value
------
+=====
 
 giotto object
 
 Seealso
--------
+=======
 
 Other spatial network data accessor functions:
 ```get_spatialNetwork`` <#getspatialnetwork>`__

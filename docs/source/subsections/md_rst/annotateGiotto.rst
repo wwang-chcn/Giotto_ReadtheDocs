@@ -2,20 +2,15 @@
 annotateGiotto
 ==============
 
-:Date: 2022-09-20
-
-``annotateGiotto``
-==================
-
-Annotate giotto clustering
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Converts cluster results into a user provided annotation.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,7 +45,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 You need to specifify which (cluster) column you want to annotate and
 you need to provide an annotation vector like this:
@@ -70,6 +65,6 @@ you need to provide an annotation vector like this:
       e.g. names(cell_types) = c(2, 1, 3)
 
 Value
------
+=====
 
 giotto object

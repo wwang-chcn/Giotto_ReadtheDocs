@@ -2,20 +2,15 @@
 plotInteractionChangedFeats
 ===========================
 
-:Date: 2022-09-20
-
-``plotInteractionChangedFeats``
-===============================
-
-Plot interaction changed features
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create barplot to visualize interaction changed features
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -34,7 +29,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -70,6 +65,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 plot

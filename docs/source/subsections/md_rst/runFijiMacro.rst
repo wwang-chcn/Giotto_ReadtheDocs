@@ -2,28 +2,23 @@
 runFijiMacro
 ============
 
-:Date: 2022-09-20
-
-``fiji``
-========
-
-Find Fiji location
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 ``fiji`` returns path to preferred Fiji executable. list() This function
 is modified from jimpipeline by jefferislab
 
 Usage
------
+=====
 
 .. code:: r
 
    fiji(fijiPath = NULL)
 
 Arguments
----------
+=========
 
 ============ ========================================
 Argument     Description
@@ -32,7 +27,7 @@ Argument     Description
 ============ ========================================
 
 Examples
---------
+========
 
 .. code:: r
 

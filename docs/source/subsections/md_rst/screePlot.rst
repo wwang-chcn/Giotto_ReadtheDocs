@@ -2,21 +2,16 @@
 screePlot
 =========
 
-:Date: 2022-09-20
-
-``screePlot``
-=============
-
-screePlot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 identify significant principal components (PCs) using an screeplot
 (a.k.a. elbowplot)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -45,7 +40,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -100,7 +95,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Screeplot works by plotting the explained variance of each individual PC
 in a barplot allowing you to identify which PC provides a significant
@@ -109,6 +104,6 @@ available pca object, based on the parameter ‘name’, or it will create
 it if it’s not available (see ```runPCA`` <#runpca>`__ )
 
 Value
------
+=====
 
 ggplot object for scree method

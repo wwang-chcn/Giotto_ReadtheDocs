@@ -1,12 +1,8 @@
 --- 
 title: plot_cell_polygon_layer 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plot_cell_polygon_layer`
-
-Plot cell polygon layer
-
 
 ## Description
 

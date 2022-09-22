@@ -1,12 +1,8 @@
 --- 
 title: plot_network_layer_ggplot 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plot_network_layer_ggplot`
-
-plot_network_layer_ggplot
-
 
 ## Description
 

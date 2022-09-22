@@ -1,12 +1,8 @@
 --- 
 title: mean_flex 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `mean_flex`
-
-mean_flex
-
 
 ## Description
 

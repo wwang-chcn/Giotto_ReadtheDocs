@@ -2,20 +2,15 @@
 subset_feature_info_data
 ========================
 
-:Date: 2022-09-20
-
-``subset_feature_info_data``
-============================
-
-Subset feature info data
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subset all spatial feature (points) data
 
 Usage
------
+=====
 
 .. code:: r
 

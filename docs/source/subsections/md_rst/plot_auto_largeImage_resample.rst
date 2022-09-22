@@ -2,19 +2,14 @@
 plot_auto_largeImage_resample
 =============================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``plot_auto_largeImage_resample``
-=================================
-
-Optimized largeImage resampling
-
 Description
------------
+===========
 
 Downsample ``largeImage`` for plotting. Uses
 ```spatSample`` <#spatsample>`__ to load only a portion of the original
@@ -47,7 +42,7 @@ following two methods in order to avoid this issue:
      behavior happens. When set to ``FALSE`` , only method A is used.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -64,7 +59,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -106,11 +101,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 a ``giottoLargeImage`` cropped and resampled properly for plotting
 
 Seealso
--------
+=======
 
 ```spatSample`` <#spatsample>`__

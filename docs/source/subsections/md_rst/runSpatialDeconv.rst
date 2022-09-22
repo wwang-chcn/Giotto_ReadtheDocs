@@ -2,20 +2,15 @@
 runSpatialDeconv
 ================
 
-:Date: 2022-09-20
-
-``runSpatialDeconv``
-====================
-
-runSpatialDeconv
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to perform deconvolution based on single cell expression data
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ===================== =============================================
 Argument              Description
@@ -55,11 +50,11 @@ Argument              Description
 ===================== =============================================
 
 Value
------
+=====
 
 giotto object or deconvolution results
 
 Seealso
--------
+=======
 
 ```runDWLSDeconv`` <#rundwlsdeconv>`__

@@ -2,21 +2,16 @@
 plot_network_layer_ggplot
 =========================
 
-:Date: 2022-09-20
-
-``plot_network_layer_ggplot``
-=============================
-
-plot_network_layer_ggplot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells in network layer according to dimension reduction
 coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -44,11 +39,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot

@@ -2,20 +2,15 @@
 createSpatialNetwork
 ====================
 
-:Date: 2022-09-20
-
-``createSpatialNetwork``
-========================
-
-createSpatialNetwork
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a spatial network based on cell centroid physical distances.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -43,7 +38,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -114,7 +109,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Creates a spatial network connecting single-cells based on their
 physical distance to each other. For Delaunay method, neighbors will be
@@ -129,6 +124,6 @@ spatial dimensions to use, e.g. c(“sdimx’,”sdimy”) or a numerical
 vector, e.g. 2:3
 
 Value
------
+=====
 
 giotto object with updated spatial network slot

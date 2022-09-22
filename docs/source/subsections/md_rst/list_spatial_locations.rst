@@ -2,27 +2,22 @@
 list_spatial_locations
 ======================
 
-:Date: 2022-09-20
-
-``list_spatial_locations``
-==========================
-
-list_spatial_locations
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 shows the available spatial locations
 
 Usage
------
+=====
 
 .. code:: r
 
    list_spatial_locations(gobject, spat_unit = NULL, return_uniques = FALSE)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -37,6 +32,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 names and locations of available data.table as data.table

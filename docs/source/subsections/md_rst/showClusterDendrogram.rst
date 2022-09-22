@@ -2,20 +2,15 @@
 showClusterDendrogram
 =====================
 
-:Date: 2022-09-20
-
-``showClusterDendrogram``
-=========================
-
-showClusterDendrogram
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates dendrogram for selected clusters.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -39,7 +34,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -92,11 +87,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Expression correlation dendrogram for selected clusters.
 
 Value
------
+=====
 
 ggplot

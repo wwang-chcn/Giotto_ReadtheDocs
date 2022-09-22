@@ -2,20 +2,15 @@
 addNetworkLayout
 ================
 
-:Date: 2022-09-20
-
-``addNetworkLayout``
-====================
-
-addNetworkLayout
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Add a network layout for a selected nearest neighbor network
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -58,7 +53,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function creates layout coordinates based on the provided kNN or
 sNN. Currently only the force-directed graph layout “drl”, see
@@ -66,6 +61,6 @@ sNN. Currently only the force-directed graph layout “drl”, see
 an alternative to tSNE or UMAP based visualizations.
 
 Value
------
+=====
 
 giotto object with updated layout for selected NN network

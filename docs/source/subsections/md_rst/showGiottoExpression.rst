@@ -2,27 +2,22 @@
 showGiottoExpression
 ====================
 
-:Date: 2022-09-20
-
-``showGiottoExpression``
-========================
-
-showGiottoExpression
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 shows the available matrices
 
 Usage
------
+=====
 
 .. code:: r
 
    showGiottoExpression(gobject, nrows = 4, ncols = 4)
 
 Arguments
----------
+=========
 
 =========== ==========================================
 Argument    Description
@@ -33,12 +28,12 @@ Argument    Description
 =========== ==========================================
 
 Value
------
+=====
 
 prints the name and small subset of available matrices
 
 Seealso
--------
+=======
 
 Other functions to show data in giotto object:
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,

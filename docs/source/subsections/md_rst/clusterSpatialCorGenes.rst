@@ -2,20 +2,15 @@
 clusterSpatialCorGenes
 ======================
 
-:Date: 2022-09-20
-
-``clusterSpatialCorGenes``
-==========================
-
-clusterSpatialCorGenes
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Cluster based on spatially correlated genes
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -46,6 +41,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 spatCorObject or cluster results

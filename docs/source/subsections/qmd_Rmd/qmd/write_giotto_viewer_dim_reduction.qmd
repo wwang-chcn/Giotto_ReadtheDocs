@@ -1,12 +1,8 @@
 --- 
 title: write_giotto_viewer_dim_reduction 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `write_giotto_viewer_dim_reduction`
-
-write_giotto_viewer_dim_reduction
-
 
 ## Description
 

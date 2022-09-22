@@ -2,27 +2,22 @@
 list_spatial_enrichments_names
 ==============================
 
-:Date: 2022-09-20
-
-``list_spatial_enrichments_names``
-==================================
-
-list_spatial_enrichments_names
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 returns the available spatial enrichment names for a given spatial unit
 
 Usage
------
+=====
 
 .. code:: r
 
    list_spatial_enrichments_names(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
----------
+=========
 
 ============= ===========================================
 Argument      Description
@@ -33,6 +28,6 @@ Argument      Description
 ============= ===========================================
 
 Value
------
+=====
 
 vector of names for available spatial enrichments

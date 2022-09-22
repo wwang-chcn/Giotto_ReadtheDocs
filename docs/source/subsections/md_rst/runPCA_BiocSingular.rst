@@ -2,20 +2,15 @@
 runPCA_BiocSingular
 ===================
 
-:Date: 2022-09-20
-
-``runPCA_BiocSingular``
-=======================
-
-runPCA_BiocSingular
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Performs PCA based on the biocSingular package
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================ ================================================
 Argument         Description
@@ -50,6 +45,6 @@ Argument         Description
 ================ ================================================
 
 Value
------
+=====
 
 list of eigenvalues, loadings and pca coordinates

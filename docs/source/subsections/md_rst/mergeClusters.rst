@@ -2,21 +2,16 @@
 mergeClusters
 =============
 
-:Date: 2022-09-20
-
-``mergeClusters``
-=================
-
-mergeClusters
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Merge selected clusters based on pairwise correlation scores and size of
 cluster.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -37,7 +32,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -75,7 +70,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Merge selected clusters based on pairwise correlation scores and size of
 cluster. To avoid large clusters to merge the max_group_size can be
@@ -88,6 +83,6 @@ object is returned by default, if FALSE then the merging vector will be
 returned.
 
 Value
------
+=====
 
 Giotto object

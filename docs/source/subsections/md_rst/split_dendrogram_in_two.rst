@@ -2,28 +2,23 @@
 split_dendrogram_in_two
 =======================
 
-:Date: 2022-09-20
-
-``split_dendrogram_in_two``
-===========================
-
-split_dendrogram_in_two
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Merge selected clusters based on pairwise correlation scores and size of
 cluster.
 
 Usage
------
+=====
 
 .. code:: r
 
    split_dendrogram_in_two(dend)
 
 Arguments
----------
+=========
 
 ======== =================
 Argument Description
@@ -32,6 +27,6 @@ Argument Description
 ======== =================
 
 Value
------
+=====
 
 list of two dendrograms and height of node

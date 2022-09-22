@@ -2,20 +2,15 @@
 do_cell_proximity_test
 ======================
 
-:Date: 2022-09-20
-
-``do_cell_proximity_test``
-==========================
-
-Do cell proximity test
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Performs a selected differential test on subsets of a matrix
 
 Usage
------
+=====
 
 .. code:: r
 

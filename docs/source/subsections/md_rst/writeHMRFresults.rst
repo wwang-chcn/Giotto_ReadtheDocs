@@ -2,20 +2,15 @@
 writeHMRFresults
 ================
 
-:Date: 2022-09-20
-
-``writeHMRFresults``
-====================
-
-writeHMRFresults
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 write results from doHMRF to a data.table.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -46,6 +41,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with HMRF results for each b and the selected k

@@ -1,12 +1,8 @@
 --- 
 title: get_args 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `get_args`
-
-Log args used
-
 
 ## Description
 

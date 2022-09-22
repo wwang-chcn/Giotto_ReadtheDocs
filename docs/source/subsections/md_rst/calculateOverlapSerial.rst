@@ -2,21 +2,16 @@
 calculateOverlapSerial
 ======================
 
-:Date: 2022-09-20
-
-``calculateOverlapSerial``
-==========================
-
-calculateOverlapSerial
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate overlap between cellular structures (polygons) and features
 (points)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -32,7 +27,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -57,12 +52,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Serial overlapping function that works on groups of polygons at a time.
 Number of polygons per group is defined by ``polygon_group_size`` param
 
 Value
------
+=====
 
 giotto object or spatVector with overlapping information

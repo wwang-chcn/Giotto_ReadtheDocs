@@ -1,12 +1,8 @@
 --- 
 title: validObject 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `validObject`
-
-See `methods::` for details.
-
 
 ## Description
 

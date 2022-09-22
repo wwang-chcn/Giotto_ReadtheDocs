@@ -2,20 +2,15 @@
 filterGiotto
 ============
 
-:Date: 2022-09-20
-
-``filterGiotto``
-================
-
-filterGiotto
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 filter Giotto object based on expression threshold
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -34,7 +29,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -68,12 +63,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 The function ```filterCombinations`` <#filtercombinations>`__ can be
 used to explore the effect of different parameter values.
 
 Value
------
+=====
 
 giotto object

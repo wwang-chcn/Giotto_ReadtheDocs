@@ -2,20 +2,15 @@
 decide_cluster_order
 ====================
 
-:Date: 2022-09-20
-
-``decide_cluster_order``
-========================
-
-decide_cluster_order
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 creates order for clusters
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -34,7 +29,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -71,11 +66,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Calculates order for clusters.
 
 Value
------
+=====
 
 custom

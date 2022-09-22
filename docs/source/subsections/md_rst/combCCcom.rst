@@ -2,20 +2,15 @@
 combCCcom
 =========
 
-:Date: 2022-09-20
-
-``combCCcom``
-=============
-
-combCCcom
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Combine spatial and expression based cell-cell communication data.tables
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -31,7 +26,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -60,6 +55,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 combined data.table with spatial and expression communication data

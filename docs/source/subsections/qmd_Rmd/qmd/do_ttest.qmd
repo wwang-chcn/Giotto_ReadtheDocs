@@ -1,12 +1,8 @@
 --- 
 title: do_ttest 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `do_ttest`
-
-do_ttest
-
 
 ## Description
 

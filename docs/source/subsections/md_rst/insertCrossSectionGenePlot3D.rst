@@ -2,21 +2,16 @@
 insertCrossSectionGenePlot3D
 ============================
 
-:Date: 2022-09-20
-
-``insertCrossSectionGenePlot3D``
-================================
-
-insertCrossSectionGenePlot3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells and gene expression in a virtual cross section according
 to spatial coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -44,7 +39,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -99,11 +94,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot

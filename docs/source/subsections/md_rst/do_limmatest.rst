@@ -2,20 +2,15 @@
 do_limmatest
 ============
 
-:Date: 2022-09-20
-
-``do_limmatest``
-================
-
-do_limmatest
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Performs limma t.test on subsets of a matrix
 
 Usage
------
+=====
 
 .. code:: r
 

@@ -1,12 +1,8 @@
 --- 
 title: doRandomWalkCluster 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `doRandomWalkCluster`
-
-doRandomWalkCluster
-
 
 ## Description
 

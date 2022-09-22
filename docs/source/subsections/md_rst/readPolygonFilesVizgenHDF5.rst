@@ -2,20 +2,15 @@
 readPolygonFilesVizgenHDF5
 ==========================
 
-:Date: 2022-09-20
-
-``readPolygonFilesVizgenHDF5``
-==============================
-
-readPolygonFilesVizgenHDF5
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Read and create polygons for all cells, or for only selected FOVs.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -33,7 +28,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -65,6 +60,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```smoothGiottoPolygons`` <#smoothgiottopolygons>`__

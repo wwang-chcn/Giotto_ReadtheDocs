@@ -1,12 +1,8 @@
 --- 
 title: list_spatial_locations_names 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `list_spatial_locations_names`
-
-list_spatial_locations_names
-
 
 ## Description
 

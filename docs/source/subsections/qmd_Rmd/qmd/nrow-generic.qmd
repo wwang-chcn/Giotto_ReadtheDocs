@@ -1,12 +1,8 @@
 --- 
 title: nrow-generic 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `nrow-generic`
-
-Dimensions of giotto points and polygon objects
-
 
 ## Description
 

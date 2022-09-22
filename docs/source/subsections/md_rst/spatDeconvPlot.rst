@@ -2,20 +2,15 @@
 spatDeconvPlot
 ==============
 
-:Date: 2022-09-20
-
-``spatDeconvPlot``
-==================
-
-spatDeconvPlot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cell type enrichment / deconvolution results in a scatterpie
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -49,7 +44,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -115,11 +110,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot

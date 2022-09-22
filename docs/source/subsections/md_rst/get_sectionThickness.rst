@@ -2,20 +2,15 @@
 get_sectionThickness
 ====================
 
-:Date: 2022-09-20
-
-``get_sectionThickness``
-========================
-
-get_sectionThickness
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 get section thickness
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

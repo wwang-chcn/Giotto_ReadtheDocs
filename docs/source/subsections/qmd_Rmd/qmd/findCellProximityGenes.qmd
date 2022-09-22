@@ -1,12 +1,8 @@
 --- 
 title: findCellProximityGenes 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `findCellProximityGenes`
-
-findCellProximityGenes
-
 
 ## Description
 

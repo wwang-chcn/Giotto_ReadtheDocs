@@ -2,21 +2,16 @@
 create_average_DT
 =================
 
-:Date: 2022-09-20
-
-``create_average_DT``
-=====================
-
-create_average_DT
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculates average gene expression for a cell metadata factor
 (e.g. cluster)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ===================== ==============================
 Argument              Description
@@ -42,6 +37,6 @@ Argument              Description
 ===================== ==============================
 
 Value
------
+=====
 
 data.table with average gene epression values for each factor

@@ -2,20 +2,15 @@
 addFeatMetadata
 ===============
 
-:Date: 2022-09-20
-
-``addFeatMetadata``
-===================
-
-Add feature metadata
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Adds feature metadata to the giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,7 +45,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 You can add additional feature metadata in two manners: list() 1.
 Provide a data.table or data.frame with feature annotations in the same
@@ -60,6 +55,6 @@ which column contains the feature IDs, these feature IDs need to match
 with the list(“feat_ID”) column in fDataDT(gobject)
 
 Value
------
+=====
 
 giotto object

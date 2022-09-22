@@ -2,28 +2,23 @@
 list_expression_names
 =====================
 
-:Date: 2022-09-20
-
-``list_expression_names``
-=========================
-
-list_expression_names
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 lists the available matrices names for a given spatial unit and feature
 type
 
 Usage
------
+=====
 
 .. code:: r
 
    list_expression_names(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
----------
+=========
 
 ============= ===========================================
 Argument      Description
@@ -34,6 +29,6 @@ Argument      Description
 ============= ===========================================
 
 Value
------
+=====
 
 vector with names of available matrices

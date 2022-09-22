@@ -2,20 +2,15 @@
 addCellStatistics
 =================
 
-:Date: 2022-09-20
-
-``addCellStatistics``
-=====================
-
-addCellStatistics
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 adds cells statistics to the giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,7 +45,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function will add the following statistics to cell metadata:
 
@@ -61,6 +56,6 @@ This function will add the following statistics to cell metadata:
 -  total_expr: Shows the total sum of feature expression per cell
 
 Value
------
+=====
 
 giotto object if return_gobject = TRUE

@@ -1,12 +1,8 @@
 --- 
 title: replaceGiottoInstructions 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `replaceGiottoInstructions`
-
-Replace all giotto instructions in giotto object
-
 
 ## Description
 

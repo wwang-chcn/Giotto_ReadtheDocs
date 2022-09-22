@@ -1,12 +1,8 @@
 --- 
 title: solve_dampened_WLSj 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `solve_dampened_WLSj`
-
-solve_dampened_WLSj
-
 
 ## Description
 

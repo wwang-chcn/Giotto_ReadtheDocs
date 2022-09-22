@@ -2,21 +2,16 @@
 createSpatialDelaunayNetwork
 ============================
 
-:Date: 2022-09-20
-
-``createSpatialDelaunayNetwork``
-================================
-
-Create a spatial Delaunay network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create a spatial Delaunay network based on cell centroid physical
 distances.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -40,7 +35,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -106,13 +101,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Creates a spatial Delaunay network as explained in
 ```delaunayn`` <#delaunayn>`__ (default), ```deldir`` <#deldir>`__ , or
 ```triangulate`` <#triangulate>`__ .
 
 Value
------
+=====
 
 giotto object with updated spatial network slot

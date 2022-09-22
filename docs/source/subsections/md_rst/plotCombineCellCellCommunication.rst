@@ -2,20 +2,15 @@
 plotCombineCellCellCommunication
 ================================
 
-:Date: 2022-09-20
-
-``plotCombineCellCellCommunication``
-====================================
-
-plotCombineCellCellCommunication
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create visualization for combined (pairwise) cell proximity gene scores
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -39,7 +34,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -86,6 +81,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot

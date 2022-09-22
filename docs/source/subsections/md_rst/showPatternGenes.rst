@@ -2,20 +2,15 @@
 showPatternGenes
 ================
 
-:Date: 2022-09-20
-
-``showPatternGenes``
-====================
-
-showPatternGenes
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 show genes correlated with spatial patterns
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -72,6 +67,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 ggplot

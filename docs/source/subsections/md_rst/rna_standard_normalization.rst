@@ -2,20 +2,15 @@
 rna_standard_normalization
 ==========================
 
-:Date: 2022-09-20
-
-``rna_standard_normalization``
-==============================
-
-RNA standard normalization
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 standard function for RNA normalization
 
 Usage
------
+=====
 
 .. code:: r
 

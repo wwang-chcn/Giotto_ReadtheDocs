@@ -2,20 +2,15 @@
 subset_nearest_network
 ======================
 
-:Date: 2022-09-20
-
-``subset_nearest_network``
-==========================
-
-Subset nearest network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subset nearest network results from giotto object
 
 Usage
------
+=====
 
 .. code:: r
 

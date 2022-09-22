@@ -2,20 +2,15 @@
 create_genes_to_use_matrix
 ==========================
 
-:Date: 2022-09-20
-
-``create_genes_to_use_matrix``
-==============================
-
-create_genes_to_use_matrix
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 subsets matrix based on vector of genes or hvf column
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================ =============================================
 Argument         Description
@@ -43,6 +38,6 @@ Argument         Description
 ================ =============================================
 
 Value
------
+=====
 
 subsetted matrix based on selected genes

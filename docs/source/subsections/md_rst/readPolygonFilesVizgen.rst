@@ -2,21 +2,16 @@
 readPolygonFilesVizgen
 ======================
 
-:Date: 2022-09-20
-
-``readPolygonFilesVizgen``
-==========================
-
-readPolygonFilesVizgen
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Read selected polygon files for the FOVs present in the Giotto object
 and add the smoothed polygons to the object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -69,6 +64,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```smoothGiottoPolygons`` <#smoothgiottopolygons>`__

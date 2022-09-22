@@ -2,21 +2,16 @@
 giotto-class
 ============
 
-:Date: 2022-09-20
-
-``giotto-class``
-================
-
-S4 giotto Class
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Framework of giotto object to store and work with spatial expression
 data
 
 Details
--------
+=======
 
 [ expression ] There are several ways to provide expression information:
 

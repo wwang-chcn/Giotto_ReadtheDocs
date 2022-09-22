@@ -2,21 +2,16 @@
 spatNetwDistributions
 =====================
 
-:Date: 2022-09-20
-
-``spatNetwDistributions``
-=========================
-
-spatNetwDistributions
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 This function return histograms displaying the distance distribution for
 each spatial k-neighbor
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -76,7 +71,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 The list(“distance”) option shows the spatial distance distribution for
 each nearest neighbor rank (1st, 2nd, 3th, … neigbor). With this option
@@ -86,6 +81,6 @@ are considered to far away. list() The list(“k_neighbors”) option shows
 the number of k neighbors distribution over all cells.
 
 Value
------
+=====
 
 ggplot plot

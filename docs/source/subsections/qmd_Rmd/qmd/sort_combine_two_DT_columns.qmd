@@ -1,12 +1,8 @@
 --- 
 title: sort_combine_two_DT_columns 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `sort_combine_two_DT_columns`
-
-sort_combine_two_DT_columns
-
 
 ## Description
 

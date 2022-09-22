@@ -1,12 +1,8 @@
 --- 
 title: dimPlot_3D_plotly 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `dimPlot_3D_plotly`
-
-dimPlot_3D_plotly
-
 
 ## Description
 

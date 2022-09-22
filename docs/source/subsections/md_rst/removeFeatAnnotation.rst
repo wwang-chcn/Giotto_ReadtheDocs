@@ -2,21 +2,16 @@
 removeFeatAnnotation
 ====================
 
-:Date: 2022-09-20
-
-``removeFeatAnnotation``
-========================
-
-Remove feature annotation
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Removes feature annotation from a Giotto object for a specific feature
 modality
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,11 +42,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 if ``return_gobject = FALSE`` , it will return the gene metadata
 
 Value
------
+=====
 
 giotto object

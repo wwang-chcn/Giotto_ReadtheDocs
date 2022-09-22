@@ -2,20 +2,15 @@
 find_grid_3D
 ============
 
-:Date: 2022-09-20
-
-``find_grid_3D``
-================
-
-find_grid_3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 find grid location in 3D
 
 Usage
------
+=====
 
 .. code:: r
 

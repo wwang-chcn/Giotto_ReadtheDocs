@@ -2,20 +2,15 @@
 processGiotto
 =============
 
-:Date: 2022-09-20
-
-``processGiotto``
-=================
-
-processGiotto
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Wrapper for the different Giotto object processing functions
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -53,7 +48,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 See ```filterGiotto`` <#filtergiotto>`__ ,
 ```normalizeGiotto`` <#normalizegiotto>`__ ,
@@ -64,6 +59,6 @@ it will use the default values. If no adjustment is required,
 adjust_params must be set to NULL
 
 Value
------
+=====
 
 giotto object

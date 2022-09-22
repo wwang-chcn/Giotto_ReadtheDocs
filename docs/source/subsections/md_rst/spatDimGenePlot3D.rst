@@ -2,21 +2,16 @@
 spatDimGenePlot3D
 =================
 
-:Date: 2022-09-20
-
-``spatDimGenePlot3D``
-=====================
-
-spatDimGenePlot3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells according to spatial AND dimension reduction coordinates
 in ggplot mode
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -75,7 +70,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -195,17 +190,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 plotly
 
 Seealso
--------
+=======
 
 Other spatial and dimension reduction gene expression visualizations:
 ```spatDimGenePlot2D`` <#spatdimgeneplot2d>`__ ,

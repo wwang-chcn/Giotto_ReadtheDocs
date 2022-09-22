@@ -2,20 +2,15 @@
 insertCrossSectionSpatPlot3D
 ============================
 
-:Date: 2022-09-20
-
-``insertCrossSectionSpatPlot3D``
-================================
-
-insertCrossSectionSpatPlot3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize the meshgrid lines of cross section together with cells
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -39,7 +34,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -84,11 +79,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot

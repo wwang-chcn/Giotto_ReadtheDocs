@@ -2,31 +2,26 @@
 plotCombineCPG
 ==============
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``plotCombineCPG``
-==================
-
-plotCombineCPG
-
 Description
------------
+===========
 
 Create visualization for combined (pairwise) ICG scores
 
 Usage
------
+=====
 
 .. code:: r
 
    plotCombineCPG(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -63,6 +58,6 @@ Arguments
    "  ")
 
 Seealso
--------
+=======
 
 ```plotCombineICG`` <#plotcombineicg>`__

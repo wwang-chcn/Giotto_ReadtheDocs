@@ -2,20 +2,15 @@
 do_multi_permuttest_random
 ==========================
 
-:Date: 2022-09-20
-
-``do_multi_permuttest_random``
-==============================
-
-do_multi_permuttest_random
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate multiple random values
 
 Usage
------
+=====
 
 .. code:: r
 

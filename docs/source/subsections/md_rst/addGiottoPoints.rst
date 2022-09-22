@@ -2,27 +2,22 @@
 addGiottoPoints
 ===============
 
-:Date: 2022-09-20
-
-``addGiottoPoints``
-===================
-
-Add giotto points object to giotto object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Adds Giotto points to an existing Giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
    addGiottoPoints(gobject, gpoints)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -35,6 +30,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto object

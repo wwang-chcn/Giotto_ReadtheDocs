@@ -2,27 +2,22 @@
 evaluate_spatial_info
 =====================
 
-:Date: 2022-09-20
-
-``evaluate_spatial_info``
-=========================
-
-Evaluate spatial info
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Evaluate spatial information input
 
 Usage
------
+=====
 
 .. code:: r
 
    evaluate_spatial_info(spatial_info, cores = 1, spatial_locs)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -36,6 +31,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table

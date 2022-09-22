@@ -2,31 +2,26 @@
 select_spatial_locations
 ========================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``select_spatial_locations``
-============================
-
-select_spatial_locations
-
 Description
------------
+===========
 
 select_spatial_locations
 
 Usage
------
+=====
 
 .. code:: r
 
    select_spatial_locations(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,6 +44,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```get_spatial_locations`` <#getspatiallocations>`__

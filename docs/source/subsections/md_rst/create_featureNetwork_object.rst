@@ -2,20 +2,15 @@
 create_featureNetwork_object
 ============================
 
-:Date: 2022-09-20
-
-``create_featureNetwork_object``
-================================
-
-Create feature network object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create feature network object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ===================== =================================================
 Argument              Description

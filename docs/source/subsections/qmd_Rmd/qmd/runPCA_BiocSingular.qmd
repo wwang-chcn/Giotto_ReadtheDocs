@@ -1,12 +1,8 @@
 --- 
 title: runPCA_BiocSingular 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `runPCA_BiocSingular`
-
-runPCA_BiocSingular
-
 
 ## Description
 

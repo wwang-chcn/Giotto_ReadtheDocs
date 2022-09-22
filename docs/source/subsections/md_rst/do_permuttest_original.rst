@@ -2,20 +2,15 @@
 do_permuttest_original
 ======================
 
-:Date: 2022-09-20
-
-``do_permuttest_original``
-==========================
-
-do_permuttest_original
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculate original values
 
 Usage
------
+=====
 
 .. code:: r
 

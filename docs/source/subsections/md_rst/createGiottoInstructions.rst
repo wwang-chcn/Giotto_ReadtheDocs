@@ -2,20 +2,15 @@
 createGiottoInstructions
 ========================
 
-:Date: 2022-09-20
-
-``createGiottoInstructions``
-============================
-
-Create instructions for giotto functions
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to set global instructions for giotto functions
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -75,12 +70,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 named vector with giotto instructions
 
 Seealso
--------
+=======
 
 More online information can be found here
 https://rubd.github.io/Giotto_site/articles/instructions_and_plotting.html

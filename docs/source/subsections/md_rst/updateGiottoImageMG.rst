@@ -2,22 +2,17 @@
 updateGiottoImageMG
 ===================
 
-:Date: 2022-09-20
-
-``updateGiottoImageMG``
-=======================
-
-updateGiottoImageMG
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Updates the boundaries of a giotto ``image`` object attached to a
 ``giotto`` object if both ``gobject`` and ``image_name`` params are
 given. Alternatively can directly accept and return as ``image``
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -44,7 +39,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -93,7 +88,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 a ``giotto`` object or an updated giotto ``image`` object if
 ``return_gobject = FALSe``

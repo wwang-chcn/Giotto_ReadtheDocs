@@ -2,32 +2,27 @@
 cellProximitySpatPlot
 =====================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``cellProximitySpatPlot``
-=========================
-
-cellProximitySpatPlot
-
 Description
------------
+===========
 
 Visualize 2D cell-cell interactions according to spatial coordinates in
 ggplot mode
 
 Usage
------
+=====
 
 .. code:: r
 
    cellProximitySpatPlot(gobject, ...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -67,17 +62,17 @@ Arguments
        list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters from ", list(list("all_plots_save_function")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```cellProximitySpatPlot2D`` <#cellproximityspatplot2d>`__ and
 ```cellProximitySpatPlot3D`` <#cellproximityspatplot3d>`__ for 3D

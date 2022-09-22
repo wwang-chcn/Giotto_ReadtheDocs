@@ -2,20 +2,15 @@
 combineICG
 ==========
 
-:Date: 2022-09-20
-
-``combineICG``
-==============
-
-combineICG
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Combine ICG scores in a pairwise manner.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -73,6 +68,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 cpgObject that contains the filtered differential gene scores

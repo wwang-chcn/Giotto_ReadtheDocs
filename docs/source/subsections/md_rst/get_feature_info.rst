@@ -2,27 +2,22 @@
 get_feature_info
 ================
 
-:Date: 2022-09-20
-
-``get_feature_info``
-====================
-
-Get feature info
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Get giotto points spatVector
 
 Usage
------
+=====
 
 .. code:: r
 
    get_feature_info(gobject, feat_type = NULL)
 
 Arguments
----------
+=========
 
 ============= ==============================================
 Argument      Description
@@ -32,7 +27,7 @@ Argument      Description
 ============= ==============================================
 
 Seealso
--------
+=======
 
 Other feature info data accessor functions:
 ```set_feature_info`` <#setfeatureinfo>`__

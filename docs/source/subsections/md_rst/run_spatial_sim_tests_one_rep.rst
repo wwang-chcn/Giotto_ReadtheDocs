@@ -2,20 +2,15 @@
 run_spatial_sim_tests_one_rep
 =============================
 
-:Date: 2022-09-20
-
-``run_spatial_sim_tests_one_rep``
-=================================
-
-run_spatial_sim_tests_one_rep
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 runs all spatial tests for 1 probability and 1 rep
 
 Usage
------
+=====
 
 .. code:: r
 

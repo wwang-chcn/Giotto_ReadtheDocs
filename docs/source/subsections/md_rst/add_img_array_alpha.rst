@@ -2,27 +2,22 @@
 add_img_array_alpha
 ===================
 
-:Date: 2022-09-20
-
-``add_img_array_alpha``
-=======================
-
-Add alpha channel to image array
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Add alpha channel to image array
 
 Usage
------
+=====
 
 .. code:: r
 
    add_img_array_alpha(x, alpha)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -36,11 +31,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Add 4th alpha channel to 3 channel RGB image arrays
 
 Value
------
+=====
 
 image array with 4th channel for transparency

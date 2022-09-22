@@ -2,20 +2,15 @@
 getCellsFromPolygon
 ===================
 
-:Date: 2022-09-20
-
-``getCellsFromPolygon``
-=======================
-
-Get cells located within the polygons area
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Get cells located within the polygons area
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -26,7 +21,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -41,13 +36,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 A ``SpatVector`` with cell IDs, x,y coordinates, and polygon name where
 each cell is located in.
 
 Examples
---------
+========
 
 .. code:: r
 

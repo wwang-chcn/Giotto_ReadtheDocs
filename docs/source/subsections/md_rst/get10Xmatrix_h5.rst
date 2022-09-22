@@ -2,27 +2,22 @@
 get10Xmatrix_h5
 ===============
 
-:Date: 2022-09-20
-
-``get10Xmatrix_h5``
-===================
-
-get10Xmatrix_h5
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 This function creates an expression matrix from a 10X h5 file path
 
 Usage
------
+=====
 
 .. code:: r
 
    get10Xmatrix_h5(path_to_data, gene_ids = c("symbols", "ensembl"))
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -35,12 +30,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 If the .h5 10x file has multiple modalities (e.g. RNA and protein),
 multiple matrices will be returned
 
 Value
------
+=====
 
 (list of) sparse expression matrix from 10X

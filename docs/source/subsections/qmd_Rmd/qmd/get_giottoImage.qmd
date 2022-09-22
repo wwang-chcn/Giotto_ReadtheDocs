@@ -1,12 +1,8 @@
 --- 
 title: get_giottoImage 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `get_giottoImage`
-
-Get giotto image object
-
 
 ## Description
 

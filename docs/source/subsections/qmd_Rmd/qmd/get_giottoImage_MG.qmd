@@ -1,12 +1,8 @@
 --- 
 title: get_giottoImage_MG 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `get_giottoImage_MG`
-
-Get magick -based giotto `image`
-
 
 ## Description
 

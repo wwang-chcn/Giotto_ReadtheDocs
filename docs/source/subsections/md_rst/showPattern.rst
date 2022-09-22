@@ -2,31 +2,26 @@
 showPattern
 ===========
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``showPattern``
-===============
-
-showPattern
-
 Description
------------
+===========
 
 show patterns for 2D spatial data
 
 Usage
------
+=====
 
 .. code:: r
 
    showPattern(gobject, spatPatObj, ...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -66,11 +61,11 @@ Arguments
    list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 ```showPattern2D`` <#showpattern2d>`__

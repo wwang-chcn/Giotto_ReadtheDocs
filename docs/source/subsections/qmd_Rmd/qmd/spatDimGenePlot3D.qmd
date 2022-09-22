@@ -1,12 +1,8 @@
 --- 
 title: spatDimGenePlot3D 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spatDimGenePlot3D`
-
-spatDimGenePlot3D
-
 
 ## Description
 

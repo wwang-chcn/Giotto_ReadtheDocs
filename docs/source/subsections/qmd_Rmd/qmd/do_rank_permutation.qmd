@@ -1,12 +1,8 @@
 --- 
 title: do_rank_permutation 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `do_rank_permutation`
-
-do_rank_permutation
-
 
 ## Description
 

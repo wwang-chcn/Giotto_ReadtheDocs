@@ -2,21 +2,16 @@
 reconnectGiottoImage
 ====================
 
-:Date: 2022-09-20
-
-``reconnectGiottoImage``
-========================
-
-Reconnect images with dead pointers
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 reconnect a gobject’s dead image pointers using filepaths to the
 original source image files
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -31,7 +26,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -55,7 +50,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Inputs can either be given as both image name ( ``image_name`` /
 ``largeImage_name`` ) and filepath ( ``image_path`` /
@@ -71,12 +66,12 @@ In such cases, use manual reconnection by setting
 ``auto_reconnect = FALSE`` .
 
 Value
------
+=====
 
 a giotto object with updated image pointer
 
 Seealso
--------
+=======
 
 Other basic image functions: ```addGiottoImage`` <#addgiottoimage>`__ ,
 ```plotGiottoImage`` <#plotgiottoimage>`__ ,

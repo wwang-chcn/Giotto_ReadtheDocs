@@ -2,20 +2,15 @@
 my_growMeans
 ============
 
-:Date: 2022-09-20
-
-``my_growMeans``
-================
-
-my_growMeans
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 geometric rowMeans that works for a single column
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -23,7 +18,7 @@ Usage
    my_growMeans(x, offset = 0.1)
 
 Arguments
----------
+=========
 
 ========== ===========
 Argument   Description

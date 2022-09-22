@@ -1,12 +1,8 @@
 --- 
 title: showProcessingSteps 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `showProcessingSteps`
-
-showProcessingSteps
-
 
 ## Description
 

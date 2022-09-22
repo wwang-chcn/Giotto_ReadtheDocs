@@ -2,27 +2,22 @@
 plot_giottoImage_MG
 ===================
 
-:Date: 2022-09-20
-
-``plot_giottoImage_MG``
-=======================
-
-plot_giottoImage_MG
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 get and plot a giottoImage either directly or from a giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
    plot_giottoImage_MG(gobject = NULL, image_name = NULL, giottoImage = NULL)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -37,6 +32,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 plot

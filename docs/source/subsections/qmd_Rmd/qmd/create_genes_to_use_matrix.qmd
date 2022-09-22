@@ -1,12 +1,8 @@
 --- 
 title: create_genes_to_use_matrix 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `create_genes_to_use_matrix`
-
-create_genes_to_use_matrix
-
 
 ## Description
 

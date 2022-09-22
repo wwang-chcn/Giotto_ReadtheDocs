@@ -2,20 +2,15 @@
 doLeidenSubCluster
 ==================
 
-:Date: 2022-09-20
-
-``doLeidenSubCluster``
-======================
-
-doLeidenSubCluster
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Further subcluster cells using a NN-network and the Leiden algorithm
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -49,7 +44,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -117,7 +112,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function performs subclustering using the Leiden algorithm on
 selected clusters. The systematic steps are:
@@ -143,11 +138,11 @@ selected clusters. The systematic steps are:
    5. do Leiden clustering
 
 Value
------
+=====
 
 giotto object with new subclusters appended to cell metadata
 
 Seealso
--------
+=======
 
 ```doLeidenCluster`` <#doleidencluster>`__

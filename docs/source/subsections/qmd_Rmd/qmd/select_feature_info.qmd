@@ -1,12 +1,8 @@
 --- 
 title: select_feature_info 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `select_feature_info`
-
-Select feature info
-
 
 ## Description
 

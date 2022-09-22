@@ -2,21 +2,16 @@
 findNetworkNeighbors
 ====================
 
-:Date: 2022-09-20
-
-``findNetworkNeighbors``
-========================
-
-Find network neighbors
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Find the spatial neighbors for a selected group of cells within the
 selected spatial network.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,6 +42,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table

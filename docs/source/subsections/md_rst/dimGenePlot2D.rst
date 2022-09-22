@@ -2,31 +2,26 @@
 dimGenePlot2D
 =============
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``dimGenePlot2D``
-=================
-
-dimGenePlot2D
-
 Description
------------
+===========
 
 Visualize gene expression according to dimension reduction coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
    dimGenePlot2D(gobject, genes = NULL, default_save_name = "dimGenePlot2D", ...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -75,17 +70,17 @@ Arguments
    list(list(list("cow_align")), list("cowplot param: how to align")), "\n", "    ", list(list(list("show_plot")), list("show plots")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "  ")
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 Other dimension reduction gene expression visualizations:
 ```dimGenePlot3D`` <#dimgeneplot3d>`__ ,

@@ -2,20 +2,15 @@
 set_spatial_locations
 =====================
 
-:Date: 2022-09-20
-
-``set_spatial_locations``
-=========================
-
-Set spatial locations
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to set a spatial location slot
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================= ========================================
 Argument          Description
@@ -41,12 +36,12 @@ Argument          Description
 ================= ========================================
 
 Value
------
+=====
 
 giotto object
 
 Seealso
--------
+=======
 
 Other spatial location data accessor functions:
 ```get_spatial_locations`` <#getspatiallocations>`__

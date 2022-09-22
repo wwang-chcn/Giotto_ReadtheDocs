@@ -2,21 +2,16 @@
 doLouvainSubCluster_multinet
 ============================
 
-:Date: 2022-09-20
-
-``doLouvainSubCluster_multinet``
-================================
-
-doLouvainSubCluster_multinet
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 subcluster cells using a NN-network and the Louvain multinet detection
 algorithm
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -43,7 +38,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -94,7 +89,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 This function performs subclustering using the Louvain multinet
 algorithm on selected clusters. The systematic steps are:
@@ -120,11 +115,11 @@ algorithm on selected clusters. The systematic steps are:
    5. do Louvain multinet clustering
 
 Value
------
+=====
 
 giotto object with new subclusters appended to cell metadata
 
 Seealso
--------
+=======
 
 ```doLouvainCluster_multinet`` <#dolouvainclustermultinet>`__

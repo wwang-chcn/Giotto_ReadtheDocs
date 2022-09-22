@@ -2,20 +2,15 @@
 PAGE_DT_method
 ==============
 
-:Date: 2022-09-20
-
-``PAGE_DT_method``
-==================
-
-PAGE_DT_method
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 PAGE data.table method
 
 Usage
------
+=====
 
 .. code:: r
 

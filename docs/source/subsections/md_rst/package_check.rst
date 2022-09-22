@@ -2,21 +2,16 @@
 package_check
 =============
 
-:Date: 2022-09-20
-
-``package_check``
-=================
-
-package_check
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 check if package is available and provide installation instruction if
 not available
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 =============== ===================================
 Argument        Description

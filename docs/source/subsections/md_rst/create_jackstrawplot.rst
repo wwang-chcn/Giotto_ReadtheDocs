@@ -2,20 +2,15 @@
 create_jackstrawplot
 ====================
 
-:Date: 2022-09-20
-
-``create_jackstrawplot``
-========================
-
-create_jackstrawplot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 create jackstrawplot with ggplot
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================== ===========================================
 Argument           Description
@@ -39,6 +34,6 @@ Argument           Description
 ================== ===========================================
 
 Value
------
+=====
 
 ggplot

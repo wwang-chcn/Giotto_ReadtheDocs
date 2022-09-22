@@ -1,12 +1,8 @@
 --- 
 title: package_check 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `package_check`
-
-package_check
-
 
 ## Description
 

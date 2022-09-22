@@ -2,21 +2,16 @@
 changeImageBg
 =============
 
-:Date: 2022-09-20
-
-``changeImageBg``
-=================
-
-changeImageBg
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to change the background color of a magick image plot to
 another color
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,7 +24,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,6 +42,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 magick image or giotto image object with updated background color

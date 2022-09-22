@@ -2,20 +2,15 @@
 set_spatialGrid
 ===============
 
-:Date: 2022-09-20
-
-``set_spatialGrid``
-===================
-
-Set spatial grid
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to set a spatial grid
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================ ===========================================
 Argument         Description
@@ -41,12 +36,12 @@ Argument         Description
 ================ ===========================================
 
 Value
------
+=====
 
 giotto object
 
 Seealso
--------
+=======
 
 Other spatial grid data accessor functions:
 ```get_spatialGrid`` <#getspatialgrid>`__

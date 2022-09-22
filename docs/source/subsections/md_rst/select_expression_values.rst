@@ -2,31 +2,26 @@
 select_expression_values
 ========================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``select_expression_values``
-============================
-
-select_expression_values
-
 Description
------------
+===========
 
 select_expression_values
 
 Usage
------
+=====
 
 .. code:: r
 
    select_expression_values(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -52,6 +47,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```get_expression_values`` <#getexpressionvalues>`__

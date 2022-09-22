@@ -2,20 +2,15 @@
 showClusterHeatmap
 ==================
 
-:Date: 2022-09-20
-
-``showClusterHeatmap``
-======================
-
-showClusterHeatmap
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates heatmap based on identified clusters
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -38,7 +33,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -91,11 +86,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Correlation heatmap of selected clusters.
 
 Value
------
+=====
 
 ggplot

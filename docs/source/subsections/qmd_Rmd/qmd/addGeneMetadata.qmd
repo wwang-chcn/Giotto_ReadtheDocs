@@ -1,12 +1,8 @@
 --- 
 title: addGeneMetadata 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `addGeneMetadata`
-
-Add gene metadata
-
 
 ## Description
 

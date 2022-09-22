@@ -2,27 +2,22 @@
 createGiottoPolygonsFromDfr
 ===========================
 
-:Date: 2022-09-20
-
-``createGiottoPolygonsFromDfr``
-===============================
-
-Create giotto polygons from dataframe
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates Giotto polygon object from a structured dataframe-like object
 
 Usage
------
+=====
 
 .. code:: r
 
    createGiottoPolygonsFromDfr(segmdfr, name = "cell", calc_centroids = FALSE)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -36,6 +31,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto polygon object

@@ -2,21 +2,16 @@
 createGiottoPolygonsFromMask
 ============================
 
-:Date: 2022-09-20
-
-``createGiottoPolygonsFromMask``
-================================
-
-Create giotto polygons from mask file
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates Giotto polygon object from a mask file (e.g. segmentation
 results)
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -38,7 +33,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -83,6 +78,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 a giotto polygon object

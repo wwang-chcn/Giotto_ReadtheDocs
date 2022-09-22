@@ -2,20 +2,15 @@
 doHclust
 ========
 
-:Date: 2022-09-20
-
-``doHclust``
-============
-
-doHclust
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 cluster cells using hierarchical clustering algorithm
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -41,7 +36,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -81,16 +76,16 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description on how to use Kmeans clustering method.
 
 Value
------
+=====
 
 giotto object with new clusters appended to cell metadata
 
 Seealso
--------
+=======
 
 ```hclust`` <#hclust>`__

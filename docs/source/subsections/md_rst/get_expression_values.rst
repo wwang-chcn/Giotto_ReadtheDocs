@@ -2,27 +2,22 @@
 get_expression_values
 =====================
 
-:Date: 2022-09-20
-
-``get_expression_values``
-=========================
-
-Get expression values
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to get expression values from giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
    get_expression_values(gobject, spat_unit = NULL, feat_type = NULL, values)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -39,12 +34,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 expression matrix
 
 Seealso
--------
+=======
 
 Other expression accessor functions:
 ```set_expression_values`` <#setexpressionvalues>`__

@@ -2,20 +2,15 @@
 spatGenePlot3D
 ==============
 
-:Date: 2022-09-20
-
-``spatGenePlot3D``
-==================
-
-spatGenePlot3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Visualize cells and gene expression according to spatial coordinates
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -56,7 +51,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -140,17 +135,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Description of parameters.
 
 Value
------
+=====
 
 ggplot
 
 Seealso
--------
+=======
 
 Other spatial gene expression visualizations:
 ```spatGenePlot2D`` <#spatgeneplot2d>`__ ,

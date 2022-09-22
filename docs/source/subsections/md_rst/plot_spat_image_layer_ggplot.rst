@@ -2,20 +2,15 @@
 plot_spat_image_layer_ggplot
 ============================
 
-:Date: 2022-09-20
-
-``plot_spat_image_layer_ggplot``
-================================
-
-plot_spat_image_layer_ggplot
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 create background image in ggplot
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -31,7 +26,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================= ================================================
 Argument          Description
@@ -46,6 +41,6 @@ Argument          Description
 ================= ================================================
 
 Value
------
+=====
 
 ggplot

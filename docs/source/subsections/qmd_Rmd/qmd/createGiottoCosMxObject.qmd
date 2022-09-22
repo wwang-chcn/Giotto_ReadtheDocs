@@ -1,12 +1,8 @@
 --- 
 title: createGiottoCosMxObject 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `createGiottoCosMxObject`
-
-Create Nanostring CosMx Giotto Object
-
 
 ## Description
 

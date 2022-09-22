@@ -2,20 +2,15 @@
 calc_cov_group_HVF
 ==================
 
-:Date: 2022-09-20
-
-``calc_cov_group_HVF``
-======================
-
-calc_cov_group_HVF
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calc_cov_group_HVF
 
 Usage
------
+=====
 
 .. code:: r
 

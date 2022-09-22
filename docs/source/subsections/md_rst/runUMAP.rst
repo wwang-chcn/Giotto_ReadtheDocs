@@ -2,20 +2,15 @@
 runUMAP
 =======
 
-:Date: 2022-09-20
-
-``runUMAP``
-===========
-
-Run UMAP dimension reduction
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 run UMAP
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -46,7 +41,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -103,7 +98,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 See ```umap`` <#umap>`__ for more information about these and other
 parameters.
@@ -122,6 +117,6 @@ parameters.
    analysis
 
 Value
------
+=====
 
 giotto object with updated UMAP dimension reduction

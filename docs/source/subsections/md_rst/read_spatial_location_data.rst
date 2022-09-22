@@ -2,27 +2,22 @@
 read_spatial_location_data
 ==========================
 
-:Date: 2022-09-20
-
-``read_spatial_location_data``
-==============================
-
-Read spatial location data
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 read spatial locations
 
 Usage
------
+=====
 
 .. code:: r
 
    read_spatial_location_data(gobject, spat_loc_list, cores = 1, verbose = TRUE)
 
 Arguments
----------
+=========
 
 ================= =========================
 Argument          Description
@@ -34,6 +29,6 @@ Argument          Description
 ================= =========================
 
 Value
------
+=====
 
 updated giotto object

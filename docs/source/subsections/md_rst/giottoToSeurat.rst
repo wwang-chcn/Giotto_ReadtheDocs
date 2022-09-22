@@ -2,27 +2,22 @@
 giottoToSeurat
 ==============
 
-:Date: 2022-09-20
-
-``giottoToSeurat``
-==================
-
-Convert Giotto to Seurat
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Converts Giotto object into a Seurat object
 
 Usage
------
+=====
 
 .. code:: r
 
    giottoToSeurat(obj_use = NULL, ...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -35,6 +30,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 Seurat object

@@ -2,27 +2,22 @@
 showGiottoSpatEnrichments
 =========================
 
-:Date: 2022-09-20
-
-``showGiottoSpatEnrichments``
-=============================
-
-showGiottoSpatEnrichments
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 shows the available spatial enrichment results
 
 Usage
------
+=====
 
 .. code:: r
 
    showGiottoSpatEnrichments(gobject, nrows = 4)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -34,12 +29,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 prints the name and small subset of available data.table
 
 Seealso
--------
+=======
 
 Other functions to show data in giotto object:
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,

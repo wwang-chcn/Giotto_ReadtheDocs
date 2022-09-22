@@ -1,12 +1,8 @@
 --- 
 title: decide_cluster_order 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `decide_cluster_order`
-
-decide_cluster_order
-
 
 ## Description
 

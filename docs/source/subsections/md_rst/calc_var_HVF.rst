@@ -2,20 +2,15 @@
 calc_var_HVF
 ============
 
-:Date: 2022-09-20
-
-``calc_var_HVF``
-================
-
-calc_var_HVF
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calc_var_HVF
 
 Usage
------
+=====
 
 .. code:: r
 

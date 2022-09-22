@@ -2,31 +2,26 @@
 combineCPG
 ==========
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``combineCPG``
-==============
-
-combineCPG
-
 Description
------------
+===========
 
 Combine ICG scores in a pairwise manner.
 
 Usage
------
+=====
 
 .. code:: r
 
    combineCPG(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -63,6 +58,6 @@ Arguments
        list("run calculations in parallel with mclapply")), "\n", "    ", list(list(list("verbose")), list("verbose")), "\n", "  ")
 
 Seealso
--------
+=======
 
 ```combineICG`` <#combineicg>`__

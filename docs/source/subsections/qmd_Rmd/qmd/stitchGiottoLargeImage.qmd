@@ -1,12 +1,8 @@
 --- 
 title: stitchGiottoLargeImage 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `stitchGiottoLargeImage`
-
-Stitch multiple giottoLargeImage objects into a single giottoLargeImage object
-
 
 ## Description
 

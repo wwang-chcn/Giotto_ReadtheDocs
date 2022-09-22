@@ -2,20 +2,15 @@
 get_giottoImage
 ===============
 
-:Date: 2022-09-20
-
-``get_giottoImage``
-===================
-
-Get giotto image object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Get giotto image object from gobject
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -26,7 +21,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -42,12 +37,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 a giotto image object
 
 Seealso
--------
+=======
 
 Other image data accessor functions:
 ```set_giottoImage`` <#setgiottoimage>`__

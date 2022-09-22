@@ -2,21 +2,16 @@
 list_spatial_grids_names
 ========================
 
-:Date: 2022-09-20
-
-``list_spatial_grids_names``
-============================
-
-list_spatial_grids_names
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the available spatial grids name for a given spatial unit that
 are attached to the Giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -46,6 +41,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 vector with names of available spatial grids names

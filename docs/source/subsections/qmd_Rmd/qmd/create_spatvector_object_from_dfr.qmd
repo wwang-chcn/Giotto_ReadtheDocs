@@ -1,12 +1,8 @@
 --- 
 title: create_spatvector_object_from_dfr 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `create_spatvector_object_from_dfr`
-
-Create terra spatvector object from a data.frame
-
 
 ## Description
 

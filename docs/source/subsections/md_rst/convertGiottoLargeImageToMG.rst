@@ -2,21 +2,16 @@
 convertGiottoLargeImageToMG
 ===========================
 
-:Date: 2022-09-20
-
-``convertGiottoLargeImageToMG``
-===============================
-
-convertGiottoLargeImageToMG
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 convert a giottoLargeImage by downsampling into a normal magick based
 giottoImage
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -39,7 +34,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -85,7 +80,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 a giotto object if ``return_gobject = TRUE`` or an updated giotto image
 object if ``return_gobject = FALSE``

@@ -1,12 +1,8 @@
 --- 
 title: return_giotto_environment_path 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `return_giotto_environment_path`
-
-return_giotto_environment_path
-
 
 ## Description
 

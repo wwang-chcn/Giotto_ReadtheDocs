@@ -1,12 +1,8 @@
 --- 
 title: plotInteractivePolygons 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `plotInteractivePolygons`
-
-Select image regions by plotting interactive polygons
-
 
 ## Description
 

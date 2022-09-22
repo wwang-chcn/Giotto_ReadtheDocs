@@ -1,12 +1,8 @@
 --- 
 title: get_expression_values 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `get_expression_values`
-
-Get expression values
-
 
 ## Description
 

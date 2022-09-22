@@ -1,12 +1,8 @@
 --- 
 title: rank_binarize_wrapper 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `rank_binarize_wrapper`
-
-rank_binarize_wrapper
-
 
 ## Description
 

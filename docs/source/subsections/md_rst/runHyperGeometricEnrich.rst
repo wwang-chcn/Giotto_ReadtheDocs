@@ -2,21 +2,16 @@
 runHyperGeometricEnrich
 =======================
 
-:Date: 2022-09-20
-
-``runHyperGeometricEnrich``
-===========================
-
-runHyperGeometricEnrich
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to calculate gene signature enrichment scores per spatial
 position using a hypergeometric test.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -74,12 +69,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 The enrichment score is calculated based on the p-value from the
 hypergeometric test, -log10(p-value).
 
 Value
------
+=====
 
 data.table with enrichment results

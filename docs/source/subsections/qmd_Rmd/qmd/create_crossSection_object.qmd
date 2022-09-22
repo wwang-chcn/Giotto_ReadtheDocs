@@ -1,12 +1,8 @@
 --- 
 title: create_crossSection_object 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `create_crossSection_object`
-
-create_crossSection_object
-
 
 ## Description
 

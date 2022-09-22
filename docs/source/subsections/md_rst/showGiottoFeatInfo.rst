@@ -2,27 +2,22 @@
 showGiottoFeatInfo
 ==================
 
-:Date: 2022-09-20
-
-``showGiottoFeatInfo``
-======================
-
-showGiottoFeatInfo
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 show the available giotto spatial feature information
 
 Usage
------
+=====
 
 .. code:: r
 
    showGiottoFeatInfo(gobject)
 
 Arguments
----------
+=========
 
 =========== =============
 Argument    Description
@@ -31,7 +26,7 @@ Argument    Description
 =========== =============
 
 Seealso
--------
+=======
 
 Other functions to show data in giotto object:
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,

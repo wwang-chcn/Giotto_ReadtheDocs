@@ -2,20 +2,15 @@
 plotInteractionChangedGenes
 ===========================
 
-:Date: 2022-09-20
-
-``plotInteractionChangedGenes``
-===============================
-
-Plot interaction changed genes
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Create barplot to visualize interaction changed genes
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -34,7 +29,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -69,6 +64,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 plot

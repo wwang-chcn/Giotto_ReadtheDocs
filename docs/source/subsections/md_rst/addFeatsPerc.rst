@@ -2,21 +2,16 @@
 addFeatsPerc
 ============
 
-:Date: 2022-09-20
-
-``addFeatsPerc``
-================
-
-addFeatsPerc
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Calculates the total percentage of (normalized) counts for a subset of
 selected genes
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -31,7 +26,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -54,7 +49,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 giotto object if ``return_gobject = TRUE`` , else a vector with %
 results

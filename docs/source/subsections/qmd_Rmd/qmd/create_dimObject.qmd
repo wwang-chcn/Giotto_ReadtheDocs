@@ -1,12 +1,8 @@
 --- 
 title: create_dimObject 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `create_dimObject`
-
-create_dimObject
-
 
 ## Description
 

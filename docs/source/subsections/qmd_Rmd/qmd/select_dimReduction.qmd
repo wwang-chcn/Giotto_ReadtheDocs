@@ -1,12 +1,8 @@
 --- 
 title: select_dimReduction 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `select_dimReduction`
-
-select_dimReduction
-
 
 ## Description
 

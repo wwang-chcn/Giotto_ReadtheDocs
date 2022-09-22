@@ -1,12 +1,8 @@
 --- 
 title: extended_gini_fun 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `extended_gini_fun`
-
-extended_gini_fun
-
 
 ## Description
 

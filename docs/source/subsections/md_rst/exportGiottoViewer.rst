@@ -2,20 +2,15 @@
 exportGiottoViewer
 ==================
 
-:Date: 2022-09-20
-
-``exportGiottoViewer``
-======================
-
-exportGiottoViewer
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 compute highly variable genes
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -39,7 +34,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -86,7 +81,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 Giotto Viewer expects the results from Giotto Analyzer in a specific
 format, which is provided by this function. To include enrichment
@@ -95,12 +90,12 @@ spatial enrichment name (default PAGE or rank) and add the gene
 signature names (.e.g cell types) to the numeric annotations parameter.
 
 Value
------
+=====
 
 writes the necessary output to use in Giotto Viewer
 
 Examples
---------
+========
 
 .. code:: r
 

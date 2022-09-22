@@ -2,28 +2,23 @@
 showGiottoImageNames
 ====================
 
-:Date: 2022-09-20
-
-``showGiottoImageNames``
-========================
-
-showGiottoImageNames
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Prints the available giotto images that are attached to the Giotto
 object
 
 Usage
------
+=====
 
 .. code:: r
 
    showGiottoImageNames(gobject)
 
 Arguments
----------
+=========
 
 =========== ===============
 Argument    Description
@@ -32,12 +27,12 @@ Argument    Description
 =========== ===============
 
 Value
------
+=====
 
 prints names of available giotto image objects
 
 Seealso
--------
+=======
 
 Other functions to show data in giotto object:
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,

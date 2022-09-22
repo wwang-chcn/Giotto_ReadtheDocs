@@ -2,20 +2,15 @@
 rank_binarize_wrapper
 =====================
 
-:Date: 2022-09-20
-
-``rank_binarize_wrapper``
-=========================
-
-rank_binarize_wrapper
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 wrapper for rank binarization function
 
 Usage
------
+=====
 
 .. code:: r
 

@@ -2,21 +2,16 @@
 findScranMarkers_one_vs_all
 ===========================
 
-:Date: 2022-09-20
-
-``findScranMarkers_one_vs_all``
-===============================
-
-findScranMarkers_one_vs_all
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Identify marker feats for all clusters in a one vs all manner based on
 scran’s implementation of findMarkers.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -69,11 +64,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with marker feats
 
 Seealso
--------
+=======
 
 ```findScranMarkers`` <#findscranmarkers>`__

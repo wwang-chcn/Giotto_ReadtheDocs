@@ -2,20 +2,15 @@
 make_simulated_network
 ======================
 
-:Date: 2022-09-20
-
-``make_simulated_network``
-==========================
-
-make_simulated_network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Simulate random network.
 
 Usage
------
+=====
 
 .. code:: r
 

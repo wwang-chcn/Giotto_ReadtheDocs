@@ -2,27 +2,22 @@
 annotate_spatlocs_with_spatgrid_3D
 ==================================
 
-:Date: 2022-09-20
-
-``annotate_spatlocs_with_spatgrid_3D``
-======================================
-
-annotate_spatlocs_with_spatgrid_3D
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 annotate spatial locations with 3D spatial grid information
 
 Usage
------
+=====
 
 .. code:: r
 
    annotate_spatlocs_with_spatgrid_3D(spatloc, spatgrid)
 
 Arguments
----------
+=========
 
 ============ =============================================
 Argument     Description
@@ -32,6 +27,6 @@ Argument     Description
 ============ =============================================
 
 Value
------
+=====
 
 annotated spatial location data.table

@@ -2,20 +2,15 @@
 get_spatial_enrichment
 ======================
 
-:Date: 2022-09-20
-
-``get_spatial_enrichment``
-==========================
-
-Get spatial enrichment
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to get a spatial enrichment data.table
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -27,7 +22,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -44,12 +39,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with fractions
 
 Seealso
--------
+=======
 
 Other spatial enrichment data accessor functions:
 ```set_spatial_enrichment`` <#setspatialenrichment>`__

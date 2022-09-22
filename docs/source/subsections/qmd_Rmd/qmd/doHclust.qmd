@@ -1,12 +1,8 @@
 --- 
 title: doHclust 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `doHclust`
-
-doHclust
-
 
 ## Description
 

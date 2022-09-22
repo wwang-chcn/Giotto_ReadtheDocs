@@ -1,12 +1,8 @@
 --- 
 title: pca_giotto 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `pca_giotto`
-
-pca_giotto
-
 
 ## Description
 

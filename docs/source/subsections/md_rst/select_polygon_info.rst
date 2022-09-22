@@ -2,31 +2,26 @@
 select_polygon_info
 ===================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``select_polygon_info``
-=======================
-
-Select polygon info
-
 Description
------------
+===========
 
 Select polygon info
 
 Usage
------
+=====
 
 .. code:: r
 
    select_polygon_info(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -48,6 +43,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
--------
+=======
 
 ```get_polygon_info`` <#getpolygoninfo>`__

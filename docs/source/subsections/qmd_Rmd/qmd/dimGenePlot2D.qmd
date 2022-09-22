@@ -1,12 +1,8 @@
 --- 
 title: dimGenePlot2D 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `dimGenePlot2D`
-
-dimGenePlot2D
-
 
 ## Description
 

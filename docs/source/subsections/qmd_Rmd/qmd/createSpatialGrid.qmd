@@ -1,12 +1,8 @@
 --- 
 title: createSpatialGrid 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `createSpatialGrid`
-
-createSpatialGrid
-
 
 ## Description
 

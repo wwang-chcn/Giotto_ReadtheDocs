@@ -2,21 +2,16 @@
 addSpatialCentroidLocations
 ===========================
 
-:Date: 2022-09-20
-
-``addSpatialCentroidLocations``
-===============================
-
-addSpatialCentroidLocations
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Calculates the centroid locations for the polygons within one or more
 selected layers
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,7 +45,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 If ``return_gobject = TRUE`` the giotto object containing the calculated
 polygon centroids will be returned. If ``return_gobject = FALSE`` only

@@ -2,21 +2,16 @@
 createGiottoLargeImage
 ======================
 
-:Date: 2022-09-20
-
-``createGiottoLargeImage``
-==========================
-
-createGiottoLargeImage
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Creates a large giotto image that can be added to a Giotto subcellular
 object. Generates deep copy of SpatRaster
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -36,7 +31,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -69,6 +64,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 a giottoLargeImage object

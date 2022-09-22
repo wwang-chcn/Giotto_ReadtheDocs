@@ -2,21 +2,16 @@
 calculateMetaTableCells
 =======================
 
-:Date: 2022-09-20
-
-``calculateMetaTableCells``
-===========================
-
-calculateMetaTableCells
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 calculates the average metadata values for one or more (combined)
 annotation columns.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -30,7 +25,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -52,6 +47,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 data.table with average metadata values per (combined) annotation

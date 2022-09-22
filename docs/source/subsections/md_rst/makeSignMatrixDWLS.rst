@@ -2,15 +2,10 @@
 makeSignMatrixDWLS
 ==================
 
-:Date: 2022-09-20
-
-``makeSignMatrixDWLS``
-======================
-
-makeSignMatrixDWLS
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to convert a matrix within a Giotto object into a format that
 can be used with ```runDWLSDeconv`` <#rundwlsdeconv>`__ for
@@ -18,7 +13,7 @@ deconvolution. A vector of cell types for parameter ``cell_type_vector``
 can be created from the cell metadata ( ```pDataDT`` <#pdatadt>`__ ).
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -62,11 +57,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 matrix
 
 Seealso
--------
+=======
 
 ```runDWLSDeconv`` <#rundwlsdeconv>`__

@@ -2,31 +2,26 @@
 filterCPG
 =========
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``filterCPG``
-=============
-
-filterCPG
-
 Description
------------
+===========
 
 Filter Interaction Changed Gene scores.
 
 Usage
------
+=====
 
 .. code:: r
 
    filterCPG(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -61,6 +56,6 @@ Arguments
    "\n", "  ")
 
 Seealso
--------
+=======
 
 ```filterICF`` <#filtericf>`__

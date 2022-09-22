@@ -2,31 +2,26 @@
 filterInteractionChangedGenes
 =============================
 
-:Date: 2022-09-20
+:Date: 2022-09-22
 
 .. role:: raw-latex(raw)
    :format: latex
 ..
 
-``filterInteractionChangedGenes``
-=================================
-
-filterInteractionChangedGenes
-
 Description
------------
+===========
 
 Filter Interaction Changed Gene scores.
 
 Usage
------
+=====
 
 .. code:: r
 
    filterInteractionChangedGenes(...)
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -62,6 +57,6 @@ Arguments
    "\n", "  ")
 
 Seealso
--------
+=======
 
 ```filterInteractionChangedFeats`` <#filterinteractionchangedfeats>`__

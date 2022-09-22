@@ -2,28 +2,23 @@
 list_images_names
 =================
 
-:Date: 2022-09-20
-
-``list_images_names``
-=====================
-
-list_images_names
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 return the available image names for a given image type that are
 attached to the Giotto object
 
 Usage
------
+=====
 
 .. code:: r
 
    list_images_names(gobject, img_type)
 
 Arguments
----------
+=========
 
 ============ =======================
 Argument     Description
@@ -33,6 +28,6 @@ Argument     Description
 ============ =======================
 
 Value
------
+=====
 
 vector with names of available image names

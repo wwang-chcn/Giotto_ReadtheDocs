@@ -1,12 +1,8 @@
 --- 
 title: distGiottoImage 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `distGiottoImage`
-
-Plot distribution of image intensity values
-
 
 ## Description
 

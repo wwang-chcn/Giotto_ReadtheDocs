@@ -1,12 +1,8 @@
 --- 
 title: spatialGridObj-class 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `spatialGridObj-class`
-
-S4 spatialGridObj Class
-
 
 ## Description
 

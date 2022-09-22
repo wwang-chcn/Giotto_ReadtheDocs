@@ -2,21 +2,16 @@
 runPAGEEnrich
 =============
 
-:Date: 2022-09-20
-
-``runPAGEEnrich``
-=================
-
-runPAGEEnrich
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Function to calculate gene signature enrichment scores per spatial
 position using PAGE.
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -40,7 +35,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -89,7 +84,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
--------
+=======
 
 sign_matrix: a binary matrix with genes as row names and cell-types as
 column names. Alternatively a list of signature genes can be provided to
@@ -103,11 +98,11 @@ standard deviation. Sm is the mean fold change value of a specific
 marker gene set and m is the size of a given marker gene set.
 
 Value
------
+=====
 
 data.table with enrichment results
 
 Seealso
--------
+=======
 
 ```makeSignMatrixPAGE`` <#makesignmatrixpage>`__

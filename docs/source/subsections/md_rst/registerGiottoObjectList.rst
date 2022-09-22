@@ -2,21 +2,16 @@
 registerGiottoObjectList
 ========================
 
-:Date: 2022-09-20
-
-``registerGiottoObjectList``
-============================
-
-registerGiottoObjectList
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Wrapper function for registerGiottoObjectListFiji and
 registerGiottoObjectListRvision
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -38,7 +33,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -89,7 +84,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 List of registered giotto objects where the registered images and
 spatial locations

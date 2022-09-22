@@ -2,20 +2,15 @@
 createSpatialFeaturesKNNnetwork
 ===============================
 
-:Date: 2022-09-20
-
-``createSpatialFeaturesKNNnetwork``
-===================================
-
-Create kNN spatial feature network
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Calculates the centroid locations for the giotto polygons
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -35,7 +30,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -70,7 +65,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
------
+=====
 
 If ``return_gobject = TRUE`` a giotto object containing the network will
 be returned. If ``return_gobject = FALSE`` the network will be returned

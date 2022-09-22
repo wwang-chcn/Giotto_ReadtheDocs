@@ -2,20 +2,15 @@
 plotly_grid
 ===========
 
-:Date: 2022-09-20
-
-``plotly_grid``
-===============
-
-plotly_grid
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 provide grid segment to draw in plot_ly()
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -28,7 +23,7 @@ Usage
    )
 
 Arguments
----------
+=========
 
 ================ =============================
 Argument         Description
@@ -41,6 +36,6 @@ Argument         Description
 ================ =============================
 
 Value
------
+=====
 
 edges in spatial grid as data.table()

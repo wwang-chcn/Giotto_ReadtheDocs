@@ -1,12 +1,8 @@
 --- 
 title: adjustGiottoMatrix 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `adjustGiottoMatrix`
-
-Adjust expression values
-
 
 ## Description
 

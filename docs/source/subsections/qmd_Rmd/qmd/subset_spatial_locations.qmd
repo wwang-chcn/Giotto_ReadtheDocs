@@ -1,12 +1,8 @@
 --- 
 title: subset_spatial_locations 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `subset_spatial_locations`
-
-Subset spatial locations
-
 
 ## Description
 

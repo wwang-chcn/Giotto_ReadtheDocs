@@ -2,20 +2,15 @@
 subset_giotto_points_object
 ===========================
 
-:Date: 2022-09-20
-
-``subset_giotto_points_object``
-===============================
-
-Subset giotto points object
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subset a single giotto points object
 
 Usage
------
+=====
 
 .. code:: r
 
@@ -29,6 +24,6 @@ Usage
    )
 
 Details
--------
+=======
 
 Subset on feature ids and on x,y coordinates

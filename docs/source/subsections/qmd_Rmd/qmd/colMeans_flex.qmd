@@ -1,12 +1,8 @@
 --- 
 title: colMeans_flex 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `colMeans_flex`
-
-colMeans_flex
-
 
 ## Description
 

@@ -1,12 +1,8 @@
 --- 
 title: showSpatialCorFeats 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `showSpatialCorFeats`
-
-showSpatialCorFeats
-
 
 ## Description
 

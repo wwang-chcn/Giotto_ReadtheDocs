@@ -1,12 +1,8 @@
 --- 
 title: cropGiottoLargeImage 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `cropGiottoLargeImage`
-
-Crop a giotto largeImage object
-
 
 ## Description
 

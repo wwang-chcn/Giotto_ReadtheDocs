@@ -1,12 +1,8 @@
 --- 
 title: select_polygon_info 
 format: rst 
-date: ymd 
+date: 2022-09-22 
 --- 
-# `select_polygon_info`
-
-Select polygon info
-
 
 ## Description
 

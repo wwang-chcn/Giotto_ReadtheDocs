@@ -2,20 +2,15 @@
 subset_spatial_enrichment
 =========================
 
-:Date: 2022-09-20
-
-``subset_spatial_enrichment``
-=============================
-
-Subset spatial enrichment
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Subset spatial enrichment results from giotto object
 
 Usage
------
+=====
 
 .. code:: r
 

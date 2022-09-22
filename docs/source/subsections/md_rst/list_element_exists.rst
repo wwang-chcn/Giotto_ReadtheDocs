@@ -2,27 +2,22 @@
 list_element_exists
 ===================
 
-:Date: 2022-09-20
-
-``list_element_exists``
-=======================
-
-Test if list element exists
+:Date: 2022-09-22
 
 Description
------------
+===========
 
 Test if nth element of list exists
 
 Usage
------
+=====
 
 .. code:: r
 
    list_element_exists(x, index)
 
 Arguments
----------
+=========
 
 ========= =============
 Argument  Description
@@ -32,6 +27,6 @@ Argument  Description
 ========= =============
 
 Value
------
+=====
 
 boolean
