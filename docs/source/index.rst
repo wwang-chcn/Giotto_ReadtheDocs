@@ -13,7 +13,7 @@ Spatial transcriptomic and proteomic technologies have provided new opportunitie
    Installation <gettingstarted.rst> 
    Documentation <documentation.rst>
    Development <development.rst> 
-   Giotto Viewer <http://spatial.rc.fas.harvard.edu/giotto-viewer/>
+   Giotto Viewer <https://qzhudfci.bitbucket.io/spatialgiotto/giotto.viewer.html>
 
 .. toctree::
    :maxdepth: 2
