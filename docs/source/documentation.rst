@@ -972,9 +972,9 @@ General Plotting
 
 	* - Function
 	  - Description
-	* - :doc:`getDistinctColors </subsections/md_rst/getDistinctColors.rst>`
+	* - :doc:`getDistinctColors </subsections/md_rst/getDistinctColors>`
 	  - getDistinctColors
-	* - :doc:`showSaveParameters </subsections/md_rst/showSaveParameters.rst>`
+	* - :doc:`showSaveParameters </subsections/md_rst/showSaveParameters>`
 	  - showSaveParameters
 
 
@@ -1292,7 +1292,7 @@ Cell Neighborhood: Ligand-Receptor Cell Communication
 
 	* - Function
 	  - Description 
-	* - :doc:`combCCcom </subsections/md_rst/combCCcom.rst>`
+	* - :doc:`combCCcom </subsections/md_rst/combCCcom>`
 	  - combCCcom 
 	* - :doc:`exprCellCellcom </subsections/md_rst/exprCellCellcom>`
 	  - exprCellCellcom
@@ -1304,9 +1304,9 @@ Cell Neighborhood: Ligand-Receptor Cell Communication
 	  - plotRankSpatvsExpr
 	* - :doc:`plotRecovery </subsections/md_rst/plotRecovery>`
 	  - plotRecovery
-	* - :doc:`plotCCcomHeatmap </subsections/md_rst/plotCCcomHeatmap.rst>`
+	* - :doc:`plotCCcomHeatmap </subsections/md_rst/plotCCcomHeatmap>`
 	  - plotCCcomHeatmap 
-	* - :doc:`plotCombineCellCellCommunication </subsections/md_rst/plotCombineCellCellCommunication.rst>`
+	* - :doc:`plotCombineCellCellCommunication </subsections/md_rst/plotCombineCellCellCommunication>`
 	  - plotCombineCellCellCommunication 
 
 
@@ -1348,47 +1348,47 @@ Subcellular
 
 	* - Function
 	  - Description
-	* - :doc:`addCellsFromPolygon </subsections/md_rst/addCellsFromPolygon.rst>`
+	* - :doc:`addCellsFromPolygon </subsections/md_rst/addCellsFromPolygon>`
 	  - addCellsFromPolygon
-	* - :doc:`addGiottoPoints </subsections/md_rst/addGiottoPoints.rst>`
+	* - :doc:`addGiottoPoints </subsections/md_rst/addGiottoPoints>`
 	  - addGiottoPoints
-	* - :doc:`addGiottoPoints3D </subsections/md_rst/addGiottoPoints3D.rst>`
+	* - :doc:`addGiottoPoints3D </subsections/md_rst/addGiottoPoints3D>`
 	  - addGiottoPoints3D
-	* - :doc:`addGiottoPolygons </subsections/md_rst/addGiottoPolygons.rst>`
+	* - :doc:`addGiottoPolygons </subsections/md_rst/addGiottoPolygons>`
 	  - addGiottoPolygons
-	* - :doc:`addSpatialCentroidLocations </subsections/md_rst/addSpatialCentroidLocations.rst>`
+	* - :doc:`addSpatialCentroidLocations </subsections/md_rst/addSpatialCentroidLocations>`
 	  - addSpatialCentroidLocations
-	* - :doc:`addSpatialCentroidLocationsLayer </subsections/md_rst/addSpatialCentroidLocationsLayer.rst>`
+	* - :doc:`addSpatialCentroidLocationsLayer </subsections/md_rst/addSpatialCentroidLocationsLayer>`
 	  - addSpatialCentroidLocationsLayer
-	* - :doc:`calculateOverlapParallel </subsections/md_rst/calculateOverlapParallel.rst>`
+	* - :doc:`calculateOverlapParallel </subsections/md_rst/calculateOverlapParallel>`
 	  - calculateOverlapParallel
-	* - :doc:`calculateOverlapRaster </subsections/md_rst/calculateOverlapRaster.rst>`
+	* - :doc:`calculateOverlapRaster </subsections/md_rst/calculateOverlapRaster>`
 	  - calculateOverlapRaster
-	* - :doc:`calculateOverlapSerial </subsections/md_rst/calculateOverlapSerial.rst>`
+	* - :doc:`calculateOverlapSerial </subsections/md_rst/calculateOverlapSerial>`
 	  - calculateOverlapSerial
-	* - :doc:`combineCellData </subsections/md_rst/combineCellData.rst>`
+	* - :doc:`combineCellData </subsections/md_rst/combineCellData>`
 	  - combineCellData
-	* - :doc:`combineFeatureData </subsections/md_rst/combineFeatureData.rst>`
+	* - :doc:`combineFeatureData </subsections/md_rst/combineFeatureData>`
 	  - combineFeatureData
-	* - :doc:`combineFeatureOverlapData </subsections/md_rst/combineFeatureOverlapData.rst>`
+	* - :doc:`combineFeatureOverlapData </subsections/md_rst/combineFeatureOverlapData>`
 	  - combineFeatureOverlapData
-	* - :doc:`createGiottoPoints </subsections/md_rst/createGiottoPoints.rst>`
+	* - :doc:`createGiottoPoints </subsections/md_rst/createGiottoPoints>`
 	  - createGiottoPoints
-	* - :doc:`createGiottoPolygonsFromDfr </subsections/md_rst/createGiottoPolygonsFromDfr.rst>`
+	* - :doc:`createGiottoPolygonsFromDfr </subsections/md_rst/createGiottoPolygonsFromDfr>`
 	  - createGiottoPolygonsFromDfr
-	* - :doc:`createGiottoPolygonsFromMask </subsections/md_rst/createGiottoPolygonsFromMask.rst>`
+	* - :doc:`createGiottoPolygonsFromMask </subsections/md_rst/createGiottoPolygonsFromMask>`
 	  - createGiottoPolygonsFromMask
-	* - :doc:`overlapToMatrix </subsections/md_rst/overlapToMatrix.rst>`
+	* - :doc:`overlapToMatrix </subsections/md_rst/overlapToMatrix>`
 	  - overlapToMatrix
-	* - :doc:`overlapToMatrixMultiPoly </subsections/md_rst/overlapToMatrixMultiPoly.rst>`
+	* - :doc:`overlapToMatrixMultiPoly </subsections/md_rst/overlapToMatrixMultiPoly>`
 	  - overlapToMatrixMultiPoly
-	* - :doc:`smoothGiottoPolygons </subsections/md_rst/smoothGiottoPolygons.rst>`
+	* - :doc:`smoothGiottoPolygons </subsections/md_rst/smoothGiottoPolygons>`
 	  - smoothGiottoPolygons
-	* - :doc:`spatInSituPlotDensity </subsections/md_rst/spatInSituPlotDensity.rst>`
+	* - :doc:`spatInSituPlotDensity </subsections/md_rst/spatInSituPlotDensity>`
 	  - spatInSituPlotDensity
-	* - :doc:`spatInSituPlotHex </subsections/md_rst/spatInSituPlotHex.rst>`
+	* - :doc:`spatInSituPlotHex </subsections/md_rst/spatInSituPlotHex>`
 	  - spatInSituPlotHex
-	* - :doc:`spatInSituPlotPoints </subsections/md_rst/spatInSituPlotPoints.rst>`
+	* - :doc:`spatInSituPlotPoints </subsections/md_rst/spatInSituPlotPoints>`
 	  - spatInSituPlotPoints
 
 
