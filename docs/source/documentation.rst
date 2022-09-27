@@ -78,6 +78,8 @@ Import Raw Data
 	get10Xmatrix_h5 </subsections/md_rst/get10Xmatrix_h5.rst>
 	stitchFieldCoordinates </subsections/md_rst/stitchFieldCoordinates.rst>
 	stitchTileCoordinates </subsections/md_rst/stitchTileCoordinates.rst>
+	readPolygonFilesVizgen </subsections/md_rst/readPolygonFilesVizgen.rst>
+	readPolygonFilesVizgenHDF5 </subsections/md_rst/readPolygonFilesVizgenHDF5.rst>
 
 .. list-table::
 	:widths: 100 100 
@@ -97,6 +99,10 @@ Import Raw Data
 	  - stitchFieldCoordinates 
 	* - :doc:`stitchTileCoordinates </subsections/md_rst/stitchTileCoordinates>`
 	  - stitchTileCoordinates 
+	* - :doc:`readPolygonFilesVizgen </subsections/md_rst/readPolygonFilesVizgen>`
+	  - readPolygonFilesVizgen
+	* - :doc:`readPolygonFilesVizgenHDF5 </subsections/md_rst/readPolygonFilesVizgenHDF5>`
+	  - readPolygonFilesVizgenHDF5
 
   
 Images
@@ -114,8 +120,23 @@ Images
 	addGiottoImageToSpatPlot </subsections/md_rst/addGiottoImageToSpatPlot.rst>
 	showGiottoImageNames </subsections/md_rst/showGiottoImageNames.rst>
 	updateGiottoImage </subsections/md_rst/updateGiottoImage.rst>
-	getGiottoImage </subsections/md_rst/get_giottoImage.rst>
+	get_giottoImage </subsections/md_rst/get_giottoImage.rst>
 	plotGiottoImage </subsections/md_rst/plotGiottoImage.rst>
+	set_giottoImage </subsections/md_rst/set_giottoImage.rst>
+	addGiottoLargeImage </subsections/md_rst/addGiottoLargeImage.rst>
+	createGiottoLargeImage </subsections/md_rst/createGiottoLargeImage.rst>
+	createGiottoLargeImageList </subsections/md_rst/createGiottoLargeImageList.rst>
+	cropGiottoLargeImage </subsections/md_rst/cropGiottoLargeImage.rst>
+	updateGiottoLargeImage </subsections/md_rst/updateGiottoLargeImage.rst>
+	writeGiottoLargeImage </subsections/md_rst/writeGiottoLargeImage.rst>
+	stitchGiottoLargeImage </subsections/md_rst/stitchGiottoLargeImage.rst>
+	convertGiottoLargeImageToMG </subsections/md_rst/convertGiottoLargeImageToMG.rst>
+	addGiottoImageMG </subsections/md_rst/addGiottoImageMG.rst>
+	updateGiottoImageMG </subsections/md_rst/updateGiottoImageMG.rst>
+	distGiottoImage </subsections/md_rst/distGiottoImage.rst>
+	reconnectGiottoImage </subsections/md_rst/reconnectGiottoImage.rst>
+	registerImagesFIJI </subsections/md_rst/registerImagesFIJI.rst>
+	registerGiottoObjectList </subsections/md_rst/registerGiottoObjectList.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -137,10 +158,40 @@ Images
 	  - showGiottoImageNames
 	* - :doc:`updateGiottoImage </subsections/md_rst/updateGiottoImage>`
 	  - updateGiottoImage
-	* - :doc:`getGiottoImage </subsections/md_rst/get_giottoImage>`
-	  - getGiottoImage
+	* - :doc:`get_GiottoImage </subsections/md_rst/get_giottoImage>`
+	  - get_GiottoImage
 	* - :doc:`plotGiottoImage </subsections/md_rst/plotGiottoImage>`
 	  - plotGiottoImage
+	* - :doc:`set_giottoImage </subsections/md_rst/set_giottoImage>`
+	  - set_giottoImage
+	* - :doc:`addGiottoLargeImage </subsections/md_rst/addGiottoLargeImage>`
+	  - addGiottoLargeImage
+	* - :doc:`createGiottoLargeImage </subsections/md_rst/createGiottoLargeImage>`
+	  - createGiottoLargeImage
+	* - :doc:`createGiottoLargeImageList </subsections/md_rst/createGiottoLargeImageList>`
+	  - createGiottoLargeImageList
+	* - :doc:`cropGiottoLargeImage </subsections/md_rst/cropGiottoLargeImage>`
+	  - cropGiottoLargeImage
+	* - :doc:`updateGiottoLargeImage </subsections/md_rst/updateGiottoLargeImage>`
+	  - updateGiottoLargeImage
+	* - :doc:`writeGiottoLargeImage </subsections/md_rst/writeGiottoLargeImage>`
+	  - writeGiottoLargeImage
+	* - :doc:`stitchGiottoLargeImage </subsections/md_rst/stitchGiottoLargeImage>`
+	  - stitchGiottoLargeImage
+	* - :doc:`convertGiottoLargeImageToMG </subsections/md_rst/convertGiottoLargeImageToMG>`
+	  - convertGiottoLargeImageToMG
+	* - :doc:`addGiottoImageMG </subsections/md_rst/addGiottoImageMG>`
+	  - addGiottoImageMG
+	* - :doc:`updateGiottoImageMG </subsections/md_rst/updateGiottoImageMG>`
+	  - updateGiottoImageMG
+	* - :doc:`distGiottoImage </subsections/md_rst/distGiottoImage>`
+	  - distGiottoImage
+	* - :doc:`reconnectGiottoImage </subsections/md_rst/reconnectGiottoImage>`
+	  - reconnectGiottoImage
+	* - :doc:`registerImagesFIJI </subsections/md_rst/registerImagesFIJI>`
+	  - registerImagesFIJI
+	* - :doc:`registerGiottoObjectList </subsections/md_rst/registerGiottoObjectList>`
+	  - registerGiottoObjectList
 
 
 
@@ -153,9 +204,10 @@ Giotto Object
 	:maxdepth: 2
 	:hidden:
 
-	getSpatcreateGiottoObjectialDataset </subsections/md_rst/createGiottoObject.rst>
+	createGiottoObject </subsections/md_rst/createGiottoObject.rst>
 	createGiottoVisiumObject </subsections/md_rst/createGiottoVisiumObject.rst>
 	createGiottoObjectSubcellular </subsections/md_rst/createGiottoObjectSubcellular.rst>
+	createGiottoCosMxObject </subsections/md_rst/createGiottoCosMxObject.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -169,6 +221,8 @@ Giotto Object
 	  - createGiottoVisiumObject
 	* - :doc:`createGiottoObjectSubcellular </subsections/md_rst/createGiottoObjectSubcellular>`
 	  - createGiottoObjectSubcellular
+	* - :doc:`createGiottoCosMxObject </subsections/md_rst/createGiottoCosMxObject>`
+	  - createGiottoCosMxObject
 
 
 Giotto Helper Functions 
@@ -186,8 +240,10 @@ Giotto Helper Functions
 	calculateMetaTable </subsections/md_rst/calculateMetaTable.rst>
 	calculateMetaTableCells </subsections/md_rst/calculateMetaTableCells.rst>
 	combineMetadata </subsections/md_rst/combineMetadata.rst>
-	createMetagenes </subsections/md_rst/createMetagenes.rst>
+	createMetafeats </subsections/md_rst/createMetafeats.rst>
 	findNetworkNeighbors </subsections/md_rst/findNetworkNeighbors.rst>
+	objHistory </subsections/md_rst/objHistory.rst>
+	fiji </subsections/md_rst/fiji.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -207,10 +263,14 @@ Giotto Helper Functions
 	  - calculateMetaTableCells
 	* - :doc:`combineMetadata </subsections/md_rst/combineMetadata>`
 	  - combineMetadata
-	* - :doc:`createMetagenes </subsections/md_rst/createMetagenes>`
-	  - createMetagenes
+	* - :doc:`createMetafeats </subsections/md_rst/createMetafeats>`
+	  - createMetafeats
 	* - :doc:`findNetworkNeighbors </subsections/md_rst/findNetworkNeighbors>`
 	  - findNetworkNeighbors
+	* - :doc:`objHistory </subsections/md_rst/objHistory>`
+	  - objHistory
+	* - :doc:`fiji </subsections/md_rst/fiji>`
+	  - fiji 
 
 Giotto Getters & Setters 
 ===========================
@@ -301,6 +361,9 @@ Giotto Show Slots
 	showGiottoSpatialInfo </subsections/md_rst/showGiottoSpatialInfo.rst>
 	showGiottoFeatInfo </subsections/md_rst/showGiottoFeatInfo.rst>
 	showGiottoSpatEnrichments </subsections/md_rst/showGiottoSpatEnrichments.rst>
+	showGiottoNearestNetworks </subsections/md_rst/showGiottoNearestNetworks.rst>
+	showGrids </subsections/md_rst/showGrids.rst>
+	showNetworks </subsections/md_rst/showNetworks.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -324,6 +387,12 @@ Giotto Show Slots
 	  - showGiottoFeatInfo
 	* - :doc:`showGiottoSpatEnrichments </subsections/md_rst/showGiottoSpatEnrichments>`
 	  - showGiottoSpatEnrichments
+	* - :doc:`showGiottoNearestNetworks </subsections/md_rst/showGiottoNearestNetworks>`
+	  - showGiottoNearestNetworks
+	* - :doc:`showGrids </subsections/md_rst/showGrids>`
+	  - showGrids
+	* - :doc:`showNetworks </subsections/md_rst/showNetworks>`
+	  - showNetworks
 
 Modify Giotto Object
 ===========================
@@ -335,8 +404,11 @@ Modify Giotto Object
 	:hidden:
 
 	filterGiotto </subsections/md_rst/filterGiotto.rst>
+	filterCombinations </subsections/md_rst/filterCombinations.rst>
+	filterDistributions </subsections/md_rst/filterDistributions.rst>
 	subsetGiotto </subsections/md_rst/subsetGiotto.rst>
 	subsetGiottoLocs </subsections/md_rst/subsetGiottoLocs.rst>
+	subsetGiottoLocsMulti </subsections/md_rst/subsetGiottoLocsMulti.rst>
 	joinGiottoObjects </subsections/md_rst/joinGiottoObjects.rst>
 	normalizeGiotto </subsections/md_rst/normalizeGiotto.rst>
 	adjustGiottoMatrix </subsections/md_rst/adjustGiottoMatrix.rst>
@@ -350,6 +422,7 @@ Modify Giotto Object
 	addStatistics </subsections/md_rst/addStatistics.rst>
 	addFeatsPerc </subsections/md_rst/addFeatsPerc.rst>
 	addCellIntMetadata </subsections/md_rst/addCellIntMetadata.rst>
+	processGiotto </subsections/md_rst/processGiotto.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -359,10 +432,16 @@ Modify Giotto Object
 	  - Description 
 	* - :doc:`filterGiotto </subsections/md_rst/filterGiotto>`
 	  - filterGiotto
+	* - :doc:`filterCombinations </subsections/md_rst/filterCombinations>`
+	  - filterCombinations
+	* - :doc:`filterDistributions </subsections/md_rst/filterDistributions>`
+	  - filterDistributions
 	* - :doc:`subsetGiotto </subsections/md_rst/subsetGiotto>`
 	  - subsetGiotto
 	* - :doc:`subsetGiottoLocs </subsections/md_rst/subsetGiottoLocs>`
 	  - subsetGiottoLocs
+	* - :doc:`subsetGiottoLocsMulti </subsections/md_rst/subsetGiottoLocsMulti>`
+	  - subsetGiottoLocsMulti
 	* - :doc:`joinGiottoObjects </subsections/md_rst/joinGiottoObjects>`
 	  - joinGiottoObjects
 	* - :doc:`normalizeGiotto </subsections/md_rst/normalizeGiotto>`
@@ -389,6 +468,8 @@ Modify Giotto Object
 	  - addFeatsPerc
 	* - :doc:`addCellIntMetadata </subsections/md_rst/addCellIntMetadata>`
 	  - addCellIntMetadata
+	* - :doc: `processGiotto </subsections/md_rst/processGiotto>`
+	  - processGiotto
 
 
 Dimension Reduction
@@ -400,13 +481,14 @@ Dimension Reduction
 	:maxdepth: 2
 	:hidden:
 
-	calculateHVG </subsections/md_rst/calculateHVG.rst>
+	calculateHVF </subsections/md_rst/calculateHVF.rst>
 	signPCA </subsections/md_rst/signPCA.rst>
 	screePlot </subsections/md_rst/screePlot.rst>
 	jackstrawPlot </subsections/md_rst/jackstrawPlot.rst>
 	runPCA </subsections/md_rst/runPCA.rst>
 	runUMAP </subsections/md_rst/runUMAP.rst>
 	runtSNE </subsections/md_rst/runtSNE.rst>
+	runGiottoHarmony </subsections/md_rst/runGiottoHarmony.rst>
 
 
 .. list-table:: 
@@ -415,8 +497,8 @@ Dimension Reduction
 
 	* - Function
 	  - Description 
-	* - :doc:`calculateHVG </subsections/md_rst/calculateHVG>`
-	  - calculateHVG
+	* - :doc:`calculateHVF </subsections/md_rst/calculateHVF>`
+	  - calculateHVF
 	* - :doc:`signPCA </subsections/md_rst/signPCA>`
 	  - signPCA
 	* - :doc:`screePlot </subsections/md_rst/screePlot>`
@@ -429,6 +511,8 @@ Dimension Reduction
 	  - runUMAP
 	* - :doc:`runtSNE </subsections/md_rst/runtSNE>`
 	  - runtSNE
+	* - :doc:`runGiottoHarmony </subsections/md_rst/runGiottoHarmony>`
+	  - runGiottoHarmony
 
 
 *************************
@@ -447,6 +531,8 @@ Clustering
 	doLouvainCluster </subsections/md_rst/doLouvainCluster.rst>
 	doKmeans </subsections/md_rst/doKmeans.rst>
 	doHclust </subsections/md_rst/doHclust.rst>
+	doRandomWalkCluster </subsections/md_rst/doRandomWalkCluster.rst>
+	doSNNCluster </subsections/md_rst/doSNNCluster.rst>
 	subClusterCells </subsections/md_rst/subClusterCells.rst>
 	doLeidenSubCluster </subsections/md_rst/doLeidenSubCluster.rst>
 	doLouvainSubCluster </subsections/md_rst/doLouvainSubCluster.rst>
@@ -474,6 +560,10 @@ Clustering
 	  - doKmeans
 	* - :doc:`doHclust </subsections/md_rst/doHclust>`
 	  - doHclust
+	* - :doc:`doRandomWalkCluster </subsections/md_rst/doRandomWalkCluster>`
+	  - doRandomWalkCluster
+	* - :doc:`doSNNCluster </subsections/md_rst/doSNNCluster>`
+	  - doSNNCluster
 	* - :doc:`subClusterCells </subsections/md_rst/subClusterCells>`
 	  - subClusterCells
 	* - :doc:`doLeidenSubCluster </subsections/md_rst/doLeidenSubCluster>`
@@ -616,6 +706,7 @@ Spatial Deconvolution
 	makeSignMatrixDWLS </subsections/md_rst/makeSignMatrixDWLS.rst>
 	runSpatialDeconv </subsections/md_rst/runSpatialDeconv.rst>
 	runDWLSDeconv </subsections/md_rst/runDWLSDeconv.rst>
+	spatDeconvPlot </subsections/md_rst/spatDeconvPlot.rst>
 	
 .. list-table:: 
 	:widths: 100 100 
@@ -631,6 +722,8 @@ Spatial Deconvolution
 	  - runSpatialDeconv
 	* - :doc:`runDWLSDeconv </subsections/md_rst/runDWLSDeconv>`
 	  - runDWLSDeconv
+	* - :doc:`spatDeconvPlot </subsections/md_rst/spatDeconvPlot>`
+	  - spatDeconvPlot
 
 Spatial Network or Grid
 =============================
@@ -646,10 +739,13 @@ Spatial Network or Grid
 	createSpatialDelaunayNetwork </subsections/md_rst/createSpatialDelaunayNetwork.rst>
 	plotStatDelaunayNetwork </subsections/md_rst/plotStatDelaunayNetwork.rst>
 	createSpatialKNNnetwork </subsections/md_rst/createSpatialKNNnetwork.rst>
+	createSpatialFeaturesKNNnetwork </subsections/md_rst/createSpatialFeaturesKNNnetwork.rst>
 	createSpatialNetwork </subsections/md_rst/createSpatialNetwork.rst>
 	annotateSpatialNetwork </subsections/md_rst/annotateSpatialNetwork.rst>
 	annotateSpatialGrid </subsections/md_rst/annotateSpatialGrid.rst>
 	createSpatialGrid </subsections/md_rst/createSpatialGrid.rst>
+	createSpatialDefaultGrid </subsections/md_rst/createSpatialDefaultGrid.rst>
+
 
 .. list-table:: 
 	:widths: 100 100 
@@ -669,6 +765,8 @@ Spatial Network or Grid
 	  - plotStatDelaunayNetwork
 	* - :doc:`createSpatialKNNnetwork </subsections/md_rst/createSpatialKNNnetwork>`
 	  - createSpatialKNNnetwork
+	* - :doc:`createSpatialFeaturesKNNnetwork </subsections/md_rst/createSpatialFeaturesKNNnetwork>`
+	  - createSpatialFeaturesKNNnetwork
 	* - :doc:`createSpatialNetwork </subsections/md_rst/createSpatialNetwork>`
 	  - createSpatialNetwork
 	* - :doc:`annotateSpatialNetwork </subsections/md_rst/annotateSpatialNetwork>`
@@ -677,6 +775,8 @@ Spatial Network or Grid
 	  - annotateSpatialGrid
 	* - :doc:`createSpatialGrid </subsections/md_rst/createSpatialGrid>`
 	  - createSpatialGrid
+	* - :doc:`createSpatialDefaultGrid </subsections/md_rst/createSpatialDefaultGrid>`
+	  - createSpatialDefaultGrid
 	
 Spatial Expression Patterns
 =============================
@@ -754,10 +854,14 @@ Spatial Co-Expression Modules
 	:maxdepth: 2
 	:hidden:
 
-	clusterSpatialCorGenes </subsections/md_rst/clusterSpatialCorGenes.rst>
-	detectSpatialCorGenes </subsections/md_rst/detectSpatialCorGenes.rst>
-	heatmSpatialCorGenes </subsections/md_rst/heatmSpatialCorGenes.rst>
-	showSpatialCorGenes </subsections/md_rst/showSpatialCorGenes.rst>
+	clusterSpatialCorFeats </subsections/md_rst/clusterSpatialCorFeats.rst>
+	detectSpatialCorFeats </subsections/md_rst/detectSpatialCorFeats.rst>
+	detectSpatialCorFeatsMatrix </subsections/md_rst/detectSpatialCorFeatsMatrix.rst>
+	detectSpatialPatterns </subsections/md_rst/detectSpatialPatterns.rst>
+	heatmSpatialCorFeats </subsections/md_rst/heatmSpatialCorFeats.rst>
+	showSpatialCorFeats </subsections/md_rst/showSpatialCorFeats.rst>
+	showPattern2D </subsections/md_rst/showPattern2D.rst>
+	showPattern3D </subsections/md_rst/showPattern3D.rst>
 	rankSpatialCorGroups </subsections/md_rst/rankSpatialCorGroups.rst>
 
 
@@ -767,16 +871,45 @@ Spatial Co-Expression Modules
 
 	* - Function
 	  - Description 
-	* - :doc:`clusterSpatialCorGenes </subsections/md_rst/clusterSpatialCorGenes>`
-	  - clusterSpatialCorGenes
-	* - :doc:`detectSpatialCorGenes </subsections/md_rst/detectSpatialCorGenes>`
-	  - detectSpatialCorGenes
-	* - :doc:`heatmSpatialCorGenes </subsections/md_rst/heatmSpatialCorGenes>`
-	  - heatmSpatialCorGenes
-	* - :doc:`showSpatialCorGenes </subsections/md_rst/showSpatialCorGenes>`
-	  - showSpatialCorGenes
+	* - :doc:`clusterSpatialCorFeats </subsections/md_rst/clusterSpatialCorFeats>`
+	  - clusterSpatialCorFeats
+	* - :doc:`detectSpatialCorFeats </subsections/md_rst/detectSpatialCorFeats>`
+	  - detectSpatialCorFeats
+	* - :doc:`detectSpatialCorFeatsMatrix </subsections/md_rst/detectSpatialCorFeatsMatrix>`
+	  - detectSpatialCorFeatsMatrix
+	* - :doc:`detectSpatialPatterns </subsections/md_rst/detectSpatialPatterns>`
+	  - detectSpatialPatterns
+	* - :doc:`heatmSpatialCorFeats </subsections/md_rst/heatmSpatialCorFeats>`
+	  - heatmSpatialCorFeats
+	* - :doc:`showSpatialCorFeats </subsections/md_rst/showSpatialCorFeats>`
+	  - showSpatialCorFeats
 	* - :doc:`rankSpatialCorGroups </subsections/md_rst/rankSpatialCorGroups>`
 	  - rankSpatialCorGroups
+
+
+
+Spatial Data Handling
+======================================
+*Functions to condense spatial data.*
+
+.. toctree::
+	:maxdepth: 2
+	:hidden:
+
+	combineSpatialCellFeatureInfo </subsections/md_rst/combineSpatialCellFeatureInfo.rst>
+	combineSpatialCellMetadataInfo </subsections/md_rst/combineSpatialCellMetadataInfo.rst>
+
+
+.. list-table:: 
+	:widths: 100 100 
+	:header-rows: 1
+
+	* - Function
+	  - Description
+	* - :doc:`combineSpatialCellFeatureInfo </subsections/md_rst/combineSpatialCellFeatureInfo>`
+	  - combineSpatialCellFeatureInfo
+	* - :doc:`combineSpatialCellMetadataInfo </subsections/md_rst/combineSpatialCellMetadataInfo>`
+	  - combineSpatialCellMetadataInfo
 
 
 
@@ -822,6 +955,30 @@ Hidden Markov Random Field (HMRF)
 2D Visualization
 ***************************************
 
+General Plotting
+======================================
+*Functions to assist in plotting.*
+
+.. toctree::
+	:maxdepth: 2
+	:hidden:
+
+	getDistinctColors </subsections/md_rst/getDistinctColors.rst>
+	showSaveParameters </subsections/md_rst/showSaveParameters.rst>
+
+.. list-table:: 
+	:widths: 100 100 
+	:header-rows: 1
+
+	* - Function
+	  - Description
+	* - :doc:`getDistinctColors </subsections/md_rst/getDistinctColors.rst>`
+	  - getDistinctColors
+	* - :doc:`showSaveParameters </subsections/md_rst/showSaveParameters.rst>`
+	  - showSaveParameters
+
+
+
 2D Visualization In Expression Space
 ======================================
 *Visualization of expression space (e.g. UMAP) in 2D.*
@@ -831,11 +988,15 @@ Hidden Markov Random Field (HMRF)
 	:hidden:
 
 	dimPlot </subsections/md_rst/dimPlot.rst>
+	dimPlot2D </subsections/md_rst/dimPlot2D>
 	plotUMAP </subsections/md_rst/plotUMAP.rst>
+	plotUMAP_2D </subsections/md_rst/plotUMAP_2D.rst>
 	plotTSNE </subsections/md_rst/plotTSNE.rst>
+	plotTSNE_2D </subsections/md_rst/plotTSNE_2D.rst>
 	plotPCA </subsections/md_rst/plotPCA.rst>
-	dimGenePlot </subsections/md_rst/dimGenePlot.rst>
-	dimCellPlot </subsections/md_rst/dimCellPlot.rst>
+	plotPCA_2D </subsections/md_rst/plotPCA_2D.rst>
+	dimFeatPlot2D </subsections/md_rst/dimFeatPlot2D.rst>
+	dimCellPlot2D </subsections/md_rst/dimCellPlot2D.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -845,16 +1006,24 @@ Hidden Markov Random Field (HMRF)
 	  - Description 
 	* - :doc:`dimPlot </subsections/md_rst/dimPlot>`
 	  - dimPlot
+	* - :doc:`dimPlot2D </subsections/md_rst/dimPlot2D>`
+	  - dimPlot2D
 	* - :doc:`plotUMAP </subsections/md_rst/plotUMAP>`
 	  - plotUMAP
+	* - :doc:`plotUMAP_2D </subsections/md_rst/plotUMAP_2D>`
+	  - plotUMAP_2D
 	* - :doc:`plotTSNE </subsections/md_rst/plotTSNE>`
 	  - plotTSNE
-	* - :doc:`plotTSNE </subsections/md_rst/plotTSNE>`
-	  - plotTSNE
-	* - :doc:`dimGenePlot </subsections/md_rst/dimGenePlot>`
-	  - dimGenePlot
-	* - :doc:`dimCellPlot </subsections/md_rst/dimCellPlot>`
-	  - dimCellPlot
+	* - :doc:`plotTSNE_2D </subsections/md_rst/plotTSNE_2D>`
+	  - plotTSNE_2D
+	* - :doc:`plotPCA </subsections/md_rst/plotPCA>`
+	  - plotPCA
+	* - :doc:`plotPCA_2D </subsections/md_rst/plotPCA_2D>`
+	  - plotPCA_2D
+	* - :doc:`dimFeatPlot2D </subsections/md_rst/dimFeatPlot2D>`
+	  - dimFeatPlot2D
+	* - :doc:`dimCellPlot2D </subsections/md_rst/dimCellPlot2D>`
+	  - dimCellPlot2D
 
 
 2D Visualization in Spatial Space
@@ -865,8 +1034,9 @@ Hidden Markov Random Field (HMRF)
 	:maxdepth: 2
 	:hidden:
 
-	spatPlot </subsections/md_rst/spatPlot.rst>
-	spatCellPlot </subsections/md_rst/spatCellPlot.rst>
+	spatPlot2D </subsections/md_rst/spatPlot2D.rst>
+	spatCellPlot2D </subsections/md_rst/spatCellPlot2D.rst>
+	spatFeatPlot2D </subsections/md_rst/spatFeatPlot2D.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -874,10 +1044,12 @@ Hidden Markov Random Field (HMRF)
 
 	* - Function
 	  - Description 
-	* - :doc:`spatPlot </subsections/md_rst/spatPlot>`
-	  - spatPlot
-	* - :doc:`spatCellPlot </subsections/md_rst/spatCellPlot>`
-	  - spatCellPlot
+	* - :doc:`spatPlot2D </subsections/md_rst/spatPlot2D>`
+	  - spatPlot2D
+	* - :doc:`spatCellPlot2D </subsections/md_rst/spatCellPlot2D>`
+	  - spatCellPlot2D
+	* - :doc:`spatFeatPlot2D </subsections/md_rst/spatFeatPlot2D>`
+	  - spatFeatPlot2D
 
 
 2D Visualization In Both Spatial And Expression Space
@@ -888,8 +1060,9 @@ Hidden Markov Random Field (HMRF)
 	:maxdepth: 2
 	:hidden:
 
-	spatDimPlot </subsections/md_rst/spatDimPlot.rst>
-	spatDimCellPlot </subsections/md_rst/spatDimCellPlot.rst>
+	spatDimPlot2D </subsections/md_rst/spatDimPlot2D.rst>
+	spatDimCellPlot2D </subsections/md_rst/spatDimCellPlot2D.rst>
+	spatDimFeatPlot2D </subsections/md_rst/spatDimFeatPlot2D.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -897,10 +1070,13 @@ Hidden Markov Random Field (HMRF)
 
 	* - Function
 	  - Description 
-	* - :doc:`spatDimPlot </subsections/md_rst/spatDimPlot>`
-	  - spatDimPlot
-	* - :doc:`spatDimCellPlot </subsections/md_rst/spatDimCellPlot>`
-	  - spatDimCellPlot
+	* - :doc:`spatDimPlot2D </subsections/md_rst/spatDimPlot2D>`
+	  - spatDimPlot2D
+	* - :doc:`spatDimCellPlot2D </subsections/md_rst/spatDimCellPlot2D>`
+	  - spatDimCellPlot2D
+	* - :doc:`spatDimFeatPlot2D </subsections/md_rst/spatDimFeatPlot2D>`
+	  - spatDimFeatPlot2D
+
 
 
 ****************************************************
@@ -1032,6 +1208,8 @@ Cell Neighborhood: Cell-Type/Cell-Type Enrichment
 	cellProximityNetwork </subsections/md_rst/cellProximityNetwork.rst>
 	cellProximitySpatPlot </subsections/md_rst/cellProximitySpatPlot.rst>
 	cellProximitySpatPlot3D </subsections/md_rst/cellProximitySpatPlot3D.rst>
+	specificCellCellcommunicationScores </subsections/md_rst/specificCellCellcommunicationScores.rst>
+
 
 .. list-table:: 
 	:widths: 100 100 
@@ -1051,11 +1229,13 @@ Cell Neighborhood: Cell-Type/Cell-Type Enrichment
 	  - cellProximitySpatPlot
 	* - :doc:`cellProximitySpatPlot3D </subsections/md_rst/cellProximitySpatPlot3D>`
 	  - cellProximitySpatPlot3D
+	* - :doc:`specificCellCellcommunicationScores </subsections/md_rst/specificCellCellcommunicationScores>`
+	  - specificCellCellcommunicationScores
 
 
-Cell Neighborhood: Spatial Interaction Changed Genes (ICG)
+Cell Neighborhood: Spatial Interaction Changed Features (ICF)
 =============================================================
-*Identify and visualize genes that change in a source cell type due to interaction with another neighboring cell type.*
+*Identify and visualize features (genes) that change in a source cell type due to interaction with another neighboring cell type.*
 
 .. toctree::
 	:maxdepth: 2
@@ -1065,6 +1245,8 @@ Cell Neighborhood: Spatial Interaction Changed Genes (ICG)
 	findICF </subsections/md_rst/findICF.rst>
 	filterInteractionChangedFeats </subsections/md_rst/filterInteractionChangedFeats.rst>
 	filterICF </subsections/md_rst/filterICF.rst>
+	plotInteractionChangedFeats </subsections/md_rst/plotInteractionChangedFeats.rst>
+	plotICF </subsections/md_rst/plotICF.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -1080,6 +1262,10 @@ Cell Neighborhood: Spatial Interaction Changed Genes (ICG)
 	  - filterInteractionChangedFeats
 	* - :doc:`filterICF </subsections/md_rst/filterICF>`
 	  - filterICF
+	* - :doc:`plotInteractionChangedFeats </subsections/md_rst/plotInteractionChangedFeats>`
+	  - plotInteractionChangedFeats
+	* - :doc:`plotICF </subsections/md_rst/plotICF>`
+	  - plotICF
 
 
 Cell Neighborhood: Ligand-Receptor Cell Communication
@@ -1090,11 +1276,14 @@ Cell Neighborhood: Ligand-Receptor Cell Communication
 	:maxdepth: 2
 	:hidden:
 
+	combCCcom </subsections/md_rst/combCCcom.rst>
 	exprCellCellcom </subsections/md_rst/exprCellCellcom.rst>
 	spatCellCellcom </subsections/md_rst/spatCellCellcom.rst>
 	plotCCcomDotplot </subsections/md_rst/plotCCcomDotplot.rst>
 	plotRankSpatvsExpr </subsections/md_rst/plotRankSpatvsExpr.rst>
 	plotRecovery </subsections/md_rst/plotRecovery.rst>
+	plotCCcomHeatmap </subsections/md_rst/plotCCcomHeatmap.rst>
+	plotCombineCellCellCommunication </subsections/md_rst/plotCombineCellCellCommunication.rst>
 
 
 .. list-table:: 
@@ -1103,6 +1292,8 @@ Cell Neighborhood: Ligand-Receptor Cell Communication
 
 	* - Function
 	  - Description 
+	* - :doc:`combCCcom </subsections/md_rst/combCCcom.rst>`
+	  - combCCcom 
 	* - :doc:`exprCellCellcom </subsections/md_rst/exprCellCellcom>`
 	  - exprCellCellcom
 	* - :doc:`spatCellCellcom </subsections/md_rst/spatCellCellcom>`
@@ -1113,18 +1304,181 @@ Cell Neighborhood: Ligand-Receptor Cell Communication
 	  - plotRankSpatvsExpr
 	* - :doc:`plotRecovery </subsections/md_rst/plotRecovery>`
 	  - plotRecovery
+	* - :doc:`plotCCcomHeatmap </subsections/md_rst/plotCCcomHeatmap.rst>`
+	  - plotCCcomHeatmap 
+	* - :doc:`plotCombineCellCellCommunication </subsections/md_rst/plotCombineCellCellCommunication.rst>`
+	  - plotCombineCellCellCommunication 
+
+
+**************************************************************
+Subcellular
+**************************************************************
+*Functions to manipulate and visualize subcellular data.*
+
+.. toctree::
+	:maxdepth: 2
+	:hidden:
+	
+	addCellsFromPolygon </subsections/md_rst/addCellsFromPolygon.rst>
+	addGiottoPoints </subsections/md_rst/addGiottoPoints.rst>
+	addGiottoPoints3D </subsections/md_rst/addGiottoPoints3D.rst>
+	addGiottoPolygons </subsections/md_rst/addGiottoPolygons.rst>
+	addSpatialCentroidLocations </subsections/md_rst/addSpatialCentroidLocations.rst>
+	addSpatialCentroidLocationsLayer </subsections/md_rst/addSpatialCentroidLocationsLayer.rst>
+	calculateOverlapParallel </subsections/md_rst/calculateOverlapParallel.rst>
+	calculateOverlapRaster </subsections/md_rst/calculateOverlapRaster.rst>
+	calculateOverlapSerial </subsections/md_rst/calculateOverlapSerial.rst>
+	combineCellData </subsections/md_rst/combineCellData.rst>
+	combineFeatureData </subsections/md_rst/combineFeatureData.rst>
+	combineFeatureOverlapData </subsections/md_rst/combineFeatureOverlapData.rst>
+	createGiottoPoints </subsections/md_rst/createGiottoPoints.rst>
+	createGiottoPolygonsFromDfr </subsections/md_rst/createGiottoPolygonsFromDfr.rst>
+	createGiottoPolygonsFromMask </subsections/md_rst/createGiottoPolygonsFromMask.rst>
+	overlapToMatrix </subsections/md_rst/overlapToMatrix.rst>
+	overlapToMatrixMultiPoly </subsections/md_rst/overlapToMatrixMultiPoly.rst>
+	smoothGiottoPolygons </subsections/md_rst/smoothGiottoPolygons.rst>
+	spatInSituPlotDensity </subsections/md_rst/spatInSituPlotDensity.rst>
+	spatInSituPlotHex </subsections/md_rst/spatInSituPlotHex.rst>
+	spatInSituPlotPoints </subsections/md_rst/spatInSituPlotPoints.rst>
+
+
+.. list-table:: 
+	:widths: 100 100 
+	:header-rows: 1
+
+	* - Function
+	  - Description
+	* - :doc:`addCellsFromPolygon </subsections/md_rst/addCellsFromPolygon.rst>`
+	  - addCellsFromPolygon
+	* - :doc:`addGiottoPoints </subsections/md_rst/addGiottoPoints.rst>`
+	  - addGiottoPoints
+	* - :doc:`addGiottoPoints3D </subsections/md_rst/addGiottoPoints3D.rst>`
+	  - addGiottoPoints3D
+	* - :doc:`addGiottoPolygons </subsections/md_rst/addGiottoPolygons.rst>`
+	  - addGiottoPolygons
+	* - :doc:`addSpatialCentroidLocations </subsections/md_rst/addSpatialCentroidLocations.rst>`
+	  - addSpatialCentroidLocations
+	* - :doc:`addSpatialCentroidLocationsLayer </subsections/md_rst/addSpatialCentroidLocationsLayer.rst>`
+	  - addSpatialCentroidLocationsLayer
+	* - :doc:`calculateOverlapParallel </subsections/md_rst/calculateOverlapParallel.rst>`
+	  - calculateOverlapParallel
+	* - :doc:`calculateOverlapRaster </subsections/md_rst/calculateOverlapRaster.rst>`
+	  - calculateOverlapRaster
+	* - :doc:`calculateOverlapSerial </subsections/md_rst/calculateOverlapSerial.rst>`
+	  - calculateOverlapSerial
+	* - :doc:`combineCellData </subsections/md_rst/combineCellData.rst>`
+	  - combineCellData
+	* - :doc:`combineFeatureData </subsections/md_rst/combineFeatureData.rst>`
+	  - combineFeatureData
+	* - :doc:`combineFeatureOverlapData </subsections/md_rst/combineFeatureOverlapData.rst>`
+	  - combineFeatureOverlapData
+	* - :doc:`createGiottoPoints </subsections/md_rst/createGiottoPoints.rst>`
+	  - createGiottoPoints
+	* - :doc:`createGiottoPolygonsFromDfr </subsections/md_rst/createGiottoPolygonsFromDfr.rst>`
+	  - createGiottoPolygonsFromDfr
+	* - :doc:`createGiottoPolygonsFromMask </subsections/md_rst/createGiottoPolygonsFromMask.rst>`
+	  - createGiottoPolygonsFromMask
+	* - :doc:`overlapToMatrix </subsections/md_rst/overlapToMatrix.rst>`
+	  - overlapToMatrix
+	* - :doc:`overlapToMatrixMultiPoly </subsections/md_rst/overlapToMatrixMultiPoly.rst>`
+	  - overlapToMatrixMultiPoly
+	* - :doc:`smoothGiottoPolygons </subsections/md_rst/smoothGiottoPolygons.rst>`
+	  - smoothGiottoPolygons
+	* - :doc:`spatInSituPlotDensity </subsections/md_rst/spatInSituPlotDensity.rst>`
+	  - spatInSituPlotDensity
+	* - :doc:`spatInSituPlotHex </subsections/md_rst/spatInSituPlotHex.rst>`
+	  - spatInSituPlotHex
+	* - :doc:`spatInSituPlotPoints </subsections/md_rst/spatInSituPlotPoints.rst>`
+	  - spatInSituPlotPoints
+
+
+****************************************************
+Segmentation
+****************************************************
+*Function to segment cells in-tissue.*
+
+.. toctree::
+	:maxdepth: 2
+	:hidden:
+
+	doCellSegmentation </subsections/md_rst/doCellSegmentation.rst>
+
+.. list-table:: 
+	:widths: 100 100 
+	:header-rows: 1
+
+	* - Function
+	  - Description
+	* - :doc:`doCellSegmentation </subsections/md_rst/doCellSegmentation>`
+	  - doCellSegmentation
+
+
+****************************************************
+Doublet Detection
+****************************************************
+*Function to detect doublets in raw expression data.*
+
+.. toctree::
+	:maxdepth: 2
+	:hidden:
+
+	doScrubletDetect </subsections/md_rst/doScrubletDetect.rst>
+
+.. list-table:: 
+	:widths: 100 100 
+	:header-rows: 1
+
+	* - Function
+	  - Description
+	* - :doc:`doScrubletDetect </subsections/md_rst/doScrubletDetect>`
+	  - doScrubletDetect
+
+
+****************************************************
+Interactive Visualizations
+****************************************************
+*Functions that generate interactive plots.*
+
+.. toctree::
+	:maxdepth: 2
+	:hidden:
+
+	cellProximitySpatPlot2D </subsections/md_rst/cellProximitySpatPlot2D.rst>
+	cellProximityVisPlot </subsections/md_rst/cellProximityVisPlot.rst>
+	comparePolygonExpression </subsections/md_rst/comparePolygonExpression.rst>
+	getCellsFromPolygon </subsections/md_rst/getCellsFromPolygon.rst>
+	plotInteractivePolygons </subsections/md_rst/plotInteractivePolygons.rst>
+
+.. list-table:: 
+	:widths: 100 100 
+	:header-rows: 1
+
+	* - Function
+	  - Description
+	* - :doc:`cellProximitySpatPlot2D </subsections/md_rst/cellProximitySpatPlot2D>`
+	  - cellProximitySpatPlot2D
+	* - :doc:`cellProximityVisPlot </subsections/md_rst/cellProximityVisPlot>`
+	  - cellProximityVisPlot
+	* - :doc:`comparePolygonExpression </subsections/md_rst/comparePolygonExpression>`
+	  - comparePolygonExpression
+	* - :doc:`getCellsFromPolygon </subsections/md_rst/getCellsFromPolygon>`
+	  - getCellsFromPolygon
+	* - :doc:`plotInteractivePolygons </subsections/md_rst/plotInteractivePolygons>`
+	  - plotInteractivePolygons
 
 
 ****************************************************
 Interoperability
 ****************************************************
-*Convert other type of objects into a Giotto object.*
+*Convert other type of objects into a Giotto object and vice versa.*
 
 .. toctree::
 	:maxdepth: 2
 	:hidden:
 
 	seuratToGiotto </subsections/md_rst/seuratToGiotto.rst>
+	giottoToSeurat </subsections/md_rst/giottoToSeurat.rst>
+	giottoToSpatialExperiment </subsections/md_rst/giottoToSpatialExperiment.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -1134,3 +1488,7 @@ Interoperability
 	  - Description 
 	* - :doc:`seuratToGiotto </subsections/md_rst/seuratToGiotto>`
 	  - seuratToGiotto
+	* - :doc:`giottoToSeurat </subsections/md_rst/giottoToSeurat>`
+	  - giottoToSeurat
+	* - :doc:`giottoToSpatialExperiment </subsections/md_rst/giottoToSpatialExperiment>`
+	  - giottoToSpatialExperiment
