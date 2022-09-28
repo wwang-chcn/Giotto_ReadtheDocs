@@ -2,6 +2,9 @@
 Giotto Suite
 ##########################################
 
+An open-source and technology-agnostic spatial multi-omics analysis platform 
+============================================================================
+
 .. toctree::
    :maxdepth: 2
    :caption: General
