@@ -4,6 +4,8 @@ getting_started_saving
 
 :Date: 2022-09-16
 
+.. sectnum::
+
 Saving Spatial Data in Plots
 ============================
 

@@ -4,6 +4,8 @@ getting_started_images
 
 :Date: 2022-09-16
 
+.. sectnum::
+
 Giotto and Image Data
 =====================
 

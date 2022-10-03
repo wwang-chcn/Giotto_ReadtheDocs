@@ -4,6 +4,8 @@ data_processing
 
 :Date: 2022-09-16
 
+.. sectnum::
+
 After creating the Giotto object, it must be prepared for downstream
 analysis. This tutorial walks through filtering, normalizing, adjusting
 for batch effects, adding statistics and metadata to a Giotto object, as
