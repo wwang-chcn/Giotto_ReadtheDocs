@@ -1,8 +1,7 @@
---- 
-title: print_leaf 
-format: rst 
-date: 2022-09-22 
---- 
+# `print_leaf`
+
+Hierarchical tree printing
+
 
 ## Description
 

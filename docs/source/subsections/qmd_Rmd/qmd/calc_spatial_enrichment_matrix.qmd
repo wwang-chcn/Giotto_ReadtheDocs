@@ -1,8 +1,7 @@
---- 
-title: calc_spatial_enrichment_matrix 
-format: rst 
-date: 2022-09-22 
---- 
+# `calc_spatial_enrichment_matrix`
+
+calc_spatial_enrichment_matrix
+
 
 ## Description
 

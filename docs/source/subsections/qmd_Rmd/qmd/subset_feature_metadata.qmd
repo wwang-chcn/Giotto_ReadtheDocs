@@ -1,8 +1,7 @@
---- 
-title: subset_feature_metadata 
-format: rst 
-date: 2022-09-22 
---- 
+# `subset_feature_metadata`
+
+Subset feature metadata
+
 
 ## Description
 

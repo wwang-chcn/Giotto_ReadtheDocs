@@ -1,8 +1,7 @@
---- 
-title: plotInteractionChangedFeats 
-format: rst 
-date: 2022-09-22 
---- 
+# `plotInteractionChangedFeats`
+
+Plot interaction changed features
+
 
 ## Description
 
@@ -14,7 +13,7 @@ Create barplot to visualize interaction changed features
 ```r
 plotInteractionChangedFeats(
   gobject,
-  cpgObject,
+  icfObject,
   source_type,
   source_markers,
   ICF_feats,
@@ -33,7 +32,7 @@ plotInteractionChangedFeats(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`cpgObject`     |     ICF (interaction changed feature) score object
+`icfObject`     |     ICF (interaction changed feature) score object
 `source_type`     |     cell type of the source cell
 `source_markers`     |     markers for the source cell type
 `ICF_feats`     |     named character vector of ICF features

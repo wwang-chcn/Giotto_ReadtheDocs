@@ -1,8 +1,7 @@
---- 
-title: detectSpatialCorFeatsMatrix 
-format: rst 
-date: 2022-09-22 
---- 
+# `detectSpatialCorFeatsMatrix`
+
+detectSpatialCorFeatsMatrix
+
 
 ## Description
 

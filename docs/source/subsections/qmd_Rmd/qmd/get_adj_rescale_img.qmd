@@ -1,8 +1,7 @@
---- 
-title: get_adj_rescale_img 
-format: rst 
-date: 2022-09-22 
---- 
+# `get_adj_rescale_img`
+
+get_adj_rescale_img
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: solve_OLS_internal 
-format: rst 
-date: 2022-09-22 
---- 
+# `solve_OLS_internal`
+
+solve_OLS_internal
+
 
 ## Description
 

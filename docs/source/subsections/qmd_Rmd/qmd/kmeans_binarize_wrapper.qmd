@@ -1,8 +1,7 @@
---- 
-title: kmeans_binarize_wrapper 
-format: rst 
-date: 2022-09-22 
---- 
+# `kmeans_binarize_wrapper`
+
+kmeans_binarize_wrapper
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: list_cell_metadata 
-format: rst 
-date: 2022-09-22 
---- 
+# `list_cell_metadata`
+
+list_cell_metadata
+
 
 ## Description
 

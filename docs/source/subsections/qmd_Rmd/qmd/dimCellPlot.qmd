@@ -1,8 +1,7 @@
---- 
-title: dimCellPlot 
-format: rst 
-date: 2022-09-22 
---- 
+# `dimCellPlot`
+
+dimCellPlot
+
 
 ## Description
 

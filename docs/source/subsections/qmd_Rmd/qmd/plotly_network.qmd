@@ -1,8 +1,7 @@
---- 
-title: plotly_network 
-format: rst 
-date: 2022-09-22 
---- 
+# `plotly_network`
+
+plotly_network
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: plotHeatmap 
-format: rst 
-date: 2022-09-22 
---- 
+# `plotHeatmap`
+
+plotHeatmap
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: list_expression 
-format: rst 
-date: 2022-09-22 
---- 
+# `list_expression`
+
+list_expression
+
 
 ## Description
 

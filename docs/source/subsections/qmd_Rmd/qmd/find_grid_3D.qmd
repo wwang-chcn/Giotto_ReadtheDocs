@@ -1,8 +1,7 @@
---- 
-title: find_grid_3D 
-format: rst 
-date: 2022-09-22 
---- 
+# `find_grid_3D`
+
+find_grid_3D
+
 
 ## Description
 

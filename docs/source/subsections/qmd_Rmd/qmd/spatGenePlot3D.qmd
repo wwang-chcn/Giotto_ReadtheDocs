@@ -1,8 +1,7 @@
---- 
-title: spatGenePlot3D 
-format: rst 
-date: 2022-09-22 
---- 
+# `spatGenePlot3D`
+
+spatGenePlot3D
+
 
 ## Description
 

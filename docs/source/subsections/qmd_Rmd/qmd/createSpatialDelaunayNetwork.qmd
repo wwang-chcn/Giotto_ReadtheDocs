@@ -1,8 +1,7 @@
---- 
-title: createSpatialDelaunayNetwork 
-format: rst 
-date: 2022-09-22 
---- 
+# `createSpatialDelaunayNetwork`
+
+Create a spatial Delaunay network
+
 
 ## Description
 

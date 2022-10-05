@@ -1,8 +1,7 @@
---- 
-title: showGiottoSpatNetworks 
-format: rst 
-date: 2022-09-22 
---- 
+# `showGiottoSpatNetworks`
+
+showGiottoSpatNetworks
+
 
 ## Description
 

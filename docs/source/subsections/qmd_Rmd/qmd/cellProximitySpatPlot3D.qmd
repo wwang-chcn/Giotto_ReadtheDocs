@@ -1,8 +1,7 @@
---- 
-title: cellProximitySpatPlot3D 
-format: rst 
-date: 2022-09-22 
---- 
+# `cellProximitySpatPlot3D`
+
+cellProximitySpatPlot3D
+
 
 ## Description
 

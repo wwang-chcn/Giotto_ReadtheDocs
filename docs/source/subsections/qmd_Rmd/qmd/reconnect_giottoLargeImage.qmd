@@ -1,8 +1,7 @@
---- 
-title: reconnect_giottoLargeImage 
-format: rst 
-date: 2022-09-22 
---- 
+# `reconnect_giottoLargeImage`
+
+reconnect_giottoLargeImage
+
 
 ## Description
 

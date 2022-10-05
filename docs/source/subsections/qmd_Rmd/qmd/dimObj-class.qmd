@@ -1,8 +1,7 @@
---- 
-title: dimObj-class 
-format: rst 
-date: 2022-09-22 
---- 
+# `dimObj-class`
+
+S4 dimObj Class
+
 
 ## Description
 

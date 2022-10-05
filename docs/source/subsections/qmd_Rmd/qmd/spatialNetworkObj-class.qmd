@@ -1,8 +1,7 @@
---- 
-title: spatialNetworkObj-class 
-format: rst 
-date: 2022-09-22 
---- 
+# `spatialNetworkObj-class`
+
+S4 spatialNetworkObj Class
+
 
 ## Description
 

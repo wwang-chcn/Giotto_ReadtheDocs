@@ -1,8 +1,7 @@
---- 
-title: spatInSituPlotPoints 
-format: rst 
-date: 2022-09-22 
---- 
+# `spatInSituPlotPoints`
+
+spatInSituPlotPoints
+
 
 ## Description
 

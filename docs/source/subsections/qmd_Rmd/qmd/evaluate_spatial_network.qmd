@@ -1,8 +1,7 @@
---- 
-title: evaluate_spatial_network 
-format: rst 
-date: 2022-09-22 
---- 
+# `evaluate_spatial_network`
+
+Evaluate spatial network
+
 
 ## Description
 

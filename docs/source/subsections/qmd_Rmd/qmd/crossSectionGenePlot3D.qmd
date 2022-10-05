@@ -1,8 +1,7 @@
---- 
-title: crossSectionGenePlot3D 
-format: rst 
-date: 2022-09-22 
---- 
+# `crossSectionGenePlot3D`
+
+crossSectionGenePlot3D
+
 
 ## Description
 

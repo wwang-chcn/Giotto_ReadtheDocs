@@ -1,8 +1,7 @@
---- 
-title: filterGiotto 
-format: rst 
-date: 2022-09-22 
---- 
+# `filterGiotto`
+
+filterGiotto
+
 
 ## Description
 

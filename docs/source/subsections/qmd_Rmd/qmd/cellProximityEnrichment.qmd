@@ -1,8 +1,7 @@
---- 
-title: cellProximityEnrichment 
-format: rst 
-date: 2022-09-22 
---- 
+# `cellProximityEnrichment`
+
+cellProximityEnrichment
+
 
 ## Description
 

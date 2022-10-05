@@ -1,8 +1,7 @@
---- 
-title: reshape_to_data_point 
-format: rst 
-date: 2022-09-22 
---- 
+# `reshape_to_data_point`
+
+reshape_to_data_point
+
 
 ## Description
 

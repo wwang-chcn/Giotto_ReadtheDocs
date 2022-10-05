@@ -1,8 +1,7 @@
---- 
-title: get_giottoLargeImage 
-format: rst 
-date: 2022-09-22 
---- 
+# `get_giottoLargeImage`
+
+Get terra -based giotto `largeImage`
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: pipe 
-format: rst 
-date: 2022-09-22 
---- 
+# `%>%`
+
+Pipe operator
+
 
 ## Description
 

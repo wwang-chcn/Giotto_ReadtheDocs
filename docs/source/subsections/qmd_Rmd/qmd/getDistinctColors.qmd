@@ -1,8 +1,7 @@
---- 
-title: getDistinctColors 
-format: rst 
-date: 2022-09-22 
---- 
+# `getDistinctColors`
+
+getDistinctColors
+
 
 ## Description
 

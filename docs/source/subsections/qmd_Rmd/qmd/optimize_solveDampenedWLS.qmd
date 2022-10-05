@@ -1,8 +1,7 @@
---- 
-title: optimize_solveDampenedWLS 
-format: rst 
-date: 2022-09-22 
---- 
+# `optimize_solveDampenedWLS`
+
+optimize_solveDampenedWLS
+
 
 ## Description
 

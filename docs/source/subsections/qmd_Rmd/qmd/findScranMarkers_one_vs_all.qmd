@@ -1,8 +1,7 @@
---- 
-title: findScranMarkers_one_vs_all 
-format: rst 
-date: 2022-09-22 
---- 
+# `findScranMarkers_one_vs_all`
+
+findScranMarkers_one_vs_all
+
 
 ## Description
 

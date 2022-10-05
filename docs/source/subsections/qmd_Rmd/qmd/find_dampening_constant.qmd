@@ -1,8 +1,7 @@
---- 
-title: find_dampening_constant 
-format: rst 
-date: 2022-09-22 
---- 
+# `find_dampening_constant`
+
+find_dampening_constant
+
 
 ## Description
 

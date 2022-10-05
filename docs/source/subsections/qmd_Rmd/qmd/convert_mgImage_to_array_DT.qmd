@@ -1,8 +1,7 @@
---- 
-title: convert_mgImage_to_array_DT 
-format: rst 
-date: 2022-09-22 
---- 
+# `convert_mgImage_to_array_DT`
+
+convert_mgImage_to_array_DT
+
 
 ## Description
 

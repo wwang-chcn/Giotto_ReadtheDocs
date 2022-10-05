@@ -1,8 +1,7 @@
---- 
-title: convertGiottoLargeImageToMG 
-format: rst 
-date: 2022-09-22 
---- 
+# `convertGiottoLargeImageToMG`
+
+convertGiottoLargeImageToMG
+
 
 ## Description
 

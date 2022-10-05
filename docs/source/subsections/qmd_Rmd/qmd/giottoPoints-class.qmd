@@ -1,8 +1,7 @@
---- 
-title: giottoPoints-class 
-format: rst 
-date: 2022-09-22 
---- 
+# `giottoPoints-class`
+
+S4 giotto points Class
+
 
 ## Description
 

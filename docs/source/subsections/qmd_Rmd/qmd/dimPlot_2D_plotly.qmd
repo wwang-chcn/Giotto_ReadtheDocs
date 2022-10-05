@@ -1,8 +1,7 @@
---- 
-title: dimPlot_2D_plotly 
-format: rst 
-date: 2022-09-22 
---- 
+# `dimPlot_2D_plotly`
+
+dimPlot_2D_plotly
+
 
 ## Description
 

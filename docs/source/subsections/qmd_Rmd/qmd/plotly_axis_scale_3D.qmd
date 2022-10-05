@@ -1,8 +1,7 @@
---- 
-title: plotly_axis_scale_3D 
-format: rst 
-date: 2022-09-22 
---- 
+# `plotly_axis_scale_3D`
+
+plotly_axis_scale_3D
+
 
 ## Description
 

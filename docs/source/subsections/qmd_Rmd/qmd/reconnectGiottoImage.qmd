@@ -1,8 +1,7 @@
---- 
-title: reconnectGiottoImage 
-format: rst 
-date: 2022-09-22 
---- 
+# `reconnectGiottoImage`
+
+Reconnect images with dead pointers
+
 
 ## Description
 

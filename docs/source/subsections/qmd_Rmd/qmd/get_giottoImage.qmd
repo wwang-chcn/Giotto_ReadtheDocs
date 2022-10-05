@@ -1,8 +1,7 @@
---- 
-title: get_giottoImage 
-format: rst 
-date: 2022-09-22 
---- 
+# `get_giottoImage`
+
+Get giotto image object
+
 
 ## Description
 

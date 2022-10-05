@@ -1,8 +1,7 @@
---- 
-title: findCellProximityFeats_per_interaction 
-format: rst 
-date: 2022-09-22 
---- 
+# `findCellProximityFeats_per_interaction`
+
+findCellProximityFeats_per_interaction
+
 
 ## Description
 

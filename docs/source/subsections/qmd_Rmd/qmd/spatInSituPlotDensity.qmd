@@ -1,8 +1,7 @@
---- 
-title: spatInSituPlotDensity 
-format: rst 
-date: 2022-09-22 
---- 
+# `spatInSituPlotDensity`
+
+spatInSituPlotDensity
+
 
 ## Description
 

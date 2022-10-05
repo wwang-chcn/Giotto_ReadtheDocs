@@ -1,8 +1,7 @@
---- 
-title: checkAggExprObj 
-format: rst 
-date: 2022-09-22 
---- 
+# `checkAggExprObj`
+
+Check aggregateExprObj
+
 
 ## Description
 

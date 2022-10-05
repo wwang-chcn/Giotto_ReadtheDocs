@@ -1,8 +1,7 @@
---- 
-title: runtSNE 
-format: rst 
-date: 2022-09-22 
---- 
+# `runtSNE`
+
+Run tSNE dimensional reduction
+
 
 ## Description
 

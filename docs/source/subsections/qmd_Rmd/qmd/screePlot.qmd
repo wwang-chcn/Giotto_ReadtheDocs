@@ -1,8 +1,7 @@
---- 
-title: screePlot 
-format: rst 
-date: 2022-09-22 
---- 
+# `screePlot`
+
+screePlot
+
 
 ## Description
 

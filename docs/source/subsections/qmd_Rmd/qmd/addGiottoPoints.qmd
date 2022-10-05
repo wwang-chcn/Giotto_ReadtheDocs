@@ -1,8 +1,7 @@
---- 
-title: addGiottoPoints 
-format: rst 
-date: 2022-09-22 
---- 
+# `addGiottoPoints`
+
+Add giotto points object to giotto object
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: write_giotto_viewer_annotation 
-format: rst 
-date: 2022-09-22 
---- 
+# `write_giotto_viewer_annotation`
+
+write_giotto_viewer_annotation
+
 
 ## Description
 

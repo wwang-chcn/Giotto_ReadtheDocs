@@ -1,8 +1,7 @@
---- 
-title: kmeans_arma_subset_binarize 
-format: rst 
-date: 2022-09-22 
---- 
+# `kmeans_arma_subset_binarize`
+
+kmeans_arma_subset_binarize
+
 
 ## Description
 

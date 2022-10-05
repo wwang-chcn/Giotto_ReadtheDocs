@@ -1,8 +1,7 @@
---- 
-title: list_spatial_networks_names 
-format: rst 
-date: 2022-09-22 
---- 
+# `list_spatial_networks_names`
+
+list_spatial_networks_names
+
 
 ## Description
 

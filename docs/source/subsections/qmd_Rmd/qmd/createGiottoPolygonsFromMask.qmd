@@ -1,8 +1,7 @@
---- 
-title: createGiottoPolygonsFromMask 
-format: rst 
-date: 2022-09-22 
---- 
+# `createGiottoPolygonsFromMask`
+
+Create giotto polygons from mask file
+
 
 ## Description
 

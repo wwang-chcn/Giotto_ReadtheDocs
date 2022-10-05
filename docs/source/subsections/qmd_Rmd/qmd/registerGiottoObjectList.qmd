@@ -1,8 +1,7 @@
---- 
-title: registerGiottoObjectList 
-format: rst 
-date: 2022-09-22 
---- 
+# `registerGiottoObjectList`
+
+registerGiottoObjectList
+
 
 ## Description
 

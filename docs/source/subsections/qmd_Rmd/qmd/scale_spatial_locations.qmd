@@ -1,8 +1,7 @@
---- 
-title: scale_spatial_locations 
-format: rst 
-date: 2022-09-22 
---- 
+# `scale_spatial_locations`
+
+scale_spatial_locations
+
 
 ## Description
 

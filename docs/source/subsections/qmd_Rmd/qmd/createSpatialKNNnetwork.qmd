@@ -1,8 +1,7 @@
---- 
-title: createSpatialKNNnetwork 
-format: rst 
-date: 2022-09-22 
---- 
+# `createSpatialKNNnetwork`
+
+createSpatialKNNnetwork
+
 
 ## Description
 

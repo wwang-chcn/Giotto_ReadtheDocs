@@ -1,8 +1,7 @@
---- 
-title: getCellsFromPolygon 
-format: rst 
-date: 2022-09-22 
---- 
+# `getCellsFromPolygon`
+
+Get cells located within the polygons area
+
 
 ## Description
 

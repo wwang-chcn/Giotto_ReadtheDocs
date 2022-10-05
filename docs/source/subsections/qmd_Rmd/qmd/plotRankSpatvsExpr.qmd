@@ -1,8 +1,7 @@
---- 
-title: plotRankSpatvsExpr 
-format: rst 
-date: 2022-09-22 
---- 
+# `plotRankSpatvsExpr`
+
+plotRankSpatvsExpr
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: subset_dimension_reduction 
-format: rst 
-date: 2022-09-22 
---- 
+# `subset_dimension_reduction`
+
+Subset dimension reduction
+
 
 ## Description
 

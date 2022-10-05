@@ -1,8 +1,7 @@
---- 
-title: plotUMAP_2D 
-format: rst 
-date: 2022-09-22 
---- 
+# `plotUMAP_2D`
+
+plotUMAP_2D
+
 
 ## Description
 

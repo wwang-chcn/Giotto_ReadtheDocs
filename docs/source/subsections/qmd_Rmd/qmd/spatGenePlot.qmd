@@ -1,8 +1,7 @@
---- 
-title: spatGenePlot 
-format: rst 
-date: 2022-09-22 
---- 
+# `spatGenePlot`
+
+spatGenePlot
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: select_spatialGrid 
-format: rst 
-date: 2022-09-22 
---- 
+# `select_spatialGrid`
+
+Select spatial grid
+
 
 ## Description
 

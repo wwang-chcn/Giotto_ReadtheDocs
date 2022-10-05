@@ -1,8 +1,7 @@
---- 
-title: spatNetwDistributionsDistance 
-format: rst 
-date: 2022-09-22 
---- 
+# `spatNetwDistributionsDistance`
+
+Plot spatial distance distribution
+
 
 ## Description
 

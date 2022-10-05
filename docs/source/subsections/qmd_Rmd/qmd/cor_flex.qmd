@@ -1,8 +1,7 @@
---- 
-title: cor_flex 
-format: rst 
-date: 2022-09-22 
---- 
+# `cor_flex`
+
+cor_flex
+
 
 ## Description
 

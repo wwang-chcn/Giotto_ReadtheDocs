@@ -1,8 +1,7 @@
---- 
-title: get10Xmatrix_h5 
-format: rst 
-date: 2022-09-22 
---- 
+# `get10Xmatrix_h5`
+
+get10Xmatrix_h5
+
 
 ## Description
 

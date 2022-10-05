@@ -1,8 +1,7 @@
---- 
-title: get_feature_info 
-format: rst 
-date: 2022-09-22 
---- 
+# `get_feature_info`
+
+Get feature info
+
 
 ## Description
 

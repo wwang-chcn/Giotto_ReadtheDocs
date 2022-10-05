@@ -1,8 +1,7 @@
---- 
-title: extract_points_list 
-format: rst 
-date: 2022-09-22 
---- 
+# `extract_points_list`
+
+Extract list of giotto points objects
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: combCCcom 
-format: rst 
-date: 2022-09-22 
---- 
+# `combCCcom`
+
+combCCcom
+
 
 ## Description
 

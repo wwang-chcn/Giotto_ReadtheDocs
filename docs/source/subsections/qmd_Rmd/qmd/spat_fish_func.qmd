@@ -1,8 +1,7 @@
---- 
-title: spat_fish_func 
-format: rst 
-date: 2022-09-22 
---- 
+# `spat_fish_func`
+
+spat_fish_func
+
 
 ## Description
 

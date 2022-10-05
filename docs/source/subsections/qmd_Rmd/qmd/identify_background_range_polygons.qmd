@@ -1,8 +1,7 @@
---- 
-title: identify_background_range_polygons 
-format: rst 
-date: 2022-09-22 
---- 
+# `identify_background_range_polygons`
+
+Identify background range polygons
+
 
 ## Description
 

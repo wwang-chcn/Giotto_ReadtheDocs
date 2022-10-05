@@ -1,8 +1,7 @@
---- 
-title: set_spatialGrid 
-format: rst 
-date: 2022-09-22 
---- 
+# `set_spatialGrid`
+
+Set spatial grid
+
 
 ## Description
 

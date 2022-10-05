@@ -1,8 +1,7 @@
---- 
-title: showGiottoFeatInfo 
-format: rst 
-date: 2022-09-22 
---- 
+# `showGiottoFeatInfo`
+
+showGiottoFeatInfo
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: showGrids 
-format: rst 
-date: 2022-09-22 
---- 
+# `showGrids`
+
+Show Spatial Grids
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: S3toS4spatNetObj 
-format: rst 
-date: 2022-09-22 
---- 
+# `S3toS4spatNetObj`
+
+Spatial Networks
+
 
 ## Description
 

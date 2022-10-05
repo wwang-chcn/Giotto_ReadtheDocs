@@ -1,8 +1,7 @@
---- 
-title: createGiottoObjectSubcellular 
-format: rst 
-date: 2022-09-22 
---- 
+# `createGiottoObjectSubcellular`
+
+Create a giotto object from subcellular data
+
 
 ## Description
 
@@ -13,10 +12,10 @@ Function to create a giotto object starting from subcellular polygon (e.g. cell)
 
 ```r
 createGiottoObjectSubcellular(
-  gpoints = NULL,
   gpolygons = NULL,
   polygon_mask_list_params = NULL,
   polygon_dfr_list_params = NULL,
+  gpoints = NULL,
   cell_metadata = NULL,
   feat_metadata = NULL,
   spatial_network = NULL,
@@ -28,6 +27,8 @@ createGiottoObjectSubcellular(
   dimension_reduction = NULL,
   nn_network = NULL,
   images = NULL,
+  largeImages = NULL,
+  largeImages_list_params = NULL,
   instructions = NULL,
   cores = NA,
   verbose = TRUE
@@ -39,10 +40,10 @@ createGiottoObjectSubcellular(
 
 Argument      |Description
 ------------- |----------------
-`gpoints`     |     giotto points
 `gpolygons`     |     giotto polygons
 `polygon_mask_list_params`     |     list parameters for [`createGiottoPolygonsFromMask`](#creategiottopolygonsfrommask)
 `polygon_dfr_list_params`     |     list parameters for [`createGiottoPolygonsFromDfr`](#creategiottopolygonsfromdfr)
+`gpoints`     |     giotto points
 `cell_metadata`     |     cell annotation metadata
 `feat_metadata`     |     feature annotation metadata for each unique feature
 `spatial_network`     |     list of spatial network(s)
@@ -54,9 +55,17 @@ Argument      |Description
 `dimension_reduction`     |     list of dimension reduction(s)
 `nn_network`     |     list of nearest neighbor network(s)
 `images`     |     list of images
+`largeImages`     |     list of large images
 `instructions`     |     list of instructions or output result from [`createGiottoInstructions`](#creategiottoinstructions)
 `cores`     |     how many cores or threads to use to read data if paths are provided
 `verbose`     |     be verbose when building Giotto object
+
+
+## Details
+
+There are two different ways to create a Giotto Object with subcellular information:
+ - Starting from polygons (spatial units e.g. cell) represented by a mask or dataframe file and giotto points (analyte coordinates e.g. transcripts)
+ - Starting from polygons (spatial units e.g. cell) represented by a mask or dataframe file and raw intensity images (e.g. protein stains)
 
 
 ## Value

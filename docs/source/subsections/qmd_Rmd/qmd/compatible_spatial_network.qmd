@@ -1,8 +1,7 @@
---- 
-title: compatible_spatial_network 
-format: rst 
-date: 2022-09-22 
---- 
+# `compatible_spatial_network`
+
+Compatible spatial network
+
 
 ## Description
 

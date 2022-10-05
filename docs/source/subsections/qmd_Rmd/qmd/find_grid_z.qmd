@@ -1,8 +1,7 @@
---- 
-title: find_grid_z 
-format: rst 
-date: 2022-09-22 
---- 
+# `find_grid_z`
+
+find_grid_z
+
 
 ## Description
 

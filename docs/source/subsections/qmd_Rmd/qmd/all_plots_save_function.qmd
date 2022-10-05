@@ -1,8 +1,7 @@
---- 
-title: all_plots_save_function 
-format: rst 
-date: 2022-09-22 
---- 
+# `all_plots_save_function`
+
+all_plots_save_function
+
 
 ## Description
 

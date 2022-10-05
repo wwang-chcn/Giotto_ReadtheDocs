@@ -1,8 +1,7 @@
---- 
-title: my_growMeans 
-format: rst 
-date: 2022-09-22 
---- 
+# `my_growMeans`
+
+my_growMeans
+
 
 ## Description
 

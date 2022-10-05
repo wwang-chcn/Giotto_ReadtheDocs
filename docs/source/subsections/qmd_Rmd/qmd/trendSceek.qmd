@@ -1,8 +1,7 @@
---- 
-title: trendSceek 
-format: rst 
-date: 2022-09-22 
---- 
+# `trendSceek`
+
+trendSceek
+
 
 ## Description
 

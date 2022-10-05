@@ -1,8 +1,7 @@
---- 
-title: silhouetteRankTest 
-format: rst 
-date: 2022-09-22 
---- 
+# `silhouetteRankTest`
+
+silhouetteRankTest
+
 
 ## Description
 

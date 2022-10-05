@@ -1,8 +1,7 @@
---- 
-title: plotGiottoImage 
-format: rst 
-date: 2022-09-22 
---- 
+# `plotGiottoImage`
+
+Plot a giotto image object
+
 
 ## Description
 

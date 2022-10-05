@@ -1,8 +1,7 @@
---- 
-title: giotto_point 
-format: rst 
-date: 2022-09-22 
---- 
+# `giotto_point`
+
+giotto_point
+
 
 ## Description
 

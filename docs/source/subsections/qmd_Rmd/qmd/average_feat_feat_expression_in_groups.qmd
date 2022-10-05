@@ -1,8 +1,7 @@
---- 
-title: average_feat_feat_expression_in_groups 
-format: rst 
-date: 2022-09-22 
---- 
+# `average_feat_feat_expression_in_groups`
+
+average_feat_feat_expression_in_groups
+
 
 ## Description
 

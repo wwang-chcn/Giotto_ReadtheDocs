@@ -1,8 +1,7 @@
---- 
-title: convert_to_full_spatial_network 
-format: rst 
-date: 2022-09-22 
---- 
+# `convert_to_full_spatial_network`
+
+convert_to_full_spatial_network
+
 
 ## Description
 

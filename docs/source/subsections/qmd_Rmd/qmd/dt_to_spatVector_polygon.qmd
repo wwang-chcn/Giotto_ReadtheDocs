@@ -1,8 +1,7 @@
---- 
-title: dt_to_spatVector_polygon 
-format: rst 
-date: 2022-09-22 
---- 
+# `dt_to_spatVector_polygon`
+
+Convert data.table to polygon spatVector
+
 
 ## Description
 

@@ -1,8 +1,7 @@
---- 
-title: set_giottoImage_MG 
-format: rst 
-date: 2022-09-22 
---- 
+# `set_giottoImage_MG`
+
+Set magick -based giotto `image`
+
 
 ## Description
 

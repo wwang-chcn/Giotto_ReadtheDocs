@@ -1,8 +1,7 @@
---- 
-title: list_spatial_grids 
-format: rst 
-date: 2022-09-22 
---- 
+# `list_spatial_grids`
+
+list_spatial_grids
+
 
 ## Description
 

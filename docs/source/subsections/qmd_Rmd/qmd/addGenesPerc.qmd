@@ -1,8 +1,7 @@
---- 
-title: addGenesPerc 
-format: rst 
-date: 2022-09-22 
---- 
+# `addGenesPerc`
+
+addGenesPerc
+
 
 ## Description
 

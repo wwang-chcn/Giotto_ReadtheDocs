@@ -1,8 +1,7 @@
---- 
-title: nullOrList-class 
-format: rst 
-date: 2022-09-22 
---- 
+# `nullOrList-class`
+
+NULL or list class union
+
 
 ## Description
 

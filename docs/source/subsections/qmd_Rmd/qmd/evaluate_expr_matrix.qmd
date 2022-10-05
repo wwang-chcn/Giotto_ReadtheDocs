@@ -1,8 +1,7 @@
---- 
-title: evaluate_expr_matrix 
-format: rst 
-date: 2022-09-22 
---- 
+# `evaluate_expr_matrix`
+
+Evaluate expression matrix
+
 
 ## Description
 
