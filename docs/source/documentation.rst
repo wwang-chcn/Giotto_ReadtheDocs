@@ -489,6 +489,7 @@ Dimension Reduction
 	runUMAP </subsections/md_rst/runUMAP.rst>
 	runtSNE </subsections/md_rst/runtSNE.rst>
 	runGiottoHarmony </subsections/md_rst/runGiottoHarmony.rst>
+	runWNN </subsections/md_rst/runWNN.rst>
 
 
 .. list-table:: 
@@ -513,6 +514,8 @@ Dimension Reduction
 	  - runtSNE
 	* - :doc:`runGiottoHarmony </subsections/md_rst/runGiottoHarmony>`
 	  - runGiottoHarmony
+	* - :doc:`runWNN </subsections/md_rst/runWNN>`
+	  - runWNN
 
 
 *************************
@@ -1247,6 +1250,12 @@ Cell Neighborhood: Spatial Interaction Changed Features (ICF)
 	filterICF </subsections/md_rst/filterICF.rst>
 	plotInteractionChangedFeats </subsections/md_rst/plotInteractionChangedFeats.rst>
 	plotICF </subsections/md_rst/plotICF.rst>
+	plotCellProximityFeats </subsections/md_rst/plotCellProximityFeats.rst>
+	plotCPF </subsections/md_rst/plotCPF.rst>
+	combineInteractionChangedFeats </subsections/md_rst/combineInteractionChangedFeats.rst>
+	combineICF </subsections/md_rst/combineICF.rst>
+	plotCombineInteractionChangedFeats </subsections/md_rst/plotCombineInteractionChangedFeats.rst>
+	plotCombineICF </subsections/md_rst/plotCombineICF.rst>
 
 .. list-table:: 
 	:widths: 100 100 
@@ -1266,6 +1275,18 @@ Cell Neighborhood: Spatial Interaction Changed Features (ICF)
 	  - plotInteractionChangedFeats
 	* - :doc:`plotICF </subsections/md_rst/plotICF>`
 	  - plotICF
+	* - :doc:`plotCellProximityFeats </subsections/md_rst/plotCellProximityFeats>`
+	  - plotCellProximityFeats
+	* - :doc:`plotCPF </subsections/md_rst/plotCPF>`
+	  - plotCPF
+	* - :doc:`combineInteractionChangedFeats </subsections/md_rst/combineInteractionChangedFeats>`
+	  - combineInteractionChangedFeats
+	* - :doc:`combineICF </subsections/md_rst/combineICF>`
+	  - combineICF
+	* - :doc:`plotCombineInteractionChangedFeats </subsections/md_rst/plotCombineInteractionChangedFeats>`
+	  - plotCombineInteractionChangedFeats
+	* - :doc:`plotCombineICF </subsections/md_rst/plotCombineICF>`
+	  - plotCombineICF
 
 
 Cell Neighborhood: Ligand-Receptor Cell Communication
@@ -1284,6 +1305,7 @@ Cell Neighborhood: Ligand-Receptor Cell Communication
 	plotRecovery </subsections/md_rst/plotRecovery.rst>
 	plotCCcomHeatmap </subsections/md_rst/plotCCcomHeatmap.rst>
 	plotCombineCellCellCommunication </subsections/md_rst/plotCombineCellCellCommunication.rst>
+	plotCombineCCcom </subsections/md_rst/plotCombineCCcom.rst>
 
 
 .. list-table:: 
@@ -1308,6 +1330,8 @@ Cell Neighborhood: Ligand-Receptor Cell Communication
 	  - plotCCcomHeatmap 
 	* - :doc:`plotCombineCellCellCommunication </subsections/md_rst/plotCombineCellCellCommunication>`
 	  - plotCombineCellCellCommunication 
+	* - :doc:`plotCombineCCcom </subsections/md_rst/plotCombineCCcom>`
+	  - plotCombineCCcom
 
 
 **************************************************************
@@ -1326,6 +1350,7 @@ Subcellular
 	addSpatialCentroidLocations </subsections/md_rst/addSpatialCentroidLocations.rst>
 	addSpatialCentroidLocationsLayer </subsections/md_rst/addSpatialCentroidLocationsLayer.rst>
 	calculateOverlapParallel </subsections/md_rst/calculateOverlapParallel.rst>
+	calculateOverlapPolygonImages </subsections/md_rst/calculateOverlapPolygonImages.rst>
 	calculateOverlapRaster </subsections/md_rst/calculateOverlapRaster.rst>
 	calculateOverlapSerial </subsections/md_rst/calculateOverlapSerial.rst>
 	combineCellData </subsections/md_rst/combineCellData.rst>
@@ -1335,6 +1360,7 @@ Subcellular
 	createGiottoPolygonsFromDfr </subsections/md_rst/createGiottoPolygonsFromDfr.rst>
 	createGiottoPolygonsFromMask </subsections/md_rst/createGiottoPolygonsFromMask.rst>
 	overlapToMatrix </subsections/md_rst/overlapToMatrix.rst>
+	overlapImagesToMatrix </subsections/md_rst/overlapImagesToMatrix.rst>
 	overlapToMatrixMultiPoly </subsections/md_rst/overlapToMatrixMultiPoly.rst>
 	smoothGiottoPolygons </subsections/md_rst/smoothGiottoPolygons.rst>
 	spatInSituPlotDensity </subsections/md_rst/spatInSituPlotDensity.rst>
@@ -1362,6 +1388,8 @@ Subcellular
 	  - addSpatialCentroidLocationsLayer
 	* - :doc:`calculateOverlapParallel </subsections/md_rst/calculateOverlapParallel>`
 	  - calculateOverlapParallel
+	* - :doc:`calculateOverlapPolygonImages </subsections/md_rst/calculateOverlapPolygonImages>`
+	  - calculateOverlapPolygonImages
 	* - :doc:`calculateOverlapRaster </subsections/md_rst/calculateOverlapRaster>`
 	  - calculateOverlapRaster
 	* - :doc:`calculateOverlapSerial </subsections/md_rst/calculateOverlapSerial>`
@@ -1380,6 +1408,8 @@ Subcellular
 	  - createGiottoPolygonsFromMask
 	* - :doc:`overlapToMatrix </subsections/md_rst/overlapToMatrix>`
 	  - overlapToMatrix
+	* - :doc:`overlapImagesToMatrix </subsections/md_rst/overlapImagesToMatrix>`
+	  - overlapImagesToMatrix
 	* - :doc:`overlapToMatrixMultiPoly </subsections/md_rst/overlapToMatrixMultiPoly>`
 	  - overlapToMatrixMultiPoly
 	* - :doc:`smoothGiottoPolygons </subsections/md_rst/smoothGiottoPolygons>`
