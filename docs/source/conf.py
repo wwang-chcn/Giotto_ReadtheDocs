@@ -40,7 +40,6 @@ release = '1.1.0'
 master_dox = 'index'
 extensions = [
 #'sphinx_rtd_theme', #added to fix bullet-point issue
-'pydata_sphinx_theme',
 'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
 'sphinx_design',
@@ -91,7 +90,7 @@ suppress_warnings = [
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 #html_theme = "sphinx_rtd_theme"
-html_theme = "pydata_sphinx_theme"
+html_theme = "furo"
 #html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 #html_static_path = ["_static"]
 #html_logo = "images/GiottoLogo.png"
