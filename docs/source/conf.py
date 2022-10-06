@@ -93,16 +93,17 @@ suppress_warnings = [
 html_theme = "pydata_sphinx_theme"
 #html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 #html_static_path = ["_static"]
-#html_logo = "images/GiottoLogo.png"
+html_logo = "images/GiottoLogo.png"
 
 html_theme_options = {
-    'logo_only': True,
+    'logo_only': False,
     'display_version': True,
     'navigation_depth': 4,
     #Toc Tree Options
     'collapse_navigation': True,
     'sticky_navigation': True,
-    'body_max_width': 'none'
+    'body_max_width': 'none',
+    "use_edit_page_button": True
 }
 
 html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }
