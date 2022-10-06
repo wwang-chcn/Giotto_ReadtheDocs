@@ -40,6 +40,7 @@ release = '1.1.0'
 master_dox = 'index'
 extensions = [
 #'sphinx_rtd_theme', #added to fix bullet-point issue
+'pydata_sphinx_theme',
 'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
 'sphinx_design',
