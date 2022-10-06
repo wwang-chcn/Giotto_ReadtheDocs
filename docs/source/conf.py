@@ -48,7 +48,7 @@ extensions = [
 'sphinx_toolbox', 
 'sphinx_toolbox.shields',
 'sphinx_toolbox.github',
-'sphinx_rtd_dark_mode'
+#'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',
 #'m2r2', -- moved to requirements.txt
@@ -90,9 +90,10 @@ suppress_warnings = [
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-html_static_path = ["_static"]
+#html_theme = "sphinx_rtd_theme"
+html_theme = "pydata_sphinx_theme"
+#html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+#html_static_path = ["_static"]
 html_logo = "images/GiottoLogo.png"
 
 html_theme_options = {
