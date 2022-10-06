@@ -39,10 +39,10 @@ import sphinx_rtd_theme
 
 master_dox = 'index'
 extensions = [
-'sphinx_rtd_theme', #added to fix bullet-point issue
+#'sphinx_rtd_theme', #added to fix bullet-point issue
+'pydata-sphinx-theme',
 'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
-'sphinx_rtd_theme',
 'sphinx_design',
 'sphinx_copybutton',
 'sphinx_toolbox', 
