@@ -1,7 +1,8 @@
-# `package_check`
-
-package_check
-
+--- 
+title: package_check 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

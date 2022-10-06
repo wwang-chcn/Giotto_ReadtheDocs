@@ -1,7 +1,8 @@
-# `set_giottoImage`
-
-Set giotto image object
-
+--- 
+title: set_giottoImage 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

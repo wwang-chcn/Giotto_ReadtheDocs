@@ -1,7 +1,8 @@
-# `get_polygon_info`
-
-Get polygon info
-
+--- 
+title: get_polygon_info 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

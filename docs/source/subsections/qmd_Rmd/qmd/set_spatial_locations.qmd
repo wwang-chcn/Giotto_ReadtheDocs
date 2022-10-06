@@ -1,7 +1,8 @@
-# `set_spatial_locations`
-
-Set spatial locations
-
+--- 
+title: set_spatial_locations 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `decide_cluster_order`
-
-decide_cluster_order
-
+--- 
+title: decide_cluster_order 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

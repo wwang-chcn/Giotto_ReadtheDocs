@@ -1,7 +1,8 @@
-# `sort_combine_two_DT_columns`
-
-sort_combine_two_DT_columns
-
+--- 
+title: sort_combine_two_DT_columns 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

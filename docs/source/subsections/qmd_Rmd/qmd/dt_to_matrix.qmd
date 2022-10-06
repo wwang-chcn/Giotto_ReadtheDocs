@@ -1,7 +1,8 @@
-# `dt_to_matrix`
-
-dt_to_matrix
-
+--- 
+title: dt_to_matrix 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

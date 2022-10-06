@@ -1,7 +1,8 @@
-# `createGiottoVisiumObject`
-
-Create a giotto object from 10x visium data
-
+--- 
+title: createGiottoVisiumObject 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

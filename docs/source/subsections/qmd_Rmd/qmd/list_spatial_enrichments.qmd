@@ -1,7 +1,8 @@
-# `list_spatial_enrichments`
-
-list_spatial_enrichments
-
+--- 
+title: list_spatial_enrichments 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

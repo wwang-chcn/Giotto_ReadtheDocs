@@ -1,7 +1,8 @@
-# `plotCCcomHeatmap`
-
-plotCCcomHeatmap
-
+--- 
+title: plotCCcomHeatmap 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

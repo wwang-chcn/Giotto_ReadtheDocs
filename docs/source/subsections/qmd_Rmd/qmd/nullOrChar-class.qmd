@@ -1,7 +1,8 @@
-# `nullOrChar-class`
-
-NULL or char class union
-
+--- 
+title: nullOrChar-class 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

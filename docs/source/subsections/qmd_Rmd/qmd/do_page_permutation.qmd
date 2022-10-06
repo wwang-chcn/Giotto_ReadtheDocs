@@ -1,7 +1,8 @@
-# `do_page_permutation`
-
-do_page_permutation
-
+--- 
+title: do_page_permutation 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

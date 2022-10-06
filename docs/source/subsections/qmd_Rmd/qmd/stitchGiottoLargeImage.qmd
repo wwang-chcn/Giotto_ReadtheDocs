@@ -1,7 +1,8 @@
-# `stitchGiottoLargeImage`
-
-Stitch multiple giottoLargeImage objects into a single giottoLargeImage object
-
+--- 
+title: stitchGiottoLargeImage 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

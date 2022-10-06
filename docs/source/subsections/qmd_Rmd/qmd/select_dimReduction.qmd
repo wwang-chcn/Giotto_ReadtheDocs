@@ -1,7 +1,8 @@
-# `select_dimReduction`
-
-select_dimReduction
-
+--- 
+title: select_dimReduction 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

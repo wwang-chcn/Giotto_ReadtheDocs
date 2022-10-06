@@ -1,7 +1,8 @@
-# `kmeans_binarize`
-
-kmeans_binarize
-
+--- 
+title: kmeans_binarize 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `do_spatial_grid_averaging`
-
-do_spatial_grid_averaging
-
+--- 
+title: do_spatial_grid_averaging 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

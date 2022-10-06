@@ -1,7 +1,8 @@
-# `list_feature_info_names`
-
-list_feature_info_names
-
+--- 
+title: list_feature_info_names 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `binSpectSingle`
-
-binSpectSingle
-
+--- 
+title: binSpectSingle 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `convert_to_reduced_spatial_network`
-
-convert_to_reduced_spatial_network
-
+--- 
+title: convert_to_reduced_spatial_network 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

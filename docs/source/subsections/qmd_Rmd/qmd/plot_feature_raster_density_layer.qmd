@@ -1,7 +1,8 @@
-# `plot_feature_raster_density_layer`
-
-plot_feature_raster_density_layer
-
+--- 
+title: plot_feature_raster_density_layer 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

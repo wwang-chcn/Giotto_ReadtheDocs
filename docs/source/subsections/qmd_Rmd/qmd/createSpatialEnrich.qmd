@@ -1,7 +1,8 @@
-# `createSpatialEnrich`
-
-createSpatialEnrich
-
+--- 
+title: createSpatialEnrich 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

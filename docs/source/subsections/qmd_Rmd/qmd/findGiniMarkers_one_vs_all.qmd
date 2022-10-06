@@ -1,7 +1,8 @@
-# `findGiniMarkers_one_vs_all`
-
-findGiniMarkers_one_vs_all
-
+--- 
+title: findGiniMarkers_one_vs_all 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

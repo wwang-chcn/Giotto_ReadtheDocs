@@ -1,7 +1,8 @@
-# `ggplot_save_function`
-
-ggplot_save_function
-
+--- 
+title: ggplot_save_function 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

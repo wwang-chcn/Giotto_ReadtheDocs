@@ -1,7 +1,8 @@
-# `runPCA_prcomp_irlba`
-
-runPCA_prcomp_irlba
-
+--- 
+title: runPCA_prcomp_irlba 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

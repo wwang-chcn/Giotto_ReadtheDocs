@@ -1,7 +1,8 @@
-# `plotUMAP`
-
-plotUMAP
-
+--- 
+title: plotUMAP 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

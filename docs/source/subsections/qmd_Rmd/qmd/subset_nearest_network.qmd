@@ -1,7 +1,8 @@
-# `subset_nearest_network`
-
-Subset nearest network
-
+--- 
+title: subset_nearest_network 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

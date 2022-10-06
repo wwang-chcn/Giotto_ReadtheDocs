@@ -1,7 +1,8 @@
-# `subset_feature_info_data`
-
-Subset feature info data
-
+--- 
+title: subset_feature_info_data 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

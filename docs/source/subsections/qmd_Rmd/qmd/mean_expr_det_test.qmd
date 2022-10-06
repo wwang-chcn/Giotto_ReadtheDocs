@@ -1,7 +1,8 @@
-# `mean_expr_det_test`
-
-mean_expr_det_test
-
+--- 
+title: mean_expr_det_test 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

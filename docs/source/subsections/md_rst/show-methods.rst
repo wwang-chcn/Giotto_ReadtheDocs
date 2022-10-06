@@ -2,7 +2,7 @@
 show-methods
 ============
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 Description
 ===========
@@ -12,6 +12,8 @@ show method for dimObj class
 show method for giottoImage class
 
 show method for giottoLargeImage class
+
+show method for giotto class
 
 show method for aggregateExprObj class
 

@@ -1,7 +1,8 @@
-# `join_spatlocs`
-
-join_spatlocs
-
+--- 
+title: join_spatlocs 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

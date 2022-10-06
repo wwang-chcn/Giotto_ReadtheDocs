@@ -1,7 +1,8 @@
-# `lapply_flex`
-
-lapply_flex
-
+--- 
+title: lapply_flex 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

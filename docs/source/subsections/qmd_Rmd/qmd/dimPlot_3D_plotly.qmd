@@ -1,7 +1,8 @@
-# `dimPlot_3D_plotly`
-
-dimPlot_3D_plotly
-
+--- 
+title: dimPlot_3D_plotly 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `spat_OR_func`
-
-spat_OR_func
-
+--- 
+title: spat_OR_func 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

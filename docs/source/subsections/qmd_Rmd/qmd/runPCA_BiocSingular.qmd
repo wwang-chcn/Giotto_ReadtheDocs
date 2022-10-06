@@ -1,7 +1,8 @@
-# `runPCA_BiocSingular`
-
-runPCA_BiocSingular
-
+--- 
+title: runPCA_BiocSingular 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

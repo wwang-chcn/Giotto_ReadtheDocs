@@ -1,7 +1,8 @@
-# `addGiottoPolygons`
-
-Add giotto polygons to giotto object
-
+--- 
+title: addGiottoPolygons 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

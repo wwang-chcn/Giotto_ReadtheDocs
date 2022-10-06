@@ -1,7 +1,8 @@
-# `calculate_distance_and_weight`
-
-calculate_distance_and_weight
-
+--- 
+title: calculate_distance_and_weight 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

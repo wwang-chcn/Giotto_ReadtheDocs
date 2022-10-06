@@ -1,7 +1,8 @@
-# `my_rowMeans`
-
-my_rowMeans
-
+--- 
+title: my_rowMeans 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

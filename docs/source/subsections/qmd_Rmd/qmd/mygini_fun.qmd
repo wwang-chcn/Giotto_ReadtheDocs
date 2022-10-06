@@ -1,7 +1,8 @@
-# `mygini_fun`
-
-mygini_fun
-
+--- 
+title: mygini_fun 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

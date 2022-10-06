@@ -1,7 +1,8 @@
-# `cellProximityNetwork`
-
-cellProximityNetwork
-
+--- 
+title: cellProximityNetwork 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

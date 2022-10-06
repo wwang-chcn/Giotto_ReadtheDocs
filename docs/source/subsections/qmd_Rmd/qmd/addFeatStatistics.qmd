@@ -1,7 +1,8 @@
-# `addFeatStatistics`
-
-Add feature statistics
-
+--- 
+title: addFeatStatistics 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

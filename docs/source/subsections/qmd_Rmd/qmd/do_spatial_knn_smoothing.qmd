@@ -1,7 +1,8 @@
-# `do_spatial_knn_smoothing`
-
-do_spatial_knn_smoothing
-
+--- 
+title: do_spatial_knn_smoothing 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

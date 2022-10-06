@@ -1,7 +1,8 @@
-# `get10XmatrixOLD`
-
-get10XmatrixOLD
-
+--- 
+title: get10XmatrixOLD 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

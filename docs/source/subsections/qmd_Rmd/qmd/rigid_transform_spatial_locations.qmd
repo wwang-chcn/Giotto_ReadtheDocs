@@ -1,7 +1,8 @@
-# `rigid_transform_spatial_locations`
-
-rigid_transform_spatial_locations
-
+--- 
+title: rigid_transform_spatial_locations 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

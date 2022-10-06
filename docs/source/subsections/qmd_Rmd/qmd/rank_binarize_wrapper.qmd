@@ -1,7 +1,8 @@
-# `rank_binarize_wrapper`
-
-rank_binarize_wrapper
-
+--- 
+title: rank_binarize_wrapper 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

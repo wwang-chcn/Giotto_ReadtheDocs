@@ -1,7 +1,8 @@
-# `OR_test_fnc`
-
-OR_test_fnc
-
+--- 
+title: OR_test_fnc 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

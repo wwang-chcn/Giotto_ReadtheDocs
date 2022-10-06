@@ -1,7 +1,8 @@
-# `colSums_flex`
-
-colSums_flex
-
+--- 
+title: colSums_flex 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

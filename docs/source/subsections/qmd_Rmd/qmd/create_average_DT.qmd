@@ -1,7 +1,8 @@
-# `create_average_DT`
-
-create_average_DT
-
+--- 
+title: create_average_DT 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

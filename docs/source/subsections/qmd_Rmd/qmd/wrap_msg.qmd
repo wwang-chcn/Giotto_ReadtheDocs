@@ -1,7 +1,8 @@
-# `wrap_msg`
-
-Wrap message
-
+--- 
+title: wrap_msg 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

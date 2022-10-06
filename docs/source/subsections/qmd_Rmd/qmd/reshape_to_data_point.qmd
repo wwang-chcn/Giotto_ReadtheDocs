@@ -1,7 +1,8 @@
-# `reshape_to_data_point`
-
-reshape_to_data_point
-
+--- 
+title: reshape_to_data_point 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

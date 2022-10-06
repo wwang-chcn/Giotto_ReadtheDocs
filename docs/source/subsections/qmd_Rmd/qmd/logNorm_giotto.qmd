@@ -1,7 +1,8 @@
-# `logNorm_giotto`
-
-logNorm_giotto
-
+--- 
+title: logNorm_giotto 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

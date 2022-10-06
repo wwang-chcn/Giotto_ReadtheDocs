@@ -1,7 +1,8 @@
-# `set_default_feat_type`
-
-set_default_feat_type
-
+--- 
+title: set_default_feat_type 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

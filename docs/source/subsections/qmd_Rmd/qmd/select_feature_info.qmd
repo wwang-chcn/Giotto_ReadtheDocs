@@ -1,7 +1,8 @@
-# `select_feature_info`
-
-Select feature info
-
+--- 
+title: select_feature_info 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

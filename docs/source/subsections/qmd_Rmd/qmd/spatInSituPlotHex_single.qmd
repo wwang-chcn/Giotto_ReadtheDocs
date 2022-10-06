@@ -1,7 +1,8 @@
-# `spatInSituPlotHex_single`
-
-spatInSituPlotHex_single
-
+--- 
+title: spatInSituPlotHex_single 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

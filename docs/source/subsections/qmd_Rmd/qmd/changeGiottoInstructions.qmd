@@ -1,7 +1,8 @@
-# `changeGiottoInstructions`
-
-Change giotto instruction(s) associated with giotto object
-
+--- 
+title: changeGiottoInstructions 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

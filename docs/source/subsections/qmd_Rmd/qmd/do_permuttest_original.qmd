@@ -1,7 +1,8 @@
-# `do_permuttest_original`
-
-do_permuttest_original
-
+--- 
+title: do_permuttest_original 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

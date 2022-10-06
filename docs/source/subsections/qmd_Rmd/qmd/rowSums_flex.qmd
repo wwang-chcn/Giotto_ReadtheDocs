@@ -1,7 +1,8 @@
-# `rowSums_flex`
-
-rowSums_flex
-
+--- 
+title: rowSums_flex 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

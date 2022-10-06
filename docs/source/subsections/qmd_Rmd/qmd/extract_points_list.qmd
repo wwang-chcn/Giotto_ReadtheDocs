@@ -1,7 +1,8 @@
-# `extract_points_list`
-
-Extract list of giotto points objects
-
+--- 
+title: extract_points_list 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

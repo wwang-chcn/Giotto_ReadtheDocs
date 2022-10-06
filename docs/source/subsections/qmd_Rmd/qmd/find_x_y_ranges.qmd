@@ -1,7 +1,8 @@
-# `find_x_y_ranges`
-
-find_x_y_ranges
-
+--- 
+title: find_x_y_ranges 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

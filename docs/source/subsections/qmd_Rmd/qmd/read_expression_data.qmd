@@ -1,7 +1,8 @@
-# `read_expression_data`
-
-Read expression data
-
+--- 
+title: read_expression_data 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

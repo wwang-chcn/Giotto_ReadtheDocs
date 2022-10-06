@@ -1,7 +1,8 @@
-# `plot_giottoLargeImage`
-
-plot_giottoLargeImage
-
+--- 
+title: plot_giottoLargeImage 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

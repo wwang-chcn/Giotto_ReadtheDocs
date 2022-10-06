@@ -1,7 +1,8 @@
-# `dimGenePlot3D`
-
-dimGenePlot3D
-
+--- 
+title: dimGenePlot3D 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

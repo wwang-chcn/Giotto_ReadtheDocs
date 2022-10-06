@@ -1,7 +1,8 @@
-# `addCellStatistics`
-
-addCellStatistics
-
+--- 
+title: addCellStatistics 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `list_dim_reductions`
-
-list_dim_reductions
-
+--- 
+title: list_dim_reductions 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `get_spatialGrid`
-
-Get spatial grid
-
+--- 
+title: get_spatialGrid 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

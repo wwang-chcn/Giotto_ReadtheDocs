@@ -1,7 +1,8 @@
-# `do_rank_permutation`
-
-do_rank_permutation
-
+--- 
+title: do_rank_permutation 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `join_expression_matrices`
-
-join_expression_matrices
-
+--- 
+title: join_expression_matrices 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

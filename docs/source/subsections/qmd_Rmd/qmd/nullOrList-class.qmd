@@ -1,7 +1,8 @@
-# `nullOrList-class`
-
-NULL or list class union
-
+--- 
+title: nullOrList-class 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

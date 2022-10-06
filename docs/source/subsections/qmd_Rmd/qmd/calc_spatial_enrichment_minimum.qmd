@@ -1,7 +1,8 @@
-# `calc_spatial_enrichment_minimum`
-
-calc_spatial_enrichment_minimum
-
+--- 
+title: calc_spatial_enrichment_minimum 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

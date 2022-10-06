@@ -1,7 +1,8 @@
-# `plot_auto_largeImage_resample`
-
-Optimized largeImage resampling
-
+--- 
+title: plot_auto_largeImage_resample 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

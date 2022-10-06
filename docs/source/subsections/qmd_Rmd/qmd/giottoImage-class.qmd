@@ -1,7 +1,8 @@
-# `giottoImage-class`
-
-S4 giottoImage Class
-
+--- 
+title: giottoImage-class 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

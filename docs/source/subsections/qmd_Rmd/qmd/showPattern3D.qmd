@@ -1,7 +1,8 @@
-# `showPattern3D`
-
-showPattern3D
-
+--- 
+title: showPattern3D 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

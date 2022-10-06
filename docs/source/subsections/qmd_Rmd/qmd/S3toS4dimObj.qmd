@@ -1,7 +1,8 @@
-# `S3toS4dimObj`
-
-Dimension reductions
-
+--- 
+title: S3toS4dimObj 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

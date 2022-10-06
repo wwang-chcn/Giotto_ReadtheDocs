@@ -1,7 +1,8 @@
-# `addGiottoPoints`
-
-Add giotto points object to giotto object
-
+--- 
+title: addGiottoPoints 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

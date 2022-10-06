@@ -1,7 +1,8 @@
-# `do_ttest`
-
-do_ttest
-
+--- 
+title: do_ttest 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

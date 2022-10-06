@@ -1,7 +1,8 @@
-# `DT_removeNA`
-
-DT_removeNA
-
+--- 
+title: DT_removeNA 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

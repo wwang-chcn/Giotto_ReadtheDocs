@@ -1,7 +1,8 @@
-# `giottoLargeImage-class`
-
-S4 giottoLargeImage Class
-
+--- 
+title: giottoLargeImage-class 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

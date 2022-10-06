@@ -1,7 +1,8 @@
-# `removeCellAnnotation`
-
-Remove cell annotation
-
+--- 
+title: removeCellAnnotation 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

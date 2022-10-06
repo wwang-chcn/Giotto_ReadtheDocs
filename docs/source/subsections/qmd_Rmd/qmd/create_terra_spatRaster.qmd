@@ -1,7 +1,8 @@
-# `create_terra_spatRaster`
-
-Load image as a terra spatRaster object
-
+--- 
+title: create_terra_spatRaster 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

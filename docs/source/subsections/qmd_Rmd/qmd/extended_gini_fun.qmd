@@ -1,7 +1,8 @@
-# `extended_gini_fun`
-
-extended_gini_fun
-
+--- 
+title: extended_gini_fun 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

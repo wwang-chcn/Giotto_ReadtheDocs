@@ -1,7 +1,8 @@
-# `set_feature_metadata`
-
-Set feature metadata
-
+--- 
+title: set_feature_metadata 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

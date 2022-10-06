@@ -1,7 +1,8 @@
-# `aggregateExprObj-class`
-
-S4 aggregateExprObj
-
+--- 
+title: aggregateExprObj-class 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -2,7 +2,7 @@
 findCPG
 =======
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -11,8 +11,8 @@ findCPG
 Description
 ===========
 
-Identifies cell-to-cell Interaction Changed Genes (ICG), i.e. genes that
-are differentially expressed due to proximity to other cell types.
+Identifies cell-to-cell Interaction Changed Features (ICF), i.e. genes
+that are differentially expressed due to proximity to other cell types.
 
 Usage
 =====
@@ -28,7 +28,7 @@ Arguments
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``...``                       | Arguments passed on to               |
-|                               | ```findICG`` <#findicg>`__           |
+|                               | ```findICF`` <#findicf>`__           |
 |                               | list(“:raw-latex:`\n`”, ” “,         |
 |                               | list(list(list(”gobject”)),          |
 |                               | list(“giotto object”)),              |
@@ -43,8 +43,8 @@ Arguments
 |                               | ist(list(list(”expression_values”)), |
 |                               | list(“expression values to use”)),   |
 |                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”selected_genes”)),   |
-|                               | list(“subset of selected genes       |
+|                               | list(list(list(”selected_feats”)),   |
+|                               | list(“subset of selected features    |
 |                               | (optional)”)), “:raw-latex:`\n`”, ”  |
 |                               | “,                                   |
 |                               | list(list(list(”cluster_column”)),   |
@@ -62,4 +62,4 @@ Arguments
 Seealso
 =======
 
-```findICG`` <#findicg>`__
+```findICF`` <#findicf>`__

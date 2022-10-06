@@ -1,7 +1,8 @@
-# `solve_dampened_WLSj`
-
-solve_dampened_WLSj
-
+--- 
+title: solve_dampened_WLSj 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

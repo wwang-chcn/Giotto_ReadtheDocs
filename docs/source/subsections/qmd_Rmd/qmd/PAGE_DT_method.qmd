@@ -1,7 +1,8 @@
-# `PAGE_DT_method`
-
-PAGE_DT_method
-
+--- 
+title: PAGE_DT_method 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `reconnect_giottoImage_MG`
-
-reconnect_giottoImage_MG
-
+--- 
+title: reconnect_giottoImage_MG 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

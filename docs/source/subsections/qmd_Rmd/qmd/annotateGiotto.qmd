@@ -1,7 +1,8 @@
-# `annotateGiotto`
-
-Annotate giotto clustering
-
+--- 
+title: annotateGiotto 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `S3toS4spatGridObj`
-
-Spatially Binned Data
-
+--- 
+title: S3toS4spatGridObj 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

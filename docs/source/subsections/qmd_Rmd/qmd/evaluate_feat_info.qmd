@@ -1,7 +1,8 @@
-# `evaluate_feat_info`
-
-Evaluate feature info
-
+--- 
+title: evaluate_feat_info 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

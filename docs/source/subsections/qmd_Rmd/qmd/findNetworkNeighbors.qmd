@@ -1,7 +1,8 @@
-# `findNetworkNeighbors`
-
-Find network neighbors
-
+--- 
+title: findNetworkNeighbors 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

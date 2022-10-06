@@ -1,7 +1,8 @@
-# `dt_to_spatVector_points`
-
-Convert point data data.table to spatVector
-
+--- 
+title: dt_to_spatVector_points 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

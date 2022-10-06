@@ -1,7 +1,8 @@
-# `addFeatMetadata`
-
-Add feature metadata
-
+--- 
+title: addFeatMetadata 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

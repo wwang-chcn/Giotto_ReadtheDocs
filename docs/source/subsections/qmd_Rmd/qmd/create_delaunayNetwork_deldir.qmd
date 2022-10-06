@@ -1,7 +1,8 @@
-# `create_delaunayNetwork_deldir`
-
-create_delaunayNetwork_deldir
-
+--- 
+title: create_delaunayNetwork_deldir 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

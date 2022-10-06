@@ -1,7 +1,8 @@
-# `combineInteractionChangedGenes`
-
-combineInteractionChangedGenes
-
+--- 
+title: combineInteractionChangedGenes 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

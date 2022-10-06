@@ -1,7 +1,8 @@
-# `create_segm_polygons`
-
-Create segmentation polygons
-
+--- 
+title: create_segm_polygons 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

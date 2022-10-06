@@ -1,7 +1,8 @@
-# `get_sectionThickness`
-
-get_sectionThickness
-
+--- 
+title: get_sectionThickness 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

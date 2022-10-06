@@ -1,7 +1,8 @@
-# `join_cell_meta`
-
-join_cell_meta
-
+--- 
+title: join_cell_meta 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

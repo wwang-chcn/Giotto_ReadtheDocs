@@ -1,7 +1,8 @@
-# `list_spatial_locations_names`
-
-list_spatial_locations_names
-
+--- 
+title: list_spatial_locations_names 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `createGiottoPoints`
-
-Create giotto points object
-
+--- 
+title: createGiottoPoints 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

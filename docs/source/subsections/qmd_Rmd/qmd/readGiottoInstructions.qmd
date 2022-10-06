@@ -1,7 +1,8 @@
-# `readGiottoInstructions`
-
-Read giotto instructions associated with giotto object
-
+--- 
+title: readGiottoInstructions 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

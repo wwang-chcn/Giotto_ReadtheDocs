@@ -1,7 +1,8 @@
-# `get_giottoImage_MG`
-
-Get magick -based giotto `image`
-
+--- 
+title: get_giottoImage_MG 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

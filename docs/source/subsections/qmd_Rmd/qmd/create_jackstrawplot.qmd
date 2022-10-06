@@ -1,7 +1,8 @@
-# `create_jackstrawplot`
-
-create_jackstrawplot
-
+--- 
+title: create_jackstrawplot 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

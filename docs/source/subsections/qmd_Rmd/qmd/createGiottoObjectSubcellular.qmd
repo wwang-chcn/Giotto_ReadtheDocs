@@ -1,7 +1,8 @@
-# `createGiottoObjectSubcellular`
-
-Create a giotto object from subcellular data
-
+--- 
+title: createGiottoObjectSubcellular 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

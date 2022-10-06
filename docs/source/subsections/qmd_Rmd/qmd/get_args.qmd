@@ -1,7 +1,8 @@
-# `get_args`
-
-Log args used
-
+--- 
+title: get_args 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

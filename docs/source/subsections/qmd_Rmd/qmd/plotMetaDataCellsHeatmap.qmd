@@ -1,7 +1,8 @@
-# `plotMetaDataCellsHeatmap`
-
-plotMetaDataCellsHeatmap
-
+--- 
+title: plotMetaDataCellsHeatmap 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

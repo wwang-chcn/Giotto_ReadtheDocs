@@ -1,7 +1,8 @@
-# `get_spatial_locations`
-
-Get spatial locations
-
+--- 
+title: get_spatial_locations 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

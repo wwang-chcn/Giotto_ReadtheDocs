@@ -1,7 +1,8 @@
-# `extend_vector`
-
-extend_vector
-
+--- 
+title: extend_vector 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

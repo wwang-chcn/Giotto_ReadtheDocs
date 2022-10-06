@@ -1,7 +1,8 @@
-# `determine_cores`
-
-determine_cores
-
+--- 
+title: determine_cores 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

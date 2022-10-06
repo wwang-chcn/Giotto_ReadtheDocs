@@ -1,7 +1,8 @@
-# `runDWLSDeconv`
-
-runDWLSDeconv
-
+--- 
+title: runDWLSDeconv 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

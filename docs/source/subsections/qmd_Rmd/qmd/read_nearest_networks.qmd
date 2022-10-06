@@ -1,7 +1,8 @@
-# `read_nearest_networks`
-
-Read nearest neighbor networks
-
+--- 
+title: read_nearest_networks 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

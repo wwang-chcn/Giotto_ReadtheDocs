@@ -1,7 +1,8 @@
-# `subsetGiottoLocs`
-
-Subset by spatial locations
-
+--- 
+title: subsetGiottoLocs 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

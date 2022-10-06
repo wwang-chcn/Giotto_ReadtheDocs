@@ -1,7 +1,8 @@
-# `rna_standard_normalization`
-
-RNA standard normalization
-
+--- 
+title: rna_standard_normalization 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

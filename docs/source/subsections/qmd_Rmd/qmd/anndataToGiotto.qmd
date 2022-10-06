@@ -1,7 +1,8 @@
-# `anndataToGiotto`
-
-Convert anndata to Giotto
-
+--- 
+title: anndataToGiotto 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

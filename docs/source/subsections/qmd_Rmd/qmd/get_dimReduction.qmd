@@ -1,7 +1,8 @@
-# `get_dimReduction`
-
-Get dimension reduction
-
+--- 
+title: get_dimReduction 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

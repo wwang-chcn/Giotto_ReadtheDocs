@@ -1,7 +1,8 @@
-# `subset_spatial_locations`
-
-Subset spatial locations
-
+--- 
+title: subset_spatial_locations 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

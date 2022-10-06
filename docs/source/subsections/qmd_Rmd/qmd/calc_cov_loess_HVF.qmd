@@ -1,7 +1,8 @@
-# `calc_cov_loess_HVF`
-
-calc_cov_loess_HVF
-
+--- 
+title: calc_cov_loess_HVF 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

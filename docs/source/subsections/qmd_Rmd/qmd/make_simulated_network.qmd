@@ -1,7 +1,8 @@
-# `make_simulated_network`
-
-make_simulated_network
-
+--- 
+title: make_simulated_network 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

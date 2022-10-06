@@ -1,7 +1,8 @@
-# `findMastMarkers_one_vs_all`
-
-findMastMarkers_one_vs_all
-
+--- 
+title: findMastMarkers_one_vs_all 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

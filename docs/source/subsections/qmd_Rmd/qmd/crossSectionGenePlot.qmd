@@ -1,7 +1,8 @@
-# `crossSectionGenePlot`
-
-crossSectionGenePlot
-
+--- 
+title: crossSectionGenePlot 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

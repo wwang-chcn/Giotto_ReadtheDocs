@@ -1,7 +1,8 @@
-# `rowMeans_flex`
-
-rowMeans_flex
-
+--- 
+title: rowMeans_flex 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

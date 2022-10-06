@@ -1,7 +1,8 @@
-# `set_spatial_enrichment`
-
-Set spatial enrichment
-
+--- 
+title: set_spatial_enrichment 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

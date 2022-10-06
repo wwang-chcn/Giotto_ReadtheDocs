@@ -1,7 +1,8 @@
-# `density_giottoLargeImage`
-
-Plot smoothed curve of giotto largeImage intensity values
-
+--- 
+title: density_giottoLargeImage 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

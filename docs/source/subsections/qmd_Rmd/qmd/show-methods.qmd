@@ -1,7 +1,8 @@
-# `show,dimObj-method`
-
-show method for dimObj class
-
+--- 
+title: show-methods 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

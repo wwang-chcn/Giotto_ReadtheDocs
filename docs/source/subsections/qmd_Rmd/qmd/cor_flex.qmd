@@ -1,7 +1,8 @@
-# `cor_flex`
-
-cor_flex
-
+--- 
+title: cor_flex 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

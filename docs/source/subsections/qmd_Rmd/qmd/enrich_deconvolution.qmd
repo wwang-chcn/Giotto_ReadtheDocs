@@ -1,7 +1,8 @@
-# `enrich_deconvolution`
-
-enrich_deconvolution
-
+--- 
+title: enrich_deconvolution 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

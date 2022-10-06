@@ -1,7 +1,8 @@
-# `comparePolygonExpression`
-
-Compare gene expression between polygon areas
-
+--- 
+title: comparePolygonExpression 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

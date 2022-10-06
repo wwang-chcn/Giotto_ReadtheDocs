@@ -1,7 +1,8 @@
-# `createGiottoInstructions`
-
-Create instructions for giotto functions
-
+--- 
+title: createGiottoInstructions 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `xy_translate_spatial_locations`
-
-xy_translate_spatial_locations
-
+--- 
+title: xy_translate_spatial_locations 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

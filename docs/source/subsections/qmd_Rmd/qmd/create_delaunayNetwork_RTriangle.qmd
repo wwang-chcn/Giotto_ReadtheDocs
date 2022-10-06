@@ -1,7 +1,8 @@
-# `create_delaunayNetwork_RTriangle`
-
-create_delaunayNetwork_RTriangle
-
+--- 
+title: create_delaunayNetwork_RTriangle 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

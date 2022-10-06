@@ -1,7 +1,8 @@
-# `featureNetwork-class`
-
-S4 giotto feature network Class
-
+--- 
+title: featureNetwork-class 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

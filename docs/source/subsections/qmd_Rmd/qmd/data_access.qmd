@@ -1,7 +1,8 @@
-# `data_access`
-
-Giotto object data accessors
-
+--- 
+title: data_access 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

@@ -1,7 +1,8 @@
-# `updateGiottoLargeImage`
-
-updateGiottoLargeImage
-
+--- 
+title: updateGiottoLargeImage 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

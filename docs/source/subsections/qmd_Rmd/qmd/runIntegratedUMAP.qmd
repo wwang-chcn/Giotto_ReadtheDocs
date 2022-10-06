@@ -1,7 +1,8 @@
-# `runIntegratedUMAP`
-
-Run integrated UMAP
-
+--- 
+title: runIntegratedUMAP 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

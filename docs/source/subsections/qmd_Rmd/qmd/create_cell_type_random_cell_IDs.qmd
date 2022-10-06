@@ -1,7 +1,8 @@
-# `create_cell_type_random_cell_IDs`
-
-create_cell_type_random_cell_IDs
-
+--- 
+title: create_cell_type_random_cell_IDs 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

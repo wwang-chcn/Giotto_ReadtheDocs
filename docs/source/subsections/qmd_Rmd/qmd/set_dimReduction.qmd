@@ -1,7 +1,8 @@
-# `set_dimReduction`
-
-Set dimension reduction
-
+--- 
+title: set_dimReduction 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 

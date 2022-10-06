@@ -1,7 +1,8 @@
-# `doHMRF`
-
-doHMRF
-
+--- 
+title: doHMRF 
+format: rst 
+date: 2022-10-06 
+--- 
 
 ## Description
 
