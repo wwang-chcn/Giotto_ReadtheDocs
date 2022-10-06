@@ -35,12 +35,11 @@ release = '1.1.0'
 #import sys 
 # from sphinx.application import Sphinx
 
-import sphinx_rtd_theme
+# import sphinx_rtd_theme
 
 master_dox = 'index'
 extensions = [
 #'sphinx_rtd_theme', #added to fix bullet-point issue
-'pydata-sphinx-theme',
 'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
 'sphinx_design',
@@ -94,7 +93,7 @@ suppress_warnings = [
 html_theme = "pydata_sphinx_theme"
 #html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 #html_static_path = ["_static"]
-html_logo = "images/GiottoLogo.png"
+#html_logo = "images/GiottoLogo.png"
 
 html_theme_options = {
     'logo_only': True,
