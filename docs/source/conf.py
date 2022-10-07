@@ -9,18 +9,19 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
+
 import os
 import sys
+# import sphinx_rtd_theme
 
-#sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
 
 project = 'Giotto Suite'
-copyright = '2021, Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan'
-author = 'Developed by Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan.'
+copyright = '2022, Ruben Dries and Guo-Cheng Yuan'
+author = 'Developed by labs of Ruben Dries and Guo-Cheng Yuan.'
 
 # The full version, including alpha/beta/rc tags
 release = '1.1.0'
@@ -31,11 +32,8 @@ release = '1.1.0'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-#import os 
-#import sys 
-# from sphinx.application import Sphinx
 
-# import sphinx_rtd_theme
+
 
 master_dox = 'index'
 extensions = [
@@ -47,6 +45,17 @@ extensions = [
 'sphinx_toolbox', 
 'sphinx_toolbox.shields',
 'sphinx_toolbox.github',
+"sphinx.ext.autosummary",
+"sphinx.ext.todo",
+"sphinx.ext.viewcode",
+"sphinxext.rediraffe",
+# For extension examples and demos
+"ablog",
+"jupyter_sphinx",
+"matplotlib.sphinxext.plot_directive",
+# "nbsphinx",  # Uncomment and comment-out MyST-NB for local testing purposes.
+"numpydoc",
+"sphinx_togglebutton",
 #'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',
@@ -96,9 +105,9 @@ html_theme = "pydata_sphinx_theme"
 html_logo = "images/GiottoLogo.png"
 
 html_theme_options = {
-    'logo_only': False,
+    "github_url": "https://github.com/RubD/Giotto",
     'display_version': True,
-    'navigation_depth': 4,
+    "show_toc_level": 1,
     #Toc Tree Options
     'collapse_navigation': True,
     'sticky_navigation': True,
