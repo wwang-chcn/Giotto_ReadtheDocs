@@ -110,7 +110,10 @@ html_theme_options = {
 }
 
 # html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'relations.html', 'sourcelink.html'] }
-html_sidebars = { '**': ["search-field.html", 'relations.html', 'sourcelink.html'] }
+# globaltoc.html = table of contents
+# relations.html = prev/next page
+# sourcelink.html = "This Page" and "show source"
+html_sidebars = { '**': ["search-field.html"] }
 html_css_files = ["css/theme_edits.css"]
 panels_add_fontawesome_latex = True
 panels_add_bootstrap_css = True
