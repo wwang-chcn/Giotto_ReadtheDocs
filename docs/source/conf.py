@@ -49,12 +49,6 @@ extensions = [
 "sphinx.ext.todo",
 "sphinx.ext.viewcode",
 "sphinxext.rediraffe",
-# For extension examples and demos
-"ablog",
-"jupyter_sphinx",
-"matplotlib.sphinxext.plot_directive",
-# "nbsphinx",  # Uncomment and comment-out MyST-NB for local testing purposes.
-"numpydoc",
 "sphinx_togglebutton",
 #'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
