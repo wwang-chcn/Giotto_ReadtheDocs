@@ -5,6 +5,31 @@ Giotto Suite
 An open-source and technology-agnostic spatial multi-omics analysis platform 
 ============================================================================
 
+.. toctree::
+   :maxdepth: 2
+   :caption: General
+   :hidden:
+ 
+   Getting Started <gettingstarted.rst> 
+   Documentation <documentation.rst>
+   Contribute <contribute.rst> 
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Guides
+   :hidden:
+
+   Tutorials <datasets.rst> 
+   FAQs <faqs> 
+   Try Giotto <trygiotto.rst>
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Issues
+   :hidden:
+   
+   Common Errors and Solutions <errorsfaqsandtips.rst>
+   Report a Bug <github_issues.rst>
 
 .. image:: images/index/giotto_suite.png
    :align: center
