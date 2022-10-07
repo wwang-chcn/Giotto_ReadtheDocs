@@ -1,7 +1,7 @@
 --- 
 title: filterICF 
 format: rst 
-date: 2022-09-22 
+date: 2022-10-06 
 --- 
 
 ## Description
@@ -13,7 +13,7 @@ Filter Interaction Changed Feature scores.
 
 ```r
 filterICF(
-  cpgObject,
+  icfObject,
   min_cells = 4,
   min_cells_expr = 1,
   min_int_cells = 4,
@@ -32,7 +32,7 @@ filterICF(
 
 Argument      |Description
 ------------- |----------------
-`cpgObject`     |     ICF (interaction changed feature) score object
+`icfObject`     |     ICF (interaction changed feature) score object
 `min_cells`     |     minimum number of source cell type
 `min_cells_expr`     |     minimum expression level for source cell type
 `min_int_cells`     |     minimum number of interacting neighbor cell type
@@ -47,6 +47,6 @@ Argument      |Description
 
 ## Value
 
-cpgObject that contains the filtered differential feature scores
+icfObject that contains the filtered differential feature scores
 
 

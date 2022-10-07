@@ -2,7 +2,7 @@
 createGiottoObjectSubcellular
 =============================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 Description
 ===========
@@ -16,10 +16,10 @@ Usage
 .. code:: r
 
    createGiottoObjectSubcellular(
-     gpoints = NULL,
      gpolygons = NULL,
      polygon_mask_list_params = NULL,
      polygon_dfr_list_params = NULL,
+     gpoints = NULL,
      cell_metadata = NULL,
      feat_metadata = NULL,
      spatial_network = NULL,
@@ -31,6 +31,8 @@ Usage
      dimension_reduction = NULL,
      nn_network = NULL,
      images = NULL,
+     largeImages = NULL,
+     largeImages_list_params = NULL,
      instructions = NULL,
      cores = NA,
      verbose = TRUE
@@ -42,8 +44,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
-| ``gpoints``                   | giotto points                        |
-+-------------------------------+--------------------------------------+
 | ``gpolygons``                 | giotto polygons                      |
 +-------------------------------+--------------------------------------+
 | ``polygon_mask_list_params``  | list parameters for                  |
@@ -53,6 +53,8 @@ Arguments
 | ``polygon_dfr_list_params``   | list parameters for                  |
 |                               | ```createGiottoPolygonsFromDfr       |
 |                               | `` <#creategiottopolygonsfromdfr>`__ |
++-------------------------------+--------------------------------------+
+| ``gpoints``                   | giotto points                        |
 +-------------------------------+--------------------------------------+
 | ``cell_metadata``             | cell annotation metadata             |
 +-------------------------------+--------------------------------------+
@@ -78,6 +80,8 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``images``                    | list of images                       |
 +-------------------------------+--------------------------------------+
+| ``largeImages``               | list of large images                 |
++-------------------------------+--------------------------------------+
 | ``instructions``              | list of instructions or output       |
 |                               | result from                          |
 |                               | ```createGiottoInstructi             |
@@ -89,6 +93,16 @@ Arguments
 | ``verbose``                   | be verbose when building Giotto      |
 |                               | object                               |
 +-------------------------------+--------------------------------------+
+
+Details
+=======
+
+There are two different ways to create a Giotto Object with subcellular
+information: - Starting from polygons (spatial units e.g. cell)
+represented by a mask or dataframe file and giotto points (analyte
+coordinates e.g. transcripts) - Starting from polygons (spatial units
+e.g. cell) represented by a mask or dataframe file and raw intensity
+images (e.g. protein stains)
 
 Value
 =====

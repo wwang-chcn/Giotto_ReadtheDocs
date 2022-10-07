@@ -2,7 +2,7 @@
 filterICF
 =========
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 Description
 ===========
@@ -15,7 +15,7 @@ Usage
 .. code:: r
 
    filterICF(
-     cpgObject,
+     icfObject,
      min_cells = 4,
      min_cells_expr = 1,
      min_int_cells = 4,
@@ -34,7 +34,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
-| ``cpgObject``                 | ICF (interaction changed feature)    |
+| ``icfObject``                 | ICF (interaction changed feature)    |
 |                               | score object                         |
 +-------------------------------+--------------------------------------+
 | ``min_cells``                 | minimum number of source cell type   |
@@ -67,4 +67,4 @@ Arguments
 Value
 =====
 
-cpgObject that contains the filtered differential feature scores
+icfObject that contains the filtered differential feature scores

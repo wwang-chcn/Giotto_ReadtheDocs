@@ -4,6 +4,8 @@ configuration
 
 :Date: 2022-09-16
 
+.. sectnum::
+
 Configuring the Giotto Environment
 ==================================
 

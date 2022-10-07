@@ -2,7 +2,7 @@
 filterCPG
 =========
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -29,7 +29,7 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```filterICF`` <#filtericf>`__       |
 |                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”cpgObject”)),        |
+|                               | list(list(list(”icfObject”)),        |
 |                               | list(“ICF (interaction changed       |
 |                               | feature) score object”)),            |
 |                               | “:raw-latex:`\n`”, ” “,              |

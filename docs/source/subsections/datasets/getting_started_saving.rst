@@ -4,10 +4,12 @@ getting_started_saving
 
 :Date: 2022-09-16
 
+.. sectnum::
+
 Saving Spatial Data in Plots
 ============================
 
-*Please see the* `Configuration <>`__ *and* `Giotto
+*Please see the* `Configuration <./configuration.html>`__ *and* `Giotto
 Object <./getting_started_gobject.html>`__ *vignettes before walking
 through this tutorial.*
 

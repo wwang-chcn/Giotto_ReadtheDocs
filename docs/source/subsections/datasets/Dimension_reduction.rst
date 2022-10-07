@@ -4,6 +4,8 @@ Dimension_reduction
 
 :Date: 2022-09-16
 
+.. sectnum::
+
 This tutorial walks through the dimension reduction and clustering
 capabilities of Giotto and begins with the Giotto Object processed in
 the previous tutorial, `data processing <./data_processing.html>`__. For

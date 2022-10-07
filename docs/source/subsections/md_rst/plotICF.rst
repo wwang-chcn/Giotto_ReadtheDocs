@@ -2,7 +2,7 @@
 plotICF
 =======
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 Description
 ===========
@@ -16,7 +16,7 @@ Usage
 
    plotICF(
      gobject,
-     cpgObject,
+     icfObject,
      source_type,
      source_markers,
      ICF_feats,
@@ -36,7 +36,7 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``cpgObject``                 | ICF (interaction changed feature)    |
+| ``icfObject``                 | ICF (interaction changed feature)    |
 |                               | score object                         |
 +-------------------------------+--------------------------------------+
 | ``source_type``               | cell type of the source cell         |

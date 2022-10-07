@@ -2,7 +2,7 @@
 get_polygon_info
 ================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 Description
 ===========
@@ -14,18 +14,28 @@ Usage
 
 .. code:: r
 
-   get_polygon_info(gobject, polygon_name = "cell", polygon_overlap = NULL)
+   get_polygon_info(
+     gobject,
+     polygon_name = NULL,
+     polygon_overlap = NULL,
+     return_giottoPolygon = FALSE
+   )
 
 Arguments
 =========
 
-=================== ===================================
-Argument            Description
-=================== ===================================
-``gobject``         giotto object
-``polygon_name``    name of polygons. Default “cell”
-``polygon_overlap`` include polygon overlap information
-=================== ===================================
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``polygon_name``              | name of polygons. Default “cell”     |
++-------------------------------+--------------------------------------+
+| ``polygon_overlap``           | include polygon overlap information  |
++-------------------------------+--------------------------------------+
+| ``return_giottoPolygon``      | (Defaults to FALSE) Return as        |
+|                               | giottoPolygon S4 object              |
++-------------------------------+--------------------------------------+
 
 Seealso
 =======

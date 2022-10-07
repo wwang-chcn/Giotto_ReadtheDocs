@@ -2,7 +2,7 @@
 select_polygon_info
 ===================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -39,7 +39,12 @@ Arguments
 |                               | list(list(list(”polygon_overlap”)),  |
 |                               | list(“include polygon overlap        |
 |                               | information”)), “:raw-latex:`\n`”, ” |
-|                               | “)                                   |
+|                               | “,                                   |
+|                               | list                                 |
+|                               | (list(list(”return_giottoPolygon”)), |
+|                               | list(“(Defaults to FALSE) Return as  |
+|                               | giottoPolygon S4 object”)),          |
+|                               | “:raw-latex:`\n`”, ” “)              |
 +-------------------------------+--------------------------------------+
 
 Seealso

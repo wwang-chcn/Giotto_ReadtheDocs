@@ -2,7 +2,7 @@
 createGiottoObject
 ==================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 Description
 ===========
@@ -30,6 +30,7 @@ Usage
      dimension_reduction = NULL,
      nn_network = NULL,
      images = NULL,
+     largeImages = NULL,
      offset_file = NULL,
      instructions = NULL,
      cores = NA,
@@ -84,6 +85,8 @@ Arguments
 | ``nn_network``                | list of nearest neighbor network(s)  |
 +-------------------------------+--------------------------------------+
 | ``images``                    | list of images                       |
++-------------------------------+--------------------------------------+
+| ``largeImages``               | list of large images                 |
 +-------------------------------+--------------------------------------+
 | ``offset_file``               | file used to stitch fields together  |
 |                               | (optional)                           |

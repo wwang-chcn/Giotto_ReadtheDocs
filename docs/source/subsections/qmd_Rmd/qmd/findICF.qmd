@@ -1,7 +1,7 @@
 --- 
 title: findICF 
 format: rst 
-date: 2022-09-22 
+date: 2022-10-06 
 --- 
 
 ## Description
@@ -65,7 +65,7 @@ Argument      |Description
 
 Function to calculate if genes are differentially expressed in cell types
  when they interact (approximated by physical proximity) with other cell types.
- The results data.table in the cpgObject contains - at least - the following columns:
+ The results data.table in the icfObject contains - at least - the following columns:
    
 
 *  features:  All or selected list of tested features   
@@ -99,7 +99,7 @@ Function to calculate if genes are differentially expressed in cell types
 
 ## Value
 
-cpgObject that contains the Interaction Changed differential gene scores
+icfObject that contains the Interaction Changed differential gene scores
 
 
 ## Seealso

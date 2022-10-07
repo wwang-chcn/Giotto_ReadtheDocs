@@ -1,7 +1,7 @@
 --- 
 title: createGiottoObject 
 format: rst 
-date: 2022-09-22 
+date: 2022-10-06 
 --- 
 
 ## Description
@@ -28,6 +28,7 @@ createGiottoObject(
   dimension_reduction = NULL,
   nn_network = NULL,
   images = NULL,
+  largeImages = NULL,
   offset_file = NULL,
   instructions = NULL,
   cores = NA,
@@ -55,6 +56,7 @@ Argument      |Description
 `dimension_reduction`     |     list of dimension reduction(s)
 `nn_network`     |     list of nearest neighbor network(s)
 `images`     |     list of images
+`largeImages`     |     list of large images
 `offset_file`     |     file used to stitch fields together (optional)
 `instructions`     |     list of instructions or output result from [`createGiottoInstructions`](#creategiottoinstructions)
 `cores`     |     how many cores or threads to use to read data if paths are provided

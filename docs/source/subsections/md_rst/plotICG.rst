@@ -2,31 +2,23 @@
 plotICG
 =======
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 Description
 ===========
 
-Create barplot to visualize interaction changed genes
+Create barplot to visualize interaction changed features
 
 Usage
 =====
 
 .. code:: r
 
-   plotICG(
-     gobject,
-     cpgObject,
-     source_type,
-     source_markers,
-     ICG_genes,
-     cell_color_code = NULL,
-     show_plot = NA,
-     return_plot = NA,
-     save_plot = NA,
-     save_param = list(),
-     default_save_name = "plotICG"
-   )
+   plotICG(...)
 
 Arguments
 =========
@@ -34,36 +26,36 @@ Arguments
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``cpgObject``                 | ICG (interaction changed gene) score |
-|                               | object                               |
-+-------------------------------+--------------------------------------+
-| ``source_type``               | cell type of the source cell         |
-+-------------------------------+--------------------------------------+
-| ``source_markers``            | markers for the source cell type     |
-+-------------------------------+--------------------------------------+
-| ``ICG_genes``                 | named character vector of ICG genes  |
-+-------------------------------+--------------------------------------+
-| ``cell_color_code``           | cell color code for the interacting  |
-|                               | cell types                           |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plots                           |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return plotting object               |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot [boolean]     |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters from       |
-|                               | ```all_plots_save_f                  |
-|                               | unction`` <#allplotssavefunction>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
+| ``...``                       | Arguments passed on to               |
+|                               | ```plotICF`` <#ploticf>`__           |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”gobject”)),          |
+|                               | list(“giotto object”)),              |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”icfObject”)),        |
+|                               | list(“ICF (interaction changed       |
+|                               | feature) score object”)),            |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”source_type”)),      |
+|                               | list(“cell type of the source        |
+|                               | cell”)), “:raw-latex:`\n`”, ” “,     |
+|                               | list(list(list(”source_markers”)),   |
+|                               | list(“markers for the source cell    |
+|                               | type”)), “:raw-latex:`\n`”, ” “,     |
+|                               | list(list(list(”ICF_feats”)),        |
+|                               | list(“named character vector of ICF  |
+|                               | features”)), “:raw-latex:`\n`”, ” “, |
+|                               | list(list(list(”cell_color_code”)),  |
+|                               | list(“cell color code for the        |
+|                               | interacting cell types”)),           |
 +-------------------------------+--------------------------------------+
 
-Value
-=====
+::
 
-plot
+   "\n", "    ", list(list(list("show_plot")), list("show plots")), "\n", "    ", list(list(list("return_plot")), list("return plotting object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters from ", list(list("all_plots_save_function")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", 
+   "  ")
+
+Seealso
+=======
+
+```plotICF`` <#ploticf>`__
