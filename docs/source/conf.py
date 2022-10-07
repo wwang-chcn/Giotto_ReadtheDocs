@@ -101,7 +101,7 @@ html_theme_options = {
     'collapse_navigation': True,
     'sticky_navigation': True,
     "use_edit_page_button": False,
-    "navbar_end": ["navbar-icon-links.html", "search-field.html"],
+    "navbar_end": ["navbar-icon-links.html"],
     "logo": {
         "text": "Giotto Suite",
         "image_dark": "images/GiottoLogo.png",
@@ -109,7 +109,7 @@ html_theme_options = {
     }
 }
 
-html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html'] }
+html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'relations.html', 'sourcelink.html'] }
 html_css_files = ["css/theme_edits.css"]
 panels_add_fontawesome_latex = True
 panels_add_bootstrap_css = True
