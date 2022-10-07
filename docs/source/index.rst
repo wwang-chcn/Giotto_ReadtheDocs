@@ -2,35 +2,6 @@
 Giotto Suite
 ##########################################
 
-An open-source and technology-agnostic spatial multi-omics analysis platform 
-============================================================================
-
-Giotto Suite is a collection of open source software tools, including data structures and methods, for the comprehensive analysis and visualization of spatial multi-omics data at multiple scales and resolutions. It extends and improves our previous R package `Giotto`_. The underlying framework of Giotto Suite is generalizable to virtually all current and emerging spatial technologies which may differ in resolution (e.g. subcellular, single cell, or multiple cells), spatial dimension (i.e. 2D vs. 3D), molecular modality (e.g. protein, RNA, DNA, …), and throughput (i.e. number of cells and analytes). Giotto Suite is designed to ensure spatial analysis solutions remain compatible with current and future spatial -omics technologies and platforms. It will also aid in the further integration of spatial -omics with external analysis pipelines and tools.
-
-.. _Giotto: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2
-
-**********************************************
-Workflow
-**********************************************
-:octicon:`light-bulb` Click on the images for full resolution.
-
-.. image:: images/index/input_Compatibility.png
-   :width: 600
-
-Data Structure 
-===============
-
-.. image:: images/index/data_structure_Data_Structure.png
-   :width: 600
-
-Analysis
-=============
-
-.. image:: images/index/analysis.png
-   :width: 400
-
-More technical information can be found in the `getting started section <https://giottosuite.readthedocs.io/en/latest/gettingstarted.html#learn-more-about-giotto-suite>`_.
-
 .. toctree::
    :maxdepth: 2
    :caption: General
@@ -60,6 +31,36 @@ More technical information can be found in the `getting started section <https:/
 .. image:: images/index/giotto_suite.png
    :align: center
    :target: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2
+   
+An open-source and technology-agnostic spatial multi-omics analysis platform 
+============================================================================
+
+Giotto Suite is a collection of open source software tools, including data structures and methods, for the comprehensive analysis and visualization of spatial multi-omics data at multiple scales and resolutions. It extends and improves our previous R package `Giotto`_. The underlying framework of Giotto Suite is generalizable to virtually all current and emerging spatial technologies which may differ in resolution (e.g. subcellular, single cell, or multiple cells), spatial dimension (i.e. 2D vs. 3D), molecular modality (e.g. protein, RNA, DNA, …), and throughput (i.e. number of cells and analytes). Giotto Suite is designed to ensure spatial analysis solutions remain compatible with current and future spatial -omics technologies and platforms. It will also aid in the further integration of spatial -omics with external analysis pipelines and tools.
+
+.. _Giotto: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2
+
+**********************************************
+Workflow
+**********************************************
+:octicon:`light-bulb` Click on the images for full resolution.
+
+.. image:: images/index/input_Compatibility.png
+   :width: 600
+
+Data Structure 
+===============
+
+.. image:: images/index/data_structure_Data_Structure.png
+   :width: 600
+
+Analysis
+=============
+
+.. image:: images/index/analysis.png
+   :width: 400
+
+More technical information can be found in the `getting started section <https://giottosuite.readthedocs.io/en/latest/gettingstarted.html#learn-more-about-giotto-suite>`_.
+
    
 References 
 =============
