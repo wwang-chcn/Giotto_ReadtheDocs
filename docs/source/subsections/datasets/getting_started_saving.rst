@@ -9,7 +9,7 @@ getting_started_saving
 Saving Spatial Data in Plots
 ============================
 
-*Please see the* `Configuration <>`__ *and* `Giotto
+*Please see the* `Configuration <./configuration.html>`__ *and* `Giotto
 Object <./getting_started_gobject.html>`__ *vignettes before walking
 through this tutorial.*
 

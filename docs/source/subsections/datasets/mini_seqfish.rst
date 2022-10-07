@@ -611,7 +611,7 @@ Visualization of specific cell types
 .. image:: https://github.com/drieslab/Giotto_site_suite/blob/master/inst/images/mini_seqFISH/220915_results/29-spatPlot2D.png?raw=true
    :width: 50.0%
 
-13. Cell neighborhood: interaction changed genes
+13. Cell neighborhood: interaction changed features
 ------------------------------------------------
 
 .. container:: cell
@@ -625,7 +625,7 @@ Visualization of specific cell types
       quantile(gene_metadata$mean_expr_det)
       high_expressed_genes = gene_metadata[mean_expr_det > 4]$feat_ID
 
-      ## identify genes that are associated with proximity to other cell types
+      ## identify features (genes) that are associated with proximity to other cell types
       ICFscoresHighGenes = findICF(gobject = seqfish_mini,
                                    selected_feats = high_expressed_genes,
                                    spatial_network_name = 'Delaunay_network',
@@ -635,7 +635,7 @@ Visualization of specific cell types
                                    nr_permutations = 500,
                                    do_parallel = T)
       ## visualize all genes
-      plotCellProximityGenes(seqfish_mini, cpgObject = ICFscoresHighGenes, method = 'dotplot')
+      plotCellProximityFeats(seqfish_mini, icfObject = ICFscoresHighGenes, method = 'dotplot')
 
 .. image:: https://github.com/drieslab/Giotto_site_suite/blob/master/inst/images/mini_seqFISH/220915_results/30-plotCellProximityGenes.png?raw=true
    :width: 50.0%
@@ -652,7 +652,7 @@ Visualization of specific cell types
       ICF_genes_types = c('cell E', 'cell D', 'cell D', 'cell G', 'cell E')
       names(ICF_genes) = ICF_genes_types
       plotICF(gobject = seqfish_mini,
-              cpgObject = ICFscoresHighGenes,
+              icfObject = ICFscoresHighGenes,
               source_type = 'cell A',
               source_markers = c('Csf1r', 'Laptm5'),
               ICF_feats = ICF_genes)
