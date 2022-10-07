@@ -104,7 +104,7 @@ html_theme_options = {
     "navbar_end": ["theme-switcher"],
     "logo": {
         "text": "Giotto Suite",
-        "image_dark": "images/GiottoLogo.png"
+        "image_dark": "images/GiottoLogo.png",
         "alt_text": "Giotto Suite",
     }
 }
