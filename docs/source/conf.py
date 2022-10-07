@@ -48,6 +48,7 @@ extensions = [
 "sphinx.ext.autosummary",
 "sphinx.ext.todo",
 "sphinx.ext.viewcode",
+"sphinxext.rediraffe",
 "sphinx_togglebutton",
 #'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
@@ -57,9 +58,6 @@ extensions = [
 #'myst_parser' #myst_parser caused a fatal error
 #'sphinxcontrib.spelling' #spell checker fatal error
 ]
-
-# user starts in light mode
-default_dark_mode = False
 
 #Added for m2r2 extension
 source_suffix = ['.rst', '.md']
@@ -104,8 +102,11 @@ html_theme_options = {
     #Toc Tree Options
     'collapse_navigation': True,
     'sticky_navigation': True,
-    'body_max_width': 'none',
-    "use_edit_page_button": True
+    "use_edit_page_button": False,
+    "logo": {
+        "text": "Giotto Suite",
+        "alt_text": "Giotto Suite",
+    }
 }
 
 html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }
