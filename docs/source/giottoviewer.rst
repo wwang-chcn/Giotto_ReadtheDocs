@@ -2,7 +2,5 @@
 Giotto Viewer
 #######################
 
-This version of Giotto Viewer is not being actively maintained. More details about the previous versions of Giotto Viewer can be found `here <https://qzhudfci.bitbucket.io/spatialgiotto/giotto.viewer.html>`_.
-
-.. _here: https://qzhudfci.bitbucket.io/spatialgiotto/giotto.viewer.html
+This version of Giotto Viewer is not being actively maintained. More information and documentation about the latest version of Giotto Analyzer can be found at `<https://rubd.github.io/Giotto_site/>`_.
 
