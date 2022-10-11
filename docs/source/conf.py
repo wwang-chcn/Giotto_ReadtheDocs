@@ -89,12 +89,12 @@ suppress_warnings = [
 # so a file named "default.css" will overwrite the builtin "default.css".
 #html_theme = "sphinx_rtd_theme"
 html_theme = "pydata_sphinx_theme"
-#html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-#html_static_path = ["_static"]
 html_logo = "images/GiottoLogo.png"
+html_favicon = "images/GiottoLogo_favicon.png"
+html_sourcelink_suffix = ""
 
 html_theme_options = {
-    "github_url": "https://github.com/RubD/Giotto",
+    "github_url": "https://github.com/drieslab/Giotto",
     'display_version': True,
     "show_toc_level": 1,
     #Toc Tree Options
