@@ -5,7 +5,7 @@ getting_started_saving
 :Date: 2022-09-16
 
 .. contents::
-  :depth: 2
+  :depth: 1
 
 Saving Spatial Data in Plots
 ============================
