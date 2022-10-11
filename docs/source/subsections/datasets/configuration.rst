@@ -114,7 +114,7 @@ packages is necessary for the full functionality of Giotto**.
 
 To use a specific Conda environment, a path to a system-specific python
 executable within a conda/miniconda environment must be provided to
-`createGiottoInstructions <../reference/createGiottoInstructions.html>`__.
+`createGiottoInstructions </subsections/md_rst/createGiottoInstructions.html>`__.
 This will direct reticulate to activate and utilize that environment
 within that R session. See `How to Create a Giotto
 Object <./getting_started_gobject.html>`__ for more details.
