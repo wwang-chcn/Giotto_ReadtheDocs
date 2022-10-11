@@ -4,9 +4,6 @@ getting_started_saving
 
 :Date: 2022-09-16
 
-.. contents::
-  :depth: 1
-
 Saving Spatial Data in Plots
 ============================
 

@@ -4,8 +4,6 @@ getting_started_gobject
 
 :Date: 2022-09-16
 
-.. sectnum::
-
 How to create a Giotto Object
 =============================
 
