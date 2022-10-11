@@ -114,7 +114,7 @@ html_theme_options = {
 # relations.html = prev/next page
 # sourcelink.html = "This Page" and "show source"
 html_sidebars = {
-    "**": [
+    "index": [
         "search-field.html", 
     ],  
     "trygitto": [
