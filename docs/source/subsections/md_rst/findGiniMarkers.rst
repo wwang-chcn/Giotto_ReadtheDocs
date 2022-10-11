@@ -4,6 +4,8 @@ findGiniMarkers
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L329
+
 Description
 ===========
 
@@ -121,7 +123,7 @@ on the following steps/principles per feat:
    7. for each feat sort on expression and detection rank and combined
       score
 
-As a results “top gini” feats are feats that are very selectivily
+As a results “top gini� feats are feats that are very selectivily
 expressed in a specific cluster, however not always expressed in all
 cells of that cluster. In other words highly specific, but not
 necessarily sensitive at the single-cell level.

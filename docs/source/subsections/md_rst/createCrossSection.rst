@@ -4,6 +4,8 @@ createCrossSection
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L421
+
 Description
 ===========
 
@@ -53,9 +55,9 @@ Arguments
 |                               | (default = Delaunay_network)         |
 +-------------------------------+--------------------------------------+
 | ``thickness_unit``            | unit of the virtual section          |
-|                               | thickness. If “cell”, average size   |
+|                               | thickness. If “cell�, average size   |
 |                               | of the observed cells is used as     |
-|                               | length unit. If “natural”, the unit  |
+|                               | length unit. If “natural�, the unit  |
 |                               | of cell location coordinates is      |
 |                               | used.(default = cell)                |
 +-------------------------------+--------------------------------------+
@@ -93,33 +95,33 @@ Arguments
 |                               | plane. (default = equation)          |
 +-------------------------------+--------------------------------------+
 | ``equation``                  | equation required by method          |
-|                               | “equation”.equations needs to be a   |
+|                               | “equation�.equations needs to be a   |
 |                               | numerical vector of length 4, in the |
 |                               | form of c(A,B,C,D), which defines    |
 |                               | plane Ax+By+Cz=D.                    |
 +-------------------------------+--------------------------------------+
 | ``point1``                    | coordinates of the first point       |
-|                               | required by method “3 points”,“point |
-|                               | and norm vector”, and “point and two |
-|                               | plane vectors”.                      |
+|                               | required by method “3 points�,“point |
+|                               | and norm vector�, and “point and two |
+|                               | plane vectors�.                      |
 +-------------------------------+--------------------------------------+
 | ``point2``                    | coordinates of the second point      |
-|                               | required by method “3 points”        |
+|                               | required by method “3 points�        |
 +-------------------------------+--------------------------------------+
 | ``point3``                    | coordinates of the third point       |
-|                               | required by method “3 points”        |
+|                               | required by method “3 points�        |
 +-------------------------------+--------------------------------------+
 | ``normVector``                | coordinates of the norm vector       |
 |                               | required by method “point and norm   |
-|                               | vector”                              |
+|                               | vector�                              |
 +-------------------------------+--------------------------------------+
 | ``planeVector1``              | coordinates of the first plane       |
 |                               | vector required by method “point and |
-|                               | two plane vectors”                   |
+|                               | two plane vectors�                   |
 +-------------------------------+--------------------------------------+
 | ``planeVector2``              | coordinates of the second plane      |
 |                               | vector required by method “point and |
-|                               | two plane vectors”                   |
+|                               | two plane vectors�                   |
 +-------------------------------+--------------------------------------+
 | ``mesh_grid_n``               | numer of meshgrid lines to generate  |
 |                               | along both directions for the cross  |

@@ -4,6 +4,8 @@ set_polygon_info
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L868
+
 Description
 ===========
 
@@ -23,7 +25,7 @@ Arguments
 Argument         Description
 ================ ================================
 ``gobject``      giotto object
-``polygon_name`` name of polygons. Default “cell”
+``polygon_name`` name of polygons. Default “cell�
 ``gpolygon``     giotto polygon
 ``verbose``      verbosity
 ================ ================================

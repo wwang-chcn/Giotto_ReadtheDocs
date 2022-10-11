@@ -4,6 +4,8 @@ get_giottoImage
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1080
+
 Description
 ===========
 
@@ -29,7 +31,7 @@ Arguments
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
 | ``image_type``                | type of giotto image object. Either  |
-|                               | “image” or “largeImage”              |
+|                               | “image� or “largeImage�              |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name of a giotto image object        |
 |                               | ```showGiottoIma                     |

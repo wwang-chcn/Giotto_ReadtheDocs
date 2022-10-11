@@ -4,6 +4,8 @@ binSpect
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L642
+
 .. role:: raw-latex(raw)
    :format: latex
 ..
@@ -150,28 +152,28 @@ We provide two ways to identify spatial genes based on gene expression
 binarization. Both methods are identicial except for how binarization is
 performed.
 
--  list(“1. binarize:”) list(“Each gene is binarized (0 or 1) in each
-   cell with”, list(“kmeans”), ” (k = 2) or based on “, list(”rank”), ”
-   percentile”)
+-  list(“1. binarize:�) list(“Each gene is binarized (0 or 1) in each
+   cell with�, list(“kmeans�), � (k = 2) or based on “, list(�rank�), �
+   percentile�)
 
--  list(“2. network:”) list(“Alll cells are connected through a spatial
-   network based on the physical coordinates”)
+-  list(“2. network:�) list(“Alll cells are connected through a spatial
+   network based on the physical coordinates�)
 
--  list(“3. contingency table:”) list(“A contingency table is calculated
+-  list(“3. contingency table:�) list(“A contingency table is calculated
    based on all edges of neighboring cells and the binarized expression
-   (0-0, 0-1, 1-0 or 1-1)”)
+   (0-0, 0-1, 1-0 or 1-1)�)
 
 -  | list(“4. For each gene an odds-ratio (OR) and fisher.test
-     (optional) is calculated”)
+     (optional) is calculated�)
    | Three different kmeans algorithmes have been implemented:
 
--  list(“1. kmeans:”) list(“default, see”, list(list(“kmeans”)), ” “)
+-  list(“1. kmeans:�) list(“default, see�, list(list(“kmeans�)), � “)
 
--  list(“2. kmeans_arma:”) list(“from ClusterR, see”,
-   list(list(“KMeans_arma”)), ” “)
+-  list(“2. kmeans_arma:�) list(“from ClusterR, see�,
+   list(list(“KMeans_arma�)), � “)
 
--  | list(“3. kmeans_arma_subst:”) list(“from ClusterR, see”,
-     list(list(“KMeans_arma”)), “,:raw-latex:`\n`”, ” but random
+-  | list(“3. kmeans_arma_subst:�) list(“from ClusterR, see�,
+     list(list(“KMeans_arma�)), “,:raw-latex:`\n`�, � but random
      subsetting the vector for each gene to increase speed. Change
      extreme_nr and sample_nr for control. “)
    | Other statistics are provided (optional):

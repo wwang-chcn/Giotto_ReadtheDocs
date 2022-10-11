@@ -4,6 +4,8 @@ spark
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2254
+
 .. role:: raw-latex(raw)
    :format: latex
 ..
@@ -76,16 +78,16 @@ Details
 This function is a wrapper for the method implemented in the SPARK
 package:
 
--  list(“1. CreateSPARKObject”) list(“create a SPARK object from a
-   Giotto object”)
+-  list(“1. CreateSPARKObject�) list(“create a SPARK object from a
+   Giotto object�)
 
--  list(“2. spark.vc”) list(” Fits the count-based spatial model to
-   estimate the parameters,:raw-latex:`\n`“,” see “,
-   list(list(”spark.vc”)), ” for additional parameters”)
+-  list(“2. spark.vc�) list(� Fits the count-based spatial model to
+   estimate the parameters,:raw-latex:`\n`“,� see “,
+   list(list(�spark.vc�)), � for additional parameters�)
 
--  | list(“3. spark.test”) list(” Testing multiple kernel matrices”)
-   | Publication: c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,
-     “10.1101/810903”) list(“tools:::Rd_expr_doi("10.1101/810903")”)
+-  | list(“3. spark.test�) list(� Testing multiple kernel matrices�)
+   | Publication: c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}�,
+     “10.1101/810903�) list(“tools:::Rd_expr_doi("10.1101/810903")�)
 
 Value
 =====

@@ -4,6 +4,8 @@ joinGiottoObjects
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3631
+
 Description
 ===========
 
@@ -66,7 +68,7 @@ multiple giotto objects into a single one. Giotto supports multiple ways
 of joining spatial information as selected through param ``join_method``
 :
 
-[ “shift” ] Spatial locations of different datasets are shifted by
+[ “shift� ] Spatial locations of different datasets are shifted by
 numeric vectors of values supplied through ``x_shift`` and ``y_shift`` .
 If these shift values are given then one is needed for each giotto
 object to be joined in ``gobject_list`` . Order matters. If a regular
@@ -76,7 +78,7 @@ used at the same time. Leaving ``x_shift`` and ``y_shift`` values as
 ``NULL`` will have Giotto estimate an appropriate ``x_shift`` value
 based on the x dimension of available image objects.
 
-[ “z_stack” ] Datasets are spatially combined with no change to x and y
+[ “z_stack� ] Datasets are spatially combined with no change to x and y
 spatial locations, but a z value is incorporated for each dataset based
 on input supplied through param ``z_vals`` . To specify a z value for
 each dataset to join, a numeric vector must be given with a value for
@@ -84,7 +86,7 @@ each element in ``gobject_list`` . Order matters. Alternatively, a
 single numeric value can be supplied to ``z_vals`` in which case this
 input will be treated as a z step value.
 
-[ “no_change” ] No changes are applied to the spatial locations of the
+[ “no_change� ] No changes are applied to the spatial locations of the
 datasets when joining.
 
 Value

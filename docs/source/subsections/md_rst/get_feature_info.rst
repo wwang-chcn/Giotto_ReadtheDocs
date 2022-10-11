@@ -4,6 +4,8 @@ get_feature_info
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L905
+
 Description
 ===========
 
@@ -23,7 +25,7 @@ Arguments
 Argument      Description
 ============= ==============================================
 ``gobject``   giotto object
-``feat_type`` name of feature (e.g. “rna”, “dna”, “protein”)
+``feat_type`` name of feature (e.g. “rna�, “dna�, “protein�)
 ============= ==============================================
 
 Seealso

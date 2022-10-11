@@ -4,6 +4,8 @@ get_NearestNetwork
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L383
+
 Description
 ===========
 
@@ -31,12 +33,12 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
-| ``nn_network_to_use``         | “kNN” or “sNN”                       |
+| ``nn_network_to_use``         | “kNN� or “sNN�                       |
 +-------------------------------+--------------------------------------+
 | ``network_name``              | name of NN network to be used        |
 +-------------------------------+--------------------------------------+

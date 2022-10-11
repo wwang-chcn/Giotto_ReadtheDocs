@@ -4,6 +4,8 @@ spatialAEH
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1994
+
 Description
 ===========
 

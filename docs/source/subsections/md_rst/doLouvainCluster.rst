@@ -4,6 +4,8 @@ doLouvainCluster
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L203
+
 Description
 ===========
 
@@ -44,13 +46,13 @@ Arguments
 |                               | clustering to use                    |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name for cluster, default to         |
-|                               | “louvain_clus”                       |
+|                               | “louvain_clus�                       |
 +-------------------------------+--------------------------------------+
 | ``nn_network_to_use``         | type of NN network to use (kNN vs    |
-|                               | sNN), default to “sNN”               |
+|                               | sNN), default to “sNN�               |
 +-------------------------------+--------------------------------------+
 | ``network_name``              | name of NN network to use, default   |
-|                               | to “sNN.pca”                         |
+|                               | to “sNN.pca�                         |
 +-------------------------------+--------------------------------------+
 | ``python_path``               | [community] specify specific path to |
 |                               | python if required                   |
