@@ -236,7 +236,7 @@ This function detects differentially expressed features by comparing a
 single cluster to all others. Currently, three methods are supported:
 “*scran*”, “*gini*”, and “*mast*”. Here, the “*gini*” method is
 employed; details on the gini method may be found
-`here <../docs/reference/findGiniMarkers.html>`__.
+`here <../md_rst/findGiniMarkers.html>`__.
 
 .. container:: cell
 
@@ -393,7 +393,7 @@ Visualize Cell Networks
 It is preferred to use Delaunay geometry to create spatial networks. In
 other cases, k-nearest neighbor may be used to create a spatial network.
 Specifying the *method* parameter within
-`createSpatialNetwork <../docs/reference/createSpatialNetwork.html>`__
+`createSpatialNetwork <../md_rst/createSpatialNetwork.html>`__
 will accomplish this. By default, this function runs the Delaunay
 method. Here, both methods, as well as potential modifications to the
 k-nearest networks, will be shown.

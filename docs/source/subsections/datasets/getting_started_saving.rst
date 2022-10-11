@@ -4,7 +4,8 @@ getting_started_saving
 
 :Date: 2022-09-16
 
-.. sectnum::
+.. contents::
+  :depth: 2
 
 Saving Spatial Data in Plots
 ============================
@@ -111,9 +112,8 @@ may be saved or further manipulated.
 The default save folder is the current working directory. This will be
 the case if instructions are not provided, or if a *save_dir* is not
 specified within **giottoInstructions**. See the
-`createGiottoInstructions
-documentation <http://giottosuite.com/reference/createGiottoInstructions.html>`__
-and `Giotto Object <./getting_started_gobject.html>`__ for default
+`createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__
+documentation and `Giotto Object <./getting_started_gobject.html>`__ for default
 arguments and more details.
 
 .. container:: cell
