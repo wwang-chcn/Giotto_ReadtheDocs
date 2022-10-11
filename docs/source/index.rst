@@ -39,6 +39,8 @@ Giotto Suite is a collection of open source software tools, including data struc
 
 .. _Giotto: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2
 
+The source code for Giotto Suite may be found on our `GitHub repository <https://github.com/RubD/Giotto/tree/suite>`_.
+
 **********************************************
 Workflow
 **********************************************

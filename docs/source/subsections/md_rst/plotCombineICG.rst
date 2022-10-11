@@ -2,36 +2,23 @@
 plotCombineICG
 ==============
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 Description
 ===========
 
-Create visualization for combined (pairwise) ICG scores
+Create visualization for combined (pairwise) ICF scores
 
 Usage
 =====
 
 .. code:: r
 
-   plotCombineICG(
-     gobject,
-     combCpgObject,
-     selected_interactions = NULL,
-     selected_gene_to_gene = NULL,
-     detail_plot = T,
-     simple_plot = F,
-     simple_plot_facet = c("interaction", "genes"),
-     facet_scales = "fixed",
-     facet_ncol = length(selected_gene_to_gene),
-     facet_nrow = length(selected_interactions),
-     colors = c("#9932CC", "#FF8C00"),
-     show_plot = NA,
-     return_plot = NA,
-     save_plot = NA,
-     save_param = list(),
-     default_save_name = "plotCombineICG"
-   )
+   plotCombineICG(...)
 
 Arguments
 =========
@@ -39,47 +26,38 @@ Arguments
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``combCpgObject``             | ICGscores, output from               |
-|                               | combineInteractionChangedGenes()     |
-+-------------------------------+--------------------------------------+
-| ``selected_interactions``     | interactions to show                 |
-+-------------------------------+--------------------------------------+
-| ``selected_gene_to_gene``     | pairwise gene combinations to show   |
-+-------------------------------+--------------------------------------+
-| ``detail_plot``               | show detailed info in both           |
-|                               | interacting cell types               |
-+-------------------------------+--------------------------------------+
-| ``simple_plot``               | show a simplified plot               |
-+-------------------------------+--------------------------------------+
-| ``simple_plot_facet``         | facet on interactions or genes with  |
-|                               | simple plot                          |
-+-------------------------------+--------------------------------------+
-| ``facet_scales``              | ggplot facet scales paramter         |
-+-------------------------------+--------------------------------------+
-| ``facet_ncol``                | ggplot facet ncol parameter          |
-+-------------------------------+--------------------------------------+
-| ``facet_nrow``                | ggplot facet nrow parameter          |
-+-------------------------------+--------------------------------------+
-| ``colors``                    | vector with two colors to use        |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plots                           |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return plotting object               |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot [boolean]     |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters from       |
-|                               | ```all_plots_save_f                  |
-|                               | unction`` <#allplotssavefunction>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
+| ``...``                       | Arguments passed on to               |
+|                               | ```p                                 |
+|                               | lotCombineICF`` <#plotcombineicf>`__ |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”gobject”)),          |
+|                               | list(“giotto object”)),              |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”combIcfObject”)),    |
+|                               | list(“ICFscores, output from         |
+|                               | combineInteractionChangedFeats()”)), |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(                                |
+|                               | list(list(”selected_interactions”)), |
+|                               | list(“interactions to show”)),       |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(                                |
+|                               | list(list(”selected_feat_to_feat”)), |
+|                               | list(“pairwise feature combinations  |
+|                               | to show”)), “:raw-latex:`\n`”, ” “,  |
+|                               | list(list(list(”detail_plot”)),      |
+|                               | list(“show detailed info in both     |
+|                               | interacting cell types”)),           |
+|                               | “:raw-latex:`\n`”, ” “, list(        |
 +-------------------------------+--------------------------------------+
 
-Value
-=====
+::
 
-ggplot
+   list(list("simple_plot")), list("show a simplified plot")), "\n", "    ", list(list(list("simple_plot_facet")), list("facet on interactions or feats with simple plot")), "\n", "    ", list(list(list("facet_scales")), list("ggplot facet scales paramter")), "\n", "    ", list(list(list("facet_ncol")), list("ggplot facet ncol parameter")), "\n", "    ", list(list(list("facet_nrow")), list("ggplot facet nrow parameter")), "\n", "    ", list(list(list("colors")), list("vector with two colors to use")), 
+   "\n", "    ", list(list(list("show_plot")), list("show plots")), "\n", "    ", list(list(list("return_plot")), list("return plotting object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters from ", list(list("all_plots_save_function")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", 
+   "  ")
+
+Seealso
+=======
+
+```plotCombineICF`` <#plotcombineicf>`__

@@ -2,7 +2,7 @@
 filterInteractionChangedGenes
 =============================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -11,7 +11,7 @@ filterInteractionChangedGenes
 Description
 ===========
 
-Filter Interaction Changed Gene scores.
+Filter Interaction Changed Feature scores.
 
 Usage
 =====
@@ -30,7 +30,7 @@ Arguments
 |                               | ```filterInteractionChangedFeats``   |
 |                               |  <#filterinteractionchangedfeats>`__ |
 |                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”cpgObject”)),        |
+|                               | list(list(list(”icfObject”)),        |
 |                               | list(“ICF (interaction changed       |
 |                               | feature) score object”)),            |
 |                               | “:raw-latex:`\n`”, ” “,              |

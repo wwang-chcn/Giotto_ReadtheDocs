@@ -650,7 +650,7 @@ Visualize
 .. image:: /images/images_pkgdown/nanostring_CosMx_Lung12/Emma/results-1252022/17-spatInSituPlotPoints.png
    :width: 50.0%
 
-14. Interaction Changed Genes
+14. Interaction Changed Features
 =============================
 
 .. container:: cell
@@ -662,12 +662,12 @@ Visualize
       goi = findInteractionChangedFeats(gobject = fov_join,
                                         cluster_column = 'leiden_clus')
 
-      # Identify top ten interaction changed genes
-      goi$CPGscores[type_int == 'hetero']$feats[1:10]
+      # Identify top ten interaction changed features (in this case, genes)
+      goi$ICFscores[type_int == 'hetero']$feats[1:10]
 
-      # Visualize ICG expression
+      # Visualize ICF expression
       spatInSituPlotPoints(fov_join,
-                           feats = list(goi$CPGscores[type_int == 'hetero']$feats[1:10]),
+                           feats = list(goi$ICFscores[type_int == 'hetero']$feats[1:10]),
                            point_size = 0.15,
                            show_polygon = TRUE,
                            polygon_feat_type = 'cell',

@@ -2,7 +2,7 @@
 write_giotto_viewer_annotation
 ==============================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 Description
 ===========
