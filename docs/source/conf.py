@@ -116,7 +116,10 @@ html_theme_options = {
 html_sidebars = {
     "index": [
         "search-field.html", 
-    ],  
+    ], 
+    "documentation": [
+        "search-field.html", 
+    ],
     "trygitto": [
         "search-field.html", 
         "globaltoc.html"
