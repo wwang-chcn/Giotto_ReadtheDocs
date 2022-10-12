@@ -62,7 +62,7 @@ source_suffix = ['.rst', '.md']
 
 # Configuration for sphinx_toolbox
 github_repository = "Giotto"
-github_username = "RubD" 
+github_username = "drieslab" 
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -94,7 +94,7 @@ html_favicon = "images/GiottoLogo_favicon.svg"
 html_sourcelink_suffix = ""
 
 html_theme_options = {
-    "github_url": "https://github.com/drieslab/Giotto",
+    "github_url": "https://github.com/drieslab/Giotto/tree/suite",
     'display_version': True,
     "show_toc_level": 1,
     #Toc Tree Options
