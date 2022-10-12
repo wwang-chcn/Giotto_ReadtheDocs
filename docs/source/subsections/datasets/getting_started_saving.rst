@@ -59,7 +59,7 @@ working with a **giottoObject** that has been provided instructions.
 3 Examples
 ==========
 
-3.1 1. Standard R save methods
+3.1 Standard R save methods
 ------------------------------
 
 Note that by default, plotting functions will return a plot object that
@@ -103,7 +103,7 @@ may be saved or further manipulated.
 
 .. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/clusters_black.png
 
-3.2 2. Save plot directly to the default folder
+3.2 Save plot directly to the default folder
 -----------------------------------------------
 
 The default save folder is the current working directory. This will be
@@ -125,7 +125,7 @@ arguments and more details.
 
 .. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/-SpatPlot2D.png
 
-3.3 3. Save plot directly, but overwrite default save parameters
+3.3 Save plot directly, but overwrite default save parameters
 ----------------------------------------------------------------
 
 In this example, assume it is desired that the plot is: - Shown in the
@@ -160,7 +160,7 @@ with the file name “my_name”
 
 .. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/my_name.png
 
-3.4 4. Just view the plot
+3.4 Just view the plot
 -------------------------
 
 | See `Giotto Object <./getting_started_gobject.html>`__ for more
@@ -176,7 +176,7 @@ with the file name “my_name”
                cell_color = 'ClusterName', 
                save_plot = FALSE, return_plot = FALSE, show_plot = T)
 
-3.5 5. Just save the plot (FASTEST for large datasets!)
+3.5 Just save the plot (FASTEST for large datasets!)
 -------------------------------------------------------
 
 | See `Giotto Object <./getting_started_gobject.html>`__ for more
