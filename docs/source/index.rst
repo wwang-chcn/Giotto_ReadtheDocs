@@ -47,7 +47,7 @@ Workflow
 :octicon:`light-bulb` Click on the images for full resolution.
 
 .. image:: images/index/GiottoSuiteWebsite_Compatibility.svg
-   :width: 500
+   :width: 300
 
 Data Structure 
 ===============
