@@ -9,18 +9,19 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
+
 import os
 import sys
+# import sphinx_rtd_theme
 
-#sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
 
 project = 'Giotto Suite'
-copyright = '2021, Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan'
-author = 'Developed by Ruben Dries, Qian Zhu, Huipeng Li, Rui Dong, Guo-Cheng Yuan.'
+copyright = '2022, Ruben Dries and Guo-Cheng Yuan'
+author = 'Developed by labs of Ruben Dries and Guo-Cheng Yuan.'
 
 # The full version, including alpha/beta/rc tags
 release = '1.1.0'
@@ -31,24 +32,23 @@ release = '1.1.0'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-#import os 
-#import sys 
-# from sphinx.application import Sphinx
 
-import sphinx_rtd_theme
+
 
 master_dox = 'index'
 extensions = [
-'sphinx_rtd_theme', #added to fix bullet-point issue
+#'sphinx_rtd_theme', #added to fix bullet-point issue
 'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
-'sphinx_rtd_theme',
 'sphinx_design',
 'sphinx_copybutton',
 'sphinx_toolbox', 
 'sphinx_toolbox.shields',
 'sphinx_toolbox.github',
-'sphinx_rtd_dark_mode'
+"sphinx.ext.autosummary",
+"sphinx.ext.todo",
+"sphinx.ext.viewcode"
+#'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',
 #'m2r2', -- moved to requirements.txt
@@ -57,15 +57,12 @@ extensions = [
 #'sphinxcontrib.spelling' #spell checker fatal error
 ]
 
-# user starts in light mode
-default_dark_mode = False
-
 #Added for m2r2 extension
 source_suffix = ['.rst', '.md']
 
 # Configuration for sphinx_toolbox
 github_repository = "Giotto"
-github_username = "RubD" 
+github_username = "drieslab" 
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -90,22 +87,46 @@ suppress_warnings = [
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-html_static_path = ["_static"]
+#html_theme = "sphinx_rtd_theme"
+html_theme = "pydata_sphinx_theme"
 html_logo = "images/GiottoLogo.png"
+html_favicon = "images/GiottoLogo_favicon.svg"
+html_sourcelink_suffix = ""
 
 html_theme_options = {
-    'logo_only': True,
+    "github_url": "https://github.com/drieslab/Giotto/tree/suite",
     'display_version': True,
-    'navigation_depth': 4,
+    "show_toc_level": 1,
     #Toc Tree Options
     'collapse_navigation': True,
     'sticky_navigation': True,
-    'body_max_width': 'none'
+    "use_edit_page_button": False,
+    "navbar_end": ["navbar-icon-links.html"],
+    "logo": {
+        "text": "Giotto Suite",
+        "image_dark": "images/GiottoLogo.png",
+        "alt_text": "Giotto Suite",
+    }
 }
 
-html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }
+# html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'relations.html', 'sourcelink.html'] }
+# globaltoc.html = table of contents
+# relations.html = prev/next page
+# sourcelink.html = "This Page" and "show source"
+html_sidebars = {
+    "index": [
+        "search-field.html", 
+    ], 
+    "documentation": [
+        "search-field.html", 
+    ],
+    "trygitto": [
+        "search-field.html", 
+        "globaltoc.html"
+    ]
+}
+
+#html_sidebars = { '**': ["search-field.html"] }
 html_css_files = ["css/theme_edits.css"]
 panels_add_fontawesome_latex = True
 panels_add_bootstrap_css = True

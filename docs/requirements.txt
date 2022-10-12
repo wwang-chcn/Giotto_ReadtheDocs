@@ -10,3 +10,5 @@ sphinx-copybutton
 sphinx-toolbox
 m2r2 
 sphinx_rtd_dark_mode
+pydata_sphinx_theme
+sphinx_togglebutton

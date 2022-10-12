@@ -41,11 +41,9 @@ This step only needs to be run once. Giotto Suite will automatically detect the 
 
 :octicon:`light-bulb` Encountering errors? Checkout out the :ref:`Common Errors and Solutions <https://giottosuite.readthedocs.io/en/latest/faqs.html>` for installation troubleshooting help.  
 
-
 **************************
 Learn more about Giotto Suite
 **************************
-
 .. grid:: 4
 
     .. grid-item-card::
