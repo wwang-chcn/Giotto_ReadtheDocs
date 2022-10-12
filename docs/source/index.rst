@@ -47,19 +47,19 @@ Workflow
 :octicon:`light-bulb` Click on the images for full resolution.
 
 .. image:: images/index/GiottoSuiteWebsite_Compatibility.svg
-   :width: 600
+   :width: 500
 
 Data Structure 
 ===============
 
 .. image:: images/index/GiottoSuiteWebsite_Data Structure.svg
-   :width: 600
+   :width: 500
 
 Analysis
 =============
 
 .. image:: images/index/GiottoSuiteWebsite_Workspace.svg
-   :width: 400
+   :width: 500
 
 More technical information can be found in the `getting started section <https://giottosuite.readthedocs.io/en/latest/gettingstarted.html#learn-more-about-giotto-suite>`_.
 
