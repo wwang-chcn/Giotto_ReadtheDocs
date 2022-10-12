@@ -45,6 +45,7 @@ This step only needs to be run once. Giotto Suite will automatically detect the 
 **************************
 Learn more about Giotto Suite
 **************************
+
 .. raw:: html
 
     <div class="sphx-glr-thumbnails">
@@ -52,62 +53,38 @@ Learn more about Giotto Suite
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Learn more how to configure Giotto">
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how to configure and setup the Giotto object">
 
 .. only:: html
 
   .. image:: images/getting_started/icons_configuration.png
-    :alt: Configuration
+    :alt: Configuration & Set-up
 
-  :ref:`https://giottosuite.readthedocs.io/en/latest/subsections/datasets/configuration.html`
+  :ref:`configuration.rst`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Configuration</div>
+      <div class="sphx-glr-thumbnail-title">Configuration & Set-up</div>
     </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn more about Giotto objects & classes">
+
+.. only:: html
+
+  .. image:: images/getting_started/icons_giotto.png
+    :alt: Giotto Objects & Classes
+
+  :ref:`sphx_glr_tutorials_introductory_images.rst`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Giotto Objects & Classes</div>
+    </div>
+
+
 .. raw:: html
 
     </div>
-
-.. grid:: 4
-
-..     .. grid-item-card::
-
-..         .. image:: images/getting_started/icons_configuration.png
-..       :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/configuration.html
-
-
-..     .. grid-item-card::
-
-..         .. image:: images/getting_started/icons_giotto.png
-..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_gobject.html
-
-
-..     .. grid-item-card::
-        
-..         .. image:: images/getting_started/icons_processing.png
-..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/data_processing.html
-    
-
-..     .. grid-item-card::
-        
-..         .. image:: images/getting_started/icons_clustering.png
-..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/Dimension_reduction.html
-
-
-..     .. grid-item-card::
-
-..         .. image:: images/getting_started/icons_images.png
-..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_images.html
-        
-
-..     .. grid-item-card::
-
-..         .. image:: images/getting_started/icons_visualizations.png
-..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/Visualizations.html
-
-
-..     .. grid-item-card::
-        
-..         .. image:: images/getting_started/icons_saving.png
-..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_saving.html
