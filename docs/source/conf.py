@@ -90,7 +90,7 @@ suppress_warnings = [
 #html_theme = "sphinx_rtd_theme"
 html_theme = "pydata_sphinx_theme"
 html_logo = "images/GiottoLogo.png"
-html_favicon = "images/GiottoLogo_favicon.png"
+html_favicon = "images/GiottoLogo_favicon.svg"
 html_sourcelink_suffix = ""
 
 html_theme_options = {
