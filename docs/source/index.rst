@@ -121,7 +121,7 @@ Authors and Developers
 
 .. _Ruben Dries: https://www.drieslab.com
 .. _Jiaji George Chen: https://github.com/jiajic
-.. _Guo-Cheng Yuang: https://labs.icahn.mssm.edu/yuanlab/
+.. _Guo-Cheng Yuang: https://labs.icahn.mssm.edu/yuanlab
 .. _Joselyn Chávez: https://twitter.com/josschavezf1
 .. _Matthew O'Brien: https://github.com/mattobny
 .. _Edward C. Ruiz: https://twitter.com/ziuron
