@@ -2,14 +2,12 @@
 getting_started_saving
 ======================
 
-:Date: 2022-09-16
+:Date: 2022-10-12
 
-.. sectnum::
+1 Saving Spatial Data in Plots
+==============================
 
-Saving Spatial Data in Plots
-============================
-
-*Please see the* `Configuration <./configuration.html>`__ *and* `Giotto
+*Please see the* `Configuration <>`__ *and* `Giotto
 Object <./getting_started_gobject.html>`__ *vignettes before walking
 through this tutorial.*
 
@@ -20,8 +18,8 @@ as the default saving methods built into R/Rstudio may be emphasized
 here. Note that for plotting functions, all parameters available to the
 *save_param* argument may be found by running **showSaveParameters()**.
 
-Creating the Giotto Object without Instructions:
-================================================
+2 Creating the Giotto Object without Instructions:
+==================================================
 
 Since the focus of this vignette is saving methods, the **giottoObject**
 will not be created with **giottoInstructions**. See `Giotto
@@ -58,11 +56,11 @@ working with a **giottoObject** that has been provided instructions.
       my_gobject = addCellMetadata(my_gobject, new_metadata = metadata,
                                    by_column = T, column_cell_ID = 'CellID')
 
-Examples
-========
+3 Examples
+==========
 
-1. Standard R save methods
---------------------------
+3.1 Standard R save methods
+------------------------------
 
 Note that by default, plotting functions will return a plot object that
 may be saved or further manipulated.
@@ -105,8 +103,8 @@ may be saved or further manipulated.
 
 .. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/clusters_black.png
 
-2. Save plot directly to the default folder
--------------------------------------------
+3.2 Save plot directly to the default folder
+-----------------------------------------------
 
 The default save folder is the current working directory. This will be
 the case if instructions are not provided, or if a *save_dir* is not
@@ -127,8 +125,8 @@ arguments and more details.
 
 .. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/-SpatPlot2D.png
 
-3. Save plot directly, but overwrite default save parameters
-------------------------------------------------------------
+3.3 Save plot directly, but overwrite default save parameters
+----------------------------------------------------------------
 
 In this example, assume it is desired that the plot is: - Shown in the
 console - Not returned as an object from the plotting function call -
@@ -162,8 +160,8 @@ with the file name “my_name”
 
 .. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/my_name.png
 
-4. Just view the plot
----------------------
+3.4 Just view the plot
+-------------------------
 
 | See `Giotto Object <./getting_started_gobject.html>`__ for more
   details.
@@ -178,8 +176,8 @@ with the file name “my_name”
                cell_color = 'ClusterName', 
                save_plot = FALSE, return_plot = FALSE, show_plot = T)
 
-5. Just save the plot (FASTEST for large datasets!)
----------------------------------------------------
+3.5 Just save the plot (FASTEST for large datasets!)
+-------------------------------------------------------
 
 | See `Giotto Object <./getting_started_gobject.html>`__ for more
   details.

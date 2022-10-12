@@ -4,6 +4,8 @@ plotTSNE_3D
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7195
+
 .. role:: raw-latex(raw)
    :format: latex
 ..
@@ -39,26 +41,26 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``...``                       | Arguments passed on to               |
 |                               | ```dimPlot3D`` <#dimplot3d>`__       |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”feat_type”)),        |
-|                               | list(“feature type”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”dim1_to_use”)),      |
-|                               | list(“dimension to use on x-axis”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”dim2_to_use”)),      |
-|                               | list(“dimension to use on y-axis”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”dim3_to_use”)),      |
-|                               | list(“dimension to use on z-axis”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_enr_names”)),   |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�feat_type�)),        |
+|                               | list(“feature type�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�dim1_to_use�)),      |
+|                               | list(“dimension to use on x-axis�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�dim2_to_use�)),      |
+|                               | list(“dimension to use on y-axis�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�dim3_to_use�)),      |
+|                               | list(“dimension to use on z-axis�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_enr_names�)),   |
 |                               | list(“names of spatial enrichment    |
-|                               | results to include”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | results to include�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
 +-------------------------------+--------------------------------------+
 
 ::

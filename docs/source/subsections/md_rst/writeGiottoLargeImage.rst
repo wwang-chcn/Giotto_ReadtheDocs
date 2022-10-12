@@ -4,6 +4,8 @@ writeGiottoLargeImage
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1988
+
 Description
 ===========
 
@@ -43,8 +45,8 @@ Arguments
 |                               | image to                             |
 +-------------------------------+--------------------------------------+
 | ``dataType``                  | (optional) values for ``dataType``   |
-|                               | are “INT1U”, “INT2U”, “INT2S”,       |
-|                               | “INT4U”, “INT4S”, “FLT4S”, “FLT8S”.  |
+|                               | are “INT1U�, “INT2U�, “INT2S�,       |
+|                               | “INT4U�, “INT4S�, “FLT4S�, “FLT8S�.  |
 |                               | The first three letters indicate     |
 |                               | whether the dataType is integer      |
 |                               | (whole numbers) of a real number     |
@@ -52,7 +54,7 @@ Arguments
 |                               | character indicates the number of    |
 |                               | bytes used (allowing for large       |
 |                               | numbers and/or more precision), and  |
-|                               | the “S” or “U” indicate whether the  |
+|                               | the “S� or “U� indicate whether the  |
 |                               | values are signed (both negative and |
 |                               | positive) or unsigned (positive      |
 |                               | values only).                        |

@@ -2,10 +2,10 @@
 getting_started_instructions
 ============================
 
-:Date: 2022-09-16
+:Date: 2022-10-12
 
-How to visualize and save plots in Giotto?
-==========================================
+1. How to visualize and save plots in Giotto?
+=============================================
 
 | Each Giotto function that creates a plot has 3 important parameters:
 | - **show_plot**: to print the plot to the console, default is TRUE
@@ -41,8 +41,8 @@ within the plotting function itself.
 
 Here, we use osmFISH data as an example:
 
-1. Create Giotto instructions and Giotto object
------------------------------------------------
+1.1 1. Create Giotto instructions and Giotto object
+---------------------------------------------------
 
 | Here, we: - Set show_plot = FALSE to override automatically showing
   plots - Keep return_plot = TRUE to store plots and modify them if
@@ -84,8 +84,8 @@ functionality.
                                         height = 9,
                                         width = 9)
 
-2.Create Giotto object
-----------------------
+1.2 2.Create Giotto object
+--------------------------
 
 | To download the data used to create the Giotto Object below, please
   ensure that `wget <https://www.gnu.org/software/wget/?>`__ is
@@ -122,8 +122,8 @@ functionality.
       osm_test <- filterGiotto(gobject = osm_test, min_det_feats_per_cell = 0)
       osm_test <- normalizeGiotto(gobject = osm_test)
 
-3. Work with Giotto instructions
---------------------------------
+1.3 3. Work with Giotto instructions
+------------------------------------
 
 .. container:: cell
 
@@ -138,8 +138,8 @@ functionality.
       # Observe that the instructions have changed
       showGiottoInstructions(osm_test)
 
-4. Different ways to save a plot
---------------------------------
+1.4 4. Different ways to save a plot
+------------------------------------
 
 Here we will show a couple of methods to save plots. Check out
 **all_plots_save_function** to access all potential arguments for

@@ -39,7 +39,7 @@ This step only needs to be run once. Giotto Suite will automatically detect the 
     installGiottoEnvironment()
 
 
-:octicon:`light-bulb` Encountering errors? Checkout out the :ref:`Common Errors and Solutions <https://giottosuite.readthedocs.io/en/latest/faqs.html>` for installation troubleshooting help.  
+:octicon:`light-bulb` Encountering errors? Checkout out the :ref:`Common Errors and Solutions <./faqs.html>` for installation troubleshooting help.  
 
 **************************
 Learn more about Giotto Suite
@@ -49,40 +49,40 @@ Learn more about Giotto Suite
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_configuration.png
-			:target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/configuration.html
+			:target: ./subsections/datasets/configuration.html
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_giotto.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_gobject.html
+            :target: ./subsections/datasets/getting_started_gobject.html
 
 
     .. grid-item-card::
         
         .. image:: images/getting_started/icons_processing.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/data_processing.html
+            :target: ./subsections/datasets/data_processing.html
     
 
     .. grid-item-card::
         
         .. image:: images/getting_started/icons_clustering.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/Dimension_reduction.html
+            :target: ./subsections/datasets/Dimension_reduction.html
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_images.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_images.html
+            :target: ./subsections/datasets/getting_started_images.html
         
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_visualizations.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/Visualizations.html
+            :target: ./subsections/datasets/Visualizations.html
 
 
     .. grid-item-card::
         
         .. image:: images/getting_started/icons_saving.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_saving.html
+            :target: ./subsections/datasets/getting_started_saving.html

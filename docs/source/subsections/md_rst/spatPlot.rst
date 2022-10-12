@@ -4,6 +4,8 @@ spatPlot
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L2699
+
 .. role:: raw-latex(raw)
    :format: latex
 ..
@@ -28,26 +30,26 @@ Arguments
 +===============================+======================================+
 | ``...``                       | Arguments passed on to               |
 |                               | ```spatPlot2D`` <#spatplot2d>`__     |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”feat_type”)),        |
-|                               | list(“feature type”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”show_image”)),       |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�feat_type�)),        |
+|                               | list(“feature type�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�show_image�)),       |
 |                               | list(“show a tissue background       |
-|                               | image”)), “:raw-latex:`\n`”, ” “,    |
-|                               | list(list(list(”gimage”)), list(“a   |
-|                               | giotto image”)), “:raw-latex:`\n`”,  |
-|                               | ” “, list(list(list(”image_name”)),  |
+|                               | image�)), “:raw-latex:`\n`�, � “,    |
+|                               | list(list(list(�gimage�)), list(“a   |
+|                               | giotto image�)), “:raw-latex:`\n`�,  |
+|                               | � “, list(list(list(�image_name�)),  |
 |                               | list(“name of a giotto image or      |
-|                               | multiple images with group_by”)),    |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”largeImage_name”)),  |
+|                               | multiple images with group_by�)),    |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�largeImage_name�)),  |
 +-------------------------------+--------------------------------------+
 
 ::

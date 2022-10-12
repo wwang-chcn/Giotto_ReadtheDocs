@@ -1,12 +1,8 @@
 --- 
 title: data_processing 
 format: rst 
-date: ymd 
---- 
---- 
-title: data_processing 
-format: rst 
-date: 2022-09-16 
+date: 2022-10-12 
+number-sections: true 
 --- 
 
 After creating the Giotto object, it must be prepared for downstream analysis. This tutorial walks through filtering, normalizing, adjusting for batch effects, adding statistics and metadata to a Giotto object, as well as high efficiency options for data processing.

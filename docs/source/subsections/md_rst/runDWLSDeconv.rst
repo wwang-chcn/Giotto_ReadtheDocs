@@ -4,6 +4,8 @@ runDWLSDeconv
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1817
+
 Description
 ===========
 
@@ -68,8 +70,8 @@ giotto object or deconvolution results
 Seealso
 =======
 
-https://github.com/dtsoucas/DWLS for the list(“DWLS”) bulk deconvolution
-method, and c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,
-“10.1186/s13059-021-02362-7”)
-list(“tools:::Rd_expr_doi("10.1186/s13059-021-02362-7")”) for
-list(“spatialDWLS”) , the spatial implementation used here.
+https://github.com/dtsoucas/DWLS for the list(“DWLS�) bulk deconvolution
+method, and c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}�,
+“10.1186/s13059-021-02362-7�)
+list(“tools:::Rd_expr_doi("10.1186/s13059-021-02362-7")�) for
+list(“spatialDWLS�) , the spatial implementation used here.

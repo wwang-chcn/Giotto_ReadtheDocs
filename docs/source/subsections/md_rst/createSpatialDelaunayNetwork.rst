@@ -4,6 +4,8 @@ createSpatialDelaunayNetwork
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1330
+
 Description
 ===========
 
@@ -55,19 +57,19 @@ Arguments
 |                               | network                              |
 +-------------------------------+--------------------------------------+
 | ``dimensions``                | which spatial dimensions to use. Use |
-|                               | “sdimx” (spatial dimension x),       |
-|                               | “sdimy”, “sdimz” respectively to     |
+|                               | “sdimx� (spatial dimension x),       |
+|                               | “sdimy�, “sdimz� respectively to     |
 |                               | refer to X (or the 1st), Y (or the   |
 |                               | 2nd) and Z(or the 3rd) dimension,    |
 |                               | see details. (default = all)         |
 +-------------------------------+--------------------------------------+
 | ``maximum_distance``          | distance cuttof for Delaunay         |
-|                               | neighbors to consider. If “auto”,    |
-|                               | “upper wisker” value of the distance |
+|                               | neighbors to consider. If “auto�,    |
+|                               | “upper wisker� value of the distance |
 |                               | vector between neighbors is used;    |
 |                               | see the boxplot graphics             |
 |                               | documentation for more               |
-|                               | details.(default = “auto”)           |
+|                               | details.(default = “auto�)           |
 +-------------------------------+--------------------------------------+
 | ``minimum_k``                 | minimum number of neigbhours if      |
 |                               | maximum_distance != NULL             |

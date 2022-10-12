@@ -4,6 +4,8 @@ doScrubletDetect
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/python_scrublet.R#L18
+
 Description
 ===========
 
@@ -74,6 +76,6 @@ Seealso
 =======
 
 This function wraps the python package scrublet
-c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,
-“10.1016/j.cels.2018.11.005”)
-list(“tools:::Rd_expr_doi("10.1016/j.cels.2018.11.005")”)
+c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}�,
+“10.1016/j.cels.2018.11.005�)
+list(“tools:::Rd_expr_doi("10.1016/j.cels.2018.11.005")�)

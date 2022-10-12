@@ -2,9 +2,7 @@
 Visualizations
 ==============
 
-:Date: 2022-09-16
-
-.. sectnum::
+:Date: 2022-10-12
 
 This tutorial walks through the visualization capabilities of Giotto.
 The clustering and dimension reduction methods focused on within the
@@ -20,8 +18,8 @@ download the data used to create the Giotto Object below, please ensure
 that `wget <https://www.gnu.org/software/wget/?>`__ is installed
 locally.
 
-Create the Giotto Object
-========================
+1 Create the Giotto Object
+==========================
 
 .. container:: cell
 
@@ -96,8 +94,8 @@ Create the Giotto Object
                                stat_params = list(expression_values = 'normalized'),
                                adjust_params = NULL)
 
-Visualize the Dataset
-=====================
+2 Visualize the Dataset
+=======================
 
 This dataset includes eight sequential slices. As such it can be
 visualized both in 2D and 3D.
@@ -121,8 +119,8 @@ visualized both in 2D and 3D.
 
 |image1|
 
-Create and Visualize Clusters
-=============================
+3 Create and Visualize Clusters
+===============================
 
 First, run a PCA on the data. For the purposes of this tutorial, no
 highly variable genes will be identified or used in the reduction. The
@@ -206,8 +204,8 @@ features detected per cell.
 
 |image3|
 
-Compare Clusters
-================
+4 Compare Clusters
+==================
 
 .. container:: cell
 
@@ -228,8 +226,8 @@ Compare Clusters
 
 |image4|
 
-Visualize Cell Markers
-======================
+5 Visualize Cell Markers
+========================
 
 Marker features may be identified by calling **findMarkers_one_vs_all**.
 This function detects differentially expressed features by comparing a
@@ -267,8 +265,8 @@ employed; details on the gini method may be found
 
 |image5|
 
-Visualize Cell Types in Tissue
-==============================
+6 Visualize Cell Types in Tissue
+================================
 
 To do this, the Leiden clusters must be annotated. Leveraging the
 provided cell metadata and Giotto Spatial Plots, Leiden clusters may be
@@ -387,8 +385,8 @@ The plots may be subset by cell type in 2D and 3D.
 
 |image6|
 
-Visualize Cell Networks
-=======================
+7 Visualize Cell Networks
+=========================
 
 It is preferred to use Delaunay geometry to create spatial networks. In
 other cases, k-nearest neighbor may be used to create a spatial network.

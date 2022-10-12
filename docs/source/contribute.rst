@@ -3,6 +3,7 @@ How to Contribute?
 #########################
 
 We welcome contributions or suggestions from other developers. Below, we provide a number of rules, suggestions and tips to help you contribute to Giotto in a sustainable manner. Please contact us if you have questions or would like to discuss an addition or major modifications to the Giotto main code.
+The source code for Giotto Suite may be found on our `GitHub repository <https://github.com/drieslab/Giotto/tree/suite>`_.
 
 ***************
 Coding Style

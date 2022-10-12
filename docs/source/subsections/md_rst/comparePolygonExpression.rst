@@ -4,6 +4,8 @@ comparePolygonExpression
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L10235
+
 Description
 ===========
 
@@ -32,19 +34,19 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | A Giotto object                      |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``selected_feats``            | vector of selected features to plot  |
 +-------------------------------+--------------------------------------+
 | ``expression_values``         | gene expression values to use        |
-|                               | (“normalized”, “scaled”, “custom”)   |
+|                               | (“normalized�, “scaled�, “custom�)   |
 +-------------------------------+--------------------------------------+
 | ``method``                    | method to use to detect              |
 |                               | differentially expressed feats       |
-|                               | (“scran”, “gini”, “mast”)            |
+|                               | (“scran�, “gini�, “mast�)            |
 +-------------------------------+--------------------------------------+
 | ``list()``                    | Arguments passed to                  |
 |                               | `Heatmap <#heatmap>`__               |

@@ -4,6 +4,8 @@ get_expression_values
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L28
+
 Description
 ===========
 
@@ -24,13 +26,13 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``values``                    | expression values to extract         |
-|                               | (e.g. “raw”, “normalized”, “scaled”) |
+|                               | (e.g. “raw�, “normalized�, “scaled�) |
 +-------------------------------+--------------------------------------+
 
 Value

@@ -4,6 +4,8 @@ set_NearestNetwork
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L508
+
 Description
 ===========
 
@@ -30,9 +32,9 @@ Arguments
 Argument              Description
 ===================== ===========================================
 ``gobject``           giotto object
-``spat_unit``         spatial unit (e.g. “cell”)
-``feat_type``         feature type (e.g. “rna”, “dna”, “protein”)
-``nn_network_to_use`` “kNN” or “sNN”
+``spat_unit``         spatial unit (e.g. “cell�)
+``feat_type``         feature type (e.g. “rna�, “dna�, “protein�)
+``nn_network_to_use`` “kNN� or “sNN�
 ``network_name``      name of NN network to be used
 ``nn_network``        nearest network
 ===================== ===========================================

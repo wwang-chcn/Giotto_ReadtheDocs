@@ -4,6 +4,8 @@ get_polygon_info
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L802
+
 Description
 ===========
 
@@ -29,7 +31,7 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``polygon_name``              | name of polygons. Default “cell”     |
+| ``polygon_name``              | name of polygons. Default “cell�     |
 +-------------------------------+--------------------------------------+
 | ``polygon_overlap``           | include polygon overlap information  |
 +-------------------------------+--------------------------------------+

@@ -4,6 +4,8 @@ plotMetaDataHeatmap
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1222
+
 Description
 ===========
 
@@ -56,14 +58,14 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``expression_values``         | expression values to use             |
-|                               | (e.g. “normalized”, “scaled”,        |
-|                               | “custom”)                            |
+|                               | (e.g. “normalized�, “scaled�,        |
+|                               | “custom�)                            |
 +-------------------------------+--------------------------------------+
 | ``metadata_cols``             | annotation columns found in          |
 |                               | pDataDT(gobject)                     |
@@ -80,17 +82,17 @@ Arguments
 |                               | select the facetting factor          |
 +-------------------------------+--------------------------------------+
 | ``show_values``               | which values to show on heatmap      |
-|                               | (e.g. “zscores”, “original”,         |
-|                               | “zscores_rescaled”)                  |
+|                               | (e.g. “zscores�, “original�,         |
+|                               | “zscores_rescaled�)                  |
 +-------------------------------+--------------------------------------+
 | ``custom_cluster_order``      | custom cluster order (default =      |
 |                               | NULL)                                |
 +-------------------------------+--------------------------------------+
 | ``clus_cor_method``           | correlation method for clusters,     |
-|                               | default to “pearson”                 |
+|                               | default to “pearson�                 |
 +-------------------------------+--------------------------------------+
 | ``clus_cluster_method``       | hierarchical cluster method for the  |
-|                               | clusters, default to “complete”      |
+|                               | clusters, default to “complete�      |
 +-------------------------------+--------------------------------------+
 | ``custom_feat_order``         | custom feature order (default =      |
 |                               | NULL)                                |
@@ -99,13 +101,13 @@ Arguments
 |                               | ``custom_feat_order`` param          |
 +-------------------------------+--------------------------------------+
 | ``feat_cor_method``           | correlation method for features,     |
-|                               | default to “pearson”                 |
+|                               | default to “pearson�                 |
 +-------------------------------+--------------------------------------+
 | ``gene_cor_method``           | deprecated. See ``feat_cor_method``  |
 |                               | param                                |
 +-------------------------------+--------------------------------------+
 | ``feat_cluster_method``       | hierarchical cluster method for the  |
-|                               | features, default to “complete”      |
+|                               | features, default to “complete�      |
 +-------------------------------+--------------------------------------+
 | ``gene_cluster_method``       | deprecated. See                      |
 |                               | ``feat_cluster_method`` param        |

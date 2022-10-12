@@ -4,6 +4,8 @@ runSpatialEnrich
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1292
+
 Description
 ===========
 
@@ -100,11 +102,11 @@ Details
 
 For details see the individual functions:
 
--  PAGE: list(list(“runPAGEEnrich”))
+-  PAGE: list(list(“runPAGEEnrich�))
 
--  Rank: list(list(“runRankEnrich”))
+-  Rank: list(list(“runRankEnrich�))
 
--  Hypergeometric: list(list(“runHyperGeometricEnrich”))
+-  Hypergeometric: list(list(“runHyperGeometricEnrich�))
 
 Value
 =====

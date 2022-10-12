@@ -4,6 +4,8 @@ cellProximitySpatPlot
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2645
+
 .. role:: raw-latex(raw)
    :format: latex
 ..
@@ -32,25 +34,25 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```cellProximitySpatPl               |
 |                               | ot2D`` <#cellproximityspatplot2d>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”feat_type”)),        |
-|                               | list(“feature type”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_loc_name”)),    |
-|                               | list(“spatial locations to use”)),   |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”interaction_name”)), |
-|                               | list(“cell-cell interaction name”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”cluster_column”)),   |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�feat_type�)),        |
+|                               | list(“feature type�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_loc_name�)),    |
+|                               | list(“spatial locations to use�)),   |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�interaction_name�)), |
+|                               | list(“cell-cell interaction name�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�cluster_column�)),   |
 |                               | list(“cluster column with cell       |
-|                               | clusters”)), “:raw-latex:`\n`”, ” “, |
-|                               | list(list(list(”sdimx”)),            |
+|                               | clusters�)), “:raw-latex:`\n`�, � “, |
+|                               | list(list(list(�sdimx�)),            |
 |                               | list(“x-axis dimension name (default |
-|                               | = ‘sdimx’)”)), “:raw-latex:`\n`”,    |
+|                               | = ‘sdimx’)�)), “:raw-latex:`\n`�,    |
 +-------------------------------+--------------------------------------+
 
 ::

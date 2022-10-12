@@ -1,12 +1,8 @@
 --- 
 title: getting_started_saving 
 format: rst 
-date: ymd 
---- 
---- 
-title: getting_started_saving 
-format: rst 
-date: 2022-09-16 
+date: 2022-10-12 
+number-sections: true 
 --- 
 
 ## Saving Spatial Data in Plots
@@ -50,7 +46,7 @@ my_gobject = addCellMetadata(my_gobject, new_metadata = metadata,
 
 ## Examples 
 
-### 1. Standard R save methods
+### Standard R save methods
 Note that by default, plotting functions will return a plot object that may be saved or further manipulated.
 ```{r, eval=FALSE}
 ### Manually save plot as a PDF in the current working directory:
@@ -89,7 +85,7 @@ cowplot::save_plot(plot = mypl,
 
 ![](/images/images_pkgdown/getting_started_figs/getting_started_saving/clusters_black.png)
 
-### 2. Save plot directly to the default folder
+### Save plot directly to the default folder
 The default save folder is the current working directory. This will be the case if instructions are not provided, or if a *save_dir* is not specified within **giottoInstructions**. See the [**createGiottoInstructions** documentation](http://giottosuite.com/reference/createGiottoInstructions.html) and [Giotto Object](./getting_started_gobject.html) for default arguments and more details.
 
 ```{r, eval=FALSE}
@@ -100,7 +96,7 @@ spatPlot(my_gobject,
 ```
 ![](/images/images_pkgdown/getting_started_figs/getting_started_saving/-SpatPlot2D.png)
 
-### 3. Save plot directly, but overwrite default save parameters
+### Save plot directly, but overwrite default save parameters
 
 In this example, assume it is desired that the plot is: 
 - Shown in the console
@@ -128,7 +124,7 @@ spatPlot(my_gobject,
 ```
 ![](/images/images_pkgdown/getting_started_figs/getting_started_saving/my_name.png)
 
-### 4. Just view the plot
+### Just view the plot
 See [Giotto Object](./getting_started_gobject.html) for more details.  
 Set both *save_plot* and *return_plot* to FALSE.
 ```{r, eval=FALSE}
@@ -140,7 +136,7 @@ spatPlot(my_gobject,
 ```
 
 
-### 5. Just save the plot (FASTEST for large datasets!)
+### Just save the plot (FASTEST for large datasets!)
 See [Giotto Object](./getting_started_gobject.html) for more details.  
 Set show_plot and return_plot to FALSE, set save_plot to TRUE.
 ```{r, eval=FALSE}

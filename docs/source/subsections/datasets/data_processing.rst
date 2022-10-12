@@ -2,9 +2,7 @@
 data_processing
 ===============
 
-:Date: 2022-09-16
-
-.. sectnum::
+:Date: 2022-10-12
 
 After creating the Giotto object, it must be prepared for downstream
 analysis. This tutorial walks through filtering, normalizing, adjusting
@@ -21,8 +19,8 @@ This dataset contains multiple field of views; here, a workflow to bring
 the FOVs together for holistic analysis is illustrated, and then a
 subset of the Giotto Object is taken to analyze the cortex.
 
-Create the Giotto Object
-========================
+1 Create the Giotto Object
+==========================
 
 .. container:: cell
 
@@ -113,8 +111,8 @@ tutorial, only the cortex FOVs will be considered, which is why the
 original Giotto Object has been overwritten upon calling
 **subsetGiotto**.
 
-Filter the Giotto Object
-========================
+2 Filter the Giotto Object
+==========================
 
 The Giotto object may be filtered based on:
 
@@ -178,8 +176,8 @@ provide the arguments to **filterGiotto**.
                               feat_det_in_min_cells = 100,
                               min_det_feats_per_cell = 10)
 
-Normalize Raw Counts Data
-=========================
+3 Normalize Raw Counts Data
+===========================
 
 There are three methods of normalization supported by Giotto.
 
@@ -229,8 +227,8 @@ Since the data in this tutorial is not in-situ RNA data, this method
 will not be shown here. It may be utilized by specifying the
 norm_methods argument as ‘osmFISH’.
 
-Add Statistics and Metadata to the Giotto Object
-================================================
+4 Add Statistics and Metadata to the Giotto Object
+==================================================
 
 The function **addStatistics** will add the following statistics to cell
 metadata:
@@ -282,8 +280,8 @@ genes)
                               feats = bmp_genes, 
                               vector_name = "perc_bmp")
 
-Adjust Expression Matrix
-========================
+5 Adjust Expression Matrix
+==========================
 
 Adjust expression matrix for known batch effects or technological
 covariates
@@ -299,8 +297,8 @@ covariates
                                     expression_values = c('normalized'),
                                     covariate_columns = 'nr_feats')
 
-High Efficiency Data Processing
-===============================
+6 High Efficiency Data Processing
+=================================
 
 **processGiotto** completes the filtering, normalization, statistical,
 and adjustment steps of data processing in one single step; this is

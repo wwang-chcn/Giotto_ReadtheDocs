@@ -4,6 +4,8 @@ createGiottoLargeImageList
 
 :Date: 2022-10-06
 
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L596
+
 Description
 ===========
 
