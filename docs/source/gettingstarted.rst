@@ -45,46 +45,69 @@ This step only needs to be run once. Giotto Suite will automatically detect the 
 **************************
 Learn more about Giotto Suite
 **************************
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn more how to configure Giotto">
+
+.. only:: html
+
+  .. image:: images/getting_started/icons_configuration.png
+    :alt: Configuration
+
+  :ref:`https://giottosuite.readthedocs.io/en/latest/subsections/datasets/configuration.html`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Configuration</div>
+    </div>
+.. raw:: html
+
+    </div>
 
 .. grid:: 4
 
-    .. grid-item-card::
+..     .. grid-item-card::
 
-        .. image:: images/getting_started/icons_configuration.png
-			:target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/configuration.html
-
-
-    .. grid-item-card::
-
-        .. image:: images/getting_started/icons_giotto.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_gobject.html
+..         .. image:: images/getting_started/icons_configuration.png
+..       :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/configuration.html
 
 
-    .. grid-item-card::
+..     .. grid-item-card::
+
+..         .. image:: images/getting_started/icons_giotto.png
+..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_gobject.html
+
+
+..     .. grid-item-card::
         
-        .. image:: images/getting_started/icons_processing.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/data_processing.html
+..         .. image:: images/getting_started/icons_processing.png
+..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/data_processing.html
     
 
-    .. grid-item-card::
+..     .. grid-item-card::
         
-        .. image:: images/getting_started/icons_clustering.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/Dimension_reduction.html
+..         .. image:: images/getting_started/icons_clustering.png
+..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/Dimension_reduction.html
 
 
-    .. grid-item-card::
+..     .. grid-item-card::
 
-        .. image:: images/getting_started/icons_images.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_images.html
+..         .. image:: images/getting_started/icons_images.png
+..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_images.html
         
 
-    .. grid-item-card::
+..     .. grid-item-card::
 
-        .. image:: images/getting_started/icons_visualizations.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/Visualizations.html
+..         .. image:: images/getting_started/icons_visualizations.png
+..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/Visualizations.html
 
 
-    .. grid-item-card::
+..     .. grid-item-card::
         
-        .. image:: images/getting_started/icons_saving.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_saving.html
+..         .. image:: images/getting_started/icons_saving.png
+..             :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_saving.html
