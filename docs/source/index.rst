@@ -28,7 +28,7 @@ Giotto Suite
    Common Errors and Solutions <errorsfaqsandtips.rst>
    Report a Bug <github_issues.rst>
 
-.. image:: images/index/giotto_suite.png
+.. image:: images/index/GiottoSuiteWebsite-07.svg
    :align: center
    :target: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2
    
@@ -46,19 +46,19 @@ Workflow
 **********************************************
 :octicon:`light-bulb` Click on the images for full resolution.
 
-.. image:: images/index/input_Compatibility.png
+.. image:: images/index/GiottoSuiteWebsite_Compatibility.svg
    :width: 600
 
 Data Structure 
 ===============
 
-.. image:: images/index/data_structure_Data_Structure.png
+.. image:: images/index/GiottoSuiteWebsite_Data Structure.svg
    :width: 600
 
 Analysis
 =============
 
-.. image:: images/index/analysis.png
+.. image:: images/index/GiottoSuiteWebsite_Workspace.svg
    :width: 400
 
 More technical information can be found in the `getting started section <https://giottosuite.readthedocs.io/en/latest/gettingstarted.html#learn-more-about-giotto-suite>`_.
