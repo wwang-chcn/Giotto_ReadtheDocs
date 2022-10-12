@@ -100,7 +100,7 @@ Authors and Developers
 +------------------------+---------------------+
 |`Ruben Dries`_          |*Author, Maintainer* | 
 +------------------------+---------------------+
-| Jiaji George Chen      |*Author*             |
+| `Jiaji George Chen`_   |*Author*             |
 +------------------------+---------------------+
 | Natalie Del Rossi      |*Author*             |
 +------------------------+---------------------+
@@ -108,17 +108,21 @@ Authors and Developers
 +------------------------+---------------------+
 | Junxiang Xu            |*Author*             |
 +------------------------+---------------------+
-| Guo-Cheng Yuan         |*Author*             |
+| `Guo-Cheng Yuan`_      |*Author*             |
 +------------------------+---------------------+
-| Joselyn Chávez         |*Author*             |
+| `Joselyn Chávez`_      |*Author*             |
 +------------------------+---------------------+
 | Adriana Sistig         |*Author*             |
 +------------------------+---------------------+
-| Matthew O'Brien        |*Author*             |
+| `Matthew O'Brien`_     |*Author*             |
 +------------------------+---------------------+
 | `Edward C. Ruiz`_      |*Author*             |
 +------------------------+---------------------+
 
 .. _Ruben Dries: https://www.drieslab.com
+.. _Jiaji George Chen: https://github.com/jiajic
+.. _Guo-Cheng Yuang: https://labs.icahn.mssm.edu/yuanlab/
+.. _Joselyn Chávez: https://twitter.com/josschavezf1
+.. _Matthew O'Brien: https://github.com/mattobny
 .. _Edward C. Ruiz: https://twitter.com/ziuron
 
