@@ -45,45 +45,74 @@ This step only needs to be run once. Giotto Suite will automatically detect the 
 Learn more about Giotto Suite
 **************************
 
-.. grid:: 4
+.. raw:: html
 
-    .. grid-item-card::
+    <div class="sphx-glr-thumbnails">
 
-        .. image:: images/getting_started/icons_configuration.png
-			:target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/configuration.html
+.. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how to configure and setup the Giotto object">
 
-    .. grid-item-card::
+.. only:: html
 
-        .. image:: images/getting_started/icons_giotto.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_gobject.html
+  .. image:: images/getting_started/icons_configuration.png
+    :alt: Configuration & Set-up
 
+  :ref:`configuration.rst`
 
-    .. grid-item-card::
-        
-        .. image:: images/getting_started/icons_processing.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/data_processing.html
-    
+.. raw:: html
 
-    .. grid-item-card::
-        
-        .. image:: images/getting_started/icons_clustering.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/Dimension_reduction.html
+      <div class="sphx-glr-thumbnail-title">Configuration & Set-up</div>
+    </div>
 
+.. raw:: html
 
-    .. grid-item-card::
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how to configure and setup the Giotto object">
 
-        .. image:: images/getting_started/icons_images.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_images.html
-        
+.. only:: html
 
-    .. grid-item-card::
+  .. image:: images/getting_started/icons_configuration.png
+    :alt: Configuration & Set-up
 
-        .. image:: images/getting_started/icons_visualizations.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/Visualizations.html
+  :ref:`configuration.rst`
 
+.. raw:: html
 
-    .. grid-item-card::
-        
-        .. image:: images/getting_started/icons_saving.png
-            :target: https://giottosuite.readthedocs.io/en/latest/subsections/datasets/getting_started_saving.html
+      <div class="sphx-glr-thumbnail-title">Configuration & Set-up</div>
+    </div>
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how to configure and setup the Giotto object">
+
+.. only:: html
+
+  .. image:: images/getting_started/icons_configuration.png
+    :alt: Configuration & Set-up
+
+  :ref:`configuration.rst`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Configuration & Set-up</div>
+    </div>
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how to configure and setup the Giotto object">
+
+.. only:: html
+
+  .. image:: images/getting_started/icons_configuration.png
+    :alt: Configuration & Set-up
+
+  :ref:`configuration.rst`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Configuration & Set-up</div>
+    </div>
+
+.. raw:: html
+
+    </div>
