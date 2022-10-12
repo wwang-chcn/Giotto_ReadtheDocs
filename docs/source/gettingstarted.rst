@@ -54,10 +54,10 @@ This step only needs to be run once. Giotto Suite will automatically detect the 
 Learn more about Giotto Suite
 **************************
 
+
 .. raw:: html
 
     <div class="sphx-glr-thumbnails">
-
 
 .. raw:: html
 
@@ -75,23 +75,53 @@ Learn more about Giotto Suite
       <div class="sphx-glr-thumbnail-title">Configuration & Set-up</div>
     </div>
 
-
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Learn more about Giotto objects & classes">
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how to configure and setup the Giotto object">
 
 .. only:: html
 
-  .. image:: images/getting_started/icons_giotto.png
-    :alt: Giotto Objects & Classes
+  .. image:: images/getting_started/icons_configuration.png
+    :alt: Configuration & Set-up
 
-  :ref:`sphx_glr_tutorials_introductory_images.rst`
+  :ref:`configuration.rst`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Giotto Objects & Classes</div>
+      <div class="sphx-glr-thumbnail-title">Configuration & Set-up</div>
     </div>
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how to configure and setup the Giotto object">
+
+.. only:: html
+
+  .. image:: images/getting_started/icons_configuration.png
+    :alt: Configuration & Set-up
+
+  :ref:`configuration.rst`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Configuration & Set-up</div>
+    </div>
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how to configure and setup the Giotto object">
+
+.. only:: html
+
+  .. image:: images/getting_started/icons_configuration.png
+    :alt: Configuration & Set-up
+
+  :ref:`configuration.rst`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Configuration & Set-up</div>
+    </div>
 
 .. raw:: html
 
