@@ -2,10 +2,10 @@
 getting_started_images
 ======================
 
-:Date: 2022-09-16
+:Date: 2022-10-12
 
-Giotto and Image Data
-=====================
+1 Giotto and Image Data
+=======================
 
 Multiple images may be attached to the Giotto object. Spatial data can
 be overlaid upon these images which may then be used for downstream
@@ -24,8 +24,8 @@ ROI alignment and or stitching, please see the Nanostring CosMx lung
 data
 `analysis <https://giottosuite.com/articles/Nanostring_Lung12_jan26_21.html>`__.
 
-Conceptual Overview
-===================
+2 Conceptual Overview
+=====================
 
 Giotto currently supports two types of image objects. For most purposes,
 images are loaded in using `terra <https://rdrr.io/cran/terra/>`__ and
@@ -175,8 +175,8 @@ Further intuition for defining these parameters in this way is detailed
 within the **Why this inversion is necessary** dropdown text beneath
 Standard workflow.
 
-Visium Workflow (Automated):
-============================
+3 Visium Workflow (Automated):
+==============================
 
 Assembly of Giotto object as well as the reading in and alignment of the
 tissue staining image from the Visium spatial subdirectory is done
@@ -276,11 +276,11 @@ In this example, the hires image will be plotted.
 | |image2|
 | 
 
-Standard Workflow
-=================
+4 Standard Workflow
+===================
 
-Step 1: Invert Y-Values
------------------------
+4.1 Step 1: Invert Y-Values
+---------------------------
 
 Before beginning, it is important to acknowledge that differences may
 exist in the conventions for defining coordinates within images and
@@ -355,8 +355,8 @@ aligned.
 
    </details>
 
-Step 2: Create giottoImage
---------------------------
+4.2 Step 2: Create giottoImage
+------------------------------
 
 | giottoImages are created using the **createGiottoImage()** function.
   This function requires a **magick**-compatible image (eg. jpg, tiff,
@@ -609,8 +609,8 @@ Alignment values:
 | *These values (Boundary adjustment) default to 0.*
 | 
 
-Step 3: Add giottoImage to giottoObject and Visualize
------------------------------------------------------
+4.3 Step 3: Add giottoImage to giottoObject and Visualize
+---------------------------------------------------------
 
 **addGiottoImage()** adds a **list** of images to the **giottoObject**
 specified. The name that the image is referred to as within the
@@ -635,8 +635,8 @@ specified. The name that the image is referred to as within the
 .. image:: /images/images_pkgdown/getting_started_figs/getting_started_images/low_res_IT.png
    :width: 50.0%
 
-Manual Adjustment
-=================
+5 Manual Adjustment
+===================
 
 | Manually adjusting the plotting of images comes either during
   **createGiottoImage()** using **do_manual_adj = TRUE** and the four
@@ -646,8 +646,8 @@ Manual Adjustment
   preference or if despite accounting for scaling, the image coordinates
   do not match up with the spatial coordinates for some reason.
 
-During giottoImage creation
----------------------------
+5.1 During giottoImage creation
+-------------------------------
 
 .. container:: cell
 
@@ -676,8 +676,8 @@ During giottoImage creation
 .. image:: /images/images_pkgdown/getting_started_figs/getting_started_images/low_res_update_manual_IT.png
    :width: 50.0%
 
-After giottoImage creation, within the giottoObject
----------------------------------------------------
+5.2 After giottoImage creation, within the giottoObject
+-------------------------------------------------------
 
 .. container:: cell
 

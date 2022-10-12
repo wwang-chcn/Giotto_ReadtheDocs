@@ -2,17 +2,17 @@
 getting_started_gobject
 =======================
 
-:Date: 2022-09-16
+:Date: 2022-10-12
 
-How to create a Giotto Object
-=============================
+1. How to create a Giotto Object
+================================
 
 In this tutorial, the methodology and syntax to create a
 **giottoObject** is shown and osmFISH data is used throughout the
 tutorial.
 
-Import Giotto and Download the Data
------------------------------------
+1.1 Import Giotto and Download the Data
+---------------------------------------
 
 To download this data, please ensure that
 `wget <https://www.gnu.org/software/wget/?>`__ is installed locally.
@@ -40,8 +40,8 @@ To download this data, please ensure that
       # Download osmFISH dataset to data_directory
       getSpatialDataset(dataset = 'osmfish_SS_cortex', directory = data_directory, method = 'wget')
 
-Minimum requirements for a Giotto Object
-----------------------------------------
+1.2 Minimum requirements for a Giotto Object
+--------------------------------------------
 
 -  Expression matrix
 -  Spatial locations (*unnecessary for scRNAseq analysis*)
@@ -165,15 +165,15 @@ Giotto object creation by using a named list.
                                                                 custom = custom_matrix),
                                               spatial_locs = cell_locations)
 
-Customizing the Giotto Object
------------------------------
+1.3 Customizing the Giotto Object
+---------------------------------
 
 By providing values to other **createGiottoObject** parameters, it is
 possible to add:
 
 -  **Cell** or **feature (gene) metadata**: see
-   `addCellMetadata <../md_rst/addCellMetadata.html>`__ and
-   `addFeatMetadata <../md_rst/addFeatMetadata.html>`__
+   `addCellMetadata <../reference/addCellMetadata.html>`__ and
+   `addFeatMetadata <../reference/addFeatMetadata.html>`__
 
 -  **Spatial networks** or **grids**: see
    `Visualizations <./Visualizations.html>`__
@@ -184,7 +184,7 @@ possible to add:
 -  **Images**: see `Imaging <./getting_started_images.html>`__
 
 -  **giottoInstructions**: see
-   `createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__
+   `createGiottoInstructions <../docs/reference/createGiottoInstructions.html>`__
    and below
 
 Providing **giottoInstructions** allows the specification of:
@@ -254,7 +254,7 @@ execution.
 Alternatively, a named list may also be provided to the *instructions*
 argument of **createGiottoObject**. However, ensure that all arguments
 to
-`createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__
+`createGiottoInstructions <../docs/reference/createGiottoInstructions.html>`__
 are defined when providing instructions as a named list, since default
 values are only applied to instructions when made with
 **createGiottoInstructions**. *Note that python_path must be specified
@@ -297,8 +297,8 @@ The **giottoInstructions** may be changed, or completely replaced:
       # Observe that the instructions have changed
       showGiottoInstructions(custom_gobject)
 
-Plotting Data from a Giotto Object
-----------------------------------
+1.4 Plotting Data from a Giotto Object
+--------------------------------------
 
 Each plotting function in Giotto has three important binary parameters:
 
@@ -312,7 +312,7 @@ plotting functions accordingly. To change these parameters from the
 default values, the instructions may be changed or replaced, or these
 parameters may be *manually overwritten* within plotting functions.
 
-See `showSaveParameters <../md_rst/showSaveParameters.html>`__
+See `showSaveParameters <../docs/reference/showSaveParameters.html>`__
 and the `Saving Options <./getting_started_saving.html>`__ tutorial for
 alternative methods to save plots.
 
@@ -338,8 +338,8 @@ alternative methods to save plots.
 
 .. image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/cell_clusters.png
 
-Giotto Object Structure
-=======================
+2. Giotto Object Structure
+==========================
 
 Usage of the Giotto package revolves around the **giottoObject**. This
 is an S4 object class that holds spatial expression data and facilitates
@@ -357,8 +357,8 @@ a **giottoObject** as output.
 | |image2|
 | |image3|
 
-Nested Organization of the Giotto Object
-========================================
+3. Nested Organization of the Giotto Object
+===========================================
 
 | Spatial data has tiered organization and thus so too does Giotto.
   Tissue regions can be divided down into individual cells and then
@@ -371,24 +371,16 @@ Nested Organization of the Giotto Object
   users and contributors/developers, accessor functions for the slots
   are also provided.
 
-Slots and Subnesting
---------------------
+3.0.1 Slots and Subnesting
+--------------------------
 
-Slot Nested Example Accessors 
-.. list-table::
-	:widths: 100 100 
-	:header-rows: 1
-
-	* - Slot
-	  - Nested
-     - Example
-     - Accessors
-   * - **@expression**
-     - spat_unit-feat_type-name
-     - cell-rna-raw
-     - | get_expression_values() 
-       | set_expression_values() 
-       | showGiottoExpression() 
+Slot Nested Example Accessors ————————
+————————————————————————————————————————————————————————————————————————————————————————-
+————————————————————————————————————————————————————————————————————————————————————————————-
+———————————————————————————– ————————
+————————————————————————————————————————————————————————————————————————————————————————-
+————————————————————————————————————————————————————————————————————————————————————————————–
+———————————————————————————–
 
 .. |image1| image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-01.svg
    :width: 100.0%

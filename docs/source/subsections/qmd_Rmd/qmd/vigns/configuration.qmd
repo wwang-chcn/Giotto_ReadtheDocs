@@ -1,13 +1,10 @@
 --- 
 title: configuration 
 format: rst 
-date: ymd 
+date: 2022-10-12 
+number-sections: true 
 --- 
---- 
-title: configuration 
-format: rst 
-date: 2022-09-16 
---- 
+
 ## Configuring the Giotto Environment
 
 Giotto contains several functions that contain wrappers to Python code and thus requires an environment containing Python. Utilizing the functionality of the [**reticulate**](https://rstudio.github.io/reticulate/) package, Giotto contains a function which sets up a miniconda environment and installs the required Python packages within that environment. Once this function, [**installGiottoEnvironment**](../reference/installGiottoEnvironment.html), has been run, Giotto will automatically default to utilizing this environment.
