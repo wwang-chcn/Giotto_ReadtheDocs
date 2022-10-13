@@ -109,41 +109,41 @@ html_theme_options = {
     }
 }
 
-# html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'sourcelink.html'] }
+html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'sourcelink.html'] }
 # globaltoc.html = table of contents
 # relations.html = prev/next page
 # sourcelink.html = "This Page" and "show source"
 
-html_sidebars = {
-    "index": [
-        "search-field.html", 'globaltoc.html' 
-    ],
-    "gettingstarted": [
-        "search-field.html", 'globaltoc.html' 
-    ],
-    "documentation": [
-        "search-field.html", 
-    ],
-    "contribute": [
-        "search-field.html", 'globaltoc.html' 
-    ],
-    "datasets": [ #tutorials
-        "search-field.html", 'globaltoc.html' 
-    ],
-    "faq": [
-        "search-field.html", 'globaltoc.html' 
-    ],
-    "trygitto": [
-        "search-field.html", 
-        "globaltoc.html"
-    ],
-    "errorsfaqsandtips": [ 
-        "search-field.html", 'globaltoc.html' 
-    ],
-     "github_issues": [ 
-        "search-field.html", 'globaltoc.html' 
-    ]
-}
+# html_sidebars = {
+#     "index": [
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#     "gettingstarted": [
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#     "documentation": [
+#         "search-field.html", 
+#     ],
+#     "contribute": [
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#     "datasets": [ #tutorials
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#     "faq": [
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#     "trygitto": [
+#         "search-field.html", 
+#         "globaltoc.html"
+#     ],
+#     "errorsfaqsandtips": [ 
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#      "github_issues": [ 
+#         "search-field.html", 'globaltoc.html' 
+#     ]
+# }
 
 #html_sidebars = { '**': ["search-field.html"] }
 html_css_files = ["css/theme_edits.css"]
