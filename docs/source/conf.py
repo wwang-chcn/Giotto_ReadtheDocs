@@ -96,10 +96,10 @@ html_sourcelink_suffix = ""
 html_theme_options = {
     "github_url": "https://github.com/drieslab/Giotto/tree/suite",
     'display_version': True,
-    "show_toc_level": 0,
+    "show_toc_level": 1,
     #Toc Tree Options
     'collapse_navigation': True,
-    'sticky_navigation': False,
+    'sticky_navigation': True,
     "use_edit_page_button": False,
     "navbar_end": ["navbar-icon-links.html"],
     "logo": {
