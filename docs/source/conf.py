@@ -109,22 +109,24 @@ html_theme_options = {
     }
 }
 
-# html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'relations.html', 'sourcelink.html'] }
+html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'sourcelink.html'] }
 # globaltoc.html = table of contents
 # relations.html = prev/next page
 # sourcelink.html = "This Page" and "show source"
-html_sidebars = {
-    "index": [
-        "search-field.html", 
-    ], 
-    "documentation": [
-        "search-field.html", 
-    ],
-    "trygitto": [
-        "search-field.html", 
-        "globaltoc.html"
-    ]
-}
+
+
+# html_sidebars = {
+#     "index": [
+#         "search-field.html", 
+#     ], 
+#     "documentation": [
+#         "search-field.html", 
+#     ],
+#     "trygitto": [
+#         "search-field.html", 
+#         "globaltoc.html"
+#     ]
+# }
 
 #html_sidebars = { '**': ["search-field.html"] }
 html_css_files = ["css/theme_edits.css"]
