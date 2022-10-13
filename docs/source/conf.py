@@ -100,7 +100,7 @@ html_theme_options = {
     #Toc Tree Options
     'collapse_navigation': True,
     'sticky_navigation': True,
-    "use_edit_page_button": True,
+    "use_edit_page_button": False,
     "navbar_end": ["navbar-icon-links.html"],
     "logo": {
         "text": "Giotto Suite",
