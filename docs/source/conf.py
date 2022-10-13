@@ -101,13 +101,12 @@ html_theme_options = {
     'collapse_navigation': True,
     'sticky_navigation': True,
     "use_edit_page_button": False,
-    "navbar_end": ["navbar-icon-links.html"],
+    "navbar_end": ["navbar-icon-links.html", "theme-switcher"],
     "logo": {
         "text": "Giotto Suite",
         "image_dark": "images/GiottoLogo.png",
         "alt_text": "Giotto Suite",
-    },
-    "navbar_center": ["version-switcher", "navbar-nav"]
+    }
 }
 
 html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'sourcelink.html'] }
