@@ -3,7 +3,7 @@ Giotto Suite
 ##########################################
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: General
    :hidden:
  
@@ -25,7 +25,7 @@ Giotto Suite
    :caption: Issues
    :hidden:
    
-   Common Errors and Solutions <errorsfaqsandtips.rst>
+   Troubleshooting <errorsfaqsandtips.rst>
    Report a Bug <github_issues.rst>
    
 .. toctree::
