@@ -12,6 +12,7 @@
 
 import os
 import sys
+import pydata_sphinx_theme
 # import sphinx_rtd_theme
 
 # sys.path.insert(0, os.path.abspath('.'))
