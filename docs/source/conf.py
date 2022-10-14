@@ -105,7 +105,7 @@ html_theme_options = {
         "image_dark": "images/GiottoLogo.png",
         "alt_text": "Giotto Suite",
     },
-    "navbar_end": ["version-switcher", "theme-switcher", "navbar-icon-links"]
+    "navbar_end": ["theme-switcher", "navbar-icon-links"]
 }
 
 html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'sourcelink.html'] }
