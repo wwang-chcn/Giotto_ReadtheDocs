@@ -108,7 +108,7 @@ html_theme_options = {
     "navbar_end": ["theme-switcher", "navbar-icon-links"]
 }
 
-html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'sourcelink.html'] }
+html_sidebars = { '**': ["searchbox.html", 'globaltoc.html', 'edit-this-page.html'] }
 # globaltoc.html = table of contents
 # relations.html = prev/next page
 # sourcelink.html = "This Page" and "show source"
