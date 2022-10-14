@@ -373,94 +373,105 @@ a **giottoObject** as output.
 
 3.0.1 Slots and Subnesting
 --------------------------
-.. list-table:: Slots and Subnesting
-   :header-rows: 1
 
-   * - Slot
-     - Nested
-     - Example
-     - Accessors
-   * - **@expression**
-     - spat_unit-feat_type-name
-     - cell-rna-raw
-     - get_expression_values()
-       set_expression_values()
-       showGiottoExpression()
-   * - **@cell_metadata**
-     - spat_unit-feat_type
-     - cell-rna
-     - pDataDT()
-       addCellMetadata()
-   * - **@feat_metadata**
-     - spat_unit-feat_type
-     - cell-rna
-     - fDataDT()
-       addFeatMetadata()
-   * - **@spatial_grid**
-     - spat_unit-name
-     - grid-grid
-     - get_spatialGrid()
-       set_spatialGrid()
-       showGiottoSpatGrids()
-   * - **@nn_network**
-     - spat_unit-method-name
-     - cell-sNN-sNN_results1
-     - get_NearestNetwork()
-       set_NearestNetwork()
-   * - **@dimension_reduction**
-     - approach-spat_unit-feat_type-method-name
-     - cells-cell-rna-pca-pca
-     - get_dimReduction()
-       set_dimReduction()
-       showGiottoDimRed()
-   * - **@spatial_enrichment**
-     - spat_unit-feat_type-name
-     - cell-rna-results1
-     - get_spatial_enrichment()
-       set_spatial_enrichment()
-       showGiottoSpatEnrichments()
-   * - **@spatial_info**
-     - spat_unit
-     - cell
-     - get_polygon_info()
-       set_polygon_info()
-       showGiottoSpatialInfo()
-   * - **@spatial_locs**
-     - spat_unit-name
-     - cell-raw
-     - get_spatial_locations()
-       set_spatial_locations()
-       showGiottoSpatLocs()
-   * - **@spatial_network**
-     - spat_unit-name
-     - cell-Delaunay_network1
-     - get_spatialNetwork()
-       set_spatialNetwork()
-       showGiottoSpatNetworks()
-   * - **@feat_info**
-     - feat_type
-     - rna
-     - get_feature_info()
-       set_feature_info()
-       showGiottoFeatInfo()
-   * - **@images**
-     - name
-     - image
-     - getGiottoImage()
-       addGiottoImage()
-       showGiottoImageNames()
-   * - **@largeImages**
-     - name
-     - image
-     - getGiottoImage()
-       addGiottoImage()
-       showGiottoImageNames()
-   * - **@instructions**
-     - 
-     - 
-     - replaceGiottoInstructions()
-       showGiottoInstructions()
++----------------+----------------+----------------+----------------+
+| Slot           | Nested         | Example        | Accessors      |
++================+================+================+================+
+| *              | spat_unit-     | get_expressi   |                |
+| *@expression** | feat_type-name | on_values()set |                |
+|                | cell-rna-raw   | _expression_va |                |
+|                |                | lues()showGiot |                |
+|                |                | toExpression() |                |
++----------------+----------------+----------------+----------------+
+| **@c           | spat_          | pDataDT()add   |                |
+| ell_metadata** | unit-feat_type | CellMetadata() |                |
+|                | cell-rna       |                |                |
++----------------+----------------+----------------+----------------+
+| **@f           | spat_          | fDataDT()add   |                |
+| eat_metadata** | unit-feat_type | FeatMetadata() |                |
+|                | cell-rna       |                |                |
++----------------+----------------+----------------+----------------+
+| **@            | spat_unit-name | get_spatialGr  |                |
+| spatial_grid** | grid-grid      | id()set_spatia |                |
+|                |                | lGrid()showGio |                |
+|                |                | ttoSpatGrids() |                |
++----------------+----------------+----------------+----------------+
+| *              | spat_un        | get_NearestN   |                |
+| *@nn_network** | it-method-name | etwork()set_Ne |                |
+|                | cell-sN        | arestNetwork() |                |
+|                | N-sNN_results1 |                |                |
++----------------+----------------+----------------+----------------+
+| **@dimensi     | approach-spa   | get_dimReduc   |                |
+| on_reduction** | t_unit-feat_ty | tion()set_dimR |                |
+|                | pe-method-name | eduction()show |                |
+|                | cells-ce       | GiottoDimRed() |                |
+|                | ll-rna-pca-pca |                |                |
++----------------+----------------+----------------+----------------+
+| **@spatia      | spat_unit-     | get_s          |                |
+| l_enrichment** | feat_type-name | patial_enrichm |                |
+|                | cel            | ent()set_spati |                |
+|                | l-rna-results1 | al_enrichment( |                |
+|                |                | )showGiottoSpa |                |
+|                |                | tEnrichments() |                |
++----------------+----------------+----------------+----------------+
+| **@            | spat_unit cell | get_           | SpatialInfo()  |
+| spatial_info** |                | polygon_info() |                |
+|                |                | set_polygon_in |                |
+|                |                | fo()showGiotto |                |
++----------------+----------------+----------------+----------------+
+| **@            | spat_unit-name | get_spatia     |                |
+| spatial_locs** | cell-raw       | l_locations()s |                |
+|                |                | et_spatial_loc |                |
+|                |                | ations()showGi |                |
+|                |                | ottoSpatLocs() |                |
++----------------+----------------+----------------+----------------+
+| **@spa         | spat_unit-name | get_spat       |                |
+| tial_network** | cell-Del       | ialNetwork()se |                |
+|                | aunay_network1 | t_spatialNetwo |                |
+|                |                | rk()showGiotto |                |
+|                |                | SpatNetworks() |                |
++----------------+----------------+----------------+----------------+
+| **@feat_info** | feat_type rna  | get_           | FeatInfo()     |
+|                |                | feature_info() |                |
+|                |                | set_feature_in |                |
+|                |                | fo()showGiotto |                |
++----------------+----------------+----------------+----------------+
+| **@images**    | name image     | getG           | eNames()       |
+|                |                | iottoImage()ad |                |
+|                |                | dGiottoImage() |                |
+|                |                | showGiottoImag |                |
++----------------+----------------+----------------+----------------+
+| **             | name image     | getG           | eNames()       |
+| @largeImages** |                | iottoImage()ad |                |
+|                |                | dGiottoImage() |                |
+|                |                | showGiottoImag |                |
++----------------+----------------+----------------+----------------+
+| **@            |                |                | replaceGi      |
+| instructions** |                |                | ottoInstructio |
+|                |                |                | ns()showGiotto |
+|                |                |                | Instructions() |
++----------------+----------------+----------------+----------------+
+| **             |                |                |                |
+| @OS_platform** |                |                |                |
++----------------+----------------+----------------+----------------+
+| **@join_info** |                |                |                |
++----------------+----------------+----------------+----------------+
+| *              |                |                |                |
+| *@parameters** |                |                |                |
++----------------+----------------+----------------+----------------+
 
++-----------------------------------------------------------------------+
+| ::                                                                    |
+|                                                                       |
+|     Slot         |               Ne                                   |
+| sted             |         Example         |          Accessors     | |
+|                                                                       |
+| ================================                                      |
+| ====================================================================+ |
+| **@expression** \|spat_unit-feat_type-name                            |
+| \|cell-rna-raw|get_expression_values() \| \| \|                       |
+| \|set_expression_values() \| \| \| \|showGiottoExpression()           |
++-----------------------------------------------------------------------+
 
 .. |image1| image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-01.svg
    :width: 100.0%
