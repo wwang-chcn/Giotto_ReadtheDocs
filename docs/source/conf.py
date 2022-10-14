@@ -106,10 +106,10 @@ html_theme_options = {
         "image_dark": "images/GiottoLogo.png",
         "alt_text": "Giotto Suite",
     },
-    "navbar_end": ["navbar-icon-links"]
+    "navbar_end": ["search-button", "navbar-icon-links"]
 }
 
-html_sidebars = { '**': ["searchbox.html", 'globaltoc.html', 'edit-this-page.html'] }
+html_sidebars = { '**': ['globaltoc.html', 'edit-this-page.html'] }
 # globaltoc.html = table of contents
 # relations.html = prev/next page
 # sourcelink.html = "This Page" and "show source"
