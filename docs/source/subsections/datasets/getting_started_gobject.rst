@@ -374,92 +374,93 @@ a **giottoObject** as output.
 3.0.1 Slots and Subnesting
 --------------------------
 
-.. role:: red
-.. container:: red
-   .red {
-      color:red;
-   }
+.. role:: pink
+.. role:: blue
+.. role:: purple
+.. role:: magenta
+.. role:: orange
 
 
 .. list-table:: Slots and Subnesting
-   :widths: 30 15 15 30
+   :widths: 35 15 15 35
    :header-rows: 1
+   :class: tight-table
 
    * - Slot
      - Nested
      - Example
      - Accessors
    * - **@expression**
-     - spat_unit-:textcolor:`<#E88EBB>feat_type`-name
-     - cell-:red:`rna`-raw
+     - :blue:`spat_unit` - :pink:`feat_type` -  :magenta:`name`
+     - cell-rna-raw
      - get_expression_values()
        set_expression_values()
        showGiottoExpression()
    * - **@cell_metadata**
-     - spat_unit-feat_type
+     - :blue:`spat_unit` - :pink:`feat_type`
      - cell-rna
      - pDataDT()
        addCellMetadata()
    * - **@feat_metadata**
-     - spat_unit-feat_type
+     - :blue:`spat_unit` - :pink:`feat_type`
      - cell-rna
      - fDataDT()        
        addFeatMetadata()
    * - **@spatial_grid**
-     - spat_unit-name
+     - :blue:`spat_unit` - :magenta:`name`
      - grid-grid
      - get_spatialGrid()
        set_spatialGrid()
        showGiottoSpatGrids()
    * - **@nn_network**
-     - spat_unit-method-name
+     - :blue:`spat_unit`- :orange:`method` -:magenta:`name`
      - cell-sNN-sNN_results1
      - get_NearestNetwork()
        set_NearestNetwork()
    * - **@dimension_reduction**
-     - approach-spat_unit-feat_type-method-name
+     - :purple:`approach` - :blue:`spat_unit` - :pink:`feat_type` - :orange:`method` - :magenta:`name`
      - cells-cell-rna-pca-pca
      - get_dimReduction()
        set_dimReduction()
        showGiottoDimRed()
    * - **@spatial_enrichment**
-     - spat_unit-feat_type-name
+     - :blue:`spat_unit` - :pink:`feat_type` - :magenta:`name`
      - cell-rna-results1
      - get_spatial_enrichment()
        set_spatial_enrichment()
        showGiottoSpatEnrichments()
    * - **@spatial_info**
-     - spat_unit
+     - :blue:`spat_unit`
      - cell
      - get_polygon_info()
        set_polygon_info()
        showGiottoSpatialInfo()
    * - **@spatial_locs**
-     - spat_unit-name
+     - :blue:`spat_unit` - :magenta:`name`
      - cell-raw
      - get_spatial_locations()
        set_spatial_locations()
        showGiottoSpatLocs()
    * - **@spatial_network**
-     - spat_unit-name
+     - :blue:`spat_unit` - :magenta:`name`
      - cell-Delaunay_network1
      - get_spatialNetwork()
        set_spatialNetwork()
        showGiottoSpatNetworks()
    * - **@feat_info**
-     - feat_type
+     - :pink:`feat_type`
      - rna
      - get_feature_info()
        set_feature_info()
        showGiottoFeatInfo()
    * - **@images**
-     - name
+     - :magenta:`name`
      - image
      - getGiottoImage()
        addGiottoImage()
        showGiottoImageNames()
    * - **@largeImages**
-     - name
+     - :magenta:`name`
      - image
      - getGiottoImage()
        addGiottoImage()
