@@ -145,11 +145,6 @@ html_sidebars = { '**': ['search-field.html', 'globaltoc.html', 'edit-this-page.
 #     ]
 # }
 
-html_context = {
-   # ...
-   "default_mode": "dark"
-}
-
 #html_sidebars = { '**': ["search-field.html"] }
 html_css_files = ["css/theme_edits.css"]
 panels_add_fontawesome_latex = True
