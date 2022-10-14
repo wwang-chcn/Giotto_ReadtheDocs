@@ -374,13 +374,15 @@ a **giottoObject** as output.
 3.0.1 Slots and Subnesting
 --------------------------
 
-.. raw:: html
-
-    <style> .red {color:red} </style>
+.. role:: red
+.. container:: red
+   .red {
+      color:red;
+   }
 
 
 .. list-table:: Slots and Subnesting
-   :widths: 30 15 15 40
+   :widths: 30 15 15 30
    :header-rows: 1
 
    * - Slot
@@ -388,8 +390,8 @@ a **giottoObject** as output.
      - Example
      - Accessors
    * - **@expression**
-     - spat_unit-:red:`feat_type-name`
-     - cell-rna-raw
+     - spat_unit-:textcolor:`<#E88EBB>feat_type`-name
+     - cell-:red:`rna`-raw
      - get_expression_values()
        set_expression_values()
        showGiottoExpression()
