@@ -95,18 +95,17 @@ html_sourcelink_suffix = ""
 
 html_theme_options = {
     "github_url": "https://github.com/drieslab/Giotto/tree/suite",
-    'display_version': True,
-    "show_toc_level": 1,
-    #Toc Tree Options
-    'collapse_navigation': True,
-    'sticky_navigation': True,
-    "use_edit_page_button": False,
-    "navbar_end": ["navbar-icon-links.html"],
+    #'display_version': True,
+    # "show_toc_level": 1,
+    #'collapse_navigation': True,
+    #'sticky_navigation': True,
+    #"use_edit_page_button": False,
     "logo": {
         "text": "Giotto Suite",
         "image_dark": "images/GiottoLogo.png",
         "alt_text": "Giotto Suite",
-    }
+    },
+    "navbar_end": ["version-switcher", "theme-switcher", "navbar-icon-links"]
 }
 
 html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'sourcelink.html'] }
