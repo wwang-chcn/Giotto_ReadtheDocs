@@ -373,7 +373,14 @@ a **giottoObject** as output.
 
 3.0.1 Slots and Subnesting
 --------------------------
+
+.. raw:: html
+
+    <style> .red {color:red} </style>
+
+
 .. list-table:: Slots and Subnesting
+   :widths: 30 15 15 40
    :header-rows: 1
 
    * - Slot
@@ -381,7 +388,7 @@ a **giottoObject** as output.
      - Example
      - Accessors
    * - **@expression**
-     - spat_unit-feat_type-name
+     - spat_unit-:red:`feat_type-name`
      - cell-rna-raw
      - get_expression_values()
        set_expression_values()
@@ -394,7 +401,7 @@ a **giottoObject** as output.
    * - **@feat_metadata**
      - spat_unit-feat_type
      - cell-rna
-     - fDataDT()
+     - fDataDT()        
        addFeatMetadata()
    * - **@spatial_grid**
      - spat_unit-name
