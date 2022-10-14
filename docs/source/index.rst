@@ -21,7 +21,7 @@ Giotto Suite
    Try Giotto <trygiotto.rst>
    
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Issues
    :hidden:
    
@@ -31,7 +31,6 @@ Giotto Suite
 .. toctree::
    :maxdepth: 1
    :caption: Changelog
-   :hidden:
    
    Changelog <additionalinformation.rst>
 
