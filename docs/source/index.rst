@@ -32,6 +32,7 @@ Giotto Suite
    :maxdepth: 1
    :caption: Changelog
    :hidden:
+   
    Changelog <additionalinformation.rst>
 
 .. image:: images/index/GiottoSuiteWebsite-07.svg
