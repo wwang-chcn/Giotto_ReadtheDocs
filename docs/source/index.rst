@@ -31,7 +31,7 @@ Giotto Suite
 .. toctree::
    :maxdepth: 1
    :caption: Changelog
-   
+   :hidden:
    Changelog <additionalinformation.rst>
 
 .. image:: images/index/GiottoSuiteWebsite-07.svg
@@ -50,7 +50,6 @@ The source code for Giotto Suite may be found on our `GitHub repository <https:/
 **********************************************
 Workflow
 **********************************************
-:octicon:`light-bulb` Click on the images for full resolution.
 
 .. image:: images/index/GiottoSuiteWebsite_Compatibility.svg
    :width: 400
