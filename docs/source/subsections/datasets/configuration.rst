@@ -2,10 +2,10 @@
 configuration
 =============
 
-:Date: 2022-09-16
+:Date: 2022-10-12
 
-Configuring the Giotto Environment
-==================================
+1 Configuring the Giotto Environment
+====================================
 
 Giotto contains several functions that contain wrappers to Python code
 and thus requires an environment containing Python. Utilizing the
@@ -58,8 +58,8 @@ utilized:**
 -  `scikit-learn <https://scikit-learn.org/stable/>`__ 0.24.2
 -  `smfishHmrf <https://pypi.org/project/smfishHmrf/>`__ 1.3.3
 
-Customizing the Giotto Installation
-===================================
+2 Customizing the Giotto Installation
+=====================================
 
 If different versions of Python or packages are necessary for a
 workflow, Giotto may be installed accordingly. Ensure that all required
@@ -100,8 +100,8 @@ will identify the OS in use and install/not install packages
       ### installGiottoEnvironment(packages_to_install = new_pkg_versions,
       ###                          python_version = '3.8') # Default is 3.6
 
-Using a non-default Conda Environment with Giotto
-=================================================
+3 Using a non-default Conda Environment with Giotto
+===================================================
 
 Inherently as a result of the interface with reticulate, it is not
 possible to install the Giotto environment at a specified location. For
@@ -117,8 +117,8 @@ This will direct reticulate to activate and utilize that environment
 within that R session. See `How to Create a Giotto
 Object <./getting_started_gobject.html>`__ for more details.
 
-Package Accessibility
-=====================
+4 Package Accessibility
+=======================
 
 Giotto makes use of the following Python packages (and their respective
 dependencies) for full functionality:

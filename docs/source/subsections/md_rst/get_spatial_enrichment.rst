@@ -2,7 +2,9 @@
 get_spatial_enrichment
 ======================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L986
 
 Description
 ===========
@@ -29,13 +31,13 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g.”cell”)            |
+| ``spat_unit``                 | spatial unit (e.g.�cell�)            |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``enrichm_name``              | name of spatial enrichment results.  |
-|                               | Default “DWLS”                       |
+|                               | Default “DWLS�                       |
 +-------------------------------+--------------------------------------+
 
 Value

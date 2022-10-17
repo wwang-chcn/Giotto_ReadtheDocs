@@ -2,7 +2,7 @@
 combineCellProximityGenes
 =========================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -11,7 +11,7 @@ combineCellProximityGenes
 Description
 ===========
 
-Combine ICG scores in a pairwise manner.
+Combine ICF scores in a pairwise manner.
 
 Usage
 =====
@@ -27,30 +27,30 @@ Arguments
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``...``                       | Arguments passed on to               |
-|                               | ```combineInteractionChangedGenes``  |
-|                               | <#combineinteractionchangedgenes>`__ |
+|                               | ```combineInteractionChangedFeats``  |
+|                               | <#combineinteractionchangedfeats>`__ |
 |                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”cpgObject”)),        |
-|                               | list(“ICG (interaction changed gene) |
+|                               | list(list(list(”icfObject”)),        |
+|                               | list(“ICF (interaction changed feat) |
 |                               | score object”)), “:raw-latex:`\n`”,  |
 |                               | ” “,                                 |
 |                               | list(list(list(”selected_ints”)),    |
 |                               | list(“subset of selected cell-cell   |
 |                               | interactions (optional)”)),          |
 |                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”selected_genes”)),   |
-|                               | list(“subset of selected genes       |
+|                               | list(list(list(”selected_feats”)),   |
+|                               | list(“subset of selected Features    |
 |                               | (optional)”)), “:raw-latex:`\n`”, ”  |
 |                               | “,                                   |
-|                               | list(list(list(”specific_genes_1”)), |
-|                               | list(“specific geneset combo (need   |
-|                               | to position match                    |
-|                               | specific_genes_2)”)),                |
+|                               | list(list(list(”specific_feats_1”)), |
+|                               | list(“specific Featureset combo      |
+|                               | (need to position match              |
+|                               | specific_feats_2)”)),                |
 |                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”specific_genes_2”)), |
-|                               | list(“specific geneset combo (need   |
-|                               | to position match                    |
-|                               | specific_genes_1)”)),                |
+|                               | list(list(list(”specific_feats_2”)), |
+|                               | list(“specific Featureset combo      |
+|                               | (need to position match              |
+|                               | specific_feats_1)”)),                |
 +-------------------------------+--------------------------------------+
 
 ::
@@ -61,4 +61,4 @@ Arguments
 Seealso
 =======
 
-```combineInteractionChangedGenes`` <#combineinteractionchangedgenes>`__
+```combineInteractionChangedFeats`` <#combineinteractionchangedfeats>`__

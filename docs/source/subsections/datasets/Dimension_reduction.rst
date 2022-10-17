@@ -1,8 +1,8 @@
-===================
-Dimension_reduction
-===================
+==================================
+Dimension Reduction and Clustering
+==================================
 
-:Date: 2022-09-16
+:Date: 2022-10-12
 
 This tutorial walks through the dimension reduction and clustering
 capabilities of Giotto and begins with the Giotto Object processed in
@@ -17,8 +17,8 @@ subventrical zone. A complete walkthrough of that dataset can be found
 create the Giotto Object below, please ensure that
 `wget <https://www.gnu.org/software/wget/?>`__ is installed locally.
 
-Creating and Processing a Giotto Object
-=======================================
+1. Creating and Processing a Giotto Object
+==========================================
 
 .. container:: cell
 
@@ -115,8 +115,8 @@ Creating and Processing a Giotto Object
                                adjust_params = list(expression_values = c('normalized'), 
                                                     covariate_columns = 'nr_feats'))
 
-1. Dimension Reduction and PCA
-------------------------------
+2. Dimension Reduction and PCA
+==============================
 
 Highly variable features (genes) may be computed based on high
 coefficient of variance within groups, variance of pearson residuals for
@@ -209,8 +209,8 @@ been identified using Loess Regression predictions.
 .. image:: /images/images_pkgdown/getting_started_figs/dimension_reduction/6-UMAP.png
    :width: 50.0%
 
-2. Clustering
--------------
+3. Clustering
+=============
 
 Cells may be clustered into distinct groups based on feature expression.
 To cluster, the Giotto Object must contain data that has undergone PCA

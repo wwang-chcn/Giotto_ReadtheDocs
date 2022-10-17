@@ -2,7 +2,9 @@
 doLeidenCluster
 ===============
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L42
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -45,19 +47,19 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name for cluster, default to         |
-|                               | “leiden_clus”                        |
+|                               | “leiden_clus�                        |
 +-------------------------------+--------------------------------------+
 | ``nn_network_to_use``         | type of NN network to use (kNN vs    |
-|                               | sNN), default to “sNN”               |
+|                               | sNN), default to “sNN�               |
 +-------------------------------+--------------------------------------+
 | ``network_name``              | name of NN network to use, default   |
-|                               | to “sNN.pca”                         |
+|                               | to “sNN.pca�                         |
 +-------------------------------+--------------------------------------+
 | ``python_path``               | specify specific path to python if   |
 |                               | required                             |
@@ -65,13 +67,13 @@ Arguments
 | ``resolution``                | resolution, default = 1              |
 +-------------------------------+--------------------------------------+
 | ``weight_col``                | weight column to use for edges,      |
-|                               | default to “weight”                  |
+|                               | default to “weight�                  |
 +-------------------------------+--------------------------------------+
 | ``partition_type``            | The type of partition to use for     |
 |                               | optimisation.                        |
 |                               | (e.                                  |
-|                               | g. “RBConfigurationVertexPartition”, |
-|                               | “ModularityVertexPartition”)         |
+|                               | g. “RBConfigurationVertexPartition�, |
+|                               | “ModularityVertexPartition�)         |
 +-------------------------------+--------------------------------------+
 | ``init_membership``           | initial membership of cells for the  |
 |                               | partition                            |
@@ -102,16 +104,16 @@ for more information.
 
 Partition types available and information:
 
--  list(“RBConfigurationVertexPartition:”) list(“Implements Reichardt
-   and Bornholdt’s Potts model:raw-latex:`\n`”, ” with a configuration
+-  list(“RBConfigurationVertexPartition:�) list(“Implements Reichardt
+   and Bornholdt’s Potts model:raw-latex:`\n`�, � with a configuration
    null model. This quality function is well-defined only for positive
-   edge weights.:raw-latex:`\n`“,” This quality function uses a linear
-   resolution parameter.”)
+   edge weights.:raw-latex:`\n`“,� This quality function uses a linear
+   resolution parameter.�)
 
--  list(“ModularityVertexPartition:”) list(“Implements
-   modularity.:raw-latex:`\n`”, ” This quality function is well-defined
-   only for positive edge weights. It does “, list(”not”), ” use the
-   resolution parameter”)
+-  list(“ModularityVertexPartition:�) list(“Implements
+   modularity.:raw-latex:`\n`�, � This quality function is well-defined
+   only for positive edge weights. It does “, list(�not�), � use the
+   resolution parameter�)
 
 Set weight_col = NULL to give equal weight (=1) to each edge.
 

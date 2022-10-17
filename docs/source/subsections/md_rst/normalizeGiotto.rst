@@ -2,7 +2,9 @@
 normalizeGiotto
 ===============
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1986
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -110,12 +112,12 @@ list()
       also implemented: list()
 
 -  list(“1. First normalize genes, for each gene divide the counts by
-   the total gene count and:raw-latex:`\n`”, “multiply by the total
-   number of genes.”)
+   the total gene count and:raw-latex:`\n`�, “multiply by the total
+   number of genes.�)
 
 -  | list(“2. Next normalize cells, for each cell divide the normalized
-     gene counts by the total:raw-latex:`\n`”, “counts per cell and
-     multiply by the total number of cells.”)
+     gene counts by the total:raw-latex:`\n`�, “counts per cell and
+     multiply by the total number of cells.�)
    | C. The normalization method as provided by Lause/Kobak et al is
      also implemented: list()
 

@@ -2,7 +2,9 @@
 spatPlot3D
 ==========
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7741
 
 Description
 ===========

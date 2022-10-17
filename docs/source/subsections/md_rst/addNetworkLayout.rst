@@ -2,7 +2,9 @@
 addNetworkLayout
 ================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/NN_network.R#L258
 
 Description
 ===========
@@ -56,7 +58,7 @@ Details
 =======
 
 This function creates layout coordinates based on the provided kNN or
-sNN. Currently only the force-directed graph layout “drl”, see
+sNN. Currently only the force-directed graph layout “drl�, see
 ```layout_with_drl`` <#layoutwithdrl>`__ , is implemented. This provides
 an alternative to tSNE or UMAP based visualizations.
 

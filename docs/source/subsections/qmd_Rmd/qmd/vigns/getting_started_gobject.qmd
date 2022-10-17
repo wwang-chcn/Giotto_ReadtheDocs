@@ -1,12 +1,8 @@
 --- 
 title: getting_started_gobject 
 format: rst 
-date: ymd 
---- 
---- 
-title: getting_started_gobject 
-format: rst 
-date: 2022-09-16 
+date: 2022-10-12 
+number-sections: true 
 --- 
 
 # How to create a Giotto Object

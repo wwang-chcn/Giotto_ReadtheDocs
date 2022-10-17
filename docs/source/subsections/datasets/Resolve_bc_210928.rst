@@ -432,19 +432,19 @@ Part 11: Visualize SubCellular Data
 .. image:: /images/other/resolve_bc_subcellular/66-spatInSituPlotPoints.png
     
 ###########################################
-Part 12: Find Interaction Changed Genes
+Part 12: Find Interaction Changed Features
 ###########################################
 
 .. code-block:: 
 
-    # find interaction changed genes
-    # genes whose expression difference is associated with a neighboring cell type
+    # find interaction changed Features
+    # In this case, features are genes whose expression difference is associated with a neighboring cell type
     future::plan('multisession', workers = 4) # sometimes unstable, restart R session
 
     test = findInteractionChangedFeats(gobject = subc_test,
-                                    cluster_column = 'leiden_clus')
+                                       cluster_column = 'leiden_clus')
 
-    test$CPGscores[type_int == 'hetero']
+    test$ICFscores[type_int == 'hetero']
 
     spatInSituPlotPoints(subc_test,
                         feats = list('rna' = c("CTSD", "BMP1")),

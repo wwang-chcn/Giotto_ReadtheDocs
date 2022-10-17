@@ -20,14 +20,14 @@ for f in $1*.qmd; do
   # i.e. #``createGiottoObject
   #
   #      create a giotto object
-  sed "1,4d" $filename.qmd > tmp.qmd
+  sed "1,5d" $filename.qmd > tmp.qmd
   cat tmp.qmd > $filename.qmd
   rm tmp.qmd
 
   # FOR MACOS USERS, RUN BELOW
   #sed -i '' "1s/^/--- \ntitle: $filename \nformat: rst \ndate: $ymd \n--- \n/" $filename.qmd
   # FOR WINDOWS USERS, RUN BELOW
-  sed -i "1s/^/--- \ntitle: $filename \nformat: rst \ndate: $ymd \n--- \n/" $filename.qmd
+  sed -i "1s/^/--- \ntitle: $filename \nformat: rst \ndate: $ymd \nnumber-sections: true \n--- \n/" $filename.qmd
   
   quarto.exe render $filename.qmd --to rst
 

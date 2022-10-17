@@ -2,7 +2,9 @@
 plotMetaDataCellsHeatmap
 ========================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1504
 
 Description
 ===========
@@ -50,10 +52,10 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``metadata_cols``             | annotation columns found in          |
 |                               | pDataDT(gobject)                     |
@@ -70,25 +72,25 @@ Arguments
 |                               | select the facetting factor          |
 +-------------------------------+--------------------------------------+
 | ``show_values``               | which values to show on heatmap      |
-|                               | (e.g. “zscores”, “original”,         |
-|                               | “zscores_rescaled”)                  |
+|                               | (e.g. “zscores�, “original�,         |
+|                               | “zscores_rescaled�)                  |
 +-------------------------------+--------------------------------------+
 | ``custom_cluster_order``      | custom cluster order (default =      |
 |                               | NULL)                                |
 +-------------------------------+--------------------------------------+
 | ``clus_cor_method``           | correlation method for clusters,     |
-|                               | default to “pearson”                 |
+|                               | default to “pearson�                 |
 +-------------------------------+--------------------------------------+
 | ``clus_cluster_method``       | hierarchical cluster method for the  |
-|                               | clusters, default to “complete”      |
+|                               | clusters, default to “complete�      |
 +-------------------------------+--------------------------------------+
 | ``custom_values_order``       | custom values order (default = NULL) |
 +-------------------------------+--------------------------------------+
 | ``values_cor_method``         | correlation method for values,       |
-|                               | default to “pearson”                 |
+|                               | default to “pearson�                 |
 +-------------------------------+--------------------------------------+
 | ``values_cluster_method``     | hierarchical cluster method for the  |
-|                               | values, default to “complete”        |
+|                               | values, default to “complete�        |
 +-------------------------------+--------------------------------------+
 | ``midpoint``                  | midpoint of show_values              |
 +-------------------------------+--------------------------------------+

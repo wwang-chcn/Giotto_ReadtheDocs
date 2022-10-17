@@ -2,7 +2,9 @@
 doSNNCluster
 ============
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L611
 
 Description
 ===========
@@ -37,13 +39,13 @@ Arguments
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name for cluster, default to         |
-|                               | “sNN_clus”                           |
+|                               | “sNN_clus�                           |
 +-------------------------------+--------------------------------------+
 | ``nn_network_to_use``         | type of NN network to use (only      |
-|                               | works on kNN), default to “kNN”      |
+|                               | works on kNN), default to “kNN�      |
 +-------------------------------+--------------------------------------+
 | ``network_name``              | name of kNN network to use, default  |
-|                               | to “kNN.pca”                         |
+|                               | to “kNN.pca�                         |
 +-------------------------------+--------------------------------------+
 | ``k``                         | Neighborhood size for nearest        |
 |                               | neighbor sparsification to create    |

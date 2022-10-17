@@ -2,7 +2,9 @@
 spatialDE
 =========
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1844
 
 Description
 ===========
@@ -80,8 +82,8 @@ Details
 
 This function is a wrapper for the SpatialDE method originally
 implemented in python. See publication
-c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}”,
-“10.1038/nmeth.4636”) list(“tools:::Rd_expr_doi("10.1038/nmeth.4636")”)
+c(“\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}�,
+“10.1038/nmeth.4636�) list(“tools:::Rd_expr_doi("10.1038/nmeth.4636")�)
 
 Value
 =====

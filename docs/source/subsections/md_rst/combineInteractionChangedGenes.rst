@@ -2,32 +2,23 @@
 combineInteractionChangedGenes
 ==============================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+.. role:: raw-latex(raw)
+   :format: latex
+..
 
 Description
 ===========
 
-Combine ICG scores in a pairwise manner.
+Combine ICF scores in a pairwise manner.
 
 Usage
 =====
 
 .. code:: r
 
-   combineInteractionChangedGenes(
-     cpgObject,
-     selected_ints = NULL,
-     selected_genes = NULL,
-     specific_genes_1 = NULL,
-     specific_genes_2 = NULL,
-     min_cells = 5,
-     min_int_cells = 3,
-     min_fdr = 0.05,
-     min_spat_diff = 0,
-     min_log2_fc = 0.5,
-     do_parallel = TRUE,
-     verbose = T
-   )
+   combineInteractionChangedGenes(...)
 
 Arguments
 =========
@@ -35,39 +26,39 @@ Arguments
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
-| ``cpgObject``                 | ICG (interaction changed gene) score |
-|                               | object                               |
-+-------------------------------+--------------------------------------+
-| ``selected_ints``             | subset of selected cell-cell         |
-|                               | interactions (optional)              |
-+-------------------------------+--------------------------------------+
-| ``selected_genes``            | subset of selected genes (optional)  |
-+-------------------------------+--------------------------------------+
-| ``specific_genes_1``          | specific geneset combo (need to      |
-|                               | position match specific_genes_2)     |
-+-------------------------------+--------------------------------------+
-| ``specific_genes_2``          | specific geneset combo (need to      |
-|                               | position match specific_genes_1)     |
-+-------------------------------+--------------------------------------+
-| ``min_cells``                 | minimum number of target cell type   |
-+-------------------------------+--------------------------------------+
-| ``min_int_cells``             | minimum number of interacting cell   |
-|                               | type                                 |
-+-------------------------------+--------------------------------------+
-| ``min_fdr``                   | minimum adjusted p-value             |
-+-------------------------------+--------------------------------------+
-| ``min_spat_diff``             | minimum absolute spatial expression  |
-|                               | difference                           |
-+-------------------------------+--------------------------------------+
-| ``min_log2_fc``               | minimum absolute log2 fold-change    |
-+-------------------------------+--------------------------------------+
-| ``do_parallel``               | run calculations in parallel with    |
-|                               | mclapply                             |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | verbose                              |
+| ``...``                       | Arguments passed on to               |
+|                               | ```combineInteractionChangedFeats``  |
+|                               | <#combineinteractionchangedfeats>`__ |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”icfObject”)),        |
+|                               | list(“ICF (interaction changed feat) |
+|                               | score object”)), “:raw-latex:`\n`”,  |
+|                               | ” “,                                 |
+|                               | list(list(list(”selected_ints”)),    |
+|                               | list(“subset of selected cell-cell   |
+|                               | interactions (optional)”)),          |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”selected_feats”)),   |
+|                               | list(“subset of selected Features    |
+|                               | (optional)”)), “:raw-latex:`\n`”, ”  |
+|                               | “,                                   |
+|                               | list(list(list(”specific_feats_1”)), |
+|                               | list(“specific Featureset combo      |
+|                               | (need to position match              |
+|                               | specific_feats_2)”)),                |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”specific_feats_2”)), |
+|                               | list(“specific Featureset combo      |
+|                               | (need to position match              |
+|                               | specific_feats_1)”)),                |
 +-------------------------------+--------------------------------------+
 
-Value
-=====
+::
 
-cpgObject that contains the filtered differential gene scores
+   "\n", "    ", list(list(list("min_cells")), list("minimum number of target cell type")), "\n", "    ", list(list(list("min_int_cells")), list("minimum number of interacting cell type")), "\n", "    ", list(list(list("min_fdr")), list("minimum adjusted p-value")), "\n", "    ", list(list(list("min_spat_diff")), list("minimum absolute spatial expression difference")), "\n", "    ", list(list(list("min_log2_fc")), list("minimum absolute log2 fold-change")), "\n", "    ", list(list(list("do_parallel")), 
+       list("run calculations in parallel with mclapply")), "\n", "    ", list(list(list("verbose")), list("verbose")), "\n", "  ")
+
+Seealso
+=======
+
+```combineInteractionChangedFeats`` <#combineinteractionchangedfeats>`__

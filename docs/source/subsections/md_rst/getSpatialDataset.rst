@@ -2,7 +2,9 @@
 getSpatialDataset
 =================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L635
 
 Description
 ===========

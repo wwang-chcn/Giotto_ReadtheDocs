@@ -2,7 +2,9 @@
 createSpatialGrid
 =================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L2436
 
 Description
 ===========
@@ -61,7 +63,7 @@ Details
 Creates a spatial grid with defined x, y (and z) dimensions. The
 dimension units are based on the provided spatial location units.
 
--  default method: list(list(“createSpatialDefaultGrid”))
+-  default method: list(list(“createSpatialDefaultGrid�))
 
 Value
 =====

@@ -2,7 +2,9 @@
 get_spatial_locations
 =====================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L135
 
 Description
 ===========
@@ -24,11 +26,11 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
 | ``spat_loc_name``             | name of spatial locations (defaults  |
 |                               | to first name in spatial_locs slot,  |
-|                               | e.g. “raw”)                          |
+|                               | e.g. “raw�)                          |
 +-------------------------------+--------------------------------------+
 
 Value

@@ -2,7 +2,9 @@
 showClusterHeatmap
 ==================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L460
 
 Description
 ===========
@@ -40,14 +42,14 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``expression_values``         | expression values to use             |
-|                               | (e.g. “normalized”, “scaled”,        |
-|                               | “custom”)                            |
+|                               | (e.g. “normalized�, “scaled�,        |
+|                               | “custom�)                            |
 +-------------------------------+--------------------------------------+
 | ``feats``                     | vector of features to use, default   |
 |                               | to ‘all’                             |
@@ -56,15 +58,15 @@ Arguments
 |                               | param                                |
 +-------------------------------+--------------------------------------+
 | ``cluster_column``            | name of column to use for clusters   |
-|                               | (e.g. “leiden_clus”)                 |
+|                               | (e.g. “leiden_clus�)                 |
 +-------------------------------+--------------------------------------+
 | ``cor``                       | correlation score to calculate       |
-|                               | distance (e.g. “pearson”,            |
-|                               | “spearman”)                          |
+|                               | distance (e.g. “pearson�,            |
+|                               | “spearman�)                          |
 +-------------------------------+--------------------------------------+
 | ``distance``                  | distance method to use for           |
 |                               | hierarchical clustering, default to  |
-|                               | “ward.D”                             |
+|                               | “ward.D�                             |
 +-------------------------------+--------------------------------------+
 | ``show_plot``                 | show plot. TRUE or FALSE             |
 +-------------------------------+--------------------------------------+

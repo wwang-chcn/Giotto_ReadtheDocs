@@ -1,7 +1,7 @@
 --- 
 title: plot_auto_largeImage_resample 
 format: rst 
-date: 2022-09-22 
+date: 2022-10-06 
 --- 
 
 ## Description
@@ -40,6 +40,7 @@ plot_auto_largeImage_resample(
   largeImage_name = NULL,
   spat_unit = NULL,
   spat_loc_name = NULL,
+  polygon_feat_type = NULL,
   include_image_in_border = TRUE,
   flex_resample = TRUE,
   max_crop = 1e+08,
@@ -57,6 +58,7 @@ Argument      |Description
 `largeImage_name`     |     name of `largeImage` in `gobject`
 `spat_unit`     |     spatial unit
 `spat_loc_name`     |     name of spatial locations to plot
+`polygon_feat_type`     |     name of polygon/spatial_info to plot
 `include_image_in_border`     |     [boolean] expand the extent sampled to also show image in border regions not included in spatlocs. This prevents images in plots from being sharply cut off around the furthest spatial locations. (default is `TRUE` )
 `flex_resample`     |     [boolean] Whether to allow automatic selection of sampling workflow as defined in details sections. (default is `TRUE` )
 `max_crop`     |     maximum crop size allowed for method A before switching to method B (see description)

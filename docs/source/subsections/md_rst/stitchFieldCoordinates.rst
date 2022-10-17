@@ -2,7 +2,9 @@
 stitchFieldCoordinates
 ======================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L184
 
 Description
 ===========
@@ -66,17 +68,17 @@ Details
 
 Stitching of fields:
 
--  list(“1. have cell locations:”) list(“at least 3 columns: field, X,
-   Y”)
+-  list(“1. have cell locations:�) list(“at least 3 columns: field, X,
+   Y�)
 
--  list(“2. create offset file:”) list(“offset file has 3 columns:
-   field, x_offset, y_offset”)
+-  list(“2. create offset file:�) list(“offset file has 3 columns:
+   field, x_offset, y_offset�)
 
 -  list(“3. create new cell location file by stitching original cell
-   locations with stitchFieldCoordinates”)
+   locations with stitchFieldCoordinates�)
 
--  list(“4. provide new cell location file to”,
-   list(list(“createGiottoObject”)))
+-  list(“4. provide new cell location file to�,
+   list(list(“createGiottoObject�)))
 
 Value
 =====

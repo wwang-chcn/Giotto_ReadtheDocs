@@ -2,7 +2,9 @@
 crossSectionPlot3D
 ==================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L725
 
 Description
 ===========

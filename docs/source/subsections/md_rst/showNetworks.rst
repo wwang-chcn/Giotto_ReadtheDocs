@@ -2,7 +2,9 @@
 showNetworks
 ============
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1691
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -29,12 +31,12 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```showGiottoSpatNet                 |
 |                               | works`` <#showgiottospatnetworks>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)), list(“a  |
-|                               | giotto object”)), “:raw-latex:`\n`”, |
-|                               | ” “, list(list(list(”nrows”)),       |
-|                               | list(“number of rows to print”)),    |
-|                               | “:raw-latex:`\n`”, ” “)              |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)), list(“a  |
+|                               | giotto object�)), “:raw-latex:`\n`�, |
+|                               | � “, list(list(list(�nrows�)),       |
+|                               | list(“number of rows to print�)),    |
+|                               | “:raw-latex:`\n`�, � “)              |
 +-------------------------------+--------------------------------------+
 
 Seealso

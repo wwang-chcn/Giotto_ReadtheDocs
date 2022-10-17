@@ -2,7 +2,9 @@
 cellProximitySpatPlot3D
 =======================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2909
 
 Description
 ===========

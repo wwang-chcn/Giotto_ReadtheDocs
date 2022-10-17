@@ -2,7 +2,9 @@
 plotUMAP
 ========
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1425
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -34,25 +36,25 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``...``                       | Arguments passed on to               |
 |                               | ```dimPlot2D`` <#dimplot2d>`__       |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”feat_type”)),        |
-|                               | list(“feature type”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”group_by”)),         |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�feat_type�)),        |
+|                               | list(“feature type�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�group_by�)),         |
 |                               | list(“create multiple plots based on |
-|                               | cell annotation column”)),           |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”group_by_subset”)),  |
+|                               | cell annotation column�)),           |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�group_by_subset�)),  |
 |                               | list(“subset the group_by factor     |
-|                               | column”)), “:raw-latex:`\n`”, ” “,   |
-|                               | list(list(list(”dim1_to_use”)),      |
-|                               | list(“dimension to use on x-axis”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”dim2_to_use”)),      |
-|                               | list(“dimension to use on y-axis”)), |
+|                               | column�)), “:raw-latex:`\n`�, � “,   |
+|                               | list(list(list(�dim1_to_use�)),      |
+|                               | list(“dimension to use on x-axis�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�dim2_to_use�)),      |
+|                               | list(“dimension to use on y-axis�)), |
 +-------------------------------+--------------------------------------+
 
 ::

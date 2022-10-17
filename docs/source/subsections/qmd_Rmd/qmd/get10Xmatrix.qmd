@@ -1,7 +1,7 @@
 --- 
 title: get10Xmatrix 
 format: rst 
-date: 2022-09-22 
+date: 2022-10-06 
 --- 
 
 ## Description

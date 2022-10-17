@@ -2,7 +2,9 @@
 addGiottoPoints3D
 =================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1222
 
 Description
 ===========
@@ -30,7 +32,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``feat_type``                 | a character. The feat_type must      |
 |                               | previously exist in the Giotto       |
-|                               | object. Default = “rna”.             |
+|                               | object. Default = “rna�.             |
 +-------------------------------+--------------------------------------+
 
 Value

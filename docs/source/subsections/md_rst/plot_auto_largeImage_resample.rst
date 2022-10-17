@@ -2,7 +2,7 @@
 plot_auto_largeImage_resample
 =============================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -52,6 +52,7 @@ Usage
      largeImage_name = NULL,
      spat_unit = NULL,
      spat_loc_name = NULL,
+     polygon_feat_type = NULL,
      include_image_in_border = TRUE,
      flex_resample = TRUE,
      max_crop = 1e+08,
@@ -77,6 +78,8 @@ Arguments
 | ``spat_unit``                 | spatial unit                         |
 +-------------------------------+--------------------------------------+
 | ``spat_loc_name``             | name of spatial locations to plot    |
++-------------------------------+--------------------------------------+
+| ``polygon_feat_type``         | name of polygon/spatial_info to plot |
 +-------------------------------+--------------------------------------+
 | ``include_image_in_border``   | [boolean] expand the extent sampled  |
 |                               | to also show image in border regions |

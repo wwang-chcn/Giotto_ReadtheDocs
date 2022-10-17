@@ -2,7 +2,9 @@
 addCellMetadata
 ===============
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2466
 
 Description
 ===========
@@ -56,12 +58,12 @@ Details
 You can add additional cell metadata in two manners:
 
 -  list(“1. Provide a data.table or data.frame with cell annotations in
-   the same order as the”, list(“cell_ID”), ” column in pDataDT(gobject)
+   the same order as the�, list(“cell_ID�), � column in pDataDT(gobject)
    “)
 
 -  list(“2. Provide a data.table or data.frame with cell annotations and
    specify which column contains the cell IDs, these cell IDs need to
-   match with the”, list(“cell_ID”), ” column in pDataDT(gobject)“)
+   match with the�, list(“cell_ID�), � column in pDataDT(gobject)“)
 
 Value
 =====

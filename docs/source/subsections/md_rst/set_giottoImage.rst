@@ -2,7 +2,9 @@
 set_giottoImage
 ===============
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1109
 
 Description
 ===========
@@ -35,7 +37,7 @@ Arguments
 |                               | object                               |
 +-------------------------------+--------------------------------------+
 | ``image_type``                | type of giotto image object. Either  |
-|                               | “image” or “largeImage”              |
+|                               | “image� or “largeImage�              |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name of giotto image object          |
 +-------------------------------+--------------------------------------+
@@ -45,7 +47,7 @@ Arguments
 Details
 =======
 
-list(list(“Use with care!”)) This function directly attaches giotto
+list(list(“Use with care!�)) This function directly attaches giotto
 image objects to the gobject without further modifications of spatial
 positioning values within the image object that are generally needed in
 order for them to plot in the correct location relative to the other

@@ -2,7 +2,9 @@
 doKmeans
 ========
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L727
 
 Description
 ===========
@@ -44,32 +46,32 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “cell”)           |
+| ``feat_type``                 | feature type (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``spat_unit``                 | spatial unit (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``expression_values``         | expression values to use             |
-|                               | (e.g. “normalized”, “scaled”,        |
-|                               | “custom”)                            |
+|                               | (e.g. “normalized�, “scaled�,        |
+|                               | “custom�)                            |
 +-------------------------------+--------------------------------------+
 | ``feats_to_use``              | subset of features to use            |
 +-------------------------------+--------------------------------------+
 | ``genes_to_use``              | deprecated use feats_to_use          |
 +-------------------------------+--------------------------------------+
 | ``dim_reduction_to_use``      | dimension reduction to use           |
-|                               | (e.g. “cells”, “pca”, “umap”,        |
-|                               | “tsne”)                              |
+|                               | (e.g. “cells�, “pca�, “umap�,        |
+|                               | “tsne�)                              |
 +-------------------------------+--------------------------------------+
 | ``dim_reduction_name``        | dimensions reduction name, default   |
-|                               | to “pca”                             |
+|                               | to “pca�                             |
 +-------------------------------+--------------------------------------+
 | ``dimensions_to_use``         | dimensions to use, default = 1:10    |
 +-------------------------------+--------------------------------------+
-| ``distance_method``           | distance method (e.g. “original”,    |
-|                               | “pearson”, “spearman”, “euclidean”,  |
-|                               | “maximum”, “manhattan”, “canberra”,  |
-|                               | “binary”, “minkowski”)               |
+| ``distance_method``           | distance method (e.g. “original�,    |
+|                               | “pearson�, “spearman�, “euclidean�,  |
+|                               | “maximum�, “manhattan�, “canberra�,  |
+|                               | “binary�, “minkowski�)               |
 +-------------------------------+--------------------------------------+
 | ``centers``                   | number of final clusters, default =  |
 |                               | 10                                   |
@@ -80,10 +82,10 @@ Arguments
 | ``nstart``                    | kmeans nstart, default = 1000        |
 +-------------------------------+--------------------------------------+
 | ``algorithm``                 | kmeans algorithm, default to         |
-|                               | “Hartigan-Wong”                      |
+|                               | “Hartigan-Wong�                      |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name for kmeans clustering, default  |
-|                               | to “kmeans”                          |
+|                               | to “kmeans�                          |
 +-------------------------------+--------------------------------------+
 | ``return_gobject``            | boolean: return giotto object        |
 |                               | (default = TRUE)                     |

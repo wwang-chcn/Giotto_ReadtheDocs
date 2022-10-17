@@ -2,7 +2,9 @@
 set_feature_info
 ================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L946
 
 Description
 ===========
@@ -23,7 +25,7 @@ Arguments
 Argument      Description
 ============= ===========================================
 ``gobject``   giotto object
-``feat_type`` name of feat (e.g. “rna”, “dna”, “protein”)
+``feat_type`` name of feat (e.g. “rna�, “dna�, “protein�)
 ``gpolygon``  giotto polygon
 ============= ===========================================
 

@@ -2,7 +2,9 @@
 addFeatMetadata
 ===============
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2556
 
 Description
 ===========
@@ -49,10 +51,10 @@ Details
 
 You can add additional feature metadata in two manners: list() 1.
 Provide a data.table or data.frame with feature annotations in the same
-order as the list(“feat_ID”) column in fDataDT(gobject) list() 2.
+order as the list(“feat_ID�) column in fDataDT(gobject) list() 2.
 Provide a data.table or data.frame with feature annotations and specify
 which column contains the feature IDs, these feature IDs need to match
-with the list(“feat_ID”) column in fDataDT(gobject)
+with the list(“feat_ID�) column in fDataDT(gobject)
 
 Value
 =====

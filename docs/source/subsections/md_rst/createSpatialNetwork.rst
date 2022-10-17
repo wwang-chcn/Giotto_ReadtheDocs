@@ -2,7 +2,9 @@
 createSpatialNetwork
 ====================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1861
 
 Description
 ===========
@@ -120,7 +122,7 @@ cell.
 
 dimensions: default = ‘all’ which takes all possible dimensions.
 Alternatively you can provide a character vector that specififies the
-spatial dimensions to use, e.g. c(“sdimx’,”sdimy”) or a numerical
+spatial dimensions to use, e.g. c(“sdimx’,�sdimy�) or a numerical
 vector, e.g. 2:3
 
 Value

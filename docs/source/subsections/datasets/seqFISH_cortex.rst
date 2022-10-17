@@ -691,7 +691,7 @@ Part 12: Cell Neighborhood: Cell-Type/Cell-Type Interactions
 .. image:: /images/images_pkgdown/SeqFish_mouse_cortex/35-spatPlot2D.png
    :width: 50.0%
 
-Part 13: Cell Neighborhood: Interaction Changed Genes
+Part 13: Cell Neighborhood: Interaction Changed Features
 =====================================================
 
 .. container:: cell
@@ -707,7 +707,7 @@ Part 13: Cell Neighborhood: Interaction Changed Genes
       high_expressed_genes = gene_metadata[mean_expr_det > 3.5]$gene_ID
       ## identify genes that are associated with proximity to other cell types
       plan('multisession', workers = 6)
-      ICGscoresHighGenes =  findInteractionChangedFeats(gobject = SS_seqfish,
+      ICFsForesHighGenes =  findInteractionChangedFeats(gobject = SS_seqfish,
                                     selected_feats = high_expressed_genes,
                                     spatial_network_name = 'Delaunay_network',
                                     cluster_column = 'cell_types',
@@ -716,7 +716,7 @@ Part 13: Cell Neighborhood: Interaction Changed Genes
                                     nr_permutations = 2000, 
                                     do_parallel = T)
       ## visualize all genes
-      plotCellProximityGenes(SS_seqfish, cpgObject = ICGscoresHighGenes, 
+      plotCellProximityFeats(SS_seqfish, icfObject = ICFscoresHighGenes, 
                              method = 'dotplot')
 
 .. image:: /images/images_pkgdown/SeqFish_mouse_cortex/36-plotCellProximityGenes.png
@@ -727,16 +727,16 @@ Part 13: Cell Neighborhood: Interaction Changed Genes
    .. code:: r
 
       ## filter genes
-      ICGscoresFilt = filterICF(ICGscoresHighGenes)
-      ## visualize subset of interaction changed genes (ICGs)
-      ICG_genes = c('Jakmip1', 'Golgb1', 'Dact2', 'Ddx27', 'Abl1', 'Zswim8')
-      ICG_genes_types = c('Lhx6 iNeuron', 'Lhx6 iNeuron', 'L4 eNeuron', 'L4 eNeuron', 'astrocytes', 'astrocytes')
-      names(ICG_genes) = ICG_genes_types
+      ICFscoresFilt = filterICF(ICFscoresHighGenes)
+      ## visualize subset of interaction changed genes (ICFs)
+      ICF_genes = c('Jakmip1', 'Golgb1', 'Dact2', 'Ddx27', 'Abl1', 'Zswim8')
+      ICF_genes_types = c('Lhx6 iNeuron', 'Lhx6 iNeuron', 'L4 eNeuron', 'L4 eNeuron', 'astrocytes', 'astrocytes')
+      names(ICF_genes) = ICF_genes_types
       plotICF(gobject = SS_seqfish,
-              cpgObject = ICGscoresHighGenes,
+              icfObject = ICFscoresHighGenes,
               source_type = 'endothelial',
               source_markers = c('Pltp', 'Cldn5', 'Apcdd1'),
-              ICF_feats = ICG_genes)
+              ICF_feats = ICF_genes)
 
 .. image:: /images/images_pkgdown/SeqFish_mouse_cortex/37-plotICF.png
    :width: 50.0%

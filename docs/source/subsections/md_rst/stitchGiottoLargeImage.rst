@@ -2,7 +2,9 @@
 stitchGiottoLargeImage
 ======================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1416
 
 Description
 ===========
@@ -78,8 +80,8 @@ Arguments
 |                               | instructions                         |
 +-------------------------------+--------------------------------------+
 | ``dataType``                  | (optional) values for ``dataType``   |
-|                               | are “INT1U”, “INT2U”, “INT2S”,       |
-|                               | “INT4U”, “INT4S”, “FLT4S”, “FLT8S”.  |
+|                               | are “INT1U�, “INT2U�, “INT2S�,       |
+|                               | “INT4U�, “INT4S�, “FLT4S�, “FLT8S�.  |
 |                               | The first three letters indicate     |
 |                               | whether the ``dataType`` is integer  |
 |                               | (whole numbers) of a real number     |
@@ -87,7 +89,7 @@ Arguments
 |                               | character indicates the number of    |
 |                               | bytes used (allowing for large       |
 |                               | numbers and/or more precision), and  |
-|                               | the “S” or “U” indicate whether the  |
+|                               | the “S� or “U� indicate whether the  |
 |                               | values are signed (both negative and |
 |                               | positive) or unsigned (positive      |
 |                               | values only).                        |
@@ -117,7 +119,7 @@ This function is time consuming. Setting a save location through the
 likely be large. This function creates a single stitched image from
 multiple FOV tiles and saves that image to disk as it works. When
 finished, the pointer to that new image is loaded in as a
-``giottoLargeImage`` object. list() list(“Note:”) Dry runs are on by
+``giottoLargeImage`` object. list() list(“Note:�) Dry runs are on by
 default and ``dryRun`` param must be set to FALSE to proceed with the
 final stitching operation.
 

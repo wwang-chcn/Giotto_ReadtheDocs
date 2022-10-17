@@ -2,7 +2,9 @@
 plotInteractionChangedFeats
 ===========================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1510
 
 Description
 ===========
@@ -16,7 +18,7 @@ Usage
 
    plotInteractionChangedFeats(
      gobject,
-     cpgObject,
+     icfObject,
      source_type,
      source_markers,
      ICF_feats,
@@ -36,7 +38,7 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``cpgObject``                 | ICF (interaction changed feature)    |
+| ``icfObject``                 | ICF (interaction changed feature)    |
 |                               | score object                         |
 +-------------------------------+--------------------------------------+
 | ``source_type``               | cell type of the source cell         |

@@ -2,7 +2,9 @@
 doRandomWalkCluster
 ===================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L529
 
 Description
 ===========
@@ -36,13 +38,13 @@ Arguments
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name for cluster, default to         |
-|                               | “random_walk_clus”                   |
+|                               | “random_walk_clus�                   |
 +-------------------------------+--------------------------------------+
 | ``nn_network_to_use``         | type of NN network to use (kNN vs    |
-|                               | sNN), default to “sNN”               |
+|                               | sNN), default to “sNN�               |
 +-------------------------------+--------------------------------------+
 | ``network_name``              | name of NN network to use, default   |
-|                               | to “sNN.pca”                         |
+|                               | to “sNN.pca�                         |
 +-------------------------------+--------------------------------------+
 | ``walk_steps``                | number of walking steps, default = 4 |
 +-------------------------------+--------------------------------------+

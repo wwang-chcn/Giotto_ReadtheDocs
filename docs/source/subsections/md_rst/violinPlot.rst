@@ -2,7 +2,9 @@
 violinPlot
 ==========
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1721
 
 Description
 ===========
@@ -44,31 +46,31 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``expression_values``         | expression values to use             |
-|                               | (e.g. “normalized”, “scaled”,        |
-|                               | “custom”)                            |
+|                               | (e.g. “normalized�, “scaled�,        |
+|                               | “custom�)                            |
 +-------------------------------+--------------------------------------+
 | ``feats``                     | features to plot                     |
 +-------------------------------+--------------------------------------+
 | ``genes``                     | deprecated, use feats argument       |
 +-------------------------------+--------------------------------------+
 | ``cluster_column``            | name of column to use for clusters   |
-|                               | (e.g. “leiden_clus”)                 |
+|                               | (e.g. “leiden_clus�)                 |
 +-------------------------------+--------------------------------------+
 | ``cluster_custom_order``      | custom order of clusters             |
 +-------------------------------+--------------------------------------+
-| ``color_violin``              | color violin according to “genes” or |
-|                               | “clusters”                           |
+| ``color_violin``              | color violin according to “genes� or |
+|                               | “clusters�                           |
 +-------------------------------+--------------------------------------+
 | ``cluster_color_code``        | color code for clusters              |
 +-------------------------------+--------------------------------------+
-| ``strip_position``            | position of gene labels (e.g. “top”, |
-|                               | “right”, “left”, “bottom”)           |
+| ``strip_position``            | position of gene labels (e.g. “top�, |
+|                               | “right�, “left�, “bottom�)           |
 +-------------------------------+--------------------------------------+
 | ``strip_text``                | size of strip text                   |
 +-------------------------------+--------------------------------------+

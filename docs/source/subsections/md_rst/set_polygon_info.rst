@@ -2,7 +2,9 @@
 set_polygon_info
 ================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L868
 
 Description
 ===========
@@ -14,7 +16,7 @@ Usage
 
 .. code:: r
 
-   set_polygon_info(gobject, polygon_name = "cell", gpolygon)
+   set_polygon_info(gobject, polygon_name = "cell", gpolygon, verbose = TRUE)
 
 Arguments
 =========
@@ -23,8 +25,9 @@ Arguments
 Argument         Description
 ================ ================================
 ``gobject``      giotto object
-``polygon_name`` name of polygons. Default “cell”
+``polygon_name`` name of polygons. Default “cell�
 ``gpolygon``     giotto polygon
+``verbose``      verbosity
 ================ ================================
 
 Value

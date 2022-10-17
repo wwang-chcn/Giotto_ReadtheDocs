@@ -2,7 +2,9 @@
 detectSpatialCorFeats
 =====================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3109
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -73,24 +75,24 @@ For method = network, it expects a fully connected spatial network. You
 can make sure to create a fully connected network by setting minimal_k >
 0 in the ```createSpatialNetwork`` <#createspatialnetwork>`__ function.
 
--  list(“1. grid-averaging:”) list(“average gene expression values
-   within a predefined spatial grid”)
+-  list(“1. grid-averaging:�) list(“average gene expression values
+   within a predefined spatial grid�)
 
--  | list(“2. network-averaging:”) list(“smoothens the gene expression
-     matrix by averaging the expression within one cell:raw-latex:`\n`”,
-     ” by using the neighbours within the predefined spatial network. b
-     is a smoothening factor:raw-latex:`\n`“,” that defaults to 1 - 1/k,
+-  | list(“2. network-averaging:�) list(“smoothens the gene expression
+     matrix by averaging the expression within one cell:raw-latex:`\n`�,
+     � by using the neighbours within the predefined spatial network. b
+     is a smoothening factor:raw-latex:`\n`“,� that defaults to 1 - 1/k,
      where k is the median number of k-neighbors in
-     the:raw-latex:`\n`“,” selected spatial network. Setting b = 0 means
-     no smoothing and b = 1 means no contribution:raw-latex:`\n`“,” from
-     its own expression.”)
+     the:raw-latex:`\n`“,� selected spatial network. Setting b = 0 means
+     no smoothing and b = 1 means no contribution:raw-latex:`\n`“,� from
+     its own expression.�)
    | The spatCorObject can be further explored with
      showSpatialCorFeats()
 
 Value
 =====
 
-returns a spatial correlation object: “spatCorObject”
+returns a spatial correlation object: “spatCorObject�
 
 Seealso
 =======

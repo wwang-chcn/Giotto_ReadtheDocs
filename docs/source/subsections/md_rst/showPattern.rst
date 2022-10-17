@@ -2,7 +2,9 @@
 showPattern
 ===========
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2529
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -33,27 +35,27 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ``                                   |
 |                               | `showPattern2D`` <#showpattern2d>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”dimension”)),        |
-|                               | list(“dimension to plot”)),          |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”trim”)), list(“Trim  |
-|                               | ends of the PC values.”)),           |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”background_color”)), |
-|                               | list(“background color for plot”)),  |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�dimension�)),        |
+|                               | list(“dimension to plot�)),          |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�trim�)), list(“Trim  |
+|                               | ends of the PC values.�)),           |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�background_color�)), |
+|                               | list(“background color for plot�)),  |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | l                                    |
-|                               | ist(list(list(”grid_border_color”)), |
-|                               | list(“color for grid”)),             |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”show_legend”)),      |
-|                               | list(“show legend of ggplot”)),      |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”point_size”)),       |
-|                               | list(“size of points”)),             |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”show_plot”)),        |
+|                               | ist(list(list(�grid_border_color�)), |
+|                               | list(“color for grid�)),             |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�show_legend�)),      |
+|                               | list(“show legend of ggplot�)),      |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�point_size�)),       |
+|                               | list(“size of points�)),             |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�show_plot�)),        |
 +-------------------------------+--------------------------------------+
 
 ::

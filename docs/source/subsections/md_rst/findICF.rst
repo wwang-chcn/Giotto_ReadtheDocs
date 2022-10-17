@@ -2,7 +2,9 @@
 findICF
 =======
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1220
 
 Description
 ===========
@@ -93,7 +95,7 @@ Details
 
 Function to calculate if genes are differentially expressed in cell
 types when they interact (approximated by physical proximity) with other
-cell types. The results data.table in the cpgObject contains - at least
+cell types. The results data.table in the icfObject contains - at least
 - the following columns:
 
 -  features: All or selected list of tested features
@@ -129,7 +131,7 @@ cell types. The results data.table in the cpgObject contains - at least
 Value
 =====
 
-cpgObject that contains the Interaction Changed differential gene scores
+icfObject that contains the Interaction Changed differential gene scores
 
 Seealso
 =======

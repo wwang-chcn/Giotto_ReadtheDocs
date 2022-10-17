@@ -2,7 +2,9 @@
 PAGEEnrich
 ==========
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L729
 
 .. role:: raw-latex(raw)
    :format: latex
@@ -30,29 +32,29 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ``                                   |
 |                               | `runPAGEEnrich`` <#runpageenrich>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“Giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”feat_type”)),        |
-|                               | list(“feature type”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”sign_matrix”)),      |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“Giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�feat_type�)),        |
+|                               | list(“feature type�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�sign_matrix�)),      |
 |                               | list(“Matrix of signature genes for  |
-|                               | each cell type / process”)),         |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | each cell type / process�)),         |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | l                                    |
-|                               | ist(list(list(”expression_values”)), |
-|                               | list(“expression values to use”)),   |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | ist(list(list(�expression_values�)), |
+|                               | list(“expression values to use�)),   |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | l                                    |
-|                               | ist(list(list(”min_overlap_genes”)), |
+|                               | ist(list(list(�min_overlap_genes�)), |
 |                               | list(“minimum number of overlapping  |
 |                               | genes in sign_matrix required to     |
-|                               | calculate enrichment”)),             |
+|                               | calculate enrichment�)),             |
 +-------------------------------+--------------------------------------+
 
 ::

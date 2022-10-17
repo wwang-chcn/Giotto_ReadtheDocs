@@ -2,7 +2,9 @@
 set_spatial_locations
 =====================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L201
 
 Description
 ===========
@@ -29,8 +31,8 @@ Arguments
 Argument          Description
 ================= ========================================
 ``gobject``       giotto object
-``spat_unit``     spatial unit (e.g. “cell”)
-``spat_loc_name`` name of spatial locations, default “raw”
+``spat_unit``     spatial unit (e.g. “cell�)
+``spat_loc_name`` name of spatial locations, default “raw�
 ``spatlocs``      spatial locations
 ``verbose``       be verbose
 ================= ========================================

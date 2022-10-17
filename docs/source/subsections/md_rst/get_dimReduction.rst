@@ -2,7 +2,9 @@
 get_dimReduction
 ================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L249
 
 Description
 ===========
@@ -32,16 +34,16 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``reduction``                 | reduction on cells or features       |
-|                               | (e.g. “cells”, “feats”)              |
+|                               | (e.g. “cells�, “feats�)              |
 +-------------------------------+--------------------------------------+
-| ``reduction_method``          | reduction method (e.g. “pca”,        |
-|                               | “umap”, “tsne”)                      |
+| ``reduction_method``          | reduction method (e.g. “pca�,        |
+|                               | “umap�, “tsne�)                      |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name of reduction results            |
 +-------------------------------+--------------------------------------+

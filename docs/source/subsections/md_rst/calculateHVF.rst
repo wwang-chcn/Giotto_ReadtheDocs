@@ -2,7 +2,9 @@
 calculateHVF
 ============
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/variable_genes.R#L190
 
 Description
 ===========
@@ -104,17 +106,17 @@ Details
 
 Currently we provide 2 ways to calculate highly variable genes:
 
-list(“1. high coeff of variance (COV) within groups:”) list() First
-genes are binned ( list(“nr_expression_groups”) ) into average
+list(“1. high coeff of variance (COV) within groups:�) list() First
+genes are binned ( list(“nr_expression_groups�) ) into average
 expression groups and the COV for each feature is converted into a
 z-score within each bin. Features with a z-score higher than the
-threshold ( list(“zscore_threshold”) ) are considered highly variable.
+threshold ( list(“zscore_threshold�) ) are considered highly variable.
 list()
 
-list(“2. high COV based on loess regression prediction:”) list() A
+list(“2. high COV based on loess regression prediction:�) list() A
 predicted COV is calculated for each feature using loess regression
 (COV~log(mean expression)) Features that show a higher than predicted
-COV ( list(“difference_in_cov”) ) are considered highly variable. list()
+COV ( list(“difference_in_cov�) ) are considered highly variable. list()
 
 Value
 =====

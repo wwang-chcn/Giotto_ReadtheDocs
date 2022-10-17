@@ -2,7 +2,9 @@
 set_dimReduction
 ================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L329
 
 Description
 ===========
@@ -31,10 +33,10 @@ Arguments
 Argument             Description
 ==================== ===========================================
 ``gobject``          giotto object
-``spat_unit``        spatial unit (e.g. “cell”)
-``feat_type``        feature type (e.g. “rna”, “dna”, “protein”)
+``spat_unit``        spatial unit (e.g. “cell�)
+``feat_type``        feature type (e.g. “rna�, “dna�, “protein�)
 ``reduction``        reduction on cells or features
-``reduction_method`` reduction method (e.g. “pca”)
+``reduction_method`` reduction method (e.g. “pca�)
 ``name``             name of reduction results
 ``dimObject``        dimension object result to set
 ==================== ===========================================

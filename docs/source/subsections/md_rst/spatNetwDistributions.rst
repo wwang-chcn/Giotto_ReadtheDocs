@@ -2,7 +2,9 @@
 spatNetwDistributions
 =====================
 
-:Date: 2022-09-22
+:Date: 2022-10-06
+
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L287
 
 Description
 ===========
@@ -73,11 +75,11 @@ Arguments
 Details
 =======
 
-The list(“distance”) option shows the spatial distance distribution for
+The list(“distance�) option shows the spatial distance distribution for
 each nearest neighbor rank (1st, 2nd, 3th, … neigbor). With this option
 the user can also test the effect of a distance limit on the spatial
 network. This distance limit can be used to remove neigbor cells that
-are considered to far away. list() The list(“k_neighbors”) option shows
+are considered to far away. list() The list(“k_neighbors�) option shows
 the number of k neighbors distribution over all cells.
 
 Value
