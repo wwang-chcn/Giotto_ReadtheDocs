@@ -27,7 +27,7 @@ Installation
 .. code-block:: r
 
     library(remotes)
-    remotes::install_github("RubD/Giotto@suite") 
+    remotes::install_github("drieslab/Giotto@suite") 
 
 **Step 2: Install the Giotto Python environment**
 

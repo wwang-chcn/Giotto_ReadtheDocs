@@ -11,7 +11,7 @@ If you do not have Giotto installed, you can do so by running the following code
 
 .. code-block:: 
 
-    remotes::install_github("RubD/Giotto@suite")
+    remotes::install_github("drieslab/Giotto@suite")
 
 Now, load the library and define the project path.
 

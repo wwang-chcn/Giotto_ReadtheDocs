@@ -26,7 +26,7 @@ Data availability
 =================
 
 -  | Where to find seqFISH+ and other ready-to-use datasets?
-   | **Checkout https://github.com/RubD/spatial-datasets to find already
+   | **Checkout https://github.com/drieslab/spatial-datasets to find already
      preprocessed datasets**
 
 -  | Where to find other spatial datasets?
