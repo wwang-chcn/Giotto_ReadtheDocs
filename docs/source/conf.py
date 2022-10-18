@@ -12,6 +12,7 @@
 
 import os
 import sys
+import pydata_sphinx_theme
 # import sphinx_rtd_theme
 
 # sys.path.insert(0, os.path.abspath('.'))
@@ -95,36 +96,54 @@ html_sourcelink_suffix = ""
 
 html_theme_options = {
     "github_url": "https://github.com/drieslab/Giotto/tree/suite",
-    'display_version': True,
-    "show_toc_level": 1,
-    #Toc Tree Options
-    'collapse_navigation': True,
-    'sticky_navigation': True,
-    "use_edit_page_button": False,
-    "navbar_end": ["navbar-icon-links.html"],
+    #'display_version': True,
+    # "show_toc_level": 1,
+    # 'collapse_navigation': True,
+    # 'sticky_navigation': True,
+    # "use_edit_page_button": False,
     "logo": {
         "text": "Giotto Suite",
         "image_dark": "images/GiottoLogo.png",
         "alt_text": "Giotto Suite",
-    }
+    },
+    "navbar_end": ["navbar-icon-links"]
 }
 
-# html_sidebars = { '**': ["search-field.html", 'globaltoc.html', 'relations.html', 'sourcelink.html'] }
+html_sidebars = { '**': ['search-field.html', 'globaltoc.html', 'edit-this-page.html'] }
 # globaltoc.html = table of contents
 # relations.html = prev/next page
 # sourcelink.html = "This Page" and "show source"
-html_sidebars = {
-    "index": [
-        "search-field.html", 
-    ], 
-    "documentation": [
-        "search-field.html", 
-    ],
-    "trygitto": [
-        "search-field.html", 
-        "globaltoc.html"
-    ]
-}
+
+# html_sidebars = {
+#     "index": [
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#     "gettingstarted": [
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#     "documentation": [
+#         "search-field.html", 
+#     ],
+#     "contribute": [
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#     "datasets": [ #tutorials
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#     "faq": [
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#     "trygitto": [
+#         "search-field.html", 
+#         "globaltoc.html"
+#     ],
+#     "errorsfaqsandtips": [ 
+#         "search-field.html", 'globaltoc.html' 
+#     ],
+#      "github_issues": [ 
+#         "search-field.html", 'globaltoc.html' 
+#     ]
+# }
 
 #html_sidebars = { '**': ["search-field.html"] }
 html_css_files = ["css/theme_edits.css"]

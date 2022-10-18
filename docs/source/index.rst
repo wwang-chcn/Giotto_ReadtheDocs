@@ -3,7 +3,7 @@ Giotto Suite
 ##########################################
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: General
    :hidden:
  
@@ -21,12 +21,19 @@ Giotto Suite
    Try Giotto <trygiotto.rst>
    
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Issues
    :hidden:
    
-   Common Errors and Solutions <errorsfaqsandtips.rst>
+   Troubleshooting <errorsfaqsandtips.rst>
    Report a Bug <github_issues.rst>
+   
+.. toctree::
+   :maxdepth: 1
+   :caption: Changelog
+   :hidden:
+   
+   Changelog <additionalinformation.rst>
 
 .. image:: images/index/GiottoSuiteWebsite-07.svg
    :align: center
@@ -44,16 +51,15 @@ The source code for Giotto Suite may be found on our `GitHub repository <https:/
 **********************************************
 Workflow
 **********************************************
-:octicon:`light-bulb` Click on the images for full resolution.
 
 .. image:: images/index/GiottoSuiteWebsite_Compatibility.svg
-   :width: 300
+   :width: 400
 
 Data Structure 
 ===============
 
 .. image:: images/index/GiottoSuiteWebsite_Data Structure.svg
-   :width: 500
+   :width: 600
 
 Analysis
 =============
