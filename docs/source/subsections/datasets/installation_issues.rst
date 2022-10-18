@@ -106,7 +106,7 @@ for windows:
 
    .. code:: r
 
-      remotes::install_github("RubD/Giotto@cless") 
+      remotes::install_github("drieslab/Giotto@cless") 
 
 2.1 issue 1: clang error
 ------------------------
@@ -247,4 +247,4 @@ If you encounter this or similar error:
 
       library(devtools) # if not installed do install.package('devtools')
       library(remotes) # if not installed do install.package('remotes')
-      remotes::install_github("RubD/Giotto", build_vignettes = F)
+      remotes::install_github("drieslab/Giotto", build_vignettes = F)

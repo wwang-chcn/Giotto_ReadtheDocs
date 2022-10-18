@@ -12,7 +12,7 @@ Start Giotto
    .. code:: r
 
       if (!"Giotto" %in% installed.packages()) {
-        remotes::install_github("RubD/Giotto@suite")
+        remotes::install_github("drieslab/Giotto@suite")
       } 
 
       library(Giotto)

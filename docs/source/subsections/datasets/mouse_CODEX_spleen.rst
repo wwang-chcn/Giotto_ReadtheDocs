@@ -30,7 +30,7 @@ Dataset explanation
 ===================
 
 The CODEX data to run this tutorial can be found
-`here <https://github.com/RubD/spatial-datasets/tree/master/data/2018_codex_spleen>`__
+`here <https://github.com/drieslab/spatial-datasets/tree/master/data/2018_codex_spleen>`__
 Alternatively you can use the **getSpatialDataset** to automatically
 download this dataset like we do in this example.
 

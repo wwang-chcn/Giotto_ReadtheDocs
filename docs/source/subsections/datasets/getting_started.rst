@@ -8,7 +8,7 @@ Giotto provides a lot of analyses, visualizations and other options to
 facilitate your spatial dataset analysis. We are working on providing
 easy-to-understand examples or tutorials, but if anything is not clear
 or if there is something you would like to see in particular, then do
-not hesitate to contact `us <https://github.com/RubD/Giotto/issues>`__.
+not hesitate to contact `us <https://github.com/drieslab/Giotto/issues>`__.
 
  
 
@@ -23,7 +23,7 @@ Step 1: install Giotto Suite
 .. code:: r
 
    library(remotes)
-   remotes::install_github("RubD/Giotto@suite") 
+   remotes::install_github("drieslab/Giotto@suite") 
 
 Step 2: install the Giotto python environment
 ---------------------------------------------
