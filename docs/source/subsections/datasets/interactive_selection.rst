@@ -9,14 +9,14 @@ Set up Giotto object
 
 To follow this tutorial, you must pre-run the Parts 1-4 from the `Mouse Visium Brain tutorial <https://giottosuite.readthedocs.io/en/latest/subsections/datasets/interactive_selection.html/>`__
 
-You can use as input either a ggplot2 object, a terra::rast image or the output of running the spatPlot2D() function.
+You can use as input either a ggplot2 object, a terra::rast image, or the output of running the spatPlot2D( ) function.
 
 Part 1: Create a Giotto spatPlot object
 =================================================
 
-When creating the spatPlot2D() object, you can choose to only plot the spatial cells/spots, or show the tissue image in the background.
+When creating the spatPlot2D object, you can only plot the spatial cells/spots or show the tissue image in the background.
 
-If you are planning to select individual clusters or cell types, we recommend to color the cells/spots by using the cell_color argument.
+If you plan to select individual clusters or cell types, we recommend coloring the cells/spots using the cell_color argument.
 
 .. container:: cell
 
@@ -50,8 +50,17 @@ plotInteractivePolygons( ) will run a ShinyApp gadget within your RStudio sessio
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/1-interactive_brain_spots.png
    :width: 50.0%
 
+.. container:: cell
+
+   .. code:: r
+
+      ## Run the Shiny app using the tissue image
+      plotInteractivePolygons(my_spatPlot)
+
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/2-interactive_brain_tissue.png
    :width: 50.0%
+
+You can use additional parameters passed to the polygon( ) function, such as the line thickness and color of the polygons.
 
 .. container:: cell
 
@@ -76,6 +85,8 @@ plotInteractivePolygons( ) will run a ShinyApp gadget within your RStudio sessio
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/4-interactive_brain_height.png
    :width: 50.0%
 
+Use the slider bars to zoom in or out your plot and draw tiny polygons.
+
 .. container:: cell
 
    .. code:: r
@@ -92,7 +103,8 @@ Part 3: Save the coordinates
 
 Click on the button *Done* once you have finished selecting the areas of interest.
 
-By default, plotInteractivePolygons will print the polygon x,y coordinates as a data.table object on the Console panel, but you can store the output using the assignment operator.
+By default, plotInteractivePolygons will print the polygon x and y coordinates as a ‘data.table’ object on the Console panel, but you can store the output using the assignment operator.
+
 
 .. container:: cell
 
@@ -103,38 +115,43 @@ By default, plotInteractivePolygons will print the polygon x,y coordinates as a 
                                                         height = 320)
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/6-my_polygon_coordinates.png
-   :width: 50.0%
+   :width: 30.0%
 
-Now, let's add the polygon coordinates to the Giotto object
+
+Now, let's add the polygon coordinates to the Giotto object:
 
 .. container:: cell
 
    .. code:: r
 
-   ## We must transform the data.table or data.frame with coordinates into a Giotto polygon object
-   my_giotto_polygons <- createGiottoPolygonsFromDfr(my_polygon_coordinates)
+      ## We must transform the data.table or data.frame with coordinates into a Giotto polygon object
+      my_giotto_polygons <- createGiottoPolygonsFromDfr(my_polygon_coordinates)
 
-   ## Then, add the polygons to the Giotto object
-   visium_brain <- addGiottoPolygons(gobject = visium_brain,
+      ## Then, add the polygons to the Giotto object
+      visium_brain <- addGiottoPolygons(gobject = visium_brain,
                                      gpolygons = list(my_giotto_polygons))
 
-Finally, add the corresponding polygon ID to cell Metadata. By default, a "no_polygon" label will be added to cells outside of polygons but you can customize it by using the na.label argument.
+Finally, add the corresponding polygon ID to the cell Metadata. By default, the function will add a "no_polygon" label to cells outside polygons, but you can customize it using the na.label argument.
 
 .. container:: cell
 
    .. code:: r
 
-   ## Using the default parameters
-   visium_brain <- addPolygonCells(visium_brain)
+      ## Using the default parameters
+      visium_brain <- addPolygonCells(visium_brain)
 
-   ## Let's see how it looks like now the cell_metadata
-   pDataDT(visium_brain)
+      ## Let's see how it looks like now the cell_metadata
+      pDataDT(visium_brain)
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/7-new_metadata.png
    :width: 80.0%
 
-   ## Customize the NA label
-   visium_brain <- addPolygonCells(visium_brain, na.label = "No Polygon")
+.. container:: cell
+
+   .. code:: r
+
+      ## Customize the NA label
+      visium_brain <- addPolygonCells(visium_brain, na.label = "No Polygon")
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/8-new_metadata_customized.png
    :width: 80.0%
@@ -148,21 +165,21 @@ You can extract the coordinates and IDs from cells located within one or multipl
 
    .. code:: r
 
-   ## Provide the name of the polygon to extract cells from
+      ## Provide the name of the polygon to extract cells from
       getCellsFromPolygon(visium_brain, polygons = "polygon 1")
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/9-get_cells_polygon1.png
-   :width: 50.0%
+   :width: 55.0%
 
 .. container:: cell
 
    .. code:: r
 
-      ## If no polygon name is provided, cells located within all polygons will be retrived
+      ## If no polygon name is provided, the function will retrieve cells located within all polygons
       getCellsFromPolygon(visium_brain)
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/10-get_cells.png
-   :width: 50.0%
+   :width: 55.0%
 
 Part 5: Compare gene expression
 ===========================
@@ -203,7 +220,7 @@ Let's compare the expression levels of some genes of interest between the select
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/12-compare_topgenes.png
    :width: 50.0%
 
-Part 6: Compare cell abundance
+Part 6: Compare cell type abundance
 ===========================
 
 If you have run an analysis for finding clusters or have anotated cell types within the cell metadata slot, you can use the column name to compare the abundance of cell types between the selected regions.
@@ -215,17 +232,17 @@ If you have run an analysis for finding clusters or have anotated cell types wit
       ## By default, the function will look for the leiden_cluster
       compareCellAbundance(visium_brain)
 
-      ## You can use other column within the cell metadata table to compare the cell type abundances
+      ## You can use other columns within the cell metadata table to compare the cell type abundances
       compareCellAbundance(visium_brain, cell_type_column = "cell_type")
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/13-compare_cell_abundance.png
    :width: 50.0%
 
 
-Part 7: Create spatPlots per region
+Part 7: Create a spatPlot per region
 ===========================
 
-You can use the spatPlot function arguments to isolate and plot each region. Also, you can color each cell by cluster, cell type or expression level.
+You can use the spatPlot( ) arguments to isolate and plot each region. Also, you can color each cell by cluster, cell type or expression level.
 
 .. container:: cell
 
