@@ -156,6 +156,7 @@ navtree_shift = False
 
 def setup(app):
     app.add_css_file("css/theme_edits.css")
+    app.add_stylesheet("css/custom.css")
 
 #Link badges
 def get_badge_inputs(text, cls: str = ""):

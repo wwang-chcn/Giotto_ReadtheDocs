@@ -1,5 +1,6 @@
 {
     "esbonio.sphinx.buildDir": "/Users/adrianasistig/Documents/GitHub/Giotto/docs/build",
     "esbonio.sphinx.confDir": "${workspaceFolder}/docs/source",
-    "esbonio.sphinx.srcDir"  : "/Users/adrianasistig/Documents/GitHub/Giotto/docs/source"
+    "esbonio.sphinx.srcDir": "/Users/adrianasistig/Documents/GitHub/Giotto/docs/source",
+    "C_Cpp.dimInactiveRegions": false
 }

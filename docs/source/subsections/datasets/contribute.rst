@@ -62,7 +62,7 @@ Most Giotto commands can accept several matrix classes (DelayedMatrix,
 SparseM, Matrix or base matrix). To facilitate this we provide
 **flexible** wrappers that work on any type of matrix class. They can be
 found in the
-`utilities.R <https://github.com/RubD/Giotto/blob/suite/R/utilities.R>`__
+`utilities.R <https://github.com/drieslab/Giotto/blob/suite/R/utilities.R>`__
 file.
 
 -  **mean_flex**: analogous to mean()
@@ -109,7 +109,7 @@ Giotto stores information in different
 `slots <getting_started_gobject.html#giotto-object-structure>`__, which
 can be accessed through these getters and setters functions. They can be
 found in the
-`accessors.R <https://github.com/RubD/Giotto/blob/suite/R/accessors.R>`__
+`accessors.R <https://github.com/drieslab/Giotto/blob/suite/R/accessors.R>`__
 file.
 
 -  **get_expression_values**: To select the expression matrix to use

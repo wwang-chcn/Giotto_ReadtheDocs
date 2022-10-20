@@ -100,7 +100,7 @@ Some of the errors outlined below might arise because of issues with building Gi
 The Giotto branch **cless** is a version of Giotto without C++ code, which should fix many of the installation errors.  
 
 ```{r eval=FALSE}
-remotes::install_github("RubD/Giotto@cless") 
+remotes::install_github("drieslab/Giotto@cless") 
 ```
 
 ### 2.1 issue 1: clang error
@@ -214,7 +214,7 @@ Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS"=TRUE)
 
 library(devtools) # if not installed do install.package('devtools')
 library(remotes) # if not installed do install.package('remotes')
-remotes::install_github("RubD/Giotto", build_vignettes = F)
+remotes::install_github("drieslab/Giotto", build_vignettes = F)
 ```
 
 

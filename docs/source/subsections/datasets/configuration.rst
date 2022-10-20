@@ -297,7 +297,7 @@ items:
       `installGiottoEnvironment <../reference/installGiottoEnvironment.html>`__
 
 -  Post to an issue to the Giotto GitHub page
-   `here <https://github.com/RubD/Giotto>`__.
+   `here <https://github.com/drieslab/Giotto>`__.
 
    -  Please include the version numbers of R, Giotto, and the OS in use
       at the time of the issue.
