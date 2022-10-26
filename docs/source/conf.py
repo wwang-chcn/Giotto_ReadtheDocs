@@ -97,6 +97,7 @@ html_favicon = "images/GiottoLogo_favicon.svg"
 html_sourcelink_suffix = ""
 
 html_theme_options = {
+    "sidebar_hide_name": True,
     "github_url": "https://github.com/drieslab/Giotto/tree/suite",
     #'display_version': True,
     # "show_toc_level": 1,
