@@ -12,7 +12,8 @@
 
 import os
 import sys
-import pydata_sphinx_theme
+import furo
+# import pydata_sphinx_theme
 # import sphinx_rtd_theme
 
 # sys.path.insert(0, os.path.abspath('.'))
@@ -89,7 +90,8 @@ suppress_warnings = [
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 #html_theme = "sphinx_rtd_theme"
-html_theme = "pydata_sphinx_theme"
+# html_theme = "pydata_sphinx_theme"
+html_theme = "furo"
 html_logo = "images/GiottoLogo.png"
 html_favicon = "images/GiottoLogo_favicon.svg"
 html_sourcelink_suffix = ""
