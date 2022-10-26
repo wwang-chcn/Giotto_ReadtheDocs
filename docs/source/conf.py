@@ -111,7 +111,7 @@ html_theme_options = {
     "navbar_end": ["navbar-icon-links"]
 }
 
-html_sidebars = { '**': ['search-field.html', 'globaltoc.html', 'edit-this-page.html'] }
+# html_sidebars = { '**': ['search-field.html', 'globaltoc.html', 'edit-this-page.html'] }
 # globaltoc.html = table of contents
 # relations.html = prev/next page
 # sourcelink.html = "This Page" and "show source"
