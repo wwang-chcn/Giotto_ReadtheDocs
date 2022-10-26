@@ -11,6 +11,7 @@ Try Giotto
 
     Binder <subsections/trygiotto/binder.rst>
     Docker <subsections/trygiotto/docker.rst>
+    Current Protocols <subsections/trygiotto/currentprotocols.rst>
 
 
 There are two methods through which users may try Giotto, either via :bdg-ref-warning-line:`Docker <DockerInformation>` or :bdg-ref-primary-line:`Binder. <BinderInformation>`. 
