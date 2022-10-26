@@ -109,7 +109,9 @@ html_theme_options = {
         "image_dark": "images/GiottoLogo.png",
         "alt_text": "Giotto Suite",
     },
-    "navbar_end": ["navbar-icon-links"]
+    "navbar_end": ["navbar-icon-links"],
+    "top_of_page_button": "edit",
+    "announcement": "<em>Important</em> announcement!"
 }
 
 # html_sidebars = { '**': ['search-field.html', 'globaltoc.html', 'edit-this-page.html'] }
