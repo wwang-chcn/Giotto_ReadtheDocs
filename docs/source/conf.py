@@ -109,9 +109,13 @@ html_theme_options = {
         "image_dark": "images/GiottoLogo.png",
         "alt_text": "Giotto Suite",
     },
+    "light_css_variables": {
+        "color-brand-primary": "#7e69ad",
+        "color-brand-content": "#ed1890",
+    },
     "navbar_end": ["navbar-icon-links"],
-    "top_of_page_button": "edit",
-    "announcement": "<em>Important</em> announcement!"
+#     "announcement": "<em>Important</em> announcement!",
+    "top_of_page_button": "edit"
 }
 
 # html_sidebars = { '**': ['search-field.html', 'globaltoc.html', 'edit-this-page.html'] }
