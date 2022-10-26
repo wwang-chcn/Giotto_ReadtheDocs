@@ -112,7 +112,7 @@ Authors and Developers
 +------------------------+---------------------+
 | Emma Kelley            |*Author*             |
 +------------------------+---------------------+
-| Junxiang Xu            |*Author*             |
+| `Junxiang Xu`_         |*Author*             |
 +------------------------+---------------------+
 | `Guo-Cheng Yuan`_      |*Author*             |
 +------------------------+---------------------+
@@ -127,6 +127,7 @@ Authors and Developers
 
 .. _Ruben Dries: https://www.drieslab.com
 .. _Jiaji George Chen: https://github.com/jiajic
+.. _Junxiang Xu: https://github.com/JunxiangXu
 .. _Guo-Cheng Yuan: https://labs.icahn.mssm.edu/yuanlab
 .. _Joselyn Chávez: https://twitter.com/josschavezf1
 .. _Matthew O'Brien: https://github.com/mattobny
