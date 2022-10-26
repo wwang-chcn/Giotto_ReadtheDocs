@@ -96,6 +96,12 @@ html_logo = "images/GiottoLogo.png"
 html_favicon = "images/GiottoLogo_favicon.svg"
 html_sourcelink_suffix = ""
 
+html_css_files = [
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
+]
+
 html_theme_options = {
     "sidebar_hide_name": True,
     "github_url": "https://github.com/drieslab/Giotto/tree/suite",
@@ -115,7 +121,15 @@ html_theme_options = {
     },
     "navbar_end": ["navbar-icon-links"],
 #     "announcement": "<em>Important</em> announcement!",
-    "top_of_page_button": "edit"
+    "top_of_page_button": "edit",
+    "footer_icons": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/drieslab/Giotto/tree/suite",
+            "html": "",
+            "class": "fa-solid fa-github fa-2x",
+        },
+    ],
 }
 
 # html_sidebars = { '**': ['search-field.html', 'globaltoc.html', 'edit-this-page.html'] }
@@ -155,7 +169,7 @@ html_theme_options = {
 # }
 
 #html_sidebars = { '**': ["search-field.html"] }
-html_css_files = ["css/theme_edits.css"]
+# html_css_files = ["css/theme_edits.css"]
 panels_add_fontawesome_latex = True
 panels_add_bootstrap_css = True
 
