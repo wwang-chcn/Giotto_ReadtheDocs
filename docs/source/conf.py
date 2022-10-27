@@ -107,7 +107,7 @@ html_theme_options = {
     "github_url": "https://github.com/drieslab/Giotto/tree/suite",
     #'display_version': True,
     # "show_toc_level": 1,
-    # 'collapse_navigation': True,
+    'collapse_navigation': False,
     # 'sticky_navigation': True,
     # "use_edit_page_button": False,
     "logo": {
@@ -119,7 +119,7 @@ html_theme_options = {
         "color-brand-primary": "#7e69ad",
         "color-brand-content": "#ed1890",
     },
-    "navbar_end": ["navbar-icon-links"],
+    "navigation_depth": 1,
 #     "announcement": "<em>Important</em> announcement!",
     "top_of_page_button": "edit",
     "footer_icons": [
