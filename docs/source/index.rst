@@ -3,7 +3,7 @@ Giotto Suite
 ##########################################
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 0
    :caption: General
    :hidden:
  
