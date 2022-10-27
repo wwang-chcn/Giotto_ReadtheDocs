@@ -3,16 +3,16 @@ Giotto Suite
 ##########################################
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 4
    :caption: General
-   :includehidden:
+   :hidden:
  
    Getting Started <gettingstarted.rst> 
    Documentation <documentation.rst>
    Contribute <contribute.rst> 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Guides
    :hidden:
 
