@@ -37,7 +37,7 @@ Giotto Suite
 
 .. image:: images/index/GiottoSuiteWebsite-07.svg
    :align: center
-   :target: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2
+   :target: https://github.com/drieslab/Giotto/tree/suite
    
 An open-source and technology-agnostic spatial multi-omics analysis platform 
 ============================================================================
