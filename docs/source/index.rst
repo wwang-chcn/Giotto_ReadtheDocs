@@ -3,9 +3,9 @@ Giotto Suite
 ##########################################
 
 .. toctree::
-   :maxdepth: 0
+   :maxdepth: 1
    :caption: General
-   :hidden:
+   :includehidden:
  
    Getting Started <gettingstarted.rst> 
    Documentation <documentation.rst>
