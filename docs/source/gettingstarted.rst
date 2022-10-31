@@ -1,11 +1,11 @@
-.. _gettingstartedpage: 
+.. _gettingstartedpage:
 
 #######################
-Getting Started 
+Getting Started
 #######################
 
-Giotto Suite is installed via R **but there are required Python modules** which **must** be installed in order for Giotto Suite to function properly. 
-Below are the instructions for both the installation of the Giotto Suite package (Step 1) and required Python environment (Step 2). 
+Giotto Suite is installed via R **but there are required Python modules** which **must** be installed in order for Giotto Suite to function properly.
+Below are the instructions for both the installation of the Giotto Suite package (Step 1) and required Python environment (Step 2).
 
 *************
 Requirements
@@ -27,7 +27,7 @@ Installation
 .. code-block:: r
 
     library(remotes)
-    remotes::install_github("drieslab/Giotto@suite") 
+    remotes::install_github("drieslab/Giotto@suite")
 
 **Step 2: Install the Giotto Python environment**
 
@@ -39,7 +39,15 @@ This step only needs to be run once. Giotto Suite will automatically detect the 
     installGiottoEnvironment()
 
 
-:octicon:`light-bulb` Encountering errors? Checkout out the :ref:`Common Errors and Solutions <./faqs.html>` for installation troubleshooting help.  
+:octicon:`light-bulb` Encountering errors? Checkout out the :ref:`Common Errors and Solutions <./faqs.html>` for installation troubleshooting help.
+
+
+**************************
+Try Giotto on the cloud
+**************************
+
+To avoid installation issues, you can run Giotto analysis on Terra.bio. Take a look on the `Terra tutorial <https://giottosuite.readthedocs.io/en/latest/subsections/trygiotto/terra.html#terra/>`__.
+
 
 **************************
 Learn more about Giotto Suite
@@ -59,13 +67,13 @@ Learn more about Giotto Suite
 
 
     .. grid-item-card::
-        
+
         .. image:: images/getting_started/icons_processing.png
             :target: ./subsections/datasets/data_processing.html
-    
+
 
     .. grid-item-card::
-        
+
         .. image:: images/getting_started/icons_clustering.png
             :target: ./subsections/datasets/Dimension_reduction.html
 
@@ -74,7 +82,7 @@ Learn more about Giotto Suite
 
         .. image:: images/getting_started/icons_images.png
             :target: ./subsections/datasets/getting_started_images.html
-        
+
 
     .. grid-item-card::
 
@@ -83,6 +91,6 @@ Learn more about Giotto Suite
 
 
     .. grid-item-card::
-        
+
         .. image:: images/getting_started/icons_saving.png
             :target: ./subsections/datasets/getting_started_saving.html
