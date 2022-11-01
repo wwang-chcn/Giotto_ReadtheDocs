@@ -168,7 +168,7 @@ You can extract the coordinates and IDs from cells located within one or multipl
       ## Provide the name of the polygon to extract cells from
       getCellsFromPolygon(visium_brain, polygons = "polygon 1")
 
-.. image:: /images/images_pkgdown/interactive_selection/vignette_221013/9-get_cells_polygon1.png
+.. image:: /images/images_pkgdown/interactive_selection/vignette_221013/9-get_cells_polygon_1.png
    :width: 55.0%
 
 .. container:: cell
@@ -273,3 +273,30 @@ You can use the spatPlot( ) arguments to isolate and plot each region. Also, you
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/15-compare_spatfeatplot.png
    :width: 80.0%
+
+Part 8: Plot again the polygons
+===========================
+
+You can plot again all or some drawn polygons. The minimal input is the Giotto object containing polygon coordinates within the spatial_info slot, as well as the spatial plot.
+
+.. container:: cell
+
+   .. code:: r
+
+      ## Plot all polygons
+      plotPolygons(visium_brain, my_spatPlot)
+
+.. image:: /images/images_pkgdown/interactive_selection/vignette_221013/16-plotPolygons.png
+   :width: 50.0%
+
+Additionaly, you can plot a few polygons by providing a vector with the polygon IDs.
+
+.. container:: cell
+
+   .. code:: r
+
+      ## Plot a subset of polygons
+      plotPolygons(visium_brain, my_spatPlot, polygons = "polygon 2")
+
+.. image:: /images/images_pkgdown/interactive_selection/vignette_221013/17-plotPolygon2.png
+   :width: 50.0%
