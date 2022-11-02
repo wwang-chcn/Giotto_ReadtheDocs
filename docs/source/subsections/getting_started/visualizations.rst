@@ -13,7 +13,7 @@ visualizations that are unique to Giotto: spatial maps and networks.
 This tutorial uses a merFISH dataset of mouse hypothalamic preoptic
 regions from `Moffitt et
 al. <https://doi.org/10.1126/science.aau5324>`__ A complete walkthrough
-of that dataset can be found `here <./merFISH_hypoth_220915.html>`__. To
+of that dataset can be found `here <../datasets/merFISH_hypot_preopt_region.html>`__. To
 download the data used to create the Giotto Object below, please ensure
 that `wget <https://www.gnu.org/software/wget/?>`__ is installed
 locally.
@@ -234,7 +234,7 @@ This function detects differentially expressed features by comparing a
 single cluster to all others. Currently, three methods are supported:
 “*scran*”, “*gini*”, and “*mast*”. Here, the “*gini*” method is
 employed; details on the gini method may be found
-`here <../docs/reference/findGiniMarkers.html>`__.
+`here <../md_rst/findGiniMarkers.html>`__.
 
 .. container:: cell
 
@@ -391,7 +391,7 @@ The plots may be subset by cell type in 2D and 3D.
 It is preferred to use Delaunay geometry to create spatial networks. In
 other cases, k-nearest neighbor may be used to create a spatial network.
 Specifying the *method* parameter within
-`createSpatialNetwork <../docs/reference/createSpatialNetwork.html>`__
+`createSpatialNetwork <../md_rst/createSpatialNetwork.html>`__
 will accomplish this. By default, this function runs the Delaunay
 method. Here, both methods, as well as potential modifications to the
 k-nearest networks, will be shown.

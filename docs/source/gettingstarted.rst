@@ -57,40 +57,40 @@ Learn more about Giotto Suite
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_configuration.png
-			:target: ./subsections/datasets/configuration.html
+			:target: ./subsections/getting_started/configuration.html
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_giotto.png
-            :target: ./subsections/datasets/getting_started_gobject.html
+            :target: ./subsections/getting_started/getting_started_gobject.html
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_processing.png
-            :target: ./subsections/datasets/data_processing.html
+            :target: ./subsections/getting_started/data_processing.html
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_clustering.png
-            :target: ./subsections/datasets/Dimension_reduction.html
+            :target: ./subsections/getting_started/dimension_reduction.html
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_images.png
-            :target: ./subsections/datasets/getting_started_images.html
+            :target: ./subsections/getting_started/getting_started_images.html
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_visualizations.png
-            :target: ./subsections/datasets/Visualizations.html
+            :target: ./subsections/getting_started/visualizations.html
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_saving.png
-            :target: ./subsections/datasets/getting_started_saving.html
+            :target: ./subsections/getting_started/getting_started_saving.html

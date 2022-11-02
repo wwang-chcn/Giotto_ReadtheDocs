@@ -172,11 +172,11 @@ By providing values to other **createGiottoObject** parameters, it is
 possible to add:
 
 -  **Cell** or **feature (gene) metadata**: see
-   `addCellMetadata <../reference/addCellMetadata.html>`__ and
-   `addFeatMetadata <../reference/addFeatMetadata.html>`__
+   `addCellMetadata <../md_rst/addCellMetadata.html>`__ and
+   `addFeatMetadata <../md_rst/addFeatMetadata.html>`__
 
 -  **Spatial networks** or **grids**: see
-   `Visualizations <./Visualizations.html>`__
+   `Visualizations <./visualizations.html>`__
 
 -  **Dimension reduction**: see
    `Clustering <./dimension_reduction.html>`__
@@ -184,7 +184,7 @@ possible to add:
 -  **Images**: see `Imaging <./getting_started_images.html>`__
 
 -  **giottoInstructions**: see
-   `createGiottoInstructions <../docs/reference/createGiottoInstructions.html>`__
+   `createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__
    and below
 
 Providing **giottoInstructions** allows the specification of:
@@ -254,7 +254,7 @@ execution.
 Alternatively, a named list may also be provided to the *instructions*
 argument of **createGiottoObject**. However, ensure that all arguments
 to
-`createGiottoInstructions <../docs/reference/createGiottoInstructions.html>`__
+`createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__
 are defined when providing instructions as a named list, since default
 values are only applied to instructions when made with
 **createGiottoInstructions**. *Note that python_path must be specified
@@ -312,7 +312,7 @@ plotting functions accordingly. To change these parameters from the
 default values, the instructions may be changed or replaced, or these
 parameters may be *manually overwritten* within plotting functions.
 
-See `showSaveParameters <../docs/reference/showSaveParameters.html>`__
+See `showSaveParameters <../md_rst/showSaveParameters.html>`__
 and the `Saving Options <./getting_started_saving.html>`__ tutorial for
 alternative methods to save plots.
 

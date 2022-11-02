@@ -22,7 +22,7 @@ for both the Visium (automatic) and manual adjustment workflows.
 For an example of working with high definition images that may require
 ROI alignment and or stitching, please see the Nanostring CosMx lung
 data
-`analysis <https://giottosuite.com/articles/Nanostring_Lung12_jan26_21.html>`__.
+`analysis <../datasets/Nanostring_Lung12_jan26_21.html>`__.
 
 2 Conceptual Overview
 =====================
