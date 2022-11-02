@@ -4,7 +4,8 @@ rowSums_flex
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L29
+
 ===========
 
 rowSums_flex

@@ -6,6 +6,7 @@ spatDeconvPlot
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L3538
 
+
 Description
 ===========
 

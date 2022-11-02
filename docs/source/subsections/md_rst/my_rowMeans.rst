@@ -4,7 +4,8 @@ my_rowMeans
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L308
+
 ===========
 
 arithmic or geometric rowMeans that works for a single column
@@ -24,6 +25,6 @@ Arguments
 Argument   Description
 ========== ==========================================
 ``x``      data to use
-``method`` method is either “arithmic” or “geometric”
+``method`` method is either “arithmic� or “geometric�
 ``offset`` offset
 ========== ==========================================

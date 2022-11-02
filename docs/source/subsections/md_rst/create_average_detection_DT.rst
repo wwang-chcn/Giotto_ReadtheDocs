@@ -4,7 +4,8 @@ create_average_detection_DT
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L361
+
 ===========
 
 calculates average gene detection for a cell metadata factor

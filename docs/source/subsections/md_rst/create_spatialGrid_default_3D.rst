@@ -4,7 +4,8 @@ create_spatialGrid_default_3D
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1922
+
 ===========
 
 create a 3D spatial grid

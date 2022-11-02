@@ -4,7 +4,8 @@ subset_spatial_enrichment
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L729
+
 ===========
 
 Subset spatial enrichment results from giotto object

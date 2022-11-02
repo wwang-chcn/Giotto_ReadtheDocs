@@ -4,7 +4,8 @@ read_spatial_networks
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1262
+
 ===========
 
 read spatial networks from list

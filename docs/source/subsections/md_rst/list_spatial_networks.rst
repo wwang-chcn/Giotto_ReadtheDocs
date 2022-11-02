@@ -4,7 +4,8 @@ list_spatial_networks
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2493
+
 ===========
 
 return the available spatial networks that are attached to the Giotto
@@ -25,7 +26,7 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
 | ``return_uniques``            | return unique nesting names (ignores |
 |                               | if final object exists/is correct    |

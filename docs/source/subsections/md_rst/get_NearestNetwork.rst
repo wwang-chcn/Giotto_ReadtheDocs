@@ -4,7 +4,8 @@ get_NearestNetwork
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L383
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L512
+
 
 Description
 ===========

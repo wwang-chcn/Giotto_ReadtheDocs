@@ -4,7 +4,8 @@ convertEnsemblToGeneSymbol
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L1204
+
 ===========
 
 This function convert ensembl gene IDs from a matrix to official gene

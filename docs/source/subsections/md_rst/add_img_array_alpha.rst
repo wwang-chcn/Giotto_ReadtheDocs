@@ -4,7 +4,8 @@ add_img_array_alpha
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2690
+
 ===========
 
 Add alpha channel to image array

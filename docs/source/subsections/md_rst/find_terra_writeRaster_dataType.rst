@@ -4,7 +4,8 @@ find_terra_writeRaster_dataType
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1678
+
 ===========
 
 find likely compatible datatype for given image characteristics. Values

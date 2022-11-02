@@ -4,7 +4,8 @@ node_clusters
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2396
+
 ===========
 
 Merge selected clusters based on pairwise correlation scores and size of

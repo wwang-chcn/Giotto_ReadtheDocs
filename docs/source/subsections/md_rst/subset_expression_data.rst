@@ -4,7 +4,8 @@ subset_expression_data
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L419
+
 ===========
 
 Subset expression data from giotto object

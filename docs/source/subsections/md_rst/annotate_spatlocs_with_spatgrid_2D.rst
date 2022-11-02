@@ -4,7 +4,8 @@ annotate_spatlocs_with_spatgrid_2D
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L2217
+
 ===========
 
 annotate spatial locations with 2D spatial grid information

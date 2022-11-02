@@ -6,6 +6,7 @@ showPattern3D
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2644
 
+
 Description
 ===========
 

@@ -4,7 +4,8 @@ evaluate_expr_matrix
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L446
+
 ===========
 
 Evaluate expression matrices that are provided as input and converts

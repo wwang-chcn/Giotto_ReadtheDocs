@@ -4,7 +4,8 @@ overlap_points_single_polygon
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1913
+
 ===========
 
 overlap for a single polygon

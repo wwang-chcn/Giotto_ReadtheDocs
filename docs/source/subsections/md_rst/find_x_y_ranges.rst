@@ -4,7 +4,8 @@ find_x_y_ranges
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L240
+
 ===========
 
 get the extended ranges of x and y

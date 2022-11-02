@@ -6,6 +6,7 @@ combineICF
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1930
 
+
 Description
 ===========
 

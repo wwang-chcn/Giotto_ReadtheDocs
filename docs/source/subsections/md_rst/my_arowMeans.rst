@@ -4,7 +4,8 @@ my_arowMeans
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L284
+
 ===========
 
 arithmic rowMeans that works for a single column

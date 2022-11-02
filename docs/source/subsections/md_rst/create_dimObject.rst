@@ -4,7 +4,8 @@ create_dimObject
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L17
+
 ===========
 
 Creates an object that stores a dimension reduction output

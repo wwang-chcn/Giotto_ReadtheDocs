@@ -6,6 +6,7 @@ createNearestNetwork
 
 https://github.com/drieslab/Giotto/tree/suite/R/NN_network.R#L56
 
+
 Description
 ===========
 

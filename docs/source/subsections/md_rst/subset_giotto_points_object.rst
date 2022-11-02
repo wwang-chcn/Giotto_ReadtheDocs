@@ -4,7 +4,8 @@ subset_giotto_points_object
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L866
+
 ===========
 
 Subset a single giotto points object

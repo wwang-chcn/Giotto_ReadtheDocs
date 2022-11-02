@@ -4,7 +4,8 @@ spatDimGenePlot
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5602
+
    :format: latex
 ..
 
@@ -30,18 +31,18 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```spatDim                           |
 |                               | GenePlot2D`` <#spatdimgeneplot2d>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”genes”)),            |
-|                               | list(“genes to show”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�genes�)),            |
+|                               | list(“genes to show�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | l                                    |
-|                               | ist(list(list(”default_save_name”)), |
+|                               | ist(list(list(�default_save_name�)), |
 |                               | list(“default save name for saving,  |
 |                               | don’t change, change save_name in    |
-|                               | save_param”)), “:raw-latex:`\n`”, ”  |
+|                               | save_param�)), “:raw-latex:`\n`�, �  |
 |                               | “)                                   |
 +-------------------------------+--------------------------------------+
 

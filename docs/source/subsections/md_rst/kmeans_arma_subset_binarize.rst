@@ -4,7 +4,8 @@ kmeans_arma_subset_binarize
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L382
+
 ===========
 
 create binarized scores from a subsetted vector using kmeans_arma

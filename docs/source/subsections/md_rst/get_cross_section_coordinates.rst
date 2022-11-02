@@ -4,7 +4,8 @@ get_cross_section_coordinates
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L353
+
 ===========
 
 get local coordinates within cross section plane

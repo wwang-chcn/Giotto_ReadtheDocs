@@ -4,7 +4,8 @@ dt_to_spatVector_polygon
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L758
+
 ===========
 
 convert data.table to spatVector for polygons

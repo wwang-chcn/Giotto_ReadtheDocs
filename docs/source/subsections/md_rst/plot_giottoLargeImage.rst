@@ -4,7 +4,8 @@ plot_giottoLargeImage
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1469
+
 ===========
 
 Plot a downsampled version of giottoLargeImage. Cropping can increase
@@ -55,8 +56,8 @@ Arguments
 |                               | detected                             |
 +-------------------------------+--------------------------------------+
 | ``stretch``                   | character. Option to stretch the     |
-|                               | values to increase contrast: “lin”   |
-|                               | linear or “hist” (histogram)         |
+|                               | values to increase contrast: “lin�   |
+|                               | linear or “hist� (histogram)         |
 +-------------------------------+--------------------------------------+
 
 Value

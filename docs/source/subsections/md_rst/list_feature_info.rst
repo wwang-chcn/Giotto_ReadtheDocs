@@ -4,7 +4,8 @@ list_feature_info
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2461
+
 ===========
 
 return the available giotto spatial feature information

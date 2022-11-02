@@ -4,7 +4,8 @@ silhouetteRankTest
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1671
+
 ===========
 
 Multi parameter aggregator version of

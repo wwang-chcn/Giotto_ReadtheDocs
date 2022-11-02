@@ -4,7 +4,8 @@ create_jackstrawplot
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L836
+
 ===========
 
 create jackstrawplot with ggplot

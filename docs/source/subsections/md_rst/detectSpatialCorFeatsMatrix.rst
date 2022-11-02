@@ -6,6 +6,7 @@ detectSpatialCorFeatsMatrix
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3109
 
+
 .. role:: raw-latex(raw)
    :format: latex
 ..

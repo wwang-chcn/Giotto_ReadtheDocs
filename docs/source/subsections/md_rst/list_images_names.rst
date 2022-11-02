@@ -4,7 +4,8 @@ list_images_names
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2698
+
 ===========
 
 return the available image names for a given image type that are
@@ -24,7 +25,7 @@ Arguments
 Argument     Description
 ============ =======================
 ``gobject``  a giotto object
-``img_type`` “image” or “largeImage”
+``img_type`` “image� or “largeImage�
 ============ =======================
 
 Value

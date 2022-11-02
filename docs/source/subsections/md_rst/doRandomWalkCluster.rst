@@ -6,6 +6,7 @@ doRandomWalkCluster
 
 https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L529
 
+
 Description
 ===========
 

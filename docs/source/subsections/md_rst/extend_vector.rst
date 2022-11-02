@@ -4,7 +4,8 @@ extend_vector
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L226
+
 ===========
 
 extend the range of a vector by a given ratio

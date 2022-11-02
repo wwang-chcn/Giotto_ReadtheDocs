@@ -4,7 +4,8 @@ findInteractionChangedGenes
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1147
+
 ===========
 
 Identifies cell-to-cell Interaction Changed Features (ICF), i.e. genes

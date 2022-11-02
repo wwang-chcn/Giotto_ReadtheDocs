@@ -4,7 +4,8 @@ runPCA_prcomp_irlba
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L90
+
 ===========
 
 performs PCA based on the irlba package

@@ -4,7 +4,8 @@ get_dimReduction
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L249
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L378
+
 
 Description
 ===========

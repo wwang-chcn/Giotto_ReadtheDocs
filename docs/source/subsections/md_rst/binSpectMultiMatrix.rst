@@ -6,6 +6,7 @@ binSpectMultiMatrix
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1259
 
+
 Description
 ===========
 

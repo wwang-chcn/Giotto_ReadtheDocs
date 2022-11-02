@@ -4,7 +4,8 @@ combineInteractionChangedFeatures_per_interaction
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1494
+
 ===========
 
 Combine ICF scores per interaction

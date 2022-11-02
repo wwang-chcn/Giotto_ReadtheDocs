@@ -6,6 +6,7 @@ plotTSNE_3D
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7195
 
+
 .. role:: raw-latex(raw)
    :format: latex
 ..

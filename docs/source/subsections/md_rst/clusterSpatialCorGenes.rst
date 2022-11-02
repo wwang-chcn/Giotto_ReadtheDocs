@@ -4,7 +4,8 @@ clusterSpatialCorGenes
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3639
+
 ===========
 
 Cluster based on spatially correlated genes

@@ -4,7 +4,8 @@ set_spatialNetwork
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L615
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L744
+
 
 Description
 ===========

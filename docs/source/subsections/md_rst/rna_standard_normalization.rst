@@ -4,7 +4,8 @@ rna_standard_normalization
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1870
+
 ===========
 
 standard function for RNA normalization

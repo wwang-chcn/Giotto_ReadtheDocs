@@ -4,7 +4,8 @@ set_feature_metadata
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L774
+
 ===========
 
 Set feature metadata

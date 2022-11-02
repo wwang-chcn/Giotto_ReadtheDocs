@@ -6,6 +6,7 @@ spatDimCellPlot2D
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L6204
 
+
 Description
 ===========
 

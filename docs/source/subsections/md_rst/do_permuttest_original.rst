@@ -4,7 +4,8 @@ do_permuttest_original
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L516
+
 ===========
 
 calculate original values

@@ -4,7 +4,8 @@ signPCA
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1135
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1030
+
 
 Description
 ===========

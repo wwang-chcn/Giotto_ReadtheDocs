@@ -4,7 +4,8 @@ create_KNNnetwork_dbscan
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1284
+
 ===========
 
 Create a spatial knn network with dbscan

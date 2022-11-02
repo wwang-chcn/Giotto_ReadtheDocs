@@ -4,7 +4,8 @@ distGiottoImage
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2838
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2657
+
 
 Description
 ===========

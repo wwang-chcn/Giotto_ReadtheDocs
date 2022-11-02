@@ -4,7 +4,8 @@ convert_mgImage_to_array_DT
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L468
+
 ===========
 
 converts a magick image object to a data.table

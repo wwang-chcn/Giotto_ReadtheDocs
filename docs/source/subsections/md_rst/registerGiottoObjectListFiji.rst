@@ -4,7 +4,8 @@ registerGiottoObjectListFiji
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L286
+
 ===========
 
 Function to spatially align gobject data based on FIJI image

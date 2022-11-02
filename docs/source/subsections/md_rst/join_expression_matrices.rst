@@ -4,7 +4,8 @@ join_expression_matrices
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3578
+
 ===========
 
 join_expression_matrices

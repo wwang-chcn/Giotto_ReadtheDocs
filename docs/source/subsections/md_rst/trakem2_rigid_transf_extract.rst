@@ -4,7 +4,8 @@ trakem2_rigid_transf_extract
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L9
+
 ===========
 
 Extract rigid registration transformation values from FIJI TrakEM2 xml

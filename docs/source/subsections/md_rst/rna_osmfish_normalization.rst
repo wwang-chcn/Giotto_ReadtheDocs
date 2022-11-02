@@ -4,7 +4,8 @@ rna_osmfish_normalization
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1990
+
 ===========
 
 function for RNA normalization according to osmFISH paper

@@ -4,7 +4,8 @@ dimPlot_2D_plotly
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L6461
+
 ===========
 
 Visualize cells at their 2D dimension reduction coordinates with plotly

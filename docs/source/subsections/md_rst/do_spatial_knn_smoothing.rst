@@ -4,7 +4,8 @@ do_spatial_knn_smoothing
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2921
+
 ===========
 
 smooth gene expression over a kNN spatial network

@@ -4,7 +4,8 @@ mygini_fun
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L117
+
 ===========
 
 calculate gini coefficient

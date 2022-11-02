@@ -4,7 +4,8 @@ calculateOverlapRaster
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1735
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1805
+
 
 Description
 ===========

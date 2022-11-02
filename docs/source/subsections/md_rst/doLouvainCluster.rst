@@ -4,7 +4,8 @@ doLouvainCluster
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L203
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L452
+
 
 Description
 ===========

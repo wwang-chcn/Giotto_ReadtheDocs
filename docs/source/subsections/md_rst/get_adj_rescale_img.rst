@@ -4,7 +4,8 @@ get_adj_rescale_img
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L700
+
 ===========
 
 get_adj_rescale_img

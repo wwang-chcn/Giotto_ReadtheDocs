@@ -4,7 +4,8 @@ doLouvainSubCluster_multinet
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L1709
+
 ===========
 
 subcluster cells using a NN-network and the Louvain multinet detection

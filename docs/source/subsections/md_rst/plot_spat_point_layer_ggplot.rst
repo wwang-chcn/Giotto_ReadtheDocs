@@ -4,7 +4,8 @@ plot_spat_point_layer_ggplot
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1601
+
 ===========
 
 creat ggplot point layer for spatial coordinates

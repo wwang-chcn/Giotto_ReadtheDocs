@@ -4,7 +4,8 @@ showGiottoInstructions
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L534
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L307
+
 
 Description
 ===========

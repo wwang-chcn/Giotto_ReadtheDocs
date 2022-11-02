@@ -4,7 +4,8 @@ createGiottoCosMxObject
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3086
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L2785
+
 
 .. role:: raw-latex(raw)
    :format: latex

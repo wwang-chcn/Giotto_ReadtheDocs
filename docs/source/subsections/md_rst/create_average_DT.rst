@@ -4,7 +4,8 @@ create_average_DT
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L306
+
 ===========
 
 calculates average gene expression for a cell metadata factor
