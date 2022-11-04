@@ -10,6 +10,8 @@ Giotto Suite
    Getting Started <gettingstarted.rst> 
    Documentation <documentation.rst>
    Contribute <contribute.rst> 
+   Changelog <additionalinformation.rst>
+   News </subsections/datasets/giotto_news.rst> 
 
 .. toctree::
    :maxdepth: 1
@@ -35,13 +37,6 @@ Giotto Suite
    FAQs <faqs.rst> 
    Troubleshooting <errorsfaqsandtips.rst>
    Report a Bug <github_issues.rst>
-   
-.. toctree::
-   :maxdepth: 1
-   :caption: Changelog
-   :hidden:
-   
-   Changelog <additionalinformation.rst>
 
 .. image:: images/index/GiottoSuiteWebsite-07.svg
    :align: center
