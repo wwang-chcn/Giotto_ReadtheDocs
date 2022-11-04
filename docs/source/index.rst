@@ -10,19 +10,17 @@ Giotto Suite
    Getting Started <gettingstarted.rst> 
    Documentation <documentation.rst>
    Contribute <contribute.rst> 
-   Changelog <additionalinformation.rst>
-   News </subsections/datasets/giotto_news.rst> 
 
 .. toctree::
    :maxdepth: 1
-   :caption: Guides
+   :caption: Tutorials
    :hidden:
 
    Tutorials <datasets.rst> 
 
 .. toctree::
    :maxdepth: 1
-   :caption: Giotto in the Cloud
+   :caption: Try Giotto in the Cloud
    :hidden:
 
    Terra.bio </subsections/trygiotto/terra.rst> 
@@ -38,6 +36,14 @@ Giotto Suite
    Troubleshooting <errorsfaqsandtips.rst>
    Report a Bug <github_issues.rst>
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Updates
+   :hidden:
+ 
+   Changelog <additionalinformation.rst>
+   News </subsections/datasets/giotto_news.rst> 
+   
 .. image:: images/index/GiottoSuiteWebsite-07.svg
    :align: center
    :target: https://github.com/drieslab/Giotto/tree/suite
