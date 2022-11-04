@@ -9,8 +9,9 @@ Tutorials
     :caption: Tutorials
     :hidden:
 
-    Visium Datasets </datasets.html#visium-datasets>
-    Single Cell </datasets.html#single-cell>
+    Mouse Visium Kidney <subsections/datasets/mouse_visium_kidney>
+    Mouse Visium Brain <subsections/datasets/mouse_visium_brain>
+    Visium Prostate Integration <subsections/datasets/visium_prostate_integration>
     Subcellular </datasets.html#subcellular>
     Protein Multiplexing </datasets.rst#protein-multiplexing>
     Single Cell RNA Sequencing </datasets.rst#single-cell-rna-sequencing>
