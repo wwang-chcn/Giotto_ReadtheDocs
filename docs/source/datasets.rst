@@ -9,12 +9,21 @@ Tutorials
     :caption: Tutorials
     :hidden:
 
-    Mouse Visium Kidney <subsections/datasets/mouse_visium_kidney>
-    Mouse Visium Brain <subsections/datasets/mouse_visium_brain>
+    Visium Mouse Kidney <subsections/datasets/mouse_visium_kidney>
+    Visium Mouse Brain <subsections/datasets/mouse_visium_brain>
     Visium Prostate Integration <subsections/datasets/visium_prostate_integration>
-    Subcellular </datasets.html#subcellular>
-    Protein Multiplexing </datasets.rst#protein-multiplexing>
-    Single Cell RNA Sequencing </datasets.rst#single-cell-rna-sequencing>
+    Mini SeqFISH <subsections/datasets/mini_seqFISH>
+    SeqFISH+ Cortex <subsections/datasets/seqFISH_cortex>
+    osmFISH SS Cortex <subsections/datasets/osmFISH_mouse_SS_cortex>
+    MERFISH <subsections/datasets/merFISH_hypot_preopt_region>
+    Vizgen Brain <subsections/datasets/vizgen_mouse_brain>
+    Vizgen Brain <subsections/datasets/vizgen_mouse_brain>
+    Resolve Biosciences <subsections/datasets/resolve_bc_210928> 
+    Nanostring CosMx Lung <subsections/datasets/Nanostring_Lung12_jan26_21>
+    CODEX Spleen <subsections/datasets/mouse_CODEX_spleen>
+    scRNA-seq Prostate <subsections/datasets/singlecell_prostate_standard>
+    scRNA-seq Integration <subsections/datasets/singlecell_prostate_integration>
+    Other technologies <subsections/datasets/other_technologies_coming_soon>
     
 ****************************
 Array Based
