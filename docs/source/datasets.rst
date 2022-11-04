@@ -17,7 +17,6 @@ Tutorials
     osmFISH SS Cortex <subsections/datasets/osmFISH_mouse_SS_cortex>
     MERFISH <subsections/datasets/merFISH_hypot_preopt_region>
     Vizgen Brain <subsections/datasets/vizgen_mouse_brain>
-    Vizgen Brain <subsections/datasets/vizgen_mouse_brain>
     Resolve Biosciences <subsections/datasets/resolve_bc_210928> 
     Nanostring CosMx Lung <subsections/datasets/Nanostring_Lung12_jan26_21>
     CODEX Spleen <subsections/datasets/mouse_CODEX_spleen>
