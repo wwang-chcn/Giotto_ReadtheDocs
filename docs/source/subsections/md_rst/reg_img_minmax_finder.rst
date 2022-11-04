@@ -4,7 +4,8 @@ reg_img_minmax_finder
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L108
+
 ===========
 
 finds new minmax boundaries of registration transformed images

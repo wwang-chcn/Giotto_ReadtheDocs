@@ -4,7 +4,8 @@ addGeneMetadata
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2767
+
 ===========
 
 adds gene metadata to the giotto object

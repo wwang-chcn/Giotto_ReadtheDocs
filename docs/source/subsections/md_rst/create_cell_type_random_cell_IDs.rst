@@ -4,7 +4,8 @@ create_cell_type_random_cell_IDs
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2286
+
 ===========
 
 creates randomized cell ids within a selection of cell types

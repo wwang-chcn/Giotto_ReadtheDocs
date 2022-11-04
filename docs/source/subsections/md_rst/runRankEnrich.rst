@@ -6,6 +6,7 @@ runRankEnrich
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L889
 
+
 Description
 ===========
 

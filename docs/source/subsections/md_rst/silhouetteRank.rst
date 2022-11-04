@@ -4,7 +4,8 @@ silhouetteRank
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1592
+
 ===========
 
 Previously: calculate_spatial_genes_python. This method computes a

@@ -4,7 +4,8 @@ create_giotto_points_object
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1033
+
 ===========
 
 Create giotto points object

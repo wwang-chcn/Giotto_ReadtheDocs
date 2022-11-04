@@ -4,7 +4,8 @@ set_giottoImage
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1109
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1387
+
 
 Description
 ===========

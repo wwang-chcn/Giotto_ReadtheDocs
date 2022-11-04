@@ -4,7 +4,8 @@ evaluate_spatial_locations
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L908
+
 ===========
 
 Evaluate spatial location input

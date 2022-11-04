@@ -4,7 +4,8 @@ showGiottoNearestNetworks
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1503
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1632
+
 
 Description
 ===========

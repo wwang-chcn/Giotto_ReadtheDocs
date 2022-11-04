@@ -4,7 +4,8 @@ calc_spatial_enrichment_matrix
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L407
+
 ===========
 
 calculate spatial enrichment using a matrix approach

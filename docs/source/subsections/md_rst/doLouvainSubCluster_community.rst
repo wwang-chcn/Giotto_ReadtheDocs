@@ -4,7 +4,8 @@ doLouvainSubCluster_community
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L1527
+
 ===========
 
 subcluster cells using a NN-network and the Louvain community detection

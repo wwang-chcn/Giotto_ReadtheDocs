@@ -4,7 +4,8 @@ polygon_to_raster
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L11
+
 ===========
 
 function to convert terra SpatVector Polygon shape into a terra

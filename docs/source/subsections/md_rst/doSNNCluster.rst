@@ -6,6 +6,7 @@ doSNNCluster
 
 https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L611
 
+
 Description
 ===========
 

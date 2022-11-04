@@ -4,7 +4,8 @@ compatible_spatial_network
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L474
+
 ===========
 
 Function to evaluate if a spatial network is compatible with a provided

@@ -4,7 +4,8 @@ anndataToGiotto
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/interoperability.R#L19
+
 ===========
 
 Converts a spatial anndata (e.g. scanpy) .h5ad file into a Giotto object

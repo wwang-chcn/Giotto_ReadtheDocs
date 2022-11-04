@@ -4,7 +4,8 @@ do_ttest
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L371
+
 ===========
 
 Performs t.test on subsets of a matrix

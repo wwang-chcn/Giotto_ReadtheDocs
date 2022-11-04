@@ -4,7 +4,8 @@ optimize_deconvolute_dwls
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1594
+
 ===========
 
 Rui to fill in

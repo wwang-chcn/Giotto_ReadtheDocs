@@ -4,7 +4,8 @@ decide_cluster_order
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L664
+
 ===========
 
 creates order for clusters
@@ -36,25 +37,25 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
 | ``expression_values``         | expression values to use             |
-|                               | (e.g. “normalized”, “scaled”,        |
-|                               | “custom”)                            |
+|                               | (e.g. “normalized�, “scaled�,        |
+|                               | “custom�)                            |
 +-------------------------------+--------------------------------------+
 | ``feats``                     | features to use (e.g. genes)         |
 +-------------------------------+--------------------------------------+
 | ``genes``                     | deprecated, use feats                |
 +-------------------------------+--------------------------------------+
 | ``cluster_column``            | name of column to use for clusters   |
-|                               | (e.g. “leiden_clus”)                 |
+|                               | (e.g. “leiden_clus�)                 |
 +-------------------------------+--------------------------------------+
 | ``cluster_order``             | method to determine cluster order    |
-|                               | (e.g. “size”, “correlation”,         |
-|                               | “custom”)                            |
+|                               | (e.g. “size�, “correlation�,         |
+|                               | “custom�)                            |
 +-------------------------------+--------------------------------------+
 | ``cluster_custom_order``      | custom order for clusters            |
 +-------------------------------+--------------------------------------+

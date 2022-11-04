@@ -4,7 +4,8 @@ dimGenePlot2D
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5275
+
    :format: latex
 ..
 
@@ -37,28 +38,28 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ``                                   |
 |                               | `dimFeatPlot2D`` <#dimfeatplot2d>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”feat_type”)),        |
-|                               | list(“feature type”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�feat_type�)),        |
+|                               | list(“feature type�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | l                                    |
-|                               | ist(list(list(”expression_values”)), |
+|                               | ist(list(list(�expression_values�)), |
 |                               | list(“gene expression values to      |
-|                               | use”)), “:raw-latex:`\n`”, ” “,      |
+|                               | use�)), “:raw-latex:`\n`�, � “,      |
 |                               | list                                 |
-|                               | (list(list(”dim_reduction_to_use”)), |
-|                               | list(“dimension reduction to use”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | (list(list(�dim_reduction_to_use�)), |
+|                               | list(“dimension reduction to use�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | li                                   |
-|                               | st(list(list(”dim_reduction_name”)), |
-|                               | list(“dimension reduction name”)),   |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”dim1_to_use”)),      |
-|                               | list(“dimension to use on x-axis”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | st(list(list(�dim_reduction_name�)), |
+|                               | list(“dimension reduction name�)),   |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�dim1_to_use�)),      |
+|                               | list(“dimension to use on x-axis�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
 +-------------------------------+--------------------------------------+
 
 ::

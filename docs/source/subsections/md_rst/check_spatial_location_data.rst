@@ -4,7 +4,8 @@ check_spatial_location_data
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1067
+
 ===========
 
 check cell ID (spatial unit) names between spatial location and

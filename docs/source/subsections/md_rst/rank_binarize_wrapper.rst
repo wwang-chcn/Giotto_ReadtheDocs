@@ -4,7 +4,8 @@ rank_binarize_wrapper
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L485
+
 ===========
 
 wrapper for rank binarization function

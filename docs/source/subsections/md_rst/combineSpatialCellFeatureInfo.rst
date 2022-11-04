@@ -4,7 +4,8 @@ combineSpatialCellFeatureInfo
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3649
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3806
+
 
 Description
 ===========

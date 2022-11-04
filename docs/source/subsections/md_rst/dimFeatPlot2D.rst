@@ -6,6 +6,7 @@ dimFeatPlot2D
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4950
 
+
 Description
 ===========
 

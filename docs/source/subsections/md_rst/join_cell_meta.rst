@@ -4,7 +4,8 @@ join_cell_meta
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3626
+
 ===========
 
 join_cell_meta

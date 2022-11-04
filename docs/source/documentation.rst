@@ -468,7 +468,7 @@ Modify Giotto Object
 	  - addFeatsPerc
 	* - :doc:`addCellIntMetadata </subsections/md_rst/addCellIntMetadata>`
 	  - addCellIntMetadata
-	* - :doc: `processGiotto </subsections/md_rst/processGiotto>`
+	* - :doc:`processGiotto </subsections/md_rst/processGiotto>`
 	  - processGiotto
 
 

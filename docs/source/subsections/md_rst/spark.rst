@@ -6,6 +6,7 @@ spark
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2254
 
+
 .. role:: raw-latex(raw)
    :format: latex
 ..

@@ -4,7 +4,8 @@ spatCellPlot
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5679
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5868
+
 
 .. role:: raw-latex(raw)
    :format: latex

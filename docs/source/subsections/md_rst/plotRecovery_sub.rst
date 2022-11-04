@@ -4,7 +4,8 @@ plotRecovery_sub
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2477
+
 ===========
 
 Plots recovery plot to compare ligand-receptor rankings from spatial and

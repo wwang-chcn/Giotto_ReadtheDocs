@@ -4,7 +4,8 @@ plotly_grid
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1915
+
 ===========
 
 provide grid segment to draw in plot_ly()
@@ -29,10 +30,10 @@ Arguments
 Argument         Description
 ================ =============================
 ``spatial_grid`` spatial_grid in giotto object
-``x_start``      default to “x_start”
-``y_start``      default to “y_start”
-``x_end``        default to “x_end”
-``y_end``        default to “y_end”
+``x_start``      default to “x_start�
+``y_start``      default to “y_start�
+``x_end``        default to “x_end�
+``y_end``        default to “y_end�
 ================ =============================
 
 Value

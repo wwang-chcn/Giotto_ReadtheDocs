@@ -4,7 +4,8 @@ readGiottoInstructions
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L508
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L281
+
 
 Description
 ===========

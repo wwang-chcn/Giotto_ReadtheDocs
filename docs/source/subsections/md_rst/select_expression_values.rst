@@ -4,7 +4,8 @@ select_expression_values
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L197
+
    :format: latex
 ..
 
@@ -29,21 +30,21 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```get_expressio                     |
 |                               | n_values`` <#getexpressionvalues>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”values”)),           |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�values�)),           |
 |                               | list(“expression values to extract   |
 |                               | (e.g. "raw", "normalized",           |
-|                               | "scaled")”)), “:raw-latex:`\n`”, ”   |
-|                               | “, list(list(list(”gobject”)),       |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit (e.g. "cell")”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”feat_type”)),        |
+|                               | "scaled")�)), “:raw-latex:`\n`�, �   |
+|                               | “, list(list(list(�gobject�)),       |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit (e.g. "cell")�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�feat_type�)),        |
 |                               | list(“feature type (e.g. "rna",      |
-|                               | "dna", "protein")”)),                |
-|                               | “:raw-latex:`\n`”, ” “)              |
+|                               | "dna", "protein")�)),                |
+|                               | “:raw-latex:`\n`�, � “)              |
 +-------------------------------+--------------------------------------+
 
 Seealso

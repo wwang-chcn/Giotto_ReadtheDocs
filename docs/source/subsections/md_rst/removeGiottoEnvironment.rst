@@ -4,7 +4,8 @@ removeGiottoEnvironment
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L305
+https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L308
+
 
 Description
 ===========

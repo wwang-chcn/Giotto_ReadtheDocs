@@ -4,7 +4,8 @@ findCellProximityFeats_per_interaction
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L759
+
 ===========
 
 Identifies features that are differentially expressed due to proximity

@@ -4,7 +4,8 @@ xy_translate_spatial_locations
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1178
+
 ===========
 
 Translate given X Y coordinates by given x and y translation values

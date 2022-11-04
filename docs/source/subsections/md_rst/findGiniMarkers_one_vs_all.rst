@@ -6,6 +6,7 @@ findGiniMarkers_one_vs_all
 
 https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L527
 
+
 Description
 ===========
 

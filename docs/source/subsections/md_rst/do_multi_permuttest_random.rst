@@ -4,7 +4,8 @@ do_multi_permuttest_random
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L595
+
 ===========
 
 calculate multiple random values

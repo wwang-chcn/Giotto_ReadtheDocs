@@ -4,7 +4,8 @@ create_segm_polygons
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L121
+
 ===========
 
 creates giotto polygons from segmentation mask data

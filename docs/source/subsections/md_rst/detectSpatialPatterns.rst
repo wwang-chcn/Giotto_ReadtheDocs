@@ -6,6 +6,7 @@ detectSpatialPatterns
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2389
 
+
 Description
 ===========
 

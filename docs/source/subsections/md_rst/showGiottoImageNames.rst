@@ -4,7 +4,8 @@ showGiottoImageNames
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1791
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1920
+
 
 Description
 ===========

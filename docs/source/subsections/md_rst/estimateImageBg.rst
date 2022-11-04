@@ -4,7 +4,8 @@ estimateImageBg
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L677
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L496
+
 
 Description
 ===========

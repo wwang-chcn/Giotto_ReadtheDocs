@@ -4,7 +4,8 @@ set_giottoLargeImage
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1306
+
 ===========
 
 Set a giottoLargeImage for a giotto object with no additional

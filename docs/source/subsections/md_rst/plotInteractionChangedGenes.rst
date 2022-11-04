@@ -4,7 +4,8 @@ plotInteractionChangedGenes
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1605
+
    :format: latex
 ..
 
@@ -29,26 +30,26 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```plotInteractionChangedFeats       |
 |                               | `` <#plotinteractionchangedfeats>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”icfObject”)),        |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�icfObject�)),        |
 |                               | list(“ICF (interaction changed       |
-|                               | feature) score object”)),            |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”source_type”)),      |
+|                               | feature) score object�)),            |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�source_type�)),      |
 |                               | list(“cell type of the source        |
-|                               | cell”)), “:raw-latex:`\n`”, ” “,     |
-|                               | list(list(list(”source_markers”)),   |
+|                               | cell�)), “:raw-latex:`\n`�, � “,     |
+|                               | list(list(list(�source_markers�)),   |
 |                               | list(“markers for the source cell    |
-|                               | type”)), “:raw-latex:`\n`”, ” “,     |
-|                               | list(list(list(”ICF_feats”)),        |
+|                               | type�)), “:raw-latex:`\n`�, � “,     |
+|                               | list(list(list(�ICF_feats�)),        |
 |                               | list(“named character vector of ICF  |
-|                               | features”)), “:raw-latex:`\n`”, ” “, |
-|                               | list(list(list(”cell_color_code”)),  |
+|                               | features�)), “:raw-latex:`\n`�, � “, |
+|                               | list(list(list(�cell_color_code�)),  |
 |                               | list(“cell color code for the        |
-|                               | interacting cell types”)),           |
+|                               | interacting cell types�)),           |
 +-------------------------------+--------------------------------------+
 
 ::

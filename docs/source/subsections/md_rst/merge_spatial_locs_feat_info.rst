@@ -4,7 +4,8 @@ merge_spatial_locs_feat_info
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3751
+
 ===========
 
 merge spatial cell and feature location information

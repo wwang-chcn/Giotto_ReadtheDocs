@@ -4,7 +4,8 @@ binSpect
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L642
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1471
+
 
 .. role:: raw-latex(raw)
    :format: latex

@@ -4,7 +4,8 @@ createSpatialEnrich
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1376
+
    :format: latex
 ..
 
@@ -30,27 +31,27 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```runSp                             |
 |                               | atialEnrich`` <#runspatialenrich>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“Giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”feat_type”)),        |
-|                               | list(“feature type”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”enrich_method”)),    |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“Giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�feat_type�)),        |
+|                               | list(“feature type�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�enrich_method�)),    |
 |                               | list(“method for gene signature      |
-|                               | enrichment calculation”)),           |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”sign_matrix”)),      |
+|                               | enrichment calculation�)),           |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�sign_matrix�)),      |
 |                               | list(“Matrix of signature genes for  |
-|                               | each cell type / process”)),         |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | each cell type / process�)),         |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | l                                    |
-|                               | ist(list(list(”expression_values”)), |
-|                               | list(“expression values to use”)),   |
+|                               | ist(list(list(�expression_values�)), |
+|                               | list(“expression values to use�)),   |
 +-------------------------------+--------------------------------------+
 
 ::

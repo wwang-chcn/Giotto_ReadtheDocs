@@ -4,7 +4,8 @@ calc_spatial_enrichment_DT
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L498
+
 ===========
 
 calculate spatial enrichment using the data.table implementation

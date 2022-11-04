@@ -4,7 +4,8 @@ createGiottoObjectSubcellular
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L2596
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L2272
+
 
 Description
 ===========

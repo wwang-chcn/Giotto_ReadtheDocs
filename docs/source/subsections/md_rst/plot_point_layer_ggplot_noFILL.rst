@@ -4,7 +4,8 @@ plot_point_layer_ggplot_noFILL
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L507
+
 ===========
 
 Visualize cells in point layer according to dimension reduction

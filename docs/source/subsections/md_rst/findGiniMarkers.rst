@@ -6,6 +6,7 @@ findGiniMarkers
 
 https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L329
 
+
 Description
 ===========
 

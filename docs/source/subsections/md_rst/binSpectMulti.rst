@@ -6,6 +6,7 @@ binSpectMulti
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1033
 
+
 .. role:: raw-latex(raw)
    :format: latex
 ..

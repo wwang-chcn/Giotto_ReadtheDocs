@@ -4,7 +4,8 @@ overlap_points_per_polygon
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2045
+
 ===========
 
 Loop to overlap each single polygon

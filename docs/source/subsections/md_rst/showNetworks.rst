@@ -4,7 +4,8 @@ showNetworks
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1691
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1820
+
 
 .. role:: raw-latex(raw)
    :format: latex

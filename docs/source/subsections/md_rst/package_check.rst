@@ -4,7 +4,8 @@ package_check
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L566
+
 ===========
 
 check if package is available and provide installation instruction if

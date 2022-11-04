@@ -4,7 +4,8 @@ cellProximitySpatPlot
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2645
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2864
+
 
 .. role:: raw-latex(raw)
    :format: latex

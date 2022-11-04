@@ -4,7 +4,8 @@ select_dimReduction
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L435
+
    :format: latex
 ..
 
@@ -29,25 +30,25 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```get_                              |
 |                               | dimReduction`` <#getdimreduction>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit (e.g. "cell")”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”feat_type”)),        |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit (e.g. "cell")�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�feat_type�)),        |
 |                               | list(“feature type (e.g. "rna",      |
-|                               | "dna", "protein")”)),                |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”reduction”)),        |
+|                               | "dna", "protein")�)),                |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�reduction�)),        |
 |                               | list(“reduction on cells or features |
-|                               | (e.g. "cells", "feats")”)),          |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”reduction_method”)), |
+|                               | (e.g. "cells", "feats")�)),          |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�reduction_method�)), |
 |                               | list(“reduction method (e.g. "pca",  |
-|                               | "umap", "tsne")”)),                  |
-|                               | “:raw-latex:`\n`”, ” “, list(        |
+|                               | "umap", "tsne")�)),                  |
+|                               | “:raw-latex:`\n`�, � “, list(        |
 +-------------------------------+--------------------------------------+
 
 ::

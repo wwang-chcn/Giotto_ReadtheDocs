@@ -4,7 +4,8 @@ create_delaunayNetwork_deldir
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L691
+
 ===========
 
 Create a spatial Delaunay network with deldir

@@ -6,6 +6,7 @@ viewHMRFresults2D
 
 https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L592
 
+
 Description
 ===========
 

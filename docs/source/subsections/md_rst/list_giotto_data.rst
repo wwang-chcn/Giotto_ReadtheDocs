@@ -4,7 +4,8 @@ list_giotto_data
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1952
+
 ===========
 
 list the available data within specified giotto object slot
@@ -25,7 +26,7 @@ Arguments
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
 | ``slot``                      | giotto object slot of interest       |
-|                               | (e.g. “expression”, “spatial_locs”,  |
+|                               | (e.g. “expression�, “spatial_locs�,  |
 |                               | etc.)                                |
 +-------------------------------+--------------------------------------+
 | ``...``                       | additional params to pass            |

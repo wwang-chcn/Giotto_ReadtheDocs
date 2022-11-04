@@ -4,7 +4,8 @@ subset_cell_metadata
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L519
+
 ===========
 
 Subset cell metadata from giotto object

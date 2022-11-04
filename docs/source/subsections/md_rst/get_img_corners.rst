@@ -4,7 +4,8 @@ get_img_corners
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L177
+
 ===========
 
 finds four corner spatial coords of giottoImages or magick-images

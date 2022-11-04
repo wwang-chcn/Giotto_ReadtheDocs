@@ -4,7 +4,8 @@ get_polygon_info
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L802
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L931
+
 
 Description
 ===========

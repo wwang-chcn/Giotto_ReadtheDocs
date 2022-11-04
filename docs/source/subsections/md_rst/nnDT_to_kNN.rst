@@ -4,7 +4,8 @@ nnDT_to_kNN
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/NN_network.R#L325
+
 ===========
 
 Convert a nearest network data.table to a kNN object

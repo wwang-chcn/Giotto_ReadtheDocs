@@ -6,6 +6,7 @@ doLeidenCluster
 
 https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L42
 
+
 .. role:: raw-latex(raw)
    :format: latex
 ..

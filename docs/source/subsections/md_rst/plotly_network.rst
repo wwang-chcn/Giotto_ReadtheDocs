@@ -4,7 +4,8 @@ plotly_network
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1874
+
 ===========
 
 provide network segment to draw in 3D plot_ly()
@@ -31,12 +32,12 @@ Arguments
 Argument    Description
 =========== ========================
 ``network`` network object
-``x``       default to “sdimx_begin”
-``y``       default to “sdimy_begin”
-``z``       default to “sdimz_begin”
-``x_end``   default to “sdimx_end”
-``y_end``   default to “sdimy_end”
-``z_end``   default to “sdimz_end”
+``x``       default to “sdimx_begin�
+``y``       default to “sdimy_begin�
+``z``       default to “sdimz_begin�
+``x_end``   default to “sdimx_end�
+``y_end``   default to “sdimy_end�
+``z_end``   default to “sdimz_end�
 =========== ========================
 
 Value

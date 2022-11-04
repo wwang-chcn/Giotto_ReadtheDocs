@@ -4,7 +4,8 @@ runUMAP
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1347
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1242
+
 
 Description
 ===========
