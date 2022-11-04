@@ -4,7 +4,8 @@ spatPlot2D
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L2699
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L3181
+
 
 Description
 ===========

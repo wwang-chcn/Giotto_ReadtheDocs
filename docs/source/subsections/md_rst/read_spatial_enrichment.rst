@@ -4,7 +4,8 @@ read_spatial_enrichment
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1317
+
 ===========
 
 read spatial enrichment results from list

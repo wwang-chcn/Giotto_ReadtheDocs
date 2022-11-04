@@ -4,7 +4,8 @@ addGiottoLargeImage
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2209
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2028
+
 
 Description
 ===========

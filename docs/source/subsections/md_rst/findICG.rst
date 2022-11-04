@@ -4,7 +4,8 @@ findICG
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1273
+
    :format: latex
 ..
 
@@ -30,27 +31,27 @@ Arguments
 +===============================+======================================+
 | ``...``                       | Arguments passed on to               |
 |                               | ```findICF`` <#findicf>`__           |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”feat_type”)),        |
-|                               | list(“feature type”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�feat_type�)),        |
+|                               | list(“feature type�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | l                                    |
-|                               | ist(list(list(”expression_values”)), |
-|                               | list(“expression values to use”)),   |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”selected_feats”)),   |
+|                               | ist(list(list(�expression_values�)), |
+|                               | list(“expression values to use�)),   |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�selected_feats�)),   |
 |                               | list(“subset of selected features    |
-|                               | (optional)”)), “:raw-latex:`\n`”, ”  |
+|                               | (optional)�)), “:raw-latex:`\n`�, �  |
 |                               | “,                                   |
-|                               | list(list(list(”cluster_column”)),   |
+|                               | list(list(list(�cluster_column�)),   |
 |                               | list(“name of column to use for cell |
-|                               | types”)), “:raw-latex:`\n`”, ” “,    |
+|                               | types�)), “:raw-latex:`\n`�, � “,    |
 |                               | list(                                |
 +-------------------------------+--------------------------------------+
 

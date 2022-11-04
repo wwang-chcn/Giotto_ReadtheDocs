@@ -4,7 +4,8 @@ addGenesPerc
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3188
+
 ===========
 
 calculates the total percentage of (normalized) counts for a subset of

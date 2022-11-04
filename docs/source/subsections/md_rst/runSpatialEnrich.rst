@@ -6,6 +6,7 @@ runSpatialEnrich
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1292
 
+
 Description
 ===========
 

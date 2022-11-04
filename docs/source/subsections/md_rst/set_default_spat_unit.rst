@@ -4,7 +4,8 @@ set_default_spat_unit
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L11
+
 ===========
 
 set_default_spat_unit

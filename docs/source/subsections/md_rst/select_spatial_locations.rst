@@ -4,7 +4,8 @@ select_spatial_locations
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L307
+
    :format: latex
 ..
 
@@ -29,18 +30,18 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```get_spatial_l                     |
 |                               | ocations`` <#getspatiallocations>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit (e.g. "cell")”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_loc_name”)),    |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit (e.g. "cell")�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_loc_name�)),    |
 |                               | list(“name of spatial locations      |
 |                               | (defaults to first name in           |
-|                               | spatial_locs slot, e.g. "raw")”)),   |
-|                               | “:raw-latex:`\n`”, ” “)              |
+|                               | spatial_locs slot, e.g. "raw")�)),   |
+|                               | “:raw-latex:`\n`�, � “)              |
 +-------------------------------+--------------------------------------+
 
 Seealso

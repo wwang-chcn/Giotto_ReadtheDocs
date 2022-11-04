@@ -6,6 +6,7 @@ getDistinctColors
 
 https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L31
 
+
 Description
 ===========
 

@@ -4,7 +4,8 @@ read_nearest_networks
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1415
+
 ===========
 
 read nearest network results from list

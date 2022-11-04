@@ -4,7 +4,8 @@ determine_cores
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L8
+
 ===========
 
 guesses how many cores to use

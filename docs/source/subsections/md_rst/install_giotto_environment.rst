@@ -4,7 +4,8 @@ install_giotto_environment
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L183
+
 ===========
 
 installation options of giotto environment

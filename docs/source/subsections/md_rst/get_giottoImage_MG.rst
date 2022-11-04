@@ -4,7 +4,8 @@ get_giottoImage_MG
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1209
+
 ===========
 
 Get a giottoImage from a giotto object

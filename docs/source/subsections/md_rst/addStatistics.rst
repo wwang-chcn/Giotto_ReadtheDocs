@@ -4,7 +4,8 @@ addStatistics
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2901
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3058
+
 
 Description
 ===========

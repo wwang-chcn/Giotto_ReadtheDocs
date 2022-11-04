@@ -4,7 +4,8 @@ create_mesh_grid_lines
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L369
+
 ===========
 
 create mesh grid lines for cross section

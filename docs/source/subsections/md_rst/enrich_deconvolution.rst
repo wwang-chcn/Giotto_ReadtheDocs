@@ -4,7 +4,8 @@ enrich_deconvolution
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1393
+
 ===========
 
 Rui to fill in

@@ -4,7 +4,8 @@ create_terra_spatRaster
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1135
+
 ===========
 
 Load image as a terra spatRaster object

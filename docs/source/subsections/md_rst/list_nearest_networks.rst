@@ -4,7 +4,8 @@ list_nearest_networks
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2311
+
 ===========
 
 return the available nearest neighbor network information
@@ -30,13 +31,13 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
-| ``nn_type``                   | nearest neighbor method (e.g. “sNN”, |
-|                               | “kNN”)                               |
+| ``nn_type``                   | nearest neighbor method (e.g. “sNN�, |
+|                               | “kNN�)                               |
 +-------------------------------+--------------------------------------+
 | ``return_uniques``            | return unique nesting names (ignores |
 |                               | if final object exists/is correct    |

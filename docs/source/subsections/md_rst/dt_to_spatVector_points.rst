@@ -4,7 +4,8 @@ dt_to_spatVector_points
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1184
+
 ===========
 
 data.table to spatVector for points

@@ -4,7 +4,8 @@ plotCPG
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1415
+
    :format: latex
 ..
 
@@ -29,27 +30,27 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```plotCellProximity                 |
 |                               | Feats`` <#plotcellproximityfeats>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”icfObject”)),        |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�icfObject�)),        |
 |                               | list(“ICF (interaction changed       |
-|                               | feature) score object”)),            |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”method”)),           |
-|                               | list(“plotting method to use”)),     |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”min_cells”)),        |
+|                               | feature) score object�)),            |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�method�)),           |
+|                               | list(“plotting method to use�)),     |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�min_cells�)),        |
 |                               | list(“minimum number of source cell  |
-|                               | type”)), “:raw-latex:`\n`”, ” “,     |
-|                               | list(list(list(”min_cells_expr”)),   |
+|                               | type�)), “:raw-latex:`\n`�, � “,     |
+|                               | list(list(list(�min_cells_expr�)),   |
 |                               | list(“minimum expression level for   |
-|                               | source cell type”)),                 |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”min_int_cells”)),    |
+|                               | source cell type�)),                 |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�min_int_cells�)),    |
 |                               | list(“minimum number of interacting  |
-|                               | neighbor cell type”)),               |
+|                               | neighbor cell type�)),               |
 +-------------------------------+--------------------------------------+
 
 ::

@@ -4,7 +4,8 @@ heatmSpatialCorGenes
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3781
+
    :format: latex
 ..
 
@@ -29,25 +30,25 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```heatmSpatialC                     |
 |                               | orFeats`` <#heatmspatialcorfeats>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spatCorObject”)),    |
-|                               | list(“spatial correlation object”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”use_clus_name”)),    |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spatCorObject�)),    |
+|                               | list(“spatial correlation object�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�use_clus_name�)),    |
 |                               | list(“name of clusters to visualize  |
-|                               | (from clusterSpatialCorFeats())”)),  |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | (from clusterSpatialCorFeats())�)),  |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | li                                   |
-|                               | st(list(list(”show_cluster_annot”)), |
+|                               | st(list(list(�show_cluster_annot�)), |
 |                               | list(“show cluster annotation on top |
-|                               | of heatmap”)), “:raw-latex:`\n`”, ”  |
-|                               | “, list(list(list(”show_row_dend”)), |
-|                               | list(“show row dendrogram”)),        |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”show_column_dend”)), |
+|                               | of heatmap�)), “:raw-latex:`\n`�, �  |
+|                               | “, list(list(list(�show_row_dend�)), |
+|                               | list(“show row dendrogram�)),        |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�show_column_dend�)), |
 +-------------------------------+--------------------------------------+
 
 ::

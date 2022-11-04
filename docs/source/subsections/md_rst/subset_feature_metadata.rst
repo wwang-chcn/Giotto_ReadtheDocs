@@ -4,7 +4,8 @@ subset_feature_metadata
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L539
+
 ===========
 
 Subset feature metadata from giotto object

@@ -4,7 +4,8 @@ combineCellProximityGenes
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1905
+
    :format: latex
 ..
 
@@ -29,28 +30,28 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```combineInteractionChangedFeats``  |
 |                               | <#combineinteractionchangedfeats>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€icfObjectâ€)),        |
+|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
+|                               | list(list(list(â€icfObjectâ€)),        |
 |                               | list(â€œICF (interaction changed feat) |
-|                               | score objectâ€)), â€œ:raw-latex:`\n`â€,  |
-|                               | â€ â€œ,                                 |
-|                               | list(list(list(â€selected_intsâ€)),    |
+|                               | score objectâ€)), â€œ:raw-latex:`\n`â€,  |
+|                               | â€ â€œ,                                 |
+|                               | list(list(list(â€selected_intsâ€)),    |
 |                               | list(â€œsubset of selected cell-cell   |
-|                               | interactions (optional)â€)),          |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€selected_featsâ€)),   |
+|                               | interactions (optional)â€)),          |
+|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | list(list(list(â€selected_featsâ€)),   |
 |                               | list(â€œsubset of selected Features    |
-|                               | (optional)â€)), â€œ:raw-latex:`\n`â€, â€  |
+|                               | (optional)â€)), â€œ:raw-latex:`\n`â€, â€  |
 |                               | â€œ,                                   |
-|                               | list(list(list(â€specific_feats_1â€)), |
+|                               | list(list(list(â€specific_feats_1â€)), |
 |                               | list(â€œspecific Featureset combo      |
 |                               | (need to position match              |
-|                               | specific_feats_2)â€)),                |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€specific_feats_2â€)), |
+|                               | specific_feats_2)â€)),                |
+|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | list(list(list(â€specific_feats_2â€)), |
 |                               | list(â€œspecific Featureset combo      |
 |                               | (need to position match              |
-|                               | specific_feats_1)â€)),                |
+|                               | specific_feats_1)â€)),                |
 +-------------------------------+--------------------------------------+
 
 ::

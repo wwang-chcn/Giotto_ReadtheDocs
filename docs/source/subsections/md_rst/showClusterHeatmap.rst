@@ -6,6 +6,7 @@ showClusterHeatmap
 
 https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L460
 
+
 Description
 ===========
 

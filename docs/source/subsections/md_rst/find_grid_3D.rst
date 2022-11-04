@@ -4,7 +4,8 @@ find_grid_3D
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1772
+
 ===========
 
 find grid location in 3D

@@ -4,7 +4,8 @@ createSpatialNetwork
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1861
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1598
+
 
 Description
 ===========

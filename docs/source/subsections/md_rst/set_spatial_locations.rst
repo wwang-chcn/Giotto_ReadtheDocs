@@ -4,7 +4,8 @@ set_spatial_locations
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L201
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L330
+
 
 Description
 ===========

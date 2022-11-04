@@ -4,7 +4,8 @@ plot_feature_raster_density_layer
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L749
+
 ===========
 
 low level function to plot density plots at the spatial in situ level

@@ -4,7 +4,8 @@ select_spatialNetwork
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L724
+
    :format: latex
 ..
 
@@ -29,20 +30,20 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```get_spat                          |
 |                               | ialNetwork`` <#getspatialnetwork>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit (e.g. "cell")”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”name”)), list(“name  |
-|                               | of spatial network”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit (e.g. "cell")�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�name�)), list(“name  |
+|                               | of spatial network�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | li                                   |
-|                               | st(list(list(”return_network_Obj”)), |
+|                               | st(list(list(�return_network_Obj�)), |
 |                               | list(“return network object (default |
-|                               | = FALSE)”)), “:raw-latex:`\n`”, ” “) |
+|                               | = FALSE)�)), “:raw-latex:`\n`�, � “) |
 +-------------------------------+--------------------------------------+
 
 Seealso

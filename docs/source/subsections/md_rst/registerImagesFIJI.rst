@@ -6,6 +6,7 @@ registerImagesFIJI
 
 https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L683
 
+
 Description
 ===========
 

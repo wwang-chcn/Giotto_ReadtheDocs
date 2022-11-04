@@ -4,7 +4,8 @@ showGiottoSpatialInfo
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1575
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1704
+
 
 Description
 ===========

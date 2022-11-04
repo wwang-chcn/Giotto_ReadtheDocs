@@ -6,6 +6,7 @@ cellProximityNetwork
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L227
 
+
 Description
 ===========
 

@@ -4,7 +4,8 @@ set_giotto_python_path
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L10
+
 ===========
 
 sets the python path and/or installs miniconda and the python modules

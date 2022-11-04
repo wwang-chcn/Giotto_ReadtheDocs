@@ -4,7 +4,8 @@ reshape_to_data_point
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L288
+
 ===========
 
 reshape a mesh grid line object to data point matrix

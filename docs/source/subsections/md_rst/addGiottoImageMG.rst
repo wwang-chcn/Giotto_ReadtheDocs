@@ -4,7 +4,8 @@ addGiottoImageMG
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L930
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L749
+
 
 Description
 ===========

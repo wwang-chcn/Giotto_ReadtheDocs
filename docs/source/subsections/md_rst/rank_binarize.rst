@@ -4,7 +4,8 @@ rank_binarize
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L467
+
 ===========
 
 create binarized scores from a vector using arbitrary rank

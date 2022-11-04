@@ -13,7 +13,7 @@ beginning this tutorial.
 
 This tutorial uses a SeqFISH+ dataset of a murine cortex and
 subventrical zone. A complete walkthrough of that dataset can be found
-`here <./SeqFISH_cortex_210923.html>`__. To download the data used to
+`here <../datasets/seqFISH_cortex.html>`__. To download the data used to
 create the Giotto Object below, please ensure that
 `wget <https://www.gnu.org/software/wget/?>`__ is installed locally.
 
@@ -52,7 +52,7 @@ create the Giotto Object below, please ensure that
       instrs = createGiottoInstructions(save_plot = TRUE, 
                                         show_plot = TRUE,
                                         save_dir = results_directory, 
-                                        python_path = NULL)
+                                        python_path = my_python_path)
 
       # Create giotto object from provided paths
       expr_path = paste0(data_directory, "cortex_svz_expression.txt")

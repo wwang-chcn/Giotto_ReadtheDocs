@@ -4,7 +4,8 @@ read_crossSection
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L58
+
 ===========
 
 read a cross section object from a giotto object

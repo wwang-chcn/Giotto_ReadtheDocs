@@ -7,7 +7,7 @@ getting_started_saving
 1 Saving Spatial Data in Plots
 ==============================
 
-*Please see the* `Configuration <>`__ *and* `Giotto
+*Please see the* `Configuration <./configuration.html>`__ *and* `Giotto
 Object <./getting_started_gobject.html>`__ *vignettes before walking
 through this tutorial.*
 
@@ -109,8 +109,7 @@ may be saved or further manipulated.
 The default save folder is the current working directory. This will be
 the case if instructions are not provided, or if a *save_dir* is not
 specified within **giottoInstructions**. See the
-`createGiottoInstructions
-documentation <http://giottosuite.com/reference/createGiottoInstructions.html>`__
+`createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__ documentation 
 and `Giotto Object <./getting_started_gobject.html>`__ for default
 arguments and more details.
 
@@ -123,7 +122,7 @@ arguments and more details.
                cell_color = 'ClusterName', 
                save_plot = TRUE)
 
-.. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/-SpatPlot2D.png
+.. image:: /images/images_pkgdown/getting_started_figs/getting_started_saving/-spatPlot2D.png
 
 3.3 Save plot directly, but overwrite default save parameters
 ----------------------------------------------------------------

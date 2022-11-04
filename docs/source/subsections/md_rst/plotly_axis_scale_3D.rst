@@ -4,7 +4,8 @@ plotly_axis_scale_3D
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1958
+
 ===========
 
 adjust the axis scale in 3D plotly plot

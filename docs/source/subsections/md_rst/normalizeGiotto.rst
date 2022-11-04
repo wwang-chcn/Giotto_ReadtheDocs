@@ -4,7 +4,8 @@ normalizeGiotto
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1986
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2143
+
 
 .. role:: raw-latex(raw)
    :format: latex

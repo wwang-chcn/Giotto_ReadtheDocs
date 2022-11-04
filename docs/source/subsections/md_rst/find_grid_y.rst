@@ -4,7 +4,8 @@ find_grid_y
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1812
+
 ===========
 
 find grid location on y-axis

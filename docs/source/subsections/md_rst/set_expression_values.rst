@@ -4,7 +4,8 @@ set_expression_values
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L89
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L218
+
 
 Description
 ===========

@@ -4,7 +4,8 @@ filterICG
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1460
+
    :format: latex
 ..
 
@@ -28,26 +29,26 @@ Arguments
 +===============================+======================================+
 | ``...``                       | Arguments passed on to               |
 |                               | ```filterICF`` <#filtericf>`__       |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”icfObject”)),        |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�icfObject�)),        |
 |                               | list(“ICF (interaction changed       |
-|                               | feature) score object”)),            |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”min_cells”)),        |
+|                               | feature) score object�)),            |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�min_cells�)),        |
 |                               | list(“minimum number of source cell  |
-|                               | type”)), “:raw-latex:`\n`”, ” “,     |
-|                               | list(list(list(”min_cells_expr”)),   |
+|                               | type�)), “:raw-latex:`\n`�, � “,     |
+|                               | list(list(list(�min_cells_expr�)),   |
 |                               | list(“minimum expression level for   |
-|                               | source cell type”)),                 |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”min_int_cells”)),    |
+|                               | source cell type�)),                 |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�min_int_cells�)),    |
 |                               | list(“minimum number of interacting  |
-|                               | neighbor cell type”)),               |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | neighbor cell type�)),               |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | li                                   |
-|                               | st(list(list(”min_int_cells_expr”)), |
+|                               | st(list(list(�min_int_cells_expr�)), |
 |                               | list(“minimum expression level for   |
-|                               | interacting neighbor cell type”)),   |
+|                               | interacting neighbor cell type�)),   |
 +-------------------------------+--------------------------------------+
 
 ::

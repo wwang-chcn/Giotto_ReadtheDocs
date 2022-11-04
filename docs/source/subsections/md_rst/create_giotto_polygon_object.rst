@@ -4,7 +4,8 @@ create_giotto_polygon_object
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L35
+
 ===========
 
 Create a giotto polygon object

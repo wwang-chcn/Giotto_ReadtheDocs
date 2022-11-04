@@ -4,7 +4,8 @@ spat_OR_func_DT
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L224
+
 ===========
 
 calculate odds-ratio with data.table implementation

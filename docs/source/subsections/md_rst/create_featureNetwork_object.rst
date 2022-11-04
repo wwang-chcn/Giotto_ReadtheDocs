@@ -4,7 +4,8 @@ create_featureNetwork_object
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L992
+
 ===========
 
 Create feature network object

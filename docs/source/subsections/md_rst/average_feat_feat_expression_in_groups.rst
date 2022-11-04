@@ -4,7 +4,8 @@ average_feat_feat_expression_in_groups
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2007
+
 ===========
 
 calculate average expression per cluster

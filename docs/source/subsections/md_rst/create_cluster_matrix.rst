@@ -4,7 +4,8 @@ create_cluster_matrix
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3254
+
 ===========
 
 creates aggregated matrix for a given clustering column

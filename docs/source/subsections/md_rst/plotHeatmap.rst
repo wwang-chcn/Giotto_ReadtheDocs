@@ -6,6 +6,7 @@ plotHeatmap
 
 https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L958
 
+
 Description
 ===========
 

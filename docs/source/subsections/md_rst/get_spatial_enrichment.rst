@@ -4,7 +4,8 @@ get_spatial_enrichment
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L986
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1115
+
 
 Description
 ===========

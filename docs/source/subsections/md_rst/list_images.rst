@@ -4,7 +4,8 @@ list_images
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2655
+
 ===========
 
 Prints the available giotto images that are attached to the Giotto
@@ -24,7 +25,7 @@ Arguments
 Argument     Description
 ============ =======================
 ``gobject``  giotto object
-``img_type`` “image” or “largeImage”
+``img_type`` “image� or “largeImage�
 ============ =======================
 
 Value

@@ -4,7 +4,8 @@ write_giotto_viewer_dim_reduction
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_viewer.R#L86
+
 ===========
 
 write out dimensional reduction data from a giotto object for the Viewer

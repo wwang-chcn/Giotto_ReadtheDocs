@@ -4,7 +4,8 @@ ggplot_save_function
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L68
+
 ===========
 
 Function to automatically save plots to directory of interest

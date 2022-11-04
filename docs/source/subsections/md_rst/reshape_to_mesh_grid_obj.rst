@@ -4,7 +4,8 @@ reshape_to_mesh_grid_obj
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L308
+
 ===========
 
 reshape a data point matrix to a mesh grid line object

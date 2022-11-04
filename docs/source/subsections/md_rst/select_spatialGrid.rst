@@ -4,7 +4,8 @@ select_spatialGrid
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L860
+
    :format: latex
 ..
 
@@ -29,23 +30,23 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```ge                                |
 |                               | t_spatialGrid`` <#getspatialgrid>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit (e.g. "cell")”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”feat_type”)),        |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�spat_unit�)),        |
+|                               | list(“spatial unit (e.g. "cell")�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�feat_type�)),        |
 |                               | list(“feature type (e.g. "rna",      |
-|                               | "dna", "protein")”)),                |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”name”)), list(“name  |
-|                               | of spatial grid”)),                  |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”return_grid_Obj”)),  |
+|                               | "dna", "protein")�)),                |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�name�)), list(“name  |
+|                               | of spatial grid�)),                  |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�return_grid_Obj�)),  |
 |                               | list(“return grid object (default =  |
-|                               | FALSE)”)), “:raw-latex:`\n`”, ” “)   |
+|                               | FALSE)�)), “:raw-latex:`\n`�, � “)   |
 +-------------------------------+--------------------------------------+
 
 Seealso

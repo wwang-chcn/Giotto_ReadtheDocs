@@ -4,7 +4,8 @@ reconnect_image_object
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2418
+
 ===========
 
 Reconnect giotto image object with dead image pointer using a filepath

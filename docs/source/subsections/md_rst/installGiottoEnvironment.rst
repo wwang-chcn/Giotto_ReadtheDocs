@@ -4,7 +4,8 @@ installGiottoEnvironment
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L266
+https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L268
+
 
 Description
 ===========

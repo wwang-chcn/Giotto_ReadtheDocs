@@ -4,7 +4,8 @@ list_spatial_info_names
 
 :Date: 2022-10-06
 
-Description
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2447
+
 ===========
 
 return the available names for giotto spatial polygon information

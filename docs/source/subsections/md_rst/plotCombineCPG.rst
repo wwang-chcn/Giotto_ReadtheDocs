@@ -4,7 +4,8 @@ plotCombineCPG
 
 :Date: 2022-10-06
 
-.. role:: raw-latex(raw)
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1919
+
    :format: latex
 ..
 
@@ -29,26 +30,26 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```p                                 |
 |                               | lotCombineICF`` <#plotcombineicf>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”combIcfObject”)),    |
+|                               | list(“:raw-latex:`\n`�, � “,         |
+|                               | list(list(list(�gobject�)),          |
+|                               | list(“giotto object�)),              |
+|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(list(�combIcfObject�)),    |
 |                               | list(“ICFscores, output from         |
-|                               | combineInteractionChangedFeats()”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | combineInteractionChangedFeats()�)), |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | list(                                |
-|                               | list(list(”selected_interactions”)), |
-|                               | list(“interactions to show”)),       |
-|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(�selected_interactions�)), |
+|                               | list(“interactions to show�)),       |
+|                               | “:raw-latex:`\n`�, � “,              |
 |                               | list(                                |
-|                               | list(list(”selected_feat_to_feat”)), |
+|                               | list(list(�selected_feat_to_feat�)), |
 |                               | list(“pairwise feature combinations  |
-|                               | to show”)), “:raw-latex:`\n`”, ” “,  |
-|                               | list(list(list(”detail_plot”)),      |
+|                               | to show�)), “:raw-latex:`\n`�, � “,  |
+|                               | list(list(list(�detail_plot�)),      |
 |                               | list(“show detailed info in both     |
-|                               | interacting cell types”)),           |
-|                               | “:raw-latex:`\n`”, ” “, list(        |
+|                               | interacting cell types�)),           |
+|                               | “:raw-latex:`\n`�, � “, list(        |
 +-------------------------------+--------------------------------------+
 
 ::

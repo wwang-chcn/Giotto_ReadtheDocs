@@ -6,6 +6,7 @@ insertCrossSectionSpatPlot3D
 
 https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L783
 
+
 Description
 ===========
 
