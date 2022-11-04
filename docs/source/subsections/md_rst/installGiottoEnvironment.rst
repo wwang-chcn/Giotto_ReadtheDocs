@@ -54,8 +54,8 @@ miniconda system as implemented by reticulate. Once this giotto
 environment is installed it will be automatically detected when you run
 the Giotto toolbox. If you want to use your own python path then you can
 set the python_path in the
-```createGiottoInstructions`` <#creategiottoinstructions>`__ and provide
-the instructions to the ```createGiottoObject`` <#creategiottoobject>`__
+```createGiottoInstructions`` </subsections/md_rst/createGiottoInstructions.rst>`__ and provide
+the instructions to the ```createGiottoObject`` </subsections/md_rst/creategiottoobject>`__
 function.
 
 Value
