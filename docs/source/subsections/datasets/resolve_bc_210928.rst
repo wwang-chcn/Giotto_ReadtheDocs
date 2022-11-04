@@ -431,9 +431,10 @@ Part 11: Visualize SubCellular Data
 
 .. image:: /images/other/resolve_bc_subcellular/66-spatInSituPlotPoints.png
     
-###########################################
+
+******************************************
 Part 12: Find Interaction Changed Features
-###########################################
+******************************************
 
 .. code-block:: 
 
