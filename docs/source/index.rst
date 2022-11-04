@@ -9,7 +9,6 @@ Giotto Suite
  
    Getting Started <gettingstarted.rst> 
    Documentation <documentation.rst>
-   Giotto in the Cloud <subsections/trygiotto/terra.rst>
    Contribute <contribute.rst> 
 
 .. toctree::
@@ -18,14 +17,22 @@ Giotto Suite
    :hidden:
 
    Tutorials <datasets.rst> 
-   FAQs <faqs> 
-   Try Giotto <trygiotto.rst>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Giotto in the Cloud
+   :hidden:
+
+   Terra.bio </subsections/trygiotto/terra.rst> 
+   Binder </subsections/trygiotto/binder.rst> 
+   Docker </subsections/trygiotto/docker.rst> 
    
 .. toctree::
    :maxdepth: 1
    :caption: Issues
    :hidden:
    
+   FAQs <faqs.rst> 
    Troubleshooting <errorsfaqsandtips.rst>
    Report a Bug <github_issues.rst>
    
