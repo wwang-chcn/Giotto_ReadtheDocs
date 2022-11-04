@@ -12,7 +12,8 @@ Spatial transcriptomic and proteomic technologies have provided new opportunitie
    About <introduction.rst>
    Installation <gettingstarted.rst> 
    Documentation <documentation.rst>
-   Development <development.rst> 
+   Development <development.rst>
+   Giotto in the Cloud <subsections/trygiotto/terra.rst>
    Giotto Viewer <giottoviewer.rst>
 
 .. toctree::
