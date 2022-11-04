@@ -1,9 +1,20 @@
 .. _datasets:
 
 ################################
-Dataset Examples
+Tutorials
 ################################
 
+.. toctree::
+    :maxdepth: 1
+    :caption: Tutorials
+    :hidden:
+
+    Visium Datasets </datasets.html#visium-datasets>
+    Single Cell </datasets.html#single-cell>
+    Subcellular </datasets.html#subcellular>
+    Protein Multiplexing </datasets.rst#protein-multiplexing>
+    Single Cell RNA Sequencing </datasets.rst#single-cell-rna-sequencing>
+    
 ****************************
 Array Based
 ****************************
