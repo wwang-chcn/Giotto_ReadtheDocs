@@ -14,6 +14,7 @@ You can use as input either a ggplot2 object, a terra::rast image, or the output
 .. container:: cell
 
    .. code:: r
+      
       # Ensure Giotto Suite is installed.
       if(!"Giotto" %in% installed.packages()) {
         devtools::install_github("drieslab/Giotto@Suite")

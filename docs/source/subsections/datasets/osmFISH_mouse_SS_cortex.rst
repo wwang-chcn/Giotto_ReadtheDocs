@@ -21,6 +21,7 @@ Set up Giotto environment
 .. container:: cell
 
    .. code:: r
+      
       # Ensure Giotto Suite is installed.
       if(!"Giotto" %in% installed.packages()) {
         devtools::install_github("drieslab/Giotto@Suite")
