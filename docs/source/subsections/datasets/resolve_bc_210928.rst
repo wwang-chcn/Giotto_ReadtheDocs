@@ -2,22 +2,41 @@
 Resolve Bioscience Breast Cancer Subcellular
 ################################################
 
+.. container:: cell
+
+   .. code:: r
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
+
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
+
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
+
 *****************
 Start Giotto 
 *****************
 
 .. code-block:: 
+    library(Giotto)
+    library(GiottoData)
 
     # 1. set working directory
     my_working_dir = '/path/to/directory'
 
-    # 2. set giotto python path
-    # set python path to your preferred python version path
-    # set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-    python_path = NULL 
-    if(is.null(python_path)) {
-    installGiottoEnvironment()
-    }
+    # Optional: Specify a path to a Python executable within a conda or miniconda 
+    # environment. If set to NULL (default), the Python executable within the previously
+    # installed Giotto environment will be used.
+    my_python_path = NULL # alternatively, "/local/python/path/python" if desired.
 
 *****************
 Input Files 

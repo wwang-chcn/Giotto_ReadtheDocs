@@ -6,29 +6,44 @@ Integration between Multiple spatial datasets and single cell sequencing data
 ***************************
 Set-Up Giotto Environment
 ***************************
+.. container:: cell
 
-.. code-block:: 
+   .. code:: r
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
 
-	library(Giotto)
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
+
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
+	  
+	  library(Giotto)
+	  library(GiottoData)
 
 Set A Working Directory 
 ========================
 .. code-block::
 
-	#results_folder = '/path/to/directory/'
-	results_folder = '/Volumes/Ruben_Seagate/Dropbox (Personal)/Projects/GC_lab/Ruben_Dries/190225_spatial_package/Results/Visium/Brain/201226_results//'
+	results_folder = '/path/to/directory/'
 
 Set A Giotto Python Path
 ==========================
 
 .. code-block::
 
-	# set python path to your preferred python version path
-	# set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-	python_path = NULL 
-	if(is.null(python_path)) {
-  		installGiottoEnvironment()
-	}
+    # Optional: Specify a path to a Python executable within a conda or miniconda 
+    # environment. If set to NULL (default), the Python executable within the previously
+    # installed Giotto environment will be used.
+    my_python_path = NULL # alternatively, "/local/python/path/python" if desired.
 	
 
 *********************

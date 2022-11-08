@@ -17,6 +17,26 @@ https://www.nanostring.com/products/cosmx-spatial-molecular-imager/ffpe-dataset/
 is from a FFPE sample of non-small-cell lung cancer. This example works
 with Lung12.
 
+.. container:: cell
+
+   .. code:: r
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
+
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
+
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
+
 1. Start Giotto
 ===============
 
@@ -26,6 +46,7 @@ with Lung12.
 
       # Load Giotto, data.table is also necessary for this example
       library(Giotto)
+      library(GiottoData)
       library(data.table)
       # add color palettes if you want!
       library(rcartocolor)
@@ -34,13 +55,10 @@ with Lung12.
       # set working directory
       results_folder = '/path/to/directory'
 
-      # set giotto python path
-      # set python path to your preferred python version path
-      # set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-      python_path = NULL
-      if(is.null(python_path)) {
-        installGiottoEnvironment()
-      }
+      # Optional: Specify a path to a Python executable within a conda or miniconda 
+      # environment. If set to NULL (default), the Python executable within the previously
+      # installed Giotto environment will be used.
+      my_python_path = NULL # alternatively, "/local/python/path/python" if desired.
 
 
       ## create instructions
@@ -48,7 +66,8 @@ with Lung12.
       instrs = createGiottoInstructions(save_dir = results_folder,
                                         save_plot = TRUE,
                                         show_plot = FALSE,
-                                        return_plot = FALSE)
+                                        return_plot = FALSE
+                                        python_path = my_python_path)
 
 CosMx Project loading function
 ==============================
