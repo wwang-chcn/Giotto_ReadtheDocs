@@ -7,6 +7,7 @@ Giotto Suite
    :caption: General
    :hidden:
  
+   Branches <branches.rst>
    Getting Started <gettingstarted.rst> 
    Documentation <documentation.rst>
    Contribute <contribute.rst> 
