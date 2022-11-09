@@ -11,10 +11,8 @@ Try Giotto
 
     Binder <subsections/trygiotto/binder.rst>
     Docker <subsections/trygiotto/docker.rst>
-    Terra <subsections/trygiotto/terra.rst>
 
-
-There are three methods through which users may try Giotto, either via :bdg-ref-warning-line:`Docker <DockerInformation>`, :bdg-ref-primary-line:`Binder. <BinderInformation>` or :bdg-ref-secondary-line:`Terra. <Terra>`. 
+There are three methods through which users may try Giotto, either via :bdg-ref-warning-line:`Docker <DockerInformation>` or :bdg-ref-primary-line:`Binder. <BinderInformation>`. 
 
 Click the buttons above to learn more about the models or test them out!
 
