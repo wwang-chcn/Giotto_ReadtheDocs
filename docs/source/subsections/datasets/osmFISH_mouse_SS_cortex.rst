@@ -21,21 +21,38 @@ Set up Giotto environment
 .. container:: cell
 
    .. code:: r
+      
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
+
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
+
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
+
+.. container:: cell
+
+   .. code:: r
 
       library(Giotto)
+      library(GiottoData)
 
       # 1. set working directory
       results_folder = 'path/to/result'
 
-      # 2. set giotto python path
-      # set python path to your preferred python version path
-      # set python path to conda env/bin/ directory if manually installed Giotto python dependencies by conda
-      # python_path = '/path_to_conda/.conda/envs/giotto/bin/python'
-      # set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-      python_path = NULL
-      if(is.null(python_path)) {
-        installGiottoEnvironment()
-      }
+      # Optional: Specify a path to a Python executable within a conda or miniconda 
+      # environment. If set to NULL (default), the Python executable within the previously
+      # installed Giotto environment will be used.
+      my_python_path = NULL # alternatively, "/local/python/path/python" if desired.
 
 Dataset download
 ================
@@ -43,7 +60,8 @@ Dataset download
 The osmFISH data to run this tutorial can be found
 `here <https://github.com/drieslab/spatial-datasets/tree/master/data/2018_osmFISH_SScortex>`__.
 Alternatively you can use the **getSpatialDataset** to automatically
-download this dataset like we do in this example.
+download this dataset like we do in this example; to download the data used to create the Giotto Object below, please ensure
+that `wget <https://www.gnu.org/software/wget/?>`__ is installed locally.
 
 .. container:: cell
 

@@ -7,9 +7,30 @@ Interactive selection
 Set up Giotto object
 =========================
 
-To follow this tutorial, you must pre-run the Parts 1-4 from the `Mouse Visium Brain tutorial <https://giottosuite.readthedocs.io/en/latest/subsections/datasets/interactive_selection.html/>`__
+NOTE: To follow this tutorial, you must pre-run the Parts 1-4 from the `Mouse Visium Brain tutorial <https://giottosuite.readthedocs.io/en/latest/subsections/datasets/interactive_selection.html/>`__
 
 You can use as input either a ggplot2 object, a terra::rast image, or the output of running the spatPlot2D( ) function.
+
+.. container:: cell
+
+   .. code:: r
+      
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
+
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
+
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
 
 Part 1: Create a Giotto spatPlot object
 =================================================

@@ -19,6 +19,27 @@ This dataset contains multiple field of views; here, a workflow to bring
 the FOVs together for holistic analysis is illustrated, and then a
 subset of the Giotto Object is taken to analyze the cortex.
 
+.. container:: cell
+
+   .. code:: r
+      
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
+
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
+
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
+
 1 Create the Giotto Object
 ==========================
 
@@ -27,6 +48,7 @@ subset of the Giotto Object is taken to analyze the cortex.
    .. code:: r
 
       library(Giotto)
+      library(GiottoData)
 
       # Specify path from which data may be retrieved/stored
       data_directory = paste0(getwd(),'/gobject_processing_data/')
@@ -35,12 +57,6 @@ subset of the Giotto Object is taken to analyze the cortex.
       # Specify path to which results may be saved
       results_directory = paste0(getwd(),'/gobject_processing_results/') 
       # alternatively, "/path/to/store/the/results/"
-
-      genv_exists = checkGiottoEnvironment()
-      if(!genv_exists){
-        # The following command need only be run once to install the Giotto environment.
-        installGiottoEnvironment()
-      }
 
       # Optional: Specify a path to a Python executable within a conda or miniconda 
       # environment. If set to NULL (default), the Python executable within the previously

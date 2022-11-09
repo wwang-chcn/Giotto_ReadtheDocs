@@ -26,8 +26,7 @@ Installation
 
 .. code-block:: r
 
-    library(remotes)
-    remotes::install_github("drieslab/Giotto@suite")
+    devtools::install_github("drieslab/Giotto@suite")
 
 **Step 2: Install the Giotto Python environment**
 
@@ -52,6 +51,13 @@ To avoid installation issues, you can run Giotto analysis on Terra.bio. Take a l
 **************************
 Learn more about Giotto Suite
 **************************
+
+The following tutorials use data which is stored within a helper extension of Giotto Suite, GiottoData. To run these tutorials, please first install this small package.
+
+.. code-block:: r
+
+    devtools::install_github("drieslab/GiottoData")
+
 .. grid:: 4
 
     .. grid-item-card::
@@ -94,3 +100,8 @@ Learn more about Giotto Suite
 
         .. image:: images/getting_started/icons_saving.png
             :target: ./subsections/getting_started/getting_started_saving.html
+
+    .. grid-item-card::
+
+        .. image:: images/dataset_page/interactive_selection_image_summary.png
+            :target: ./subsections/getting_started/interactive_selection.html

@@ -21,12 +21,21 @@ environment.
 .. container:: cell
 
    .. code:: r
+      
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
 
-      library(Giotto)
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
 
-      already_installed <- checkGiottoEnvironment()
-
-      if(!already_installed){
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
         installGiottoEnvironment()
       }
 

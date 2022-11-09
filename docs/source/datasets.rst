@@ -4,6 +4,13 @@
 Dataset Examples
 ################################
 
+Most of these tutorials use data which is stored within a helper extension of Giotto Suite, GiottoData. To run these tutorials, please first install this small package.
+Please note that some of the tutorials do require a manual download from an external site.
+
+.. code-block:: r
+
+    devtools::install_github("drieslab/GiottoData")
+
 ****************************
 Array Based
 ****************************
@@ -175,30 +182,6 @@ Single Cell RNA Sequencing
 
         .. image:: images/dataset_page/SC_RNAseq_integration.png
 
-****************************
-Interactive tools
-****************************
-
-.. .. grid:: 3
-
-    .. grid-item-card::
-
-        .. image:: images/dataset_page/interactive_selection_image_summary.png
-            :target: ./subsections/datasets/interactive_selection.html
-
-        .. button-ref:: /subsections/datasets/interactive_selection
-            :ref-type: doc
-            :color: muted
-            :click-parent:
-            :expand:
-
-.. card-carousel:: 3
-
-    .. card::
-        :link: /subsections/datasets/interactive_selection
-        :link-type: doc
-
-        .. image:: images/dataset_page/interactive_selection_image_summary.png
 
 *****************************
 Other Technologies
