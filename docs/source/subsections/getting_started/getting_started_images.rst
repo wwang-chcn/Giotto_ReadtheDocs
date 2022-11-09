@@ -17,12 +17,33 @@ adjustment.
 The examples in this tutorial will be worked using Visium’s normal human
 prostate FFPE
 `dataset <https://www.10xgenomics.com/resources/datasets/normal-human-prostate-ffpe-1-standard-1-3-0>`__
-for both the Visium (automatic) and manual adjustment workflows.
+for both the Visium (automatic) and manual adjustment workflows. A manual download of this data is required; please see **Visium Directory Structure Details** below.
 
 For an example of working with high definition images that may require
 ROI alignment and or stitching, please see the Nanostring CosMx lung
 data
 `analysis <../datasets/Nanostring_Lung12_jan26_21.html>`__.
+
+.. container:: cell
+
+   .. code:: r
+      
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
+
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
+
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
 
 2 Conceptual Overview
 =====================
@@ -246,6 +267,7 @@ In this example, the hires image will be plotted.
    .. code:: r
 
       library(Giotto)
+      library(GiottoData)
 
       VisiumDir = '/path/to/visium/directory/'
       results_directory = paste0(getwd(),'/gobject_imaging_results/')

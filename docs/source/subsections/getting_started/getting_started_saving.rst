@@ -18,6 +18,27 @@ as the default saving methods built into R/Rstudio may be emphasized
 here. Note that for plotting functions, all parameters available to the
 *save_param* argument may be found by running **showSaveParameters()**.
 
+.. container:: cell
+
+   .. code:: r
+    
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
+
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
+
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
+
 2 Creating the Giotto Object without Instructions:
 ==================================================
 
@@ -31,12 +52,7 @@ working with a **giottoObject** that has been provided instructions.
    .. code:: r
 
       library(Giotto)
-
-      genv_exists = checkGiottoEnvironment()
-      if(!genv_exists){
-        # The following command need only be run once to install the Giotto environment.
-        installGiottoEnvironment()
-      }
+      library(GiottoData)
 
       data_directory = paste0(getwd(),'/')
 

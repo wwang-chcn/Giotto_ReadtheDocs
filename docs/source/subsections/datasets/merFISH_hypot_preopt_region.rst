@@ -11,6 +11,27 @@ Please check the version you are using to get the same results.
 Clustering, 3D visualization, and cell type identification of clusters
 using marker genes will be explored in this tutorial.
 
+.. container:: cell
+
+   .. code:: r
+      
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
+
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
+
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
+
 Start Giotto
 ============
 
@@ -19,6 +40,7 @@ Start Giotto
    .. code:: r
 
       library(Giotto)
+      library(GiottoData)
 
       # Specify path from which data may be retrieved/stored
       data_directory = paste0(getwd(),'/gobject_visual_data/')
@@ -27,13 +49,6 @@ Start Giotto
       # Specify path to which results may be saved
       results_directory = paste0(getwd(),'/gobject_visual_results/') 
       # alternatively, "/path/to/store/the/results/"
-
-      # Ensure Giotto environment lives local to the machine
-      genv_exists = checkGiottoEnvironment()
-      if(!genv_exists){
-        # The following command need only be run once to install the Giotto environment.
-        installGiottoEnvironment()
-      }
 
       # Optional: Specify a path to a Python executable within a conda or miniconda 
       # environment. If set to NULL (default), the Python executable within the previously

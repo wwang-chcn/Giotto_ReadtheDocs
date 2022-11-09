@@ -7,30 +7,27 @@ mini_seqfish
 Start Giotto
 ============
 
-To run the current vignette you need to install the Giotto Suite branch.
-
 .. container:: cell
 
    .. code:: r
 
-      if (!"Giotto" %in% installed.packages()) {
-        remotes::install_github("drieslab/Giotto@suite")
-      } 
-      library(Giotto)
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
 
-Install Python modules
-----------------------
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
 
-To run this vignette you need to install all the necessary Python
-modules.
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
 
-1. This can be done manually, see
-   https://rubd.github.io/Giotto_site/articles/installation_issues.html#python-manual-installation
-
-2. This can be done within R using our installation tools
-   (installGiottoEnvironment), see
-   https://rubd.github.io/Giotto_site/articles/tut0_giotto_environment.html
-   for more information.
 
 Set Giotto instructions (optional)
 ----------------------------------
@@ -38,7 +35,10 @@ Set Giotto instructions (optional)
 .. container:: cell
 
    .. code:: r
-
+      
+      library(Giotto)
+      library(GiottoData)
+      
       # to automatically save figures in save_dir set save_plot to TRUE
       temp_dir = getwd()
       myinstructions = createGiottoInstructions(save_dir = temp_dir, 

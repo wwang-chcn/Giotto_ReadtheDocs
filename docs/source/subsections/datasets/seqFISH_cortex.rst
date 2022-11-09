@@ -10,12 +10,23 @@ Start Giotto
 .. container:: cell
 
    .. code:: r
+      
+      # Ensure Giotto Suite is installed.
+      if(!"Giotto" %in% installed.packages()) {
+        devtools::install_github("drieslab/Giotto@Suite")
+      }
 
-      if (!"Giotto" %in% installed.packages()) {
-        remotes::install_github("drieslab/Giotto@suite")
-      } 
+      # Ensure GiottoData, a small, helper module for tutorials, is installed.
+      if(!"GiottoData" %in% installed.packages()) {
+        devtools::install_github("drieslab/GiottoData")
+      }
 
-      library(Giotto)
+      # Ensure the Python environment for Giotto has been installed.
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
 
 Dataset Explanation
 ===================
@@ -34,6 +45,9 @@ Download Data
 .. container:: cell
 
    .. code:: r
+
+      library(Giotto)
+      library(GiottoData)
 
       my_working_dir = '/path/to/directory/'
       getSpatialDataset(dataset = 'seqfish_SS_cortex', directory = my_working_dir, method = 'wget')
