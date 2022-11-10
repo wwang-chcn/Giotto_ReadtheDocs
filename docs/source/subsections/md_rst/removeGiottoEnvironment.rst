@@ -32,4 +32,4 @@ Details
 =======
 
 Removes a previously installed giotto environment. See
-```installGiottoEnvironment`` <#installgiottoenvironment>`__ .
+`installGiottoEnvironment <../md_rst/installGiottoEnvironment.html>`__.
