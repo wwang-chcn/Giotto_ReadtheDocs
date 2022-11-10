@@ -56,7 +56,7 @@ environment is installed it will be automatically detected when you run
 the Giotto toolbox. If you want to use your own python path then you can
 set the python_path in the
 `createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__ and provide
-the instructions to the `createGiottoObject <../md_rst/createGiottoObjects.html>`__
+the instructions to the `createGiottoObject <../md_rst/createGiottoObject.html>`__
 function.
 
 Value
