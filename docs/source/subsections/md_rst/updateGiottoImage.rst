@@ -93,6 +93,7 @@ a giotto object or an updated giotto image object if return_gobject = F
 Seealso
 =======
 
-Other basic image functions: ```addGiottoImage`` <#addgiottoimage>`__ ,
-```plotGiottoImage`` <#plotgiottoimage>`__ ,
-```reconnectGiottoImage`` <#reconnectgiottoimage>`__
+Other basic image functions: 
+`addGiottoImage <../md_rst/addGiottoImage.html>`__
+`plotGiottoImage <../md_rst/plotGiottoImage.html>`__
+`reconnectGiottoImage <../md_rst/reconnectGiottoImage.html>`__
