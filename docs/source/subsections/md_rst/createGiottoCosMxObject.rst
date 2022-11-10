@@ -70,35 +70,35 @@ given a link to a cosmx output directory. It expects the following items
 within the directory where the bolded portions are what this function
 matches against:
 
--  list(list(“CellComposite�), � (folder of images)“)
+-  list(list(â€œCellCompositeâ€), â€ (folder of images)â€œ)
 
--  list(list(“CellLabels�), � (folder of images)“)
+-  list(list(â€œCellLabelsâ€), â€ (folder of images)â€œ)
 
--  list(list(“CellOverlay�), � (folder of images)“)
+-  list(list(â€œCellOverlayâ€), â€ (folder of images)â€œ)
 
--  list(list(“CompartmentLabels�), � (folder of images)“)
+-  list(list(â€œCompartmentLabelsâ€), â€ (folder of images)â€œ)
 
--  list(“experimentname\_�, list(“exprMat_file�), “.csv (file)�)
+-  list(â€œexperimentname\_â€, list(â€œexprMat_fileâ€), â€œ.csv (file)â€)
 
--  list(“experimentname\_�, list(“fov_positions_file�), “.csv (file)�)
+-  list(â€œexperimentname\_â€, list(â€œfov_positions_fileâ€), â€œ.csv (file)â€)
 
--  list(“experimentname\_�, list(“metadata_file�), “.csv (file)�)
+-  list(â€œexperimentname\_â€, list(â€œmetadata_fileâ€), â€œ.csv (file)â€)
 
--  list(“experimentname\_�, list(“tx_file�), “.csv (file)�)
+-  list(â€œexperimentname\_â€, list(â€œtx_fileâ€), â€œ.csv (file)â€)
 
 [ Workflows ] Workflow to use is accessed through the data_to_use param
 
--  list(“‘all’ - loads and requires subcellular information from tx_file
-   and fov_positions_file:raw-latex:`\n`�, � and also the existing
+-  list(â€œâ€˜allâ€™ - loads and requires subcellular information from tx_file
+   and fov_positions_file:raw-latex:`\n`â€, â€ and also the existing
    aggregated information (expression, spatial locations, and
-   metadata):raw-latex:`\n`“,� from exprMat_file and metadata_file.�)
+   metadata):raw-latex:`\n`â€œ,â€ from exprMat_file and metadata_file.â€)
 
--  list(“‘subcellular’ - loads and requires subcellular information from
-   tx_file and:raw-latex:`\n`�, � fov_positions_file only.�)
+-  list(â€œâ€˜subcellularâ€™ - loads and requires subcellular information from
+   tx_file and:raw-latex:`\n`â€, â€ fov_positions_file only.â€)
 
--  list(“‘aggregate’ - loads and requires the existing aggregate
-   information (expression,:raw-latex:`\n`�, � spatial locations, and
-   metadata) from exprMat_file and metadata_file.�)
+-  list(â€œâ€˜aggregateâ€™ - loads and requires the existing aggregate
+   information (expression,:raw-latex:`\n`â€, â€ spatial locations, and
+   metadata) from exprMat_file and metadata_file.â€)
 
 [ Images ] Images in the default CellComposite, CellLabels,
 CompartmentLabels, and CellOverlay folders will be loaded as giotto
@@ -106,7 +106,7 @@ largeImage objects in all workflows as long as they are available.
 Additionally, CellComposite images will be converted to giotto image
 objects, making plotting with these image objects more responsive when
 accessing them from a server.
-```showGiottoImageNames`` <#showgiottoimagenames>`__ can be used to see
+`showGiottoImageNames <../md_rst/showGiottoImageNames.html>`__ can be used to see
 the available images.
 
 Value
