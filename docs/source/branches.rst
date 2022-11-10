@@ -17,7 +17,7 @@ Giotto Suite
 The suite branch of Giotto is the new and extended version of Giotto released in 2022. Giotto Suite will be actively developed and supported in the future. Click the logo below to learn more about the Giotto Suite branch.
 
 .. image:: images/GiottoLogo.png
-   :target: www.giottosuite.com
+   :target: https://giottosuite.readthedocs.io/en/latest/#
    :width: 200
 
 
