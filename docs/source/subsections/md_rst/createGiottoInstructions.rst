@@ -80,5 +80,6 @@ named vector with giotto instructions
 Seealso
 =======
 
+
 More online information can be found here
-https://rubd.github.io/Giotto_site/articles/instructions_and_plotting.html
+https://giottosuite.readthedocs.io/en/latest/subsections/getting_started/visualizations.html
