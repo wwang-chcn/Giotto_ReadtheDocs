@@ -65,4 +65,4 @@ Arguments
 Seealso
 =======
 
-```smoothGiottoPolygons`` <#smoothgiottopolygons>`__
+`smoothGiottoPolygons <../md_rst/smoothGiottoPolygons.html>`__
