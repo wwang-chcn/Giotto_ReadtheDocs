@@ -34,16 +34,16 @@ Value
 
 prints names of available giotto image objects
 
-Seealso
+See also
 =======
 
 Other functions to show data in giotto object:
-```showGiottoDimRed`` <#showgiottodimred>`__ ,
-```showGiottoExpression`` <#showgiottoexpression>`__ ,
-```showGiottoFeatInfo`` <#showgiottofeatinfo>`__ ,
-```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
-```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,
-```showGiottoSpatGrids`` <#showgiottospatgrids>`__ ,
-```showGiottoSpatLocs`` <#showgiottospatlocs>`__ ,
-```showGiottoSpatNetworks`` <#showgiottospatnetworks>`__ ,
-```showGiottoSpatialInfo`` <#showgiottospatialinfo>`__
+`showGiottoDimRed <../md_rst/showGiottoDimRed.html>`__
+`showGiottoExpression <../md_rst/showGiottoExpression.html>`__
+`showGiottoFeatInfo <../md_rst/showGiottoFeatInfo.html>`__
+`showGiottoNearestNetworks <../md_rst/showGiottoNearestNetworks.html>`__
+`showGiottoSpatEnrichments <../md_rst/showGiottoSpatEnrichments.html>`__
+`showGiottoSpatGrids <../md_rst/showGiottoSpatGrids.html>`__
+`showGiottoSpatLocs <../md_rst/showGiottoSpatLocs.html>`__
+`showGiottoSpatNetworks <../md_rst/showGiottoSpatNetworks.html>`__
+`showGiottoSpatialInfo <../md_rst/showGiottoSpatialInfo.html>`__
