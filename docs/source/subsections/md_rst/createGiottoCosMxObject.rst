@@ -70,21 +70,21 @@ given a link to a cosmx output directory. It expects the following items
 within the directory where the bolded portions are what this function
 matches against:
 
--  list(list(â€œCellCompositeâ€), â€ (folder of images)â€œ)
+- list(list(“CellComposite?), ? (folder of images)“)
 
--  list(list(â€œCellLabelsâ€), â€ (folder of images)â€œ)
+- list(list(“CellLabels?), ? (folder of images)“)
 
--  list(list(â€œCellOverlayâ€), â€ (folder of images)â€œ)
+- list(list(“CellOverlay?), ? (folder of images)“)
 
--  list(list(â€œCompartmentLabelsâ€), â€ (folder of images)â€œ)
+- list(list(“CompartmentLabels?), ? (folder of images)“)
 
--  list(â€œexperimentname\_â€, list(â€œexprMat_fileâ€), â€œ.csv (file)â€)
+- list(“experimentname_?, list(“exprMat_file?), “.csv (file)?)
 
--  list(â€œexperimentname\_â€, list(â€œfov_positions_fileâ€), â€œ.csv (file)â€)
+- list(“experimentname_?, list(“fov_positions_file?), “.csv (file)?)
 
--  list(â€œexperimentname\_â€, list(â€œmetadata_fileâ€), â€œ.csv (file)â€)
+- list(“experimentname_?, list(“metadata_file?), “.csv (file)?)
 
--  list(â€œexperimentname\_â€, list(â€œtx_fileâ€), â€œ.csv (file)â€)
+- list(“experimentname_?, list(“tx_file?), “.csv (file)?)
 
 [ Workflows ] Workflow to use is accessed through the data_to_use param
 
