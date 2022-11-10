@@ -88,17 +88,11 @@ matches against:
 
 [ Workflows ] Workflow to use is accessed through the data_to_use param
 
--  list(â€œâ€˜allâ€™ - loads and requires subcellular information from tx_file
-   and fov_positions_file:raw-latex:`\n`â€, â€ and also the existing
-   aggregated information (expression, spatial locations, and
-   metadata):raw-latex:`\n`â€œ,â€ from exprMat_file and metadata_file.â€)
+- list(“‘all’ - loads and requires subcellular information from tx_file and fov_positions_file:raw-latex:n?, ? and also the existing aggregated information (expression, spatial locations, and metadata):raw-latex:n“,? from exprMat_file and metadata_file.?)
 
--  list(â€œâ€˜subcellularâ€™ - loads and requires subcellular information from
-   tx_file and:raw-latex:`\n`â€, â€ fov_positions_file only.â€)
+- list(“‘subcellular’ - loads and requires subcellular information from tx_file and:raw-latex:n?, ? fov_positions_file only.?)
 
--  list(â€œâ€˜aggregateâ€™ - loads and requires the existing aggregate
-   information (expression,:raw-latex:`\n`â€, â€ spatial locations, and
-   metadata) from exprMat_file and metadata_file.â€)
+- list(“‘aggregate’ - loads and requires the existing aggregate information (expression,:raw-latex:n?, ? spatial locations, and metadata) from exprMat_file and metadata_file.?)
 
 [ Images ] Images in the default CellComposite, CellLabels,
 CompartmentLabels, and CellOverlay folders will be loaded as giotto
