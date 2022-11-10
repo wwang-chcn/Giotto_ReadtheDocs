@@ -32,4 +32,4 @@ Details
 =======
 
 Checks if a miniconda giotto environment can be found. Can be installed
-with ```installGiottoEnvironment`` <#installgiottoenvironment>`__ .
+with `installGiottoEnvironment <../md_rst/installGiottoEnvironment.html>`__ .
