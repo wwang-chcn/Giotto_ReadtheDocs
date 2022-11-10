@@ -62,9 +62,10 @@ Arguments
 |                               | object specific plotting functions   |
 +-------------------------------+--------------------------------------+
 
-Seealso
+See also
 =======
 
-Other basic image functions: ```addGiottoImage`` <#addgiottoimage>`__ ,
-```reconnectGiottoImage`` <#reconnectgiottoimage>`__ ,
-```updateGiottoImage`` <#updategiottoimage>`__
+Other basic image functions: 
+`addGiottoImage <../md_rst/addGiottoImage.html>`__
+`reconnectGiottoImage <../md_rst/reconnectGiottoImage.html>`__
+`updateGiottoImage <../md_rst/updateGiottoImage.html>`__

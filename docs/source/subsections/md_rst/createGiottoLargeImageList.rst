@@ -70,7 +70,7 @@ Arguments
 Details
 =======
 
-See ```createGiottoLargeImage`` <#creategiottolargeimage>`__
+See `createGiottoLargeImage <../md_rst/createGiottoLargeImage.html>`__
 
 Value
 =====

@@ -3,49 +3,58 @@ Giotto Suite
 ##########################################
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 4
    :caption: General
    :hidden:
  
+   Branches <branches.rst>
    Getting Started <gettingstarted.rst> 
    Documentation <documentation.rst>
-   Giotto in the Cloud <subsections/trygiotto/terra.rst>
    Contribute <contribute.rst> 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Guides
+   :maxdepth: 1
+   :caption: Tutorials
    :hidden:
 
    Tutorials <datasets.rst> 
-   FAQs <faqs> 
-   Try Giotto <trygiotto.rst>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Try Giotto in the Cloud
+   :hidden:
+
+   Terra.bio </subsections/trygiotto/terra.rst> 
+   Binder </subsections/trygiotto/binder.rst> 
+   Docker </subsections/trygiotto/docker.rst> 
    
 .. toctree::
    :maxdepth: 1
    :caption: Issues
    :hidden:
    
+   FAQs <faqs.rst> 
    Troubleshooting <errorsfaqsandtips.rst>
    Report a Bug <github_issues.rst>
-   
+
 .. toctree::
    :maxdepth: 1
-   :caption: Changelog
+   :caption: Updates
    :hidden:
-   
+ 
    Changelog <additionalinformation.rst>
-
+   News </subsections/datasets/giotto_news.rst> 
+   
 .. image:: images/index/GiottoSuiteWebsite-07.svg
    :align: center
-   :target: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2
+   :target: https://github.com/drieslab/Giotto/tree/suite
    
 An open-source and technology-agnostic spatial multi-omics analysis platform 
 ============================================================================
 
 Giotto Suite is a collection of open source software tools, including data structures and methods, for the comprehensive analysis and visualization of spatial multi-omics data at multiple scales and resolutions. It extends and improves our previous R package `Giotto`_. The underlying framework of Giotto Suite is generalizable to virtually all current and emerging spatial technologies which may differ in resolution (e.g. subcellular, single cell, or multiple cells), spatial dimension (i.e. 2D vs. 3D), molecular modality (e.g. protein, RNA, DNA, …), and throughput (i.e. number of cells and analytes). Giotto Suite is designed to ensure spatial analysis solutions remain compatible with current and future spatial -omics technologies and platforms. It will also aid in the further integration of spatial -omics with external analysis pipelines and tools.
 
-.. _Giotto: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2
+.. _Giotto: https://github.com/drieslab/Giotto/tree/suite
 
 The source code for Giotto Suite may be found on our `GitHub repository <https://github.com/drieslab/Giotto/tree/suite>`_.
 
@@ -113,7 +122,7 @@ Authors and Developers
 +------------------------+---------------------+
 | Emma Kelley            |*Author*             |
 +------------------------+---------------------+
-| Junxiang Xu            |*Author*             |
+| `Junxiang Xu`_         |*Author*             |
 +------------------------+---------------------+
 | `Guo-Cheng Yuan`_      |*Author*             |
 +------------------------+---------------------+
@@ -128,6 +137,7 @@ Authors and Developers
 
 .. _Ruben Dries: https://www.drieslab.com
 .. _Jiaji George Chen: https://github.com/jiajic
+.. _Junxiang Xu: https://github.com/JunxiangXu
 .. _Guo-Cheng Yuan: https://labs.icahn.mssm.edu/yuanlab
 .. _Joselyn Chávez: https://twitter.com/josschavezf1
 .. _Matthew O'Brien: https://github.com/mattobny

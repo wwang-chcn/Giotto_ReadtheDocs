@@ -73,9 +73,10 @@ Value
 
 a giotto object with updated image pointer
 
-Seealso
+See also
 =======
 
-Other basic image functions: ```addGiottoImage`` <#addgiottoimage>`__ ,
-```plotGiottoImage`` <#plotgiottoimage>`__ ,
-```updateGiottoImage`` <#updategiottoimage>`__
+Other basic image functions: 
+`addGiottoImage <../md_rst/addGiottoImage.html>`__
+`plotGiottoImage <../md_rst/plotGiottoImage.html>`__
+`updateGiottoImage <../md_rst/updateGiottoImage.html>`__

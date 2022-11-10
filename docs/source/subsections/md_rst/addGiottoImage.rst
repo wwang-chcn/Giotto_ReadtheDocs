@@ -57,9 +57,10 @@ Value
 
 an updated Giotto object with access to the list of images
 
-Seealso
+See also
 =======
 
-Other basic image functions: ```plotGiottoImage`` <#plotgiottoimage>`__
-, ```reconnectGiottoImage`` <#reconnectgiottoimage>`__ ,
-```updateGiottoImage`` <#updategiottoimage>`__
+Other basic image functions:
+`plotGiottoImage <../md_rst/updateGiottoImage.html>`__
+`reconnectGiottoImage <../md_rst/updateGiottoImage.html>`__
+`updateGiottoImage <../md_rst/updateGiottoImage.html>`__

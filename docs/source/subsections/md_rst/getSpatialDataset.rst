@@ -39,6 +39,6 @@ Arguments
 | ``directory``                 | directory to save the data to        |
 +-------------------------------+--------------------------------------+
 | ``list()``                    | additional parameters to             |
-|                               | ``                                   |
-|                               | `download.file`` <#download.file>`__ |
+|                               | download file                        |
+|                               |                                      |
 +-------------------------------+--------------------------------------+
