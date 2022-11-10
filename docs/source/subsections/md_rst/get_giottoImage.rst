@@ -32,7 +32,7 @@ Arguments
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
 | ``image_type``                | type of giotto image object. Either  |
-|                               | “image� or “largeImage�              |
+|                               | â€œimageâ€ or â€œlargeImageâ€              |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name of a giotto image object        |
 |                               | ```showGiottoIma                     |
@@ -51,12 +51,12 @@ Other image data accessor functions:
 ```set_giottoImage`` <#setgiottoimage>`__
 
 Other functions to get data from giotto object:
-```get_NearestNetwork`` <#getnearestnetwork>`__ ,
-```get_dimReduction`` <#getdimreduction>`__ ,
-```get_expression_values`` <#getexpressionvalues>`__ ,
-```get_feature_info`` <#getfeatureinfo>`__ ,
-```get_polygon_info`` <#getpolygoninfo>`__ ,
-```get_spatialGrid`` <#getspatialgrid>`__ ,
-```get_spatialNetwork`` <#getspatialnetwork>`__ ,
-```get_spatial_enrichment`` <#getspatialenrichment>`__ ,
-```get_spatial_locations`` <#getspatiallocations>`__
+`get_NearestNetwork <../md_rst/get_NearestNetwork.html>`__
+`get_dimReduction <../md_rst/get_dimReduction.html>`__
+`get_expression_values <../md_rst/get_expression_values.html>`__
+`get_feature_info <../md_rst/get_feature_info.html>`__
+`get_polygon_info <../md_rst/get_polygon_info.html>`__
+`get_spatialGrid <../md_rst/get_spatialGrid.html>`__
+`get_spatialNetwork <../md_rst/get_spatialNetwork.html>`__
+`get_spatial_enrichment <../md_rst/get_spatial_enrichment.html>`__
+`get_spatial_locations <../md_rst/get_spatial_locations.html>`__
