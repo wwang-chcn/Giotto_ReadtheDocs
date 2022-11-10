@@ -63,45 +63,57 @@ The following tutorials use data which is stored within a helper extension of Gi
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_configuration.png
-			:target: ./subsections/getting_started/configuration.html
-
+	    :target: ./subsections/getting_started/configuration.html
+	    width: 200
+	    height: 200
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_giotto.png
             :target: ./subsections/getting_started/getting_started_gobject.html
+	    width: 200
+	    height: 200
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_processing.png
             :target: ./subsections/getting_started/data_processing.html
+	    width: 200
+	    height: 200
 
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_clustering.png
             :target: ./subsections/getting_started/dimension_reduction.html
-
+	    width: 200
+	    height: 200
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_images.png
             :target: ./subsections/getting_started/getting_started_images.html
-
+	    width: 200
+	    height: 200
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_visualizations.png
             :target: ./subsections/getting_started/visualizations.html
-
+	    width: 200
+	    height: 200
 
     .. grid-item-card::
 
         .. image:: images/getting_started/icons_saving.png
             :target: ./subsections/getting_started/getting_started_saving.html
-
+	    width: 200
+	    height: 200
+	    
     .. grid-item-card::
 
         .. image:: images/dataset_page/interactive_selection_image_summary.png
             :target: ./subsections/getting_started/interactive_selection.html
+	    width: 200
+	    height: 200
