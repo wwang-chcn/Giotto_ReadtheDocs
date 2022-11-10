@@ -20,6 +20,8 @@ Click the buttons above to learn more about the models or test them out!
 
 .. Sphinx-Design formatting: https://sphinx-design.readthedocs.io/en/latest/badges_buttons.html
 
+If you are interested in a specific analysis, please follow the steps described in our `Current Protocols <subsections/trygiotto/currentprotocols.rst>`_.
+
 **************************************
 Example Of Running A Binder Notebook
 **************************************
