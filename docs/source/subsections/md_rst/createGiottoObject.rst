@@ -109,10 +109,11 @@ Arguments
 Details
 =======
 
-See http://giottosuite.com/articles/getting_started_gobject.html for
-more details
+See https://giottosuite.readthedocs.io/en/latest/subsections/getting_started/getting_started_gobject.html for
+more details.
 
-[ Requirements ] To create a giotto object you need to provide at least
+`Requirements`
+To create a giotto object you need to provide at least
 a matrix with genes as row names and cells as column names. This matrix
 can be provided as a base matrix, sparse Matrix, data.frame, data.table
 or as a path to any of those. To include spatial information about cells
@@ -121,27 +122,32 @@ path to them) with coordinates for all spatial dimensions. This can be
 2D (x and y) or 3D (x, y, x). The row order for the cell coordinates
 should be the same as the column order for the provided expression data.
 
-[ Instructions ] Additionally an instruction file, generated manually or
-with ```createGiottoInstructions`` <#creategiottoinstructions>`__ can be
+`Instructions`
+Additionally an instruction file, generated manually or
+with `createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__ can be
 provided to instructions, if not a default instruction file will be
 created for the Giotto object.
 
-[ Multiple fields ] In case a dataset consists of multiple fields, like
+`Multiple fields`
+In case a dataset consists of multiple fields, like
 seqFISH+ for example, an offset file can be provided to stitch the
 different fields together.
-```stitchFieldCoordinates`` <#stitchfieldcoordinates>`__ can be used to
+`stitchFieldCoordinates <../md_rst/stitchFieldCoordinates.html>`__ can be used to
 generate such an offset file.
 
-[ Processed data ] Processed count data, such as normalized data, can be
+`Processed data`
+Processed count data, such as normalized data, can be
 provided using one of the different expression slots (norm_expr,
 norm_scaled_expr, custom_expr).
 
-[ Metadata ] Cell and gene metadata can be provided using the cell and
+`Metadata`
+Cell and gene metadata can be provided using the cell and
 gene metadata slots. This data can also be added afterwards using the
-```addFeatMetadata`` <#addfeatmetadata>`__ or
-```addCellMetadata`` <#addcellmetadata>`__ functions.
+`addFeatMetadata <../md_rst/addFeatMetadata.html>`__ or
+`addCellMetadata <../md_rst/addCellMetadata.html>`__ functions.
 
-[ Other information ] Additional information can be provided through the
+`Other information`
+Additional information can be provided through the
 appropriate slots:
 
 -  spatial networks
