@@ -8,7 +8,7 @@ Dataset explanation
 ===================
 
 Stereo-seq is a sequencing-based spatial transcriptomics technology that
-was used by Chen et al. in 2022
+was developed and used by Chen et al. in 2022
 (https://doi.org/10.1016/j.cell.2022.04.003) to generate the Mouse
 Organogenesis Spatiotemporal Transcriptomic Atlas (MOSTA). This tutorial
 demonstrates how to interactively filter and analyze the third sagittal
@@ -26,13 +26,12 @@ and were downloaded from the following original sources:
    (https://db.cngb.org/stomics/mosta/download.html)
 
 An adapted version of the STOMICS Analysis Workflow (SAW) pipeline
-(https://github.com/BGIResearch/SAW) was run on these input files using
-the Boston University Shared Computed Clustering (SCC). The output of
-the SAW pipeline is an \*.h5ad file at a specific aggregated square bin
-size. In this tutorial, a sample with an aggregated bin size of 200 is
-used. The cell, feat, expression, and spatial location matrix files from
-the E12.5_E1S3.h5ad file were extracted and used to create a Giotto
-object to begin this tutorial.
+(https://github.com/BGIResearch/SAW) was run on these input files to
+process these files. The output of the SAW pipeline is an \*.h5ad file
+at a specific aggregated square bin size. In this tutorial, a sample
+with an aggregated bin size of 200 is used. The cell, feat, expression,
+and spatial location matrix files from the E12.5_E1S3.h5ad file were
+extracted and are used to create a Giotto object to begin this tutorial.
 
 Start Giotto
 ============
@@ -48,11 +47,6 @@ Start Giotto
         devtools::install_github("drieslab/Giotto@Suite")
       }
 
-      # Ensure GiottoData, a small helper module for tutorials, is installed.
-      if(!"GiottoData" %in% installed.packages()) {
-        devtools::install_github("drieslab/GiottoData")
-      }
-
       # Ensure the Python environment for Giotto has been installed.
       genv_exists = checkGiottoEnvironment()
       if(!genv_exists){
@@ -66,16 +60,17 @@ Start Giotto
 .. container:: cell
 
    .. code:: r
-      # Download exp matrix
+
+      # Download gene expression matrix for E12.5_E1S3
       expression_file = 'https://zenodo.org/record/7312096/files/E12.5_E1S3_bin200_exp.rds?download=1'
       download.file(expression_file, 'E12.5_E1S3_bin200.rds')
       exp = readRDS("E12.5_E1S3_bin200.rds")
 
-      # Download spatial_locs matrix
+      # Download spatial_locs matrix for E12.5_E1S3
       spat_locs_file = 'https://zenodo.org/record/7312096/files/E12.5_E1S3_bin200_spatial_locs.csv?download=1'
       download.file(spat_locs_file, 'E12.5_E1S3_bin200.csv')
       spat_locs <- data.table::fread('E12.5_E1S3_bin200.csv')
-      spat_locs$cell_ID <- as.character(spat_locs$cell_ID) # int64 to char
+      spat_locs$cell_ID <- as.character(spat_locs$cell_ID)  #int64 to char type conversion
 
       # Create Giotto object
       stereo_go <- createGiottoObject(expression = exp, spatial_locs = spat_locs)
@@ -92,7 +87,7 @@ Start Giotto
       stereo_go <- stereo_go %>% filterGiotto(expression_threshold = 1,
                                                feat_det_in_min_cells = 5,
                                                min_det_feats_per_cell = 750)
-      #normalize
+      # normalize
       stereo_go <- stereo_go %>% normalizeGiotto(scalefactor = 5000, verbose = T) 
 
       # add statistics
@@ -101,9 +96,6 @@ Start Giotto
       # make plot
       spatPlot2D(gobject = stereo_go, cell_color = "nr_feats", color_as_factor = F, point_size = 1.5, show_plot = T, save_plot = F)
 
-.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/1.png
-   :width: 50.0%
-   
 3. Dimension reduction
 ======================
 
@@ -126,12 +118,6 @@ Start Giotto
       screePlot(stereo_go, ncp = 30)
       plotPCA(stereo_go)
 
-.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/2.png
-   :width: 50.0%
-
-.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/3.png
-   :width: 50.0%
-
 -  run UMAP and/or TSNE on PCs (or directly on matrix)
 
 .. container:: cell
@@ -143,18 +129,12 @@ Start Giotto
       plotUMAP(gobject = stereo_go,
                cell_color = 'nr_feats', color_as_factor = F, point_size = 2)
 
-.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/4.png
-   :width: 50.0%
-
 .. container:: cell
 
    .. code:: r
 
       stereo_go = stereo_go %>% runtSNE(dimensions_to_use = 1:30)
       plotTSNE(gobject = stereo_go)
-
-.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/5.png
-   :width: 50.0%
 
 4. Clustering
 =============
@@ -191,27 +171,18 @@ Start Giotto
       plotUMAP(gobject = stereo_go, cell_color = 'leiden_clus_m', point_size = 2.5,
                show_NN_network = F, edge_alpha = 0.05)
 
-.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/6.png
-   :width: 50.0%
-
-.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/7.png
-   :width: 50.0%
-
 5. Co-Visualization
 ===================
 
--co-visualize expression and spatial data
+-  co-visualize expression UMAP and spatial data clusters
 
 .. container:: cell
 
    .. code:: r
 
       spatDimPlot2D(gobject = stereo_go, cell_color = 'leiden_clus_m',
-                    dim_point_size = 2, spat_point_size = 2,
+                    dim_point_size = 1.5, spat_point_size = 1.5,
                     show_plot = T, return_plot = F)
-
-.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/8.png
-   :width: 50.0%
 
 6. Spatial Genes
 ================
@@ -280,6 +251,3 @@ Start Giotto
                                 show_plot = FALSE,
                                 point_size = 1.5,
                                 save_plot = FALSE)
-
-.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/9.png
-   :width: 50.0%
