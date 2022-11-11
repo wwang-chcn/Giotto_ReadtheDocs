@@ -150,7 +150,7 @@ Start Giotto
 
 -  create a shared (default) nearest network in PCA space (or directly
    on matrix)
--  cluster on nearest network with Leiden or Louvan (kmeans and hclust
+-  cluster on nearest network with Leiden or Louvian (kmeans and hclust
    are alternatives)
 
 .. container:: cell
