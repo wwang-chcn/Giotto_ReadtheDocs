@@ -8,5 +8,5 @@ News
 November 11 2022
 ================
 
-Giotto is awarded Essential Open Source Software (EOSS) award from the Chan Zuckerberg Initiative (CZI) in Round 5.
+Giotto receives grant from the Essential Open Source Software for Science (EOSS) program from the Chan Zuckerberg Initiative (CZI) in Round 5.
 https://chanzuckerberg.com/eoss/proposals/enhancing-giotto-for-spatial-multi-resolution-technologies/
