@@ -40,7 +40,7 @@ Stereo-seq
 =================
 .. card-carousel:: 3
 
-    .. card:: Mouse Embryo E12.5_E1S3
+    .. card:: Mouse Embryo
         :link: /subsections/datasets/SSeq-E12-5_E1S3-Tutorial
         :link-type: doc
         
