@@ -21,7 +21,7 @@ Please check the version you are using to get the same results.
       if(!"GiottoData" %in% installed.packages()) {
         devtools::install_github("drieslab/GiottoData")
       }
-
+      library(Giotto)
       # Ensure the Python environment for Giotto has been installed.
       genv_exists = checkGiottoEnvironment()
       if(!genv_exists){
