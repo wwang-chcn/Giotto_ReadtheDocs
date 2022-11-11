@@ -96,6 +96,8 @@ Start Giotto
       # make plot
       spatPlot2D(gobject = stereo_go, cell_color = "nr_feats", color_as_factor = F, point_size = 1.5, show_plot = T, save_plot = F)
 
+.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/1.png
+
 3. Dimension reduction
 ======================
 
@@ -120,6 +122,9 @@ Start Giotto
 
 -  run UMAP and/or TSNE on PCs (or directly on matrix)
 
+.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/2.png
+.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/3.png
+
 .. container:: cell
 
    .. code:: r
@@ -129,12 +134,16 @@ Start Giotto
       plotUMAP(gobject = stereo_go,
                cell_color = 'nr_feats', color_as_factor = F, point_size = 2)
 
+.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/4.png
+
 .. container:: cell
 
    .. code:: r
 
       stereo_go = stereo_go %>% runtSNE(dimensions_to_use = 1:30)
       plotTSNE(gobject = stereo_go)
+
+.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/5.png
 
 4. Clustering
 =============
@@ -171,6 +180,10 @@ Start Giotto
       plotUMAP(gobject = stereo_go, cell_color = 'leiden_clus_m', point_size = 2.5,
                show_NN_network = F, edge_alpha = 0.05)
 
+.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/6.png
+
+.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/7.png
+
 5. Co-Visualization
 ===================
 
@@ -183,6 +196,8 @@ Start Giotto
       spatDimPlot2D(gobject = stereo_go, cell_color = 'leiden_clus_m',
                     dim_point_size = 1.5, spat_point_size = 1.5,
                     show_plot = T, return_plot = F)
+
+.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/8.png
 
 6. Spatial Genes
 ================
@@ -251,3 +266,5 @@ Start Giotto
                                 show_plot = FALSE,
                                 point_size = 1.5,
                                 save_plot = FALSE)
+
+.. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/9.png
