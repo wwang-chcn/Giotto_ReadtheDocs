@@ -40,7 +40,7 @@ Stereo-seq
 =================
 .. card-carousel:: 3
 
-    .. card:: Stereo-seq Mouse Embryo
+    .. card:: Stereo-seq Embryo
         :link: /subsections/datasets/SSeq-E12-5_E1S3-Tutorial
         :link-type: doc
         
@@ -63,7 +63,7 @@ Visium
 
         .. image:: images/dataset_page/visium_brain_image_summary.png
 
-    .. card:: Visium Prostate Integration
+    .. card:: Visium Integration
         :link: subsections/datasets/visium_prostate_integration
         :link-type: doc
 
@@ -78,7 +78,7 @@ Nanostring CosMx
 =================
 .. card-carousel:: 3
 
-    .. card:: Nanostring CosMx Lung
+    .. card::
         :link: subsections/datasets/Nanostring_Lung12_jan26_21
         :link-type: doc
 
@@ -88,7 +88,7 @@ MERFISH
 =================
 .. card-carousel:: 3
 
-    .. card:: MERFISH 
+    .. card:: 
         :link: /subsections/datasets/merFISH_hypot_preopt_region
         :link-type: doc
 
@@ -98,7 +98,7 @@ Vizgen
 =================
 .. card-carousel:: 3
         
-    .. card:: Vizgen Mouse Brain
+    .. card::
         :link: subsections/datasets/vizgen_mouse_brain
         :link-type: doc
 
@@ -126,7 +126,7 @@ osmFISH
 =================
 .. card-carousel:: 3
 
-    .. card:: osmFISH
+    .. card::
         :link: subsections/datasets/osmFISH_mouse_SS_cortex
         :link-type: doc
 
@@ -136,7 +136,7 @@ Resolve Biosciences
 ===================
 .. card-carousel:: 3
 
-    .. card:: Resolve Biosciences
+    .. card::
         :link: subsections/datasets/resolve_bc_210928
         :link-type: doc
 
@@ -151,7 +151,7 @@ CODEX
 
 .. card-carousel:: 3
 
-    .. card:: CODEX Mouse Spleen
+    .. card::
         :link: subsections/datasets/mouse_CODEX_spleen
         :link-type: doc
 
@@ -164,13 +164,13 @@ Single Cell RNA Sequencing
 
 .. card-carousel:: 3
 
-    .. card:: Single-Cell Prostate
+    .. card:: Prostate
         :link: subsections/datasets/singlecell_prostate_standard
         :link-type: doc
 
         .. image:: images/dataset_page/SC_RNAseq_standard.png
 
-    .. card:: Single-Cell Prostate Integration
+    .. card:: Prostate Integration
         :link: subsections/datasets/singlecell_prostate_integration
         :link-type: doc
 
@@ -183,7 +183,7 @@ Other Technologies
 
 .. card-carousel:: 3
 
-    .. card:: Other Technologies
+    .. card:: 
         :link: /subsections/datasets/other_technologies_coming_soon
         :link-type: doc
 
