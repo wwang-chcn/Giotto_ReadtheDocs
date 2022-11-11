@@ -43,7 +43,7 @@ Stereo-seq
     .. card::
         :link: /subsections/datasets/SSeq-E12-5_E1S3-Tutorial
         :link-type: doc
-
+        link-alt: Stereo-seq tutorial
         .. image:: images/dataset_page/Stereo-seq.png
 
 
