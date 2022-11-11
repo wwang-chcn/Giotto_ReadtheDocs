@@ -64,6 +64,7 @@ The following tutorials use data which is stored within a helper extension of Gi
 
         .. image:: images/getting_started/icons_configuration.png
 	    :target: ./subsections/getting_started/configuration.html
+	    :text-align: center
 
     .. grid-item-card:: Object & Classes
 
