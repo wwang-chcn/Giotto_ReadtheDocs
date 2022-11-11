@@ -1,5 +1,5 @@
 =======================
-getting_started_gobject
+Getting Started
 =======================
 
 :Date: 2022-10-12
