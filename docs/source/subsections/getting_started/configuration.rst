@@ -55,16 +55,16 @@ necessary:
 the time of this tutorial’s creation, the following versions are
 utilized:**
 
--  `Python <https://www.python.org/>`__ 3.6
--  `pandas <https://pandas.pydata.org/>`__ 1.1.5
--  `networkx <https://networkx.org/>`__ 2.6.3
--  `python-igraph <https://igraph.org/python/>`__ 0.9.6
--  `leidenalg <https://leidenalg.readthedocs.io/en/latest/>`__ 0.8.7
+-  `Python <https://www.python.org/>`__ 3.10.2
+-  `pandas <https://pandas.pydata.org/>`__ 1.5.1
+-  `networkx <https://networkx.org/>`__ 2.8.8
+-  `python-igraph <https://igraph.org/python/>`__ 0.10.2
+-  `leidenalg <https://leidenalg.readthedocs.io/en/latest/>`__ 0.9.0
 -  `python-louvain <https://python-louvain.readthedocs.io/en/latest/>`__
-   0.15
+   0.16
 -  `python.app <https://github.com/conda-forge/python.app-feedstock>`__
-   (Mac only) 2
--  `scikit-learn <https://scikit-learn.org/stable/>`__ 0.24.2
+   (Mac only) 1.4
+-  `scikit-learn <https://scikit-learn.org/stable/>`__ 1.1.3
 -  `smfishHmrf <https://pypi.org/project/smfishHmrf/>`__ 1.3.3
 
 2 Customizing the Giotto Installation
@@ -91,9 +91,6 @@ will identify the OS in use and install/not install packages
       ### intentionally commented out so that it will not run and overwrite the 
       ### default versions unless deliberately edited.
 
-
-      ### # Here, the only altered package version is pandas.
-      ### # It has been altered to the latest version at the time this tutorial was created.
       ### new_pkg_versions <- c('pandas==1.4.4',
       ###                       'networkx==2.6.3',
       ###                       'python-igraph==0.9.6',
@@ -107,7 +104,7 @@ will identify the OS in use and install/not install packages
       ### # run the following command as written.
       ### ############################
       ### installGiottoEnvironment(packages_to_install = new_pkg_versions,
-      ###                          python_version = '3.8') # Default is 3.6
+      ###                          python_version = '3.8') # Default is 3.10.2
 
 3 Using a non-default Conda Environment with Giotto
 ===================================================
@@ -223,17 +220,17 @@ provided here.
       if(retry_install){
         
         # Attempt to reinstall all packages.
-        pkgs_w_versions <- c('pandas==1.1.5',
-                           'networkx==2.6.3',
-                           'python-igraph==0.9.6',
-                           'leidenalg==0.8.7',
-                           'python-louvain==0.15',
-                           'scikit-learn==0.24.2',
-                           'python.app==2')
+        pkgs_w_versions <- c('pandas==1.5.1',
+                             'networkx==2.8.8',
+                             'python-igraph==0.10.2',
+                             'leidenalg==0.9.0',
+                             'python-louvain==0.16',
+                             'python.app==1.4',
+                             'scikit-learn==1.1.3')
         
         py_pkgs = c('pandas','networkx', 
                     'igraph', 'leidenalg',
-                    'community','sklearn','python.app')
+                    'python-louvain','scikit-learn','python.app')
         
         if(Sys.info()[['sysname']] != "Darwin"){
           pkgs_w_versions = pkgs_w_versions[!grepl(pattern = 'python.app', x = pkgs_w_versions)]
@@ -243,6 +240,10 @@ provided here.
         env_location <- reticulate::py_discover_config()$pythonhome
         partial_path_to_conda <- paste0(reticulate::miniconda_path(),'/envs/giotto_env')
         
+        py_lou = pkgs_w_versions[grepl(pattern = 'python-louvain',x = pkgs_w_versions)]
+        pip_packages = c("smfishhmrf", py_lou)
+        pkgs_w_versions = pkgs_w_versions[!grepl(pattern = 'python-louvain',x = pkgs_w_versions)]  
+
         if(.Platform[['OS.type']] == 'unix') {
           
           conda_full_path = paste0(partial_conda_path,'/','bin/conda')
@@ -260,7 +261,7 @@ provided here.
                                     python_version = 3.6)
           
           # Reinstall smfishhmrf with pip
-          reticulate::conda_install(packages = 'smfishhmrf==1.3.3',
+          reticulate::conda_install(packages = pip_packages,
                                     envname = env_location,
                                     method = 'conda',
                                     conda = conda_full_path,
@@ -284,7 +285,7 @@ provided here.
                                     channel = c('conda-forge', 'vtraag'))
           
           # Reinstall smfishhmrf with pip
-          reticulate::conda_install(packages = 'smfishhmrf==1.3.3',
+          reticulate::conda_install(packages = pip_packages,
                                     envname = env_location,
                                     method = 'conda',
                                     conda = conda_full_path,
