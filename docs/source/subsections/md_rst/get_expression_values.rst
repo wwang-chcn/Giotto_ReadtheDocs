@@ -49,10 +49,17 @@ Other expression accessor functions:
 
 Other functions to get data from giotto object:
 `get_NearestNetwork <../md_rst/get_NearestNetwork.html>`__
+
 `get_dimReduction <../md_rst/get_dimReduction.html>`__
+
 `get_feature_info <../md_rst/get_feature_info.html>`__
+
 `get_giottoImage <../md_rst/get_giottoImage.html>`__
+
 `get_polygon_info <../md_rst/get_polygon_info.html>`__
+
 `get_spatialGrid <../md_rst/get_spatialGrid.html>`__
+
 `get_spatialNetwork <../md_rst/get_spatialNetwork.html>`__
+
 `get_spatial_locations <../md_rst/get_spatial_locations.html>`__
