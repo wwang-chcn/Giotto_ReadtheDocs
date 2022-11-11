@@ -60,44 +60,44 @@ The following tutorials use data which is stored within a helper extension of Gi
 
 .. grid:: 4
 
-    .. grid-item-card::
+    .. grid-item-card:: Configuration
 
         .. image:: images/getting_started/icons_configuration.png
 	    :target: ./subsections/getting_started/configuration.html
 
-    .. grid-item-card::
+    .. grid-item-card:: Object & Classes
 
         .. image:: images/getting_started/icons_giotto.png
             :target: ./subsections/getting_started/getting_started_gobject.html
 
 
-    .. grid-item-card::
+    .. grid-item-card:: Data Processing
 
         .. image:: images/getting_started/icons_processing.png
             :target: ./subsections/getting_started/data_processing.html
 
 
-    .. grid-item-card::
+    .. grid-item-card:: Clustering
 
         .. image:: images/getting_started/icons_clustering.png
             :target: ./subsections/getting_started/dimension_reduction.html
 
-    .. grid-item-card::
+    .. grid-item-card:: Image Alignment
 
         .. image:: images/getting_started/icons_images.png
             :target: ./subsections/getting_started/getting_started_images.html
 
-    .. grid-item-card::
+    .. grid-item-card:: Visualizations
 
         .. image:: images/getting_started/icons_visualizations.png
             :target: ./subsections/getting_started/visualizations.html
 
-    .. grid-item-card::
+    .. grid-item-card:: Saving Objects
 
         .. image:: images/getting_started/icons_saving.png
             :target: ./subsections/getting_started/getting_started_saving.html
 	    
-    .. grid-item-card::
+    .. grid-item-card:: Interactive Selection
 
         .. image:: images/dataset_page/interactive_selection_image_summary.png
             :target: ./subsections/getting_started/interactive_selection.html
