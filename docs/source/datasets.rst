@@ -9,16 +9,17 @@ Tutorials
     :caption: Tutorials
     :hidden:
 
+    Stereo-Seq Mouse Embryo <subsections/datasets/SSeq-E12-5_E1S3-Tutorial>
+    Nanostring CosMx Lung <subsections/datasets/Nanostring_Lung12_jan26_21>
+    MERFISH <subsections/datasets/merFISH_hypot_preopt_region>
     Visium Mouse Kidney <subsections/datasets/mouse_visium_kidney>
     Visium Mouse Brain <subsections/datasets/mouse_visium_brain>
     Visium Prostate Integration <subsections/datasets/visium_prostate_integration>
     Mini SeqFISH <subsections/datasets/mini_seqFISH>
     SeqFISH+ Cortex <subsections/datasets/seqFISH_cortex>
     osmFISH SS Cortex <subsections/datasets/osmFISH_mouse_SS_cortex>
-    MERFISH <subsections/datasets/merFISH_hypot_preopt_region>
     Vizgen Brain <subsections/datasets/vizgen_mouse_brain>
     Resolve Biosciences <subsections/datasets/resolve_bc_210928> 
-    Nanostring CosMx Lung <subsections/datasets/Nanostring_Lung12_jan26_21>
     CODEX Spleen <subsections/datasets/mouse_CODEX_spleen>
     scRNA-seq Prostate <subsections/datasets/singlecell_prostate_standard>
     scRNA-seq Integration <subsections/datasets/singlecell_prostate_integration>
@@ -34,6 +35,25 @@ Please note that some of the tutorials do require a manual download from an exte
 ****************************
 Array Based
 ****************************
+
+Stereo-seq
+=================
+..
+    .. grid::
+
+    .. grid-item-card::
+
+        .. image:: images/dataset_page/Stereo-seq.png
+            :target: ./subsections/datasets/SSeq-E12-5_E1S3-Tutorial.html
+
+.. card-carousel:: 1
+
+    .. card::
+        :link: /subsections/datasets/SSeq-E12-5_E1S3-Tutorial
+        :link-type: doc
+
+        .. image:: images/dataset_page/Stereo-seq.png
+
 
 Visium datasets
 =================
