@@ -66,16 +66,6 @@ Start Giotto
 .. container:: cell
 
    .. code:: r
-
-      expression_file = 'https://zenodo.org/record/7312096/files/E12.5_E1S3_bin200_exp.rds?download=1'
-
-      spat_locs_file = 'https://zenodo.org/record/7312096/files/E12.5_E1S3_bin200_spatial_locs.csv?download=1'
-
-      expfile = download.file(expression_file, 'E12.5_E1S3_bin200.rds')
-
-      spatfile = download.file(spat_locs_file, 'E12.5_E1S3_bin200.csv')
-
-
       # Download exp matrix
       expression_file = 'https://zenodo.org/record/7312096/files/E12.5_E1S3_bin200_exp.rds?download=1'
       download.file(expression_file, 'E12.5_E1S3_bin200.rds')
