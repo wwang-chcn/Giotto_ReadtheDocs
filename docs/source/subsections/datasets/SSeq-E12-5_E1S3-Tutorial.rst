@@ -12,13 +12,13 @@ was used by Chen et al. in 2022
 (https://doi.org/10.1016/j.cell.2022.04.003) to generate the Mouse
 Organogenesis Spatiotemporal Transcriptomic Atlas (MOSTA). This tutorial
 demonstrates how to interactively filter and analyze the third sagittal
-section of a mouse embryo at embryonic day 11.5 (“E11.5_E1S3”) from
+section of a mouse embryo at embryonic day 12.5 (“E12.5_E1S3”) from
 MOSTA.
 
 Pre-processing
 ==============
 
-The necessary input files for sample E11.5_E1S3 are publicly available
+The necessary input files for sample E12.5_E1S3 are publicly available
 and were downloaded from the following original sources:
 
 1. FASTQ files (https://db.cngb.org/search/sample/?q=CNP0001543)
@@ -31,7 +31,7 @@ the Boston University Shared Computed Clustering (SCC). The output of
 the SAW pipeline is an \*.h5ad file at a specific aggregated square bin
 size. In this tutorial, a sample with an aggregated bin size of 200 is
 used. The cell, feat, expression, and spatial location matrix files from
-the E11.5_E1S3.h5ad file were extracted and used to create a Giotto
+the E12.5_E1S3.h5ad file were extracted and used to create a Giotto
 object to begin this tutorial.
 
 Start Giotto
