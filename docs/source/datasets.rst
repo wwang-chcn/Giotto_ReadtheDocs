@@ -43,7 +43,6 @@ Stereo-seq
     .. card::
         :link: /subsections/datasets/SSeq-E12-5_E1S3-Tutorial
         :link-type: doc
-        link-alt: Stereo-seq tutorial
         .. image:: images/dataset_page/Stereo-seq.png
 
 
@@ -51,7 +50,7 @@ Visium
 =================
 .. card-carousel:: 3
 
-    .. card::
+    .. card:: Visium Kidney
         :link: /subsections/datasets/mouse_visium_kidney
         :link-type: doc
 
@@ -74,6 +73,8 @@ Visium
 RNA Multiplex Imaging
 *********************
 
+Nanostring CosMx
+=================
 .. card-carousel:: 3
 
     .. card::
@@ -82,11 +83,19 @@ RNA Multiplex Imaging
 
         .. image:: images/dataset_page/nanostring_overview_icon.png
 
+MERFISH
+=================
+.. card-carousel:: 3
+
     .. card::
         :link: /subsections/datasets/merFISH_hypot_preopt_region
         :link-type: doc
 
         .. image:: images/dataset_page/merFISH_hypoth_image_summary.png
+
+Vizgen
+=================
+.. card-carousel:: 3
         
     .. card::
         :link: subsections/datasets/vizgen_mouse_brain
@@ -95,6 +104,8 @@ RNA Multiplex Imaging
         .. image:: images/dataset_page/vizgen_brain_summary.png
         
 
+seqFISH
+=================
 .. card-carousel:: 3
 
     .. card::
@@ -115,7 +126,18 @@ RNA Multiplex Imaging
 
         .. image:: images/dataset_page/osmFISH_SS_cortex_image_summary.png
         
-        
+osmFISH
+=================
+.. card-carousel:: 3
+
+    .. card::
+        :link: subsections/datasets/osmFISH_mouse_SS_cortex
+        :link-type: doc
+
+        .. image:: images/dataset_page/osmFISH_SS_cortex_image_summary.png
+
+Resolve Biosciences
+===================
 .. card-carousel:: 3
 
     .. card::
@@ -127,6 +149,9 @@ RNA Multiplex Imaging
 **********************
 Protein Multiplexing
 **********************
+
+CODEX
+===================
 
 .. card-carousel:: 3
 
