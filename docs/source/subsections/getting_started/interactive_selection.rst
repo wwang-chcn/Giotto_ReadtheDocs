@@ -24,7 +24,7 @@ You can use as input either a ggplot2 object, a terra::rast image, or the output
       if(!"GiottoData" %in% installed.packages()) {
         devtools::install_github("drieslab/GiottoData")
       }
-
+      library(Giotto)
       # Ensure the Python environment for Giotto has been installed.
       genv_exists = checkGiottoEnvironment()
       if(!genv_exists){
