@@ -120,10 +120,10 @@ Start Giotto
       screePlot(stereo_go, ncp = 30)
       plotPCA(stereo_go)
 
--  run UMAP and/or TSNE on PCs (or directly on matrix)
-
 .. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/2.png
 .. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/3.png
+
+-  run UMAP and/or TSNE on PCs (or directly on matrix)
 
 .. container:: cell
 
@@ -134,6 +134,7 @@ Start Giotto
       plotUMAP(gobject = stereo_go,
                cell_color = 'nr_feats', color_as_factor = F, point_size = 2)
 
+
 .. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/4.png
 
 .. container:: cell
@@ -143,6 +144,7 @@ Start Giotto
       stereo_go = stereo_go %>% runtSNE(dimensions_to_use = 1:30)
       plotTSNE(gobject = stereo_go)
 
+
 .. image:: /images/images_pkgdown/StereoSeq_E12.5_E1S3_MOSTA/5.png
 
 4. Clustering
@@ -150,7 +152,7 @@ Start Giotto
 
 -  create a shared (default) nearest network in PCA space (or directly
    on matrix)
--  cluster on nearest network with Leiden or Louvian (kmeans and hclust
+-  cluster on nearest network with Leiden or Louvan (kmeans and hclust
    are alternatives)
 
 .. container:: cell
@@ -211,12 +213,14 @@ Start Giotto
       # create knn
       stereo_go <- stereo_go %>% createSpatialNetwork(method = "kNN", k = 8)
 
-      # select genes of interest or specify list of genes
-      gene_list = stereo_go@feat_metadata[["cell"]][["rna"]][["feat_ID"]][900:950]
+      # select 100 random genes
+      set.seed(144)
+      featureMetadata = fDataDT(stereo_go) 
+      gene_list = featureMetadata[sample(length(featureMetadata$feat_ID), 100), "feat_ID"]
 
       # use binSpect method to find spatial genes
       spat_genes <- stereo_go %>% binSpect(expression_values = "scaled", 
-                                           subset_feats = gene_list,
+                                           subset_feats = gene_list$feat_ID,
                                            spatial_network_name = "kNN_network")
 
 7. Subsetting/Filtering
@@ -225,8 +229,8 @@ Start Giotto
 -  perform these steps to select an ROI using interactive polygon tool
 -  to draw a polygon on the interactive plot, click the mouse to start a
    line segment. Click again to draw the endpoint of the segment, which
-   becomes the startpoint of the following segment. Click on the
-   original point to close the polygon.
+   becomes the startpoint of the following segment. Click “Done” to
+   close the app and save the polygon coordinates.
 
 .. container:: cell
 
@@ -236,7 +240,7 @@ Start Giotto
                                 cell_color = 'leiden_clus',
                                 color_as_factor = T,
                                 show_plot = FALSE,
-                                point_size = 1.5,
+                                point_size = 2,
                                 save_plot = FALSE)
 
       # create a polygon mask around a ROI, coordinates will be saved after clicking 'Done'
@@ -248,10 +252,16 @@ Start Giotto
       lasso_polygons <- createGiottoPolygonsFromDfr(my_polygon_coordinates, 
                                                     name = "cell", 
                                                     calc_centroids = FALSE)
-      my_points <- terra::vect(x = as.matrix(cbind(stereo_go@spatial_locs[["cell"]][["raw"]][["sdimx"]],
-                                                   stereo_go@spatial_locs[["cell"]][["raw"]][["sdimy"]])), 
+      # use get_spatial_locations to access spatial coordinates and cell_id info
+      spatlocs = get_spatial_locations(stereo_go)
+
+      # construct a SpatVector object with terra of original giotto object
+      my_points <- terra::vect(x = as.matrix(cbind(spatlocs$sdimx,
+                                                   spatlocs$sdimy)), 
                                type = 'points', 
-                               atts = as.matrix(stereo_go@spatial_locs[["cell"]][["raw"]][["cell_ID"]]))
+                               atts = as.matrix(spatlocs$cell_ID))
+
+      # find intersection between original giotto object and polygon subset
       my_poly <- lasso_polygons@spatVector
       my_intersect <- terra::intersect(my_points, my_poly) %>% as.data.frame()
 
