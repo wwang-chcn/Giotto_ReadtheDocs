@@ -48,6 +48,7 @@ Other expression accessor functions:
 `set_expression_values <../md_rst/set_expression_values.html>`__
 
 Other functions to get data from giotto object:
+
 `get_NearestNetwork <../md_rst/get_NearestNetwork.html>`__
 
 `get_dimReduction <../md_rst/get_dimReduction.html>`__
