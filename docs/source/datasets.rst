@@ -40,9 +40,10 @@ Stereo-seq
 =================
 .. card-carousel:: 3
 
-    .. card::
+    .. card:: Stereo-seq Mouse Embryo
         :link: /subsections/datasets/SSeq-E12-5_E1S3-Tutorial
         :link-type: doc
+        
         .. image:: images/dataset_page/Stereo-seq.png
 
 
@@ -50,19 +51,19 @@ Visium
 =================
 .. card-carousel:: 3
 
-    .. card:: Visium Kidney
+    .. card:: Visium Mouse Kidney
         :link: /subsections/datasets/mouse_visium_kidney
         :link-type: doc
 
         .. image:: images/dataset_page/visium_kidney_image_summary.png
 
-    .. card::
+    .. card:: Visium Mouse Brain
         :link: /subsections/datasets/mouse_visium_brain
         :link-type: doc
 
         .. image:: images/dataset_page/visium_brain_image_summary.png
 
-    .. card::
+    .. card:: Visium Prostate Integration
         :link: subsections/datasets/visium_prostate_integration
         :link-type: doc
 
@@ -77,7 +78,7 @@ Nanostring CosMx
 =================
 .. card-carousel:: 3
 
-    .. card::
+    .. card:: Nanostring CosMx Lung
         :link: subsections/datasets/Nanostring_Lung12_jan26_21
         :link-type: doc
 
@@ -87,7 +88,7 @@ MERFISH
 =================
 .. card-carousel:: 3
 
-    .. card::
+    .. card:: MERFISH 
         :link: /subsections/datasets/merFISH_hypot_preopt_region
         :link-type: doc
 
@@ -97,7 +98,7 @@ Vizgen
 =================
 .. card-carousel:: 3
         
-    .. card::
+    .. card:: Vizgen Mouse Brain
         :link: subsections/datasets/vizgen_mouse_brain
         :link-type: doc
 
@@ -108,29 +109,24 @@ seqFISH
 =================
 .. card-carousel:: 3
 
-    .. card::
+    .. card:: seqFISH
         :link: subsections/datasets/mini_seqFISH
         :link-type: doc
 
         .. image:: images/dataset_page/mini_seqFISH.png
 
-    .. card::
+    .. card:: seqFISH+
         :link: subsections/datasets/seqFISH_cortex
         :link-type: doc
 
         .. image:: images/dataset_page/cortex_image_summary.png
 
-    .. card::
-        :link: subsections/datasets/osmFISH_mouse_SS_cortex
-        :link-type: doc
-
-        .. image:: images/dataset_page/osmFISH_SS_cortex_image_summary.png
         
 osmFISH
 =================
 .. card-carousel:: 3
 
-    .. card::
+    .. card:: osmFISH
         :link: subsections/datasets/osmFISH_mouse_SS_cortex
         :link-type: doc
 
@@ -140,7 +136,7 @@ Resolve Biosciences
 ===================
 .. card-carousel:: 3
 
-    .. card::
+    .. card:: Resolve Biosciences
         :link: subsections/datasets/resolve_bc_210928
         :link-type: doc
 
@@ -155,7 +151,7 @@ CODEX
 
 .. card-carousel:: 3
 
-    .. card::
+    .. card:: CODEX Mouse Spleen
         :link: subsections/datasets/mouse_CODEX_spleen
         :link-type: doc
 
@@ -168,13 +164,13 @@ Single Cell RNA Sequencing
 
 .. card-carousel:: 3
 
-    .. card::
+    .. card:: Single-Cell Prostate
         :link: subsections/datasets/singlecell_prostate_standard
         :link-type: doc
 
         .. image:: images/dataset_page/SC_RNAseq_standard.png
 
-    .. card::
+    .. card:: Single-Cell Prostate Integration
         :link: subsections/datasets/singlecell_prostate_integration
         :link-type: doc
 
@@ -187,7 +183,7 @@ Other Technologies
 
 .. card-carousel:: 3
 
-    .. card::
+    .. card:: Other Technologies
         :link: /subsections/datasets/other_technologies_coming_soon
         :link-type: doc
 
