@@ -26,7 +26,7 @@ and were downloaded from the following original sources:
    (https://db.cngb.org/stomics/mosta/download.html)
 
 An adapted version of the STOMICS Analysis Workflow (SAW) pipeline
-(https://github.com/BGIResearch/SAW) was run on these input files to
+(https://github.com/BGIResearch/SAW) was used to
 process these files. The output of the SAW pipeline is an \*.h5ad file
 at a specific aggregated square bin size. In this tutorial, a sample
 with an aggregated bin size of 200 is used. The cell, feat, expression,
