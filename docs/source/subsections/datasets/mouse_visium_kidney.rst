@@ -43,7 +43,7 @@ Mouse Visium Kidney
       # Optional: Specify a path to a Python executable within a conda or miniconda 
       # environment. If set to NULL (default), the Python executable within the previously
       # installed Giotto environment will be used.
-      my_python_path = NULL # alternatively, "/local/python/path/python" if desired.
+      python_path = NULL # alternatively, "/local/python/path/python" if desired.
 
 Dataset explanation
 ===================
