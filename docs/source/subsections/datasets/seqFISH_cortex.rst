@@ -152,7 +152,7 @@ Part 3: Dimension Reduction
 
    .. code:: r
 
-      ## select genes based on highly variable features and gene statistics, both found in featura (gene) metadata
+      ## select genes based on highly variable features and gene statistics, both found in feature (gene) metadata
       gene_metadata = fDataDT(SS_seqfish)
       featgenes = gene_metadata[hvf == 'yes' & perc_cells > 4 & mean_expr_det > 0.5]$gene_ID
       ## run PCA on expression values (default)
