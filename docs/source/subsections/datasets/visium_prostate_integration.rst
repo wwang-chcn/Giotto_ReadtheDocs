@@ -19,7 +19,8 @@ Set-Up Giotto Environment
       if(!"GiottoData" %in% installed.packages()) {
         devtools::install_github("drieslab/GiottoData")
       }
-
+      library(GiottoData)
+      
       # Ensure the Python environment for Giotto has been installed.
       library(Gitoto)
       genv_exists = checkGiottoEnvironment()
@@ -28,10 +29,9 @@ Set-Up Giotto Environment
         installGiottoEnvironment()
       }
 	  
-      library(GiottoData)
-      
+
       # Create Giotto Instructions
-	instrs = createGiottoInstructions(save_dir = results_folder,
+      instrs = createGiottoInstructions(save_dir = results_folder,
 					  save_plot = TRUE,
 					  show_plot = FALSE,
 					  python_path = python_path)
