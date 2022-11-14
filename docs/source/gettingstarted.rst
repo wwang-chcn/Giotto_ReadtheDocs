@@ -42,7 +42,7 @@ This step only needs to be run once. Giotto Suite will automatically detect the 
 
 
 **************************
-Try Giotto on the cloud
+Try Giotto in the cloud
 **************************
 
 To avoid installation issues, you can run Giotto analysis on Terra.bio. Take a look on the `Terra tutorial <https://giottosuite.readthedocs.io/en/latest/subsections/trygiotto/terra.html#terra/>`__.
