@@ -1,6 +1,6 @@
 :orphan:
 ###################################################################################
-Integration between Multiple spatial datasets and single cell sequencing data
+Integration between multiple spatial datasets and single cell sequencing data
 ###################################################################################
 
 ***************************
