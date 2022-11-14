@@ -52,7 +52,7 @@ To avoid installation issues, you can run Giotto analysis on Terra.bio. Take a l
 Learn more about Giotto Suite
 **************************
 
-The following tutorials use data which is stored within a helper extension of Giotto Suite, GiottoData. To run these tutorials, please first install this small package.
+The following tutorials use data which is stored within another package in the Giotto Suite ecosystem, GiottoData. To run these tutorials, please first install this small package.
 
 .. code-block:: r
 
