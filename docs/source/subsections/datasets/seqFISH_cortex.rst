@@ -45,8 +45,6 @@ Download Data
 .. container:: cell
 
    .. code:: r
-
-      library(Giotto)
       library(GiottoData)
 
       my_working_dir = '/path/to/directory/'
@@ -152,7 +150,7 @@ Part 3: Dimension Reduction
 
    .. code:: r
 
-      ## select genes based on HVG and gene statistics, both found in gene metadata
+      ## select genes based on highly variable features and gene statistics, both found in feature (gene) metadata
       gene_metadata = fDataDT(SS_seqfish)
       featgenes = gene_metadata[hvf == 'yes' & perc_cells > 4 & mean_expr_det > 0.5]$gene_ID
       ## run PCA on expression values (default)
@@ -832,29 +830,4 @@ Part 14: Cell Neighborhood: Ligand-Receptor Cell-Cell Communication
                    ground_truth = 'spatial')
 
 .. image:: /images/images_pkgdown/SeqFish_mouse_cortex/40-plotRecovery.png
-   :width: 50.0%
-
-Part 15: Export Giotto Analyzer to Viewer
-=========================================
-
-.. container:: cell
-
-   .. code:: r
-
-      viewer_folder = paste0(my_working_dir, '/', 'Mouse_cortex_viewer')
-      ## select annotations, reductions and expression values to view in Giotto Viewer
-      pDataDT(SS_seqfish)
-      exportGiottoViewer(gobject = SS_seqfish, output_directory = viewer_folder,
-                         factor_annotations = c('cell_types',
-                                                'leiden_clus',
-                                                'sub_leiden_clus_select',
-                                                'HMRF_2_k9_b.28'),
-                         numeric_annotations = 'total_expr',
-                         dim_reductions = c('umap'),
-                         dim_reduction_names = c('umap'),
-                         expression_values = 'scaled',
-                         expression_rounding = 3,
-                         overwrite_dir = TRUE)
-
-.. |image1| image:: /images/images_pkgdown/general_figs/cortex_svz_location_fields.png
    :width: 50.0%
