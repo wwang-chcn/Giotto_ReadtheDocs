@@ -26,7 +26,7 @@ copyright = '2022, Ruben Dries and Guo-Cheng Yuan'
 author = 'Developed by labs of Ruben Dries and Guo-Cheng Yuan.'
 
 # The full version, including alpha/beta/rc tags
-release = '2.0.0.998'
+release = '2.1'
 
 
 # -- General configuration ---------------------------------------------------
