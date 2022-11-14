@@ -40,13 +40,12 @@ Start Giotto
 
    .. code:: r
 
-      library(Giotto)
-
       # Ensure Giotto Suite is installed.
       if(!"Giotto" %in% installed.packages()) {
         devtools::install_github("drieslab/Giotto@Suite")
       }
 
+      library(Giotto)
       # Ensure the Python environment for Giotto has been installed.
       genv_exists = checkGiottoEnvironment()
       if(!genv_exists){
