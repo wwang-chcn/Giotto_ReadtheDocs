@@ -17,7 +17,7 @@ Giotto Suite
    :maxdepth: 3
    :caption: Tutorials
 
-   Tutorials <datasets.rst> 
+   Tutorials </subsections/datasets/datasets_index.rst> 
 
 .. toctree::
    :maxdepth: 1
