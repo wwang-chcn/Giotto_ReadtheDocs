@@ -10,6 +10,7 @@ Tutorials
     :hidden:
 
     Stereo-Seq Mouse Embryo <subsections/datasets/SSeq-E12-5_E1S3-Tutorial>
+    Seqscope Mouse Liver <subsections/datasets/seqscope_mouse_liver_221115>
     Nanostring CosMx Lung <subsections/datasets/Nanostring_Lung12_jan26_21>
     MERFISH <subsections/datasets/merFISH_hypot_preopt_region>
     Vizgen Brain <subsections/datasets/vizgen_mouse_brain>
@@ -45,6 +46,16 @@ Stereo-seq
         :link-type: doc
         
         .. image:: images/dataset_page/Stereo-seq.png
+
+Seq-scope
+=================
+.. card-carousel:: 3
+
+    .. card:: Seqscope Mouse Liver
+        :link: /subsections/datasets/seqscope_mouse_liver_221115
+        :link-type: doc
+        
+        .. image:: images/dataset_page/Seqscope_Icon.png
 
 
 Visium
