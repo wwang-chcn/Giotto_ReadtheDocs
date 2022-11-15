@@ -7,7 +7,7 @@ Interactive selection
 Set up Giotto object
 =========================
 
-NOTE: To follow this tutorial, you must pre-run the Parts 1-4 from the `Mouse Visium Brain tutorial <../subsections/datasets/mouse_visium_brain.html>`__
+NOTE: To follow this tutorial, you must pre-run the Parts 1-4 from the `Mouse Visium Brain tutorial <https://giottosuite.readthedocs.io/en/latest/subsections/datasets/mouse_visium_brain.html>`__
 
 You can use as input either a ggplot2 object, a terra::rast image, or the output of running the spatPlot2D( ) function.
 
