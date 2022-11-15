@@ -15,7 +15,6 @@ Giotto Suite
 .. toctree::
    :hidden:
    :maxdepth: 3
-   :titlesonly: true
    :caption: Tutorials
 
    Tutorials <datasets.rst> 
