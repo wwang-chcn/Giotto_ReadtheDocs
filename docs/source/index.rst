@@ -13,9 +13,10 @@ Giotto Suite
    Contribute <contribute.rst> 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Tutorials
    :hidden:
+   :maxdepth: 3
+   :titlesonly: true
+   :caption: Tutorials
 
    Tutorials <datasets.rst> 
 
