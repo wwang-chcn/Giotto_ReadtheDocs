@@ -49,8 +49,7 @@ extensions = [
 'sphinx_toolbox.github',
 "sphinx.ext.autosummary",
 "sphinx.ext.todo",
-"sphinx.ext.viewcode",
-"sphinxcontrib.video"
+"sphinx.ext.viewcode"
 #'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',
