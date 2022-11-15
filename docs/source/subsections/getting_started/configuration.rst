@@ -1,5 +1,5 @@
 =============
-configuration
+Configuration
 =============
 
 :Date: 2022-10-12

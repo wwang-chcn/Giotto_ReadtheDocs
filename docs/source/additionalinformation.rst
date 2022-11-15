@@ -1,220 +1,119 @@
-###############
+=========
 Changelog
-###############
-
-**************************
-Giotto 1.0.1 - 1.0.3
-**************************
-
--  Fixed bugs
--  Added seed to HMRF
--  Created functions to read 10X Visium .h5 files
-
-   -  see **createGiottoVisiumObject** to create a Giotto object
-      directly
-   -  see **get10Xmatrix\_h5** to extract the count matrix
-
-**************************
-Giotto 1.0.0
-**************************
-
-This is the first major release of Giotto. 
-
-.. note:: 
-   If you still want to work with the previous version, then you can find the `older releases here <https://github.com/RubD/Giotto/tags>`__.
-
-Here is an overview about what has changed in the meantime:
-
--  **NEW:** Addition of **getSpatialDataset** to directly download a spatial dataset (expression matrix, spatial coordinates and metadata). This is now also included in the examples that you can find under the **Datasets** tab on this website.
-
--  **NEW:** We have added tools to install, remove and check a Giotto
-   r-miniconda environment. This miniconda environment is one way to
-   make sure that you can run functions that require Python modules.
-   
-   - **installGiottoEnvironment**: (re-)installs a Giotto miniconda environment
-   - **removeGiottoEnvironment**: removes a Giotto miniconda environment
-   - **checkGiottoEnvironment**: verifies if a Giotto environment can be found
+=========
 
 
-The other alternative is to
-`install <https://rubd.github.io/Giotto_site/articles/installation_issues.html#python-manual-installation>`__
-them in your own favorite Python environment and provide the path in the
-**createGiottoInstructions** command.
+Giotto Suite 2.0.0.998
+======================
 
--  Extension and improvement of spatial gene detection methods:
+New features
+------------
 
-   -  **NEW:** addition of **spark** method
-   -  Improvements for silhouetteRank:
+-  GiottoData package
 
-      -  Faster implementation
-      -  Multi parameter version as **silhouetteRankTest**
+   -  New package to work with spatial data associated with Giotto
+   -  Stores the minidatasets: preprocessed giotto objects that are
+      ready to be used in any function
+   -  Moved: getSpatialDataset and loadGiottoMini functions to this
+      package
 
-   -  Improvements for binSpect:
+-  I/O functions
 
-      -  Faster implementation
-      -  Multi parameter version: **binSpectSingle** or **binSpectMulti**
+   -  saveGiotto
+   -  loadGiotto
 
--  Spatial cell type enrichment methods have been streamlined and
-   updated
+      -  All above functions to general_help.R
 
-   -  **runPAGEEnrich** to run enrichment using PAGE algorithm and selected marker genes
-   -  **runRankEnrich** to run enrichment using a whole expression matrix
-   -  **runHyperGeometricEnrich** to run enrichment using the hypergeometric test
+   -  It saves a Giotto object into a folder using a specific structure.
+      It’s essentially a wrapper around saveRDS that also works with
+      spatVector and spatRaster pointers.
 
--  **NEW:** Spatial cell type deconvolution has been added:
+-  Interactive Polygon Filtering
 
-   -  use **runSpatialDeconv** or **runDWLSDeconv**
+   -  plotInteractivePolygon
+   -  RShiny Gadget that enables interactive ROI filtering with polygons
+      and the terra package
 
--  **NEW:** Addition of **addCellIntMetadata** to add information about
-   interacting cell types, which can subsequently be viewed with the
-   spatPlot commands.
+-  Polygon stamping functions
 
--  **NEW:** Addition of 3 small vignettes that cover different types of
-   spatial datasets:
+   -  polyStamp
+   -  circleVertices
+   -  rectVertices
 
-   -  single-cell resolution (`mini
-      seqFISH+ <../articles/mini_seqfish.html>`__)
-   -  multi-cell resolution (`mini
-      visium <../articles/mini_visium.html>`__)
-   -  3D dataset (`mini STARmap <../articles/mini_starmap.html>`__)
-   -  See **data(package = ‘Giotto’)**
+      -  All above functions are in giotto_structures.R
 
--  Cell Proximity Genes has been changed to Interaction Changed Genes
+   -  circle and rect Vertices functions generate data.tables of x and y
+      vertices that represent the respective shapes. Vertex information
+      is accepted by the polyStamp function along with a table of
+      spatlocs with ‘sdimx’, ‘sdimy’, and ‘cell_ID’. A data.table of
+      polygon vertices placed at each spatloc with the respective
+      ‘cell_ID’ will then be generated.
 
-   -  This better reflects the nature of gene changes due to neighboring
-      cell interactions
-   -  CPG functions are deprecated and will be removed in the future
+Minor improvements and bug fixes
+--------------------------------
 
--  Several function help pages have been updated with dummy example code
+-  Accessor functions
 
--  several small and big fixes to the code
+   -  get_CellMetadata (alias to pDataDT)
+   -  set_CellMetadata
+   -  get_FeatMetadata (alias to fDataDT)
+   -  set_FeatMetadata
 
-**************************
-Giotto 0.3.5
-**************************
+      -  All above functions to accessors.R
 
--  background images See :ref:`HowTos <howtos>` for more information!
--  support for sparse matrices
--  PCA can be calculated with the packages irlba (default) or factominer
-   (old default)
--  complemented PCA with separate functions for a scree plot and
-   jackstraw plot
--  addition of **readExprMatrix** to read an expression matrix
--  addition of **addGenesPerc** to add information about genesets
-   (e.g. mitochondrial genes)
--  addition of **showGrids** and **showNetworks** to see available
-   spatial grids and networks
--  several bug fixes
+   -  Required inputs: gobject, spat_unit, feat_type, data.table with
+      new metadata (for setters)
+   -  *Note that setters will overwrite the entire metadata slot with
+      whatever is provided as a replacement argument*
 
-**************************
-Giotto 0.3.2
-**************************
+-  filterDistributions
 
--  added voronoi plots to use in spatial plotting. See :ref:`HowTos <howtos>` for more informaiton.
--  generalized visualization parameters between functions
+   -  auxiliary_giotto.R
+   -  Extended distribution summary to threshold, sum, and mean
+   -  Added a flexible way to scale the y-axis
 
-**************************
-Giotto 0.3.1
-**************************
+-  plotInteractionChangedFeatures
 
--  (optional) automatic installation of python modules through
-   reticulate:
+   -  spatial_interaction_visuals.R
+   -  Adapted from plotInteractionChangedGenes
+   -  Also made shorthand plotICF; deprecated plotICG and plotCPG
 
-   -  you can provide your preferred python path
-   -  the giotto environment can be installed automatic
-   -  if you do not provide the python path and do not choose to install
-      the giotto environment, then it will take the default python path
+-  plotCombineInteractionChangedFeatures
 
--  several bug fixes
--  several mini-datasets are now included within Giotto for quick
-   testing:
+   -  spatial_interaction_visuals.R
+   -  Adapted from plotCombineInteractionChangedGenes
+   -  Also made shorthand plotCombineICF; deprecated plotCombineICG and
+      plotCombineCPG
 
-   -  field 1 of seqFISH+ (single-cell)
-   -  the visium brain Dentate Gyrus subset (spots)
-   -  subset of starMAP (3D)
+-  plotCellProximityFeatures
 
-example to acces the seqFISH+ mini dataset:
+   -  spatial_interaction_visuals.R
+   -  Semantics change
+   -  Also made shorthand plotCPF; deprecated plotCellProximityGenes and
+      plotCPG
 
-.. code:: r
+-  findInteractionChangedFeats
 
-    # raw counts
-    small_seqfish_expr_matrix = read.table(system.file("extdata", "seqfish_field_expr.txt", package = 'Giotto'))
-    # cell locations
-    small_seqfish_locations = read.table(system.file("extdata", "seqfish_field_locs.txt", package = 'Giotto'))
+   -  spatial_interactions.R
+   -  Adapted from findInteractionChangedGenes
+   -  Also made shorthand findICF; deprecated findICG and findCPG
 
-**************************
-Giotto 0.3.0
-**************************
+-  filterInteractionChangedFeats
 
--  Default spatial network created with **createSpatialNetwork** is now
-   a Delaunay spatial network.
+   -  spatial_interactions.R
+   -  Adapted from filterInteractionChangedGenes
+   -  Also made shorthand filterICF; deprecated filterICG and filterCPG
 
-.. code:: r
+-  combineInteractionChangedFeats
 
-    # to create the old default kNN spatial network use:
-    createSpatialKNNnetwork(gobject)
+   -  spatial_interactions.R
+   -  Adapted from combineInteractionChangedGenes
+   -  Also made shorthand combineICF; deprecated combineICG and
+      combineCPG
 
-    # or use this function with the following setting
-    createSpatialNetwork(gobject, method = 'kNN')
+-  combineInteractionChangedFeatures_per_interaction,
 
--  The function names for extracting spatial genes have changed:
-
-.. code:: r
-
-    # binGetSpatialGenes is now:
-    binSpect(gobject) # binary Spatial extraction
-
-    # spatial_genes_python is now:
-    silhouetteRank(gobject)
-
--  Fixed multiple bugs
--  Improved speed by changing code to Rcpp and implementing
-   parallelization options
--  updated :ref:`HowTos <howtos>` tutorials in
-   Start section
--  Finished the analysis of 10 different spatial datasets (tutorials are
-   a work-in-progress)
-
-**************************
-Giotto 0.2.4
-**************************
-
--  New examples on mouse kidney and brain using the recently released
-   `10X Visium
-   datasets <https://www.10xgenomics.com/spatial-transcriptomics/>`__
-   (**NEW**)
--  Added tools to identify spatial enrichment based on cell-type
-   specific gene signature lists (**NEW**)
-
-**************************
-Giotto 0.2.3
-**************************
-
--  New example with 3D-like spatial data of the mouse hypothalamic
-   preoptic region using
-   `merFISH <https://science.sciencemag.org/content/362/6416/eaau5324>`__
-   (**NEW**)
--  New example with 3D spatial data
-   `STARmap <https://science.sciencemag.org/content/361/6400/eaat5691>`__
--  New example with the highly sensitive data from
-   `osmFISH <https://www.nature.com/articles/s41592-018-0175-z>`__
--  New example on the Cerebellum with the scalable data from
-   `Slideseq <https://science.sciencemag.org/content/363/6434/1463>`__
--  New example on mouse olfactory bulb using immobilized primers on
-   glass slides from `Spatial
-   Transcriptomics <https://science.sciencemag.org/content/353/6294/78>`__
--  Updated seqFISH+ cortex example (**NEW**)
--  Updated STARmap cortex example (**NEW**)
-
-**************************
-Giotto 0.2.2
-**************************
-
--  Implemented `SpatialDE <https://github.com/Teichlab/SpatialDE>`__ and
-   `trendsceek <https://github.com/edsgard/trendsceek>`__
--  Updated support for 3D spatial data
--  Added support for the use of global instructions and automatically
-   saving your plots (**NEW**)
--  Add wrapper for differential expression with
-   `MAST <https://github.com/RGLab/MAST>`__ and
-   `SCRAN <https://bioconductor.org/packages/release/bioc/html/scran.html>`__
+   -  spatial_interactions.R
+   -  Updated from combineCellProximityGenes_per_interaction
+   -  Internal function which replaces
+      combineCellProximityGenes_per_interaction

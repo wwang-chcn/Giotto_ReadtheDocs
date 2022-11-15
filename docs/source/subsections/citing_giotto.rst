@@ -3,7 +3,7 @@
 Authors
 #############
 
-Ruben Dries. Author, maintainer.
+**Ruben Dries**. Author, maintainer.
 
 **Jiaji George Chen**. Author.
 
@@ -14,6 +14,16 @@ Ruben Dries. Author, maintainer.
 **Junxiang Xu**. Author.
 
 **Guo-Cheng Yuan**. Author.
+
+**Joselyn Chávez**. Author.
+
+**Adriana Sistig**. Author.
+
+**Matthew O'Brien**. Author.
+
+**Edward C. Ruiz**. Author.
+
+
 
 Citation 
 =============

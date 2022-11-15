@@ -24,8 +24,8 @@ Mouse Visium Kidney
       if(!"GiottoData" %in% installed.packages()) {
         devtools::install_github("drieslab/GiottoData")
       }
-      library(Giotto)
       # Ensure the Python environment for Giotto has been installed.
+      library(Giotto)
       genv_exists = checkGiottoEnvironment()
       if(!genv_exists){
         # The following command need only be run once to install the Giotto environment.
@@ -35,8 +35,6 @@ Mouse Visium Kidney
 .. container:: cell
 
    .. code:: r
-
-      library(Giotto)
       library(GiottoData)
 
       # 1. set working directory
@@ -45,7 +43,7 @@ Mouse Visium Kidney
       # Optional: Specify a path to a Python executable within a conda or miniconda 
       # environment. If set to NULL (default), the Python executable within the previously
       # installed Giotto environment will be used.
-      my_python_path = NULL # alternatively, "/local/python/path/python" if desired.
+      python_path = NULL # alternatively, "/local/python/path/python" if desired.
 
 Dataset explanation
 ===================

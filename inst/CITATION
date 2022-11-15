@@ -16,9 +16,9 @@ citEntry(entry = "article",
                       as.person("Long Cai"),
                       as.person("Guo-Cheng Yuan")),
   title = "Giotto, a toolbox for integrative analysis and visualization of spatial expression data",
-  journal = "bioRxiv",
-  year = "2020",
-  doi = "10.1101/701680",
-  url = "https://doi.org/10.1101/701680",
-  textVersion = "Dries et al. Giotto, a toolbox for integrative analysis and visualization of spatial expression data. bioRxiv (2020)."
+  journal = "Genome Biology",
+  year = "2021",
+  doi = "10.1186/s13059-021-02286-2",
+  url = "https://doi.org/10.1186/s13059-021-02286-2",
+  textVersion = "Dries et al. Giotto, a toolbox for integrative analysis and visualization of spatial expression data. Genome Biology (2021)."
 )

@@ -1,5 +1,5 @@
 ======================
-getting_started_images
+Image Alignment
 ======================
 
 :Date: 2022-10-12
