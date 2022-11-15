@@ -213,7 +213,7 @@ data by cells or genes, specified by scale_order.
                                  scale_order = 'first_feats', # Default, alternatively 'first_cells'
                                  verbose = T)
 
-The ‘pearson_resid’ method uses the Lause/Kobak et al. method. Fist,
+The ‘pearson_resid’ method uses the Lause/Kobak et al. method. First,
 expected values are calculated based on Pearson correlations. Next,
 z-scores are calculated based on observed and expected values. *Note
 that normalizing with this method will save the data within the “scaled”
