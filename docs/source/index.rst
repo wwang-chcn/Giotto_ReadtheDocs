@@ -13,9 +13,9 @@ Giotto Suite
    Contribute <contribute.rst> 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Tutorials
    :hidden:
+   :maxdepth: 3
+   :caption: Tutorials
 
    Tutorials <datasets.rst> 
 
@@ -85,7 +85,8 @@ References
 
 * `Dries, R., Zhu, Q. et al. Giotto, a toolbox for integrative analysis and visualization of spatial expression data. Genome Biology (2021). <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2>`_
 * `Dries, R., Chen, J., Rossi, N. del, Khan, M.M., Sistig, A., Yuan, G.-C., 2021. Advances in spatial transcriptomic data analysis. Genome Res. 31, 1706–1718 <https://genome.cshlp.org/content/31/10/1706?top=1>`_
-
+* `Del Rossi, N., Chen, J. et al. Analyzing Spatial Transcriptomics Data Using Giotto. Current Protocols (2022). <https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/cpz1.405>`_
+    
 **********************************
 Cite Giotto 
 **********************************

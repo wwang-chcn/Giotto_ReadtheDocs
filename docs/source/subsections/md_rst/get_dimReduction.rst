@@ -35,16 +35,16 @@ Arguments
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
+| ``spat_unit``                 | spatial unit (e.g.Â â€œcellâ€)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
-|                               | “protein�)                           |
+| ``feat_type``                 | feature type (e.g.Â â€œrnaâ€, â€œdnaâ€,     |
+|                               | â€œproteinâ€)                           |
 +-------------------------------+--------------------------------------+
 | ``reduction``                 | reduction on cells or features       |
-|                               | (e.g. “cells�, “feats�)              |
+|                               | (e.g.Â â€œcellsâ€, â€œfeatsâ€)              |
 +-------------------------------+--------------------------------------+
-| ``reduction_method``          | reduction method (e.g. “pca�,        |
-|                               | “umap�, “tsne�)                      |
+| ``reduction_method``          | reduction method (e.g.Â â€œpcaâ€,        |
+|                               | â€œumapâ€, â€œtsneâ€)                      |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name of reduction results            |
 +-------------------------------+--------------------------------------+
@@ -61,15 +61,22 @@ Seealso
 =======
 
 Other dimensional reduction data accessor functions:
-```set_dimReduction`` <#setdimreduction>`__
+`set_dimReduction <../md_rst/set_dimReduction.html>`__
 
 Other functions to get data from giotto object:
-```get_NearestNetwork`` <#getnearestnetwork>`__ ,
-```get_expression_values`` <#getexpressionvalues>`__ ,
-```get_feature_info`` <#getfeatureinfo>`__ ,
-```get_giottoImage`` <#getgiottoimage>`__ ,
-```get_polygon_info`` <#getpolygoninfo>`__ ,
-```get_spatialGrid`` <#getspatialgrid>`__ ,
-```get_spatialNetwork`` <#getspatialnetwork>`__ ,
-```get_spatial_enrichment`` <#getspatialenrichment>`__ ,
-```get_spatial_locations`` <#getspatiallocations>`__
+
+`get_NearestNetwork <../md_rst/get_NearestNetwork.html>`__
+
+`get_dimReduction <../md_rst/get_dimReduction.html>`__
+
+`get_feature_info <../md_rst/get_feature_info.html>`__
+
+`get_giottoImage <../md_rst/get_giottoImage.html>`__
+
+`get_polygon_info <../md_rst/get_polygon_info.html>`__
+
+`get_spatialGrid <../md_rst/get_spatialGrid.html>`__
+
+`get_spatialNetwork <../md_rst/get_spatialNetwork.html>`__
+
+`get_spatial_locations <../md_rst/get_spatial_locations.html>`__
