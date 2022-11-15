@@ -58,10 +58,10 @@ Once you launched either a Jupyter notebook or the RStudio App, you can install 
    .. code:: r
 
       ## Install the master branch
-      remotes::instal_github("drieslab/Giotto")
+      remotes::install_github("drieslab/Giotto")
 
       ## Install the suite branch
-      remotes::instal_github("drieslab/Giotto@suite")
+      remotes::install_github("drieslab/Giotto@suite")
 
 
 If you prefer to launch a Juptyter notebook ready to run analysis with Giotto, you can use our Terra-based Docker image for the `master <https://hub.docker.com/repository/docker/josschavezf/terra-jupyter-python-bioconductor-giotto>`__ or `suite <https://hub.docker.com/repository/docker/josschavezf/terra-jupyter-python-bioconductor-giotto_suite>`__ branch.
