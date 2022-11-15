@@ -6,4 +6,4 @@ We welcome contributions or suggestions from other developers. Please contact us
 The source code for Giotto Suite may be found on our `GitHub repository <https://github.com/drieslab/Giotto/tree/suite>`_.
 
 .. note::
-        We working on providing additional information on contributing to Giotto and will add updates here. Please stay tuned for more information.
+        We are working on providing additional information on contributing to Giotto and will add updates here. Please stay tuned for more information.
