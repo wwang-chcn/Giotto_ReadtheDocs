@@ -14,7 +14,7 @@ Branches
 Giotto Suite
 =================
 
-The Suite branch of Giotto is the latest and extended version of Giotto released in 2022 which is under active development. Giotto Suite is a modular platform for analyzing spatial -omics technologies with interoperability with other popular spatial analysis classes (e.g. scanpy, SpatialExperiment, and Seurat). Using {terra} and {data.table}, Giotto Suite adopts fast and memory efficient methods from the geospatial field. Click the logo below to learn more about the Giotto Suite branch.
+The Suite branch of Giotto is the latest and extended version of Giotto released in 2022 which is under active development. Giotto Suite is a modular platform for analyzing spatial -omics technologies with interoperability with other popular spatial analysis classes. Using {terra} and {data.table}, Giotto Suite adopts fast and memory efficient methods from the geospatial field. Click the logo below to learn more about the Giotto Suite branch.
 
 .. image:: images/GiottoLogo.png
    :target: https://giottosuite.readthedocs.io/en/latest/#
