@@ -58,6 +58,9 @@ Giotto Suite is a collection of open source software tools, including data struc
 
 The source code for Giotto Suite may be found on our `GitHub repository <https://github.com/drieslab/Giotto/tree/suite>`_.
 
+.. note::
+        Giotto Suite is still in beta. We are actively developing the website content and source code of Giotto Suite ahead of the official release. We welcome any feedback or suggestions, please submit any bugs or issues on the Github page above.
+        
 **********************************************
 Workflow
 **********************************************
