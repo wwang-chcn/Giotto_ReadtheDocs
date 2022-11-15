@@ -14,12 +14,16 @@ strategy is to use illumina sequencing by synthesis to generate the
 spatial barcodes and use the barcodes to capture mRNAs in tissue.
 
 Example Raw Data needed for seqscope: 
+--------------------------------------
 1st-seq data (single-ended, for generating spatial barcodes) 
+
 - SeqScope_1st.fastq.gz 
 2nd-seq data (pair-ended, for generating count matrix) 
+
 - SeqScope_2nd_R1.fastq.gz
 - SeqScope_2nd_R2.fastq.gz 
-Image (for seqmentation): 
+
+Image (for seqmentation)
 - Tile_No_Segmented.png
 
 Preprocessing to generate count matrix
