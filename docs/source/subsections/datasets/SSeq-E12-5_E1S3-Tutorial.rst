@@ -277,23 +277,29 @@ Start Giotto
 
       ::
 
-         R version 4.2.1 (2022-06-23)
-         Platform: x86_64-apple-darwin17.0 (64-bit)
-         Running under: macOS Big Sur ... 10.16
-
-         Matrix products: default
-         BLAS:   /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRblas.0.dylib
-         LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
-
-         locale:
-         [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-
-         attached base packages:
-         [1] stats     graphics  grDevices utils     datasets  methods   base     
-
-         loaded via a namespace (and not attached):
-          [1] compiler_4.2.1  magrittr_2.0.3  fastmap_1.1.0   cli_3.3.0      
-          [5] tools_4.2.1     htmltools_0.5.3 rstudioapi_0.13 yaml_2.3.5     
-          [9] stringi_1.7.8   rmarkdown_2.14  knitr_1.39      stringr_1.4.0  
-         [13] xfun_0.31       digest_0.6.29   jsonlite_1.8.0  rlang_1.0.4    
-         [17] evaluate_0.15  
+         ## R version 4.2.1 (2022-06-23)
+         ## Platform: x86_64-pc-linux-gnu (64-bit)
+         ## Running under: CentOS Linux 7 (Core)
+         ## 
+         ## Matrix products: default
+         ## BLAS:   /share/pkg.7/r/4.2.1/install/lib64/R/lib/libRblas.so
+         ## LAPACK: /share/pkg.7/r/4.2.1/install/lib64/R/lib/libRlapack.so
+         ## 
+         ## locale:
+         ##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+         ##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+         ##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+         ##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+         ##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+         ## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+         ## 
+         ## attached base packages:
+         ## [1] stats     graphics  grDevices utils     datasets  methods   base     
+         ## 
+         ## loaded via a namespace (and not attached):
+         ##  [1] digest_0.6.30   R6_2.5.1        jsonlite_1.8.3  magrittr_2.0.3 
+         ##  [5] evaluate_0.18   stringi_1.7.8   cachem_1.0.6    rlang_1.0.6    
+         ##  [9] cli_3.4.1       rstudioapi_0.14 jquerylib_0.1.4 bslib_0.4.1    
+         ## [13] rmarkdown_2.18  tools_4.2.1     stringr_1.4.1   xfun_0.34      
+         ## [17] yaml_2.3.6      fastmap_1.1.0   compiler_4.2.1  htmltools_0.5.3
+         ## [21] knitr_1.40      sass_0.4.2.9000
