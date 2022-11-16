@@ -109,6 +109,44 @@ take cell polygons and a Giotto Point file (a data.table contains Gene
 Name, Expression, x, y, etc). Therefore, first we need to do some
 transformation of the count matrix.
 
+.. raw:: html
+
+   </details>
+
+.. raw:: html
+
+   <details>
+
+.. raw:: html
+
+   <summary>
+
+Giotto Point file formatting
+
+.. raw:: html
+
+   </summary>
+
+Unlike normal cell by gene matrix, a Giotto Point file is usually a data.table contains Gene
+Name, Expression, x, y, where each row represent a subcellular point. For Seqscope data, one HDMI
+typically have more than one subcellular point.
+
+
+== ===== ===== ===== =======
+\  Gene  Count sdimx sdimy
+== ===== ===== ===== =======
+Point1                    
+Point2                    
+Point3                    
+\                    
+== ===== ===== ===== =======
+
+
+.. raw:: html
+
+   </details>
+
+
 1.1 Process Giotto Point file per tile
 --------------------------------------
 
