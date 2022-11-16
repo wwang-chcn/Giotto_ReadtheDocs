@@ -14,7 +14,7 @@ The necessary input files for sample E12.5_E1S3 are publicly available and were 
 1. FASTQ files (https://db.cngb.org/search/sample/?q=CNP0001543)
 2. barcodeToPos.h5 file (https://db.cngb.org/stomics/mosta/download.html)
 
-The STOMICS Analysis Workflow (SAW) pipeline (https://github.com/BGIResearch/SAW) was used to process these files. The output of the SAW pipeline is an *.h5ad file at a specific bin size. One bin of size n represents an n x n square of aggregated spatial barcodes. In this tutorial, a sample with a bin size of 200 was used. The cell, feat, expression, and spatial location matrix files from the E12.5_E1S3.h5ad file were extracted and are used to create a Giotto object to begin this tutorial.
+The STOMICS Analysis Workflow (SAW) pipeline (https://github.com/BGIResearch/SAW) was used to process these files. The output of the SAW pipeline is an *.h5ad file at a specific bin size. One bin of size n represents an n x n square of aggregated spatial barcodes. In this tutorial, a sample with a bin size of 200 was used.
 
 ## Start Giotto
 ```{r eval = FALSE}
