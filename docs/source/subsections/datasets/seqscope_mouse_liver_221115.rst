@@ -163,7 +163,7 @@ and y axis.
       pl = pl + scale_color_gradient2(midpoint = 15, low = 'blue', mid = 'yellow', high = 'red')
       pl
 
-.. image:: HDMI_scatter.png
+.. image:: /images/images_pkgdown/Seqscope_mouse_liver/Results_221115/HDMI_scatter.png
 
 Read polygon mask file
 
@@ -177,7 +177,7 @@ Read polygon mask file
                                      flip_horizontal = FALSE)
       plot(final_polygons)
 
-.. image:: polygon.png
+.. image:: /images/images_pkgdown/Seqscope_mouse_liver/Results_221115/polygon.png
 
 .. raw:: html
 
