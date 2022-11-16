@@ -24,6 +24,7 @@ Example Raw Data needed for seqscope:
 - SeqScope_2nd_R2.fastq.gz 
 
 Image (for seqmentation)
+
 - Tile_No_Segmented.png
 
 Preprocessing to generate count matrix
