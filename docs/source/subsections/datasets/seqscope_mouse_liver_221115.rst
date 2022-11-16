@@ -97,8 +97,7 @@ Set up Giotto Environment
       # 3. create giotto instructions
       instrs = createGiottoInstructions(save_dir = results_folder,
                                         save_plot = TRUE,
-                                        show_plot = FALSE,
-                                        python_path = python_path)
+                                        show_plot = FALSE)
 
 1 Create Giotto Subcellular Object
 ==================================
