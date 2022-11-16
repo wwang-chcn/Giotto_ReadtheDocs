@@ -30,9 +30,6 @@ The STOMICS Analysis Workflow (SAW) pipeline
 The output of the SAW pipeline is an \*.h5ad file at a specific bin
 size. One bin of size n represents an n x n square of aggregated spatial
 barcodes. In this tutorial, a sample with a bin size of 200 was used.
-The cell, feat, expression, and spatial location matrix files from the
-E12.5_E1S3.h5ad file were extracted and are used to create a Giotto
-object to begin this tutorial.
 
 Start Giotto
 ============
