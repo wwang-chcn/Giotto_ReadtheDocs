@@ -2,6 +2,34 @@
 Changelog
 =========
 
+Giotto Suite 2.1
+================
+
+Breaking Changes
+----------------
+
+-  The default giotto python version has been upgraded to 3.10.2, and
+   the following package versions are associated with the environment:
+
+   -  pandas==1.5.1
+   -  networkx==2.8.8
+   -  python-igraph==0.10.2
+   -  leidenalg==0.9.0
+   -  python-louvain==0.16
+   -  python.app==1.4
+   -  scikit-learn==1.1.3
+
+New features
+------------
+
+-  Created new function anndataToGiotto()
+
+   -  Enables conversion of anndata object of scanpy flavor to Giotto.
+   -  The function currently handles dimension reductions (PCA, UMAP,
+      tSNE), metadata, expression information, spatial locations, and
+      layered data.
+   -  This function will be extended to include more information from
+      the anndata object in the future.
 
 Giotto Suite 2.0.0.998
 ======================
