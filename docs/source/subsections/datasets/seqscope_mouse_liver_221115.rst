@@ -111,10 +111,6 @@ transformation of the count matrix.
 
 .. raw:: html
 
-   </details>
-
-.. raw:: html
-
    <details>
 
 .. raw:: html
@@ -131,16 +127,34 @@ Unlike normal cell by gene matrix, a Giotto Point file is usually a data.table c
 Name, Expression, x, y, where each row represent a subcellular point. For Seqscope data, one HDMI
 typically have more than one subcellular point.
 
+.. list-table:: Example Giotto Point file for **Seqscope**
+   :header-rows: 1
 
-== ===== ===== ===== =======
-\  Gene  Count sdimx sdimy
-== ===== ===== ===== =======
-Point1                    
-Point2                    
-Point3                    
-\                    
-== ===== ===== ===== =======
-
+   * - HDMI
+     - Feat_ID
+     - Count
+     - sdimX 
+     - sdimY
+   * - HDMI1
+     - GeneA
+     - 
+     -   
+     - 
+   * - HDMI1
+     - GeneB
+     - 
+     -
+     -
+   * - HDMI2
+     - GeneA
+     - 
+     -
+     -
+   * - HDMI3
+     - GeneC
+     -
+     -
+     -
 
 .. raw:: html
 
