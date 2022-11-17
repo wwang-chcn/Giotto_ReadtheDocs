@@ -2,7 +2,7 @@
 Interactive selection
 =========================
 
-:Date: 2022-10-13
+:Date: 2022-11-17
 
 Set up Giotto object
 =========================
@@ -14,15 +14,15 @@ You can use as input either a ggplot2 object, a terra::rast image, or the output
 .. container:: cell
 
    .. code:: r
-      
+
       # Ensure Giotto Suite is installed.
-      if(!"Giotto" %in% installed.packages()) {
-        devtools::install_github("drieslab/Giotto@Suite")
+      if(!'Giotto' %in% installed.packages()) {
+        devtools::install_github('drieslab/Giotto@Suite')
       }
 
       # Ensure GiottoData, a small, helper module for tutorials, is installed.
-      if(!"GiottoData" %in% installed.packages()) {
-        devtools::install_github("drieslab/GiottoData")
+      if(!'GiottoData' %in% installed.packages()) {
+        devtools::install_github('drieslab/GiottoData')
       }
       library(Giotto)
       # Ensure the Python environment for Giotto has been installed.
@@ -89,7 +89,7 @@ You can use additional parameters passed to the polygon( ) function, such as the
 
       ## Modify the width and/or color of the line
       plotInteractivePolygons(my_spatPlot,
-                              color = "black",
+                              color = 'black',
                               lwd = 2)
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/3-interactive_brain_black.png
@@ -114,7 +114,7 @@ Use the slider bars to zoom in or out your plot and draw tiny polygons.
 
       ## Use the zoom in and out slide-bars to select small areas
       plotInteractivePolygons(my_spatPlot,
-                        height = 320)
+                              height = 320)
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/5-interactive_brain_zoom.png
    :width: 50.0%
@@ -146,20 +146,21 @@ Now, let's add the polygon coordinates to the Giotto object:
    .. code:: r
 
       ## We must transform the data.table or data.frame with coordinates into a Giotto polygon object
-      my_giotto_polygons <- createGiottoPolygonsFromDfr(my_polygon_coordinates)
+      my_giotto_polygons <- createGiottoPolygonsFromDfr(my_polygon_coordinates, name = 'selections')
 
       ## Then, add the polygons to the Giotto object
       visium_brain <- addGiottoPolygons(gobject = visium_brain,
-                                     gpolygons = list(my_giotto_polygons))
+                                        gpolygons = list(my_giotto_polygons))
 
-Finally, add the corresponding polygon ID to the cell Metadata. By default, the function will add a "no_polygon" label to cells outside polygons, but you can customize it using the na.label argument.
+Finally, add the corresponding polygon ID to the cell Metadata. By default, the function will add a 'no_polygon' label to cells outside polygons, but you can customize it using the na.label argument.
 
 .. container:: cell
 
    .. code:: r
 
       ## Using the default parameters
-      visium_brain <- addPolygonCells(visium_brain)
+      visium_brain <- addPolygonCells(visium_brain,
+                                      polygon_name = 'selections')
 
       ## Let's see how it looks like now the cell_metadata
       pDataDT(visium_brain)
@@ -172,7 +173,9 @@ Finally, add the corresponding polygon ID to the cell Metadata. By default, the 
    .. code:: r
 
       ## Customize the NA label
-      visium_brain <- addPolygonCells(visium_brain, na.label = "No Polygon")
+      visium_brain <- addPolygonCells(visium_brain,
+                                      polygon_name = 'selections',
+                                      na.label = 'No Polygon')
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/8-new_metadata_customized.png
    :width: 80.0%
@@ -187,7 +190,9 @@ You can extract the coordinates and IDs from cells located within one or multipl
    .. code:: r
 
       ## Provide the name of the polygon to extract cells from
-      getCellsFromPolygon(visium_brain, polygons = "polygon 1")
+      getCellsFromPolygon(visium_brain,
+                          polygon_name = 'selections',
+                          polygons = 'polygon 1')
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/9-get_cells_polygon_1.png
    :width: 55.0%
@@ -197,7 +202,8 @@ You can extract the coordinates and IDs from cells located within one or multipl
    .. code:: r
 
       ## If no polygon name is provided, the function will retrieve cells located within all polygons
-      getCellsFromPolygon(visium_brain)
+      getCellsFromPolygon(visium_brain,
+                          polygon_name = 'selections')
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/10-get_cells.png
    :width: 55.0%
@@ -213,7 +219,7 @@ Let's compare the expression levels of some genes of interest between the select
 
       ## You can provide a list of genes
       comparePolygonExpression(visium_brain,
-                               selected_feats = c("Stmn1", "Psd", "Ly6h"))
+                               selected_feats = c('Stmn1', 'Psd', 'Ly6h'))
 
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/11-compare_genes.png
@@ -225,11 +231,11 @@ Let's compare the expression levels of some genes of interest between the select
 
       ## Or calculate the top genes expressed within each region, then provide the result to compare polygons.
       scran_results <- findMarkers_one_vs_all(visium_brain,
-                                              spat_unit = "cell",
-                                              feat_type = "rna",
-                                              method = "scran",
-                                              expression_values = "normalized",
-                                              cluster_column = "poly_ID",
+                                              spat_unit = 'cell',
+                                              feat_type = 'rna',
+                                              method = 'scran',
+                                              expression_values = 'normalized',
+                                              cluster_column = 'selections',
                                               min_feats = 10)
 
       top_genes <- scran_results[, head(.SD, 2), by = 'cluster']$feats
@@ -254,7 +260,7 @@ If you have run an analysis for finding clusters or have anotated cell types wit
       compareCellAbundance(visium_brain)
 
       ## You can use other columns within the cell metadata table to compare the cell type abundances
-      compareCellAbundance(visium_brain, cell_type_column = "cell_type")
+      compareCellAbundance(visium_brain, cell_type_column = 'cell_type')
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/13-compare_cell_abundance.png
    :width: 50.0%
@@ -272,7 +278,7 @@ You can use the spatPlot( ) arguments to isolate and plot each region. Also, you
       ## Compare clusters within each region
       spatPlot2D(visium_brain,
                  cell_color = 'leiden_clus',
-                 group_by = 'poly_ID',
+                 group_by = 'selections',
                  point_size = 1,
                  coord_fix_ratio = 1,
                  cow_n_col = 3,
@@ -287,9 +293,9 @@ You can use the spatPlot( ) arguments to isolate and plot each region. Also, you
 
       ## Compare expression levels between regions
       spatFeatPlot2D(visium_brain,
-                     expression_values = "scaled",
-                     group_by = 'poly_ID',
-                     feats = "Psd",
+                     expression_values = 'scaled',
+                     group_by = 'selections',
+                     feats = 'Psd',
                      point_size = 1)
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/15-compare_spatfeatplot.png
@@ -305,7 +311,9 @@ You can plot again all or some drawn polygons. The minimal input is the Giotto o
    .. code:: r
 
       ## Plot all polygons
-      plotPolygons(visium_brain, my_spatPlot)
+      plotPolygons(visium_brain,
+                   polygon_name = 'selections',
+                   x = my_spatPlot)
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/16-plotPolygons.png
    :width: 50.0%
@@ -317,7 +325,10 @@ Additionaly, you can plot a few polygons by providing a vector with the polygon 
    .. code:: r
 
       ## Plot a subset of polygons
-      plotPolygons(visium_brain, my_spatPlot, polygons = "polygon 2")
+      plotPolygons(visium_brain,
+                   polygon_name = 'selections',
+                   x = my_spatPlot,
+                   polygons = 'polygon 2')
 
 .. image:: /images/images_pkgdown/interactive_selection/vignette_221013/17-plotPolygon2.png
    :width: 50.0%
