@@ -14,7 +14,7 @@ Branches
 Giotto Suite
 =================
 
-The Suite branch of Giotto is the latest and extended version of Giotto and is under active development. Giotto Suite is focused on building a modular platform for analyzing spatial -omics technologies and thrives to be interoperable with other popular spatial analysis tools and classes. Using established packages optimized for large(r) data, Giotto Suite adopts fast and memory efficient methods to create an interactive analysis. Click the logo below to learn more about the Giotto Suite branch.
+The Suite branch of Giotto is the latest and extended version of Giotto and is under active development. Giotto Suite is focused on building a modular platform for analyzing spatial-omics technologies and strives to be interoperable with other popular spatial analysis tools and classes. Using established packages optimized for large(r) data, Giotto Suite adopts fast and memory efficient methods to create an interactive analysis. Click the logo below to learn more about the Giotto Suite branch.
 
 .. image:: images/GiottoLogo.png
    :target: https://giottosuite.readthedocs.io/en/latest/#
