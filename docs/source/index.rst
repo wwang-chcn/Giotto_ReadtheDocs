@@ -25,7 +25,6 @@ Giotto Suite
    :hidden:
 
    Terra.bio </subsections/trygiotto/terra.rst> 
-   Binder </subsections/trygiotto/binder.rst> 
    Docker </subsections/trygiotto/docker.rst> 
    
 .. toctree::
