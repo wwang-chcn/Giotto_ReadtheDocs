@@ -9,6 +9,7 @@ Breaking Changes
 ----------------
 
 -  Integration of S4_provenance branch into suite branch
+
    -  S4 classes and methods for different Giotto slots
    -  Getters and setters for different Giotto slots
    -  Provenance information for Giotto slots
@@ -18,10 +19,12 @@ New features
 ------------
 
 -  Working with intensity based data
+
    -  calculateOverlapPolygonImages: calculates overlapping intensities from image based information (e.g. IMC, IF, MIBI, …) and polygon data (e.g. cell)
    -  overlapImagesToMatrix: converts intensity-polygon overlap information into a matrix (e.g. cell by protein)
 
 -  Aggregation of layers for subcellular datasets
+
    -  aggregateStacksExpression: aggregate expression matrices from multiple layers (e.g. z-stacks through the same cell)
    -  aggregateStacksPolygons: aggregate polygon shapes from multiple layers
    -  aggregateStacksPolygonOverlaps: aggregate feature - polygon overlap information from multiple layers
