@@ -25,7 +25,7 @@ Following a particular programming style will help programmers read and understa
     - Always use space around “=” when using named arguments to functions. This: somefunc(a = 1, b = 2).
     
 - **Use of symbols**
-    - Do not use any non-ASCII characters
+    - Do not use any non-ASCII characters (unless as [ANSI escape sequences](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797))
 
 
 $~$
