@@ -57,7 +57,7 @@ provided with their recent `bioRxiv
 pre-print <https://www.biorxiv.org/content/10.1101/2022.10.06.510405v1>`__.
 The data from the first tissue replicate will be worked with.
 
-.. image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/large_preview.png
+.. image:: /images/tutorials/xenium_breast_cancer/pre_analysis/large_preview.png
    :width: 70.0%
 
 3 Project data paths
@@ -501,7 +501,7 @@ the ``giottoPolygon``\ ’s ``spatVectorCentroids`` slot.
 
       plot(x = gpoly_nucs, point_size = 0.1, type = 'centroid')
 
-.. image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpolys_centroids.png
+.. image:: /images/tutorials/xenium_breast_cancer/pre_analysis/gpolys_centroids.png
    :width: 70.0%
 
 5.1.3 Create Giotto Object
@@ -1039,7 +1039,7 @@ these metadata should be appended only to feat_type ‘rna’.
                    base_height = 7,
                    save_name = '1_spatplot'))
 
-.. image:: ../../../../images/tutorials/xenium_breast_cancer/1_spatplot.png
+.. image:: /images/tutorials/xenium_breast_cancer/1_spatplot.png
    :width: 70.0%
 
 7 Generate aggregated expression based on feature and boundary (polygon) information
@@ -1544,7 +1544,7 @@ will be set to ``NULL``.
                point_shape = 'no_border',
                save_param = list(save_name = '5_umap_leiden'))
 
-.. image:: ../../../../images/tutorials/xenium_breast_cancer/5_umap_leiden.png
+.. image:: /images/tutorials/xenium_breast_cancer/5_umap_leiden.png
    :width: 80.0%
 
 8.4 Visualize UMAP and spatial results
@@ -1566,7 +1566,7 @@ will be set to ``NULL``.
                    base_width = 15,
                    base_height = 15))
 
-.. image:: ../../../../images/tutorials/xenium_breast_cancer/6_spat_leiden.png
+.. image:: /images/tutorials/xenium_breast_cancer/6_spat_leiden.png
    :width: 100.0%
 
 9 Subcellular visualization
@@ -1591,7 +1591,7 @@ will be set to ``NULL``.
                            save_para = list(
                              save_name = '7_polys'))
 
-.. image:: ../../../../images/tutorials/xenium_breast_cancer/7_polys.png
+.. image:: /images/tutorials/xenium_breast_cancer/7_polys.png
    :width: 100.0%
 
 The dataset is too large to visualize with subcellular polygons and
@@ -1626,24 +1626,24 @@ features clearly so a spatial subset is needed.
                            save_param = list(
                              save_name = '8_subset_in_situ'))
 
-.. image:: ../../../../images/tutorials/xenium_breast_cancer/8_subset_in_situ.png
+.. image:: /images/tutorials/xenium_breast_cancer/8_subset_in_situ.png
    :width: 100.0%
 
-.. |image1| image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_blnk.png
+.. |image1| image:: /images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_blnk.png
    :width: 32.0%
-.. |image2| image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_ngcode.png
+.. |image2| image:: /images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_ngcode.png
    :width: 32.0%
-.. |image3| image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_ngprbe.png
+.. |image3| image:: /images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_ngprbe.png
    :width: 32.0%
-.. |image4| image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_expr.png
+.. |image4| image:: /images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_expr.png
    :width: 100.0%
-.. |image5| image:: ../../../../images/tutorials/xenium_breast_cancer/2_HVF.png
+.. |image5| image:: /images/tutorials/xenium_breast_cancer/2_HVF.png
    :width: 70.0%
-.. |image6| image:: ../../../../images/tutorials/xenium_breast_cancer/3a_screePlot.png
+.. |image6| image:: /images/tutorials/xenium_breast_cancer/3a_screePlot.png
    :width: 49.0%
-.. |image7| image:: ../../../../images/tutorials/xenium_breast_cancer/3b_PCA.png
+.. |image7| image:: /images/tutorials/xenium_breast_cancer/3b_PCA.png
    :width: 49.0%
-.. |image8| image:: ../../../../images/tutorials/xenium_breast_cancer/4a_tSNE.png
+.. |image8| image:: /images/tutorials/xenium_breast_cancer/4a_tSNE.png
    :width: 49.0%
-.. |image9| image:: ../../../../images/tutorials/xenium_breast_cancer/4b_UMAP.png
+.. |image9| image:: /images/tutorials/xenium_breast_cancer/4b_UMAP.png
    :width: 49.0%
