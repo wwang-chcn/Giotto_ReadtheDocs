@@ -11,10 +11,10 @@ Tutorials
 
     Stereo-Seq Mouse Embryo <subsections/datasets/SSeq-E12-5_E1S3-Tutorial>
     Seq-Scope Mouse Liver <subsections/datasets/seqscope_mouse_liver_221115>
+    Xenium Breast Cancer <subsections/datasets/xenium_breast_cancer>
     Nanostring CosMx Lung <subsections/datasets/Nanostring_Lung12_jan26_21>
     MERFISH <subsections/datasets/merFISH_hypot_preopt_region>
     Vizgen Brain <subsections/datasets/vizgen_mouse_brain>
-    Xenium Breast Cancer <subsections/datasets/xenium_breast_cancer>
     Visium Mouse Kidney <subsections/datasets/mouse_visium_kidney>
     Visium Mouse Brain <subsections/datasets/mouse_visium_brain>
     Visium Prostate Integration <subsections/datasets/visium_prostate_integration>
@@ -86,6 +86,16 @@ Visium
 RNA Multiplex Imaging
 *********************
 
+Xenium
+=================
+.. card-carousel:: 3
+        
+    .. card::
+        :link: subsections/datasets/xenium_breast_cancer
+        :link-type: doc
+
+        .. image:: images/dataset_page/xenium_breast_summary.png
+
 Nanostring CosMx
 =================
 .. card-carousel:: 3
@@ -115,18 +125,6 @@ Vizgen
         :link-type: doc
 
         .. image:: images/dataset_page/vizgen_brain_summary.png
-        
-
-Xenium
-=================
-.. card-carousel:: 3
-        
-    .. card::
-        :link: subsections/datasets/xenium_breast_cancer
-        :link-type: doc
-
-        .. image:: images/dataset_page/xenium_breast_summary.png
-
 
 seqFISH
 =================
