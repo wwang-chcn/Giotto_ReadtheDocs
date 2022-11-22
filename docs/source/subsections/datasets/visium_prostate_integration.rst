@@ -1,7 +1,9 @@
-:orphan:
-###################################################################################
+=========================
 Integration between multiple spatial datasets and single cell sequencing data
-###################################################################################
+=========================
+
+:Date: 2022-09-16
+
 
 ***************************
 Set-Up Giotto Environment
@@ -470,3 +472,14 @@ This is also the easiest way to integrate Visium datasets with single cell data.
 				save_param = list(save_name = "5d_DWLS_plot"))
 
 .. image:: /images/other/visium_prostate_integration/5d_DWLS_plot.png 
+
+.. code-block:: 
+
+	# Plot DWLS deconvolution result with Pie plots
+        spatDeconvPlot(testcombo, 
+               show_image = T, image_name = c("NP-image", "CP-image"),
+               radius = 150,
+               save_param = list(save_name = "spat_DWLS_pie_plot"))
+
+.. image:: /images/other/visium_prostate_integration/5d_DWLS_plot.png 
+
