@@ -551,7 +551,7 @@ Part 7: Cell type enrichment
 
       # Create rank matrix, not that rank matrix is different from PAGE
       # A count matrix and a vector for all cell labels will be needed
-      rank_matrix = makeSignMatrixRank(sc_matrix = get_expression_values(giotto_SC,values = "normalized"),
+      rank_matrix = makeSignMatrixRank(sc_matrix = get_expression_values(giotto_SC,values = "normalized",output = "matrix"),
                                        sc_cluster_ids = pDataDT(giotto_SC)$Class)
       colnames(rank_matrix)<-levels(factor(pDataDT(giotto_SC)$Class))
       visium_brain = runRankEnrich(gobject = visium_brain, sign_matrix = rank_matrix,expression_values = "normalized")
@@ -575,7 +575,7 @@ Part 7: Cell type enrichment
 
       # Create DWLS matrix, not that DWLS matrix is different from PAGE and rank
       # A count matrix a vector for a list of gene signatures and a vector for all cell labels will be needed
-      DWLS_matrix<-makeSignMatrixDWLSfromMatrix(matrix = as.matrix(get_expression_values(giotto_SC,values = "normalized")),
+      DWLS_matrix<-makeSignMatrixDWLSfromMatrix(matrix = get_expression_values(giotto_SC,values = "normalized",output = "matrix"),
                                                 cell_type = pDataDT(giotto_SC)$Class,
                                                 sign_gene = top_markers$feats)
       visium_brain = runDWLSDeconv(gobject = visium_brain, sign_matrix = DWLS_matrix)
@@ -590,6 +590,20 @@ Part 7: Cell type enrichment
 
 .. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220426/DWLS_plot.png
    :width: 50.0%
+   
+.. container:: cell
+
+   .. code:: r
+
+      # Plot DWLS deconvolution result with Pie plots
+        spatDeconvPlot(visium_brain, 
+                 show_image = T,
+                 radius = 50,
+                 save_param = list(save_name = "spat_DWLS_pie_plot"))
+
+.. image:: /images/images_pkgdown/mouse_visium_brain/vignette_220426/spat_DWLS_pie_plot.png
+   :width: 50.0%
+
 
 Part 8: Spatial Grid
 ====================
