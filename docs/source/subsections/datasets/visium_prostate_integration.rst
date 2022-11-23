@@ -481,5 +481,5 @@ This is also the easiest way to integrate Visium datasets with single cell data.
                radius = 150,
                save_param = list(save_name = "spat_DWLS_pie_plot"))
 
-.. image:: /images/other/visium_prostate_integration/spat_DWLS_pie_plot.png 
+.. image:: /images/other/visium_prostate_integration/vignette_sep29_2021/spat_DWLS_pie_plot.png 
 
