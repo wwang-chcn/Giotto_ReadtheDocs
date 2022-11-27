@@ -18,15 +18,16 @@ Tutorials
     Visium Mouse Kidney <subsections/datasets/mouse_visium_kidney>
     Visium Mouse Brain <subsections/datasets/mouse_visium_brain>
     Visium Prostate Integration <subsections/datasets/visium_prostate_integration>
+    CytAssist Human Lung Cancer <subsections/datasets/cytassist_visium>
     Mini SeqFISH <subsections/datasets/mini_seqFISH>
     SeqFISH+ Cortex <subsections/datasets/seqFISH_cortex>
     osmFISH SS Cortex <subsections/datasets/osmFISH_mouse_SS_cortex>
-    Resolve Biosciences <subsections/datasets/resolve_bc_210928> 
+    Resolve Biosciences <subsections/datasets/resolve_bc_210928>
     CODEX Spleen <subsections/datasets/mouse_CODEX_spleen>
     scRNA-seq Prostate <subsections/datasets/singlecell_prostate_standard>
     scRNA-seq Integration <subsections/datasets/singlecell_prostate_integration>
     Other technologies <subsections/datasets/other_technologies_coming_soon>
-    
+
 Most of these tutorials use data which is stored within a helper extension of Giotto Suite, GiottoData. To run these tutorials, please first install this small package.
 Please note that some of the tutorials do require a manual download from an external site.
 
@@ -45,7 +46,7 @@ Stereo-seq
     .. card:: Mouse E12.5_E1S3
         :link: /subsections/datasets/SSeq-E12-5_E1S3-Tutorial
         :link-type: doc
-        
+
         .. image:: images/dataset_page/Stereo-seq.png
 
 Seq-Scope
@@ -55,7 +56,7 @@ Seq-Scope
     .. card:: Seq-Scope Mouse Liver
         :link: /subsections/datasets/seqscope_mouse_liver_221115
         :link-type: doc
-        
+
         .. image:: images/dataset_page/Seqscope_Icon.png
 
 
@@ -81,6 +82,16 @@ Visium
 
         .. image:: images/dataset_page/visium_prostate_summary.png
 
+CytAssist
+=================
+.. card-carousel:: 3
+
+    .. card:: CytAssist Human Lung Cancer
+        :link: /subsections/datasets/cytassist_visium
+        :link-type: doc
+
+        .. image:: images/dataset_page/cytassist_visium_human_lung_cancer.png
+
 
 *********************
 RNA Multiplex Imaging
@@ -89,7 +100,7 @@ RNA Multiplex Imaging
 Xenium
 =================
 .. card-carousel:: 3
-        
+
     .. card::
         :link: subsections/datasets/xenium_breast_cancer
         :link-type: doc
@@ -110,7 +121,7 @@ MERFISH
 =================
 .. card-carousel:: 3
 
-    .. card:: 
+    .. card::
         :link: /subsections/datasets/merFISH_hypot_preopt_region
         :link-type: doc
 
@@ -119,7 +130,7 @@ MERFISH
 Vizgen
 =================
 .. card-carousel:: 3
-        
+
     .. card::
         :link: subsections/datasets/vizgen_mouse_brain
         :link-type: doc
@@ -142,7 +153,7 @@ seqFISH
 
         .. image:: images/dataset_page/cortex_image_summary.png
 
-        
+
 osmFISH
 =================
 .. card-carousel:: 3
@@ -204,7 +215,7 @@ Other Technologies
 
 .. card-carousel:: 3
 
-    .. card:: 
+    .. card::
         :link: /subsections/datasets/other_technologies_coming_soon
         :link-type: doc
 
