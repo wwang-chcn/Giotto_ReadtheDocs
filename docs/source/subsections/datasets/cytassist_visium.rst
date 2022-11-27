@@ -444,7 +444,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
                    save_param = list(save_name="7_b_spatcellplot_1"))
 
 .. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/18-spatcellplot_1.png
-   :width: 50.0%
+   :width: 80.0%
 
 .. container:: cell
 
@@ -458,7 +458,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
                       save_param = list(save_name="7_d_spatDimCellPlot", base_width=7, base_height=10))
 
 .. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/19-spatDimCellPlot.png
-   :width: 50.0%
+   :width: 80.0%
 
 7. Spatial Grids
 ================
@@ -608,7 +608,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
                    point_size = 1.5, cow_n_col = 4)
 
 .. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/28-spatCellPlot2D.png
-   :width: 50.0%
+   :width: 80.0%
 
 10. HMRF Domains
 ================
