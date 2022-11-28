@@ -45,6 +45,7 @@ Download Data
 .. container:: cell
 
    .. code:: r
+      
       library(GiottoData)
 
       my_working_dir = '/path/to/directory/'
