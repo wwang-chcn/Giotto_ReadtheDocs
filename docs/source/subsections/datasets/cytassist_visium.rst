@@ -80,7 +80,7 @@ The minimum requirements are
       # show aligned image
       spatPlot(gobject = visium_lungcancer, cell_color = 'in_tissue', show_image = T, point_alpha = 0.7)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/0-spatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/0-spatPlot2D.png
    :width: 50.0%
 
 How to work with Giotto instructions that are part of your Giotto object:
@@ -130,7 +130,7 @@ Visualize aligned tissue with number of features after processing
 
       spatPlot2D(gobject = visium_lungcancer, show_image = T, point_alpha = 0.7)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/1-spatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/1-spatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -140,7 +140,7 @@ Visualize aligned tissue with number of features after processing
       spatPlot2D(gobject = visium_lungcancer, show_image = T, point_alpha = 0.7,
                  cell_color = 'nr_feats', color_as_factor = F)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/2-spatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/2-spatPlot2D.png
    :width: 50.0%
 
 3. Dimension Reduction
@@ -154,7 +154,7 @@ Visualize aligned tissue with number of features after processing
 
       visium_lungcancer <- calculateHVF(gobject = visium_lungcancer)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/3-HVFplot.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/3-HVFplot.png
    :width: 50.0%
 
 -  perform PCA
@@ -167,7 +167,7 @@ Visualize aligned tissue with number of features after processing
       visium_lungcancer <- runPCA(gobject = visium_lungcancer)
       screePlot(visium_lungcancer, ncp = 30)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/4-screePlot.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/4-screePlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -176,7 +176,7 @@ Visualize aligned tissue with number of features after processing
 
       plotPCA(gobject = visium_lungcancer)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/5-PCA.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/5-PCA.png
    :width: 50.0%
 
 -  run UMAP and/or t-SNE on PCs (or directly on matrix)
@@ -188,7 +188,7 @@ Visualize aligned tissue with number of features after processing
       visium_lungcancer <- runUMAP(visium_lungcancer, dimensions_to_use = 1:10)
       plotUMAP(gobject = visium_lungcancer)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/6-UMAP.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/6-UMAP.png
    :width: 50.0%
 
 .. container:: cell
@@ -198,7 +198,7 @@ Visualize aligned tissue with number of features after processing
       visium_lungcancer <- runtSNE(visium_lungcancer, dimensions_to_use = 1:10)
       plotTSNE(gobject = visium_lungcancer)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/7-tSNE.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/7-tSNE.png
    :width: 50.0%
 
 4. Clustering
@@ -218,7 +218,7 @@ Visualize aligned tissue with number of features after processing
       # visualize UMAP cluster results
       plotUMAP(gobject = visium_lungcancer, cell_color = 'leiden_clus', show_NN_network = T, point_size = 2)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/8-UMAP.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/8-UMAP.png
    :width: 50.0%
 
 .. container:: cell
@@ -228,7 +228,7 @@ Visualize aligned tissue with number of features after processing
       # visualize tSNE cluster results
       plotTSNE(gobject = visium_lungcancer, cell_color = 'leiden_clus', show_NN_network = T, point_size = 2)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/9-tSNE.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/9-tSNE.png
    :width: 50.0%
 
 .. container:: cell
@@ -239,7 +239,7 @@ Visualize aligned tissue with number of features after processing
       spatDimPlot(gobject = visium_lungcancer, cell_color = 'leiden_clus',
                   dim_point_size = 2, spat_point_size = 2)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/10-spatDimPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/10-spatDimPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -249,7 +249,7 @@ Visualize aligned tissue with number of features after processing
       spatDimPlot(gobject = visium_lungcancer, cell_color = 'nr_feats', color_as_factor = F,
                   dim_point_size = 2, dim_show_legend = T, spat_show_legend = T, spat_point_size = 2)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/11-spatDimPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/11-spatDimPlot2D.png
    :width: 50.0%
 
 5. Differential expression
@@ -274,7 +274,7 @@ Visualize aligned tissue with number of features after processing
       violinPlot(visium_lungcancer, feats = unique(topgenes_gini), cluster_column = 'leiden_clus',
                  strip_text = 8, strip_position = 'right')
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/12-violinPlot.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/12-violinPlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -287,7 +287,7 @@ Visualize aligned tissue with number of features after processing
                           metadata_cols = c('leiden_clus'),
                           x_text_size = 10, y_text_size = 10)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/13-plotMetaDataHeatmap.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/13-plotMetaDataHeatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -301,7 +301,7 @@ Visualize aligned tissue with number of features after processing
                     cow_n_col = 3, point_size = 1)
 
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/14-dimFeatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/14-dimFeatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -321,7 +321,7 @@ Visualize aligned tissue with number of features after processing
                  cluster_column = 'leiden_clus',
                  strip_text = 10, strip_position = 'right')
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/15-violinPlot.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/15-violinPlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -334,7 +334,7 @@ Visualize aligned tissue with number of features after processing
                           metadata_cols = c('leiden_clus'),
                           x_text_size = 10, y_text_size = 10)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/16-plotMetaDataHeatmap.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/16-plotMetaDataHeatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -357,9 +357,10 @@ Visualize aligned tissue with number of features after processing
 | - PAGE
 | - hypergeometric test
 | - Rank
-| - `DWLS
-  `Deconvolution <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7>`__ Corresponded Single cell dataset can be generated from `here <http://mousebrain.org/>`__.
-  Giotto_SC is processed from the downsampled `Loom <https://satijalab.org/loomr/loomr_tutorial>`__ file and can also be downloaded from getSpatialDataset.
+| - DWLS
+
+`Deconvolution <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7>`__ Corresponded Single cell dataset can be generated from `here <http://mousebrain.org/>`__.
+Giotto_SC is processed from the downsampled `Loom <https://satijalab.org/loomr/loomr_tutorial>`__ file and can also be downloaded from getSpatialDataset.
 
 PAGE
 ----
@@ -429,7 +430,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
                                show_plot = T,
                                save_param = list(save_name="7_a_metaheatmap"))
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/17-metaheatmap.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/17-metaheatmap.png
    :width: 50.0%
 
 .. container:: cell
@@ -443,7 +444,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
                    cow_n_col = 4, coord_fix_ratio = NULL, point_size = 0.75,
                    save_param = list(save_name="7_b_spatcellplot_1"))
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/18-spatcellplot_1.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/18-spatcellplot_1.png
    :width: 80.0%
 
 .. container:: cell
@@ -457,7 +458,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
                       plot_alignment = 'horizontal',
                       save_param = list(save_name="7_d_spatDimCellPlot", base_width=7, base_height=10))
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/19-spatDimCellPlot.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/19-spatDimCellPlot.png
    :width: 80.0%
 
 7. Spatial Grids
@@ -475,7 +476,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
      spatPlot(visium_lungcancer, cell_color = 'leiden_clus', point_size = 2.5, show_grid = T,
      grid_color = 'red', spatial_grid_name = 'spatial_grid')
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/20-spatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/20-spatPlot2D.png
    :width: 50.0%
 
 8. Spatial Network
@@ -488,7 +489,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
       ## Delaunay network: stats + creation
       plotStatDelaunayNetwork(gobject = visium_lungcancer, maximum_distance = 400)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/21-plotStatDelaunayNetwork.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/21-plotStatDelaunayNetwork.png
    :width: 50.0%
 
 .. container:: cell
@@ -500,7 +501,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
       spatPlot(gobject = visium_lungcancer, show_network = T,
       network_color = 'blue', spatial_network_name = 'Delaunay_network')
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/22-spatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/22-spatPlot2D.png
    :width: 50.0%
 
 9. Spatial Genes
@@ -515,7 +516,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
       spatFeatPlot2D(visium_lungcancer, expression_values = 'scaled',
                      feats = kmtest$feats[1:6], cow_n_col = 2, point_size = 1.5)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/23-spatFeatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/23-spatFeatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -547,7 +548,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
       spatFeatPlot2D(visium_lungcancer, expression_values = 'scaled',
                      feats = c('RSPH1', 'C20orf85', 'DNAAF1','TEKT2'), point_size = 3)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/24-spatFeatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/24-spatFeatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -557,7 +558,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
       spatFeatPlot2D(visium_lungcancer, expression_values = 'scaled',
                      feats = c('TEKT2', 'CFAP157', 'MAPK15', 'MS4A8', 'CDHR3', 'C9orf24'), point_size = 3)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/25-spatFeatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/25-spatFeatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -570,7 +571,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
       heatmSpatialCorFeats(visium_lungcancer, spatCorObject = spat_cor_netw_DT, use_clus_name = ‘spat_netw_clus’,
       save_param = c(save_name = ‘22-z1-heatmap_correlated_genes’, save_format = ‘pdf’, base_height = 6, base_width = 8, units = ‘cm’), heatmap_legend_param = list(title = NULL))
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/26-heatmap_correlated_genes.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/26-heatmap_correlated_genes.png
    :width: 50.0%
 
 .. container:: cell
@@ -587,7 +588,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
       top_netw_spat_cluster = showSpatialCorFeats(spat_cor_netw_DT, use_clus_name = 'spat_netw_clus',
                                                   selected_clusters = 6, show_top_feats = 1)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/27-rank_correlated_groups.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/27-rank_correlated_groups.png
    :width: 50.0%
 
 .. container:: cell
@@ -607,7 +608,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
                    cell_annotation_values = netw_ranks$clusters,
                    point_size = 1.5, cow_n_col = 4)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/28-spatCellPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/28-spatCellPlot2D.png
    :width: 80.0%
 
 10. HMRF Domains
@@ -655,7 +656,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
       ## visualize
       spatPlot(gobject = visium_lungcancer, cell_color = 'HMRF_k5_b.0', point_size = 3)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/29-spatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/29-spatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
@@ -664,7 +665,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
 
       spatPlot(gobject = visium_lungcancer, cell_color = 'HMRF_k5_b.10', point_size = 3)
 
-.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/cytassist_visium_lungcancer/30-spatPlot2D.png
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/30-spatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
