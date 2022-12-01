@@ -2,39 +2,112 @@
 Changelog
 =========
 
-Giotto Suite 3.0
-================
+
+Giotto Suite 3.1.0 (2202-12-01)
+===============================
+
+Added
+-----
+
+-  New ``initialize()`` generic that calls ``setalloccol()`` for
+   data.table-based S4 subobjects to allow setting by reference
+-  New ``spatUnit``, ``spatUnit<-``, ``featType``, and ``featType<-``
+   feat type generics for S4 subobjects for setting the relevant slots
+-  Add ``hexVertices()`` to polygon shape array generation functionality
+
+Changes
+-------
+
+-  Update ``createGiottoCosMxObject()`` for 3.0 and modularization of
+   functions. ‘subcellular’ workflow has been tested to work along with
+   an updated tutorial.
+-  Update grid plotting behavior to set a default number columns to use
+   based on number of elements to plot. Can be overridden by explicitly
+   providing input to ``cow_n_col`` param
+-  Fix bug in ``annotateGiotto()`` after 3.0 update
+   (`#433 <https://github.com/drieslab/Giotto/issues/433#issuecomment-1324211224>`__)
+-  Fix bug in ``joinGiottoObjects()`` metadata processing
+-  Update seed setting behavior in
+   `dimension_reduction.R <https://github.com/drieslab/Giotto/blob/suite/R/dimension_reduction.R>`__
+   and
+   `clustering.R <https://github.com/drieslab/Giotto/blob/suite/R/clustering.R>`__
+
+Giotto Suite 3.0.1 (2022-11-20)
+===============================
+
+.. _added-1:
+
+Added
+-----
+
+-  New system color support detection (based on crayon package logic)
+-  Add ability to turn off colored text in ``show`` functions with
+   ``options("giotto.color_show" = FALSE)``
+
+.. _changes-1:
+
+Changes
+-------
+
+-  Fix bug in ``extract_polygon_list()``
+   (`#433 <https://github.com/drieslab/Giotto/issues/433#issuecomment-1321221382>`__)
+-  Update Unicode character printing with ``show`` functions for Latin1
+   systems
+
+Giotto Suite 3.0.0 (2022-11-18)
+===============================
 
 Breaking Changes
 ----------------
 
--  Integration of S4_provenance branch into suite branch
-
-   -  S4 classes and methods for different Giotto slots
-   -  Getters and setters for different Giotto slots
-   -  Provenance information for Giotto slots
-
+-  S4 subobjects framework will require giotto objects to be remade
 
 New features
 ------------
 
+-  New ``createGiottoXeniumObject()`` for loading 10x Xenium data
+
+-  New S4 subobjects. Details can be found in
+   `classes.R <https://github.com/drieslab/Giotto/blob/suite/R/classes.R>`__
+
+-  New basic generics for S4 subobjects. Mainly the use of ``[]`` and
+   ``[]<-`` to get or set information into the main data slot
+
+-  New ``@provenance`` slot in S4 subobjects to track provenance of
+   aggregated information (z_layers used for example)
+
 -  Working with intensity based data
 
-   -  calculateOverlapPolygonImages: calculates overlapping intensities from image based information (e.g. IMC, IF, MIBI, …) and polygon data (e.g. cell)
-   -  overlapImagesToMatrix: converts intensity-polygon overlap information into a matrix (e.g. cell by protein)
+   -  calculateOverlapPolygonImages: calculates overlapping intensities
+      from image based information (e.g. IMC, IF, MIBI, …) and polygon
+      data (e.g. cell)
+   -  overlapImagesToMatrix: converts intensity-polygon overlap
+      information into a matrix (e.g. cell by protein)
 
 -  Aggregation of layers for subcellular datasets
 
-   -  aggregateStacksExpression: aggregate expression matrices from multiple layers (e.g. z-stacks through the same cell)
-   -  aggregateStacksPolygons: aggregate polygon shapes from multiple layers
-   -  aggregateStacksPolygonOverlaps: aggregate feature - polygon overlap information from multiple layers
-   -  aggregateStacks: combines the previous aggregate* functions
+   -  aggregateStacksExpression: aggregate expression matrices from
+      multiple layers (e.g. z-stacks through the same cell)
+   -  aggregateStacksPolygons: aggregate polygon shapes from multiple
+      layers
+   -  aggregateStacksPolygonOverlaps: aggregate feature - polygon
+      overlap information from multiple layers
+   -  aggregateStacks: combines the previous aggregate\* functions
 
+.. _changes-2:
 
+Changes
+-------
 
+-  Update ``setter`` functions to read the ``@spat_unit`` and
+   ``@feat_type`` slots of subobjects to determine nesting
+-  Update of ``show`` functions to display color coded nesting names and
+   tree structure
 
-Giotto Suite 2.1
-================
+Giotto Suite 2.1.0 (2202-11-09)
+===============================
+
+.. _breaking-changes-1:
 
 Breaking Changes
 ----------------
@@ -49,6 +122,8 @@ Breaking Changes
    -  python-louvain==0.16
    -  python.app==1.4
    -  scikit-learn==1.1.3
+
+.. _new-features-1:
 
 New features
 ------------
@@ -65,6 +140,8 @@ New features
 Giotto Suite 2.0.0.998
 ======================
 
+.. _new-features-2:
+
 New features
 ------------
 
@@ -79,6 +156,7 @@ New features
 -  I/O functions
 
    -  saveGiotto
+
    -  loadGiotto
 
       -  All above functions to general_help.R
@@ -96,7 +174,9 @@ New features
 -  Polygon stamping functions
 
    -  polyStamp
+
    -  circleVertices
+
    -  rectVertices
 
       -  All above functions are in giotto_structures.R
@@ -114,14 +194,18 @@ Minor improvements and bug fixes
 -  Accessor functions
 
    -  get_CellMetadata (alias to pDataDT)
+
    -  set_CellMetadata
+
    -  get_FeatMetadata (alias to fDataDT)
+
    -  set_FeatMetadata
 
       -  All above functions to accessors.R
 
    -  Required inputs: gobject, spat_unit, feat_type, data.table with
       new metadata (for setters)
+
    -  *Note that setters will overwrite the entire metadata slot with
       whatever is provided as a replacement argument*
 
