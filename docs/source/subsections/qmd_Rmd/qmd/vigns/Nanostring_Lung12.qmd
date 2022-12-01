@@ -88,7 +88,7 @@ showGiottoSpatialInfo(fov_join)
 data_path = '/path/to/data/Lung12-Flat_files_and_images/'
 
 # load transcript coordinates
-tx_coord_all = fread(paste0(data_path, 'Lung12_tx_file.csv'))
+tx_coord_all = data.table::fread(paste0(data_path, 'Lung12_tx_file.csv'))
 
 colnames(tx_coord_all)
 cat('\n')
@@ -139,7 +139,6 @@ neg_coords_all = tx_coord_all[target %in% neg_IDs]
 
 cat('\nFeatures: ', feat_coords_all[, .N], '\n',
     'NegProbes: ', neg_coords_all[, .N])
-
 ```
 
 ```{r, eval=FALSE}
@@ -366,10 +365,10 @@ plot(neg_points, point_size = 0.2, feats = neg_IDs)
 
 
 ## FOV shifts
-`fov_positions_file.csv` contains information on the x and y shifts needed in order to put the FOVs tiles together into a cohesive whole. This information is needed during the gobject join process.
+`fov_positions_file.csv` contains information on the x and y shifts needed in order to put the FOVs tiles together into a cohesive whole. This information is needed during the image attachment and alignment process.
 ```{r, eval=FALSE}
 #  load field of vision (fov) positions
-fov_offset_file = fread(paste0(data_path, 'Lung12_fov_positions_file.csv'))
+fov_offset_file = data.table::fread(paste0(data_path, 'Lung12_fov_positions_file.csv'))
 ```
 
 <details><summary>fov_offset_file</summary>
@@ -421,25 +420,30 @@ id_set = c('02', '03', '04')
 # Create a Giotto Object for each FOV
 ```{r, eval=FALSE}
 for(fov_i in 1:length(id_set)) {
-
+  
   fov_id = id_set[fov_i]
-
-
+  
+  
   # 1. original composite image as png
   original_composite_image = paste0(data_path, 'CellComposite/CellComposite_F0', fov_id,'.jpg')
-
+  
   # 2. input cell segmentation as mask file
   segmentation_mask = paste0(data_path, 'CellLabels/CellLabels_F0', fov_id, '.tif')
-
+  
   # 3. input features coordinates + offset
-  tx_coord = tx_coord_all[fov == as.numeric(fov_id)]
-  tx_coord = tx_coord[,.(x_local_px, y_local_px, z, target)]
-  colnames(tx_coord) = c('x', 'y', 'z', 'gene_id')
-  tx_coord = tx_coord[,.(x, y, gene_id)]
-
-
+  feat_coord = feat_coords_all[fov == as.numeric(fov_id)]
+  neg_coord = neg_coords_all[fov == as.numeric(fov_id)]
+  feat_coord = feat_coord[,.(x_local_px, y_local_px, z, target)]
+  neg_coord = neg_coord[,.(x_local_px, y_local_px, z, target)]
+  colnames(feat_coord) = c('x', 'y', 'z', 'gene_id')
+  colnames(neg_coord) = c('x', 'y', 'z', 'gene_id')
+  feat_coord = feat_coord[,.(x, y, gene_id)]
+  neg_coord = neg_coord[,.(x, y, gene_id)]
+  
+  
   fovsubset = createGiottoObjectSubcellular(
-    gpoints = list('rna' = tx_coord),
+    gpoints = list('rna' = feat_coord,
+                   'neg_probe' = neg_coord),
     gpolygons = list('cell' = segmentation_mask),
     polygon_mask_list_params = list(
       mask_method = 'guess',
@@ -447,31 +451,30 @@ for(fov_i in 1:length(id_set)) {
       flip_horizontal = FALSE,
       shift_horizontal_step = FALSE
     ),
-    instructions = instrs
+    instructions = instrs1
   )
-
-
+  
+  
   # cell centroids are now used to provide the spatial locations
   fovsubset = addSpatialCentroidLocations(fovsubset,
                                           poly_info = 'cell')
-
+  
   # create and add Giotto images
   composite = createGiottoLargeImage(raster_object = original_composite_image,
                                      negative_y = FALSE,
                                      name = 'composite')
-
+  
   fovsubset = addGiottoImage(gobject = fovsubset,
                              largeImages = list(composite))
-
-
+  
+  
   fovsubset = convertGiottoLargeImageToMG(giottoLargeImage = composite,
                                           #mg_name = 'composite',
                                           gobject = fovsubset,
                                           return_gobject = TRUE)
-
+  
   gobjects_list[[fov_i]] = fovsubset
-
-
+  
 }
 ```
 
