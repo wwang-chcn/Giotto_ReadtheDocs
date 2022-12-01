@@ -1587,10 +1587,10 @@ saveGiotto(gobject = fov_join,
 
 
 <details><summary>Session Info</summary>
-```{r}
+```{r, eval=FALSE}
 sessionInfo()
 ```
-```{r}
+```{r, eval=FALSE}
 # R version 4.2.1 (2022-06-23)
 # Platform: x86_64-apple-darwin17.0 (64-bit)
 # Running under: macOS Big Sur 11.6
@@ -1605,7 +1605,7 @@ sessionInfo()
 # [1] stats     graphics  grDevices utils     datasets  methods   base     
 # 
 # other attached packages:
-# [1] Giotto_3.0.1   testthat_3.1.5 ggplot2_3.4.0 
+# [1] Giotto_3.1   testthat_3.1.5 ggplot2_3.4.0 
 # 
 # loaded via a namespace (and not attached):
 #   [1] utf8_1.2.2                  reticulate_1.26             R.utils_2.12.2             

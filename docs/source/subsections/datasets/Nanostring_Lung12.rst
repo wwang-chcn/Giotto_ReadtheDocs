@@ -2069,31 +2069,6 @@ later using ``loadGiotto()``.
 
       sessionInfo()
 
-   .. container:: cell-output cell-output-stdout
-
-      ::
-
-         R version 4.2.1 (2022-06-23)
-         Platform: x86_64-apple-darwin17.0 (64-bit)
-         Running under: macOS Big Sur ... 10.16
-
-         Matrix products: default
-         BLAS:   /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRblas.0.dylib
-         LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
-
-         locale:
-         [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-
-         attached base packages:
-         [1] stats     graphics  grDevices utils     datasets  methods   base     
-
-         loaded via a namespace (and not attached):
-          [1] compiler_4.2.1  magrittr_2.0.3  fastmap_1.1.0   cli_3.4.1      
-          [5] tools_4.2.1     htmltools_0.5.3 rstudioapi_0.14 yaml_2.3.6     
-          [9] stringi_1.7.8   rmarkdown_2.18  knitr_1.41      stringr_1.4.1  
-         [13] xfun_0.35       digest_0.6.30   jsonlite_1.8.3  rlang_1.0.6    
-         [17] evaluate_0.18  
-
 .. container:: cell
 
    .. code:: r
@@ -2112,7 +2087,7 @@ later using ``loadGiotto()``.
       # [1] stats     graphics  grDevices utils     datasets  methods   base     
       # 
       # other attached packages:
-      # [1] Giotto_3.0.1   testthat_3.1.5 ggplot2_3.4.0 
+      # [1] Giotto_3.1   testthat_3.1.5 ggplot2_3.4.0 
       # 
       # loaded via a namespace (and not attached):
       #   [1] utf8_1.2.2                  reticulate_1.26             R.utils_2.12.2             
