@@ -12,7 +12,7 @@ Tutorials
     Stereo-Seq Mouse Embryo <subsections/datasets/SSeq-E12-5_E1S3-Tutorial>
     Seq-Scope Mouse Liver <subsections/datasets/seqscope_mouse_liver_221115>
     Xenium Breast Cancer <subsections/datasets/xenium_breast_cancer>
-    Nanostring CosMx Lung <subsections/datasets/Nanostring_Lung12_jan26_21>
+    Nanostring CosMx Lung <subsections/datasets/Nanostring_Lung12>
     MERFISH <subsections/datasets/merFISH_hypot_preopt_region>
     Vizgen Brain <subsections/datasets/vizgen_mouse_brain>
     Visium Mouse Kidney <subsections/datasets/mouse_visium_kidney>
@@ -112,7 +112,7 @@ Nanostring CosMx
 .. card-carousel:: 3
 
     .. card::
-        :link: subsections/datasets/Nanostring_Lung12_jan26_21
+        :link: subsections/datasets/Nanostring_Lung12
         :link-type: doc
 
         .. image:: images/dataset_page/nanostring_overview_icon.png
