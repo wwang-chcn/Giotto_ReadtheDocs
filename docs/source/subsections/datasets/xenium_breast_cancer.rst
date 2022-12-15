@@ -74,23 +74,23 @@ The data from the first tissue replicate will be worked with.
    .. code:: r
 
       # ** SET PATH TO FOLDER CONTAINING XENIUM DATA **
-      xenium_folder = '/path/to/xenium/output/directory/'
+      xenium_folder = '/path/to/xenium/data/outputs'
 
-      # general files
-      settings_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_experiment.xenium')
+      # general files (some are supplemental files)
+      settings_path = paste0(xenium_folder, 'experiment.xenium')
       he_img_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_he_image.tif')
       if_img_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_if_image.tif')
       panel_meta_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_panel.tsv') # (optional)
 
-      # files (SUBCELLULAR):
-      cell_bound_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_cell_boundaries.csv.gz')
-      nuc_bound_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_nucleus_boundaries.csv.gz')
-      tx_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_transcripts.csv.gz')
+      # files (SUBCELLULAR): (tutorial focuses on working with these files)
+      cell_bound_path = paste0(xenium_folder, 'cell_boundaries.csv.gz')
+      nuc_bound_path = paste0(xenium_folder, 'nucleus_boundaries.csv.gz')
+      tx_path = paste0(xenium_folder, 'transcripts.csv.gz')
       feat_meta_path = paste0(xenium_folder, 'cell_feature_matrix/features.tsv.gz') # (also used in aggregate)
 
       # files (AGGREGATE):
       expr_mat_path = paste0(xenium_folder, 'cell_feature_matrix')
-      cell_meta_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_cells.csv.gz') # contains spatlocs
+      cell_meta_path = paste0(xenium_folder, 'cells.csv.gz') # contains spatlocs
 
 4 Xenium feature types exploration
 ==================================
@@ -150,9 +150,7 @@ transcript detection.
 
 .. raw:: html
 
-   <summary>
-
-gene expression IDs
+   <summary>gene expression IDs
 
 .. raw:: html
 
@@ -226,9 +224,7 @@ gene expression IDs
 
 .. raw:: html
 
-   <summary>
-
-blank codeword IDs
+   <summary>blank codeword IDs
 
 .. raw:: html
 
@@ -281,9 +277,7 @@ blank codeword IDs
 
 .. raw:: html
 
-   <summary>
-
-negative control codeword IDs
+   <summary>negative control codeword IDs
 
 .. raw:: html
 
@@ -325,9 +319,7 @@ negative control codeword IDs
 
 .. raw:: html
 
-   <summary>
-
-negative control probe IDs
+   <summary>negative control probe IDs
 
 .. raw:: html
 
@@ -538,9 +530,7 @@ Description:
 
 .. raw:: html
 
-   <summary>
-
-createGiottoXeniumObject()
+   <summary>createGiottoXeniumObject()
 
 .. raw:: html
 
@@ -568,9 +558,7 @@ createGiottoXeniumObject()
 
 .. raw:: html
 
-   <summary>
-
-log
+   <summary>log
 
 .. raw:: html
 
@@ -664,9 +652,7 @@ log
 
 .. raw:: html
 
-   <summary>
-
-log
+   <summary>log
 
 .. raw:: html
 
@@ -1214,9 +1200,7 @@ minimum of 5 features detected to be included. *Run on a server \|
 
 .. raw:: html
 
-   <summary>
-
-cell metadata
+   <summary>cell metadata
 
 .. raw:: html
 
@@ -1310,9 +1294,7 @@ cell metadata
 
 .. raw:: html
 
-   <summary>
-
-feature metadata
+   <summary>feature metadata
 
 .. raw:: html
 
