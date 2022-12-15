@@ -28,28 +28,6 @@ Following a particular programming style will help programmers read and understa
     - Do not use any non-ASCII characters (unless as unicode escape sequences, with alternatives for non-UTF-8 encoding systems)
 
 
-$~$
-
-### TRUE FALSE testing
-`isTRUE()` should be used when testing if a boolean value is TRUE to aid with code
-readability. `isTRUE()` should be used even when testing if value is FALSE by negating
-with !.
-```{r, eval=FALSE}
-a = TRUE
-
-# test if TRUE
-a == TRUE # no
-
-isTRUE(a) # yes
-
-# test if FALSE
-a != TRUE # no
-isFALSE(a) # no
-
-!isTRUE(a) # yes
-```
-
-
 
 $~$
 
@@ -91,6 +69,12 @@ By default, these functions retrieve the information as the S4 subobject. This i
 - **get_expression_values**: To select the expression matrix to use
 - **set_expression_values**: Sets a new expression matrix to the expression slot
 
+- **get_cell_metadata**:
+- **set_cell_metadata**:
+
+- **get_feature_metadata**:
+- **set_feature_metadata**:
+
 - **get_spatial_locations**: Get spatial locations to use
 - **set_spatial_locations**: Sets new spatial locations
 
@@ -115,11 +99,19 @@ By default, these functions retrieve the information as the S4 subobject. This i
 - **get_spatial_enrichment**: Gets spatial enrichment information
 - **set_spatial_enrichment**: Sets new spatial enrichment information
 
+$~$
+
+### Setting Giotto behavior
+Giotto's default behaviors are usually set by using the giotto instructions which are created either through `createGiottoInstructions()` by the user or generated automatically during object creation. These instructions are then appended into the giotto object in the `@instructions` slot. As a rule of thumb, any behaviors that are **NOT** session or system specific should be controlled through the giotto instructions.  
+  
+Notable examples of the aforementioned session or system-specific exceptions are `'giotto.plot_count'` or `'giotto.unicode'` which live in the R options.
+
+
 $~$ 
 
 ### Printout usage
 - **verbose**
-    - Functions with printouts should generally have a `verbose` param that is set to `TRUE` by default, where `TRUE` displays the printouts and `FALSE` suppresses them.    
+    - Any functions with printouts should generally have a `verbose` param that is set to `TRUE` by default, where `TRUE` displays the printouts and `FALSE` suppresses them.    
 - **wrapping text**
     Giotto includes functions in `utilities.R` for text wrapping.
     - `wrap_txt()` a general purpose function to wrap text to the console window before sending it to a printout function.  
@@ -131,6 +123,63 @@ $~$
     - `cat()`-style printouts should be reserved for printouts that the user has initiates (for example `show()` functions)  
     - `warning()` usage should be sparingly used and reserved for potential issues that the user should be made aware of about the function operation that or output limitations that are not likely to be vital.  
     - `stop()` errors should be used with most caution, as they stop function execution. These should provide a clear description of what the error is.
+
+$~$
+
+### TRUE FALSE testing
+`isTRUE()` should be used when testing if a boolean value is TRUE to aid with code
+readability. `isTRUE()` should be used even when testing if value is FALSE by negating
+with !.
+```{r, eval=FALSE}
+a = TRUE
+
+# test if TRUE
+a == TRUE # no
+
+isTRUE(a) # yes
+
+# test if FALSE
+a != TRUE # no
+isFALSE(a) # no
+
+!isTRUE(a) # yes
+```
+
+$~$
+
+#### data.table usage
+data.table's syntax does not play too well with R cmd check. Here are some guidelines for working with data.table in ways that will not trigger notes during the package check:
+
+1. When referencing columns as variables, set them to NULL earlier in the function so that the check does not complain `no visible binding for global variable 'foo'`
+```{r}
+Species = NULL
+x = data.table::as.data.table(iris)
+x[, table(Species)]
+```
+
+2. When supplying a vector of colnames to subset, it is common to use the `..foo` notation but this will return the note `no visible binding for global variable ‘..foo’` during package check. Instead use the older `with = FALSE` notation.  
+Trying to set `..foo = NULL` to avoid the error will instead get a warning from data.table
+
+**Preferred:**  
+```{r, eval=FALSE}
+foo = c('Species', 'Sepal.Length')
+x[, foo, with = FALSE]
+```
+
+**Works, but has issues with pkg check:**  
+```{r, eval=FALSE}
+x[, ..foo]
+```
+
+**Throws warning:**  
+```{r, eval=FALSE}
+..foo = NULL
+x[, ..foo]
+```
+```{r, eval=FALSE}
+# Warning: Both 'foo' and '..foo' exist in calling scope. Please remove the '..foo' variable in calling scope for clarity.
+```
+
 
 $~$
 
