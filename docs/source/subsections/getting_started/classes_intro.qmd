@@ -1,0 +1,52 @@
+---
+title: "An introduction to the Giotto Suite classes"
+format: html
+number-sections: true
+---
+
+Giotto is a toolbox and framework for spatial-omic analysis and its classes and structure are designed around these concepts.
+
+## Giotto object slots
+
+    Giotto Object
+    ├──expression
+    ├──expression_feat
+    ├──spatial_locs
+    ├──spatial_info
+    ├──cell_metadata
+    ├──feat_metadata
+    ├──feat_info
+    ├──cell_ID
+    ├──feat_ID
+    ├──spatial_network
+    ├──spatial_grid
+    ├──spatial_enrichment
+    ├──dimension_reduction
+    ├──nn_network
+    ├──images
+    ├──largeImages
+    ├──parameters
+    ├──instructions
+    ├──offset_file
+    ├──OS_platform
+    └──join_info
+
+
+
+## Spatial unit and feature type
+
+A difficulty specific to spatial analysis is what exactly to consider the functional unit of the biology that you are studying.
+
+## Show and list functions
+
+## Provenance
+
+Going further, the sources of data drawn upon to create that functional unit of information can also be variable. This is most easily shown with the subcellular datasets from the Vizgen MERSCOPE platform which provide both feature polygon information for multiple confocal planes within a tissue. The aggregated information produced then could be drawn from different z-planes or combinations thereof.
+
+```{r, eval=FALSE}
+
+```
+
+## Giotto subobjects
+
+The 3.0 update introduced S4 subobjects
