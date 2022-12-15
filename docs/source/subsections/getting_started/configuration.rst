@@ -218,7 +218,7 @@ provided here.
       retry_install <- length(missing_packages) > 0
 
       if(retry_install){
-        
+
         # Attempt to reinstall all packages.
         pkgs_w_versions <- c('pandas==1.5.1',
                              'networkx==2.8.8',
@@ -227,71 +227,73 @@ provided here.
                              'python-louvain==0.16',
                              'python.app==1.4',
                              'scikit-learn==1.1.3')
-        
-        py_pkgs = c('pandas','networkx', 
+
+        python_version = "3.10.2"
+
+        py_pkgs = c('pandas','networkx',
                     'igraph', 'leidenalg',
                     'python-louvain','scikit-learn','python.app')
-        
+
         if(Sys.info()[['sysname']] != "Darwin"){
           pkgs_w_versions = pkgs_w_versions[!grepl(pattern = 'python.app', x = pkgs_w_versions)]
           py_pkgs = py_pkgs[!grepl(pattern = 'python.app', x = py_pkgs)]
         }
-        
+
         env_location <- reticulate::py_discover_config()$pythonhome
         partial_path_to_conda <- paste0(reticulate::miniconda_path(),'/envs/giotto_env')
-        
+
         py_lou = pkgs_w_versions[grepl(pattern = 'python-louvain',x = pkgs_w_versions)]
         pip_packages = c("smfishhmrf", py_lou)
-        pkgs_w_versions = pkgs_w_versions[!grepl(pattern = 'python-louvain',x = pkgs_w_versions)]  
+        pkgs_w_versions = pkgs_w_versions[!grepl(pattern = 'python-louvain',x = pkgs_w_versions)]
 
         if(.Platform[['OS.type']] == 'unix') {
-          
+
           conda_full_path = paste0(partial_conda_path,'/','bin/conda')
-          
+
           # Remove all previous installations
           reticulate::conda_remove(envname = env_location,
                                    packages = py_pkgs,
                                    conda = conda_full_path)
-          
+
           # Reinstall
           reticulate::conda_install(packages = pkgs_w_versions,
                                     envname = env_location,
                                     method = 'conda',
                                     conda = conda_full_path,
-                                    python_version = 3.6)
-          
-          # Reinstall smfishhmrf with pip
+                                    python_version = python_version)
+
+          # Reinstall with pip
           reticulate::conda_install(packages = pip_packages,
                                     envname = env_location,
                                     method = 'conda',
                                     conda = conda_full_path,
                                     pip = TRUE,
-                                    python_version = 3.6)
+                                    python_version = python_version)
         }
         else if(.Platform[['OS.type']] == 'windows'){
           conda_full_path = paste0(partial_conda_path,'/','condabin/conda.bat')
-          
+
           # Remove all previous installations
           reticulate::conda_remove(envname = env_location,
                                    packages = py_pkgs,
                                    conda = conda_full_path)
-          
+
           # Reinstall
           reticulate::conda_install(packages = pkgs_w_versions,
                                     envname = env_location,
                                     method = 'conda',
                                     conda = conda_full_path,
-                                    python_version = 3.6,
+                                    python_version = python_version,
                                     channel = c('conda-forge', 'vtraag'))
-          
-          # Reinstall smfishhmrf with pip
+
+          # Reinstall with pip
           reticulate::conda_install(packages = pip_packages,
                                     envname = env_location,
                                     method = 'conda',
                                     conda = conda_full_path,
                                     pip = TRUE,
-                                    python_version = 3.6)
-          
+                                    python_version = python_version)
+
         }
       }
 
