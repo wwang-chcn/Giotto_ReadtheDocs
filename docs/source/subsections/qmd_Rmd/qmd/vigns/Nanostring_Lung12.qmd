@@ -1,7 +1,7 @@
 ---
 title: "Nanostring CosMx Subcellular Lung Cancer"
 format: rst
-Date: 'Compiled 2022-11-30'
+date: 'Compiled 2022-11-30'
 number-sections: true
 ---
 

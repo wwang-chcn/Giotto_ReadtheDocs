@@ -53,23 +53,23 @@ Xenium's exact output folder structure and which file/formats will be available 
 Note: *The cell_feature_matrix.tar.gz must be unpacked into a subdirectory within the xenium working directory before starting*
 ```{r, eval=FALSE}
 # ** SET PATH TO FOLDER CONTAINING XENIUM DATA **
-xenium_folder = '/path/to/xenium/output/directory/'
+xenium_folder = '/path/to/xenium/data/outputs'
 
-# general files
-settings_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_experiment.xenium')
+# general files (some are supplemental files)
+settings_path = paste0(xenium_folder, 'experiment.xenium')
 he_img_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_he_image.tif')
 if_img_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_if_image.tif')
 panel_meta_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_panel.tsv') # (optional)
 
-# files (SUBCELLULAR):
-cell_bound_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_cell_boundaries.csv.gz')
-nuc_bound_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_nucleus_boundaries.csv.gz')
-tx_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_transcripts.csv.gz')
+# files (SUBCELLULAR): (tutorial focuses on working with these files)
+cell_bound_path = paste0(xenium_folder, 'cell_boundaries.csv.gz')
+nuc_bound_path = paste0(xenium_folder, 'nucleus_boundaries.csv.gz')
+tx_path = paste0(xenium_folder, 'transcripts.csv.gz')
 feat_meta_path = paste0(xenium_folder, 'cell_feature_matrix/features.tsv.gz') # (also used in aggregate)
 
 # files (AGGREGATE):
 expr_mat_path = paste0(xenium_folder, 'cell_feature_matrix')
-cell_meta_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_cells.csv.gz') # contains spatlocs
+cell_meta_path = paste0(xenium_folder, 'cells.csv.gz') # contains spatlocs
 ```
 
 ## Xenium feature types exploration
