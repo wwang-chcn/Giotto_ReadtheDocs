@@ -25,7 +25,7 @@ To run the current vignette you need to install the Giotto Suite branch.
 
       # Ensure Giotto Suite and GiottoData packages are installed
       if(!"Giotto" %in% installed.packages()) {
-         devtools::install_github("drieslab/Giotto@Suite")
+         devtools::install_github("drieslab/Giotto@suite")
       }
 
       if(!"Giotto" %in% installed.packages()) {
