@@ -9,12 +9,10 @@ Dataset Explanation
 
 The human lung cancer (FFPE) dataset was obtained from 10x Genomics using their CytAssist Visium technology that has been recently developed to allow users to perform standard histology workflows on two standard glass slides before transferring the transcriptional probes on the two-area capture visium slide.
 
-More information about this dataset can be found `here <https://www.10xgenomics.com/resources/datasets/human-lung-cancer-ffpe-2-standard>`_.
+More information about this dataset can be found `here <https://www.10xgenomics.com/resources/datasets/human-lung-cancer-ffpe-2-standard/>`__.
 
-.. _here: https://www.10xgenomics.com/resources/datasets/human-lung-cancer-ffpe-2-standard
-
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/CytAssist%20Visium%20workflow.png?raw=true
-   :width: 100.0%
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/CytAssist_Visium_workflow.png
+   :width: 90.0%
 
 Start Giotto
 ============
@@ -27,16 +25,16 @@ To run the current vignette you need to install the Giotto Suite branch.
 
       # Ensure Giotto Suite and GiottoData packages are installed
       if(!"Giotto" %in% installed.packages()) {
-         devtools::install_github("drieslab/Giotto@Suite")
+         devtools::install_github("drieslab/Giotto@suite")
       }
-      
+
       if(!"Giotto" %in% installed.packages()) {
          devtools::install_github("drieslab/GiottoData")
       }
 
       library(Giotto)
       library(GiottoData)
-      
+
       # Ensure the Python environment for Giotto has been installed
       genv_exists = checkGiottoEnvironment()
       if(!genv_exists){
@@ -47,9 +45,9 @@ To run the current vignette you need to install the Giotto Suite branch.
       # to automatically save figures in save_dir set save_plot to TRUE
       temp_dir = getwd()
       myinstructions = createGiottoInstructions(save_dir = temp_dir,
-                                          save_plot = TRUE,
-                                          show_plot = TRUE)
-                                          
+                                                save_plot = TRUE,
+                                                show_plot = TRUE)
+
 1. Create a Giotto object
 =========================
 
@@ -82,7 +80,7 @@ The minimum requirements are
       # show aligned image
       spatPlot(gobject = visium_lungcancer, cell_color = 'in_tissue', show_image = T, point_alpha = 0.7)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/0-spatPlot2D.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/0-spatPlot2D.png
    :width: 50.0%
 
 How to work with Giotto instructions that are part of your Giotto object:
@@ -112,7 +110,7 @@ How to work with Giotto instructions that are part of your Giotto object:
 .. container:: cell
 
    .. code:: r
-      
+
       visium_lungcancer <- filterGiotto(gobject = visium_lungcancer,
                                         expression_threshold = 1,
                                         feat_det_in_min_cells = 50,
@@ -121,30 +119,30 @@ How to work with Giotto instructions that are part of your Giotto object:
                                         verbose = T)
       visium_lungcancer <- normalizeGiotto(gobject = visium_lungcancer, scalefactor = 6000, verbose = T)
       visium_lungcancer <- addStatistics(gobject = visium_lungcancer)
-      
+
 
 Visualize aligned tissue with number of features after processing
------------------------------------------------------------------    
+-----------------------------------------------------------------
 
 .. container:: cell
 
    .. code:: r
-      
+
       spatPlot2D(gobject = visium_lungcancer, show_image = T, point_alpha = 0.7)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/1-spatPlot2D.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/1-spatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
 
    .. code:: r
-      
+
       spatPlot2D(gobject = visium_lungcancer, show_image = T, point_alpha = 0.7,
                  cell_color = 'nr_feats', color_as_factor = F)
-      
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/2-spatPlot2D.png?raw=true
+
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/2-spatPlot2D.png
    :width: 50.0%
-   
+
 3. Dimension Reduction
 ======================
 
@@ -156,7 +154,7 @@ Visualize aligned tissue with number of features after processing
 
       visium_lungcancer <- calculateHVF(gobject = visium_lungcancer)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/3-HVFplot.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/3-HVFplot.png
    :width: 50.0%
 
 -  perform PCA
@@ -169,7 +167,7 @@ Visualize aligned tissue with number of features after processing
       visium_lungcancer <- runPCA(gobject = visium_lungcancer)
       screePlot(visium_lungcancer, ncp = 30)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/4-screePlot.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/4-screePlot.png
    :width: 50.0%
 
 .. container:: cell
@@ -178,7 +176,7 @@ Visualize aligned tissue with number of features after processing
 
       plotPCA(gobject = visium_lungcancer)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/5-PCA.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/5-PCA.png
    :width: 50.0%
 
 -  run UMAP and/or t-SNE on PCs (or directly on matrix)
@@ -190,7 +188,7 @@ Visualize aligned tissue with number of features after processing
       visium_lungcancer <- runUMAP(visium_lungcancer, dimensions_to_use = 1:10)
       plotUMAP(gobject = visium_lungcancer)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/6-UMAP.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/6-UMAP.png
    :width: 50.0%
 
 .. container:: cell
@@ -200,7 +198,7 @@ Visualize aligned tissue with number of features after processing
       visium_lungcancer <- runtSNE(visium_lungcancer, dimensions_to_use = 1:10)
       plotTSNE(gobject = visium_lungcancer)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/7-tSNE.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/7-tSNE.png
    :width: 50.0%
 
 4. Clustering
@@ -220,7 +218,7 @@ Visualize aligned tissue with number of features after processing
       # visualize UMAP cluster results
       plotUMAP(gobject = visium_lungcancer, cell_color = 'leiden_clus', show_NN_network = T, point_size = 2)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/8-UMAP.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/8-UMAP.png
    :width: 50.0%
 
 .. container:: cell
@@ -230,30 +228,30 @@ Visualize aligned tissue with number of features after processing
       # visualize tSNE cluster results
       plotTSNE(gobject = visium_lungcancer, cell_color = 'leiden_clus', show_NN_network = T, point_size = 2)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/9-tSNE.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/9-tSNE.png
    :width: 50.0%
-   
+
 .. container:: cell
 
    .. code:: r
 
       # visualize expression and spatial results
       spatDimPlot(gobject = visium_lungcancer, cell_color = 'leiden_clus',
-      dim_point_size = 2, spat_point_size = 2)
+                  dim_point_size = 2, spat_point_size = 2)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/12-spatDimPlot2D.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/10-spatDimPlot2D.png
    :width: 50.0%
-   
+
 .. container:: cell
 
    .. code:: r
 
       spatDimPlot(gobject = visium_lungcancer, cell_color = 'nr_feats', color_as_factor = F,
-      dim_point_size = 2, dim_show_legend = T, spat_show_legend = T, spat_point_size = 2)
+                  dim_point_size = 2, dim_show_legend = T, spat_show_legend = T, spat_point_size = 2)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/13-spatDimPlot2D.png?raw=true
-   :width: 50.0%   
-   
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/11-spatDimPlot2D.png
+   :width: 50.0%
+
 5. Differential expression
 ==========================
 
@@ -276,8 +274,8 @@ Visualize aligned tissue with number of features after processing
       violinPlot(visium_lungcancer, feats = unique(topgenes_gini), cluster_column = 'leiden_clus',
                  strip_text = 8, strip_position = 'right')
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/14-violinPlot.png?raw=true
-   :width: 50.0%  
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/12-violinPlot.png
+   :width: 50.0%
 
 .. container:: cell
 
@@ -289,8 +287,8 @@ Visualize aligned tissue with number of features after processing
                           metadata_cols = c('leiden_clus'),
                           x_text_size = 10, y_text_size = 10)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/15-plotMetaDataHeatmap.png?raw=true
-   :width: 50.0%  
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/13-plotMetaDataHeatmap.png
+   :width: 50.0%
 
 .. container:: cell
 
@@ -300,16 +298,16 @@ Visualize aligned tissue with number of features after processing
       dimFeatPlot2D(visium_lungcancer,
                     expression_values = 'scaled',
                     feats = gini_markers_subclusters[, head(.SD, 1), by = 'cluster']$feats,
-                    cow_n_col = 3, point_size = 1)   
+                    cow_n_col = 3, point_size = 1)
 
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/16-dimFeatPlot2D.png?raw=true
-   :width: 50.0%  
-   
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/14-dimFeatPlot2D.png
+   :width: 50.0%
+
 .. container:: cell
 
    .. code:: r
-   
+
       # Cell type marker detection
       # Scran markers
       scran_markers_subclusters = findMarkers_one_vs_all(gobject = visium_lungcancer,
@@ -322,33 +320,33 @@ Visualize aligned tissue with number of features after processing
       violinPlot(visium_lungcancer, feats = unique(topgenes_scran),
                  cluster_column = 'leiden_clus',
                  strip_text = 10, strip_position = 'right')
-                 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/17-violinPlot.png?raw=true
-   :width: 50.0% 
-   
+
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/15-violinPlot.png
+   :width: 50.0%
+
 .. container:: cell
 
    .. code:: r
-   
+
       # cluster heatmap
       plotMetaDataHeatmap(visium_lungcancer,
                           selected_feats = topgenes_scran,
                           metadata_cols = c('leiden_clus'),
-                          x_text_size = 10, y_text_size = 10)   
+                          x_text_size = 10, y_text_size = 10)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/18-plotMetaDataHeatmap.png?raw=true
-   :width: 50.0% 
-   
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/16-plotMetaDataHeatmap.png
+   :width: 50.0%
+
 .. container:: cell
 
    .. code:: r
-   
+
       # umap plots
       dimFeatPlot2D(visium_lungcancer,
                     expression_values = 'scaled',
                     feats = scran_markers_subclusters[, head(.SD, 1), by = 'cluster']$feats,
                     cow_n_col = 3, point_size = 1)
-                    
+
 6. Cell Type Enrichment
 =======================
 
@@ -359,22 +357,20 @@ Visualize aligned tissue with number of features after processing
 | - PAGE
 | - hypergeometric test
 | - Rank
-| - `DWLS
-  Deconvolution <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7>`__ Corresponded Single cell dataset can be generated from
-  `here <http://mousebrain.org/>`__. 
-  Giotto_SC is processed from the
-  downsampled `Loom <https://satijalab.org/loomr/loomr_tutorial>`__ file and can also be downloaded from getSpatialDataset.
-  
-PAGE 
-----
-The cell-type specific signature gene list was obtained from a previous study focused on investigating the therapy-induced evolution of lung cancer revealed by single-cell RNA sequencing. More information about the paper and scRNA-seq dataset can be found `here <https://doi.org/10.1016/j.cell.2020.07.017>`_.
+| - DWLS
 
-.. _here: https://doi.org/10.1016/j.cell.2020.07.017
+`Deconvolution <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7>`__ Corresponded Single cell dataset can be generated from `here <http://mousebrain.org/>`__.
+Giotto_SC is processed from the downsampled `Loom <https://satijalab.org/loomr/loomr_tutorial>`__ file and can also be downloaded from getSpatialDataset.
+
+PAGE
+----
+The cell-type specific signature gene list was obtained from a previous study focused on investigating the therapy-induced evolution of lung cancer revealed by single-cell RNA sequencing. More information about the paper and scRNA-seq dataset can be found `here <https://doi.org/10.1016/j.cell.2020.07.017>`__.
+
 
 .. container:: cell
 
    .. code:: r
-   
+
       # umap plots
       # Create PAGE matrix
       # PAGE matrix should be a binary matrix with each row represent a gene marker and each column represent a cell type
@@ -408,17 +404,17 @@ The cell-type specific signature gene list was obtained from a previous study fo
       # 1.3 enrichment test with PAGE
 
       markers_scran = findMarkers_one_vs_all(gobject=giotto_SC, method="scran",
-                                              expression_values="normalized", cluster_column = "Class", min_feats=3)
+                                             expression_values="normalized", cluster_column = "Class", min_feats=3)
 
       top_markers <- markers_scran[, head(.SD, 10), by="cluster"]
       celltypes<-levels(factor(markers_scran$cluster))
       sign_list<-list()
       for (i in 1:length(celltypes)){
-      sign_list[[i]]<-top_markers[which(top_markers$cluster == celltypes[i]),]$feats
+       sign_list[[i]]<-top_markers[which(top_markers$cluster == celltypes[i]),]$feats
       }
 
       PAGE_matrix_3 = makeSignMatrixPAGE(sign_names = celltypes,
-                             sign_list = sign_list)
+                                         sign_list = sign_list)
 
       #  runSpatialEnrich() can also be used as a wrapper for all currently provided enrichment options
       visium_lungcancer = runPAGEEnrich(gobject = visium_lungcancer, sign_matrix = signature_matrix, min_overlap_genes = 1)
@@ -426,61 +422,61 @@ The cell-type specific signature gene list was obtained from a previous study fo
       # 1.4 heatmap of enrichment versus annotation (e.g. clustering result)
       cell_types = colnames(signature_matrix)
       plotMetaDataCellsHeatmap(gobject = visium_lungcancer,
-                                metadata_cols = 'leiden_clus',
-                                value_cols = cell_types,
-                                spat_enr_names = 'PAGE',
-                                x_text_size = 8,
-                                y_text_size = 8,
-                                show_plot = T,
-                                save_param = list(save_name="7_a_metaheatmap"))
+                               metadata_cols = 'leiden_clus',
+                               value_cols = cell_types,
+                               spat_enr_names = 'PAGE',
+                               x_text_size = 8,
+                               y_text_size = 8,
+                               show_plot = T,
+                               save_param = list(save_name="7_a_metaheatmap"))
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/7_a_metaheatmap.png?raw=true
-   :width: 50.0% 
-   
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/17-metaheatmap.png
+   :width: 50.0%
+
 .. container:: cell
 
    .. code:: r
-   
+
       cell_types_subset = colnames(signature_matrix)
       spatCellPlot(gobject = visium_lungcancer,
-                  spat_enr_names = 'PAGE',
-                  cell_annotation_values = cell_types_subset,
-                  cow_n_col = 4, coord_fix_ratio = NULL, point_size = 0.75,
-                  save_param = list(save_name="7_b_spatcellplot_1"))
-   
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/7_b_spatcellplot_1.png?raw=true
-   :width: 50.0%                                 
-   
+                   spat_enr_names = 'PAGE',
+                   cell_annotation_values = cell_types_subset,
+                   cow_n_col = 4, coord_fix_ratio = NULL, point_size = 0.75,
+                   save_param = list(save_name="7_b_spatcellplot_1"))
+
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/18-spatcellplot_1.png
+   :width: 80.0%
+
 .. container:: cell
 
    .. code:: r
-   
+
       spatDimCellPlot(gobject = visium_lungcancer,
                       spat_enr_names = 'PAGE',
                       cell_annotation_values = c('B_cell','Macrophage'),
                       cow_n_col = 1, spat_point_size = 1.2,
                       plot_alignment = 'horizontal',
-                      save_param = list(save_name="7_d_spatDimCellPlot", base_width=7, base_height=10))  
-                      
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/7_d_spatDimCellPlot.png?raw=true
-   :width: 50.0%                         
+                      save_param = list(save_name="7_d_spatDimCellPlot", base_width=7, base_height=10))
 
-7. Spatial Grids 
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/19-spatDimCellPlot.png
+   :width: 80.0%
+
+7. Spatial Grids
 ================
 
 .. container:: cell
 
    .. code:: r
-   
+
       visium_lungcancer <- createSpatialGrid(gobject = visium_lungcancer,
-                             sdimx_stepsize = 400,
-                             sdimy_stepsize = 400,
-                             minimum_padding = 0)
+                                             sdimx_stepsize = 400,
+                                             sdimy_stepsize = 400,
+                                             minimum_padding = 0)
 
      spatPlot(visium_lungcancer, cell_color = 'leiden_clus', point_size = 2.5, show_grid = T,
      grid_color = 'red', spatial_grid_name = 'spatial_grid')
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/21-spatPlot2D.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/20-spatPlot2D.png
    :width: 50.0%
 
 8. Spatial Network
@@ -489,114 +485,116 @@ The cell-type specific signature gene list was obtained from a previous study fo
 .. container:: cell
 
    .. code:: r
-   
+
       ## Delaunay network: stats + creation
       plotStatDelaunayNetwork(gobject = visium_lungcancer, maximum_distance = 400)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/22-plotStatDelaunayNetwork.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/21-plotStatDelaunayNetwork.png
    :width: 50.0%
-   
+
 .. container:: cell
 
    .. code:: r
-   
+
       visium_lungcancer = createSpatialNetwork(gobject = visium_lungcancer, minimum_k = 0)
       showNetworks(visium_lungcancer)
       spatPlot(gobject = visium_lungcancer, show_network = T,
       network_color = 'blue', spatial_network_name = 'Delaunay_network')
-      
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/23-spatPlot2D.png?raw=true
+
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/22-spatPlot2D.png
    :width: 50.0%
-   
+
 9. Spatial Genes
 ================
-   
-.. container:: cell
 
-   .. code:: r  
-   
-      # kmeans binarization
-      kmtest = binSpect(visium_lungcancer)
-      spatFeatPlot2D(visium_lungcancer, expression_values = 'scaled',
-                      feats = kmtest$feats[1:6], cow_n_col = 2, point_size = 1.5)
-                      
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/24-spatFeatPlot2D.png?raw=true
-   :width: 50.0%
-   
-.. container:: cell
-
-   .. code:: r  
-   
-      ## rank binarization
-      ranktest = binSpect(visium_lungcancer, bin_method = 'rank')
-      spatFeatPlot2D(visium_lungcancer, expression_values = 'scaled',
-                      feats = ranktest$feats[1:6], cow_n_col = 2, point_size = 1.5)
-   
 .. container:: cell
 
    .. code:: r
-   
+
+      # kmeans binarization
+      kmtest = binSpect(visium_lungcancer)
+      spatFeatPlot2D(visium_lungcancer, expression_values = 'scaled',
+                     feats = kmtest$feats[1:6], cow_n_col = 2, point_size = 1.5)
+
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/23-spatFeatPlot2D.png
+   :width: 50.0%
+
+.. container:: cell
+
+   .. code:: r
+
+      ## rank binarization
+      ranktest = binSpect(visium_lungcancer, bin_method = 'rank')
+      spatFeatPlot2D(visium_lungcancer, expression_values = 'scaled',
+                     feats = ranktest$feats[1:6], cow_n_col = 2, point_size = 1.5)
+
+.. container:: cell
+
+   .. code:: r
+
       ## spatially correlated genes ##
       ext_spatial_genes = kmtest[1:500]$feats
 
       # 1. calculate gene spatial correlation and single-cell correlation
       # create spatial correlation object
       spat_cor_netw_DT = detectSpatialCorFeats(visium_lungcancer,
-                                                method = 'network',
-                                                spatial_network_name = 'Delaunay_network',
-                                                subset_feats = ext_spatial_genes)
+                                               method = 'network',
+                                               spatial_network_name = 'Delaunay_network',
+                                               subset_feats = ext_spatial_genes)
 
       # 2. identify most similar spatially correlated genes for one gene
       DNAI1_top10_genes = showSpatialCorFeats(spat_cor_netw_DT, feats = 'DNAI1', show_top_feats = 10)
 
       spatFeatPlot2D(visium_lungcancer, expression_values = 'scaled',
-                      feats = c('RSPH1', 'C20orf85', 'DNAAF1','TEKT2'), point_size = 3)
+                     feats = c('RSPH1', 'C20orf85', 'DNAAF1','TEKT2'), point_size = 3)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/25-spatFeatPlot2D.png?raw=true
-   :width: 50.0%   
-   
-.. container:: cell
-
-   .. code:: r
-   
-      spatFeatPlot2D(visium_lungcancer, expression_values = 'scaled',
-                      feats = c('TEKT2', 'CFAP157', 'MAPK15', 'MS4A8', 'CDHR3', 'C9orf24'), point_size = 3)
-                      
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/26-spatFeatPlot2D.png?raw=true
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/24-spatFeatPlot2D.png
    :width: 50.0%
 
 .. container:: cell
 
    .. code:: r
-      
-      # 3. cluster correlated genes & visualize 
+
+      spatFeatPlot2D(visium_lungcancer, expression_values = 'scaled',
+                     feats = c('TEKT2', 'CFAP157', 'MAPK15', 'MS4A8', 'CDHR3', 'C9orf24'), point_size = 3)
+
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/25-spatFeatPlot2D.png
+   :width: 50.0%
+
+.. container:: cell
+
+   .. code:: r
+
+      # 3. cluster correlated genes & visualize
       spat_cor_netw_DT = clusterSpatialCorFeats(spat_cor_netw_DT, name = ‘spat_netw_clus’, k = 10)
-      
+
       heatmSpatialCorFeats(visium_lungcancer, spatCorObject = spat_cor_netw_DT, use_clus_name = ‘spat_netw_clus’,
       save_param = c(save_name = ‘22-z1-heatmap_correlated_genes’, save_format = ‘pdf’, base_height = 6, base_width = 8, units = ‘cm’), heatmap_legend_param = list(title = NULL))
-      
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/22-z1-heatmap_correlated_genes.png?raw=true
+
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/26-heatmap_correlated_genes.png
    :width: 50.0%
-   
+
 .. container:: cell
 
    .. code:: r
-      
+
       # 4. rank spatial correlated clusters and show genes for selected clusters
-      netw_ranks = rankSpatialCorGroups(visium_lungcancer, spatCorObject = spat_cor_netw_DT, use_clus_name = 'spat_netw_clus',
+      netw_ranks = rankSpatialCorGroups(visium_lungcancer,
+                                        spatCorObject = spat_cor_netw_DT,
+                                        use_clus_name = 'spat_netw_clus',
                                         save_param = c(save_name = '22-z2-rank_correlated_groups',
-                                           base_height = 3, base_width = 5))
+                                                       base_height = 3, base_width = 5))
 
       top_netw_spat_cluster = showSpatialCorFeats(spat_cor_netw_DT, use_clus_name = 'spat_netw_clus',
-                                                  selected_clusters = 6, show_top_feats = 1) 
-                                                  
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/22-z2-rank_correlated_groups.png?raw=true
-   :width: 50.0%                                                  
+                                                  selected_clusters = 6, show_top_feats = 1)
+
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/27-rank_correlated_groups.png
+   :width: 50.0%
 
 .. container:: cell
 
    .. code:: r
-      
+
       # 5. create metagene enrichment score for clusters
       cluster_genes_DT = showSpatialCorFeats(spat_cor_netw_DT, use_clus_name = 'spat_netw_clus', show_top_feats = 1)
       cluster_genes = cluster_genes_DT$clus; names(cluster_genes) = cluster_genes_DT$feat_ID
@@ -606,12 +604,12 @@ The cell-type specific signature gene list was obtained from a previous study fo
       showGiottoSpatEnrichments(visium_lungcancer)
 
       spatCellPlot(visium_lungcancer,
-                    spat_enr_names = 'cluster_metagene',
-                    cell_annotation_values = netw_ranks$clusters,
-                    point_size = 1.5, cow_n_col = 4)
+                   spat_enr_names = 'cluster_metagene',
+                   cell_annotation_values = netw_ranks$clusters,
+                   point_size = 1.5, cow_n_col = 4)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/30-spatCellPlot2D.png?raw=true
-   :width: 50.0%                                                  
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/28-spatCellPlot2D.png
+   :width: 80.0%
 
 10. HMRF Domains
 ================
@@ -619,7 +617,7 @@ The cell-type specific signature gene list was obtained from a previous study fo
 .. container:: cell
 
    .. code:: r
-   
+
       # HMRF requires a fully connected network!
       visium_lungcancer = createSpatialNetwork(gobject = visium_lungcancer, minimum_k = 2, name = 'Delaunay_full')
 
@@ -634,52 +632,52 @@ The cell-type specific signature gene list was obtained from a previous study fo
       # cd /usr/local/bin
       # sudo ln -s /Library/Frameworks/R.framework/Resources/Rscript Rscript
       HMRF_spatial_genes = doHMRF(gobject = visium_lungcancer,
-                            expression_values = 'scaled',
-                            spatial_network_name = 'Delaunay_full',
-                            spatial_genes = my_spatial_genes,
-                            k = 5,
-                            betas = c(0, 10, 3),
-                            output_folder = paste0(hmrf_folder, '/', 'Spatial_genes/SG_topgenes_k5_scaled'))
+                                  expression_values = 'scaled',
+                                  spatial_network_name = 'Delaunay_full',
+                                  spatial_genes = my_spatial_genes,
+                                  k = 5,
+                                  betas = c(0, 10, 3),
+                                  output_folder = paste0(hmrf_folder, '/', 'Spatial_genes/SG_topgenes_k5_scaled'))
 
       ## alternative way to view HMRF results
       # results = writeHMRFresults(gobject = ST_test,
-      #                           HMRFoutput = HMRF_spatial_genes,
-      #                           k = 5, betas_to_view = seq(0, 25, by = 5))
+      #                            HMRFoutput = HMRF_spatial_genes,
+      #                            k = 5, betas_to_view = seq(0, 25, by = 5))
       # ST_test = addCellMetadata(ST_test, new_metadata = results, by_column = T, column_cell_ID = 'cell_ID')
 
       ## add HMRF of interest to giotto object
       visium_lungcancer = addHMRF(gobject = visium_lungcancer,
-                        HMRFoutput = HMRF_spatial_genes,
-                        k = 5, betas_to_add = c(0,10,20),
-                        hmrf_name = 'HMRF')
+                                  HMRFoutput = HMRF_spatial_genes,
+                                  k = 5, betas_to_add = c(0,10,20),
+                                  hmrf_name = 'HMRF')
 
       showGiottoSpatEnrichments(visium_lungcancer)
 
       ## visualize
       spatPlot(gobject = visium_lungcancer, cell_color = 'HMRF_k5_b.0', point_size = 3)
 
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/27-spatPlot2D.png?raw=true
-   :width: 50.0%    
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/29-spatPlot2D.png
+   :width: 50.0%
 
 .. container:: cell
 
    .. code:: r
-   
+
       spatPlot(gobject = visium_lungcancer, cell_color = 'HMRF_k5_b.10', point_size = 3)
-      
-.. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/28-spatPlot2D.png?raw=true
-   :width: 50.0% 
-   
+
+.. image:: /images/images_pkgdown/cytassist_visium_lungcancer/vignette_221127/30-spatPlot2D.png
+   :width: 50.0%
+
 .. container:: cell
 
    .. code:: r
-   
+
       sessionInfo()
-      
+
       R version 4.2.2 (2022-10-31)
       Platform: aarch64-apple-darwin20 (64-bit)
       Running under: macOS Monterey 12.5.1
-      
+
       Matrix products: default
       LAPACK: /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/lib/libRlapack.dylib
 
@@ -687,42 +685,42 @@ The cell-type specific signature gene list was obtained from a previous study fo
       [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 
       attached base packages:
-      [1] stats     graphics  grDevices utils     datasets  methods   base 
-      
+      [1] stats     graphics  grDevices utils     datasets  methods   base
+
       other attached packages:
       [1] Giotto_3.0.1
 
       loaded via a namespace (and not attached):
-       [1] bitops_1.0-7                matrixStats_0.63.0          fs_1.5.2                   
-       [4] usethis_2.1.6               devtools_2.4.5              GenomeInfoDb_1.34.3        
-       [7] tools_4.2.2                 profvis_0.3.7               utf8_1.2.2                 
-      [10] R6_2.5.1                    irlba_2.3.5.1               BiocGenerics_0.44.0        
-      [13] colorspace_2.0-3            urlchecker_1.0.1            tidyselect_1.2.0           
-      [16] prettyunits_1.1.1           processx_3.8.0              compiler_4.2.2             
-      [19] cli_3.4.1                   Biobase_2.58.0              BiocNeighbors_1.16.0       
-      [22] DelayedArray_0.24.0         scales_1.2.1                callr_3.7.3                
-      [25] stringr_1.4.1               digest_0.6.30               XVector_0.38.0             
-      [28] pkgconfig_2.0.3             htmltools_0.5.3             sessioninfo_1.2.2          
-      [31] sparseMatrixStats_1.10.0    MatrixGenerics_1.10.0       fastmap_1.1.0              
-      [34] limma_3.54.0                htmlwidgets_1.5.4           rlang_1.0.6                
-      [37] rstudioapi_0.14             shiny_1.7.3                 DelayedMatrixStats_1.20.0  
-      [40] generics_0.1.3              BiocParallel_1.32.1         dplyr_1.0.10               
-      [43] RCurl_1.98-1.9              magrittr_2.0.3              BiocSingular_1.14.0        
-      [46] GenomeInfoDbData_1.2.9      Matrix_1.5-3                Rcpp_1.0.9                 
-      [49] munsell_0.5.0               S4Vectors_0.36.0            fansi_1.0.3                
+       [1] bitops_1.0-7                matrixStats_0.63.0          fs_1.5.2
+       [4] usethis_2.1.6               devtools_2.4.5              GenomeInfoDb_1.34.3
+       [7] tools_4.2.2                 profvis_0.3.7               utf8_1.2.2
+      [10] R6_2.5.1                    irlba_2.3.5.1               BiocGenerics_0.44.0
+      [13] colorspace_2.0-3            urlchecker_1.0.1            tidyselect_1.2.0
+      [16] prettyunits_1.1.1           processx_3.8.0              compiler_4.2.2
+      [19] cli_3.4.1                   Biobase_2.58.0              BiocNeighbors_1.16.0
+      [22] DelayedArray_0.24.0         scales_1.2.1                callr_3.7.3
+      [25] stringr_1.4.1               digest_0.6.30               XVector_0.38.0
+      [28] pkgconfig_2.0.3             htmltools_0.5.3             sessioninfo_1.2.2
+      [31] sparseMatrixStats_1.10.0    MatrixGenerics_1.10.0       fastmap_1.1.0
+      [34] limma_3.54.0                htmlwidgets_1.5.4           rlang_1.0.6
+      [37] rstudioapi_0.14             shiny_1.7.3                 DelayedMatrixStats_1.20.0
+      [40] generics_0.1.3              BiocParallel_1.32.1         dplyr_1.0.10
+      [43] RCurl_1.98-1.9              magrittr_2.0.3              BiocSingular_1.14.0
+      [46] GenomeInfoDbData_1.2.9      Matrix_1.5-3                Rcpp_1.0.9
+      [49] munsell_0.5.0               S4Vectors_0.36.0            fansi_1.0.3
       [52] lifecycle_1.0.3             stringi_1.7.8               SummarizedExperiment_1.28.0
-      [55] zlibbioc_1.44.0             pkgbuild_1.3.1              grid_4.2.2                 
-      [58] parallel_4.2.2              promises_1.2.0.1            dqrng_0.3.0                
-      [61] crayon_1.5.2                miniUI_0.1.1.1              lattice_0.20-45            
-      [64] beachmat_2.14.0             locfit_1.5-9.6              ps_1.7.2                   
-      [67] pillar_1.8.1                igraph_1.3.5                GenomicRanges_1.50.1       
-      [70] codetools_0.2-18            ScaledMatrix_1.6.0          stats4_4.2.2               
-      [73] pkgload_1.3.2               glue_1.6.2                  data.table_1.14.6          
-      [76] remotes_2.4.2               BiocManager_1.30.19         vctrs_0.5.1                
-      [79] httpuv_1.6.6                gtable_0.3.1                purrr_0.3.5                
-      [82] cachem_1.0.6                ggplot2_3.4.0               rsvd_1.0.5                 
-      [85] mime_0.12                   xtable_1.8-4                later_1.3.0                
-      [88] SingleCellExperiment_1.20.0 tibble_3.1.8                memoise_2.0.1              
-      [91] IRanges_2.32.0              cluster_2.1.4               bluster_1.8.0              
-      [94] ellipsis_0.3.2             
- 
+      [55] zlibbioc_1.44.0             pkgbuild_1.3.1              grid_4.2.2
+      [58] parallel_4.2.2              promises_1.2.0.1            dqrng_0.3.0
+      [61] crayon_1.5.2                miniUI_0.1.1.1              lattice_0.20-45
+      [64] beachmat_2.14.0             locfit_1.5-9.6              ps_1.7.2
+      [67] pillar_1.8.1                igraph_1.3.5                GenomicRanges_1.50.1
+      [70] codetools_0.2-18            ScaledMatrix_1.6.0          stats4_4.2.2
+      [73] pkgload_1.3.2               glue_1.6.2                  data.table_1.14.6
+      [76] remotes_2.4.2               BiocManager_1.30.19         vctrs_0.5.1
+      [79] httpuv_1.6.6                gtable_0.3.1                purrr_0.3.5
+      [82] cachem_1.0.6                ggplot2_3.4.0               rsvd_1.0.5
+      [85] mime_0.12                   xtable_1.8-4                later_1.3.0
+      [88] SingleCellExperiment_1.20.0 tibble_3.1.8                memoise_2.0.1
+      [91] IRanges_2.32.0              cluster_2.1.4               bluster_1.8.0
+      [94] ellipsis_0.3.2
+

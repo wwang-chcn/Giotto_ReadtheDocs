@@ -13,7 +13,7 @@ Start Giotto
       
       # Ensure Giotto Suite is installed.
       if(!"Giotto" %in% installed.packages()) {
-        devtools::install_github("drieslab/Giotto@Suite")
+        devtools::install_github("drieslab/Giotto@suite")
       }
 
       # Ensure GiottoData, a small, helper module for tutorials, is installed.
@@ -45,6 +45,7 @@ Download Data
 .. container:: cell
 
    .. code:: r
+      
       library(GiottoData)
 
       my_working_dir = '/path/to/directory/'

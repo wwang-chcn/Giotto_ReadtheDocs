@@ -10,7 +10,7 @@ Mouse Visium Brain
       
       # Ensure Giotto Suite is installed.
       if(!"Giotto" %in% installed.packages()) {
-        devtools::install_github("drieslab/Giotto@Suite")
+        devtools::install_github("drieslab/Giotto@suite")
       }
 
       # Ensure GiottoData, a small, helper module for tutorials, is installed.
@@ -47,7 +47,7 @@ Set up Giotto Environment
       instrs = createGiottoInstructions(save_dir = results_folder,
                                         save_plot = TRUE,
                                         show_plot = FALSE,
-                                        python_path = python_path)
+                                        python_path = my_python_path)
 
 Dataset explanation
 ===================
@@ -406,7 +406,7 @@ Part 7: Cell type enrichment
       # download data to results directory ####
       # if wget is installed, set method = 'wget'
       # if you run into authentication issues with wget, then add " extra = '--no-check-certificate' "
-      getSpatialDataset(dataset = 'Mouse_brain_scRNAseq', directory = results_folder)
+      getSpatialDataset(dataset = 'scRNA_mouse_brain', directory = results_folder)
 
       sc_expression = paste0(results_folder, "/brain_sc_expression_matrix.txt.gz")
       sc_metadata = paste0(results_folder,"/brain_sc_metadata.csv")
