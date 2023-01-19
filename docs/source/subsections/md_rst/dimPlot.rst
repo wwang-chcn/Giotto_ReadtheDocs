@@ -7,10 +7,6 @@ dimPlot
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1433
 
 
-
-   :format: latex
-..
-
 ``dimPlot``
 ===========
 
@@ -36,27 +32,27 @@ Arguments
 +===============================+======================================+
 | ``...``                       | Arguments passed on to               |
 |                               | ```dimPlot2D`` <#dimplot2d>`__       |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)),          |
-|                               | list(â€œgiotto objectâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€spat_unitâ€)),        |
-|                               | list(â€œspatial unitâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€feat_typeâ€)),        |
-|                               | list(â€œfeature typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€group_byâ€)),         |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)),          |
+|                               | list(â€œgiotto objectï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½spat_unitï¿½)),        |
+|                               | list(â€œspatial unitï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½feat_typeï¿½)),        |
+|                               | list(â€œfeature typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½group_byï¿½)),         |
 |                               | list(â€œcreate multiple plots based on |
-|                               | cell annotation columnâ€)),           |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€group_by_subsetâ€)),  |
+|                               | cell annotation columnï¿½)),           |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½group_by_subsetï¿½)),  |
 |                               | list(â€œsubset the group_by factor     |
-|                               | columnâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,   |
+|                               | columnï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,   |
 |                               | list                                 |
-|                               | (list(list(â€dim_reduction_to_useâ€)), |
-|                               | list(â€œdimension reduction to useâ€)), |
-|                               | â€œ:raw-latex:`\n`â€,                   |
+|                               | (list(list(ï¿½dim_reduction_to_useï¿½)), |
+|                               | list(â€œdimension reduction to useï¿½)), |
+|                               | â€œ:raw-latex:`\n`ï¿½,                   |
 +-------------------------------+--------------------------------------+
 
 ::

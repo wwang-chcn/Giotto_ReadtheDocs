@@ -4,9 +4,6 @@ read_data_folder
 
 :Date: 1/19/23
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
 
 ``read_data_folder``
 ====================

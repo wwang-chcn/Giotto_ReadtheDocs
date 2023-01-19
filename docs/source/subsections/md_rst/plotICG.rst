@@ -7,10 +7,6 @@ plotICG
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1666
 
 
-
-   :format: latex
-..
-
 ``plotICG``
 ===========
 
@@ -36,26 +32,26 @@ Arguments
 +===============================+======================================+
 | ``...``                       | Arguments passed on to               |
 |                               | ```plotICF`` <#ploticf>`__           |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)),          |
-|                               | list(â€œgiotto objectâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€icfObjectâ€)),        |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)),          |
+|                               | list(â€œgiotto objectï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½icfObjectï¿½)),        |
 |                               | list(â€œICF (interaction changed       |
-|                               | feature) score objectâ€)),            |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€source_typeâ€)),      |
+|                               | feature) score objectï¿½)),            |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½source_typeï¿½)),      |
 |                               | list(â€œcell type of the source        |
-|                               | cellâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,     |
-|                               | list(list(list(â€source_markersâ€)),   |
+|                               | cellï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,     |
+|                               | list(list(list(ï¿½source_markersï¿½)),   |
 |                               | list(â€œmarkers for the source cell    |
-|                               | typeâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,     |
-|                               | list(list(list(â€ICF_featsâ€)),        |
+|                               | typeï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,     |
+|                               | list(list(list(ï¿½ICF_featsï¿½)),        |
 |                               | list(â€œnamed character vector of ICF  |
-|                               | featuresâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ, |
-|                               | list(list(list(â€cell_color_codeâ€)),  |
+|                               | featuresï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ, |
+|                               | list(list(list(ï¿½cell_color_codeï¿½)),  |
 |                               | list(â€œcell color code for the        |
-|                               | interacting cell typesâ€)),           |
+|                               | interacting cell typesï¿½)),           |
 +-------------------------------+--------------------------------------+
 
 ::

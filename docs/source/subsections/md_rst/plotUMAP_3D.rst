@@ -7,10 +7,6 @@ plotUMAP_3D
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7225
 
 
-
-   :format: latex
-..
-
 ``plotUMAP_3D``
 ===============
 
@@ -47,26 +43,26 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``...``                       | Arguments passed on to               |
 |                               | ```dimPlot3D`` <#dimplot3d>`__       |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€spat_unitâ€)),        |
-|                               | list(â€œspatial unitâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€feat_typeâ€)),        |
-|                               | list(â€œfeature typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€dim1_to_useâ€)),      |
-|                               | list(â€œdimension to use on x-axisâ€)), |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€dim2_to_useâ€)),      |
-|                               | list(â€œdimension to use on y-axisâ€)), |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€dim3_to_useâ€)),      |
-|                               | list(â€œdimension to use on z-axisâ€)), |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€spat_enr_namesâ€)),   |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½spat_unitï¿½)),        |
+|                               | list(â€œspatial unitï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½feat_typeï¿½)),        |
+|                               | list(â€œfeature typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½dim1_to_useï¿½)),      |
+|                               | list(â€œdimension to use on x-axisï¿½)), |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½dim2_to_useï¿½)),      |
+|                               | list(â€œdimension to use on y-axisï¿½)), |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½dim3_to_useï¿½)),      |
+|                               | list(â€œdimension to use on z-axisï¿½)), |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½spat_enr_namesï¿½)),   |
 |                               | list(â€œnames of spatial enrichment    |
-|                               | results to includeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | results to includeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 +-------------------------------+--------------------------------------+
 
 ::

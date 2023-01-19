@@ -4,9 +4,6 @@ select_polygon_info
 
 :Date: 1/19/23
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
 
 ``select_polygon_info``
 =======================

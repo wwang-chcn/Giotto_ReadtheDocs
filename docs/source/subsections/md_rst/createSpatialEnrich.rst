@@ -7,10 +7,6 @@ createSpatialEnrich
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1412
 
 
-
-   :format: latex
-..
-
 ``createSpatialEnrich``
 =======================
 
@@ -38,27 +34,27 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```runSp                             |
 |                               | atialEnrich`` <#runspatialenrich>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)),          |
-|                               | list(â€œGiotto objectâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€spat_unitâ€)),        |
-|                               | list(â€œspatial unitâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€feat_typeâ€)),        |
-|                               | list(â€œfeature typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€enrich_methodâ€)),    |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)),          |
+|                               | list(â€œGiotto objectï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½spat_unitï¿½)),        |
+|                               | list(â€œspatial unitï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½feat_typeï¿½)),        |
+|                               | list(â€œfeature typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½enrich_methodï¿½)),    |
 |                               | list(â€œmethod for gene signature      |
-|                               | enrichment calculationâ€)),           |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€sign_matrixâ€)),      |
+|                               | enrichment calculationï¿½)),           |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½sign_matrixï¿½)),      |
 |                               | list(â€œMatrix of signature genes for  |
-|                               | each cell type / processâ€)),         |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | each cell type / processï¿½)),         |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 |                               | l                                    |
-|                               | ist(list(list(â€expression_valuesâ€)), |
-|                               | list(â€œexpression values to useâ€)),   |
+|                               | ist(list(list(ï¿½expression_valuesï¿½)), |
+|                               | list(â€œexpression values to useï¿½)),   |
 +-------------------------------+--------------------------------------+
 
 ::

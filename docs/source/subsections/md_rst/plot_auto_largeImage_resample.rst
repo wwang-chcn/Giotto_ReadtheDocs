@@ -4,9 +4,6 @@ plot_auto_largeImage_resample
 
 :Date: 1/19/23
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
 
 ``plot_auto_largeImage_resample``
 =================================

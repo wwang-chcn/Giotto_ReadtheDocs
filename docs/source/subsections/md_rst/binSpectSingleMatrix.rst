@@ -7,10 +7,6 @@ binSpectSingleMatrix
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L642
 
 
-
-   :format: latex
-..
-
 ``binSpectSingleMatrix``
 ========================
 
@@ -128,28 +124,28 @@ We provide two ways to identify spatial genes based on gene expression
 binarization. Both methods are identicial except for how binarization is
 performed.
 
--  list(â€œ1. binarize:â€) list(â€œEach gene is binarized (0 or 1) in each
-   cell withâ€, list(â€œkmeansâ€), â€ (k = 2) or based on â€œ, list(â€rankâ€), â€
-   percentileâ€)
+-  list(â€œ1. binarize:ï¿½) list(â€œEach gene is binarized (0 or 1) in each
+   cell withï¿½, list(â€œkmeansï¿½), ï¿½ (k = 2) or based on â€œ, list(ï¿½rankï¿½), ï¿½
+   percentileï¿½)
 
--  list(â€œ2. network:â€) list(â€œAlll cells are connected through a spatial
-   network based on the physical coordinatesâ€)
+-  list(â€œ2. network:ï¿½) list(â€œAlll cells are connected through a spatial
+   network based on the physical coordinatesï¿½)
 
--  list(â€œ3. contingency table:â€) list(â€œA contingency table is calculated
+-  list(â€œ3. contingency table:ï¿½) list(â€œA contingency table is calculated
    based on all edges of neighboring cells and the binarized expression
-   (0-0, 0-1, 1-0 or 1-1)â€)
+   (0-0, 0-1, 1-0 or 1-1)ï¿½)
 
 -  | list(â€œ4. For each gene an odds-ratio (OR) and fisher.test
-     (optional) is calculatedâ€)
+     (optional) is calculatedï¿½)
    | Three different kmeans algorithmes have been implemented:
 
--  list(â€œ1. kmeans:â€) list(â€œdefault, seeâ€, list(list(â€œkmeansâ€)), â€ â€œ)
+-  list(â€œ1. kmeans:ï¿½) list(â€œdefault, seeï¿½, list(list(â€œkmeansï¿½)), ï¿½ â€œ)
 
--  list(â€œ2. kmeans_arma:â€) list(â€œfrom ClusterR, seeâ€,
-   list(list(â€œKMeans_armaâ€)), â€ â€œ)
+-  list(â€œ2. kmeans_arma:ï¿½) list(â€œfrom ClusterR, seeï¿½,
+   list(list(â€œKMeans_armaï¿½)), ï¿½ â€œ)
 
--  | list(â€œ3. kmeans_arma_subst:â€) list(â€œfrom ClusterR, seeâ€,
-     list(list(â€œKMeans_armaâ€)), â€œ,:raw-latex:`\n`â€, â€ but random
+-  | list(â€œ3. kmeans_arma_subst:ï¿½) list(â€œfrom ClusterR, seeï¿½,
+     list(list(â€œKMeans_armaï¿½)), â€œ,:raw-latex:`\n`ï¿½, ï¿½ but random
      subsetting the vector for each gene to increase speed. Change
      extreme_nr and sample_nr for control. â€œ)
    | Other statistics are provided (optional):

@@ -7,10 +7,6 @@ dimGenePlot2D
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5328
 
 
-
-   :format: latex
-..
-
 ``dimGenePlot2D``
 =================
 
@@ -45,28 +41,28 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ``                                   |
 |                               | `dimFeatPlot2D`` <#dimfeatplot2d>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€feat_typeâ€)),        |
-|                               | list(â€œfeature typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€spat_unitâ€)),        |
-|                               | list(â€œspatial unitâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½feat_typeï¿½)),        |
+|                               | list(â€œfeature typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½spat_unitï¿½)),        |
+|                               | list(â€œspatial unitï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 |                               | l                                    |
-|                               | ist(list(list(â€expression_valuesâ€)), |
+|                               | ist(list(list(ï¿½expression_valuesï¿½)), |
 |                               | list(â€œgene expression values to      |
-|                               | useâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,      |
-|                               | list(list(list(â€orderâ€)),            |
+|                               | useï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,      |
+|                               | list(list(list(ï¿½orderï¿½)),            |
 |                               | list(â€œorder points according to      |
-|                               | feature expressionâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | feature expressionï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 |                               | list                                 |
-|                               | (list(list(â€dim_reduction_to_useâ€)), |
-|                               | list(â€œdimension reduction to useâ€)), |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | (list(list(ï¿½dim_reduction_to_useï¿½)), |
+|                               | list(â€œdimension reduction to useï¿½)), |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 |                               | li                                   |
-|                               | st(list(list(â€dim_reduction_nameâ€)), |
-|                               | list(â€œdimension reduction nameâ€)),   |
+|                               | st(list(list(ï¿½dim_reduction_nameï¿½)), |
+|                               | list(â€œdimension reduction nameï¿½)),   |
 +-------------------------------+--------------------------------------+
 
 ::

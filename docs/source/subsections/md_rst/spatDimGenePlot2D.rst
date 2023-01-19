@@ -7,10 +7,6 @@ spatDimGenePlot2D
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5626
 
 
-
-   :format: latex
-..
-
 ``spatDimGenePlot2D``
 =====================
 
@@ -46,26 +42,26 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```spatDim                           |
 |                               | FeatPlot2D`` <#spatdimfeatplot2d>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€spat_unitâ€)),        |
-|                               | list(â€œspatial unitâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€feat_typeâ€)),        |
-|                               | list(â€œfeature typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€show_imageâ€)),       |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½spat_unitï¿½)),        |
+|                               | list(â€œspatial unitï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½feat_typeï¿½)),        |
+|                               | list(â€œfeature typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½show_imageï¿½)),       |
 |                               | list(â€œshow a tissue background       |
-|                               | imageâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,    |
-|                               | list(list(list(â€gimageâ€)), list(â€œa   |
-|                               | giotto imageâ€)), â€œ:raw-latex:`\n`â€,  |
-|                               | â€ â€œ, list(list(list(â€image_nameâ€)),  |
-|                               | list(â€œname of a giotto imageâ€)),     |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€largeImage_nameâ€)),  |
-|                               | list(â€œname of a giottoLargeImageâ€)), |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | imageï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,    |
+|                               | list(list(list(ï¿½gimageï¿½)), list(â€œa   |
+|                               | giotto imageï¿½)), â€œ:raw-latex:`\n`ï¿½,  |
+|                               | ï¿½ â€œ, list(list(list(ï¿½image_nameï¿½)),  |
+|                               | list(â€œname of a giotto imageï¿½)),     |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½largeImage_nameï¿½)),  |
+|                               | list(â€œname of a giottoLargeImageï¿½)), |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 |                               | l                                    |
-|                               | ist(list(list(â€expression_valuesâ€)), |
+|                               | ist(list(list(ï¿½expression_valuesï¿½)), |
 +-------------------------------+--------------------------------------+
 
 ::

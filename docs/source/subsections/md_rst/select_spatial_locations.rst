@@ -4,9 +4,6 @@ select_spatial_locations
 
 :Date: 1/19/23
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
 
 ``select_spatial_locations``
 ============================

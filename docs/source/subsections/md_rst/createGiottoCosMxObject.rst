@@ -7,10 +7,6 @@ createGiottoCosMxObject
 https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L2960
 
 
-
-   :format: latex
-..
-
 ``createGiottoCosMxObject``
 ===========================
 
@@ -75,35 +71,35 @@ given a link to a cosmx output directory. It expects the following items
 within the directory where the bolded portions are what this function
 matches against:
 
--  list(list(â€œCellCompositeâ€), â€ (folder of images)â€œ)
+-  list(list(â€œCellCompositeï¿½), ï¿½ (folder of images)â€œ)
 
--  list(list(â€œCellLabelsâ€), â€ (folder of images)â€œ)
+-  list(list(â€œCellLabelsï¿½), ï¿½ (folder of images)â€œ)
 
--  list(list(â€œCellOverlayâ€), â€ (folder of images)â€œ)
+-  list(list(â€œCellOverlayï¿½), ï¿½ (folder of images)â€œ)
 
--  list(list(â€œCompartmentLabelsâ€), â€ (folder of images)â€œ)
+-  list(list(â€œCompartmentLabelsï¿½), ï¿½ (folder of images)â€œ)
 
--  list(â€œexperimentname\_â€, list(â€œexprMat_fileâ€), â€œ.csv (file)â€)
+-  list(â€œexperimentname\_ï¿½, list(â€œexprMat_fileï¿½), â€œ.csv (file)ï¿½)
 
--  list(â€œexperimentname\_â€, list(â€œfov_positions_fileâ€), â€œ.csv (file)â€)
+-  list(â€œexperimentname\_ï¿½, list(â€œfov_positions_fileï¿½), â€œ.csv (file)ï¿½)
 
--  list(â€œexperimentname\_â€, list(â€œmetadata_fileâ€), â€œ.csv (file)â€)
+-  list(â€œexperimentname\_ï¿½, list(â€œmetadata_fileï¿½), â€œ.csv (file)ï¿½)
 
--  list(â€œexperimentname\_â€, list(â€œtx_fileâ€), â€œ.csv (file)â€)
+-  list(â€œexperimentname\_ï¿½, list(â€œtx_fileï¿½), â€œ.csv (file)ï¿½)
 
 [ Workflows ] Workflow to use is accessed through the data_to_use param
 
 -  list(â€œâ€˜allâ€™ - loads and requires subcellular information from tx_file
-   and fov_positions_file:raw-latex:`\n`â€, â€ and also the existing
+   and fov_positions_file:raw-latex:`\n`ï¿½, ï¿½ and also the existing
    aggregated information (expression, spatial locations, and
-   metadata):raw-latex:`\n`â€œ,â€ from exprMat_file and metadata_file.â€)
+   metadata):raw-latex:`\n`â€œ,ï¿½ from exprMat_file and metadata_file.ï¿½)
 
 -  list(â€œâ€˜subcellularâ€™ - loads and requires subcellular information from
-   tx_file and:raw-latex:`\n`â€, â€ fov_positions_file only.â€)
+   tx_file and:raw-latex:`\n`ï¿½, ï¿½ fov_positions_file only.ï¿½)
 
 -  list(â€œâ€˜aggregateâ€™ - loads and requires the existing aggregate
-   information (expression,:raw-latex:`\n`â€, â€ spatial locations, and
-   metadata) from exprMat_file and metadata_file.â€)
+   information (expression,:raw-latex:`\n`ï¿½, ï¿½ spatial locations, and
+   metadata) from exprMat_file and metadata_file.ï¿½)
 
 [ Images ] Images in the default CellComposite, CellLabels,
 CompartmentLabels, and CellOverlay folders will be loaded as giotto

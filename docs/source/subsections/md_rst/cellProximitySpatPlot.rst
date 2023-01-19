@@ -7,10 +7,6 @@ cellProximitySpatPlot
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2869
 
 
-
-   :format: latex
-..
-
 ``cellProximitySpatPlot``
 =========================
 
@@ -40,25 +36,25 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```cellProximitySpatPl               |
 |                               | ot2D`` <#cellproximityspatplot2d>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€feat_typeâ€)),        |
-|                               | list(â€œfeature typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€spat_unitâ€)),        |
-|                               | list(â€œspatial unitâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€spat_loc_nameâ€)),    |
-|                               | list(â€œspatial locations to useâ€)),   |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€interaction_nameâ€)), |
-|                               | list(â€œcell-cell interaction nameâ€)), |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€cluster_columnâ€)),   |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½feat_typeï¿½)),        |
+|                               | list(â€œfeature typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½spat_unitï¿½)),        |
+|                               | list(â€œspatial unitï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½spat_loc_nameï¿½)),    |
+|                               | list(â€œspatial locations to useï¿½)),   |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½interaction_nameï¿½)), |
+|                               | list(â€œcell-cell interaction nameï¿½)), |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½cluster_columnï¿½)),   |
 |                               | list(â€œcluster column with cell       |
-|                               | clustersâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ, |
-|                               | list(list(list(â€sdimxâ€)),            |
+|                               | clustersï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ, |
+|                               | list(list(list(ï¿½sdimxï¿½)),            |
 |                               | list(â€œx-axis dimension name (default |
-|                               | = â€˜sdimxâ€™)â€)), â€œ:raw-latex:`\n`â€,    |
+|                               | = â€˜sdimxâ€™)ï¿½)), â€œ:raw-latex:`\n`ï¿½,    |
 +-------------------------------+--------------------------------------+
 
 ::

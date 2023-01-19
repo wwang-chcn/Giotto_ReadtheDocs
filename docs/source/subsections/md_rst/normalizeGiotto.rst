@@ -7,10 +7,6 @@ normalizeGiotto
 https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2474
 
 
-
-   :format: latex
-..
-
 ``normalizeGiotto``
 ===================
 
@@ -118,12 +114,12 @@ list()
       also implemented: list()
 
 -  list(â€œ1. First normalize genes, for each gene divide the counts by
-   the total gene count and:raw-latex:`\n`â€, â€œmultiply by the total
-   number of genes.â€)
+   the total gene count and:raw-latex:`\n`ï¿½, â€œmultiply by the total
+   number of genes.ï¿½)
 
 -  | list(â€œ2. Next normalize cells, for each cell divide the normalized
-     gene counts by the total:raw-latex:`\n`â€, â€œcounts per cell and
-     multiply by the total number of cells.â€)
+     gene counts by the total:raw-latex:`\n`ï¿½, â€œcounts per cell and
+     multiply by the total number of cells.ï¿½)
    | C. The normalization method as provided by Lause/Kobak et al is
      also implemented: list()
 

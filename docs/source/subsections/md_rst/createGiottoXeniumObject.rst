@@ -7,10 +7,6 @@ createGiottoXeniumObject
 https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3431
 
 
-
-   :format: latex
-..
-
 ``createGiottoXeniumObject``
 ============================
 
@@ -102,15 +98,15 @@ Arguments
 Details
 -------
 
-[ list(“QC feature types�) ] Xenium provides info on feature detections
+[ list(“QC feature types�) ] Xenium provides info on feature detections
 that include more than only the Gene Expression specific probes.
-Additional probes for QC are included: list(“blank codeword�) ,
-list(“negative control codeword�) , and list(“negative control probe�) .
+Additional probes for QC are included: list(“blank codeword�) ,
+list(“negative control codeword�) , and list(“negative control probe�) .
 These additional QC probes each occupy and are treated as their own
 feature types so that they can largely remain independent of the gene
 expression information.
 
-[ list(“key_list�) ] Related to ``data_to_use = 'subcellular'`` workflow
+[ list(“key_list�) ] Related to ``data_to_use = 'subcellular'`` workflow
 only: Additional QC probe information is in the subcellular feature
 detections information and must be separated from the gene expression
 information during processing. The QC probes have prefixes that allow
@@ -120,9 +116,9 @@ the list names being the names that will be assigned as the feature type
 of these feature detections. The default list is used when ``key_list``
 = NULL.
 
-Default list: list(“:raw-latex:`\n`�, � list(blank_code =
-‘BLANK\_’,:raw-latex:`\n`“,� neg_code =
-‘NegControlCodeword\_’,:raw-latex:`\n`“,� neg_probe =
+Default list: list(“:raw-latex:`\n`�, � list(blank_code =
+‘BLANK\_’,:raw-latex:`\n`“,� neg_code =
+‘NegControlCodeword\_’,:raw-latex:`\n`“,� neg_probe =
 c(‘NegControlProbe_|antisense\_’)):raw-latex:`\n`“)
 
 The Gene expression subset is accepted as the subset of feat_IDs that do

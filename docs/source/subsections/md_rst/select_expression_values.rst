@@ -4,9 +4,6 @@ select_expression_values
 
 :Date: 1/19/23
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
 
 ``select_expression_values``
 ============================

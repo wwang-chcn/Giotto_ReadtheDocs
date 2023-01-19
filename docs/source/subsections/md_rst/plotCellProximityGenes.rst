@@ -7,10 +7,6 @@ plotCellProximityGenes
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1132
 
 
-
-   :format: latex
-..
-
 ``plotCellProximityGenes``
 ==========================
 
@@ -37,27 +33,27 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```plotCellProximity                 |
 |                               | Feats`` <#plotcellproximityfeats>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)),          |
-|                               | list(â€œgiotto objectâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€icfObjectâ€)),        |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)),          |
+|                               | list(â€œgiotto objectï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½icfObjectï¿½)),        |
 |                               | list(â€œICF (interaction changed       |
-|                               | feature) score objectâ€)),            |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€methodâ€)),           |
-|                               | list(â€œplotting method to useâ€)),     |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€min_cellsâ€)),        |
+|                               | feature) score objectï¿½)),            |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½methodï¿½)),           |
+|                               | list(â€œplotting method to useï¿½)),     |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½min_cellsï¿½)),        |
 |                               | list(â€œminimum number of source cell  |
-|                               | typeâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,     |
-|                               | list(list(list(â€min_cells_exprâ€)),   |
+|                               | typeï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,     |
+|                               | list(list(list(ï¿½min_cells_exprï¿½)),   |
 |                               | list(â€œminimum expression level for   |
-|                               | source cell typeâ€)),                 |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€min_int_cellsâ€)),    |
+|                               | source cell typeï¿½)),                 |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½min_int_cellsï¿½)),    |
 |                               | list(â€œminimum number of interacting  |
-|                               | neighbor cell typeâ€)),               |
+|                               | neighbor cell typeï¿½)),               |
 +-------------------------------+--------------------------------------+
 
 ::
