@@ -2,16 +2,20 @@
 plot_spat_image_layer_ggplot
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L2406
+``plot_spat_image_layer_ggplot``
+================================
 
-===========
+plot_spat_image_layer_ggplot
+
+Description
+-----------
 
 create background image in ggplot
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -57,6 +61,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 ggplot

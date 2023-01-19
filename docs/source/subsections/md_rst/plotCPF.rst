@@ -2,18 +2,23 @@
 plotCPF
 =======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1448
 
 
-Description
+
 ===========
+
+plotCPF
+
+Description
+-----------
 
 Create visualization for cell proximity feature scores
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -40,7 +45,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -97,6 +102,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 plot

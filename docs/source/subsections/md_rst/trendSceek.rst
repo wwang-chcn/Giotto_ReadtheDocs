@@ -2,18 +2,23 @@
 trendSceek
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2152
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2163
 
+
+
+==============
+
+trendSceek
 
 Description
-===========
+-----------
 
 Compute spatial variable genes with trendsceek method
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -30,7 +35,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -62,7 +67,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function is a wrapper for the trendsceek_test method implemented in
 the trendsceek package Publication:
@@ -70,6 +75,6 @@ c(â€œ\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}â€,
 â€œ10.1038/nmeth.4634â€) list(â€œtools:::Rd_expr_doi("10.1038/nmeth.4634")â€)
 
 Value
-=====
+-----
 
 data.frame with trendsceek spatial genes results

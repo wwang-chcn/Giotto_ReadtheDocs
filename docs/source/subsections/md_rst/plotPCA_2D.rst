@@ -2,22 +2,23 @@
 plotPCA_2D
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1528
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1558
 
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+``plotPCA_2D``
+==============
+
+plotPCA_2D
 
 Description
-===========
+-----------
 
 Short wrapper for PCA visualization
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -29,7 +30,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -42,25 +43,25 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``...``                       | Arguments passed on to               |
 |                               | ```dimPlot2D`` <#dimplot2d>`__       |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€spat_unitâ€)),        |
-|                               | list(â€œspatial unitâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€feat_typeâ€)),        |
-|                               | list(â€œfeature typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€group_byâ€)),         |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½spat_unitï¿½)),        |
+|                               | list(â€œspatial unitï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½feat_typeï¿½)),        |
+|                               | list(â€œfeature typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½group_byï¿½)),         |
 |                               | list(â€œcreate multiple plots based on |
-|                               | cell annotation columnâ€)),           |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€group_by_subsetâ€)),  |
+|                               | cell annotation columnï¿½)),           |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½group_by_subsetï¿½)),  |
 |                               | list(â€œsubset the group_by factor     |
-|                               | columnâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,   |
-|                               | list(list(list(â€dim1_to_useâ€)),      |
-|                               | list(â€œdimension to use on x-axisâ€)), |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€dim2_to_useâ€)),      |
-|                               | list(â€œdimension to use on y-axisâ€)), |
+|                               | columnï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,   |
+|                               | list(list(list(ï¿½dim1_to_useï¿½)),      |
+|                               | list(â€œdimension to use on x-axisï¿½)), |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½dim2_to_useï¿½)),      |
+|                               | list(â€œdimension to use on y-axisï¿½)), |
 +-------------------------------+--------------------------------------+
 
 ::
@@ -75,18 +76,18 @@ Arguments
        "cowplot param: how to align")), "\n", "    ", list(list(list("show_plot")), list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "  ")
 
 Details
-=======
+-------
 
 Description of parameters, see ```dimPlot2D`` <#dimplot2d>`__ . For 3D
 plots see ```plotPCA_3D`` <#plotpca3d>`__
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other reduced dimension visualizations: ```dimPlot2D`` <#dimplot2d>`__ ,
 ```dimPlot3D`` <#dimplot3d>`__ , ```dimPlot`` <#dimplot>`__ ,

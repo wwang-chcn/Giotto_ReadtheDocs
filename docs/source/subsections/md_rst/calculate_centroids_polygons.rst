@@ -2,16 +2,20 @@
 calculate_centroids_polygons
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L202
+``calculate_centroids_polygons``
+================================
 
-===========
+Calculate polygon centroids
+
+Description
+-----------
 
 calculates centroids from selected polygons
 
 Usage
-=====
+-----
 
 .. code:: r
 

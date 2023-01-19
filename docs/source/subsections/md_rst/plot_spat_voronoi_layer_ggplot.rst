@@ -2,16 +2,23 @@
 plot_spat_voronoi_layer_ggplot
 ==============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L2080
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L2110
 
-===========
+
+
+==================================
+
+plot_spat_voronoi_layer_ggplot
+
+Description
+-----------
 
 creat ggplot point layer for spatial coordinates without borders
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -47,7 +54,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -117,11 +124,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot

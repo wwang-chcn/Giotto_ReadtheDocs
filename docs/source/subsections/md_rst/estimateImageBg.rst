@@ -2,25 +2,30 @@
 estimateImageBg
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L496
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L497
 
+
+
+===================
+
+estimateImageBg
 
 Description
-===========
+-----------
 
 helps to estimate which color is the background color of your plot
 
 Usage
-=====
+-----
 
 .. code:: r
 
    estimateImageBg(mg_object, top_color_range = 1:50)
 
 Arguments
-=========
+---------
 
 =================== ========================================
 Argument            Description
@@ -30,6 +35,6 @@ Argument            Description
 =================== ========================================
 
 Value
-=====
+-----
 
 vector of pixel color frequencies and an associated barplot

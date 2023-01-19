@@ -2,16 +2,20 @@
 calc_cov_loess_HVF
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/variable_genes.R#L59
+``calc_cov_loess_HVF``
+======================
 
-===========
+calc_cov_loess_HVF
+
+Description
+-----------
 
 calc_cov_loess_HVF
 
 Usage
-=====
+-----
 
 .. code:: r
 

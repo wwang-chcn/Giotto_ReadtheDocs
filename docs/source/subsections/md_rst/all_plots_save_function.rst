@@ -2,16 +2,20 @@
 all_plots_save_function
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L322
+``all_plots_save_function``
+===========================
 
-===========
+all_plots_save_function
+
+Description
+-----------
 
 Function to automatically save plots to directory of interest
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -38,7 +42,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -88,6 +92,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
-=======
+-------
 
 ```general_save_function`` <#generalsavefunction>`__

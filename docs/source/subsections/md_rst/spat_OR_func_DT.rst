@@ -2,16 +2,20 @@
 spat_OR_func_DT
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L224
+``spat_OR_func_DT``
+===================
 
-===========
+spat_OR_func_DT
+
+Description
+-----------
 
 calculate odds-ratio with data.table implementation
 
 Usage
-=====
+-----
 
 .. code:: r
 

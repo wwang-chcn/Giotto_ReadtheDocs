@@ -2,19 +2,24 @@
 createSpatialDelaunayNetwork
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1067
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1069
 
+
+
+================================
+
+Create a spatial Delaunay network
 
 Description
-===========
+-----------
 
 Create a spatial Delaunay network based on cell centroid physical
 distances.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -38,7 +43,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -104,13 +109,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Creates a spatial Delaunay network as explained in
 ```delaunayn`` <#delaunayn>`__ (default), ```deldir`` <#deldir>`__ , or
 ```triangulate`` <#triangulate>`__ .
 
 Value
-=====
+-----
 
 giotto object with updated spatial network slot

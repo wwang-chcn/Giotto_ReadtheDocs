@@ -2,16 +2,20 @@
 calc_spatial_enrichment_minimum
 ===============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L312
+``calc_spatial_enrichment_minimum``
+===================================
 
-===========
+calc_spatial_enrichment_minimum
+
+Description
+-----------
 
 calculate spatial enrichment using a simple and efficient for loop
 
 Usage
-=====
+-----
 
 .. code:: r
 

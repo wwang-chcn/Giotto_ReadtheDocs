@@ -2,15 +2,20 @@
 density_giottoLargeImage
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``density_giottoLargeImage``
+============================
+
+Plot smoothed curve of giotto largeImage intensity values
 
 Description
-===========
+-----------
 
 Plot smoothed curve of giotto largeImage intensity values
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -22,7 +27,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

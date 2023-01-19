@@ -2,18 +2,23 @@
 annotateSpatialNetwork
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1686
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1693
 
+
+
+==========================
+
+annotateSpatialNetwork
 
 Description
-===========
+-----------
 
 Annotate spatial network with cell metadata information.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,6 +52,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 annotated network in data.table format

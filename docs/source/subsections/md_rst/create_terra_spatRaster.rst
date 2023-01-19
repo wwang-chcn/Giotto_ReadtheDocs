@@ -2,23 +2,27 @@
 create_terra_spatRaster
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1135
+``create_terra_spatRaster``
+===========================
 
-===========
+Load image as a terra spatRaster object
+
+Description
+-----------
 
 Load image as a terra spatRaster object
 
 Usage
-=====
+-----
 
 .. code:: r
 
    create_terra_spatRaster(image_path)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

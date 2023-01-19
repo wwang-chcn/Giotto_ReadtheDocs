@@ -2,19 +2,24 @@
 spatDimPlot3D
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7941
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7998
 
+
+
+=================
+
+spatDimPlot3D
 
 Description
-===========
+-----------
 
 Visualize cells according to spatial AND dimension reduction coordinates
 in plotly mode
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -74,7 +79,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -198,17 +203,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 plotly
 
 Seealso
-=======
+-------
 
 Other spatial and dimension reduction visualizations:
 ```spatDimPlot2D`` <#spatdimplot2d>`__ ,

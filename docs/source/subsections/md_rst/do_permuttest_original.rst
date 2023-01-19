@@ -2,16 +2,20 @@
 do_permuttest_original
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L516
+``do_permuttest_original``
+==========================
 
-===========
+do_permuttest_original
+
+Description
+-----------
 
 calculate original values
 
 Usage
-=====
+-----
 
 .. code:: r
 

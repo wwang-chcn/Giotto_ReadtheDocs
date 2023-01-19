@@ -2,23 +2,27 @@
 list_element_exists
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L298
+``list_element_exists``
+=======================
 
-===========
+Test if list element exists
+
+Description
+-----------
 
 Test if nth element of list exists
 
 Usage
-=====
+-----
 
 .. code:: r
 
    list_element_exists(x, index)
 
 Arguments
-=========
+---------
 
 ========= =============
 Argument  Description
@@ -28,6 +32,6 @@ Argument  Description
 ========= =============
 
 Value
-=====
+-----
 
 boolean

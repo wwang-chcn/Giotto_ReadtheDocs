@@ -2,16 +2,23 @@
 createMetagenes
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3667
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L4476
 
-===========
+
+
+===================
+
+Create metagenes
+
+Description
+-----------
 
 This function creates an average metagene for gene clusters.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ===================== ====================================
 Argument              Description
@@ -39,13 +46,13 @@ Argument              Description
 ===================== ====================================
 
 Details
-=======
+-------
 
 An example for the ‘gene_clusters’ could be like this: cluster_vector =
 c(1, 1, 2, 2); names(cluster_vector) = c(‘geneA’, ‘geneB’, ‘geneC’,
 ‘geneD’)
 
 Value
-=====
+-----
 
 giotto object

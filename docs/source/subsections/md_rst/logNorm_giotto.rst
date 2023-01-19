@@ -2,16 +2,20 @@
 logNorm_giotto
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L91
+``logNorm_giotto``
+==================
 
-===========
+logNorm_giotto
+
+Description
+-----------
 
 logNorm_giotto
 
 Usage
-=====
+-----
 
 .. code:: r
 

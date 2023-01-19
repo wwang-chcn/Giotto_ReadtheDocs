@@ -2,50 +2,63 @@
 getCellsFromPolygon
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L10159
+https://github.com/drieslab/Giotto/tree/suite/R/interactivity.R#L164
 
+
+
+=======================
+
+Get cells located within the polygons area
 
 Description
-===========
+-----------
 
 Get cells located within the polygons area
 
 Usage
-=====
+-----
 
 .. code:: r
 
    getCellsFromPolygon(
      gobject,
-     polygon_slot = "spatial_info",
-     cells_loc_slot = "spatial_locs"
+     polygon_name = "selections",
+     spat_unit = "cell",
+     spat_loc_name = "raw",
+     polygons = NULL
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``gobject``                   | A Giotto object                      |
 +-------------------------------+--------------------------------------+
-| ``polygon_slot``              | Slot name where polygon coordinates  |
-|                               | are stored in Giotto object          |
+| ``polygon_name``              | name of polygon selections           |
 +-------------------------------+--------------------------------------+
-| ``cells_loc_slot``            | Slot name where cell coordinates are |
-|                               | stored in Giotto object              |
+| ``spat_unit``                 | spatial unit, default = ‘cell’       |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name of spatial locations to use,    |
+|                               | default = ‘raw’                      |
++-------------------------------+--------------------------------------+
+| ``polygons``                  | character. A vector with polygon     |
+|                               | names to extract cells from. If      |
+|                               | NULL, cells from all polygons are    |
+|                               | retrieved                            |
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
-A ``SpatVector`` with cell IDs, x,y coordinates, and polygon name where
+A terra ‘SpatVector’ with cell ID, x y coordinates, and polygon ID where
 each cell is located in.
 
 Examples
-========
+--------
 
 .. code:: r
 
@@ -63,3 +76,6 @@ Examples
 
    ## Get cells located within polygons area
    getCellsFromPolygon(my_giotto_object)
+
+   ## Get only cells from polygon 1
+   getCellsFromPolygon(my_giotto_object, polygons = "polygon 1")

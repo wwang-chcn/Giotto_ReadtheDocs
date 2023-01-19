@@ -2,20 +2,25 @@
 writeGiottoLargeImage
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1807
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1808
 
+
+
+=========================
+
+writeGiottoLargeImage
 
 Description
-===========
+-----------
 
 Write full resolution image to file. Filetype extension should be
 included in ``filename`` argument. Be careful if write time and disk
 space needed if image is very large.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -31,7 +36,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

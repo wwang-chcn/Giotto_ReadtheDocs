@@ -2,16 +2,20 @@
 read_spatial_enrichment
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1317
+``read_spatial_enrichment``
+===========================
 
-===========
+Read spatial enrichment
+
+Description
+-----------
 
 read spatial enrichment results from list
 
 Usage
-=====
+-----
 
 .. code:: r
 

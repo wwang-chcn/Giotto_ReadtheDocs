@@ -2,16 +2,20 @@
 join_cell_meta
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3626
+``join_cell_meta``
+==================
 
-===========
+join_cell_meta
+
+Description
+-----------
 
 join_cell_meta
 
 Usage
-=====
+-----
 
 .. code:: r
 

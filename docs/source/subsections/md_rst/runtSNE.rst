@@ -2,18 +2,23 @@
 runtSNE
 =======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1459
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1522
 
+
+
+===========
+
+Run tSNE dimensional reduction
 
 Description
-===========
+-----------
 
 run tSNE
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,15 +38,15 @@ Usage
      dims = 2,
      perplexity = 30,
      theta = 0.5,
-     do_PCA_first = F,
-     set_seed = T,
+     do_PCA_first = FALSE,
+     set_seed = TRUE,
      seed_number = 1234,
      verbose = TRUE,
      ...
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -94,7 +99,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 See ```Rtsne`` <#rtsne>`__ for more information about these and other
 parameters. list()
@@ -113,6 +118,6 @@ parameters. list()
    analysis
 
 Value
-=====
+-----
 
 giotto object with updated tSNE dimension recuction

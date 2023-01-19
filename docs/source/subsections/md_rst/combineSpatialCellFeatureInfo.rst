@@ -2,19 +2,24 @@
 combineSpatialCellFeatureInfo
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3806
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L4615
 
+
+
+=================================
+
+combineSpatialCellFeatureInfo
 
 Description
-===========
+-----------
 
 Combine spatial cell information (e.g. polygon) and spatial feature
 information (e.g. transcript locations)
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -26,7 +31,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ===================== ======================
 Argument              Description
@@ -38,7 +43,7 @@ Argument              Description
 ===================== ======================
 
 Details
-=======
+-------
 
 The returned data.table has the following columns: list()
 
@@ -55,6 +60,6 @@ The returned data.table has the following columns: list()
 -  feat: selected feature(s)
 
 Value
-=====
+-----
 
 list of data.table(s)

@@ -2,19 +2,24 @@
 spatDimFeatPlot2D
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5379
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5432
 
+
+
+=====================
+
+spatDimFeatPlot2D
 
 Description
-===========
+-----------
 
 Visualize cells according to spatial AND dimension reduction coordinates
 in ggplot mode
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -29,6 +34,7 @@ Usage
      expression_values = c("normalized", "scaled", "custom"),
      plot_alignment = c("vertical", "horizontal"),
      feats,
+     order = TRUE,
      dim_reduction_to_use = "umap",
      dim_reduction_name = "umap",
      dim1_to_use = 1,
@@ -61,7 +67,7 @@ Usage
      cell_color_gradient = c("blue", "white", "red"),
      gradient_midpoint = NULL,
      gradient_limits = NULL,
-     cow_n_col = 2,
+     cow_n_col = NULL,
      cow_rel_h = 1,
      cow_rel_w = 1,
      cow_align = "h",
@@ -82,7 +88,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -106,6 +112,9 @@ Arguments
 | ``plot_alignment``            | direction to align plot              |
 +-------------------------------+--------------------------------------+
 | ``feats``                     | features to show                     |
++-------------------------------+--------------------------------------+
+| ``order``                     | order points according to feature    |
+|                               | expression                           |
 +-------------------------------+--------------------------------------+
 | ``dim_reduction_to_use``      | dimension reduction to use           |
 +-------------------------------+--------------------------------------+
@@ -225,11 +234,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot

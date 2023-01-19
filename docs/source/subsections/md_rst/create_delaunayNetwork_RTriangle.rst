@@ -2,16 +2,20 @@
 create_delaunayNetwork_RTriangle
 ================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L637
+``create_delaunayNetwork_RTriangle``
+====================================
 
-===========
+create_delaunayNetwork_RTriangle
+
+Description
+-----------
 
 Create a spatial Delaunay network with RTriangle
 
 Usage
-=====
+-----
 
 .. code:: r
 

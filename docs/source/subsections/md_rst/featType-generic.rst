@@ -1,0 +1,34 @@
+================
+featType-generic
+================
+
+:Date: 1/19/23
+
+``featType-generic``
+====================
+
+Feature type information
+
+Description
+-----------
+
+access and set feat_type slot of S4 subobject
+
+Usage
+-----
+
+.. code:: r
+
+   featType(x)
+   list(list("featType"), list("featData"))(x)
+   list(list("featType"), list("featData"))(x) <- value
+
+Arguments
+---------
+
+========= =============================================
+Argument  Description
+========= =============================================
+``x``     a Giotto S4 class subobject with feature type
+``value`` value to set as feature type
+========= =============================================

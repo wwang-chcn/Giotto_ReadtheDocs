@@ -2,23 +2,27 @@
 set_default_feat_type
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L43
+``set_default_feat_type``
+=========================
 
-===========
+set_default_feat_type
+
+Description
+-----------
 
 set_default_feat_type
 
 Usage
-=====
+-----
 
 .. code:: r
 
    set_default_feat_type(gobject, feat_type = NULL, spat_unit)
 
 Arguments
-=========
+---------
 
 ============= ============
 Argument      Description

@@ -2,19 +2,24 @@
 calculateOverlapRaster
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1805
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1934
 
+
+
+==========================
+
+calculateOverlapRaster
 
 Description
-===========
+-----------
 
 calculate overlap between cellular structures (polygons) and features
 (points)
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -26,12 +31,13 @@ Usage
      feat_info = NULL,
      feat_subset_column = NULL,
      feat_subset_ids = NULL,
+     count_info_column = NULL,
      return_gobject = TRUE,
      verbose = TRUE
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -53,17 +59,20 @@ Arguments
 | ``feat_subset_ids``           | ids within feature info column to    |
 |                               | use for subsetting                   |
 +-------------------------------+--------------------------------------+
+| ``count_info_column``         | column with count information        |
+|                               | (optional)                           |
++-------------------------------+--------------------------------------+
 | ``return_gobject``            | return giotto object (default: TRUE) |
 +-------------------------------+--------------------------------------+
 | ``verbose``                   | be verbose                           |
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Serial overlapping function.
 
 Value
-=====
+-----
 
 giotto object or spatVector with overlapping information

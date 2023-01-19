@@ -2,16 +2,20 @@
 subset_spatial_info_data
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L807
+``subset_spatial_info_data``
+============================
 
-===========
+Subset spatial info data
+
+Description
+-----------
 
 Subset all spatial info (polygon) data
 
 Usage
-=====
+-----
 
 .. code:: r
 

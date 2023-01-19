@@ -2,18 +2,23 @@
 doHclust
 ========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L906
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L927
 
+
+
+============
+
+doHclust
 
 Description
-===========
+-----------
 
 cluster cells using hierarchical clustering algorithm
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -34,12 +39,12 @@ Usage
      h = NULL,
      name = "hclust",
      return_gobject = TRUE,
-     set_seed = T,
+     set_seed = TRUE,
      seed_number = 1234
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -79,16 +84,16 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description on how to use Kmeans clustering method.
 
 Value
-=====
+-----
 
 giotto object with new clusters appended to cell metadata
 
 Seealso
-=======
+-------
 
 ```hclust`` <#hclust>`__

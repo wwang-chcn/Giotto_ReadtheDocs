@@ -2,16 +2,20 @@
 kmeans_binarize_wrapper
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L424
+``kmeans_binarize_wrapper``
+===========================
 
-===========
+kmeans_binarize_wrapper
+
+Description
+-----------
 
 wrapper for different binarization functions
 
 Usage
-=====
+-----
 
 .. code:: r
 

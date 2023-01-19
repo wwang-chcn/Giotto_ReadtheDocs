@@ -2,18 +2,23 @@
 plotCombineInteractionChangedFeats
 ==================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1697
 
 
+
+======================================
+
+plotCombineInteractionChangedFeats
+
 Description
-===========
+-----------
 
 Create visualization for combined (pairwise) ICF scores
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -37,7 +42,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -84,6 +89,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 ggplot

@@ -2,17 +2,21 @@
 create_average_detection_DT
 ===========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L361
+``create_average_detection_DT``
+===============================
 
-===========
+create_average_detection_DT
+
+Description
+-----------
 
 calculates average gene detection for a cell metadata factor
 (e.g. cluster)
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -26,7 +30,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -46,6 +50,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table with average gene epression values for each factor

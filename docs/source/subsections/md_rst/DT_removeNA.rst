@@ -2,15 +2,20 @@
 DT_removeNA
 ===========
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``DT_removeNA``
+===============
+
+DT_removeNA
 
 Description
-===========
+-----------
 
 set NA values to 0 in a data.table object
 
 Usage
-=====
+-----
 
 .. code:: r
 

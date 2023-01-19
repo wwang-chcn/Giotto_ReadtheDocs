@@ -2,16 +2,20 @@
 get_args
 ========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3465
+``get_args``
+============
 
-===========
+Log args used
+
+Description
+-----------
 
 Log args used
 
 Usage
-=====
+-----
 
 .. code:: r
 

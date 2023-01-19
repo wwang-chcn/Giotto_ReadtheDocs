@@ -2,18 +2,23 @@
 dimPlot2D
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1137
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1166
 
+
+
+=============
+
+Plot dimension reduction 2D
 
 Description
-===========
+-----------
 
 Visualize cells according to dimension reduction coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -62,7 +67,7 @@ Usage
      background_color = "white",
      axis_text = 8,
      axis_title = 8,
-     cow_n_col = 2,
+     cow_n_col = NULL,
      cow_rel_h = 1,
      cow_rel_w = 1,
      cow_align = "h",
@@ -74,7 +79,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -203,18 +208,18 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters. For 3D plots see
 ```dimPlot3D`` <#dimplot3d>`__
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other reduced dimension visualizations: ```dimPlot3D`` <#dimplot3d>`__ ,
 ```dimPlot`` <#dimplot>`__ , ```plotPCA_2D`` <#plotpca2d>`__ ,

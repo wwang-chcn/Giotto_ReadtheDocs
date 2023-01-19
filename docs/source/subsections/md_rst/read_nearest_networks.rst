@@ -2,16 +2,20 @@
 read_nearest_networks
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1415
+``read_nearest_networks``
+=========================
 
-===========
+Read nearest neighbor networks
+
+Description
+-----------
 
 read nearest network results from list
 
 Usage
-=====
+-----
 
 .. code:: r
 

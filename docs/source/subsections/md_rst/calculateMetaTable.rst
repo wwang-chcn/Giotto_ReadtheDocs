@@ -2,19 +2,24 @@
 calculateMetaTable
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3325
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L4118
 
+
+
+======================
+
+calculateMetaTable
 
 Description
-===========
+-----------
 
 calculates the average gene expression for one or more (combined)
 annotation columns.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -29,7 +34,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -51,7 +56,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table with average expression values for each gene per (combined)
 annotation

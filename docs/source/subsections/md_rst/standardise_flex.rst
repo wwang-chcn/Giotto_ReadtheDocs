@@ -2,23 +2,27 @@
 standardise_flex
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L270
+``standardise_flex``
+====================
 
-===========
+standardise_flex
+
+Description
+-----------
 
 standardizes a matrix
 
 Usage
-=====
+-----
 
 .. code:: r
 
    standardise_flex(x, center = TRUE, scale = TRUE)
 
 Arguments
-=========
+---------
 
 ========== ===========
 Argument   Description
@@ -29,6 +33,6 @@ Argument   Description
 ========== ===========
 
 Value
-=====
+-----
 
 standardized matrix

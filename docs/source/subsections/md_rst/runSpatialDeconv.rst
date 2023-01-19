@@ -2,18 +2,23 @@
 runSpatialDeconv
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1953
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1998
 
+
+
+====================
+
+runSpatialDeconv
 
 Description
-===========
+-----------
 
 Function to perform deconvolution based on single cell expression data
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,7 +38,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ===================== =============================================
 Argument              Description
@@ -53,11 +58,11 @@ Argument              Description
 ===================== =============================================
 
 Value
-=====
+-----
 
 giotto object or deconvolution results
 
 Seealso
-=======
+-------
 
 ```runDWLSDeconv`` <#rundwlsdeconv>`__

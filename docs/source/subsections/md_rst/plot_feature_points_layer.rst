@@ -2,16 +2,20 @@
 plot_feature_points_layer
 =========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L174
+``plot_feature_points_layer``
+=============================
 
-===========
+plot_feature_points_layer
+
+Description
+-----------
 
 low level function to plot a points at the spatial in situ level
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,16 +31,20 @@ Usage
      shape = "feat",
      point_size = 1.5,
      show_legend = TRUE,
-     plot_method = c("ggplot", "scattermore", "scattermost")
+     plot_method = c("ggplot", "scattermore", "scattermost"),
+     expand_counts = FALSE,
+     count_info_column = "count",
+     jitter = c(0, 0),
+     verbose = TRUE
    )
 
 Details
-=======
+-------
 
 This function can plot multiple features over multiple modalities. These
 plots can get very big very fast.
 
 Value
-=====
+-----
 
 ggplot

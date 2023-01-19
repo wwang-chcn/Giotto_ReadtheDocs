@@ -2,23 +2,27 @@
 print_leaf
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L359
+``print_leaf``
+==============
 
-===========
+Hierarchical tree printing
+
+Description
+-----------
 
 Hierarchical tree printing
 
 Usage
-=====
+-----
 
 .. code:: r
 
    print_leaf(level_index, availableDT, inherit_last = TRUE, indent)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -39,6 +43,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Much inspiration taken from https://rdrr.io/cran/fs/src/R/tree.R

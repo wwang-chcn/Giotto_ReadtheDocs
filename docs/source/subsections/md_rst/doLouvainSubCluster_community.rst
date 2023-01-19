@@ -2,17 +2,21 @@
 doLouvainSubCluster_community
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L1527
+``doLouvainSubCluster_community``
+=================================
 
-===========
+doLouvainSubCluster_community
+
+Description
+-----------
 
 subcluster cells using a NN-network and the Louvain community detection
 algorithm
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -21,7 +25,7 @@ Usage
      name = "sub_louvain_comm_clus",
      cluster_column = NULL,
      selected_clusters = NULL,
-     hvg_param = list(reverse_log_scale = T, difference_in_cov = 1, expression_values =
+     hvg_param = list(reverse_log_scale = TRUE, difference_in_cov = 1, expression_values =
        "normalized"),
      hvg_min_perc_cells = 5,
      hvg_mean_expr_det = 1,
@@ -39,7 +43,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -91,7 +95,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function performs subclustering using the Louvain community
 algorithm on selected clusters. The systematic steps are:
@@ -117,11 +121,11 @@ algorithm on selected clusters. The systematic steps are:
    5. do Louvain community clustering
 
 Value
-=====
+-----
 
 giotto object with new subclusters appended to cell metadata
 
 Seealso
-=======
+-------
 
 ```doLouvainCluster_community`` <#dolouvainclustercommunity>`__

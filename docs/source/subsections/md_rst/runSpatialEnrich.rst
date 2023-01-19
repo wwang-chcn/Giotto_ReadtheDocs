@@ -2,19 +2,24 @@
 runSpatialEnrich
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1292
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1328
 
+
+
+====================
+
+runSpatialEnrich
 
 Description
-===========
+-----------
 
 Function to calculate gene signature enrichment scores per spatial
 position using an enrichment test.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -41,7 +46,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -99,7 +104,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 For details see the individual functions:
 
@@ -110,6 +115,6 @@ For details see the individual functions:
 -  Hypergeometric: list(list(â€œrunHyperGeometricEnrichâ€))
 
 Value
-=====
+-----
 
 Giotto object or enrichment results if return_gobject = FALSE

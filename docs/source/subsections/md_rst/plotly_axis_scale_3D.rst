@@ -2,16 +2,20 @@
 plotly_axis_scale_3D
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1958
+``plotly_axis_scale_3D``
+========================
 
-===========
+plotly_axis_scale_3D
+
+Description
+-----------
 
 adjust the axis scale in 3D plotly plot
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,7 +29,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ================== ===============================
 Argument           Description
@@ -39,6 +43,6 @@ Argument           Description
 ================== ===============================
 
 Value
-=====
+-----
 
 edges in spatial grid as data.table()

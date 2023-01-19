@@ -2,23 +2,32 @@
 xy_translate_spatial_locations
 ==============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1178
+``xy_translate_spatial_locations``
+==================================
 
-===========
+xy_translate_spatial_locations
+
+Description
+-----------
 
 Translate given X Y coordinates by given x and y translation values
 
 Usage
-=====
+-----
 
 .. code:: r
 
-   xy_translate_spatial_locations(spatlocs, xtranslate, ytranslate)
+   xy_translate_spatial_locations(
+     spatlocs,
+     xtranslate = 0,
+     ytranslate = 0,
+     ztranslate = 0
+   )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -30,4 +39,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``ytranslate``                | value to translate coordinates in    |
 |                               | the positive y direction             |
++-------------------------------+--------------------------------------+
+| ``ztranslate``                | value to translate coordinates in    |
+|                               | the positive z direction             |
 +-------------------------------+--------------------------------------+

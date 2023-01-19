@@ -2,18 +2,23 @@
 createSpatialDefaultGrid
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L2035
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L2048
 
+
+
+============================
+
+createSpatialDefaultGrid
 
 Description
-===========
+-----------
 
 Create a spatial grid using the default method
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -31,7 +36,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -60,12 +65,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Creates a spatial grid with defined x, y (and z) dimensions. The
 dimension units are based on the provided spatial location units.
 
 Value
-=====
+-----
 
 giotto object with updated spatial grid slot

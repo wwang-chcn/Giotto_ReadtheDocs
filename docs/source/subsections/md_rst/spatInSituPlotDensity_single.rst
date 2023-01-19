@@ -2,16 +2,20 @@
 spatInSituPlotDensity_single
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L789
+``spatInSituPlotDensity_single``
+================================
 
-===========
+spatInSituPlotDensity_single
+
+Description
+-----------
 
 low level function to plot density plots at the spatial in situ level
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,6 +32,8 @@ Usage
      polygon_fill = NULL,
      polygon_fill_as_factor = NULL,
      polygon_alpha = 0.5,
+     polygon_size = 0.5,
+     coord_fix_ratio = NULL,
      axis_text = 8,
      axis_title = 8,
      legend_text = 6,
@@ -35,11 +41,11 @@ Usage
    )
 
 Details
-=======
+-------
 
 This function can plot one feature for one modality.
 
 Value
-=====
+-----
 
 ggplot

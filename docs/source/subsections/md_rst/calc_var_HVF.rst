@@ -2,16 +2,20 @@
 calc_var_HVF
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/variable_genes.R#L103
+``calc_var_HVF``
+================
 
-===========
+calc_var_HVF
+
+Description
+-----------
 
 calc_var_HVF
 
 Usage
-=====
+-----
 
 .. code:: r
 

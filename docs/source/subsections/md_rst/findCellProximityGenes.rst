@@ -2,28 +2,31 @@
 findCellProximityGenes
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1164
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1176
 
-   :format: latex
-..
+
+``findCellProximityGenes``
+==========================
+
+findCellProximityGenes
 
 Description
-===========
+-----------
 
 Identifies cell-to-cell Interaction Changed Features (ICF), i.e.Â genes
 that are differentially expressed due to proximity to other cell types.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    findCellProximityGenes(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -31,27 +34,27 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```findInteractionChangedFeats       |
 |                               | `` <#findinteractionchangedfeats>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)),          |
-|                               | list(â€œgiotto objectâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€feat_typeâ€)),        |
-|                               | list(â€œfeature typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€spat_unitâ€)),        |
-|                               | list(â€œspatial unitâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)),          |
+|                               | list(â€œgiotto objectï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½feat_typeï¿½)),        |
+|                               | list(â€œfeature typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½spat_unitï¿½)),        |
+|                               | list(â€œspatial unitï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 |                               | l                                    |
-|                               | ist(list(list(â€expression_valuesâ€)), |
-|                               | list(â€œexpression values to useâ€)),   |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€selected_featsâ€)),   |
+|                               | ist(list(list(ï¿½expression_valuesï¿½)), |
+|                               | list(â€œexpression values to useï¿½)),   |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½selected_featsï¿½)),   |
 |                               | list(â€œsubset of selected features    |
-|                               | (optional)â€)), â€œ:raw-latex:`\n`â€, â€  |
+|                               | (optional)ï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½  |
 |                               | â€œ,                                   |
-|                               | list(list(list(â€cluster_columnâ€)),   |
+|                               | list(list(list(ï¿½cluster_columnï¿½)),   |
 |                               | list(â€œname of column to use for cell |
-|                               | typesâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,    |
+|                               | typesï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,    |
 |                               | list(                                |
 +-------------------------------+--------------------------------------+
 
@@ -62,6 +65,6 @@ Arguments
    list(list(list("set_seed")), list("set a seed for reproducibility")), "\n", "    ", list(list(list("seed_number")), list("seed number")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```findInteractionChangedFeats`` <#findinteractionchangedfeats>`__

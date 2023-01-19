@@ -2,18 +2,23 @@
 doLouvainCluster
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L452
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L462
 
+
+
+====================
+
+doLouvainCluster
 
 Description
-===========
+-----------
 
 cluster cells using a NN-network and the Louvain algorithm.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -36,7 +41,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -92,18 +97,18 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Louvain clustering using the community or multinet implementation of the
 louvain clustering algorithm.
 
 Value
-=====
+-----
 
 giotto object with new clusters appended to cell metadata
 
 Seealso
-=======
+-------
 
 ```doLouvainCluster_community`` <#dolouvainclustercommunity>`__ and
 ```doLouvainCluster_multinet`` <#dolouvainclustermultinet>`__

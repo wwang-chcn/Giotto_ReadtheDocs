@@ -2,18 +2,23 @@
 subsetGiotto
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L962
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1203
 
+
+
+================
+
+subsetGiotto
 
 Description
-===========
+-----------
 
 Subsets Giotto object including previous analyses.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,6 +30,8 @@ Usage
      feat_ids = NULL,
      gene_ids = NULL,
      poly_info = NULL,
+     all_spat_units = TRUE,
+     all_feat_types = TRUE,
      x_max = NULL,
      x_min = NULL,
      y_max = NULL,
@@ -34,7 +41,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,9 +56,15 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``feat_ids``                  | feature IDs to keep                  |
 +-------------------------------+--------------------------------------+
-| ``gene_ids``                  | deprecated, use feat_ids             |
+| ``gene_ids``                  | deprecated. Use ``feat_ids``         |
 +-------------------------------+--------------------------------------+
 | ``poly_info``                 | polygon information to use           |
++-------------------------------+--------------------------------------+
+| ``all_spat_units``            | subset all spatial units with        |
+|                               | selected feature ids                 |
++-------------------------------+--------------------------------------+
+| ``all_feat_types``            | subset all feature type data with    |
+|                               | selected cell ids                    |
 +-------------------------------+--------------------------------------+
 | `                             | minimum and maximum x and y          |
 | `x_max, x_min, y_max, y_min`` | coordinates to keep for feature      |
@@ -63,11 +76,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Subsets a Giotto object for a specific spatial unit and feature type
 
 Value
-=====
+-----
 
 giotto object

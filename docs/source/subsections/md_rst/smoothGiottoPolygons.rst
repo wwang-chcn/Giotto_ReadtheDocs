@@ -2,18 +2,23 @@
 smoothGiottoPolygons
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L833
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L850
 
+
+
+========================
+
+smoothGiottoPolygons
 
 Description
-===========
+-----------
 
 Smooths Giotto polygon object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -26,7 +31,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -45,11 +50,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 Smoothed Giotto polygon object with reduced vertices
 
 Seealso
-=======
+-------
 
 ```spline`` <#spline>`__

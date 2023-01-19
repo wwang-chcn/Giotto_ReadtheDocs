@@ -2,18 +2,23 @@
 plotMetaDataCellsHeatmap
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1504
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1506
 
+
+
+============================
+
+plotMetaDataCellsHeatmap
 
 Description
-===========
+-----------
 
 Creates heatmap for numeric cell metadata within aggregated clusters.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -46,7 +51,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -120,18 +125,18 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Creates heatmap for the average values of selected value columns in the
 different annotation groups.
 
 Value
-=====
+-----
 
 ggplot or data.table
 
 Seealso
-=======
+-------
 
 ```plotMetaDataHeatmap`` <#plotmetadataheatmap>`__ for gene expression
 instead of numeric cell annotation data.

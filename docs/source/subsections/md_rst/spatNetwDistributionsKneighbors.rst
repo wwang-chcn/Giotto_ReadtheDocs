@@ -2,19 +2,24 @@
 spatNetwDistributionsKneighbors
 ===============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L125
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L124
 
+
+
+===================================
+
+spatNetwDistributionsKneighbors
 
 Description
-===========
+-----------
 
 This function returns a histogram displaying the number of k-neighbors
 distribution for each cell
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -31,7 +36,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -61,6 +66,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 ggplot plot

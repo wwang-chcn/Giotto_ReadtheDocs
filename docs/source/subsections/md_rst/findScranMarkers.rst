@@ -2,19 +2,24 @@
 findScranMarkers
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L31
 
 
+
+====================
+
+findScranMarkers
+
 Description
-===========
+-----------
 
 Identify marker genes for all or selected clusters based on scran’s
 implementation of findMarkers.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -34,7 +39,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -70,7 +75,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This is a minimal convenience wrapper around the
 ```findMarkers`` <#findmarkers>`__ function from the scran package.
@@ -86,6 +91,6 @@ group it is recommend to provide names for both groups to group_1_name
 and group_2_name
 
 Value
-=====
+-----
 
 data.table with marker genes

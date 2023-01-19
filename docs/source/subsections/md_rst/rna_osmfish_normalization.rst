@@ -2,16 +2,20 @@
 rna_osmfish_normalization
 =========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1990
+``rna_osmfish_normalization``
+=============================
 
-===========
+RNA osmfish normalization
+
+Description
+-----------
 
 function for RNA normalization according to osmFISH paper
 
 Usage
-=====
+-----
 
 .. code:: r
 

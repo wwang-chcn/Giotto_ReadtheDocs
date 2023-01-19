@@ -2,43 +2,54 @@
 show-methods
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-Description
-===========
-
-show method for dimObj class
-
-show method for giottoImage class
-
-show method for giottoLargeImage class
+``show,giotto-method``
+======================
 
 show method for giotto class
 
-show method for aggregateExprObj class
+Description
+-----------
+
+show method for giotto class
+
+show method for exprObj class
+
+show method for dimObj class
+
+show method for spatLocsObj class
 
 show method for spatialNetworkObj class
 
 show method for spatialGridObj class
 
+show method for spatEnrObj class
+
+show method for giottoImage class
+
+show method for giottoLargeImage class
+
 Usage
-=====
+-----
 
 .. code:: r
 
-   list(list("show"), list("dimObj"))(object)
-   list(list("show"), list("giottoImage"))(object)
-   list(list("show"), list("giottoLargeImage"))(object)
    list(list("show"), list("giotto"))(object)
-   list(list("show"), list("aggregateExprObj"))(object)
+   list(list("show"), list("exprObj"))(object)
+   list(list("show"), list("dimObj"))(object)
+   list(list("show"), list("spatLocsObj"))(object)
    list(list("show"), list("spatialNetworkObj"))(object)
    list(list("show"), list("spatialGridObj"))(object)
+   list(list("show"), list("spatEnrObj"))(object)
+   list(list("show"), list("giottoImage"))(object)
+   list(list("show"), list("giottoLargeImage"))(object)
 
 Arguments
-=========
+---------
 
-========== ===================
+========== =======================
 Argument   Description
-========== ===================
-``object`` spatial grid object
-========== ===================
+========== =======================
+``object`` giottoLargeImage object
+========== =======================

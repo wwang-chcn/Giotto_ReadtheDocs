@@ -2,15 +2,20 @@
 do_page_permutation
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``do_page_permutation``
+=======================
+
+do_page_permutation
 
 Description
-===========
+-----------
 
 creates permutation for the PAGEEnrich test
 
 Usage
-=====
+-----
 
 .. code:: r
 

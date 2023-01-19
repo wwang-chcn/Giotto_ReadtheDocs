@@ -2,16 +2,20 @@
 solve_OLS_internal
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1706
+``solve_OLS_internal``
+======================
 
-===========
+solve_OLS_internal
+
+Description
+-----------
 
 basic functions for dwls
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,16 +2,20 @@
 runPCA_factominer
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L164
+``runPCA_factominer``
+=====================
 
-===========
+runPCA_factominer
+
+Description
+-----------
 
 performs PCA based on the factominer package
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -26,7 +30,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 =============== ================================================
 Argument        Description
@@ -40,6 +44,6 @@ Argument        Description
 =============== ================================================
 
 Value
-=====
+-----
 
 list of eigenvalues, loadings and pca coordinates

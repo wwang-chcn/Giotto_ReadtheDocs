@@ -2,18 +2,23 @@
 seuratToGiotto
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/interoperability.R#L379
+https://github.com/drieslab/Giotto/tree/suite/R/interoperability.R#L501
 
+
+
+==================
+
+Convert a Seurat object to a Giotto object
 
 Description
-===========
+-----------
 
 Convert a Seurat object to a Giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,7 +30,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -48,7 +53,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 A Giotto object converted from Seurat object with all computations
 stored in it.

@@ -2,23 +2,27 @@
 annotate_spatlocs_with_spatgrid_3D
 ==================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L2261
+``annotate_spatlocs_with_spatgrid_3D``
+======================================
 
-===========
+annotate_spatlocs_with_spatgrid_3D
+
+Description
+-----------
 
 annotate spatial locations with 3D spatial grid information
 
 Usage
-=====
+-----
 
 .. code:: r
 
    annotate_spatlocs_with_spatgrid_3D(spatloc, spatgrid)
 
 Arguments
-=========
+---------
 
 ============ =============================================
 Argument     Description
@@ -28,6 +32,6 @@ Argument     Description
 ============ =============================================
 
 Value
-=====
+-----
 
 annotated spatial location data.table

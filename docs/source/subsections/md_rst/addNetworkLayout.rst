@@ -2,18 +2,23 @@
 addNetworkLayout
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/NN_network.R#L258
+https://github.com/drieslab/Giotto/tree/suite/R/NN_network.R#L256
 
+
+
+====================
+
+addNetworkLayout
 
 Description
-===========
+-----------
 
 Add a network layout for a selected nearest neighbor network
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -30,7 +35,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -56,7 +61,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function creates layout coordinates based on the provided kNN or
 sNN. Currently only the force-directed graph layout â€œdrlâ€, see
@@ -64,6 +69,6 @@ sNN. Currently only the force-directed graph layout â€œdrlâ€, see
 an alternative to tSNE or UMAP based visualizations.
 
 Value
-=====
+-----
 
 giotto object with updated layout for selected NN network

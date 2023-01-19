@@ -2,16 +2,20 @@
 join_expression_matrices
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3578
+``join_expression_matrices``
+============================
 
-===========
+join_expression_matrices
+
+Description
+-----------
 
 join_expression_matrices
 
 Usage
-=====
+-----
 
 .. code:: r
 

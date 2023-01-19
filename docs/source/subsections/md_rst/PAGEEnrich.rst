@@ -2,32 +2,31 @@
 PAGEEnrich
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L833
-
-
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L848
 
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+``PAGEEnrich``
+==============
+
+PAGEEnrich
 
 Description
-===========
+-----------
 
 Function to calculate gene signature enrichment scores per spatial
 position using PAGE.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    PAGEEnrich(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -66,6 +65,6 @@ Arguments
    "    ", list(list(list("n_times")), list("number of permutations to calculate for p_value")), "\n", "    ", list(list(list("max_block")), list("number of lines to process together (default = 20e6)")), "\n", "    ", list(list(list("name")), list("to give to spatial enrichment results, default = PAGE")), "\n", "    ", list(list(list("verbose")), list("be verbose")), "\n", "    ", list(list(list("return_gobject")), list("return giotto object")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```runPAGEEnrich`` <#runpageenrich>`__

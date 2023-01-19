@@ -2,18 +2,23 @@
 combineCellData
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2592
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2783
 
+
+
+===================
+
+combineCellData
 
 Description
-===========
+-----------
 
 combine cell data information
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,6 +52,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table with combined spatial information

@@ -2,23 +2,27 @@
 rowSums_flex
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L29
+``rowSums_flex``
+================
 
-===========
+rowSums_flex
+
+Description
+-----------
 
 rowSums_flex
 
 Usage
-=====
+-----
 
 .. code:: r
 
    rowSums_flex(mymatrix)
 
 Arguments
-=========
+---------
 
 ============ =============
 Argument     Description

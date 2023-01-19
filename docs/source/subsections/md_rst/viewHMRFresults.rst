@@ -2,18 +2,23 @@
 viewHMRFresults
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L342
+https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L344
 
+
+
+===================
+
+viewHMRFresults
 
 Description
-===========
+-----------
 
 View results from doHMRF.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,11 +52,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 spatial plots with HMRF domains
 
 Seealso
-=======
+-------
 
 ```spatPlot2D`` <#spatplot2d>`__ and ```spatPlot3D`` <#spatplot3d>`__

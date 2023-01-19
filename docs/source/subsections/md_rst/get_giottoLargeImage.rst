@@ -2,23 +2,27 @@
 get_giottoLargeImage
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1276
+``get_giottoLargeImage``
+========================
 
-===========
+Get terra -based giotto ``largeImage``
+
+Description
+-----------
 
 Set a giottoLargeImage from a giottoObject
 
 Usage
-=====
+-----
 
 .. code:: r
 
    get_giottoLargeImage(gobject = NULL, name = NULL)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -31,6 +35,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 a giottoLargeImage

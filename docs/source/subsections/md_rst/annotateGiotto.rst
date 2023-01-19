@@ -2,18 +2,23 @@
 annotateGiotto
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2456
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3198
 
+
+
+==================
+
+Annotate giotto clustering
 
 Description
-===========
+-----------
 
 Converts cluster results into a user provided annotation.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -48,7 +53,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 You need to specifify which (cluster) column you want to annotate and
 you need to provide an annotation vector like this:
@@ -68,6 +73,6 @@ you need to provide an annotation vector like this:
       e.g. names(cell_types) = c(2, 1, 3)
 
 Value
-=====
+-----
 
 giotto object

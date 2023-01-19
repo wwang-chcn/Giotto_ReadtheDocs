@@ -2,22 +2,23 @@
 normalizeGiotto
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2143
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2474
 
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+``normalizeGiotto``
+===================
+
+normalizeGiotto
 
 Description
-===========
+-----------
 
 fast normalize and/or scale expresion values of Giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -42,7 +43,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -89,7 +90,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Currently there are two ‘methods’ to normalize your raw counts data.
 
@@ -113,12 +114,12 @@ list()
       also implemented: list()
 
 -  list(“1. First normalize genes, for each gene divide the counts by
-   the total gene count and:raw-latex:`\n`�, “multiply by the total
-   number of genes.�)
+   the total gene count and:raw-latex:`\n`�, “multiply by the total
+   number of genes.�)
 
 -  | list(“2. Next normalize cells, for each cell divide the normalized
-     gene counts by the total:raw-latex:`\n`�, “counts per cell and
-     multiply by the total number of cells.�)
+     gene counts by the total:raw-latex:`\n`�, “counts per cell and
+     multiply by the total number of cells.�)
    | C. The normalization method as provided by Lause/Kobak et al is
      also implemented: list()
 
@@ -134,6 +135,6 @@ list()
       update_slot parameters
 
 Value
-=====
+-----
 
 giotto object

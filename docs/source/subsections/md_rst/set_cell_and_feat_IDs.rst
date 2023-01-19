@@ -2,16 +2,20 @@
 set_cell_and_feat_IDs
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L669
+``set_cell_and_feat_IDs``
+=========================
 
-===========
+Set cell and feature IDs
+
+Description
+-----------
 
 sets cell and feature IDs based on provided expression data
 
 Usage
-=====
+-----
 
 .. code:: r
 

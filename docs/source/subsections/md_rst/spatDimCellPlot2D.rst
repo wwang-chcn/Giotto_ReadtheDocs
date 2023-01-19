@@ -2,19 +2,24 @@
 spatDimCellPlot2D
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L6204
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L6259
 
+
+
+=====================
+
+spatDimCellPlot2D
 
 Description
-===========
+-----------
 
 Visualize numerical features of cells according to spatial AND dimension
 reduction coordinates in 2D
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -90,8 +95,8 @@ Usage
      vor_alpha = 1,
      axis_text = 8,
      axis_title = 8,
-     coord_fix_ratio = NULL,
-     cow_n_col = 2,
+     coord_fix_ratio = 1,
+     cow_n_col = NULL,
      cow_rel_h = 1,
      cow_rel_w = 1,
      cow_align = "h",
@@ -103,7 +108,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -293,17 +298,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other spatial and dimension reduction cell annotation visualizations:
 ```spatDimCellPlot`` <#spatdimcellplot>`__

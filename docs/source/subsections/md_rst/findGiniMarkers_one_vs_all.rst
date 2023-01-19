@@ -2,19 +2,24 @@
 findGiniMarkers_one_vs_all
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L527
+https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L539
 
+
+
+==============================
+
+findGiniMarkers_one_vs_all
 
 Description
-===========
+-----------
 
 Identify marker feats for all clusters in a one vs all manner based on
 gini detection and expression scores.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -35,7 +40,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -73,11 +78,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table with marker feats
 
 Seealso
-=======
+-------
 
 ```findGiniMarkers`` <#findginimarkers>`__

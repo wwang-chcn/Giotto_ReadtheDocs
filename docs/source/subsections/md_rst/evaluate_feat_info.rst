@@ -2,23 +2,27 @@
 evaluate_feat_info
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1541
+``evaluate_feat_info``
+======================
 
-===========
+Evaluate feature info
+
+Description
+-----------
 
 Evaluate spatial feature information input
 
 Usage
-=====
+-----
 
 .. code:: r
 
    evaluate_feat_info(spatial_feat_info, feat_type, cores = 1, feat_ID)
 
 Arguments
-=========
+---------
 
 ===================== =======================================
 Argument              Description
@@ -29,6 +33,6 @@ Argument              Description
 ===================== =======================================
 
 Value
-=====
+-----
 
 data.table

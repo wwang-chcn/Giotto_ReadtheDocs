@@ -2,16 +2,20 @@
 rna_standard_normalization
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1870
+``rna_standard_normalization``
+==============================
 
-===========
+RNA standard normalization
+
+Description
+-----------
 
 standard function for RNA normalization
 
 Usage
-=====
+-----
 
 .. code:: r
 

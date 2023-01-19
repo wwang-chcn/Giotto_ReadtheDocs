@@ -2,16 +2,20 @@
 my_growMeans
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L296
+``my_growMeans``
+================
 
-===========
+my_growMeans
+
+Description
+-----------
 
 geometric rowMeans that works for a single column
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -19,7 +23,7 @@ Usage
    my_growMeans(x, offset = 0.1)
 
 Arguments
-=========
+---------
 
 ========== ===========
 Argument   Description

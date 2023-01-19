@@ -2,67 +2,88 @@
 set_expression_values
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L218
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L783
 
+
+
+=========================
+
+Set expression values
 
 Description
-===========
+-----------
 
 Function to set expression values for giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
    set_expression_values(
      gobject,
+     values,
      spat_unit = NULL,
      feat_type = NULL,
      name = "test",
-     values
+     provenance = NULL,
+     verbose = TRUE,
+     set_defaults = TRUE
    )
 
 Arguments
-=========
+---------
 
-============= ===========================================
-Argument      Description
-============= ===========================================
-``gobject``   giotto object
-``spat_unit`` spatial unit (e.g.Â â€œcellâ€)
-``feat_type`` feature type (e.g.Â â€œrnaâ€, â€œdnaâ€, â€œproteinâ€)
-``name``      name for the expression slot
-``values``    matrix of expression values
-============= ===========================================
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``values``                    | exprObj or matrix of expression      |
+|                               | values. If NULL, then the object     |
+|                               | will be removed.                     |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
++-------------------------------+--------------------------------------+
+| ``name``                      | name for the expression slot         |
++-------------------------------+--------------------------------------+
+| ``provenance``                | provenance information (optional)    |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
+| ``set_defaults``              | set default spat_unit and feat_type. |
+|                               | Change to FALSE only when            |
++-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 giotto object
 
 Seealso
-=======
+-------
 
 Other expression accessor functions:
-`get_expression_values <../md_rst/get_expression_values.html>`__
+```get_expression_values`` <#getexpressionvalues>`__
 
-Other functions to get data from giotto object:
-
-`get_NearestNetwork <../md_rst/get_NearestNetwork.html>`__
-
-`get_dimReduction <../md_rst/get_dimReduction.html>`__
-
-`get_feature_info <../md_rst/get_feature_info.html>`__
-
-`get_giottoImage <../md_rst/get_giottoImage.html>`__
-
-`get_polygon_info <../md_rst/get_polygon_info.html>`__
-
-`get_spatialGrid <../md_rst/get_spatialGrid.html>`__
-
-`get_spatialNetwork <../md_rst/get_spatialNetwork.html>`__
-
-`get_spatial_locations <../md_rst/get_spatial_locations.html>`__
+Other functions to set data in giotto object:
+```get_cell_id`` <#getcellid>`__ , ```get_feat_id`` <#getfeatid>`__ ,
+```set_NearestNetwork`` <#setnearestnetwork>`__ ,
+```set_cell_id`` <#setcellid>`__ ,
+```set_cell_metadata`` <#setcellmetadata>`__ ,
+```set_dimReduction`` <#setdimreduction>`__ ,
+```set_feat_id`` <#setfeatid>`__ ,
+```set_feature_info`` <#setfeatureinfo>`__ ,
+```set_feature_metadata`` <#setfeaturemetadata>`__ ,
+```set_giottoImage`` <#setgiottoimage>`__ ,
+```set_multiomics`` <#setmultiomics>`__ ,
+```set_polygon_info`` <#setpolygoninfo>`__ ,
+```set_spatialGrid`` <#setspatialgrid>`__ ,
+```set_spatialNetwork`` <#setspatialnetwork>`__ ,
+```set_spatial_enrichment`` <#setspatialenrichment>`__ ,
+```set_spatial_locations`` <#setspatiallocations>`__

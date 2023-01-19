@@ -2,13 +2,18 @@
 makeSignMatrixDWLS
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L120
 
 
+
+======================
+
+makeSignMatrixDWLS
+
 Description
-===========
+-----------
 
 Function to convert a matrix within a Giotto object into a format that
 can be used with ```runDWLSDeconv`` <#rundwlsdeconv>`__ for
@@ -16,7 +21,7 @@ deconvolution. A vector of cell types for parameter ``cell_type_vector``
 can be created from the cell metadata ( ```pDataDT`` <#pdatadt>`__ ).
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,7 +38,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -60,11 +65,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 matrix
 
 Seealso
-=======
+-------
 
 ```runDWLSDeconv`` <#rundwlsdeconv>`__

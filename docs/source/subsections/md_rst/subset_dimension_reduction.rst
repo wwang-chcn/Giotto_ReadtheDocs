@@ -2,17 +2,21 @@
 subset_dimension_reduction
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L603
+``subset_dimension_reduction``
+==============================
 
-===========
+Subset dimension reduction
+
+Description
+-----------
 
 Subset dimension reduction results from giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
-   subset_dimension_reduction(gobject, spat_unit, feat_type, cells_to_keep)
+   subset_dimension_reduction(gobject, spat_unit, feat_type, cell_ids)

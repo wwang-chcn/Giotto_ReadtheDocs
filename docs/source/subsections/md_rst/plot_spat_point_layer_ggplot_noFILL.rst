@@ -2,16 +2,20 @@
 plot_spat_point_layer_ggplot_noFILL
 ===================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1849
+``plot_spat_point_layer_ggplot_noFILL``
+=======================================
 
-===========
+plot_spat_point_layer_ggplot_noFILL
+
+Description
+-----------
 
 creat ggplot point layer for spatial coordinates without borders
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -43,7 +47,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -105,11 +109,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot

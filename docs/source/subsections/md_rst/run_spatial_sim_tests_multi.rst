@@ -2,16 +2,20 @@
 run_spatial_sim_tests_multi
 ===========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L4355
+``run_spatial_sim_tests_multi``
+===============================
 
-===========
+run_spatial_sim_tests_multi
+
+Description
+-----------
 
 runs all spatial tests for multiple probabilities and repetitions
 
 Usage
-=====
+-----
 
 .. code:: r
 

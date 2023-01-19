@@ -2,18 +2,23 @@
 addHMRF
 =======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L490
+https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L492
 
+
+
+===========
+
+addHMRF
 
 Description
-===========
+-----------
 
 Add selected results from doHMRF to the giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,7 +33,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,6 +55,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 giotto object

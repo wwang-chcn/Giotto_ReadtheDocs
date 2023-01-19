@@ -2,16 +2,20 @@
 list_nearest_networks
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2311
+``list_nearest_networks``
+=========================
 
-===========
+list_nearest_networks
+
+Description
+-----------
 
 return the available nearest neighbor network information
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -24,20 +28,20 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
-|                               | “protein�)                           |
+| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
+|                               | “protein”)                           |
 +-------------------------------+--------------------------------------+
-| ``nn_type``                   | nearest neighbor method (e.g. “sNN�, |
-|                               | “kNN�)                               |
+| ``nn_type``                   | nearest neighbor method (e.g. “sNN”, |
+|                               | “kNN”)                               |
 +-------------------------------+--------------------------------------+
 | ``return_uniques``            | return unique nesting names (ignores |
 |                               | if final object exists/is correct    |
@@ -45,6 +49,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 names and locations of nearest neighbor networks as a data.table

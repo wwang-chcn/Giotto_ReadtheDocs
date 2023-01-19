@@ -2,17 +2,24 @@
 registerGiottoObjectListRvision
 ===============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L494
 
-===========
+
+
+===================================
+
+registerGiottoObjectListRvision
+
+Description
+-----------
 
 Function to spatially align gobject data based on Rvision image
 registration.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -26,7 +33,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -48,7 +55,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 list of registered giotto objects where the registered images and
 spatial locations

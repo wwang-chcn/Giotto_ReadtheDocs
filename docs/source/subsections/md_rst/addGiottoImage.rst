@@ -2,18 +2,23 @@
 addGiottoImage
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2283
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2284
 
+
+
+==================
+
+addGiottoImage
 
 Description
-===========
+-----------
 
 Adds lists of giottoImages and giottoLargeImages to gobjects
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -53,14 +58,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 an updated Giotto object with access to the list of images
 
-See also
-=======
+Seealso
+-------
 
-Other basic image functions:
-`plotGiottoImage <../md_rst/updateGiottoImage.html>`__
-`reconnectGiottoImage <../md_rst/updateGiottoImage.html>`__
-`updateGiottoImage <../md_rst/updateGiottoImage.html>`__
+Other basic image functions: ```plotGiottoImage`` <#plotgiottoimage>`__
+, ```reconnectGiottoImage`` <#reconnectgiottoimage>`__ ,
+```updateGiottoImage`` <#updategiottoimage>`__

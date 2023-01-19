@@ -2,25 +2,30 @@
 showGiottoSpatialInfo
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1704
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2986
 
+
+
+=========================
+
+showGiottoSpatialInfo
 
 Description
-===========
+-----------
 
 show the available giotto spatial polygon information
 
 Usage
-=====
+-----
 
 .. code:: r
 
    showGiottoSpatialInfo(gobject)
 
 Arguments
-=========
+---------
 
 =========== =============
 Argument    Description
@@ -29,12 +34,14 @@ Argument    Description
 =========== =============
 
 Seealso
-=======
+-------
 
 Other functions to show data in giotto object:
+```showGiottoCellMetadata`` <#showgiottocellmetadata>`__ ,
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,
 ```showGiottoExpression`` <#showgiottoexpression>`__ ,
 ```showGiottoFeatInfo`` <#showgiottofeatinfo>`__ ,
+```showGiottoFeatMetadata`` <#showgiottofeatmetadata>`__ ,
 ```showGiottoImageNames`` <#showgiottoimagenames>`__ ,
 ```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
 ```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,

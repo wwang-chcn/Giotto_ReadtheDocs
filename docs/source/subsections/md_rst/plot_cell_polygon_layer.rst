@@ -2,16 +2,20 @@
 plot_cell_polygon_layer
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L13
+``plot_cell_polygon_layer``
+===========================
 
-===========
+Plot cell polygon layer
+
+Description
+-----------
 
 Low level function to plot a polygon
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,12 +37,12 @@ Usage
    )
 
 Details
-=======
+-------
 
 This functions plots a polygon based on spatial cell information. This
 is most likely a polygon that corresponds to the cell shape.
 
 Value
-=====
+-----
 
 ggplot

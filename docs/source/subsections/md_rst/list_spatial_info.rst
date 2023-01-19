@@ -2,23 +2,27 @@
 list_spatial_info
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2427
+``list_spatial_info``
+=====================
 
-===========
+list_spatial_info
+
+Description
+-----------
 
 return the available giotto spatial polygon information
 
 Usage
-=====
+-----
 
 .. code:: r
 
    list_spatial_info(gobject)
 
 Arguments
-=========
+---------
 
 =========== =============
 Argument    Description
@@ -27,6 +31,6 @@ Argument    Description
 =========== =============
 
 Value
-=====
+-----
 
 names of available spatial polygon information

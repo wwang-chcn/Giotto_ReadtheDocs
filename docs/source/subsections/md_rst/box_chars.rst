@@ -2,22 +2,29 @@
 box_chars
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L398
-
-===========
+``box_chars``
+=============
 
 Box characters
 
+Description
+-----------
+
+Helper function to print unicode characters using escape codes.
+
 Usage
-=====
+-----
 
 .. code:: r
 
    box_chars()
+   is_latex_output()
+   is_utf8_output()
 
 Details
-=======
+-------
 
-Much inspiration taken from https://rdrr.io/cran/fs/src/R/tree.R
+Much inspiration taken from fs
+`tree.R <https://rdrr.io/cran/fs/src/R/tree.R>`__

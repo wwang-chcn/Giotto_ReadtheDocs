@@ -2,19 +2,24 @@
 createGiottoObjectSubcellular
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L2272
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L2421
 
+
+
+=================================
+
+Create a giotto object from subcellular data
 
 Description
-===========
+-----------
 
 Function to create a giotto object starting from subcellular polygon
 (e.g. cell) and points (e.g. transcripts) information
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -42,7 +47,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -85,6 +90,9 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``largeImages``               | list of large images                 |
 +-------------------------------+--------------------------------------+
+| ``largeImages_list_params``   | image params when loading            |
+|                               | largeImages as list                  |
++-------------------------------+--------------------------------------+
 | ``instructions``              | list of instructions or output       |
 |                               | result from                          |
 |                               | ```createGiottoInstructi             |
@@ -98,7 +106,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 There are two different ways to create a Giotto Object with subcellular
 information: - Starting from polygons (spatial units e.g. cell)
@@ -108,6 +116,6 @@ e.g. cell) represented by a mask or dataframe file and raw intensity
 images (e.g. protein stains)
 
 Value
-=====
+-----
 
 giotto object

@@ -2,16 +2,20 @@
 combineInteractionChangedFeatures_per_interaction
 =================================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1494
+``combineInteractionChangedFeatures_per_interaction``
+=====================================================
 
-===========
+combineInteractionChangedFeatures_per_interaction
+
+Description
+-----------
 
 Combine ICF scores per interaction
 
 Usage
-=====
+-----
 
 .. code:: r
 

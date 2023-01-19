@@ -2,53 +2,56 @@
 filterICG
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1460
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1472
 
-   :format: latex
-..
+
+``filterICG``
+=============
+
+filterICG
 
 Description
-===========
+-----------
 
 Filter Interaction Changed Gene scores.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    filterICG(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``...``                       | Arguments passed on to               |
 |                               | ```filterICF`` <#filtericf>`__       |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€icfObjectâ€)),        |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½icfObjectï¿½)),        |
 |                               | list(â€œICF (interaction changed       |
-|                               | feature) score objectâ€)),            |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€min_cellsâ€)),        |
+|                               | feature) score objectï¿½)),            |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½min_cellsï¿½)),        |
 |                               | list(â€œminimum number of source cell  |
-|                               | typeâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,     |
-|                               | list(list(list(â€min_cells_exprâ€)),   |
+|                               | typeï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,     |
+|                               | list(list(list(ï¿½min_cells_exprï¿½)),   |
 |                               | list(â€œminimum expression level for   |
-|                               | source cell typeâ€)),                 |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€min_int_cellsâ€)),    |
+|                               | source cell typeï¿½)),                 |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½min_int_cellsï¿½)),    |
 |                               | list(â€œminimum number of interacting  |
-|                               | neighbor cell typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | neighbor cell typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 |                               | li                                   |
-|                               | st(list(list(â€min_int_cells_exprâ€)), |
+|                               | st(list(list(ï¿½min_int_cells_exprï¿½)), |
 |                               | list(â€œminimum expression level for   |
-|                               | interacting neighbor cell typeâ€)),   |
+|                               | interacting neighbor cell typeï¿½)),   |
 +-------------------------------+--------------------------------------+
 
 ::
@@ -57,6 +60,6 @@ Arguments
    "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```filterICF`` <#filtericf>`__

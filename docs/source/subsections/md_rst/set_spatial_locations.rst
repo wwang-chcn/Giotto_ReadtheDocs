@@ -2,67 +2,97 @@
 set_spatial_locations
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L330
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1015
 
+
+
+=========================
+
+Set spatial locations
 
 Description
-===========
+-----------
 
 Function to set a spatial location slot
 
 Usage
-=====
+-----
 
 .. code:: r
 
    set_spatial_locations(
      gobject,
+     spatlocs,
      spat_unit = NULL,
      spat_loc_name = "raw",
-     spatlocs,
-     verbose = TRUE
+     provenance = NULL,
+     verbose = TRUE,
+     set_defaults = TRUE
    )
 
 Arguments
-=========
+---------
 
-================= ========================================
-Argument          Description
-================= ========================================
-``gobject``       giotto object
-``spat_unit``     spatial unit (e.g.Â â€œcellâ€)
-``spat_loc_name`` name of spatial locations, default â€œrawâ€
-``spatlocs``      spatial locations
-``verbose``       be verbose
-================= ========================================
++-------------------------------+--------------------------------------+
+| Argument                      | Description                          |
++===============================+======================================+
+| ``gobject``                   | giotto object                        |
++-------------------------------+--------------------------------------+
+| ``spatlocs``                  | spatial locations (accepts either    |
+|                               | ``data.table`` or ``spatLocsObj`` )  |
++-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
++-------------------------------+--------------------------------------+
+| ``spat_loc_name``             | name of spatial locations, default   |
+|                               | “raw�                                |
++-------------------------------+--------------------------------------+
+| ``provenance``                | provenance information (optional)    |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
+| ``set_defaults``              | set default spat_unit and feat_type. |
+|                               | Change to FALSE only when            |
++-------------------------------+--------------------------------------+
+
+Details
+-------
+
+If a ``spatLocsObj`` is provided to ``spatlocs`` param then any attached
+name and spat_unit info will be used for input to this function’s
+``spat_loc_name`` and ``spat_unit`` params, BUT will be overridden by
+any alternative specific inputs to those params. list() ie: a
+``spatLocsObj`` with spat_unit slot == ‘cell’ will be automatically
+nested by spat_unit ‘cell’ when using ``set_spatial_locations`` as long
+as param ``spat_unit = NULL`` . BUT if param ``spat_unit = 'nucleus'``
+then the ``spatLocsObj`` will be nested by spat_unit ‘nucleus’ instead
+and its spat_unit slot will be changed to ‘nucleus’
 
 Value
-=====
+-----
 
 giotto object
 
 Seealso
-=======
+-------
 
 Other spatial location data accessor functions:
-`get_spatial_locations <../md_rst/get_spatial_locations.html>`__
+```get_spatial_locations`` <#getspatiallocations>`__
 
-Other functions to get data from Giotto object:
-
-`get_NearestNetwork <../md_rst/get_NearestNetwork.html>`__
-
-`get_dimReduction <../md_rst/get_dimReduction.html>`__
-
-`get_feature_info <../md_rst/get_feature_info.html>`__
-
-`get_giottoImage <../md_rst/get_giottoImage.html>`__
-
-`get_polygon_info <../md_rst/get_polygon_info.html>`__
-
-`get_spatialGrid <../md_rst/get_spatialGrid.html>`__
-
-`get_spatialNetwork <../md_rst/get_spatialNetwork.html>`__
-
-`get_spatial_locations <../md_rst/get_spatial_locations.html>`__
+Other functions to set data in giotto object:
+```get_cell_id`` <#getcellid>`__ , ```get_feat_id`` <#getfeatid>`__ ,
+```set_NearestNetwork`` <#setnearestnetwork>`__ ,
+```set_cell_id`` <#setcellid>`__ ,
+```set_cell_metadata`` <#setcellmetadata>`__ ,
+```set_dimReduction`` <#setdimreduction>`__ ,
+```set_expression_values`` <#setexpressionvalues>`__ ,
+```set_feat_id`` <#setfeatid>`__ ,
+```set_feature_info`` <#setfeatureinfo>`__ ,
+```set_feature_metadata`` <#setfeaturemetadata>`__ ,
+```set_giottoImage`` <#setgiottoimage>`__ ,
+```set_multiomics`` <#setmultiomics>`__ ,
+```set_polygon_info`` <#setpolygoninfo>`__ ,
+```set_spatialGrid`` <#setspatialgrid>`__ ,
+```set_spatialNetwork`` <#setspatialnetwork>`__ ,
+```set_spatial_enrichment`` <#setspatialenrichment>`__

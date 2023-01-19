@@ -2,20 +2,25 @@
 findInteractionChangedFeats
 ===========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L982
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L993
 
+
+
+===============================
+
+findInteractionChangedFeats
 
 Description
-===========
+-----------
 
 Identifies cell-to-cell Interaction Changed Features (ICF),
 i.e. features that are differentially expressed due to proximity to
 other cell types.#’
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -42,7 +47,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -92,7 +97,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Function to calculate if features are differentially expressed in cell
 types when they interact (approximated by physical proximity) with other
@@ -130,7 +135,7 @@ cell types. The results data.table in the icfObject contains - at least
 -  unif_int: cell-cell interaction
 
 Value
-=====
+-----
 
 icfObject that contains the Interaction Changed differential feature
 scores

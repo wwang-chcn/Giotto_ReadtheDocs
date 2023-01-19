@@ -2,23 +2,27 @@
 read_crossSection
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L58
+``read_crossSection``
+=====================
 
-===========
+read_crossSection
+
+Description
+-----------
 
 read a cross section object from a giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
    read_crossSection(gobject, name = NULL, spatial_network_name = NULL)
 
 Arguments
-=========
+---------
 
 ======================== ====================
 Argument                 Description

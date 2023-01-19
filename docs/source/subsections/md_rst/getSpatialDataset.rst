@@ -4,8 +4,6 @@ getSpatialDataset
 
 :Date: 2022-10-06
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L635
-
 Description
 ===========
 
@@ -39,6 +37,6 @@ Arguments
 | ``directory``                 | directory to save the data to        |
 +-------------------------------+--------------------------------------+
 | ``list()``                    | additional parameters to             |
-|                               | download file                        |
-|                               |                                      |
+|                               | ``                                   |
+|                               | `download.file`` <#download.file>`__ |
 +-------------------------------+--------------------------------------+

@@ -2,13 +2,18 @@
 plotGiottoImage
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2221
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2222
 
+
+
+===================
+
+Plot a giotto image object
 
 Description
-===========
+-----------
 
 Display a giotto image in the viewer panel. Image object to plot can be
 specified by providing the giotto object containing the image (
@@ -17,7 +22,7 @@ object type ( ``image_type`` ). Alternatively, image objects can be
 directly plotted through their respective associated params.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,7 +38,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -62,10 +67,9 @@ Arguments
 |                               | object specific plotting functions   |
 +-------------------------------+--------------------------------------+
 
-See also
-=======
+Seealso
+-------
 
-Other basic image functions: 
-`addGiottoImage <../md_rst/addGiottoImage.html>`__
-`reconnectGiottoImage <../md_rst/reconnectGiottoImage.html>`__
-`updateGiottoImage <../md_rst/updateGiottoImage.html>`__
+Other basic image functions: ```addGiottoImage`` <#addgiottoimage>`__ ,
+```reconnectGiottoImage`` <#reconnectgiottoimage>`__ ,
+```updateGiottoImage`` <#updategiottoimage>`__

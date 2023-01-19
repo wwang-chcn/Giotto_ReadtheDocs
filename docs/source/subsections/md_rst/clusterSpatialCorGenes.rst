@@ -2,16 +2,23 @@
 clusterSpatialCorGenes
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3639
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3658
 
-===========
+
+
+==========================
+
+clusterSpatialCorGenes
+
+Description
+-----------
 
 Cluster based on spatially correlated genes
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -24,7 +31,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -42,6 +49,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 spatCorObject or cluster results

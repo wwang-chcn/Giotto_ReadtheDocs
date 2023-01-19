@@ -2,25 +2,30 @@
 combineSpatialCellMetadataInfo
 ==============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3875
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L4684
 
+
+
+==================================
+
+combineSpatialCellMetadataInfo
 
 Description
-===========
+-----------
 
 Combine cell metadata with spatial cell information (e.g. polygon)
 
 Usage
-=====
+-----
 
 .. code:: r
 
    combineSpatialCellMetadataInfo(gobject, spat_unit = NULL, feat_type = NULL)
 
 Arguments
-=========
+---------
 
 ============= ===============
 Argument      Description
@@ -31,7 +36,7 @@ Argument      Description
 ============= ===============
 
 Details
-=======
+-------
 
 The returned data.table has the following columns: list()
 
@@ -46,6 +51,6 @@ The returned data.table has the following columns: list()
 -  other columns that are part of the cell metadata
 
 Value
-=====
+-----
 
 list of data.table(s)

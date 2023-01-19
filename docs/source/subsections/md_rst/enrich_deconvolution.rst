@@ -2,16 +2,20 @@
 enrich_deconvolution
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1393
+``enrich_deconvolution``
+========================
 
-===========
+enrich_deconvolution
+
+Description
+-----------
 
 Rui to fill in
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,29 +2,30 @@
 showGrids
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1903
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3198
 
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+``showGrids``
+=============
+
+Show Spatial Grids
 
 Description
-===========
+-----------
 
 Show Spatial Grids
 
 Usage
-=====
+-----
 
 .. code:: r
 
    showGrids(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -32,16 +33,16 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```showGiottoS                       |
 |                               | patGrids`` <#showgiottospatgrids>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)),          |
-|                               | list(â€œgiotto objectâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€nrowsâ€)),            |
-|                               | list(â€œnumber of rows to printâ€)),    |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ)              |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)),          |
+|                               | list(â€œgiotto objectï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½nrowsï¿½)),            |
+|                               | list(â€œnumber of rows to printï¿½)),    |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ)              |
 +-------------------------------+--------------------------------------+
 
 Seealso
-=======
+-------
 
 ```showGiottoSpatGrids`` <#showgiottospatgrids>`__

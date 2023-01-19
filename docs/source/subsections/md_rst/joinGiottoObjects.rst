@@ -2,18 +2,23 @@
 joinGiottoObjects
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3688
+https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L4551
 
+
+``joinGiottoObjects``
+=====================
+
+Join giotto objects
 
 Description
-===========
+-----------
 
 Function to join multiple giotto objects together
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -24,13 +29,13 @@ Usage
      z_vals = 1000,
      x_shift = NULL,
      y_shift = NULL,
-     x_padding = 0,
-     y_padding = 0,
+     x_padding = NULL,
+     y_padding = NULL,
      verbose = TRUE
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -58,39 +63,67 @@ Arguments
 | ``y_padding``                 | padding between datasets/images if   |
 |                               | method is shift                      |
 +-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
+| ``verbose``                   | be verbose Preview where each        |
+|                               | gobject will be in space with        |
+|                               | bounding polygons                    |
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function joins both the expression and spatial information of
 multiple giotto objects into a single one. Giotto supports multiple ways
 of joining spatial information as selected through param ``join_method``
 :
 
-[ “shift� ] Spatial locations of different datasets are shifted by
-numeric vectors of values supplied through ``x_shift`` and ``y_shift`` .
-If these shift values are given then one is needed for each giotto
-object to be joined in ``gobject_list`` . Order matters. If a regular
-step value is desired instead of a specific list of values, use
-``x_padding`` and ``y_padding`` . Both shift and padding values can be
-used at the same time. Leaving ``x_shift`` and ``y_shift`` values as
-``NULL`` will have Giotto estimate an appropriate ``x_shift`` value
-based on the x dimension of available image objects.
+-  list(list(list(“"shift"�))) list(“:raw-latex:`\n`�, � (default)
+   Spatial locations of different datasets are shifted:raw-latex:`\n`“,�
+   by numeric vectors of values supplied through “, list(�x_shift�),
+   “,�, list(“y_shift�), “,:raw-latex:`\n`�, � “, list(�x_padding�), “,
+   and�, list(“y_padding�), “. This is particularly useful for
+   data:raw-latex:`\n`�, � that is provided as tiles or ROIs or when
+   analyzing multiple spatial datasets:raw-latex:`\n`“,� together and
+   keeping their spatial data
+   separate.:raw-latex:`\n`“,�:raw-latex:`\n`“,� “, list(�If shift
+   values are given then a value is needed for each giotto
+   object:raw-latex:`\n`“,� to be joined in “, list(�gobject_list�), “.
+   Order matters.�), “:raw-latex:`\n`�, “:raw-latex:`\n`�, � If a
+   regular step value is desired instead of a specific list of values,
+   use:raw-latex:`\n`“,� “, list(�x_padding�), � and “,
+   list(�y_padding�), “. Both shift and padding values can be
+   used:raw-latex:`\n`�, � at the same
+   time.:raw-latex:`\n`“,�:raw-latex:`\n`“,� Leaving “, list(�x_shift�),
+   � and “, list(�y_shift�), � values as “, list(�NULL�), � will have
+   Giotto:raw-latex:`\n`“,� estimate an appropriate “, list(�x_shift�),
+   � value based on the x dimension of:raw-latex:`\n`“,� available image
+   objects. If no image objects are available, a default behavior
+   of:raw-latex:`\n`“,� “, list(�x_padding = 1000�), � will be
+   applied.:raw-latex:`\n`“,� “)
 
-[ “z_stack� ] Datasets are spatially combined with no change to x and y
-spatial locations, but a z value is incorporated for each dataset based
-on input supplied through param ``z_vals`` . To specify a z value for
-each dataset to join, a numeric vector must be given with a value for
-each element in ``gobject_list`` . Order matters. Alternatively, a
-single numeric value can be supplied to ``z_vals`` in which case this
-input will be treated as a z step value.
+-  list(list(list(“"z_stack"�))) list(“:raw-latex:`\n`�, � Datasets are
+   spatially combined with no change to x and y:raw-latex:`\n`“,�
+   spatial locations, but a z value is incorporated for each dataset
+   based on input:raw-latex:`\n`“,� supplied through param “,
+   list(�z_vals�), “. To specify a z value for each dataset
+   to:raw-latex:`\n`�, � join, a numeric vector must be given with a
+   value for each element in “, list(�gobject_list�),
+   “.:raw-latex:`\n`�, � Order
+   matters.:raw-latex:`\n`“,�:raw-latex:`\n`“,� Alternatively, a single
+   numeric value can be supplied to “, list(�z_vals�), � in
+   which:raw-latex:`\n`“,� case this input will be treated as a z step
+   value.:raw-latex:`\n`“,� “)
 
-[ “no_change� ] No changes are applied to the spatial locations of the
-datasets when joining.
+-  list(list(list(“"no_change"�))) list(“:raw-latex:`\n`�, � No changes
+   are applied to the spatial locations of the datasets when
+   joining.:raw-latex:`\n`“,� “)
 
 Value
-=====
+-----
+
+giotto object
+ “)
+
+Value
+-----
 
 giotto object

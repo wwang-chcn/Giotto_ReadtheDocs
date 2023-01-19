@@ -2,19 +2,24 @@
 combineMetadata
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3475
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L4270
 
+
+
+===================
+
+combineMetadata
 
 Description
-===========
+-----------
 
 This function combines the cell metadata with spatial locations and
 enrichment results from ```runSpatialEnrich`` <#runspatialenrich>`__
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -23,11 +28,12 @@ Usage
      spat_unit = NULL,
      feat_type = NULL,
      spat_loc_name = "raw",
-     spat_enr_names = NULL
+     spat_enr_names = NULL,
+     verbose = TRUE
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -43,8 +49,10 @@ Arguments
 | ``spat_enr_names``            | names of spatial enrichment results  |
 |                               | to include                           |
 +-------------------------------+--------------------------------------+
+| ``verbose``                   | verbosity                            |
++-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 Extended cell metadata in data.table format.

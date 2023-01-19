@@ -2,18 +2,23 @@
 addCellMetadata
 ===============
 
-:Date: 2022-10-06
+:Date: 2023-01-19
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2623
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3371
 
+
+
+===================
+
+Add cell metadata
 
 Description
-===========
+-----------
 
 Adds cell metadata to the giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,7 +33,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -54,7 +59,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 You can add additional cell metadata in two manners:
 
@@ -67,6 +72,6 @@ You can add additional cell metadata in two manners:
    match with theâ€, list(â€œcell_IDâ€), â€ column in pDataDT(gobject)â€œ)
 
 Value
-=====
+-----
 
 giotto object

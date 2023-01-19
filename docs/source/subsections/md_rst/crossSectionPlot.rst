@@ -2,19 +2,24 @@
 crossSectionPlot
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L624
 
 
+
+====================
+
+crossSectionPlot
+
 Description
-===========
+-----------
 
 Visualize cells in a virtual cross section according to spatial
 coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -30,7 +35,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -56,16 +61,16 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 ```crossSectionPlot`` <#crosssectionplot>`__

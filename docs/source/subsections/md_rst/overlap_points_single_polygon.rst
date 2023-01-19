@@ -2,16 +2,20 @@
 overlap_points_single_polygon
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1913
+``overlap_points_single_polygon``
+=================================
 
-===========
+Overlap points – single polygon
+
+Description
+-----------
 
 overlap for a single polygon
 
 Usage
-=====
+-----
 
 .. code:: r
 

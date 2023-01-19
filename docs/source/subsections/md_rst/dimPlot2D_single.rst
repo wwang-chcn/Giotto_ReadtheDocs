@@ -2,16 +2,20 @@
 dimPlot2D_single
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L741
+``dimPlot2D_single``
+====================
 
-===========
+dimPlot2D_single
+
+Description
+-----------
 
 Visualize cells according to dimension reduction coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -66,7 +70,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -175,12 +179,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters. For 3D plots see
 ```dimPlot3D`` <#dimplot3d>`__
 
 Value
-=====
+-----
 
 ggplot

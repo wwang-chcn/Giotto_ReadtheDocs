@@ -2,18 +2,23 @@
 getDendrogramSplits
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2475
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2506
 
+
+
+=======================
+
+getDendrogramSplits
 
 Description
-===========
+-----------
 
 Split dendrogram at each node and keep the leave (label) information..
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -32,7 +37,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -63,7 +68,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Creates a data.table with three columns and each row represents a node
 in the dendrogram. For each node the height of the node is given
@@ -72,6 +77,6 @@ determine in a hierarchical manner differentially expressed marker genes
 at each node.
 
 Value
-=====
+-----
 
 data.table object

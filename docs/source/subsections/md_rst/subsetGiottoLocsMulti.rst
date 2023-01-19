@@ -2,18 +2,23 @@
 subsetGiottoLocsMulti
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1315
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1577
 
+
+
+=========================
+
+Subset by spatial locations – multi
 
 Description
-===========
+-----------
 
 Subsets Giotto object based on spatial locations
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -34,7 +39,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -58,13 +63,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Subsets a Giotto based on spatial locations for multiple spatial units
 if return_gobject = FALSE, then a filtered combined metadata data.table
 will be returned
 
 Value
-=====
+-----
 
 giotto object

@@ -2,18 +2,23 @@
 plotMetaDataHeatmap
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1222
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1224
 
+
+
+=======================
+
+plotMetaDataHeatmap
 
 Description
-===========
+-----------
 
 Creates heatmap for genes within aggregated clusters.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -52,7 +57,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -143,7 +148,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Creates heatmap for the average expression of selected genes in the
 different annotation/cluster groups. Calculation of cluster or gene
@@ -152,12 +157,12 @@ default on the z-scores. Other options are the original values or
 z-scores rescaled per gene (-1 to 1).
 
 Value
-=====
+-----
 
 ggplot or data.table
 
 Seealso
-=======
+-------
 
 ```plotMetaDataCellsHeatmap`` <#plotmetadatacellsheatmap>`__ for numeric
 cell annotation instead of gene expression.

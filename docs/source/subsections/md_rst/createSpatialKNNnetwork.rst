@@ -2,18 +2,23 @@
 createSpatialKNNnetwork
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1420
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1425
 
+
+
+===========================
+
+createSpatialKNNnetwork
 
 Description
-===========
+-----------
 
 Create a spatial knn network.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -34,7 +39,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -75,7 +80,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 giotto object with updated spatial network slot
 

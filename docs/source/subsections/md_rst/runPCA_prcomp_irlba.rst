@@ -2,16 +2,20 @@
 runPCA_prcomp_irlba
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L90
+``runPCA_prcomp_irlba``
+=======================
 
-===========
+runPCA_prcomp_irlba
+
+Description
+-----------
 
 performs PCA based on the irlba package
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +31,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 =============== ================================================
 Argument        Description
@@ -42,6 +46,6 @@ Argument        Description
 =============== ================================================
 
 Value
-=====
+-----
 
 list of eigenvalues, loadings and pca coordinates

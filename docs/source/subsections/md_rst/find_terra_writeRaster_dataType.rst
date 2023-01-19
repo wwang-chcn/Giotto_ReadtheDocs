@@ -2,18 +2,22 @@
 find_terra_writeRaster_dataType
 ===============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1678
+``find_terra_writeRaster_dataType``
+===================================
 
-===========
+find_terra_writeRaster_dataType
+
+Description
+-----------
 
 find likely compatible datatype for given image characteristics. Values
 given in arguments take priority over those found from giottoLargeImage
 metadata
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -29,7 +33,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -56,6 +60,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 datatype for terra writeRaster function

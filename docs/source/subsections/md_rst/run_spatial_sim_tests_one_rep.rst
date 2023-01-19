@@ -2,16 +2,20 @@
 run_spatial_sim_tests_one_rep
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L4077
+``run_spatial_sim_tests_one_rep``
+=================================
 
-===========
+run_spatial_sim_tests_one_rep
+
+Description
+-----------
 
 runs all spatial tests for 1 probability and 1 rep
 
 Usage
-=====
+-----
 
 .. code:: r
 

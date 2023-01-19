@@ -2,23 +2,27 @@
 extend_vector
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L226
+``extend_vector``
+=================
 
-===========
+extend_vector
+
+Description
+-----------
 
 extend the range of a vector by a given ratio
 
 Usage
-=====
+-----
 
 .. code:: r
 
    extend_vector(x, extend_ratio)
 
 Arguments
-=========
+---------
 
 ================ ============
 Argument         Description

@@ -2,23 +2,27 @@
 dt_to_spatVector_points
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1184
+``dt_to_spatVector_points``
+===========================
 
-===========
+Convert point data data.table to spatVector
+
+Description
+-----------
 
 data.table to spatVector for points
 
 Usage
-=====
+-----
 
 .. code:: r
 
    dt_to_spatVector_points(dt, include_values = TRUE, specific_values = NULL)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

@@ -2,16 +2,23 @@
 selectPatternGenes
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2841
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2857
 
-===========
+
+
+======================
+
+selectPatternGenes
+
+Description
+-----------
 
 Select genes correlated with spatial patterns
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -26,7 +33,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -51,11 +58,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description.
 
 Value
-=====
+-----
 
 Data.table with genes associated with selected dimension (PC).

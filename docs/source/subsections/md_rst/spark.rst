@@ -2,22 +2,23 @@
 spark
 =====
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2254
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2265
 
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+``spark``
+=========
+
+spark
 
 Description
-===========
+-----------
 
 Compute spatially expressed genes with SPARK method
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -36,7 +37,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -74,23 +75,23 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function is a wrapper for the method implemented in the SPARK
 package:
 
--  list(â€œ1. CreateSPARKObjectâ€) list(â€œcreate a SPARK object from a
-   Giotto objectâ€)
+-  list(â€œ1. CreateSPARKObjectï¿½) list(â€œcreate a SPARK object from a
+   Giotto objectï¿½)
 
--  list(â€œ2. spark.vcâ€) list(â€ Fits the count-based spatial model to
-   estimate the parameters,:raw-latex:`\n`â€œ,â€ see â€œ,
-   list(list(â€spark.vcâ€)), â€ for additional parametersâ€)
+-  list(â€œ2. spark.vcï¿½) list(ï¿½ Fits the count-based spatial model to
+   estimate the parameters,:raw-latex:`\n`â€œ,ï¿½ see â€œ,
+   list(list(ï¿½spark.vcï¿½)), ï¿½ for additional parametersï¿½)
 
--  | list(â€œ3. spark.testâ€) list(â€ Testing multiple kernel matricesâ€)
-   | Publication: c(â€œ\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}â€,
-     â€œ10.1101/810903â€) list(â€œtools:::Rd_expr_doi("10.1101/810903")â€)
+-  | list(â€œ3. spark.testï¿½) list(ï¿½ Testing multiple kernel matricesï¿½)
+   | Publication: c(â€œ\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}ï¿½,
+     â€œ10.1101/810903ï¿½) list(â€œtools:::Rd_expr_doi("10.1101/810903")ï¿½)
 
 Value
-=====
+-----
 
 data.table with SPARK spatial genes results or the SPARK object

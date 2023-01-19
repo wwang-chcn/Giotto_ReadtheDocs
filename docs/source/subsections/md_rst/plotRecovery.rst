@@ -2,19 +2,24 @@
 plotRecovery
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2543
 
 
+
+================
+
+plotRecovery
+
 Description
-===========
+-----------
 
 Plots recovery plot to compare ligand-receptor rankings from spatial and
 expression information
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -32,7 +37,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -67,6 +72,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 ggplot

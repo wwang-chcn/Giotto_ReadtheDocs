@@ -2,16 +2,20 @@
 reg_img_minmax_finder
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L108
+``reg_img_minmax_finder``
+=========================
 
-===========
+reg_img_minmax_finder
+
+Description
+-----------
 
 finds new minmax boundaries of registration transformed images
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,7 +29,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

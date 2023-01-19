@@ -2,18 +2,23 @@
 rankSpatialCorGroups
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3805
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3824
 
+
+
+========================
+
+rankSpatialCorGroups
 
 Description
-===========
+-----------
 
 Rank spatial correlated clusters according to correlation structure
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -29,7 +34,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -57,7 +62,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table with positive (within group) and negative (outside group)
 scores

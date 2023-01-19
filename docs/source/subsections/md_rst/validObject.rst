@@ -2,15 +2,20 @@
 validObject
 ===========
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``validObject``
+===============
+
+See ``methods::`` for details.
 
 Description
-===========
+-----------
 
 See ``methods::`` for details.
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,25 +2,30 @@
 showGiottoDimRed
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1542
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2792
 
+
+
+====================
+
+showGiottoDimRed
 
 Description
-===========
+-----------
 
 shows the available dimension reductions
 
 Usage
-=====
+-----
 
 .. code:: r
 
    showGiottoDimRed(gobject, nrows = 3, ncols = 2)
 
 Arguments
-=========
+---------
 
 =========== ======================================
 Argument    Description
@@ -31,17 +36,19 @@ Argument    Description
 =========== ======================================
 
 Value
-=====
+-----
 
 prints the name and small subset of available dimension reduction
 coordinates
 
 Seealso
-=======
+-------
 
 Other functions to show data in giotto object:
+```showGiottoCellMetadata`` <#showgiottocellmetadata>`__ ,
 ```showGiottoExpression`` <#showgiottoexpression>`__ ,
 ```showGiottoFeatInfo`` <#showgiottofeatinfo>`__ ,
+```showGiottoFeatMetadata`` <#showgiottofeatmetadata>`__ ,
 ```showGiottoImageNames`` <#showgiottoimagenames>`__ ,
 ```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
 ```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,

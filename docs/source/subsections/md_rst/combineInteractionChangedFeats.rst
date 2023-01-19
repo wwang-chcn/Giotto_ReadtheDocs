@@ -2,18 +2,23 @@
 combineInteractionChangedFeats
 ==============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1782
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1794
 
+
+
+==================================
+
+combineInteractionChangedFeats
 
 Description
-===========
+-----------
 
 Combine ICF scores in a pairwise manner.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,7 +38,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -72,6 +77,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 combIcfObject that contains the filtered differential feature scores

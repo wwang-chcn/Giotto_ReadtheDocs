@@ -2,15 +2,20 @@
 spatialGridObj-class
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``spatialGridObj-class``
+========================
+
+S4 spatialGridObj Class
 
 Description
-===========
+-----------
 
 Framework to store spatial grid
 
 Details
-=======
+-------
 
 This is an S4 object that defines a spatial grid. The structure of the
 grid is stored as a ``data.table`` within the ``gridDT`` slot and is

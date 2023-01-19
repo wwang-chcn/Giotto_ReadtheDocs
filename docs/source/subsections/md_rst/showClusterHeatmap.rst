@@ -2,18 +2,23 @@
 showClusterHeatmap
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L460
 
 
+
+======================
+
+showClusterHeatmap
+
 Description
-===========
+-----------
 
 Creates heatmap based on identified clusters
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -36,7 +41,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -89,11 +94,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Correlation heatmap of selected clusters.
 
 Value
-=====
+-----
 
 ggplot

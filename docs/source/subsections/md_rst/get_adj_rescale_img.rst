@@ -2,16 +2,20 @@
 get_adj_rescale_img
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L700
+``get_adj_rescale_img``
+=======================
 
-===========
+get_adj_rescale_img
+
+Description
+-----------
 
 get_adj_rescale_img
 
 Usage
-=====
+-----
 
 .. code:: r
 

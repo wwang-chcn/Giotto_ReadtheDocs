@@ -2,23 +2,27 @@
 colSums_flex
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L76
+``colSums_flex``
+================
 
-===========
+colSums_flex
+
+Description
+-----------
 
 colSums_flex
 
 Usage
-=====
+-----
 
 .. code:: r
 
    colSums_flex(mymatrix)
 
 Arguments
-=========
+---------
 
 ============ =============
 Argument     Description

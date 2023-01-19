@@ -2,18 +2,23 @@
 showClusterDendrogram
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L570
 
 
+
+=========================
+
+showClusterDendrogram
+
 Description
-===========
+-----------
 
 Creates dendrogram for selected clusters.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -37,7 +42,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -90,11 +95,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Expression correlation dendrogram for selected clusters.
 
 Value
-=====
+-----
 
 ggplot

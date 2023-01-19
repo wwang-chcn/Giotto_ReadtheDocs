@@ -2,23 +2,27 @@
 evaluate_spatial_locations
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L908
+``evaluate_spatial_locations``
+==============================
 
-===========
+Evaluate spatial locations
+
+Description
+-----------
 
 Evaluate spatial location input
 
 Usage
-=====
+-----
 
 .. code:: r
 
    evaluate_spatial_locations(spatial_locs, cores = 1)
 
 Arguments
-=========
+---------
 
 ================ =============================
 Argument         Description
@@ -28,6 +32,6 @@ Argument         Description
 ================ =============================
 
 Value
-=====
+-----
 
 data.table

@@ -2,18 +2,23 @@
 signPCA
 =======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1030
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1075
 
+
+
+===========
+
+signPCA
 
 Description
-===========
+-----------
 
 identify significant prinicipal components (PCs)
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -45,7 +50,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -106,7 +111,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Two different methods can be used to assess the number of relevant or
 significant prinicipal components (PC’s). list() 1. Screeplot works by
@@ -117,6 +122,6 @@ allowing you to identify which PC provides a significant contribution
 permuting genes it identifies robust, and thus significant, PCs. list()
 
 Value
-=====
+-----
 
 ggplot object for scree method and maxtrix of p-values for jackstraw

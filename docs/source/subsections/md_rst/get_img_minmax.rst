@@ -2,23 +2,27 @@
 get_img_minmax
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L673
+``get_img_minmax``
+==================
 
-===========
+get_img_minmax
+
+Description
+-----------
 
 get_img_minmax
 
 Usage
-=====
+-----
 
 .. code:: r
 
    get_img_minmax(mg_img, negative_y = TRUE)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

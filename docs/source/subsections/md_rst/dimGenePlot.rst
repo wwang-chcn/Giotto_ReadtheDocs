@@ -2,27 +2,30 @@
 dimGenePlot
 ===========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5300
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5353
 
-   :format: latex
-..
+
+``dimGenePlot``
+===============
+
+dimGenePlot
 
 Description
-===========
+-----------
 
 Visualize gene expression according to dimension reduction coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
    dimGenePlot(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -30,33 +33,33 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ``                                   |
 |                               | `dimGenePlot2D`` <#dimgeneplot2d>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)),          |
-|                               | list(â€œgiotto objectâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€genesâ€)),            |
-|                               | list(â€œgenes to showâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)),          |
+|                               | list(â€œgiotto objectï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½genesï¿½)),            |
+|                               | list(â€œgenes to showï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 |                               | l                                    |
-|                               | ist(list(list(â€default_save_nameâ€)), |
+|                               | ist(list(list(ï¿½default_save_nameï¿½)), |
 |                               | list(â€œdefault save name for saving,  |
 |                               | donâ€™t change, change save_name in    |
-|                               | save_paramâ€)), â€œ:raw-latex:`\n`â€, â€  |
+|                               | save_paramï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½  |
 |                               | â€œ)                                   |
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 ```dimGenePlot3D`` <#dimgeneplot3d>`__
 

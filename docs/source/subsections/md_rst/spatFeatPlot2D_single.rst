@@ -2,16 +2,23 @@
 spatFeatPlot2D_single
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4137
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4181
 
-===========
+
+
+=========================
+
+spatFeatPlot2D_single
+
+Description
+-----------
 
 Visualize cells and feature expression according to spatial coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,6 +35,7 @@ Usage
      sdimy = "sdimy",
      expression_values = c("normalized", "scaled", "custom"),
      feats,
+     order = TRUE,
      cell_color_gradient = c("blue", "white", "red"),
      gradient_midpoint = NULL,
      gradient_limits = NULL,
@@ -45,6 +53,7 @@ Usage
      point_alpha = 1,
      point_border_col = "black",
      point_border_stroke = 0.1,
+     coord_fix_ratio = 1,
      show_legend = T,
      legend_text = 8,
      background_color = "white",
@@ -53,7 +62,7 @@ Usage
      vor_max_radius = 200,
      axis_text = 8,
      axis_title = 8,
-     cow_n_col = 2,
+     cow_n_col = NULL,
      cow_rel_h = 1,
      cow_rel_w = 1,
      cow_align = "h",
@@ -65,7 +74,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -95,6 +104,9 @@ Arguments
 | ``expression_values``         | gene expression values to use        |
 +-------------------------------+--------------------------------------+
 | ``feats``                     | features to show                     |
++-------------------------------+--------------------------------------+
+| ``order``                     | order points according to feature    |
+|                               | expression                           |
 +-------------------------------+--------------------------------------+
 | ``cell_color_gradient``       | vector with 3 colors for numeric     |
 |                               | data                                 |
@@ -132,6 +144,9 @@ Arguments
 | ``point_border_col``          | color of border around points        |
 +-------------------------------+--------------------------------------+
 | ``point_border_stroke``       | stroke size of border around points  |
++-------------------------------+--------------------------------------+
+| ``coord_fix_ratio``           | fix ratio between x and y-axis       |
+|                               | (default = 1)                        |
 +-------------------------------+--------------------------------------+
 | ``show_legend``               | show legend                          |
 +-------------------------------+--------------------------------------+
@@ -173,17 +188,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 ```spatGenePlot3D`` <#spatgeneplot3d>`__
 

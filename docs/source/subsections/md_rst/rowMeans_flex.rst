@@ -2,23 +2,27 @@
 rowMeans_flex
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L51
+``rowMeans_flex``
+=================
 
-===========
+rowMeans_flex
+
+Description
+-----------
 
 rowMeans_flex
 
 Usage
-=====
+-----
 
 .. code:: r
 
    rowMeans_flex(mymatrix)
 
 Arguments
-=========
+---------
 
 ============ =============
 Argument     Description

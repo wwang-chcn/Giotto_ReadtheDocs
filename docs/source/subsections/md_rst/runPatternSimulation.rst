@@ -2,19 +2,24 @@
 runPatternSimulation
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L4467
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L4659
 
+
+
+========================
+
+runPatternSimulation
 
 Description
-===========
+-----------
 
 Creates a known spatial pattern for selected genes one-by-one and runs
 the different spatial gene detection tests
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -45,7 +50,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -109,6 +114,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table with results

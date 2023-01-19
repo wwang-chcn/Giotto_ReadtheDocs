@@ -2,18 +2,23 @@
 plotStatDelaunayNetwork
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1185
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1190
 
+
+
+===========================
+
+plotStatDelaunayNetwork
 
 Description
-===========
+-----------
 
 Plots network statistics for a Delaunay network..
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -38,7 +43,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -99,6 +104,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 giotto object with updated spatial network slot

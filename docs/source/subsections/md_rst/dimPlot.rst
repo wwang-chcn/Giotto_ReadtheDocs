@@ -2,56 +2,57 @@
 dimPlot
 =======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1403
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1433
 
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+``dimPlot``
+===========
+
+dimPlot
 
 Description
-===========
+-----------
 
 Visualize cells according to dimension reduction coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
    dimPlot(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``...``                       | Arguments passed on to               |
 |                               | ```dimPlot2D`` <#dimplot2d>`__       |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)),          |
-|                               | list(â€œgiotto objectâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€spat_unitâ€)),        |
-|                               | list(â€œspatial unitâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€feat_typeâ€)),        |
-|                               | list(â€œfeature typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€group_byâ€)),         |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)),          |
+|                               | list(â€œgiotto objectï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½spat_unitï¿½)),        |
+|                               | list(â€œspatial unitï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½feat_typeï¿½)),        |
+|                               | list(â€œfeature typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½group_byï¿½)),         |
 |                               | list(â€œcreate multiple plots based on |
-|                               | cell annotation columnâ€)),           |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€group_by_subsetâ€)),  |
+|                               | cell annotation columnï¿½)),           |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½group_by_subsetï¿½)),  |
 |                               | list(â€œsubset the group_by factor     |
-|                               | columnâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,   |
+|                               | columnï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,   |
 |                               | list                                 |
-|                               | (list(list(â€dim_reduction_to_useâ€)), |
-|                               | list(â€œdimension reduction to useâ€)), |
-|                               | â€œ:raw-latex:`\n`â€,                   |
+|                               | (list(list(ï¿½dim_reduction_to_useï¿½)), |
+|                               | list(â€œdimension reduction to useï¿½)), |
+|                               | â€œ:raw-latex:`\n`ï¿½,                   |
 +-------------------------------+--------------------------------------+
 
 ::
@@ -67,18 +68,18 @@ Arguments
    "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
 Details
-=======
+-------
 
 Description of parameters, see ```dimPlot2D`` <#dimplot2d>`__ . For 3D
 plots see ```dimPlot3D`` <#dimplot3d>`__
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other reduced dimension visualizations: ```dimPlot2D`` <#dimplot2d>`__ ,
 ```dimPlot3D`` <#dimplot3d>`__ , ```plotPCA_2D`` <#plotpca2d>`__ ,

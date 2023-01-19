@@ -2,16 +2,20 @@
 createHeatmap_DT
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L772
+``createHeatmap_DT``
+====================
 
-===========
+createHeatmap_DT
+
+Description
+-----------
 
 creates order for clusters
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -38,43 +42,43 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
-|                               | “protein�)                           |
+| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
+|                               | “protein”)                           |
 +-------------------------------+--------------------------------------+
 | ``expression_values``         | expression values to use             |
-|                               | (e.g. “normalized�, “scaled�,        |
-|                               | “custom�)                            |
+|                               | (e.g. “normalized”, “scaled”,        |
+|                               | “custom”)                            |
 +-------------------------------+--------------------------------------+
 | ``feats``                     | features to use                      |
 +-------------------------------+--------------------------------------+
 | ``genes``                     | deprecated, use feats                |
 +-------------------------------+--------------------------------------+
 | ``cluster_column``            | name of column to use for clusters   |
-|                               | (e.g. “leiden_clus�)                 |
+|                               | (e.g. “leiden_clus”)                 |
 +-------------------------------+--------------------------------------+
 | ``cluster_order``             | method to determine cluster order    |
-|                               | (e.g. “size�, “correlation�,         |
-|                               | “custom�)                            |
+|                               | (e.g. “size”, “correlation”,         |
+|                               | “custom”)                            |
 +-------------------------------+--------------------------------------+
 | ``cluster_custom_order``      | custom order for clusters            |
 +-------------------------------+--------------------------------------+
 | ``cluster_cor_method``        | method for cluster correlation,      |
-|                               | default to “pearson�                 |
+|                               | default to “pearson”                 |
 +-------------------------------+--------------------------------------+
 | ``cluster_hclust_method``     | method for hierarchical clustering   |
-|                               | of clusters, default to “ward.D�     |
+|                               | of clusters, default to “ward.D”     |
 +-------------------------------+--------------------------------------+
 | ``feat_order``                | method to determine features order   |
-|                               | (e.g. “correlation�, “custom�)       |
+|                               | (e.g. “correlation”, “custom”)       |
 +-------------------------------+--------------------------------------+
 | ``gene_order``                | deprecated, use feat_order in the    |
 |                               | future                               |
@@ -85,24 +89,24 @@ Arguments
 |                               | the future                           |
 +-------------------------------+--------------------------------------+
 | ``feat_cor_method``           | method for features correlation,     |
-|                               | default to “pearson�                 |
+|                               | default to “pearson”                 |
 +-------------------------------+--------------------------------------+
 | ``gene_cor_method``           | deprecated, use feat_cor_method in   |
 |                               | the future                           |
 +-------------------------------+--------------------------------------+
 | ``feat_hclust_method``        | method for hierarchical clustering   |
-|                               | of features, default to “complete�   |
+|                               | of features, default to “complete”   |
 +-------------------------------+--------------------------------------+
 | ``gene_hclust_method``        | deprecated, use feat_hclust_method   |
 |                               | in the future                        |
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Creates input data.tables for plotHeatmap function.
 
 Value
-=====
+-----
 
 list

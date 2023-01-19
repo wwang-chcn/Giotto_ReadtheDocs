@@ -2,16 +2,20 @@
 create_delaunayNetwork_geometry
 ===============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L503
+``create_delaunayNetwork_geometry``
+===================================
 
-===========
+create_delaunayNetwork_geometry
+
+Description
+-----------
 
 Create a spatial Delaunay network.
 
 Usage
-=====
+-----
 
 .. code:: r
 

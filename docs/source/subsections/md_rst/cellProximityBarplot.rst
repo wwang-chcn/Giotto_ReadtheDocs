@@ -2,18 +2,23 @@
 cellProximityBarplot
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L20
 
 
+
+========================
+
+cellProximityBarplot
+
 Description
-===========
+-----------
 
 Create barplot from cell-cell proximity scores
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -31,7 +36,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -65,12 +70,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function creates a barplot that shows the spatial proximity
 enrichment or depletion of cell type pairs.
 
 Value
-=====
+-----
 
 ggplot barplot

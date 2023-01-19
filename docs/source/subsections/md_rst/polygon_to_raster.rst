@@ -2,11 +2,15 @@
 polygon_to_raster
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L11
+``polygon_to_raster``
+=====================
 
-===========
+Convert polygon to raster
+
+Description
+-----------
 
 function to convert terra SpatVector Polygon shape into a terra
 SpatRaster
@@ -14,7 +18,7 @@ SpatRaster
 convert polygon to raster
 
 Usage
-=====
+-----
 
 .. code:: r
 

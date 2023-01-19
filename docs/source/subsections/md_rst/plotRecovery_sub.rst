@@ -2,24 +2,28 @@
 plotRecovery_sub
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2477
+``plotRecovery_sub``
+====================
 
-===========
+plotRecovery_sub
+
+Description
+-----------
 
 Plots recovery plot to compare ligand-receptor rankings from spatial and
 expression information
 
 Usage
-=====
+-----
 
 .. code:: r
 
    plotRecovery_sub(combCC, first_col = "LR_expr_rnk", second_col = "LR_spat_rnk")
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

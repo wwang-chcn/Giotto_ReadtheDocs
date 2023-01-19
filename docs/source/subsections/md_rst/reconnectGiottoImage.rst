@@ -2,25 +2,31 @@
 reconnectGiottoImage
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2456
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2457
 
+
+
+========================
+
+Reconnect images with dead pointers
 
 Description
-===========
+-----------
 
 reconnect a gobject’s dead image pointers using filepaths to the
 original source image files
 
 Usage
-=====
+-----
 
 .. code:: r
 
    reconnectGiottoImage(
      gobject,
      auto_reconnect = TRUE,
+     reconnect_type = c("all", "image", "largeImage"),
      image_name = NULL,
      largeImage_name = NULL,
      image_path = NULL,
@@ -29,7 +35,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -38,6 +44,9 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``auto_reconnect``            | automatically reconnect images if    |
 |                               | TRUE. manual if FALSE                |
++-------------------------------+--------------------------------------+
+| ``reconnect_type``            | type of image to reconnect when      |
+|                               | auto_reconnect = TRUE                |
 +-------------------------------+--------------------------------------+
 | ``image_name``                | names of images to reconnect         |
 +-------------------------------+--------------------------------------+
@@ -53,7 +62,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Inputs can either be given as both image name ( ``image_name`` /
 ``largeImage_name`` ) and filepath ( ``image_path`` /
@@ -69,14 +78,13 @@ In such cases, use manual reconnection by setting
 ``auto_reconnect = FALSE`` .
 
 Value
-=====
+-----
 
 a giotto object with updated image pointer
 
-See also
-=======
+Seealso
+-------
 
-Other basic image functions: 
-`addGiottoImage <../md_rst/addGiottoImage.html>`__
-`plotGiottoImage <../md_rst/plotGiottoImage.html>`__
-`updateGiottoImage <../md_rst/updateGiottoImage.html>`__
+Other basic image functions: ```addGiottoImage`` <#addgiottoimage>`__ ,
+```plotGiottoImage`` <#plotgiottoimage>`__ ,
+```updateGiottoImage`` <#updategiottoimage>`__

@@ -2,27 +2,30 @@
 plotCombineInteractionChangedGenes
 ==================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1818
 
-   :format: latex
-..
+
+``plotCombineInteractionChangedGenes``
+======================================
+
+plotCombineInteractionChangedGenes
 
 Description
-===========
+-----------
 
 Create visualization for combined (pairwise) ICF scores
 
 Usage
-=====
+-----
 
 .. code:: r
 
    plotCombineInteractionChangedGenes(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -31,26 +34,26 @@ Arguments
 |                               | ```plotC                             |
 |                               | ombineInteractionChangedFeats`` <#pl |
 |                               | otcombineinteractionchangedfeats>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)),          |
-|                               | list(â€œgiotto objectâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€combIcfObjectâ€)),    |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)),          |
+|                               | list(â€œgiotto objectï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½combIcfObjectï¿½)),    |
 |                               | list(â€œICFscores, output from         |
-|                               | combineInteractionChangedFeats()â€)), |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | combineInteractionChangedFeats()ï¿½)), |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 |                               | list(                                |
-|                               | list(list(â€selected_interactionsâ€)), |
-|                               | list(â€œinteractions to showâ€)),       |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | list(list(ï¿½selected_interactionsï¿½)), |
+|                               | list(â€œinteractions to showï¿½)),       |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
 |                               | list(                                |
-|                               | list(list(â€selected_feat_to_featâ€)), |
+|                               | list(list(ï¿½selected_feat_to_featï¿½)), |
 |                               | list(â€œpairwise feature combinations  |
-|                               | to showâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,  |
-|                               | list(list(list(â€detail_plotâ€)),      |
+|                               | to showï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,  |
+|                               | list(list(list(ï¿½detail_plotï¿½)),      |
 |                               | list(â€œshow detailed info in both     |
-|                               | interacting cell typesâ€)),           |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ, list(        |
+|                               | interacting cell typesï¿½)),           |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ, list(        |
 +-------------------------------+--------------------------------------+
 
 ::
@@ -60,6 +63,6 @@ Arguments
    "  ")
 
 Seealso
-=======
+-------
 
 ```plotCombineInteractionChangedFeats`` <#plotcombineinteractionchangedfeats>`__

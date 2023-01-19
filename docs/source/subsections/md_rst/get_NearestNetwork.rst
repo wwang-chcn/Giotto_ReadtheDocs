@@ -2,18 +2,23 @@
 get_NearestNetwork
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L512
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1258
 
+
+
+======================
+
+Get nearest network
 
 Description
-===========
+-----------
 
 Get a NN-network from a Giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -23,56 +28,53 @@ Usage
      feat_type = NULL,
      nn_network_to_use = NULL,
      network_name = NULL,
-     output = c("igraph", "data.table")
+     output = c("nnNetObj", "igraph", "data.table"),
+     set_defaults = TRUE
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g.Â â€œcellâ€)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g.Â â€œrnaâ€, â€œdnaâ€,     |
-|                               | â€œproteinâ€)                           |
+| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
+|                               | “protein�)                           |
 +-------------------------------+--------------------------------------+
-| ``nn_network_to_use``         | â€œkNNâ€ or â€œsNNâ€                       |
+| ``nn_network_to_use``         | “kNN� or “sNN�                       |
 +-------------------------------+--------------------------------------+
 | ``network_name``              | name of NN network to be used        |
 +-------------------------------+--------------------------------------+
 | ``output``                    | return a igraph or data.table        |
-|                               | object. Default â€˜igraphâ€™             |
+|                               | object. Default ‘igraph’             |
++-------------------------------+--------------------------------------+
+| ``set_defaults``              | set default spat_unit and feat_type. |
+|                               | Change to FALSE only when            |
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 igraph or data.table object
 
 Seealso
-=======
+-------
 
 Other expression space nearest network accessor functions:
-`set_NearestNetwork <../md_rst/set_NearestNetwork.html>`__
+```set_NearestNetwork`` <#setnearestnetwork>`__
 
-Other functions to set data in Giotto object:
-
-`get_NearestNetwork <../md_rst/get_NearestNetwork.html>`__
-
-`get_dimReduction <../md_rst/get_dimReduction.html>`__
-
-`get_feature_info <../md_rst/get_feature_info.html>`__
-
-`get_giottoImage <../md_rst/get_giottoImage.html>`__
-
-`get_polygon_info <../md_rst/get_polygon_info.html>`__
-
-`get_spatialGrid <../md_rst/get_spatialGrid.html>`__
-
-`get_spatialNetwork <../md_rst/get_spatialNetwork.html>`__
-
-`get_spatial_locations <../md_rst/get_spatial_locations.html>`__
-
+Other functions to get data from giotto object:
+```get_dimReduction`` <#getdimreduction>`__ ,
+```get_expression_values`` <#getexpressionvalues>`__ ,
+```get_feature_info`` <#getfeatureinfo>`__ ,
+```get_giottoImage`` <#getgiottoimage>`__ ,
+```get_multiomics`` <#getmultiomics>`__ ,
+```get_polygon_info`` <#getpolygoninfo>`__ ,
+```get_spatialGrid`` <#getspatialgrid>`__ ,
+```get_spatialNetwork`` <#getspatialnetwork>`__ ,
+```get_spatial_enrichment`` <#getspatialenrichment>`__ ,
+```get_spatial_locations`` <#getspatiallocations>`__

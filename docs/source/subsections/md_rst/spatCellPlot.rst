@@ -2,29 +2,30 @@
 spatCellPlot
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5868
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5922
 
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+``spatCellPlot``
+================
+
+spatCellPlot
 
 Description
-===========
+-----------
 
 Visualize cells according to spatial coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
    spatCellPlot(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -32,26 +33,26 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```s                                 |
 |                               | patCellPlot2D`` <#spatcellplot2d>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)),          |
-|                               | list(â€œgiotto objectâ€)),              |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€feat_typeâ€)),        |
-|                               | list(â€œfeature typeâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€spat_unitâ€)),        |
-|                               | list(â€œspatial unitâ€)),               |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€show_imageâ€)),       |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)),          |
+|                               | list(â€œgiotto objectï¿½)),              |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½feat_typeï¿½)),        |
+|                               | list(â€œfeature typeï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½spat_unitï¿½)),        |
+|                               | list(â€œspatial unitï¿½)),               |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½show_imageï¿½)),       |
 |                               | list(â€œshow a tissue background       |
-|                               | imageâ€)), â€œ:raw-latex:`\n`â€, â€ â€œ,    |
-|                               | list(list(list(â€gimageâ€)), list(â€œa   |
-|                               | giotto imageâ€)), â€œ:raw-latex:`\n`â€,  |
-|                               | â€ â€œ, list(list(list(â€image_nameâ€)),  |
-|                               | list(â€œname of a giotto imageâ€)),     |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
-|                               | list(list(list(â€largeImage_nameâ€)),  |
-|                               | list(â€œname of a giottoLargeImageâ€)), |
+|                               | imageï¿½)), â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,    |
+|                               | list(list(list(ï¿½gimageï¿½)), list(â€œa   |
+|                               | giotto imageï¿½)), â€œ:raw-latex:`\n`ï¿½,  |
+|                               | ï¿½ â€œ, list(list(list(ï¿½image_nameï¿½)),  |
+|                               | list(â€œname of a giotto imageï¿½)),     |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | list(list(list(ï¿½largeImage_nameï¿½)),  |
+|                               | list(â€œname of a giottoLargeImageï¿½)), |
 +-------------------------------+--------------------------------------+
 
 ::
@@ -68,17 +69,17 @@ Arguments
    "\n", "  ")
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other spatial cell annotation visualizations:
 ```spatCellPlot2D`` <#spatcellplot2d>`__

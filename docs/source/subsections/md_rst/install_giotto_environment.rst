@@ -2,16 +2,20 @@
 install_giotto_environment
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L183
+``install_giotto_environment``
+==============================
 
-===========
+install_giotto_environment
+
+Description
+-----------
 
 installation options of giotto environment
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -19,6 +23,6 @@ Usage
      force_environment = FALSE,
      packages_to_install = c("pandas", "networkx", "python-igraph", "leidenalg",
        "python-louvain", "python.app", "scikit-learn"),
-     python_version = "3.6",
+     python_version = "3.10.2",
      verbose = TRUE
    )

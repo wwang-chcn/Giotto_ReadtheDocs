@@ -2,29 +2,30 @@
 showNetworks
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1820
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3111
 
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+``showNetworks``
+================
+
+Show networks
 
 Description
-===========
+-----------
 
 Show networks
 
 Usage
-=====
+-----
 
 .. code:: r
 
    showNetworks(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -32,15 +33,15 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```showGiottoSpatNet                 |
 |                               | works`` <#showgiottospatnetworks>`__ |
-|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
-|                               | list(list(list(â€gobjectâ€)), list(â€œa  |
-|                               | giotto objectâ€)), â€œ:raw-latex:`\n`â€, |
-|                               | â€ â€œ, list(list(list(â€nrowsâ€)),       |
-|                               | list(â€œnumber of rows to printâ€)),    |
-|                               | â€œ:raw-latex:`\n`â€, â€ â€œ)              |
+|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
+|                               | list(list(list(ï¿½gobjectï¿½)), list(â€œa  |
+|                               | giotto objectï¿½)), â€œ:raw-latex:`\n`ï¿½, |
+|                               | ï¿½ â€œ, list(list(list(ï¿½nrowsï¿½)),       |
+|                               | list(â€œnumber of rows to printï¿½)),    |
+|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ)              |
 +-------------------------------+--------------------------------------+
 
 Seealso
-=======
+-------
 
 ```showGiottoSpatNetworks`` <#showgiottospatnetworks>`__

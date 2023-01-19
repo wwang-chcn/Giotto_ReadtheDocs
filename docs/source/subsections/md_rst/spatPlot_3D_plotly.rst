@@ -2,16 +2,20 @@
 spatPlot_3D_plotly
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7488
+``spatPlot_3D_plotly``
+======================
 
-===========
+spatPlot_3D_plotly
+
+Description
+-----------
 
 Visualize cells at their 3D spatial locations with plotly
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -50,6 +54,6 @@ Usage
    )
 
 Value
-=====
+-----
 
 plotly object

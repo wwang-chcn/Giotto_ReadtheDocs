@@ -2,27 +2,28 @@
 plotCombineICG
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1904
 
-   :format: latex
-..
+``plotCombineICG``
+==================
+
+plotCombineICG
 
 Description
-===========
+-----------
 
 Create visualization for combined (pairwise) ICF scores
 
 Usage
-=====
+-----
 
 .. code:: r
 
    plotCombineICG(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -30,26 +31,26 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ```p                                 |
 |                               | lotCombineICF`` <#plotcombineicf>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�gobject�)),          |
-|                               | list(“giotto object�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�combIcfObject�)),    |
+|                               | list(“:raw-latex:`\n`”, ” “,         |
+|                               | list(list(list(”gobject”)),          |
+|                               | list(“giotto object”)),              |
+|                               | “:raw-latex:`\n`”, ” “,              |
+|                               | list(list(list(”combIcfObject”)),    |
 |                               | list(“ICFscores, output from         |
-|                               | combineInteractionChangedFeats()�)), |
-|                               | “:raw-latex:`\n`�, � “,              |
+|                               | combineInteractionChangedFeats()”)), |
+|                               | “:raw-latex:`\n`”, ” “,              |
 |                               | list(                                |
-|                               | list(list(�selected_interactions�)), |
-|                               | list(“interactions to show�)),       |
-|                               | “:raw-latex:`\n`�, � “,              |
+|                               | list(list(”selected_interactions”)), |
+|                               | list(“interactions to show”)),       |
+|                               | “:raw-latex:`\n`”, ” “,              |
 |                               | list(                                |
-|                               | list(list(�selected_feat_to_feat�)), |
+|                               | list(list(”selected_feat_to_feat”)), |
 |                               | list(“pairwise feature combinations  |
-|                               | to show�)), “:raw-latex:`\n`�, � “,  |
-|                               | list(list(list(�detail_plot�)),      |
+|                               | to show”)), “:raw-latex:`\n`”, ” “,  |
+|                               | list(list(list(”detail_plot”)),      |
 |                               | list(“show detailed info in both     |
-|                               | interacting cell types�)),           |
-|                               | “:raw-latex:`\n`�, � “, list(        |
+|                               | interacting cell types”)),           |
+|                               | “:raw-latex:`\n`”, ” “, list(        |
 +-------------------------------+--------------------------------------+
 
 ::
@@ -59,6 +60,6 @@ Arguments
    "  ")
 
 Seealso
-=======
+-------
 
 ```plotCombineICF`` <#plotcombineicf>`__

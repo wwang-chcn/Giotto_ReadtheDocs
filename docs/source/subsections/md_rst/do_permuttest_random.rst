@@ -2,18 +2,22 @@
 do_permuttest_random
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L549
+``do_permuttest_random``
+========================
 
-===========
+do_permuttest_random
+
+Description
+-----------
 
 calculate random values
 
 Performs permutation test on subsets of a matrix
 
 Usage
-=====
+-----
 
 .. code:: r
 

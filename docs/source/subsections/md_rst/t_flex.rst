@@ -2,23 +2,27 @@
 t_flex
 ======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L120
+``t_flex``
+==========
 
-===========
+t_flex
+
+Description
+-----------
 
 t_flex
 
 Usage
-=====
+-----
 
 .. code:: r
 
    t_flex(mymatrix)
 
 Arguments
-=========
+---------
 
 ============ =============
 Argument     Description

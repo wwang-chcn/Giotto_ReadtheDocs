@@ -2,19 +2,24 @@
 findMastMarkers_one_vs_all
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L811
+https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L838
 
+
+
+==============================
+
+findMastMarkers_one_vs_all
 
 Description
-===========
+-----------
 
 Identify marker feats for all clusters in a one vs all manner based on
 the MAST package.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -35,7 +40,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -71,11 +76,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table with marker feats
 
 Seealso
-=======
+-------
 
 ```findMastMarkers`` <#findmastmarkers>`__

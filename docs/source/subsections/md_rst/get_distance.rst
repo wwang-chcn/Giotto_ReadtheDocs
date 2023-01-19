@@ -2,24 +2,28 @@
 get_distance
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L91
+``get_distance``
+================
 
-===========
+get_distance
+
+Description
+-----------
 
 estimate average distance between neighboring cells with network table
 as input
 
 Usage
-=====
+-----
 
 .. code:: r
 
    get_distance(networkDT, method = c("mean", "median"))
 
 Arguments
-=========
+---------
 
 ============= ===========
 Argument      Description

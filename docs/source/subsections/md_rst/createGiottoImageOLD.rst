@@ -2,17 +2,22 @@
 createGiottoImageOLD
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``createGiottoImageOLD``
+========================
+
+createGiottoImageOLD
 
 Description
-===========
+-----------
 
 Creates a giotto image that can be added to a Giotto object and/or used
 to add an image to the spatial plotting functions. Deprecated. See
 ```createGiottoImage`` <#creategiottoimage>`__
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,7 +33,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -56,6 +61,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 a giotto image object

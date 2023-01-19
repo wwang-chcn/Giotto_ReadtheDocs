@@ -2,23 +2,27 @@
 filter_network
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L419
+``filter_network``
+==================
 
-===========
+filter_network
+
+Description
+-----------
 
 function to filter a spatial network
 
 Usage
-=====
+-----
 
 .. code:: r
 
    filter_network(networkDT = NULL, maximum_distance = NULL, minimum_k = NULL)
 
 Arguments
-=========
+---------
 
 ==================== =======================================
 Argument             Description

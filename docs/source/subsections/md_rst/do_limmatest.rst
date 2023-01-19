@@ -2,16 +2,20 @@
 do_limmatest
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L413
+``do_limmatest``
+================
 
-===========
+do_limmatest
+
+Description
+-----------
 
 Performs limma t.test on subsets of a matrix
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,16 +2,20 @@
 runPCA_BiocSingular
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L256
+``runPCA_BiocSingular``
+=======================
 
-===========
+runPCA_BiocSingular
+
+Description
+-----------
 
 Performs PCA based on the biocSingular package
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -29,7 +33,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ================ ================================================
 Argument         Description
@@ -46,6 +50,6 @@ Argument         Description
 ================ ================================================
 
 Value
-=====
+-----
 
 list of eigenvalues, loadings and pca coordinates

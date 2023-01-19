@@ -2,18 +2,23 @@
 cropGiottoLargeImage
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1395
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1396
 
+
+
+========================
+
+Crop a giotto largeImage object
 
 Description
-===========
+-----------
 
 Crop a giottoLargeImage based on crop_extent argument or given values
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -30,7 +35,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -56,6 +61,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 a giottoLargeImage object

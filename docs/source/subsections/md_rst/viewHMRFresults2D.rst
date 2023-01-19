@@ -2,25 +2,30 @@
 viewHMRFresults2D
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L592
+https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L594
 
+
+
+=====================
+
+viewHMRFresults2D
 
 Description
-===========
+-----------
 
 View results from doHMRF.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    viewHMRFresults2D(gobject, HMRFoutput, k = NULL, betas_to_view = NULL, ...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -39,11 +44,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 spatial plots with HMRF domains
 
 Seealso
-=======
+-------
 
 ```spatPlot2D`` <#spatplot2d>`__

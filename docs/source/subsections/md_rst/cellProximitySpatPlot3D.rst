@@ -2,19 +2,24 @@
 cellProximitySpatPlot3D
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2909
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2914
 
+
+
+===========================
+
+cellProximitySpatPlot3D
 
 Description
-===========
+-----------
 
 Visualize 3D cell-cell interactions according to spatial coordinates in
 plotly mode
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -54,7 +59,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -134,11 +139,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 plotly

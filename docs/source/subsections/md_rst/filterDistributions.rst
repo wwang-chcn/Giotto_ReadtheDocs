@@ -2,18 +2,23 @@
 filterDistributions
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1418
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1680
 
+
+
+=======================
+
+filterDistributions
 
 Description
-===========
+-----------
 
 show gene or cell distribution after filtering on expression threshold
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -22,9 +27,11 @@ Usage
      feat_type = NULL,
      spat_unit = NULL,
      expression_values = c("raw", "normalized", "scaled", "custom"),
+     method = c("threshold", "sum", "mean"),
      expression_threshold = 1,
      detection = c("feats", "cells"),
      plot_type = c("histogram", "violin"),
+     scale_y = NULL,
      nr_bins = 30,
      fill_color = "lightblue",
      scale_axis = "identity",
@@ -37,7 +44,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,6 +57,9 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``expression_values``         | expression values to use             |
 +-------------------------------+--------------------------------------+
+| ``method``                    | method to create distribution (see   |
+|                               | details)                             |
++-------------------------------+--------------------------------------+
 | ``expression_threshold``      | threshold to consider a gene         |
 |                               | expressed                            |
 +-------------------------------+--------------------------------------+
@@ -57,6 +67,9 @@ Arguments
 |                               | cells                                |
 +-------------------------------+--------------------------------------+
 | ``plot_type``                 | type of plot                         |
++-------------------------------+--------------------------------------+
+| ``scale_y``                   | scale y-axis (e.g. “log�), NULL = no |
+|                               | scaling                              |
 +-------------------------------+--------------------------------------+
 | ``nr_bins``                   | number of bins for histogram plot    |
 +-------------------------------+--------------------------------------+
@@ -83,7 +96,25 @@ Arguments
 |                               | save_param                           |
 +-------------------------------+--------------------------------------+
 
+Details
+-------
+
+There are 3 ways to create a distribution profile and summarize it for
+either the features or the cells (spatial units) list()
+
+-  
+
+   1. threshold: calculate features that cross a thresold (default)
+
+-  
+
+   2. sum: summarize the features, i.e. total of a feature
+
+-  
+
+   3. mean: calculate mean of the features, i.e. average expression
+
 Value
-=====
+-----
 
 ggplot object

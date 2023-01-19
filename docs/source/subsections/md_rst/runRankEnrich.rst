@@ -2,19 +2,24 @@
 runRankEnrich
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L889
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L904
 
+
+
+=================
+
+runRankEnrich
 
 Description
-===========
+-----------
 
 Function to calculate gene signature enrichment scores per spatial
 position using a rank based approach.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -37,7 +42,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -82,7 +87,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 sign_matrix: a rank-fold matrix with genes as row names and cell-types
 as column names. Alternatively a scRNA-seq matrix and vector with
@@ -96,11 +101,11 @@ calculated as: RBP = (1 - 0.99)* (0.99)^(R - 1) and the final enrichment
 score is then calculated as the sum of top 100 RBPs.
 
 Value
-=====
+-----
 
 data.table with enrichment results
 
 Seealso
-=======
+-------
 
 ```makeSignMatrixRank`` <#makesignmatrixrank>`__

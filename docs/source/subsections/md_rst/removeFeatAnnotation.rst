@@ -2,19 +2,24 @@
 removeFeatAnnotation
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2575
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3323
 
+
+
+========================
+
+Remove feature annotation
 
 Description
-===========
+-----------
 
 Removes feature annotation from a Giotto object for a specific feature
 modality
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -45,11 +50,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 if ``return_gobject = FALSE`` , it will return the gene metadata
 
 Value
-=====
+-----
 
 giotto object

@@ -2,26 +2,31 @@
 plotInteractivePolygons
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L10042
+https://github.com/drieslab/Giotto/tree/suite/R/interactivity.R#L39
 
+
+
+===========================
+
+Select image regions by plotting interactive polygons
 
 Description
-===========
+-----------
 
 Plot interactive polygons on an image and retrieve the polygons
 coordinates.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    plotInteractivePolygons(x, width = "auto", height = "auto", ...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -37,12 +42,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 A ``data.table`` containing x,y coordinates from the plotted polygons.
 
 Examples
-========
+--------
 
 .. code:: r
 

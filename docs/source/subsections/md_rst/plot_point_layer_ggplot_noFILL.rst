@@ -2,17 +2,21 @@
 plot_point_layer_ggplot_noFILL
 ==============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L507
+``plot_point_layer_ggplot_noFILL``
+==================================
 
-===========
+plot_point_layer_ggplot_noFILL
+
+Description
+-----------
 
 Visualize cells in point layer according to dimension reduction
 coordinates without borders
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -43,7 +47,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -101,11 +105,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot

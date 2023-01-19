@@ -2,19 +2,24 @@
 adjustGiottoMatrix
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2265
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2597
 
+
+
+======================
+
+Adjust expression values
 
 Description
-===========
+-----------
 
 Adjust expression values to account for known batch effects or
 technological covariates.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -30,7 +35,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -57,7 +62,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function implements the
 ```removeBatchEffect`` <#removebatcheffect>`__ function to remove known
@@ -65,6 +70,6 @@ batch effects and to adjust expression values according to provided
 covariates.
 
 Value
-=====
+-----
 
-giotto object
+giotto object or exprObj

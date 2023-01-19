@@ -2,18 +2,23 @@
 createCrossSection
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L421
 
 
+
+======================
+
+createCrossSection
+
 Description
-===========
+-----------
 
 Create a virtual 2D cross section.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -40,7 +45,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -133,13 +138,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Creates a virtual 2D cross section object for a given spatial network
 object. The users need to provide the definition of the cross section
 plane (see method).
 
 Value
-=====
+-----
 
 giotto object with updated spatial network slot

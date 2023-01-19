@@ -2,23 +2,24 @@
 doLeidenCluster
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L42
 
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+``doLeidenCluster``
+===================
+
+doLeidenCluster
 
 Description
-===========
+-----------
 
 cluster cells using a NN-network and the Leiden community detection
 algorithm
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -36,31 +37,31 @@ Usage
      init_membership = NULL,
      n_iterations = 1000,
      return_gobject = TRUE,
-     set_seed = T,
+     set_seed = TRUE,
      seed_number = 1234
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g.Â â€œcellâ€)           |
+| ``spat_unit``                 | spatial unit (e.g.Â â€œcellï¿½)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g.Â â€œrnaâ€, â€œdnaâ€,     |
-|                               | â€œproteinâ€)                           |
+| ``feat_type``                 | feature type (e.g.Â â€œrnaï¿½, â€œdnaï¿½,     |
+|                               | â€œproteinï¿½)                           |
 +-------------------------------+--------------------------------------+
 | ``name``                      | name for cluster, default to         |
-|                               | â€œleiden_clusâ€                        |
+|                               | â€œleiden_clusï¿½                        |
 +-------------------------------+--------------------------------------+
 | ``nn_network_to_use``         | type of NN network to use (kNN vs    |
-|                               | sNN), default to â€œsNNâ€               |
+|                               | sNN), default to â€œsNNï¿½               |
 +-------------------------------+--------------------------------------+
 | ``network_name``              | name of NN network to use, default   |
-|                               | to â€œsNN.pcaâ€                         |
+|                               | to â€œsNN.pcaï¿½                         |
 +-------------------------------+--------------------------------------+
 | ``python_path``               | specify specific path to python if   |
 |                               | required                             |
@@ -68,13 +69,13 @@ Arguments
 | ``resolution``                | resolution, default = 1              |
 +-------------------------------+--------------------------------------+
 | ``weight_col``                | weight column to use for edges,      |
-|                               | default to â€œweightâ€                  |
+|                               | default to â€œweightï¿½                  |
 +-------------------------------+--------------------------------------+
 | ``partition_type``            | The type of partition to use for     |
 |                               | optimisation.                        |
 |                               | (e.                                  |
-|                               | g.Â â€œRBConfigurationVertexPartitionâ€, |
-|                               | â€œModularityVertexPartitionâ€)         |
+|                               | g.Â â€œRBConfigurationVertexPartitionï¿½, |
+|                               | â€œModularityVertexPartitionï¿½)         |
 +-------------------------------+--------------------------------------+
 | ``init_membership``           | initial membership of cells for the  |
 |                               | partition                            |
@@ -94,7 +95,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function is a wrapper for the Leiden algorithm implemented in
 python, which can detect communities in graphs of millions of nodes
@@ -105,20 +106,20 @@ for more information.
 
 Partition types available and information:
 
--  list(â€œRBConfigurationVertexPartition:â€) list(â€œImplements Reichardt
-   and Bornholdtâ€™s Potts model:raw-latex:`\n`â€, â€ with a configuration
-   null model. This quality function is well-defined only for positive
-   edge weights.:raw-latex:`\n`â€œ,â€ This quality function uses a linear
-   resolution parameter.â€)
+-  list(â€œRBConfigurationVertexPartition:ï¿½) list(â€œImplements Reichardt
+   and Bornholdtï¿½\\200\\231s Potts model:raw-latex:`\n`ï¿½, ï¿½ with a
+   configuration null model. This quality function is well-defined only
+   for positive edge weights.:raw-latex:`\n`â€œ,ï¿½ This quality function
+   uses a linear resolution parameter.ï¿½)
 
--  list(â€œModularityVertexPartition:â€) list(â€œImplements
-   modularity.:raw-latex:`\n`â€, â€ This quality function is well-defined
-   only for positive edge weights. It does â€œ, list(â€notâ€), â€ use the
-   resolution parameterâ€)
+-  list(â€œModularityVertexPartition:ï¿½) list(â€œImplements
+   modularity.:raw-latex:`\n`ï¿½, ï¿½ This quality function is well-defined
+   only for positive edge weights. It does â€œ, list(ï¿½notï¿½), ï¿½ use the
+   resolution parameterï¿½)
 
 Set weight_col = NULL to give equal weight (=1) to each edge.
 
 Value
-=====
+-----
 
 giotto object with new clusters appended to cell metadata

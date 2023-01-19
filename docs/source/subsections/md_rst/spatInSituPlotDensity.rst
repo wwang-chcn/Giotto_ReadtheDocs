@@ -2,19 +2,24 @@
 spatInSituPlotDensity
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L909
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L1030
 
+
+
+=========================
+
+spatInSituPlotDensity
 
 Description
-===========
+-----------
 
 Function for density plots for features for multiple modalities at the
 spatial in situ level
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -31,11 +36,13 @@ Usage
      polygon_fill = NULL,
      polygon_fill_as_factor = NULL,
      polygon_alpha = 0.5,
+     polygon_size = 0.5,
+     coord_fix_ratio = 1,
      axis_text = 8,
      axis_title = 8,
      legend_text = 6,
      background_color = "black",
-     cow_n_col = 2,
+     cow_n_col = NULL,
      cow_rel_h = 1,
      cow_rel_w = 1,
      cow_align = "h",
@@ -47,7 +54,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -77,6 +84,10 @@ Arguments
 | ``polygon_fill_as_factor``    | is fill color a factor               |
 +-------------------------------+--------------------------------------+
 | ``polygon_alpha``             | alpha of polygon                     |
++-------------------------------+--------------------------------------+
+| ``polygon_size``              | size of polygon border               |
++-------------------------------+--------------------------------------+
+| ``coord_fix_ratio``           | fix ratio between x and y-axis       |
 +-------------------------------+--------------------------------------+
 | ``axis_text``                 | axis text size                       |
 +-------------------------------+--------------------------------------+
@@ -110,17 +121,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 TODO
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other In Situ visualizations:
 ```spatInSituPlotHex`` <#spatinsituplothex>`__ ,

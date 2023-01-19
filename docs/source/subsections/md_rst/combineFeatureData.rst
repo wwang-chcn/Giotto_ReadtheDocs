@@ -2,18 +2,23 @@
 combineFeatureData
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2690
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2885
 
+
+
+======================
+
+combineFeatureData
 
 Description
-===========
+-----------
 
 combine feature data information
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,7 +30,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -41,6 +46,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table with combined spatial feature information

@@ -2,19 +2,24 @@
 findNetworkNeighbors
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3697
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L4506
 
+
+
+========================
+
+Find network neighbors
 
 Description
-===========
+-----------
 
 Find the spatial neighbors for a selected group of cells within the
 selected spatial network.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -45,6 +50,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table

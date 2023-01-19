@@ -2,16 +2,20 @@
 dimPlot_2D_plotly
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L6461
+``dimPlot_2D_plotly``
+=====================
 
-===========
+dimPlot_2D_plotly
+
+Description
+-----------
 
 Visualize cells at their 2D dimension reduction coordinates with plotly
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -44,6 +48,6 @@ Usage
    )
 
 Value
-=====
+-----
 
 plotly object

@@ -2,15 +2,20 @@
 spot_deconvolution
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``spot_deconvolution``
+======================
+
+spot_deconvolution
 
 Description
-===========
+-----------
 
 Rui to fill in
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,16 +2,20 @@
 write_giotto_viewer_dim_reduction
 =================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_viewer.R#L86
+``write_giotto_viewer_dim_reduction``
+=====================================
 
-===========
+write_giotto_viewer_dim_reduction
+
+Description
+-----------
 
 write out dimensional reduction data from a giotto object for the Viewer
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,7 +29,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,6 +53,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 write a .txt and .annot file for the selection annotation

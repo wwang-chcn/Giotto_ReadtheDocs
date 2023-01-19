@@ -2,16 +2,20 @@
 update_giotto_params
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3538
+``update_giotto_params``
+========================
 
-===========
+Update giotto parameters
+
+Description
+-----------
 
 Update giotto parameters
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,18 +2,23 @@
 doLeidenSubCluster
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L1321
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L1352
 
+
+
+======================
+
+doLeidenSubCluster
 
 Description
-===========
+-----------
 
 Further subcluster cells using a NN-network and the Leiden algorithm
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -23,7 +28,7 @@ Usage
      name = "sub_pleiden_clus",
      cluster_column = NULL,
      selected_clusters = NULL,
-     hvf_param = list(reverse_log_scale = T, difference_in_cov = 1, expression_values =
+     hvf_param = list(reverse_log_scale = TRUE, difference_in_cov = 1, expression_values =
        "normalized"),
      hvg_param = NULL,
      hvf_min_perc_cells = 5,
@@ -34,7 +39,7 @@ Usage
      use_all_genes_as_hvg = NULL,
      min_nr_of_hvf = 5,
      min_nr_of_hvg = NULL,
-     pca_param = list(expression_values = "normalized", scale_unit = T),
+     pca_param = list(expression_values = "normalized", scale_unit = TRUE),
      nn_param = list(dimensions_to_use = 1:20),
      k_neighbors = 10,
      resolution = 0.5,
@@ -43,11 +48,11 @@ Usage
      nn_network_to_use = "sNN",
      network_name = "sNN.pca",
      return_gobject = TRUE,
-     verbose = T
+     verbose = TRUE
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -115,7 +120,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function performs subclustering using the Leiden algorithm on
 selected clusters. The systematic steps are:
@@ -141,11 +146,11 @@ selected clusters. The systematic steps are:
    5. do Leiden clustering
 
 Value
-=====
+-----
 
 giotto object with new subclusters appended to cell metadata
 
 Seealso
-=======
+-------
 
 ```doLeidenCluster`` <#doleidencluster>`__

@@ -2,24 +2,28 @@
 split_dendrogram_in_two
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2366
+``split_dendrogram_in_two``
+===========================
 
-===========
+split_dendrogram_in_two
+
+Description
+-----------
 
 Merge selected clusters based on pairwise correlation scores and size of
 cluster.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    split_dendrogram_in_two(dend)
 
 Arguments
-=========
+---------
 
 ======== =================
 Argument Description
@@ -28,6 +32,6 @@ Argument Description
 ======== =================
 
 Value
-=====
+-----
 
 list of two dendrograms and height of node

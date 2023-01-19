@@ -2,23 +2,27 @@
 get_cross_section_coordinates
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L353
+``get_cross_section_coordinates``
+=================================
 
-===========
+get_cross_section_coordinates
+
+Description
+-----------
 
 get local coordinates within cross section plane
 
 Usage
-=====
+-----
 
 .. code:: r
 
    get_cross_section_coordinates(cell_subset_projection_locations)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

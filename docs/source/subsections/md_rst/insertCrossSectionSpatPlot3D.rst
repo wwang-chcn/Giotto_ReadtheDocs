@@ -2,18 +2,23 @@
 insertCrossSectionSpatPlot3D
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L783
 
 
+
+================================
+
+insertCrossSectionSpatPlot3D
+
 Description
-===========
+-----------
 
 Visualize the meshgrid lines of cross section together with cells
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -37,7 +42,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -82,11 +87,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot

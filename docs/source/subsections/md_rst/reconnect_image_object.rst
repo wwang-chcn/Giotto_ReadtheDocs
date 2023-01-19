@@ -2,24 +2,28 @@
 reconnect_image_object
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2418
+``reconnect_image_object``
+==========================
 
-===========
+reconnect_image_object
+
+Description
+-----------
 
 Reconnect giotto image object with dead image pointer using a filepath
 to the original image source
 
 Usage
-=====
+-----
 
 .. code:: r
 
    reconnect_image_object(image_object, image_type, image_path)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -33,13 +37,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This is a simple wrapper function for image object-specific reconnection
 functions and does not include other functionality to find the specific
 image objects in the giotto object.
 
 Value
-=====
+-----
 
 reconnected image_object

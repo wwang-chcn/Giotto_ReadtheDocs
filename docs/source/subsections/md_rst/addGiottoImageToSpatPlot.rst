@@ -2,18 +2,23 @@
 addGiottoImageToSpatPlot
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L879
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L880
 
+
+
+============================
+
+addGiottoImageToSpatPlot
 
 Description
-===========
+-----------
 
 Add a giotto image to a spatial ggplot object post creation
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,7 +30,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -48,6 +53,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 an updated spatial ggplot object

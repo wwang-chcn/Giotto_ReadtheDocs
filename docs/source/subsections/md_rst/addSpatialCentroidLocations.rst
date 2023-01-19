@@ -2,19 +2,24 @@
 addSpatialCentroidLocations
 ===========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1699
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1821
 
+
+
+===============================
+
+addSpatialCentroidLocations
 
 Description
-===========
+-----------
 
 Calculates the centroid locations for the polygons within one or more
 selected layers
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -23,12 +28,14 @@ Usage
      poly_info = "cell",
      feat_type = NULL,
      spat_loc_name = "raw",
+     provenance = poly_info,
+     init_metadata = TRUE,
      return_gobject = TRUE,
      verbose = TRUE
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -42,14 +49,24 @@ Arguments
 | ``spat_loc_name``             | name to give to the created spatial  |
 |                               | locations                            |
 +-------------------------------+--------------------------------------+
+| ``provenance``                | (optional) provenance to assign to   |
+|                               | generated spatLocsObj. If not        |
+|                               | provided, provenance will default to |
+|                               | ``poly_info``                        |
++-------------------------------+--------------------------------------+
+| ``init_metadata``             | initialize cell and feature metadata |
+|                               | for this spatial unit (default =     |
+|                               | TRUE, but should be turned off if    |
+|                               | generated earlier in the workflow)   |
++-------------------------------+--------------------------------------+
 | ``return_gobject``            | return giotto object (default: TRUE) |
 +-------------------------------+--------------------------------------+
 | ``verbose``                   | be verbose                           |
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 If ``return_gobject = TRUE`` the giotto object containing the calculated
 polygon centroids will be returned. If ``return_gobject = FALSE`` only
-the generated polygon centroids will be returned.
+the generated polygon centroids will be returned as ``spatLocObj`` .
