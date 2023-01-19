@@ -2,22 +2,27 @@
 plotUMAP_3D
 ===========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7170
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7225
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``plotUMAP_3D``
+===============
+
+plotUMAP_3D
+
 Description
-===========
+-----------
 
 Visualize cells according to dimension reduction coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -29,7 +34,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -72,17 +77,17 @@ Arguments
    "\n", "    ", list(list(list("show_plot")), list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "  ")
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 plotly
 
 Seealso
-=======
+-------
 
 Other reduced dimension visualizations: ```dimPlot2D`` <#dimplot2d>`__ ,
 ```dimPlot3D`` <#dimplot3d>`__ , ```dimPlot`` <#dimplot>`__ ,

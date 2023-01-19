@@ -2,27 +2,34 @@
 spatGenePlot
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4894
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4944
+
+
 
    :format: latex
 ..
 
+``spatGenePlot``
+================
+
+spatGenePlot
+
 Description
-===========
+-----------
 
 Visualize cells and gene expression according to spatial coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
    spatGenePlot(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -46,17 +53,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 ```spatGenePlot3D`` <#spatgeneplot3d>`__ and
 ```spatGenePlot2D`` <#spatgeneplot2d>`__

@@ -2,16 +2,20 @@
 solve_dampened_WLSj
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1771
+``solve_dampened_WLSj``
+=======================
 
-===========
+solve_dampened_WLSj
+
+Description
+-----------
 
 solve WLS given a dampening constant
 
 Usage
-=====
+-----
 
 .. code:: r
 

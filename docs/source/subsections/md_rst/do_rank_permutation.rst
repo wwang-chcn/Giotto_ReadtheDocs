@@ -2,16 +2,20 @@
 do_rank_permutation
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L848
+``do_rank_permutation``
+=======================
 
-===========
+do_rank_permutation
+
+Description
+-----------
 
 creates permutation for the rankEnrich test
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,16 +2,20 @@
 rank_binarize_wrapper
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L485
+``rank_binarize_wrapper``
+=========================
 
-===========
+rank_binarize_wrapper
+
+Description
+-----------
 
 wrapper for rank binarization function
 
 Usage
-=====
+-----
 
 .. code:: r
 

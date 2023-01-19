@@ -2,18 +2,23 @@
 addCellStatistics
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2956
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3736
 
+
+
+=====================
+
+addCellStatistics
 
 Description
-===========
+-----------
 
 adds cells statistics to the giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -48,7 +53,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function will add the following statistics to cell metadata:
 
@@ -59,6 +64,6 @@ This function will add the following statistics to cell metadata:
 -  total_expr: Shows the total sum of feature expression per cell
 
 Value
-=====
+-----
 
 giotto object if return_gobject = TRUE

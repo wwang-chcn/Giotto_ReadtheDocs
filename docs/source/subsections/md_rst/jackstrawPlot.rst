@@ -2,18 +2,23 @@
 jackstrawPlot
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L891
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L935
 
+
+
+=================
+
+jackstrawPlot
 
 Description
-===========
+-----------
 
 identify significant prinicipal components (PCs)
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -40,7 +45,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -90,13 +95,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 The Jackstraw method uses the ```permutationPA`` <#permutationpa>`__
 function. By systematically permuting genes it identifies robust, and
 thus significant, PCs. list()
 
 Value
-=====
+-----
 
 ggplot object for jackstraw method

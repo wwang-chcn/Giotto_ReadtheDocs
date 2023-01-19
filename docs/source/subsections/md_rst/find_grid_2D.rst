@@ -2,16 +2,20 @@
 find_grid_2D
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1785
+``find_grid_2D``
+================
 
-===========
+find_grid_2D
+
+Description
+-----------
 
 find grid location in 2D
 
 Usage
-=====
+-----
 
 .. code:: r
 

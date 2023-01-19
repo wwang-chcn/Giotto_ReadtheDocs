@@ -2,16 +2,20 @@
 do_spatial_grid_averaging
 =========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3024
+``do_spatial_grid_averaging``
+=============================
 
-===========
+do_spatial_grid_averaging
+
+Description
+-----------
 
 smooth gene expression over a defined spatial grid
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -24,6 +28,6 @@ Usage
    )
 
 Value
-=====
+-----
 
 matrix with smoothened gene expression values based on spatial grid

@@ -2,18 +2,23 @@
 spatDeconvPlot
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L3538
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L3580
 
+
+
+==================
+
+spatDeconvPlot
 
 Description
-===========
+-----------
 
 Visualize cell type enrichment / deconvolution results in a scatterpie
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -38,7 +43,7 @@ Usage
      title = NULL,
      axis_text = 8,
      axis_title = 8,
-     coord_fix_ratio = TRUE,
+     coord_fix_ratio = 1,
      show_plot = NA,
      return_plot = NA,
      save_plot = NA,
@@ -47,7 +52,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -113,11 +118,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot

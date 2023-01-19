@@ -2,18 +2,23 @@
 subClusterCells
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2007
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2038
 
+
+
+===================
+
+subClusterCells
 
 Description
-===========
+-----------
 
 subcluster cells
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -44,7 +49,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -105,7 +110,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function performs subclustering on selected clusters. The
 systematic steps are:
@@ -131,12 +136,12 @@ systematic steps are:
    5. do clustering
 
 Value
-=====
+-----
 
 giotto object with new subclusters appended to cell metadata
 
 Seealso
-=======
+-------
 
 ```doLouvainCluster_multinet`` <#dolouvainclustermultinet>`__ ,
 ```doLouvainCluster_community`` <#dolouvainclustercommunity>`__ and

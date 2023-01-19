@@ -2,18 +2,20 @@
 binSpectMultiMatrix
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1259
+``binSpectMultiMatrix``
+=======================
 
+binSpectMultiMatrix
 
 Description
-===========
+-----------
 
 binSpect for a single spatial network and a provided expression matrix
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -45,7 +47,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -118,6 +120,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table with results

@@ -2,28 +2,35 @@
 rankEnrich
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1077
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1101
+
+
 
    :format: latex
 ..
 
+``rankEnrich``
+==============
+
+rankEnrich
+
 Description
-===========
+-----------
 
 Function to calculate gene signature enrichment scores per spatial
 position using a rank based approach.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    rankEnrich(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -61,6 +68,6 @@ Arguments
        "rbp_p")), list("fractional binarization threshold (default = 0.99)")), "\n", "    ", list(list(list("num_agg")), list("number of top genes to aggregate (default = 100)")), "\n", "    ", list(list(list("name")), list("to give to spatial enrichment results, default = rank")), "\n", "    ", list(list(list("return_gobject")), list("return giotto object")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```runRankEnrich`` <#runrankenrich>`__

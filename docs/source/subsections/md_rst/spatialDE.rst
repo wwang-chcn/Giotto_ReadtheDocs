@@ -2,18 +2,23 @@
 spatialDE
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1844
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1855
 
+
+
+=============
+
+spatialDE
 
 Description
-===========
+-----------
 
 Compute spatial variable genes with spatialDE method
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -36,7 +41,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -79,7 +84,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function is a wrapper for the SpatialDE method originally
 implemented in python. See publication
@@ -87,6 +92,6 @@ c(â€œ\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}â€,
 â€œ10.1038/nmeth.4636â€) list(â€œtools:::Rd_expr_doi("10.1038/nmeth.4636")â€)
 
 Value
-=====
+-----
 
 a list of data.frames with results and plot (optional)

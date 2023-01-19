@@ -2,16 +2,20 @@
 list_feat_metadata
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2073
+``list_feat_metadata``
+======================
 
-===========
+list_feat_metadata
+
+Description
+-----------
 
 lists the available feature metadata
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -23,17 +27,17 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
+| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
 +-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
-|                               | “protein�)                           |
+| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
+|                               | “protein”)                           |
 +-------------------------------+--------------------------------------+
 | ``return_uniques``            | return unique nesting names (ignores |
 |                               | if final object exists/is correct    |
@@ -41,6 +45,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 names and locations of available feature metadata as data.table

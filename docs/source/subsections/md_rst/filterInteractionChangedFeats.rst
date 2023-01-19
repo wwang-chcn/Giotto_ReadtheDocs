@@ -2,18 +2,23 @@
 filterInteractionChangedFeats
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1317
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1329
 
+
+
+=================================
+
+filterInteractionChangedFeats
 
 Description
-===========
+-----------
 
 Filter Interaction Changed Feature scores.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -32,7 +37,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -68,6 +73,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 icfObject that contains the filtered differential feature scores

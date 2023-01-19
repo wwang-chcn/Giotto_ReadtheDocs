@@ -2,16 +2,20 @@
 subset_giotto_points_object
 ===========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L866
+``subset_giotto_points_object``
+===============================
 
-===========
+Subset giotto points object
+
+Description
+-----------
 
 Subset a single giotto points object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,6 +29,6 @@ Usage
    )
 
 Details
-=======
+-------
 
 Subset on feature ids and on x,y coordinates

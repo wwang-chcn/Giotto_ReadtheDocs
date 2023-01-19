@@ -2,18 +2,23 @@
 loadHMRF
 ========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L302
+https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L304
 
+
+
+============
+
+loadHMRF
 
 Description
-===========
+-----------
 
 load previous HMRF
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -26,7 +31,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ====================== ======================================
 Argument               Description
@@ -39,11 +44,11 @@ Argument               Description
 ====================== ======================================
 
 Details
-=======
+-------
 
 Description of HMRF parameters …
 
 Value
-=====
+-----
 
 reloads a previous ran HMRF from doHRMF

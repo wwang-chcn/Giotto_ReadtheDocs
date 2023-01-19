@@ -2,16 +2,20 @@
 plot_feature_raster_density_layer
 =================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L749
+``plot_feature_raster_density_layer``
+=====================================
 
-===========
+plot_feature_raster_density_layer
+
+Description
+-----------
 
 low level function to plot density plots at the spatial in situ level
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,11 +29,11 @@ Usage
    )
 
 Details
-=======
+-------
 
 This function can plot one feature for one modality.
 
 Value
-=====
+-----
 
 ggplot

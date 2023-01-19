@@ -2,17 +2,21 @@
 subset_nearest_network
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L669
+``subset_nearest_network``
+==========================
 
-===========
+Subset nearest network
+
+Description
+-----------
 
 Subset nearest network results from giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
-   subset_nearest_network(gobject, spat_unit, filter_bool_cells)
+   subset_nearest_network(gobject, spat_unit, feat_type, cell_ids)

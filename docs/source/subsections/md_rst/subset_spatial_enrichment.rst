@@ -2,17 +2,21 @@
 subset_spatial_enrichment
 =========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L729
+``subset_spatial_enrichment``
+=============================
 
-===========
+Subset spatial enrichment
+
+Description
+-----------
 
 Subset spatial enrichment results from giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
-   subset_spatial_enrichment(gobject, spat_unit, feat_type, filter_bool_cells)
+   subset_spatial_enrichment(gobject, spat_unit, feat_type, cell_ids)

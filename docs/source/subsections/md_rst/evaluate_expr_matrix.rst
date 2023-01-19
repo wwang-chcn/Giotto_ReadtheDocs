@@ -2,11 +2,15 @@
 evaluate_expr_matrix
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L446
+``evaluate_expr_matrix``
+========================
 
-===========
+Evaluate expression matrix
+
+Description
+-----------
 
 Evaluate expression matrices that are provided as input and converts
 them to preferred format for Giotto object. A filepath can also be
@@ -15,14 +19,14 @@ will attempt to read the matrix file in using
 ```readExprMatrix`` <#readexprmatrix>`__ .
 
 Usage
-=====
+-----
 
 .. code:: r
 
    evaluate_expr_matrix(inputmatrix, sparse = TRUE, cores = NA)
 
 Arguments
-=========
+---------
 
 =============== =====================================
 Argument        Description
@@ -33,12 +37,12 @@ Argument        Description
 =============== =====================================
 
 Details
-=======
+-------
 
 The inputmatrix can be a matrix, sparse matrix, data.frame, data.table
 or path to any of these.
 
 Value
-=====
+-----
 
 sparse matrix

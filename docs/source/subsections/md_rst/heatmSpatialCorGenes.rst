@@ -2,27 +2,34 @@
 heatmSpatialCorGenes
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3781
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3800
+
+
 
    :format: latex
 ..
 
+``heatmSpatialCorGenes``
+========================
+
+heatmSpatialCorGenes
+
 Description
-===========
+-----------
 
 Create heatmap of spatially correlated genes
 
 Usage
-=====
+-----
 
 .. code:: r
 
    heatmSpatialCorGenes(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -57,6 +64,6 @@ Arguments
    list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```heatmSpatialCorFeats`` <#heatmspatialcorfeats>`__

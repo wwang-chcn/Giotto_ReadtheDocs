@@ -2,17 +2,31 @@
 libNorm_giotto
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L81
+``libNorm_giotto``
+==================
 
-===========
+Normalize for library size
 
-libNorm_giotto
+Description
+-----------
+
+Normalize for library size
 
 Usage
-=====
+-----
 
 .. code:: r
 
    libNorm_giotto(mymatrix, scalefactor)
+
+Arguments
+---------
+
+=============== =============
+Argument        Description
+=============== =============
+``mymatrix``    matrix object
+``scalefactor`` scalefactor
+=============== =============

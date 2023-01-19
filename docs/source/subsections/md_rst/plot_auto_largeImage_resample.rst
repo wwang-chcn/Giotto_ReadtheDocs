@@ -2,15 +2,19 @@
 plot_auto_largeImage_resample
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L61
-
+.. role:: raw-latex(raw)
    :format: latex
 ..
 
+``plot_auto_largeImage_resample``
+=================================
+
+Optimized largeImage resampling
+
 Description
-===========
+-----------
 
 Downsample ``largeImage`` for plotting. Uses
 ```spatSample`` <#spatsample>`__ to load only a portion of the original
@@ -25,15 +29,15 @@ This function examines the ROI dimensions as defined through the limits
 of the spatial locations to be plotted, and decides between the
 following two methods in order to avoid this issue:
 
--  list(list(“Method A.�), � First crop original image and then sample n
-   values where:raw-latex:`\n`“,� n = 500,000 to generate final image�)
+-  list(list(“Method A.”), ” First crop original image and then sample n
+   values where:raw-latex:`\n`“,” n = 500,000 to generate final image”)
 
--  | list(list(“Method B.�), � First oversample n values and then crop,
-     where n = 500,000:raw-latex:`\n`“,� scaled by a value >1. Scaling
-     factor increases the smaller the ROI is and:raw-latex:`\n`“,� is
+-  | list(list(“Method B.”), ” First oversample n values and then crop,
+     where n = 500,000:raw-latex:`\n`“,” scaled by a value >1. Scaling
+     factor increases the smaller the ROI is and:raw-latex:`\n`“,” is
      defined by: original dimensions/crop dimensions where the larger
-     ratio between:raw-latex:`\n`“,� x and y dims is chosen. Scale
-     factor is capped by “, list(�max_resample_scale�))
+     ratio between:raw-latex:`\n`“,” x and y dims is chosen. Scale
+     factor is capped by “, list(”max_resample_scale”))
    | Control points for this function are set by ``max_crop`` which
      decides the max ROI area after which switchover to method B happens
      in order to avoid laborious crops and ``max_resample_scale`` which
@@ -43,7 +47,7 @@ following two methods in order to avoid this issue:
      behavior happens. When set to ``FALSE`` , only method A is used.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -61,7 +65,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -105,11 +109,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 a ``giottoLargeImage`` cropped and resampled properly for plotting
 
 Seealso
-=======
+-------
 
 ```spatSample`` <#spatsample>`__

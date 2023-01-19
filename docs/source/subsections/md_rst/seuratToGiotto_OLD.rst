@@ -2,23 +2,28 @@
 seuratToGiotto_OLD
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``seuratToGiotto_OLD``
+======================
+
+seuratToGiotto_OLD
 
 Description
-===========
+-----------
 
 Converts Seurat object into a Giotto object. Deprecated, see
 ```giottoToSeurat`` <#giottotoseurat>`__
 
 Usage
-=====
+-----
 
 .. code:: r
 
    seuratToGiotto_OLD(obj_use = NULL, ...)
 
 Arguments
-=========
+---------
 
 =========== =========================
 Argument    Description
@@ -28,6 +33,6 @@ Argument    Description
 =========== =========================
 
 Value
-=====
+-----
 
 Giotto object

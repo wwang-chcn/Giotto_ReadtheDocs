@@ -2,22 +2,27 @@
 binSpectSingleMatrix
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L642
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``binSpectSingleMatrix``
+========================
+
+binSpectSingleMatrix
+
 Description
-===========
+-----------
 
 binSpect for a single spatial network and a provided expression matrix
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -48,7 +53,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -117,7 +122,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 We provide two ways to identify spatial genes based on gene expression
 binarization. Both methods are identicial except for how binarization is
@@ -164,6 +169,6 @@ performed.
      workload.
 
 Value
-=====
+-----
 
 data.table with results (see details)

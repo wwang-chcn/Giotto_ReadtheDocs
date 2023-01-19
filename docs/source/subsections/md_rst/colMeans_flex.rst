@@ -2,23 +2,27 @@
 colMeans_flex
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L98
+``colMeans_flex``
+=================
 
-===========
+colMeans_flex
+
+Description
+-----------
 
 colMeans_flex
 
 Usage
-=====
+-----
 
 .. code:: r
 
    colMeans_flex(mymatrix)
 
 Arguments
-=========
+---------
 
 ============ =============
 Argument     Description

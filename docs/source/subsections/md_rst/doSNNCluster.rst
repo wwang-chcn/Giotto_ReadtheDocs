@@ -2,18 +2,23 @@
 doSNNCluster
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L611
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L621
 
+
+
+================
+
+doSNNCluster
 
 Description
-===========
+-----------
 
 Cluster cells using a SNN cluster approach.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -32,7 +37,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -74,11 +79,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 See ```sNNclust`` <#snnclust>`__ from dbscan package
 
 Value
-=====
+-----
 
 giotto object with new clusters appended to cell metadata

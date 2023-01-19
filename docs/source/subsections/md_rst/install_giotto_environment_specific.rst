@@ -2,22 +2,26 @@
 install_giotto_environment_specific
 ===================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L95
+``install_giotto_environment_specific``
+=======================================
 
-===========
+install_giotto_environment_specific
+
+Description
+-----------
 
 installation of giotto environment
 
 Usage
-=====
+-----
 
 .. code:: r
 
    install_giotto_environment_specific(
      packages_to_install = c("pandas", "networkx", "python-igraph", "leidenalg",
        "python-louvain", "python.app", "scikit-learn"),
-     python_version = "3.6",
+     python_version = "3.10.2",
      verbose = TRUE
    )

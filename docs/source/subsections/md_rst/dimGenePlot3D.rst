@@ -2,17 +2,24 @@
 dimGenePlot3D
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L9106
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L9165
 
-===========
+
+
+=================
+
+dimGenePlot3D
+
+Description
+-----------
 
 Visualize cells and gene expression according to dimension reduction
 coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -51,7 +58,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -128,17 +135,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other dimension reduction gene expression visualizations:
 ```dimGenePlot2D`` <#dimgeneplot2d>`__ ,

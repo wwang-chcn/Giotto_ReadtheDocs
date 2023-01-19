@@ -2,27 +2,34 @@
 filterInteractionChangedGenes
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1382
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1394
+
+
 
    :format: latex
 ..
 
+``filterInteractionChangedGenes``
+=================================
+
+filterInteractionChangedGenes
+
 Description
-===========
+-----------
 
 Filter Interaction Changed Feature scores.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    filterInteractionChangedGenes(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -58,6 +65,6 @@ Arguments
    "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```filterInteractionChangedFeats`` <#filterinteractionchangedfeats>`__

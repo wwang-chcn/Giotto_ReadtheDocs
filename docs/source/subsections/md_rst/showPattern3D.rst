@@ -2,18 +2,23 @@
 showPattern3D
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2644
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2660
 
+
+
+=================
+
+showPattern3D
 
 Description
-===========
+-----------
 
 show patterns for 3D spatial data
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -39,7 +44,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -86,6 +91,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 plotly

@@ -2,16 +2,20 @@
 spatPlot2D_single
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L2699
+``spatPlot2D_single``
+=====================
 
-===========
+spatPlot2D_single
+
+Description
+-----------
 
 Visualize cells according to spatial coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -58,7 +62,7 @@ Usage
      other_cell_color = "lightgrey",
      other_point_size = 1,
      other_cells_alpha = 0.1,
-     coord_fix_ratio = NULL,
+     coord_fix_ratio = 1,
      title = NULL,
      show_legend = T,
      legend_text = 8,
@@ -78,7 +82,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -210,16 +214,16 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 ```spatPlot3D`` <#spatplot3d>`__

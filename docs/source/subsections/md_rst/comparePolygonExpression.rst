@@ -2,23 +2,29 @@
 comparePolygonExpression
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L10262
+https://github.com/drieslab/Giotto/tree/suite/R/interactivity.R#L299
 
+
+
+============================
+
+Compare gene expression between polygon areas
 
 Description
-===========
+-----------
 
 Compare gene expression between polygon areas
 
 Usage
-=====
+-----
 
 .. code:: r
 
    comparePolygonExpression(
      gobject,
+     polygon_name = "selections",
      spat_unit = "cell",
      feat_type = "rna",
      selected_feats = "top_genes",
@@ -28,12 +34,14 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``gobject``                   | A Giotto object                      |
++-------------------------------+--------------------------------------+
+| ``polygon_name``              | name of polygon selections           |
 +-------------------------------+--------------------------------------+
 | ``spat_unit``                 | spatial unit (e.g. “cell�)           |
 +-------------------------------+--------------------------------------+
@@ -54,6 +62,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 A ComplexHeatmap::Heatmap object

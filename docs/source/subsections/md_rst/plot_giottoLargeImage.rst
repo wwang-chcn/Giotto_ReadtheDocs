@@ -2,17 +2,21 @@
 plot_giottoLargeImage
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1469
+``plot_giottoLargeImage``
+=========================
 
-===========
+plot_giottoLargeImage
+
+Description
+-----------
 
 Plot a downsampled version of giottoLargeImage. Cropping can increase
 plot resolution of region of interest.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -31,7 +35,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -56,11 +60,11 @@ Arguments
 |                               | detected                             |
 +-------------------------------+--------------------------------------+
 | ``stretch``                   | character. Option to stretch the     |
-|                               | values to increase contrast: “lin�   |
-|                               | linear or “hist� (histogram)         |
+|                               | values to increase contrast: “lin”   |
+|                               | linear or “hist” (histogram)         |
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 plot

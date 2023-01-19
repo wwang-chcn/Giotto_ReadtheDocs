@@ -2,25 +2,30 @@
 showGiottoSpatLocs
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1465
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2645
 
+
+
+======================
+
+showGiottoSpatLocs
 
 Description
-===========
+-----------
 
 shows the available spatial locations
 
 Usage
-=====
+-----
 
 .. code:: r
 
    showGiottoSpatLocs(gobject, nrows = 4)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -32,17 +37,19 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 prints the name and small subset of available data.table
 
 Seealso
-=======
+-------
 
 Other functions to show data in giotto object:
+```showGiottoCellMetadata`` <#showgiottocellmetadata>`__ ,
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,
 ```showGiottoExpression`` <#showgiottoexpression>`__ ,
 ```showGiottoFeatInfo`` <#showgiottofeatinfo>`__ ,
+```showGiottoFeatMetadata`` <#showgiottofeatmetadata>`__ ,
 ```showGiottoImageNames`` <#showgiottoimagenames>`__ ,
 ```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
 ```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,

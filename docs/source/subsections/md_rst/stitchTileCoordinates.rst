@@ -2,26 +2,31 @@
 stitchTileCoordinates
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L254
 
 
+
+=========================
+
+stitchTileCoordinates
+
 Description
-===========
+-----------
 
 Helper function to stitch tile coordinates together to form one complete
 picture
 
 Usage
-=====
+-----
 
 .. code:: r
 
    stitchTileCoordinates(location_file, Xtilespan, Ytilespan)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

@@ -2,16 +2,20 @@
 create_giotto_polygon_object
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L35
+``create_giotto_polygon_object``
+================================
 
-===========
+Create a giotto polygon object
+
+Description
+-----------
 
 Create a giotto polygon object
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,16 +2,20 @@
 subset_giotto_polygon_object
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L765
+``subset_giotto_polygon_object``
+================================
 
-===========
+Subset giotto polygon object
+
+Description
+-----------
 
 Subset a single giotto polygon object
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,18 +2,23 @@
 violinPlot
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1721
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1723
 
+
+
+==============
+
+violinPlot
 
 Description
-===========
+-----------
 
 Creates violinplot for selected clusters
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -40,7 +45,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -96,6 +101,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 ggplot

@@ -2,18 +2,23 @@
 addFeatMetadata
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2713
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3471
 
+
+
+===================
+
+Add feature metadata
 
 Description
-===========
+-----------
 
 Adds feature metadata to the giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -48,7 +53,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 You can add additional feature metadata in two manners: list() 1.
 Provide a data.table or data.frame with feature annotations in the same
@@ -58,6 +63,6 @@ which column contains the feature IDs, these feature IDs need to match
 with the list(â€œfeat_IDâ€) column in fDataDT(gobject)
 
 Value
-=====
+-----
 
 giotto object

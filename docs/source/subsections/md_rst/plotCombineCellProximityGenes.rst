@@ -2,27 +2,34 @@
 plotCombineCellProximityGenes
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1833
+
+
 
    :format: latex
 ..
 
+``plotCombineCellProximityGenes``
+=================================
+
+plotCombineCellProximityGenes
+
 Description
-===========
+-----------
 
 Create visualization for combined (pairwise) ICG scores
 
 Usage
-=====
+-----
 
 .. code:: r
 
    plotCombineCellProximityGenes(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -60,6 +67,6 @@ Arguments
    "  ")
 
 Seealso
-=======
+-------
 
 ```plotCombineInteractionChangedFeats`` <#plotcombineinteractionchangedfeats>`__

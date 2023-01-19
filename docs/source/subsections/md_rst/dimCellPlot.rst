@@ -2,29 +2,34 @@
 dimCellPlot
 ===========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L6107
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L6162
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``dimCellPlot``
+===============
+
+dimCellPlot
+
 Description
-===========
+-----------
 
 Visualize cells according to dimension reduction coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
    dimCellPlot(gobject, ...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -69,18 +74,18 @@ Arguments
        list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
 
 Details
-=======
+-------
 
 Description of parameters. For 3D plots see
 ```dimCellPlot2D`` <#dimcellplot2d>`__
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other dimension reduction cell annotation visualizations:
 ```dimCellPlot2D`` <#dimcellplot2d>`__

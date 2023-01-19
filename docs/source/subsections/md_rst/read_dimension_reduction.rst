@@ -2,16 +2,20 @@
 read_dimension_reduction
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1364
+``read_dimension_reduction``
+============================
 
-===========
+Read dimensional reduction
+
+Description
+-----------
 
 read dimension reduction results from list
 
 Usage
-=====
+-----
 
 .. code:: r
 

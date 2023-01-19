@@ -2,19 +2,24 @@
 createGiottoLargeImage
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L253
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L254
 
+
+
+==========================
+
+createGiottoLargeImage
 
 Description
-===========
+-----------
 
 Creates a large giotto image that can be added to a Giotto subcellular
 object. Generates deep copy of SpatRaster
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -34,7 +39,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -67,6 +72,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 a giottoLargeImage object

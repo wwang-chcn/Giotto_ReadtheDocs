@@ -2,18 +2,23 @@
 get_polygon_info
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L931
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1865
 
+
+
+====================
+
+Get polygon info
 
 Description
-===========
+-----------
 
 Get giotto polygon spatVector
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -25,7 +30,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -41,7 +46,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
-=======
+-------
 
 Other polygon info data accessor functions:
 ```set_polygon_info`` <#setpolygoninfo>`__
@@ -52,6 +57,7 @@ Other functions to get data from giotto object:
 ```get_expression_values`` <#getexpressionvalues>`__ ,
 ```get_feature_info`` <#getfeatureinfo>`__ ,
 ```get_giottoImage`` <#getgiottoimage>`__ ,
+```get_multiomics`` <#getmultiomics>`__ ,
 ```get_spatialGrid`` <#getspatialgrid>`__ ,
 ```get_spatialNetwork`` <#getspatialnetwork>`__ ,
 ```get_spatial_enrichment`` <#getspatialenrichment>`__ ,

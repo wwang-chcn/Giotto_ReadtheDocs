@@ -2,23 +2,27 @@
 convert_mgImage_to_array_DT
 ===========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L468
+``convert_mgImage_to_array_DT``
+===============================
 
-===========
+convert_mgImage_to_array_DT
+
+Description
+-----------
 
 converts a magick image object to a data.table
 
 Usage
-=====
+-----
 
 .. code:: r
 
    convert_mgImage_to_array_DT(mg_object)
 
 Arguments
-=========
+---------
 
 ============= ===================================
 Argument      Description
@@ -27,6 +31,6 @@ Argument      Description
 ============= ===================================
 
 Value
-=====
+-----
 
 data.table with image pixel information

@@ -2,27 +2,34 @@
 filterCellProximityGenes
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1397
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1409
+
+
 
    :format: latex
 ..
 
+``filterCellProximityGenes``
+============================
+
+filterCellProximityGenes
+
 Description
-===========
+-----------
 
 Filter Interaction Changed Feature scores.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    filterCellProximityGenes(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -58,6 +65,6 @@ Arguments
    "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```filterInteractionChangedFeats`` <#filterinteractionchangedfeats>`__

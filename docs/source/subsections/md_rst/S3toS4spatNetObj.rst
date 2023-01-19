@@ -2,22 +2,27 @@
 S3toS4spatNetObj
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``S3toS4spatNetObj``
+====================
+
+Spatial Networks
 
 Description
-===========
+-----------
 
 convert S3 spatialNetworkObj to S4
 
 Usage
-=====
+-----
 
 .. code:: r
 
    S3toS4spatNetObj(object, spat_unit = NULL)
 
 Arguments
-=========
+---------
 
 ============= ===============================
 Argument      Description

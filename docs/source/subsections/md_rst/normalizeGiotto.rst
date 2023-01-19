@@ -2,22 +2,27 @@
 normalizeGiotto
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2143
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2474
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``normalizeGiotto``
+===================
+
+normalizeGiotto
+
 Description
-===========
+-----------
 
 fast normalize and/or scale expresion values of Giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -42,7 +47,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -89,7 +94,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Currently there are two ‘methods’ to normalize your raw counts data.
 
@@ -134,6 +139,6 @@ list()
       update_slot parameters
 
 Value
-=====
+-----
 
 giotto object

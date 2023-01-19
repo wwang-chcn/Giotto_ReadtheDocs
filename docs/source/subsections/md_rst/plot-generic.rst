@@ -2,25 +2,31 @@
 plot-generic
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``plot-generic``
+================
+
+Preview a Giotto spatial object
 
 Description
-===========
+-----------
 
 S4 generic for previewing Giotto’s image and subcellular objects.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    list(list("plot"), list("giottoImage,missing"))(x, y, ...)
    list(list("plot"), list("giottoLargeImage,missing"))(x, y, ...)
-   list(list("plot"), list("giottoPolygon,missing"))(x, y, ...)
+   list(list("plot"), list("giottoPolygon,missing"))(x, y, point_size = 0.1, type = c("poly", "centroid"), ...)
    list(list("plot"), list("giottoPoints,missing"))(x, y, point_size = 0.1, feats = NULL, ...)
+   list(list("plot"), list("spatLocsObj,missing"))(x, y, ...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -33,10 +39,13 @@ Arguments
 | ``list()``                    | additional parameters to pass        |
 +-------------------------------+--------------------------------------+
 | ``point_size``                | size of points when plotting         |
-|                               | giottoPoint                          |
+|                               | giottoPoints                         |
++-------------------------------+--------------------------------------+
+| ``type``                      | what to plot: either ‘poly’          |
+|                               | (default) or polygon ‘centroid’      |
 +-------------------------------+--------------------------------------+
 | ``feats``                     | specific features to plot within     |
-|                               | giottoPoint object (defaults to      |
+|                               | giottoPoints object (defaults to     |
 |                               | NULL, meaning all available          |
 |                               | features)                            |
 +-------------------------------+--------------------------------------+

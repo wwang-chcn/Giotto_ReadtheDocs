@@ -2,18 +2,23 @@
 createNearestNetwork
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/NN_network.R#L56
 
 
+
+========================
+
+createNearestNetwork
+
 Description
-===========
+-----------
 
 create a nearest neighbour (NN) network
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -38,7 +43,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -83,7 +88,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function creates a k-nearest neighbour (kNN) or shared nearest
 neighbour (sNN) network based on the provided dimension reduction space.
@@ -124,6 +129,6 @@ Output for sNN:
    irrespective of minimum_shared setting
 
 Value
-=====
+-----
 
 giotto object with updated NN network

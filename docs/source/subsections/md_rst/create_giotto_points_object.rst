@@ -2,16 +2,20 @@
 create_giotto_points_object
 ===========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1033
+``create_giotto_points_object``
+===============================
 
-===========
+Create giotto points object
+
+Description
+-----------
 
 Create giotto points object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -22,7 +26,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ============== =============================================
 Argument       Description

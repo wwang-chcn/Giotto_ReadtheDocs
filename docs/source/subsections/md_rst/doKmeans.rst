@@ -2,18 +2,23 @@
 doKmeans
 ========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L727
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L738
 
+
+
+============
+
+doKmeans
 
 Description
-===========
+-----------
 
 cluster cells using kmeans algorithm
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -40,7 +45,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -97,16 +102,16 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description on how to use Kmeans clustering method.
 
 Value
-=====
+-----
 
 giotto object with new clusters appended to cell metadata
 
 Seealso
-=======
+-------
 
 ```kmeans`` <#kmeans>`__

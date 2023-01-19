@@ -2,19 +2,24 @@
 createGiottoPolygonsFromMask
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L312
 
 
+
+================================
+
+Create giotto polygons from mask file
+
 Description
-===========
+-----------
 
 Creates Giotto polygon object from a mask file (e.g. segmentation
 results)
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -36,7 +41,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -81,6 +86,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 a giotto polygon object

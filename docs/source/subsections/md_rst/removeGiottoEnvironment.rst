@@ -2,25 +2,30 @@
 removeGiottoEnvironment
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L308
+https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L316
 
+
+
+===========================
+
+removeGiottoEnvironment
 
 Description
-===========
+-----------
 
 removeGiottoEnvironment
 
 Usage
-=====
+-----
 
 .. code:: r
 
    removeGiottoEnvironment(verbose = TRUE)
 
 Arguments
-=========
+---------
 
 =========== ===========
 Argument    Description
@@ -29,7 +34,7 @@ Argument    Description
 =========== ===========
 
 Details
-=======
+-------
 
 Removes a previously installed giotto environment. See
-`installGiottoEnvironment <../md_rst/installGiottoEnvironment.html>`__.
+```installGiottoEnvironment`` <#installgiottoenvironment>`__ .

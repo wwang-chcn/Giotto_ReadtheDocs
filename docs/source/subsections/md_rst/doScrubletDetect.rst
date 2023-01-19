@@ -2,18 +2,23 @@
 doScrubletDetect
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/python_scrublet.R#L18
 
 
+
+====================
+
+doScrubletDetect
+
 Description
-===========
+-----------
 
 run scrublet doublet detection for raw expression.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -31,7 +36,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -69,12 +74,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 list including doublet scores and classifications
 
 Seealso
-=======
+-------
 
 This function wraps the python package scrublet
 c(â€œ\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}â€,

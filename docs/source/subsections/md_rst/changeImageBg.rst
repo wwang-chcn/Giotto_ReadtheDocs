@@ -2,19 +2,24 @@
 changeImageBg
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L521
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L522
 
+
+
+=================
+
+changeImageBg
 
 Description
-===========
+-----------
 
 Function to change the background color of a magick image plot to
 another color
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -45,6 +50,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 magick image or giotto image object with updated background color

@@ -2,18 +2,23 @@
 createSpatialNetwork
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1598
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1605
 
+
+
+========================
+
+createSpatialNetwork
 
 Description
-===========
+-----------
 
 Create a spatial network based on cell centroid physical distances.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -41,7 +46,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -112,7 +117,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Creates a spatial network connecting single-cells based on their
 physical distance to each other. For Delaunay method, neighbors will be
@@ -127,6 +132,6 @@ spatial dimensions to use, e.g. c(“sdimx’,�sdimy�) or a numerical
 vector, e.g. 2:3
 
 Value
-=====
+-----
 
 giotto object with updated spatial network slot

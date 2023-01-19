@@ -2,16 +2,20 @@
 write_giotto_viewer_numeric_annotation
 ======================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_viewer.R#L61
+``write_giotto_viewer_numeric_annotation``
+==========================================
 
-===========
+write_giotto_viewer_numeric_annotation
+
+Description
+-----------
 
 write out numeric annotation data from a giotto object for the Viewer
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -22,7 +26,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -36,6 +40,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 write a .txt and .annot file for the selection annotation

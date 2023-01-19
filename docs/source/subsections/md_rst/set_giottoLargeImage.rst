@@ -2,24 +2,28 @@
 set_giottoLargeImage
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1306
+``set_giottoLargeImage``
+========================
 
-===========
+Set terra -based giotto ``largeImage``
+
+Description
+-----------
 
 Set a giottoLargeImage for a giotto object with no additional
 modifications
 
 Usage
-=====
+-----
 
 .. code:: r
 
    set_giottoLargeImage(gobject, largeImage_object, name = NULL, verbose = TRUE)
 
 Arguments
-=========
+---------
 
 ===================== ===============================
 Argument              Description
@@ -31,6 +35,6 @@ Argument              Description
 ===================== ===============================
 
 Value
-=====
+-----
 
 giotto object

@@ -2,23 +2,27 @@
 get_giottoImage_MG
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1209
+``get_giottoImage_MG``
+======================
 
-===========
+Get magick -based giotto ``image``
+
+Description
+-----------
 
 Get a giottoImage from a giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
    get_giottoImage_MG(gobject = NULL, name = NULL)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -31,6 +35,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 a giottoImage

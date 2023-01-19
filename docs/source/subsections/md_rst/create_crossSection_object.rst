@@ -2,16 +2,20 @@
 create_crossSection_object
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L23
+``create_crossSection_object``
+==============================
 
-===========
+create_crossSection_object
+
+Description
+-----------
 
 create a crossSection object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,7 +37,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -45,9 +49,9 @@ Arguments
 |                               | plane.                               |
 +-------------------------------+--------------------------------------+
 | ``thickness_unit``            | unit of the virtual section          |
-|                               | thickness. If “cell�, average size   |
+|                               | thickness. If “cell”, average size   |
 |                               | of the observed cells is used as     |
-|                               | length unit. If “natural�, the unit  |
+|                               | length unit. If “natural”, the unit  |
 |                               | of cell location coordinates is      |
 |                               | used.(default = cell)                |
 +-------------------------------+--------------------------------------+

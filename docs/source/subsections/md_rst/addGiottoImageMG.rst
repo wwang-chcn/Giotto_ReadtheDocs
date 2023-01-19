@@ -2,18 +2,23 @@
 addGiottoImageMG
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L749
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L750
 
+
+
+====================
+
+addGiottoImageMG
 
 Description
-===========
+-----------
 
 Adds giotto image objects to your giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -55,6 +60,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 an updated Giotto object with access to the list of images

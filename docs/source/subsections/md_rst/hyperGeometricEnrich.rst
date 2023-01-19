@@ -2,28 +2,35 @@
 hyperGeometricEnrich
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1251
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1287
+
+
 
    :format: latex
 ..
 
+``hyperGeometricEnrich``
+========================
+
+hyperGeometricEnrich
+
 Description
-===========
+-----------
 
 Function to calculate gene signature enrichment scores per spatial
 position using a hypergeometric test.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    hyperGeometricEnrich(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -57,10 +64,10 @@ Arguments
 
 ::
 
-   "\n", "    ", list(list(list("logbase")), list("log base to use if reverse_log_scale = TRUE")), "\n", "    ", list(list(list("top_percentage")), list("percentage of cells that will be considered to have gene expression with matrix binarization")), "\n", "    ", list(list(list("output_enrichment")), list("how to return enrichment output")), "\n", "    ", list(list(list("p_value")), list("calculate p-values (boolean, default = FALSE)")), "\n", "    ", list(list(list("name")), list("to give to spatial enrichment results, default = rank")), 
+   "\n", "    ", list(list(list("logbase")), list("log base to use if reverse_log_scale = TRUE")), "\n", "    ", list(list(list("top_percentage")), list("percentage of cells that will be considered to have gene expression with matrix binarization")), "\n", "    ", list(list(list("output_enrichment")), list("how to return enrichment output")), "\n", "    ", list(list(list("p_value")), list("calculate p-values (boolean, default = FALSE)")), "\n", "    ", list(list(list("name")), list("to give to spatial enrichment results, default = hypergeometric")), 
    "\n", "    ", list(list(list("return_gobject")), list("return giotto object")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```runHyperGeometricEnrich`` <#runhypergeometricenrich>`__

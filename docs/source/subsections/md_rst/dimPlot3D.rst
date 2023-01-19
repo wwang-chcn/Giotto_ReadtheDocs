@@ -2,18 +2,23 @@
 dimPlot3D
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7038
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7093
 
+
+
+=============
+
+dimPlot3D
 
 Description
-===========
+-----------
 
 Visualize cells according to dimension reduction coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -52,7 +57,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -130,17 +135,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 plotly
 
 Seealso
-=======
+-------
 
 Other reduced dimension visualizations: ```dimPlot2D`` <#dimplot2d>`__ ,
 ```dimPlot`` <#dimplot>`__ , ```plotPCA_2D`` <#plotpca2d>`__ ,

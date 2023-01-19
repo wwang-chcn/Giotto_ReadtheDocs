@@ -2,19 +2,24 @@
 spatNetwDistributionsDistance
 =============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L24
 
 
+
+=================================
+
+Plot spatial distance distribution
+
 Description
-===========
+-----------
 
 This function return histograms displaying the distance distribution for
 each spatial k-neighbor
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,7 +38,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -69,6 +74,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 ggplot plot

@@ -2,17 +2,21 @@
 cellProximityVisPlot_2D_ggplot
 ==============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L382
+``cellProximityVisPlot_2D_ggplot``
+==================================
 
-===========
+cellProximityVisPlot_2D_ggplot
+
+Description
+-----------
 
 Visualize 2D cell-cell interactions according to spatial coordinates in
 ggplot mode
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -46,11 +50,11 @@ Usage
    )
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot

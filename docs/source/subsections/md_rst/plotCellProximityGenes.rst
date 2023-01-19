@@ -2,27 +2,34 @@
 plotCellProximityGenes
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1132
+
+
 
    :format: latex
 ..
 
+``plotCellProximityGenes``
+==========================
+
+plotCellProximityGenes
+
 Description
-===========
+-----------
 
 Create visualization for cell proximity feature scores
 
 Usage
-=====
+-----
 
 .. code:: r
 
    plotCellProximityGenes(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

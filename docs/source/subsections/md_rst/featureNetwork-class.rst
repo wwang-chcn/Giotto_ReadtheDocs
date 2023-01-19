@@ -2,14 +2,19 @@
 featureNetwork-class
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``featureNetwork-class``
+========================
+
+S4 giotto feature network Class
 
 Description
-===========
+-----------
 
 Giotto class to store and operate on feature network
 
 Details
-=======
+-------
 
 contains feature network information

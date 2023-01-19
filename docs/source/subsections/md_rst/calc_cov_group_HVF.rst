@@ -2,16 +2,20 @@
 calc_cov_group_HVF
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/variable_genes.R#L5
+``calc_cov_group_HVF``
+======================
 
-===========
+calc_cov_group_HVF
+
+Description
+-----------
 
 calc_cov_group_HVF
 
 Usage
-=====
+-----
 
 .. code:: r
 

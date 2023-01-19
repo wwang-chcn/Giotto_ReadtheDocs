@@ -2,18 +2,23 @@
 findMastMarkers
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L650
+https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L666
 
+
+
+===================
+
+findMastMarkers
 
 Description
-===========
+-----------
 
 Identify marker feats for selected clusters based on the MAST package.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,7 +38,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -70,13 +75,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This is a minimal convenience wrapper around the ```zlm`` <#zlm>`__ from
 the MAST package to detect differentially expressed feats. Caution: with
 large datasets MAST might take a long time to run and finish
 
 Value
-=====
+-----
 
 data.table with marker feats

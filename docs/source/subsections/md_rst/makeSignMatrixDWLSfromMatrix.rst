@@ -2,26 +2,31 @@
 makeSignMatrixDWLSfromMatrix
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L59
 
 
+
+================================
+
+makeSignMatrixDWLSfromMatrix
+
 Description
-===========
+-----------
 
 Function to convert a single-cell RNAseq matrix into a format that can
 be used with ```runDWLSDeconv`` <#rundwlsdeconv>`__ .
 
 Usage
-=====
+-----
 
 .. code:: r
 
    makeSignMatrixDWLSfromMatrix(matrix, sign_gene, cell_type_vector)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -35,11 +40,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 matrix
 
 Seealso
-=======
+-------
 
 ```runDWLSDeconv`` <#rundwlsdeconv>`__

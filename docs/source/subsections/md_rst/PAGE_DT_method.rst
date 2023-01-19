@@ -2,15 +2,20 @@
 PAGE_DT_method
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``PAGE_DT_method``
+==================
+
+PAGE_DT_method
 
 Description
-===========
+-----------
 
 PAGE data.table method
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,3 +32,12 @@ Usage
      max_block = 2e+07,
      verbose = TRUE
    )
+
+Arguments
+---------
+
+=============== ===========================
+Argument        Description
+=============== ===========================
+``expr_values`` matrix of expression values
+=============== ===========================

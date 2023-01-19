@@ -2,25 +2,30 @@
 addGiottoPoints3D
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1292
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1351
 
+
+
+=====================
+
+Add sub cellular 3D coordinates to Giotto object
 
 Description
-===========
+-----------
 
 Add sub cellular 3D coordinates to Giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
    addGiottoPoints3D(gobject, coords, feat_type = "rna")
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -37,6 +42,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 A Giotto object with a ``spatVector`` object in the feat_info slot

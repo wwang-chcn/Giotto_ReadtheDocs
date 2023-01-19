@@ -2,11 +2,18 @@
 silhouetteRank
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1592
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1593
 
-===========
+
+
+==================
+
+silhouetteRank
+
+Description
+-----------
 
 Previously: calculate_spatial_genes_python. This method computes a
 silhouette score per gene based on the spatial distribution of two
@@ -17,7 +24,7 @@ cells. New multi aggregator implementation can be found at
 ```silhouetteRankTest`` <#silhouetteranktest>`__
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -32,7 +39,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ===================== ===========================================
 Argument              Description
@@ -47,6 +54,6 @@ Argument              Description
 ===================== ===========================================
 
 Value
-=====
+-----
 
 data.table with spatial scores

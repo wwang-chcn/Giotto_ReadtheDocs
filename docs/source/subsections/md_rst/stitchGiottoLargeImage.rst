@@ -2,13 +2,19 @@
 stitchGiottoLargeImage
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1235
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1236
 
+
+
+==========================
+
+Stitch multiple giottoLargeImage objects into a single giottoLargeImage
+object
 
 Description
-===========
+-----------
 
 Function to stitch together multiple field of view (FOV) images into a
 single final image. Images are loaded into Giotto as
@@ -16,7 +22,7 @@ single final image. Images are loaded into Giotto as
 single final ``giottoLargeImage`` .
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -39,7 +45,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -113,7 +119,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function is time consuming. Setting a save location through the
 ``filename`` parameter is also highly recommended as file size will
@@ -125,6 +131,6 @@ default and ``dryRun`` param must be set to FALSE to proceed with the
 final stitching operation.
 
 Value
-=====
+-----
 
 ``largeGiottoImage`` object with pointer to stitched image

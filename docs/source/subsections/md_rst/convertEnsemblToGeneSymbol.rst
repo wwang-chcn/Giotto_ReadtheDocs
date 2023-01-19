@@ -2,24 +2,31 @@
 convertEnsemblToGeneSymbol
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L1204
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L1221
 
-===========
+
+
+==============================
+
+convertEnsemblToGeneSymbol
+
+Description
+-----------
 
 This function convert ensembl gene IDs from a matrix to official gene
 symbols
 
 Usage
-=====
+-----
 
 .. code:: r
 
    convertEnsemblToGeneSymbol(matrix, species = c("mouse", "human"))
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -32,11 +39,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function requires that the biomaRt library is installed
 
 Value
-=====
+-----
 
 expression matrix with gene symbols as rownames

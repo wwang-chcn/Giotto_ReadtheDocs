@@ -2,18 +2,23 @@
 annotateSpatialGrid
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L2319
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L2332
 
+
+
+=======================
+
+annotateSpatialGrid
 
 Description
-===========
+-----------
 
 annotate spatial grid with cell ID and cell metadata (optional)
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,6 +54,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 annotated spatial grid data.table

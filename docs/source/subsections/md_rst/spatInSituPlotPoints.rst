@@ -2,19 +2,24 @@
 spatInSituPlotPoints
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L269
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L337
 
+
+
+========================
+
+spatInSituPlotPoints
 
 Description
-===========
+-----------
 
 Function to plot multiple features for multiple modalities at the
 spatial in situ level
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,6 +38,9 @@ Usage
      sdimx = "x",
      sdimy = "y",
      point_size = 1.5,
+     expand_counts = FALSE,
+     count_info_column = "count",
+     jitter = c(0, 0),
      show_polygon = TRUE,
      use_overlap = TRUE,
      polygon_feat_type = "cell",
@@ -48,7 +56,7 @@ Usage
      axis_text = 8,
      axis_title = 8,
      legend_text = 6,
-     coord_fix_ratio = NULL,
+     coord_fix_ratio = 1,
      background_color = "black",
      show_legend = TRUE,
      plot_method = c("ggplot", "scattermore", "scattermost"),
@@ -56,11 +64,12 @@ Usage
      return_plot = NA,
      save_plot = NA,
      save_param = list(),
-     default_save_name = "spatInSituPlotPoints"
+     default_save_name = "spatInSituPlotPoints",
+     verbose = TRUE
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -93,6 +102,15 @@ Arguments
 | ``sdimy``                     | spatial dimension y                  |
 +-------------------------------+--------------------------------------+
 | ``point_size``                | size of the points                   |
++-------------------------------+--------------------------------------+
+| ``expand_counts``             | expand feature coordinate counts     |
+|                               | (see details)                        |
++-------------------------------+--------------------------------------+
+| ``count_info_column``         | column name with count information   |
+|                               | (if expand_counts = TRUE)            |
++-------------------------------+--------------------------------------+
+| ``jitter``                    | maximum x,y jitter provided as c(x,  |
+|                               | y)                                   |
 +-------------------------------+--------------------------------------+
 | ``show_polygon``              | overlay polygon information          |
 |                               | (e.g. cell shape)                    |
@@ -154,19 +172,21 @@ Arguments
 |                               | change, change save_name in          |
 |                               | save_param                           |
 +-------------------------------+--------------------------------------+
+| ``verbose``                   | verbosity                            |
++-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 TODO
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other In Situ visualizations:
 ```spatInSituPlotDensity`` <#spatinsituplotdensity>`__ ,

@@ -2,27 +2,34 @@
 plotInteractionChangedGenes
 ===========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1605
+
+
 
    :format: latex
 ..
 
+``plotInteractionChangedGenes``
+===============================
+
+Plot interaction changed genes
+
 Description
-===========
+-----------
 
 Create barplot to visualize interaction changed features
 
 Usage
-=====
+-----
 
 .. code:: r
 
    plotInteractionChangedGenes(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -58,6 +65,6 @@ Arguments
    "  ")
 
 Seealso
-=======
+-------
 
 ```plotInteractionChangedFeats`` <#plotinteractionchangedfeats>`__

@@ -2,19 +2,24 @@
 createGiottoLargeImageList
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L415
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L416
 
+
+
+==============================
+
+createGiottoLargeImageList
 
 Description
-===========
+-----------
 
 Creates a list of large giotto images that can be added to a Giotto
 object. Generates deep copy of SpatRaster
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -34,7 +39,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -68,11 +73,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
-See `createGiottoLargeImage <../md_rst/createGiottoLargeImage.html>`__
+See ```createGiottoLargeImage`` <#creategiottolargeimage>`__
 
 Value
-=====
+-----
 
 a list with giottoLargeImage objects

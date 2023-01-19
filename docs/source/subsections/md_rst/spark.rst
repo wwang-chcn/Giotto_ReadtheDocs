@@ -2,22 +2,27 @@
 spark
 =====
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2254
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2265
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``spark``
+=========
+
+spark
+
 Description
-===========
+-----------
 
 Compute spatially expressed genes with SPARK method
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -36,7 +41,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -74,7 +79,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function is a wrapper for the method implemented in the SPARK
 package:
@@ -91,6 +96,6 @@ package:
      â€œ10.1101/810903â€) list(â€œtools:::Rd_expr_doi("10.1101/810903")â€)
 
 Value
-=====
+-----
 
 data.table with SPARK spatial genes results or the SPARK object

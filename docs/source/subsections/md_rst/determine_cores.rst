@@ -2,22 +2,26 @@
 determine_cores
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L8
+``determine_cores``
+===================
 
-===========
+determine_cores
+
+Description
+-----------
 
 guesses how many cores to use
 
 Usage
-=====
+-----
 
 .. code:: r
 
    determine_cores(cores, min_cores = 1, max_cores = 10)
 
 Value
-=====
+-----
 
 numeric

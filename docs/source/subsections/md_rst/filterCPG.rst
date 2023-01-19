@@ -2,27 +2,34 @@
 filterCPG
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1476
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1488
+
+
 
    :format: latex
 ..
 
+``filterCPG``
+=============
+
+filterCPG
+
 Description
-===========
+-----------
 
 Filter Interaction Changed Gene scores.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    filterCPG(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -57,6 +64,6 @@ Arguments
    "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```filterICF`` <#filtericf>`__

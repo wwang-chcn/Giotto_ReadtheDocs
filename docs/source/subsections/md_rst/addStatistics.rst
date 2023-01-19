@@ -2,18 +2,23 @@
 addStatistics
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3058
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3850
 
+
+
+=================
+
+addStatistics
 
 Description
-===========
+-----------
 
 Adds feature and cell statistics to the giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -48,12 +53,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 See ```addFeatStatistics`` <#addfeatstatistics>`__ and
 ```addCellStatistics`` <#addcellstatistics>`__
 
 Value
-=====
+-----
 
 giotto object if return_gobject = TRUE, else a list with results

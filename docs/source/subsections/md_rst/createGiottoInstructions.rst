@@ -2,18 +2,23 @@
 createGiottoInstructions
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L180
 
 
+
+============================
+
+Create instructions for giotto functions
+
 Description
-===========
+-----------
 
 Function to set global instructions for giotto functions
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -34,7 +39,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -73,13 +78,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 named vector with giotto instructions
 
 Seealso
-=======
-
+-------
 
 More online information can be found here
-https://giottosuite.readthedocs.io/en/latest/subsections/getting_started/visualizations.html
+https://rubd.github.io/Giotto_site/articles/instructions_and_plotting.html

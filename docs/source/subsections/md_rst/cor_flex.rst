@@ -2,23 +2,27 @@
 cor_flex
 ========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L142
+``cor_flex``
+============
 
-===========
+cor_flex
+
+Description
+-----------
 
 cor_flex
 
 Usage
-=====
+-----
 
 .. code:: r
 
    cor_flex(x, ...)
 
 Arguments
-=========
+---------
 
 ======== ======================================
 Argument Description

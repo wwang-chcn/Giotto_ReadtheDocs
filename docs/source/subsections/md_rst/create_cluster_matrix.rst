@@ -2,16 +2,20 @@
 create_cluster_matrix
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3254
+``create_cluster_matrix``
+=========================
 
-===========
+create_cluster_matrix
+
+Description
+-----------
 
 creates aggregated matrix for a given clustering column
 
 Usage
-=====
+-----
 
 .. code:: r
 

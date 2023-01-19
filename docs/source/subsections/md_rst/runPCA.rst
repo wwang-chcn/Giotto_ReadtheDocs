@@ -2,18 +2,23 @@
 runPCA
 ======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L445
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L481
 
+
+
+==========
+
+runPCA
 
 Description
-===========
+-----------
 
 runs a Principal Component Analysis
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -40,7 +45,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -89,7 +94,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 See ```runPCA`` <#runpca>`__ and ```PCA`` <#pca>`__ for more information
 about other parameters.
@@ -104,6 +109,6 @@ about other parameters.
    features
 
 Value
-=====
+-----
 
 giotto object with updated PCA dimension recuction

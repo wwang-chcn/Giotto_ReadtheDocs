@@ -2,17 +2,21 @@
 cellProximityVisPlot_2D_plotly
 ==============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L553
+``cellProximityVisPlot_2D_plotly``
+==================================
 
-===========
+cellProximityVisPlot_2D_plotly
+
+Description
+-----------
 
 Visualize 2D cell-cell interactions according to spatial coordinates in
 plotly mode
 
 Usage
-=====
+-----
 
 .. code:: r
 

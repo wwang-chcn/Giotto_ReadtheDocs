@@ -2,23 +2,27 @@
 reconnect_giottoLargeImage
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2154
+``reconnect_giottoLargeImage``
+==============================
 
-===========
+reconnect_giottoLargeImage
+
+Description
+-----------
 
 reconnect giottoLargeImage if image pointer is broken
 
 Usage
-=====
+-----
 
 .. code:: r
 
    reconnect_giottoLargeImage(giottoLargeImage, image_path)
 
 Arguments
-=========
+---------
 
 ==================== =======================================
 Argument             Description
@@ -28,6 +32,6 @@ Argument             Description
 ==================== =======================================
 
 Value
-=====
+-----
 
 reconnected giottoLargeImage

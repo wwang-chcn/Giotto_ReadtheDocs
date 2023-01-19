@@ -2,23 +2,28 @@
 doLeidenCluster
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L42
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``doLeidenCluster``
+===================
+
+doLeidenCluster
+
 Description
-===========
+-----------
 
 cluster cells using a NN-network and the Leiden community detection
 algorithm
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -36,12 +41,12 @@ Usage
      init_membership = NULL,
      n_iterations = 1000,
      return_gobject = TRUE,
-     set_seed = T,
+     set_seed = TRUE,
      seed_number = 1234
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -94,7 +99,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function is a wrapper for the Leiden algorithm implemented in
 python, which can detect communities in graphs of millions of nodes
@@ -106,10 +111,10 @@ for more information.
 Partition types available and information:
 
 -  list(â€œRBConfigurationVertexPartition:â€) list(â€œImplements Reichardt
-   and Bornholdtâ€™s Potts model:raw-latex:`\n`â€, â€ with a configuration
-   null model. This quality function is well-defined only for positive
-   edge weights.:raw-latex:`\n`â€œ,â€ This quality function uses a linear
-   resolution parameter.â€)
+   and Bornholdtï¿½\\200\\231s Potts model:raw-latex:`\n`â€, â€ with a
+   configuration null model. This quality function is well-defined only
+   for positive edge weights.:raw-latex:`\n`â€œ,â€ This quality function
+   uses a linear resolution parameter.â€)
 
 -  list(â€œModularityVertexPartition:â€) list(â€œImplements
    modularity.:raw-latex:`\n`â€, â€ This quality function is well-defined
@@ -119,6 +124,6 @@ Partition types available and information:
 Set weight_col = NULL to give equal weight (=1) to each edge.
 
 Value
-=====
+-----
 
 giotto object with new clusters appended to cell metadata

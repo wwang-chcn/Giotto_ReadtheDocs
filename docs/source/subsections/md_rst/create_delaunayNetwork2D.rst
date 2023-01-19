@@ -2,16 +2,20 @@
 create_delaunayNetwork2D
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L743
+``create_delaunayNetwork2D``
+============================
 
-===========
+create_delaunayNetwork2D
+
+Description
+-----------
 
 Create a spatial 2D Delaunay network.
 
 Usage
-=====
+-----
 
 .. code:: r
 

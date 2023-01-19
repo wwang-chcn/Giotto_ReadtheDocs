@@ -2,16 +2,20 @@
 evaluate_provided_spatial_locations
 ===================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2999
+``evaluate_provided_spatial_locations``
+=======================================
 
-===========
+Evaluate provided spatial locations
+
+Description
+-----------
 
 Evaluate provided spatial locations
 
 Usage
-=====
+-----
 
 .. code:: r
 

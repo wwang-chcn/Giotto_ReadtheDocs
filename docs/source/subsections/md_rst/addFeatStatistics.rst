@@ -2,18 +2,23 @@
 addFeatStatistics
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2805
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3573
 
+
+
+=====================
+
+Add feature statistics
 
 Description
-===========
+-----------
 
 Adds feature statistics to the giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -48,7 +53,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function will add the following statistics to feature metadata:
 
@@ -65,6 +70,6 @@ This function will add the following statistics to feature metadata:
    levels of the gene
 
 Value
-=====
+-----
 
 giotto object if return_gobject = TRUE

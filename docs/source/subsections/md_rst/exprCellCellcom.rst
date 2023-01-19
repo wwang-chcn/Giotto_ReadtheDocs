@@ -2,18 +2,23 @@
 exprCellCellcom
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2104
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2116
 
+
+
+===================
+
+exprCellCellcom
 
 Description
-===========
+-----------
 
 Cell-Cell communication scores based on expression only
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -38,7 +43,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -84,7 +89,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Statistical framework to identify if pairs of features (such as
 ligand-receptor combinations) are expressed at higher levels than
@@ -93,7 +98,7 @@ values, without considering the spatial position of cells. More details
 will follow soon.
 
 Value
-=====
+-----
 
 Cell-Cell communication scores for feature pairs based on expression
 only

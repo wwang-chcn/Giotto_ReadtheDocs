@@ -2,29 +2,36 @@
 findICG
 =======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1273
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1285
+
+
 
    :format: latex
 ..
 
-Description
+``findICG``
 ===========
+
+findICG
+
+Description
+-----------
 
 Identifies cell-to-cell Interaction Changed Features (ICF), i.e. genes
 that are differentially expressed due to interaction with other cell
 types.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    findICG(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -62,6 +69,6 @@ Arguments
    list(list(list("set_seed")), list("set a seed for reproducibility")), "\n", "    ", list(list(list("seed_number")), list("seed number")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```findICF`` <#findicf>`__

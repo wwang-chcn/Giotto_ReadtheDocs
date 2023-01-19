@@ -2,19 +2,24 @@
 findGiniMarkers
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L329
+https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L336
 
+
+
+===================
+
+findGiniMarkers
 
 Description
-===========
+-----------
 
 Identify marker feats for selected clusters based on gini detection and
 expression scores.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -38,7 +43,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -86,7 +91,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Detection of marker feats using the
 https://en.wikipedia.org/wiki/Gini_coefficient gini coefficient is based
@@ -140,6 +145,6 @@ group it is recommend to provide names for both groups to group_1_name
 and group_2_name
 
 Value
-=====
+-----
 
 data.table with marker feats

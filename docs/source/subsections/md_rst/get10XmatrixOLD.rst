@@ -2,22 +2,27 @@
 get10XmatrixOLD
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
+
+``get10XmatrixOLD``
+===================
+
+get10XmatrixOLD
 
 Description
-===========
+-----------
 
 This function creates an expression matrix from a 10X structured folder
 
 Usage
-=====
+-----
 
 .. code:: r
 
    get10XmatrixOLD(path_to_data, gene_column_index = 1)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -29,7 +34,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 A typical 10X folder is named raw_feature_bc_matrix or
 filtered_feature_bc_matrix and it has 3 files:
@@ -44,6 +49,6 @@ filtered_feature_bc_matrix and it has 3 files:
      gene ids and gene symbols) the user can select another column.
 
 Value
-=====
+-----
 
 sparse expression matrix from 10X

@@ -2,19 +2,24 @@
 readPolygonFilesVizgen
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L1446
+https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L1473
 
+
+
+==========================
+
+readPolygonFilesVizgen
 
 Description
-===========
+-----------
 
 Read selected polygon files for the FOVs present in the Giotto object
 and add the smoothed polygons to the object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -31,9 +36,15 @@ Usage
      return_gobject = TRUE,
      verbose = TRUE
    )
+   h5read_vizgen(
+     h5File,
+     z_indices = 1L:7L,
+     segm_to_use = "p_0",
+     H5Fopen_flags = "H5F_ACC_RDWR"
+   )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -67,7 +78,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
-=======
+-------
 
-`smoothGiottoPolygons <../md_rst/smoothGiottoPolygons.html>`__
-
+```smoothGiottoPolygons`` <#smoothgiottopolygons>`__

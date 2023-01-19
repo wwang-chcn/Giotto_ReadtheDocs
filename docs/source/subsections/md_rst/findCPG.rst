@@ -2,28 +2,35 @@
 findCPG
 =======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1290
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1302
+
+
 
    :format: latex
 ..
 
-Description
+``findCPG``
 ===========
+
+findCPG
+
+Description
+-----------
 
 Identifies cell-to-cell Interaction Changed Features (ICF), i.e. genes
 that are differentially expressed due to proximity to other cell types.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    findCPG(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -61,6 +68,6 @@ Arguments
    list(list(list("set_seed")), list("set a seed for reproducibility")), "\n", "    ", list(list(list("seed_number")), list("seed number")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```findICF`` <#findicf>`__

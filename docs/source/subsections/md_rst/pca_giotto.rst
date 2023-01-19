@@ -2,23 +2,27 @@
 pca_giotto
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L57
+``pca_giotto``
+==============
 
-===========
+pca_giotto
+
+Description
+-----------
 
 performs PCA based on Rfast
 
 Usage
-=====
+-----
 
 .. code:: r
 
    pca_giotto(mymatrix, center = T, scale = T, k = 50)
 
 Arguments
-=========
+---------
 
 ============ ================================================
 Argument     Description
@@ -30,6 +34,6 @@ Argument     Description
 ============ ================================================
 
 Value
-=====
+-----
 
 list of eigenvalues, eigenvectors and pca coordinates

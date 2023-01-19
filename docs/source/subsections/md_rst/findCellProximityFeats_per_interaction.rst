@@ -2,17 +2,21 @@
 findCellProximityFeats_per_interaction
 ======================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L759
+``findCellProximityFeats_per_interaction``
+==========================================
 
-===========
+findCellProximityFeats_per_interaction
+
+Description
+-----------
 
 Identifies features that are differentially expressed due to proximity
 to other cell types.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,3 +37,12 @@ Usage
      set_seed = TRUE,
      seed_number = 1234
    )
+
+Arguments
+---------
+
+=============== =============
+Argument        Description
+=============== =============
+``expr_values`` Matrix object
+=============== =============

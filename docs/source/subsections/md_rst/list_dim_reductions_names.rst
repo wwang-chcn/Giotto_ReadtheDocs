@@ -2,16 +2,20 @@
 list_dim_reductions_names
 =========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2288
+``list_dim_reductions_names``
+=============================
 
-===========
+list_dim_reductions_names
+
+Description
+-----------
 
 return the available dimension reductions object names
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -24,24 +28,24 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ============= ===========================================
 Argument      Description
 ============= ===========================================
 ``gobject``   giotto object
 ``data_type`` cells or feats dim reduction
-``spat_unit`` spatial unit (e.g. “cell�)
-``feat_type`` feature type (e.g. “rna�, “dna�, “protein�)
+``spat_unit`` spatial unit (e.g. “cell”)
+``feat_type`` feature type (e.g. “rna”, “dna”, “protein”)
 ``dim_type``  dimensional reduction type (method)
 ============= ===========================================
 
 Details
-=======
+-------
 
 function that can be used to find which names have been used
 
 Value
-=====
+-----
 
 names of dimension reduction object

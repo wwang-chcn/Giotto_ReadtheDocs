@@ -2,13 +2,18 @@
 overlapToMatrixMultiPoly
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2393
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2586
 
+
+
+============================
+
+overlapToMatrixMultiPoly
 
 Description
-===========
+-----------
 
 create a count matrix based on overlap results from
 ```calculateOverlapRaster`` <#calculateoverlapraster>`__ ,
@@ -18,7 +23,7 @@ aggregate information from multiple polygon layers (e.g. z-stacks)
 together
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -32,7 +37,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ================== ===========================================
 Argument           Description
@@ -46,6 +51,6 @@ Argument           Description
 ================== ===========================================
 
 Value
-=====
+-----
 
 giotto object or count matrix

@@ -2,27 +2,34 @@
 dimGenePlot
 ===========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5300
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5353
+
+
 
    :format: latex
 ..
 
+``dimGenePlot``
+===============
+
+dimGenePlot
+
 Description
-===========
+-----------
 
 Visualize gene expression according to dimension reduction coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
    dimGenePlot(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -46,17 +53,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 ```dimGenePlot3D`` <#dimgeneplot3d>`__
 

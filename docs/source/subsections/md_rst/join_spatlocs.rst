@@ -2,16 +2,20 @@
 join_spatlocs
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L3617
+``join_spatlocs``
+=================
 
-===========
+join_spatlocs
+
+Description
+-----------
 
 join_spatlocs
 
 Usage
-=====
+-----
 
 .. code:: r
 

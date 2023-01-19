@@ -2,18 +2,23 @@
 processGiotto
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2391
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2731
 
+
+
+=================
+
+processGiotto
 
 Description
-===========
+-----------
 
 Wrapper for the different Giotto object processing functions
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -51,7 +56,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 See ```filterGiotto`` <#filtergiotto>`__ ,
 ```normalizeGiotto`` <#normalizegiotto>`__ ,
@@ -62,6 +67,6 @@ it will use the default values. If no adjustment is required,
 adjust_params must be set to NULL
 
 Value
-=====
+-----
 
 giotto object

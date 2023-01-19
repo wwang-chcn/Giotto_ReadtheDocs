@@ -2,23 +2,27 @@
 reconnect_giottoImage_MG
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1112
+``reconnect_giottoImage_MG``
+============================
 
-===========
+reconnect_giottoImage_MG
+
+Description
+-----------
 
 reconnect giottoImage if image pointer is broken
 
 Usage
-=====
+-----
 
 .. code:: r
 
    reconnect_giottoImage_MG(giottoImage, image_path)
 
 Arguments
-=========
+---------
 
 =============== ==================================
 Argument        Description
@@ -28,6 +32,6 @@ Argument        Description
 =============== ==================================
 
 Value
-=====
+-----
 
 reconnected giottoImage

@@ -2,18 +2,23 @@
 spatialAEH
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1994
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2005
 
+
+
+==============
+
+spatialAEH
 
 Description
-===========
+-----------
 
 Compute spatial variable genes with spatialDE method
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -32,7 +37,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -66,12 +71,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function is a wrapper for the SpatialAEH method implemented in the
 …
 
 Value
-=====
+-----
 
 An updated giotto object

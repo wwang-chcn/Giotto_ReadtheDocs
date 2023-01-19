@@ -2,23 +2,27 @@
 evaluate_spatial_info
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1473
+``evaluate_spatial_info``
+=========================
 
-===========
+Evaluate spatial info
+
+Description
+-----------
 
 Evaluate spatial information input
 
 Usage
-=====
+-----
 
 .. code:: r
 
    evaluate_spatial_info(spatial_info, cores = 1, spatial_locs)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -32,6 +36,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table

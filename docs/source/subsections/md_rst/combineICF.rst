@@ -2,18 +2,23 @@
 combineICF
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1930
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1942
 
+
+
+==============
+
+combineICF
 
 Description
-===========
+-----------
 
 Combine ICF scores in a pairwise manner.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,7 +38,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -71,6 +76,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 icfObject that contains the filtered differential feats scores

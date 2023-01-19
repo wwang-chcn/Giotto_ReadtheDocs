@@ -2,19 +2,24 @@
 stitchFieldCoordinates
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L184
 
 
+
+==========================
+
+stitchFieldCoordinates
+
 Description
-===========
+-----------
 
 Helper function to stitch field coordinates together to form one
 complete picture
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -31,7 +36,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -65,7 +70,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Stitching of fields:
 
@@ -82,7 +87,7 @@ Stitching of fields:
    list(list(“createGiottoObject�)))
 
 Value
-=====
+-----
 
 Updated location dataframe with new X [‘X_final’] and Y [‘Y_final’]
 coordinates

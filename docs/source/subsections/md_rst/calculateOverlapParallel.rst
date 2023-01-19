@@ -2,19 +2,24 @@
 calculateOverlapParallel
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2218
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2386
 
+
+
+============================
+
+calculateOverlapParallel
 
 Description
-===========
+-----------
 
 calculate overlap between cellular structures (polygons) and features
 (points)
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -30,7 +35,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -55,13 +60,13 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 parallel follows the future approach. This means that plan(multisession)
 does not work, since the underlying terra objects are internal C
 pointers. plan(multicore) is also not supported for Rstudio users.
 
 Value
-=====
+-----
 
 giotto object or spatVector with overlapping information

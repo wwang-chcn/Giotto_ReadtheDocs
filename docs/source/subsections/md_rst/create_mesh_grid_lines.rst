@@ -2,16 +2,20 @@
 create_mesh_grid_lines
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L369
+``create_mesh_grid_lines``
+==========================
 
-===========
+create_mesh_grid_lines
+
+Description
+-----------
 
 create mesh grid lines for cross section
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -22,7 +26,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

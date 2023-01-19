@@ -2,24 +2,29 @@
 binSpect
 ========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1471
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1472
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``binSpect``
+============
+
+binSpect
+
 Description
-===========
+-----------
 
 Previously: binGetSpatialGenes. BinSpect (Binary Spatial Extraction of
 genes) is a fast computational method that identifies genes with a
 spatially coherent expression pattern.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -58,7 +63,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -147,7 +152,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 We provide two ways to identify spatial genes based on gene expression
 binarization. Both methods are identicial except for how binarization is
@@ -194,6 +199,6 @@ performed.
      workload.
 
 Value
-=====
+-----
 
 data.table with results (see details)

@@ -2,27 +2,34 @@
 plotCombineCPG
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1919
+
+
 
    :format: latex
 ..
 
+``plotCombineCPG``
+==================
+
+plotCombineCPG
+
 Description
-===========
+-----------
 
 Create visualization for combined (pairwise) ICF scores
 
 Usage
-=====
+-----
 
 .. code:: r
 
    plotCombineCPG(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -59,6 +66,6 @@ Arguments
    "  ")
 
 Seealso
-=======
+-------
 
 ```plotCombineICF`` <#plotcombineicf>`__

@@ -2,18 +2,23 @@
 cellProximityHeatmap
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L99
 
 
+
+========================
+
+cellProximityHeatmap
+
 Description
-===========
+-----------
 
 Create heatmap from cell-cell proximity scores
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -32,7 +37,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -69,12 +74,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function creates a heatmap that shows the spatial proximity
 enrichment or depletion of cell type pairs.
 
 Value
-=====
+-----
 
 ggplot heatmap

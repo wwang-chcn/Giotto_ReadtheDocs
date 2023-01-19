@@ -2,23 +2,27 @@
 mean_flex
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/utilities.R#L12
+``mean_flex``
+=============
 
-===========
+mean_flex
+
+Description
+-----------
 
 mean_flex
 
 Usage
-=====
+-----
 
 .. code:: r
 
    mean_flex(x, ...)
 
 Arguments
-=========
+---------
 
 ======== =======================
 Argument Description

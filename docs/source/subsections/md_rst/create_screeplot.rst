@@ -2,23 +2,27 @@
 create_screeplot
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L611
+``create_screeplot``
+====================
 
-===========
+create_screeplot
+
+Description
+-----------
 
 create screeplot with ggplot
 
 Usage
-=====
+-----
 
 .. code:: r
 
    create_screeplot(pca_obj, ncp = 20, ylim = c(0, 20))
 
 Arguments
-=========
+---------
 
 =========== ===========================================
 Argument    Description
@@ -29,6 +33,6 @@ Argument    Description
 =========== ===========================================
 
 Value
-=====
+-----
 
 ggplot

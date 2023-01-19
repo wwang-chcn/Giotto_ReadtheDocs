@@ -2,18 +2,23 @@
 runGiottoHarmony
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1666
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1733
 
+
+
+====================
+
+runGiottoHarmony
 
 Description
-===========
+-----------
 
 run UMAP
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -37,7 +42,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -86,7 +91,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This is a simple wrapper for the HarmonyMatrix function in the Harmony
 package c(â€œ\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}â€,
@@ -94,6 +99,6 @@ package c(â€œ\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}â€,
 list(â€œtools:::Rd_expr_doi("10.1038/s41592-019-0619-0")â€) .
 
 Value
-=====
+-----
 
 giotto object with updated Harmony dimension recuction

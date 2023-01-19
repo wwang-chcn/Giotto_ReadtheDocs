@@ -2,16 +2,20 @@
 find_grid_z
 ===========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1826
+``find_grid_z``
+===============
 
-===========
+find_grid_z
+
+Description
+-----------
 
 find grid location on z-axis
 
 Usage
-=====
+-----
 
 .. code:: r
 

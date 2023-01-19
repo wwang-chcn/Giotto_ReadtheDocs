@@ -2,19 +2,24 @@
 registerGiottoObjectList
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L223
 
 
+
+============================
+
+registerGiottoObjectList
+
 Description
-===========
+-----------
 
 Wrapper function for registerGiottoObjectListFiji and
 registerGiottoObjectListRvision
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -36,7 +41,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -87,7 +92,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 List of registered giotto objects where the registered images and
 spatial locations

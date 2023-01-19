@@ -2,16 +2,20 @@
 enrich_analysis
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1552
+``enrich_analysis``
+===================
 
-===========
+enrich_analysis
+
+Description
+-----------
 
 Rui to fill in
 
 Usage
-=====
+-----
 
 .. code:: r
 

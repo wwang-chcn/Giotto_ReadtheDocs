@@ -2,25 +2,30 @@
 showGiottoNearestNetworks
 =========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1632
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2900
 
+
+
+=============================
+
+showGiottoNearestNetworks
 
 Description
-===========
+-----------
 
 shows the available nearest neighbor networks
 
 Usage
-=====
+-----
 
 .. code:: r
 
    showGiottoNearestNetworks(gobject, nrows = 3)
 
 Arguments
-=========
+---------
 
 =========== ===============================
 Argument    Description
@@ -30,18 +35,20 @@ Argument    Description
 =========== ===============================
 
 Value
-=====
+-----
 
 prints the name and small subset of available nearest neighbor network
 info
 
 Seealso
-=======
+-------
 
 Other functions to show data in giotto object:
+```showGiottoCellMetadata`` <#showgiottocellmetadata>`__ ,
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,
 ```showGiottoExpression`` <#showgiottoexpression>`__ ,
 ```showGiottoFeatInfo`` <#showgiottofeatinfo>`__ ,
+```showGiottoFeatMetadata`` <#showgiottofeatmetadata>`__ ,
 ```showGiottoImageNames`` <#showgiottoimagenames>`__ ,
 ```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,
 ```showGiottoSpatGrids`` <#showgiottospatgrids>`__ ,

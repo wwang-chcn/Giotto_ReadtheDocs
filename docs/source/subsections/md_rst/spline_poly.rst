@@ -2,23 +2,27 @@
 spline_poly
 ===========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L797
+``spline_poly``
+===============
 
-===========
+Convert spline to polygon
+
+Description
+-----------
 
 spline polynomial to smooth polygon
 
 Usage
-=====
+-----
 
 .. code:: r
 
    spline_poly(xy, vertices = 20, k = 3, ...)
 
 Arguments
-=========
+---------
 
 ============ =========================
 Argument     Description

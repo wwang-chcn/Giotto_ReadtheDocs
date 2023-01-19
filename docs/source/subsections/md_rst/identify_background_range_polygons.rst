@@ -2,16 +2,20 @@
 identify_background_range_polygons
 ==================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L91
+``identify_background_range_polygons``
+======================================
 
-===========
+Identify background range polygons
+
+Description
+-----------
 
 function to remove background polygon based on largest range
 
 Usage
-=====
+-----
 
 .. code:: r
 

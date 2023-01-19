@@ -2,18 +2,23 @@
 doLouvainSubCluster
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L1896
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L1927
 
+
+
+=======================
+
+doLouvainSubCluster
 
 Description
-===========
+-----------
 
 subcluster cells using a NN-network and the Louvain algorithm
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -23,13 +28,13 @@ Usage
      version = c("community", "multinet"),
      cluster_column = NULL,
      selected_clusters = NULL,
-     hvg_param = list(reverse_log_scale = T, difference_in_cov = 1, expression_values =
+     hvg_param = list(reverse_log_scale = TRUE, difference_in_cov = 1, expression_values =
        "normalized"),
      hvg_min_perc_cells = 5,
      hvg_mean_expr_det = 1,
      use_all_genes_as_hvg = FALSE,
      min_nr_of_hvg = 5,
-     pca_param = list(expression_values = "normalized", scale_unit = T),
+     pca_param = list(expression_values = "normalized", scale_unit = TRUE),
      nn_param = list(dimensions_to_use = 1:20),
      k_neighbors = 10,
      resolution = 0.5,
@@ -39,11 +44,11 @@ Usage
      nn_network_to_use = "sNN",
      network_name = "sNN.pca",
      return_gobject = TRUE,
-     verbose = T
+     verbose = TRUE
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -101,7 +106,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function performs subclustering using the Louvain algorithm on
 selected clusters. The systematic steps are:
@@ -127,12 +132,12 @@ selected clusters. The systematic steps are:
    5. do Louvain clustering
 
 Value
-=====
+-----
 
 giotto object with new subclusters appended to cell metadata
 
 Seealso
-=======
+-------
 
 ```doLouvainCluster_multinet`` <#dolouvainclustermultinet>`__ and
 ```doLouvainCluster_community`` <#dolouvainclustercommunity>`__

@@ -2,16 +2,20 @@
 create_featureNetwork_object
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L992
+``create_featureNetwork_object``
+================================
 
-===========
+Create feature network object
+
+Description
+-----------
 
 Create feature network object
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -23,7 +27,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ===================== =================================================
 Argument              Description

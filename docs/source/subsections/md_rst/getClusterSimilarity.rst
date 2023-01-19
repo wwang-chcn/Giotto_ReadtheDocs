@@ -2,19 +2,24 @@
 getClusterSimilarity
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2129
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2160
 
+
+
+========================
+
+getClusterSimilarity
 
 Description
-===========
+-----------
 
 Creates data.table with pairwise correlation scores between each
 cluster.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,7 +33,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ===================== =======================================
 Argument              Description
@@ -42,7 +47,7 @@ Argument              Description
 ===================== =======================================
 
 Details
-=======
+-------
 
 Creates data.table with pairwise correlation scores between each cluster
 and the group size (# of cells) for each cluster. This information can
@@ -50,6 +55,6 @@ be used together with mergeClusters to combine very similar or small
 clusters into bigger clusters.
 
 Value
-=====
+-----
 
 data.table

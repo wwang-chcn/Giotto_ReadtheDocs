@@ -2,18 +2,23 @@
 createSpatialFeaturesKNNnetwork
 ===============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1528
+https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1600
 
+
+
+===================================
+
+Create kNN spatial feature network
 
 Description
-===========
+-----------
 
 Calculates the centroid locations for the giotto polygons
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,7 +38,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -68,7 +73,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 If ``return_gobject = TRUE`` a giotto object containing the network will
 be returned. If ``return_gobject = FALSE`` the network will be returned

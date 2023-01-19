@@ -2,16 +2,20 @@
 transform_2d_mesh_to_3d_mesh
 ============================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L338
+``transform_2d_mesh_to_3d_mesh``
+================================
 
-===========
+transform_2d_mesh_to_3d_mesh
+
+Description
+-----------
 
 transform 2d mesh to 3d mesh by reversing PCA
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -23,7 +27,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ==================== ================
 Argument             Description

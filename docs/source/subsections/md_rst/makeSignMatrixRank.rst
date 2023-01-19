@@ -2,20 +2,25 @@
 makeSignMatrixRank
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L180
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L181
 
+
+
+======================
+
+makeSignMatrixRank
 
 Description
-===========
+-----------
 
 Function to convert a single-cell count matrix and a corresponding
 single-cell cluster vector into a rank matrix that can be used with the
 Rank enrichment option.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -45,11 +50,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 matrix
 
 Seealso
-=======
+-------
 
 ```rankEnrich`` <#rankenrich>`__

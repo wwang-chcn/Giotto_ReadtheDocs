@@ -2,24 +2,28 @@
 node_clusters
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2396
+``node_clusters``
+=================
 
-===========
+node_clusters
+
+Description
+-----------
 
 Merge selected clusters based on pairwise correlation scores and size of
 cluster.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    node_clusters(hclus_obj, verbose = TRUE)
 
 Arguments
-=========
+---------
 
 ============= ============
 Argument      Description
@@ -29,6 +33,6 @@ Argument      Description
 ============= ============
 
 Value
-=====
+-----
 
 list of splitted dendrogram nodes from high to low node height

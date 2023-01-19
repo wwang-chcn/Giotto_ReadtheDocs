@@ -2,29 +2,34 @@
 spatCellPlot
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5868
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5922
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``spatCellPlot``
+================
+
+spatCellPlot
+
 Description
-===========
+-----------
 
 Visualize cells according to spatial coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
    spatCellPlot(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -68,17 +73,17 @@ Arguments
    "\n", "  ")
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other spatial cell annotation visualizations:
 ```spatCellPlot2D`` <#spatcellplot2d>`__

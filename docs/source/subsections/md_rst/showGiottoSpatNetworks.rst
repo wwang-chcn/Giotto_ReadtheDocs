@@ -2,26 +2,31 @@
 showGiottoSpatNetworks
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1758
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3040
 
+
+
+==========================
+
+showGiottoSpatNetworks
 
 Description
-===========
+-----------
 
 Prints the available spatial networks that are attached to the Giotto
 object
 
 Usage
-=====
+-----
 
 .. code:: r
 
    showGiottoSpatNetworks(gobject, nrows = 4)
 
 Arguments
-=========
+---------
 
 =========== =======================
 Argument    Description
@@ -31,17 +36,19 @@ Argument    Description
 =========== =======================
 
 Value
-=====
+-----
 
 prints names and small subset of available spatial network info
 
 Seealso
-=======
+-------
 
 Other functions to show data in giotto object:
+```showGiottoCellMetadata`` <#showgiottocellmetadata>`__ ,
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,
 ```showGiottoExpression`` <#showgiottoexpression>`__ ,
 ```showGiottoFeatInfo`` <#showgiottofeatinfo>`__ ,
+```showGiottoFeatMetadata`` <#showgiottofeatmetadata>`__ ,
 ```showGiottoImageNames`` <#showgiottoimagenames>`__ ,
 ```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
 ```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,

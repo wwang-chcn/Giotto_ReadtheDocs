@@ -2,19 +2,24 @@
 runDWLSDeconv
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1817
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1849
 
+
+
+=================
+
+runDWLSDeconv
 
 Description
-===========
+-----------
 
 Function to perform DWLS deconvolution based on single cell expression
 data
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -33,7 +38,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -64,12 +69,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 giotto object or deconvolution results
 
 Seealso
-=======
+-------
 
 https://github.com/dtsoucas/DWLS for the list(â€œDWLSâ€) bulk deconvolution
 method, and c(â€œ\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}â€,

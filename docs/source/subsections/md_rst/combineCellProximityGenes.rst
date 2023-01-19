@@ -2,27 +2,34 @@
 combineCellProximityGenes
 =========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1905
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1917
+
+
 
    :format: latex
 ..
 
+``combineCellProximityGenes``
+=============================
+
+combineCellProximityGenes
+
 Description
-===========
+-----------
 
 Combine ICF scores in a pairwise manner.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    combineCellProximityGenes(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -60,6 +67,6 @@ Arguments
        list("run calculations in parallel with mclapply")), "\n", "    ", list(list(list("verbose")), list("verbose")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```combineInteractionChangedFeats`` <#combineinteractionchangedfeats>`__

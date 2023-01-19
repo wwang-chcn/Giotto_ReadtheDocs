@@ -2,29 +2,34 @@
 showGrids
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1903
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3198
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``showGrids``
+=============
+
+Show Spatial Grids
+
 Description
-===========
+-----------
 
 Show Spatial Grids
 
 Usage
-=====
+-----
 
 .. code:: r
 
    showGrids(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -42,6 +47,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
-=======
+-------
 
 ```showGiottoSpatGrids`` <#showgiottospatgrids>`__

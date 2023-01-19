@@ -2,28 +2,35 @@
 spatDimGenePlot
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5602
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5655
+
+
 
    :format: latex
 ..
 
+``spatDimGenePlot``
+===================
+
+spatDimGenePlot
+
 Description
-===========
+-----------
 
 Visualize cells according to spatial AND dimension reduction coordinates
 in ggplot mode
 
 Usage
-=====
+-----
 
 .. code:: r
 
    spatDimGenePlot(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,17 +54,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 ```spatDimGenePlot3D`` <#spatdimgeneplot3d>`__
 

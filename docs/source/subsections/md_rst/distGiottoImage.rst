@@ -2,20 +2,25 @@
 distGiottoImage
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2657
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2658
 
+
+
+===================
+
+Plot distribution of image intensity values
 
 Description
-===========
+-----------
 
 Plot distribution of intensity values using either a density plot or a
 histogram. Useful for finding image artefact outliers and determining
 reasonable scaling cutoffs.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,7 +33,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -47,6 +52,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Plot is generated from a downsampling of the original image

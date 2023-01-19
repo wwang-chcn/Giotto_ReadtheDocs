@@ -2,16 +2,20 @@
 find_grid_y
 ===========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1812
+``find_grid_y``
+===============
 
-===========
+find_grid_y
+
+Description
+-----------
 
 find grid location on y-axis
 
 Usage
-=====
+-----
 
 .. code:: r
 

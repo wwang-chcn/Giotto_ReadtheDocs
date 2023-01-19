@@ -2,16 +2,20 @@
 dt_to_spatVector_polygon
 ========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L758
+``dt_to_spatVector_polygon``
+============================
 
-===========
+Convert data.table to polygon spatVector
+
+Description
+-----------
 
 convert data.table to spatVector for polygons
 
 Usage
-=====
+-----
 
 .. code:: r
 

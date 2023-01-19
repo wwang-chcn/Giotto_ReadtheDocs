@@ -2,16 +2,20 @@
 create_dimObject
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L17
+``create_dimObject``
+====================
 
-===========
+create_dimObject
+
+Description
+-----------
 
 Creates an object that stores a dimension reduction output
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -19,6 +23,7 @@ Usage
      name = "test",
      spat_unit = "cell",
      feat_type = "rna",
+     reduction = "cells",
      reduction_method = NULL,
      coordinates = NULL,
      misc = NULL,
@@ -26,7 +31,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -36,6 +41,9 @@ Arguments
 | ``spat_unit``                 | spatial unit                         |
 +-------------------------------+--------------------------------------+
 | ``feat_type``                 | feature type                         |
++-------------------------------+--------------------------------------+
+| ``reduction``                 | reduction on columns (e.g. cells) or |
+|                               | rows (e.g. features)                 |
 +-------------------------------+--------------------------------------+
 | ``reduction_method``          | method used to reduce dimensions     |
 +-------------------------------+--------------------------------------+
@@ -49,6 +57,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 a dimObj

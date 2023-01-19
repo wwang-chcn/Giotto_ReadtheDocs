@@ -2,16 +2,20 @@
 plot_feature_hexbin_layer
 =========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L487
+``plot_feature_hexbin_layer``
+=============================
 
-===========
+plot_feature_hexbin_layer
+
+Description
+-----------
 
 low level function to plot hexbins at the spatial in situ level
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -21,16 +25,17 @@ Usage
      sel_feat,
      sdimx = "x",
      sdimy = "y",
-     bins = 10,
+     binwidth = NULL,
+     min_axis_bins = 10L,
      alpha = 0.5
    )
 
 Details
-=======
+-------
 
 This function can plot one feature for one modality.
 
 Value
-=====
+-----
 
 ggplot

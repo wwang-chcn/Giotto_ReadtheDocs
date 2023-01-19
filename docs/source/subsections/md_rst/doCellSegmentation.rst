@@ -2,18 +2,23 @@
 doCellSegmentation
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/cell_segmentation.R#L19
 
 
+
+======================
+
+doCellSegmentation
+
 Description
-===========
+-----------
 
 segment cells in Dapi image
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -26,7 +31,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -49,7 +54,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function is a wrapper for the Mesmer algorithm implemented in
 python. It segments the cells in tissue by applying a rolling window on

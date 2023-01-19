@@ -2,25 +2,30 @@
 showGiottoFeatInfo
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1729
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3011
 
+
+
+======================
+
+showGiottoFeatInfo
 
 Description
-===========
+-----------
 
 show the available giotto spatial feature information
 
 Usage
-=====
+-----
 
 .. code:: r
 
    showGiottoFeatInfo(gobject)
 
 Arguments
-=========
+---------
 
 =========== =============
 Argument    Description
@@ -29,11 +34,13 @@ Argument    Description
 =========== =============
 
 Seealso
-=======
+-------
 
 Other functions to show data in giotto object:
+```showGiottoCellMetadata`` <#showgiottocellmetadata>`__ ,
 ```showGiottoDimRed`` <#showgiottodimred>`__ ,
 ```showGiottoExpression`` <#showgiottoexpression>`__ ,
+```showGiottoFeatMetadata`` <#showgiottofeatmetadata>`__ ,
 ```showGiottoImageNames`` <#showgiottoimagenames>`__ ,
 ```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
 ```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,

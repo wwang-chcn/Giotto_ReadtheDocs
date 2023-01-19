@@ -2,18 +2,23 @@
 combCCcom
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2798
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2811
 
+
+
+=============
+
+combCCcom
 
 Description
-===========
+-----------
 
 Combine spatial and expression based cell-cell communication data.tables
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -29,7 +34,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -58,6 +63,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 combined data.table with spatial and expression communication data

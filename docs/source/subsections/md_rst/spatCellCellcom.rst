@@ -2,19 +2,24 @@
 spatCellCellcom
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2638
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2650
 
+
+
+===================
+
+spatCellCellcom
 
 Description
-===========
+-----------
 
 Spatial Cell-Cell communication scores based on spatial expression of
 interacting cells
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -43,7 +48,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -100,7 +105,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Statistical framework to identify if pairs of genes (such as
 ligand-receptor combinations) are expressed at higher levels than
@@ -151,7 +156,7 @@ values in cells that are spatially in proximity to eachother..
 -  PI: significanc score: log2fc \* -log10(p.adj)
 
 Value
-=====
+-----
 
 Cell-Cell communication scores for feature pairs based on spatial
 interaction

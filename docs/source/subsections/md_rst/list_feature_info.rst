@@ -2,23 +2,27 @@
 list_feature_info
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2461
+``list_feature_info``
+=====================
 
-===========
+list_feature_info
+
+Description
+-----------
 
 return the available giotto spatial feature information
 
 Usage
-=====
+-----
 
 .. code:: r
 
    list_feature_info(gobject)
 
 Arguments
-=========
+---------
 
 =========== =============
 Argument    Description
@@ -27,6 +31,6 @@ Argument    Description
 =========== =============
 
 Value
-=====
+-----
 
 names of available feature information

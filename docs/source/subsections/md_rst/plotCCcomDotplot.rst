@@ -2,19 +2,24 @@
 plotCCcomDotplot
 ================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2259
 
 
+
+====================
+
+plotCCcomDotplot
+
 Description
-===========
+-----------
 
 Plots dotplot for ligand-receptor communication scores in cell-cell
 interactions
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -37,7 +42,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -85,6 +90,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 ggplot

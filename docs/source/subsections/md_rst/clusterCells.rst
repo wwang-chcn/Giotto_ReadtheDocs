@@ -2,18 +2,23 @@
 clusterCells
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L1100
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L1131
 
+
+
+================
+
+clusterCells
 
 Description
-===========
+-----------
 
 cluster cells using a variety of different methods
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -58,12 +63,12 @@ Usage
      hc_k = 10,
      hc_h = NULL,
      return_gobject = TRUE,
-     set_seed = T,
+     set_seed = TRUE,
      seed_number = 1234
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -151,17 +156,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Wrapper for the different clustering methods.
 
 Value
-=====
+-----
 
 giotto object with new clusters appended to cell metadata
 
 Seealso
-=======
+-------
 
 ```doLeidenCluster`` <#doleidencluster>`__ ,
 ```doLouvainCluster_community`` <#dolouvainclustercommunity>`__ ,

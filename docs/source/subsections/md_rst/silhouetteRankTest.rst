@@ -2,17 +2,24 @@
 silhouetteRankTest
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1671
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L1678
 
-===========
+
+
+======================
+
+silhouetteRankTest
+
+Description
+-----------
 
 Multi parameter aggregator version of
 ```silhouetteRank`` <#silhouetterank>`__
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -32,7 +39,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ======================= =========================================
 Argument                Description
@@ -52,6 +59,6 @@ Argument                Description
 ======================= =========================================
 
 Value
-=====
+-----
 
 data.table with spatial scores

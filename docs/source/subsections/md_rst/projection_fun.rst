@@ -2,23 +2,27 @@
 projection_fun
 ==============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L157
+``projection_fun``
+==================
 
-===========
+projection_fun
+
+Description
+-----------
 
 project a point onto a plane
 
 Usage
-=====
+-----
 
 .. code:: r
 
    projection_fun(point_to_project, plane_point, plane_norm)
 
 Arguments
-=========
+---------
 
 ==================== ================
 Argument             Description

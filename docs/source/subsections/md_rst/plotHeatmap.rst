@@ -2,18 +2,23 @@
 plotHeatmap
 ===========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L958
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L960
 
+
+
+===============
+
+plotHeatmap
 
 Description
-===========
+-----------
 
 Creates heatmap for genes and clusters.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -53,7 +58,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -141,7 +146,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 If you want to display many genes there are 2 ways to proceed:
 
@@ -154,6 +159,6 @@ If you want to display many genes there are 2 ways to proceed:
    2. provide a subset of features to display to feat_label_selection
 
 Value
-=====
+-----
 
 ggplot

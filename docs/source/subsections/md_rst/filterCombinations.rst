@@ -2,18 +2,23 @@
 filterCombinations
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1601
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1864
 
+
+
+======================
+
+filterCombinations
 
 Description
-===========
+-----------
 
 Shows how many genes and cells are lost with combinations of thresholds.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -39,7 +44,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -95,7 +100,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Creates a scatterplot that visualizes the number of genes and cells that
 are lost with a specific combination of a gene and cell threshold given
@@ -103,6 +108,6 @@ an arbitrary cutoff to call a gene expressed. This function can be used
 to make an informed decision at the filtering step with filterGiotto.
 
 Value
-=====
+-----
 
 list of data.table and ggplot object

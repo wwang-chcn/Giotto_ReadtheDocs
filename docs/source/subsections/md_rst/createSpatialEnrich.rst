@@ -2,28 +2,35 @@
 createSpatialEnrich
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1376
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1412
+
+
 
    :format: latex
 ..
 
+``createSpatialEnrich``
+=======================
+
+createSpatialEnrich
+
 Description
-===========
+-----------
 
 Function to calculate gene signature enrichment scores per spatial
 position using an enrichment test.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    createSpatialEnrich(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -61,6 +68,6 @@ Arguments
    list(list(list("output_enrichment")), list("how to return enrichment output")), "\n", "    ", list(list(list("name")), list("to give to spatial enrichment results, default = PAGE")), "\n", "    ", list(list(list("verbose")), list("be verbose")), "\n", "    ", list(list(list("return_gobject")), list("return giotto object")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```runSpatialEnrich`` <#runspatialenrich>`__

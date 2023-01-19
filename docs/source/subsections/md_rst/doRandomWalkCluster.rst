@@ -2,18 +2,23 @@
 doRandomWalkCluster
 ===================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L529
+https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L539
 
+
+
+=======================
+
+doRandomWalkCluster
 
 Description
-===========
+-----------
 
 Cluster cells using a random walk approach.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -31,7 +36,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -64,12 +69,12 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 See ```cluster_walktrap`` <#clusterwalktrap>`__ function from the igraph
 package in R for more information.
 
 Value
-=====
+-----
 
 giotto object with new clusters appended to cell metadata

@@ -2,19 +2,24 @@
 detectSpatialPatterns
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2389
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2400
 
+
+
+=========================
+
+detectSpatialPatterns
 
 Description
-===========
+-----------
 
 Identify spatial patterns through PCA on average expression in a spatial
 grid.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -30,7 +35,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -57,7 +62,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Steps to identify spatial patterns:
 
@@ -76,6 +81,6 @@ Steps to identify spatial patterns:
       select PCs based on a z-score threshold
 
 Value
-=====
+-----
 
 spatial pattern object ‘spatPatObj’

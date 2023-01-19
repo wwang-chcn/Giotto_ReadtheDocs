@@ -2,16 +2,20 @@
 do_multi_permuttest_random
 ==========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L595
+``do_multi_permuttest_random``
+==============================
 
-===========
+do_multi_permuttest_random
+
+Description
+-----------
 
 calculate multiple random values
 
 Usage
-=====
+-----
 
 .. code:: r
 

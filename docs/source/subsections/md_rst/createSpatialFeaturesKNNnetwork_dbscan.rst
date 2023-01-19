@@ -2,16 +2,20 @@
 createSpatialFeaturesKNNnetwork_dbscan
 ======================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1418
+``createSpatialFeaturesKNNnetwork_dbscan``
+==========================================
 
-===========
+Create kNN spatial feature network using dbscan
+
+Description
+-----------
 
 to create a feature kNN spatial network using dbscan
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,7 +32,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ==================== ===================================================
 Argument             Description

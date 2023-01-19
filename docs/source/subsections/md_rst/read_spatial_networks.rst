@@ -2,16 +2,20 @@
 read_spatial_networks
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1262
+``read_spatial_networks``
+=========================
 
-===========
+Read spatial networks
+
+Description
+-----------
 
 read spatial networks from list
 
 Usage
-=====
+-----
 
 .. code:: r
 

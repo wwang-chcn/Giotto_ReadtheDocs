@@ -2,23 +2,27 @@
 set_giottoImage_MG
 ==================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1238
+``set_giottoImage_MG``
+======================
 
-===========
+Set magick -based giotto ``image``
+
+Description
+-----------
 
 Set a giottoImage for a giotto object with no additional modifications
 
 Usage
-=====
+-----
 
 .. code:: r
 
    set_giottoImage_MG(gobject, image_object, name = NULL, verbose = TRUE)
 
 Arguments
-=========
+---------
 
 ================ ==========================
 Argument         Description
@@ -30,6 +34,6 @@ Argument         Description
 ================ ==========================
 
 Value
-=====
+-----
 
 giotto object

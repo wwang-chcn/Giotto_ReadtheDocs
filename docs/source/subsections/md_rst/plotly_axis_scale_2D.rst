@@ -2,16 +2,20 @@
 plotly_axis_scale_2D
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L2005
+``plotly_axis_scale_2D``
+========================
 
-===========
+plotly_axis_scale_2D
+
+Description
+-----------
 
 adjust the axis scale in 2D plotly plot
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -24,7 +28,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ================== ===============================
 Argument           Description
@@ -37,6 +41,6 @@ Argument           Description
 ================== ===============================
 
 Value
-=====
+-----
 
 edges in spatial grid as data.table()

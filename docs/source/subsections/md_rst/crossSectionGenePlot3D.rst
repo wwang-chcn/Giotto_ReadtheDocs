@@ -2,19 +2,24 @@
 crossSectionGenePlot3D
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L684
 
 
+
+==========================
+
+crossSectionGenePlot3D
+
 Description
-===========
+-----------
 
 Visualize cells and gene expression in a virtual cross section according
 to spatial coordinates
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -29,7 +34,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -54,11 +59,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot

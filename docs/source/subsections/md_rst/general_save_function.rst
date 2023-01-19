@@ -2,16 +2,20 @@
 general_save_function
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L181
+``general_save_function``
+=========================
 
-===========
+general_save_function
+
+Description
+-----------
 
 Function to automatically save plots to directory of interest
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -34,7 +38,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ===================== ===============================
 Argument              Description

@@ -2,19 +2,24 @@
 calculateMetaTableCells
 =======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3413
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L4207
 
+
+
+===========================
+
+calculateMetaTableCells
 
 Description
-===========
+-----------
 
 calculates the average metadata values for one or more (combined)
 annotation columns.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,7 +33,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,6 +55,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 data.table with average metadata values per (combined) annotation

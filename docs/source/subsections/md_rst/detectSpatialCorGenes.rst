@@ -2,20 +2,27 @@
 detectSpatialCorGenes
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3407
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3426
+
+
 
    :format: latex
 ..
 
+``detectSpatialCorGenes``
+=========================
+
+detectSpatialCorGenes
+
 Description
-===========
+-----------
 
 Detect genes that are spatially correlated
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -35,7 +42,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -68,7 +75,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 For method = network, it expects a fully connected spatial network. You
 can make sure to create a fully connected network by setting minimal_k >
@@ -89,11 +96,11 @@ can make sure to create a fully connected network by setting minimal_k >
      showSpatialCorGenes()
 
 Value
-=====
+-----
 
 returns a spatial correlation object: â€œspatCorObjectâ€
 
 Seealso
-=======
+-------
 
 ```showSpatialCorGenes`` <#showspatialcorgenes>`__

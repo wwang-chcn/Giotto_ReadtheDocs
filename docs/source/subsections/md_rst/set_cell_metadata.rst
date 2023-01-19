@@ -2,30 +2,80 @@
 set_cell_metadata
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L719
-
-===========
+``set_cell_metadata``
+=====================
 
 Set cell metadata
 
+Description
+-----------
+
+Function to set cell metadata information into giotto object
+
 Usage
-=====
+-----
 
 .. code:: r
 
-   set_cell_metadata(gobject, cell_metadata)
+   set_cell_metadata(
+     gobject,
+     metadata,
+     spat_unit = NULL,
+     feat_type = NULL,
+     provenance = NULL,
+     verbose = TRUE,
+     set_defaults = TRUE
+   )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
 +===============================+======================================+
 | ``gobject``                   | giotto object                        |
 +-------------------------------+--------------------------------------+
-| ``cell_metadata``             | cell_metadata supplied as a nested   |
-|                               | list with                            |
-|                               | spat_unit\ :math:`feat_type`\ name   |
+| ``metadata``                  | cellMetaObj or data.table containing |
+|                               | cell metadata. Setting NULL will     |
+|                               | remove the object. Passing           |
+|                               | ‘initialize’ will reset the object.  |
 +-------------------------------+--------------------------------------+
+| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
++-------------------------------+--------------------------------------+
+| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
+|                               | “protein”)                           |
++-------------------------------+--------------------------------------+
+| ``provenance``                | provenance information to set        |
++-------------------------------+--------------------------------------+
+| ``verbose``                   | be verbose                           |
++-------------------------------+--------------------------------------+
+| ``set_defaults``              | set default spat_unit and feat_type. |
+|                               | Change to FALSE only when            |
++-------------------------------+--------------------------------------+
+
+Value
+-----
+
+giotto object
+
+Seealso
+-------
+
+Other functions to set data in giotto object:
+```get_cell_id`` <#getcellid>`__ , ```get_feat_id`` <#getfeatid>`__ ,
+```set_NearestNetwork`` <#setnearestnetwork>`__ ,
+```set_cell_id`` <#setcellid>`__ ,
+```set_dimReduction`` <#setdimreduction>`__ ,
+```set_expression_values`` <#setexpressionvalues>`__ ,
+```set_feat_id`` <#setfeatid>`__ ,
+```set_feature_info`` <#setfeatureinfo>`__ ,
+```set_feature_metadata`` <#setfeaturemetadata>`__ ,
+```set_giottoImage`` <#setgiottoimage>`__ ,
+```set_multiomics`` <#setmultiomics>`__ ,
+```set_polygon_info`` <#setpolygoninfo>`__ ,
+```set_spatialGrid`` <#setspatialgrid>`__ ,
+```set_spatialNetwork`` <#setspatialnetwork>`__ ,
+```set_spatial_enrichment`` <#setspatialenrichment>`__ ,
+```set_spatial_locations`` <#setspatiallocations>`__

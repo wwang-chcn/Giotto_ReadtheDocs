@@ -2,19 +2,24 @@
 spatNetwDistributions
 =====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L210
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L209
 
+
+
+=========================
+
+spatNetwDistributions
 
 Description
-===========
+-----------
 
 This function return histograms displaying the distance distribution for
 each spatial k-neighbor
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -34,7 +39,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -74,7 +79,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 The list(â€œdistanceâ€) option shows the spatial distance distribution for
 each nearest neighbor rank (1st, 2nd, 3th, â€¦ neigbor). With this option
@@ -84,6 +89,6 @@ are considered to far away. list() The list(â€œk_neighborsâ€) option shows
 the number of k neighbors distribution over all cells.
 
 Value
-=====
+-----
 
 ggplot plot

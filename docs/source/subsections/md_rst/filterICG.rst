@@ -2,27 +2,34 @@
 filterICG
 =========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1460
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1472
+
+
 
    :format: latex
 ..
 
+``filterICG``
+=============
+
+filterICG
+
 Description
-===========
+-----------
 
 Filter Interaction Changed Gene scores.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    filterICG(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -57,6 +64,6 @@ Arguments
    "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```filterICF`` <#filtericf>`__

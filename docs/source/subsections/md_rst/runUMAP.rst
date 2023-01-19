@@ -2,18 +2,23 @@
 runUMAP
 =======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1242
+https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L1288
 
+
+
+===========
+
+Run UMAP dimension reduction
 
 Description
-===========
+-----------
 
 run UMAP
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -44,7 +49,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -101,7 +106,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 See ```umap`` <#umap>`__ for more information about these and other
 parameters.
@@ -120,6 +125,6 @@ parameters.
    analysis
 
 Value
-=====
+-----
 
 giotto object with updated UMAP dimension reduction

@@ -2,19 +2,24 @@
 spatDimPlot2D
 =============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L3808
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L3852
 
+
+
+=================
+
+spatDimPlot2D
 
 Description
-===========
+-----------
 
 Visualize cells according to spatial AND dimension reduction coordinates
 2D
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -102,7 +107,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -291,17 +296,17 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of parameters.
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 ```spatDimPlot3D`` <#spatdimplot3d>`__
 

@@ -2,16 +2,20 @@
 do_ttest
 ========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L371
+``do_ttest``
+============
 
-===========
+do_ttest
+
+Description
+-----------
 
 Performs t.test on subsets of a matrix
 
 Usage
-=====
+-----
 
 .. code:: r
 

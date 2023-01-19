@@ -2,18 +2,23 @@
 doHMRF
 ======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L29
 
 
+
+==========
+
+doHMRF
+
 Description
-===========
+-----------
 
 Run HMRF
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -42,7 +47,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -99,11 +104,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Description of HMRF parameters …
 
 Value
-=====
+-----
 
 Creates a directory with results that can be viewed with viewHMRFresults

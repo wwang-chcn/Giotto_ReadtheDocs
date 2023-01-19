@@ -2,16 +2,20 @@
 create_jackstrawplot
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/dimension_reduction.R#L836
+``create_jackstrawplot``
+========================
 
-===========
+create_jackstrawplot
+
+Description
+-----------
 
 create jackstrawplot with ggplot
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -23,7 +27,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 ================== ===========================================
 Argument           Description
@@ -35,6 +39,6 @@ Argument           Description
 ================== ===========================================
 
 Value
-=====
+-----
 
 ggplot

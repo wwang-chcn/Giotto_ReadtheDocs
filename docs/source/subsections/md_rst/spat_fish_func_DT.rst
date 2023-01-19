@@ -2,16 +2,20 @@
 spat_fish_func_DT
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L75
+``spat_fish_func_DT``
+=====================
 
-===========
+spat_fish_func_DT
+
+Description
+-----------
 
 performs fisher exact test with data.table implementation
 
 Usage
-=====
+-----
 
 .. code:: r
 

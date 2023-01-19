@@ -2,27 +2,34 @@
 plotCPG
 =======
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
 https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1415
+
+
 
    :format: latex
 ..
 
-Description
+``plotCPG``
 ===========
+
+plotCPG
+
+Description
+-----------
 
 Create visualization for cell proximity feature scores
 
 Usage
-=====
+-----
 
 .. code:: r
 
    plotCPG(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |

@@ -2,16 +2,20 @@
 read_expression_data
 ====================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L548
+``read_expression_data``
+========================
 
-===========
+Read expression data
+
+Description
+-----------
 
 Read expression data
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -20,11 +24,12 @@ Usage
      sparse = TRUE,
      cores = NA,
      default_feat_type = NULL,
-     verbose = TRUE
+     verbose = TRUE,
+     provenance = NULL
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -40,9 +45,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 | ``verbose``                   | be verbose                           |
 +-------------------------------+--------------------------------------+
+| ``provenance``                | provenance information               |
++-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 mylistA = list(‘a’ = matrix(1:5), ‘b’ = matrix(1:5)) depth(mylistA)
 

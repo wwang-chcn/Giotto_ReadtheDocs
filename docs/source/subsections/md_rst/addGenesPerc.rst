@@ -2,17 +2,24 @@
 addGenesPerc
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3188
+https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3981
 
-===========
+
+
+================
+
+addGenesPerc
+
+Description
+-----------
 
 calculates the total percentage of (normalized) counts for a subset of
 selected genes
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -27,7 +34,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -50,7 +57,7 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Value
-=====
+-----
 
 giotto object if ``return_gobject = TRUE`` , else a vector with %
 results

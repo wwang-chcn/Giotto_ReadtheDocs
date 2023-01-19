@@ -2,29 +2,34 @@
 plotUMAP
 ========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1450
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1480
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``plotUMAP``
+============
+
+plotUMAP
+
 Description
-===========
+-----------
 
 Short wrapper for UMAP visualization
 
 Usage
-=====
+-----
 
 .. code:: r
 
    plotUMAP(gobject, dim_reduction_name = NULL, default_save_name = "UMAP", ...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -70,18 +75,18 @@ Arguments
        "cowplot param: how to align")), "\n", "    ", list(list(list("show_plot")), list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "  ")
 
 Details
-=======
+-------
 
 Description of parameters, see ```dimPlot2D`` <#dimplot2d>`__ . For 3D
 plots see ```plotUMAP_3D`` <#plotumap3d>`__
 
 Value
-=====
+-----
 
 ggplot
 
 Seealso
-=======
+-------
 
 Other reduced dimension visualizations: ```dimPlot2D`` <#dimplot2d>`__ ,
 ```dimPlot3D`` <#dimplot3d>`__ , ```dimPlot`` <#dimplot>`__ ,

@@ -2,27 +2,34 @@
 combineICG
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1966
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1978
+
+
 
    :format: latex
 ..
 
+``combineICG``
+==============
+
+combineICG
+
 Description
-===========
+-----------
 
 Combine ICF scores in a pairwise manner.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    combineICG(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -59,6 +66,6 @@ Arguments
        list("run calculations in parallel with mclapply")), "\n", "    ", list(list(list("verbose")), list("verbose")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```combineICF`` <#combineicf>`__

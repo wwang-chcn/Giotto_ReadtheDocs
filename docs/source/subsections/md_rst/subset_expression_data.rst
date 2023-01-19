@@ -2,23 +2,29 @@
 subset_expression_data
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L419
+``subset_expression_data``
+==========================
 
-===========
+Subset expression data
+
+Description
+-----------
 
 Subset expression data from giotto object
 
 Usage
-=====
+-----
 
 .. code:: r
 
    subset_expression_data(
      gobject,
-     filter_bool_feats,
-     filter_bool_cells,
+     cell_ids,
+     feat_ids,
      feat_type,
-     spat_unit
+     spat_unit,
+     all_spat_units,
+     all_feat_types
    )

@@ -2,16 +2,20 @@
 kmeans_binarize
 ===============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L322
+``kmeans_binarize``
+===================
 
-===========
+kmeans_binarize
+
+Description
+-----------
 
 create binarized scores from a vector using kmeans
 
 Usage
-=====
+-----
 
 .. code:: r
 

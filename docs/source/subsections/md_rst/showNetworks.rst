@@ -2,29 +2,34 @@
 showNetworks
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1820
+https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3111
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``showNetworks``
+================
+
+Show networks
+
 Description
-===========
+-----------
 
 Show networks
 
 Usage
-=====
+-----
 
 .. code:: r
 
    showNetworks(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -41,6 +46,6 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Seealso
-=======
+-------
 
 ```showGiottoSpatNetworks`` <#showgiottospatnetworks>`__

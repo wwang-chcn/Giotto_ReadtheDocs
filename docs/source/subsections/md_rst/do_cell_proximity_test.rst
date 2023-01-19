@@ -2,16 +2,20 @@
 do_cell_proximity_test
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L700
+``do_cell_proximity_test``
+==========================
 
-===========
+Do cell proximity test
+
+Description
+-----------
 
 Performs a selected differential test on subsets of a matrix
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -28,3 +32,12 @@ Usage
      set_seed = TRUE,
      seed_number = 1234
    )
+
+Arguments
+---------
+
+=============== =============
+Argument        Description
+=============== =============
+``expr_values`` Matrix object
+=============== =============

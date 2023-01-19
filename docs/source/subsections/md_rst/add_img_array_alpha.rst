@@ -2,23 +2,27 @@
 add_img_array_alpha
 ===================
 
-:Date: 2022-10-06
+:Date: 2023-01-19
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2690
+``add_img_array_alpha``
+=======================
 
-===========
+Add alpha channel to image array
+
+Description
+-----------
 
 Add alpha channel to image array
 
 Usage
-=====
+-----
 
 .. code:: r
 
    add_img_array_alpha(x, alpha)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -32,11 +36,11 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 Add 4th alpha channel to 3 channel RGB image arrays
 
 Value
-=====
+-----
 
 image array with 4th channel for transparency

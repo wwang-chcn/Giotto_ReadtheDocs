@@ -2,32 +2,35 @@
 PAGEEnrich
 ==========
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L833
-
-
+https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L848
 
 
-.. role:: raw-latex(raw)
+
    :format: latex
 ..
 
+``PAGEEnrich``
+==============
+
+PAGEEnrich
+
 Description
-===========
+-----------
 
 Function to calculate gene signature enrichment scores per spatial
 position using PAGE.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    PAGEEnrich(...)
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -35,29 +38,29 @@ Arguments
 | ``...``                       | Arguments passed on to               |
 |                               | ``                                   |
 |                               | `runPAGEEnrich`` <#runpageenrich>`__ |
-|                               | list(â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,         |
-|                               | list(list(list(ï¿½gobjectï¿½)),          |
-|                               | list(â€œGiotto objectï¿½)),              |
-|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
-|                               | list(list(list(ï¿½spat_unitï¿½)),        |
-|                               | list(â€œspatial unitï¿½)),               |
-|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
-|                               | list(list(list(ï¿½feat_typeï¿½)),        |
-|                               | list(â€œfeature typeï¿½)),               |
-|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
-|                               | list(list(list(ï¿½sign_matrixï¿½)),      |
+|                               | list(â€œ:raw-latex:`\n`â€, â€ â€œ,         |
+|                               | list(list(list(â€gobjectâ€)),          |
+|                               | list(â€œGiotto objectâ€)),              |
+|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | list(list(list(â€spat_unitâ€)),        |
+|                               | list(â€œspatial unitâ€)),               |
+|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | list(list(list(â€feat_typeâ€)),        |
+|                               | list(â€œfeature typeâ€)),               |
+|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
+|                               | list(list(list(â€sign_matrixâ€)),      |
 |                               | list(â€œMatrix of signature genes for  |
-|                               | each cell type / processï¿½)),         |
-|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | each cell type / processâ€)),         |
+|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
 |                               | l                                    |
-|                               | ist(list(list(ï¿½expression_valuesï¿½)), |
-|                               | list(â€œexpression values to useï¿½)),   |
-|                               | â€œ:raw-latex:`\n`ï¿½, ï¿½ â€œ,              |
+|                               | ist(list(list(â€expression_valuesâ€)), |
+|                               | list(â€œexpression values to useâ€)),   |
+|                               | â€œ:raw-latex:`\n`â€, â€ â€œ,              |
 |                               | l                                    |
-|                               | ist(list(list(ï¿½min_overlap_genesï¿½)), |
+|                               | ist(list(list(â€min_overlap_genesâ€)), |
 |                               | list(â€œminimum number of overlapping  |
 |                               | genes in sign_matrix required to     |
-|                               | calculate enrichmentï¿½)),             |
+|                               | calculate enrichmentâ€)),             |
 +-------------------------------+--------------------------------------+
 
 ::
@@ -66,6 +69,6 @@ Arguments
    "    ", list(list(list("n_times")), list("number of permutations to calculate for p_value")), "\n", "    ", list(list(list("max_block")), list("number of lines to process together (default = 20e6)")), "\n", "    ", list(list(list("name")), list("to give to spatial enrichment results, default = PAGE")), "\n", "    ", list(list(list("verbose")), list("be verbose")), "\n", "    ", list(list(list("return_gobject")), list("return giotto object")), "\n", "  ")
 
 Seealso
-=======
+-------
 
 ```runPAGEEnrich`` <#runpageenrich>`__

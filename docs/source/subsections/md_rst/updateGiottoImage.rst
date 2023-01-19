@@ -2,19 +2,24 @@
 updateGiottoImage
 =================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2331
+https://github.com/drieslab/Giotto/tree/suite/R/images.R#L2332
 
+
+
+=====================
+
+updateGiottoImage
 
 Description
-===========
+-----------
 
 Updates the spatial positioning and sizing of a giotto ``image`` or
 ``largeImage`` attached to a giotto object.
 
 Usage
-=====
+-----
 
 .. code:: r
 
@@ -41,7 +46,7 @@ Usage
    )
 
 Arguments
-=========
+---------
 
 +-------------------------------+--------------------------------------+
 | Argument                      | Description                          |
@@ -81,19 +86,18 @@ Arguments
 +-------------------------------+--------------------------------------+
 
 Details
-=======
+-------
 
 This function works for all image objects associated with Giotto.
 
 Value
-=====
+-----
 
 a giotto object or an updated giotto image object if return_gobject = F
 
 Seealso
-=======
+-------
 
-Other basic image functions: 
-`addGiottoImage <../md_rst/addGiottoImage.html>`__
-`plotGiottoImage <../md_rst/plotGiottoImage.html>`__
-`reconnectGiottoImage <../md_rst/reconnectGiottoImage.html>`__
+Other basic image functions: ```addGiottoImage`` <#addgiottoimage>`__ ,
+```plotGiottoImage`` <#plotgiottoimage>`__ ,
+```reconnectGiottoImage`` <#reconnectgiottoimage>`__

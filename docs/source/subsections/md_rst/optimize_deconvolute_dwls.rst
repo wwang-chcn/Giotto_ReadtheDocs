@@ -2,16 +2,20 @@
 optimize_deconvolute_dwls
 =========================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1594
+``optimize_deconvolute_dwls``
+=============================
 
-===========
+optimize_deconvolute_dwls
+
+Description
+-----------
 
 Rui to fill in
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,24 +2,28 @@
 rigid_transform_spatial_locations
 =================================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L61
+``rigid_transform_spatial_locations``
+=====================================
 
-===========
+rigid_transform_spatial_locations
+
+Description
+-----------
 
 Performs appropriate transforms to align spatial locations with
 registered images.
 
 Usage
-=====
+-----
 
 .. code:: r
 
    rigid_transform_spatial_locations(spatlocs, transform_values, method)
 
 Arguments
-=========
+---------
 
 ==================== ===========================================
 Argument             Description

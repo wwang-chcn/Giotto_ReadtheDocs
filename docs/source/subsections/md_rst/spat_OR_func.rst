@@ -2,16 +2,20 @@
 spat_OR_func
 ============
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L153
+``spat_OR_func``
+================
 
-===========
+spat_OR_func
+
+Description
+-----------
 
 calculate odds-ratio
 
 Usage
-=====
+-----
 
 .. code:: r
 

@@ -2,16 +2,20 @@
 make_simulated_network
 ======================
 
-:Date: 2022-10-06
+:Date: 1/19/23
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L10
+``make_simulated_network``
+==========================
 
-===========
+make_simulated_network
+
+Description
+-----------
 
 Simulate random network.
 
 Usage
-=====
+-----
 
 .. code:: r
 
