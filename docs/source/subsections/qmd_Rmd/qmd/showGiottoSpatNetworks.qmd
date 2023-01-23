@@ -1,8 +1,12 @@
 --- 
 title: showGiottoSpatNetworks 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `showGiottoSpatNetworks`
+
+showGiottoSpatNetworks
+
 
 ## Description
 
@@ -32,9 +36,11 @@ prints names and small subset of available spatial network info
 ## Seealso
 
 Other functions to show data in giotto object:
+ [`showGiottoCellMetadata`](#showgiottocellmetadata) ,
  [`showGiottoDimRed`](#showgiottodimred) ,
  [`showGiottoExpression`](#showgiottoexpression) ,
  [`showGiottoFeatInfo`](#showgiottofeatinfo) ,
+ [`showGiottoFeatMetadata`](#showgiottofeatmetadata) ,
  [`showGiottoImageNames`](#showgiottoimagenames) ,
  [`showGiottoNearestNetworks`](#showgiottonearestnetworks) ,
  [`showGiottoSpatEnrichments`](#showgiottospatenrichments) ,

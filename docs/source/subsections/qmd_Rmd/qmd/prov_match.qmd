@@ -1,0 +1,30 @@
+--- 
+title: prov_match 
+format: rst 
+date: 2023-01-19 
+--- 
+# `prov_match`
+
+Check provenance info matches across list of S4 subobjects
+
+
+## Description
+
+Check provenance info matches across list of S4 subobjects
+
+
+## Usage
+
+```r
+prov_match(..., verbose = FALSE)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`...`     |     list of s4 subobjects to match provenance
+`verbose`     |     print discovered provenance info
+
+

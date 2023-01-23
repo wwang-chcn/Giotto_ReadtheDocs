@@ -1,8 +1,12 @@
 --- 
 title: create_delaunayNetwork_RTriangle 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `create_delaunayNetwork_RTriangle`
+
+create_delaunayNetwork_RTriangle
+
 
 ## Description
 

@@ -1,8 +1,12 @@
 --- 
 title: spatInSituPlotPoints 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `spatInSituPlotPoints`
+
+spatInSituPlotPoints
+
 
 ## Description
 
@@ -27,6 +31,9 @@ spatInSituPlotPoints(
   sdimx = "x",
   sdimy = "y",
   point_size = 1.5,
+  expand_counts = FALSE,
+  count_info_column = "count",
+  jitter = c(0, 0),
   show_polygon = TRUE,
   use_overlap = TRUE,
   polygon_feat_type = "cell",
@@ -42,7 +49,7 @@ spatInSituPlotPoints(
   axis_text = 8,
   axis_title = 8,
   legend_text = 6,
-  coord_fix_ratio = NULL,
+  coord_fix_ratio = 1,
   background_color = "black",
   show_legend = TRUE,
   plot_method = c("ggplot", "scattermore", "scattermost"),
@@ -50,7 +57,8 @@ spatInSituPlotPoints(
   return_plot = NA,
   save_plot = NA,
   save_param = list(),
-  default_save_name = "spatInSituPlotPoints"
+  default_save_name = "spatInSituPlotPoints",
+  verbose = TRUE
 )
 ```
 
@@ -73,6 +81,9 @@ Argument      |Description
 `sdimx`     |     spatial dimension x
 `sdimy`     |     spatial dimension y
 `point_size`     |     size of the points
+`expand_counts`     |     expand feature coordinate counts (see details)
+`count_info_column`     |     column name with count information (if expand_counts = TRUE)
+`jitter`     |     maximum x,y jitter provided as c(x, y)
 `show_polygon`     |     overlay polygon information (e.g. cell shape)
 `use_overlap`     |     use polygon and feature coordinates overlap results
 `polygon_feat_type`     |     feature type associated with polygon information
@@ -97,6 +108,7 @@ Argument      |Description
 `save_plot`     |     directly save the plot [boolean]
 `save_param`     |     list of saving parameters, see [`showSaveParameters`](#showsaveparameters)
 `default_save_name`     |     default save name for saving, don't change, change save_name in save_param
+`verbose`     |     verbosity
 
 
 ## Details

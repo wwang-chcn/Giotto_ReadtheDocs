@@ -1,8 +1,12 @@
 --- 
 title: read_spatial_location_data 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `read_spatial_location_data`
+
+Read spatial location data
+
 
 ## Description
 
@@ -12,7 +16,13 @@ read spatial locations
 ## Usage
 
 ```r
-read_spatial_location_data(gobject, spat_loc_list, cores = 1, verbose = TRUE)
+read_spatial_location_data(
+  gobject,
+  spat_loc_list,
+  cores = 1,
+  provenance = NULL,
+  verbose = TRUE
+)
 ```
 
 
@@ -23,6 +33,7 @@ Argument      |Description
 `gobject`     |     giotto object
 `spat_loc_list`     |     list of spatial locations
 `cores`     |     how many cores to use
+`provenance`     |     provenance information (optional)
 `verbose`     |     be verbose
 
 

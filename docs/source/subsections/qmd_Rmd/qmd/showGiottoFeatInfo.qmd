@@ -1,8 +1,12 @@
 --- 
 title: showGiottoFeatInfo 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `showGiottoFeatInfo`
+
+showGiottoFeatInfo
+
 
 ## Description
 
@@ -26,8 +30,10 @@ Argument      |Description
 ## Seealso
 
 Other functions to show data in giotto object:
+ [`showGiottoCellMetadata`](#showgiottocellmetadata) ,
  [`showGiottoDimRed`](#showgiottodimred) ,
  [`showGiottoExpression`](#showgiottoexpression) ,
+ [`showGiottoFeatMetadata`](#showgiottofeatmetadata) ,
  [`showGiottoImageNames`](#showgiottoimagenames) ,
  [`showGiottoNearestNetworks`](#showgiottonearestnetworks) ,
  [`showGiottoSpatEnrichments`](#showgiottospatenrichments) ,

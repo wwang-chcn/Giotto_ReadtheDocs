@@ -1,8 +1,17 @@
 --- 
 title: addCellIntMetadata 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+--- 
+title: addCellIntMetadata 
+format: rst 
+date: 2023-01-19 
+--- 
+# `addCellIntMetadata`
+
+addCellIntMetadata
+
 
 ## Description
 

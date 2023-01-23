@@ -1,8 +1,12 @@
 --- 
 title: all_plots_save_function 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `all_plots_save_function`
+
+all_plots_save_function
+
 
 ## Description
 

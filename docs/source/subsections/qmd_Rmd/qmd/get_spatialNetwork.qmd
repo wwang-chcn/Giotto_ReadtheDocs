@@ -1,8 +1,12 @@
 --- 
 title: get_spatialNetwork 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `get_spatialNetwork`
+
+Get spatial network
+
 
 ## Description
 
@@ -16,7 +20,8 @@ get_spatialNetwork(
   gobject,
   spat_unit = NULL,
   name = NULL,
-  return_network_Obj = FALSE
+  output = c("spatialNetworkObj", "networkDT", "networkDT_before_filter", "outputObj"),
+  set_defaults = TRUE
 )
 ```
 
@@ -28,7 +33,8 @@ Argument      |Description
 `gobject`     |     giotto object
 `spat_unit`     |     spatial unit (e.g. "cell")
 `name`     |     name of spatial network
-`return_network_Obj`     |     return network object (default = FALSE)
+`output`     |     object type to return as. Options: 'spatialNetworkObj' (default), 'networkDT' and 'networkDT_before_filter' for data.table outputs.
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
 
 
 ## Seealso
@@ -42,6 +48,7 @@ Other spatial network data accessor functions:
  [`get_expression_values`](#getexpressionvalues) ,
  [`get_feature_info`](#getfeatureinfo) ,
  [`get_giottoImage`](#getgiottoimage) ,
+ [`get_multiomics`](#getmultiomics) ,
  [`get_polygon_info`](#getpolygoninfo) ,
  [`get_spatialGrid`](#getspatialgrid) ,
  [`get_spatial_enrichment`](#getspatialenrichment) ,

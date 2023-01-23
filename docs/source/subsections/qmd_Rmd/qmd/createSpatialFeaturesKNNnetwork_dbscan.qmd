@@ -1,8 +1,12 @@
 --- 
 title: createSpatialFeaturesKNNnetwork_dbscan 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `createSpatialFeaturesKNNnetwork_dbscan`
+
+Create kNN spatial feature network using dbscan
+
 
 ## Description
 

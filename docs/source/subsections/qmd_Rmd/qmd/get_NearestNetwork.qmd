@@ -1,8 +1,12 @@
 --- 
 title: get_NearestNetwork 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `get_NearestNetwork`
+
+Get nearest network
+
 
 ## Description
 
@@ -18,7 +22,8 @@ get_NearestNetwork(
   feat_type = NULL,
   nn_network_to_use = NULL,
   network_name = NULL,
-  output = c("igraph", "data.table")
+  output = c("nnNetObj", "igraph", "data.table"),
+  set_defaults = TRUE
 )
 ```
 
@@ -33,6 +38,7 @@ Argument      |Description
 `nn_network_to_use`     |     "kNN" or "sNN"
 `network_name`     |     name of NN network to be used
 `output`     |     return a igraph or data.table object. Default 'igraph'
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
 
 
 ## Value
@@ -50,6 +56,7 @@ Other expression space nearest network accessor functions:
  [`get_expression_values`](#getexpressionvalues) ,
  [`get_feature_info`](#getfeatureinfo) ,
  [`get_giottoImage`](#getgiottoimage) ,
+ [`get_multiomics`](#getmultiomics) ,
  [`get_polygon_info`](#getpolygoninfo) ,
  [`get_spatialGrid`](#getspatialgrid) ,
  [`get_spatialNetwork`](#getspatialnetwork) ,

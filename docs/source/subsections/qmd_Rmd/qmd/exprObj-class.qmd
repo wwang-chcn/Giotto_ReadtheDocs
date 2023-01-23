@@ -1,0 +1,15 @@
+--- 
+title: exprObj-class 
+format: rst 
+date: 2023-01-19 
+--- 
+# `exprObj-class`
+
+S4 exprObj
+
+
+## Description
+
+Framework to store aggregated expression information
+
+

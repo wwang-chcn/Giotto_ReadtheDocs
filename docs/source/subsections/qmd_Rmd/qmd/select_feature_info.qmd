@@ -1,8 +1,12 @@
 --- 
 title: select_feature_info 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `select_feature_info`
+
+Select feature info
+
 
 ## Description
 
@@ -20,7 +24,7 @@ select_feature_info(...)
 
 Argument      |Description
 ------------- |----------------
-`...`     |      Arguments passed on to [`get_feature_info`](#getfeatureinfo)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("feat_type")), list("name of feature (e.g. \"rna\", \"dna\", \"protein\")")), "\n", "  ")
+`...`     |      Arguments passed on to [`get_feature_info`](#getfeatureinfo)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("feat_type")), list("feature type (e.g. \"rna\", \"dna\", \"protein\")")), "\n", "    ", list(list(list("set_defaults")), list("set default spat_unit and feat_type. Change to FALSE only when")), "\n", "  ")
 
 
 ## Seealso

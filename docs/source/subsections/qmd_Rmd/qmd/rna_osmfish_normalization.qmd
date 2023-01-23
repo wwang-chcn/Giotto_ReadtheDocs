@@ -1,8 +1,12 @@
 --- 
 title: rna_osmfish_normalization 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `rna_osmfish_normalization`
+
+RNA osmfish normalization
+
 
 ## Description
 

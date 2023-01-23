@@ -1,8 +1,12 @@
 --- 
 title: get_expression_values 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `get_expression_values`
+
+Get expression values
+
 
 ## Description
 
@@ -12,7 +16,14 @@ Function to get expression values from giotto object
 ## Usage
 
 ```r
-get_expression_values(gobject, spat_unit = NULL, feat_type = NULL, values)
+get_expression_values(
+  gobject,
+  values = NULL,
+  spat_unit = NULL,
+  feat_type = NULL,
+  output = c("exprObj", "matrix"),
+  set_defaults = TRUE
+)
 ```
 
 
@@ -21,9 +32,11 @@ get_expression_values(gobject, spat_unit = NULL, feat_type = NULL, values)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
+`values`     |     expression values to extract (e.g. "raw", "normalized", "scaled")
 `spat_unit`     |     spatial unit (e.g. "cell")
 `feat_type`     |     feature type (e.g. "rna", "dna", "protein")
-`values`     |     expression values to extract (e.g. "raw", "normalized", "scaled")
+`output`     |     what object type to retrieve the expression as. Currently either 'matrix' for the matrix object contained in the exprObj or 'exprObj' (default) for the exprObj itself are allowed.
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
 
 
 ## Value
@@ -41,6 +54,7 @@ Other expression accessor functions:
  [`get_dimReduction`](#getdimreduction) ,
  [`get_feature_info`](#getfeatureinfo) ,
  [`get_giottoImage`](#getgiottoimage) ,
+ [`get_multiomics`](#getmultiomics) ,
  [`get_polygon_info`](#getpolygoninfo) ,
  [`get_spatialGrid`](#getspatialgrid) ,
  [`get_spatialNetwork`](#getspatialnetwork) ,

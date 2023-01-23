@@ -1,8 +1,12 @@
 --- 
 title: findNetworkNeighbors 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `findNetworkNeighbors`
+
+Find network neighbors
+
 
 ## Description
 

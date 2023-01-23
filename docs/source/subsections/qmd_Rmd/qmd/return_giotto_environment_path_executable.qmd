@@ -1,8 +1,12 @@
 --- 
 title: return_giotto_environment_path_executable 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `return_giotto_environment_path_executable`
+
+return_giotto_environment_path_executable
+
 
 ## Description
 

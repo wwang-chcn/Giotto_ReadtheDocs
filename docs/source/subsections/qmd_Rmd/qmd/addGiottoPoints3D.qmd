@@ -1,8 +1,12 @@
 --- 
 title: addGiottoPoints3D 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `addGiottoPoints3D`
+
+Add sub cellular 3D coordinates to Giotto object
+
 
 ## Description
 

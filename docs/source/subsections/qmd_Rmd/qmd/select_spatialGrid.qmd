@@ -1,8 +1,12 @@
 --- 
 title: select_spatialGrid 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `select_spatialGrid`
+
+Select spatial grid
+
 
 ## Description
 
@@ -20,7 +24,8 @@ select_spatialGrid(...)
 
 Argument      |Description
 ------------- |----------------
-`...`     |      Arguments passed on to [`get_spatialGrid`](#getspatialgrid)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit (e.g. \"cell\")")), "\n", "    ", list(list(list("feat_type")), list("feature type (e.g. \"rna\", \"dna\", \"protein\")")), "\n", "    ", list(list(list("name")), list("name of spatial grid")), "\n", "    ", list(list(list("return_grid_Obj")), list("return grid object (default = FALSE)")), "\n", "  ")
+`...`     |      Arguments passed on to [`get_spatialGrid`](#getspatialgrid)   list("\n", "    ", list(list(list("name")), list("name of spatial grid")), "\n", "    ", list(list(list("return_grid_Obj")), list("return grid object (default = FALSE)")), "\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit (e.g. \"cell\")")), "\n", "    ", list(list(list("feat_type")), list("feature type (e.g. \"rna\", \"dna\", \"protein\")")), "\n", "    ", list(list(list("set_defaults")), list("set default spat_unit and feat_type. Change to FALSE only when")), 
+    "\n", "  ")
 
 
 ## Seealso

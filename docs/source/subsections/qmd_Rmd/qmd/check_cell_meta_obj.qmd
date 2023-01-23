@@ -1,0 +1,29 @@
+--- 
+title: check_cell_meta_obj 
+format: rst 
+date: 2023-01-19 
+--- 
+# `check_cell_meta_obj`
+
+Check cell metadata object
+
+
+## Description
+
+Function to check S4 cellMetaObj
+
+
+## Usage
+
+```r
+check_cell_meta_obj(object)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`object`     |     S4 cellMetaObj to check
+
+

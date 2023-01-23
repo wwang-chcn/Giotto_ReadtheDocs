@@ -1,0 +1,15 @@
+--- 
+title: spatFeatData-class 
+format: rst 
+date: 2023-01-19 
+--- 
+# `spatFeatData-class`
+
+Superclass for classes that contain both spatial and feature data
+
+
+## Description
+
+Superclass for classes that contain both spatial and feature data
+
+

@@ -1,8 +1,12 @@
 --- 
 title: dimFeatPlot2D 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `dimFeatPlot2D`
+
+dimFeatPlot2D
+
 
 ## Description
 
@@ -18,6 +22,7 @@ dimFeatPlot2D(
   feat_type = NULL,
   expression_values = c("normalized", "scaled", "custom"),
   feats = NULL,
+  order = TRUE,
   dim_reduction_to_use = "umap",
   dim_reduction_name = NULL,
   dim1_to_use = 1,
@@ -41,7 +46,7 @@ dimFeatPlot2D(
   background_color = "white",
   axis_text = 8,
   axis_title = 8,
-  cow_n_col = 2,
+  cow_n_col = NULL,
   cow_rel_h = 1,
   cow_rel_w = 1,
   cow_align = "h",
@@ -63,6 +68,7 @@ Argument      |Description
 `feat_type`     |     feature type
 `expression_values`     |     gene expression values to use
 `feats`     |     features to show
+`order`     |     order points according to feature expression
 `dim_reduction_to_use`     |     dimension reduction to use
 `dim_reduction_name`     |     dimension reduction name
 `dim1_to_use`     |     dimension to use on x-axis

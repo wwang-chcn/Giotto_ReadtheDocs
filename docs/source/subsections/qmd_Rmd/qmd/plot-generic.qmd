@@ -1,8 +1,12 @@
 --- 
 title: plot-generic 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `plot-generic`
+
+Preview a Giotto spatial object
+
 
 ## Description
 
@@ -14,8 +18,9 @@ S4 generic for previewing Giotto's image and subcellular objects.
 ```r
 list(list("plot"), list("giottoImage,missing"))(x, y, ...)
 list(list("plot"), list("giottoLargeImage,missing"))(x, y, ...)
-list(list("plot"), list("giottoPolygon,missing"))(x, y, ...)
+list(list("plot"), list("giottoPolygon,missing"))(x, y, point_size = 0.1, type = c("poly", "centroid"), ...)
 list(list("plot"), list("giottoPoints,missing"))(x, y, point_size = 0.1, feats = NULL, ...)
+list(list("plot"), list("spatLocsObj,missing"))(x, y, ...)
 ```
 
 
@@ -26,7 +31,8 @@ Argument      |Description
 `x`     |     giotto image, giottoPolygon, or giottoPoints object
 `y`     |     Not used.
 `list()`     |     additional parameters to pass
-`point_size`     |     size of points when plotting giottoPoint
-`feats`     |     specific features to plot within giottoPoint object (defaults to NULL, meaning all available features)
+`point_size`     |     size of points when plotting giottoPoints
+`type`     |     what to plot: either 'poly' (default) or polygon 'centroid'
+`feats`     |     specific features to plot within giottoPoints object (defaults to NULL, meaning all available features)
 
 

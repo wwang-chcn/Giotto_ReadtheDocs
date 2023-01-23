@@ -1,8 +1,12 @@
 --- 
 title: set_feature_info 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `set_feature_info`
+
+Set feature info
+
 
 ## Description
 
@@ -12,7 +16,7 @@ Set giotto polygon spatVector for features
 ## Usage
 
 ```r
-set_feature_info(gobject, feat_type = NULL, gpolygon)
+set_feature_info(gobject, feat_type = NULL, gpolygon, verbose = TRUE)
 ```
 
 
@@ -21,8 +25,9 @@ set_feature_info(gobject, feat_type = NULL, gpolygon)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`feat_type`     |     name of feat (e.g. "rna", "dna", "protein")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
 `gpolygon`     |     giotto polygon
+`verbose`     |     be verbose
 
 
 ## Value
@@ -36,10 +41,17 @@ Other feature info data accessor functions:
  [`get_feature_info`](#getfeatureinfo) 
  
  Other functions to set data in giotto object:
+ [`get_cell_id`](#getcellid) ,
+ [`get_feat_id`](#getfeatid) ,
  [`set_NearestNetwork`](#setnearestnetwork) ,
+ [`set_cell_id`](#setcellid) ,
+ [`set_cell_metadata`](#setcellmetadata) ,
  [`set_dimReduction`](#setdimreduction) ,
  [`set_expression_values`](#setexpressionvalues) ,
+ [`set_feat_id`](#setfeatid) ,
+ [`set_feature_metadata`](#setfeaturemetadata) ,
  [`set_giottoImage`](#setgiottoimage) ,
+ [`set_multiomics`](#setmultiomics) ,
  [`set_polygon_info`](#setpolygoninfo) ,
  [`set_spatialGrid`](#setspatialgrid) ,
  [`set_spatialNetwork`](#setspatialnetwork) ,

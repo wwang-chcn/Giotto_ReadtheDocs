@@ -1,8 +1,12 @@
 --- 
 title: runWNN 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `runWNN`
+
+Multi omics integration with WNN
+
 
 ## Description
 
@@ -12,7 +16,19 @@ Multi omics integration with WNN
 ## Usage
 
 ```r
-runWNN(gobject, k = 20)
+runWNN(
+  gobject,
+  spat_unit = "cell",
+  modality_1 = "rna",
+  modality_2 = "protein",
+  pca_name_modality_1 = "rna.pca",
+  pca_name_modality_2 = "protein.pca",
+  k = 20,
+  integrated_feat_type = NULL,
+  matrix_result_name = NULL,
+  w_name_modality_1 = NULL,
+  w_name_modality_2 = NULL
+)
 ```
 
 
@@ -21,7 +37,16 @@ runWNN(gobject, k = 20)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     A Giotto object with individual PCA modalities pre-calculated
+`spat_unit`     |     spatial unit
+`modality_1`     |     modality 1 name. Default = "rna"
+`modality_2`     |     modality 2 name. Default = "protein"
+`pca_name_modality_1`     |     Default = 'rna.pca'
+`pca_name_modality_2`     |     Default = 'protein.pca'
 `k`     |     k number, default = 20
+`integrated_feat_type`     |     integrated feature type (e.g. 'rna_protein')
+`matrix_result_name`     |     Default = 'theta_weighted_matrix'
+`w_name_modality_1`     |     name for modality 1 weights
+`w_name_modality_2`     |     name for modality 2 weights
 
 
 ## Value

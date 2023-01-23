@@ -1,8 +1,12 @@
 --- 
 title: convert_to_reduced_spatial_network 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `convert_to_reduced_spatial_network`
+
+convert_to_reduced_spatial_network
+
 
 ## Description
 

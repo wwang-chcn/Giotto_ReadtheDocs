@@ -1,8 +1,12 @@
 --- 
 title: extract_polygon_list 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `extract_polygon_list`
+
+Extract list of polygons
+
 
 ## Description
 
@@ -15,7 +19,8 @@ to extract list of polygons
 extract_polygon_list(
   polygonlist,
   polygon_mask_list_params,
-  polygon_dfr_list_params
+  polygon_dfr_list_params,
+  verbose = TRUE
 )
 ```
 

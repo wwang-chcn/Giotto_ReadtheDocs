@@ -1,8 +1,12 @@
 --- 
 title: set_default_spat_unit 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `set_default_spat_unit`
+
+set_default_spat_unit
+
 
 ## Description
 

@@ -1,8 +1,12 @@
 --- 
 title: update_giotto_params 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `update_giotto_params`
+
+Update giotto parameters
+
 
 ## Description
 

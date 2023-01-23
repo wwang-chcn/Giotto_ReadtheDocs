@@ -1,0 +1,30 @@
+--- 
+title: giotto_alloc_dt_slots 
+format: rst 
+date: 2023-01-19 
+--- 
+# `giotto_alloc_dt_slots`
+
+Over-allocation for giotto DT-based info
+
+
+## Description
+
+Finds DT based objects, overallocates the data.tables, then sets
+ the objects back in the giotto object
+
+
+## Usage
+
+```r
+giotto_alloc_dt_slots(gobject)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`gobject`     |     giotto object
+
+

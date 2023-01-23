@@ -1,0 +1,34 @@
+--- 
+title: fread_colmatch 
+format: rst 
+date: 2023-01-19 
+--- 
+# `fread_colmatch`
+
+Fread rows based on column matches
+
+
+## Description
+
+Fread rows based on column matches
+
+
+## Usage
+
+```r
+fread_colmatch(file, col, sep = NULL, values_to_match, verbose = FALSE, ...)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`file`     |     path to file to load
+`col`     |     name of col to match from
+`sep`     |     grep term to match as column delimiters within the file
+`values_to_match`     |     values in `col` to match given as a vector
+`verbose`     |     whether to print the grep command
+`...`     |     additional parameters to pass to [`fread`](#fread)
+
+

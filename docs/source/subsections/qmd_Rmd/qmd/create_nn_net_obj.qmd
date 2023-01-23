@@ -1,0 +1,40 @@
+--- 
+title: create_nn_net_obj 
+format: rst 
+date: 2023-01-19 
+--- 
+# `create_nn_net_obj`
+
+Create S4 nnNetObj
+
+
+## Description
+
+Create an S4 nnNetObj
+
+
+## Usage
+
+```r
+create_nn_net_obj(
+  name = "test",
+  nn_type = NA_character_,
+  igraph = NULL,
+  spat_unit = "cell",
+  feat_type = "rna",
+  provenance = NULL,
+  misc = NULL
+)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`name`     |     name of nnNetObj
+`nn_type`     |     type of nearest neighbor network
+`igraph`     |     igraph object containing nearest neighbor information
+`misc`     |     misc
+
+

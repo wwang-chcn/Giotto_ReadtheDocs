@@ -1,8 +1,12 @@
 --- 
 title: createGiottoObjectSubcellular 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `createGiottoObjectSubcellular`
+
+Create a giotto object from subcellular data
+
 
 ## Description
 
@@ -57,6 +61,7 @@ Argument      |Description
 `nn_network`     |     list of nearest neighbor network(s)
 `images`     |     list of images
 `largeImages`     |     list of large images
+`largeImages_list_params`     |     image params when loading largeImages as list
 `instructions`     |     list of instructions or output result from [`createGiottoInstructions`](#creategiottoinstructions)
 `cores`     |     how many cores or threads to use to read data if paths are provided
 `verbose`     |     be verbose when building Giotto object

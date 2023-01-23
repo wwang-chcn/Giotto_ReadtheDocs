@@ -1,18 +1,26 @@
 --- 
 title: rotate_spatial_locations 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `rotate_spatial_locations`
+
+Rotate spatial locations
+
 
 ## Description
 
-Rotate given X Y coordinates by given radians in counter clockwise manner about the coordinate origin
+Rotate given spatlocs by given radians
 
 
 ## Usage
 
 ```r
-rotate_spatial_locations(spatlocs, rotateradians)
+rotate_spatial_locations(
+  spatlocs,
+  rotateradians = c(xy = 0, zy = 0, xz = 0),
+  rcenter = c(x = 0, y = 0, z = 0)
+)
 ```
 
 
@@ -21,6 +29,13 @@ rotate_spatial_locations(spatlocs, rotateradians)
 Argument      |Description
 ------------- |----------------
 `spatlocs`     |     spatial locations to use
-`rotateradians`     |     radians by which the x and y values will be rotated in a counter clockwise manner
+`rotateradians`     |     Named vector of radians for rotation along each of the 3 coordinate axes. If only a single value is provided, it will be treated as xy rotation.
+`rcenter`     |     center of rotation given as vector xy(z) coordinates (defaults to coordinate center)
+
+
+## Details
+
+Radians are provided through `rotateradians` param as a named vector
+ with values for `xy` (yaw), `zy` (pitch), `xz` (roll)
 
 

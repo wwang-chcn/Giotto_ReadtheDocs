@@ -1,0 +1,31 @@
+--- 
+title: getGEFtxCoords 
+format: rst 
+date: 2023-01-19 
+--- 
+# `getGEFtxCoords`
+
+getGEFtxCoords
+
+
+## Description
+
+Converts .gef file (output stereo-seq pipeline) into
+ transcript with coordinates
+
+
+## Usage
+
+```r
+getGEFtxCoords(gef_file, bin_size = "bin100")
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`gef_file`     |     path to .gef file
+`bin_size`     |     bin size to select from .gef file
+
+

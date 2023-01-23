@@ -1,0 +1,45 @@
+--- 
+title: aggregateStacksPolygons 
+format: rst 
+date: 2023-01-19 
+--- 
+# `aggregateStacksPolygons`
+
+aggregateStacksPolygons
+
+
+## Description
+
+aggregate polygons from different z-stacks
+
+
+## Usage
+
+```r
+aggregateStacksPolygons(gobject, spat_units, new_spat_unit = "aggregate")
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`gobject`     |     giotto object
+`spat_units`     |     spatial units to aggregate
+`new_spat_unit`     |     new name for aggregated spatial unit
+
+
+## Value
+
+giotto object
+
+
+## Seealso
+
+Other aggregate stacks:
+ [`aggregateStacksExpression`](#aggregatestacksexpression) ,
+ [`aggregateStacksLocations`](#aggregatestackslocations) ,
+ [`aggregateStacksPolygonOverlaps`](#aggregatestackspolygonoverlaps) ,
+ [`aggregateStacks`](#aggregatestacks)
+
+

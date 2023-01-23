@@ -1,8 +1,12 @@
 --- 
 title: readPolygonFilesVizgen 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `readPolygonFilesVizgen`
+
+readPolygonFilesVizgen
+
 
 ## Description
 
@@ -25,6 +29,12 @@ readPolygonFilesVizgen(
   set_neg_to_zero = FALSE,
   return_gobject = TRUE,
   verbose = TRUE
+)
+h5read_vizgen(
+  h5File,
+  z_indices = 1L:7L,
+  segm_to_use = "p_0",
+  H5Fopen_flags = "H5F_ACC_RDWR"
 )
 ```
 

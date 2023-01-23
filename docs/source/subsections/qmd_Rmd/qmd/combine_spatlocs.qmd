@@ -1,0 +1,22 @@
+--- 
+title: combine_spatlocs 
+format: rst 
+date: 2023-01-19 
+--- 
+# `combine_spatlocs`
+
+combine_spatlocs
+
+
+## Description
+
+combine_spatlocs
+
+
+## Usage
+
+```r
+combine_spatlocs(spatlocs_list, summarize = "mean")
+```
+
+

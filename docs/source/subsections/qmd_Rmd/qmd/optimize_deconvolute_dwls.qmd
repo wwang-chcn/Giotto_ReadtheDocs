@@ -1,8 +1,12 @@
 --- 
 title: optimize_deconvolute_dwls 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `optimize_deconvolute_dwls`
+
+optimize_deconvolute_dwls
+
 
 ## Description
 

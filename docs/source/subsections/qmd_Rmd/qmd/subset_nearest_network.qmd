@@ -1,8 +1,12 @@
 --- 
 title: subset_nearest_network 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `subset_nearest_network`
+
+Subset nearest network
+
 
 ## Description
 
@@ -12,7 +16,7 @@ Subset nearest network results from giotto object
 ## Usage
 
 ```r
-subset_nearest_network(gobject, spat_unit, filter_bool_cells)
+subset_nearest_network(gobject, spat_unit, feat_type, cell_ids)
 ```
 
 

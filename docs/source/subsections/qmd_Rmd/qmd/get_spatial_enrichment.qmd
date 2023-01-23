@@ -1,8 +1,12 @@
 --- 
 title: get_spatial_enrichment 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `get_spatial_enrichment`
+
+Get spatial enrichment
+
 
 ## Description
 
@@ -16,7 +20,10 @@ get_spatial_enrichment(
   gobject,
   spat_unit = NULL,
   feat_type = NULL,
-  enrichm_name = "DWLS"
+  enrichm_name = "DWLS",
+  output = c("spatEnrObj", "data.table"),
+  copy_obj = TRUE,
+  set_defaults = TRUE
 )
 ```
 
@@ -26,9 +33,12 @@ get_spatial_enrichment(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit (e.g."cell")
+`spat_unit`     |     spatial unit (e.g. "cell")
 `feat_type`     |     feature type (e.g. "rna", "dna", "protein")
 `enrichm_name`     |     name of spatial enrichment results. Default "DWLS"
+`output`     |     what format in which to get information (e.g. "data.table")
+`copy_obj`     |     whether to deep copy/duplicate when getting the object (default = TRUE) expression and spat_info are not expected to exist.
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
 
 
 ## Value
@@ -47,6 +57,7 @@ Other spatial enrichment data accessor functions:
  [`get_expression_values`](#getexpressionvalues) ,
  [`get_feature_info`](#getfeatureinfo) ,
  [`get_giottoImage`](#getgiottoimage) ,
+ [`get_multiomics`](#getmultiomics) ,
  [`get_polygon_info`](#getpolygoninfo) ,
  [`get_spatialGrid`](#getspatialgrid) ,
  [`get_spatialNetwork`](#getspatialnetwork) ,

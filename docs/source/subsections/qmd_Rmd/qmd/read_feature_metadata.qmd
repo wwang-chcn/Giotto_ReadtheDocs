@@ -1,0 +1,32 @@
+--- 
+title: read_feature_metadata 
+format: rst 
+date: 2023-01-19 
+--- 
+# `read_feature_metadata`
+
+Read feature metadata
+
+
+## Description
+
+read feature metadata from list
+
+
+## Usage
+
+```r
+read_feature_metadata(gobject, metadata, provenance = NULL, verbose = TRUE)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`gobject`     |     giotto object
+`metadata`     |     nested list of feature metadata information
+`provenance`     |     provenance information (optional)
+`verbose`     |     be verbose
+
+

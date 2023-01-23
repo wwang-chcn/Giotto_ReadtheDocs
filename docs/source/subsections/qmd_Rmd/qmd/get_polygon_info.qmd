@@ -1,8 +1,12 @@
 --- 
 title: get_polygon_info 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `get_polygon_info`
+
+Get polygon info
+
 
 ## Description
 
@@ -42,6 +46,7 @@ Other polygon info data accessor functions:
  [`get_expression_values`](#getexpressionvalues) ,
  [`get_feature_info`](#getfeatureinfo) ,
  [`get_giottoImage`](#getgiottoimage) ,
+ [`get_multiomics`](#getmultiomics) ,
  [`get_spatialGrid`](#getspatialgrid) ,
  [`get_spatialNetwork`](#getspatialnetwork) ,
  [`get_spatial_enrichment`](#getspatialenrichment) ,

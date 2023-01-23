@@ -1,0 +1,22 @@
+--- 
+title: combine_polygons 
+format: rst 
+date: 2023-01-19 
+--- 
+# `combine_polygons`
+
+combine_polygons
+
+
+## Description
+
+combine_polygons
+
+
+## Usage
+
+```r
+combine_polygons(polygon_list)
+```
+
+

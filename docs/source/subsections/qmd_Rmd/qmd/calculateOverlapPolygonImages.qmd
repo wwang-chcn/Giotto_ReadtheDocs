@@ -1,8 +1,12 @@
 --- 
 title: calculateOverlapPolygonImages 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `calculateOverlapPolygonImages`
+
+calculateOverlapPolygonImages
+
 
 ## Description
 
@@ -14,12 +18,14 @@ calculate overlap between cellular structures (polygons) and images (intensities
 ```r
 calculateOverlapPolygonImages(
   gobject,
-  name_overlap = "images",
+  name_overlap = "protein",
   spatial_info = "cell",
   poly_ID_names = NULL,
   image_names = NULL,
+  poly_subset = NULL,
   return_gobject = TRUE,
-  verbose = TRUE
+  verbose = TRUE,
+  ...
 )
 ```
 
@@ -33,8 +39,10 @@ Argument      |Description
 `spatial_info`     |     polygon information
 `poly_ID_names`     |     (optional) list of poly_IDs to use
 `image_names`     |     names of the images with raw data
+`poly_subset`     |     numerical values to subset the polygon spatVector
 `return_gobject`     |     return giotto object (default: TRUE)
 `verbose`     |     be verbose
+`...`     |     additional params to [`exact_extract`](#exactextract)
 
 
 ## Value

@@ -1,0 +1,40 @@
+--- 
+title: rectVertices 
+format: rst 
+date: 2023-01-19 
+--- 
+# `rectVertices`
+
+Generate rectangular polygon vertices
+
+
+## Description
+
+Generates vertex coordinates for a rectangle with dimensions given
+ through `dims` param.
+
+
+## Usage
+
+```r
+rectVertices(dims)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`dims`     |     named vector in the style of c(x = `numeric` , y = `numeric` ) that defines the width (x) and height (y) of the generated rectangle polygon.
+
+
+## Value
+
+a data.table of rectangle vertices
+
+
+## Seealso
+
+polyStamp circleVertices hexVertices
+
+

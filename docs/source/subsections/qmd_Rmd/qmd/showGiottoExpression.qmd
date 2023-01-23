@@ -1,8 +1,12 @@
 --- 
 title: showGiottoExpression 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `showGiottoExpression`
+
+showGiottoExpression
+
 
 ## Description
 
@@ -21,8 +25,8 @@ showGiottoExpression(gobject, nrows = 4, ncols = 4)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`nrows`     |     number of rows to print for each matrix
-`ncols`     |     number of columns to print for each matrix
+`nrows`     |     number of rows to print for each matrix (ignored for sparse matrices)
+`ncols`     |     number of columns to print for each matrix (ignored for sparse matrices)
 
 
 ## Value
@@ -33,8 +37,10 @@ prints the name and small subset of available matrices
 ## Seealso
 
 Other functions to show data in giotto object:
+ [`showGiottoCellMetadata`](#showgiottocellmetadata) ,
  [`showGiottoDimRed`](#showgiottodimred) ,
  [`showGiottoFeatInfo`](#showgiottofeatinfo) ,
+ [`showGiottoFeatMetadata`](#showgiottofeatmetadata) ,
  [`showGiottoImageNames`](#showgiottoimagenames) ,
  [`showGiottoNearestNetworks`](#showgiottonearestnetworks) ,
  [`showGiottoSpatEnrichments`](#showgiottospatenrichments) ,

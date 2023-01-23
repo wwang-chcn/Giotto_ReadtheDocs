@@ -1,0 +1,46 @@
+--- 
+title: compareCellAbundance 
+format: rst 
+date: 2023-01-19 
+--- 
+# `compareCellAbundance`
+
+Compare cell types percent per polygon
+
+
+## Description
+
+Compare cell types percent per polygon
+
+
+## Usage
+
+```r
+compareCellAbundance(
+  gobject,
+  polygon_name = "selections",
+  spat_unit = "cell",
+  feat_type = "rna",
+  cell_type_column = "leiden_clus",
+  ...
+)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`gobject`     |     A Giotto object
+`polygon_name`     |     name of polygon selections
+`spat_unit`     |     spatial unit. Default = "cell"
+`feat_type`     |     feature type. Default =  "rna"
+`cell_type_column`     |     column name within the cell metadata table to use
+`...`     |     Additional parameters passed to ComplexHeatmap::Heatmap
+
+
+## Value
+
+A ComplexHeatmap::Heatmap
+
+

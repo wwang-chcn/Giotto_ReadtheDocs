@@ -1,8 +1,12 @@
 --- 
 title: spatDimPlot3D 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `spatDimPlot3D`
+
+spatDimPlot3D
+
 
 ## Description
 

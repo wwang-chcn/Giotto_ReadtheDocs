@@ -1,0 +1,15 @@
+--- 
+title: featMetaObj-class 
+format: rst 
+date: 2023-01-19 
+--- 
+# `featMetaObj-class`
+
+S4 featMetaObj
+
+
+## Description
+
+Framework to store feature metadata
+
+

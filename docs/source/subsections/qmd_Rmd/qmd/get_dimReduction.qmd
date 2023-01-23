@@ -1,8 +1,12 @@
 --- 
 title: get_dimReduction 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `get_dimReduction`
+
+Get dimension reduction
+
 
 ## Description
 
@@ -19,7 +23,8 @@ get_dimReduction(
   reduction = c("cells", "feats"),
   reduction_method = c("pca", "umap", "tsne"),
   name = "pca",
-  return_dimObj = FALSE
+  output = c("dimObj", "data.table"),
+  set_defaults = TRUE
 )
 ```
 
@@ -34,12 +39,13 @@ Argument      |Description
 `reduction`     |     reduction on cells or features (e.g. "cells", "feats")
 `reduction_method`     |     reduction method (e.g. "pca", "umap", "tsne")
 `name`     |     name of reduction results
-`return_dimObj`     |     return full dimension object result. Default = FALSE
+`output`     |     object type to return as. Either 'dimObj' (default) or 'data.table of the embedding coordinates.
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
 
 
 ## Value
 
-dim reduction coordinates (default) or dim reduction object
+dim reduction object (default) or dim reduction coordinates
 
 
 ## Seealso
@@ -52,6 +58,7 @@ Other dimensional reduction data accessor functions:
  [`get_expression_values`](#getexpressionvalues) ,
  [`get_feature_info`](#getfeatureinfo) ,
  [`get_giottoImage`](#getgiottoimage) ,
+ [`get_multiomics`](#getmultiomics) ,
  [`get_polygon_info`](#getpolygoninfo) ,
  [`get_spatialGrid`](#getspatialgrid) ,
  [`get_spatialNetwork`](#getspatialnetwork) ,
