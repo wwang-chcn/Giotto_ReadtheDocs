@@ -1,0 +1,15 @@
+--- 
+title: exprData-class 
+format: rst 
+date: 2023-01-19 
+--- 
+# `exprData-class`
+
+Basic class for classes with expression information
+
+
+## Description
+
+Basic class for classes with expression information
+
+

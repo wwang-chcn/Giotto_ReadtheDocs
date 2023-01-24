@@ -1,8 +1,12 @@
 --- 
 title: get_giottoImage 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `get_giottoImage`
+
+Get giotto image object
+
 
 ## Description
 
@@ -44,6 +48,7 @@ Other image data accessor functions:
  [`get_dimReduction`](#getdimreduction) ,
  [`get_expression_values`](#getexpressionvalues) ,
  [`get_feature_info`](#getfeatureinfo) ,
+ [`get_multiomics`](#getmultiomics) ,
  [`get_polygon_info`](#getpolygoninfo) ,
  [`get_spatialGrid`](#getspatialgrid) ,
  [`get_spatialNetwork`](#getspatialnetwork) ,

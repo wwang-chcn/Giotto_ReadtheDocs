@@ -1,8 +1,12 @@
 --- 
 title: plot_spat_point_layer_ggplot 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `plot_spat_point_layer_ggplot`
+
+plot_spat_point_layer_ggplot
+
 
 ## Description
 

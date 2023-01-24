@@ -1,8 +1,12 @@
 --- 
 title: find_terra_writeRaster_dataType 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `find_terra_writeRaster_dataType`
+
+find_terra_writeRaster_dataType
+
 
 ## Description
 

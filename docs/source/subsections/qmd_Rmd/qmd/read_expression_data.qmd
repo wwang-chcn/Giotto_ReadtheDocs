@@ -1,8 +1,12 @@
 --- 
 title: read_expression_data 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `read_expression_data`
+
+Read expression data
+
 
 ## Description
 
@@ -17,7 +21,8 @@ read_expression_data(
   sparse = TRUE,
   cores = NA,
   default_feat_type = NULL,
-  verbose = TRUE
+  verbose = TRUE,
+  provenance = NULL
 )
 ```
 
@@ -31,6 +36,7 @@ Argument      |Description
 `cores`     |     number of cores to use
 `default_feat_type`     |     default feature type if nothing is provided
 `verbose`     |     be verbose
+`provenance`     |     provenance information
 
 
 ## Details

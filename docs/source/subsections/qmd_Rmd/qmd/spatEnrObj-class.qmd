@@ -1,0 +1,15 @@
+--- 
+title: spatEnrObj-class 
+format: rst 
+date: 2023-01-19 
+--- 
+# `spatEnrObj-class`
+
+S4 spatEnrObj Class
+
+
+## Description
+
+Framework to store spatial enrichment results
+
+

@@ -1,8 +1,17 @@
 --- 
 title: adapt_aspect_ratio 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+--- 
+title: adapt_aspect_ratio 
+format: rst 
+date: 2023-01-19 
+--- 
+# `adapt_aspect_ratio`
+
+adapt_aspect_ratio
+
 
 ## Description
 

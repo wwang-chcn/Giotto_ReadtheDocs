@@ -1,8 +1,12 @@
 --- 
 title: PAGE_DT_method 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `PAGE_DT_method`
+
+PAGE_DT_method
+
 
 ## Description
 
@@ -26,5 +30,12 @@ PAGE_DT_method(
   verbose = TRUE
 )
 ```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`expr_values`     |     matrix of expression values
 
 

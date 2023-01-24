@@ -1,8 +1,12 @@
 --- 
 title: subset_spatial_network 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `subset_spatial_network`
+
+Subset spatial network
+
 
 ## Description
 
@@ -13,7 +17,7 @@ subset ALL spatial networks from giotto object of the given
 ## Usage
 
 ```r
-subset_spatial_network(gobject, spat_unit, cells_to_keep)
+subset_spatial_network(gobject, spat_unit, cell_ids)
 ```
 
 

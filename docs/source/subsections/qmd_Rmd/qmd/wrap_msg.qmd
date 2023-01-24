@@ -1,8 +1,12 @@
 --- 
 title: wrap_msg 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `wrap_msg`
+
+Wrap message
+
 
 ## Description
 
@@ -12,7 +16,7 @@ Wrap message
 ## Usage
 
 ```r
-wrap_msg(..., collapse = "")
+wrap_msg(..., sep = " ")
 ```
 
 
@@ -20,7 +24,7 @@ wrap_msg(..., collapse = "")
 
 Argument      |Description
 ------------- |----------------
-`...`     |     additional strings and/or elements to pass to cat
-`collapse`     |     how to join elements of string (default is no space)
+`...`     |     additional strings and/or elements to pass to wrap_txt
+`sep`     |     how to join elements of string (default is one space)
 
 

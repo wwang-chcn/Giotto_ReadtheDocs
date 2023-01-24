@@ -1,8 +1,12 @@
 --- 
 title: set_spatialNetwork 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `set_spatialNetwork`
+
+Set spatial network
+
 
 ## Description
 
@@ -12,7 +16,14 @@ Function to set a spatial network
 ## Usage
 
 ```r
-set_spatialNetwork(gobject, spat_unit = NULL, name = NULL, spatial_network)
+set_spatialNetwork(
+  gobject,
+  spat_unit = NULL,
+  name = NULL,
+  spatial_network,
+  verbose = TRUE,
+  set_defaults = TRUE
+)
 ```
 
 
@@ -21,9 +32,11 @@ set_spatialNetwork(gobject, spat_unit = NULL, name = NULL, spatial_network)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`spat_unit`     |     spatial unit  (e.g. "cell")
+`spat_unit`     |     spatial unit (e.g. "cell")
 `name`     |     name of spatial network
 `spatial_network`     |     spatial network
+`verbose`     |     be verbose
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
 
 
 ## Value
@@ -37,11 +50,18 @@ Other spatial network data accessor functions:
  [`get_spatialNetwork`](#getspatialnetwork) 
  
  Other functions to set data in giotto object:
+ [`get_cell_id`](#getcellid) ,
+ [`get_feat_id`](#getfeatid) ,
  [`set_NearestNetwork`](#setnearestnetwork) ,
+ [`set_cell_id`](#setcellid) ,
+ [`set_cell_metadata`](#setcellmetadata) ,
  [`set_dimReduction`](#setdimreduction) ,
  [`set_expression_values`](#setexpressionvalues) ,
+ [`set_feat_id`](#setfeatid) ,
  [`set_feature_info`](#setfeatureinfo) ,
+ [`set_feature_metadata`](#setfeaturemetadata) ,
  [`set_giottoImage`](#setgiottoimage) ,
+ [`set_multiomics`](#setmultiomics) ,
  [`set_polygon_info`](#setpolygoninfo) ,
  [`set_spatialGrid`](#setspatialgrid) ,
  [`set_spatial_enrichment`](#setspatialenrichment) ,

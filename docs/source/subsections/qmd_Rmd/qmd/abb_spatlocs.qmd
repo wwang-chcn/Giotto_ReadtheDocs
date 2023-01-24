@@ -1,0 +1,27 @@
+--- 
+title: abb_spatlocs 
+format: rst 
+date: 2023-01-19 
+--- 
+--- 
+title: abb_spatlocs 
+format: rst 
+date: 2023-01-19 
+--- 
+# `abb_spatlocs`
+
+Print abbreviated spatlocs
+
+
+## Description
+
+print abbreviated spatLocsObj
+
+
+## Usage
+
+```r
+abb_spatlocs(spatLocsObj, nrows)
+```
+
+

@@ -1,0 +1,15 @@
+--- 
+title: spatLocsObj-class 
+format: rst 
+date: 2023-01-19 
+--- 
+# `spatLocsObj-class`
+
+S4 spatLocsObj Class
+
+
+## Description
+
+Framework to store spatial location information
+
+

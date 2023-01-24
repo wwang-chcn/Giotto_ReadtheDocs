@@ -1,8 +1,12 @@
 --- 
 title: mean_expr_det_test 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `mean_expr_det_test`
+
+mean_expr_det_test
+
 
 ## Description
 
@@ -14,5 +18,13 @@ mean_expr_det_test
 ```r
 mean_expr_det_test(mymatrix, detection_threshold = 1)
 ```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`mymatrix`     |     matrix of expression info
+`detection_threshold`     |     detection threshold. Defaults to 1 count.
 
 

@@ -1,0 +1,22 @@
+--- 
+title: combine_matrices 
+format: rst 
+date: 2023-01-19 
+--- 
+# `combine_matrices`
+
+combine_matrices
+
+
+## Description
+
+combine_matrices
+
+
+## Usage
+
+```r
+combine_matrices(mat_list, summarize = "sum")
+```
+
+

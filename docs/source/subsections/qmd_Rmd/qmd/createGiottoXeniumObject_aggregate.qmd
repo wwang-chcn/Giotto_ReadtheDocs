@@ -1,0 +1,42 @@
+--- 
+title: createGiottoXeniumObject_aggregate 
+format: rst 
+date: 2023-01-19 
+--- 
+# `createGiottoXeniumObject_aggregate`
+
+Create a Xenium Giotto object from aggregate info
+
+
+## Description
+
+Aggregate workflow for createGiottoXeniumObject
+
+
+## Usage
+
+```r
+createGiottoXeniumObject_aggregate(
+  data_list,
+  instructions = NULL,
+  cores = NA,
+  verbose = TRUE
+)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`data_list`     |     list of data loaded by `load_xenium_folder`
+`instructions`     |     list of instructions or output result from [`createGiottoInstructions`](#creategiottoinstructions)
+`cores`     |     how many cores or threads to use to read data if paths are provided
+`verbose`     |     be verbose when building Giotto object
+
+
+## Seealso
+
+createGiottoXeniumObject createGiottoXeniumObject_subcellular
+
+

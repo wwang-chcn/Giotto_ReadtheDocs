@@ -1,0 +1,30 @@
+--- 
+title: load_cosmx_folder_aggregate 
+format: rst 
+date: 2023-01-19 
+--- 
+# `load_cosmx_folder_aggregate`
+
+Load CosMx folder aggregate info
+
+
+## Description
+
+Load CosMx folder aggregate info
+
+
+## Usage
+
+```r
+load_cosmx_folder_aggregate(dir_items, cores, verbose = TRUE)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`cores`     |     how many cores or threads to use to read data if paths are provided
+`verbose`     |     be verbose when building Giotto object
+
+

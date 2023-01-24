@@ -1,0 +1,62 @@
+--- 
+title: get_cell_id 
+format: rst 
+date: 2023-01-19 
+--- 
+# `get_cell_id`
+
+Get cell IDs for a given spatial unit
+
+
+## Description
+
+Data for each spatial unit is expected to agree on a single set of cell_IDs
+ that are shared across any feature types. These cell_IDs are stored within the
+ giotto object's `cell_ID` slot. Getters and setters for this slot directly
+ retrieve (get) or replace (set) this slot.
+
+
+## Usage
+
+```r
+get_cell_id(gobject, spat_unit = NULL, set_defaults = TRUE)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`gobject`     |     giotto object
+`spat_unit`     |     spatial unit (e.g. "cell")
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
+
+
+## Value
+
+character vector of cell_IDs
+
+
+## Seealso
+
+set_cell_id
+ 
+ Other functions to set data in giotto object:
+ [`get_feat_id`](#getfeatid) ,
+ [`set_NearestNetwork`](#setnearestnetwork) ,
+ [`set_cell_id`](#setcellid) ,
+ [`set_cell_metadata`](#setcellmetadata) ,
+ [`set_dimReduction`](#setdimreduction) ,
+ [`set_expression_values`](#setexpressionvalues) ,
+ [`set_feat_id`](#setfeatid) ,
+ [`set_feature_info`](#setfeatureinfo) ,
+ [`set_feature_metadata`](#setfeaturemetadata) ,
+ [`set_giottoImage`](#setgiottoimage) ,
+ [`set_multiomics`](#setmultiomics) ,
+ [`set_polygon_info`](#setpolygoninfo) ,
+ [`set_spatialGrid`](#setspatialgrid) ,
+ [`set_spatialNetwork`](#setspatialnetwork) ,
+ [`set_spatial_enrichment`](#setspatialenrichment) ,
+ [`set_spatial_locations`](#setspatiallocations)
+
+

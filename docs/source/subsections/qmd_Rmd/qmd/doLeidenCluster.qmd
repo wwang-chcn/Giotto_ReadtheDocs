@@ -1,8 +1,12 @@
 --- 
 title: doLeidenCluster 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `doLeidenCluster`
+
+doLeidenCluster
+
 
 ## Description
 
@@ -26,7 +30,7 @@ doLeidenCluster(
   init_membership = NULL,
   n_iterations = 1000,
   return_gobject = TRUE,
-  set_seed = T,
+  set_seed = TRUE,
   seed_number = 1234
 )
 ```
@@ -64,7 +68,7 @@ This function is a wrapper for the Leiden algorithm implemented in python,
  Partition types available and information:
    
 
-*  list("RBConfigurationVertexPartition: ") list("Implements Reichardt and Bornholdtâ€™s Potts model\n", "   with a configuration null model. This quality function is well-defined only for positive edge weights.\n", "    This quality function uses a linear resolution parameter.")   
+*  list("RBConfigurationVertexPartition: ") list("Implements Reichardt and Bornholdtâ\200\231s Potts model\n", "   with a configuration null model. This quality function is well-defined only for positive edge weights.\n", "    This quality function uses a linear resolution parameter.")   
 
 *  list("ModularityVertexPartition: ") list("Implements modularity.\n", "   This quality function is well-defined only for positive edge weights. It does ", list("not"), " use the resolution parameter")  
  

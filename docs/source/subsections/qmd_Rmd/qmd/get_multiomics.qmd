@@ -1,0 +1,62 @@
+--- 
+title: get_multiomics 
+format: rst 
+date: 2023-01-19 
+--- 
+# `get_multiomics`
+
+Get multiomics integration results
+
+
+## Description
+
+Get a multiomics integration result from a Giotto object
+
+
+## Usage
+
+```r
+get_multiomics(
+  gobject,
+  spat_unit = NULL,
+  feat_type = NULL,
+  integration_method = "WNN",
+  result_name = "theta_weighted_matrix"
+)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`gobject`     |     A Giotto object
+`spat_unit`     |     spatial unit (e.g. 'cell')
+`feat_type`     |     integrated feature type (e.g. 'rna_protein')
+`integration_method`     |     multiomics integration method used. Default = 'WNN'
+`result_name`     |     Default = 'theta_weighted_matrix'
+
+
+## Value
+
+A multiomics integration result (e.g. theta_weighted_matrix from WNN)
+
+
+## Seealso
+
+Other multiomics accessor functions:
+ [`set_multiomics`](#setmultiomics) 
+ 
+ Other functions to get data from giotto object:
+ [`get_NearestNetwork`](#getnearestnetwork) ,
+ [`get_dimReduction`](#getdimreduction) ,
+ [`get_expression_values`](#getexpressionvalues) ,
+ [`get_feature_info`](#getfeatureinfo) ,
+ [`get_giottoImage`](#getgiottoimage) ,
+ [`get_polygon_info`](#getpolygoninfo) ,
+ [`get_spatialGrid`](#getspatialgrid) ,
+ [`get_spatialNetwork`](#getspatialnetwork) ,
+ [`get_spatial_enrichment`](#getspatialenrichment) ,
+ [`get_spatial_locations`](#getspatiallocations)
+
+

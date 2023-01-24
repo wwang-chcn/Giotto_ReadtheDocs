@@ -1,8 +1,12 @@
 --- 
 title: comparePolygonExpression 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `comparePolygonExpression`
+
+Compare gene expression between polygon areas
+
 
 ## Description
 
@@ -14,6 +18,7 @@ Compare gene expression between polygon areas
 ```r
 comparePolygonExpression(
   gobject,
+  polygon_name = "selections",
   spat_unit = "cell",
   feat_type = "rna",
   selected_feats = "top_genes",
@@ -29,6 +34,7 @@ comparePolygonExpression(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     A Giotto object
+`polygon_name`     |     name of polygon selections
 `spat_unit`     |     spatial unit (e.g. "cell")
 `feat_type`     |     feature type (e.g. "rna", "dna", "protein")
 `selected_feats`     |     vector of selected features to plot

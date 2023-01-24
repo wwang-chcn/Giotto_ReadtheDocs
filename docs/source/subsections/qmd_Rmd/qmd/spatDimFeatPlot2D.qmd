@@ -1,8 +1,12 @@
 --- 
 title: spatDimFeatPlot2D 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `spatDimFeatPlot2D`
+
+spatDimFeatPlot2D
+
 
 ## Description
 
@@ -23,6 +27,7 @@ spatDimFeatPlot2D(
   expression_values = c("normalized", "scaled", "custom"),
   plot_alignment = c("vertical", "horizontal"),
   feats,
+  order = TRUE,
   dim_reduction_to_use = "umap",
   dim_reduction_name = "umap",
   dim1_to_use = 1,
@@ -55,7 +60,7 @@ spatDimFeatPlot2D(
   cell_color_gradient = c("blue", "white", "red"),
   gradient_midpoint = NULL,
   gradient_limits = NULL,
-  cow_n_col = 2,
+  cow_n_col = NULL,
   cow_rel_h = 1,
   cow_rel_w = 1,
   cow_align = "h",
@@ -91,6 +96,7 @@ Argument      |Description
 `expression_values`     |     feat expression values to use
 `plot_alignment`     |     direction to align plot
 `feats`     |     features to show
+`order`     |     order points according to feature expression
 `dim_reduction_to_use`     |     dimension reduction to use
 `dim_reduction_name`     |     dimension reduction name
 `dim1_to_use`     |     dimension to use on x-axis

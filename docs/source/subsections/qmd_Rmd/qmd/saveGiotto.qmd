@@ -1,0 +1,59 @@
+--- 
+title: saveGiotto 
+format: rst 
+date: 2023-01-19 
+--- 
+# `saveGiotto`
+
+saveGiotto
+
+
+## Description
+
+Saves a Giotto object to a specific folder structure
+
+
+## Usage
+
+```r
+saveGiotto(
+  gobject,
+  foldername = "saveGiottoDir",
+  dir = getwd(),
+  method = c("RDS", "qs"),
+  method_params = list(),
+  overwrite = FALSE,
+  image_filetype = "PNG",
+  verbose = TRUE,
+  ...
+)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`gobject`     |     Giotto object
+`foldername`     |     Folder name
+`dir`     |     Directory where to create the folder
+`method`     |     method to save main object
+`method_params`     |     additional method parameters for RDS or qs
+`overwrite`     |     Overwrite existing folders
+`image_filetype`     |     the image filetype to use, see [`writeRaster`](#writeraster)
+`verbose`     |     be verbose
+`...`     |     additional parameters for [`writeRaster`](#writeraster)
+
+
+## Details
+
+Works together with [`loadGiotto`](#loadgiotto) to save and re-load
+ Giotto objects. Additional method_params need to be provided as a list and will
+ go to [`saveRDS`](#saverds) or [`qsave`](#qsave)
+
+
+## Value
+
+Creates a directory with Giotto object information
+
+

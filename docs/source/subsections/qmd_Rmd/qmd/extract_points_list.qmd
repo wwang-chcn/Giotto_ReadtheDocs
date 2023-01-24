@@ -1,8 +1,12 @@
 --- 
 title: extract_points_list 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `extract_points_list`
+
+Extract list of giotto points objects
+
 
 ## Description
 
@@ -12,7 +16,7 @@ to extract list of giotto points
 ## Usage
 
 ```r
-extract_points_list(pointslist)
+extract_points_list(pointslist, verbose = TRUE)
 ```
 
 
@@ -21,5 +25,6 @@ extract_points_list(pointslist)
 Argument      |Description
 ------------- |----------------
 `pointslist`     |     list of inputs from which to create giotto points objects
+`verbose`     |     be verbose
 
 

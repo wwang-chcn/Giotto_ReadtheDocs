@@ -1,0 +1,15 @@
+--- 
+title: data.table-class 
+format: rst 
+date: 2023-01-19 
+--- 
+# `data.table-class`
+
+data.table S4 class for method dispatch
+
+
+## Description
+
+data.table S4 class for method dispatch
+
+

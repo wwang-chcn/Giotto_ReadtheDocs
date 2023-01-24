@@ -1,8 +1,12 @@
 --- 
 title: flex_lapply 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `flex_lapply`
+
+flex_lapply
+
 
 ## Description
 
@@ -20,7 +24,7 @@ flex_lapply(X, FUN, cores = NA, fun = NULL, ...)
 
 Argument      |Description
 ------------- |----------------
-`...`     |      Arguments passed on to [`lapply_flex`](#lapplyflex)   list("\n", "    ", list(list(list("X")), list("list to use")), "\n", "    ", list(list(list("FUN")), list("function to be performed")), "\n", "    ", list(list(list("cores")), list("cores to use")), "\n", "    ", list(list(list("fun")), list("deprecated. Backwards compatibility for FUN")), "\n", "  ")
+`...`     |      Arguments passed on to [`lapply_flex`](#lapplyflex)   list("\n", "    ", list(list(list("X")), list("list to use")), "\n", "    ", list(list(list("FUN")), list("function to be performed")), "\n", "    ", list(list(list("cores")), list("cores to use")), "\n", "    ", list(list(list("future.seed")), list("whether to set a seed when using future_lapply")), "\n", "    ", list(list(list("fun")), list("deprecated. Backwards compatibility for FUN")), "\n", "  ")
 
 
 ## Seealso

@@ -1,8 +1,12 @@
 --- 
 title: joinGiottoObjects 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `joinGiottoObjects`
+
+Join giotto objects
+
 
 ## Description
 
@@ -19,8 +23,8 @@ joinGiottoObjects(
   z_vals = 1000,
   x_shift = NULL,
   y_shift = NULL,
-  x_padding = 0,
-  y_padding = 0,
+  x_padding = NULL,
+  y_padding = NULL,
   verbose = TRUE
 )
 ```
@@ -38,7 +42,7 @@ Argument      |Description
 `y_shift`     |     list of values to shift along y-axis if method is shift
 `x_padding`     |     padding between datasets/images if method is shift
 `y_padding`     |     padding between datasets/images if method is shift
-`verbose`     |     be verbose
+`verbose`     |     be verbose Preview where each gobject will be in space with bounding polygons
 
 
 ## Details
@@ -47,27 +51,16 @@ This function joins both the expression and spatial information of
  multiple giotto objects into a single one. Giotto supports multiple ways of
  joining spatial information as selected through param `join_method` :
  
- [ "shift" ] Spatial locations of different datasets are shifted by numeric
- vectors of values supplied through `x_shift` and `y_shift` . If these
- shift values are given then one is needed for each giotto object to be joined
- in `gobject_list` . Order matters.
- If a regular step value is desired instead of a specific list of values, use
- `x_padding` and `y_padding` . Both shift and padding values can be used
- at the same time.
- Leaving `x_shift` and `y_shift` values as `NULL` will have Giotto
- estimate an appropriate `x_shift` value based on the x dimension of
- available image objects.
- 
- [ "z_stack" ] Datasets are spatially combined with no change to x and y
- spatial locations, but a z value is incorporated for each dataset based on input
- supplied through param `z_vals` . To specify a z value for each dataset to
- join, a numeric vector must be given with a value for each element in `gobject_list` .
- Order matters.
- Alternatively, a single numeric value can be supplied to `z_vals` in which
- case this input will be treated as a z step value.
- 
- [ "no_change" ] No changes are applied to the spatial locations of the
- datasets when joining.
+   
+
+*  list(list(list("\"shift\"")))  list("\n", "    (default) Spatial locations of different datasets are shifted\n", "    by numeric vectors of values supplied through ", list("x_shift"), ", ", list("y_shift"), ",\n", "    ", list("x_padding"), ", and ", list("y_padding"), ". This is particularly useful for data\n", "    that is provided as tiles or ROIs or when analyzing multiple spatial datasets\n", "    together and keeping their spatial data separate.\n", "\n", "    ", list("If shift values are given then a value is needed for each giotto object\n", 
+    "    to be joined in ", list("gobject_list"), ". Order matters."), "\n", "\n", "    If a regular step value is desired instead of a specific list of values, use\n", "    ", list("x_padding"), " and ", list("y_padding"), ". Both shift and padding values can be used\n", "    at the same time.\n", "\n", "    Leaving ", list("x_shift"), " and ", list("y_shift"), " values as ", list("NULL"), " will have Giotto\n", "    estimate an appropriate ", list("x_shift"), " value based on the x dimension of\n", 
+    "    available image objects. If no image objects are available, a default behavior of\n", "    ", list("x_padding = 1000"), " will be applied.\n", "  ")   
+
+*  list(list(list("\"z_stack\"")))  list("\n", "    Datasets are spatially combined with no change to x and y\n", "    spatial locations, but a z value is incorporated for each dataset based on input\n", "    supplied through param ", list("z_vals"), ". To specify a z value for each dataset to\n", "    join, a numeric vector must be given with a value for each element in ", list("gobject_list"), ".\n", "    Order matters.\n", "\n", "    Alternatively, a single numeric value can be supplied to ", list("z_vals"), " in which\n", "    case this input will be treated as a z step value.\n", 
+    "  ")   
+
+*  list(list(list("\"no_change\"")))  list("\n", "    No changes are applied to the spatial locations of the datasets when joining.\n", "  ")
 
 
 ## Value

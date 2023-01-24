@@ -1,8 +1,12 @@
 --- 
 title: select_spatial_locations 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `select_spatial_locations`
+
+select_spatial_locations
+
 
 ## Description
 
@@ -20,7 +24,8 @@ select_spatial_locations(...)
 
 Argument      |Description
 ------------- |----------------
-`...`     |      Arguments passed on to [`get_spatial_locations`](#getspatiallocations)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit (e.g. \"cell\")")), "\n", "    ", list(list(list("spat_loc_name")), list("name of spatial locations (defaults to first name in spatial_locs slot, e.g. \"raw\")")), "\n", "  ")
+`...`     |      Arguments passed on to [`get_spatial_locations`](#getspatiallocations)   list("\n", "    ", list(list(list("spat_loc_name")), list("name of spatial locations (defaults to first name in spatial_locs slot, e.g. \"raw\")")), "\n", "    ", list(list(list("output")), list("what object type to get the spatial locations as. Default is as\n", "a 'spatLocsObj'. Returning as 'data.table' is also possible.")), "\n", "    ", list(list(list("copy_obj")), list("whether to copy/duplicate when getting the object (default = TRUE)")), "\n", "    ", list(list(list("verbose")), list("be verbose")), 
+    "\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit (e.g. \"cell\")")), "\n", "    ", list(list(list("set_defaults")), list("set default spat_unit and feat_type. Change to FALSE only when")), "\n", "  ")
 
 
 ## Seealso

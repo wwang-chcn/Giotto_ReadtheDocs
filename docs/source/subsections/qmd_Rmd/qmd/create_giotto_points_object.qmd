@@ -1,8 +1,12 @@
 --- 
 title: create_giotto_points_object 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `create_giotto_points_object`
+
+Create giotto points object
+
 
 ## Description
 

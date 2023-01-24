@@ -1,8 +1,12 @@
 --- 
 title: lapply_flex 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `lapply_flex`
+
+lapply_flex
+
 
 ## Description
 
@@ -12,7 +16,7 @@ lapply_flex
 ## Usage
 
 ```r
-lapply_flex(X, FUN, cores = NA, fun = NULL, ...)
+lapply_flex(X, FUN, cores = NA, future.seed = TRUE, fun = NULL, ...)
 ```
 
 
@@ -23,6 +27,7 @@ Argument      |Description
 `X`     |     list to use
 `FUN`     |     function to be performed
 `cores`     |     cores to use
+`future.seed`     |     whether to set a seed when using future_lapply
 `fun`     |     deprecated. Backwards compatibility for FUN
 `...`     |     other arguments to pass
 

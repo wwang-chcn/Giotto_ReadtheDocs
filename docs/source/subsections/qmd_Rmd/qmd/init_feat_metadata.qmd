@@ -1,0 +1,31 @@
+--- 
+title: init_feat_metadata 
+format: rst 
+date: 2023-01-19 
+--- 
+# `init_feat_metadata`
+
+Initialize feature metadata slot
+
+
+## Description
+
+Generate featMetaObjs to hold all feature metadata for each spatial unit
+ and feature type in the giotto object.
+
+
+## Usage
+
+```r
+init_feat_metadata(gobject, provenance = NULL)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`gobject`     |     giotto object
+`provenance`     |     provenance information (optional)
+
+

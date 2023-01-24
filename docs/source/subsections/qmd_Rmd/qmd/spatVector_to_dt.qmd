@@ -1,8 +1,12 @@
 --- 
 title: spatVector_to_dt 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `spatVector_to_dt`
+
+Convert spatVector to data.table
+
 
 ## Description
 

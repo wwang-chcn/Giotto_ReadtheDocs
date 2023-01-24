@@ -1,0 +1,47 @@
+--- 
+title: polyStamp 
+format: rst 
+date: 2023-01-19 
+--- 
+# `polyStamp`
+
+Spatial polygons stamp
+
+
+## Description
+
+Takes a given stamp polygon and places it at each spatial location
+ provided.
+
+
+## Usage
+
+```r
+polyStamp(
+  stamp_dt,
+  spatlocs,
+  id_col = "cell_ID",
+  x_col = "sdimx",
+  y_col = "sdimy",
+  verbose = TRUE
+)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`stamp_dt`     |     data.table with x and y vertices for a polygon to be stamped. Column names are expected to be 'x' and 'y' respectively
+`spatlocs`     |     spatial locations with x and y coordinates where polygons should be stamped. Column names are 'cell_ID', 'sdimx' and 'sdimy' by default
+`id_col`     |     column in spatlocs to use as IDs (default is 'cell_ID')
+`x_col`     |     column in spatlocs to use as x locations (default is 'sdimx')
+`y_col`     |     column in spatlocs to use as y locations (default is 'sdimy')
+`verbose`     |     be verbose
+
+
+## Value
+
+returns a data.table of polygon vertices
+
+

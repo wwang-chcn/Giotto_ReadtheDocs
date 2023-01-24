@@ -1,8 +1,12 @@
 --- 
 title: set_giottoImage 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `set_giottoImage`
+
+Set giotto image object
+
 
 ## Description
 
@@ -55,10 +59,17 @@ giotto object
  [`get_giottoImage`](#getgiottoimage) 
  
  Other functions to set data in giotto object:
+ [`get_cell_id`](#getcellid) ,
+ [`get_feat_id`](#getfeatid) ,
  [`set_NearestNetwork`](#setnearestnetwork) ,
+ [`set_cell_id`](#setcellid) ,
+ [`set_cell_metadata`](#setcellmetadata) ,
  [`set_dimReduction`](#setdimreduction) ,
  [`set_expression_values`](#setexpressionvalues) ,
+ [`set_feat_id`](#setfeatid) ,
  [`set_feature_info`](#setfeatureinfo) ,
+ [`set_feature_metadata`](#setfeaturemetadata) ,
+ [`set_multiomics`](#setmultiomics) ,
  [`set_polygon_info`](#setpolygoninfo) ,
  [`set_spatialGrid`](#setspatialgrid) ,
  [`set_spatialNetwork`](#setspatialnetwork) ,

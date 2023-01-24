@@ -1,8 +1,12 @@
 --- 
 title: get_feature_info 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `get_feature_info`
+
+Get feature info
+
 
 ## Description
 
@@ -12,7 +16,7 @@ Get giotto points spatVector
 ## Usage
 
 ```r
-get_feature_info(gobject, feat_type = NULL)
+get_feature_info(gobject, feat_type = NULL, set_defaults = TRUE)
 ```
 
 
@@ -21,7 +25,8 @@ get_feature_info(gobject, feat_type = NULL)
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
-`feat_type`     |     name of feature (e.g. "rna", "dna", "protein")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
 
 
 ## Seealso
@@ -34,6 +39,7 @@ Other feature info data accessor functions:
  [`get_dimReduction`](#getdimreduction) ,
  [`get_expression_values`](#getexpressionvalues) ,
  [`get_giottoImage`](#getgiottoimage) ,
+ [`get_multiomics`](#getmultiomics) ,
  [`get_polygon_info`](#getpolygoninfo) ,
  [`get_spatialGrid`](#getspatialgrid) ,
  [`get_spatialNetwork`](#getspatialnetwork) ,

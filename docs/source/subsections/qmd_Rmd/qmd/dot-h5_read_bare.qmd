@@ -1,0 +1,31 @@
+--- 
+title: dot-h5_read_bare 
+format: rst 
+date: 2023-01-19 
+--- 
+# `.h5_read_bare`
+
+Read dataset from opened HDF5 with C functions
+
+
+## Description
+
+Read dataset from opened HDF5 with C functions
+
+
+## Usage
+
+```r
+.h5_read_bare(file, name = "", dapl)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`file`     |     opened HDF5 file
+`name`     |     dataset name within
+`dapl`     |     HDF5 property list (H5Pcreate('H5P_DATASET_ACCESS'))
+
+

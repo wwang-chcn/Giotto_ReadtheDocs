@@ -1,8 +1,12 @@
 --- 
 title: giottoPolygon-class 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `giottoPolygon-class`
+
+S4 giotto polygon Class
+
 
 ## Description
 

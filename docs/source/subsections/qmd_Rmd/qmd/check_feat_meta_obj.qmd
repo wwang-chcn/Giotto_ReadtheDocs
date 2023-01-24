@@ -1,0 +1,29 @@
+--- 
+title: check_feat_meta_obj 
+format: rst 
+date: 2023-01-19 
+--- 
+# `check_feat_meta_obj`
+
+Check feature metadata object
+
+
+## Description
+
+Function to check S4 featMetaObj
+
+
+## Usage
+
+```r
+check_feat_meta_obj(object)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`object`     |     S4 featMetaObj to check
+
+

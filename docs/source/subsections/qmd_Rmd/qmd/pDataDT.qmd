@@ -1,8 +1,12 @@
 --- 
 title: pDataDT 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `pDataDT`
+
+pDataDT
+
 
 ## Description
 
@@ -12,7 +16,7 @@ show cell metadata
 ## Usage
 
 ```r
-pDataDT(gobject, spat_unit = NULL, feat_type = NULL)
+pDataDT(gobject, spat_unit = NULL, feat_type = NULL, ...)
 ```
 
 
@@ -23,6 +27,7 @@ Argument      |Description
 `gobject`     |     giotto object
 `spat_unit`     |     spatial unit
 `feat_type`     |     feature type
+`...`     |     additional params to pass
 
 
 ## Value

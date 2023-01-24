@@ -1,8 +1,12 @@
 --- 
 title: fix_multipart_geoms 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `fix_multipart_geoms`
+
+Split multi-part polygons
+
 
 ## Description
 

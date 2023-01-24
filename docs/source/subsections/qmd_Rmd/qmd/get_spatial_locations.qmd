@@ -1,8 +1,12 @@
 --- 
 title: get_spatial_locations 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `get_spatial_locations`
+
+Get spatial locations
+
 
 ## Description
 
@@ -12,7 +16,15 @@ Function to get a spatial location data.table
 ## Usage
 
 ```r
-get_spatial_locations(gobject, spat_unit = NULL, spat_loc_name = NULL)
+get_spatial_locations(
+  gobject,
+  spat_unit = NULL,
+  spat_loc_name = NULL,
+  output = c("spatLocsObj", "data.table"),
+  copy_obj = TRUE,
+  verbose = TRUE,
+  set_defaults = TRUE
+)
 ```
 
 
@@ -23,11 +35,15 @@ Argument      |Description
 `gobject`     |     giotto object
 `spat_unit`     |     spatial unit (e.g. "cell")
 `spat_loc_name`     |     name of spatial locations (defaults to first name in spatial_locs slot, e.g. "raw")
+`output`     |     what object type to get the spatial locations as. Default is as a 'spatLocsObj'. Returning as 'data.table' is also possible.
+`copy_obj`     |     whether to copy/duplicate when getting the object (default = TRUE)
+`verbose`     |     be verbose
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
 
 
 ## Value
 
-data.table with coordinates
+data.table with coordinates or spatLocsObj depending on `output`
 
 
 ## Seealso
@@ -41,6 +57,7 @@ Other spatial location data accessor functions:
  [`get_expression_values`](#getexpressionvalues) ,
  [`get_feature_info`](#getfeatureinfo) ,
  [`get_giottoImage`](#getgiottoimage) ,
+ [`get_multiomics`](#getmultiomics) ,
  [`get_polygon_info`](#getpolygoninfo) ,
  [`get_spatialGrid`](#getspatialgrid) ,
  [`get_spatialNetwork`](#getspatialnetwork) ,

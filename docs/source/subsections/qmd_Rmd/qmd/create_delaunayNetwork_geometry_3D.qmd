@@ -1,8 +1,12 @@
 --- 
 title: create_delaunayNetwork_geometry_3D 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `create_delaunayNetwork_geometry_3D`
+
+create_delaunayNetwork_geometry_3D
+
 
 ## Description
 

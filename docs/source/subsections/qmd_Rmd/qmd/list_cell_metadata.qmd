@@ -1,12 +1,16 @@
 --- 
 title: list_cell_metadata 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `list_cell_metadata`
+
+list_cell_metadata
+
 
 ## Description
 
-lists the available cell metadata
+lists the available cell metadata.
 
 
 ## Usage

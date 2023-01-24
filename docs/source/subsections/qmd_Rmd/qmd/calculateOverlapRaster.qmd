@@ -1,8 +1,12 @@
 --- 
 title: calculateOverlapRaster 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `calculateOverlapRaster`
+
+calculateOverlapRaster
+
 
 ## Description
 
@@ -20,6 +24,7 @@ calculateOverlapRaster(
   feat_info = NULL,
   feat_subset_column = NULL,
   feat_subset_ids = NULL,
+  count_info_column = NULL,
   return_gobject = TRUE,
   verbose = TRUE
 )
@@ -37,6 +42,7 @@ Argument      |Description
 `feat_info`     |     feature information
 `feat_subset_column`     |     feature info column to subset features with
 `feat_subset_ids`     |     ids within feature info column to use for subsetting
+`count_info_column`     |     column with count information (optional)
 `return_gobject`     |     return giotto object (default: TRUE)
 `verbose`     |     be verbose
 

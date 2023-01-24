@@ -1,8 +1,12 @@
 --- 
 title: spatFeatPlot2D 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `spatFeatPlot2D`
+
+Plot data in physical space 2D
+
 
 ## Description
 
@@ -27,6 +31,7 @@ spatFeatPlot2D(
   sdimy = "sdimy",
   expression_values = c("normalized", "scaled", "custom"),
   feats,
+  order = TRUE,
   cell_color_gradient = c("blue", "white", "red"),
   gradient_midpoint = NULL,
   gradient_limits = NULL,
@@ -44,6 +49,7 @@ spatFeatPlot2D(
   point_alpha = 1,
   point_border_col = "black",
   point_border_stroke = 0.1,
+  coord_fix_ratio = 1,
   show_legend = T,
   legend_text = 8,
   background_color = "white",
@@ -52,7 +58,7 @@ spatFeatPlot2D(
   vor_max_radius = 200,
   axis_text = 8,
   axis_title = 8,
-  cow_n_col = 2,
+  cow_n_col = NULL,
   cow_rel_h = 1,
   cow_rel_w = 1,
   cow_align = "h",
@@ -83,6 +89,7 @@ Argument      |Description
 `sdimy`     |     y-axis dimension name (default = 'sdimy')
 `expression_values`     |     gene expression values to use
 `feats`     |     features to show
+`order`     |     order points according to feature expression
 `cell_color_gradient`     |     vector with 3 colors for numeric data
 `gradient_midpoint`     |     midpoint for color gradient
 `gradient_limits`     |     vector with lower and upper limits
@@ -100,6 +107,7 @@ Argument      |Description
 `point_alpha`     |     transparancy of points
 `point_border_col`     |     color of border around points
 `point_border_stroke`     |     stroke size of border around points
+`coord_fix_ratio`     |     fix ratio between x and y-axis (default = 1)
 `show_legend`     |     show legend
 `legend_text`     |     size of legend text
 `background_color`     |     color of plot background

@@ -1,0 +1,29 @@
+--- 
+title: check_expr_obj 
+format: rst 
+date: 2023-01-19 
+--- 
+# `check_expr_obj`
+
+Check exprObj
+
+
+## Description
+
+Check function for S4 exprObj
+
+
+## Usage
+
+```r
+check_expr_obj(object)
+```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`object`     |     S4 exprObj to check
+
+

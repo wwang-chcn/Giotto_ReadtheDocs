@@ -1,8 +1,12 @@
 --- 
 title: subset_feature_info_data 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `subset_feature_info_data`
+
+Subset feature info data
+
 
 ## Description
 

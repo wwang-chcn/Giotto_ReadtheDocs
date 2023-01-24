@@ -1,8 +1,12 @@
 --- 
 title: seuratToGiotto 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `seuratToGiotto`
+
+Convert a Seurat object to a Giotto object
+
 
 ## Description
 

@@ -1,8 +1,12 @@
 --- 
 title: overlapToMatrix 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `overlapToMatrix`
+
+overlapToMatrix
+
 
 ## Description
 
@@ -17,6 +21,7 @@ overlapToMatrix(
   name = "raw",
   poly_info = "cell",
   feat_info = "rna",
+  count_info_column = NULL,
   return_gobject = TRUE
 )
 ```
@@ -30,6 +35,7 @@ Argument      |Description
 `name`     |     name for the overlap count matrix
 `poly_info`     |     polygon information
 `feat_info`     |     feature information
+`count_info_column`     |     column with count information
 `return_gobject`     |     return giotto object (default: TRUE)
 
 

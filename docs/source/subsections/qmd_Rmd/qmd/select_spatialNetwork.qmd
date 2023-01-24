@@ -1,8 +1,12 @@
 --- 
 title: select_spatialNetwork 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `select_spatialNetwork`
+
+Select spatial network
+
 
 ## Description
 
@@ -20,7 +24,8 @@ select_spatialNetwork(...)
 
 Argument      |Description
 ------------- |----------------
-`...`     |      Arguments passed on to [`get_spatialNetwork`](#getspatialnetwork)   list("\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit (e.g. \"cell\")")), "\n", "    ", list(list(list("name")), list("name of spatial network")), "\n", "    ", list(list(list("return_network_Obj")), list("return network object (default = FALSE)")), "\n", "  ")
+`...`     |      Arguments passed on to [`get_spatialNetwork`](#getspatialnetwork)   list("\n", "    ", list(list(list("name")), list("name of spatial network")), "\n", "    ", list(list(list("output")), list("object type to return as. Options: 'spatialNetworkObj' (default),\n", "'networkDT' and 'networkDT_before_filter' for data.table outputs.")), "\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit (e.g. \"cell\")")), "\n", "    ", list(list(list("set_defaults")), list("set default spat_unit and feat_type. Change to FALSE only when")), 
+    "\n", "  ")
 
 
 ## Seealso

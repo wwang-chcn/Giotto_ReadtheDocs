@@ -1,8 +1,12 @@
 --- 
 title: find_x_y_ranges 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `find_x_y_ranges`
+
+find_x_y_ranges
+
 
 ## Description
 

@@ -1,8 +1,12 @@
 --- 
 title: subset_spatial_enrichment 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `subset_spatial_enrichment`
+
+Subset spatial enrichment
+
 
 ## Description
 
@@ -12,7 +16,7 @@ Subset spatial enrichment results from giotto object
 ## Usage
 
 ```r
-subset_spatial_enrichment(gobject, spat_unit, feat_type, filter_bool_cells)
+subset_spatial_enrichment(gobject, spat_unit, feat_type, cell_ids)
 ```
 
 

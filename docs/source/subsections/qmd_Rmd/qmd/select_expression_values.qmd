@@ -1,8 +1,12 @@
 --- 
 title: select_expression_values 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `select_expression_values`
+
+select_expression_values
+
 
 ## Description
 
@@ -20,7 +24,8 @@ select_expression_values(...)
 
 Argument      |Description
 ------------- |----------------
-`...`     |      Arguments passed on to [`get_expression_values`](#getexpressionvalues)   list("\n", "    ", list(list(list("values")), list("expression values to extract (e.g. \"raw\", \"normalized\", \"scaled\")")), "\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit (e.g. \"cell\")")), "\n", "    ", list(list(list("feat_type")), list("feature type (e.g. \"rna\", \"dna\", \"protein\")")), "\n", "  ")
+`...`     |      Arguments passed on to [`get_expression_values`](#getexpressionvalues)   list("\n", "    ", list(list(list("values")), list("expression values to extract (e.g. \"raw\", \"normalized\", \"scaled\")")), "\n", "    ", list(list(list("output")), list("what object type to retrieve the expression as. Currently either\n", "'matrix' for the matrix object contained in the exprObj or 'exprObj' (default) for\n", "the exprObj itself are allowed.")), "\n", "    ", list(list(list("gobject")), list("giotto object")), "\n", "    ", list(list(list("spat_unit")), list("spatial unit (e.g. \"cell\")")), 
+    "\n", "    ", list(list(list("feat_type")), list("feature type (e.g. \"rna\", \"dna\", \"protein\")")), "\n", "    ", list(list(list("set_defaults")), list("set default spat_unit and feat_type. Change to FALSE only when")), "\n", "  ")
 
 
 ## Seealso

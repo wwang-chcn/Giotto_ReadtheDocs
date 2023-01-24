@@ -1,8 +1,12 @@
 --- 
 title: rank_binarize_wrapper 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `rank_binarize_wrapper`
+
+rank_binarize_wrapper
+
 
 ## Description
 

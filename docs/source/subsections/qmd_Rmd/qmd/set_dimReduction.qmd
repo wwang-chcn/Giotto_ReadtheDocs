@@ -1,8 +1,12 @@
 --- 
 title: set_dimReduction 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `set_dimReduction`
+
+Set dimension reduction
+
 
 ## Description
 
@@ -14,12 +18,15 @@ Function to set a dimension reduction slot
 ```r
 set_dimReduction(
   gobject,
+  dimObject,
   spat_unit = NULL,
   feat_type = NULL,
   reduction = c("cells", "genes"),
   reduction_method = c("pca", "umap", "tsne"),
   name = "pca",
-  dimObject
+  provenance = NULL,
+  verbose = TRUE,
+  set_defaults = TRUE
 )
 ```
 
@@ -29,12 +36,15 @@ set_dimReduction(
 Argument      |Description
 ------------- |----------------
 `gobject`     |     giotto object
+`dimObject`     |     dimension object result to set
 `spat_unit`     |     spatial unit (e.g. "cell")
 `feat_type`     |     feature type (e.g. "rna", "dna", "protein")
 `reduction`     |     reduction on cells or features
 `reduction_method`     |     reduction method (e.g. "pca")
 `name`     |     name of reduction results
-`dimObject`     |     dimension object result to set
+`provenance`     |     provenance information (optional)
+`verbose`     |     be verbose
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
 
 
 ## Value
@@ -48,10 +58,17 @@ Other dimensional reduction data accessor functions:
  [`get_dimReduction`](#getdimreduction) 
  
  Other functions to set data in giotto object:
+ [`get_cell_id`](#getcellid) ,
+ [`get_feat_id`](#getfeatid) ,
  [`set_NearestNetwork`](#setnearestnetwork) ,
+ [`set_cell_id`](#setcellid) ,
+ [`set_cell_metadata`](#setcellmetadata) ,
  [`set_expression_values`](#setexpressionvalues) ,
+ [`set_feat_id`](#setfeatid) ,
  [`set_feature_info`](#setfeatureinfo) ,
+ [`set_feature_metadata`](#setfeaturemetadata) ,
  [`set_giottoImage`](#setgiottoimage) ,
+ [`set_multiomics`](#setmultiomics) ,
  [`set_polygon_info`](#setpolygoninfo) ,
  [`set_spatialGrid`](#setspatialgrid) ,
  [`set_spatialNetwork`](#setspatialnetwork) ,

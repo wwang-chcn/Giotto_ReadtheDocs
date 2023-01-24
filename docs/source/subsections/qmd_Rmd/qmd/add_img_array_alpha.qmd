@@ -1,8 +1,17 @@
 --- 
 title: add_img_array_alpha 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+--- 
+title: add_img_array_alpha 
+format: rst 
+date: 2023-01-19 
+--- 
+# `add_img_array_alpha`
+
+Add alpha channel to image array
+
 
 ## Description
 

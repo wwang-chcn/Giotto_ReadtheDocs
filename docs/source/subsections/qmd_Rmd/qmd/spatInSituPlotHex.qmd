@@ -1,8 +1,12 @@
 --- 
 title: spatInSituPlotHex 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `spatInSituPlotHex`
+
+spatInSituPlotHex
+
 
 ## Description
 
@@ -18,7 +22,8 @@ spatInSituPlotHex(
   feat_type = "rna",
   sdimx = "x",
   sdimy = "y",
-  bins = 10,
+  binwidth = NULL,
+  min_axis_bins = 10,
   alpha = 0.5,
   show_polygon = TRUE,
   polygon_feat_type = "cell",
@@ -26,11 +31,13 @@ spatInSituPlotHex(
   polygon_fill = NULL,
   polygon_fill_as_factor = NULL,
   polygon_alpha = 0.5,
+  polygon_size = 0.5,
+  coord_fix_ratio = 1,
   axis_text = 8,
   axis_title = 8,
   legend_text = 6,
   background_color = "white",
-  cow_n_col = 2,
+  cow_n_col = NULL,
   cow_rel_h = 1,
   cow_rel_w = 1,
   cow_align = "h",
@@ -52,7 +59,8 @@ Argument      |Description
 `feat_type`     |     feature types of the feats
 `sdimx`     |     spatial dimension x
 `sdimy`     |     spatial dimension y
-`bins`     |     number of hexbins in one direction
+`binwidth`     |     numeric vector for x and y width of bins (default is minor axis range/10, where the 10 is from `min_axis_bins` )
+`min_axis_bins`     |     number of bins to create per range defined by minor axis. (default value is 10)
 `alpha`     |     alpha of hexbin plot
 `show_polygon`     |     overlay polygon information (cell shape)
 `polygon_feat_type`     |     feature type associated with polygon information
@@ -60,6 +68,8 @@ Argument      |Description
 `polygon_fill`     |     fill color or column for polygon
 `polygon_fill_as_factor`     |     is fill color a factor
 `polygon_alpha`     |     alpha of polygon
+`polygon_size`     |     size of polygon border
+`coord_fix_ratio`     |     fix ratio between x and y-axis
 `axis_text`     |     axis text size
 `axis_title`     |     title text size
 `legend_text`     |     legend text size

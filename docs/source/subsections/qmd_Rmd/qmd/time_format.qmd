@@ -1,0 +1,27 @@
+--- 
+title: time_format 
+format: rst 
+date: 2023-01-19 
+--- 
+# `time_format`
+
+Format time for printing
+
+
+## Description
+
+Format time for printing
+
+
+## Usage
+
+```r
+time_format(secs)
+```
+
+
+## Details
+
+Code from [`timetaken`](#timetaken)
+
+

@@ -1,18 +1,69 @@
 --- 
 title: set_feature_metadata 
 format: rst 
-date: 2022-10-06 
+date: 2023-01-19 
 --- 
+# `set_feature_metadata`
+
+Set feature metadata
+
 
 ## Description
 
-Set feature metadata
+Function to set feature metadata into giotto object
 
 
 ## Usage
 
 ```r
-set_feature_metadata(gobject, feat_metadata)
+set_feature_metadata(
+  gobject,
+  metadata,
+  spat_unit = NULL,
+  feat_type = NULL,
+  provenance = NULL,
+  verbose = TRUE,
+  set_defaults = TRUE
+)
 ```
+
+
+## Arguments
+
+Argument      |Description
+------------- |----------------
+`gobject`     |     giotto object
+`metadata`     |     featMetaObj or data.table object containing feature metadata. Setting NULL will remove the object.
+`spat_unit`     |     spatial unit (e.g. "cell")
+`feat_type`     |     feature type (e.g. "rna", "dna", "protein")
+`provenance`     |     provenance information (optional)
+`verbose`     |     be verbose
+`set_defaults`     |     set default spat_unit and feat_type. Change to FALSE only when
+
+
+## Value
+
+giotto object
+
+
+## Seealso
+
+Other functions to set data in giotto object:
+ [`get_cell_id`](#getcellid) ,
+ [`get_feat_id`](#getfeatid) ,
+ [`set_NearestNetwork`](#setnearestnetwork) ,
+ [`set_cell_id`](#setcellid) ,
+ [`set_cell_metadata`](#setcellmetadata) ,
+ [`set_dimReduction`](#setdimreduction) ,
+ [`set_expression_values`](#setexpressionvalues) ,
+ [`set_feat_id`](#setfeatid) ,
+ [`set_feature_info`](#setfeatureinfo) ,
+ [`set_giottoImage`](#setgiottoimage) ,
+ [`set_multiomics`](#setmultiomics) ,
+ [`set_polygon_info`](#setpolygoninfo) ,
+ [`set_spatialGrid`](#setspatialgrid) ,
+ [`set_spatialNetwork`](#setspatialnetwork) ,
+ [`set_spatial_enrichment`](#setspatialenrichment) ,
+ [`set_spatial_locations`](#setspatiallocations)
 
 
