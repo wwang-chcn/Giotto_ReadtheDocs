@@ -5,7 +5,7 @@ sphinx
 #sphinx==5.0.2 #trying to fix bullet-point issue --> build failed b/c sphinx-toolbox error
 #sphinx_rtd_theme==0.5.2
 readthedocs-sphinx-search==0.1.0
-sphinx-design
+sphinx_design
 sphinx-copybutton
 sphinx-toolbox
 m2r2 
