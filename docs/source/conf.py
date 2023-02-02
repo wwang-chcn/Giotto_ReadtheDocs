@@ -26,7 +26,7 @@ copyright = '2022, Ruben Dries and Guo-Cheng Yuan'
 author = 'Developed by labs of Ruben Dries and Guo-Cheng Yuan.'
 
 # The full version, including alpha/beta/rc tags
-release = '3.1'
+release = '3.2.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -49,7 +49,8 @@ extensions = [
 'sphinx_toolbox.github',
 "sphinx.ext.autosummary",
 "sphinx.ext.todo",
-"sphinx.ext.viewcode"
+"sphinx.ext.viewcode",
+'sphinx_panels'
 #'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',

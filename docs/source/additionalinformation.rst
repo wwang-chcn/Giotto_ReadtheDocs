@@ -1,10 +1,90 @@
-=========
-Changelog
-=========
+Giotto Suite 3.2.0 (2023-02-02)
+===============================
 
+Breaking Changes
+----------------
+
+-  Removed support for deprecated nesting in ``@nn_network`` slot
+-  ``createSpatialNetwork()`` will now output a ``spatialNetworkObj`` by
+   default when ``return_gobject = FALSE``. It is possible to change
+   this back to the data.table output by setting
+   ``output = 'data.table'``
+-  Set incomplete classes in classes.R as virtual to prevent their
+   instantiation
+-  Removed ``createGiottoCosMxObject()`` ``aggregate`` and ``all``
+   workflows until they are updated
+
+Added
+-----
+
+-  New ``gefToGiotto()`` interoperability function to convert gef object
+   from Stereo-seq to giotto
+-  New ``giottoToAnnData()`` interoperability function to convert giotto
+   object to squidpy flavor anndata .h5ad file(s)
+-  New ``giottoToSpatialExperiment()`` and
+   ``spatialExperimentToGiotto()`` to convert between Giotto and
+   SpatialExperiment
+-  New ``spatialAutoCorLocal()`` and ``spatialAutoCorGlobal()``
+   functions to find spatial autocorrelations from expression and cell
+   metadata information
+-  New ``createSpatialWeightMatrix()`` function to generate spatial
+   weight matrix from spatial networks for autocorrelation
+-  Add spatial_interaction_spot.R with functions adapted from master
+   branch for working with the Giotto suite object.
+-  New exported accessors for slots (experimental)
+-  Add ``coord_fix_ratio`` param to ``spatFeatPlot2D()`` and
+   ``spatFeatPlot2D_single()``
+-  Add ``order`` parameter to ``dimFeatPlot2D`` and
+   ``spatDimFeatPlot2d`` to plot and order cells according to the levels
+   of the selected feature
+   (`#477 <https://github.com/drieslab/Giotto/issues/477>`__)
+-  Add ``plot()`` method for ``spatialNetworkObj``
+-  New ``set_row_order_dt()`` internal for setting ``data.table`` to a
+   specific row order by reference
+-  New ``fread_colmatch()`` internal for fread loading a subset of rows
+   based on matches in a specified column
+-  Add missing ``create_nn_net_obj()`` internal constructor function for
+   S4 ``nnNetObj``
+-  Add ``id_col``, ``x_col``, ``y_col`` params to ``polyStamp()`` to
+   make stamp location input more flexible
+-  Add ``optional`` and ``custom_msg`` params to ``package_check()``
+-  New ``wrap()`` and ``vect()`` generics for ``giotto``,
+   ``giottoPoints``, and ``giottoPolygons``
+-  New ``rotate()``, ``t()``, and ``spatShift`` generics for giotto
+   subobject spatial manipulation
+-  New ``spatIDs()`` and ``featIDs()`` generics
+-  New ``objName()`` and ``objName`` generics for setting the names of
+   relevant S4 subobjects
+-  New ``rbind()`` generic to append ``giottoPolygon`` objects
+-  Add packages ``exactextractr`` and ``sf`` to “suggests” packages
+-  Add package ``progressr`` to “imports” packages
+
+Changes
+-------
+
+-  Move giotto object method-specific creation functions from
+   ``giotto.R`` to ``convenience.R``
+-  Update ``addFeatMetadata()`` to handle replacement of existing
+   columns
+-  Update ``show()`` method for ``giotto``
+-  Update ``show()`` method for ``spatEnrObj``
+-  Deprecate older snake_case accessors
+-  Deprecate ``polygon_feat_names`` param in favor of ``z_indices`` in
+   ``readPolygonFilesVizgenHDF5()``
+-  Deprecate ``xy_translate_spatial_locations()`` in favor of
+   ``shift_spatial_locations()``
+-  Optimize ``readPolygonFilesVizgen()``
+-  Fix bug in ``replaceGiottoInstructions()`` where instructions with
+   more slots than previous are not allowed
+-  Fix bug in ``loadGiotto()`` that prevents proper parsing of filenames
+   when spat_unit or feat_type contains ’\_’ characters
+-  Fix ``loadGiotto()`` loss of over-allocation for data.tables-based
+   objects after loading from disk
 
 Giotto Suite 3.1.0 (2202-12-01)
 ===============================
+
+.. _added-1:
 
 Added
 -----
@@ -14,6 +94,8 @@ Added
 -  New ``spatUnit``, ``spatUnit<-``, ``featType``, and ``featType<-``
    feat type generics for S4 subobjects for setting the relevant slots
 -  Add ``hexVertices()`` to polygon shape array generation functionality
+
+.. _changes-1:
 
 Changes
 -------
@@ -35,7 +117,7 @@ Changes
 Giotto Suite 3.0.1 (2022-11-20)
 ===============================
 
-.. _added-1:
+.. _added-2:
 
 Added
 -----
@@ -44,7 +126,7 @@ Added
 -  Add ability to turn off colored text in ``show`` functions with
    ``options("giotto.color_show" = FALSE)``
 
-.. _changes-1:
+.. _changes-2:
 
 Changes
 -------
@@ -57,44 +139,34 @@ Changes
 Giotto Suite 3.0.0 (2022-11-18)
 ===============================
 
+.. _breaking-changes-1:
+
 Breaking Changes
 ----------------
 
 -  S4 subobjects framework will require giotto objects to be remade
 
-New features
-------------
+.. _added-3:
+
+Added
+-----
 
 -  New ``createGiottoXeniumObject()`` for loading 10x Xenium data
-
 -  New S4 subobjects. Details can be found in
    `classes.R <https://github.com/drieslab/Giotto/blob/suite/R/classes.R>`__
-
 -  New basic generics for S4 subobjects. Mainly the use of ``[]`` and
    ``[]<-`` to get or set information into the main data slot
-
 -  New ``@provenance`` slot in S4 subobjects to track provenance of
    aggregated information (z_layers used for example)
+-  New ``calculateOverlapPolygonImages()`` for calculating overlapped
+   intensities from image-based information (e.g. IMC, IF, MIBI, …) and
+   polygon data (e.g. cell)
+-  New ``overlapImagesToMatrix()`` converts intensity-polygon overlap
+   info into an expression matrix (e.g. cell by protein)
+-  New ``aggregateStacks()`` set of functions work with multiple
+   subcellular layers when generating aggregated expression matrices
 
--  Working with intensity based data
-
-   -  calculateOverlapPolygonImages: calculates overlapping intensities
-      from image based information (e.g. IMC, IF, MIBI, …) and polygon
-      data (e.g. cell)
-   -  overlapImagesToMatrix: converts intensity-polygon overlap
-      information into a matrix (e.g. cell by protein)
-
--  Aggregation of layers for subcellular datasets
-
-   -  aggregateStacksExpression: aggregate expression matrices from
-      multiple layers (e.g. z-stacks through the same cell)
-   -  aggregateStacksPolygons: aggregate polygon shapes from multiple
-      layers
-   -  aggregateStacksPolygonOverlaps: aggregate feature - polygon
-      overlap information from multiple layers
-   -  aggregateStacks: combines the previous aggregate\* functions
-
-.. _changes-2:
+.. _changes-3:
 
 Changes
 -------
@@ -107,156 +179,86 @@ Changes
 Giotto Suite 2.1.0 (2202-11-09)
 ===============================
 
-.. _breaking-changes-1:
+.. _breaking-changes-2:
 
 Breaking Changes
 ----------------
 
--  The default giotto python version has been upgraded to 3.10.2, and
-   the following package versions are associated with the environment:
+-  Update of python version to **3.10.2**
+   `details <https://giottosuite.readthedocs.io/en/latest/additionalinformation.html#giotto-suite-2-1-0-2202-11-09>`__
 
-   -  pandas==1.5.1
-   -  networkx==2.8.8
-   -  python-igraph==0.10.2
-   -  leidenalg==0.9.0
-   -  python-louvain==0.16
-   -  python.app==1.4
-   -  scikit-learn==1.1.3
+.. _added-4:
 
-.. _new-features-1:
+Added
+-----
 
-New features
-------------
-
--  Created new function anndataToGiotto()
-
-   -  Enables conversion of anndata object of scanpy flavor to Giotto.
-   -  The function currently handles dimension reductions (PCA, UMAP,
-      tSNE), metadata, expression information, spatial locations, and
-      layered data.
-   -  This function will be extended to include more information from
-      the anndata object in the future.
+-  New ``anndataToGiotto()`` to convert scanpy anndata to Giotto
 
 Giotto Suite 2.0.0.998
 ======================
 
-.. _new-features-2:
+.. _added-5:
 
-New features
-------------
+Added
+-----
 
--  GiottoData package
+-  New ``GiottoData`` package to work with spatial datasets associated
+   with Giotto
 
-   -  New package to work with spatial data associated with Giotto
    -  Stores the minidatasets: preprocessed giotto objects that are
       ready to be used in any function
-   -  Moved: getSpatialDataset and loadGiottoMini functions to this
-      package
+   -  Moved: ``getSpatialDataset()`` and ``loadGiottoMini()`` functions
+      to this package
 
--  I/O functions
-
-   -  saveGiotto
-
-   -  loadGiotto
-
-      -  All above functions to general_help.R
+-  New ``saveGiotto()`` and ``loadGiotto()`` for preserving
+   memory-pointer based objects. In
+   `general_help.R <https://github.com/drieslab/Giotto/blob/suite/R/general_help.R>`__
 
    -  It saves a Giotto object into a folder using a specific structure.
-      It’s essentially a wrapper around saveRDS that also works with
+      Essentially a wrapper around ``saveRDS()`` that also works with
       spatVector and spatRaster pointers.
 
--  Interactive Polygon Filtering
+-  New ``plotInteractivePolygon()`` for plot-interactive polygonal
+   selection of points.
+-  New polygon shape array creation through ``polyStamp()``,
+   ``circleVertices``, ``rectVertices``. In
+   `giotto_structures.R <https://github.com/drieslab/Giotto/blob/suite/R/giotto_structures.R>`__
+-  Add accessor functions ``get_CellMetadata`` (alias of ``pDataDT()``),
+   ``set_CellMetadata``, ``get_FeatMetadata`` (alias of ``fDataDT()``),
+   ``set_FeatMetadata``. See
+   `accessors.R <https://github.com/drieslab/Giotto/blob/suite/R/accessors.R>`__
+-  New ``filterDistributions()`` to generate histogram plots from
+   expression statistics
 
-   -  plotInteractivePolygon
-   -  RShiny Gadget that enables interactive ROI filtering with polygons
-      and the terra package
+.. _changes-4:
 
--  Polygon stamping functions
+Changes
+-------
 
-   -  polyStamp
+-  Deprecate ``plotInteractionChangedGenes()`` ,\ ``plotICG()``,
+   ``plotCPG()`` in favor of ``plotInteractionChangedFeatures()`` and
+   ``plotICF()`` and ``plotCPF()``
+-  Deprecate ``plotCellProximityGenes()``, in favor of
+   ``plotCellProximityFeatures()``
+-  Deprecate ``plotCombineInteractionChangedGenes()``,
+   ``plotCombineICG()``, ``plotCombineCPG()`` in favor of
+   ``plotCombineInteractionChangedFeatures()`` and ``plotCombineICF()``
+-  Deprecate ``findInteractionChangedGenes()``, ``findICG()``,
+   ``findCPG()`` in favor of ``findInteractionChangedFeats()`` and
+   ``findICF``
+-  Deprecate ``filterInteractionChangedGenes()``, ``filterICG()``,
+   ``filterCPG()`` in favor of ``filterInteractionChangedFeats()`` and
+   ``filterICF()``
+-  Deprecate ``combineInteractionChangedGenes()``, ``combineICG()``,
+   ``combineCPG()`` in favor of ``combineInteractionChangedFeats()`` and
+   ``combineICF()``
+-  Deprecate ``combineCellProximityGenes_per_interaction()`` in favor of
+   ``combineCellProximityFeatures_per_interaction()``
 
-   -  circleVertices
+.. _breaking-changes-3:
 
-   -  rectVertices
+Breaking Changes
+----------------
 
-      -  All above functions are in giotto_structures.R
-
-   -  circle and rect Vertices functions generate data.tables of x and y
-      vertices that represent the respective shapes. Vertex information
-      is accepted by the polyStamp function along with a table of
-      spatlocs with ‘sdimx’, ‘sdimy’, and ‘cell_ID’. A data.table of
-      polygon vertices placed at each spatloc with the respective
-      ‘cell_ID’ will then be generated.
-
-Minor improvements and bug fixes
---------------------------------
-
--  Accessor functions
-
-   -  get_CellMetadata (alias to pDataDT)
-
-   -  set_CellMetadata
-
-   -  get_FeatMetadata (alias to fDataDT)
-
-   -  set_FeatMetadata
-
-      -  All above functions to accessors.R
-
-   -  Required inputs: gobject, spat_unit, feat_type, data.table with
-      new metadata (for setters)
-
-   -  *Note that setters will overwrite the entire metadata slot with
-      whatever is provided as a replacement argument*
-
--  filterDistributions
-
-   -  auxiliary_giotto.R
-   -  Extended distribution summary to threshold, sum, and mean
-   -  Added a flexible way to scale the y-axis
-
--  plotInteractionChangedFeatures
-
-   -  spatial_interaction_visuals.R
-   -  Adapted from plotInteractionChangedGenes
-   -  Also made shorthand plotICF; deprecated plotICG and plotCPG
-
--  plotCombineInteractionChangedFeatures
-
-   -  spatial_interaction_visuals.R
-   -  Adapted from plotCombineInteractionChangedGenes
-   -  Also made shorthand plotCombineICF; deprecated plotCombineICG and
-      plotCombineCPG
-
--  plotCellProximityFeatures
-
-   -  spatial_interaction_visuals.R
-   -  Semantics change
-   -  Also made shorthand plotCPF; deprecated plotCellProximityGenes and
-      plotCPG
-
--  findInteractionChangedFeats
-
-   -  spatial_interactions.R
-   -  Adapted from findInteractionChangedGenes
-   -  Also made shorthand findICF; deprecated findICG and findCPG
-
--  filterInteractionChangedFeats
-
-   -  spatial_interactions.R
-   -  Adapted from filterInteractionChangedGenes
-   -  Also made shorthand filterICF; deprecated filterICG and filterCPG
-
--  combineInteractionChangedFeats
-
-   -  spatial_interactions.R
-   -  Adapted from combineInteractionChangedGenes
-   -  Also made shorthand combineICF; deprecated combineICG and
-      combineCPG
-
--  combineInteractionChangedFeatures_per_interaction,
-
-   -  spatial_interactions.R
-   -  Updated from combineCellProximityGenes_per_interaction
-   -  Internal function which replaces
-      combineCellProximityGenes_per_interaction
+-  ICF output internal object structure names have changed to use feats
+   instead of genes
