@@ -66,6 +66,10 @@ Start Giotto
          
       # convert anndata file to giotto object
       stereo_go <- Giotto::anndataToGiotto(anndata_file)
+      
+      # alternatively, specify path to *.gef output of SAW pipeline (requires Giotto v3.2.0 or higher)
+      # gef_file = "E12.5_E1S3.gef"
+      # stereo_go <- Giotto::gefToGiotto(gef_file, bin_size = "bin200")
 
 2. Process Giotto object
 ========================
