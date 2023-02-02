@@ -1,13 +1,13 @@
 installGiottoEnvironment
 ------------------------
 
-:date: 2023-02-01
-
 
 ```{button-link} https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L277
 :color: primary
 :expand:
 ```
+
+Last change: |today|
 
 Description
 ~~~~~~~~~~~
