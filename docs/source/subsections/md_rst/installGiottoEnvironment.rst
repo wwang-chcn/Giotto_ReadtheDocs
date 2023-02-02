@@ -3,15 +3,11 @@ installGiottoEnvironment
 
 :date: 2023-02-01
 
+
 ```{button-link} https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L277
 :color: secondary
 :expand:
 ```
-
-.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L277
-    :type: ref
-    :text: Source code
-    :classes: btn-outline-primary btn-block
 
 Description
 ~~~~~~~~~~~
