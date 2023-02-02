@@ -42,7 +42,6 @@ extensions = [
 #'sphinx_rtd_theme', #added to fix bullet-point issue
 'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
-'sphinx-panels',
 'sphinx_design',
 'sphinx_copybutton',
 'sphinx_toolbox', 
@@ -50,7 +49,8 @@ extensions = [
 'sphinx_toolbox.github',
 "sphinx.ext.autosummary",
 "sphinx.ext.todo",
-"sphinx.ext.viewcode"
+"sphinx.ext.viewcode",
+'sphinx_panels'
 #'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',
