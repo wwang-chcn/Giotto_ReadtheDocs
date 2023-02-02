@@ -1,26 +1,22 @@
-======================
 clusterSpatialCorFeats
-======================
+----------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3606
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L3606
-
-
-
-==========================
-
-clusterSpatialCorFeats
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Cluster based on spatially correlated features
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    clusterSpatialCorFeats(
      spatCorObject,
@@ -31,24 +27,24 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``spatCorObject``             | spatial correlation object           |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name for spatial clustering results  |
-+-------------------------------+--------------------------------------+
-| ``hclust_method``             | method for hierarchical clustering   |
-+-------------------------------+--------------------------------------+
-| ``k``                         | number of clusters to extract        |
-+-------------------------------+--------------------------------------+
-| ``return_obj``                | return spatial correlation object    |
-|                               | (spatCorObject)                      |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``spatCorObject``                 | spatial correlation object        |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name for spatial clustering       |
+|                                   | results                           |
++-----------------------------------+-----------------------------------+
+| ``hclust_method``                 | method for hierarchical           |
+|                                   | clustering                        |
++-----------------------------------+-----------------------------------+
+| ``k``                             | number of clusters to extract     |
++-----------------------------------+-----------------------------------+
+| ``return_obj``                    | return spatial correlation object |
+|                                   | (spatCorObject)                   |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 spatCorObject or cluster results

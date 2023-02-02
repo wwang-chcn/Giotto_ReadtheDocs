@@ -1,26 +1,22 @@
-========================
-comparePolygonExpression
-========================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/interactivity.R#L299
-
-
-
-============================
-
 Compare gene expression between polygon areas
+---------------------------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/interactivity.R#L299
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Compare gene expression between polygon areas
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    comparePolygonExpression(
      gobject,
@@ -34,34 +30,33 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | A Giotto object                      |
-+-------------------------------+--------------------------------------+
-| ``polygon_name``              | name of polygon selections           |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g.Â â€œcellâ€)           |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g.Â â€œrnaâ€, â€œdnaâ€,     |
-|                               | â€œproteinâ€)                           |
-+-------------------------------+--------------------------------------+
-| ``selected_feats``            | vector of selected features to plot  |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | gene expression values to use        |
-|                               | (â€œnormalizedâ€, â€œscaledâ€, â€œcustomâ€)   |
-+-------------------------------+--------------------------------------+
-| ``method``                    | method to use to detect              |
-|                               | differentially expressed feats       |
-|                               | (â€œscranâ€, â€œginiâ€, â€œmastâ€)            |
-+-------------------------------+--------------------------------------+
-| ``list()``                    | Arguments passed to                  |
-|                               | `Heatmap <#heatmap>`__               |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | A Giotto object                   |
++-----------------------------------+-----------------------------------+
+| ``polygon_name``                  | name of polygon selections        |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g.Â "cell")        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g.Â "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``selected_feats``                | vector of selected features to    |
+|                                   | plot                              |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | gene expression values to use     |
+|                                   | ("normalized", "scaled",          |
+|                                   | "custom")                         |
++-----------------------------------+-----------------------------------+
+| ``method``                        | method to use to detect           |
+|                                   | differentially expressed feats    |
+|                                   | ("scran", "gini", "mast")         |
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed to Heatmap       |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 A ComplexHeatmap::Heatmap object

@@ -1,27 +1,23 @@
-============
 addFeatsPerc
-============
+------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3910
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3910
-
-
-
-================
-
-addFeatsPerc
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Calculates the total percentage of (normalized) counts for a subset of
 selected genes
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    addFeatsPerc(
      gobject,
@@ -34,30 +30,27 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | expression values to use             |
-+-------------------------------+--------------------------------------+
-| ``feats``                     | vector of selected features          |
-+-------------------------------+--------------------------------------+
-| ``vector_name``               | column name as seen in               |
-|                               | ```pDataDT`` <#pdatadt>`__           |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | boolean: return giotto object        |
-|                               | (default = TRUE)                     |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use          |
++-----------------------------------+-----------------------------------+
+| ``feats``                         | vector of selected features       |
++-----------------------------------+-----------------------------------+
+| ``vector_name``                   | column name as seen in            |
+|                                   | ``pDataDT``                       |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | boolean: return giotto object     |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
-giotto object if ``return_gobject = TRUE`` , else a vector with %
-results
+giotto object if ``return_gobject = TRUE``, else a vector with

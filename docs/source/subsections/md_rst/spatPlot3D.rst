@@ -1,26 +1,22 @@
-==========
 spatPlot3D
-==========
+----------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7798
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L7798
-
-
-
-==============
-
-spatPlot3D
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells according to spatial coordinates
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spatPlot3D(
      gobject,
@@ -62,104 +58,100 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``sdimx``                     | x-axis dimension name (default =     |
-|                               | ‘sdimx’)                             |
-+-------------------------------+--------------------------------------+
-| ``sdimy``                     | y-axis dimension name (default =     |
-|                               | ‘sdimy’)                             |
-+-------------------------------+--------------------------------------+
-| ``sdimz``                     | z-axis dimension name (default =     |
-|                               | ‘sdimy’)                             |
-+-------------------------------+--------------------------------------+
-| ``spat_enr_names``            | names of spatial enrichment results  |
-|                               | to include                           |
-+-------------------------------+--------------------------------------+
-| ``point_size``                | size of point (cell)                 |
-+-------------------------------+--------------------------------------+
-| ``cell_color``                | color for cells (see details)        |
-+-------------------------------+--------------------------------------+
-| ``cell_color_code``           | named vector with colors             |
-+-------------------------------+--------------------------------------+
-| ``select_cell_groups``        | select subset of cells/clusters      |
-|                               | based on cell_color parameter        |
-+-------------------------------+--------------------------------------+
-| ``select_cells``              | select subset of cells based on cell |
-|                               | IDs                                  |
-+-------------------------------+--------------------------------------+
-| ``show_other_cells``          | display not selected cells           |
-+-------------------------------+--------------------------------------+
-| ``other_cell_color``          | color of not selected cells          |
-+-------------------------------+--------------------------------------+
-| ``other_point_size``          | size of not selected cells           |
-+-------------------------------+--------------------------------------+
-| ``other_cell_alpha``          | alpha of not selected cells          |
-+-------------------------------+--------------------------------------+
-| ``show_network``              | show underlying spatial network      |
-+-------------------------------+--------------------------------------+
-| ``spatial_network_name``      | name of spatial network to use       |
-+-------------------------------+--------------------------------------+
-| ``network_color``             | color of spatial network             |
-+-------------------------------+--------------------------------------+
-| ``network_alpha``             | opacity of spatial network           |
-+-------------------------------+--------------------------------------+
-| ``show_grid``                 | show spatial grid                    |
-+-------------------------------+--------------------------------------+
-| ``spatial_grid_name``         | name of spatial grid to use          |
-+-------------------------------+--------------------------------------+
-| ``grid_color``                | color of spatial grid                |
-+-------------------------------+--------------------------------------+
-| ``grid_alpha``                | opacity of spatial grid              |
-+-------------------------------+--------------------------------------+
-| ``title``                     | title of plot                        |
-+-------------------------------+--------------------------------------+
-| ``show_legend``               | show legend                          |
-+-------------------------------+--------------------------------------+
-| ``axis_scale``                | the way to scale the axis            |
-+-------------------------------+--------------------------------------+
-| ``custom_ratio``              | customize the scale of the plot      |
-+-------------------------------+--------------------------------------+
-| ``x_ticks``                   | set the number of ticks on the       |
-|                               | x-axis                               |
-+-------------------------------+--------------------------------------+
-| ``y_ticks``                   | set the number of ticks on the       |
-|                               | y-axis                               |
-+-------------------------------+--------------------------------------+
-| ``z_ticks``                   | set the number of ticks on the       |
-|                               | z-axis                               |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plot                            |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return ggplot object                 |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot [boolean]     |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters, see       |
-|                               | ```showSaveP                         |
-|                               | arameters`` <#showsaveparameters>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``sdimx``                         | x-axis dimension name (default =  |
+|                                   | 'sdimx')                          |
++-----------------------------------+-----------------------------------+
+| ``sdimy``                         | y-axis dimension name (default =  |
+|                                   | 'sdimy')                          |
++-----------------------------------+-----------------------------------+
+| ``sdimz``                         | z-axis dimension name (default =  |
+|                                   | 'sdimy')                          |
++-----------------------------------+-----------------------------------+
+| ``spat_enr_names``                | names of spatial enrichment       |
+|                                   | results to include                |
++-----------------------------------+-----------------------------------+
+| ``point_size``                    | size of point (cell)              |
++-----------------------------------+-----------------------------------+
+| ``cell_color``                    | color for cells (see details)     |
++-----------------------------------+-----------------------------------+
+| ``cell_color_code``               | named vector with colors          |
++-----------------------------------+-----------------------------------+
+| ``select_cell_groups``            | select subset of cells/clusters   |
+|                                   | based on cell_color parameter     |
++-----------------------------------+-----------------------------------+
+| ``select_cells``                  | select subset of cells based on   |
+|                                   | cell IDs                          |
++-----------------------------------+-----------------------------------+
+| ``show_other_cells``              | display not selected cells        |
++-----------------------------------+-----------------------------------+
+| ``other_cell_color``              | color of not selected cells       |
++-----------------------------------+-----------------------------------+
+| ``other_point_size``              | size of not selected cells        |
++-----------------------------------+-----------------------------------+
+| ``other_cell_alpha``              | alpha of not selected cells       |
++-----------------------------------+-----------------------------------+
+| ``show_network``                  | show underlying spatial network   |
++-----------------------------------+-----------------------------------+
+| ``spatial_network_name``          | name of spatial network to use    |
++-----------------------------------+-----------------------------------+
+| ``network_color``                 | color of spatial network          |
++-----------------------------------+-----------------------------------+
+| ``network_alpha``                 | opacity of spatial network        |
++-----------------------------------+-----------------------------------+
+| ``show_grid``                     | show spatial grid                 |
++-----------------------------------+-----------------------------------+
+| ``spatial_grid_name``             | name of spatial grid to use       |
++-----------------------------------+-----------------------------------+
+| ``grid_color``                    | color of spatial grid             |
++-----------------------------------+-----------------------------------+
+| ``grid_alpha``                    | opacity of spatial grid           |
++-----------------------------------+-----------------------------------+
+| ``title``                         | title of plot                     |
++-----------------------------------+-----------------------------------+
+| ``show_legend``                   | show legend                       |
++-----------------------------------+-----------------------------------+
+| ``axis_scale``                    | the way to scale the axis         |
++-----------------------------------+-----------------------------------+
+| ``custom_ratio``                  | customize the scale of the plot   |
++-----------------------------------+-----------------------------------+
+| ``x_ticks``                       | set the number of ticks on the    |
+|                                   | x-axis                            |
++-----------------------------------+-----------------------------------+
+| ``y_ticks``                       | set the number of ticks on the    |
+|                                   | y-axis                            |
++-----------------------------------+-----------------------------------+
+| ``z_ticks``                       | set the number of ticks on the    |
+|                                   | z-axis                            |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | show plot                         |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return ggplot object              |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | directly save the plot [boolean]  |
++-----------------------------------+-----------------------------------+
+| ``save_param``                    | list of saving parameters, see    |
+|                                   | ``showSaveParameters``            |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 ggplot
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other spatial visualizations: ```spatPlot2D`` <#spatplot2d>`__ ,
-```spatPlot`` <#spatplot>`__
+Other spatial visualizations: ``spatPlot2D()``, ``spatPlot()``

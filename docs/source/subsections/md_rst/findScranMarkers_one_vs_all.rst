@@ -1,27 +1,23 @@
-===========================
 findScranMarkers_one_vs_all
-===========================
+---------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L162
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L162
-
-
-
-===============================
-
-findScranMarkers_one_vs_all
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Identify marker feats for all clusters in a one vs all manner based on
-scran’s implementation of findMarkers.
+scran's implementation of findMarkers.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    findScranMarkers_one_vs_all(
      gobject,
@@ -39,44 +35,42 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | feat expression values to use        |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | clusters to use                      |
-+-------------------------------+--------------------------------------+
-| ``subset_clusters``           | subset of clusters to use            |
-+-------------------------------+--------------------------------------+
-| ``pval``                      | filter on minimal p-value            |
-+-------------------------------+--------------------------------------+
-| ``logFC``                     | filter on logFC                      |
-+-------------------------------+--------------------------------------+
-| ``min_feats``                 | minimum feats to keep per cluster,   |
-|                               | overrides pval and logFC             |
-+-------------------------------+--------------------------------------+
-| ``min_genes``                 | deprecated, use min_feats            |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
-| ``...``                       | additional parameters for the        |
-|                               | findMarkers function in scran        |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | feat expression values to use     |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | clusters to use                   |
++-----------------------------------+-----------------------------------+
+| ``subset_clusters``               | subset of clusters to use         |
++-----------------------------------+-----------------------------------+
+| ``pval``                          | filter on minimal p-value         |
++-----------------------------------+-----------------------------------+
+| ``logFC``                         | filter on logFC                   |
++-----------------------------------+-----------------------------------+
+| ``min_feats``                     | minimum feats to keep per         |
+|                                   | cluster, overrides pval and logFC |
++-----------------------------------+-----------------------------------+
+| ``min_genes``                     | deprecated, use min_feats         |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional parameters for the     |
+|                                   | findMarkers function in scran     |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table with marker feats
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```findScranMarkers`` <#findscranmarkers>`__
+``findScranMarkers``

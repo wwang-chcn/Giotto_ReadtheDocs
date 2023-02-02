@@ -1,24 +1,16 @@
-==============================
 plot_point_layer_ggplot_noFILL
-==============================
-
-:Date: 1/19/23
-
-``plot_point_layer_ggplot_noFILL``
-==================================
-
-plot_point_layer_ggplot_noFILL
+------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells in point layer according to dimension reduction
 coordinates without borders
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    plot_point_layer_ggplot_noFILL(
      ggobject,
@@ -47,69 +39,69 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``annotated_DT_selected``     | annotated data.table of selected     |
-|                               | cells                                |
-+-------------------------------+--------------------------------------+
-| ``annotated_DT_other``        | annotated data.table of not selected |
-|                               | cells                                |
-+-------------------------------+--------------------------------------+
-| ``cell_color``                | color for cells (see details)        |
-+-------------------------------+--------------------------------------+
-| ``color_as_factor``           | convert color column to factor       |
-+-------------------------------+--------------------------------------+
-| ``cell_color_code``           | named vector with colors             |
-+-------------------------------+--------------------------------------+
-| ``cell_color_gradient``       | vector with 3 colors for numeric     |
-|                               | data                                 |
-+-------------------------------+--------------------------------------+
-| ``gradient_midpoint``         | midpoint for color gradient          |
-+-------------------------------+--------------------------------------+
-| ``gradient_limits``           | vector with lower and upper limits   |
-+-------------------------------+--------------------------------------+
-| ``select_cell_groups``        | select subset of cells/clusters      |
-|                               | based on cell_color parameter        |
-+-------------------------------+--------------------------------------+
-| ``select_cells``              | select subset of cells based on cell |
-|                               | IDs                                  |
-+-------------------------------+--------------------------------------+
-| ``point_size``                | size of point (cell)                 |
-+-------------------------------+--------------------------------------+
-| ``point_alpha``               | transparancy of point                |
-+-------------------------------+--------------------------------------+
-| ``show_cluster_center``       | plot center of selected clusters     |
-+-------------------------------+--------------------------------------+
-| ``show_center_label``         | plot label of selected clusters      |
-+-------------------------------+--------------------------------------+
-| ``center_point_size``         | size of center points                |
-+-------------------------------+--------------------------------------+
-| ``label_size``                | size of labels                       |
-+-------------------------------+--------------------------------------+
-| ``label_fontface``            | font of labels                       |
-+-------------------------------+--------------------------------------+
-| ``edge_alpha``                | column to use for alpha of the edges |
-+-------------------------------+--------------------------------------+
-| ``show_other_cells``          | display not selected cells           |
-+-------------------------------+--------------------------------------+
-| ``other_cell_color``          | color of not selected cells          |
-+-------------------------------+--------------------------------------+
-| ``other_point_size``          | size of not selected cells           |
-+-------------------------------+--------------------------------------+
-| ``show_legend``               | show legend                          |
-+-------------------------------+--------------------------------------+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``annotated_DT_selected``         | annotated data.table of selected  |
+|                                   | cells                             |
++-----------------------------------+-----------------------------------+
+| ``annotated_DT_other``            | annotated data.table of not       |
+|                                   | selected cells                    |
++-----------------------------------+-----------------------------------+
+| ``cell_color``                    | color for cells (see details)     |
++-----------------------------------+-----------------------------------+
+| ``color_as_factor``               | convert color column to factor    |
++-----------------------------------+-----------------------------------+
+| ``cell_color_code``               | named vector with colors          |
++-----------------------------------+-----------------------------------+
+| ``cell_color_gradient``           | vector with 3 colors for numeric  |
+|                                   | data                              |
++-----------------------------------+-----------------------------------+
+| ``gradient_midpoint``             | midpoint for color gradient       |
++-----------------------------------+-----------------------------------+
+| ``gradient_limits``               | vector with lower and upper       |
+|                                   | limits                            |
++-----------------------------------+-----------------------------------+
+| ``select_cell_groups``            | select subset of cells/clusters   |
+|                                   | based on cell_color parameter     |
++-----------------------------------+-----------------------------------+
+| ``select_cells``                  | select subset of cells based on   |
+|                                   | cell IDs                          |
++-----------------------------------+-----------------------------------+
+| ``point_size``                    | size of point (cell)              |
++-----------------------------------+-----------------------------------+
+| ``point_alpha``                   | transparancy of point             |
++-----------------------------------+-----------------------------------+
+| ``show_cluster_center``           | plot center of selected clusters  |
++-----------------------------------+-----------------------------------+
+| ``show_center_label``             | plot label of selected clusters   |
++-----------------------------------+-----------------------------------+
+| ``center_point_size``             | size of center points             |
++-----------------------------------+-----------------------------------+
+| ``label_size``                    | size of labels                    |
++-----------------------------------+-----------------------------------+
+| ``label_fontface``                | font of labels                    |
++-----------------------------------+-----------------------------------+
+| ``edge_alpha``                    | column to use for alpha of the    |
+|                                   | edges                             |
++-----------------------------------+-----------------------------------+
+| ``show_other_cells``              | display not selected cells        |
++-----------------------------------+-----------------------------------+
+| ``other_cell_color``              | color of not selected cells       |
++-----------------------------------+-----------------------------------+
+| ``other_point_size``              | size of not selected cells        |
++-----------------------------------+-----------------------------------+
+| ``show_legend``                   | show legend                       |
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description of parameters.
 
 Value
------
+~~~~~
 
 ggplot

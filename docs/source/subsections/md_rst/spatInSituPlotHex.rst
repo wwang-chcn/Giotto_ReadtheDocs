@@ -1,27 +1,23 @@
-=================
 spatInSituPlotHex
-=================
+-----------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L749
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_in_situ_visuals.R#L749
-
-
-
-=====================
-
-spatInSituPlotHex
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to plot hexbins for features for multiple modalities at the
 spatial in situ level
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spatInSituPlotHex(
      gobject,
@@ -56,94 +52,90 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``feats``                     | features to plot                     |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature types of the feats           |
-+-------------------------------+--------------------------------------+
-| ``sdimx``                     | spatial dimension x                  |
-+-------------------------------+--------------------------------------+
-| ``sdimy``                     | spatial dimension y                  |
-+-------------------------------+--------------------------------------+
-| ``binwidth``                  | numeric vector for x and y width of  |
-|                               | bins (default is minor axis          |
-|                               | range/10, where the 10 is from       |
-|                               | ``min_axis_bins`` )                  |
-+-------------------------------+--------------------------------------+
-| ``min_axis_bins``             | number of bins to create per range   |
-|                               | defined by minor axis. (default      |
-|                               | value is 10)                         |
-+-------------------------------+--------------------------------------+
-| ``alpha``                     | alpha of hexbin plot                 |
-+-------------------------------+--------------------------------------+
-| ``show_polygon``              | overlay polygon information (cell    |
-|                               | shape)                               |
-+-------------------------------+--------------------------------------+
-| ``polygon_feat_type``         | feature type associated with polygon |
-|                               | information                          |
-+-------------------------------+--------------------------------------+
-| ``polygon_color``             | color for polygon border             |
-+-------------------------------+--------------------------------------+
-| ``polygon_fill``              | fill color or column for polygon     |
-+-------------------------------+--------------------------------------+
-| ``polygon_fill_as_factor``    | is fill color a factor               |
-+-------------------------------+--------------------------------------+
-| ``polygon_alpha``             | alpha of polygon                     |
-+-------------------------------+--------------------------------------+
-| ``polygon_size``              | size of polygon border               |
-+-------------------------------+--------------------------------------+
-| ``coord_fix_ratio``           | fix ratio between x and y-axis       |
-+-------------------------------+--------------------------------------+
-| ``axis_text``                 | axis text size                       |
-+-------------------------------+--------------------------------------+
-| ``axis_title``                | title text size                      |
-+-------------------------------+--------------------------------------+
-| ``legend_text``               | legend text size                     |
-+-------------------------------+--------------------------------------+
-| ``background_color``          | background color                     |
-+-------------------------------+--------------------------------------+
-| ``cow_n_col``                 | cowplot param: how many columns      |
-+-------------------------------+--------------------------------------+
-| ``cow_rel_h``                 | cowplot param: relative height       |
-+-------------------------------+--------------------------------------+
-| ``cow_rel_w``                 | cowplot param: relative width        |
-+-------------------------------+--------------------------------------+
-| ``cow_align``                 | cowplot param: how to align          |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plots                           |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return ggplot object                 |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot [boolean]     |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters, see       |
-|                               | ```showSaveP                         |
-|                               | arameters`` <#showsaveparameters>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feats``                         | features to plot                  |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature types of the feats        |
++-----------------------------------+-----------------------------------+
+| ``sdimx``                         | spatial dimension x               |
++-----------------------------------+-----------------------------------+
+| ``sdimy``                         | spatial dimension y               |
++-----------------------------------+-----------------------------------+
+| ``binwidth``                      | numeric vector for x and y width  |
+|                                   | of bins (default is minor axis    |
+|                                   | range/10, where the 10 is from    |
+|                                   | ``min_axis_bins``)                |
++-----------------------------------+-----------------------------------+
+| ``min_axis_bins``                 | number of bins to create per      |
+|                                   | range defined by minor axis.      |
+|                                   | (default value is 10)             |
++-----------------------------------+-----------------------------------+
+| ``alpha``                         | alpha of hexbin plot              |
++-----------------------------------+-----------------------------------+
+| ``show_polygon``                  | overlay polygon information (cell |
+|                                   | shape)                            |
++-----------------------------------+-----------------------------------+
+| ``polygon_feat_type``             | feature type associated with      |
+|                                   | polygon information               |
++-----------------------------------+-----------------------------------+
+| ``polygon_color``                 | color for polygon border          |
++-----------------------------------+-----------------------------------+
+| ``polygon_fill``                  | fill color or column for polygon  |
++-----------------------------------+-----------------------------------+
+| ``polygon_fill_as_factor``        | is fill color a factor            |
++-----------------------------------+-----------------------------------+
+| ``polygon_alpha``                 | alpha of polygon                  |
++-----------------------------------+-----------------------------------+
+| ``polygon_size``                  | size of polygon border            |
++-----------------------------------+-----------------------------------+
+| ``coord_fix_ratio``               | fix ratio between x and y-axis    |
++-----------------------------------+-----------------------------------+
+| ``axis_text``                     | axis text size                    |
++-----------------------------------+-----------------------------------+
+| ``axis_title``                    | title text size                   |
++-----------------------------------+-----------------------------------+
+| ``legend_text``                   | legend text size                  |
++-----------------------------------+-----------------------------------+
+| ``background_color``              | background color                  |
++-----------------------------------+-----------------------------------+
+| ``cow_n_col``                     | cowplot param: how many columns   |
++-----------------------------------+-----------------------------------+
+| ``cow_rel_h``                     | cowplot param: relative height    |
++-----------------------------------+-----------------------------------+
+| ``cow_rel_w``                     | cowplot param: relative width     |
++-----------------------------------+-----------------------------------+
+| ``cow_align``                     | cowplot param: how to align       |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | show plots                        |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return ggplot object              |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | directly save the plot [boolean]  |
++-----------------------------------+-----------------------------------+
+| ``save_param``                    | list of saving parameters, see    |
+|                                   | ``showSaveParameters``            |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 TODO
 
 Value
------
+~~~~~
 
 ggplot
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other In Situ visualizations:
-```spatInSituPlotDensity`` <#spatinsituplotdensity>`__ ,
-```spatInSituPlotPoints`` <#spatinsituplotpoints>`__
+Other In Situ visualizations: ``spatInSituPlotDensity()``,
+``spatInSituPlotPoints()``

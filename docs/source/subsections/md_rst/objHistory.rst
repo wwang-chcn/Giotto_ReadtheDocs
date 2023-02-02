@@ -1,34 +1,28 @@
-==========
-objHistory
-==========
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L4368
-
-
-
-==============
-
 Giotto object history
+---------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L4368
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Print and return giotto object history
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    objHistory(object)
 
 Arguments
----------
+~~~~~~~~~
 
-========== =============
-Argument   Description
-========== =============
-``object`` giotto object
-========== =============
++-----------------------------------+-----------------------------------+
+| ``object``                        | giotto object                     |
++-----------------------------------+-----------------------------------+

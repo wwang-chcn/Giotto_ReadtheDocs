@@ -1,26 +1,22 @@
-=====================
-get_expression_values
-=====================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L680
-
-
-
-=========================
-
 Get expression values
+---------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L680
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to get expression values from giotto object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    get_expression_values(
      gobject,
@@ -32,51 +28,45 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``values``                    | expression values to extract         |
-|                               | (e.g. “raw�, “normalized�, “scaled�) |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
-|                               | “protein�)                           |
-+-------------------------------+--------------------------------------+
-| ``output``                    | what object type to retrieve the     |
-|                               | expression as. Currently either      |
-|                               | ‘matrix’ for the matrix object       |
-|                               | contained in the exprObj or          |
-|                               | ‘exprObj’ (default) for the exprObj  |
-|                               | itself are allowed.                  |
-+-------------------------------+--------------------------------------+
-| ``set_defaults``              | set default spat_unit and feat_type. |
-|                               | Change to FALSE only when            |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``values``                        | expression values to extract      |
+|                                   | (e.g. "raw", "normalized",        |
+|                                   | "scaled")                         |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g. "cell")        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g. "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``output``                        | what object type to retrieve the  |
+|                                   | expression as. Currently either   |
+|                                   | 'matrix' for the matrix object    |
+|                                   | contained in the exprObj or       |
+|                                   | 'exprObj' (default) for the       |
+|                                   | exprObj itself are allowed.       |
++-----------------------------------+-----------------------------------+
+| ``set_defaults``                  | set default spat_unit and         |
+|                                   | feat_type. Change to FALSE only   |
+|                                   | when expression and spat_info are |
+|                                   | not expected to exist.            |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 expression matrix
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other expression accessor functions:
-```set_expression_values`` <#setexpressionvalues>`__
+Other expression accessor functions: ``set_expression_values()``
 
 Other functions to get data from giotto object:
-```get_NearestNetwork`` <#getnearestnetwork>`__ ,
-```get_dimReduction`` <#getdimreduction>`__ ,
-```get_feature_info`` <#getfeatureinfo>`__ ,
-```get_giottoImage`` <#getgiottoimage>`__ ,
-```get_multiomics`` <#getmultiomics>`__ ,
-```get_polygon_info`` <#getpolygoninfo>`__ ,
-```get_spatialGrid`` <#getspatialgrid>`__ ,
-```get_spatialNetwork`` <#getspatialnetwork>`__ ,
-```get_spatial_enrichment`` <#getspatialenrichment>`__ ,
-```get_spatial_locations`` <#getspatiallocations>`__
+``get_NearestNetwork()``, ``get_dimReduction()``,
+``get_feature_info()``, ``get_giottoImage()``, ``get_polygon_info()``,
+``get_spatialGrid()``, ``get_spatialNetwork()``,
+``get_spatial_enrichment()``, ``get_spatial_locations()``

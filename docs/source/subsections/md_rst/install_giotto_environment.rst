@@ -1,23 +1,15 @@
-==========================
 install_giotto_environment
-==========================
-
-:Date: 1/19/23
-
-``install_giotto_environment``
-==============================
-
-install_giotto_environment
+--------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 installation options of giotto environment
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    install_giotto_environment(
      force_environment = FALSE,

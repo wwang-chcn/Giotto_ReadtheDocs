@@ -1,23 +1,15 @@
-=================
 dimPlot_2D_plotly
-=================
-
-:Date: 1/19/23
-
-``dimPlot_2D_plotly``
-=====================
-
-dimPlot_2D_plotly
+-----------------
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells at their 2D dimension reduction coordinates with plotly
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    dimPlot_2D_plotly(
      gobject,
@@ -48,6 +40,6 @@ Usage
    )
 
 Value
------
+~~~~~
 
 plotly object

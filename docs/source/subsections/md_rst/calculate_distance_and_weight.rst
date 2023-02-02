@@ -1,23 +1,15 @@
-=============================
 calculate_distance_and_weight
-=============================
-
-:Date: 1/19/23
-
-``calculate_distance_and_weight``
-=================================
-
-calculate_distance_and_weight
+-----------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 calculate_distance_and_weight
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    calculate_distance_and_weight(
      networkDT = NULL,
@@ -28,14 +20,16 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-============= =============================
-Argument      Description
-============= =============================
-``networkDT`` spatial network as data.table
-``sdimx``     spatial dimension x
-``sdimy``     spatial dimension y
-``sdimz``     spatial dimension z
-``d2_or_d3``  number of dimensions
-============= =============================
++-----------------------------------+-----------------------------------+
+| ``networkDT``                     | spatial network as data.table     |
++-----------------------------------+-----------------------------------+
+| ``sdimx``                         | spatial dimension x               |
++-----------------------------------+-----------------------------------+
+| ``sdimy``                         | spatial dimension y               |
++-----------------------------------+-----------------------------------+
+| ``sdimz``                         | spatial dimension z               |
++-----------------------------------+-----------------------------------+
+| ``d2_or_d3``                      | number of dimensions              |
++-----------------------------------+-----------------------------------+

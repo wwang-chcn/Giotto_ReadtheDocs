@@ -1,23 +1,15 @@
-=================================
 write_giotto_viewer_dim_reduction
-=================================
-
-:Date: 1/19/23
-
-``write_giotto_viewer_dim_reduction``
-=====================================
-
-write_giotto_viewer_dim_reduction
+---------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 write out dimensional reduction data from a giotto object for the Viewer
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    write_giotto_viewer_dim_reduction(
      dim_reduction_cell,
@@ -29,30 +21,28 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``dim_reduction_cell``        | dimension reduction slot from giotto |
-|                               | object                               |
-+-------------------------------+--------------------------------------+
-| ``dim_red``                   | high level name of dimension         |
-|                               | reduction                            |
-+-------------------------------+--------------------------------------+
-| ``dim_red_name``              | specific name of dimension reduction |
-|                               | to use                               |
-+-------------------------------+--------------------------------------+
-| ``dim_red_rounding``          | numerical indicating how to round    |
-|                               | the coordinates                      |
-+-------------------------------+--------------------------------------+
-| ``dim_red_rescale``           | numericals to rescale the            |
-|                               | coordinates                          |
-+-------------------------------+--------------------------------------+
-| ``output_directory``          | directory where to save the files    |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``dim_reduction_cell``            | dimension reduction slot from     |
+|                                   | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``dim_red``                       | high level name of dimension      |
+|                                   | reduction                         |
++-----------------------------------+-----------------------------------+
+| ``dim_red_name``                  | specific name of dimension        |
+|                                   | reduction to use                  |
++-----------------------------------+-----------------------------------+
+| ``dim_red_rounding``              | numerical indicating how to round |
+|                                   | the coordinates                   |
++-----------------------------------+-----------------------------------+
+| ``dim_red_rescale``               | numericals to rescale the         |
+|                                   | coordinates                       |
++-----------------------------------+-----------------------------------+
+| ``output_directory``              | directory where to save the files |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 write a .txt and .annot file for the selection annotation

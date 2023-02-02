@@ -1,27 +1,23 @@
-===============
 spatCellCellcom
-===============
+---------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2650
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2650
-
-
-
-===================
-
-spatCellCellcom
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Spatial Cell-Cell communication scores based on spatial expression of
 interacting cells
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spatCellCellcom(
      gobject,
@@ -48,71 +44,69 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object to use                 |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``spatial_network_name``      | spatial network to use for           |
-|                               | identifying interacting cells        |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | cluster column with cell type        |
-|                               | information                          |
-+-------------------------------+--------------------------------------+
-| ``random_iter``               | number of iterations                 |
-+-------------------------------+--------------------------------------+
-| ``feat_set_1``                | first specific feature set from      |
-|                               | feature pairs                        |
-+-------------------------------+--------------------------------------+
-| ``feat_set_2``                | second specific feature set from     |
-|                               | feature pairs                        |
-+-------------------------------+--------------------------------------+
-| ``gene_set_1``                | deprecated, use feat_set_1           |
-+-------------------------------+--------------------------------------+
-| ``gene_set_2``                | deprecated, use feat_set_2           |
-+-------------------------------+--------------------------------------+
-| ``log2FC_addendum``           | addendum to add when calculating     |
-|                               | log2FC                               |
-+-------------------------------+--------------------------------------+
-| ``min_observations``          | minimum number of interactions       |
-|                               | needed to be considered              |
-+-------------------------------+--------------------------------------+
-| ``detailed``                  | provide more detailed information    |
-|                               | (random variance and z-score)        |
-+-------------------------------+--------------------------------------+
-| ``adjust_method``             | which method to adjust p-values      |
-+-------------------------------+--------------------------------------+
-| ``adjust_target``             | adjust multiple hypotheses at the    |
-|                               | cell or feature level                |
-+-------------------------------+--------------------------------------+
-| ``do_parallel``               | run calculations in parallel with    |
-|                               | mclapply                             |
-+-------------------------------+--------------------------------------+
-| ``cores``                     | number of cores to use if            |
-|                               | do_parallel = TRUE                   |
-+-------------------------------+--------------------------------------+
-| ``set_seed``                  | set a seed for reproducibility       |
-+-------------------------------+--------------------------------------+
-| ``seed_number``               | seed number                          |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | verbose                              |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object to use              |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``spatial_network_name``          | spatial network to use for        |
+|                                   | identifying interacting cells     |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | cluster column with cell type     |
+|                                   | information                       |
++-----------------------------------+-----------------------------------+
+| ``random_iter``                   | number of iterations              |
++-----------------------------------+-----------------------------------+
+| ``feat_set_1``                    | first specific feature set from   |
+|                                   | feature pairs                     |
++-----------------------------------+-----------------------------------+
+| ``feat_set_2``                    | second specific feature set from  |
+|                                   | feature pairs                     |
++-----------------------------------+-----------------------------------+
+| ``gene_set_1``                    | deprecated, use feat_set_1        |
++-----------------------------------+-----------------------------------+
+| ``gene_set_2``                    | deprecated, use feat_set_2        |
++-----------------------------------+-----------------------------------+
+| ``log2FC_addendum``               | addendum to add when calculating  |
+|                                   | log2FC                            |
++-----------------------------------+-----------------------------------+
+| ``min_observations``              | minimum number of interactions    |
+|                                   | needed to be considered           |
++-----------------------------------+-----------------------------------+
+| ``detailed``                      | provide more detailed information |
+|                                   | (random variance and z-score)     |
++-----------------------------------+-----------------------------------+
+| ``adjust_method``                 | which method to adjust p-values   |
++-----------------------------------+-----------------------------------+
+| ``adjust_target``                 | adjust multiple hypotheses at the |
+|                                   | cell or feature level             |
++-----------------------------------+-----------------------------------+
+| ``do_parallel``                   | run calculations in parallel with |
+|                                   | mclapply                          |
++-----------------------------------+-----------------------------------+
+| ``cores``                         | number of cores to use if         |
+|                                   | do_parallel = TRUE                |
++-----------------------------------+-----------------------------------+
+| ``set_seed``                      | set a seed for reproducibility    |
++-----------------------------------+-----------------------------------+
+| ``seed_number``                   | seed number                       |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | verbose                           |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Statistical framework to identify if pairs of genes (such as
 ligand-receptor combinations) are expressed at higher levels than
 expected based on a reshuffled null distribution of feature expression
 values in cells that are spatially in proximity to eachother..
 
--  LR_comb: Pair of ligand and receptor
+-  LR_comb:Pair of ligand and receptor
 
 -  lig_cell_type: cell type to assess expression level of ligand
 
@@ -156,7 +150,7 @@ values in cells that are spatially in proximity to eachother..
 -  PI: significanc score: log2fc \* -log10(p.adj)
 
 Value
------
+~~~~~
 
 Cell-Cell communication scores for feature pairs based on spatial
 interaction

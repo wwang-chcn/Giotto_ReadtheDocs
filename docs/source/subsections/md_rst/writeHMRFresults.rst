@@ -1,26 +1,22 @@
-================
 writeHMRFresults
-================
+----------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L415
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L415
-
-
-
-====================
-
-writeHMRFresults
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 write results from doHMRF to a data.table.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    writeHMRFresults(
      gobject,
@@ -31,24 +27,22 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``HMRFoutput``                | HMRF output from doHMRF              |
-+-------------------------------+--------------------------------------+
-| ``k``                         | k to write results for               |
-+-------------------------------+--------------------------------------+
-| ``betas_to_view``             | results from different betas that    |
-|                               | you want to view                     |
-+-------------------------------+--------------------------------------+
-| ``print_command``             | see the python command               |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``HMRFoutput``                    | HMRF output from doHMRF           |
++-----------------------------------+-----------------------------------+
+| ``k``                             | k to write results for            |
++-----------------------------------+-----------------------------------+
+| ``betas_to_view``                 | results from different betas that |
+|                                   | you want to view                  |
++-----------------------------------+-----------------------------------+
+| ``print_command``                 | see the python command            |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table with HMRF results for each b and the selected k

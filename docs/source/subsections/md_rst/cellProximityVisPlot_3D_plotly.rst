@@ -1,24 +1,16 @@
-==============================
 cellProximityVisPlot_3D_plotly
-==============================
-
-:Date: 1/19/23
-
-``cellProximityVisPlot_3D_plotly``
-==================================
-
-cellProximityVisPlot_3D_plotly
+------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize 3D cell-cell interactions according to spatial coordinates in
 plotly mode
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    cellProximityVisPlot_3D_plotly(
      gobject,

@@ -1,26 +1,22 @@
-==========
 plotPCA_2D
-==========
+----------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1558
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L1558
-
-
-``plotPCA_2D``
-==============
-
-plotPCA_2D
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Short wrapper for PCA visualization
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    plotPCA_2D(
      gobject,
@@ -30,68 +26,203 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``dim_reduction_name``        | name of PCA                          |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name of PCA plot        |
-+-------------------------------+--------------------------------------+
-| ``...``                       | Arguments passed on to               |
-|                               | ```dimPlot2D`` <#dimplot2d>`__       |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�spat_unit�)),        |
-|                               | list(“spatial unit�)),               |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�feat_type�)),        |
-|                               | list(“feature type�)),               |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�group_by�)),         |
-|                               | list(“create multiple plots based on |
-|                               | cell annotation column�)),           |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�group_by_subset�)),  |
-|                               | list(“subset the group_by factor     |
-|                               | column�)), “:raw-latex:`\n`�, � “,   |
-|                               | list(list(list(�dim1_to_use�)),      |
-|                               | list(“dimension to use on x-axis�)), |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�dim2_to_use�)),      |
-|                               | list(“dimension to use on y-axis�)), |
-+-------------------------------+--------------------------------------+
-
-::
-
-   "\n", "    ", list(list(list("spat_enr_names")), list("names of spatial enrichment results to include")), "\n", "    ", list(list(list("show_NN_network")), list("show underlying NN network")), "\n", "    ", list(list(list("nn_network_to_use")), list("type of NN network to use (kNN vs sNN)")), "\n", "    ", list(list(list("network_name")), list("name of NN network to use, if show_NN_network = TRUE")), "\n", "    ", list(list(list("cell_color")), list("color for cells (see details)")), "\n", "    ", 
-   list(list(list("color_as_factor")), list("convert color column to factor")), "\n", "    ", list(list(list("cell_color_code")), list("named vector with colors")), "\n", "    ", list(list(list("cell_color_gradient")), list("vector with 3 colors for numeric data")), "\n", "    ", list(list(list("gradient_midpoint")), list("midpoint for color gradient")), "\n", "    ", list(list(list("gradient_limits")), list("vector with lower and upper limits")), "\n", "    ", list(list(list("select_cell_groups")), 
-       list("select subset of cells/clusters based on cell_color parameter")), "\n", "    ", list(list(list("select_cells")), list("select subset of cells based on cell IDs")), "\n", "    ", list(list(list("show_other_cells")), list("display not selected cells")), "\n", "    ", list(list(list("other_cell_color")), list("color of not selected cells")), "\n", "    ", list(list(list("other_point_size")), list("size of not selected cells")), "\n", "    ", list(list(list("show_cluster_center")), list(
-       "plot center of selected clusters")), "\n", "    ", list(list(list("show_center_label")), list("plot label of selected clusters")), "\n", "    ", list(list(list("center_point_size")), list("size of center points")), "\n", "    ", list(list(list("center_point_border_col")), list("border color of center points")), "\n", "    ", list(list(list("center_point_border_stroke")), list("border stroke size of center points")), "\n", "    ", list(list(list("label_size")), list("size of labels")), "\n", 
-   "    ", list(list(list("label_fontface")), list("font of labels")), "\n", "    ", list(list(list("edge_alpha")), list("column to use for alpha of the edges")), "\n", "    ", list(list(list("point_shape")), list("point with border or not (border or no_border)")), "\n", "    ", list(list(list("point_size")), list("size of point (cell)")), "\n", "    ", list(list(list("point_alpha")), list("transparancy of point")), "\n", "    ", list(list(list("point_border_col")), list("color of border around points")), 
-   "\n", "    ", list(list(list("point_border_stroke")), list("stroke size of border around points")), "\n", "    ", list(list(list("title")), list("title for plot, defaults to cell_color parameter")), "\n", "    ", list(list(list("show_legend")), list("show legend")), "\n", "    ", list(list(list("legend_text")), list("size of legend text")), "\n", "    ", list(list(list("legend_symbol_size")), list("size of legend symbols")), "\n", "    ", list(list(list("background_color")), list("color of plot background")), 
-   "\n", "    ", list(list(list("axis_text")), list("size of axis text")), "\n", "    ", list(list(list("axis_title")), list("size of axis title")), "\n", "    ", list(list(list("cow_n_col")), list("cowplot param: how many columns")), "\n", "    ", list(list(list("cow_rel_h")), list("cowplot param: relative heights of rows (e.g. c(1,2))")), "\n", "    ", list(list(list("cow_rel_w")), list("cowplot param: relative widths of columns (e.g. c(1,2))")), "\n", "    ", list(list(list("cow_align")), list(
-       "cowplot param: how to align")), "\n", "    ", list(list(list("show_plot")), list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "  ")
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``dim_reduction_name``            | name of PCA                       |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name of PCA plot     |
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``dimPlot2D``                     |
+|                                   |                                   |
+|                                   | ``spat_unit``                     |
+|                                   |    spatial unit                   |
+|                                   |                                   |
+|                                   | ``feat_type``                     |
+|                                   |    feature type                   |
+|                                   |                                   |
+|                                   | ``group_by``                      |
+|                                   |    create multiple plots based on |
+|                                   |    cell annotation column         |
+|                                   |                                   |
+|                                   | ``group_by_subset``               |
+|                                   |    subset the group_by factor     |
+|                                   |    column                         |
+|                                   |                                   |
+|                                   | ``dim1_to_use``                   |
+|                                   |    dimension to use on x-axis     |
+|                                   |                                   |
+|                                   | ``dim2_to_use``                   |
+|                                   |    dimension to use on y-axis     |
+|                                   |                                   |
+|                                   | ``spat_enr_names``                |
+|                                   |    names of spatial enrichment    |
+|                                   |    results to include             |
+|                                   |                                   |
+|                                   | ``show_NN_network``               |
+|                                   |    show underlying NN network     |
+|                                   |                                   |
+|                                   | ``nn_network_to_use``             |
+|                                   |    type of NN network to use (kNN |
+|                                   |    vs sNN)                        |
+|                                   |                                   |
+|                                   | ``network_name``                  |
+|                                   |    name of NN network to use, if  |
+|                                   |    show_NN_network = TRUE         |
+|                                   |                                   |
+|                                   | ``cell_color``                    |
+|                                   |    color for cells (see details)  |
+|                                   |                                   |
+|                                   | ``color_as_factor``               |
+|                                   |    convert color column to factor |
+|                                   |                                   |
+|                                   | ``cell_color_code``               |
+|                                   |    named vector with colors       |
+|                                   |                                   |
+|                                   | ``cell_color_gradient``           |
+|                                   |    vector with 3 colors for       |
+|                                   |    numeric data                   |
+|                                   |                                   |
+|                                   | ``gradient_midpoint``             |
+|                                   |    midpoint for color gradient    |
+|                                   |                                   |
+|                                   | ``gradient_limits``               |
+|                                   |    vector with lower and upper    |
+|                                   |    limits                         |
+|                                   |                                   |
+|                                   | ``select_cell_groups``            |
+|                                   |    select subset of               |
+|                                   |    cells/clusters based on        |
+|                                   |    cell_color parameter           |
+|                                   |                                   |
+|                                   | ``select_cells``                  |
+|                                   |    select subset of cells based   |
+|                                   |    on cell IDs                    |
+|                                   |                                   |
+|                                   | ``show_other_cells``              |
+|                                   |    display not selected cells     |
+|                                   |                                   |
+|                                   | ``other_cell_color``              |
+|                                   |    color of not selected cells    |
+|                                   |                                   |
+|                                   | ``other_point_size``              |
+|                                   |    size of not selected cells     |
+|                                   |                                   |
+|                                   | ``show_cluster_center``           |
+|                                   |    plot center of selected        |
+|                                   |    clusters                       |
+|                                   |                                   |
+|                                   | ``show_center_label``             |
+|                                   |    plot label of selected         |
+|                                   |    clusters                       |
+|                                   |                                   |
+|                                   | ``center_point_size``             |
+|                                   |    size of center points          |
+|                                   |                                   |
+|                                   | ``center_point_border_col``       |
+|                                   |    border color of center points  |
+|                                   |                                   |
+|                                   | ``center_point_border_stroke``    |
+|                                   |    border stroke size of center   |
+|                                   |    points                         |
+|                                   |                                   |
+|                                   | ``label_size``                    |
+|                                   |    size of labels                 |
+|                                   |                                   |
+|                                   | ``label_fontface``                |
+|                                   |    font of labels                 |
+|                                   |                                   |
+|                                   | ``edge_alpha``                    |
+|                                   |    column to use for alpha of the |
+|                                   |    edges                          |
+|                                   |                                   |
+|                                   | ``point_shape``                   |
+|                                   |    point with border or not       |
+|                                   |    (border or no_border)          |
+|                                   |                                   |
+|                                   | ``point_size``                    |
+|                                   |    size of point (cell)           |
+|                                   |                                   |
+|                                   | ``point_alpha``                   |
+|                                   |    transparancy of point          |
+|                                   |                                   |
+|                                   | ``point_border_col``              |
+|                                   |    color of border around points  |
+|                                   |                                   |
+|                                   | ``point_border_stroke``           |
+|                                   |    stroke size of border around   |
+|                                   |    points                         |
+|                                   |                                   |
+|                                   | ``title``                         |
+|                                   |    title for plot, defaults to    |
+|                                   |    cell_color parameter           |
+|                                   |                                   |
+|                                   | ``show_legend``                   |
+|                                   |    show legend                    |
+|                                   |                                   |
+|                                   | ``legend_text``                   |
+|                                   |    size of legend text            |
+|                                   |                                   |
+|                                   | ``legend_symbol_size``            |
+|                                   |    size of legend symbols         |
+|                                   |                                   |
+|                                   | ``background_color``              |
+|                                   |    color of plot background       |
+|                                   |                                   |
+|                                   | ``axis_text``                     |
+|                                   |    size of axis text              |
+|                                   |                                   |
+|                                   | ``axis_title``                    |
+|                                   |    size of axis title             |
+|                                   |                                   |
+|                                   | ``cow_n_col``                     |
+|                                   |    cowplot param: how many        |
+|                                   |    columns                        |
+|                                   |                                   |
+|                                   | ``cow_rel_h``                     |
+|                                   |    cowplot param: relative        |
+|                                   |    heights of rows (e.g. c(1,2))  |
+|                                   |                                   |
+|                                   | ``cow_rel_w``                     |
+|                                   |    cowplot param: relative widths |
+|                                   |    of columns (e.g. c(1,2))       |
+|                                   |                                   |
+|                                   | ``cow_align``                     |
+|                                   |    cowplot param: how to align    |
+|                                   |                                   |
+|                                   | ``show_plot``                     |
+|                                   |    show plot                      |
+|                                   |                                   |
+|                                   | ``return_plot``                   |
+|                                   |    return ggplot object           |
+|                                   |                                   |
+|                                   | ``save_plot``                     |
+|                                   |    directly save the plot         |
+|                                   |    [boolean]                      |
+|                                   |                                   |
+|                                   | ``save_param``                    |
+|                                   |    list of saving parameters, see |
+|                                   |    ``showSaveParameters``         |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
-Description of parameters, see ```dimPlot2D`` <#dimplot2d>`__ . For 3D
-plots see ```plotPCA_3D`` <#plotpca3d>`__
+Description of parameters, see ``dimPlot2D``. For 3D plots see
+``plotPCA_3D``
 
 Value
------
+~~~~~
 
 ggplot
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other reduced dimension visualizations: ```dimPlot2D`` <#dimplot2d>`__ ,
-```dimPlot3D`` <#dimplot3d>`__ , ```dimPlot`` <#dimplot>`__ ,
-```plotPCA_3D`` <#plotpca3d>`__ , ```plotPCA`` <#plotpca>`__ ,
-```plotTSNE_2D`` <#plottsne2d>`__ , ```plotTSNE_3D`` <#plottsne3d>`__ ,
-```plotTSNE`` <#plottsne>`__ , ```plotUMAP_2D`` <#plotumap2d>`__ ,
-```plotUMAP_3D`` <#plotumap3d>`__ , ```plotUMAP`` <#plotumap>`__
+Other reduced dimension visualizations: ``dimPlot2D()``,
+``dimPlot3D()``, ``dimPlot()``, ``plotPCA_3D()``, ``plotPCA()``,
+``plotTSNE_2D()``, ``plotTSNE_3D()``, ``plotTSNE()``, ``plotUMAP_2D()``,
+``plotUMAP_3D()``, ``plotUMAP()``

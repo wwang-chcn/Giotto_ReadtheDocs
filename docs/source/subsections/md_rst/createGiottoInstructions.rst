@@ -1,26 +1,22 @@
-========================
-createGiottoInstructions
-========================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L180
-
-
-
-============================
-
 Create instructions for giotto functions
+----------------------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L180
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to set global instructions for giotto functions
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    createGiottoInstructions(
      python_path = NULL,
@@ -39,51 +35,49 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``python_path``               | path to python binary to use         |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | print plot to console, default =     |
-|                               | TRUE                                 |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return plot as object, default =     |
-|                               | TRUE                                 |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | automatically save plot, dafault =   |
-|                               | FALSE                                |
-+-------------------------------+--------------------------------------+
-| ``save_dir``                  | path to directory where to save      |
-|                               | plots                                |
-+-------------------------------+--------------------------------------+
-| ``plot_format``               | format of plots (defaults to png)    |
-+-------------------------------+--------------------------------------+
-| ``dpi``                       | resolution for raster images         |
-+-------------------------------+--------------------------------------+
-| ``units``                     | units of format (defaults to in)     |
-+-------------------------------+--------------------------------------+
-| ``height``                    | height of plots                      |
-+-------------------------------+--------------------------------------+
-| ``width``                     | width of plots                       |
-+-------------------------------+--------------------------------------+
-| ``is_docker``                 | using docker implementation of       |
-|                               | Giotto (defaults to FALSE)           |
-+-------------------------------+--------------------------------------+
-| ``plot_count``                | [global option] start count for      |
-|                               | creating automatic unique plots      |
-+-------------------------------+--------------------------------------+
-| ``fiji_path``                 | path to fiji executable              |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``python_path``                   | path to python binary to use      |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | print plot to console, default =  |
+|                                   | TRUE                              |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return plot as object, default =  |
+|                                   | TRUE                              |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | automatically save plot, dafault  |
+|                                   | = FALSE                           |
++-----------------------------------+-----------------------------------+
+| ``save_dir``                      | path to directory where to save   |
+|                                   | plots                             |
++-----------------------------------+-----------------------------------+
+| ``plot_format``                   | format of plots (defaults to png) |
++-----------------------------------+-----------------------------------+
+| ``dpi``                           | resolution for raster images      |
++-----------------------------------+-----------------------------------+
+| ``units``                         | units of format (defaults to in)  |
++-----------------------------------+-----------------------------------+
+| ``height``                        | height of plots                   |
++-----------------------------------+-----------------------------------+
+| ``width``                         | width of plots                    |
++-----------------------------------+-----------------------------------+
+| ``is_docker``                     | using docker implementation of    |
+|                                   | Giotto (defaults to FALSE)        |
++-----------------------------------+-----------------------------------+
+| ``plot_count``                    | [global option] start count for   |
+|                                   | creating automatic unique plots   |
++-----------------------------------+-----------------------------------+
+| ``fiji_path``                     | path to fiji executable           |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 named vector with giotto instructions
 
-Seealso
--------
+See Also
+~~~~~~~~
 
 More online information can be found here
 https://rubd.github.io/Giotto_site/articles/instructions_and_plotting.html

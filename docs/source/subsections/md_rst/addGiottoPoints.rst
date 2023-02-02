@@ -1,43 +1,36 @@
-===============
-addGiottoPoints
-===============
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1286
-
-
-
-===================
-
 Add giotto points object to giotto object
+-----------------------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L1286
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Adds Giotto points to an existing Giotto object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    addGiottoPoints(gobject, gpoints)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``gpoints``                   | list of giotto point objects, see    |
-|                               | ```createGio                         |
-|                               | ttoPoints`` <#creategiottopoints>`__ |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``gpoints``                       | list of giotto point objects, see |
+|                                   | ``createGiottoPoints``            |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 giotto object

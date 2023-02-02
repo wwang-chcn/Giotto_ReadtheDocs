@@ -1,26 +1,22 @@
-==========
 violinPlot
-==========
+----------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1723
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1723
-
-
-
-==============
-
-violinPlot
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Creates violinplot for selected clusters
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    violinPlot(
      gobject,
@@ -45,62 +41,59 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g.Â â€œcellâ€)           |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g.Â â€œrnaâ€, â€œdnaâ€,     |
-|                               | â€œproteinâ€)                           |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | expression values to use             |
-|                               | (e.g.Â â€œnormalizedâ€, â€œscaledâ€,        |
-|                               | â€œcustomâ€)                            |
-+-------------------------------+--------------------------------------+
-| ``feats``                     | features to plot                     |
-+-------------------------------+--------------------------------------+
-| ``genes``                     | deprecated, use feats argument       |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | name of column to use for clusters   |
-|                               | (e.g.Â â€œleiden_clusâ€)                 |
-+-------------------------------+--------------------------------------+
-| ``cluster_custom_order``      | custom order of clusters             |
-+-------------------------------+--------------------------------------+
-| ``color_violin``              | color violin according to â€œgenesâ€ or |
-|                               | â€œclustersâ€                           |
-+-------------------------------+--------------------------------------+
-| ``cluster_color_code``        | color code for clusters              |
-+-------------------------------+--------------------------------------+
-| ``strip_position``            | position of gene labels (e.g.Â â€œtopâ€, |
-|                               | â€œrightâ€, â€œleftâ€, â€œbottomâ€)           |
-+-------------------------------+--------------------------------------+
-| ``strip_text``                | size of strip text                   |
-+-------------------------------+--------------------------------------+
-| ``axis_text_x_size``          | size of x-axis text                  |
-+-------------------------------+--------------------------------------+
-| ``axis_text_y_size``          | size of y-axis text                  |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plot. TRUE or FALSE             |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return ggplot object. TRUE or FALSE  |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot. TRUE or      |
-|                               | FALSE                                |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters, see       |
-|                               | ```showSaveP                         |
-|                               | arameters`` <#showsaveparameters>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, donâ€™t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g.Â "cell")        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g.Â "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use (e.g.    |
+|                                   | "normalized", "scaled", "custom") |
++-----------------------------------+-----------------------------------+
+| ``feats``                         | features to plot                  |
++-----------------------------------+-----------------------------------+
+| ``genes``                         | deprecated, use feats argument    |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | name of column to use for         |
+|                                   | clusters (e.g.Â "leiden_clus")     |
++-----------------------------------+-----------------------------------+
+| ``cluster_custom_order``          | custom order of clusters          |
++-----------------------------------+-----------------------------------+
+| ``color_violin``                  | color violin according to "genes" |
+|                                   | or "clusters"                     |
++-----------------------------------+-----------------------------------+
+| ``cluster_color_code``            | color code for clusters           |
++-----------------------------------+-----------------------------------+
+| ``strip_position``                | position of gene labels (e.g.     |
+|                                   | "top", "right", "left", "bottom") |
++-----------------------------------+-----------------------------------+
+| ``strip_text``                    | size of strip text                |
++-----------------------------------+-----------------------------------+
+| ``axis_text_x_size``              | size of x-axis text               |
++-----------------------------------+-----------------------------------+
+| ``axis_text_y_size``              | size of y-axis text               |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | show plot. TRUE or FALSE          |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return ggplot object. TRUE or     |
+|                                   | FALSE                             |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | directly save the plot. TRUE or   |
+|                                   | FALSE                             |
++-----------------------------------+-----------------------------------+
+| ``save_param``                    | list of saving parameters, see    |
+|                                   | ``showSaveParameters``            |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 ggplot

@@ -1,94 +1,325 @@
-===========
 spatDimPlot
-===========
+-----------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4117
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4117
-
-
-``spatDimPlot``
-===============
-
-spatDimPlot
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells according to spatial AND dimension reduction coordinates
 2D
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spatDimPlot(...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``...``                       | Arguments passed on to               |
-|                               | ``                                   |
-|                               | `spatDimPlot2D`` <#spatdimplot2d>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�gobject�)),          |
-|                               | list(“giotto object�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�spat_unit�)),        |
-|                               | list(“spatial unit�)),               |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�feat_type�)),        |
-|                               | list(“feature type�)),               |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�show_image�)),       |
-|                               | list(“show a tissue background       |
-|                               | image�)), “:raw-latex:`\n`�, � “,    |
-|                               | list(list(list(�gimage�)), list(“a   |
-|                               | giotto image�)), “:raw-latex:`\n`�,  |
-|                               | � “, list(list(list(�image_name�)),  |
-|                               | list(“name of a giotto image�)),     |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�largeImage_name�)),  |
-|                               | list(“name of a giottoLargeImage�)), |
-+-------------------------------+--------------------------------------+
-
-::
-
-   "\n", "    ", list(list(list("spat_loc_name")), list("name of spatial locations")), "\n", "    ", list(list(list("plot_alignment")), list("direction to align plot")), "\n", "    ", list(list(list("dim_reduction_to_use")), list("dimension reduction to use")), "\n", "    ", list(list(list("dim_reduction_name")), list("dimension reduction name")), "\n", "    ", list(list(list("dim1_to_use")), list("dimension to use on x-axis")), "\n", "    ", list(list(list("dim2_to_use")), list("dimension to use on y-axis")), 
-   "\n", "    ", list(list(list("sdimx")), list("= spatial dimension to use on x-axis")), "\n", "    ", list(list(list("sdimy")), list("= spatial dimension to use on y-axis")), "\n", "    ", list(list(list("spat_enr_names")), list("names of spatial enrichment results to include")), "\n", "    ", list(list(list("cell_color")), list("color for cells (see details)")), "\n", "    ", list(list(list("color_as_factor")), list("convert color column to factor")), "\n", "    ", list(list(list("cell_color_code")), 
-       list("named vector with colors")), "\n", "    ", list(list(list("cell_color_gradient")), list("vector with 3 colors for numeric data")), "\n", "    ", list(list(list("gradient_midpoint")), list("midpoint for color gradient")), "\n", "    ", list(list(list("gradient_limits")), list("vector with lower and upper limits")), "\n", "    ", list(list(list("select_cell_groups")), list("select subset of cells/clusters based on cell_color parameter")), "\n", "    ", list(list(list("select_cells")), 
-       list("select subset of cells based on cell IDs")), "\n", "    ", list(list(list("dim_point_shape")), list("point with border or not (border or no_border)")), "\n", "    ", list(list(list("dim_point_size")), list("size of points in dim. reduction space")), "\n", "    ", list(list(list("dim_point_alpha")), list("transparancy of point in dim. reduction space")), "\n", "    ", list(list(list("dim_point_border_col")), list("border color of points in dim. reduction space")), "\n", "    ", list(
-       list(list("dim_point_border_stroke")), list("border stroke of points in dim. reduction space")), "\n", "    ", list(list(list("spat_point_shape")), list("shape of points (border, no_border or voronoi)")), "\n", "    ", list(list(list("spat_point_size")), list("size of spatial points")), "\n", "    ", list(list(list("spat_point_alpha")), list("transparancy of spatial points")), "\n", "    ", list(list(list("spat_point_border_col")), list("border color of spatial points")), "\n", "    ", list(
-       list(list("spat_point_border_stroke")), list("border stroke of spatial points")), "\n", "    ", list(list(list("dim_show_cluster_center")), list("show the center of each cluster")), "\n", "    ", list(list(list("dim_show_center_label")), list("provide a label for each cluster")), "\n", "    ", list(list(list("dim_center_point_size")), list("size of the center point")), "\n", "    ", list(list(list("dim_center_point_border_col")), list("border color of center point")), "\n", "    ", list(list(
-       list("dim_center_point_border_stroke")), list("stroke size of center point")), "\n", "    ", list(list(list("dim_label_size")), list("size of the center label")), "\n", "    ", list(list(list("dim_label_fontface")), list("font of the center label")), "\n", "    ", list(list(list("spat_show_cluster_center")), list("show the center of each cluster")), "\n", "    ", list(list(list("spat_show_center_label")), list("provide a label for each cluster")), "\n", "    ", list(list(list("spat_center_point_size")), 
-       list("size of the center point")), "\n", "    ", list(list(list("spat_center_point_border_col")), list("border color of spatial center points")), "\n", "    ", list(list(list("spat_center_point_border_stroke")), list("border strike size of spatial center points")), "\n", "    ", list(list(list("spat_label_size")), list("size of the center label")), "\n", "    ", list(list(list("spat_label_fontface")), list("font of the center label")), "\n", "    ", list(list(list("show_NN_network")), list(
-       "show underlying NN network")), "\n", "    ", list(list(list("nn_network_to_use")), list("type of NN network to use (kNN vs sNN)")), "\n", "    ", list(list(list("network_name")), list("name of NN network to use, if show_NN_network = TRUE")), "\n", "    ", list(list(list("nn_network_alpha")), list("column to use for alpha of the edges")), "\n", "    ", list(list(list("show_spatial_network")), list("show spatial network")), "\n", "    ", list(list(list("spat_network_name")), list("name of spatial network to use")), 
-   "\n", "    ", list(list(list("spat_network_color")), list("color of spatial network")), "\n", "    ", list(list(list("spat_network_alpha")), list("alpha of spatial network")), "\n", "    ", list(list(list("show_spatial_grid")), list("show spatial grid")), "\n", "    ", list(list(list("spat_grid_name")), list("name of spatial grid to use")), "\n", "    ", list(list(list("spat_grid_color")), list("color of spatial grid")), "\n", "    ", list(list(list("show_other_cells")), list("display not selected cells")), 
-   "\n", "    ", list(list(list("other_cell_color")), list("color of not selected cells")), "\n", "    ", list(list(list("dim_other_point_size")), list("size of not selected dim cells")), "\n", "    ", list(list(list("spat_other_point_size")), list("size of not selected spat cells")), "\n", "    ", list(list(list("spat_other_cells_alpha")), list("alpha of not selected spat cells")), "\n", "    ", list(list(list("dim_show_legend")), list("show legend of dimension reduction plot")), "\n", "    ", 
-   list(list(list("spat_show_legend")), list("show legend of spatial plot")), "\n", "    ", list(list(list("legend_text")), list("size of legend text")), "\n", "    ", list(list(list("legend_symbol_size")), list("size of legend symbols")), "\n", "    ", list(list(list("dim_background_color")), list("background color of points in dim. reduction space")), "\n", "    ", list(list(list("spat_background_color")), list("background color of spatial points")), "\n", "    ", list(list(list("vor_border_color")), 
-       list("border colorr for voronoi plot")), "\n", "    ", list(list(list("vor_max_radius")), list("maximum radius for voronoi 'cells'")), "\n", "    ", list(list(list("vor_alpha")), list("transparancy of voronoi 'cells'")), "\n", "    ", list(list(list("axis_text")), list("size of axis text")), "\n", "    ", list(list(list("axis_title")), list("size of axis title")), "\n", "    ", list(list(list("show_plot")), list("show plot")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), 
-   "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", "  ")
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``spatDimPlot2D``                 |
+|                                   |                                   |
+|                                   | ``gobject``                       |
+|                                   |    giotto object                  |
+|                                   |                                   |
+|                                   | ``spat_unit``                     |
+|                                   |    spatial unit                   |
+|                                   |                                   |
+|                                   | ``feat_type``                     |
+|                                   |    feature type                   |
+|                                   |                                   |
+|                                   | ``show_image``                    |
+|                                   |    show a tissue background image |
+|                                   |                                   |
+|                                   | ``gimage``                        |
+|                                   |    a giotto image                 |
+|                                   |                                   |
+|                                   | ``image_name``                    |
+|                                   |    name of a giotto image         |
+|                                   |                                   |
+|                                   | ``largeImage_name``               |
+|                                   |    name of a giottoLargeImage     |
+|                                   |                                   |
+|                                   | ``spat_loc_name``                 |
+|                                   |    name of spatial locations      |
+|                                   |                                   |
+|                                   | ``plot_alignment``                |
+|                                   |    direction to align plot        |
+|                                   |                                   |
+|                                   | ``dim_reduction_to_use``          |
+|                                   |    dimension reduction to use     |
+|                                   |                                   |
+|                                   | ``dim_reduction_name``            |
+|                                   |    dimension reduction name       |
+|                                   |                                   |
+|                                   | ``dim1_to_use``                   |
+|                                   |    dimension to use on x-axis     |
+|                                   |                                   |
+|                                   | ``dim2_to_use``                   |
+|                                   |    dimension to use on y-axis     |
+|                                   |                                   |
+|                                   | ``sdimx``                         |
+|                                   |    = spatial dimension to use on  |
+|                                   |    x-axis                         |
+|                                   |                                   |
+|                                   | ``sdimy``                         |
+|                                   |    = spatial dimension to use on  |
+|                                   |    y-axis                         |
+|                                   |                                   |
+|                                   | ``spat_enr_names``                |
+|                                   |    names of spatial enrichment    |
+|                                   |    results to include             |
+|                                   |                                   |
+|                                   | ``cell_color``                    |
+|                                   |    color for cells (see details)  |
+|                                   |                                   |
+|                                   | ``color_as_factor``               |
+|                                   |    convert color column to factor |
+|                                   |                                   |
+|                                   | ``cell_color_code``               |
+|                                   |    named vector with colors       |
+|                                   |                                   |
+|                                   | ``cell_color_gradient``           |
+|                                   |    vector with 3 colors for       |
+|                                   |    numeric data                   |
+|                                   |                                   |
+|                                   | ``gradient_midpoint``             |
+|                                   |    midpoint for color gradient    |
+|                                   |                                   |
+|                                   | ``gradient_limits``               |
+|                                   |    vector with lower and upper    |
+|                                   |    limits                         |
+|                                   |                                   |
+|                                   | ``select_cell_groups``            |
+|                                   |    select subset of               |
+|                                   |    cells/clusters based on        |
+|                                   |    cell_color parameter           |
+|                                   |                                   |
+|                                   | ``select_cells``                  |
+|                                   |    select subset of cells based   |
+|                                   |    on cell IDs                    |
+|                                   |                                   |
+|                                   | ``dim_point_shape``               |
+|                                   |    point with border or not       |
+|                                   |    (border or no_border)          |
+|                                   |                                   |
+|                                   | ``dim_point_size``                |
+|                                   |    size of points in dim.         |
+|                                   |    reduction space                |
+|                                   |                                   |
+|                                   | ``dim_point_alpha``               |
+|                                   |    transparancy of point in dim.  |
+|                                   |    reduction space                |
+|                                   |                                   |
+|                                   | ``dim_point_border_col``          |
+|                                   |    border color of points in dim. |
+|                                   |    reduction space                |
+|                                   |                                   |
+|                                   | ``dim_point_border_stroke``       |
+|                                   |    border stroke of points in     |
+|                                   |    dim. reduction space           |
+|                                   |                                   |
+|                                   | ``spat_point_shape``              |
+|                                   |    shape of points (border,       |
+|                                   |    no_border or voronoi)          |
+|                                   |                                   |
+|                                   | ``spat_point_size``               |
+|                                   |    size of spatial points         |
+|                                   |                                   |
+|                                   | ``spat_point_alpha``              |
+|                                   |    transparancy of spatial points |
+|                                   |                                   |
+|                                   | ``spat_point_border_col``         |
+|                                   |    border color of spatial points |
+|                                   |                                   |
+|                                   | ``spat_point_border_stroke``      |
+|                                   |    border stroke of spatial       |
+|                                   |    points                         |
+|                                   |                                   |
+|                                   | ``dim_show_cluster_center``       |
+|                                   |    show the center of each        |
+|                                   |    cluster                        |
+|                                   |                                   |
+|                                   | ``dim_show_center_label``         |
+|                                   |    provide a label for each       |
+|                                   |    cluster                        |
+|                                   |                                   |
+|                                   | ``dim_center_point_size``         |
+|                                   |    size of the center point       |
+|                                   |                                   |
+|                                   | ``dim_center_point_border_col``   |
+|                                   |    border color of center point   |
+|                                   |                                   |
+|                                   | ``dim_center_point_border_stroke` |
+|                                   | `                                 |
+|                                   |    stroke size of center point    |
+|                                   |                                   |
+|                                   | ``dim_label_size``                |
+|                                   |    size of the center label       |
+|                                   |                                   |
+|                                   | ``dim_label_fontface``            |
+|                                   |    font of the center label       |
+|                                   |                                   |
+|                                   | ``spat_show_cluster_center``      |
+|                                   |    show the center of each        |
+|                                   |    cluster                        |
+|                                   |                                   |
+|                                   | ``spat_show_center_label``        |
+|                                   |    provide a label for each       |
+|                                   |    cluster                        |
+|                                   |                                   |
+|                                   | ``spat_center_point_size``        |
+|                                   |    size of the center point       |
+|                                   |                                   |
+|                                   | ``spat_center_point_border_col``  |
+|                                   |    border color of spatial center |
+|                                   |    points                         |
+|                                   |                                   |
+|                                   | ``spat_center_point_border_stroke |
+|                                   | ``                                |
+|                                   |    border strike size of spatial  |
+|                                   |    center points                  |
+|                                   |                                   |
+|                                   | ``spat_label_size``               |
+|                                   |    size of the center label       |
+|                                   |                                   |
+|                                   | ``spat_label_fontface``           |
+|                                   |    font of the center label       |
+|                                   |                                   |
+|                                   | ``show_NN_network``               |
+|                                   |    show underlying NN network     |
+|                                   |                                   |
+|                                   | ``nn_network_to_use``             |
+|                                   |    type of NN network to use (kNN |
+|                                   |    vs sNN)                        |
+|                                   |                                   |
+|                                   | ``network_name``                  |
+|                                   |    name of NN network to use, if  |
+|                                   |    show_NN_network = TRUE         |
+|                                   |                                   |
+|                                   | ``nn_network_alpha``              |
+|                                   |    column to use for alpha of the |
+|                                   |    edges                          |
+|                                   |                                   |
+|                                   | ``show_spatial_network``          |
+|                                   |    show spatial network           |
+|                                   |                                   |
+|                                   | ``spat_network_name``             |
+|                                   |    name of spatial network to use |
+|                                   |                                   |
+|                                   | ``spat_network_color``            |
+|                                   |    color of spatial network       |
+|                                   |                                   |
+|                                   | ``spat_network_alpha``            |
+|                                   |    alpha of spatial network       |
+|                                   |                                   |
+|                                   | ``show_spatial_grid``             |
+|                                   |    show spatial grid              |
+|                                   |                                   |
+|                                   | ``spat_grid_name``                |
+|                                   |    name of spatial grid to use    |
+|                                   |                                   |
+|                                   | ``spat_grid_color``               |
+|                                   |    color of spatial grid          |
+|                                   |                                   |
+|                                   | ``show_other_cells``              |
+|                                   |    display not selected cells     |
+|                                   |                                   |
+|                                   | ``other_cell_color``              |
+|                                   |    color of not selected cells    |
+|                                   |                                   |
+|                                   | ``dim_other_point_size``          |
+|                                   |    size of not selected dim cells |
+|                                   |                                   |
+|                                   | ``spat_other_point_size``         |
+|                                   |    size of not selected spat      |
+|                                   |    cells                          |
+|                                   |                                   |
+|                                   | ``spat_other_cells_alpha``        |
+|                                   |    alpha of not selected spat     |
+|                                   |    cells                          |
+|                                   |                                   |
+|                                   | ``dim_show_legend``               |
+|                                   |    show legend of dimension       |
+|                                   |    reduction plot                 |
+|                                   |                                   |
+|                                   | ``spat_show_legend``              |
+|                                   |    show legend of spatial plot    |
+|                                   |                                   |
+|                                   | ``legend_text``                   |
+|                                   |    size of legend text            |
+|                                   |                                   |
+|                                   | ``legend_symbol_size``            |
+|                                   |    size of legend symbols         |
+|                                   |                                   |
+|                                   | ``dim_background_color``          |
+|                                   |    background color of points in  |
+|                                   |    dim. reduction space           |
+|                                   |                                   |
+|                                   | ``spat_background_color``         |
+|                                   |    background color of spatial    |
+|                                   |    points                         |
+|                                   |                                   |
+|                                   | ``vor_border_color``              |
+|                                   |    border colorr for voronoi plot |
+|                                   |                                   |
+|                                   | ``vor_max_radius``                |
+|                                   |    maximum radius for voronoi     |
+|                                   |    'cells'                        |
+|                                   |                                   |
+|                                   | ``vor_alpha``                     |
+|                                   |    transparancy of voronoi        |
+|                                   |    'cells'                        |
+|                                   |                                   |
+|                                   | ``axis_text``                     |
+|                                   |    size of axis text              |
+|                                   |                                   |
+|                                   | ``axis_title``                    |
+|                                   |    size of axis title             |
+|                                   |                                   |
+|                                   | ``show_plot``                     |
+|                                   |    show plot                      |
+|                                   |                                   |
+|                                   | ``return_plot``                   |
+|                                   |    return ggplot object           |
+|                                   |                                   |
+|                                   | ``save_plot``                     |
+|                                   |    directly save the plot         |
+|                                   |    [boolean]                      |
+|                                   |                                   |
+|                                   | ``save_param``                    |
+|                                   |    list of saving parameters, see |
+|                                   |    ``showSaveParameters``         |
+|                                   |                                   |
+|                                   | ``default_save_name``             |
+|                                   |    default save name for saving,  |
+|                                   |    don't change, change save_name |
+|                                   |    in save_param                  |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description of parameters.
 
 Value
------
+~~~~~
 
 ggplot
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```spatDimPlot2D`` <#spatdimplot2d>`__ and
-```spatDimPlot3D`` <#spatdimplot3d>`__ for 3D visualization.
+``spatDimPlot2D`` and ``spatDimPlot3D`` for 3D visualization.
 
 Other spatial and dimension reduction visualizations:
-```spatDimPlot2D`` <#spatdimplot2d>`__ ,
-```spatDimPlot3D`` <#spatdimplot3d>`__
+``spatDimPlot2D()``, ``spatDimPlot3D()``

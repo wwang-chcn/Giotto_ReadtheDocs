@@ -1,23 +1,15 @@
-====================
-extract_polygon_list
-====================
-
-:Date: 1/19/23
-
-``extract_polygon_list``
-========================
-
 Extract list of polygons
+------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 to extract list of polygons
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    extract_polygon_list(
      polygonlist,

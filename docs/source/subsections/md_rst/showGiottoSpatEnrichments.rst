@@ -1,58 +1,47 @@
-=========================
 showGiottoSpatEnrichments
-=========================
+-------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2744
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2744
-
-
-
-=============================
-
-showGiottoSpatEnrichments
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 shows the available spatial enrichment results
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    showGiottoSpatEnrichments(gobject, nrows = 4)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``nrows``                     | number of rows to print for each     |
-|                               | spatial enrichment data.table        |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``nrows``                         | number of rows to print for each  |
+|                                   | spatial enrichment data.table     |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 prints the name and small subset of available data.table
 
-Seealso
--------
+See Also
+~~~~~~~~
 
 Other functions to show data in giotto object:
-```showGiottoCellMetadata`` <#showgiottocellmetadata>`__ ,
-```showGiottoDimRed`` <#showgiottodimred>`__ ,
-```showGiottoExpression`` <#showgiottoexpression>`__ ,
-```showGiottoFeatInfo`` <#showgiottofeatinfo>`__ ,
-```showGiottoFeatMetadata`` <#showgiottofeatmetadata>`__ ,
-```showGiottoImageNames`` <#showgiottoimagenames>`__ ,
-```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
-```showGiottoSpatGrids`` <#showgiottospatgrids>`__ ,
-```showGiottoSpatLocs`` <#showgiottospatlocs>`__ ,
-```showGiottoSpatNetworks`` <#showgiottospatnetworks>`__ ,
-```showGiottoSpatialInfo`` <#showgiottospatialinfo>`__
+``showGiottoCellMetadata()``, ``showGiottoDimRed()``,
+``showGiottoExpression()``, ``showGiottoFeatInfo()``,
+``showGiottoFeatMetadata()``, ``showGiottoImageNames()``,
+``showGiottoNearestNetworks()``, ``showGiottoSpatGrids()``,
+``showGiottoSpatLocs()``, ``showGiottoSpatNetworks()``,
+``showGiottoSpatialInfo()``

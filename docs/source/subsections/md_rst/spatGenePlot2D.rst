@@ -1,91 +1,205 @@
-==============
 spatGenePlot2D
-==============
+--------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4919
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4919
-
-
-``spatGenePlot2D``
-==================
-
-spatGenePlot2D
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells and gene expression according to spatial coordinates
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spatGenePlot2D(gobject, genes, default_save_name = "spatGenePlot2D", ...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``genes``                     | genes to show                        |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
-| ``...``                       | Arguments passed on to               |
-|                               | ```s                                 |
-|                               | patFeatPlot2D`` <#spatfeatplot2d>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�feat_type�)),        |
-|                               | list(“feature type�)),               |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�spat_unit�)),        |
-|                               | list(“spatial unit�)),               |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�show_image�)),       |
-|                               | list(“show a tissue background       |
-|                               | image�)), “:raw-latex:`\n`�, � “,    |
-|                               | list(list(list(�gimage�)), list(“a   |
-|                               | giotto image�)), “:raw-latex:`\n`�,  |
-|                               | � “, list(list(list(�image_name�)),  |
-|                               | list(“name of a giotto image or      |
-|                               | multiple images if group_by�)),      |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�largeImage_name�)),  |
-|                               | list(“name of a giottoLargeImage or  |
-|                               | multiple images if group by�)),      |
-+-------------------------------+--------------------------------------+
-
-::
-
-   "\n", "    ", list(list(list("spat_loc_name")), list("name of spatial locations")), "\n", "    ", list(list(list("group_by")), list("create multiple plots based on cell annotation column")), "\n", "    ", list(list(list("group_by_subset")), list("subset the group_by factor column")), "\n", "    ", list(list(list("sdimx")), list("x-axis dimension name (default = 'sdimx')")), "\n", "    ", list(list(list("sdimy")), list("y-axis dimension name (default = 'sdimy')")), "\n", "    ", list(list(list(
-       "expression_values")), list("gene expression values to use")), "\n", "    ", list(list(list("order")), list("order points according to feature expression")), "\n", "    ", list(list(list("cell_color_gradient")), list("vector with 3 colors for numeric data")), "\n", "    ", list(list(list("gradient_midpoint")), list("midpoint for color gradient")), "\n", "    ", list(list(list("gradient_limits")), list("vector with lower and upper limits")), "\n", "    ", list(list(list("show_network")), list(
-       "show underlying spatial network")), "\n", "    ", list(list(list("network_color")), list("color of spatial network")), "\n", "    ", list(list(list("spatial_network_name")), list("name of spatial network to use")), "\n", "    ", list(list(list("edge_alpha")), list("alpha of edge")), "\n", "    ", list(list(list("show_grid")), list("show spatial grid")), "\n", "    ", list(list(list("grid_color")), list("color of spatial grid")), "\n", "    ", list(list(list("spatial_grid_name")), list("name of spatial grid to use")), 
-   "\n", "    ", list(list(list("midpoint")), list("expression midpoint")), "\n", "    ", list(list(list("scale_alpha_with_expression")), list("scale expression with ggplot alpha parameter")), "\n", "    ", list(list(list("point_shape")), list("shape of points (border, no_border or voronoi)")), "\n", "    ", list(list(list("point_size")), list("size of point (cell)")), "\n", "    ", list(list(list("point_alpha")), list("transparancy of points")), "\n", "    ", list(list(list("point_border_col")), 
-       list("color of border around points")), "\n", "    ", list(list(list("point_border_stroke")), list("stroke size of border around points")), "\n", "    ", list(list(list("coord_fix_ratio")), list("fix ratio between x and y-axis (default = 1)")), "\n", "    ", list(list(list("cow_n_col")), list("cowplot param: how many columns")), "\n", "    ", list(list(list("cow_rel_h")), list("cowplot param: relative height")), "\n", "    ", list(list(list("cow_rel_w")), list("cowplot param: relative width")), 
-   "\n", "    ", list(list(list("cow_align")), list("cowplot param: how to align")), "\n", "    ", list(list(list("show_legend")), list("show legend")), "\n", "    ", list(list(list("legend_text")), list("size of legend text")), "\n", "    ", list(list(list("background_color")), list("color of plot background")), "\n", "    ", list(list(list("vor_border_color")), list("border colorr for voronoi plot")), "\n", "    ", list(list(list("vor_max_radius")), list("maximum radius for voronoi 'cells'")), 
-   "\n", "    ", list(list(list("vor_alpha")), list("transparancy of voronoi 'cells'")), "\n", "    ", list(list(list("axis_text")), list("size of axis text")), "\n", "    ", list(list(list("axis_title")), list("size of axis title")), "\n", "    ", list(list(list("show_plot")), list("show plots")), "\n", "    ", list(list(list("return_plot")), list("return ggplot object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), 
-       list("list of saving parameters, see ", list(list("showSaveParameters")))), "\n", "  ")
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``genes``                         | genes to show                     |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``spatFeatPlot2D``                |
+|                                   |                                   |
+|                                   | ``feat_type``                     |
+|                                   |    feature type                   |
+|                                   |                                   |
+|                                   | ``spat_unit``                     |
+|                                   |    spatial unit                   |
+|                                   |                                   |
+|                                   | ``show_image``                    |
+|                                   |    show a tissue background image |
+|                                   |                                   |
+|                                   | ``gimage``                        |
+|                                   |    a giotto image                 |
+|                                   |                                   |
+|                                   | ``image_name``                    |
+|                                   |    name of a giotto image or      |
+|                                   |    multiple images if group_by    |
+|                                   |                                   |
+|                                   | ``largeImage_name``               |
+|                                   |    name of a giottoLargeImage or  |
+|                                   |    multiple images if group by    |
+|                                   |                                   |
+|                                   | ``spat_loc_name``                 |
+|                                   |    name of spatial locations      |
+|                                   |                                   |
+|                                   | ``group_by``                      |
+|                                   |    create multiple plots based on |
+|                                   |    cell annotation column         |
+|                                   |                                   |
+|                                   | ``group_by_subset``               |
+|                                   |    subset the group_by factor     |
+|                                   |    column                         |
+|                                   |                                   |
+|                                   | ``sdimx``                         |
+|                                   |    x-axis dimension name (default |
+|                                   |    = 'sdimx')                     |
+|                                   |                                   |
+|                                   | ``sdimy``                         |
+|                                   |    y-axis dimension name (default |
+|                                   |    = 'sdimy')                     |
+|                                   |                                   |
+|                                   | ``expression_values``             |
+|                                   |    gene expression values to use  |
+|                                   |                                   |
+|                                   | ``cell_color_gradient``           |
+|                                   |    vector with 3 colors for       |
+|                                   |    numeric data                   |
+|                                   |                                   |
+|                                   | ``gradient_midpoint``             |
+|                                   |    midpoint for color gradient    |
+|                                   |                                   |
+|                                   | ``gradient_limits``               |
+|                                   |    vector with lower and upper    |
+|                                   |    limits                         |
+|                                   |                                   |
+|                                   | ``show_network``                  |
+|                                   |    show underlying spatial        |
+|                                   |    network                        |
+|                                   |                                   |
+|                                   | ``network_color``                 |
+|                                   |    color of spatial network       |
+|                                   |                                   |
+|                                   | ``spatial_network_name``          |
+|                                   |    name of spatial network to use |
+|                                   |                                   |
+|                                   | ``edge_alpha``                    |
+|                                   |    alpha of edge                  |
+|                                   |                                   |
+|                                   | ``show_grid``                     |
+|                                   |    show spatial grid              |
+|                                   |                                   |
+|                                   | ``grid_color``                    |
+|                                   |    color of spatial grid          |
+|                                   |                                   |
+|                                   | ``spatial_grid_name``             |
+|                                   |    name of spatial grid to use    |
+|                                   |                                   |
+|                                   | ``midpoint``                      |
+|                                   |    expression midpoint            |
+|                                   |                                   |
+|                                   | ``scale_alpha_with_expression``   |
+|                                   |    scale expression with ggplot   |
+|                                   |    alpha parameter                |
+|                                   |                                   |
+|                                   | ``point_shape``                   |
+|                                   |    shape of points (border,       |
+|                                   |    no_border or voronoi)          |
+|                                   |                                   |
+|                                   | ``point_size``                    |
+|                                   |    size of point (cell)           |
+|                                   |                                   |
+|                                   | ``point_alpha``                   |
+|                                   |    transparancy of points         |
+|                                   |                                   |
+|                                   | ``point_border_col``              |
+|                                   |    color of border around points  |
+|                                   |                                   |
+|                                   | ``point_border_stroke``           |
+|                                   |    stroke size of border around   |
+|                                   |    points                         |
+|                                   |                                   |
+|                                   | ``cow_n_col``                     |
+|                                   |    cowplot param: how many        |
+|                                   |    columns                        |
+|                                   |                                   |
+|                                   | ``cow_rel_h``                     |
+|                                   |    cowplot param: relative height |
+|                                   |                                   |
+|                                   | ``cow_rel_w``                     |
+|                                   |    cowplot param: relative width  |
+|                                   |                                   |
+|                                   | ``cow_align``                     |
+|                                   |    cowplot param: how to align    |
+|                                   |                                   |
+|                                   | ``show_legend``                   |
+|                                   |    show legend                    |
+|                                   |                                   |
+|                                   | ``legend_text``                   |
+|                                   |    size of legend text            |
+|                                   |                                   |
+|                                   | ``background_color``              |
+|                                   |    color of plot background       |
+|                                   |                                   |
+|                                   | ``vor_border_color``              |
+|                                   |    border colorr for voronoi plot |
+|                                   |                                   |
+|                                   | ``vor_max_radius``                |
+|                                   |    maximum radius for voronoi     |
+|                                   |    'cells'                        |
+|                                   |                                   |
+|                                   | ``vor_alpha``                     |
+|                                   |    transparancy of voronoi        |
+|                                   |    'cells'                        |
+|                                   |                                   |
+|                                   | ``axis_text``                     |
+|                                   |    size of axis text              |
+|                                   |                                   |
+|                                   | ``axis_title``                    |
+|                                   |    size of axis title             |
+|                                   |                                   |
+|                                   | ``show_plot``                     |
+|                                   |    show plots                     |
+|                                   |                                   |
+|                                   | ``return_plot``                   |
+|                                   |    return ggplot object           |
+|                                   |                                   |
+|                                   | ``save_plot``                     |
+|                                   |    directly save the plot         |
+|                                   |    [boolean]                      |
+|                                   |                                   |
+|                                   | ``save_param``                    |
+|                                   |    list of saving parameters, see |
+|                                   |    ``showSaveParameters``         |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
-Description of parameters, see ```spatFeatPlot2D`` <#spatfeatplot2d>`__
+Description of parameters, see ``spatFeatPlot2D``
 
 Value
------
+~~~~~
 
 ggplot
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other spatial gene expression visualizations:
-```spatGenePlot3D`` <#spatgeneplot3d>`__ ,
-```spatGenePlot`` <#spatgeneplot>`__
+Other spatial gene expression visualizations: ``spatGenePlot3D()``,
+``spatGenePlot()``

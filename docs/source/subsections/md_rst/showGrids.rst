@@ -1,48 +1,40 @@
-=========
-showGrids
-=========
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3198
-
-
-``showGrids``
-=============
-
 Show Spatial Grids
+------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3198
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Show Spatial Grids
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    showGrids(...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``...``                       | Arguments passed on to               |
-|                               | ```showGiottoS                       |
-|                               | patGrids`` <#showgiottospatgrids>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�gobject�)),          |
-|                               | list(“giotto object�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�nrows�)),            |
-|                               | list(“number of rows to print�)),    |
-|                               | “:raw-latex:`\n`�, � “)              |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``showGiottoSpatGrids``           |
+|                                   |                                   |
+|                                   | ``gobject``                       |
+|                                   |    giotto object                  |
+|                                   |                                   |
+|                                   | ``nrows``                         |
+|                                   |    number of rows to print        |
++-----------------------------------+-----------------------------------+
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```showGiottoSpatGrids`` <#showgiottospatgrids>`__
+``showGiottoSpatGrids``

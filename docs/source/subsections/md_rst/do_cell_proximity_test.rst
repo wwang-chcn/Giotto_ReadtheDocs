@@ -1,23 +1,15 @@
-======================
-do_cell_proximity_test
-======================
-
-:Date: 1/19/23
-
-``do_cell_proximity_test``
-==========================
-
 Do cell proximity test
+----------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Performs a selected differential test on subsets of a matrix
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    do_cell_proximity_test(
      expr_values,
@@ -34,10 +26,8 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-=============== =============
-Argument        Description
-=============== =============
-``expr_values`` Matrix object
-=============== =============
++-----------------------------------+-----------------------------------+
+| ``expr_values``                   | Matrix object                     |
++-----------------------------------+-----------------------------------+

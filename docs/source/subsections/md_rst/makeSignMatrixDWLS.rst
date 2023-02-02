@@ -1,29 +1,25 @@
-==================
 makeSignMatrixDWLS
-==================
+------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L120
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L120
-
-
-
-======================
-
-makeSignMatrixDWLS
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to convert a matrix within a Giotto object into a format that
-can be used with ```runDWLSDeconv`` <#rundwlsdeconv>`__ for
-deconvolution. A vector of cell types for parameter ``cell_type_vector``
-can be created from the cell metadata ( ```pDataDT`` <#pdatadt>`__ ).
+can be used with ``runDWLSDeconv`` for deconvolution. A vector of cell
+types for parameter ``cell_type_vector`` can be created from the cell
+metadata (``pDataDT``).
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    makeSignMatrixDWLS(
      gobject,
@@ -38,38 +34,37 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | Giotto object of single cell         |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type to use                  |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | expression values to use             |
-+-------------------------------+--------------------------------------+
-| ``reverse_log``               | reverse a log-normalized expression  |
-|                               | matrix                               |
-+-------------------------------+--------------------------------------+
-| ``log_base``                  | the logarithm base (default = 2)     |
-+-------------------------------+--------------------------------------+
-| ``sign_gene``                 | all of DE genes (signature)          |
-+-------------------------------+--------------------------------------+
-| ``cell_type_vector``          | vector with cell types (length =     |
-|                               | ncol(matrix))                        |
-+-------------------------------+--------------------------------------+
-| ``cell_type``                 | deprecated, use ``cell_type_vector`` |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | Giotto object of single cell      |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type to use               |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use          |
++-----------------------------------+-----------------------------------+
+| ``reverse_log``                   | reverse a log-normalized          |
+|                                   | expression matrix                 |
++-----------------------------------+-----------------------------------+
+| ``log_base``                      | the logarithm base (default = 2)  |
++-----------------------------------+-----------------------------------+
+| ``sign_gene``                     | all of DE genes (signature)       |
++-----------------------------------+-----------------------------------+
+| ``cell_type_vector``              | vector with cell types (length =  |
+|                                   | ncol(matrix))                     |
++-----------------------------------+-----------------------------------+
+| ``cell_type``                     | deprecated, use                   |
+|                                   | ``cell_type_vector``              |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 matrix
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```runDWLSDeconv`` <#rundwlsdeconv>`__
+``runDWLSDeconv``

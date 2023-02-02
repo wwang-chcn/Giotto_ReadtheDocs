@@ -1,26 +1,22 @@
-==================
 showClusterHeatmap
-==================
+------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L460
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L460
-
-
-
-======================
-
-showClusterHeatmap
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Creates heatmap based on identified clusters
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    showClusterHeatmap(
      gobject,
@@ -41,64 +37,61 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
-|                               | “protein�)                           |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | expression values to use             |
-|                               | (e.g. “normalized�, “scaled�,        |
-|                               | “custom�)                            |
-+-------------------------------+--------------------------------------+
-| ``feats``                     | vector of features to use, default   |
-|                               | to ‘all’                             |
-+-------------------------------+--------------------------------------+
-| ``genes``                     | deprecated. Replaced by ``feats``    |
-|                               | param                                |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | name of column to use for clusters   |
-|                               | (e.g. “leiden_clus�)                 |
-+-------------------------------+--------------------------------------+
-| ``cor``                       | correlation score to calculate       |
-|                               | distance (e.g. “pearson�,            |
-|                               | “spearman�)                          |
-+-------------------------------+--------------------------------------+
-| ``distance``                  | distance method to use for           |
-|                               | hierarchical clustering, default to  |
-|                               | “ward.D�                             |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plot. TRUE or FALSE             |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return ggplot object. TRUE or FALSE  |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot. TRUE or      |
-|                               | FALSE                                |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters, see       |
-|                               | ```showSaveP                         |
-|                               | arameters`` <#showsaveparameters>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
-| ``...``                       | additional parameters passed to      |
-|                               | ```Heatmap`` <#heatmap>`__ function  |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g. "cell")        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g. "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use (e.g.    |
+|                                   | "normalized", "scaled", "custom") |
++-----------------------------------+-----------------------------------+
+| ``feats``                         | vector of features to use,        |
+|                                   | default to 'all'                  |
++-----------------------------------+-----------------------------------+
+| ``genes``                         | deprecated. Replaced by ``feats`` |
+|                                   | param                             |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | name of column to use for         |
+|                                   | clusters (e.g. "leiden_clus")     |
++-----------------------------------+-----------------------------------+
+| ``cor``                           | correlation score to calculate    |
+|                                   | distance (e.g. "pearson",         |
+|                                   | "spearman")                       |
++-----------------------------------+-----------------------------------+
+| ``distance``                      | distance method to use for        |
+|                                   | hierarchical clustering, default  |
+|                                   | to "ward.D"                       |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | show plot. TRUE or FALSE          |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return ggplot object. TRUE or     |
+|                                   | FALSE                             |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | directly save the plot. TRUE or   |
+|                                   | FALSE                             |
++-----------------------------------+-----------------------------------+
+| ``save_param``                    | list of saving parameters, see    |
+|                                   | ``showSaveParameters``            |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional parameters passed to   |
+|                                   | ``Heatmap`` function              |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Correlation heatmap of selected clusters.
 
 Value
------
+~~~~~
 
 ggplot

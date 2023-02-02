@@ -1,23 +1,15 @@
-===========================
 run_spatial_sim_tests_multi
-===========================
-
-:Date: 1/19/23
-
-``run_spatial_sim_tests_multi``
-===============================
-
-run_spatial_sim_tests_multi
+---------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 runs all spatial tests for multiple probabilities and repetitions
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    run_spatial_sim_tests_multi(
      gobject,

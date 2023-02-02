@@ -1,27 +1,23 @@
-====================
 crossSectionGenePlot
-====================
+--------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L579
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L579
-
-
-
-========================
-
-crossSectionGenePlot
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells and gene expression in a virtual cross section according
 to spatial coordinates
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    crossSectionGenePlot(
      gobject = NULL,
@@ -34,40 +30,38 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_loc_name``             | name of spatial locations            |
-+-------------------------------+--------------------------------------+
-| ``crossSection_obj``          | crossSection object                  |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name of virtual cross section to use |
-+-------------------------------+--------------------------------------+
-| ``spatial_network_name``      | name of spatial network to use       |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
-| ``...``                       | parameters for spatGenePlot2D        |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_loc_name``                 | name of spatial locations         |
++-----------------------------------+-----------------------------------+
+| ``crossSection_obj``              | crossSection object               |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name of virtual cross section to  |
+|                                   | use                               |
++-----------------------------------+-----------------------------------+
+| ``spatial_network_name``          | name of spatial network to use    |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | parameters for spatGenePlot2D     |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description of parameters.
 
 Value
------
+~~~~~
 
 ggplot
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```spatGenePlot3D`` <#spatgeneplot3d>`__ and
-```spatGenePlot2D`` <#spatgeneplot2d>`__
+``spatGenePlot3D`` and ``spatGenePlot2D``

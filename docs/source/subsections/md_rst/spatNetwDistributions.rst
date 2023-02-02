@@ -1,27 +1,23 @@
-=====================
 spatNetwDistributions
-=====================
+---------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L209
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L209
-
-
-
-=========================
-
-spatNetwDistributions
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 This function return histograms displaying the distance distribution for
 each spatial k-neighbor
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spatNetwDistributions(
      gobject,
@@ -39,56 +35,54 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | Giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``spatial_network_name``      | name of spatial network              |
-+-------------------------------+--------------------------------------+
-| ``distribution``              | show the distribution of             |
-|                               | cell-to-cell distance or number of k |
-|                               | neighbors                            |
-+-------------------------------+--------------------------------------+
-| ``hist_bins``                 | number of binds to use for the       |
-|                               | histogram                            |
-+-------------------------------+--------------------------------------+
-| ``test_distance_limit``       | effect of different distance         |
-|                               | threshold on k-neighbors             |
-+-------------------------------+--------------------------------------+
-| ``ncol``                      | number of columns to visualize the   |
-|                               | histograms in                        |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plot                            |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return ggplot object                 |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot [boolean]     |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters from       |
-|                               | ```all_plots_save_f                  |
-|                               | unction`` <#allplotssavefunction>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving,        |
-|                               | alternatively change save_name in    |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | Giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``spatial_network_name``          | name of spatial network           |
++-----------------------------------+-----------------------------------+
+| ``distribution``                  | show the distribution of          |
+|                                   | cell-to-cell distance or number   |
+|                                   | of k neighbors                    |
++-----------------------------------+-----------------------------------+
+| ``hist_bins``                     | number of binds to use for the    |
+|                                   | histogram                         |
++-----------------------------------+-----------------------------------+
+| ``test_distance_limit``           | effect of different distance      |
+|                                   | threshold on k-neighbors          |
++-----------------------------------+-----------------------------------+
+| ``ncol``                          | number of columns to visualize    |
+|                                   | the histograms in                 |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | show plot                         |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return ggplot object              |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | directly save the plot [boolean]  |
++-----------------------------------+-----------------------------------+
+| ``save_param``                    | list of saving parameters from    |
+|                                   | ``all_plots_save_function``       |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | alternatively change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
-The list(â€œdistanceâ€) option shows the spatial distance distribution for
-each nearest neighbor rank (1st, 2nd, 3th, â€¦ neigbor). With this option
-the user can also test the effect of a distance limit on the spatial
-network. This distance limit can be used to remove neigbor cells that
-are considered to far away. list() The list(â€œk_neighborsâ€) option shows
-the number of k neighbors distribution over all cells.
+| The **distance** option shows the spatial distance distribution for
+  each nearest neighbor rank (1st, 2nd, 3th, ... neigbor). With this
+  option the user can also test the effect of a distance limit on the
+  spatial network. This distance limit can be used to remove neigbor
+  cells that are considered to far away.
+| The **k_neighbors** option shows the number of k neighbors
+  distribution over all cells.
 
 Value
------
+~~~~~
 
 ggplot plot

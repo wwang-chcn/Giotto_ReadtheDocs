@@ -1,23 +1,15 @@
-==================
 list_feat_metadata
-==================
-
-:Date: 1/19/23
-
-``list_feat_metadata``
-======================
-
-list_feat_metadata
+------------------
 
 Description
------------
+~~~~~~~~~~~
 
 lists the available feature metadata
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    list_feat_metadata(
      gobject,
@@ -27,24 +19,22 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
-+-------------------------------+--------------------------------------+
-| ``return_uniques``            | return unique nesting names (ignores |
-|                               | if final object exists/is correct    |
-|                               | class)                               |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g. "cell")        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g. "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``return_uniques``                | return unique nesting names       |
+|                                   | (ignores if final object          |
+|                                   | exists/is correct class)          |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 names and locations of available feature metadata as data.table

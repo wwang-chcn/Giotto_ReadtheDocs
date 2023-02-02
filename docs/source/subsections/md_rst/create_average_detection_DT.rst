@@ -1,24 +1,16 @@
-===========================
 create_average_detection_DT
-===========================
-
-:Date: 1/19/23
-
-``create_average_detection_DT``
-===============================
-
-create_average_detection_DT
+---------------------------
 
 Description
------------
+~~~~~~~~~~~
 
-calculates average gene detection for a cell metadata factor
-(e.g. cluster)
+calculates average gene detection for a cell metadata factor (e.g.
+cluster)
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    create_average_detection_DT(
      gobject,
@@ -30,26 +22,24 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``meta_data_name``            | name of metadata column to use       |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | which expression values to use       |
-+-------------------------------+--------------------------------------+
-| ``detection_threshold``       | detection threshold to consider a    |
-|                               | gene detected                        |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``meta_data_name``                | name of metadata column to use    |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | which expression values to use    |
++-----------------------------------+-----------------------------------+
+| ``detection_threshold``           | detection threshold to consider a |
+|                                   | gene detected                     |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table with average gene epression values for each factor

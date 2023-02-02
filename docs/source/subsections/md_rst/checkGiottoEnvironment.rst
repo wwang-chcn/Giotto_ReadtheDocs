@@ -1,40 +1,34 @@
-======================
 checkGiottoEnvironment
-======================
+----------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L10
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L10
-
-
-
-==========================
-
-checkGiottoEnvironment
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 checkGiottoEnvironment
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    checkGiottoEnvironment(verbose = TRUE)
 
 Arguments
----------
+~~~~~~~~~
 
-=========== ===========
-Argument    Description
-=========== ===========
-``verbose`` be verbose
-=========== ===========
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Checks if a miniconda giotto environment can be found. Can be installed
-with ```installGiottoEnvironment`` <#installgiottoenvironment>`__ .
+with ``installGiottoEnvironment``.

@@ -1,23 +1,15 @@
-===============
 spat_OR_func_DT
-===============
-
-:Date: 1/19/23
-
-``spat_OR_func_DT``
-===================
-
-spat_OR_func_DT
+---------------
 
 Description
------------
+~~~~~~~~~~~
 
 calculate odds-ratio with data.table implementation
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spat_OR_func_DT(
      bin_matrix_DTm,

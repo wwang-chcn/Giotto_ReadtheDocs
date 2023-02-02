@@ -1,23 +1,15 @@
-======================
 do_permuttest_original
-======================
-
-:Date: 1/19/23
-
-``do_permuttest_original``
-==========================
-
-do_permuttest_original
+----------------------
 
 Description
------------
+~~~~~~~~~~~
 
 calculate original values
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    do_permuttest_original(
      expr_values,

@@ -1,27 +1,23 @@
-====================
 getClusterSimilarity
-====================
+--------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2160
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L2160
-
-
-
-========================
-
-getClusterSimilarity
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Creates data.table with pairwise correlation scores between each
 cluster.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    getClusterSimilarity(
      gobject,
@@ -33,21 +29,26 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-===================== =======================================
-Argument              Description
-===================== =======================================
-``gobject``           giotto object
-``spat_unit``         spatial unit
-``feat_type``         feature type
-``expression_values`` expression values to use
-``cluster_column``    name of column to use for clusters
-``cor``               correlation score to calculate distance
-===================== =======================================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use          |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | name of column to use for         |
+|                                   | clusters                          |
++-----------------------------------+-----------------------------------+
+| ``cor``                           | correlation score to calculate    |
+|                                   | distance                          |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Creates data.table with pairwise correlation scores between each cluster
 and the group size (# of cells) for each cluster. This information can
@@ -55,6 +56,6 @@ be used together with mergeClusters to combine very similar or small
 clusters into bigger clusters.
 
 Value
------
+~~~~~
 
 data.table

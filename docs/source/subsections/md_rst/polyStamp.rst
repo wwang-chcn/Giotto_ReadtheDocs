@@ -1,66 +1,43 @@
-=========
-polyStamp
-=========
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L936
-
-
-
-=============
-
 Spatial polygons stamp
+----------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L936
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Takes a given stamp polygon and places it at each spatial location
 provided.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
-   polyStamp(
-     stamp_dt,
-     spatlocs,
-     id_col = "cell_ID",
-     x_col = "sdimx",
-     y_col = "sdimy",
-     verbose = TRUE
-   )
+   polyStamp(stamp_dt, spatlocs)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``stamp_dt``                  | data.table with x and y vertices for |
-|                               | a polygon to be stamped. Column      |
-|                               | names are expected to be ‘x’ and ‘y’ |
-|                               | respectively                         |
-+-------------------------------+--------------------------------------+
-| ``spatlocs``                  | spatial locations with x and y       |
-|                               | coordinates where polygons should be |
-|                               | stamped. Column names are ‘cell_ID’, |
-|                               | ‘sdimx’ and ‘sdimy’ by default       |
-+-------------------------------+--------------------------------------+
-| ``id_col``                    | column in spatlocs to use as IDs     |
-|                               | (default is ‘cell_ID’)               |
-+-------------------------------+--------------------------------------+
-| ``x_col``                     | column in spatlocs to use as x       |
-|                               | locations (default is ‘sdimx’)       |
-+-------------------------------+--------------------------------------+
-| ``y_col``                     | column in spatlocs to use as y       |
-|                               | locations (default is ‘sdimy’)       |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``stamp_dt``                      | data.table with x and y vertices  |
+|                                   | for a polygon to be stamped.      |
+|                                   | Column names are expected to be   |
+|                                   | 'x' and 'y' respectively          |
++-----------------------------------+-----------------------------------+
+| ``spatlocs``                      | spatial locations with x and y    |
+|                                   | coordinates where polygons should |
+|                                   | be stamped. Column names are      |
+|                                   | expected to be 'sdimx' and        |
+|                                   | 'sdimy' respectively.             |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 returns a data.table of polygon vertices

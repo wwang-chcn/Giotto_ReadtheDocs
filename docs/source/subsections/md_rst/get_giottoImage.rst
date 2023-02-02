@@ -1,26 +1,22 @@
-===============
-get_giottoImage
-===============
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2338
-
-
-
-===================
-
 Get giotto image object
+-----------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2338
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Get giotto image object from gobject
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    get_giottoImage(
      gobject = NULL,
@@ -29,40 +25,30 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``image_type``                | type of giotto image object. Either  |
-|                               | â€œimageâ€ or â€œlargeImageâ€              |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name of a giotto image object        |
-|                               | ```showGiottoIma                     |
-|                               | geNames`` <#showgiottoimagenames>`__ |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``image_type``                    | type of giotto image object.      |
+|                                   | Either "image" or "largeImage"    |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name of a giotto image object     |
+|                                   | ``showGiottoImageNames``          |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 a giotto image object
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other image data accessor functions:
-```set_giottoImage`` <#setgiottoimage>`__
+Other image data accessor functions: ``set_giottoImage()``
 
 Other functions to get data from giotto object:
-```get_NearestNetwork`` <#getnearestnetwork>`__ ,
-```get_dimReduction`` <#getdimreduction>`__ ,
-```get_expression_values`` <#getexpressionvalues>`__ ,
-```get_feature_info`` <#getfeatureinfo>`__ ,
-```get_multiomics`` <#getmultiomics>`__ ,
-```get_polygon_info`` <#getpolygoninfo>`__ ,
-```get_spatialGrid`` <#getspatialgrid>`__ ,
-```get_spatialNetwork`` <#getspatialnetwork>`__ ,
-```get_spatial_enrichment`` <#getspatialenrichment>`__ ,
-```get_spatial_locations`` <#getspatiallocations>`__
+``get_NearestNetwork()``, ``get_dimReduction()``,
+``get_expression_values()``, ``get_feature_info()``,
+``get_polygon_info()``, ``get_spatialGrid()``, ``get_spatialNetwork()``,
+``get_spatial_enrichment()``, ``get_spatial_locations()``

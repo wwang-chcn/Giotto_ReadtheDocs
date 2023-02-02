@@ -1,23 +1,15 @@
-==========================
 calc_spatial_enrichment_DT
-==========================
-
-:Date: 1/19/23
-
-``calc_spatial_enrichment_DT``
-==============================
-
-calc_spatial_enrichment_DT
+--------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 calculate spatial enrichment using the data.table implementation
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    calc_spatial_enrichment_DT(
      bin_matrix,

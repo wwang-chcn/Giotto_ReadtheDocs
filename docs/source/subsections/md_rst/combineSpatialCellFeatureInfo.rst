@@ -1,27 +1,23 @@
-=============================
 combineSpatialCellFeatureInfo
-=============================
+-----------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L4615
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L4615
-
-
-
-=================================
-
-combineSpatialCellFeatureInfo
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Combine spatial cell information (e.g. polygon) and spatial feature
 information (e.g. transcript locations)
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    combineSpatialCellFeatureInfo(
      gobject,
@@ -31,21 +27,22 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-===================== ======================
-Argument              Description
-===================== ======================
-``gobject``           Giotto object
-``spat_unit``         spatial unit
-``feat_type``         feature type(s)
-``selected_features`` select set of features
-===================== ======================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | Giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type(s)                   |
++-----------------------------------+-----------------------------------+
+| ``selected_features``             | select set of features            |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
-The returned data.table has the following columns: list()
+| The returned data.table has the following columns:
 
 -  sdimx: spatial feature location on the x-axis
 
@@ -60,6 +57,6 @@ The returned data.table has the following columns: list()
 -  feat: selected feature(s)
 
 Value
------
+~~~~~
 
 list of data.table(s)

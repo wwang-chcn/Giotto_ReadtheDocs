@@ -1,26 +1,22 @@
-==================
 combineFeatureData
-==================
+------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2885
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2885
-
-
-
-======================
-
-combineFeatureData
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 combine feature data information
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    combineFeatureData(
      gobject,
@@ -30,22 +26,20 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``sel_feats``                 | selected features (default: NULL or  |
-|                               | no selection)                        |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``sel_feats``                     | selected features (default: NULL  |
+|                                   | or no selection)                  |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table with combined spatial feature information

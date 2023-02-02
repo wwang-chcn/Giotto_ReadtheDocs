@@ -1,23 +1,15 @@
-===================
-create_spat_net_obj
-===================
-
-:Date: 1/19/23
-
-``create_spat_net_obj``
-=======================
-
 Create S4 spatialNetworkObj
+---------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Create S4 spatialNetworkObj
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    create_spat_net_obj(
      name = "test",
@@ -34,40 +26,37 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``name``                      | name of spatialNetworkObj            |
-+-------------------------------+--------------------------------------+
-| ``method``                    | method used to generate spatial      |
-|                               | network                              |
-+-------------------------------+--------------------------------------+
-| ``parameters``                | additional method-specific           |
-|                               | parameters used during spatial       |
-|                               | network generation                   |
-+-------------------------------+--------------------------------------+
-| ``outputObj``                 | network geometry object              |
-+-------------------------------+--------------------------------------+
-| ``networkDT``                 | data.table of network connections,   |
-|                               | distances, and weightings            |
-+-------------------------------+--------------------------------------+
-| ``networkDT_before_filter``   | unfiltered data.table of network     |
-|                               | connections, distances, and          |
-|                               | weightings                           |
-+-------------------------------+--------------------------------------+
-| ``cellShapeObj``              | network cell shape information       |
-+-------------------------------+--------------------------------------+
-| ``crossSectionObjects``       | crossSectionObjects (see             |
-|                               | ```create_crossSection_obj           |
-|                               | ect`` <#createcrosssectionobject>`__ |
-|                               | )                                    |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit tag                     |
-+-------------------------------+--------------------------------------+
-| ``provenance``                | origin of aggregated information (if |
-|                               | applicable)                          |
-+-------------------------------+--------------------------------------+
-| ``misc``                      | misc                                 |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``name``                          | name of spatialNetworkObj         |
++-----------------------------------+-----------------------------------+
+| ``method``                        | method used to generate spatial   |
+|                                   | network                           |
++-----------------------------------+-----------------------------------+
+| ``parameters``                    | additional method-specific        |
+|                                   | parameters used during spatial    |
+|                                   | network generation                |
++-----------------------------------+-----------------------------------+
+| ``outputObj``                     | network geometry object           |
++-----------------------------------+-----------------------------------+
+| ``networkDT``                     | data.table of network             |
+|                                   | connections, distances, and       |
+|                                   | weightings                        |
++-----------------------------------+-----------------------------------+
+| ``networkDT_before_filter``       | unfiltered data.table of network  |
+|                                   | connections, distances, and       |
+|                                   | weightings                        |
++-----------------------------------+-----------------------------------+
+| ``cellShapeObj``                  | network cell shape information    |
++-----------------------------------+-----------------------------------+
+| ``crossSectionObjects``           | crossSectionObjects (see          |
+|                                   | ``create_crossSection_object``)   |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit tag                  |
++-----------------------------------+-----------------------------------+
+| ``provenance``                    | origin of aggregated information  |
+|                                   | (if applicable)                   |
++-----------------------------------+-----------------------------------+
+| ``misc``                          | misc                              |
++-----------------------------------+-----------------------------------+

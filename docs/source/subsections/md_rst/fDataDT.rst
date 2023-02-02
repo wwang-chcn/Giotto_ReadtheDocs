@@ -1,42 +1,39 @@
-=======
 fDataDT
-=======
+-------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L173
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L173
-
-
-
-===========
-
-fDataDT
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 show feature metadata
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    fDataDT(gobject, spat_unit = NULL, feat_type = NULL, ...)
 
 Arguments
----------
+~~~~~~~~~
 
-============= =========================
-Argument      Description
-============= =========================
-``gobject``   giotto object
-``spat_unit`` spatial unit
-``feat_type`` feature type
-``...``       additional params to pass
-============= =========================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional params to pass         |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table with feature metadata

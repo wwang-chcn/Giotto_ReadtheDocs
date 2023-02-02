@@ -1,26 +1,22 @@
-===============
 combineCellData
-===============
+---------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2783
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2783
-
-
-
-===================
-
-combineCellData
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 combine cell data information
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    combineCellData(
      gobject,
@@ -32,26 +28,24 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``include_spat_locs``         | include information about spatial    |
-|                               | locations                            |
-+-------------------------------+--------------------------------------+
-| ``spat_loc_name``             | spatial location name                |
-+-------------------------------+--------------------------------------+
-| ``include_poly_info``         | include information about polygon    |
-+-------------------------------+--------------------------------------+
-| ``poly_info``                 | polygon information name             |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``include_spat_locs``             | include information about spatial |
+|                                   | locations                         |
++-----------------------------------+-----------------------------------+
+| ``spat_loc_name``                 | spatial location name             |
++-----------------------------------+-----------------------------------+
+| ``include_poly_info``             | include information about polygon |
++-----------------------------------+-----------------------------------+
+| ``poly_info``                     | polygon information name          |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table with combined spatial information

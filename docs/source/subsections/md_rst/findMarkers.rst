@@ -1,26 +1,22 @@
-===========
 findMarkers
-===========
+-----------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L978
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L978
-
-
-
-===============
-
-findMarkers
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Identify marker feats for selected clusters.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    findMarkers(
      gobject,
@@ -45,78 +41,74 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | feat expression values to use        |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | clusters to use                      |
-+-------------------------------+--------------------------------------+
-| ``method``                    | method to use to detect              |
-|                               | differentially expressed feats       |
-+-------------------------------+--------------------------------------+
-| ``subset_clusters``           | selection of clusters to compare     |
-+-------------------------------+--------------------------------------+
-| ``group_1``                   | group 1 cluster IDs from             |
-|                               | cluster_column for pairwise          |
-|                               | comparison                           |
-+-------------------------------+--------------------------------------+
-| ``group_2``                   | group 2 cluster IDs from             |
-|                               | cluster_column for pairwise          |
-|                               | comparison                           |
-+-------------------------------+--------------------------------------+
-| ``min_expr_gini_score``       | gini: filter on minimum gini         |
-|                               | coefficient for expression           |
-+-------------------------------+--------------------------------------+
-| ``min_det_gini_score``        | gini: filter minimum gini            |
-|                               | coefficient for detection            |
-+-------------------------------+--------------------------------------+
-| ``detection_threshold``       | gini: detection threshold for feat   |
-|                               | expression                           |
-+-------------------------------+--------------------------------------+
-| ``rank_score``                | gini: rank scores to include         |
-+-------------------------------+--------------------------------------+
-| ``min_feats``                 | minimum number of top feats to       |
-|                               | return (for gini)                    |
-+-------------------------------+--------------------------------------+
-| ``min_genes``                 | deprecated, use min_feats            |
-+-------------------------------+--------------------------------------+
-| ``group_1_name``              | mast: custom name for group_1        |
-|                               | clusters                             |
-+-------------------------------+--------------------------------------+
-| ``group_2_name``              | mast: custom name for group_2        |
-|                               | clusters                             |
-+-------------------------------+--------------------------------------+
-| ``adjust_columns``            | mast: column in pDataDT to adjust    |
-|                               | for (e.g. detection rate)            |
-+-------------------------------+--------------------------------------+
-| ``...``                       | additional parameters for the        |
-|                               | findMarkers function in scran or zlm |
-|                               | function in MAST                     |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | feat expression values to use     |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | clusters to use                   |
++-----------------------------------+-----------------------------------+
+| ``method``                        | method to use to detect           |
+|                                   | differentially expressed feats    |
++-----------------------------------+-----------------------------------+
+| ``subset_clusters``               | selection of clusters to compare  |
++-----------------------------------+-----------------------------------+
+| ``group_1``                       | group 1 cluster IDs from          |
+|                                   | cluster_column for pairwise       |
+|                                   | comparison                        |
++-----------------------------------+-----------------------------------+
+| ``group_2``                       | group 2 cluster IDs from          |
+|                                   | cluster_column for pairwise       |
+|                                   | comparison                        |
++-----------------------------------+-----------------------------------+
+| ``min_expr_gini_score``           | gini: filter on minimum gini      |
+|                                   | coefficient for expression        |
++-----------------------------------+-----------------------------------+
+| ``min_det_gini_score``            | gini: filter minimum gini         |
+|                                   | coefficient for detection         |
++-----------------------------------+-----------------------------------+
+| ``detection_threshold``           | gini: detection threshold for     |
+|                                   | feat expression                   |
++-----------------------------------+-----------------------------------+
+| ``rank_score``                    | gini: rank scores to include      |
++-----------------------------------+-----------------------------------+
+| ``min_feats``                     | minimum number of top feats to    |
+|                                   | return (for gini)                 |
++-----------------------------------+-----------------------------------+
+| ``min_genes``                     | deprecated, use min_feats         |
++-----------------------------------+-----------------------------------+
+| ``group_1_name``                  | mast: custom name for group_1     |
+|                                   | clusters                          |
++-----------------------------------+-----------------------------------+
+| ``group_2_name``                  | mast: custom name for group_2     |
+|                                   | clusters                          |
++-----------------------------------+-----------------------------------+
+| ``adjust_columns``                | mast: column in pDataDT to adjust |
+|                                   | for (e.g. detection rate)         |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional parameters for the     |
+|                                   | findMarkers function in scran or  |
+|                                   | zlm function in MAST              |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Wrapper for all individual functions to detect marker feats for
 clusters.
 
 Value
------
+~~~~~
 
 data.table with marker feats
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```findScranMarkers`` <#findscranmarkers>`__ ,
-```findGiniMarkers`` <#findginimarkers>`__ and
-```findMastMarkers`` <#findmastmarkers>`__
+``findScranMarkers``, ``findGiniMarkers`` and ``findMastMarkers``

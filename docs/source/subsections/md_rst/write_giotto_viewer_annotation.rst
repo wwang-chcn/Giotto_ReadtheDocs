@@ -1,24 +1,16 @@
-==============================
 write_giotto_viewer_annotation
-==============================
-
-:Date: 1/19/23
-
-``write_giotto_viewer_annotation``
-==================================
-
-write_giotto_viewer_annotation
+------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 write out factor-like annotation data from a giotto object for the
 Viewer
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    write_giotto_viewer_annotation(
      annotation,
@@ -27,20 +19,18 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``annotation``                | annotation from the data.table from  |
-|                               | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``annot_name``                | name of the annotation               |
-+-------------------------------+--------------------------------------+
-| ``output_directory``          | directory where to save the files    |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``annotation``                    | annotation from the data.table    |
+|                                   | from giotto object                |
++-----------------------------------+-----------------------------------+
+| ``annot_name``                    | name of the annotation            |
++-----------------------------------+-----------------------------------+
+| ``output_directory``              | directory where to save the files |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 write a .txt and .annot file for the selection annotation

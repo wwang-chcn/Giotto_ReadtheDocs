@@ -1,27 +1,23 @@
-======================
 readPolygonFilesVizgen
-======================
+----------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L1473
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L1473
-
-
-
-==========================
-
-readPolygonFilesVizgen
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Read selected polygon files for the FOVs present in the Giotto object
 and add the smoothed polygons to the object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    readPolygonFilesVizgen(
      gobject,
@@ -36,48 +32,41 @@ Usage
      return_gobject = TRUE,
      verbose = TRUE
    )
-   h5read_vizgen(
-     h5File,
-     z_indices = 1L:7L,
-     segm_to_use = "p_0",
-     H5Fopen_flags = "H5F_ACC_RDWR"
-   )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``boundaries_path``           | path to the cell_boundaries folder   |
-+-------------------------------+--------------------------------------+
-| ``fovs``                      | selected fovs, if NULL select all    |
-|                               | fovs within Giotto object            |
-+-------------------------------+--------------------------------------+
-| ``polygon_feat_types``        | a vector containing the polygon      |
-|                               | feature types                        |
-+-------------------------------+--------------------------------------+
-| ``flip_x_axis``               | flip x axis of polygon coordinates   |
-|                               | (multiply by -1)                     |
-+-------------------------------+--------------------------------------+
-| ``flip_y_axis``               | flip y axis of polygon coordinates   |
-|                               | (multiply by -1)                     |
-+-------------------------------+--------------------------------------+
-| ``smooth_polygons``           | smooth polygons (default = TRUE)     |
-+-------------------------------+--------------------------------------+
-| ``smooth_vertices``           | number of vertices for smoothing     |
-+-------------------------------+--------------------------------------+
-| ``set_neg_to_zero``           | set negative values to zero when     |
-|                               | smoothing                            |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | return giotto object                 |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``boundaries_path``               | path to the cell_boundaries       |
+|                                   | folder                            |
++-----------------------------------+-----------------------------------+
+| ``fovs``                          | selected fovs, if NULL select all |
+|                                   | fovs within Giotto object         |
++-----------------------------------+-----------------------------------+
+| ``polygon_feat_types``            | a vector containing the polygon   |
+|                                   | feature types                     |
++-----------------------------------+-----------------------------------+
+| ``flip_x_axis``                   | flip x axis of polygon            |
+|                                   | coordinates (multiply by -1)      |
++-----------------------------------+-----------------------------------+
+| ``flip_y_axis``                   | flip y axis of polygon            |
+|                                   | coordinates (multiply by -1)      |
++-----------------------------------+-----------------------------------+
+| ``smooth_polygons``               | smooth polygons (default = TRUE)  |
++-----------------------------------+-----------------------------------+
+| ``smooth_vertices``               | number of vertices for smoothing  |
++-----------------------------------+-----------------------------------+
+| ``set_neg_to_zero``               | set negative values to zero when  |
+|                                   | smoothing                         |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | return giotto object              |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```smoothGiottoPolygons`` <#smoothgiottopolygons>`__
+``smoothGiottoPolygons``

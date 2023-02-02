@@ -1,56 +1,51 @@
-=======================
-plotInteractivePolygons
-=======================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/interactivity.R#L39
-
-
-
-===========================
-
 Select image regions by plotting interactive polygons
+-----------------------------------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/interactivity.R#L39
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Plot interactive polygons on an image and retrieve the polygons
 coordinates.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    plotInteractivePolygons(x, width = "auto", height = "auto", ...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``x``                         | A ``ggplot`` or ``rast`` plot object |
-|                               | to draw polygons on                  |
-+-------------------------------+--------------------------------------+
-| ``width, height``             | An integer, defining the             |
-|                               | width/height in pixels.              |
-+-------------------------------+--------------------------------------+
-| ``...``                       | Graphical parameters passed on to    |
-|                               | ``polygon`` or ``geom_point``.       |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``x``                             | A 'ggplot' or 'rast' plot object  |
+|                                   | to draw polygons on               |
++-----------------------------------+-----------------------------------+
+| ``width, height``                 | An integer, defining the          |
+|                                   | width/height in pixels.           |
++-----------------------------------+-----------------------------------+
+| ``...``                           | Graphical parameters passed on to |
+|                                   | 'polygon' or 'geom_point'.        |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
-A ``data.table`` containing x,y coordinates from the plotted polygons.
+A 'data.table' containing x,y coordinates from the plotted polygons.
 
 Examples
---------
+~~~~~~~~
 
-.. code:: r
+::
 
+   ## Not run: 
    # Using a ggplot2 plot
    library(ggplot2)
    df <- data.frame(x = 1:5, y = 1:5)
@@ -66,8 +61,10 @@ Examples
    # Using an image contained in Giotto object
    library(Giotto)
    my_spatPlot <- spatPlot2D(gobject = my_giotto_object,
-   show_image = TRUE,
-   point_alpha = 0.75,
-   save_plot = FALSE)
+                             show_image = TRUE,
+                             point_alpha = 0.75,
+                             save_plot = FALSE)
    plotInteractivePolygons(my_spatPlot, height = 500)
    my_polygon_coordinates <- plotInteractivePolygons(my_spatPlot, height = 500)
+
+   ## End(Not run)

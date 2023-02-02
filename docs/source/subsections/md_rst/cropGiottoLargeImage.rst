@@ -1,26 +1,22 @@
-====================
-cropGiottoLargeImage
-====================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1396
-
-
-
-========================
-
 Crop a giotto largeImage object
+-------------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1396
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Crop a giottoLargeImage based on crop_extent argument or given values
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    cropGiottoLargeImage(
      gobject = NULL,
@@ -35,32 +31,31 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | gobject holding the giottoLargeImage |
-+-------------------------------+--------------------------------------+
-| ``largeImage_name``           | name of giottoLargeImage within      |
-|                               | gobject                              |
-+-------------------------------+--------------------------------------+
-| ``giottoLargeImage``          | alternative input param using        |
-|                               | giottoLargeImage object instead of   |
-|                               | through ``gobject`` and              |
-|                               | ``largeImage_name`` params           |
-+-------------------------------+--------------------------------------+
-| ``crop_name``                 | arbitrary name for cropped           |
-|                               | giottoLargeImage                     |
-+-------------------------------+--------------------------------------+
-| ``crop_extent``               | terra extent object used to crop the |
-|                               | giottoLargeImage                     |
-+-------------------------------+--------------------------------------+
-| ``xmax_crop, xmin             | crop min/max x and y bounds          |
-| _crop, ymax_crop, ymin_crop`` |                                      |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | gobject holding the               |
+|                                   | giottoLargeImage                  |
++-----------------------------------+-----------------------------------+
+| ``largeImage_name``               | name of giottoLargeImage within   |
+|                                   | gobject                           |
++-----------------------------------+-----------------------------------+
+| ``giottoLargeImage``              | alternative input param using     |
+|                                   | giottoLargeImage object instead   |
+|                                   | of through ``gobject`` and        |
+|                                   | ``largeImage_name`` params        |
++-----------------------------------+-----------------------------------+
+| ``crop_name``                     | arbitrary name for cropped        |
+|                                   | giottoLargeImage                  |
++-----------------------------------+-----------------------------------+
+| ``crop_extent``                   | terra extent object used to crop  |
+|                                   | the giottoLargeImage              |
++-----------------------------------+-----------------------------------+
+| ``xmax_crop, xmin_crop, ymax_crop | crop min/max x and y bounds       |
+| ,  ymin_crop``                    |                                   |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 a giottoLargeImage object

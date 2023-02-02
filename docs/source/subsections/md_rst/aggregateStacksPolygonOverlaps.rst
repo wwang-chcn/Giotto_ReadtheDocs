@@ -1,26 +1,22 @@
-==============================
 aggregateStacksPolygonOverlaps
-==============================
+------------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3076
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3076
-
-
-
-==================================
-
-aggregateStacksPolygonOverlaps
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 aggregate polygons overlap information from different z-stacks
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    aggregateStacksPolygonOverlaps(
      gobject,
@@ -30,27 +26,28 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-================= ==========================================
-Argument          Description
-================= ==========================================
-``gobject``       giotto object
-``spat_units``    spatial units to aggregate
-``feat_type``     feature type used for overlap calculations
-``new_spat_unit`` new name for aggregated spatial unit
-================= ==========================================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_units``                    | spatial units to aggregate        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type used for overlap     |
+|                                   | calculations                      |
++-----------------------------------+-----------------------------------+
+| ``new_spat_unit``                 | new name for aggregated spatial   |
+|                                   | unit                              |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 giotto object
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other aggregate stacks:
-```aggregateStacksExpression`` <#aggregatestacksexpression>`__ ,
-```aggregateStacksLocations`` <#aggregatestackslocations>`__ ,
-```aggregateStacksPolygons`` <#aggregatestackspolygons>`__ ,
-```aggregateStacks`` <#aggregatestacks>`__
+Other aggregate stacks: ``aggregateStacksExpression()``,
+``aggregateStacksLocations()``, ``aggregateStacksPolygons()``,
+``aggregateStacks()``

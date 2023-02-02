@@ -1,23 +1,15 @@
-========================
-density_giottoLargeImage
-========================
-
-:Date: 1/19/23
-
-``density_giottoLargeImage``
-============================
-
 Plot smoothed curve of giotto largeImage intensity values
+---------------------------------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Plot smoothed curve of giotto largeImage intensity values
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    dist_giottoLargeImage(
      gobject = NULL,
@@ -27,18 +19,16 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``giottoLargeImage``          | giotto large image object            |
-+-------------------------------+--------------------------------------+
-| ``method``                    | method of plotting image             |
-|                               | distribution                         |
-+-------------------------------+--------------------------------------+
-| ``image_type``                | image object type (only supports     |
-|                               | largeImage and is set as default)    |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``giottoLargeImage``              | giotto large image object         |
++-----------------------------------+-----------------------------------+
+| ``method``                        | method of plotting image          |
+|                                   | distribution                      |
++-----------------------------------+-----------------------------------+
+| ``image_type``                    | image object type (only supports  |
+|                                   | largeImage and is set as default) |
++-----------------------------------+-----------------------------------+

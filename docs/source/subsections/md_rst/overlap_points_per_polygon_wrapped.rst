@@ -1,23 +1,15 @@
-==================================
-overlap_points_per_polygon_wrapped
-==================================
-
-:Date: 1/19/23
-
-``overlap_points_per_polygon_wrapped``
-======================================
-
 Overlap points per polygon – wrapped
+------------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 overlap wrapped polygons
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    overlap_points_per_polygon_wrapped(
      spatvec_wrapped,

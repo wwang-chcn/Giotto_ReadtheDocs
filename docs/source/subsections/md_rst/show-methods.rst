@@ -1,16 +1,8 @@
-============
-show-methods
-============
-
-:Date: 1/19/23
-
-``show,giotto-method``
-======================
-
 show method for giotto class
+----------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 show method for giotto class
 
@@ -31,25 +23,40 @@ show method for giottoImage class
 show method for giottoLargeImage class
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
-   list(list("show"), list("giotto"))(object)
-   list(list("show"), list("exprObj"))(object)
-   list(list("show"), list("dimObj"))(object)
-   list(list("show"), list("spatLocsObj"))(object)
-   list(list("show"), list("spatialNetworkObj"))(object)
-   list(list("show"), list("spatialGridObj"))(object)
-   list(list("show"), list("spatEnrObj"))(object)
-   list(list("show"), list("giottoImage"))(object)
-   list(list("show"), list("giottoLargeImage"))(object)
+   ## S4 method for signature 'giotto'
+   show(object)
+
+   ## S4 method for signature 'exprObj'
+   show(object)
+
+   ## S4 method for signature 'dimObj'
+   show(object)
+
+   ## S4 method for signature 'spatLocsObj'
+   show(object)
+
+   ## S4 method for signature 'spatialNetworkObj'
+   show(object)
+
+   ## S4 method for signature 'spatialGridObj'
+   show(object)
+
+   ## S4 method for signature 'spatEnrObj'
+   show(object)
+
+   ## S4 method for signature 'giottoImage'
+   show(object)
+
+   ## S4 method for signature 'giottoLargeImage'
+   show(object)
 
 Arguments
----------
+~~~~~~~~~
 
-========== =======================
-Argument   Description
-========== =======================
-``object`` giottoLargeImage object
-========== =======================
++-----------------------------------+-----------------------------------+
+| ``object``                        | giottoLargeImage object           |
++-----------------------------------+-----------------------------------+

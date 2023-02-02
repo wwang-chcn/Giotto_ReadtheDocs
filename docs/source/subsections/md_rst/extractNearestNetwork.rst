@@ -1,64 +1,54 @@
-=====================
-extractNearestNetwork
-=====================
-
-:Date: 1/19/23
-
-
-``extractNearestNetwork``
-=========================
-
 Extract nearest network
+-----------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Extract nearest network
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    extractNearestNetwork(...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``...``                       | Arguments passed on to               |
-|                               | ```get_Near                          |
-|                               | estNetwork`` <#getnearestnetwork>`__ |
-|                               | list(“:raw-latex:`\n`”, ” “,         |
-|                               | l                                    |
-|                               | ist(list(list(”nn_network_to_use”)), |
-|                               | list(“"kNN" or "sNN"”)),             |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”network_name”)),     |
-|                               | list(“name of NN network to be       |
-|                               | used”)), “:raw-latex:`\n`”, ” “,     |
-|                               | list(list(list(”output”)),           |
-|                               | list(“return a igraph or data.table  |
-|                               | object. Default ‘igraph’”)),         |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”gobject”)),          |
-|                               | list(“giotto object”)),              |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”spat_unit”)),        |
-|                               | list(“spatial unit (e.g. "cell")”)), |
-|                               | “:raw-latex:`\n`”, ” “,              |
-|                               | list(list(list(”feat_type”)),        |
-|                               | list(“feature type (e.g. "rna",      |
-|                               | "dna", "protein")”)),                |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``get_NearestNetwork``            |
+|                                   |                                   |
+|                                   | ``nn_network_to_use``             |
+|                                   |    "kNN" or "sNN"                 |
+|                                   |                                   |
+|                                   | ``network_name``                  |
+|                                   |    name of NN network to be used  |
+|                                   |                                   |
+|                                   | ``output``                        |
+|                                   |    return a igraph or data.table  |
+|                                   |    object. Default 'igraph'       |
+|                                   |                                   |
+|                                   | ``gobject``                       |
+|                                   |    giotto object                  |
+|                                   |                                   |
+|                                   | ``spat_unit``                     |
+|                                   |    spatial unit (e.g. "cell")     |
+|                                   |                                   |
+|                                   | ``feat_type``                     |
+|                                   |    feature type (e.g. "rna",      |
+|                                   |    "dna", "protein")              |
+|                                   |                                   |
+|                                   | ``set_defaults``                  |
+|                                   |    set default spat_unit and      |
+|                                   |    feat_type. Change to FALSE     |
+|                                   |    only when expression and       |
+|                                   |    spat_info are not expected to  |
+|                                   |    exist.                         |
++-----------------------------------+-----------------------------------+
 
-::
+See Also
+~~~~~~~~
 
-   "\n", "    ", list(list(list("set_defaults")), list("set default spat_unit and feat_type. Change to FALSE only when")), "\n", "  ")
-
-Seealso
--------
-
-```get_NearestNetwork`` <#getnearestnetwork>`__
+``get_NearestNetwork``

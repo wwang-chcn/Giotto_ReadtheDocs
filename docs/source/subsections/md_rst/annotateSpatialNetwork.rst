@@ -1,26 +1,22 @@
-======================
 annotateSpatialNetwork
-======================
+----------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1693
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1693
-
-
-
-==========================
-
-annotateSpatialNetwork
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Annotate spatial network with cell metadata information.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    annotateSpatialNetwork(
      gobject,
@@ -32,26 +28,25 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spatial_network_name``      | name of spatial network to use       |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | name of column to use for clusters   |
-+-------------------------------+--------------------------------------+
-| ``create_full_network``       | convert from reduced to full network |
-|                               | representation                       |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spatial_network_name``          | name of spatial network to use    |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | name of column to use for         |
+|                                   | clusters                          |
++-----------------------------------+-----------------------------------+
+| ``create_full_network``           | convert from reduced to full      |
+|                                   | network representation            |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 annotated network in data.table format

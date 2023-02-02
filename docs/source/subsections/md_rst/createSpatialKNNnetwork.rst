@@ -1,26 +1,22 @@
-=======================
 createSpatialKNNnetwork
-=======================
+-----------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1425
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1425
-
-
-
-===========================
-
-createSpatialKNNnetwork
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Create a spatial knn network.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    createSpatialKNNnetwork(
      gobject,
@@ -39,55 +35,53 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``method``                    | method to create kNN network         |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spat_loc_name``             | name of spatial locations            |
-+-------------------------------+--------------------------------------+
-| ``dimensions``                | which spatial dimensions to use      |
-|                               | (default = all)                      |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name for spatial network (default =  |
-|                               | ‘spatial_network’)                   |
-+-------------------------------+--------------------------------------+
-| ``k``                         | number of nearest neighbors based on |
-|                               | physical distance                    |
-+-------------------------------+--------------------------------------+
-| ``maximum_distance``          | distance cuttof for nearest          |
-|                               | neighbors to consider for kNN        |
-|                               | network                              |
-+-------------------------------+--------------------------------------+
-| ``minimum_k``                 | minimum nearest neigbhours if        |
-|                               | maximum_distance != NULL             |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | verbose                              |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | boolean: return giotto object        |
-|                               | (default = TRUE)                     |
-+-------------------------------+--------------------------------------+
-| ``list()``                    | additional arguments to the selected |
-|                               | method function                      |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``method``                        | method to create kNN network      |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spat_loc_name``                 | name of spatial locations         |
++-----------------------------------+-----------------------------------+
+| ``dimensions``                    | which spatial dimensions to use   |
+|                                   | (default = all)                   |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name for spatial network (default |
+|                                   | = 'spatial_network')              |
++-----------------------------------+-----------------------------------+
+| ``k``                             | number of nearest neighbors based |
+|                                   | on physical distance              |
++-----------------------------------+-----------------------------------+
+| ``maximum_distance``              | distance cuttof for nearest       |
+|                                   | neighbors to consider for kNN     |
+|                                   | network                           |
++-----------------------------------+-----------------------------------+
+| ``minimum_k``                     | minimum nearest neigbhours if     |
+|                                   | maximum_distance != NULL          |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | verbose                           |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | boolean: return giotto object     |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional arguments to the       |
+|                                   | selected method function          |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 giotto object with updated spatial network slot
 
-dimensions: default = ‘all’ which takes all possible dimensions.
+**dimensions:** default = 'all' which takes all possible dimensions.
 Alternatively you can provide a character vector that specififies the
-spatial dimensions to use, e.g. c(“sdimx’,�sdimy�) or a numerical
+spatial dimensions to use, e.g. c("sdimx', "sdimy") or a numerical
 vector, e.g. 2:3
 
-maximum_distance: to create a network based on maximum distance only,
-you also need to set k to a very high value, e.g. k = 100
+**maximum_distance:** to create a network based on maximum distance
+only, you also need to set k to a very high value, e.g. k = 100

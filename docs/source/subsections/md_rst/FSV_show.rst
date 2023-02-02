@@ -1,23 +1,15 @@
-========
 FSV_show
-========
-
-:Date: 1/19/23
-
-``FSV_show``
-============
-
-FSV_show
+--------
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize spatial varible genes caculated by spatial_DE
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    FSV_show(
      results,
@@ -29,25 +21,30 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-=============== ===================================
-Argument        Description
-=============== ===================================
-``results``     results caculated by spatial_DE
-``ms_results``  ms_results caculated by spatial_DE
-``size``        indicate different levels of qval
-``color``       indicate different SV features
-``sig_alpha``   transparency of significant genes
-``unsig_alpha`` transparency of unsignificant genes
-=============== ===================================
++-----------------------------------+-----------------------------------+
+| ``results``                       | results caculated by spatial_DE   |
++-----------------------------------+-----------------------------------+
+| ``ms_results``                    | ms_results caculated by           |
+|                                   | spatial_DE                        |
++-----------------------------------+-----------------------------------+
+| ``size``                          | indicate different levels of qval |
++-----------------------------------+-----------------------------------+
+| ``color``                         | indicate different SV features    |
++-----------------------------------+-----------------------------------+
+| ``sig_alpha``                     | transparency of significant genes |
++-----------------------------------+-----------------------------------+
+| ``unsig_alpha``                   | transparency of unsignificant     |
+|                                   | genes                             |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description of parameters.
 
 Value
------
+~~~~~
 
 ggplot object

@@ -1,23 +1,15 @@
-=============
 select_gimage
-=============
-
-:Date: 1/19/23
-
-``select_gimage``
-=================
-
-select_gimage
+-------------
 
 Description
------------
+~~~~~~~~~~~
 
 selects and creates giotto images for plotting
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    select_gimage(
      gobject,

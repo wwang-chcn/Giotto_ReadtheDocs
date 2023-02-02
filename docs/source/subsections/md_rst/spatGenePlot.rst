@@ -1,69 +1,58 @@
-============
 spatGenePlot
-============
+------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4944
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L4944
-
-
-``spatGenePlot``
-================
-
-spatGenePlot
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells and gene expression according to spatial coordinates
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spatGenePlot(...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``...``                       | Arguments passed on to               |
-|                               | ```s                                 |
-|                               | patGenePlot2D`` <#spatgeneplot2d>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�gobject�)),          |
-|                               | list(“giotto object�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�genes�)),            |
-|                               | list(“genes to show�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | l                                    |
-|                               | ist(list(list(�default_save_name�)), |
-|                               | list(“default save name for saving,  |
-|                               | don’t change, change save_name in    |
-|                               | save_param�)), “:raw-latex:`\n`�, �  |
-|                               | “)                                   |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``spatGenePlot2D``                |
+|                                   |                                   |
+|                                   | ``gobject``                       |
+|                                   |    giotto object                  |
+|                                   |                                   |
+|                                   | ``genes``                         |
+|                                   |    genes to show                  |
+|                                   |                                   |
+|                                   | ``default_save_name``             |
+|                                   |    default save name for saving,  |
+|                                   |    don't change, change save_name |
+|                                   |    in save_param                  |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description of parameters.
 
 Value
------
+~~~~~
 
 ggplot
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```spatGenePlot3D`` <#spatgeneplot3d>`__ and
-```spatGenePlot2D`` <#spatgeneplot2d>`__
+``spatGenePlot3D`` and ``spatGenePlot2D``
 
-Other spatial gene expression visualizations:
-```spatGenePlot2D`` <#spatgeneplot2d>`__ ,
-```spatGenePlot3D`` <#spatgeneplot3d>`__
+Other spatial gene expression visualizations: ``spatGenePlot2D()``,
+``spatGenePlot3D()``

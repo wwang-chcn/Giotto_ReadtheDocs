@@ -1,26 +1,22 @@
-========================
-changeGiottoInstructions
-========================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L323
-
-
-
-============================
-
 Change giotto instruction(s) associated with giotto object
+----------------------------------------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L323
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to change one or more instructions from giotto object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    changeGiottoInstructions(
      gobject,
@@ -30,18 +26,19 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-================== ==============================
-Argument           Description
-================== ==============================
-``gobject``        giotto object
-``params``         parameter(s) to change
-``new_values``     new value(s) for parameter(s)
-``return_gobject`` (boolean) return giotto object
-================== ==============================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``params``                        | parameter(s) to change            |
++-----------------------------------+-----------------------------------+
+| ``new_values``                    | new value(s) for parameter(s)     |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | (boolean) return giotto object    |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 giotto object with one or more changed instructions

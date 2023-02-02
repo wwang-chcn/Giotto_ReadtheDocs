@@ -1,27 +1,23 @@
-===========================
 convertGiottoLargeImageToMG
-===========================
+---------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1547
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L1547
-
-
-
-===============================
-
-convertGiottoLargeImageToMG
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 convert a giottoLargeImage by downsampling into a normal magick based
 giottoImage
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    convertGiottoLargeImageToMG(
      gobject = NULL,
@@ -42,53 +38,52 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | gobject containing giottoLargeImage  |
-+-------------------------------+--------------------------------------+
-| ``largeImage_name``           | name of giottoLargeImage             |
-+-------------------------------+--------------------------------------+
-| ``giottoLargeImage``          | alternative input param using        |
-|                               | giottoLargeImage object instead of   |
-|                               | through ``gobject`` and              |
-|                               | ``largeImage_name`` params           |
-+-------------------------------+--------------------------------------+
-| ``mg_name``                   | name to assign converted magick      |
-|                               | image based giottoImage. Defaults to |
-|                               | name of giottoLargeImage             |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``spat_loc_name``             | gobject spatial location name to map |
-|                               | giottoImage to (optional)            |
-+-------------------------------+--------------------------------------+
-| ``crop_extent``               | extent object to focus on specific   |
-|                               | region of image                      |
-+-------------------------------+--------------------------------------+
-| ``xmax_crop``                 | assign crop boundary                 |
-+-------------------------------+--------------------------------------+
-| ``xmin_crop``                 | assign crop boundary                 |
-+-------------------------------+--------------------------------------+
-| ``ymax_crop``                 | assign crop boundary                 |
-+-------------------------------+--------------------------------------+
-| ``ymin_crop``                 | assign crop boundary                 |
-+-------------------------------+--------------------------------------+
-| ``resample_size``             | maximum number of pixels to use when |
-|                               | resampling                           |
-+-------------------------------+--------------------------------------+
-| ``max_intensity``             | value to treat as maximum intensity  |
-|                               | in color scale                       |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | return as giotto object              |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | gobject containing                |
+|                                   | giottoLargeImage                  |
++-----------------------------------+-----------------------------------+
+| ``largeImage_name``               | name of giottoLargeImage          |
++-----------------------------------+-----------------------------------+
+| ``giottoLargeImage``              | alternative input param using     |
+|                                   | giottoLargeImage object instead   |
+|                                   | of through ``gobject`` and        |
+|                                   | ``largeImage_name`` params        |
++-----------------------------------+-----------------------------------+
+| ``mg_name``                       | name to assign converted magick   |
+|                                   | image based giottoImage. Defaults |
+|                                   | to name of giottoLargeImage       |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``spat_loc_name``                 | gobject spatial location name to  |
+|                                   | map giottoImage to (optional)     |
++-----------------------------------+-----------------------------------+
+| ``crop_extent``                   | extent object to focus on         |
+|                                   | specific region of image          |
++-----------------------------------+-----------------------------------+
+| ``xmax_crop``                     | assign crop boundary              |
++-----------------------------------+-----------------------------------+
+| ``xmin_crop``                     | assign crop boundary              |
++-----------------------------------+-----------------------------------+
+| ``ymax_crop``                     | assign crop boundary              |
++-----------------------------------+-----------------------------------+
+| ``ymin_crop``                     | assign crop boundary              |
++-----------------------------------+-----------------------------------+
+| ``resample_size``                 | maximum number of pixels to use   |
+|                                   | when resampling                   |
++-----------------------------------+-----------------------------------+
+| ``max_intensity``                 | value to treat as maximum         |
+|                                   | intensity in color scale          |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | return as giotto object           |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 a giotto object if ``return_gobject = TRUE`` or an updated giotto image
 object if ``return_gobject = FALSE``

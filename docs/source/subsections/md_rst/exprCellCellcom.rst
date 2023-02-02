@@ -1,26 +1,22 @@
-===============
 exprCellCellcom
-===============
+---------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2116
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L2116
-
-
-
-===================
-
-exprCellCellcom
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Cell-Cell communication scores based on expression only
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    exprCellCellcom(
      gobject,
@@ -43,53 +39,51 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object to use                 |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | cluster column with cell type        |
-|                               | information                          |
-+-------------------------------+--------------------------------------+
-| ``random_iter``               | number of iterations                 |
-+-------------------------------+--------------------------------------+
-| ``feat_set_1``                | first specific feature set from      |
-|                               | feature pairs                        |
-+-------------------------------+--------------------------------------+
-| ``feat_set_2``                | second specific feature set from     |
-|                               | feature pairs                        |
-+-------------------------------+--------------------------------------+
-| ``gene_set_1``                | deprecated. see ``feat_set_1``       |
-+-------------------------------+--------------------------------------+
-| ``gene_set_2``                | deprecated. see ``feat_set_2``       |
-+-------------------------------+--------------------------------------+
-| ``log2FC_addendum``           | addendum to add when calculating     |
-|                               | log2FC                               |
-+-------------------------------+--------------------------------------+
-| ``detailed``                  | provide more detailed information    |
-|                               | (random variance and z-score)        |
-+-------------------------------+--------------------------------------+
-| ``adjust_method``             | which method to adjust p-values      |
-+-------------------------------+--------------------------------------+
-| ``adjust_target``             | adjust multiple hypotheses at the    |
-|                               | cell or feature level                |
-+-------------------------------+--------------------------------------+
-| ``set_seed``                  | set seed for random simulations      |
-|                               | (default = TRUE)                     |
-+-------------------------------+--------------------------------------+
-| ``seed_number``               | seed number                          |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | verbose                              |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object to use              |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | cluster column with cell type     |
+|                                   | information                       |
++-----------------------------------+-----------------------------------+
+| ``random_iter``                   | number of iterations              |
++-----------------------------------+-----------------------------------+
+| ``feat_set_1``                    | first specific feature set from   |
+|                                   | feature pairs                     |
++-----------------------------------+-----------------------------------+
+| ``feat_set_2``                    | second specific feature set from  |
+|                                   | feature pairs                     |
++-----------------------------------+-----------------------------------+
+| ``gene_set_1``                    | deprecated. see ``feat_set_1``    |
++-----------------------------------+-----------------------------------+
+| ``gene_set_2``                    | deprecated. see ``feat_set_2``    |
++-----------------------------------+-----------------------------------+
+| ``log2FC_addendum``               | addendum to add when calculating  |
+|                                   | log2FC                            |
++-----------------------------------+-----------------------------------+
+| ``detailed``                      | provide more detailed information |
+|                                   | (random variance and z-score)     |
++-----------------------------------+-----------------------------------+
+| ``adjust_method``                 | which method to adjust p-values   |
++-----------------------------------+-----------------------------------+
+| ``adjust_target``                 | adjust multiple hypotheses at the |
+|                                   | cell or feature level             |
++-----------------------------------+-----------------------------------+
+| ``set_seed``                      | set seed for random simulations   |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
+| ``seed_number``                   | seed number                       |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | verbose                           |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Statistical framework to identify if pairs of features (such as
 ligand-receptor combinations) are expressed at higher levels than
@@ -98,7 +92,7 @@ values, without considering the spatial position of cells. More details
 will follow soon.
 
 Value
------
+~~~~~
 
 Cell-Cell communication scores for feature pairs based on expression
 only

@@ -1,26 +1,22 @@
-============
 doSNNCluster
-============
+------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L621
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L621
-
-
-
-================
-
-doSNNCluster
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Cluster cells using a SNN cluster approach.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    doSNNCluster(
      gobject,
@@ -37,53 +33,53 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name for cluster, default to         |
-|                               | â€œsNN_clusâ€                           |
-+-------------------------------+--------------------------------------+
-| ``nn_network_to_use``         | type of NN network to use (only      |
-|                               | works on kNN), default to â€œkNNâ€      |
-+-------------------------------+--------------------------------------+
-| ``network_name``              | name of kNN network to use, default  |
-|                               | to â€œkNN.pcaâ€                         |
-+-------------------------------+--------------------------------------+
-| ``k``                         | Neighborhood size for nearest        |
-|                               | neighbor sparsification to create    |
-|                               | the shared NN graph, default = 20    |
-+-------------------------------+--------------------------------------+
-| ``eps``                       | Two objects are only reachable from  |
-|                               | each other if they share at least    |
-|                               | eps nearest neighbors, default = 4   |
-+-------------------------------+--------------------------------------+
-| ``minPts``                    | minimum number of points that share  |
-|                               | at least eps nearest neighbors for a |
-|                               | point to be considered a core        |
-|                               | points, default = 16                 |
-+-------------------------------+--------------------------------------+
-| ``borderPoints``              | should borderPoints be assigned to   |
-|                               | clusters like in DBSCAN? (default =  |
-|                               | TRUE)                                |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | boolean: return giotto object        |
-|                               | (default = TRUE)                     |
-+-------------------------------+--------------------------------------+
-| ``set_seed``                  | set seed (default = FALSE)           |
-+-------------------------------+--------------------------------------+
-| ``seed_number``               | number for seed                      |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name for cluster, default to      |
+|                                   | "sNN_clus"                        |
++-----------------------------------+-----------------------------------+
+| ``nn_network_to_use``             | type of NN network to use (only   |
+|                                   | works on kNN), default to "kNN"   |
++-----------------------------------+-----------------------------------+
+| ``network_name``                  | name of kNN network to use,       |
+|                                   | default to "kNN.pca"              |
++-----------------------------------+-----------------------------------+
+| ``k``                             | Neighborhood size for nearest     |
+|                                   | neighbor sparsification to create |
+|                                   | the shared NN graph, default = 20 |
++-----------------------------------+-----------------------------------+
+| ``eps``                           | Two objects are only reachable    |
+|                                   | from each other if they share at  |
+|                                   | least eps nearest neighbors,      |
+|                                   | default = 4                       |
++-----------------------------------+-----------------------------------+
+| ``minPts``                        | minimum number of points that     |
+|                                   | share at least eps nearest        |
+|                                   | neighbors for a point to be       |
+|                                   | considered a core points, default |
+|                                   | = 16                              |
++-----------------------------------+-----------------------------------+
+| ``borderPoints``                  | should borderPoints be assigned   |
+|                                   | to clusters like in DBSCAN?       |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | boolean: return giotto object     |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
+| ``set_seed``                      | set seed (default = FALSE)        |
++-----------------------------------+-----------------------------------+
+| ``seed_number``                   | number for seed                   |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
-See ```sNNclust`` <#snnclust>`__ from dbscan package
+See ``sNNclust`` from dbscan package
 
 Value
------
+~~~~~
 
 giotto object with new clusters appended to cell metadata

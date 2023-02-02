@@ -1,26 +1,22 @@
-===============
-addCellMetadata
-===============
-
-:Date: 2023-01-19
-
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3371
-
-
-
-===================
-
 Add cell metadata
+-----------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3371
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Adds cell metadata to the giotto object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    addCellMetadata(
      gobject,
@@ -33,45 +29,42 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``new_metadata``              | new cell metadata to use             |
-|                               | (data.table, data.frame, â€¦)          |
-+-------------------------------+--------------------------------------+
-| ``vector_name``               | (optional) custom name if you        |
-|                               | provide a single vector              |
-+-------------------------------+--------------------------------------+
-| ``by_column``                 | merge metadata based on cell_ID      |
-|                               | column in ```pDataDT`` <#pdatadt>`__ |
-|                               | (default = FALSE)                    |
-+-------------------------------+--------------------------------------+
-| ``column_cell_ID``            | column name of new metadata to use   |
-|                               | if by_column = TRUE                  |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``new_metadata``                  | new cell metadata to use          |
+|                                   | (data.table, data.frame, ...)     |
++-----------------------------------+-----------------------------------+
+| ``vector_name``                   | (optional) custom name if you     |
+|                                   | provide a single vector           |
++-----------------------------------+-----------------------------------+
+| ``by_column``                     | merge metadata based on *cell_ID* |
+|                                   | column in ``pDataDT`` (default =  |
+|                                   | FALSE)                            |
++-----------------------------------+-----------------------------------+
+| ``column_cell_ID``                | column name of new metadata to    |
+|                                   | use if by_column = TRUE           |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 You can add additional cell metadata in two manners:
 
--  list(â€œ1. Provide a data.table or data.frame with cell annotations in
-   the same order as theâ€, list(â€œcell_IDâ€), â€ column in pDataDT(gobject)
-   â€œ)
+-  1. Provide a data.table or data.frame with cell annotations in the
+   same order as the *cell_ID* column in pDataDT(gobject)
 
--  list(â€œ2. Provide a data.table or data.frame with cell annotations and
+-  2. Provide a data.table or data.frame with cell annotations and
    specify which column contains the cell IDs, these cell IDs need to
-   match with theâ€, list(â€œcell_IDâ€), â€ column in pDataDT(gobject)â€œ)
+   match with the *cell_ID* column in pDataDT(gobject)
 
 Value
------
+~~~~~
 
 giotto object

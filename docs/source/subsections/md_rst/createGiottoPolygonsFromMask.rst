@@ -1,27 +1,23 @@
-============================
-createGiottoPolygonsFromMask
-============================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L312
-
-
-
-================================
-
 Create giotto polygons from mask file
+-------------------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L312
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Creates Giotto polygon object from a mask file (e.g. segmentation
 results)
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    createGiottoPolygonsFromMask(
      maskfile,
@@ -41,51 +37,51 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``maskfile``                  | path to mask file                    |
-+-------------------------------+--------------------------------------+
-| ``mask_method``               | how the mask file defines individual |
-|                               | segmentation annotations             |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name for polygons                    |
-+-------------------------------+--------------------------------------+
-| ``remove_background_polygon`` | try to remove background polygon     |
-|                               | (default: FALSE)                     |
-+-------------------------------+--------------------------------------+
-| ``background_algo``           | algorithm to remove background       |
-|                               | polygon                              |
-+-------------------------------+--------------------------------------+
-| ``fill_holes``                | fill holes within created polygons   |
-+-------------------------------+--------------------------------------+
-| ``poly_IDs``                  | unique names for each polygon in the |
-|                               | mask file                            |
-+-------------------------------+--------------------------------------+
-| ``flip_vertical``             | flip mask figure in a vertical       |
-|                               | manner                               |
-+-------------------------------+--------------------------------------+
-| ``shift_vertical_step``       | shift vertical (boolean or           |
-|                               | numerical)                           |
-+-------------------------------+--------------------------------------+
-| ``flip_horizontal``           | flip mask figure in a horizontal     |
-|                               | manner                               |
-+-------------------------------+--------------------------------------+
-| ``shift_horizontal_step``     | shift horizontal (boolean or         |
-|                               | numerical)                           |
-+-------------------------------+--------------------------------------+
-| ``calc_centroids``            | calculate centroids for polygons     |
-+-------------------------------+--------------------------------------+
-| ``fix_multipart``             | try to split polygons with multiple  |
-|                               | parts (default: TRUE)                |
-+-------------------------------+--------------------------------------+
-| ``remove_unvalid_polygons``   | remove unvalid polygons (default:    |
-|                               | TRUE)                                |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``maskfile``                      | path to mask file                 |
++-----------------------------------+-----------------------------------+
+| ``mask_method``                   | how the mask file defines         |
+|                                   | individual segmentation           |
+|                                   | annotations                       |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name for polygons                 |
++-----------------------------------+-----------------------------------+
+| ``remove_background_polygon``     | try to remove background polygon  |
+|                                   | (default: FALSE)                  |
++-----------------------------------+-----------------------------------+
+| ``background_algo``               | algorithm to remove background    |
+|                                   | polygon                           |
++-----------------------------------+-----------------------------------+
+| ``fill_holes``                    | fill holes within created         |
+|                                   | polygons                          |
++-----------------------------------+-----------------------------------+
+| ``poly_IDs``                      | unique names for each polygon in  |
+|                                   | the mask file                     |
++-----------------------------------+-----------------------------------+
+| ``flip_vertical``                 | flip mask figure in a vertical    |
+|                                   | manner                            |
++-----------------------------------+-----------------------------------+
+| ``shift_vertical_step``           | shift vertical (boolean or        |
+|                                   | numerical)                        |
++-----------------------------------+-----------------------------------+
+| ``flip_horizontal``               | flip mask figure in a horizontal  |
+|                                   | manner                            |
++-----------------------------------+-----------------------------------+
+| ``shift_horizontal_step``         | shift horizontal (boolean or      |
+|                                   | numerical)                        |
++-----------------------------------+-----------------------------------+
+| ``calc_centroids``                | calculate centroids for polygons  |
++-----------------------------------+-----------------------------------+
+| ``fix_multipart``                 | try to split polygons with        |
+|                                   | multiple parts (default: TRUE)    |
++-----------------------------------+-----------------------------------+
+| ``remove_unvalid_polygons``       | remove unvalid polygons (default: |
+|                                   | TRUE)                             |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 a giotto polygon object

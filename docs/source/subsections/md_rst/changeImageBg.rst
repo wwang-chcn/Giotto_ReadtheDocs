@@ -1,27 +1,23 @@
-=============
 changeImageBg
-=============
+-------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/images.R#L522
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L522
-
-
-
-=================
-
-changeImageBg
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to change the background color of a magick image plot to
 another color
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    changeImageBg(
      mg_object,
@@ -32,24 +28,24 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``mg_object``                 | magick image or giotto image object  |
-+-------------------------------+--------------------------------------+
-| ``bg_color``                  | estimated current background color   |
-+-------------------------------+--------------------------------------+
-| ``perc_range``                | range around estimated background    |
-|                               | color to include (percentage)        |
-+-------------------------------+--------------------------------------+
-| ``new_color``                 | new background color                 |
-+-------------------------------+--------------------------------------+
-| ``new_name``                  | change name of Giotto image          |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``mg_object``                     | magick image or giotto image      |
+|                                   | object                            |
++-----------------------------------+-----------------------------------+
+| ``bg_color``                      | estimated current background      |
+|                                   | color                             |
++-----------------------------------+-----------------------------------+
+| ``perc_range``                    | range around estimated background |
+|                                   | color to include (percentage)     |
++-----------------------------------+-----------------------------------+
+| ``new_color``                     | new background color              |
++-----------------------------------+-----------------------------------+
+| ``new_name``                      | change name of Giotto image       |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 magick image or giotto image object with updated background color

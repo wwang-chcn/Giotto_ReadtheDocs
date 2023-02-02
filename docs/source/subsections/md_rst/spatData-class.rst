@@ -1,16 +1,8 @@
-==============
-spatData-class
-==============
-
-:Date: 1/19/23
-
-``spatData-class``
-==================
-
 Basic class for classes with spatial information
+------------------------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Classes that inherit from this class will contain a spat_unit slot that
 describes which spatial unit the data belongs to. This is most relevant

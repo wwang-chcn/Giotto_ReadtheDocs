@@ -1,38 +1,36 @@
-============
-copy-generic
-============
-
-:Date: 1/19/23
-
-``copy-generic``
-================
-
 Copy an entire object
+---------------------
 
 Description
------------
+~~~~~~~~~~~
 
-S4 generic for Giotto’s S4 subobjects to return with full copies of
+S4 generic for Giotto's S4 subobjects to return with full copies of
 certain subobjects that usually return referenced information.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    copy(x)
-   list(list("copy"), list("coordDataDT"))(x)
+
+   ## S4 method for signature 'coordDataDT'
+   copy(x)
 
 Arguments
----------
+~~~~~~~~~
 
-======== ===========================
-Argument Description
-======== ===========================
-``x``    a Giotto S4 class subobject
-======== ===========================
++-----------------------------------+-----------------------------------+
+| ``x``                             | a Giotto S4 class subobject       |
++-----------------------------------+-----------------------------------+
 
-Seealso
--------
+Functions
+~~~~~~~~~
 
-```copy`` <#copy>`__ ```deepcopy`` <#deepcopy>`__
+-  ``copy(coordDataDT)``: Copy *data.table*-based spatial locations
+   object.
+
+See Also
+~~~~~~~~
+
+``copy`` ``deepcopy``

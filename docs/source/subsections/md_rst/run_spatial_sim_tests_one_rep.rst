@@ -1,23 +1,15 @@
-=============================
 run_spatial_sim_tests_one_rep
-=============================
-
-:Date: 1/19/23
-
-``run_spatial_sim_tests_one_rep``
-=================================
-
-run_spatial_sim_tests_one_rep
+-----------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 runs all spatial tests for 1 probability and 1 rep
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    run_spatial_sim_tests_one_rep(
      gobject,

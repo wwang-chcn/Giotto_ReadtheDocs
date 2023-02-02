@@ -1,26 +1,22 @@
-=======================
 plotStatDelaunayNetwork
-=======================
+-----------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1190
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_structures.R#L1190
-
-
-
-===========================
-
-plotStatDelaunayNetwork
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Plots network statistics for a Delaunay network..
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    plotStatDelaunayNetwork(
      gobject,
@@ -43,67 +39,65 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``method``                    | package to use to create a Delaunay  |
-|                               | network                              |
-+-------------------------------+--------------------------------------+
-| ``dimensions``                | which spatial dimensions to use      |
-|                               | (maximum 2 dimensions)               |
-+-------------------------------+--------------------------------------+
-| ``maximum_distance``          | distance cuttof for Delaunay         |
-|                               | neighbors to consider                |
-+-------------------------------+--------------------------------------+
-| ``minimum_k``                 | minimum neigbhours if                |
-|                               | maximum_distance != NULL             |
-+-------------------------------+--------------------------------------+
-| ``options``                   | (geometry) String containing extra   |
-|                               | control options for the underlying   |
-|                               | Qhull command; see the Qhull         |
-|                               | documentation                        |
-|                               | (../doc/qhull/html/qdelaun.html) for |
-|                               | the available options. (default =    |
-|                               | ‘Pp’, do not report precision        |
-|                               | problems)                            |
-+-------------------------------+--------------------------------------+
-| ``Y``                         | (RTriangle) If TRUE prohibits the    |
-|                               | insertion of Steiner points on the   |
-|                               | mesh boundary.                       |
-+-------------------------------+--------------------------------------+
-| ``j``                         | (RTriangle) If TRUE jettisons        |
-|                               | vertices that are not part of the    |
-|                               | final triangulation from the output. |
-+-------------------------------+--------------------------------------+
-| ``S``                         | (RTriangle) Specifies the maximum    |
-|                               | number of added Steiner points.      |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plots                           |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return ggplot object                 |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot [boolean]     |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters, see       |
-|                               | ```showSaveP                         |
-|                               | arameters`` <#showsaveparameters>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
-| ``list()``                    | Other parameters                     |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``method``                        | package to use to create a        |
+|                                   | Delaunay network                  |
++-----------------------------------+-----------------------------------+
+| ``dimensions``                    | which spatial dimensions to use   |
+|                                   | (maximum 2 dimensions)            |
++-----------------------------------+-----------------------------------+
+| ``maximum_distance``              | distance cuttof for Delaunay      |
+|                                   | neighbors to consider             |
++-----------------------------------+-----------------------------------+
+| ``minimum_k``                     | minimum neigbhours if             |
+|                                   | maximum_distance != NULL          |
++-----------------------------------+-----------------------------------+
+| ``options``                       | (geometry) String containing      |
+|                                   | extra control options for the     |
+|                                   | underlying Qhull command; see the |
+|                                   | Qhull documentation               |
+|                                   | (../doc/qhull/html/qdelaun.html)  |
+|                                   | for the available options.        |
+|                                   | (default = 'Pp', do not report    |
+|                                   | precision problems)               |
++-----------------------------------+-----------------------------------+
+| ``Y``                             | (RTriangle) If TRUE prohibits the |
+|                                   | insertion of Steiner points on    |
+|                                   | the mesh boundary.                |
++-----------------------------------+-----------------------------------+
+| ``j``                             | (RTriangle) If TRUE jettisons     |
+|                                   | vertices that are not part of the |
+|                                   | final triangulation from the      |
+|                                   | output.                           |
++-----------------------------------+-----------------------------------+
+| ``S``                             | (RTriangle) Specifies the maximum |
+|                                   | number of added Steiner points.   |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | show plots                        |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return ggplot object              |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | directly save the plot [boolean]  |
++-----------------------------------+-----------------------------------+
+| ``save_param``                    | list of saving parameters, see    |
+|                                   | ``showSaveParameters``            |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | Other parameters                  |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 giotto object with updated spatial network slot

@@ -1,34 +1,36 @@
-============
-prov-generic
-============
-
-:Date: 1/19/23
-
-``prov-generic``
-================
-
 Provenance information
+----------------------
 
 Description
------------
+~~~~~~~~~~~
 
 access and set provenance slot of S4 subobject
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    prov(x)
-   list(list("prov"), list("provData"))(x)
-   list(list("prov"), list("provData"))(x) <- value
+
+   ## S4 method for signature 'provData'
+   prov(x)
+
+   ## S4 replacement method for signature 'provData'
+   prov(x) <- value
 
 Arguments
----------
+~~~~~~~~~
 
-========= ===========================
-Argument  Description
-========= ===========================
-``x``     a Giotto S4 class subobject
-``value`` value to set as provenance
-========= ===========================
++-----------------------------------+-----------------------------------+
+| ``x``                             | a Giotto S4 class subobject       |
++-----------------------------------+-----------------------------------+
+| ``value``                         | value to set as provenance        |
++-----------------------------------+-----------------------------------+
+
+Functions
+~~~~~~~~~
+
+-  ``prov(provData)``: Get provenance information
+
+-  ``prov(provData) <- value``: Set provenance information

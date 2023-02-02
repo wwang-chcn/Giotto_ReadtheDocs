@@ -1,23 +1,15 @@
-======================================
-createSpatialFeaturesKNNnetwork_dbscan
-======================================
-
-:Date: 1/19/23
-
-``createSpatialFeaturesKNNnetwork_dbscan``
-==========================================
-
 Create kNN spatial feature network using dbscan
+-----------------------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 to create a feature kNN spatial network using dbscan
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    createSpatialFeaturesKNNnetwork_dbscan(
      gobject,
@@ -32,18 +24,28 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-==================== ===================================================
-Argument             Description
-==================== ===================================================
-``gobject``          giotto object
-``feat_type``        feature type
-``name``             name to assign generated feature network
-``k``                number of neighbors for kNN to find
-``maximum_distance`` network maximum distance allowed
-``minimum_k``        minimum neighbors allowed
-``add_feat_ids``     whether to add feature information [boolean]
-``verbose``          be verbose
-``...``              additional parameters to pass to ```kNN`` <#knn>`__
-==================== ===================================================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name to assign generated feature  |
+|                                   | network                           |
++-----------------------------------+-----------------------------------+
+| ``k``                             | number of neighbors for kNN to    |
+|                                   | find                              |
++-----------------------------------+-----------------------------------+
+| ``maximum_distance``              | network maximum distance allowed  |
++-----------------------------------+-----------------------------------+
+| ``minimum_k``                     | minimum neighbors allowed         |
++-----------------------------------+-----------------------------------+
+| ``add_feat_ids``                  | whether to add feature            |
+|                                   | information [boolean]             |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional parameters to pass to  |
+|                                   | ``kNN``                           |
++-----------------------------------+-----------------------------------+

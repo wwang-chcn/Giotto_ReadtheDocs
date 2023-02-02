@@ -1,26 +1,22 @@
-========
 doKmeans
-========
+--------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L738
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L738
-
-
-
-============
-
-doKmeans
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 cluster cells using kmeans algorithm
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    doKmeans(
      gobject,
@@ -45,73 +41,70 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g.Â â€œcellâ€)           |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g.Â â€œrnaâ€, â€œdnaâ€,     |
-|                               | â€œproteinâ€)                           |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | expression values to use             |
-|                               | (e.g.Â â€œnormalizedâ€, â€œscaledâ€,        |
-|                               | â€œcustomâ€)                            |
-+-------------------------------+--------------------------------------+
-| ``feats_to_use``              | subset of features to use            |
-+-------------------------------+--------------------------------------+
-| ``genes_to_use``              | deprecated use feats_to_use          |
-+-------------------------------+--------------------------------------+
-| ``dim_reduction_to_use``      | dimension reduction to use           |
-|                               | (e.g.Â â€œcellsâ€, â€œpcaâ€, â€œumapâ€,        |
-|                               | â€œtsneâ€)                              |
-+-------------------------------+--------------------------------------+
-| ``dim_reduction_name``        | dimensions reduction name, default   |
-|                               | to â€œpcaâ€                             |
-+-------------------------------+--------------------------------------+
-| ``dimensions_to_use``         | dimensions to use, default = 1:10    |
-+-------------------------------+--------------------------------------+
-| ``distance_method``           | distance method (e.g.Â â€œoriginalâ€,    |
-|                               | â€œpearsonâ€, â€œspearmanâ€, â€œeuclideanâ€,  |
-|                               | â€œmaximumâ€, â€œmanhattanâ€, â€œcanberraâ€,  |
-|                               | â€œbinaryâ€, â€œminkowskiâ€)               |
-+-------------------------------+--------------------------------------+
-| ``centers``                   | number of final clusters, default =  |
-|                               | 10                                   |
-+-------------------------------+--------------------------------------+
-| ``iter_max``                  | kmeans maximum iterations, default = |
-|                               | 100                                  |
-+-------------------------------+--------------------------------------+
-| ``nstart``                    | kmeans nstart, default = 1000        |
-+-------------------------------+--------------------------------------+
-| ``algorithm``                 | kmeans algorithm, default to         |
-|                               | â€œHartigan-Wongâ€                      |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name for kmeans clustering, default  |
-|                               | to â€œkmeansâ€                          |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | boolean: return giotto object        |
-|                               | (default = TRUE)                     |
-+-------------------------------+--------------------------------------+
-| ``set_seed``                  | set seed (default = TRUE)            |
-+-------------------------------+--------------------------------------+
-| ``seed_number``               | number for seed                      |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g.Â "cell")        |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g.Â "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use (e.g.    |
+|                                   | "normalized", "scaled", "custom") |
++-----------------------------------+-----------------------------------+
+| ``feats_to_use``                  | subset of features to use         |
++-----------------------------------+-----------------------------------+
+| ``genes_to_use``                  | deprecated use feats_to_use       |
++-----------------------------------+-----------------------------------+
+| ``dim_reduction_to_use``          | dimension reduction to use (e.g.  |
+|                                   | "cells", "pca", "umap", "tsne")   |
++-----------------------------------+-----------------------------------+
+| ``dim_reduction_name``            | dimensions reduction name,        |
+|                                   | default to "pca"                  |
++-----------------------------------+-----------------------------------+
+| ``dimensions_to_use``             | dimensions to use, default = 1:10 |
++-----------------------------------+-----------------------------------+
+| ``distance_method``               | distance method (e.g. "original", |
+|                                   | "pearson", "spearman",            |
+|                                   | "euclidean", "maximum",           |
+|                                   | "manhattan", "canberra",          |
+|                                   | "binary", "minkowski")            |
++-----------------------------------+-----------------------------------+
+| ``centers``                       | number of final clusters, default |
+|                                   | = 10                              |
++-----------------------------------+-----------------------------------+
+| ``iter_max``                      | kmeans maximum iterations,        |
+|                                   | default = 100                     |
++-----------------------------------+-----------------------------------+
+| ``nstart``                        | kmeans nstart, default = 1000     |
++-----------------------------------+-----------------------------------+
+| ``algorithm``                     | kmeans algorithm, default to      |
+|                                   | "Hartigan-Wong"                   |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name for kmeans clustering,       |
+|                                   | default to "kmeans"               |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | boolean: return giotto object     |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
+| ``set_seed``                      | set seed (default = TRUE)         |
++-----------------------------------+-----------------------------------+
+| ``seed_number``                   | number for seed                   |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description on how to use Kmeans clustering method.
 
 Value
------
+~~~~~
 
 giotto object with new clusters appended to cell metadata
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```kmeans`` <#kmeans>`__
+``kmeans``

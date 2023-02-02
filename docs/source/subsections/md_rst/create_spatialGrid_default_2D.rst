@@ -1,23 +1,15 @@
-=============================
 create_spatialGrid_default_2D
-=============================
-
-:Date: 1/19/23
-
-``create_spatialGrid_default_2D``
-=================================
-
-create_spatialGrid_default_2D
+-----------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 create a 2D spatial grid
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    create_spatialGrid_default_2D(
      gobject,

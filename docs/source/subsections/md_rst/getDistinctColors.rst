@@ -1,39 +1,33 @@
-=================
 getDistinctColors
-=================
+-----------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L31
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L31
-
-
-
-=====================
-
-getDistinctColors
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Returns a number of distint colors based on the RGB scale
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    getDistinctColors(n)
 
 Arguments
----------
+~~~~~~~~~
 
-======== =======================
-Argument Description
-======== =======================
-``n``    number of colors wanted
-======== =======================
++-----------------------------------+-----------------------------------+
+| ``n``                             | number of colors wanted           |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 number of distinct colors

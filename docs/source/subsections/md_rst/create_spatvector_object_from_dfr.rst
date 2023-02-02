@@ -1,34 +1,25 @@
-=================================
-create_spatvector_object_from_dfr
-=================================
-
-:Date: 1/19/23
-
-``create_spatvector_object_from_dfr``
-=====================================
-
 Create terra spatvector object from a data.frame
+------------------------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 create terra spatvector from a data.frame where cols 1 and 2 must be x
 and y coordinates respectively. Additional columns are set as attributes
 to the points where the first additional (col 3) should be the feat_ID.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    create_spatvector_object_from_dfr(x, verbose = TRUE)
 
 Arguments
----------
+~~~~~~~~~
 
-=========== =================
-Argument    Description
-=========== =================
-``x``       data.frame object
-``verbose`` be verbose
-=========== =================
++-----------------------------------+-----------------------------------+
+| ``x``                             | data.frame object                 |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+

@@ -1,108 +1,77 @@
-==========================
 readPolygonFilesVizgenHDF5
-==========================
+--------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L1326
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/general_help.R#L1326
-
-
-
-==============================
-
-readPolygonFilesVizgenHDF5
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Read and create polygons for all cells, or for only selected FOVs.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    readPolygonFilesVizgenHDF5(
      boundaries_path,
      fovs = NULL,
-     z_indices = 1L:7L,
-     segm_to_use = 1L,
+     polygon_feat_types = 0:6,
      custom_polygon_names = NULL,
-     flip_x_axis = FALSE,
-     flip_y_axis = TRUE,
-     calc_centroids = FALSE,
+     flip_x_axis = F,
+     flip_y_axis = F,
      smooth_polygons = TRUE,
-     smooth_vertices = 60L,
+     smooth_vertices = 60,
      set_neg_to_zero = FALSE,
      H5Fopen_flags = "H5F_ACC_RDWR",
-     cores = NA,
-     create_gpoly_parallel = TRUE,
-     create_gpoly_bin = FALSE,
-     verbose = TRUE,
-     polygon_feat_types = NULL
+     verbose = TRUE
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``boundaries_path``           | path to the cell_boundaries folder   |
-+-------------------------------+--------------------------------------+
-| ``fovs``                      | subset of fovs to use                |
-+-------------------------------+--------------------------------------+
-| ``z_indices``                 | z indices of polygons to use         |
-+-------------------------------+--------------------------------------+
-| ``segm_to_use``               | segmentation results to use (usually |
-|                               | = 1. Depends on if alternative       |
-|                               | segmentations were generated)        |
-+-------------------------------+--------------------------------------+
-| ``custom_polygon_names``      | a character vector to provide custom |
-|                               | polygon names (optional)             |
-+-------------------------------+--------------------------------------+
-| ``flip_x_axis``               | flip x axis of polygon coordinates   |
-|                               | (multiply by -1)                     |
-+-------------------------------+--------------------------------------+
-| ``flip_y_axis``               | flip y axis of polygon coordinates   |
-|                               | (multiply by -1)                     |
-+-------------------------------+--------------------------------------+
-| ``calc_centroids``            | calculate centroids (default =       |
-|                               | FALSE)                               |
-+-------------------------------+--------------------------------------+
-| ``smooth_polygons``           | smooth polygons (default = TRUE)     |
-+-------------------------------+--------------------------------------+
-| ``smooth_vertices``           | number of vertices for smoothing     |
-+-------------------------------+--------------------------------------+
-| ``set_neg_to_zero``           | set negative values to zero when     |
-|                               | smoothing                            |
-+-------------------------------+--------------------------------------+
-| ``H5Fopen_flags``             | see ```H5Fopen`` <#h5fopen>`__ for   |
-|                               | more details                         |
-+-------------------------------+--------------------------------------+
-| ``cores``                     | cores to use                         |
-+-------------------------------+--------------------------------------+
-| ``create_gpoly_parallel``     | (default = TRUE) Whether to run      |
-|                               | gpoly creation in parallel           |
-+-------------------------------+--------------------------------------+
-| ``create_gpoly_bin``          | (Optional, default = FALSE)          |
-|                               | Parallelization option. Accepts      |
-|                               | integer values as an binning size    |
-|                               | when generating giottoPolygon        |
-|                               | objects                              |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
-| ``polygon_feat_types``        | deprecated. Use ``z_indices``        |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``boundaries_path``               | path to the cell_boundaries       |
+|                                   | folder                            |
++-----------------------------------+-----------------------------------+
+| ``fovs``                          | subset of fovs to use             |
++-----------------------------------+-----------------------------------+
+| ``polygon_feat_types``            | a vector containing the polygon   |
+|                                   | feature types                     |
++-----------------------------------+-----------------------------------+
+| ``custom_polygon_names``          | a character vector to provide     |
+|                                   | custom polygon names (optional)   |
++-----------------------------------+-----------------------------------+
+| ``flip_x_axis``                   | flip x axis of polygon            |
+|                                   | coordinates (multiply by -1)      |
++-----------------------------------+-----------------------------------+
+| ``flip_y_axis``                   | flip y axis of polygon            |
+|                                   | coordinates (multiply by -1)      |
++-----------------------------------+-----------------------------------+
+| ``smooth_polygons``               | smooth polygons (default = TRUE)  |
++-----------------------------------+-----------------------------------+
+| ``smooth_vertices``               | number of vertices for smoothing  |
++-----------------------------------+-----------------------------------+
+| ``set_neg_to_zero``               | set negative values to zero when  |
+|                                   | smoothing                         |
++-----------------------------------+-----------------------------------+
+| ``H5Fopen_flags``                 | see ``H5Fopen`` for more details  |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
-Set H5Fopen_flags to â€œH5F_ACC_RDONLYâ€ if you encounter permission
+Set H5Fopen_flags to "H5F_ACC_RDONLY" if you encounter permission
 issues.
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```smoothGiottoPolygons`` <#smoothgiottopolygons>`__
+``smoothGiottoPolygons``

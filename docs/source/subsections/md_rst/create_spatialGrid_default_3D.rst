@@ -1,23 +1,15 @@
-=============================
 create_spatialGrid_default_3D
-=============================
-
-:Date: 1/19/23
-
-``create_spatialGrid_default_3D``
-=================================
-
-create_spatialGrid_default_3D
+-----------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 create a 3D spatial grid
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    create_spatialGrid_default_3D(
      gobject,

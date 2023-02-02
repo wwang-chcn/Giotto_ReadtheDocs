@@ -1,26 +1,22 @@
-==================
-createGiottoObject
-==================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1782
-
-
-
-======================
-
 Create a giotto object
+----------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L1782
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to create a giotto object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    createGiottoObject(
      expression,
@@ -46,108 +42,102 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``expression``                | expression information               |
-+-------------------------------+--------------------------------------+
-| ``raw_exprs``                 | deprecated, use expression           |
-+-------------------------------+--------------------------------------+
-| ``expression_feat``           | available features (e.g. rna,        |
-|                               | protein, …)                          |
-+-------------------------------+--------------------------------------+
-| ``spatial_locs``              | data.table or data.frame with        |
-|                               | coordinates for cell centroids       |
-+-------------------------------+--------------------------------------+
-| ``spatial_info``              | list of giotto polygon objects with  |
-|                               | spatial information, see             |
-|                               | ```createGiottoPolygonsFromMask`     |
-|                               | ` <#creategiottopolygonsfrommask>`__ |
-|                               | and                                  |
-|                               | ```createGiottoPolygonsFromDfr       |
-|                               | `` <#creategiottopolygonsfromdfr>`__ |
-+-------------------------------+--------------------------------------+
-| ``cell_metadata``             | cell annotation metadata             |
-+-------------------------------+--------------------------------------+
-| ``feat_metadata``             | feature annotation metadata for each |
-|                               | unique feature                       |
-+-------------------------------+--------------------------------------+
-| ``feat_info``                 | list of giotto point objects with    |
-|                               | feature info, see                    |
-|                               | ```createGio                         |
-|                               | ttoPoints`` <#creategiottopoints>`__ |
-+-------------------------------+--------------------------------------+
-| ``spatial_network``           | list of spatial network(s)           |
-+-------------------------------+--------------------------------------+
-| ``spatial_grid``              | list of spatial grid(s)              |
-+-------------------------------+--------------------------------------+
-| ``spatial_grid_name``         | list of spatial grid name(s)         |
-+-------------------------------+--------------------------------------+
-| ``spatial_enrichment``        | list of spatial enrichment score(s)  |
-|                               | for each spatial region              |
-+-------------------------------+--------------------------------------+
-| ``dimension_reduction``       | list of dimension reduction(s)       |
-+-------------------------------+--------------------------------------+
-| ``nn_network``                | list of nearest neighbor network(s)  |
-+-------------------------------+--------------------------------------+
-| ``images``                    | list of images                       |
-+-------------------------------+--------------------------------------+
-| ``largeImages``               | list of large images                 |
-+-------------------------------+--------------------------------------+
-| ``offset_file``               | file used to stitch fields together  |
-|                               | (optional)                           |
-+-------------------------------+--------------------------------------+
-| ``instructions``              | list of instructions or output       |
-|                               | result from                          |
-|                               | ```createGiottoInstructi             |
-|                               | ons`` <#creategiottoinstructions>`__ |
-+-------------------------------+--------------------------------------+
-| ``cores``                     | how many cores or threads to use to  |
-|                               | read data if paths are provided      |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose when building Giotto      |
-|                               | object                               |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``expression``                    | expression information            |
++-----------------------------------+-----------------------------------+
+| ``raw_exprs``                     | deprecated, use expression        |
++-----------------------------------+-----------------------------------+
+| ``expression_feat``               | available features (e.g. rna,     |
+|                                   | protein, ...)                     |
++-----------------------------------+-----------------------------------+
+| ``spatial_locs``                  | data.table or data.frame with     |
+|                                   | coordinates for cell centroids    |
++-----------------------------------+-----------------------------------+
+| ``spatial_info``                  | list of giotto polygon objects    |
+|                                   | with spatial information, see     |
+|                                   | ``createGiottoPolygonsFromMask``  |
+|                                   | and                               |
+|                                   | ``createGiottoPolygonsFromDfr``   |
++-----------------------------------+-----------------------------------+
+| ``cell_metadata``                 | cell annotation metadata          |
++-----------------------------------+-----------------------------------+
+| ``feat_metadata``                 | feature annotation metadata for   |
+|                                   | each unique feature               |
++-----------------------------------+-----------------------------------+
+| ``feat_info``                     | list of giotto point objects with |
+|                                   | feature info, see                 |
+|                                   | ``createGiottoPoints``            |
++-----------------------------------+-----------------------------------+
+| ``spatial_network``               | list of spatial network(s)        |
++-----------------------------------+-----------------------------------+
+| ``spatial_grid``                  | list of spatial grid(s)           |
++-----------------------------------+-----------------------------------+
+| ``spatial_grid_name``             | list of spatial grid name(s)      |
++-----------------------------------+-----------------------------------+
+| ``spatial_enrichment``            | list of spatial enrichment        |
+|                                   | score(s) for each spatial region  |
++-----------------------------------+-----------------------------------+
+| ``dimension_reduction``           | list of dimension reduction(s)    |
++-----------------------------------+-----------------------------------+
+| ``nn_network``                    | list of nearest neighbor          |
+|                                   | network(s)                        |
++-----------------------------------+-----------------------------------+
+| ``images``                        | list of images                    |
++-----------------------------------+-----------------------------------+
+| ``largeImages``                   | list of large images              |
++-----------------------------------+-----------------------------------+
+| ``offset_file``                   | file used to stitch fields        |
+|                                   | together (optional)               |
++-----------------------------------+-----------------------------------+
+| ``instructions``                  | list of instructions or output    |
+|                                   | result from                       |
+|                                   | ``createGiottoInstructions``      |
++-----------------------------------+-----------------------------------+
+| ``cores``                         | how many cores or threads to use  |
+|                                   | to read data if paths are         |
+|                                   | provided                          |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose when building Giotto   |
+|                                   | object                            |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 See http://giottosuite.com/articles/getting_started_gobject.html for
 more details
 
-[ Requirements ] To create a giotto object you need to provide at least
-a matrix with genes as row names and cells as column names. This matrix
-can be provided as a base matrix, sparse Matrix, data.frame, data.table
-or as a path to any of those. To include spatial information about cells
-(or regions) you need to provide a matrix, data.table or data.frame (or
-path to them) with coordinates for all spatial dimensions. This can be
-2D (x and y) or 3D (x, y, x). The row order for the cell coordinates
-should be the same as the column order for the provided expression data.
+[**Requirements**] To create a giotto object you need to provide at
+least a matrix with genes as row names and cells as column names. This
+matrix can be provided as a base matrix, sparse Matrix, data.frame,
+data.table or as a path to any of those. To include spatial information
+about cells (or regions) you need to provide a matrix, data.table or
+data.frame (or path to them) with coordinates for all spatial
+dimensions. This can be 2D (x and y) or 3D (x, y, x). The row order for
+the cell coordinates should be the same as the column order for the
+provided expression data.
 
-[ Instructions ] Additionally an instruction file, generated manually or
-with ```createGiottoInstructions`` <#creategiottoinstructions>`__ can be
-provided to instructions, if not a default instruction file will be
-created for the Giotto object.
+[**Instructions**] Additionally an instruction file, generated manually
+or with ``createGiottoInstructions`` can be provided to instructions, if
+not a default instruction file will be created for the Giotto object.
 
-[ Multiple fields ] In case a dataset consists of multiple fields, like
-seqFISH+ for example, an offset file can be provided to stitch the
-different fields together.
-```stitchFieldCoordinates`` <#stitchfieldcoordinates>`__ can be used to
+[**Multiple fields**] In case a dataset consists of multiple fields,
+like seqFISH+ for example, an offset file can be provided to stitch the
+different fields together. ``stitchFieldCoordinates`` can be used to
 generate such an offset file.
 
-[ Processed data ] Processed count data, such as normalized data, can be
-provided using one of the different expression slots (norm_expr,
+[**Processed data**] Processed count data, such as normalized data, can
+be provided using one of the different expression slots (norm_expr,
 norm_scaled_expr, custom_expr).
 
-[ Metadata ] Cell and gene metadata can be provided using the cell and
+[**Metadata**] Cell and gene metadata can be provided using the cell and
 gene metadata slots. This data can also be added afterwards using the
-```addFeatMetadata`` <#addfeatmetadata>`__ or
-```addCellMetadata`` <#addcellmetadata>`__ functions.
+``addFeatMetadata`` or ``addCellMetadata`` functions.
 
-[ Other information ] Additional information can be provided through the
-appropriate slots:
+[**Other information**] Additional information can be provided through
+the appropriate slots:
 
 -  spatial networks
 
@@ -162,6 +152,6 @@ appropriate slots:
 -  images
 
 Value
------
+~~~~~
 
 giotto object

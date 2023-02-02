@@ -1,66 +1,75 @@
-========================
 filterCellProximityGenes
-========================
+------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1409
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1409
-
-
-``filterCellProximityGenes``
-============================
-
-filterCellProximityGenes
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Filter Interaction Changed Feature scores.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    filterCellProximityGenes(...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``...``                       | Arguments passed on to               |
-|                               | ```filterInteractionChangedFeats``   |
-|                               |  <#filterinteractionchangedfeats>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�icfObject�)),        |
-|                               | list(“ICF (interaction changed       |
-|                               | feature) score object�)),            |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�min_cells�)),        |
-|                               | list(“minimum number of source cell  |
-|                               | type�)), “:raw-latex:`\n`�, � “,     |
-|                               | list(list(list(�min_cells_expr�)),   |
-|                               | list(“minimum expression level for   |
-|                               | source cell type�)),                 |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�min_int_cells�)),    |
-|                               | list(“minimum number of interacting  |
-|                               | neighbor cell type�)),               |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | li                                   |
-|                               | st(list(list(�min_int_cells_expr�)), |
-|                               | list(“minimum expression level for   |
-|                               | interacting neighbor cell type�)),   |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``filterInteractionChangedFeats`` |
+|                                   |                                   |
+|                                   | ``icfObject``                     |
+|                                   |    ICF (interaction changed       |
+|                                   |    feature) score object          |
+|                                   |                                   |
+|                                   | ``min_cells``                     |
+|                                   |    minimum number of source cell  |
+|                                   |    type                           |
+|                                   |                                   |
+|                                   | ``min_cells_expr``                |
+|                                   |    minimum expression level for   |
+|                                   |    source cell type               |
+|                                   |                                   |
+|                                   | ``min_int_cells``                 |
+|                                   |    minimum number of interacting  |
+|                                   |    neighbor cell type             |
+|                                   |                                   |
+|                                   | ``min_int_cells_expr``            |
+|                                   |    minimum expression level for   |
+|                                   |    interacting neighbor cell type |
+|                                   |                                   |
+|                                   | ``min_fdr``                       |
+|                                   |    minimum adjusted p-value       |
+|                                   |                                   |
+|                                   | ``min_spat_diff``                 |
+|                                   |    minimum absolute spatial       |
+|                                   |    expression difference          |
+|                                   |                                   |
+|                                   | ``min_log2_fc``                   |
+|                                   |    minimum log2 fold-change       |
+|                                   |                                   |
+|                                   | ``min_zscore``                    |
+|                                   |    minimum z-score change         |
+|                                   |                                   |
+|                                   | ``zscores_column``                |
+|                                   |    calculate z-scores over cell   |
+|                                   |    types or genes                 |
+|                                   |                                   |
+|                                   | ``direction``                     |
+|                                   |    differential expression        |
+|                                   |    directions to keep             |
++-----------------------------------+-----------------------------------+
 
-::
+See Also
+~~~~~~~~
 
-   "\n", "    ", list(list(list("min_fdr")), list("minimum adjusted p-value")), "\n", "    ", list(list(list("min_spat_diff")), list("minimum absolute spatial expression difference")), "\n", "    ", list(list(list("min_log2_fc")), list("minimum log2 fold-change")), "\n", "    ", list(list(list("min_zscore")), list("minimum z-score change")), "\n", "    ", list(list(list("zscores_column")), list("calculate z-scores over cell types or genes")), "\n", "    ", list(list(list("direction")), list("differential expression directions to keep")), 
-   "\n", "  ")
-
-Seealso
--------
-
-```filterInteractionChangedFeats`` <#filterinteractionchangedfeats>`__
+``filterInteractionChangedFeats``

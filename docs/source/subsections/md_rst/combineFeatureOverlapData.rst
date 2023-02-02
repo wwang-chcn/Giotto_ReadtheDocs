@@ -1,26 +1,22 @@
-=========================
 combineFeatureOverlapData
-=========================
+-------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2954
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2954
-
-
-
-=============================
-
-combineFeatureOverlapData
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 combine feature data information
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    combineFeatureOverlapData(
      gobject,
@@ -30,22 +26,20 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``sel_feats``                 | selected features (default: NULL or  |
-|                               | no selection)                        |
-+-------------------------------+--------------------------------------+
-| ``poly_info``                 | polygon information name             |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``sel_feats``                     | selected features (default: NULL  |
+|                                   | or no selection)                  |
++-----------------------------------+-----------------------------------+
+| ``poly_info``                     | polygon information name          |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table with combined spatial polygon information

@@ -1,26 +1,22 @@
-=============
 processGiotto
-=============
+-------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2731
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2731
-
-
-
-=================
-
-processGiotto
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Wrapper for the different Giotto object processing functions
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    processGiotto(
      gobject,
@@ -32,41 +28,37 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``filter_params``             | additional parameters to             |
-|                               | filterGiotto                         |
-+-------------------------------+--------------------------------------+
-| ``norm_params``               | additional parameters to             |
-|                               | normalizeGiotto                      |
-+-------------------------------+--------------------------------------+
-| ``stat_params``               | additional parameters to             |
-|                               | addStatistics                        |
-+-------------------------------+--------------------------------------+
-| ``adjust_params``             | additional parameters to             |
-|                               | adjustGiottoMatrix; set to NULL if   |
-|                               | not required                         |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose (default is TRUE)         |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``filter_params``                 | additional parameters to          |
+|                                   | filterGiotto                      |
++-----------------------------------+-----------------------------------+
+| ``norm_params``                   | additional parameters to          |
+|                                   | normalizeGiotto                   |
++-----------------------------------+-----------------------------------+
+| ``stat_params``                   | additional parameters to          |
+|                                   | addStatistics                     |
++-----------------------------------+-----------------------------------+
+| ``adjust_params``                 | additional parameters to          |
+|                                   | adjustGiottoMatrix; set to NULL   |
+|                                   | if not required                   |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose (default is TRUE)      |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
-See ```filterGiotto`` <#filtergiotto>`__ ,
-```normalizeGiotto`` <#normalizegiotto>`__ ,
-```addStatistics`` <#addstatistics>`__ , and
-```adjustGiottoMatrix`` <#adjustgiottomatrix>`__ . For more information
-about the different parameters in each step. If you do not provide them
-it will use the default values. If no adjustment is required,
-adjust_params must be set to NULL
+See ``filterGiotto``, ``normalizeGiotto``, ``addStatistics``, and
+``adjustGiottoMatrix``. For more information about the different
+parameters in each step. If you do not provide them it will use the
+default values. If no adjustment is required, adjust_params must be set
+to NULL
 
 Value
------
+~~~~~
 
 giotto object

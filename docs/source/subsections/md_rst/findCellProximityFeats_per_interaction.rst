@@ -1,24 +1,16 @@
-======================================
 findCellProximityFeats_per_interaction
-======================================
-
-:Date: 1/19/23
-
-``findCellProximityFeats_per_interaction``
-==========================================
-
-findCellProximityFeats_per_interaction
+--------------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Identifies features that are differentially expressed due to proximity
 to other cell types.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    findCellProximityFeats_per_interaction(
      sel_int,
@@ -39,10 +31,8 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-=============== =============
-Argument        Description
-=============== =============
-``expr_values`` Matrix object
-=============== =============
++-----------------------------------+-----------------------------------+
+| ``expr_values``                   | Matrix object                     |
++-----------------------------------+-----------------------------------+

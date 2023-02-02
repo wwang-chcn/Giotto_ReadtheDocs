@@ -1,26 +1,22 @@
-==============
-annotateGiotto
-==============
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3198
-
-
-
-==================
-
 Annotate giotto clustering
+--------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3198
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Converts cluster results into a user provided annotation.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    annotateGiotto(
      gobject,
@@ -32,47 +28,39 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``annotation_vector``         | named annotation vector (names =     |
-|                               | cluster ids)                         |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | cluster column to convert to         |
-|                               | annotation names                     |
-+-------------------------------+--------------------------------------+
-| ``name``                      | new name for annotation column       |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``annotation_vector``             | named annotation vector (names =  |
+|                                   | cluster ids)                      |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | cluster column to convert to      |
+|                                   | annotation names                  |
++-----------------------------------+-----------------------------------+
+| ``name``                          | new name for annotation column    |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 You need to specifify which (cluster) column you want to annotate and
 you need to provide an annotation vector like this:
 
--  
+-  1. identify the cell type of each cluster
 
-   1. identify the cell type of each cluster
+-  2. create a vector of these cell types, e.g. cell_types = c('T-cell',
+   'B-cell', 'Stromal')
 
--  
-
-   2. create a vector of these cell types, e.g. cell_types = c(‘T-cell’,
-      ‘B-cell’, ‘Stromal’)
-
--  
-
-   3. provide original cluster names to previous vector,
-      e.g. names(cell_types) = c(2, 1, 3)
+-  3. provide original cluster names to previous vector, e.g.
+   names(cell_types) = c(2, 1, 3)
 
 Value
------
+~~~~~
 
 giotto object

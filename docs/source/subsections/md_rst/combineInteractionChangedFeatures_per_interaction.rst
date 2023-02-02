@@ -1,23 +1,15 @@
-=================================================
 combineInteractionChangedFeatures_per_interaction
-=================================================
-
-:Date: 1/19/23
-
-``combineInteractionChangedFeatures_per_interaction``
-=====================================================
-
-combineInteractionChangedFeatures_per_interaction
+-------------------------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Combine ICF scores per interaction
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    combineInteractionChangedFeatures_per_interaction(
      icfObject,

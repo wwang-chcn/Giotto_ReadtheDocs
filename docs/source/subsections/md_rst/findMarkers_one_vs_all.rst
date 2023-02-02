@@ -1,26 +1,22 @@
-======================
 findMarkers_one_vs_all
-======================
+----------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L1090
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/differential_expression.R#L1090
-
-
-
-==========================
-
-findMarkers_one_vs_all
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Identify marker feats for all clusters in a one vs all manner.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    findMarkers_one_vs_all(
      gobject,
@@ -44,71 +40,68 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | feat expression values to use        |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | clusters to use                      |
-+-------------------------------+--------------------------------------+
-| ``subset_clusters``           | selection of clusters to compare     |
-+-------------------------------+--------------------------------------+
-| ``method``                    | method to use to detect              |
-|                               | differentially expressed feats       |
-+-------------------------------+--------------------------------------+
-| ``pval``                      | scran & mast: filter on minimal      |
-|                               | p-value                              |
-+-------------------------------+--------------------------------------+
-| ``logFC``                     | scan & mast: filter on logFC         |
-+-------------------------------+--------------------------------------+
-| ``min_feats``                 | minimum feats to keep per cluster,   |
-|                               | overrides pval and logFC             |
-+-------------------------------+--------------------------------------+
-| ``min_genes``                 | deprecated, use min_feats            |
-+-------------------------------+--------------------------------------+
-| ``min_expr_gini_score``       | gini: filter on minimum gini         |
-|                               | coefficient for expression           |
-+-------------------------------+--------------------------------------+
-| ``min_det_gini_score``        | gini: filter minimum gini            |
-|                               | coefficient for detection            |
-+-------------------------------+--------------------------------------+
-| ``detection_threshold``       | gini: detection threshold for feat   |
-|                               | expression                           |
-+-------------------------------+--------------------------------------+
-| ``rank_score``                | gini: rank scores to include         |
-+-------------------------------+--------------------------------------+
-| ``adjust_columns``            | mast: column in pDataDT to adjust    |
-|                               | for (e.g. detection rate)            |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
-| ``...``                       | additional parameters for the        |
-|                               | findMarkers function in scran or zlm |
-|                               | function in MAST                     |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | feat expression values to use     |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | clusters to use                   |
++-----------------------------------+-----------------------------------+
+| ``subset_clusters``               | selection of clusters to compare  |
++-----------------------------------+-----------------------------------+
+| ``method``                        | method to use to detect           |
+|                                   | differentially expressed feats    |
++-----------------------------------+-----------------------------------+
+| ``pval``                          | scran & mast: filter on minimal   |
+|                                   | p-value                           |
++-----------------------------------+-----------------------------------+
+| ``logFC``                         | scan & mast: filter on logFC      |
++-----------------------------------+-----------------------------------+
+| ``min_feats``                     | minimum feats to keep per         |
+|                                   | cluster, overrides pval and logFC |
++-----------------------------------+-----------------------------------+
+| ``min_genes``                     | deprecated, use min_feats         |
++-----------------------------------+-----------------------------------+
+| ``min_expr_gini_score``           | gini: filter on minimum gini      |
+|                                   | coefficient for expression        |
++-----------------------------------+-----------------------------------+
+| ``min_det_gini_score``            | gini: filter minimum gini         |
+|                                   | coefficient for detection         |
++-----------------------------------+-----------------------------------+
+| ``detection_threshold``           | gini: detection threshold for     |
+|                                   | feat expression                   |
++-----------------------------------+-----------------------------------+
+| ``rank_score``                    | gini: rank scores to include      |
++-----------------------------------+-----------------------------------+
+| ``adjust_columns``                | mast: column in pDataDT to adjust |
+|                                   | for (e.g. detection rate)         |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional parameters for the     |
+|                                   | findMarkers function in scran or  |
+|                                   | zlm function in MAST              |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Wrapper for all one vs all functions to detect marker feats for
 clusters.
 
 Value
------
+~~~~~
 
 data.table with marker feats
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```findScranMarkers_one_vs_all`` <#findscranmarkersonevsall>`__ ,
-```findGiniMarkers_one_vs_all`` <#findginimarkersonevsall>`__ and
-```findMastMarkers_one_vs_all`` <#findmastmarkersonevsall>`__
+``findScranMarkers_one_vs_all``, ``findGiniMarkers_one_vs_all`` and
+``findMastMarkers_one_vs_all``

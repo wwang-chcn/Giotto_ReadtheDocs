@@ -1,23 +1,15 @@
-===================
 list_dim_reductions
-===================
-
-:Date: 1/19/23
-
-``list_dim_reductions``
-=======================
-
-list_dim_reductions
+-------------------
 
 Description
------------
+~~~~~~~~~~~
 
 return the available dimension reductions
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    list_dim_reductions(
      gobject,
@@ -28,19 +20,24 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-============= =================================================
-Argument      Description
-============= =================================================
-``gobject``   giotto object
-``data_type`` “cells” or “feats” data used in dim reduction
-``spat_unit`` spatial unit (e.g. “cell”)
-``feat_type`` feature type (e.g. “rna”, “dna”, “protein”)
-``dim_type``  dimensional reduction method (e.g. “pca”, “umap”)
-============= =================================================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``data_type``                     | "cells" or "feats" data used in   |
+|                                   | dim reduction                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g. "cell")        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g. "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``dim_type``                      | dimensional reduction method      |
+|                                   | (e.g. "pca", "umap")              |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 names and locations of dimension reduction as a data.table

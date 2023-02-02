@@ -1,26 +1,22 @@
-============
 subsetGiotto
-============
+------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1203
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L1203
-
-
-
-================
-
-subsetGiotto
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Subsets Giotto object including previous analyses.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    subsetGiotto(
      gobject,
@@ -41,46 +37,42 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type to use                  |
-+-------------------------------+--------------------------------------+
-| ``cell_ids``                  | cell IDs to keep                     |
-+-------------------------------+--------------------------------------+
-| ``feat_ids``                  | feature IDs to keep                  |
-+-------------------------------+--------------------------------------+
-| ``gene_ids``                  | deprecated. Use ``feat_ids``         |
-+-------------------------------+--------------------------------------+
-| ``poly_info``                 | polygon information to use           |
-+-------------------------------+--------------------------------------+
-| ``all_spat_units``            | subset all spatial units with        |
-|                               | selected feature ids                 |
-+-------------------------------+--------------------------------------+
-| ``all_feat_types``            | subset all feature type data with    |
-|                               | selected cell ids                    |
-+-------------------------------+--------------------------------------+
-| `                             | minimum and maximum x and y          |
-| `x_max, x_min, y_max, y_min`` | coordinates to keep for feature      |
-|                               | coordinates                          |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
-| ``toplevel_params``           | parameters to extract                |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type to use               |
++-----------------------------------+-----------------------------------+
+| ``cell_ids``                      | cell IDs to keep                  |
++-----------------------------------+-----------------------------------+
+| ``feat_ids``                      | feature IDs to keep               |
++-----------------------------------+-----------------------------------+
+| ``poly_info``                     | polygon information to use        |
++-----------------------------------+-----------------------------------+
+| ``all_spat_units``                | subset all spatial units with     |
+|                                   | selected feature ids              |
++-----------------------------------+-----------------------------------+
+| ``all_feat_types``                | subset all feature type data with |
+|                                   | selected cell ids                 |
++-----------------------------------+-----------------------------------+
+| ``x_max, x_min, y_max, y_min``    | minimum and maximum x and y       |
+|                                   | coordinates to keep for feature   |
+|                                   | coordinates                       |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
+| ``toplevel_params``               | parameters to extract             |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Subsets a Giotto object for a specific spatial unit and feature type
 
 Value
------
+~~~~~
 
 giotto object

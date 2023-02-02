@@ -1,39 +1,38 @@
-==================
 showSaveParameters
-==================
+------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L399
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L399
-
-
-
-======================
-
-showSaveParameters
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Description of Giotto saving options, links to
-```all_plots_save_function`` <#allplotssavefunction>`__
+``all_plots_save_function``
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    showSaveParameters()
 
 Value
------
+~~~~~
 
 Instruction on how to use the automatic plot saving options within
 Giotto
 
 Examples
---------
+~~~~~~~~
 
-.. code:: r
+::
 
-   showSaveParameters()
+   ## Not run: 
+     showSaveParameters()
+
+   ## End(Not run)

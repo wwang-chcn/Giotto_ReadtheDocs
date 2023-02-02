@@ -1,66 +1,75 @@
-===========================
-plotInteractionChangedGenes
-===========================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1605
-
-
-``plotInteractionChangedGenes``
-===============================
-
 Plot interaction changed genes
+------------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1605
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Create barplot to visualize interaction changed features
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    plotInteractionChangedGenes(...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``...``                       | Arguments passed on to               |
-|                               | ```plotInteractionChangedFeats       |
-|                               | `` <#plotinteractionchangedfeats>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�gobject�)),          |
-|                               | list(“giotto object�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�icfObject�)),        |
-|                               | list(“ICF (interaction changed       |
-|                               | feature) score object�)),            |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�source_type�)),      |
-|                               | list(“cell type of the source        |
-|                               | cell�)), “:raw-latex:`\n`�, � “,     |
-|                               | list(list(list(�source_markers�)),   |
-|                               | list(“markers for the source cell    |
-|                               | type�)), “:raw-latex:`\n`�, � “,     |
-|                               | list(list(list(�ICF_feats�)),        |
-|                               | list(“named character vector of ICF  |
-|                               | features�)), “:raw-latex:`\n`�, � “, |
-|                               | list(list(list(�cell_color_code�)),  |
-|                               | list(“cell color code for the        |
-|                               | interacting cell types�)),           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``plotInteractionChangedFeats``   |
+|                                   |                                   |
+|                                   | ``gobject``                       |
+|                                   |    giotto object                  |
+|                                   |                                   |
+|                                   | ``icfObject``                     |
+|                                   |    ICF (interaction changed       |
+|                                   |    feature) score object          |
+|                                   |                                   |
+|                                   | ``source_type``                   |
+|                                   |    cell type of the source cell   |
+|                                   |                                   |
+|                                   | ``source_markers``                |
+|                                   |    markers for the source cell    |
+|                                   |    type                           |
+|                                   |                                   |
+|                                   | ``ICF_feats``                     |
+|                                   |    named character vector of ICF  |
+|                                   |    features                       |
+|                                   |                                   |
+|                                   | ``cell_color_code``               |
+|                                   |    cell color code for the        |
+|                                   |    interacting cell types         |
+|                                   |                                   |
+|                                   | ``show_plot``                     |
+|                                   |    show plots                     |
+|                                   |                                   |
+|                                   | ``return_plot``                   |
+|                                   |    return plotting object         |
+|                                   |                                   |
+|                                   | ``save_plot``                     |
+|                                   |    directly save the plot         |
+|                                   |    [boolean]                      |
+|                                   |                                   |
+|                                   | ``save_param``                    |
+|                                   |    list of saving parameters from |
+|                                   |    ``all_plots_save_function``    |
+|                                   |                                   |
+|                                   | ``default_save_name``             |
+|                                   |    default save name for saving,  |
+|                                   |    don't change, change save_name |
+|                                   |    in save_param                  |
++-----------------------------------+-----------------------------------+
 
-::
+See Also
+~~~~~~~~
 
-   "\n", "    ", list(list(list("show_plot")), list("show plots")), "\n", "    ", list(list(list("return_plot")), list("return plotting object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters from ", list(list("all_plots_save_function")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", 
-   "  ")
-
-Seealso
--------
-
-```plotInteractionChangedFeats`` <#plotinteractionchangedfeats>`__
+``plotInteractionChangedFeats``

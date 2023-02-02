@@ -1,16 +1,8 @@
-==============
-miscData-class
-==============
-
-:Date: 1/19/23
-
-``miscData-class``
-==================
-
 Basic class for additional miscellaneous information
+----------------------------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Classes (such as dimObj) that can hold information from multiple types
 of methods use the misc slot to hold additional information specific to

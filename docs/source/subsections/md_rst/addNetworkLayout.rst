@@ -1,26 +1,22 @@
-================
 addNetworkLayout
-================
+----------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/NN_network.R#L256
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/NN_network.R#L256
-
-
-
-====================
-
-addNetworkLayout
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Add a network layout for a selected nearest neighbor network
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    addNetworkLayout(
      gobject,
@@ -35,40 +31,39 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``nn_network_to_use``         | kNN or sNN                           |
-+-------------------------------+--------------------------------------+
-| ``network_name``              | name of NN network to be used        |
-+-------------------------------+--------------------------------------+
-| ``layout_type``               | layout algorithm to use              |
-+-------------------------------+--------------------------------------+
-| ``options_list``              | list of options for selected layout  |
-+-------------------------------+--------------------------------------+
-| ``layout_name``               | name for layout                      |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | boolean: return giotto object        |
-|                               | (default = TRUE)                     |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``nn_network_to_use``             | kNN or sNN                        |
++-----------------------------------+-----------------------------------+
+| ``network_name``                  | name of NN network to be used     |
++-----------------------------------+-----------------------------------+
+| ``layout_type``                   | layout algorithm to use           |
++-----------------------------------+-----------------------------------+
+| ``options_list``                  | list of options for selected      |
+|                                   | layout                            |
++-----------------------------------+-----------------------------------+
+| ``layout_name``                   | name for layout                   |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | boolean: return giotto object     |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 This function creates layout coordinates based on the provided kNN or
-sNN. Currently only the force-directed graph layout â€œdrlâ€, see
-```layout_with_drl`` <#layoutwithdrl>`__ , is implemented. This provides
-an alternative to tSNE or UMAP based visualizations.
+sNN. Currently only the force-directed graph layout "drl", see
+``layout_with_drl``, is implemented. This provides an alternative to
+tSNE or UMAP based visualizations.
 
 Value
------
+~~~~~
 
 giotto object with updated layout for selected NN network

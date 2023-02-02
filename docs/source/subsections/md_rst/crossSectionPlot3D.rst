@@ -1,27 +1,23 @@
-==================
 crossSectionPlot3D
-==================
+------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L725
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L725
-
-
-
-======================
-
-crossSectionPlot3D
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells in a virtual cross section according to spatial
 coordinates
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    crossSectionPlot3D(
      gobject,
@@ -35,38 +31,38 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``crossSection_obj``          | cross section object as alternative  |
-|                               | input. default = NULL.               |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name of virtual cross section to use |
-+-------------------------------+--------------------------------------+
-| ``spatial_network_name``      | name of spatial network to use       |
-+-------------------------------+--------------------------------------+
-| ``show_other_cells``          | display not selected cells           |
-+-------------------------------+--------------------------------------+
-| ``other_cell_color``          | color of cells outside the cross     |
-|                               | section. default = transparent.      |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
-| ``...``                       | parameters for spatPlot3D            |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``crossSection_obj``              | cross section object as           |
+|                                   | alternative input. default =      |
+|                                   | NULL.                             |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name of virtual cross section to  |
+|                                   | use                               |
++-----------------------------------+-----------------------------------+
+| ``spatial_network_name``          | name of spatial network to use    |
++-----------------------------------+-----------------------------------+
+| ``show_other_cells``              | display not selected cells        |
++-----------------------------------+-----------------------------------+
+| ``other_cell_color``              | color of cells outside the cross  |
+|                                   | section. default = transparent.   |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | parameters for spatPlot3D         |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description of parameters.
 
 Value
------
+~~~~~
 
 ggplot

@@ -1,27 +1,23 @@
-====================
 runPatternSimulation
-====================
+--------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L4659
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L4659
-
-
-
-========================
-
-runPatternSimulation
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Creates a known spatial pattern for selected genes one-by-one and runs
 the different spatial gene detection tests
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    runPatternSimulation(
      gobject,
@@ -50,70 +46,69 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``pattern_name``              | name of spatial pattern              |
-+-------------------------------+--------------------------------------+
-| ``pattern_colors``            | 2 color vector for the spatial       |
-|                               | pattern                              |
-+-------------------------------+--------------------------------------+
-| ``pattern_cell_ids``          | cell ids that make up the spatial    |
-|                               | pattern                              |
-+-------------------------------+--------------------------------------+
-| ``gene_names``                | selected genes                       |
-+-------------------------------+--------------------------------------+
-| ``spatial_probs``             | probabilities to test for a high     |
-|                               | expressing gene value to be part of  |
-|                               | the spatial pattern                  |
-+-------------------------------+--------------------------------------+
-| ``reps``                      | number of random simulation          |
-|                               | repetitions                          |
-+-------------------------------+--------------------------------------+
-| ``spatial_network_name``      | which spatial network to use for     |
-|                               | binSpectSingle                       |
-+-------------------------------+--------------------------------------+
-| ``spat_methods``              | vector of spatial methods to test    |
-+-------------------------------+--------------------------------------+
-| ``spat_methods_params``       | list of parameters list for each     |
-|                               | element in the vector of spatial     |
-|                               | methods to test                      |
-+-------------------------------+--------------------------------------+
-| ``spat_methods_names``        | name for each element in the vector  |
-|                               | of spatial elements to test          |
-+-------------------------------+--------------------------------------+
-| ``scalefactor``               | library size scaling factor when     |
-|                               | re-normalizing dataset               |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | save intermediate random simulation  |
-|                               | plots or not                         |
-+-------------------------------+--------------------------------------+
-| ``save_raw``                  | save the raw expression matrix of    |
-|                               | the simulation                       |
-+-------------------------------+--------------------------------------+
-| ``save_norm``                 | save the normalized expression       |
-|                               | matrix of the simulation             |
-+-------------------------------+--------------------------------------+
-| ``save_dir``                  | directory to save results to         |
-+-------------------------------+--------------------------------------+
-| ``max_col``                   | maximum number of columns for final  |
-|                               | plots                                |
-+-------------------------------+--------------------------------------+
-| ``height``                    | height of final plots                |
-+-------------------------------+--------------------------------------+
-| ``width``                     | width of final plots                 |
-+-------------------------------+--------------------------------------+
-| ``run_simulations``           | run simulations (default = TRUE)     |
-+-------------------------------+--------------------------------------+
-| ``list()``                    | additional parameters for            |
-|                               | renormalization                      |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``pattern_name``                  | name of spatial pattern           |
++-----------------------------------+-----------------------------------+
+| ``pattern_colors``                | 2 color vector for the spatial    |
+|                                   | pattern                           |
++-----------------------------------+-----------------------------------+
+| ``pattern_cell_ids``              | cell ids that make up the spatial |
+|                                   | pattern                           |
++-----------------------------------+-----------------------------------+
+| ``gene_names``                    | selected genes                    |
++-----------------------------------+-----------------------------------+
+| ``spatial_probs``                 | probabilities to test for a high  |
+|                                   | expressing gene value to be part  |
+|                                   | of the spatial pattern            |
++-----------------------------------+-----------------------------------+
+| ``reps``                          | number of random simulation       |
+|                                   | repetitions                       |
++-----------------------------------+-----------------------------------+
+| ``spatial_network_name``          | which spatial network to use for  |
+|                                   | binSpectSingle                    |
++-----------------------------------+-----------------------------------+
+| ``spat_methods``                  | vector of spatial methods to test |
++-----------------------------------+-----------------------------------+
+| ``spat_methods_params``           | list of parameters list for each  |
+|                                   | element in the vector of spatial  |
+|                                   | methods to test                   |
++-----------------------------------+-----------------------------------+
+| ``spat_methods_names``            | name for each element in the      |
+|                                   | vector of spatial elements to     |
+|                                   | test                              |
++-----------------------------------+-----------------------------------+
+| ``scalefactor``                   | library size scaling factor when  |
+|                                   | re-normalizing dataset            |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | save intermediate random          |
+|                                   | simulation plots or not           |
++-----------------------------------+-----------------------------------+
+| ``save_raw``                      | save the raw expression matrix of |
+|                                   | the simulation                    |
++-----------------------------------+-----------------------------------+
+| ``save_norm``                     | save the normalized expression    |
+|                                   | matrix of the simulation          |
++-----------------------------------+-----------------------------------+
+| ``save_dir``                      | directory to save results to      |
++-----------------------------------+-----------------------------------+
+| ``max_col``                       | maximum number of columns for     |
+|                                   | final plots                       |
++-----------------------------------+-----------------------------------+
+| ``height``                        | height of final plots             |
++-----------------------------------+-----------------------------------+
+| ``width``                         | width of final plots              |
++-----------------------------------+-----------------------------------+
+| ``run_simulations``               | run simulations (default = TRUE)  |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional parameters for         |
+|                                   | renormalization                   |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table with results

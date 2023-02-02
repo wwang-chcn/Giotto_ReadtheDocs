@@ -1,26 +1,22 @@
-================
-get_polygon_info
-================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1865
-
-
-
-====================
-
 Get polygon info
+----------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L1865
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Get giotto polygon spatVector
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    get_polygon_info(
      gobject,
@@ -30,35 +26,27 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``polygon_name``              | name of polygons. Default â€œcellâ€     |
-+-------------------------------+--------------------------------------+
-| ``polygon_overlap``           | include polygon overlap information  |
-+-------------------------------+--------------------------------------+
-| ``return_giottoPolygon``      | (Defaults to FALSE) Return as        |
-|                               | giottoPolygon S4 object              |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``polygon_name``                  | name of polygons. Default "cell"  |
++-----------------------------------+-----------------------------------+
+| ``polygon_overlap``               | include polygon overlap           |
+|                                   | information                       |
++-----------------------------------+-----------------------------------+
+| ``return_giottoPolygon``          | (Defaults to FALSE) Return as     |
+|                                   | giottoPolygon S4 object           |
++-----------------------------------+-----------------------------------+
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other polygon info data accessor functions:
-```set_polygon_info`` <#setpolygoninfo>`__
+Other polygon info data accessor functions: ``set_polygon_info()``
 
 Other functions to get data from giotto object:
-```get_NearestNetwork`` <#getnearestnetwork>`__ ,
-```get_dimReduction`` <#getdimreduction>`__ ,
-```get_expression_values`` <#getexpressionvalues>`__ ,
-```get_feature_info`` <#getfeatureinfo>`__ ,
-```get_giottoImage`` <#getgiottoimage>`__ ,
-```get_multiomics`` <#getmultiomics>`__ ,
-```get_spatialGrid`` <#getspatialgrid>`__ ,
-```get_spatialNetwork`` <#getspatialnetwork>`__ ,
-```get_spatial_enrichment`` <#getspatialenrichment>`__ ,
-```get_spatial_locations`` <#getspatiallocations>`__
+``get_NearestNetwork()``, ``get_dimReduction()``,
+``get_expression_values()``, ``get_feature_info()``,
+``get_giottoImage()``, ``get_spatialGrid()``, ``get_spatialNetwork()``,
+``get_spatial_enrichment()``, ``get_spatial_locations()``

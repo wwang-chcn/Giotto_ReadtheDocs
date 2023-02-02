@@ -1,26 +1,22 @@
-=========================
 aggregateStacksExpression
-=========================
+-------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2854
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L2854
-
-
-
-=============================
-
-aggregateStacksExpression
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 aggregate expression matrices from different z-stacks
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    aggregateStacksExpression(
      gobject,
@@ -33,30 +29,34 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-================= ==========================================
-Argument          Description
-================= ==========================================
-``gobject``       giotto object
-``spat_units``    spatial units to aggregate
-``feat_type``     feature type
-``values``        values to use
-``summarize``     method to summarize expression information
-``new_spat_unit`` new name for aggregated spatial unit
-``verbose``       verbosity
-================= ==========================================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_units``                    | spatial units to aggregate        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``values``                        | values to use                     |
++-----------------------------------+-----------------------------------+
+| ``summarize``                     | method to summarize expression    |
+|                                   | information                       |
++-----------------------------------+-----------------------------------+
+| ``new_spat_unit``                 | new name for aggregated spatial   |
+|                                   | unit                              |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | verbosity                         |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 giotto object
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other aggregate stacks:
-```aggregateStacksLocations`` <#aggregatestackslocations>`__ ,
-```aggregateStacksPolygonOverlaps`` <#aggregatestackspolygonoverlaps>`__
-, ```aggregateStacksPolygons`` <#aggregatestackspolygons>`__ ,
-```aggregateStacks`` <#aggregatestacks>`__
+Other aggregate stacks: ``aggregateStacksLocations()``,
+``aggregateStacksPolygonOverlaps()``, ``aggregateStacksPolygons()``,
+``aggregateStacks()``

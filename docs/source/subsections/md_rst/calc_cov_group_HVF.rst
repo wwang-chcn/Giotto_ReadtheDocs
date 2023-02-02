@@ -1,23 +1,15 @@
-==================
 calc_cov_group_HVF
-==================
-
-:Date: 1/19/23
-
-``calc_cov_group_HVF``
-======================
-
-calc_cov_group_HVF
+------------------
 
 Description
------------
+~~~~~~~~~~~
 
 calc_cov_group_HVF
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    calc_cov_group_HVF(
      feat_in_cells_detected,

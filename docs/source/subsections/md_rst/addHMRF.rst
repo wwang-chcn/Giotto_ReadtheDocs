@@ -1,26 +1,22 @@
-=======
 addHMRF
-=======
+-------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L492
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L492
-
-
-
-===========
-
-addHMRF
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Add selected results from doHMRF to the giotto object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    addHMRF(
      gobject,
@@ -33,28 +29,26 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``HMRFoutput``                | HMRF output from doHMRF()            |
-+-------------------------------+--------------------------------------+
-| ``k``                         | number of domains                    |
-+-------------------------------+--------------------------------------+
-| ``betas_to_add``              | results from different betas that    |
-|                               | you want to add                      |
-+-------------------------------+--------------------------------------+
-| ``hmrf_name``                 | specify a custom name                |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``HMRFoutput``                    | HMRF output from doHMRF()         |
++-----------------------------------+-----------------------------------+
+| ``k``                             | number of domains                 |
++-----------------------------------+-----------------------------------+
+| ``betas_to_add``                  | results from different betas that |
+|                                   | you want to add                   |
++-----------------------------------+-----------------------------------+
+| ``hmrf_name``                     | specify a custom name             |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 giotto object

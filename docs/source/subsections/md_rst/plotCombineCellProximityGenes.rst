@@ -1,68 +1,92 @@
-=============================
 plotCombineCellProximityGenes
-=============================
+-----------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1833
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L1833
-
-
-``plotCombineCellProximityGenes``
-=================================
-
-plotCombineCellProximityGenes
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Create visualization for combined (pairwise) ICG scores
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    plotCombineCellProximityGenes(...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``...``                       | Arguments passed on to               |
-|                               | ```plotC                             |
-|                               | ombineInteractionChangedFeats`` <#pl |
-|                               | otcombineinteractionchangedfeats>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�gobject�)),          |
-|                               | list(“giotto object�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�combIcfObject�)),    |
-|                               | list(“ICFscores, output from         |
-|                               | combineInteractionChangedFeats()�)), |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(                                |
-|                               | list(list(�selected_interactions�)), |
-|                               | list(“interactions to show�)),       |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(                                |
-|                               | list(list(�selected_feat_to_feat�)), |
-|                               | list(“pairwise feature combinations  |
-|                               | to show�)), “:raw-latex:`\n`�, � “,  |
-|                               | list(list(list(�detail_plot�)),      |
-|                               | list(“show detailed info in both     |
-|                               | interacting cell types�)),           |
-|                               | “:raw-latex:`\n`�, � “, list(        |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``plotCombineInteractionChangedFe |
+|                                   | a ts``                            |
+|                                   |                                   |
+|                                   | ``gobject``                       |
+|                                   |    giotto object                  |
+|                                   |                                   |
+|                                   | ``combIcfObject``                 |
+|                                   |    ICFscores, output from         |
+|                                   |    combineInteractionChangedFeat  |
+|                                   |    s()                            |
+|                                   |                                   |
+|                                   | ``selected_interactions``         |
+|                                   |    interactions to show           |
+|                                   |                                   |
+|                                   | ``selected_feat_to_feat``         |
+|                                   |    pairwise feature combinations  |
+|                                   |    to show                        |
+|                                   |                                   |
+|                                   | ``detail_plot``                   |
+|                                   |    show detailed info in both     |
+|                                   |    interacting cell types         |
+|                                   |                                   |
+|                                   | ``simple_plot``                   |
+|                                   |    show a simplified plot         |
+|                                   |                                   |
+|                                   | ``simple_plot_facet``             |
+|                                   |    facet on interactions or feats |
+|                                   |    with simple plot               |
+|                                   |                                   |
+|                                   | ``facet_scales``                  |
+|                                   |    ggplot facet scales paramter   |
+|                                   |                                   |
+|                                   | ``facet_ncol``                    |
+|                                   |    ggplot facet ncol parameter    |
+|                                   |                                   |
+|                                   | ``facet_nrow``                    |
+|                                   |    ggplot facet nrow parameter    |
+|                                   |                                   |
+|                                   | ``colors``                        |
+|                                   |    vector with two colors to use  |
+|                                   |                                   |
+|                                   | ``show_plot``                     |
+|                                   |    show plots                     |
+|                                   |                                   |
+|                                   | ``return_plot``                   |
+|                                   |    return plotting object         |
+|                                   |                                   |
+|                                   | ``save_plot``                     |
+|                                   |    directly save the plot         |
+|                                   |    [boolean]                      |
+|                                   |                                   |
+|                                   | ``save_param``                    |
+|                                   |    list of saving parameters from |
+|                                   |    ``all_plots_save_function``    |
+|                                   |                                   |
+|                                   | ``default_save_name``             |
+|                                   |    default save name for saving,  |
+|                                   |    don't change, change save_name |
+|                                   |    in save_param                  |
++-----------------------------------+-----------------------------------+
 
-::
+See Also
+~~~~~~~~
 
-   list(list("simple_plot")), list("show a simplified plot")), "\n", "    ", list(list(list("simple_plot_facet")), list("facet on interactions or feats with simple plot")), "\n", "    ", list(list(list("facet_scales")), list("ggplot facet scales paramter")), "\n", "    ", list(list(list("facet_ncol")), list("ggplot facet ncol parameter")), "\n", "    ", list(list(list("facet_nrow")), list("ggplot facet nrow parameter")), "\n", "    ", list(list(list("colors")), list("vector with two colors to use")), 
-   "\n", "    ", list(list(list("show_plot")), list("show plots")), "\n", "    ", list(list(list("return_plot")), list("return plotting object")), "\n", "    ", list(list(list("save_plot")), list("directly save the plot [boolean]")), "\n", "    ", list(list(list("save_param")), list("list of saving parameters from ", list(list("all_plots_save_function")))), "\n", "    ", list(list(list("default_save_name")), list("default save name for saving, don't change, change save_name in save_param")), "\n", 
-   "  ")
-
-Seealso
--------
-
-```plotCombineInteractionChangedFeats`` <#plotcombineinteractionchangedfeats>`__
+``plotCombineInteractionChangedFeats``

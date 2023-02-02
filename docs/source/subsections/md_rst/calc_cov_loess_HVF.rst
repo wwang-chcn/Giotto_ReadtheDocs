@@ -1,23 +1,15 @@
-==================
 calc_cov_loess_HVF
-==================
-
-:Date: 1/19/23
-
-``calc_cov_loess_HVF``
-======================
-
-calc_cov_loess_HVF
+------------------
 
 Description
------------
+~~~~~~~~~~~
 
 calc_cov_loess_HVF
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    calc_cov_loess_HVF(
      feat_in_cells_detected,

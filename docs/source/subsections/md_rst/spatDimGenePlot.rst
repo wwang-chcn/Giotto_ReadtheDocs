@@ -1,69 +1,59 @@
-===============
 spatDimGenePlot
-===============
+---------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5655
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5655
-
-
-``spatDimGenePlot``
-===================
-
-spatDimGenePlot
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells according to spatial AND dimension reduction coordinates
 in ggplot mode
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spatDimGenePlot(...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``...``                       | Arguments passed on to               |
-|                               | ```spatDim                           |
-|                               | GenePlot2D`` <#spatdimgeneplot2d>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�gobject�)),          |
-|                               | list(“giotto object�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�genes�)),            |
-|                               | list(“genes to show�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | l                                    |
-|                               | ist(list(list(�default_save_name�)), |
-|                               | list(“default save name for saving,  |
-|                               | don’t change, change save_name in    |
-|                               | save_param�)), “:raw-latex:`\n`�, �  |
-|                               | “)                                   |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``spatDimGenePlot2D``             |
+|                                   |                                   |
+|                                   | ``gobject``                       |
+|                                   |    giotto object                  |
+|                                   |                                   |
+|                                   | ``genes``                         |
+|                                   |    genes to show                  |
+|                                   |                                   |
+|                                   | ``default_save_name``             |
+|                                   |    default save name for saving,  |
+|                                   |    don't change, change save_name |
+|                                   |    in save_param                  |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description of parameters.
 
 Value
------
+~~~~~
 
 ggplot
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```spatDimGenePlot3D`` <#spatdimgeneplot3d>`__
+``spatDimGenePlot3D``
 
 Other spatial and dimension reduction gene expression visualizations:
-```spatDimGenePlot2D`` <#spatdimgeneplot2d>`__ ,
-```spatDimGenePlot3D`` <#spatdimgeneplot3d>`__
+``spatDimGenePlot2D()``, ``spatDimGenePlot3D()``

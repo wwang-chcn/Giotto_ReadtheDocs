@@ -1,23 +1,15 @@
-==========================
-rna_standard_normalization
-==========================
-
-:Date: 1/19/23
-
-``rna_standard_normalization``
-==============================
-
 RNA standard normalization
+--------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 standard function for RNA normalization
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    rna_standard_normalization(
      gobject,

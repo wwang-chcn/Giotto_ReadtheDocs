@@ -1,23 +1,15 @@
-=================
 spat_fish_func_DT
-=================
-
-:Date: 1/19/23
-
-``spat_fish_func_DT``
-=====================
-
-spat_fish_func_DT
+-----------------
 
 Description
------------
+~~~~~~~~~~~
 
 performs fisher exact test with data.table implementation
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spat_fish_func_DT(
      bin_matrix_DTm,

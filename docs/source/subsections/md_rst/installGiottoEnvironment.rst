@@ -1,13 +1,12 @@
 installGiottoEnvironment
 ------------------------
 
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L277
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-```{button-link} https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L277
-:color: primary
-:expand:
-```
-
-Last change: |today|
+Last Updated: |today|
 
 Description
 ~~~~~~~~~~~
@@ -97,14 +96,10 @@ Examples
 
 ::
 
-   ## Not run:
+   ## Not run: 
 
      # this command will install r-miniconda
      # and a giotto environment with all necessary python modules
      installGiottoEnvironment()
 
    ## End(Not run)
-
-
-
-

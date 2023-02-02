@@ -1,23 +1,15 @@
-======================
 make_simulated_network
-======================
-
-:Date: 1/19/23
-
-``make_simulated_network``
-==========================
-
-make_simulated_network
+----------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Simulate random network.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    make_simulated_network(
      gobject,

@@ -1,42 +1,39 @@
-=======
 pDataDT
-=======
+-------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L127
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L127
-
-
-
-===========
-
-pDataDT
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 show cell metadata
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    pDataDT(gobject, spat_unit = NULL, feat_type = NULL, ...)
 
 Arguments
----------
+~~~~~~~~~
 
-============= =========================
-Argument      Description
-============= =========================
-``gobject``   giotto object
-``spat_unit`` spatial unit
-``feat_type`` feature type
-``...``       additional params to pass
-============= =========================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional params to pass         |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table with cell metadata

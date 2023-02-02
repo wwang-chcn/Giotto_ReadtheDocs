@@ -1,23 +1,15 @@
-==================
 spatPlot_2D_plotly
-==================
-
-:Date: 1/19/23
-
-``spatPlot_2D_plotly``
-======================
-
-spatPlot_2D_plotly
+------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells at their 2D spatial locations with plotly
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spatPlot_2D_plotly(
      gobject,
@@ -54,6 +46,6 @@ Usage
    )
 
 Value
------
+~~~~~
 
 plotly object

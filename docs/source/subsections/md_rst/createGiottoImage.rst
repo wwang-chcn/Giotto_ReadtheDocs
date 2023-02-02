@@ -1,27 +1,23 @@
-=================
 createGiottoImage
-=================
+-----------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/images.R#L35
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/images.R#L35
-
-
-
-=====================
-
-createGiottoImage
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Creates a giotto image that can be added to a Giotto object and/or used
 to add an image to the spatial plotting functions
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    createGiottoImage(
      gobject = NULL,
@@ -51,68 +47,67 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``spatial_locs``              | spatial locations (alternative if    |
-|                               | ``gobject = NULL`` )                 |
-+-------------------------------+--------------------------------------+
-| ``spat_loc_name``             | name of spatial locations within     |
-|                               | gobject                              |
-+-------------------------------+--------------------------------------+
-| ``mg_object``                 | magick image object                  |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name for the image                   |
-+-------------------------------+--------------------------------------+
-| ``image_transformations``     | vector of sequential image           |
-|                               | transformations                      |
-+-------------------------------+--------------------------------------+
-| ``negative_y``                | Map image to negative y spatial      |
-|                               | values if TRUE during automatic      |
-|                               | alignment. Meaning that origin is in |
-|                               | upper left instead of lower left.    |
-+-------------------------------+--------------------------------------+
-| ``do_manual_adj``             | flag to use manual adj values        |
-|                               | instead of automatic alignment when  |
-|                               | given a gobject or spatlocs          |
-+-------------------------------+--------------------------------------+
-| ``xmax_adj, x                 | adjustment of the maximum or maximum |
-| min_adj, ymax_adj, ymin_adj`` | x or y-value to align the image      |
-+-------------------------------+--------------------------------------+
-| ``scale_factor``              | scaling of image dimensions relative |
-|                               | to spatial coordinates               |
-+-------------------------------+--------------------------------------+
-| ``x_shift, y_shift``          | shift image along x or y axes        |
-+-------------------------------+--------------------------------------+
-| ``scale_x, scale_y``          | independently scale image in x or y  |
-|                               | direction                            |
-+-------------------------------+--------------------------------------+
-| ``order``                     | perform scaling or adjustments and   |
-|                               | shifts first                         |
-+-------------------------------+--------------------------------------+
-| ``xmin_set, x                 | values to override image minmax      |
-| max_set, ymin_set, ymax_set`` | spatial anchors when doing           |
-|                               | adjustments                          |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``spatial_locs``                  | spatial locations (alternative if |
+|                                   | ``gobject = NULL``)               |
++-----------------------------------+-----------------------------------+
+| ``spat_loc_name``                 | name of spatial locations within  |
+|                                   | gobject                           |
++-----------------------------------+-----------------------------------+
+| ``mg_object``                     | magick image object               |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name for the image                |
++-----------------------------------+-----------------------------------+
+| ``image_transformations``         | vector of sequential image        |
+|                                   | transformations                   |
++-----------------------------------+-----------------------------------+
+| ``negative_y``                    | Map image to negative y spatial   |
+|                                   | values if TRUE during automatic   |
+|                                   | alignment. Meaning that origin is |
+|                                   | in upper left instead of lower    |
+|                                   | left.                             |
++-----------------------------------+-----------------------------------+
+| ``do_manual_adj``                 | flag to use manual adj values     |
+|                                   | instead of automatic alignment    |
+|                                   | when given a gobject or spatlocs  |
++-----------------------------------+-----------------------------------+
+| ``xmax_adj, xmin_adj, ymax_adj, y | adjustment of the maximum or      |
+| m in_adj``                        | maximum x or y-value to align the |
+|                                   | image                             |
++-----------------------------------+-----------------------------------+
+| ``scale_factor``                  | scaling of image dimensions       |
+|                                   | relative to spatial coordinates   |
++-----------------------------------+-----------------------------------+
+| ``x_shift, y_shift``              | shift image along x or y axes     |
++-----------------------------------+-----------------------------------+
+| ``scale_x, scale_y``              | independently scale image in x or |
+|                                   | y direction                       |
++-----------------------------------+-----------------------------------+
+| ``order``                         | perform scaling or adjustments    |
+|                                   | and shifts first                  |
++-----------------------------------+-----------------------------------+
+| ``xmin_set, xmax_set, ymin_set, y | values to override image minmax   |
+| m ax_set``                        | spatial anchors when doing        |
+|                                   | adjustments                       |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
-image_transformations: transformation options from magick library [
-flip_x_axis ] flip x-axis ( ```image_flop`` <#imageflop>`__ ) [
-flip_y_axis ] flip y-axis ( ```image_flip`` <#imageflip>`__ ) Example:
-image_transformations = c(flip_x_axis, flip_y_axis); first flip x-axis
-and then y-axis
+image_transformations: transformation options from magick library
+[**flip_x_axis**] flip x-axis (``image_flop``) [**flip_y_axis**] flip
+y-axis (``image_flip``) Example: image_transformations = c(flip_x_axis,
+flip_y_axis); first flip x-axis and then y-axis
 
 Value
------
+~~~~~
 
 a giottoImage object

@@ -1,23 +1,15 @@
-============================
-create_featureNetwork_object
-============================
-
-:Date: 1/19/23
-
-``create_featureNetwork_object``
-================================
-
 Create feature network object
+-----------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Create feature network object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    create_featureNetwork_object(
      name = "feat_network",
@@ -27,13 +19,15 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-===================== =================================================
-Argument              Description
-===================== =================================================
-``name``              name to assign the created feature network object
-``network_datatable`` network data.table object
-``network_lookup_id`` network lookup id
-``full``              fully connected status
-===================== =================================================
++-----------------------------------+-----------------------------------+
+| ``name``                          | name to assign the created        |
+|                                   | feature network object            |
++-----------------------------------+-----------------------------------+
+| ``network_datatable``             | network data.table object         |
++-----------------------------------+-----------------------------------+
+| ``network_lookup_id``             | network lookup id                 |
++-----------------------------------+-----------------------------------+
+| ``full``                          | fully connected status            |
++-----------------------------------+-----------------------------------+

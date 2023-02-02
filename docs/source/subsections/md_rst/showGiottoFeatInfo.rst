@@ -1,50 +1,39 @@
-==================
 showGiottoFeatInfo
-==================
+------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3011
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3011
-
-
-
-======================
-
-showGiottoFeatInfo
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 show the available giotto spatial feature information
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    showGiottoFeatInfo(gobject)
 
 Arguments
----------
+~~~~~~~~~
 
-=========== =============
-Argument    Description
-=========== =============
-``gobject`` giotto object
-=========== =============
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
 
-Seealso
--------
+See Also
+~~~~~~~~
 
 Other functions to show data in giotto object:
-```showGiottoCellMetadata`` <#showgiottocellmetadata>`__ ,
-```showGiottoDimRed`` <#showgiottodimred>`__ ,
-```showGiottoExpression`` <#showgiottoexpression>`__ ,
-```showGiottoFeatMetadata`` <#showgiottofeatmetadata>`__ ,
-```showGiottoImageNames`` <#showgiottoimagenames>`__ ,
-```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
-```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,
-```showGiottoSpatGrids`` <#showgiottospatgrids>`__ ,
-```showGiottoSpatLocs`` <#showgiottospatlocs>`__ ,
-```showGiottoSpatNetworks`` <#showgiottospatnetworks>`__ ,
-```showGiottoSpatialInfo`` <#showgiottospatialinfo>`__
+``showGiottoCellMetadata()``, ``showGiottoDimRed()``,
+``showGiottoExpression()``, ``showGiottoFeatMetadata()``,
+``showGiottoImageNames()``, ``showGiottoNearestNetworks()``,
+``showGiottoSpatEnrichments()``, ``showGiottoSpatGrids()``,
+``showGiottoSpatLocs()``, ``showGiottoSpatNetworks()``,
+``showGiottoSpatialInfo()``

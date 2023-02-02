@@ -1,26 +1,22 @@
-=======================
 cellProximityEnrichment
-=======================
+-----------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L108
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L108
-
-
-
-===========================
-
-cellProximityEnrichment
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Compute cell-cell interaction enrichment (observed vs expected)
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    cellProximityEnrichment(
      gobject,
@@ -36,33 +32,32 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spatial_network_name``      | name of spatial network to use       |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | name of column to use for clusters   |
-+-------------------------------+--------------------------------------+
-| ``number_of_simulations``     | number of simulations to create      |
-|                               | expected observations                |
-+-------------------------------+--------------------------------------+
-| ``adjust_method``             | method to adjust p.values            |
-+-------------------------------+--------------------------------------+
-| ``set_seed``                  | use of seed                          |
-+-------------------------------+--------------------------------------+
-| ``seed_number``               | seed number to use                   |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spatial_network_name``          | name of spatial network to use    |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | name of column to use for         |
+|                                   | clusters                          |
++-----------------------------------+-----------------------------------+
+| ``number_of_simulations``         | number of simulations to create   |
+|                                   | expected observations             |
++-----------------------------------+-----------------------------------+
+| ``adjust_method``                 | method to adjust p.values         |
++-----------------------------------+-----------------------------------+
+| ``set_seed``                      | use of seed                       |
++-----------------------------------+-----------------------------------+
+| ``seed_number``                   | seed number to use                |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Spatial proximity enrichment or depletion between pairs of cell types is
 calculated by calculating the observed over the expected frequency of
@@ -72,7 +67,7 @@ individual simulation is obtained by reshuffling the cell type labels of
 each node (cell) in the spatial network.
 
 Value
------
+~~~~~
 
 List of cell Proximity scores (CPscores) in data.table format. The first
 data.table (raw_sim_table) shows the raw observations of both the

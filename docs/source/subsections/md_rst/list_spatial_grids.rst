@@ -1,24 +1,16 @@
-==================
 list_spatial_grids
-==================
-
-:Date: 1/19/23
-
-``list_spatial_grids``
-======================
-
-list_spatial_grids
+------------------
 
 Description
------------
+~~~~~~~~~~~
 
 return the available spatial grids that are attached to the Giotto
 object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    list_spatial_grids(
      gobject,
@@ -28,25 +20,23 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell”)           |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna”, “dna”,     |
-|                               | “protein”)                           |
-+-------------------------------+--------------------------------------+
-| ``return_uniques``            | return unique nesting names (ignores |
-|                               | if final object exists/is correct    |
-|                               | class)                               |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g. "cell")        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g. "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``return_uniques``                | return unique nesting names       |
+|                                   | (ignores if final object          |
+|                                   | exists/is correct class)          |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table of names and locations of available spatial grids. col order
 matters

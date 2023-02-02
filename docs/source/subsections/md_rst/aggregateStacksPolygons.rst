@@ -1,50 +1,45 @@
-=======================
 aggregateStacksPolygons
-=======================
+-----------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3029
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3029
-
-
-
-===========================
-
-aggregateStacksPolygons
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 aggregate polygons from different z-stacks
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    aggregateStacksPolygons(gobject, spat_units, new_spat_unit = "aggregate")
 
 Arguments
----------
+~~~~~~~~~
 
-================= ====================================
-Argument          Description
-================= ====================================
-``gobject``       giotto object
-``spat_units``    spatial units to aggregate
-``new_spat_unit`` new name for aggregated spatial unit
-================= ====================================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_units``                    | spatial units to aggregate        |
++-----------------------------------+-----------------------------------+
+| ``new_spat_unit``                 | new name for aggregated spatial   |
+|                                   | unit                              |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 giotto object
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other aggregate stacks:
-```aggregateStacksExpression`` <#aggregatestacksexpression>`__ ,
-```aggregateStacksLocations`` <#aggregatestackslocations>`__ ,
-```aggregateStacksPolygonOverlaps`` <#aggregatestackspolygonoverlaps>`__
-, ```aggregateStacks`` <#aggregatestacks>`__
+Other aggregate stacks: ``aggregateStacksExpression()``,
+``aggregateStacksLocations()``, ``aggregateStacksPolygonOverlaps()``,
+``aggregateStacks()``

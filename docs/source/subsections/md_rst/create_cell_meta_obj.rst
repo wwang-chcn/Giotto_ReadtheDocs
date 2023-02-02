@@ -1,23 +1,15 @@
-====================
-create_cell_meta_obj
-====================
-
-:Date: 1/19/23
-
-``create_cell_meta_obj``
-========================
-
 Create S4 cellMetaObj
+---------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Create an S4 cellMetaObj
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    create_cell_meta_obj(
      metaDT = NULL,
@@ -28,24 +20,25 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``col_desc``                  | (optional) character vector          |
-|                               | describing columns of the metadata   |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit of aggregated           |
-|                               | expression (e.g. ‘cell’)             |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type of aggregated           |
-|                               | expression (e.g. ‘rna’, ‘protein’)   |
-+-------------------------------+--------------------------------------+
-| ``provenance``                | origin data of aggregated expression |
-|                               | information (if applicable)          |
-+-------------------------------+--------------------------------------+
-| ``metadata``                  | metadata info                        |
-+-------------------------------+--------------------------------------+
-| ``misc``                      | misc                                 |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``col_desc``                      | (optional) character vector       |
+|                                   | describing columns of the         |
+|                                   | metadata                          |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit of aggregated        |
+|                                   | expression (e.g. 'cell')          |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type of aggregated        |
+|                                   | expression (e.g. 'rna',           |
+|                                   | 'protein')                        |
++-----------------------------------+-----------------------------------+
+| ``provenance``                    | origin data of aggregated         |
+|                                   | expression information (if        |
+|                                   | applicable)                       |
++-----------------------------------+-----------------------------------+
+| ``metadata``                      | metadata info                     |
++-----------------------------------+-----------------------------------+
+| ``misc``                          | misc                              |
++-----------------------------------+-----------------------------------+

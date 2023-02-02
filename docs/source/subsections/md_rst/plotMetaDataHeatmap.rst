@@ -1,26 +1,22 @@
-===================
 plotMetaDataHeatmap
-===================
+-------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1224
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L1224
-
-
-
-=======================
-
-plotMetaDataHeatmap
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Creates heatmap for genes within aggregated clusters.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    plotMetaDataHeatmap(
      gobject,
@@ -57,98 +53,98 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g.Â â€œcellâ€)           |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g.Â â€œrnaâ€, â€œdnaâ€,     |
-|                               | â€œproteinâ€)                           |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | expression values to use             |
-|                               | (e.g.Â â€œnormalizedâ€, â€œscaledâ€,        |
-|                               | â€œcustomâ€)                            |
-+-------------------------------+--------------------------------------+
-| ``metadata_cols``             | annotation columns found in          |
-|                               | pDataDT(gobject)                     |
-+-------------------------------+--------------------------------------+
-| ``selected_feats``            | subset of features to use            |
-+-------------------------------+--------------------------------------+
-| ``selected_genes``            | deprecated. See ``selected_feats``   |
-|                               | param                                |
-+-------------------------------+--------------------------------------+
-| ``first_meta_col``            | if more than 1 metadata column,      |
-|                               | select the x-axis factor             |
-+-------------------------------+--------------------------------------+
-| ``second_meta_col``           | if more than 1 metadata column,      |
-|                               | select the facetting factor          |
-+-------------------------------+--------------------------------------+
-| ``show_values``               | which values to show on heatmap      |
-|                               | (e.g.Â â€œzscoresâ€, â€œoriginalâ€,         |
-|                               | â€œzscores_rescaledâ€)                  |
-+-------------------------------+--------------------------------------+
-| ``custom_cluster_order``      | custom cluster order (default =      |
-|                               | NULL)                                |
-+-------------------------------+--------------------------------------+
-| ``clus_cor_method``           | correlation method for clusters,     |
-|                               | default to â€œpearsonâ€                 |
-+-------------------------------+--------------------------------------+
-| ``clus_cluster_method``       | hierarchical cluster method for the  |
-|                               | clusters, default to â€œcompleteâ€      |
-+-------------------------------+--------------------------------------+
-| ``custom_feat_order``         | custom feature order (default =      |
-|                               | NULL)                                |
-+-------------------------------+--------------------------------------+
-| ``custom_gene_order``         | deprecated. See                      |
-|                               | ``custom_feat_order`` param          |
-+-------------------------------+--------------------------------------+
-| ``feat_cor_method``           | correlation method for features,     |
-|                               | default to â€œpearsonâ€                 |
-+-------------------------------+--------------------------------------+
-| ``gene_cor_method``           | deprecated. See ``feat_cor_method``  |
-|                               | param                                |
-+-------------------------------+--------------------------------------+
-| ``feat_cluster_method``       | hierarchical cluster method for the  |
-|                               | features, default to â€œcompleteâ€      |
-+-------------------------------+--------------------------------------+
-| ``gene_cluster_method``       | deprecated. See                      |
-|                               | ``feat_cluster_method`` param        |
-+-------------------------------+--------------------------------------+
-| ``gradient_color``            | vector with 3 colors for numeric     |
-|                               | data                                 |
-+-------------------------------+--------------------------------------+
-| ``gradient_midpoint``         | midpoint for color gradient          |
-+-------------------------------+--------------------------------------+
-| ``gradient_limits``           | vector with lower and upper limits   |
-+-------------------------------+--------------------------------------+
-| ``x_text_size``               | size of x-axis text                  |
-+-------------------------------+--------------------------------------+
-| ``x_text_angle``              | angle of x-axis text                 |
-+-------------------------------+--------------------------------------+
-| ``y_text_size``               | size of y-axis text                  |
-+-------------------------------+--------------------------------------+
-| ``strip_text_size``           | size of strip text                   |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plot. TRUE or FALSE             |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return ggplot object. TRUE or FALSE  |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot. TRUE or      |
-|                               | FALSE                                |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters, see       |
-|                               | ```showSaveP                         |
-|                               | arameters`` <#showsaveparameters>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name                    |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g.Â "cell")        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g.Â "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use (e.g.    |
+|                                   | "normalized", "scaled", "custom") |
++-----------------------------------+-----------------------------------+
+| ``metadata_cols``                 | annotation columns found in       |
+|                                   | pDataDT(gobject)                  |
++-----------------------------------+-----------------------------------+
+| ``selected_feats``                | subset of features to use         |
++-----------------------------------+-----------------------------------+
+| ``selected_genes``                | deprecated. See                   |
+|                                   | ``selected_feats`` param          |
++-----------------------------------+-----------------------------------+
+| ``first_meta_col``                | if more than 1 metadata column,   |
+|                                   | select the x-axis factor          |
++-----------------------------------+-----------------------------------+
+| ``second_meta_col``               | if more than 1 metadata column,   |
+|                                   | select the facetting factor       |
++-----------------------------------+-----------------------------------+
+| ``show_values``                   | which values to show on heatmap   |
+|                                   | (e.g.Â "zscores", "original",      |
+|                                   | "zscores_rescaled")               |
++-----------------------------------+-----------------------------------+
+| ``custom_cluster_order``          | custom cluster order (default =   |
+|                                   | NULL)                             |
++-----------------------------------+-----------------------------------+
+| ``clus_cor_method``               | correlation method for clusters,  |
+|                                   | default to "pearson"              |
++-----------------------------------+-----------------------------------+
+| ``clus_cluster_method``           | hierarchical cluster method for   |
+|                                   | the clusters, default to          |
+|                                   | "complete"                        |
++-----------------------------------+-----------------------------------+
+| ``custom_feat_order``             | custom feature order (default =   |
+|                                   | NULL)                             |
++-----------------------------------+-----------------------------------+
+| ``custom_gene_order``             | deprecated. See                   |
+|                                   | ``custom_feat_order`` param       |
++-----------------------------------+-----------------------------------+
+| ``feat_cor_method``               | correlation method for features,  |
+|                                   | default to "pearson"              |
++-----------------------------------+-----------------------------------+
+| ``gene_cor_method``               | deprecated. See                   |
+|                                   | ``feat_cor_method`` param         |
++-----------------------------------+-----------------------------------+
+| ``feat_cluster_method``           | hierarchical cluster method for   |
+|                                   | the features, default to          |
+|                                   | "complete"                        |
++-----------------------------------+-----------------------------------+
+| ``gene_cluster_method``           | deprecated. See                   |
+|                                   | ``feat_cluster_method`` param     |
++-----------------------------------+-----------------------------------+
+| ``gradient_color``                | vector with 3 colors for numeric  |
+|                                   | data                              |
++-----------------------------------+-----------------------------------+
+| ``gradient_midpoint``             | midpoint for color gradient       |
++-----------------------------------+-----------------------------------+
+| ``gradient_limits``               | vector with lower and upper       |
+|                                   | limits                            |
++-----------------------------------+-----------------------------------+
+| ``x_text_size``                   | size of x-axis text               |
++-----------------------------------+-----------------------------------+
+| ``x_text_angle``                  | angle of x-axis text              |
++-----------------------------------+-----------------------------------+
+| ``y_text_size``                   | size of y-axis text               |
++-----------------------------------+-----------------------------------+
+| ``strip_text_size``               | size of strip text                |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | show plot. TRUE or FALSE          |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return ggplot object. TRUE or     |
+|                                   | FALSE                             |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | directly save the plot. TRUE or   |
+|                                   | FALSE                             |
++-----------------------------------+-----------------------------------+
+| ``save_param``                    | list of saving parameters, see    |
+|                                   | ``showSaveParameters``            |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name                 |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Creates heatmap for the average expression of selected genes in the
 different annotation/cluster groups. Calculation of cluster or gene
@@ -157,12 +153,12 @@ default on the z-scores. Other options are the original values or
 z-scores rescaled per gene (-1 to 1).
 
 Value
------
+~~~~~
 
 ggplot or data.table
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```plotMetaDataCellsHeatmap`` <#plotmetadatacellsheatmap>`__ for numeric
-cell annotation instead of gene expression.
+``plotMetaDataCellsHeatmap`` for numeric cell annotation instead of gene
+expression.

@@ -1,23 +1,15 @@
-============
 calc_var_HVF
-============
-
-:Date: 1/19/23
-
-``calc_var_HVF``
-================
-
-calc_var_HVF
+------------
 
 Description
------------
+~~~~~~~~~~~
 
 calc_var_HVF
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    calc_var_HVF(
      scaled_matrix,

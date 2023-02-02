@@ -1,23 +1,15 @@
-==============================
 evaluate_spatial_locations_OLD
-==============================
-
-:Date: 1/19/23
-
-``evaluate_spatial_locations_OLD``
-==================================
-
-evaluate_spatial_locations_OLD
+------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Evaluate spatial location input
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    evaluate_spatial_locations_OLD(
      spatial_locs,
@@ -27,18 +19,21 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-================ ===============================================
-Argument         Description
-================ ===============================================
-``spatial_locs`` spatial locations to evaluate
-``cores``        how many cores to use
-``dummy_n``      number of rows to create dummy spaial locations
-``expr_matrix``  expression matrix to compare the cell IDs with
-================ ===============================================
++-----------------------------------+-----------------------------------+
+| ``spatial_locs``                  | spatial locations to evaluate     |
++-----------------------------------+-----------------------------------+
+| ``cores``                         | how many cores to use             |
++-----------------------------------+-----------------------------------+
+| ``dummy_n``                       | number of rows to create dummy    |
+|                                   | spaial locations                  |
++-----------------------------------+-----------------------------------+
+| ``expr_matrix``                   | expression matrix to compare the  |
+|                                   | cell IDs with                     |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table

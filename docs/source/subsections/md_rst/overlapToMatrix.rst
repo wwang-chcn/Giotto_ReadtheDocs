@@ -1,29 +1,24 @@
-===============
 overlapToMatrix
-===============
+---------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2480
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L2480
-
-
-
-===================
-
-overlapToMatrix
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 create a count matrix based on overlap results from
-```calculateOverlapRaster`` <#calculateoverlapraster>`__ ,
-```calculateOverlapSerial`` <#calculateoverlapserial>`__ , or
-```calculateOverlapParallel`` <#calculateoverlapparallel>`__
+``calculateOverlapRaster``, ``calculateOverlapSerial``, or
+``calculateOverlapParallel``
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    overlapToMatrix(
      gobject,
@@ -35,20 +30,24 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-===================== ====================================
-Argument              Description
-===================== ====================================
-``gobject``           giotto object
-``name``              name for the overlap count matrix
-``poly_info``         polygon information
-``feat_info``         feature information
-``count_info_column`` column with count information
-``return_gobject``    return giotto object (default: TRUE)
-===================== ====================================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name for the overlap count matrix |
++-----------------------------------+-----------------------------------+
+| ``poly_info``                     | polygon information               |
++-----------------------------------+-----------------------------------+
+| ``feat_info``                     | feature information               |
++-----------------------------------+-----------------------------------+
+| ``count_info_column``             | column with count information     |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | return giotto object (default:    |
+|                                   | TRUE)                             |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 giotto object or count matrix

@@ -1,26 +1,22 @@
-===============
 aggregateStacks
-===============
+---------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3124
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3124
-
-
-
-===================
-
-aggregateStacks
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 aggregate expression matrices from different z-stacks
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    aggregateStacks(
      gobject,
@@ -33,45 +29,41 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_units``                | spatial units to aggregate           |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``values``                    | values to use                        |
-+-------------------------------+--------------------------------------+
-| ``summarize_expression``      | method to summarize expression       |
-|                               | information                          |
-+-------------------------------+--------------------------------------+
-| ``summarize_locations``       | method to summarize spatial location |
-|                               | information                          |
-+-------------------------------+--------------------------------------+
-| ``new_spat_unit``             | new name for aggregated spatial unit |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_units``                    | spatial units to aggregate        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``values``                        | values to use                     |
++-----------------------------------+-----------------------------------+
+| ``summarize_expression``          | method to summarize expression    |
+|                                   | information                       |
++-----------------------------------+-----------------------------------+
+| ``summarize_locations``           | method to summarize spatial       |
+|                                   | location information              |
++-----------------------------------+-----------------------------------+
+| ``new_spat_unit``                 | new name for aggregated spatial   |
+|                                   | unit                              |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
-Combines both
-```aggregateStacksExpression`` <#aggregatestacksexpression>`__ and
-```aggregateStacksLocations`` <#aggregatestackslocations>`__
+Combines both ``aggregateStacksExpression`` and
+``aggregateStacksLocations``
 
 Value
------
+~~~~~
 
 giotto object
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-Other aggregate stacks:
-```aggregateStacksExpression`` <#aggregatestacksexpression>`__ ,
-```aggregateStacksLocations`` <#aggregatestackslocations>`__ ,
-```aggregateStacksPolygonOverlaps`` <#aggregatestackspolygonoverlaps>`__
-, ```aggregateStacksPolygons`` <#aggregatestackspolygons>`__
+Other aggregate stacks: ``aggregateStacksExpression()``,
+``aggregateStacksLocations()``, ``aggregateStacksPolygonOverlaps()``,
+``aggregateStacksPolygons()``

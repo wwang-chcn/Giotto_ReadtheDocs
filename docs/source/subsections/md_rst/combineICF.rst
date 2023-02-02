@@ -1,26 +1,22 @@
-==========
 combineICF
-==========
+----------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1942
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction.R#L1942
-
-
-
-==============
-
-combineICF
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Combine ICF scores in a pairwise manner.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    combineICF(
      icfObject,
@@ -38,44 +34,44 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``icfObject``                 | ICF (interaction changed feat) score |
-|                               | object                               |
-+-------------------------------+--------------------------------------+
-| ``selected_ints``             | subset of selected cell-cell         |
-|                               | interactions (optional)              |
-+-------------------------------+--------------------------------------+
-| ``selected_feats``            | subset of selected Feats (optional)  |
-+-------------------------------+--------------------------------------+
-| ``specific_feats_1``          | specific Featset combo (need to      |
-|                               | position match specific_genes_2)     |
-+-------------------------------+--------------------------------------+
-| ``specific_feats_2``          | specific Featset combo (need to      |
-|                               | position match specific_genes_1)     |
-+-------------------------------+--------------------------------------+
-| ``min_cells``                 | minimum number of target cell type   |
-+-------------------------------+--------------------------------------+
-| ``min_int_cells``             | minimum number of interacting cell   |
-|                               | type                                 |
-+-------------------------------+--------------------------------------+
-| ``min_fdr``                   | minimum adjusted p-value             |
-+-------------------------------+--------------------------------------+
-| ``min_spat_diff``             | minimum absolute spatial expression  |
-|                               | difference                           |
-+-------------------------------+--------------------------------------+
-| ``min_log2_fc``               | minimum absolute log2 fold-change    |
-+-------------------------------+--------------------------------------+
-| ``do_parallel``               | run calculations in parallel with    |
-|                               | mclapply                             |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | verbose                              |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``icfObject``                     | ICF (interaction changed feat)    |
+|                                   | score object                      |
++-----------------------------------+-----------------------------------+
+| ``selected_ints``                 | subset of selected cell-cell      |
+|                                   | interactions (optional)           |
++-----------------------------------+-----------------------------------+
+| ``selected_feats``                | subset of selected Feats          |
+|                                   | (optional)                        |
++-----------------------------------+-----------------------------------+
+| ``specific_feats_1``              | specific Featset combo (need to   |
+|                                   | position match specific_genes_2)  |
++-----------------------------------+-----------------------------------+
+| ``specific_feats_2``              | specific Featset combo (need to   |
+|                                   | position match specific_genes_1)  |
++-----------------------------------+-----------------------------------+
+| ``min_cells``                     | minimum number of target cell     |
+|                                   | type                              |
++-----------------------------------+-----------------------------------+
+| ``min_int_cells``                 | minimum number of interacting     |
+|                                   | cell type                         |
++-----------------------------------+-----------------------------------+
+| ``min_fdr``                       | minimum adjusted p-value          |
++-----------------------------------+-----------------------------------+
+| ``min_spat_diff``                 | minimum absolute spatial          |
+|                                   | expression difference             |
++-----------------------------------+-----------------------------------+
+| ``min_log2_fc``                   | minimum absolute log2 fold-change |
++-----------------------------------+-----------------------------------+
+| ``do_parallel``                   | run calculations in parallel with |
+|                                   | mclapply                          |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | verbose                           |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 icfObject that contains the filtered differential feats scores

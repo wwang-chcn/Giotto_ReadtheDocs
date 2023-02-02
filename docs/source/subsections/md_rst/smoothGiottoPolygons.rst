@@ -1,26 +1,22 @@
-====================
 smoothGiottoPolygons
-====================
+--------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L850
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/giotto_structures.R#L850
-
-
-
-========================
-
-smoothGiottoPolygons
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Smooths Giotto polygon object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    smoothGiottoPolygons(
      gpolygon,
@@ -31,30 +27,28 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gpolygon``                  | giotto polygon object                |
-+-------------------------------+--------------------------------------+
-| ``vertices``                  | number of vertices                   |
-+-------------------------------+--------------------------------------+
-| ``k``                         | k                                    |
-+-------------------------------+--------------------------------------+
-| ``set_neg_to_zero``           | set negative values to zero          |
-|                               | (default: TRUE)                      |
-+-------------------------------+--------------------------------------+
-| ``...``                       | additional params to pass to         |
-|                               | ``spline``                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gpolygon``                      | giotto polygon object             |
++-----------------------------------+-----------------------------------+
+| ``vertices``                      | number of vertices                |
++-----------------------------------+-----------------------------------+
+| ``k``                             | k                                 |
++-----------------------------------+-----------------------------------+
+| ``set_neg_to_zero``               | set negative values to zero       |
+|                                   | (default: TRUE)                   |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional params to pass to      |
+|                                   | ``spline``                        |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 Smoothed Giotto polygon object with reduced vertices
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```spline`` <#spline>`__
+``spline``

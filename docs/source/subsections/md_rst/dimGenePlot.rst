@@ -1,68 +1,58 @@
-===========
 dimGenePlot
-===========
+-----------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5353
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_visuals.R#L5353
-
-
-``dimGenePlot``
-===============
-
-dimGenePlot
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize gene expression according to dimension reduction coordinates
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    dimGenePlot(...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``...``                       | Arguments passed on to               |
-|                               | ``                                   |
-|                               | `dimGenePlot2D`` <#dimgeneplot2d>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�gobject�)),          |
-|                               | list(“giotto object�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�genes�)),            |
-|                               | list(“genes to show�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | l                                    |
-|                               | ist(list(list(�default_save_name�)), |
-|                               | list(“default save name for saving,  |
-|                               | don’t change, change save_name in    |
-|                               | save_param�)), “:raw-latex:`\n`�, �  |
-|                               | “)                                   |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``dimGenePlot2D``                 |
+|                                   |                                   |
+|                                   | ``gobject``                       |
+|                                   |    giotto object                  |
+|                                   |                                   |
+|                                   | ``genes``                         |
+|                                   |    genes to show                  |
+|                                   |                                   |
+|                                   | ``default_save_name``             |
+|                                   |    default save name for saving,  |
+|                                   |    don't change, change save_name |
+|                                   |    in save_param                  |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description of parameters.
 
 Value
------
+~~~~~
 
 ggplot
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```dimGenePlot3D`` <#dimgeneplot3d>`__
+``dimGenePlot3D``
 
 Other dimension reduction gene expression visualizations:
-```dimGenePlot2D`` <#dimgeneplot2d>`__ ,
-```dimGenePlot3D`` <#dimgeneplot3d>`__
+``dimGenePlot2D()``, ``dimGenePlot3D()``

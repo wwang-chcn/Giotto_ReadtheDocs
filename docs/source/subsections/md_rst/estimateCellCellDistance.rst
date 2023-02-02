@@ -1,23 +1,15 @@
-========================
 estimateCellCellDistance
-========================
-
-:Date: 1/19/23
-
-``estimateCellCellDistance``
-============================
-
-estimateCellCellDistance
+------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 estimate average distance between neighboring cells
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    estimateCellCellDistance(
      gobject,
@@ -26,12 +18,12 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-======================== ====================
-Argument                 Description
-======================== ====================
-``gobject``              gobject
-``spatial_network_name`` spatial_network_name
-``method``               method
-======================== ====================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | gobject                           |
++-----------------------------------+-----------------------------------+
+| ``spatial_network_name``          | spatial_network_name              |
++-----------------------------------+-----------------------------------+
+| ``method``                        | method                            |
++-----------------------------------+-----------------------------------+

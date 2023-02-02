@@ -1,27 +1,23 @@
-================
 plotCCcomHeatmap
-================
+----------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2142
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L2142
-
-
-
-====================
-
-plotCCcomHeatmap
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Plots heatmap for ligand-receptor communication scores in cell-cell
 interactions
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    plotCCcomHeatmap(
      gobject,
@@ -42,53 +38,48 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``comScores``                 | communinication scores from          |
-|                               | ```exp                               |
-|                               | rCellCellcom`` <#exprcellcellcom>`__ |
-|                               | or                                   |
-|                               | ```spa                               |
-|                               | tCellCellcom`` <#spatcellcellcom>`__ |
-+-------------------------------+--------------------------------------+
-| ``selected_LR``               | selected ligand-receptor             |
-|                               | combinations                         |
-+-------------------------------+--------------------------------------+
-| ``selected_cell_LR``          | selected cell-cell combinations for  |
-|                               | ligand-receptor combinations         |
-+-------------------------------+--------------------------------------+
-| ``show_LR_names``             | show ligand-receptor names           |
-+-------------------------------+--------------------------------------+
-| ``show_cell_LR_names``        | show cell-cell names                 |
-+-------------------------------+--------------------------------------+
-| ``show``                      | values to show on heatmap            |
-+-------------------------------+--------------------------------------+
-| ``cor_method``                | correlation method used for          |
-|                               | clustering                           |
-+-------------------------------+--------------------------------------+
-| ``aggl_method``               | agglomeration method used by hclust  |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plots                           |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return plotting object               |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot [boolean]     |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters from       |
-|                               | ```all_plots_save_f                  |
-|                               | unction`` <#allplotssavefunction>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``comScores``                     | communinication scores from       |
+|                                   | ``exprCellCellcom`` or            |
+|                                   | ``spatCellCellcom``               |
++-----------------------------------+-----------------------------------+
+| ``selected_LR``                   | selected ligand-receptor          |
+|                                   | combinations                      |
++-----------------------------------+-----------------------------------+
+| ``selected_cell_LR``              | selected cell-cell combinations   |
+|                                   | for ligand-receptor combinations  |
++-----------------------------------+-----------------------------------+
+| ``show_LR_names``                 | show ligand-receptor names        |
++-----------------------------------+-----------------------------------+
+| ``show_cell_LR_names``            | show cell-cell names              |
++-----------------------------------+-----------------------------------+
+| ``show``                          | values to show on heatmap         |
++-----------------------------------+-----------------------------------+
+| ``cor_method``                    | correlation method used for       |
+|                                   | clustering                        |
++-----------------------------------+-----------------------------------+
+| ``aggl_method``                   | agglomeration method used by      |
+|                                   | hclust                            |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | show plots                        |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return plotting object            |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | directly save the plot [boolean]  |
++-----------------------------------+-----------------------------------+
+| ``save_param``                    | list of saving parameters from    |
+|                                   | ``all_plots_save_function``       |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 ggplot

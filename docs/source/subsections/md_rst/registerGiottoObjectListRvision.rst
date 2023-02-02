@@ -1,27 +1,23 @@
-===============================
 registerGiottoObjectListRvision
-===============================
+-------------------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L494
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/image_registration.R#L494
-
-
-
-===================================
-
-registerGiottoObjectListRvision
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to spatially align gobject data based on Rvision image
 registration.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    registerGiottoObjectListRvision(
      gobject_list = gobject_list,
@@ -33,29 +29,29 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject_list``              | list of gobjects to register         |
-+-------------------------------+--------------------------------------+
-| ``image_list``                | Filepaths to unregistered images     |
-+-------------------------------+--------------------------------------+
-| ``save_dir``                  | (Optional) If given, save registered |
-|                               | images to this directory             |
-+-------------------------------+--------------------------------------+
-| ``spatloc_unreg``             | spatial locations to use             |
-+-------------------------------+--------------------------------------+
-| ``spatloc_reg_name``          | name for registered spatial          |
-|                               | locations to. Defaults to            |
-|                               | replacement of spat_unreg (optional) |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject_list``                  | list of gobjects to register      |
++-----------------------------------+-----------------------------------+
+| ``image_list``                    | Filepaths to unregistered images  |
++-----------------------------------+-----------------------------------+
+| ``save_dir``                      | (Optional) If given, save         |
+|                                   | registered images to this         |
+|                                   | directory                         |
++-----------------------------------+-----------------------------------+
+| ``spatloc_unreg``                 | spatial locations to use          |
++-----------------------------------+-----------------------------------+
+| ``spatloc_reg_name``              | name for registered spatial       |
+|                                   | locations to. Defaults to         |
+|                                   | replacement of spat_unreg         |
+|                                   | (optional)                        |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 list of registered giotto objects where the registered images and
 spatial locations

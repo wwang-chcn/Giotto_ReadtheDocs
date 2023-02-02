@@ -1,26 +1,22 @@
-====================
 createNearestNetwork
-====================
+--------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/NN_network.R#L56
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/NN_network.R#L56
-
-
-
-========================
-
-createNearestNetwork
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 create a nearest neighbour (NN) network
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    createNearestNetwork(
      gobject,
@@ -43,60 +39,59 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``type``                      | sNN or kNN                           |
-+-------------------------------+--------------------------------------+
-| ``dim_reduction_to_use``      | dimension reduction method to use    |
-+-------------------------------+--------------------------------------+
-| ``dim_reduction_name``        | name of dimension reduction set to   |
-|                               | use                                  |
-+-------------------------------+--------------------------------------+
-| ``dimensions_to_use``         | number of dimensions to use as input |
-+-------------------------------+--------------------------------------+
-| ``feats_to_use``              | if dim_reduction_to_use = NULL,      |
-|                               | which genes to use                   |
-+-------------------------------+--------------------------------------+
-| ``genes_to_use``              | deprecated, use feats_to_use         |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | expression values to use             |
-+-------------------------------+--------------------------------------+
-| ``name``                      | arbitrary name for NN network        |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | boolean: return giotto object        |
-|                               | (default = TRUE)                     |
-+-------------------------------+--------------------------------------+
-| ``k``                         | number of k neighbors to use         |
-+-------------------------------+--------------------------------------+
-| ``minimum_shared``            | minimum shared neighbors             |
-+-------------------------------+--------------------------------------+
-| ``top_shared``                | keep at …                            |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
-| ``...``                       | additional parameters for kNN and    |
-|                               | sNN functions from dbscan            |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``type``                          | sNN or kNN                        |
++-----------------------------------+-----------------------------------+
+| ``dim_reduction_to_use``          | dimension reduction method to use |
++-----------------------------------+-----------------------------------+
+| ``dim_reduction_name``            | name of dimension reduction set   |
+|                                   | to use                            |
++-----------------------------------+-----------------------------------+
+| ``dimensions_to_use``             | number of dimensions to use as    |
+|                                   | input                             |
++-----------------------------------+-----------------------------------+
+| ``feats_to_use``                  | if dim_reduction_to_use = NULL,   |
+|                                   | which genes to use                |
++-----------------------------------+-----------------------------------+
+| ``genes_to_use``                  | deprecated, use feats_to_use      |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use          |
++-----------------------------------+-----------------------------------+
+| ``name``                          | arbitrary name for NN network     |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | boolean: return giotto object     |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
+| ``k``                             | number of k neighbors to use      |
++-----------------------------------+-----------------------------------+
+| ``minimum_shared``                | minimum shared neighbors          |
++-----------------------------------+-----------------------------------+
+| ``top_shared``                    | keep at ...                       |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional parameters for kNN and |
+|                                   | sNN functions from dbscan         |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 This function creates a k-nearest neighbour (kNN) or shared nearest
 neighbour (sNN) network based on the provided dimension reduction space.
 To run it directly on the gene expression matrix set
-dim_reduction_to_use = NULL .
+*dim_reduction_to_use = NULL*.
 
-See also ```kNN`` <#knn>`__ and ```sNN`` <#snn>`__ for more information
-about how the networks are created.
+See also ``kNN`` and ``sNN`` for more information about how the networks
+are created.
 
 Output for kNN:
 
@@ -120,8 +115,9 @@ Output for sNN:
 
 -  shared: number of shared neighbours
 
--  | rank: ranking of pairwise cell neighbours
-   | For sNN networks two additional parameters can be set:
+-  rank: ranking of pairwise cell neighbours
+
+For sNN networks two additional parameters can be set:
 
 -  minimum_shared: minimum number of shared neighbours needed
 
@@ -129,6 +125,6 @@ Output for sNN:
    irrespective of minimum_shared setting
 
 Value
------
+~~~~~
 
 giotto object with updated NN network

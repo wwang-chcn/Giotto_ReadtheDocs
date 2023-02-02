@@ -1,27 +1,23 @@
-================
 crossSectionPlot
-================
+----------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L624
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/cross_section.R#L624
-
-
-
-====================
-
-crossSectionPlot
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Visualize cells in a virtual cross section according to spatial
 coordinates
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    crossSectionPlot(
      gobject,
@@ -35,42 +31,42 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_loc_name``             | name of spatial locations            |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``crossSection_obj``          | cross section object as alternative  |
-|                               | input. default = NULL.               |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name of virtual cross section to use |
-+-------------------------------+--------------------------------------+
-| ``spatial_network_name``      | name of spatial network to use       |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
-| ``...``                       | parameters for spatPlot2D            |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_loc_name``                 | name of spatial locations         |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``crossSection_obj``              | cross section object as           |
+|                                   | alternative input. default =      |
+|                                   | NULL.                             |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name of virtual cross section to  |
+|                                   | use                               |
++-----------------------------------+-----------------------------------+
+| ``spatial_network_name``          | name of spatial network to use    |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | parameters for spatPlot2D         |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description of parameters.
 
 Value
------
+~~~~~
 
 ggplot
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```crossSectionPlot`` <#crosssectionplot>`__
+``crossSectionPlot``

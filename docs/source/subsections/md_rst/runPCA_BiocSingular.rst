@@ -1,23 +1,15 @@
-===================
 runPCA_BiocSingular
-===================
-
-:Date: 1/19/23
-
-``runPCA_BiocSingular``
-=======================
-
-runPCA_BiocSingular
+-------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Performs PCA based on the biocSingular package
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    runPCA_BiocSingular(
      x,
@@ -33,23 +25,31 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-================ ================================================
-Argument         Description
-================ ================================================
-``x``            matrix or object that can be converted to matrix
-``ncp``          number of principal components to calculate
-``center``       center the matrix before pca
-``scale``        scale features
-``rev``          reverse PCA
-``set_seed``     use of seed
-``seed_number``  seed number to use
-``BSPARAM``      method to use
-``BSParameters`` additonal parameters for method
-================ ================================================
++-----------------------------------+-----------------------------------+
+| ``x``                             | matrix or object that can be      |
+|                                   | converted to matrix               |
++-----------------------------------+-----------------------------------+
+| ``ncp``                           | number of principal components to |
+|                                   | calculate                         |
++-----------------------------------+-----------------------------------+
+| ``center``                        | center the matrix before pca      |
++-----------------------------------+-----------------------------------+
+| ``scale``                         | scale features                    |
++-----------------------------------+-----------------------------------+
+| ``rev``                           | reverse PCA                       |
++-----------------------------------+-----------------------------------+
+| ``set_seed``                      | use of seed                       |
++-----------------------------------+-----------------------------------+
+| ``seed_number``                   | seed number to use                |
++-----------------------------------+-----------------------------------+
+| ``BSPARAM``                       | method to use                     |
++-----------------------------------+-----------------------------------+
+| ``BSParameters``                  | additonal parameters for method   |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 list of eigenvalues, loadings and pca coordinates

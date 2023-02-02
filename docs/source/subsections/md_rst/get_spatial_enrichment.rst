@@ -1,26 +1,22 @@
-======================
-get_spatial_enrichment
-======================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2050
-
-
-
-==========================
-
 Get spatial enrichment
+----------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L2050
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to get a spatial enrichment data.table
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    get_spatial_enrichment(
      gobject,
@@ -33,52 +29,41 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g. “cell�)           |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g. “rna�, “dna�,     |
-|                               | “protein�)                           |
-+-------------------------------+--------------------------------------+
-| ``enrichm_name``              | name of spatial enrichment results.  |
-|                               | Default “DWLS�                       |
-+-------------------------------+--------------------------------------+
-| ``output``                    | what format in which to get          |
-|                               | information (e.g. “data.table�)      |
-+-------------------------------+--------------------------------------+
-| ``copy_obj``                  | whether to deep copy/duplicate when  |
-|                               | getting the object (default = TRUE)  |
-|                               | expression and spat_info are not     |
-|                               | expected to exist.                   |
-+-------------------------------+--------------------------------------+
-| ``set_defaults``              | set default spat_unit and feat_type. |
-|                               | Change to FALSE only when            |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g. "cell")        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g. "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``enrichm_name``                  | name of spatial enrichment        |
+|                                   | results. Default "DWLS"           |
++-----------------------------------+-----------------------------------+
+| ``output``                        | what format in which to get       |
+|                                   | information (e.g. "data.table")   |
++-----------------------------------+-----------------------------------+
+| ``set_defaults``                  | set default spat_unit and         |
+|                                   | feat_type. Change to FALSE only   |
+|                                   | when expression and spat_info are |
+|                                   | not expected to exist.            |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 data.table with fractions
 
-Seealso
--------
+See Also
+~~~~~~~~
 
 Other spatial enrichment data accessor functions:
-```set_spatial_enrichment`` <#setspatialenrichment>`__
+``set_spatial_enrichment()``
 
 Other functions to get data from giotto object:
-```get_NearestNetwork`` <#getnearestnetwork>`__ ,
-```get_dimReduction`` <#getdimreduction>`__ ,
-```get_expression_values`` <#getexpressionvalues>`__ ,
-```get_feature_info`` <#getfeatureinfo>`__ ,
-```get_giottoImage`` <#getgiottoimage>`__ ,
-```get_multiomics`` <#getmultiomics>`__ ,
-```get_polygon_info`` <#getpolygoninfo>`__ ,
-```get_spatialGrid`` <#getspatialgrid>`__ ,
-```get_spatialNetwork`` <#getspatialnetwork>`__ ,
-```get_spatial_locations`` <#getspatiallocations>`__
+``get_NearestNetwork()``, ``get_dimReduction()``,
+``get_expression_values()``, ``get_feature_info()``,
+``get_giottoImage()``, ``get_polygon_info()``, ``get_spatialGrid()``,
+``get_spatialNetwork()``, ``get_spatial_locations()``

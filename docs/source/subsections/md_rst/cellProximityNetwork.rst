@@ -1,26 +1,22 @@
-====================
 cellProximityNetwork
-====================
+--------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L227
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_interaction_visuals.R#L227
-
-
-
-========================
-
-cellProximityNetwork
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Create network from cell-cell proximity scores
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    cellProximityNetwork(
      gobject,
@@ -46,72 +42,69 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``CPscore``                   | CPscore, output from                 |
-|                               | cellProximityEnrichment()            |
-+-------------------------------+--------------------------------------+
-| ``remove_self_edges``         | remove enrichment/depletion edges    |
-|                               | with itself                          |
-+-------------------------------+--------------------------------------+
-| ``self_loop_strength``        | size of self-loops                   |
-+-------------------------------+--------------------------------------+
-| ``color_depletion``           | color for depleted cell-cell         |
-|                               | interactions                         |
-+-------------------------------+--------------------------------------+
-| ``color_enrichment``          | color for enriched cell-cell         |
-|                               | interactions                         |
-+-------------------------------+--------------------------------------+
-| ``rescale_edge_weights``      | rescale edge weights (boolean)       |
-+-------------------------------+--------------------------------------+
-| ``                            | numerical vector of length 2 to      |
-| edge_weight_range_depletion`` | rescale depleted edge weights        |
-+-------------------------------+--------------------------------------+
-| ``e                           | numerical vector of length 2 to      |
-| dge_weight_range_enrichment`` | rescale enriched edge weights        |
-+-------------------------------+--------------------------------------+
-| ``layout``                    | layout algorithm to use to draw      |
-|                               | nodes and edges                      |
-+-------------------------------+--------------------------------------+
-| `                             | show only the enriched pairwise      |
-| `only_show_enrichment_edges`` | scores                               |
-+-------------------------------+--------------------------------------+
-| ``edge_width_range``          | range of edge width                  |
-+-------------------------------+--------------------------------------+
-| ``node_size``                 | size of nodes                        |
-+-------------------------------+--------------------------------------+
-| ``node_color_code``           | color code for the nodes (e.g. cell  |
-|                               | labels)                              |
-+-------------------------------+--------------------------------------+
-| ``node_text_size``            | size of node labels                  |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plot                            |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return ggplot object                 |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot [boolean]     |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters from       |
-|                               | ```all_plots_save_f                  |
-|                               | unction`` <#allplotssavefunction>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, don’t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``CPscore``                       | CPscore, output from              |
+|                                   | cellProximityEnrichment()         |
++-----------------------------------+-----------------------------------+
+| ``remove_self_edges``             | remove enrichment/depletion edges |
+|                                   | with itself                       |
++-----------------------------------+-----------------------------------+
+| ``self_loop_strength``            | size of self-loops                |
++-----------------------------------+-----------------------------------+
+| ``color_depletion``               | color for depleted cell-cell      |
+|                                   | interactions                      |
++-----------------------------------+-----------------------------------+
+| ``color_enrichment``              | color for enriched cell-cell      |
+|                                   | interactions                      |
++-----------------------------------+-----------------------------------+
+| ``rescale_edge_weights``          | rescale edge weights (boolean)    |
++-----------------------------------+-----------------------------------+
+| ``edge_weight_range_depletion``   | numerical vector of length 2 to   |
+|                                   | rescale depleted edge weights     |
++-----------------------------------+-----------------------------------+
+| ``edge_weight_range_enrichment``  | numerical vector of length 2 to   |
+|                                   | rescale enriched edge weights     |
++-----------------------------------+-----------------------------------+
+| ``layout``                        | layout algorithm to use to draw   |
+|                                   | nodes and edges                   |
++-----------------------------------+-----------------------------------+
+| ``only_show_enrichment_edges``    | show only the enriched pairwise   |
+|                                   | scores                            |
++-----------------------------------+-----------------------------------+
+| ``edge_width_range``              | range of edge width               |
++-----------------------------------+-----------------------------------+
+| ``node_size``                     | size of nodes                     |
++-----------------------------------+-----------------------------------+
+| ``node_color_code``               | color code for the nodes (e.g.    |
+|                                   | cell labels)                      |
++-----------------------------------+-----------------------------------+
+| ``node_text_size``                | size of node labels               |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | show plot                         |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return ggplot object              |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | directly save the plot [boolean]  |
++-----------------------------------+-----------------------------------+
+| ``save_param``                    | list of saving parameters from    |
+|                                   | ``all_plots_save_function``       |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 This function creates a network that shows the spatial proximity
 enrichment or depletion of cell type pairs.
 
 Value
------
+~~~~~
 
 igraph plot

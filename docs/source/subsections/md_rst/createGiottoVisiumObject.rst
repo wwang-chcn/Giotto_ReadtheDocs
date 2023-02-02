@@ -1,26 +1,22 @@
-========================
-createGiottoVisiumObject
-========================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L2159
-
-
-
-============================
-
 Create a giotto object from 10x visium data
+-------------------------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L2159
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 creates Giotto object directly from a 10X visium folder
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    createGiottoVisiumObject(
      visium_dir = NULL,
@@ -43,62 +39,64 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``visium_dir``                | path to the 10X visium directory     |
-|                               | [required]                           |
-+-------------------------------+--------------------------------------+
-| ``expr_data``                 | raw or filtered data (see details)   |
-+-------------------------------+--------------------------------------+
-| ``gene_column_index``         | which column index to select (see    |
-|                               | details)                             |
-+-------------------------------+--------------------------------------+
-| ``h5_visium_path``            | path to visium 10X .h5 file          |
-+-------------------------------+--------------------------------------+
-| ``h5_gene_ids``               | gene names as symbols (default) or   |
-|                               | ensemble gene ids                    |
-+-------------------------------+--------------------------------------+
-| ``h5_tissue_positions_path``  | path to tissue locations (.csv file) |
-+-------------------------------+--------------------------------------+
-| ``h5_image_png_path``         | path to tissue .png file (optional)  |
-+-------------------------------+--------------------------------------+
-| ``h5_json_scalefactors_path`` | path to .json scalefactors           |
-|                               | (optional)                           |
-+-------------------------------+--------------------------------------+
-| ``png_name``                  | select name of png to use (see       |
-|                               | details)                             |
-+-------------------------------+--------------------------------------+
-| ``do_manual_adj``             | flag to use manual adj values        |
-|                               | instead of automatic image alignment |
-+-------------------------------+--------------------------------------+
-| ``xmax_adj``                  | adjustment of the maximum x-value to |
-|                               | align the image                      |
-+-------------------------------+--------------------------------------+
-| ``xmin_adj``                  | adjustment of the minimum x-value to |
-|                               | align the image                      |
-+-------------------------------+--------------------------------------+
-| ``ymax_adj``                  | adjustment of the maximum y-value to |
-|                               | align the image                      |
-+-------------------------------+--------------------------------------+
-| ``ymin_adj``                  | adjustment of the minimum y-value to |
-|                               | align the image                      |
-+-------------------------------+--------------------------------------+
-| ``instructions``              | list of instructions or output       |
-|                               | result from                          |
-|                               | ```createGiottoInstructi             |
-|                               | ons`` <#creategiottoinstructions>`__ |
-+-------------------------------+--------------------------------------+
-| ``cores``                     | how many cores or threads to use to  |
-|                               | read data if paths are provided      |
-+-------------------------------+--------------------------------------+
-| ``verbose``                   | be verbose                           |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``visium_dir``                    | path to the 10X visium directory  |
+|                                   | [required]                        |
++-----------------------------------+-----------------------------------+
+| ``expr_data``                     | raw or filtered data (see         |
+|                                   | details)                          |
++-----------------------------------+-----------------------------------+
+| ``gene_column_index``             | which column index to select (see |
+|                                   | details)                          |
++-----------------------------------+-----------------------------------+
+| ``h5_visium_path``                | path to visium 10X .h5 file       |
++-----------------------------------+-----------------------------------+
+| ``h5_gene_ids``                   | gene names as symbols (default)   |
+|                                   | or ensemble gene ids              |
++-----------------------------------+-----------------------------------+
+| ``h5_tissue_positions_path``      | path to tissue locations (.csv    |
+|                                   | file)                             |
++-----------------------------------+-----------------------------------+
+| ``h5_image_png_path``             | path to tissue .png file          |
+|                                   | (optional)                        |
++-----------------------------------+-----------------------------------+
+| ``h5_json_scalefactors_path``     | path to .json scalefactors        |
+|                                   | (optional)                        |
++-----------------------------------+-----------------------------------+
+| ``png_name``                      | select name of png to use (see    |
+|                                   | details)                          |
++-----------------------------------+-----------------------------------+
+| ``do_manual_adj``                 | flag to use manual adj values     |
+|                                   | instead of automatic image        |
+|                                   | alignment                         |
++-----------------------------------+-----------------------------------+
+| ``xmax_adj``                      | adjustment of the maximum x-value |
+|                                   | to align the image                |
++-----------------------------------+-----------------------------------+
+| ``xmin_adj``                      | adjustment of the minimum x-value |
+|                                   | to align the image                |
++-----------------------------------+-----------------------------------+
+| ``ymax_adj``                      | adjustment of the maximum y-value |
+|                                   | to align the image                |
++-----------------------------------+-----------------------------------+
+| ``ymin_adj``                      | adjustment of the minimum y-value |
+|                                   | to align the image                |
++-----------------------------------+-----------------------------------+
+| ``instructions``                  | list of instructions or output    |
+|                                   | result from                       |
+|                                   | ``createGiottoInstructions``      |
++-----------------------------------+-----------------------------------+
+| ``cores``                         | how many cores or threads to use  |
+|                                   | to read data if paths are         |
+|                                   | provided                          |
++-----------------------------------+-----------------------------------+
+| ``verbose``                       | be verbose                        |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 If starting from a Visium 10X directory:
 
@@ -128,6 +126,6 @@ If starting from a Visium 10X .h5 file
    /your/path/to/scalefactors_json.json
 
 Value
------
+~~~~~
 
 giotto object

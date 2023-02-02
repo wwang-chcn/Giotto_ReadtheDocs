@@ -1,26 +1,22 @@
-=====================
 showClusterDendrogram
-=====================
+---------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L570
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_visuals.R#L570
-
-
-
-=========================
-
-showClusterDendrogram
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Creates dendrogram for selected clusters.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    showClusterDendrogram(
      gobject,
@@ -42,64 +38,62 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit (e.g.Â â€œcellâ€)           |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type (e.g.Â â€œrnaâ€, â€œdnaâ€,     |
-|                               | â€œproteinâ€)                           |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | expression values to use             |
-|                               | (e.g.Â â€œnormalizedâ€, â€œscaledâ€,        |
-|                               | â€œcustomâ€)                            |
-+-------------------------------+--------------------------------------+
-| ``cluster_column``            | name of column to use for clusters   |
-|                               | (e.g.Â â€œleiden_clusâ€)                 |
-+-------------------------------+--------------------------------------+
-| ``cor``                       | correlation score to calculate       |
-|                               | distance (e.g.Â â€œpearsonâ€,            |
-|                               | â€œspearmanâ€)                          |
-+-------------------------------+--------------------------------------+
-| ``distance``                  | distance method to use for           |
-|                               | hierarchical clustering, default to  |
-|                               | â€œward.Dâ€                             |
-+-------------------------------+--------------------------------------+
-| ``h``                         | height of horizontal lines to plot   |
-+-------------------------------+--------------------------------------+
-| ``h_color``                   | color of horizontal lines            |
-+-------------------------------+--------------------------------------+
-| ``rotate``                    | rotate dendrogram 90 degrees         |
-+-------------------------------+--------------------------------------+
-| ``show_plot``                 | show plot. TRUE or FALSE             |
-+-------------------------------+--------------------------------------+
-| ``return_plot``               | return ggplot object. TRUE or FALSE  |
-+-------------------------------+--------------------------------------+
-| ``save_plot``                 | directly save the plot. TRUE or      |
-|                               | FALSE                                |
-+-------------------------------+--------------------------------------+
-| ``save_param``                | list of saving parameters, see       |
-|                               | ```showSaveP                         |
-|                               | arameters`` <#showsaveparameters>`__ |
-+-------------------------------+--------------------------------------+
-| ``default_save_name``         | default save name for saving, donâ€™t  |
-|                               | change, change save_name in          |
-|                               | save_param                           |
-+-------------------------------+--------------------------------------+
-| ``...``                       | additional parameters passed to      |
-|                               | ```ggdendrogram`` <#ggdendrogram>`__ |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit (e.g.Â "cell")        |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type (e.g.Â "rna", "dna",  |
+|                                   | "protein")                        |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use (e.g.    |
+|                                   | "normalized", "scaled", "custom") |
++-----------------------------------+-----------------------------------+
+| ``cluster_column``                | name of column to use for         |
+|                                   | clusters (e.g.Â "leiden_clus")     |
++-----------------------------------+-----------------------------------+
+| ``cor``                           | correlation score to calculate    |
+|                                   | distance (e.g.Â "pearson",         |
+|                                   | "spearman")                       |
++-----------------------------------+-----------------------------------+
+| ``distance``                      | distance method to use for        |
+|                                   | hierarchical clustering, default  |
+|                                   | to "ward.D"                       |
++-----------------------------------+-----------------------------------+
+| ``h``                             | height of horizontal lines to     |
+|                                   | plot                              |
++-----------------------------------+-----------------------------------+
+| ``h_color``                       | color of horizontal lines         |
++-----------------------------------+-----------------------------------+
+| ``rotate``                        | rotate dendrogram 90 degrees      |
++-----------------------------------+-----------------------------------+
+| ``show_plot``                     | show plot. TRUE or FALSE          |
++-----------------------------------+-----------------------------------+
+| ``return_plot``                   | return ggplot object. TRUE or     |
+|                                   | FALSE                             |
++-----------------------------------+-----------------------------------+
+| ``save_plot``                     | directly save the plot. TRUE or   |
+|                                   | FALSE                             |
++-----------------------------------+-----------------------------------+
+| ``save_param``                    | list of saving parameters, see    |
+|                                   | ``showSaveParameters``            |
++-----------------------------------+-----------------------------------+
+| ``default_save_name``             | default save name for saving,     |
+|                                   | don't change, change save_name in |
+|                                   | save_param                        |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional parameters passed to   |
+|                                   | ``ggdendrogram``                  |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Expression correlation dendrogram for selected clusters.
 
 Value
------
+~~~~~
 
 ggplot

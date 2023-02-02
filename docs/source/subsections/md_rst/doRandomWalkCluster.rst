@@ -1,26 +1,22 @@
-===================
 doRandomWalkCluster
-===================
+-------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L539
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L539
-
-
-
-=======================
-
-doRandomWalkCluster
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Cluster cells using a random walk approach.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    doRandomWalkCluster(
      gobject,
@@ -36,45 +32,44 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name for cluster, default to         |
-|                               | â€œrandom_walk_clusâ€                   |
-+-------------------------------+--------------------------------------+
-| ``nn_network_to_use``         | type of NN network to use (kNN vs    |
-|                               | sNN), default to â€œsNNâ€               |
-+-------------------------------+--------------------------------------+
-| ``network_name``              | name of NN network to use, default   |
-|                               | to â€œsNN.pcaâ€                         |
-+-------------------------------+--------------------------------------+
-| ``walk_steps``                | number of walking steps, default = 4 |
-+-------------------------------+--------------------------------------+
-| ``walk_clusters``             | number of final clusters, default =  |
-|                               | 10                                   |
-+-------------------------------+--------------------------------------+
-| ``walk_weights``              | cluster column defining the walk     |
-|                               | weights                              |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | boolean: return giotto object        |
-|                               | (default = TRUE)                     |
-+-------------------------------+--------------------------------------+
-| ``set_seed``                  | set seed (default = FALSE)           |
-+-------------------------------+--------------------------------------+
-| ``seed_number``               | number for seed                      |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name for cluster, default to      |
+|                                   | "random_walk_clus"                |
++-----------------------------------+-----------------------------------+
+| ``nn_network_to_use``             | type of NN network to use (kNN vs |
+|                                   | sNN), default to "sNN"            |
++-----------------------------------+-----------------------------------+
+| ``network_name``                  | name of NN network to use,        |
+|                                   | default to "sNN.pca"              |
++-----------------------------------+-----------------------------------+
+| ``walk_steps``                    | number of walking steps, default  |
+|                                   | = 4                               |
++-----------------------------------+-----------------------------------+
+| ``walk_clusters``                 | number of final clusters, default |
+|                                   | = 10                              |
++-----------------------------------+-----------------------------------+
+| ``walk_weights``                  | cluster column defining the walk  |
+|                                   | weights                           |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | boolean: return giotto object     |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
+| ``set_seed``                      | set seed (default = FALSE)        |
++-----------------------------------+-----------------------------------+
+| ``seed_number``                   | number for seed                   |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
-See ```cluster_walktrap`` <#clusterwalktrap>`__ function from the igraph
-package in R for more information.
+See ``cluster_walktrap`` function from the igraph package in R for more
+information.
 
 Value
------
+~~~~~
 
 giotto object with new clusters appended to cell metadata

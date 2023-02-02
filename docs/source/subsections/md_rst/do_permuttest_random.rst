@@ -1,25 +1,17 @@
-====================
 do_permuttest_random
-====================
-
-:Date: 1/19/23
-
-``do_permuttest_random``
-========================
-
-do_permuttest_random
+--------------------
 
 Description
------------
+~~~~~~~~~~~
 
 calculate random values
 
 Performs permutation test on subsets of a matrix
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    do_permuttest_random(
      expr_values,
@@ -31,6 +23,7 @@ Usage
      set_seed = TRUE,
      seed_number = 1234
    )
+
    do_permuttest(
      expr_values,
      select_ind,

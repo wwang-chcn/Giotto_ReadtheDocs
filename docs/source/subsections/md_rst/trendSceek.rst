@@ -1,26 +1,22 @@
-==========
 trendSceek
-==========
+----------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2163
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_genes.R#L2163
-
-
-
-==============
-
-trendSceek
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Compute spatial variable genes with trendsceek method
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    trendSceek(
      gobject,
@@ -35,46 +31,43 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | Giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``spat_loc_name``             | name for spatial locations           |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | gene expression values to use        |
-+-------------------------------+--------------------------------------+
-| ``subset_genes``              | subset of genes to run trendsceek on |
-+-------------------------------+--------------------------------------+
-| ``nrand``                     | An integer specifying the number of  |
-|                               | random resamplings of the mark       |
-|                               | distribution as to create the        |
-|                               | null-distribution.                   |
-+-------------------------------+--------------------------------------+
-| ``ncores``                    | An integer specifying the number of  |
-|                               | cores to be used by BiocParallel     |
-+-------------------------------+--------------------------------------+
-| ``list()``                    | Additional parameters to the         |
-|                               | ```tr                                |
-|                               | endsceek_test`` <#trendsceektest>`__ |
-|                               | function                             |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | Giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``spat_loc_name``                 | name for spatial locations        |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | gene expression values to use     |
++-----------------------------------+-----------------------------------+
+| ``subset_genes``                  | subset of genes to run trendsceek |
+|                                   | on                                |
++-----------------------------------+-----------------------------------+
+| ``nrand``                         | An integer specifying the number  |
+|                                   | of random resamplings of the mark |
+|                                   | distribution as to create the     |
+|                                   | null-distribution.                |
++-----------------------------------+-----------------------------------+
+| ``ncores``                        | An integer specifying the number  |
+|                                   | of cores to be used by            |
+|                                   | BiocParallel                      |
++-----------------------------------+-----------------------------------+
+| ``...``                           | Additional parameters to the      |
+|                                   | ``trendsceek_test`` function      |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 This function is a wrapper for the trendsceek_test method implemented in
 the trendsceek package Publication:
-c(â€œ\\Sexpr[results=rd]{tools:::Rd_expr_doi("#1")}â€,
-â€œ10.1038/nmeth.4634â€) list(â€œtools:::Rd_expr_doi("10.1038/nmeth.4634")â€)
+`doi:10.1038/nmeth.4634 <https://doi.org/10.1038/nmeth.4634>`__
 
 Value
------
+~~~~~
 
 data.frame with trendsceek spatial genes results

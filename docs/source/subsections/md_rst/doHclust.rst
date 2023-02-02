@@ -1,26 +1,22 @@
-========
 doHclust
-========
+--------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L927
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/clustering.R#L927
-
-
-
-============
-
-doHclust
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 cluster cells using hierarchical clustering algorithm
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    doHclust(
      gobject,
@@ -44,56 +40,55 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | expression values to use             |
-+-------------------------------+--------------------------------------+
-| ``genes_to_use``              | subset of genes to use               |
-+-------------------------------+--------------------------------------+
-| ``dim_reduction_to_use``      | dimension reduction to use           |
-+-------------------------------+--------------------------------------+
-| ``dim_reduction_name``        | dimensions reduction name            |
-+-------------------------------+--------------------------------------+
-| ``dimensions_to_use``         | dimensions to use                    |
-+-------------------------------+--------------------------------------+
-| ``distance_method``           | distance method                      |
-+-------------------------------+--------------------------------------+
-| ``agglomeration_method``      | agglomeration method for hclust      |
-+-------------------------------+--------------------------------------+
-| ``k``                         | number of final clusters             |
-+-------------------------------+--------------------------------------+
-| ``h``                         | cut hierarchical tree at height = h  |
-+-------------------------------+--------------------------------------+
-| ``name``                      | name for hierarchical clustering     |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | boolean: return giotto object        |
-|                               | (default = TRUE)                     |
-+-------------------------------+--------------------------------------+
-| ``set_seed``                  | set seed                             |
-+-------------------------------+--------------------------------------+
-| ``seed_number``               | number for seed                      |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use          |
++-----------------------------------+-----------------------------------+
+| ``genes_to_use``                  | subset of genes to use            |
++-----------------------------------+-----------------------------------+
+| ``dim_reduction_to_use``          | dimension reduction to use        |
++-----------------------------------+-----------------------------------+
+| ``dim_reduction_name``            | dimensions reduction name         |
++-----------------------------------+-----------------------------------+
+| ``dimensions_to_use``             | dimensions to use                 |
++-----------------------------------+-----------------------------------+
+| ``distance_method``               | distance method                   |
++-----------------------------------+-----------------------------------+
+| ``agglomeration_method``          | agglomeration method for hclust   |
++-----------------------------------+-----------------------------------+
+| ``k``                             | number of final clusters          |
++-----------------------------------+-----------------------------------+
+| ``h``                             | cut hierarchical tree at height = |
+|                                   | h                                 |
++-----------------------------------+-----------------------------------+
+| ``name``                          | name for hierarchical clustering  |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | boolean: return giotto object     |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
+| ``set_seed``                      | set seed                          |
++-----------------------------------+-----------------------------------+
+| ``seed_number``                   | number for seed                   |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 Description on how to use Kmeans clustering method.
 
 Value
------
+~~~~~
 
 giotto object with new clusters appended to cell metadata
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```hclust`` <#hclust>`__
+``hclust``

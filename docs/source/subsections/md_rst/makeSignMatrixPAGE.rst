@@ -1,19 +1,15 @@
-==================
 makeSignMatrixPAGE
-==================
+------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L14
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L14
-
-
-
-======================
-
-makeSignMatrixPAGE
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to convert a list of signature genes (e.g. for cell types or
 processes) into a binary matrix format that can be used with the PAGE
@@ -23,30 +19,28 @@ into a list (sign_list). The names of the cell types or processes that
 are provided in the list need to be given (sign_names).
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    makeSignMatrixPAGE(sign_names, sign_list)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``sign_names``                | vector with names for each provided  |
-|                               | gene signature                       |
-+-------------------------------+--------------------------------------+
-| ``sign_list``                 | list of genes (signature)            |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``sign_names``                    | vector with names for each        |
+|                                   | provided gene signature           |
++-----------------------------------+-----------------------------------+
+| ``sign_list``                     | list of genes (signature)         |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 matrix
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```PAGEEnrich`` <#pageenrich>`__
+``PAGEEnrich``

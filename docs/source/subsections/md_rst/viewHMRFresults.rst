@@ -1,26 +1,22 @@
-===============
 viewHMRFresults
-===============
+---------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L344
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/python_hmrf.R#L344
-
-
-
-===================
-
-viewHMRFresults
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 View results from doHMRF.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    viewHMRFresults(
      gobject,
@@ -32,31 +28,30 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``HMRFoutput``                | HMRF output from doHMRF              |
-+-------------------------------+--------------------------------------+
-| ``k``                         | number of HMRF domains               |
-+-------------------------------+--------------------------------------+
-| ``betas_to_view``             | results from different betas that    |
-|                               | you want to view                     |
-+-------------------------------+--------------------------------------+
-| ``third_dim``                 | 3D data (boolean)                    |
-+-------------------------------+--------------------------------------+
-| ``list()``                    | additional paramters (see details)   |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``HMRFoutput``                    | HMRF output from doHMRF           |
++-----------------------------------+-----------------------------------+
+| ``k``                             | number of HMRF domains            |
++-----------------------------------+-----------------------------------+
+| ``betas_to_view``                 | results from different betas that |
+|                                   | you want to view                  |
++-----------------------------------+-----------------------------------+
+| ``third_dim``                     | 3D data (boolean)                 |
++-----------------------------------+-----------------------------------+
+| ``...``                           | additional paramters (see         |
+|                                   | details)                          |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 spatial plots with HMRF domains
 
-Seealso
--------
+See Also
+~~~~~~~~
 
-```spatPlot2D`` <#spatplot2d>`__ and ```spatPlot3D`` <#spatplot3d>`__
+``spatPlot2D`` and ``spatPlot3D``

@@ -1,26 +1,22 @@
-=================
-addFeatStatistics
-=================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3573
-
-
-
-=====================
-
 Add feature statistics
+----------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/auxiliary_giotto.R#L3573
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Adds feature statistics to the giotto object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    addFeatStatistics(
      gobject,
@@ -32,28 +28,26 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``gobject``                   | giotto object                        |
-+-------------------------------+--------------------------------------+
-| ``feat_type``                 | feature type                         |
-+-------------------------------+--------------------------------------+
-| ``spat_unit``                 | spatial unit                         |
-+-------------------------------+--------------------------------------+
-| ``expression_values``         | expression values to use             |
-+-------------------------------+--------------------------------------+
-| ``detection_threshold``       | detection threshold to consider a    |
-|                               | gene detected                        |
-+-------------------------------+--------------------------------------+
-| ``return_gobject``            | boolean: return giotto object        |
-|                               | (default = TRUE)                     |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``feat_type``                     | feature type                      |
++-----------------------------------+-----------------------------------+
+| ``spat_unit``                     | spatial unit                      |
++-----------------------------------+-----------------------------------+
+| ``expression_values``             | expression values to use          |
++-----------------------------------+-----------------------------------+
+| ``detection_threshold``           | detection threshold to consider a |
+|                                   | gene detected                     |
++-----------------------------------+-----------------------------------+
+| ``return_gobject``                | boolean: return giotto object     |
+|                                   | (default = TRUE)                  |
++-----------------------------------+-----------------------------------+
 
 Details
--------
+~~~~~~~
 
 This function will add the following statistics to feature metadata:
 
@@ -70,6 +64,6 @@ This function will add the following statistics to feature metadata:
    levels of the gene
 
 Value
------
+~~~~~
 
 giotto object if return_gobject = TRUE

@@ -1,23 +1,15 @@
-========================
 spatInSituPlotHex_single
-========================
-
-:Date: 1/19/23
-
-``spatInSituPlotHex_single``
-============================
-
-spatInSituPlotHex_single
+------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 function to plot hexbins at the spatial in situ level
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    spatInSituPlotHex_single(
      gobject,
@@ -43,11 +35,11 @@ Usage
    )
 
 Details
--------
+~~~~~~~
 
 This function can plot one feature for one modality.
 
 Value
------
+~~~~~
 
 ggplot

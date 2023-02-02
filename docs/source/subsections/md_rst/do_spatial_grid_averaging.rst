@@ -1,23 +1,15 @@
-=========================
 do_spatial_grid_averaging
-=========================
-
-:Date: 1/19/23
-
-``do_spatial_grid_averaging``
-=============================
-
-do_spatial_grid_averaging
+-------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 smooth gene expression over a defined spatial grid
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    do_spatial_grid_averaging(
      expression_matrix,
@@ -28,6 +20,6 @@ Usage
    )
 
 Value
------
+~~~~~
 
 matrix with smoothened gene expression values based on spatial grid

@@ -1,16 +1,8 @@
-==============
-featData-class
-==============
-
-:Date: 1/19/23
-
-``featData-class``
-==================
-
 Basic class for classes with feature information
+------------------------------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Features in Giotto are a blanket term for any features that are
 detected, covering modalities such as, but not limited to rna, protein,

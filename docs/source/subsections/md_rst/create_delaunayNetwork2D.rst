@@ -1,23 +1,15 @@
-========================
 create_delaunayNetwork2D
-========================
-
-:Date: 1/19/23
-
-``create_delaunayNetwork2D``
-============================
-
-create_delaunayNetwork2D
+------------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Create a spatial 2D Delaunay network.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    create_delaunayNetwork2D(
      gobject,

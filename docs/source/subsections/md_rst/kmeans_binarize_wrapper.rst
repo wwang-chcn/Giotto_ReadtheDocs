@@ -1,23 +1,15 @@
-=======================
 kmeans_binarize_wrapper
-=======================
-
-:Date: 1/19/23
-
-``kmeans_binarize_wrapper``
-===========================
-
-kmeans_binarize_wrapper
+-----------------------
 
 Description
------------
+~~~~~~~~~~~
 
 wrapper for different binarization functions
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    kmeans_binarize_wrapper(
      expr_values,

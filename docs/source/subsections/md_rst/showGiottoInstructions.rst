@@ -1,39 +1,33 @@
-======================
-showGiottoInstructions
-======================
-
-:Date: 1/19/23
-
-https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L307
-
-
-
-==========================
-
 Show giotto instructions associated with giotto object
+------------------------------------------------------
+
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/giotto.R#L307
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
+
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to display all instructions from giotto object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    showGiottoInstructions(gobject)
 
 Arguments
----------
+~~~~~~~~~
 
-=========== =============
-Argument    Description
-=========== =============
-``gobject`` giotto object
-=========== =============
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 named vector with giotto instructions

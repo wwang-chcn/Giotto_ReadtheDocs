@@ -1,69 +1,89 @@
-==========
 rankEnrich
-==========
+----------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1101
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/spatial_enrichment.R#L1101
-
-
-``rankEnrich``
-==============
-
-rankEnrich
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Function to calculate gene signature enrichment scores per spatial
 position using a rank based approach.
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    rankEnrich(...)
 
 Arguments
----------
+~~~~~~~~~
 
-+-------------------------------+--------------------------------------+
-| Argument                      | Description                          |
-+===============================+======================================+
-| ``...``                       | Arguments passed on to               |
-|                               | ``                                   |
-|                               | `runRankEnrich`` <#runrankenrich>`__ |
-|                               | list(“:raw-latex:`\n`�, � “,         |
-|                               | list(list(list(�gobject�)),          |
-|                               | list(“Giotto object�)),              |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�spat_unit�)),        |
-|                               | list(“spatial unit�)),               |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�feat_type�)),        |
-|                               | list(“feature type�)),               |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | list(list(list(�sign_matrix�)),      |
-|                               | list(“Matrix of signature genes for  |
-|                               | each cell type / process�)),         |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | l                                    |
-|                               | ist(list(list(�expression_values�)), |
-|                               | list(“expression values to use�)),   |
-|                               | “:raw-latex:`\n`�, � “,              |
-|                               | l                                    |
-|                               | ist(list(list(�reverse_log_scale�)), |
-|                               | list(“reverse expression values from |
-|                               | log scale�)),                        |
-+-------------------------------+--------------------------------------+
++-----------------------------------+-----------------------------------+
+| ``...``                           | Arguments passed on to            |
+|                                   | ``runRankEnrich``                 |
+|                                   |                                   |
+|                                   | ``gobject``                       |
+|                                   |    Giotto object                  |
+|                                   |                                   |
+|                                   | ``spat_unit``                     |
+|                                   |    spatial unit                   |
+|                                   |                                   |
+|                                   | ``feat_type``                     |
+|                                   |    feature type                   |
+|                                   |                                   |
+|                                   | ``sign_matrix``                   |
+|                                   |    Matrix of signature genes for  |
+|                                   |    each cell type / process       |
+|                                   |                                   |
+|                                   | ``expression_values``             |
+|                                   |    expression values to use       |
+|                                   |                                   |
+|                                   | ``reverse_log_scale``             |
+|                                   |    reverse expression values from |
+|                                   |    log scale                      |
+|                                   |                                   |
+|                                   | ``logbase``                       |
+|                                   |    log base to use if             |
+|                                   |    reverse_log_scale = TRUE       |
+|                                   |                                   |
+|                                   | ``output_enrichment``             |
+|                                   |    how to return enrichment       |
+|                                   |    output                         |
+|                                   |                                   |
+|                                   | ``ties_method``                   |
+|                                   |    how to handle rank ties        |
+|                                   |                                   |
+|                                   | ``p_value``                       |
+|                                   |    calculate p-values (boolean,   |
+|                                   |    default = FALSE)               |
+|                                   |                                   |
+|                                   | ``n_times``                       |
+|                                   |    number of permutations to      |
+|                                   |    calculate for p_value          |
+|                                   |                                   |
+|                                   | ``rbp_p``                         |
+|                                   |    fractional binarization        |
+|                                   |    threshold (default = 0.99)     |
+|                                   |                                   |
+|                                   | ``num_agg``                       |
+|                                   |    number of top genes to         |
+|                                   |    aggregate (default = 100)      |
+|                                   |                                   |
+|                                   | ``name``                          |
+|                                   |    to give to spatial enrichment  |
+|                                   |    results, default = rank        |
+|                                   |                                   |
+|                                   | ``return_gobject``                |
+|                                   |    return giotto object           |
++-----------------------------------+-----------------------------------+
 
-::
+See Also
+~~~~~~~~
 
-   "\n", "    ", list(list(list("logbase")), list("log base to use if reverse_log_scale = TRUE")), "\n", "    ", list(list(list("output_enrichment")), list("how to return enrichment output")), "\n", "    ", list(list(list("ties_method")), list("how to handle rank ties")), "\n", "    ", list(list(list("p_value")), list("calculate p-values (boolean, default = FALSE)")), "\n", "    ", list(list(list("n_times")), list("number of permutations to calculate for p_value")), "\n", "    ", list(list(list(
-       "rbp_p")), list("fractional binarization threshold (default = 0.99)")), "\n", "    ", list(list(list("num_agg")), list("number of top genes to aggregate (default = 100)")), "\n", "    ", list(list(list("name")), list("to give to spatial enrichment results, default = rank")), "\n", "    ", list(list(list("return_gobject")), list("return giotto object")), "\n", "  ")
-
-Seealso
--------
-
-```runRankEnrich`` <#runrankenrich>`__
+``runRankEnrich``

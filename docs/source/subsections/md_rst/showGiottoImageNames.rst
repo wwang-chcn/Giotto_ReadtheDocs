@@ -1,56 +1,45 @@
-====================
 showGiottoImageNames
-====================
+--------------------
 
-:Date: 1/19/23
+.. link-button:: https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3215
+		:type: url
+		:text: View Source Code
+		:classes: btn-outline-primary btn-block
 
-https://github.com/drieslab/Giotto/tree/suite/R/accessors.R#L3215
-
-
-
-========================
-
-showGiottoImageNames
+Last Updated: |today|
 
 Description
------------
+~~~~~~~~~~~
 
 Prints the available giotto images that are attached to the Giotto
 object
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    showGiottoImageNames(gobject)
 
 Arguments
----------
+~~~~~~~~~
 
-=========== ===============
-Argument    Description
-=========== ===============
-``gobject`` a giotto object
-=========== ===============
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | a giotto object                   |
++-----------------------------------+-----------------------------------+
 
 Value
------
+~~~~~
 
 prints names of available giotto image objects
 
-Seealso
--------
+See Also
+~~~~~~~~
 
 Other functions to show data in giotto object:
-```showGiottoCellMetadata`` <#showgiottocellmetadata>`__ ,
-```showGiottoDimRed`` <#showgiottodimred>`__ ,
-```showGiottoExpression`` <#showgiottoexpression>`__ ,
-```showGiottoFeatInfo`` <#showgiottofeatinfo>`__ ,
-```showGiottoFeatMetadata`` <#showgiottofeatmetadata>`__ ,
-```showGiottoNearestNetworks`` <#showgiottonearestnetworks>`__ ,
-```showGiottoSpatEnrichments`` <#showgiottospatenrichments>`__ ,
-```showGiottoSpatGrids`` <#showgiottospatgrids>`__ ,
-```showGiottoSpatLocs`` <#showgiottospatlocs>`__ ,
-```showGiottoSpatNetworks`` <#showgiottospatnetworks>`__ ,
-```showGiottoSpatialInfo`` <#showgiottospatialinfo>`__
+``showGiottoCellMetadata()``, ``showGiottoDimRed()``,
+``showGiottoExpression()``, ``showGiottoFeatInfo()``,
+``showGiottoFeatMetadata()``, ``showGiottoNearestNetworks()``,
+``showGiottoSpatEnrichments()``, ``showGiottoSpatGrids()``,
+``showGiottoSpatLocs()``, ``showGiottoSpatNetworks()``,
+``showGiottoSpatialInfo()``

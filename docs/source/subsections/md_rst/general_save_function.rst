@@ -1,23 +1,15 @@
-=====================
 general_save_function
-=====================
-
-:Date: 1/19/23
-
-``general_save_function``
-=========================
-
-general_save_function
+---------------------
 
 Description
------------
+~~~~~~~~~~~
 
 Function to automatically save plots to directory of interest
 
 Usage
------
+~~~~~
 
-.. code:: r
+::
 
    general_save_function(
      gobject,
@@ -38,22 +30,32 @@ Usage
    )
 
 Arguments
----------
+~~~~~~~~~
 
-===================== ===============================
-Argument              Description
-===================== ===============================
-``gobject``           giotto object
-``plot_object``       non-ggplot object to plot
-``save_dir``          directory to save to
-``save_folder``       folder in save_dir to save to
-``save_name``         name of plot
-``save_format``       format (e.g. png, tiff, pdf, …)
-``show_saved_plot``   load & display the saved plot
-``base_width``        width
-``base_height``       height
-``base_aspect_ratio`` aspect ratio
-``units``             units
-``dpi``               Plot resolution
-``plot_count``        count number for plot
-===================== ===============================
++-----------------------------------+-----------------------------------+
+| ``gobject``                       | giotto object                     |
++-----------------------------------+-----------------------------------+
+| ``plot_object``                   | non-ggplot object to plot         |
++-----------------------------------+-----------------------------------+
+| ``save_dir``                      | directory to save to              |
++-----------------------------------+-----------------------------------+
+| ``save_folder``                   | folder in save_dir to save to     |
++-----------------------------------+-----------------------------------+
+| ``save_name``                     | name of plot                      |
++-----------------------------------+-----------------------------------+
+| ``save_format``                   | format (e.g. png, tiff, pdf, ...) |
++-----------------------------------+-----------------------------------+
+| ``show_saved_plot``               | load & display the saved plot     |
++-----------------------------------+-----------------------------------+
+| ``base_width``                    | width                             |
++-----------------------------------+-----------------------------------+
+| ``base_height``                   | height                            |
++-----------------------------------+-----------------------------------+
+| ``base_aspect_ratio``             | aspect ratio                      |
++-----------------------------------+-----------------------------------+
+| ``units``                         | units                             |
++-----------------------------------+-----------------------------------+
+| ``dpi``                           | Plot resolution                   |
++-----------------------------------+-----------------------------------+
+| ``plot_count``                    | count number for plot             |
++-----------------------------------+-----------------------------------+
