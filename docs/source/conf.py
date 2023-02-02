@@ -42,7 +42,7 @@ extensions = [
 #'sphinx_rtd_theme', #added to fix bullet-point issue
 'sphinx.ext.autosectionlabel', # may cause duplicate label warnings
 'sphinx.ext.autodoc',
-'sphinx-panels',
+'sphinx_panels',
 'sphinx_design',
 'sphinx_copybutton',
 'sphinx_toolbox', 
