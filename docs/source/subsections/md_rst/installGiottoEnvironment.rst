@@ -5,7 +5,7 @@ installGiottoEnvironment
 
 
 ```{button-link} https://github.com/drieslab/Giotto/tree/suite/R/python_environment.R#L277
-:color: secondary
+:color: primary
 :expand:
 ```
 
