@@ -32,6 +32,7 @@ Added
 -  Add spatial_interaction_spot.R with functions adapted from master
    branch for working with the Giotto suite object.
 -  New exported accessors for slots (experimental)
+-  New ``multiomics`` slot in ``giotto``
 -  Add ``coord_fix_ratio`` param to ``spatFeatPlot2D()`` and
    ``spatFeatPlot2D_single()``
 -  Add ``order`` parameter to ``dimFeatPlot2D`` and
