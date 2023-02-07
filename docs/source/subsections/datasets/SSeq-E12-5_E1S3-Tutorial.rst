@@ -2,7 +2,7 @@
 Stereo-Seq MOSTA E12.5_E1S3 analysis
 ====================================
 
-:Date: 2022-11-15
+Last Updated: |today|
 
 Dataset explanation
 ===================
