@@ -7,8 +7,8 @@ Saving Giotto Objects
 1 Saving Spatial Data in Plots
 ==============================
 
-*Please see the* `Configuration <./configuration.html>`__ *and* `Giotto
-Object <./getting_started_gobject.html>`__ *vignettes before walking
+*Please see the* `Configuration <../getting_started/configuration.html>`__ *and* `Giotto
+Object <../getting_started/getting_started_gobject.html>`__ *vignettes before walking
 through this tutorial.*
 
 R/Rstudio and Giotto provide different ways to save spatial data. Here,
@@ -44,7 +44,7 @@ here. Note that for plotting functions, all parameters available to the
 
 Since the focus of this vignette is saving methods, the **giottoObject**
 will not be created with **giottoInstructions**. See `Giotto
-Object <./getting_started_gobject.html>`__ for further intuition on
+Object <../getting_started/getting_started_gobject.html>`__ for further intuition on
 working with a **giottoObject** that has been provided instructions.
 
 .. container:: cell
@@ -126,7 +126,7 @@ The default save folder is the current working directory. This will be
 the case if instructions are not provided, or if a *save_dir* is not
 specified within **giottoInstructions**. See the
 `createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__ documentation 
-and `Giotto Object <./getting_started_gobject.html>`__ for default
+and `Giotto Object <../getting_started/getting_started_gobject.html>`__ for default
 arguments and more details.
 
 .. container:: cell
@@ -149,7 +149,7 @@ Saved in a subdirectory of the current working directory as a .png file
 with a dpi of 200, height of 9 inches, and width of 9 inches. - Saved
 with the file name “my_name”
 
-| See `Giotto Object <./getting_started_gobject.html>`__ for more
+| See `Giotto Object <../getting_started/getting_started_gobject.html>`__ for more
   details.
 | Run the command **showSaveParameters()** to see all available
   parameters.
@@ -178,7 +178,7 @@ with the file name “my_name”
 3.4 Just view the plot
 -------------------------
 
-| See `Giotto Object <./getting_started_gobject.html>`__ for more
+| See `Giotto Object <../getting_started/getting_started_gobject.html>`__ for more
   details.
 | Set both *save_plot* and *return_plot* to FALSE.
 
@@ -194,7 +194,7 @@ with the file name “my_name”
 3.5 Just save the plot (FASTEST for large datasets!)
 -------------------------------------------------------
 
-| See `Giotto Object <./getting_started_gobject.html>`__ for more
+| See `Giotto Object <../getting_started/getting_started_gobject.html>`__ for more
   details.
 | Set show_plot and return_plot to FALSE, set save_plot to TRUE.
 
