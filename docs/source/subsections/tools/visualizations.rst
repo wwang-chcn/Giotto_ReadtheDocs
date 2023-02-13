@@ -6,7 +6,7 @@ Visualizations
 
 This tutorial walks through the visualization capabilities of Giotto.
 The clustering and dimension reduction methods focused on within the
-previous tutorial, `dimension reduction <./dimension_reduction.html>`__,
+`dimension reduction tutorial <../analyses/dimension_reduction.html>`__,
 will be revisited and utilized to create heatmaps, violin plots, and
 visualizations that are unique to Giotto: spatial maps and networks.
 
