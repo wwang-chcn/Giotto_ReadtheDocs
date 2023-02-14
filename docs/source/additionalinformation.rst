@@ -1,3 +1,26 @@
+Giotto Suite 3.2.1 (2023-02-13)
+===============================
+
+Added
+-----
+
+-  New ``check_py_for_scanpy()`` function, shifting code around in
+   ``anndataToGiotto()``.
+
+Changes
+-------
+
+-  Update ``installGiottoEnvironment()`` and downstream internal
+   functions to allow custom python installation with a new argument,
+   ``mini_install_path``.
+-  Update ``checkGiottoEnvironment()`` to account for custom python
+   installations with a new argument, ``mini_install_path``.
+-  Update ``removeGiottoEnvironment()`` to account for custom python
+   installations with a new argument, ``mini_path``.
+-  Fix bug in ``doLouvainCluster()`` (sub)functions and made them
+   compatible with new Giotto Suite framework.
+   
+
 Giotto Suite 3.2.0 (2023-02-02)
 ===============================
 
