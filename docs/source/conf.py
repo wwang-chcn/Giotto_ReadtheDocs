@@ -61,10 +61,9 @@ extensions = [
 #'sphinxcontrib.spelling' #spell checker fatal error
 ]
 
-notfound_urls_prefix = None
 notfound_context = {
     'title': 'Page not found',
-    'body': '<h1>Page not found</h1>\n\n This page is not supported on this branch/version of Giotto.',
+    'body': '<h1>Page not found</h1>\n\n This page is not supported on this version of Giotto.',
 }
 
 #Added for m2r2 extension
