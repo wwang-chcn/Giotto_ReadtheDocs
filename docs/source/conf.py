@@ -61,8 +61,7 @@ extensions = [
 #'sphinxcontrib.spelling' #spell checker fatal error
 ]
 
-notfound_default_version = "latest"
-notfound_template = "index.html"
+notfound_urls_prefix = "/latest/"
 
 #Added for m2r2 extension
 source_suffix = ['.rst', '.md']
