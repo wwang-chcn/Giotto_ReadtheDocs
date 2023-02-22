@@ -50,7 +50,8 @@ extensions = [
 "sphinx.ext.autosummary",
 "sphinx.ext.todo",
 "sphinx.ext.viewcode",
-'sphinx_panels'
+"sphinx_panels",
+"notfound.extension"
 #'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',
