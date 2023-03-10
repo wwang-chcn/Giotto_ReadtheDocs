@@ -35,6 +35,7 @@ Mouse Visium Kidney
 .. container:: cell
 
    .. code:: r
+
       library(GiottoData)
 
       # 1. set working directory
