@@ -18,8 +18,8 @@ Giotto Suite
    :caption: Tutorials
 
    Datasets <datasets.rst> 
-   Tools <index.rst>
-   Analyses <index.rst>
+   Tools <construction.rst>
+   Analyses <construction.rst>
 
 .. toctree::
    :maxdepth: 1
