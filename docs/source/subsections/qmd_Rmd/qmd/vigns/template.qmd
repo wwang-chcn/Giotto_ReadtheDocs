@@ -28,14 +28,14 @@ if(!genv_exists){
 }
 ```
 
-## 1. Create a Giotto object
+## Create a Giotto object
 ```{r eval=FALSE}
  
 # convert anndata file to giotto object
 stereo_go <- Giotto::anndataToGiotto(anndata_file)
 ```
 
-## 2. Next section
+## Next section
 ```{r eval=FALSE}
  
 ```
