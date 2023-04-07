@@ -32,9 +32,7 @@ if(!genv_exists){
 
 ## Create a Giotto object
 ```{r eval=FALSE}
- 
-# convert anndata file to giotto object
-stereo_go <- Giotto::anndataToGiotto(anndata_file)
+visium = loadGiottoMini(dataset = 'visium')
 ```
 
 ## Next section
