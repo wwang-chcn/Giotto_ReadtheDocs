@@ -9,30 +9,30 @@ number-sections: true
 Write an explanation of your dataset or tutorial. 
 
 ## Start Giotto
-```{r eval = FALSE}
+```{r eval=TRUE, message=FALSE}
 # Ensure Giotto Suite is installed
 if(!"Giotto" %in% installed.packages()) {
   devtools::install_github("drieslab/Giotto@Suite")
 }
 library(Giotto)
+
 # Ensure Giotto Data is installed
 if(!"GiottoData" %in% installed.packages()) {
   devtools::install_github("drieslab/GiottoData")
 }
 library(GiottoData)
+
 # Ensure the Python environment for Giotto has been installed
 genv_exists = checkGiottoEnvironment()
 if(!genv_exists){
-  # The following command need only be run once to install the Giotto environment.
+  # The following command need only be run once to install the Giotto environment
   installGiottoEnvironment()
 }
 ```
 
 ## Create a Giotto object
 ```{r eval=FALSE}
- 
-# convert anndata file to giotto object
-stereo_go <- Giotto::anndataToGiotto(anndata_file)
+visium = loadGiottoMini(dataset = 'visium')
 ```
 
 ## Next section
