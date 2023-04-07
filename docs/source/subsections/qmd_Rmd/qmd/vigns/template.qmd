@@ -2,6 +2,7 @@
 title: "Title of your vignette"
 format: rst
 date: last-modified
+number-sections: true
 ---
 
 ## Dataset explanation
@@ -14,6 +15,11 @@ if(!"Giotto" %in% installed.packages()) {
   devtools::install_github("drieslab/Giotto@Suite")
 }
 library(Giotto)
+# Ensure Giotto Data is installed
+if(!"GiottoData" %in% installed.packages()) {
+  devtools::install_github("drieslab/GiottoData")
+}
+library(GiottoData)
 # Ensure the Python environment for Giotto has been installed
 genv_exists = checkGiottoEnvironment()
 if(!genv_exists){
