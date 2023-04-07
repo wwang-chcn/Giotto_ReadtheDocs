@@ -31,12 +31,12 @@ if(!genv_exists){
 ```
 
 ## Create a Giotto object
-```{r eval=FALSE}
+```{r eval=TRUE}
 visium = loadGiottoMini(dataset = 'visium')
 ```
 
 ## Next section
-```{r eval=FALSE}
+```{r eval=TRUE}
  
 ```
 
