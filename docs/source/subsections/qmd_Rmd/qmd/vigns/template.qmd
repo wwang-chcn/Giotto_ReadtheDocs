@@ -2,6 +2,7 @@
 title: "Title of your vignette"
 format: rst
 date: last-modified
+number-sections: true
 ---
 
 ## Dataset explanation
