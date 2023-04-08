@@ -20,6 +20,6 @@ Spatially Variable Genes
         :link: /subsections/datasets/230407_binSpect_spatial_genes_example
         :link-type: doc
 
-        .. image:: /source/subsections/datasets/230407_binSpect_spatial_genes_example_files/figure-rst/unnamed-chunk-2-1.png
+        .. image:: subsections/datasets/230407_binSpect_spatial_genes_example_files/figure-rst/unnamed-chunk-2-1.png
 
 
