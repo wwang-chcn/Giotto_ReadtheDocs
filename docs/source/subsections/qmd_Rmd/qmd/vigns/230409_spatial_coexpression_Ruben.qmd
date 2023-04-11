@@ -1,0 +1,151 @@
+---
+title: "Spatial co-expression"
+format: rst
+date: last-modified
+number-sections: true
+---
+
+## Dataset explanation
+Here we will use the visium mini dataset, which is a subset of the Visium 10X 
+mouse brain dataset, to illustrate how to perform a spatial co-expression analysis. 
+This mini visium dataset has been fully processed and is easily available through
+the **GiottoData** package.
+
+## Start Giotto
+```{r eval=TRUE, message=FALSE}
+# Ensure Giotto Suite is installed
+if(!"Giotto" %in% installed.packages()) {
+  devtools::install_github("drieslab/Giotto@suite_dev")
+}
+library(Giotto)
+
+# Ensure Giotto Data is installed
+if(!"GiottoData" %in% installed.packages()) {
+  devtools::install_github("drieslab/GiottoData")
+}
+library(GiottoData)
+
+# Ensure the Python environment for Giotto has been installed
+genv_exists = checkGiottoEnvironment()
+if(!genv_exists){
+  # The following command need only be run once to install the Giotto environment
+  installGiottoEnvironment()
+}
+```
+
+
+
+## 1. Load the mini Giotto object
+```{r eval=TRUE}
+visium = loadGiottoMini(dataset = 'visium')
+```
+
+
+
+## 2. Calculate spatially variable genes
+- make sure that you have already created a spatial network
+- you can identify spatial genes with any type of method, here we will use
+the **binSpect** method
+```{r eval=TRUE}
+showGiottoSpatNetworks(visium)
+
+ranktest = binSpect(visium, bin_method = 'rank',
+                    calc_hub = T, hub_min_int = 5,
+                    spatial_network_name = 'Delaunay_network')
+
+spatFeatPlot2D(visium,
+               expression_values = 'scaled',
+               feats = ranktest$feats[1:6], cow_n_col = 2, point_size = 1.5)
+```
+
+
+
+## 3. Identify spatially correlated genes
+- here we will subset on the top 300 spatial genes identified with binSpect. 
+- we will also show how to identify the top spatially correlated genes with a 
+gene of interest
+```{r eval=TRUE}
+# 3.1 cluster the top 500 spatial genes into 20 clusters
+ext_spatial_genes = ranktest[1:300,]$feats
+
+# here we use existing detectSpatialCorGenes function to calculate pairwise distances between genes (but set network_smoothing=0 to use default clustering)
+spat_cor_netw_DT = detectSpatialCorFeats(visium,
+                                         method = 'network',
+                                         spatial_network_name = 'spatial_network',
+                                         subset_feats = ext_spatial_genes)
+
+# 3.2 identify most similar spatially correlated genes for one gene
+top10_genes = showSpatialCorFeats(spat_cor_netw_DT, feats = 'Dsp', show_top_feats = 10)
+
+spatFeatPlot2D(visium,
+               expression_values = 'scaled',
+               feats = top10_genes$variable[1:4], point_size = 3)
+```
+
+
+
+## 4. Cluster and visualize spatially correlated genes 
+- use the heatmap to identify spatial co-expression modules and adjust the number 
+of clusters (k) accordingly
+```{r eval=TRUE}
+# 3.3 identify potenial spatial co-expression
+spat_cor_netw_DT = clusterSpatialCorFeats(spat_cor_netw_DT, name = 'spat_netw_clus', k = 7)
+
+# visualize clusters
+heatmSpatialCorFeats(visium,
+                     spatCorObject = spat_cor_netw_DT,
+                     use_clus_name = 'spat_netw_clus',
+                     heatmap_legend_param = list(title = NULL),
+                     save_param = list(base_height = 6, base_width = 8, units = 'cm'))
+```
+
+
+
+## 5. Create metagenes/co-expression modules and visualize
+- extract a balanced set of genes from each co-expression module. 
+- aggregate genes into metagenes. 
+```{r eval=TRUE}
+# 3.4 create metagenes / co-expression modules
+cluster_genes = getBalancedSpatCoexpressionFeats(spat_cor_netw_DT, maximum = 30)
+visium = createMetafeats(visium, feat_clusters = cluster_genes, name = 'cluster_metagene')
+
+spatCellPlot(visium,
+             spat_enr_names = 'cluster_metagene',
+             cell_annotation_values = as.character(c(1:7)),
+             point_size = 1, cow_n_col = 3)
+```
+
+
+
+## 6. (optional) Spatially informed clustering
+Here we illustrate how to use information from #5 as input for clustering using
+the standard pipeline (PCA > nearest-neighbors > leiden clusters).
+```{r eval=TRUE}
+my_spatial_genes = names(cluster_genes)
+
+visium <- runPCA(gobject = visium,
+                      feats_to_use = my_spatial_genes,
+                      name = 'custom_pca')
+visium <- runUMAP(visium,
+                       dim_reduction_name = 'custom_pca',
+                       dimensions_to_use = 1:20,
+                       name = 'custom_umap')
+visium <- createNearestNetwork(gobject = visium,
+                                    dim_reduction_name = 'custom_pca',
+                                    dimensions_to_use = 1:20, k = 5,
+                                    name = 'custom_NN')
+visium <- doLeidenCluster(gobject = visium,
+                               network_name = 'custom_NN',
+                               resolution = 0.15, n_iterations = 1000,
+                               name = 'custom_leiden')
+
+spatPlot2D(visium,
+           cell_color = 'custom_leiden', point_size = 4)
+```
+
+
+
+## Session Info
+```{r}
+sessionInfo()
+```
