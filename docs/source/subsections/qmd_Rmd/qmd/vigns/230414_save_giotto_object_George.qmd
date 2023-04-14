@@ -1,0 +1,108 @@
+---
+title: "Saving your analysis"
+format: rst
+date: last-modified 4/14/23
+number-sections: true
+---
+
+## Tutorial explanation
+
+Giotto objects contain certain objects that act as pointers to the data that they reference or pull from. While this can help with lowering the amount of memory needed and decrease load times, pointer objects do not save and reload properly when using `saveRDS()` and `readRDS()`.\
+Giotto instead implements the `saveGiotto()` and `loadGiotto()` functions that collects all the data attached to the object and saves it in a standalone manner. These functions will be demonstrated using a small subset of the Vizgen mouse brain dataset that is easily available through the **GiottoData** package
+
+## Start Giotto
+
+```{r eval=TRUE, message=FALSE}
+# Ensure Giotto Suite is installed
+if(!"Giotto" %in% installed.packages()) {
+  devtools::install_github("drieslab/Giotto@Suite")
+}
+library(Giotto)
+
+# Ensure Giotto Data is installed
+if(!"GiottoData" %in% installed.packages()) {
+  devtools::install_github("drieslab/GiottoData")
+}
+library(GiottoData)
+
+# Ensure the Python environment for Giotto has been installed
+genv_exists = checkGiottoEnvironment()
+if(!genv_exists){
+  # The following command need only be run once to install the Giotto environment
+  installGiottoEnvironment()
+}
+```
+
+## Create a Giotto object
+
+```{r eval=TRUE, message=FALSE}
+vizgen = loadGiottoMini(dataset = 'vizgen')
+```
+
+## Show Existing Info
+
+Many analyses were first performed on this mini object to fill it out before it was saved using `saveGiotto()`. Returning the object gives an overview of its contents.
+
+```{r eval=TRUE}
+ vizgen
+```
+
+The object also functions as expected. Here we first set the active spatial unit as 'aggregate' and then plot the saved leiden clustering results.
+
+```{r eval = TRUE}
+ activeSpatUnit(vizgen) = 'aggregate'
+ spatPlot2D(vizgen,
+            show_image = TRUE,
+            cell_color = 'leiden_clus',
+            largeImage_name = 'dapi_z0',
+            point_alpha = 0.5)
+```
+
+## Saving the Object
+
+To save the object, most important inputs are the object to be saved, a directory in which to place the saved object, and the actual folder within that directory to contain Giotto's files.
+
+The dir param defaults to the working directory, but here I am specifying for the object to be saved to a temporary directory.
+
+```{r eval=TRUE, message=FALSE}
+saveGiotto(gobject = vizgen,
+           dir = tempdir(),
+           foldername = 'vizgen')
+```
+
+## Faster Saving with `qs`
+
+`saveGiotto()` defaults to using `saveRDS()` for its main files, but `qs` implements faster read and write functions for serialization. Saving using `qs` is done by passing the param `method = 'qs'`.
+
+Note that `qs` is an additional package that is not installed by default with Giotto but it can be installed with `install.packages(qs)`.
+
+## Loading the Object
+
+To load the object, only the path to the folder is needed. Additional params of interest are:
+
+-   `reconnect_giottoImage` -instead of reading from the saved images in the folder- attempts to reconnect the pointer objects based on filepaths that were recorded. This requires that the Giotto object is being loaded on the same system it was generated on and that those images have not been moved.
+
+-   `python_path` allows a new python path to be set during loading.
+
+```{r eval = TRUE, message=FALSE, results='hide'}
+test_vizgen = loadGiotto(path_to_folder = file.path(tempdir(), 'vizgen'))
+```
+
+```{r eval =TRUE}
+test_vizgen
+```
+
+```{r}
+ activeSpatUnit(test_vizgen) = 'aggregate'
+ spatPlot2D(test_vizgen,
+            show_image = TRUE,
+            cell_color = 'leiden_clus',
+            largeImage_name = 'dapi_z0',
+            point_alpha = 0.5)
+```
+
+## Session Info
+
+```{r}
+sessionInfo()
+```
