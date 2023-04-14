@@ -33,3 +33,13 @@ Saving and Loading Giotto Objects
 
         .. image:: subsections/datasets/230414_save_giotto_object_George_files/figure-rst/unnamed-chunk-4-1.png
 
+Saving Giotto Plots
+================================
+.. card-carousel:: 3
+
+    .. card:: SVG
+        :link: /subsections/getting_started/getting_started_saving
+        :link-type: doc
+
+        .. image:: images/getting_started/icons_saving.png
+
