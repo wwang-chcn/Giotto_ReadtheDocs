@@ -16,6 +16,39 @@ Tools
     Saving Giotto Objects <subsections/datasets/230414_save_giotto_object_George>
     Saving Giotto Plots </subsections/getting_started/getting_started_saving>
 
+
+.. grid:: 4
+
+    .. grid-item-card:: Image Alignment
+
+        .. image:: images/getting_started/icons_images.png
+	    :target: /subsections/datasets/230407_binSpect_spatial_genes_example
+
+    .. grid-item-card:: Interactive Selection
+
+        .. image:: images/dataset_page/interactive_selection_image_summary.png
+            :target: /subsections/datasets/230407_binSpect_spatial_genes_example
+
+    .. grid-item-card:: Visualizations
+
+        .. image:: images/getting_started/icons_visualizations.png
+            :target: /subsections/datasets/230407_binSpect_spatial_genes_example
+
+    .. grid-item-card:: Spatial Variable Genes
+
+        .. image:: subsections/datasets/230407_binSpect_spatial_genes_example_files/figure-rst/unnamed-chunk-2-1.png
+            :target: /subsections/datasets/230407_binSpect_spatial_genes_example
+
+    .. grid-item-card:: Saving Giotto Objects
+
+        .. image:: subsections/datasets/230414_save_giotto_object_George_files/figure-rst/unnamed-chunk-4-1.png
+            :target: /subsections/datasets/230414_save_giotto_object_George
+
+    .. grid-item-card:: Saving Plots
+
+        .. image:: images/getting_started/icons_saving.png
+            :target: /subsections/getting_started/getting_started_saving
+            
 Image Alignment
 =========================
 .. card-carousel:: 3
