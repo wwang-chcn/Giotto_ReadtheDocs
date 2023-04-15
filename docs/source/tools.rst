@@ -20,7 +20,7 @@ Image Alignment
 =========================
 .. card-carousel:: 3
 
-    .. card:: SVG
+    .. card:: Image Alignment
         :link: /subsections/datasets/230407_binSpect_spatial_genes_example
         :link-type: doc
 
@@ -30,7 +30,7 @@ Interactive Selection
 =========================
 .. card-carousel:: 3
 
-    .. card:: SVG
+    .. card:: Interactive Selection
         :link: /subsections/datasets/230407_binSpect_spatial_genes_example
         :link-type: doc
 
@@ -40,7 +40,7 @@ Visualizations
 =========================
 .. card-carousel:: 3
 
-    .. card:: SVG
+    .. card:: Visualizations
         :link: /subsections/datasets/230407_binSpect_spatial_genes_example
         :link-type: doc
 
@@ -56,23 +56,18 @@ Spatially Variable Genes
 
         .. image:: subsections/datasets/230407_binSpect_spatial_genes_example_files/figure-rst/unnamed-chunk-2-1.png
 
-Saving and Loading Giotto Objects
+Saving and Loading
 ================================
 .. card-carousel:: 3
 
-    .. card:: SVG
+    .. card:: Giotto Objects
         :link: /subsections/datasets/230414_save_giotto_object_George
         :link-type: doc
 
         .. image:: subsections/datasets/230414_save_giotto_object_George_files/figure-rst/unnamed-chunk-4-1.png
-
-Saving Giotto Plots
-================================
-.. card-carousel:: 3
-
-    .. card:: SVG
+        
+    .. card:: Plots
         :link: /subsections/getting_started/getting_started_saving
         :link-type: doc
 
         .. image:: images/getting_started/icons_saving.png
-
