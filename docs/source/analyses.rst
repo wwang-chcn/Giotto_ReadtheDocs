@@ -18,7 +18,7 @@ Analyses
     3D Slicing <subsections/datasets/230409_spatial_coexpression_Ruben>
 
 
-Spatial Co-expression Modules
+Spatial Expression Analysis
 =============================
 .. card-carousel:: 3
 
@@ -28,11 +28,7 @@ Spatial Co-expression Modules
 
         .. image:: subsections/datasets/230409_spatial_coexpression_Ruben_files/figure-rst/unnamed-chunk-5-1.png
 
-Spatially Variable Genes
-=========================
-.. card-carousel:: 3
-
-    .. card:: SVG
+    .. card:: Spatial Variable Genes
         :link: /subsections/datasets/230407_binSpect_spatial_genes_example
         :link-type: doc
 
