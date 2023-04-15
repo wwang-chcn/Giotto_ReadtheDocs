@@ -20,7 +20,7 @@ Image Alignment
 .. card-carousel:: 3
 
     .. card:: Image Alignment
-        :link: /subsections/datasets/230407_binSpect_spatial_genes_example
+        :link: /subsections/getting_started/getting_started_images
         :link-type: doc
 
         .. image:: images/getting_started/icons_images.png
@@ -30,7 +30,7 @@ Interactive Selection
 .. card-carousel:: 3
 
     .. card:: Interactive Selection
-        :link: /subsections/datasets/230407_binSpect_spatial_genes_example
+        :link: /subsections/getting_started/interactive_selection
         :link-type: doc
 
         .. image:: images/dataset_page/interactive_selection_image_summary.png
@@ -40,7 +40,7 @@ Visualizations
 .. card-carousel:: 3
 
     .. card:: Visualizations
-        :link: /subsections/datasets/230407_binSpect_spatial_genes_example
+        :link: /subsections/getting_started/visualizations
         :link-type: doc
 
         .. image:: images/getting_started/icons_visualizations.png
