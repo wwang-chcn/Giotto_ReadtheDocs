@@ -12,7 +12,6 @@ Tools
     Image Alignment <subsections/getting_started/getting_started_images>
     Interactive Selection <subsections/getting_started/interactive_selection>
     Visualizations <subsections/getting_started/visualizations>
-    Spatial Variable Genes <subsections/datasets/230407_binSpect_spatial_genes_example>
     Saving Giotto Objects <subsections/datasets/230414_save_giotto_object_George>
     Saving Giotto Plots </subsections/getting_started/getting_started_saving>
             
