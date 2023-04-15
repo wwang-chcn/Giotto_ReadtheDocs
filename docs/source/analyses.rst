@@ -9,12 +9,12 @@ Analyses
     :caption: Analyses
     :hidden:
 
-    Processing
-    Clustering
+    Processing <subsections/datasets/230409_spatial_coexpression_Ruben>
+    Clustering <subsections/datasets/230409_spatial_coexpression_Ruben>
     Spatial Co-expression Modules <subsections/datasets/230409_spatial_coexpression_Ruben>
-    HMRF
-    Deconvolution
-    3D Slicing
+    HMRF <subsections/datasets/230409_spatial_coexpression_Ruben>
+    Deconvolution <subsections/datasets/230409_spatial_coexpression_Ruben>
+    3D Slicing <subsections/datasets/230409_spatial_coexpression_Ruben>
 
 
 Spatial Co-expression Modules
