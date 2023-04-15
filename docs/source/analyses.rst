@@ -21,7 +21,7 @@ Spatial Co-expression Modules
 =============================
 .. card-carousel:: 3
 
-    .. card:: SVG
+    .. card:: Spatial Co-expression Modules
         :link: /subsections/datasets/230407_binSpect_spatial_genes_example
         :link-type: doc
 
