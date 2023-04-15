@@ -9,17 +9,20 @@ Analyses
     :caption: Analyses
     :hidden:
 
-    Spatial Variable Genes <subsections/datasets/230407_binSpect_spatial_genes_example>
+    Processing
+    Clustering
+    Spatial Co-expression Modules <subsections/datasets/230409_spatial_coexpression_Ruben>
+    HMRF
+    Deconvolution
+    3D Slicing
 
 
-Spatially Variable Genes
-=========================
+Spatial Co-expression Modules
+=============================
 .. card-carousel:: 3
 
     .. card:: SVG
         :link: /subsections/datasets/230407_binSpect_spatial_genes_example
         :link-type: doc
 
-        .. image:: subsections/datasets/230407_binSpect_spatial_genes_example_files/figure-rst/unnamed-chunk-2-1.png
-
-
+        .. image:: subsections/datasets/230409_spatial_coexpression_Ruben_files/figure-rst/unnamed-chunk-5-1.png
