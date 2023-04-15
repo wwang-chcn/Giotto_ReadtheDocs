@@ -38,7 +38,7 @@ processed and is easily available through the **GiottoData** package.
         installGiottoEnvironment()
       }
 
-3 1. Load the mini Giotto object
+3 Load the mini Giotto object
 ================================
 
 .. container:: cell
@@ -83,7 +83,7 @@ processed and is easily available through the **GiottoData** package.
          no external python path was provided, but a giotto python environment was found
           and will be used
 
-4 2. Calculate spatially variable genes
+4 Calculate spatially variable genes
 =======================================
 
 -  make sure that you have already created a spatial network
@@ -156,7 +156,7 @@ processed and is easily available through the **GiottoData** package.
 
       .. image:: 230409_spatial_coexpression_Ruben_files/figure-rst/unnamed-chunk-3-1.png
 
-5 3. Identify spatially correlated genes
+5 Identify spatially correlated genes
 ========================================
 
 -  here we will subset on the top 300 spatial genes identified with
@@ -188,7 +188,7 @@ processed and is easily available through the **GiottoData** package.
 
       .. image:: 230409_spatial_coexpression_Ruben_files/figure-rst/unnamed-chunk-4-1.png
 
-6 4. Cluster and visualize spatially correlated genes
+6 Cluster and visualize spatially correlated genes
 =====================================================
 
 -  use the heatmap to identify spatial co-expression modules and adjust
@@ -212,7 +212,7 @@ processed and is easily available through the **GiottoData** package.
 
       .. image:: 230409_spatial_coexpression_Ruben_files/figure-rst/unnamed-chunk-5-1.png
 
-7 5. Create metagenes/co-expression modules and visualize
+7 Create metagenes/co-expression modules and visualize
 =========================================================
 
 -  extract a balanced set of genes from each co-expression module.
@@ -285,7 +285,7 @@ processed and is easily available through the **GiottoData** package.
 
       .. image:: 230409_spatial_coexpression_Ruben_files/figure-rst/unnamed-chunk-6-1.png
 
-8 6. (optional) Spatially informed clustering
+8 (optional) Spatially informed clustering
 =============================================
 
 Here we illustrate how to use information from #5 as input for
