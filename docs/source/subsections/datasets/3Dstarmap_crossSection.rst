@@ -1,21 +1,21 @@
-==========
-3D Starmap
-==========
+===================================
+3D Starmap with 3D slicing examples
+===================================
 
 :Date: 4/14/23
 
 1 Dataset explanation
 =====================
 
-``Wang et al. <https://rubd.github.io/Giotto_site/articles/mouse_starmap_cortex_200917.html>``\ \_\_
+`Wang et al. <https://rubd.github.io/Giotto_site/articles/mouse_starmap_cortex_200917.html>`__
 created a 3D spatial expression dataset consisting of 28 genes from
 32,845 single cells in a visual cortex volume using the STARmap
 technology.
 
 The STARmap data to run this tutorial can be found
-``here. <https://github.com/RubD/spatial-datasets/tree/master/data/2018_starmap_3D_cortex>``\ \_\_
+`here. <https://github.com/RubD/spatial-datasets/tree/master/data/2018_starmap_3D_cortex>`__
 Alternatively you can use the **getSpatialDataset** to automatically
-download this dataset like we do in this example.
+download this dataset from our GiottoData package like we do in this example.
 
 2 Start Giotto
 ==============
