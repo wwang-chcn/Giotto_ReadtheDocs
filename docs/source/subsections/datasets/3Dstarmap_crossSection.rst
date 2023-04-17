@@ -52,6 +52,11 @@ download this dataset from our GiottoData package like we do in this example.
 3 Create a Giotto object
 ========================
 
+Minimum requirements:
+
+- matrix with expression information (or path to)
+- x,y(,z) coordinates for cells or spots (or path to)
+
 .. container:: cell
 
    .. code:: r
@@ -137,6 +142,14 @@ download this dataset from our GiottoData package like we do in this example.
 
 4 Processing
 ============
+
+1. Filter genes and cells based on detection frequencies
+
+2. Normalize expression matrix (log transformation, scaling factor and/or z-scores)
+
+3. Add cell and gene statistics (optional)
+
+4. Adjust expression matrix for technical covariates or batches (optional). These results will be stored in the custom slot.
 
 .. container:: cell
 
@@ -241,6 +254,13 @@ download this dataset from our GiottoData package like we do in this example.
 5 Dimension Reduction
 =====================
 
+1. Identify highly variable genes (HVG) will not be performed here, because there are only few genes
+perform PCA
+
+2. Identify number of significant prinicipal components (PCs)
+
+3. Run UMAP and/or TSNE on PCs (or directly on matrix)
+
 .. container:: cell
 
    .. code:: r
@@ -289,6 +309,10 @@ download this dataset from our GiottoData package like we do in this example.
 6 Clustering
 ============
 
+1. Create a shared (default) nearest network in PCA space (or directly on matrix)
+
+2. Cluster on nearest network with Leiden or Louvan (kmeans and hclust are alternatives)
+
 .. container:: cell
 
    .. code:: r
@@ -318,6 +342,8 @@ download this dataset from our GiottoData package like we do in this example.
 
 7 Spatial Grids
 ===============
+
+Create a grid based on defined stepsizes in the x,y(,z) axes.
 
 .. container:: cell
 
@@ -362,6 +388,14 @@ download this dataset from our GiottoData package like we do in this example.
 
 8 Spatial Networks
 ==================
+
+Only the method = delaunayn_geometry can make 3D Delaunay networks. This requires the package geometry to be installed.
+
+1. Visualize information about the default Delaunay network
+
+2. Create a spatial Delaunay network (default)
+
+3. Create a spatial kNN network
 
 .. container:: cell
 
@@ -441,6 +475,14 @@ download this dataset from our GiottoData package like we do in this example.
 9 Spatial Genes
 ===============
 
+Identify spatial genes with 2 different methods:
+
+- binSpect with kmeans binarization (default)
+
+- binSpect with rank binarization
+
+Visualize top 4 genes per method.
+
 .. container:: cell
 
    .. code:: r
@@ -475,6 +517,12 @@ download this dataset from our GiottoData package like we do in this example.
 
 10 Spatial Co-expression Patterns
 =================================
+
+Identify robust spatial co-expression patterns using the spatial network or grid and a subset of individual spatial genes.
+
+1. calculate spatial correlation scores
+
+2. cluster correlation scores
 
 .. container:: cell
 
@@ -536,6 +584,8 @@ download this dataset from our GiottoData package like we do in this example.
 
 11 3D Slicing
 =============
+
+Create 2D cross sections from 3D object
 
 .. container:: cell
 
