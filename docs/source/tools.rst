@@ -14,6 +14,7 @@ Tools
     Visualizations <subsections/getting_started/visualizations>
     Saving Giotto Objects <subsections/datasets/230414_save_giotto_object_George>
     Saving Giotto Plots </subsections/getting_started/getting_started_saving>
+    Interoperability </subsections/getting_started/interoperability_04122023>
             
 Image Alignment
 =========================
@@ -60,3 +61,13 @@ Saving and Loading
         :link-type: doc
 
         .. image:: images/getting_started/icons_saving.png
+        
+Interoperability
+=========================
+.. card-carousel:: 3
+
+    .. card:: AnnData
+        :link: /subsections/datasets/interoperability_04122023
+        :link-type: doc
+
+        .. image:: images/dataset_page/arrow-curve-recycle-svgrepo-com.png
