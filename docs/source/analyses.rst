@@ -9,13 +9,11 @@ Analyses
     :caption: Analyses
     :hidden:
 
-    Processing <subsections/datasets/230409_spatial_coexpression_Ruben>
-    Clustering <subsections/datasets/230409_spatial_coexpression_Ruben>
+    Data Processing <subsections/datasets/data_processing_04122023>
+    Clustering <subsections/datasets/clustering_04122023>
     Spatial Co-expression Modules <subsections/datasets/230409_spatial_coexpression_Ruben>
     Spatial Variable Genes <subsections/datasets/230407_binSpect_spatial_genes_example>
-    HMRF <subsections/datasets/230409_spatial_coexpression_Ruben>
-    Deconvolution <subsections/datasets/230409_spatial_coexpression_Ruben>
-    3D Slicing <subsections/datasets/230409_spatial_coexpression_Ruben>
+    3D Slicing <subsections/datasets/3Dstarmap_crossSection.rst>
 
 
 Spatial Expression Analysis
