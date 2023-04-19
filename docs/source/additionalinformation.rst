@@ -1,11 +1,57 @@
-Giotto Suite 3.2.1 (2023-02-13)
+Giotto Suite 3.3.0 (2023-04-18)
 ===============================
+
+Breaking Changes
+----------------
+
+-  Set Suite as default branch
+-  Removed all deprecated accessors from ``accessors.R``
+-  ``set_default_feat_type()`` error downgraded to warning when no
+   ``feat_type``\ s exist for given ``spat_unit``
+-  update ``loadGiotto()`` and ``saveGiotto()`` to allow using long
+   strings as column names in the spatVector objects
+-  ``'active_spat_unit'`` and ``'active_feat_type'`` params that can be
+   set through ``instructions()`` are now used instead of
+   ‘giotto.spat_unit’ and ‘giotto.feat_type’ global options
+-  removed duplicate ``create_dimObject()`` internal function. Keeping
+   ``create_dim_obj()``
 
 Added
 -----
 
+-  New implementations of ``anndataToGiotto()`` and
+   ``giottoToAnnData()`` for Nearest Neighbor and Spatial Networks
 -  New ``check_py_for_scanpy()`` function, shifting code around in
-   ``anndataToGiotto()``.
+   ``anndataToGiotto()``
+-  Add ``initialize()`` method for ``giotto``
+-  Add exported ``create`` constructor functions for Giotto S4
+   subobjects
+-  Add ``activeSpatUnit()`` and ``activeFeatType()`` for getting and
+   setting active defaults on gobject
+-  New ``get_*_list()`` internal functions for retrieving list of all
+   objects of a particular class for a spat_unit and feat_type
+-  Add ``instructions()`` generic for ``giotto`` to access and edit
+   ``giottoInstructions``
+-  Add ``centroids()`` method for ``giottoPolygon`` to get centroid info
+-  Add ``overlaps()`` generic for accessing ``overlaps`` slot of
+   ``giottoPolygon``
+-  Add ``[`` and ``[<-`` (empty) access generics to get the data from
+   main slots of ``giottoPolygon`` and ``giottoPoints``
+-  Add cores detection to run on package attach.
+   (``getOption('giotto.cores')``)
+-  Add option to return as ``giottoPoints`` from ``getFeatureInfo``
+   (default is still ``SpatVector``)
+-  Add ``spatVector_to_dt2`` internal as a barebones alternative to
+   ``spatVector_to_dt()``
+-  Add ``getRainbowColors()`` color palette
+-  New ``assign_objnames_2_list()`` and ``assign_listnames_2_obj()``
+   internals for passing list names to object ``@name`` slots and vice
+   versa
+-  New test_that ``test_createObject.R`` script for ``read``
+   functions/S4 subobject creation
+-  New test_that ``test_accessors.R`` script for ``accessor`` functions
+-  New test_that ``test_gobject.R`` script for gobject consistency
+   checks
 
 Changes
 -------
@@ -17,12 +63,40 @@ Changes
    installations with a new argument, ``mini_install_path``.
 -  Update ``removeGiottoEnvironment()`` to account for custom python
    installations with a new argument, ``mini_path``.
+-  Update ``createGiottoObject()`` with new data ingestion pipeline
+-  Modify ``cell_ID``, ``feat_ID``, ``cell_metadata``, ``feat_metadata``
+   slot initialization
+-  Update ``read_expression_data()`` and ``evaluate_expr_matrix()`` to
+   be compatible with ``exprObj``
+-  Change ``changeGiottoInstructions()`` to allow addition of new params
+   and enforce logical class of known params
+-  Update and fix bugs in ``createGiottoCosMxObject()`` associated with
+   polygon placement and generation
+-  Update ``plot()`` for ``giottoPoints`` with faster rasterized
+   plotting option. (Now used by default)
 -  Fix bug in ``doLouvainCluster()`` (sub)functions and made them
    compatible with new Giotto Suite framework.
-   
+-  Fix bug in ``gefToGiotto()`` bin_size arguments.
+-  Update ``loadGiotto()`` and ``saveGiotto()`` with path.expand to
+   expand provided file/directory paths
+-  Organize new and refactored slot ``check`` functions in ``giotto.R``
+   for checking gobject consistency during ``initialize()``
+-  Organize new and refactored ``evaluate`` functions in
+   ``data_evaluation.R`` for data wrangling of external data
+-  Organize new and refactored ``read`` functions in ``data_input.R``
+   for ingesting data and converting to list of Giotto native S4
+   subobjects
+-  Organize dummy documentation in ``dd.R`` for inheriting commonly used
+   documentation
+-  Moved ``create_featureNetwork_object()``,
+   ``create_giotto_points_object()``, ``create_giotto_polygon_object()``
+   to classes.R
+-  Moved ``depth()`` from giotto.R to utilities.R
 
 Giotto Suite 3.2.0 (2023-02-02)
 ===============================
+
+.. _breaking-changes-1:
 
 Breaking Changes
 ----------------
@@ -36,6 +110,8 @@ Breaking Changes
    instantiation
 -  Removed ``createGiottoCosMxObject()`` ``aggregate`` and ``all``
    workflows until they are updated
+
+.. _added-1:
 
 Added
 -----
@@ -83,6 +159,8 @@ Added
 -  Add packages ``exactextractr`` and ``sf`` to “suggests” packages
 -  Add package ``progressr`` to “imports” packages
 
+.. _changes-1:
+
 Changes
 -------
 
@@ -101,14 +179,14 @@ Changes
 -  Fix bug in ``replaceGiottoInstructions()`` where instructions with
    more slots than previous are not allowed
 -  Fix bug in ``loadGiotto()`` that prevents proper parsing of filenames
-   when spat_unit or feat_type contains ’\_’ characters
+   when spat_unit or feat_type contains ’_’ characters
 -  Fix ``loadGiotto()`` loss of over-allocation for data.tables-based
    objects after loading from disk
 
 Giotto Suite 3.1.0 (2202-12-01)
 ===============================
 
-.. _added-1:
+.. _added-2:
 
 Added
 -----
@@ -119,7 +197,7 @@ Added
    feat type generics for S4 subobjects for setting the relevant slots
 -  Add ``hexVertices()`` to polygon shape array generation functionality
 
-.. _changes-1:
+.. _changes-2:
 
 Changes
 -------
@@ -141,7 +219,7 @@ Changes
 Giotto Suite 3.0.1 (2022-11-20)
 ===============================
 
-.. _added-2:
+.. _added-3:
 
 Added
 -----
@@ -150,7 +228,7 @@ Added
 -  Add ability to turn off colored text in ``show`` functions with
    ``options("giotto.color_show" = FALSE)``
 
-.. _changes-2:
+.. _changes-3:
 
 Changes
 -------
@@ -163,14 +241,14 @@ Changes
 Giotto Suite 3.0.0 (2022-11-18)
 ===============================
 
-.. _breaking-changes-1:
+.. _breaking-changes-2:
 
 Breaking Changes
 ----------------
 
 -  S4 subobjects framework will require giotto objects to be remade
 
-.. _added-3:
+.. _added-4:
 
 Added
 -----
@@ -183,14 +261,14 @@ Added
 -  New ``@provenance`` slot in S4 subobjects to track provenance of
    aggregated information (z_layers used for example)
 -  New ``calculateOverlapPolygonImages()`` for calculating overlapped
-   intensities from image-based information (e.g. IMC, IF, MIBI, …) and
-   polygon data (e.g. cell)
+   intensities from image-based information (e.g. IMC, IF, MIBI, …) and
+   polygon data (e.g. cell)
 -  New ``overlapImagesToMatrix()`` converts intensity-polygon overlap
-   info into an expression matrix (e.g. cell by protein)
+   info into an expression matrix (e.g. cell by protein)
 -  New ``aggregateStacks()`` set of functions work with multiple
    subcellular layers when generating aggregated expression matrices
 
-.. _changes-3:
+.. _changes-4:
 
 Changes
 -------
@@ -203,7 +281,7 @@ Changes
 Giotto Suite 2.1.0 (2202-11-09)
 ===============================
 
-.. _breaking-changes-2:
+.. _breaking-changes-3:
 
 Breaking Changes
 ----------------
@@ -211,7 +289,7 @@ Breaking Changes
 -  Update of python version to **3.10.2**
    `details <https://giottosuite.readthedocs.io/en/latest/additionalinformation.html#giotto-suite-2-1-0-2202-11-09>`__
 
-.. _added-4:
+.. _added-5:
 
 Added
 -----
@@ -221,7 +299,7 @@ Added
 Giotto Suite 2.0.0.998
 ======================
 
-.. _added-5:
+.. _added-6:
 
 Added
 -----
@@ -254,7 +332,7 @@ Added
 -  New ``filterDistributions()`` to generate histogram plots from
    expression statistics
 
-.. _changes-4:
+.. _changes-5:
 
 Changes
 -------
@@ -279,7 +357,7 @@ Changes
 -  Deprecate ``combineCellProximityGenes_per_interaction()`` in favor of
    ``combineCellProximityFeatures_per_interaction()``
 
-.. _breaking-changes-3:
+.. _breaking-changes-4:
 
 Breaking Changes
 ----------------
