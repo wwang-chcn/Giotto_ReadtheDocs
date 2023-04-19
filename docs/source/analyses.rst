@@ -13,8 +13,6 @@ Analyses
     Clustering <subsections/datasets/clustering_04122023>
     Spatial Co-expression Modules <subsections/datasets/230409_spatial_coexpression_Ruben>
     Spatial Variable Genes <subsections/datasets/230407_binSpect_spatial_genes_example>
-    3D Slicing <subsections/datasets/3Dstarmap_crossSection.rst>
-
 
 Data Processing
 =============================
@@ -51,14 +49,3 @@ Spatial Expression Analysis
         :link-type: doc
 
         .. image:: subsections/datasets/230407_binSpect_spatial_genes_example_files/figure-rst/unnamed-chunk-2-1.png
-        
-        
-3D Slicing
-=============================
-.. card-carousel:: 3
-
-    .. card:: 3D Slicing (STARmap)
-        :link: /subsections/datasets/3Dstarmap_crossSection
-        :link-type: doc
-
-        .. image:: subsections/datasets/3D_starmap_files/figure-rst/unnamed-chunk-7-1.png
