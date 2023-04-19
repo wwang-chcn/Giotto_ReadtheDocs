@@ -30,7 +30,7 @@ subventrical zone. A complete walkthrough of that dataset can be found
 
       # Ensure Giotto Suite is installed
       if(!"Giotto" %in% installed.packages()) {
-        devtools::install_github("drieslab/Giotto@Suite")
+        devtools::install_github("drieslab/Giotto@suite")
       }
       library(Giotto)
 
