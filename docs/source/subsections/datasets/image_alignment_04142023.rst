@@ -34,7 +34,7 @@ data `analysis <./Nanostring_Lung12_jan26_21.html>`_.
 
       # Ensure Giotto Suite is installed
       if(!"Giotto" %in% installed.packages()) {
-        devtools::install_github("drieslab/Giotto@Suite")
+        devtools::install_github("drieslab/Giotto@suite")
       }
       library(Giotto)
 

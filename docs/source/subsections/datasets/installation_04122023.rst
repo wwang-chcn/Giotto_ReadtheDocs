@@ -15,8 +15,8 @@ of the Giotto Suite package and required Python environment.
 1.1 Requirements
 ----------------
 
--  R (>= 3.5.1)
--  Python (>= 3.0)
+-  R (>= 4.0.1)
+-  Python (>= 3.6)
 -  Windows, MacOS or Linux specific installation tools for `Posit <https://support.posit.co/hc/en-us/articles/200486498-Package-Development-Prerequisites>`_ (previously RStudio)
 
 2 Installation

@@ -21,7 +21,7 @@ processed and is easily available through the **GiottoData** package.
 
       # Ensure Giotto Suite is installed
       if(!"Giotto" %in% installed.packages()) {
-        devtools::install_github("drieslab/Giotto@suite_dev")
+        devtools::install_github("drieslab/Giotto@suite")
       }
       library(Giotto)
 
