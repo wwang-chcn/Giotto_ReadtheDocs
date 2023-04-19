@@ -16,7 +16,6 @@ Giotto Suite
    :maxdepth: 3
    :caption: Getting Started
 
-   Getting Started <gettingstarted.rst> 
    Giotto Installation </subsections/datasets/installation_04122023.rst>
    Giotto Ecosystem </subsections/datasets/giotto_ecosystem_04122023.rst>
    Giotto Configuration </subsections/datasets/configuration_04122023.rst>
