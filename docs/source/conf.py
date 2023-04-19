@@ -26,7 +26,7 @@ copyright = '2022, Ruben Dries and Guo-Cheng Yuan'
 author = 'Developed by labs of Ruben Dries and Guo-Cheng Yuan.'
 
 # The full version, including alpha/beta/rc tags
-release = '3.2.0'
+release = '3.3'
 
 
 # -- General configuration ---------------------------------------------------
@@ -50,7 +50,8 @@ extensions = [
 "sphinx.ext.autosummary",
 "sphinx.ext.todo",
 "sphinx.ext.viewcode",
-'sphinx_panels'
+"sphinx_panels",
+"notfound.extension"
 #'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',
@@ -59,6 +60,11 @@ extensions = [
 #'myst_parser' #myst_parser caused a fatal error
 #'sphinxcontrib.spelling' #spell checker fatal error
 ]
+
+notfound_context = {
+    'title': 'Page not found',
+    'body': '<h1>Page not found</h1>\n\n This page is not supported on this version of Giotto.',
+}
 
 #Added for m2r2 extension
 source_suffix = ['.rst', '.md']

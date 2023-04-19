@@ -1,0 +1,52 @@
+---
+title: "Installation"
+format: rst
+date: 2023-04-12
+number-sections: true
+---
+
+## Installing Giotto Suite
+Giotto Suite is installed via R **but there are required Python modules** which **must** be installed in order for Giotto Suite to function properly.
+Below are the instructions for both the installation of the Giotto Suite package and required Python environment.
+
+### Requirements
+* R (>= 4.0)
+* Python (>= 3.6)
+* `Windows, MacOS or Linux specific installation tools for `Posit <https://support.posit.co/hc/en-us/articles/200486498-Package-Development-Prerequisites>`_ (previously RStudio)
+
+## Installation
+
+### Install Giotto Suite
+```{r eval=FALSE, message=FALSE}
+# Necessary for installation from R
+if(!"devtools" %in% installed.packages()) {
+  install.packages("devtools")
+}
+
+devtools::install_github("drieslab/Giotto@suite")
+
+```
+
+### Install the Giotto Python Environment
+```{r eval=FALSE}
+library(Giotto)
+installGiottoEnvironment()
+```
+
+## Try Giotto in the cloud
+You can also run analyses in Giotto on Terra.bio. Take a look on the `Terra tutorial <https://giottosuite.readthedocs.io/en/latest/subsections/trygiotto/terra.html#terra/>`_.
+
+
+Encountering errors? Checkout out the `Troubleshooting page <../errorsfaqsandtips.html>`__ for help.
+Alternatively, post to an issue to the Giotto GitHub page `here <https://github.com/drieslab/Giotto>`__.
+Please include the version numbers of R, Giotto, and the OS in use at the time of the issue.
+
+```{r eval=TRUE, include=FALSE}
+library(Giotto)
+```
+
+
+## Session Info
+```{r}
+sessionInfo()
+```

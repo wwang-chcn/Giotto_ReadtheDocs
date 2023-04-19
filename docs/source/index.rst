@@ -8,16 +8,27 @@ Giotto Suite
    :hidden:
  
    Branches <branches.rst>
-   Getting Started <gettingstarted.rst> 
    Documentation <documentation.rst>
    Contribute <contribute.rst> 
 
 .. toctree::
    :hidden:
    :maxdepth: 3
+   :caption: Getting Started
+
+   Getting Started <gettingstarted.rst> 
+   Giotto Installation </subsections/datasets/installation_04122023.rst>
+   Giotto Ecosystem </subsections/datasets/giotto_ecosystem_04122023.rst>
+   Giotto Configuration </subsections/datasets/configuration_04122023.rst>
+
+.. toctree::
+   :hidden:
+   :maxdepth: 3
    :caption: Tutorials
 
-   Tutorials <datasets.rst> 
+   Datasets <datasets.rst> 
+   Tools <tools.rst>
+   Analyses <analyses.rst>
 
 .. toctree::
    :maxdepth: 1

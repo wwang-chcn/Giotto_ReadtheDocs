@@ -8,43 +8,47 @@ Frequently Asked Questions
 
 Installation 
 ==================
-:octicon:`question` :ref:`First time R package installation <first_time_r_installation>`
+:octicon:`question` `How do I install an R package for the first time? <./subsections/datasets/installation_04122023.html>`_
 
-:octicon:`question` :ref:`Manual python installation <part2_python_giotto_requirements>`
-
-:octicon:`question` :ref:`Errors on MacOS <error_on_mac>`
-
-    :octicon:`question` :ref:`Clang Error on MacOS <clang_error_mac>`
-
-    :octicon:`question` :ref:`R 3.6.3 and Catalina issue <r_363_and_catalina_error>`
-
-:octicon:`question` :ref:`Errors on Windows <error_on_windows>`
-
-    :octicon:`question` :ref:`Error: ‘make’ not found <make_not_found>`
-
-:octicon:`question` :ref:`Error converted from warning <error_converted_warning>`
-
+:octicon:`question` `Can I install Python components manually? <./subsections/datasets/configuration_04122023.html>`_
 
 Data Availability 
 =====================
 
-.. dropdown:: :octicon:`question` Where to find seqFISH+ and other ready-to-use datasets?
-    :open:
+:octicon:`question` Where can I find seqFISH+ and other ready-to-use datasets?
 
-    Checkout `RubD/spatial-datasets <https://github.com/RubD/spatial-datasets>`__ to find already preprocessed datasets
+    Checkout our `GiottoData <https://github.com/drieslab/GiottoData>`_ extension package to find already preprocessed datasets and Giotto mini Objects.
 
-.. dropdown:: :octicon:`question` Where to find other spatial datasets?
-    :open:
+:octicon:`question` Where else can I find more spatial datasets?
+    
+    Checkout the following for more spatial -omics data:
+        - `Aquila <https://aquila.cheunglab.org/view>`_
+        - Tencent's `SODB <https://gene.ai.tencent.com/SpatialOmics/>`_ 
+            - `PySODB <https://pysodb.readthedocs.io/en/latest/>`_, a python interface for the SODB
 
-    Checkout `SpatialDB <https://www.spatialomics.org/SpatialDB/>`__ to download expression matrix and location information
+:octicon:`question` How can I automatically download tutorial datasets? 
 
-.. dropdown:: :octicon:`question` How to automatically download tutorial datasets? (merFISH example)
-    :open:
+    Use `getSpatialDataset()` from GiottoData:
 
     .. code-block:: r
+    
+        # Ensure Giotto Suite is installed
+        if(!"Giotto" %in% installed.packages()) {
+          devtools::install_github("drieslab/Giotto@suite")
+        }
+        library(Giotto)
+
+        # Ensure Giotto Data is installed
+        if(!"GiottoData" %in% installed.packages()) {
+          devtools::install_github("drieslab/GiottoData")
+        }
+        library(GiottoData)
+
 
         # choose your directory
         my_working_dir = getwd()
+
+        # merFISH example:
 
         # standard download data to working directory
         getSpatialDataset(dataset = 'merfish_preoptic', directory = my_working_dir)
@@ -54,6 +58,3 @@ Data Availability
 
         # avoid certification issues with wget
         getSpatialDataset(dataset = 'merfish_preoptic', directory = my_working_dir, method = 'wget', extra = '--no-check-certificate')
-
-        # see download.file for more options
-        ?download.file
