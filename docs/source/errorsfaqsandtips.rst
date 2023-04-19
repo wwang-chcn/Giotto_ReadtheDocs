@@ -7,16 +7,8 @@ Solutions to Installation Errors
 ************************
 Errors on MacOS
 ************************
-Some of the errors outlined below might arise because of issues with building Giotto from source.
-The Giotto branch **cless** is a version of Giotto without C++ code, which should fix many of the installation errors.
 
-.. code-block:: 
-
-    remotes::install_github("RubD/Giotto@cless") 
-
-.. _package_not_found_mac:
-
-Issue 1: Packages not Found
+Packages not Found
 ========================
 
 In the event that packages are inaccessible in the default installation
@@ -114,71 +106,7 @@ provided here.
 
         }
       }
-      
-.. _clang_error_mac:
 
-Issue 2: Clang Error
-========================
-
-If you see this error on your MacOS:
-
-.. code-block::
-
-    clang: error: unsupported option ‘-fopenmp’
-
-You can install another clang and point R to use that clang, which supports the -fopenmp paramter. This solution was provided `on stackoverflow <https://stackoverflow.com/questions/43595457/alternate-compiler-for-installing-r-packages-clang-error-unsupported-option>`_.
-
-1. Install llvm on your mac
-
-.. code-block:: 
-
-    brew install llvm
-
-2. Create a Makevars File
-
-.. code-block:: 
-
-    touch ~/.R/Makevars
-
-
-3. Add these lines to the Makevars File
-
-.. code-block:: 
-
-    # comment out first line 'CC= ... if there are errors with compiling a package
-    CC=/usr/local/opt/llvm/bin/clang -fopenmp
-    CXX=/usr/local/opt/llvm/bin/clang++
-
-    # Also potentially CXX11 (for C++11 compiler)
-    CXX11=/usr/local/opt/llvm/bin/clang++
-
-    # -O3 should be faster than -O2 (default) level optimisation ..
-    CFLAGS=-g -O3 -Wall -pedantic -std=gnu99 -mtune=native -pipe
-    CXXFLAGS=-g -O3 -Wall -pedantic -std=c++11 -mtune=native -pipe
-    LDFLAGS=-L/usr/local/opt/gettext/lib -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib
-    CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include
-
-Issue 3: Clang Error
-=======================
-If you see this error on your MacOS:
-
-.. code-block::
-
-    Error message: 
-    ld: warning: directory not found for option '-L/usr/local/gfortran/lib/gcc/x86_64-apple-darwin15/6.1.0'
-    ld: warning: directory not found for option '-L/usr/local/gfortran/lib'
-    ld: library not found for -lgfortran
-    clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
-
-**Solution**: Install the latest version of gofortran: https://github.com/fxcoudert/gfortran-for-macOS/releases/download/8.2/gfortran-8.2-Mojave.dmg
-
-`Solution Reference Source: <https://stackoverflow.com/questions/35999874/mac-os-x-r-error-ld-warning-directory-not-found-for-option>`_
-
-*“I am having Mac OS Catalina and in my case installation of Homebrew, the newest gcc and Gfortran 8.2.0 solved the issue.” – Magda Orzechowska*
-
-*“This worked for me in Mac OS Catalina as well! I used the gfortran 8.2 Mojave installation github.com/fxcoudert/gfortran-for-macOS/releases” – Danny*
-
-.. _R_363_and_catalina_error: 
 
 .. _error_on_windows:
 
@@ -186,51 +114,9 @@ If you see this error on your MacOS:
 Errors on Windows
 ************************
 
-.. _make_not_found: 
-
-Issue 1: ‘Make’ not found error on windows
-============================================
-If you encounter this error:
-
-.. code-block::
-
-	Error in system(cmd) : (converted from warning) ‘make’ not found
-
-**Solution:** `Install the necessary package development tools. <https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites>`_
-
-.. code-block::
-
-	## make sure Rtools is visible (from within R)
-	## you can set the paths manually
-	Sys.setenv(PATH = paste("C:/Rtools/bin","C:/Rtools/mingw_64/bin", Sys.getenv("PATH"), sep=";"))
-	Sys.setenv(BINPREF = "C:/Rtools/mingw_$(WIN)/bin/")
-
-.. _error_converted_warning: 
-
-Issue 2: Error Converted from Warning
-============================================
-If you encounter this or similar error:
-
-.. code-block:: 
-
-	Error: Failed to install 'Giotto' from GitHub:
-  		(converted from warning) ...
-
-**Solution:** Make sure Rtools is installed
-
-.. code-block:: 
-
-	## avoid converting warnings to errors by setting this environment variable to true (from within R)
-	Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS"=TRUE)
-
-	library(devtools) # if not installed do install.package('devtools')
-	library(remotes) # if not installed do install.package('remotes')
-	remotes::install_github("RubD/Giotto", build_vignettes = F)
-
-
 .. _openSSL_error: 
 
-Issue 3: Windows 11 OpenSSL Error
+Windows 11 OpenSSL Error
 ============================================
 
 *Please note that this troubleshooting workflow is for a Windows 11 64-bit machine.*

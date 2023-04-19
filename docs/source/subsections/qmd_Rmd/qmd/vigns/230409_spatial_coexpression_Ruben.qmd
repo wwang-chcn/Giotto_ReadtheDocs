@@ -15,7 +15,7 @@ the **GiottoData** package.
 ```{r eval=TRUE, message=FALSE}
 # Ensure Giotto Suite is installed
 if(!"Giotto" %in% installed.packages()) {
-  devtools::install_github("drieslab/Giotto@suite_dev")
+  devtools::install_github("drieslab/Giotto@suite")
 }
 library(Giotto)
 
