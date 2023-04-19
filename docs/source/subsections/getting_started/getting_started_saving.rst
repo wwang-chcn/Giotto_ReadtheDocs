@@ -1,8 +1,8 @@
 ======================
-Saving Giotto Objects
+Saving Giotto Plots
 ======================
 
-:Date: 2022-10-12
+:Date: last-modified 04/14/23
 
 1 Saving Spatial Data in Plots
 ==============================
