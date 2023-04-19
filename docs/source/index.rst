@@ -17,9 +17,9 @@ Giotto Suite
    :caption: Getting Started
 
    Getting Started <gettingstarted.rst> 
-   Giotto Installation <installation_04122023.rst>
-   Giotto Ecosystem <giotto_ecosystem_04122023.rst>
-   Giotto Configuration <configuration_04122023.rst>
+   Giotto Installation </subsections/datasets/installation_04122023.rst>
+   Giotto Ecosystem </subsections/datasets/giotto_ecosystem_04122023.rst>
+   Giotto Configuration </subsections/datasets/configuration_04122023.rst>
 
 .. toctree::
    :hidden:
