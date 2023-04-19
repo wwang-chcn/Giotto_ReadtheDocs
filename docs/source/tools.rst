@@ -14,7 +14,7 @@ Tools
     Visualizations <subsections/getting_started/visualizations>
     Saving Giotto Objects <subsections/datasets/230414_save_giotto_object_George>
     Saving Giotto Plots </subsections/getting_started/getting_started_saving>
-    Interoperability </subsections/getting_started/interoperability_04122023>
+    Interoperability </subsections/datasets/interoperability_04122023>
             
 Image Alignment
 =========================
