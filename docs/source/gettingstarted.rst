@@ -106,7 +106,7 @@ Part 1: R Giotto Requirements
 
 				library(devtools) # If not installed: install.packages('devtools')
 				library(remotes)  #If not installed: install.packages('remotes')
-				remotes::install_github("RubD/Giotto") 
+				remotes::install_github("RubD/Giotto@master")
 
 			.. warning:: 	
 				If you are having compilation (gfortran) problems check goftran.
