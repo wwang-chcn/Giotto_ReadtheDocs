@@ -37,7 +37,10 @@ cells within each field are independent of each other, so in order to
 visualize and process all cells together imaging fields will be stitched
 together by providing x and y-offset values specific to each field.
 These offset values are known or estimates based on the original raw
-image: |image1|
+image: 
+
+.. image:: /images/images_pkgdown/SeqFish_mouse_cortex/cortex_svz_location_fields.png
+   :width: 50.0%
 
 Download Data
 =============
