@@ -37,7 +37,10 @@ cells within each field are independent of each other, so in order to
 visualize and process all cells together imaging fields will be stitched
 together by providing x and y-offset values specific to each field.
 These offset values are known or estimates based on the original raw
-image: |image1|
+image: 
+
+.. image:: /images/images_pkgdown/SeqFish_mouse_cortex/cortex_svz_location_fields.png
+   :width: 50.0%
 
 Download Data
 =============
@@ -153,7 +156,7 @@ Part 3: Dimension Reduction
 
       ## select genes based on highly variable features and gene statistics, both found in feature (gene) metadata
       gene_metadata = fDataDT(SS_seqfish)
-      featgenes = gene_metadata[hvf == 'yes' & perc_cells > 4 & mean_expr_det > 0.5]$gene_ID
+      featgenes = gene_metadata[hvf == 'yes' & perc_cells > 4 & mean_expr_det > 0.5]$feat_ID
       ## run PCA on expression values (default)
       SS_seqfish <- runPCA(gobject = SS_seqfish, genes_to_use = featgenes, scale_unit = F, center = F)
       screePlot(SS_seqfish)
@@ -717,7 +720,7 @@ Part 13: Cell Neighborhood: Interaction Changed Features
       plot(gene_metadata$nr_cells, gene_metadata$mean_expr)
       plot(gene_metadata$nr_cells, gene_metadata$mean_expr_det)
       quantile(gene_metadata$mean_expr_det)
-      high_expressed_genes = gene_metadata[mean_expr_det > 3.5]$gene_ID
+      high_expressed_genes = gene_metadata[mean_expr_det > 3.5]$feat_ID
       ## identify genes that are associated with proximity to other cell types
       plan('multisession', workers = 6)
       ICFsForesHighGenes =  findInteractionChangedFeats(gobject = SS_seqfish,
