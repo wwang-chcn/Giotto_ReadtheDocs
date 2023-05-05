@@ -2,12 +2,12 @@
 #sphinx_rtd_theme==1.0.0
 #readthedocs-sphinx-search==0.1.0
 urllib3==1.26.15
-sphinx==6
+sphinx==6.0.0
 sphinx_design
 sphinx-copybutton
 sphinx-toolbox
 m2r2
-furo>=2023.03.27
+furo==2022.09.29
 sphinx_togglebutton
 sphinx-panels
 sphinx-notfound-page
