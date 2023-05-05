@@ -6,7 +6,7 @@ sphinx_design
 sphinx-copybutton
 sphinx-toolbox
 m2r2
-furo
+furo>=2023.03.27
 sphinx_togglebutton
 sphinx-panels
 sphinx-notfound-page
