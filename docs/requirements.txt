@@ -1,6 +1,6 @@
 # Defining the exact version will make sure things don't break
 #sphinx_rtd_theme
-sphinx
+sphinx==5.2.0
 sphinx_design
 sphinx-copybutton
 sphinx-toolbox
