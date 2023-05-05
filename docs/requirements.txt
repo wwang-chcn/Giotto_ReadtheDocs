@@ -1,6 +1,5 @@
 # Defining the exact version will make sure things don't break
-urllib3
-sphinx_rtd_theme
+#sphinx_rtd_theme
 sphinx
 sphinx_design
 sphinx-copybutton
