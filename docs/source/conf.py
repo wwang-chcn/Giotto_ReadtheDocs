@@ -16,9 +16,6 @@ import furo
 # import pydata_sphinx_theme
 # import sphinx_rtd_theme
 
-# sys.path.insert(0, os.path.abspath('.'))
-
-
 # -- Project information -----------------------------------------------------
 
 project = 'Giotto Suite'
@@ -28,14 +25,11 @@ author = 'Developed by labs of Ruben Dries and Guo-Cheng Yuan.'
 # The full version, including alpha/beta/rc tags
 release = '3.3'
 
-
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-
-
 
 master_dox = 'index'
 extensions = [
@@ -50,7 +44,6 @@ extensions = [
 "sphinx.ext.autosummary",
 "sphinx.ext.todo",
 "sphinx.ext.viewcode",
-"sphinx_panels"
 "notfound.extension"
 #'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
@@ -61,6 +54,7 @@ extensions = [
 #'sphinxcontrib.spelling' #spell checker fatal error
 ]
 
+# 404 error handling for incompatible pages between versions
 notfound_context = {
     'title': 'Page not found',
     'body': '<h1>Page not found</h1>\n\n This page is not supported on this version of Giotto.',
@@ -103,12 +97,6 @@ html_logo = "images/GiottoLogo.png"
 html_favicon = "images/GiottoLogo_favicon.svg"
 html_sourcelink_suffix = ""
 
-html_css_files = [
-      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
-      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
-      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
-]
-
 html_theme_options = {
     "sidebar_hide_name": True,
     "github_url": "https://github.com/drieslab/Giotto/tree/suite",
@@ -143,7 +131,7 @@ html_theme_options = {
     ],
 }
 
-# html_sidebars = { '**': ['search-field.html', 'globaltoc.html', 'edit-this-page.html'] }
+html_sidebars = { '**': ['search-field.html', 'globaltoc.html', 'edit-this-page.html'] }
 # globaltoc.html = table of contents
 # relations.html = prev/next page
 # sourcelink.html = "This Page" and "show source"
@@ -180,7 +168,7 @@ html_theme_options = {
 # }
 
 #html_sidebars = { '**': ["search-field.html"] }
-# html_css_files = ["css/theme_edits.css"]
+html_css_files = ["css/theme_edits.css"]
 panels_add_fontawesome_latex = True
 panels_add_bootstrap_css = True
 
