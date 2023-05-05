@@ -1,6 +1,6 @@
 # Defining the exact version will make sure things don't break
 #sphinx_rtd_theme==1.0.0
-#readthedocs-sphinx-search==0.1.0
+readthedocs-sphinx-search==0.3.1
 urllib3==1.26.15
 sphinx==5.3.0
 sphinx_design
