@@ -12,9 +12,9 @@
 
 import os
 import sys
-import furo
+# import furo
 # import pydata_sphinx_theme
-# import sphinx_rtd_theme
+import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
