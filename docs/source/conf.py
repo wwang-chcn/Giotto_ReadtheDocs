@@ -51,7 +51,7 @@ extensions = [
 "sphinx.ext.todo",
 "sphinx.ext.viewcode",
 "sphinx_panels"
-# "notfound.extension"
+"notfound.extension"
 #'sphinx_rtd_dark_mode'
 #'sphinx_last_updated_by_git', #fatal error on readthedocs
 #'recommonmark',
@@ -61,10 +61,10 @@ extensions = [
 #'sphinxcontrib.spelling' #spell checker fatal error
 ]
 
-# notfound_context = {
-#     'title': 'Page not found',
-#     'body': '<h1>Page not found</h1>\n\n This page is not supported on this version of Giotto.',
-# }
+notfound_context = {
+    'title': 'Page not found',
+    'body': '<h1>Page not found</h1>\n\n This page is not supported on this version of Giotto.',
+}
 
 #Added for m2r2 extension
 source_suffix = ['.rst', '.md']
