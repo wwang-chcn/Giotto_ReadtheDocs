@@ -35,7 +35,7 @@ Visium Prostate Integration
    .. code:: r
 
       # 1. set working directory
-      results_directory = 'C:/Users/matth/Documents/data_storage/visium_integration/res_230505/'
+      results_directory = getwd()
 
       # 2. set giotto python path
       # set python path to your preferred python version path
@@ -51,7 +51,7 @@ Visium Prostate Integration
 
 
           giotto environment found at 
-         C:/Users/matth/AppData/Local/r-miniconda\envs\giotto_env\python.exe
+         my/path/r-miniconda\envs\giotto_env\python.exe
 
    .. container:: cell-output cell-output-stderr
 
@@ -102,7 +102,7 @@ The Visium Normal Prostate data to run this tutorial can be found
    .. code:: r
 
       # This dataset must be downlaoded manually; please do so and change the path below as appropriate
-      data_directory <- 'C:/Users/matth/Documents/data_storage/visium_integration'
+      data_directory <- getwd()
 
       ## obese upper
       N_pros = createGiottoVisiumObject(
@@ -365,13 +365,6 @@ The Visium Normal Prostate data to run this tutorial can be found
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-5-1.png
 
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-5-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/1a_plot.png
-   :width: 50.0%
-
 .. container:: cell
 
    .. code:: r
@@ -384,13 +377,6 @@ The Visium Normal Prostate data to run this tutorial can be found
    .. container:: cell-output-display
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-6-1.png
-
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-6-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/1b_plot.png
-   :width: 50.0%
 
 .. container:: cell
 
@@ -405,13 +391,6 @@ The Visium Normal Prostate data to run this tutorial can be found
    .. container:: cell-output-display
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-7-1.png
-
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-7-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/1c_plot.png
-   :width: 50.0%
 
 4 Process Giotto Objects
 ========================
@@ -514,10 +493,6 @@ The Visium Normal Prostate data to run this tutorial can be found
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-9-1.png
 
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-9-2.png
-
    .. code:: r
 
       plotMetaDataHeatmap(testcombo, selected_feats = testfeats, metadata_cols = 'list_ID', save_param = list(save_name = "2b_plot"))
@@ -525,12 +500,6 @@ The Visium Normal Prostate data to run this tutorial can be found
    .. container:: cell-output-display
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-9-3.png
-
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-9-4.png
-
-|image4| |image5|
 
 .. container:: cell
 
@@ -542,13 +511,6 @@ The Visium Normal Prostate data to run this tutorial can be found
    .. container:: cell-output-display
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-10-1.png
-
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-10-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/2c_plot.png
-   :width: 50.0%
 
 5 Dimention Reduction
 =====================
@@ -603,13 +565,6 @@ The Visium Normal Prostate data to run this tutorial can be found
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-11-2.png
 
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-11-3.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/3a_screeplot.png
-   :width: 50.0%
-
 6 Clustering
 ============
 
@@ -644,13 +599,6 @@ integration methods.
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-12-1.png
 
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-12-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.1a_plot.png
-   :width: 50.0%
-
 .. container:: cell
 
    .. code:: r
@@ -664,13 +612,6 @@ integration methods.
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-13-1.png
 
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-13-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.1b_plot.png
-   :width: 50.0%
-
 .. container:: cell
 
    .. code:: r
@@ -682,13 +623,6 @@ integration methods.
    .. container:: cell-output-display
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-14-1.png
-
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-14-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.1c_plot.png
-   :width: 50.0%
 
 6.2 With Harmony integration
 ----------------------------
@@ -793,17 +727,10 @@ spatial datasets.
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-15-1.png
 
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-15-2.png
-
    .. code:: r
 
       # If you want to show NN network information, you will need to specify these arguments in the plotUMAP function
       # show_NN_network = T, nn_network_to_use = 'sNN' , network_name = 'NN.harmony'
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.2a_plot.png
-   :width: 50.0%
 
 .. container:: cell
 
@@ -818,13 +745,6 @@ spatial datasets.
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-16-1.png
 
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-16-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.2b_plot.png
-   :width: 50.0%
-
 .. container:: cell
 
    .. code:: r
@@ -837,13 +757,6 @@ spatial datasets.
    .. container:: cell-output-display
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-17-1.png
-
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-17-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4.2c_plot.png
-   :width: 50.0%
 
 .. container:: cell
 
@@ -858,10 +771,6 @@ spatial datasets.
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-18-1.png
 
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-18-2.png
-
    .. code:: r
 
       spatPlot2D(gobject = testcombo,
@@ -871,12 +780,6 @@ spatial datasets.
    .. container:: cell-output-display
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-18-3.png
-
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-18-4.png
-
-|image6| |image7|
 
 7 Cell type annotation
 ======================
@@ -1091,13 +994,6 @@ getSpatialDataset
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-21-1.png
 
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-21-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/5a_PAGE_plot.png
-   :width: 50.0%
-
 7.2 Hypergeometric test
 -----------------------
 
@@ -1118,13 +1014,6 @@ getSpatialDataset
    .. container:: cell-output-display
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-22-1.png
-
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-22-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/5b_HyperGeometric_plot.png
-   :width: 50.0%
 
 7.3 Rank Enrichment
 -------------------
@@ -1157,13 +1046,6 @@ getSpatialDataset
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-23-1.png
 
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-23-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/5c_Rank_plot.png
-   :width: 50.0%
-
 7.4 DWLS Deconvolution
 ----------------------
 
@@ -1189,13 +1071,6 @@ getSpatialDataset
    .. container:: cell-output-display
 
       .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-24-1.png
-
-   .. container:: cell-output-display
-
-      .. image:: Visium_prostate_integration_files/figure-rst/unnamed-chunk-24-2.png
-
-.. image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/5d_DWLS_plot.png
-   :width: 50.0%
 
 8 Session Info
 ==============
@@ -1311,11 +1186,11 @@ getSpatialDataset
    :width: 50.0%
 .. |image3| image:: /images/images_pkgdown/general_figs/Visium_FFPE_Human_Prostate_Cancer_image.png
    :width: 50.0%
-.. |image4| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/2a_plot.png
-   :width: 50.0%
-.. |image5| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/2b_plot.png
-   :width: 50.0%
-.. |image6| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4_w_o_integration_plot.png
-   :width: 50.0%
-.. |image7| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4_w_integration_plot.png
-   :width: 50.0%
+.. .. |image4| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/2a_plot.png
+..    :width: 50.0%
+.. .. |image5| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/2b_plot.png
+..    :width: 50.0%
+.. .. |image6| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4_w_o_integration_plot.png
+..    :width: 50.0%
+.. .. |image7| image:: /images/images_pkgdown/visium_prostate_integration/vignette_sep29_2021/4_w_integration_plot.png
+..    :width: 50.0%
