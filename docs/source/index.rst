@@ -10,6 +10,7 @@ Giotto Suite
    Branches <branches.rst>
    Documentation <documentation.rst>
    Contribute <contribute.rst> 
+   News </subsections/datasets/giotto_news.rst> 
 
 .. toctree::
    :hidden:
@@ -52,7 +53,6 @@ Giotto Suite
    :hidden:
  
    Changelog <additionalinformation.rst>
-   News </subsections/datasets/giotto_news.rst> 
    
 .. image:: images/index/GiottoSuiteWebsite-07.svg
    :align: center
