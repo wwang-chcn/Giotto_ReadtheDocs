@@ -1,37 +1,14 @@
-==========================
-Giotto Object and Classes
-==========================
+======================
+Giotto Object Creation
+======================
 
-:Date: 2022-10-12
+:Date: 2023-07-26
 
 1. How to create a Giotto Object
 ================================
 
-In this tutorial, the methodology and syntax to create a
-**giottoObject** is shown and osmFISH data is used throughout the
-tutorial.
-
-.. container:: cell
-
-   .. code:: r
-      
-      # Ensure Giotto Suite is installed.
-      if(!"Giotto" %in% installed.packages()) {
-        devtools::install_github("drieslab/Giotto@suite")
-      }
-
-      # Ensure GiottoData, a small, helper module for tutorials, is installed.
-      if(!"GiottoData" %in% installed.packages()) {
-        devtools::install_github("drieslab/GiottoData")
-      }
-      library(Giotto)
-      # Ensure the Python environment for Giotto has been installed.
-      genv_exists = checkGiottoEnvironment()
-      if(!genv_exists){
-        # The following command need only be run once to install the Giotto environment.
-        installGiottoEnvironment()
-      }
-
+In this tutorial, the methodology and syntax to create a ``giotto``
+object is shown and osmFISH data is used throughout the tutorial.
 
 1.1 Import Giotto and Download the Data
 ---------------------------------------
@@ -44,7 +21,12 @@ To download this data, please ensure that
    .. code:: r
 
       library(Giotto)
-      library(GiottoData)
+
+      genv_exists = checkGiottoEnvironment()
+      if(!genv_exists){
+        # The following command need only be run once to install the Giotto environment.
+        installGiottoEnvironment()
+      }
 
       # Specify path from which data may be retrieved/stored
       data_directory = paste0(getwd(),'/gobject_data/')
@@ -63,9 +45,9 @@ To download this data, please ensure that
 -  Expression matrix
 -  Spatial locations (*unnecessary for scRNAseq analysis*)
 
-Here, creating a **giottoObject** with the minimum requirements is shown
-in two examples. Data formatting guidelines are shown below this code
-block.
+Here, creating a ``giotto`` object with the minimum requirements is
+shown in two examples. Data formatting guidelines are shown below this
+code block.
 
 .. container:: cell
 
@@ -101,7 +83,7 @@ Expression file formatting
 
    </summary>
 
-|  Expression count matrices accepted by Giotto should have columns
+|  Expression count matrices accepted by *Giotto* should have columns
   correlating to individual cells (**cell IDs**) and rows to individual
   features (**feature IDs**).
 | **data.table** objects and text-based files ie: (**.csv, .tsv, .txt**)
@@ -185,15 +167,15 @@ Giotto object creation by using a named list.
 1.3 Customizing the Giotto Object
 ---------------------------------
 
-By providing values to other **createGiottoObject** parameters, it is
+By providing values to other ``createGiottoObject()`` parameters, it is
 possible to add:
 
 -  **Cell** or **feature (gene) metadata**: see
-   `addCellMetadata <../md_rst/addCellMetadata.html>`__ and
-   `addFeatMetadata <../md_rst/addFeatMetadata.html>`__
+   `addCellMetadata <../reference/addCellMetadata.html>`__ and
+   `addFeatMetadata <../reference/addFeatMetadata.html>`__
 
 -  **Spatial networks** or **grids**: see
-   `Visualizations <./visualizations.html>`__
+   `Visualizations <./Visualizations.html>`__
 
 -  **Dimension reduction**: see
    `Clustering <./dimension_reduction.html>`__
@@ -201,26 +183,20 @@ possible to add:
 -  **Images**: see `Imaging <./getting_started_images.html>`__
 
 -  **giottoInstructions**: see
-   `createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__
+   `createGiottoInstructions <../docs/reference/createGiottoInstructions.html>`__
    and below
 
-Providing **giottoInstructions** allows the specification of:
+Providing ``giottoInstructions`` allows the specification of:
 
 -  An alternative python path if using the Giotto Environment (default)
    is not desired
 -  A directory to which resulting plots will save
 -  Plot formatting
 
-There are four functions to utilize when setting instructions:
-
--  **createGiottoInstructions**: creates instructions that are provided
-   to **createGiottoObject**
--  **showGiottoInstructions**: displays the instructions of a Giotto
-   object
--  **changeGiottoInstructions**: replaces 1 or more of the instruction
-   parameters (e.g. plotting format)
--  **replaceGiottoInstructions**: replaces all instructions with new
-   instructions (e.g after subsetting)
+``createGiottoInstruction()`` is used to create the instructions that
+are provided to ``createGiottoObject()``. The ``instructions()``
+function can then be used to view, set, or modify one or more of these
+instructions after they have been added to a ``giotto`` object.
 
 Here is an example of a more customized Giotto object.
 
@@ -257,44 +233,42 @@ Here is an example of a more customized Giotto object.
       custom_gobject = addCellMetadata(custom_gobject, new_metadata = metadata,
                                        by_column = T, column_cell_ID = 'CellID')
 
-      # Check which Giotto instructions are associated with the Giotto object
-      showGiottoInstructions(custom_gobject)
+      # Show the Giotto instructions associated with the Giotto object
+      instructions(custom_gobject)
 
-Note that although parameters *show_plot*, *return_plot*, and
-*save_plot* were not specified within the call to
-**createGiottoInstructions**, default values were provided to these
+Note that although parameters ``show_plot``, ``return_plot``, and
+``save_plot`` were not specified within the call to
+``createGiottoInstructions()``, default values were provided to these
 instruction parameters. All instruction parameters have default values,
-such that **createGiottoInstructions** may be called with some or no
+such that ``createGiottoInstructions()`` may be called with some or no
 arguments yet all instruction parameters will have a value after its
 execution.
 
-Alternatively, a named list may also be provided to the *instructions*
-argument of **createGiottoObject**. However, ensure that all arguments
+Alternatively, a named list may also be provided to the ``instructions``
+argument of ``createGiottoObject()``. However, ensure that all arguments
 to
-`createGiottoInstructions <../md_rst/createGiottoInstructions.html>`__
+```createGiottoInstructions()`` <../docs/reference/createGiottoInstructions.html>`__
 are defined when providing instructions as a named list, since default
 values are only applied to instructions when made with
-**createGiottoInstructions**. *Note that python_path must be specified
-when providing instructions as a named list, and may not be provided as
-NULL.*
+``createGiottoInstructions()``. *Note that ``python_path`` must be
+specified when providing instructions as a named list, and may not be
+provided as NULL.*
 
-The **giottoInstructions** may be changed, or completely replaced:
+The ``giottoInstructions`` may be changed, or completely replaced:
 
 .. container:: cell
 
    .. code:: r
 
-      # Change a previously set parameter, e.g. change dpi = 200 to dpi = 300
-      custom_gobject = changeGiottoInstructions(custom_gobject, 
-                                                param = 'dpi', 
-                                                new_value = 300)
+      # Change a specific previously set parameter, e.g. change dpi = 200 to dpi = 300
+      instructions(custom_gobject, 'dpi') = 300
 
       # Observe that the instructions have changed
-      showGiottoInstructions(custom_gobject)
+      instructions(custom_gobject, 'dpi')
 
       # Create new instructions using a named list
       sub_results_directory = paste0(results_directory, 'specific_results/')
-      my_python_path = custom_gobject@instructions$python_path
+      my_python_path = instructions(custom_gobject, 'python_path')
       new_instrs = list(python_path = my_python_path,
                         show_plot = TRUE,
                         return_plot = FALSE,
@@ -308,28 +282,42 @@ The **giottoInstructions** may be changed, or completely replaced:
                         is_docker = FALSE)
 
       # Change all instructions
-      custom_gobject = replaceGiottoInstructions(custom_gobject,
-                                                 instructions = new_instrs)
+      instructions(custom_gobject) = new_instrs
 
       # Observe that the instructions have changed
-      showGiottoInstructions(custom_gobject)
+      instructions(custom_gobject)
+
+1.3.1 Active spatial unit and feature type
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Many of *Giotto*\ ’s functions have ``spat_unit`` and ``feat_type``
+  parameters that govern which set of data to use. The active spatial
+  unit and feature type is visible when directly returning the
+  ``giotto`` object and decides what defaults are used when those
+  parameters are not supplied.
+| This setting is also stored within ``giottoInstructions`` and there
+  are convenient accessors specific for those two settings:
+
+-  ``activeSpatUnit()``
+-  ``activeFeatType()``
 
 1.4 Plotting Data from a Giotto Object
 --------------------------------------
 
 Each plotting function in Giotto has three important binary parameters:
 
--  **show_plot**: print the plot to the console, default is TRUE
--  **return_plot**: return the plot as an object, default is TRUE
--  **save_plot**: automatically save the plot, default is FALSE
+-  ``show_plot``: print the plot to the console, default is TRUE
+-  ``return_plot``: return the plot as an object, default is TRUE
+-  ``save_plot``: automatically save the plot, default is FALSE
 
-These parameters are stored within a **giottoObject** that was provided
-instructions from **createGiottoInstructions** and are provided to
+These parameters are stored within a ``giotto`` object that was provided
+instructions from ``createGiottoInstructions()`` and are provided to
 plotting functions accordingly. To change these parameters from the
 default values, the instructions may be changed or replaced, or these
 parameters may be *manually overwritten* within plotting functions.
 
-See `showSaveParameters <../md_rst/showSaveParameters.html>`__
+See
+```showSaveParameters()`` <../docs/reference/showSaveParameters.html>`__
 and the `Saving Options <./getting_started_saving.html>`__ tutorial for
 alternative methods to save plots.
 
@@ -355,143 +343,38 @@ alternative methods to save plots.
 
 .. image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/cell_clusters.png
 
-2. Giotto Object Structure
-==========================
+For a more in-depth look at the ``giotto`` object structure, take a look
+at the `introduction to giotto classes <./classes_intro.html>`__
 
-Usage of the Giotto package revolves around the **giottoObject**. This
-is an S4 object class that holds spatial expression data and facilitates
-its manipulation and visualization with the Giotto package’s functions.
-Additional metadata and other outputs generated from certain Giotto
-functions, which may used in downstream analyses, are also be stored
-within the **giottoObject**. Its self-contained nature renders a
-convenient representation of the entire spatial experiment and is why
-most Giotto functions take a given **giottoObject** as input and return
-a **giottoObject** as output.
+1.5 Session Info
+----------------
 
-| Data is organized within the **giottoObject** in defined **slots** as
-  described in the diagram below.
-|  |image1|
-| |image2|
-| |image3|
+.. container:: cell
 
-3. Nested Organization of the Giotto Object
-===========================================
+   .. code:: r
 
-| Spatial data has tiered organization and thus so too does Giotto.
-  Tissue regions can be divided down into individual cells and then
-  further into organelles. The data structure of Giotto mirrors
-  biological structure by nesting data within slots related to spatial
-  data by **spat_unit** (spatial unit). Additonally, to facilitate the
-  integration of multiple -omic data, slots related to feature data will
-  be nested with **feat_type** (feature type).
-| Included below is a description of this nesting and also, for advanced
-  users and contributors/developers, accessor functions for the slots
-  are also provided.
+      sessionInfo()
 
-3.0.1 Slots and Subnesting
---------------------------
+   .. container:: cell-output cell-output-stdout
 
-.. role:: pink
-.. role:: blue
-.. role:: purple
-.. role:: magenta
-.. role:: orange
+      ::
 
+         R version 4.2.1 (2022-06-23)
+         Platform: x86_64-apple-darwin17.0 (64-bit)
+         Running under: macOS Big Sur ... 10.16
 
-.. list-table:: Slots and Subnesting
-   :widths: 35 15 15 35
-   :header-rows: 1
-   :class: tight-table
+         Matrix products: default
+         BLAS:   /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRblas.0.dylib
+         LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
 
-   * - Slot
-     - Nested
-     - Example
-     - Accessors
-   * - **@expression**
-     - :blue:`spat_unit` - :pink:`feat_type` -  :magenta:`name`
-     - :blue:`cell` - :pink:`rna` - :magenta:`raw`
-     - get_expression_values()
-       set_expression_values()
-       showGiottoExpression()
-   * - **@cell_metadata**
-     - :blue:`spat_unit` - :pink:`feat_type`
-     - :blue:`cell` - :pink:`rna`
-     - pDataDT()
-       addCellMetadata()
-   * - **@feat_metadata**
-     - :blue:`spat_unit` - :pink:`feat_type`
-     - :blue:`cell` - :pink:`rna`
-     - fDataDT()        
-       addFeatMetadata()
-   * - **@spatial_grid**
-     - :blue:`spat_unit` - :magenta:`name`
-     - :blue:`grid`- :magenta:`grid`
-     - get_spatialGrid()
-       set_spatialGrid()
-       showGiottoSpatGrids()
-   * - **@nn_network**
-     - :blue:`spat_unit`- :orange:`method` -:magenta:`name`
-     - :blue:`cell`- :orange:`sNN` - :magenta:`sNN_results1`
-     - get_NearestNetwork()
-       set_NearestNetwork()
-   * - **@dimension_reduction**
-     - :purple:`approach` - :blue:`spat_unit` - :pink:`feat_type` - :orange:`method` - :magenta:`name`
-     - :purple:`cells` - :blue:`cell` - :pink:`rna` - :orange:`pca` - :magenta:`pca`
-     - get_dimReduction()
-       set_dimReduction()
-       showGiottoDimRed()
-   * - **@spatial_enrichment**
-     - :blue:`spat_unit` - :pink:`feat_type` - :magenta:`name`
-     - :blue:`cell` - :pink:`rna` - :magenta:`results1`
-     - get_spatial_enrichment()
-       set_spatial_enrichment()
-       showGiottoSpatEnrichments()
-   * - **@spatial_info**
-     - :blue:`spat_unit`
-     - :blue:`cell`
-     - get_polygon_info()
-       set_polygon_info()
-       showGiottoSpatialInfo()
-   * - **@spatial_locs**
-     - :blue:`spat_unit` - :magenta:`name`
-     - :blue:`cell`- :magenta:`raw`
-     - get_spatial_locations()
-       set_spatial_locations()
-       showGiottoSpatLocs()
-   * - **@spatial_network**
-     - :blue:`spat_unit` - :magenta:`name`
-     - :blue:`cell`- :magenta:`Delaunay_network1`
-     - get_spatialNetwork()
-       set_spatialNetwork()
-       showGiottoSpatNetworks()
-   * - **@feat_info**
-     - :pink:`feat_type`
-     - :pink:`rna`
-     - get_feature_info()
-       set_feature_info()
-       showGiottoFeatInfo()
-   * - **@images**
-     - :magenta:`name`
-     - :magenta:`image`
-     - getGiottoImage()
-       addGiottoImage()
-       showGiottoImageNames()
-   * - **@largeImages**
-     - :magenta:`name`
-     - :magenta:`image`
-     - getGiottoImage()
-       addGiottoImage()
-       showGiottoImageNames()
-   * - **@instructions**
-     - 
-     - 
-     - replaceGiottoInstructions()
-       showGiottoInstructions()
+         locale:
+         [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 
+         attached base packages:
+         [1] stats     graphics  grDevices utils     datasets  methods   base     
 
-.. |image1| image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-01.svg
-   :width: 100.0%
-.. |image2| image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-02.svg
-   :width: 100.0%
-.. |image3| image:: /images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-03.svg
-   :width: 100.0%
+         loaded via a namespace (and not attached):
+          [1] compiler_4.2.1  fastmap_1.1.1   cli_3.6.1       tools_4.2.1    
+          [5] htmltools_0.5.5 rstudioapi_0.14 yaml_2.3.7      rmarkdown_2.21 
+          [9] knitr_1.42      xfun_0.39       digest_0.6.31   jsonlite_1.8.4 
+         [13] rlang_1.1.1     evaluate_0.21  
