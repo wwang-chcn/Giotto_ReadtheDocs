@@ -261,7 +261,7 @@ For a more in-depth look at the `giotto` object structure, take a look at the [i
 
     
 
-## Session Info
+# Session Info
 ```{r}
 sessionInfo()
 ```

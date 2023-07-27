@@ -346,7 +346,7 @@ alternative methods to save plots.
 For a more in-depth look at the ``giotto`` object structure, take a look
 at the `introduction to giotto classes <./classes_intro.html>`__
 
-1.5 Session Info
+2. Session Info
 ----------------
 
 .. container:: cell
