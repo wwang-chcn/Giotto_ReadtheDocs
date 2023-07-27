@@ -1,52 +1,293 @@
 ---
 title: "An introduction to the Giotto Suite classes"
-format: html
+format: rst
+date: 2023-07-26
 number-sections: true
 ---
 
-Giotto is a toolbox and framework for spatial-omic analysis and its classes and structure are designed around these concepts.
+*Giotto* is a technique-agnostic framework and toolbox for spatial-omic analysis. Its structure and classes are designed to be flexible, intuitive, and readable. The framework supports working with both aggregate (cell x count) and un-aggregated spatial data where the polygon annotations are separate from the spatial expression data.
 
-## Giotto object slots
+# Giotto Object Structure
 
-    Giotto Object
-    ├──expression
-    ├──expression_feat
-    ├──spatial_locs
-    ├──spatial_info
-    ├──cell_metadata
-    ├──feat_metadata
-    ├──feat_info
-    ├──cell_ID
-    ├──feat_ID
-    ├──spatial_network
-    ├──spatial_grid
-    ├──spatial_enrichment
-    ├──dimension_reduction
-    ├──nn_network
-    ├──images
-    ├──largeImages
-    ├──parameters
-    ├──instructions
-    ├──offset_file
-    ├──OS_platform
-    └──join_info
+Usage of the *Giotto* package revolves around the `giotto` object. This is an S4 class that holds spatial expression data and facilitates its manipulation and visualization with the *Giotto* package's functions. Additional metadata and other outputs generated from certain functions, which may be used in downstream analyses, are also be stored within the `giotto` object. Its self-contained nature provides a convenient representation of the entire spatial experiment and is why most *Giotto* functions take a given `giotto` object as input and return a `giotto` object as output.
 
+Data is organized within the `giotto` object in defined `slots` as described in the diagram below.\
+![](../../images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-01.svg){width="100%"}\
+![](../..//images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-02.svg){width="100%"}\
+![](../../images/images_pkgdown/getting_started_figs/getting_started_gobject/Giotto_suite_object-03.svg){width="100%"}
 
+# Nested Organization of the Giotto Object
+
+Biology happens across multiple scales of size and types of modalities. While it is possible to simply generate a new object for each combination of the two, the fact that data from most spatial methods are both high resolution and spatially contiguous, requires a more flexible approach that permits the coexistence of multiple spatial units within the same object. This allows the user to define the spatial unit(s) of biology that are most relevant to the analysis and re-aggregate the feature information to those units.
+
+With this organization it is convenient to compare expression across different spatial units. Additionally, by determining spatial overlaps between these spatial units, it becomes possible to represent the hierarchical organization of biological subunits and make queries using it.
 
 ## Spatial unit and feature type
 
-A difficulty specific to spatial analysis is what exactly to consider the functional unit of the biology that you are studying.
+To accommodate this complexity, information is subnested within many of the `giotto` object's slots first by `spat_unit` (spatial unit) and then by `feat_type` (feature type). This structurally separates each set of information within *Giotto*'s framework so that there is minimal ambiguity.
+
+A summary of what information the object contains can be viewed by directly returning it.
+
+```{r, message=FALSE, results='hide'}
+library(Giotto)
+library(GiottoData)
+library(data.table)
+
+vizmini = loadGiottoMini('vizgen')
+```
+```{r}
+vizmini
+```
+
+
+Included below is a description of the `giotto` object subnesting for each slot and also the accessor functions for setting and getting information from them.
+
+
+```{r include=FALSE}
+# Code snippet from https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color,
+      x)
+  } else x
+}
+```
+
+Slot                       Nested                                                                                                                                                                                                                                                                      Example                                                                                                                                                                                                                                                                                  Accessors
+------------------------   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
+**@expression**            `r colorize("spat_unit", "#4C94A0")`-`r colorize("feat_type", "#E88EBB")`-`r colorize("name", "#801C34")`                                                                                                                                                                   `r colorize("cell", "#4C94A0")`-`r colorize("rna", "#E88EBB")`-`r colorize("raw", "#801C34")`                                                                                                                                                                                            get_expression_values()<br>set_expression_values()<br>showGiottoExpression()
+**@cell_metadata**         `r colorize("spat_unit", "#4C94A0")`-`r colorize("feat_type", "#E88EBB")`                                                                                                                                                                                                   `r colorize("cell", "#4C94A0")`-`r colorize("rna", "#E88EBB")`                                                                                                                                                                                                                           pDataDT()<br>addCellMetadata()
+**@feat_metadata**         `r colorize("spat_unit", "#4C94A0")`-`r colorize("feat_type", "#E88EBB")`                                                                                                                                                                                                   `r colorize("cell", "#4C94A0")`-`r colorize("rna", "#E88EBB")`                                                                                                                                                                                                                           fDataDT()<br>addFeatMetadata()
+**@spatial_grid**          `r colorize("spat_unit", "#4C94A0")`-`r colorize("name", "#801C34")`                                                                                                                                                                                                        `r colorize("grid", "#4C94A0")`-`r colorize("grid", "#801C34")`                                                                                                                                                                                                                          get_spatialGrid()<br>set_spatialGrid()<br>showGiottoSpatGrids()
+**@nn_network**            `r colorize("spat_unit", "#4C94A0")`-`r colorize("method", "#F6851F")`-`r colorize("name", "#801C34")`                                                                                                                                                                      `r colorize("cell", "#4C94A0")`-`r colorize("sNN", "#F6851F")`-`r colorize("sNN_results1", "#801C34")`                                                                                                                                                                                   get_NearestNetwork()<br>set_NearestNetwork()
+**@dimension_reduction**   `r colorize("approach", "#6C04D0")`-`r colorize("spat_unit", "#4C94A0")`-`r colorize("feat_type", "#E88EBB")`-`r colorize("method", "#F6851F")`-`r colorize("name", "#801C34")`                                                                                             `r colorize("cells", "#6C04D0")`-`r colorize("cell", "#4C94A0")`-`r colorize("rna", "#E88EBB")`-`r colorize("pca", "#F6851F")`-`r colorize("pca", "#801C34")`                                                                                                                            get_dimReduction()<br>set_dimReduction()<br>showGiottoDimRed()
+**@spatial_enrichment**    `r colorize("spat_unit", "#4C94A0")`-`r colorize("feat_type", "#E88EBB")`-`r colorize("name", "#801C34")`                                                                                                                                                                   `r colorize("cell", "#4C94A0")`-`r colorize("rna", "#E88EBB")`-`r colorize("results1", "#801C34")`                                                                                                                                                                                       get_spatial_enrichment()<br>set_spatial_enrichment()<br>showGiottoSpatEnrichments()
+**@spatial_info**          `r colorize("spat_unit", "#4C94A0")`                                                                                                                                                                                                                                        `r colorize("cell", "#4C94A0")`                                                                                                                                                                                                                                                          get_polygon_info()<br>set_polygon_info()<br>showGiottoSpatialInfo()
+**@spatial_locs**          `r colorize("spat_unit", "#4C94A0")`-`r colorize("name", "#801C34")`                                                                                                                                                                                                        `r colorize("cell", "#4C94A0")`-`r colorize("raw", "#801C34")`                                                                                                                                                                                                                           get_spatial_locations()<br>set_spatial_locations()<br>showGiottoSpatLocs()
+**@spatial_network**       `r colorize("spat_unit", "#4C94A0")`-`r colorize("name", "#801C34")`                                                                                                                                                                                                        `r colorize("cell", "#4C94A0")`-`r colorize("Delaunay_network1", "#801C34")`                                                                                                                                                                                                             get_spatialNetwork()<br>set_spatialNetwork()<br>showGiottoSpatNetworks()
+**@feat_info**             `r colorize("feat_type", "#E88EBB")`                                                                                                                                                                                                                                        `r colorize("rna", "#E88EBB")`                                                                                                                                                                                                                                                           get_feature_info()<br>set_feature_info()<br>showGiottoFeatInfo()
+**@images**                `r colorize("name", "#801C34")`                                                                                                                                                                                                                                             `r colorize("image", "#801C34")`                                                                                                                                                                                                                                                         getGiottoImage()<br>addGiottoImage()<br>showGiottoImageNames()
+**@largeImages**           `r colorize("name", "#801C34")`                                                                                                                                                                                                                                             `r colorize("image", "#801C34")`                                                                                                                                                                                                                                                         getGiottoImage()<br>addGiottoImage()<br>showGiottoImageNames()
+**@instructions**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               replaceGiottoInstructions()<br>showGiottoInstructions()
+**@OS_platform**    
+**@join_info**    
+**@parameters** 
+------------------------   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   -----------------------------------------------------------------------------------
+
+
+
+
++------------------+----------------------------------+-------------------------+------------------------+
+|     Slot         |               Nested             |         Example         |          Accessors     |
++====================================================================================================+
+|**@expression**   |`r colorize("spat_unit", "#4C94A0")`-`r colorize("feat_type", "#E88EBB")`-`r colorize("name", "#801C34")` |`r colorize("cell", "#4C94A0")`-`r colorize("rna", "#E88EBB")`-`r colorize("raw", "#801C34")`|get_expression_values()
+|                  |                      |                                                                                   |                                                                                             |set_expression_values()
+|                  |                      |                                                                                   |                                                                                             |showGiottoExpression()                                        |
++------------------+----------------------------------+-------------------------+------------------------+
 
 ## Show and list functions
 
-## Provenance
+Show and list functions are also provided for determining what information exists within each of these slots and its nesting.
 
-Going further, the sources of data drawn upon to create that functional unit of information can also be variable. This is most easily shown with the subcellular datasets from the Vizgen MERSCOPE platform which provide both feature polygon information for multiple confocal planes within a tissue. The aggregated information produced then could be drawn from different z-planes or combinations thereof.
+-   `show` functions print a preview of all the data within the slot, but do not return information
 
-```{r, eval=FALSE}
-
+```{r}
+showGiottoSpatLocs(vizmini)
 ```
 
-## Giotto subobjects
+-   `list` functions are (internal) functions that return a `data.table` of the available information and nesting.
 
-The 3.0 update introduced S4 subobjects
+```{r}
+Giotto:::list_expression(vizmini)
+
+# Find specific spat_unit objects #
+Giotto:::list_expression(vizmini, spat_unit = 'z0')
+```
+
+-   `list names` (internal) functions return a `vector` of object names at the specified nesting
+
+```{r}
+Giotto:::list_expression_names(vizmini, spat_unit = 'z1', feat_type = 'rna')
+```
+
+## Provenance
+
+Going further, sometimes different sources of information can be used when aggregating to a particular spatial unit. This is most easily shown with the subcellular datasets from the Vizgen MERSCOPE platform which provide both feature polygon information for multiple confocal planes within a tissue. The aggregated information produced then could be drawn from different z-planes or combinations thereof. Giotto tracks this provenance information for each set of aggregated data.
+
+```{r}
+expr_mat = getExpression(vizmini, spat_unit = 'aggregate')
+prov(expr_mat)
+```
+
+$-$
+
+# Giotto subobjects
+
+*Giotto* 3.0 update introduced S4 subobjects that are used within the `giotto` object and its processing. These subobjects provide more formalized definitions for what information and formatting is needed in each of the `giotto` object slots in order for it to be functional. These objects are standalone and extensible and commonly used spatial manipulation and plotting methods are being implemented for them.    
+In addition, these subobjects carry several pieces of metadata in additional slots alongside the main information (e.g. also slots for `spat_unit` and `feat_type` alongside the `exprDT` slot for the `exprObj` S4). This makes it so that nesting information is retained when they are taken out of the `giotto` object and that nesting information does not need to be supplied anymore when interacting with the `setter` functions.
+
+`getter` functions now have an `output` param that **defaults** to extracting the information from the `giotto` object as the S4 subobject. When extracting information that will be modified and then returned to the `giotto` object, it is preferred that the information is extracted as the S4 both so that tagged information is not lost, and because it is convenient to work with the S4's main data slot through the `[` and `[<-` generics (see @sec-working_with_subobjects).
+
+
+## Creating an S4 subobject 
+
+### Constructors
+
+For directly creating a subobject, constructor functions can be used. 
+
+<details><summary>constructors</summary>
+`createExprObj()`\
+`createCellMetaObj()`\
+`createFeatMetaObj()`\
+`createDimObj()`\
+`createNearestNetObj()`\
+`createSpatLocsObj()`\
+`createSpatNetObj()`\
+`createSpatEnrObj()`\
+`createSpatialGrid()`\
+`createGiottoPoints()`\
+`createGiottoPolygonsFromDfr()`\
+`createGiottoPolygonsFromMask()`\
+`createGiottoImage()`\
+`createGiottoLargeImage()`
+</details>
+
+```{r}
+coords = data.table(
+  sdimx = c(1,2,3),
+  sdimy = c(1,2,3),
+  cell_ID = c('A','B','C')
+)
+
+st = createSpatLocsObj(name = 'test',
+                       spat_unit = 'cell',
+                       coordinates = coords,
+                       provenance = 'cell')
+print(st)
+```
+
+### Readers
+
+Alternatively, read functions can be used to take named nested lists of raw data input and convert them to lists of subobjects which are directly usable by the setter functions.
+
+<details><summary>readers</summary>
+`readPolygonData()`\
+`readFeatData()`\
+`readExprData()`\
+`readCellMetadata()`\
+`readFeatMetadata()`\
+`readSpatLocsData()`\
+`readSpatNetData()`\
+`readSpatEnrichData()`\
+`readDimReducData()`\
+`readNearestNetData()`
+</details>
+
+```{r}
+st2 = readSpatLocsData(list(cell2 = list(test1 = coords,
+                                         test2 = coords)))
+print(st2)
+```
+
+## Giotto Accessors
+*Giotto* provides `getter` and `setter` functions for manually accessing the information contained within the `giotto` object. Note that the `setters` require that the data be provided as compatible S4 subobjects or lists thereof. External data can read into the appropriate formats using the above `reader` functions. The `getter` functions return S4 subobjects by default.
+
+<details><summary>getters</summary>
+`getExpression()`\
+`getCellMetadata()`\
+`getFeatMetadata()`\
+`getSpatialLocations()`\
+`getDimReduction()`\
+`getNearestNetwork()`\
+`getSpatialNetwork()`\
+`getPolygonInfo()`\
+`getFeatureInfo()`\
+`getSpatialEnrichment()`\
+`getGiottoImage()`
+</details>
+
+<details><summary>setters</summary>
+`setExpression()`\
+`setCellMetadata()`\
+`setFeatureMetadata()`\
+`setSpatialLocations()`\
+`setDimReduction()`\
+`setNearestNetwork()`\
+`setSpatialNetwork()`\
+`setPolygonInfo()`\
+`setFeatureInfo()`\
+`setSpatialEnrichment()`\
+`setGiottoImage()`
+</details>
+
+```{r}
+expval = getExpression(vizmini)
+print(expval)
+```
+
+## Get and set S4 spat_unit, feat_type, provenance
+
+`spatUnit()`, `featType()`, and `prov()` are replacement functions for tagged spatial unit, feature type, and provenance information respectively.
+```{r}
+# spat_unit
+spatUnit(expval) <- 'new_spat'
+spatUnit(expval)
+
+# feat_type
+featType(expval) <- 'new_feat'
+featType(expval)
+
+# provenance
+prov(expval) <- 'cell'
+prov(expval)
+```
+
+## Setting an S4 subobject
+
+The `spat_unit`, `feat_type`, and `name` params no longer need to be given when setting an S4 subobject with tagged information into a `giottoObject`. However, if input is given to the `set` function parameters then it is prioritized over the tagged information and the tagged information is updated.
+
+```{r}
+# set exprObj to tagged nesting location
+vizmini <- setExpression(vizmini, expval)
+
+Giotto:::list_expression(vizmini)
+```
+
+## Working with S4 subobjects {#sec-working_with_subobjects}
+
+Giotto's S4 subobjects each wrap one main data object. The empty `[]` and `[]<-` operators are defined as shorthand for directly accessing this slot that contains the data. For example, with a `spatLocsObj`:
+
+`class(spatLocsObj[])` is equivalent to `class(spatLocsObj@coordinates)`
+
+In this way, the S4 subobjects can be used in contexts that the wrapped objects could be.
+
+```{r}
+st = getSpatialLocations(vizmini)
+class(st)
+
+# With empty brackets
+class(st[])
+```
+
+**Setting information**
+
+```{r}
+print(st)
+```
+
+
+```{r}
+st[] = coords
+print(st)
+```
+
+
+
+# Session Info
+```{r}
+sessionInfo()
+```
+
+
