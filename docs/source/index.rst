@@ -20,6 +20,8 @@ Giotto Suite
    Giotto Installation </subsections/datasets/installation_04122023.rst>
    Giotto Ecosystem </subsections/datasets/giotto_ecosystem_04122023.rst>
    Giotto Configuration </subsections/datasets/configuration_04122023.rst>
+   Giotto Object Creation </subsections/getting_started/getting_started_gobject.rst>
+   Giotto Class Structure </subsections/getting_started/classes_intro.rst>
 
 .. toctree::
    :hidden:
