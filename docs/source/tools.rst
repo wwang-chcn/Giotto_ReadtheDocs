@@ -9,6 +9,7 @@ Tools
     :caption: Tools
     :hidden:
 
+    Spatial Manipulation <subsections/datasets/spatial_manipulation>
     Image Alignment <subsections/getting_started/getting_started_images>
     Interactive Selection <subsections/getting_started/interactive_selection>
     Visualizations <subsections/getting_started/visualizations>
@@ -16,6 +17,15 @@ Tools
     Saving Giotto Plots </subsections/getting_started/getting_started_saving>
     Interoperability </subsections/datasets/interoperability_04122023>
             
+Spatial Manipulation
+=========================
+.. card-carousel:: 3
+    .. card:: Spatial Manipulation
+        :link: /subsections/datasets/spatial_manipulation
+        :link-type: doc
+
+        ..image:: images/tools/icon_spat_manip.pngd
+
 Image Alignment
 =========================
 .. card-carousel:: 3
