@@ -1,0 +1,106 @@
+---
+title: "Spatial Transformations"
+format: html
+date: last-modified
+number-sections: true
+---
+
+## Spatial Object Manipulation
+Spatial-omics data is defined both by the biological information that it contains and the way that it maps to space. When assembling and analyzing a spatial dataset, it may be necessary to spatially manipulate the data so that they are all in a common coordinate reference frame where all data is in at the same scaling and rotation, and properly overlaid.    
+*Giotto* extends a set of generics from *terra* in order to make it simple to figure out where data is in space and to move it where you need it.
+
+## Start Giotto
+```{r eval=TRUE, message=FALSE}
+# Ensure Giotto Suite is installed
+i_p = installed.packages()
+if(!"Giotto" %in% i_p) devtools::install_github("drieslab/Giotto@suite")
+library(Giotto)
+
+# Ensure Giotto Data is installed
+if(!"GiottoData" %in% i_p) devtools::install_github("drieslab/GiottoData")
+library(GiottoData)
+
+# Ensure the Python environment for Giotto has been installed
+genv_exists = checkGiottoEnvironment()
+if(!genv_exists){
+  # The following command need only be run once to install the Giotto environment
+  installGiottoEnvironment()
+}
+```
+
+
+## Load mini giotto object example
+First we will load in the a mini dataset put together from Vizgen's Mouse Brain Receptor Map data release. This mini giotto object has been pre-analyzed and comes with many analyses and data objects attached. Most of these analyses have been performed on the 'aggregate' [spatial unit]() so we will set it as the active spatial unit in order to default to it.
+```{r, message=FALSE, results='hide'}
+viz <- GiottoData::loadGiottoMini(dataset = 'vizgen')
+activeSpatUnit(viz) <- 'aggregate'
+```
+
+## Extract spatial info
+Then we will extract the spatial subobjects that we will use. These will be all subobjects in Giotto that contain coordinates data or directly map their data to space.
+```{r}
+image <- getGiottoImage(viz, image_type = 'largeImage', name = 'dapi_z0')
+spat_locs <- getSpatialLocations(viz)
+spat_net <- getSpatialNetwork(viz)
+gpoints <- getFeatureInfo(viz, return_giottoPoints = TRUE)
+gpoly <- getPolygonInfo(viz, polygon_name = 'aggregate', return_giottoPolygon = TRUE)
+```
+
+## Defining bounds and extent
+One of the most convenient descriptors of where an object is in space is its minima and maxima in the coordinate plane, also known as the boundaries or spatial **extent** of that information. It can be thought of as bounding box around where your information exists in space. *Giotto* incorporates usage of the `SpatExtent` class and associated `ext()` generic from *terra* to describe objects spatially.
+```{r}
+ext(image)     # giottoLargeImage
+ext(spat_locs) # spatLocsObj
+ext(spat_net)  # spatNetObj
+ext(gpoints)   # giottoPoints
+ext(gpoly)     # giottoPolygon
+```
+
+
+### Image extent
+With `giottoLargeImage` objects, you are additionally able to assign how they map to space using `ext()`. Note that modifications performed on one `giottoLargeImage` are applied to all references to that object unless `copy()` is used first.
+```{r, results='hide'}
+e <- ext(image) # save extent
+plot(image)
+
+# modify extent
+ext(image) <- c(0,40,0,10) # xmin, xmax, ymin, ymax
+plot(image)
+ext(image) <- e # replace
+```
+
+
+## Spatial Transformations
+Commonly used spatial transformations are coordinate translations, flips, and rotations. *Giotto* extends generics from *terra* through the use of `spatShift()` (`shift()` in *terra*), `flip()`, and `spin()` respectively.
+
+### coordinate translation
+`spatShift()` is used for simple coordinate translations. It takes the params `dx` and `dy` for distance to translate along either axis.
+```{r}
+plot(spat_locs)
+plot(spatShift(spat_locs, dx = 5e3))
+```
+(pay attention to the x coords)
+
+### flip
+`flip()` will flip the data over a defined line of either 'vertical' or 'horizontal' symmetry (default is 'vertical' with the line of symmetry being y = 0. The `direction` param partial matches for either 'vertical' or 'horizontal'. The `y0` and `x0` params define where the line of symmetry is.    
+This is useful for assembling datasets where the data is based on coordinates where the y values increase negatively. This behavior is different from the default behavior in *terra* where objects are flipped over the minima of their extents. This difference is needed because often, values are defined in reference to the coordinate origin and any distance away from the axes is meaningful for alignment after flipping.   
+If the default behavior of flipping over the extent is desired, NULL can be passed to the relevant `y0` or `x0` param.
+```{r}
+rb = getRainbowColors(100)
+plot(gpoly, col = rb)
+plot(flip(gpoly), col = rb) # flip to positive y
+plot(flip(gpoly, direction = 'h', x0 = 1e4), col = rb) # flip across x = 10000
+```
+
+### spin
+`spin()` allows rotating of vector data through degrees passed to `angle` param. The rotation happens about a coordinate defined by `x0` and `y0`. By default `x0` and `y0` are defined as the object center.
+```{r}
+plot(gpoints)
+plot(spin(gpoints, angle = 45))
+plot(spin(gpoints, angle = 45, x0 = 0, y0 = 0))
+```
+
+## Session Info
+```{r}
+sessionInfo()
+```
