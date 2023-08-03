@@ -20,11 +20,12 @@ Tools
 Spatial Manipulation
 =========================
 .. card-carousel:: 3
+
     .. card:: Spatial Manipulation
         :link: /subsections/datasets/spatial_manipulation
         :link-type: doc
 
-        ..image:: images/tools/icon_spat_manip.pngd
+        .. image:: images/tools/icon_spat_manip.png
 
 Image Alignment
 =========================
