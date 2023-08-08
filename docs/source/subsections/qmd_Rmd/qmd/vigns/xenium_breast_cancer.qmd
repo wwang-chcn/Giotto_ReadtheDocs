@@ -86,14 +86,14 @@ There are four types of probes used, each of which is represented in both export
 # load features metadata
 # (make sure cell_feature_matrix folder is unpacked)
 feature_dt = data.table::fread(feat_meta_path, header = FALSE)
-colnames(feature_dt) = c('feat_ID','feat_name','feat_type')
+colnames(feature_dt) = c('ensembl_ID','feat_name','feat_type')
 
 # find the feature IDs that belong to each feature type
 feature_dt[, table(feat_type)]
 feat_types = names(feature_dt[, table(feat_type)])
 
 feat_types_IDs = lapply(
-  feat_types, function(type) feature_dt[feat_type == type, unique(feat_ID)]
+  feat_types, function(type) feature_dt[feat_type == type, unique(feat_name)]
 )
 names(feat_types_IDs) = feat_types
 ```
