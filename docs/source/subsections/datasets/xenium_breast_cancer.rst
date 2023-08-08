@@ -894,121 +894,7 @@ aggregate information.
       #          [1,]    2.596845    0.8111559
       #          [2,] 7523.503184 5477.3741650
 
-6.3 Feature metadata
---------------------
-
-Append features metadata from ``panel.tsv`` which includes information
-on what cell types the features are commonly markers for. There are 313
-rows in this file. One for each of the gene expression probes, thus
-these metadata should be appended only to feat_type ‘rna’.
-
-.. container:: cell
-
-   .. code:: r
-
-      panel_meta = data.table::fread(panel_meta_path)
-      data.table::setnames(panel_meta, 'Name', 'feat_ID')
-
-      # Append this metadata
-      xenium_gobj = addFeatMetadata(gobject = xenium_gobj,
-                                    feat_type = 'rna',
-                                    spat_unit = 'cell',
-                                    new_metadata = panel_meta,
-                                    by_column = TRUE,
-                                    column_feat_ID = 'feat_ID')
-      xenium_gobj = addFeatMetadata(gobject = xenium_gobj,
-                                    feat_type = 'rna',
-                                    spat_unit = 'nucleus',
-                                    new_metadata = panel_meta,
-                                    by_column = TRUE,
-                                    column_feat_ID = 'feat_ID')
-
-      # to return a specific metadata as data.table 
-      # (spat_unit = 'cell', feat_type = 'rna' are default)
-      # fDataDT(xenium_gobj)
-
-      # Print a preview of all available features metadata
-      showGiottoFeatMetadata(xenium_gobj)
-
-.. container:: cell
-
-   .. code:: r
-
-      # ├──Spatial unit "cell"
-      # │  ├──Feature type "rna"
-      # │  │     An object of class featMetaObj 
-      # │  │     Provenance: cell 
-      # │  │        feat_ID      Ensembl ID             Annotation
-      # │  │     1:     LUM ENSG00000139329            Fibroblasts
-      # │  │     2:    TCIM ENSG00000176907 Breast glandular cells
-      # │  │     3:   RUNX1 ENSG00000159216          Breast cancer
-      # │  │     4: RAPGEF3 ENSG00000079337             Adipocytes
-      # │  │  
-      # │  ├──Feature type "blank_code"
-      # │  │     An object of class featMetaObj 
-      # │  │     Provenance: cell 
-      # │  │           feat_ID
-      # │  │     1: BLANK_0424
-      # │  │     2: BLANK_0401
-      # │  │     3: BLANK_0447
-      # │  │     4: BLANK_0449
-      # │  │  
-      # │  ├──Feature type "neg_code"
-      # │  │     An object of class featMetaObj 
-      # │  │     Provenance: cell 
-      # │  │                        feat_ID
-      # │  │     1: NegControlCodeword_0503
-      # │  │     2: NegControlCodeword_0514
-      # │  │     3: NegControlCodeword_0535
-      # │  │     4: NegControlCodeword_0519
-      # │  │  
-      # │  └──Feature type "neg_probe"
-      # │        An object of class featMetaObj 
-      # │        Provenance: cell 
-      # │                         feat_ID
-      # │        1: NegControlProbe_00003
-      # │        2:       antisense_SCRIB
-      # │        3: NegControlProbe_00012
-      # │        4:        antisense_LGI3
-      # │     
-      # └──Spatial unit "nucleus"
-      #    ├──Feature type "rna"
-      #    │     An object of class featMetaObj 
-      #    │     Provenance: nucleus 
-      #    │        feat_ID      Ensembl ID             Annotation
-      #    │     1:     LUM ENSG00000139329            Fibroblasts
-      #    │     2:    TCIM ENSG00000176907 Breast glandular cells
-      #    │     3:   RUNX1 ENSG00000159216          Breast cancer
-      #    │     4: RAPGEF3 ENSG00000079337             Adipocytes
-      #    │  
-      #    ├──Feature type "blank_code"
-      #    │     An object of class featMetaObj 
-      #    │     Provenance: nucleus 
-      #    │           feat_ID
-      #    │     1: BLANK_0424
-      #    │     2: BLANK_0401
-      #    │     3: BLANK_0447
-      #    │     4: BLANK_0449
-      #    │  
-      #    ├──Feature type "neg_code"
-      #    │     An object of class featMetaObj 
-      #    │     Provenance: nucleus 
-      #    │                        feat_ID
-      #    │     1: NegControlCodeword_0503
-      #    │     2: NegControlCodeword_0514
-      #    │     3: NegControlCodeword_0535
-      #    │     4: NegControlCodeword_0519
-      #    │  
-      #    └──Feature type "neg_probe"
-      #          An object of class featMetaObj 
-      #          Provenance: nucleus 
-      #                           feat_ID
-      #          1: NegControlProbe_00003
-      #          2:       antisense_SCRIB
-      #          3: NegControlProbe_00012
-      #          4:        antisense_LGI3
-
-6.4 Plot the generated centroids information
+6.3 Plot the generated centroids information
 --------------------------------------------
 
 .. container:: cell
@@ -1151,7 +1037,121 @@ object’s ``expression`` slot. *Run on a server \| Time taken:
       #              First four colnames:
       #              1 2 3 4 
 
-7.3 Data filtering
+7.3 Feature metadata
+--------------------
+
+Append features metadata from ``panel.tsv`` which includes information
+on what cell types the features are commonly markers for. There are 313
+rows in this file. One for each of the gene expression probes, thus
+these metadata should be appended only to feat_type ‘rna’.
+
+.. container:: cell
+
+   .. code:: r
+
+      panel_meta = data.table::fread(panel_meta_path)
+      data.table::setnames(panel_meta, 'Name', 'feat_ID')
+
+      # Append this metadata
+      xenium_gobj = addFeatMetadata(gobject = xenium_gobj,
+                                    feat_type = 'rna',
+                                    spat_unit = 'cell',
+                                    new_metadata = panel_meta,
+                                    by_column = TRUE,
+                                    column_feat_ID = 'feat_ID')
+      xenium_gobj = addFeatMetadata(gobject = xenium_gobj,
+                                    feat_type = 'rna',
+                                    spat_unit = 'nucleus',
+                                    new_metadata = panel_meta,
+                                    by_column = TRUE,
+                                    column_feat_ID = 'feat_ID')
+
+      # to return a specific metadata as data.table 
+      # (spat_unit = 'cell', feat_type = 'rna' are default)
+      # fDataDT(xenium_gobj)
+
+      # Print a preview of all available features metadata
+      showGiottoFeatMetadata(xenium_gobj)
+
+.. container:: cell
+
+   .. code:: r
+
+      # ├──Spatial unit "cell"
+      # │  ├──Feature type "rna"
+      # │  │     An object of class featMetaObj 
+      # │  │     Provenance: cell 
+      # │  │        feat_ID      Ensembl ID             Annotation
+      # │  │     1:     LUM ENSG00000139329            Fibroblasts
+      # │  │     2:    TCIM ENSG00000176907 Breast glandular cells
+      # │  │     3:   RUNX1 ENSG00000159216          Breast cancer
+      # │  │     4: RAPGEF3 ENSG00000079337             Adipocytes
+      # │  │  
+      # │  ├──Feature type "blank_code"
+      # │  │     An object of class featMetaObj 
+      # │  │     Provenance: cell 
+      # │  │           feat_ID
+      # │  │     1: BLANK_0424
+      # │  │     2: BLANK_0401
+      # │  │     3: BLANK_0447
+      # │  │     4: BLANK_0449
+      # │  │  
+      # │  ├──Feature type "neg_code"
+      # │  │     An object of class featMetaObj 
+      # │  │     Provenance: cell 
+      # │  │                        feat_ID
+      # │  │     1: NegControlCodeword_0503
+      # │  │     2: NegControlCodeword_0514
+      # │  │     3: NegControlCodeword_0535
+      # │  │     4: NegControlCodeword_0519
+      # │  │  
+      # │  └──Feature type "neg_probe"
+      # │        An object of class featMetaObj 
+      # │        Provenance: cell 
+      # │                         feat_ID
+      # │        1: NegControlProbe_00003
+      # │        2:       antisense_SCRIB
+      # │        3: NegControlProbe_00012
+      # │        4:        antisense_LGI3
+      # │     
+      # └──Spatial unit "nucleus"
+      #    ├──Feature type "rna"
+      #    │     An object of class featMetaObj 
+      #    │     Provenance: nucleus 
+      #    │        feat_ID      Ensembl ID             Annotation
+      #    │     1:     LUM ENSG00000139329            Fibroblasts
+      #    │     2:    TCIM ENSG00000176907 Breast glandular cells
+      #    │     3:   RUNX1 ENSG00000159216          Breast cancer
+      #    │     4: RAPGEF3 ENSG00000079337             Adipocytes
+      #    │  
+      #    ├──Feature type "blank_code"
+      #    │     An object of class featMetaObj 
+      #    │     Provenance: nucleus 
+      #    │           feat_ID
+      #    │     1: BLANK_0424
+      #    │     2: BLANK_0401
+      #    │     3: BLANK_0447
+      #    │     4: BLANK_0449
+      #    │  
+      #    ├──Feature type "neg_code"
+      #    │     An object of class featMetaObj 
+      #    │     Provenance: nucleus 
+      #    │                        feat_ID
+      #    │     1: NegControlCodeword_0503
+      #    │     2: NegControlCodeword_0514
+      #    │     3: NegControlCodeword_0535
+      #    │     4: NegControlCodeword_0519
+      #    │  
+      #    └──Feature type "neg_probe"
+      #          An object of class featMetaObj 
+      #          Provenance: nucleus 
+      #                           feat_ID
+      #          1: NegControlProbe_00003
+      #          2:       antisense_SCRIB
+      #          3: NegControlProbe_00012
+      #          4:        antisense_LGI3
+
+7.4 Data filtering
 ------------------
 
 Now that an aggregated expression matrix is generated the usual data
@@ -1182,7 +1182,7 @@ minimum of 5 features detected to be included. *Run on a server \|
       # Number of cells removed:  2945  out of  167782 
       # Number of feats removed:  0  out of  313 
 
-7.4 Add data statistics
+7.5 Add data statistics
 -----------------------
 
 .. container:: cell
@@ -1387,7 +1387,7 @@ minimum of 5 features detected to be included. *Run on a server \|
 
    </details>
 
-7.5 Normalize expression
+7.6 Normalize expression
 ------------------------
 
 .. container:: cell
@@ -1399,7 +1399,7 @@ minimum of 5 features detected to be included. *Run on a server \|
                                     scalefactor = 5000,
                                     verbose = T)
 
-7.6 Calculate highly variable features
+7.7 Calculate highly variable features
 --------------------------------------
 
 .. container:: cell
