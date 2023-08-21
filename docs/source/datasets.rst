@@ -11,6 +11,7 @@ Tutorials
 
     Stereo-Seq Mouse Embryo <subsections/datasets/SSeq-E12-5_E1S3-Tutorial>
     Seq-Scope Mouse Liver <subsections/datasets/seqscope_mouse_liver_221115>
+    Spatial Genomics Kidney <subsections/datasets/spatial_genomics_kidney>
     Xenium Breast Cancer <subsections/datasets/xenium_breast_cancer>
     Nanostring CosMx Lung <subsections/datasets/Nanostring_Lung12>
     MERFISH <subsections/datasets/merFISH_hypot_preopt_region>
@@ -91,6 +92,16 @@ Visium
 *********************
 RNA Multiplex Imaging
 *********************
+
+Spatial Genomics
+=================
+.. card-carousel:: 3
+
+    .. card::
+        :link: subsections/datasets/spatial_genomics_kidney
+        :link-type: doc
+
+        .. image:: images/tutorials/spatial_genomics_kidney/LeidenSpatPlot6.png
 
 Xenium
 =================
