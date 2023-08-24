@@ -1,0 +1,157 @@
+---
+title: "A Quick-Start Guide on Giotto Interaoperability with Other Tools"
+author: "Iqra Amin, Irzam Sarfraz"
+output: html_document
+date: "2023-08-10"
+---
+
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, comment=NA) 
+```
+
+
+# Introduction
+
+This quick start guide explores how Giotto toolkit facilitates analysis with other tools available on Bioconductor and elsewhere that use other types of objects such as SpatialExperiment. Using functions from existing Bioconductor packages we show that cross conversion to and from Giotto and other packages is straight-forward and complements use of Giotto with existing tools.
+
+In this simple example we load a small Giotto dataset in the form of Giotto object, convert it to SpatialExperiment object. We then Identify the spatially variable genes using nnSVG package, convert the object back to Giotto, and finally compare the variable genes from both nnSVG and the Giotto's binarization based method.
+
+## Giottoobj to SpatialExperiment
+
+We have made available several small example datasets through the GiottoData package that can be used to test the various aspects of the Giotto toolkit easily. Here we load both Giotto toolkit and GiottoData package. 
+
+```{r, results='hide', message=FALSE}
+library(Giotto)
+library(GiottoData)
+```
+For the purpose of this example, we load a mini mouse brain dataset generated using "visium" protocol using the "loadGiottoMini" function.
+
+```{r}
+g <- loadGiottoMini(dataset = "visium")
+```
+
+The nnSVG package can take considerable amount of time. For the purpose of this example, we further subset the mini dataset, keeping only about 100 genes.
+
+```{r}
+# subset
+set.seed(123)
+subset_genes = sample(fDataDT(g)$feat_ID, 100)
+subset_genes = unique(c(subset_genes, c('Ttr', 'Prkcd', 'Ddn', 'Hpca')))
+g = subsetGiotto(g, feat_ids = subset_genes)
+```
+
+Now we load SpatialExperiment package and using the converter function "giottoToSpatialExperiment" from Giotto, we convert our mini dataset to SpatialExperiment object to use with nnSVG downstream.
+
+```{r, results='hide', message=FALSE}
+library(SpatialExperiment)
+```
+
+```{r}
+# convert
+gspe <- giottoToSpatialExperiment(g)
+```
+For each spatial unit the converter function returns a separate SpatialExperiment object. The output is a list of objects (one object for each unit) therefore we select the first object and use it downstream.
+
+```{r}
+spe <- gspe[[1]]
+
+```
+
+## nnSVG without covariates
+
+```{r, results='hide', message=FALSE}
+library(nnSVG)
+library(data.table)
+```
+We first run the nnSVG without using any covariates using the normalized matrix on our converted spatialExperiment object.
+```{r}
+# run nnSVG
+set.seed(123)
+spe <- nnSVG(spe, assay_name = 'normalized_rna_cell')
+```
+
+Now we order the genes based on their assigned rank from the nnSVG method.
+
+```{r}
+DTresults = as.data.table(rowData(spe))
+setorder(DTresults, rank)
+top_genes = DTresults$feat_ID[1:10]
+```
+
+We visualize some of the top ranked genes using "spatFeatPlot2D" function from the Giotto toolkit.
+
+```{r}
+# show selected genes from top 10
+selected_genes = c('Ttr', 'Prkcd', 'Ddn', 'Hpca')
+spatFeatPlot2D(g, feats = selected_genes)
+
+```
+
+## nnSVG with covariates
+
+The initially loaded Giotto object had been processed earlier, with clustering labels stored in the object previously using the leiden clustering algorithm. Assuming that the labels may represents some meaningful clusters or cell types, we use this variable as a covariate for the identification of our spatially variable genes.
+
+```{r}
+# set seed for reproducibility
+set.seed(123)
+
+# Create model matrix for leiden clustering labels
+X <- model.matrix(~ colData(spe)$leiden_clus)
+spe <- nnSVG(spe, X = X, assay_name = 'normalized_rna_cell')
+
+
+DTresults_wCov = as.data.table(rowData(spe))
+setorder(DTresults_wCov, rank)
+top_genes_wCov = DTresults_wCov$feat_ID[1:10]
+
+# show selected genes from top 10
+selected_genes = c('Ttr', 'Prkcd', 'Ddn', 'Hpca')
+spatFeatPlot2D(g, feats = selected_genes, expression_values = 'scaled')
+
+```
+
+## Convert spatialExperiment to Giotto
+
+Now we convert the spatialExperiment object back to Giotto object and run the Giotto's binarization based method "binspect" to identify the spatially variable genes and finally compare the outcome from both nnSVG and binspect.
+```{r}
+
+giottoFromSPE <- spatialExperimentToGiotto(spe = spe,
+                                           python_path = instructions(g)$python_path,
+                                           sp_network = c("Delaunay_network", "spatial_network"))
+```
+
+
+Exploring the feature metadata from the converted object, we see that all computation and metrics from the nnSVG are available to use.
+
+```{r}
+fDataDT(giottoFromSPE)
+```
+
+We now run binSpect on our reconverted Giotto object.
+
+```{r}
+binspect_genes = binSpect(gobject = giottoFromSPE,
+                          spat_unit = 'cell',
+                          feat_type = 'rna',
+                          expression_values = 'normalized_rna_cell')
+head(binspect_genes)
+```
+
+## Compare Binspect to nnSVG
+
+Now, we compare the results between nnSVG and the binSpect method from Giotto. We plot each gene as a combined function of both the ranks, the nnSVG and the binSpect rank of that gene. Overall, we observe a lot of coherence between the two methods.
+
+```{r}
+binspect_genes[, rank_bs := 1:.N]
+# plot
+DTresults = merge.data.table(DTresults, binspect_genes[,.(feats, rank_bs)],
+                             by.x = 'feat_ID', by.y = 'feats')
+plot(DTresults$rank, DTresults$rank_bs)
+
+```
+
+```{r}
+
+sessionInfo()
+```
