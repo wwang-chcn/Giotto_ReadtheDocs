@@ -10,7 +10,8 @@ Giotto Suite
    Branches <branches.rst>
    Documentation <documentation.rst>
    Contribute <contribute.rst> 
-   News </subsections/datasets/giotto_news.rst> 
+   News </subsections/datasets/giotto_news.rst>
+   Presentations <presentations.rst>
 
 .. toctree::
    :hidden:
