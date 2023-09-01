@@ -4,6 +4,13 @@ News
 
 :Date: 2022-11-11
 
+Giotto Suite presents at Bioconductor
+====================================
+
+*August 2, 2023*
+
+`Developers of Giotto Suite present at Bionductor 2023 in Boston, MA. Click link for presentation. <https://drive.google.com/file/d/14EwzydK0GdW7RH3CopLIvDFXtN97m8x6/view>`_
+
 Giotto receives CZI EOSS award
 ==============================
 
