@@ -157,5 +157,5 @@ Authors and Developers
 .. _Guo-Cheng Yuan: https://labs.icahn.mssm.edu/yuanlab
 .. _Joselyn Chávez: https://twitter.com/josschavezf1
 .. _Matthew O'Brien: https://github.com/mattobny
-.. _Edward C. Ruiz: https://twitter.com/ziuron
+.. _Edward C. Ruiz: https://twitter.com/Ed2uiz
 
