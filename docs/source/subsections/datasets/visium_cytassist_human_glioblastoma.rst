@@ -16,6 +16,7 @@ More information about this dataset can be found `here <https://www.10xgenomics.
 ==============
 
 .. container:: cell
+
    .. code:: r
 
       # Ensure Giotto Suite is installed
@@ -32,6 +33,7 @@ More information about this dataset can be found `here <https://www.10xgenomics.
       }
 
 .. container:: cell
+
    .. code:: r
 
       # 1. set results directory
@@ -63,6 +65,7 @@ The minimum requirements are
 createGiottoVisiumObject() will automatically detect both rna and protein modalities within the expression matrix creating a multi-omics Giotto object.
 
 .. container:: cell
+
    .. code:: r
 
       # Provide path to visium folder
@@ -83,6 +86,7 @@ How to work with Giotto instructions that are part of your Giotto object:
 - Read or get a specific Giotto instruction with readGiottoInstructions()
 
 .. container:: cell
+
    .. code:: r
 
       # show instructions associated with the giotto object
@@ -98,6 +102,7 @@ How to work with Giotto instructions that are part of your Giotto object:
 - Adjust expression matrix for technical covariates or batches (optional).
 
 .. container:: cell
+
    .. code:: r
 
       # Subset on spots that were covered by tissue
@@ -115,6 +120,7 @@ How to work with Giotto instructions that are part of your Giotto object:
 
 
    .. code:: r
+
       # Filtering, normalization, and statistics
 
       ## RNA feature
@@ -178,6 +184,7 @@ How to work with Giotto instructions that are part of your Giotto object:
 =====================
 
 .. container:: cell
+
    .. code:: r
 
       # Identify highly variable features (HVF)
@@ -244,6 +251,7 @@ How to work with Giotto instructions that are part of your Giotto object:
 ============
 
 .. container:: cell
+
    .. code:: r
 
       # cluster and run UMAP
@@ -308,6 +316,7 @@ How to work with Giotto instructions that are part of your Giotto object:
       .. image:: visium_cytassist_human_glioblastoma_files/10-UMAP.png
 
 .. container:: cell
+
    .. code:: r
 
       # Visualize spatial plot
@@ -343,6 +352,7 @@ How to work with Giotto instructions that are part of your Giotto object:
 The Weighted Nearest Neighbors allows to integrate two or more modalities adquired from the same sample. WNN will re-calculate the clustering to provide an integrated umap and leiden clustering. For running WNN, the Giotto object must contain the results of running PCA calculation for each modality.
 
 .. container:: cell
+
    .. code:: r
 
       # Calculate kNN
@@ -409,6 +419,7 @@ The Weighted Nearest Neighbors allows to integrate two or more modalities adquir
       .. image:: visium_cytassist_human_glioblastoma_files/13-UMAP.png
 
 .. container:: cell
+
    .. code:: r
 
       # Visualize spatial plot with integrated clusters
@@ -430,6 +441,7 @@ The Weighted Nearest Neighbors allows to integrate two or more modalities adquir
 ==============
 
 .. container:: cell
+
    .. code:: r
 
       sessionInfo()
