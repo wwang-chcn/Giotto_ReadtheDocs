@@ -89,6 +89,14 @@ Visium
 
         .. image:: https://github.com/PratishthaGuckhool/Giotto_site_suite/blob/master/inst/images/cytassist_visium_lungcancer/21-spatPlot2D.png?raw=true
 
+
+    .. card:: Visium CytAssist Human Glioblastoma
+        :link: subsections/datasets/visium_cytassist_human_glioblastoma
+        :link-type: doc
+
+          .. image:: images/dataset_page/visium_cytassist_human_glioblastoma.png
+
+
 *********************
 RNA Multiplex Imaging
 *********************
