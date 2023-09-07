@@ -16,7 +16,6 @@ More information about this dataset can be found `here <https://www.10xgenomics.
 ==============
 
 .. container:: cell
-
    .. code:: r
 
       # Ensure Giotto Suite is installed
@@ -33,7 +32,6 @@ More information about this dataset can be found `here <https://www.10xgenomics.
       }
 
 .. container:: cell
-
    .. code:: r
 
       # 1. set results directory
@@ -47,38 +45,11 @@ More information about this dataset can be found `here <https://www.10xgenomics.
         installGiottoEnvironment()
       }
 
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-
-          giotto environment found at
-         my/path/r-miniconda\envs\giotto_env\python.exe
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         Giotto environment is already installed, set force_environment = TRUE to
-          reinstall
-
-   .. code:: r
-
       # 3. create giotto instructions
       instrs = createGiottoInstructions(save_dir = results_directory,
                                         save_plot = TRUE,
                                         show_plot = TRUE,
                                         python_path = python_path)
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-
-         no external python path was provided, but a giotto python environment was found
-          and will be used
-
-
 
 3 Create Giotto object
 ======================
@@ -92,7 +63,6 @@ The minimum requirements are
 createGiottoVisiumObject() will automatically detect both rna and protein modalities within the expression matrix creating a multi-omics Giotto object.
 
 .. container:: cell
-
    .. code:: r
 
       # Provide path to visium folder
@@ -100,10 +70,10 @@ createGiottoVisiumObject() will automatically detect both rna and protein modali
 
       # Create Giotto object
       visium = createGiottoVisiumObject(visium_dir = data_directory,
-                                  expr_data = 'raw',
-                                  png_name = 'tissue_lowres_image.png',
-                                  gene_column_index = 2,
-                                  instructions = instrs)
+                                        expr_data = 'raw',
+                                        png_name = 'tissue_lowres_image.png',
+                                        gene_column_index = 2,
+                                        instructions = instrs)
 
 How to work with Giotto instructions that are part of your Giotto object:
 
@@ -149,15 +119,15 @@ How to work with Giotto instructions that are part of your Giotto object:
 
       ## RNA feature
       visium <- filterGiotto(gobject = visium,
-                       expression_threshold = 1,
-                       feat_det_in_min_cells = 50,
-                       min_det_feats_per_cell = 1000,
-                       expression_values = c('raw'),
-                       verbose = TRUE)
+                             expression_threshold = 1,
+                             feat_det_in_min_cells = 50,
+                             min_det_feats_per_cell = 1000,
+                             expression_values = c('raw'),
+                             verbose = TRUE)
 
       visium <- normalizeGiotto(gobject = visium,
-                          scalefactor = 6000,
-                          verbose = TRUE)
+                                scalefactor = 6000,
+                                verbose = TRUE)
 
       visium <- addStatistics(gobject = visium)
 
@@ -173,23 +143,23 @@ How to work with Giotto instructions that are part of your Giotto object:
 
       ## Protein feature
       visium <- filterGiotto(gobject = visium,
-                       spat_unit = 'cell',
-                       feat_type = 'protein',
-                       expression_threshold = 1,
-                       feat_det_in_min_cells = 50,
-                       min_det_feats_per_cell = 1,
-                       expression_values = c('raw'),
-                       verbose = TRUE)
+                             spat_unit = 'cell',
+                             feat_type = 'protein',
+                             expression_threshold = 1,
+                             feat_det_in_min_cells = 50,
+                             min_det_feats_per_cell = 1,
+                             expression_values = c('raw'),
+                             verbose = TRUE)
 
       visium <- normalizeGiotto(gobject = visium,
-                          spat_unit = 'cell',
-                          feat_type = 'protein',
-                          scalefactor = 6000,
-                          verbose = TRUE)
+                                spat_unit = 'cell',
+                                feat_type = 'protein',
+                                scalefactor = 6000,
+                                verbose = TRUE)
 
       visium <- addStatistics(gobject = visium,
-                        spat_unit = 'cell',
-                        feat_type = 'protein')
+                              spat_unit = 'cell',
+                              feat_type = 'protein')
 
       ### Visualize number of features after processing
       spatPlot2D(gobject = visium,
@@ -208,7 +178,6 @@ How to work with Giotto instructions that are part of your Giotto object:
 =====================
 
 .. container:: cell
-
    .. code:: r
 
       # Identify highly variable features (HVF)
@@ -275,7 +244,6 @@ How to work with Giotto instructions that are part of your Giotto object:
 ============
 
 .. container:: cell
-
    .. code:: r
 
       # cluster and run UMAP
@@ -340,7 +308,6 @@ How to work with Giotto instructions that are part of your Giotto object:
       .. image:: visium_cytassist_human_glioblastoma_files/10-UMAP.png
 
 .. container:: cell
-
    .. code:: r
 
       # Visualize spatial plot
@@ -376,7 +343,6 @@ How to work with Giotto instructions that are part of your Giotto object:
 The Weighted Nearest Neighbors allows to integrate two or more modalities adquired from the same sample. WNN will re-calculate the clustering to provide an integrated umap and leiden clustering. For running WNN, the Giotto object must contain the results of running PCA calculation for each modality.
 
 .. container:: cell
-
    .. code:: r
 
       # Calculate kNN
@@ -442,7 +408,8 @@ The Weighted Nearest Neighbors allows to integrate two or more modalities adquir
 
       .. image:: visium_cytassist_human_glioblastoma_files/13-UMAP.png
 
-.. code:: r
+.. container:: cell
+   .. code:: r
 
       # Visualize spatial plot with integrated clusters
       spatPlot2D(visium,
@@ -463,7 +430,6 @@ The Weighted Nearest Neighbors allows to integrate two or more modalities adquir
 ==============
 
 .. container:: cell
-
    .. code:: r
 
       sessionInfo()
