@@ -10,7 +10,7 @@ Integrate Bento Analysis
 
       # Ensure Giotto Suite is installed.
       if(!"Giotto" %in% installed.packages()) {
-        devtools::install_github("wwang-chcn/Giotto@ww_install_test")
+        devtools::install_github("drieslab/Giotto@suite")
       }
 
       library(Giotto)
