@@ -396,7 +396,8 @@ analysis_colocalization(adata=bento_adata, fname='Bento_colocalization_knee_pos.
 # Set the rank according output hint.
 plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='Bento_colocalization.png')
 ```
-![](../../../../images/tutorials/integrate_bento_analysis/Bento_colocalization.png){width="100%"}
+![](../../../../images/tutorials/integrate_bento_analysis/Bento_colocalization_knee_pos.png){width="70%"}
+![](../../../../images/tutorials/integrate_bento_analysis/Bento_colocalization.png){width="70%"}
 
 ## Session Info
 ### R Session Info

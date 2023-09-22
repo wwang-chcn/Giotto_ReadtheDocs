@@ -694,12 +694,11 @@ Large dataset may cause prolonged processing time for Bento.
       # Set the rank according output hint.
       plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='Bento_colocalization.png')
 
-   .. container:: cell-output cell-output-stdout
+   .. code:: r
 
       # Saved to Bento_colocalization.png
 
-.. image:: ../../../../images/tutorials/integrate_bento_analysis/Bento_colocalization.png
-   :width: 100.0%
+|image7| |image8|
 
 7 Session Info
 ==============
@@ -867,4 +866,8 @@ Large dataset may cause prolonged processing time for Bento.
 .. |image5| image:: /images/tutorials/integrate_bento_analysis/Bento_rna_forest_radvis.png
    :width: 70.0%
 .. |image6| image:: /images/tutorials/integrate_bento_analysis/Bento_rna_forest_upset.png
+   :width: 70.0%
+.. |image7| image:: /images/tutorials/integrate_bento_analysis/Bento_colocalization_knee_pos.png
+   :width: 70.0%
+.. |image8| image:: /images/tutorials/integrate_bento_analysis/Bento_colocalization.png
    :width: 70.0%
