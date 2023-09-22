@@ -2,7 +2,7 @@
 Integrate Bento Analysis
 ========================
 
-:Date: 2023-01-14
+:Date: 2023-09-22
 
 .. container:: cell
 
@@ -23,7 +23,12 @@ Integrate Bento Analysis
 
    .. code:: r
 
-      # Ensure the Python environment for Giotto has been installed.
+      # Ensure the Python environment for Giotto Has been installed.
+
+      # Set python path to your preferred python version path
+      # Set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
+      python_path = "/sc/arion/work/wangw32/conda-env/envs/giotto_suite_bento_install/bin/python" 
+
       genv_exists = checkGiottoEnvironment()
 
    .. container:: cell-output cell-output-stderr
@@ -31,12 +36,12 @@ Integrate Bento Analysis
       ::
 
 
-          giotto environment found at 
-         /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
+         giotto environment was expected, but NOT found at
+          /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
 
    .. code:: r
 
-      if(!genv_exists){
+      if(!genv_exists & is.null(python_path)){
         # The following command need only be run once to install the Giotto environment.
         installGiottoEnvironment()
       }
@@ -51,34 +56,10 @@ Integrate Bento Analysis
       # 1. ** SET WORKING DIRECTORY WHERE PROJECT OUPUTS WILL SAVE TO **
       results_folder = paste0(getwd(),'/Xenium_results')
 
-      # 2. set giotto python path
-      # set python path to your preferred python version path
-      # set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-      python_path = NULL 
-      if(is.null(python_path)) {
-        installGiottoEnvironment()
-      }
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-
-          giotto environment found at 
-         /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         Giotto environment is already installed, set force_environment = TRUE to
-          reinstall
-
-   .. code:: r
-
-      # 3. Create Giotto instructions
+      # 2. Create Giotto instructions
       # Directly saving plots to the working directory without rendering them in the editor saves time.
-      instrs = createGiottoInstructions(save_dir = results_folder,
+      instrs = createGiottoInstructions(python_path = python_path,
+                                        save_dir = results_folder,
                                         save_plot = TRUE,
                                         show_plot = FALSE,
                                         return_plot = FALSE)
@@ -88,8 +69,7 @@ Integrate Bento Analysis
       ::
 
 
-         no external python path was provided, but a giotto python environment was found
-          and will be used
+         external python path provided and will be used
 
 2 Dataset explanation
 =====================
@@ -102,7 +82,7 @@ provided with their recent `bioRxiv
 pre-print <https://www.biorxiv.org/content/10.1101/2022.10.06.510405v1>`__.
 The data from the first tissue replicate will be worked with.
 
-.. image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/large_preview.png
+.. image:: ../../../../images/tutorials/integrate_bento_analysis/large_preview.png
    :width: 70.0%
 
 3 Project data paths
@@ -121,19 +101,19 @@ The data from the first tissue replicate will be worked with.
       # ** SET PATH TO FOLDER CONTAINING XENIUM DATA **
       xenium_folder = paste0(getwd(),'/Xenium/')
 
-      # general files (some are supplemental files)
+      # General files (some are supplemental files)
       settings_path = paste0(xenium_folder, 'experiment.xenium')
       he_img_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_he_image.tif')
       if_img_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_if_image.tif')
       panel_meta_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_panel.tsv') # (optional)
 
-      # files (SUBCELLULAR): (tutorial focuses on working with these files)
+      # Files (SUBCELLULAR): (tutorial focuses on working with these files)
       cell_bound_path = paste0(xenium_folder, 'outs/cell_boundaries.csv.gz')
       nuc_bound_path = paste0(xenium_folder, 'outs/nucleus_boundaries.csv.gz')
       tx_path = paste0(xenium_folder, 'outs/transcripts.csv.gz')
       feat_meta_path = paste0(xenium_folder, 'outs/cell_feature_matrix/features.tsv.gz') # (also used in aggregate)
 
-      # files (AGGREGATE):
+      # Files (AGGREGATE):
       expr_mat_path = paste0(xenium_folder, 'outs/cell_feature_matrix')
       cell_meta_path = paste0(xenium_folder, 'outs/cells.csv.gz') # contains spatlocs
 
@@ -162,12 +142,12 @@ The data from the first tissue replicate will be worked with.
 
    .. code:: r
 
-      # load features metadata
-      # (make sure cell_feature_matrix folder is unpacked)
+      # Load features metadata
+      # (Make sure cell_feature_matrix folder is unpacked)
       feature_dt = data.table::fread(feat_meta_path, header = FALSE)
       colnames(feature_dt) = c('ensembl_ID','feat_name','feat_type')
 
-      # find the feature IDs that belong to each feature type
+      # Find the feature IDs that belong to each feature type
       feature_dt[, table(feat_type)]
 
    .. container:: cell-output cell-output-stdout
@@ -568,14 +548,14 @@ contains a QC Phred score for which this tutorial will set a cutoff at
 
    .. code:: r
 
-      # preview QC probe detections
+      # Preview QC probe detections
       plot(gpoints_list$`Blank Codeword`,
            point_size = 0.3,
            main = 'Blank Codeword')
 
    .. container:: cell-output-display
 
-      .. image:: template_files/figure-rst/unnamed-chunk-12-1.png
+      .. image:: integrate_bento_analysis_files/figure-rst/unnamed-chunk-12-1.png
 
    .. code:: r
 
@@ -585,7 +565,7 @@ contains a QC Phred score for which this tutorial will set a cutoff at
 
    .. container:: cell-output-display
 
-      .. image:: template_files/figure-rst/unnamed-chunk-12-2.png
+      .. image:: integrate_bento_analysis_files/figure-rst/unnamed-chunk-12-2.png
 
    .. code:: r
 
@@ -595,17 +575,17 @@ contains a QC Phred score for which this tutorial will set a cutoff at
 
    .. container:: cell-output-display
 
-      .. image:: template_files/figure-rst/unnamed-chunk-12-3.png
+      .. image:: integrate_bento_analysis_files/figure-rst/unnamed-chunk-12-3.png
 
    .. code:: r
 
-      # preview two genes (slower)
+      # Preview two genes (slower)
       plot(gpoints_list$`Gene Expression`,  # 77.843 sec elapsed
            feats = c('KRT8', 'MS4A1'))
 
    .. container:: cell-output-display
 
-      .. image:: template_files/figure-rst/unnamed-chunk-12-4.png
+      .. image:: integrate_bento_analysis_files/figure-rst/unnamed-chunk-12-4.png
 
    .. code:: r
 
@@ -695,9 +675,9 @@ the ``giottoPolygon``\ ’s ``spatVectorCentroids`` slot.
 
    .. container:: cell-output-display
 
-      .. image:: template_files/figure-rst/unnamed-chunk-15-1.png
+      .. image:: integrate_bento_analysis_files/figure-rst/unnamed-chunk-15-1.png
 
-.. image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpolys_centroids.png
+.. image:: ../../../../images/tutorials/integrate_bento_analysis/gpolys_centroids.png
    :width: 70.0%
 
 5.1.3 Create Giotto Object
@@ -719,18 +699,6 @@ subcellular Giotto object can be created.
                          nucleus = gpoly_nucs),
         instructions = instrs
       )
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         Warning in initialize(value, ...): module: igraph was not found with python path: /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         Warning in initialize(value, ...): module: leidenalg was not found with python path: /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
 
    .. container:: cell-output cell-output-stderr
 
@@ -786,10 +754,10 @@ subcellular Giotto object can be created.
 6.1 Create Bento AnnData Object
 -------------------------------
 
-6.1.1 Subset Giotto Obejct First
+6.1.1 Subset Giotto Object First
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Large dataset may cause prolonged processing time for Bento
+Large dataset may cause prolonged processing time for Bento.
 
 .. container:: cell
 
@@ -797,18 +765,6 @@ Large dataset may cause prolonged processing time for Bento
 
       subset_xenium_gobj <- subsetGiottoLocs(xenium_gobj, spat_unit='cell', feat_type='rna',
                                              x_max=200,x_min=0,y_max=200,y_min=0)
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         Warning in initialize(gobject): module: igraph was not found with python path: /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         Warning in initialize(gobject): module: leidenalg was not found with python path: /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
 
 6.1.2 Create AnnData Object
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -823,7 +779,7 @@ Large dataset may cause prolonged processing time for Bento
 
       ::
 
-         10:42:09 --- INFO: Batch information found in cell_shape, adding batch information to adata
+         11:24:57 --- INFO: Batch information found in cell_shape, adding batch information to adata
 
 6.2 Bento Analysis
 ------------------
@@ -854,7 +810,7 @@ Large dataset may cause prolonged processing time for Bento
          Crunching shape features...
          AnnData object modified:
              obs:
-                 + cell_miny, cell_maxy, cell_span, cell_minx, cell_maxx, cell_radius, cell_raster, cell_area
+                 + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
              uns:
                  + cell_raster
          Crunching point features...
@@ -862,18 +818,18 @@ Large dataset may cause prolonged processing time for Bento
          Done.
          AnnData object modified:
              obs:
-                 + cell_miny, cell_maxy, cell_span, cell_minx, cell_maxx, cell_radius, cell_raster, cell_area
+                 + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
              uns:
-                 + cell_gene_features, cell_raster
+                 + cell_raster, cell_gene_features
          Crunching shape features...
          Crunching point features...
          Saving results...
          Done.
          AnnData object modified:
              obs:
-                 + cell_miny, cell_maxy, cell_span, cell_minx, cell_maxx, cell_radius, cell_raster, cell_area
+                 + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
              uns:
-                 + lp, cell_gene_features, cell_raster, lpp
+                 + cell_raster, cell_gene_features, lpp, lp
          AnnData object modified:
              uns:
                  + lp_stats
@@ -881,15 +837,17 @@ Large dataset may cause prolonged processing time for Bento
    .. code:: r
 
       plot_rna_forest_analysis_results(adata=bento_adata,
-                                       fname1='test_rna_forest_radvis.pdf',
-                                       fname2='test_rna_forest_upset.pdf')
+                                       fname1='Bento_rna_forest_radvis.png',
+                                       fname2='Bento_rna_forest_upset.png')
 
    .. container:: cell-output cell-output-stdout
 
       ::
 
-         Saved to test_rna_forest_radvis.pdf
-         Saved to test_rna_forest_upset.pdf
+         Saved to Bento_rna_forest_radvis.png
+         Saved to Bento_rna_forest_upset.png
+
+|image5| |image6|
 
 6.2.3 Colocalization Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -898,7 +856,7 @@ Large dataset may cause prolonged processing time for Bento
 
    .. code:: r
 
-      analysis_colocalization(adata=bento_adata, fname='test_colocalization_knee_pos.pdf', ranks=seq(10))
+      analysis_colocalization(adata=bento_adata, fname='Bento_colocalization_knee_pos.png', ranks=seq(10))
 
    .. container:: cell-output cell-output-stdout
 
@@ -910,26 +868,32 @@ Large dataset may cause prolonged processing time for Bento
          Preparing tensor...
          (2, 19, 156)
          :running: Decomposing tensor...
-         10:43:05 --- INFO: Knee found at rank 5
-         10:43:05 --- INFO: Saved to test_colocalization_knee_pos.pdf
+         11:25:38 --- INFO: Knee found at rank 5
+         11:25:39 --- INFO: Saved to Bento_colocalization_knee_pos.png
          :heavy_check_mark: Done.
          AnnData object modified:
              uns:
-                 + tensor_labels, tensor, factors, tensor_names, factors_error
+                 + factors, tensor_labels, tensor_names, tensor, factors_error
 
    .. code:: r
 
       # Set the rank according output hint.
-      plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='test_colocalization.pdf')
+      plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='Bento_colocalization.png')
 
    .. container:: cell-output cell-output-stdout
 
       ::
 
-         Saved to test_colocalization.pdf
+         Saved to Bento_colocalization.png
+
+.. image:: ../../../../images/tutorials/integrate_bento_analysis/Bento_colocalization.png
+   :width: 100.0%
 
 7 Session Info
 ==============
+
+7.1 R Session Info
+------------------
 
 .. container:: cell
 
@@ -946,7 +910,7 @@ Large dataset may cause prolonged processing time for Bento
          Running under: Ubuntu 22.04.2 LTS
 
          Matrix products: default
-         BLAS/LAPACK: /sc/arion/work/wangw32/conda-env/envs/giotto_suite_bento_install_2/lib/libopenblasp-r0.3.24.so
+         BLAS/LAPACK: /sc/arion/work/wangw32/conda-env/envs/giotto_suite_bento_install/lib/libopenblasp-r0.3.24.so
 
          locale:
           [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
@@ -979,11 +943,120 @@ Large dataset may cause prolonged processing time for Bento
          [53] data.table_1.14.8  rmarkdown_2.24     rstudioapi_0.15.0  R6_2.5.1          
          [57] units_0.8-3        compiler_4.2.3    
 
-.. |image1| image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_blnk.png
+7.2 Python Session Info
+-----------------------
+
+.. container:: cell
+
+   .. code:: r
+
+      python_session_info()
+
+   .. container:: cell-output cell-output-stdout
+
+      ::
+
+         -----
+         anndata     0.9.2
+         bento       NA
+         emoji       1.7.0
+         geopandas   0.10.2
+         kneed       0.8.5
+         log         NA
+         matplotlib  3.7.2
+         pandas      2.1.0
+         seaborn     0.12.2
+         shapely     1.8.5.post1
+         -----
+         IPython             8.15.0
+         PIL                 10.0.0
+         adjustText          NA
+         affine              2.4.0
+         astropy             5.3.3
+         asttokens           NA
+         attr                23.1.0
+         backcall            0.2.0
+         certifi             2023.07.22
+         click               8.1.7
+         comm                0.1.4
+         community           0.16
+         contourpy           1.1.0
+         cycler              0.10.0
+         cython_runtime      NA
+         dateutil            2.8.2
+         decorator           5.1.1
+         decoupler           1.5.0
+         erfa                2.0.0.3
+         exceptiongroup      1.1.3
+         executing           1.2.0
+         fiona               1.9.4.post1
+         h5py                3.9.0
+         igraph              0.10.6
+         ipywidgets          8.1.0
+         jedi                0.19.0
+         joblib              1.3.2
+         kiwisolver          1.4.5
+         leidenalg           0.10.1
+         llvmlite            0.40.1
+         matplotlib_scalebar 0.8.1
+         minisom             NA
+         mpl_toolkits        NA
+         natsort             8.4.0
+         networkx            3.1
+         numba               0.57.1
+         numpy               1.24.4
+         packaging           23.1
+         parso               0.8.3
+         patsy               0.5.3
+         pexpect             4.8.0
+         pickleshare         0.7.5
+         pkg_resources       NA
+         prompt_toolkit      3.0.39
+         psutil              5.9.5
+         ptyprocess          0.7.0
+         pure_eval           0.2.2
+         pygeos              0.12.0
+         pygments            2.16.1
+         pyparsing           3.0.9
+         pyproj              3.6.0
+         pytz                2023.3.post1
+         rasterio            1.3.8
+         rpycall             NA
+         rpytools            NA
+         scipy               1.11.2
+         session_info        1.0.0
+         setuptools          68.1.2
+         six                 1.16.0
+         sklearn             1.3.0
+         sparse              0.13.0
+         stack_data          0.6.2
+         statsmodels         0.13.5
+         tensorly            0.7.0
+         texttable           1.6.7
+         threadpoolctl       3.2.0
+         tqdm                4.66.1
+         traitlets           5.9.0
+         typing_extensions   NA
+         upsetplot           0.6.1
+         wcwidth             0.2.6
+         xgboost             1.4.2
+         yaml                6.0.1
+         zoneinfo            NA
+         -----
+         Python 3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:55:59) [GCC 12.3.0]
+         Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.35
+         -----
+         Session information updated at 2023-09-22 11:25
+
+.. |image1| image:: ../../../../images/tutorials/integrate_bento_analysis/gpoints_blnk.png
    :width: 32.0%
-.. |image2| image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_ngcode.png
+.. |image2| image:: ../../../../images/tutorials/integrate_bento_analysis/gpoints_ngcode.png
    :width: 32.0%
-.. |image3| image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_ngprbe.png
+.. |image3| image:: ../../../../images/tutorials/integrate_bento_analysis/gpoints_ngprbe.png
    :width: 32.0%
-.. |image4| image:: ../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_expr.png
+.. |image4| image:: ../../../../images/tutorials/integrate_bento_analysis/gpoints_expr.png
    :width: 100.0%
+.. |image5| image:: ../../../../images/tutorials/integrate_bento_analysis/Bento_rna_forest_radvis.png
+   :width: 70.0%
+.. |image6| image:: ../../../../images/tutorials/integrate_bento_analysis/Bento_rna_forest_upset.png
+   :width: 70.0%

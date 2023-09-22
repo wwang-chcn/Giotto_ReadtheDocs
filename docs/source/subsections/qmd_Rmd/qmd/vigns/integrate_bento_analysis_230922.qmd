@@ -1,7 +1,7 @@
 ---
 title: "Integrate Bento Analysis"
 format: rst
-date: 'Compiled 2023-01-14'
+date: 'Compiled 2023-09-22'
 number-sections: true
 ---
 ```{r, eval=TRUE}
@@ -11,9 +11,14 @@ if(!"Giotto" %in% installed.packages()) {
 }
 
 library(Giotto)
-# Ensure the Python environment for Giotto has been installed.
+# Ensure the Python environment for Giotto Has been installed.
+
+# Set python path to your preferred python version path
+# Set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
+python_path = "/sc/arion/work/wangw32/conda-env/envs/giotto_suite_bento_install/bin/python" 
+
 genv_exists = checkGiottoEnvironment()
-if(!genv_exists){
+if(!genv_exists & is.null(python_path)){
   # The following command need only be run once to install the Giotto environment.
   installGiottoEnvironment()
 }
@@ -24,17 +29,10 @@ if(!genv_exists){
 # 1. ** SET WORKING DIRECTORY WHERE PROJECT OUPUTS WILL SAVE TO **
 results_folder = paste0(getwd(),'/Xenium_results')
 
-# 2. set giotto python path
-# set python path to your preferred python version path
-# set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-python_path = NULL 
-if(is.null(python_path)) {
-  installGiottoEnvironment()
-}
-
-# 3. Create Giotto instructions
+# 2. Create Giotto instructions
 # Directly saving plots to the working directory without rendering them in the editor saves time.
-instrs = createGiottoInstructions(save_dir = results_folder,
+instrs = createGiottoInstructions(python_path = python_path,
+                                  save_dir = results_folder,
                                   save_plot = TRUE,
                                   show_plot = FALSE,
                                   return_plot = FALSE)
@@ -44,7 +42,7 @@ instrs = createGiottoInstructions(save_dir = results_folder,
 
 This vignette covers Giotto object creation and simple exploratory analysis with 10x Genomics' subcellular *Xenium In Situ* platform data using their [Human Breast Cancer Dataset](https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast) provided with their recent [bioRxiv pre-print](https://www.biorxiv.org/content/10.1101/2022.10.06.510405v1). The data from the first tissue replicate will be worked with.
 
-![](../../../../images/tutorials/xenium_breast_cancer/pre_analysis/large_preview.png){width="70%"}
+![](../../../../images/tutorials/integrate_bento_analysis/large_preview.png){width="70%"}
 
 ## Project data paths
 Xenium's exact output folder structure and which file/formats will be available in the final release are still subject to change. This tutorial will be updated for any differences at release.  
@@ -53,19 +51,19 @@ Note: *The cell_feature_matrix.tar.gz must be unpacked into a subdirectory withi
 # ** SET PATH TO FOLDER CONTAINING XENIUM DATA **
 xenium_folder = paste0(getwd(),'/Xenium/')
 
-# general files (some are supplemental files)
+# General files (some are supplemental files)
 settings_path = paste0(xenium_folder, 'experiment.xenium')
 he_img_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_he_image.tif')
 if_img_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_if_image.tif')
 panel_meta_path = paste0(xenium_folder, 'Xenium_FFPE_Human_Breast_Cancer_Rep1_panel.tsv') # (optional)
 
-# files (SUBCELLULAR): (tutorial focuses on working with these files)
+# Files (SUBCELLULAR): (tutorial focuses on working with these files)
 cell_bound_path = paste0(xenium_folder, 'outs/cell_boundaries.csv.gz')
 nuc_bound_path = paste0(xenium_folder, 'outs/nucleus_boundaries.csv.gz')
 tx_path = paste0(xenium_folder, 'outs/transcripts.csv.gz')
 feat_meta_path = paste0(xenium_folder, 'outs/cell_feature_matrix/features.tsv.gz') # (also used in aggregate)
 
-# files (AGGREGATE):
+# Files (AGGREGATE):
 expr_mat_path = paste0(xenium_folder, 'outs/cell_feature_matrix')
 cell_meta_path = paste0(xenium_folder, 'outs/cells.csv.gz') # contains spatlocs
 ```
@@ -81,12 +79,12 @@ There are four types of probes used, each of which is represented in both export
 - `negative control codeword`: Valid codewords that do not have any probes that should yield that code, so they can be used to assess the specificity of the decoding algorithm  
 - `negative control probe`: Probes that exist in the panel, but target ERCC or other non-biological sequences, which can be used to assess the specificity of the assay  
 ```{r, eval=TRUE}
-# load features metadata
-# (make sure cell_feature_matrix folder is unpacked)
+# Load features metadata
+# (Make sure cell_feature_matrix folder is unpacked)
 feature_dt = data.table::fread(feat_meta_path, header = FALSE)
 colnames(feature_dt) = c('ensembl_ID','feat_name','feat_type')
 
-# find the feature IDs that belong to each feature type
+# Find the feature IDs that belong to each feature type
 feature_dt[, table(feat_type)]
 feat_types = names(feature_dt[, table(feat_type)])
 
@@ -291,7 +289,7 @@ gpoints_list = lapply(
   tx_dt_types, function(x) createGiottoPoints(x = x)
 ) # 208.499 sec elapsed
 
-# preview QC probe detections
+# Preview QC probe detections
 plot(gpoints_list$`Blank Codeword`,
      point_size = 0.3,
      main = 'Blank Codeword')
@@ -302,7 +300,7 @@ plot(gpoints_list$`Negative Control Probe`,
      point_size = 0.3,
      main = 'Negative Control Probe')
 
-# preview two genes (slower)
+# Preview two genes (slower)
 plot(gpoints_list$`Gene Expression`,  # 77.843 sec elapsed
      feats = c('KRT8', 'MS4A1'))
 tx_dt_types$`Gene Expression`[feat_ID %in% c('KRT8', 'MS4A1'), table(feat_ID)]
@@ -314,10 +312,10 @@ tx_dt_types$`Gene Expression`[feat_ID %in% c('KRT8', 'MS4A1'), table(feat_ID)]
 # 530190  20926 
 ```
 
-![](../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_blnk.png){width="32%"}
-![](../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_ngcode.png){width="32%"}
-![](../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_ngprbe.png){width="32%"}
-![](../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpoints_expr.png){width="100%"}
+![](../../../../images/tutorials/integrate_bento_analysis/gpoints_blnk.png){width="32%"}
+![](../../../../images/tutorials/integrate_bento_analysis/gpoints_ngcode.png){width="32%"}
+![](../../../../images/tutorials/integrate_bento_analysis/gpoints_ngprbe.png){width="32%"}
+![](../../../../images/tutorials/integrate_bento_analysis/gpoints_expr.png){width="100%"}
 
 #### Load polygon data
 Xenium output provides segmentation/cell boundary information in .csv.gz files. These are represented within Giotto as `giottoPolygon` objects and can also be directly plotted. This function also determines the correct columns to use by looking for columns named `'poly_ID'`, `'x'`, and `'y'`.
@@ -344,7 +342,7 @@ gpoly_nucs = createGiottoPolygonsFromDfr(segmdfr = nucPoly_dt,
 ```{r, eval=TRUE}
 plot(x = gpoly_nucs, point_size = 0.1, type = 'centroid')
 ```
-![](../../../../images/tutorials/xenium_breast_cancer/pre_analysis/gpolys_centroids.png){width="70%"}
+![](../../../../images/tutorials/integrate_bento_analysis/gpolys_centroids.png){width="70%"}
 
 #### Create Giotto Object
 Now that both the feature data and the boundaries are loaded in, a subcellular Giotto object can be created.
@@ -363,8 +361,8 @@ xenium_gobj = createGiottoObjectSubcellular(
 ## Perform Bento Analysis
 
 ### Create Bento AnnData Object
-#### Subset Giotto Obejct First
-Large dataset may cause prolonged processing time for Bento
+#### Subset Giotto Object First
+Large dataset may cause prolonged processing time for Bento.
 ```{r, eval=TRUE}
 subset_xenium_gobj <- subsetGiottoLocs(xenium_gobj, spat_unit='cell', feat_type='rna',
                                        x_max=200,x_min=0,y_max=200,y_min=0)
@@ -386,19 +384,26 @@ reticulate::source_python(bento_analysis_path)
 ```{r, eval=TRUE}
 analysis_rna_forest(adata=bento_adata)
 plot_rna_forest_analysis_results(adata=bento_adata,
-                                 fname1='test_rna_forest_radvis.pdf',
-                                 fname2='test_rna_forest_upset.pdf')
+                                 fname1='Bento_rna_forest_radvis.png',
+                                 fname2='Bento_rna_forest_upset.png')
 ```
+![](../../../../images/tutorials/integrate_bento_analysis/Bento_rna_forest_radvis.png){width="70%"}
+![](../../../../images/tutorials/integrate_bento_analysis/Bento_rna_forest_upset.png){width="70%"}
 
 #### Colocalization Analysis
 ```{r, eval=TRUE}
-analysis_colocalization(adata=bento_adata, fname='test_colocalization_knee_pos.pdf', ranks=seq(10))
+analysis_colocalization(adata=bento_adata, fname='Bento_colocalization_knee_pos.png', ranks=seq(10))
 # Set the rank according output hint.
-plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='test_colocalization.pdf')
+plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='Bento_colocalization.png')
 ```
-
+![](../../../../images/tutorials/integrate_bento_analysis/Bento_colocalization.png){width="100%"}
 
 ## Session Info
+### R Session Info
 ```{r}
 sessionInfo()
+```
+### Python Session Info
+```{r}
+python_session_info()
 ```
