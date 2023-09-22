@@ -15,12 +15,6 @@ Integrate Bento Analysis
 
       library(Giotto)
 
-   .. code:: r
-
-      # Giotto Suite 3.3.1
-
-   .. code:: r
-
       # Ensure the Python environment for Giotto Has been installed.
 
       # Set python path to your preferred python version path
@@ -29,17 +23,18 @@ Integrate Bento Analysis
 
       genv_exists = checkGiottoEnvironment()
 
-   .. code:: r
-
-      # giotto environment was expected, but NOT found at
-          /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
-
-   .. code:: r
-
       if(!genv_exists & is.null(python_path)){
         # The following command need only be run once to install the Giotto environment.
         installGiottoEnvironment()
       }
+
+   .. code:: r
+
+      # Giotto Suite 3.3.1
+
+      # giotto environment was expected, but NOT found at
+      #    /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
+
 
 1 Set up Giotto environment
 ===========================
@@ -414,12 +409,6 @@ contains a QC Phred score for which this tutorial will set a cutoff at
       tx_dt_filtered = tx_dt[qv >= 20]
       cat('and', tx_dt_filtered[,.N], 'filtered detections\n\n')
 
-   .. container:: cell-output cell-output-stdout
-
-      ::
-
-         and 34493510 filtered detections
-
    .. code:: r
 
       # separate detections by feature type
@@ -463,33 +452,20 @@ contains a QC Phred score for which this tutorial will set a cutoff at
         tx_dt_types, function(x) createGiottoPoints(x = x)
       ) # 208.499 sec elapsed
 
-   .. code:: r
-
-      # Preview QC probe detections
+      # preview QC probe detections
       plot(gpoints_list$`Blank Codeword`,
            point_size = 0.3,
            main = 'Blank Codeword')
-
-   .. code:: r
-
       plot(gpoints_list$`Negative Control Codeword`,
            point_size = 0.3,
            main = 'Negative Control Codeword')
-
-   .. code:: r
-
       plot(gpoints_list$`Negative Control Probe`,
            point_size = 0.3,
            main = 'Negative Control Probe')
 
-   .. code:: r
-
-      # Preview two genes (slower)
+      # preview two genes (slower)
       plot(gpoints_list$`Gene Expression`,  # 77.843 sec elapsed
            feats = c('KRT8', 'MS4A1'))
-
-   .. code:: r
-
       tx_dt_types$`Gene Expression`[feat_ID %in% c('KRT8', 'MS4A1'), table(feat_ID)]
 
 .. container:: cell
@@ -622,6 +598,9 @@ Large dataset may cause prolonged processing time for Bento.
    .. code:: r
 
       analysis_rna_forest(adata=bento_adata)
+      plot_rna_forest_analysis_results(adata=bento_adata,
+                                       fname1='Bento_rna_forest_radvis.png',
+                                       fname2='Bento_rna_forest_upset.png')
 
    .. code:: r
 
@@ -652,14 +631,6 @@ Large dataset may cause prolonged processing time for Bento.
       #     uns:
       #         + lp_stats
 
-   .. code:: r
-
-      plot_rna_forest_analysis_results(adata=bento_adata,
-                                       fname1='Bento_rna_forest_radvis.png',
-                                       fname2='Bento_rna_forest_upset.png')
-
-   .. code:: r
-
       # Saved to Bento_rna_forest_radvis.png
       # Saved to Bento_rna_forest_upset.png
 
@@ -673,6 +644,8 @@ Large dataset may cause prolonged processing time for Bento.
    .. code:: r
 
       analysis_colocalization(adata=bento_adata, fname='Bento_colocalization_knee_pos.png', ranks=seq(10))
+      # Set the rank according output hint.
+      plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='Bento_colocalization.png')
 
    .. code:: r
 
@@ -688,13 +661,6 @@ Large dataset may cause prolonged processing time for Bento.
       # AnnData object modified:
       #     uns:
       #         + factors, tensor_labels, tensor_names, tensor, factors_error
-
-   .. code:: r
-
-      # Set the rank according output hint.
-      plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='Bento_colocalization.png')
-
-   .. code:: r
 
       # Saved to Bento_colocalization.png
 
