@@ -4,7 +4,7 @@ format: rst
 date: 'Compiled 2023-09-22'
 number-sections: true
 ---
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 # Ensure Giotto Suite is installed.
 if(!"Giotto" %in% installed.packages()) {
   devtools::install_github("wwang-chcn/Giotto@ww_install_test")
@@ -25,7 +25,7 @@ if(!genv_exists & is.null(python_path)){
 ```
 
 ## Set up Giotto environment
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 # 1. ** SET WORKING DIRECTORY WHERE PROJECT OUPUTS WILL SAVE TO **
 results_folder = paste0(getwd(),'/Xenium_results')
 
@@ -47,7 +47,7 @@ This vignette covers Giotto object creation and simple exploratory analysis with
 ## Project data paths
 Xenium's exact output folder structure and which file/formats will be available in the final release are still subject to change. This tutorial will be updated for any differences at release.  
 Note: *The cell_feature_matrix.tar.gz must be unpacked into a subdirectory within the xenium working directory before starting*
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 # ** SET PATH TO FOLDER CONTAINING XENIUM DATA **
 xenium_folder = paste0(getwd(),'/Xenium/')
 
@@ -78,7 +78,7 @@ There are four types of probes used, each of which is represented in both export
 - `blank codeword`: Unused codeword - there are no probes that will generate the codeword  
 - `negative control codeword`: Valid codewords that do not have any probes that should yield that code, so they can be used to assess the specificity of the decoding algorithm  
 - `negative control probe`: Probes that exist in the panel, but target ERCC or other non-biological sequences, which can be used to assess the specificity of the assay  
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 # Load features metadata
 # (Make sure cell_feature_matrix folder is unpacked)
 feature_dt = data.table::fread(feat_meta_path, header = FALSE)
@@ -94,7 +94,7 @@ feat_types_IDs = lapply(
 names(feat_types_IDs) = feat_types
 ```
 
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 # feat_type
 #            Blank Codeword           Gene Expression
 #                       159                       313
@@ -105,7 +105,7 @@ names(feat_types_IDs) = feat_types
 This dataset has 313 probes that are dedicated for gene expression transcript detection.
 
 <details><summary>gene expression IDs</summary>
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 #   [1] "ABCC11"   "ACTA2"    "ACTG2"    "ADAM9"    "ADGRE5"   "ADH1B"   
 #   [7] "ADIPOQ"   "AGR3"     "AHSP"     "AIF1"     "AKR1C1"   "AKR1C3"  
 #  [13] "ALDH1A3"  "ANGPT2"   "ANKRD28"  "ANKRD29"  "ANKRD30A" "APOBEC3A"
@@ -162,7 +162,7 @@ This dataset has 313 probes that are dedicated for gene expression transcript de
 ```
 </details>
 <details><summary>blank codeword IDs</summary>
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 #   [1] "BLANK_0006" "BLANK_0013" "BLANK_0037" "BLANK_0069" "BLANK_0072"
 #   [6] "BLANK_0087" "BLANK_0110" "BLANK_0114" "BLANK_0120" "BLANK_0147"
 #  [11] "BLANK_0180" "BLANK_0186" "BLANK_0272" "BLANK_0278" "BLANK_0319"
@@ -198,7 +198,7 @@ This dataset has 313 probes that are dedicated for gene expression transcript de
 ```
 </details>
 <details><summary>negative control codeword IDs</summary>
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 #  [1] "NegControlCodeword_0500" "NegControlCodeword_0501"
 #  [3] "NegControlCodeword_0502" "NegControlCodeword_0503"
 #  [5] "NegControlCodeword_0504" "NegControlCodeword_0505"
@@ -223,7 +223,7 @@ This dataset has 313 probes that are dedicated for gene expression transcript de
 ```
 </details>
 <details><summary>negative control probe IDs</summary>
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 #  [1] "NegControlProbe_00042" "NegControlProbe_00041" "NegControlProbe_00039"
 #  [4] "NegControlProbe_00035" "NegControlProbe_00034" "NegControlProbe_00033"
 #  [7] "NegControlProbe_00031" "NegControlProbe_00025" "NegControlProbe_00024"
@@ -246,7 +246,7 @@ Xenium outputs can be analyzed as either the subcellular information or as aggre
 
 #### Load transcript-level data
 `transcripts.csv.gz` is a file containing x, y, z coordinates for individual transcript molecules detected during the Xenium run. It also contains a QC Phred score for which this tutorial will set a cutoff at 20, the same as what 10x uses.
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 tx_dt = data.table::fread(tx_path)
 data.table::setnames(x = tx_dt,
                      old = c('feature_name', 'x_location', 'y_location'),
@@ -268,7 +268,7 @@ invisible(lapply(seq_along(tx_dt_types), function(x) {
 }))
 ```
 
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 # Transcripts info available:
 #   "transcript_id" "cell_id" "overlaps_nucleus" "feat_ID" "x" "y" "z_location" "qv" 
 #  with 43664530 unfiltered detections
@@ -284,7 +284,7 @@ invisible(lapply(seq_along(tx_dt_types), function(x) {
 Giotto loads these filtered subcellular detections in as a `giottoPoints` object and determines the correct columns by looking for columns named `'feat_ID',` `'x'`, and `'y'`.  
 Here, we use the list of `data.table`s generated in the previous step to create a list of `giottoPoints` objects  
 When previewing these objects using `plot()`, the default behavior is to plot ALL points within the object. For objects that contain many feature points, it is highly recommended to specify a subset of features to plot using the `feats` param.
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 gpoints_list = lapply(
   tx_dt_types, function(x) createGiottoPoints(x = x)
 ) # 208.499 sec elapsed
@@ -306,7 +306,7 @@ plot(gpoints_list$`Gene Expression`,  # 77.843 sec elapsed
 tx_dt_types$`Gene Expression`[feat_ID %in% c('KRT8', 'MS4A1'), table(feat_ID)]
 ```
 
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 # feat_ID
 #   KRT8  MS4A1 
 # 530190  20926 
@@ -319,7 +319,7 @@ tx_dt_types$`Gene Expression`[feat_ID %in% c('KRT8', 'MS4A1'), table(feat_ID)]
 
 #### Load polygon data
 Xenium output provides segmentation/cell boundary information in .csv.gz files. These are represented within Giotto as `giottoPolygon` objects and can also be directly plotted. This function also determines the correct columns to use by looking for columns named `'poly_ID'`, `'x'`, and `'y'`.
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 cellPoly_dt = data.table::fread(cell_bound_path)
 nucPoly_dt = data.table::fread(nuc_bound_path)
 
@@ -339,14 +339,14 @@ gpoly_nucs = createGiottoPolygonsFromDfr(segmdfr = nucPoly_dt,
 ```
 
 `giottoPolygon` objects can be directly plotted with `plot()`, but the field of view here is so large that it would take a long time and the details would be lost. Here, we will only plot the polygon centroids for the cell nucleus polygons by accessing the calculated results within the `giottoPolygon`'s `spatVectorCentroids` slot.
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 plot(x = gpoly_nucs, point_size = 0.1, type = 'centroid')
 ```
 ![](../../../../images/tutorials/integrate_bento_analysis/gpolys_centroids.png){width="70%"}
 
 #### Create Giotto Object
 Now that both the feature data and the boundaries are loaded in, a subcellular Giotto object can be created.
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 xenium_gobj = createGiottoObjectSubcellular(
   gpoints = list(rna = gpoints_list$`Gene Expression`,
                  blank_code = gpoints_list$`Blank Codeword`,
@@ -363,25 +363,25 @@ xenium_gobj = createGiottoObjectSubcellular(
 ### Create Bento AnnData Object
 #### Subset Giotto Object First
 Large dataset may cause prolonged processing time for Bento.
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 subset_xenium_gobj <- subsetGiottoLocs(xenium_gobj, spat_unit='cell', feat_type='rna',
                                        x_max=200,x_min=0,y_max=200,y_min=0)
 ```
 
 #### Create AnnData Object
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 bento_adata <- createBentoAdata(subset_xenium_gobj)
 ```
 
 ### Bento Analysis
 #### Load Python Modules
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 bento_analysis_path <- system.file("python","python_bento_analysis.py",package="Giotto")
 reticulate::source_python(bento_analysis_path)
 ```
 
 #### RNA Forest Analysis
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 analysis_rna_forest(adata=bento_adata)
 plot_rna_forest_analysis_results(adata=bento_adata,
                                  fname1='Bento_rna_forest_radvis.png',
@@ -391,7 +391,7 @@ plot_rna_forest_analysis_results(adata=bento_adata,
 ![](../../../../images/tutorials/integrate_bento_analysis/Bento_rna_forest_upset.png){width="70%"}
 
 #### Colocalization Analysis
-```{r, eval=TRUE}
+```{r, eval=FALSE}
 analysis_colocalization(adata=bento_adata, fname='Bento_colocalization_knee_pos.png', ranks=seq(10))
 # Set the rank according output hint.
 plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='Bento_colocalization.png')
