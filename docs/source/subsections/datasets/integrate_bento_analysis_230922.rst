@@ -15,11 +15,9 @@ Integrate Bento Analysis
 
       library(Giotto)
 
-   .. container:: cell-output cell-output-stderr
+   .. code:: r
 
-      ::
-
-         Giotto Suite 3.3.1
+      # Giotto Suite 3.3.1
 
    .. code:: r
 
@@ -31,12 +29,9 @@ Integrate Bento Analysis
 
       genv_exists = checkGiottoEnvironment()
 
-   .. container:: cell-output cell-output-stderr
+   .. code:: r
 
-      ::
-
-
-         giotto environment was expected, but NOT found at
+      # giotto environment was expected, but NOT found at
           /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
 
    .. code:: r
@@ -64,12 +59,9 @@ Integrate Bento Analysis
                                         show_plot = FALSE,
                                         return_plot = FALSE)
 
-   .. container:: cell-output cell-output-stderr
+   .. code:: r
 
-      ::
-
-
-         external python path provided and will be used
+      # external python path provided and will be used
 
 2 Dataset explanation
 =====================
@@ -82,7 +74,7 @@ provided with their recent `bioRxiv
 pre-print <https://www.biorxiv.org/content/10.1101/2022.10.06.510405v1>`__.
 The data from the first tissue replicate will be worked with.
 
-.. image:: ../../../../images/tutorials/integrate_bento_analysis/large_preview.png
+.. image:: /images/tutorials/integrate_bento_analysis/large_preview.png
    :width: 70.0%
 
 3 Project data paths
@@ -149,16 +141,6 @@ The data from the first tissue replicate will be worked with.
 
       # Find the feature IDs that belong to each feature type
       feature_dt[, table(feat_type)]
-
-   .. container:: cell-output cell-output-stdout
-
-      ::
-
-         feat_type
-                    Blank Codeword           Gene Expression Negative Control Codeword 
-                               159                       313                        41 
-            Negative Control Probe 
-                                28 
 
    .. code:: r
 
@@ -426,14 +408,6 @@ contains a QC Phred score for which this tutorial will set a cutoff at
       cat('Transcripts info available:\n ', paste0('"', colnames(tx_dt), '"'), '\n',
       'with', tx_dt[,.N], 'unfiltered detections\n')
 
-   .. container:: cell-output cell-output-stdout
-
-      ::
-
-         Transcripts info available:
-           "transcript_id" "cell_id" "overlaps_nucleus" "feat_ID" "x" "y" "z_location" "qv" 
-          with 42638083 unfiltered detections
-
    .. code:: r
 
       # filter by qv (Phred score)
@@ -456,15 +430,6 @@ contains a QC Phred score for which this tutorial will set a cutoff at
       invisible(lapply(seq_along(tx_dt_types), function(x) {
         cat(names(tx_dt_types)[[x]], 'detections: ', tx_dt_types[[x]][,.N], '\n')
       }))
-
-   .. container:: cell-output cell-output-stdout
-
-      ::
-
-         Blank Codeword detections:  10166 
-         Gene Expression detections:  34442716 
-         Negative Control Codeword detections:  2215 
-         Negative Control Probe detections:  38413 
 
 .. container:: cell
 
@@ -498,54 +463,6 @@ contains a QC Phred score for which this tutorial will set a cutoff at
         tx_dt_types, function(x) createGiottoPoints(x = x)
       ) # 208.499 sec elapsed
 
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting col "feat_ID" as feat_ID column
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting cols "x" and "y" as x and y respectively
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting col "feat_ID" as feat_ID column
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting cols "x" and "y" as x and y respectively
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting col "feat_ID" as feat_ID column
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting cols "x" and "y" as x and y respectively
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting col "feat_ID" as feat_ID column
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting cols "x" and "y" as x and y respectively
-
    .. code:: r
 
       # Preview QC probe detections
@@ -553,19 +470,11 @@ contains a QC Phred score for which this tutorial will set a cutoff at
            point_size = 0.3,
            main = 'Blank Codeword')
 
-   .. container:: cell-output-display
-
-      .. image:: integrate_bento_analysis_files/figure-rst/unnamed-chunk-12-1.png
-
    .. code:: r
 
       plot(gpoints_list$`Negative Control Codeword`,
            point_size = 0.3,
            main = 'Negative Control Codeword')
-
-   .. container:: cell-output-display
-
-      .. image:: integrate_bento_analysis_files/figure-rst/unnamed-chunk-12-2.png
 
    .. code:: r
 
@@ -573,31 +482,15 @@ contains a QC Phred score for which this tutorial will set a cutoff at
            point_size = 0.3,
            main = 'Negative Control Probe')
 
-   .. container:: cell-output-display
-
-      .. image:: integrate_bento_analysis_files/figure-rst/unnamed-chunk-12-3.png
-
    .. code:: r
 
       # Preview two genes (slower)
       plot(gpoints_list$`Gene Expression`,  # 77.843 sec elapsed
            feats = c('KRT8', 'MS4A1'))
 
-   .. container:: cell-output-display
-
-      .. image:: integrate_bento_analysis_files/figure-rst/unnamed-chunk-12-4.png
-
    .. code:: r
 
       tx_dt_types$`Gene Expression`[feat_ID %in% c('KRT8', 'MS4A1'), table(feat_ID)]
-
-   .. container:: cell-output cell-output-stdout
-
-      ::
-
-         feat_ID
-           KRT8  MS4A1 
-         530168  20875 
 
 .. container:: cell
 
@@ -636,30 +529,11 @@ correct columns to use by looking for columns named ``'poly_ID'``,
                                                 name = 'cell',
                                                 calc_centroids = TRUE)
 
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting col "poly_ID" as poly_ID column
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting cols "x" and "y" as x and y respectively
-
    .. code:: r
 
       gpoly_nucs = createGiottoPolygonsFromDfr(segmdfr = nucPoly_dt,
                                                name = 'nucleus',
                                                calc_centroids = TRUE)
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-           Selecting col "poly_ID" as poly_ID column
-           Selecting cols "x" and "y" as x and y respectively
 
 ``giottoPolygon`` objects can be directly plotted with ``plot()``, but
 the field of view here is so large that it would take a long time and
@@ -673,11 +547,7 @@ the ``giottoPolygon``\ ’s ``spatVectorCentroids`` slot.
 
       plot(x = gpoly_nucs, point_size = 0.1, type = 'centroid')
 
-   .. container:: cell-output-display
-
-      .. image:: integrate_bento_analysis_files/figure-rst/unnamed-chunk-15-1.png
-
-.. image:: ../../../../images/tutorials/integrate_bento_analysis/gpolys_centroids.png
+.. image:: /images/tutorials/integrate_bento_analysis/gpolys_centroids.png
    :width: 70.0%
 
 5.1.3 Create Giotto Object
@@ -699,54 +569,6 @@ subcellular Giotto object can be created.
                          nucleus = gpoly_nucs),
         instructions = instrs
       )
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         polygonlist is a list with names
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         [ cell ] Process polygon info...
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         [ nucleus ] Process polygon info...
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         pointslist is a named list
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         [ rna ] Process point info...
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         [ blank_code ] Process point info...
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         [ neg_code ] Process point info...
-
-   .. container:: cell-output cell-output-stderr
-
-      ::
-
-         [ neg_probe ] Process point info...
 
 6 Perform Bento Analysis
 ========================
@@ -775,11 +597,9 @@ Large dataset may cause prolonged processing time for Bento.
 
       bento_adata <- createBentoAdata(subset_xenium_gobj)
 
-   .. container:: cell-output cell-output-stdout
+   .. code:: r
 
-      ::
-
-         11:24:57 --- INFO: Batch information found in cell_shape, adding batch information to adata
+      # 11:24:57 --- INFO: Batch information found in cell_shape, adding batch information to adata
 
 6.2 Bento Analysis
 ------------------
@@ -803,36 +623,34 @@ Large dataset may cause prolonged processing time for Bento.
 
       analysis_rna_forest(adata=bento_adata)
 
-   .. container:: cell-output cell-output-stdout
+   .. code:: r
 
-      ::
-
-         Crunching shape features...
-         AnnData object modified:
-             obs:
-                 + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
-             uns:
-                 + cell_raster
-         Crunching point features...
-         Saving results...
-         Done.
-         AnnData object modified:
-             obs:
-                 + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
-             uns:
-                 + cell_raster, cell_gene_features
-         Crunching shape features...
-         Crunching point features...
-         Saving results...
-         Done.
-         AnnData object modified:
-             obs:
-                 + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
-             uns:
-                 + cell_raster, cell_gene_features, lpp, lp
-         AnnData object modified:
-             uns:
-                 + lp_stats
+      # Crunching shape features...
+      # AnnData object modified:
+      #     obs:
+      #         + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
+      #     uns:
+      #         + cell_raster
+      # Crunching point features...
+      # Saving results...
+      # Done.
+      # AnnData object modified:
+      #     obs:
+      #         + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
+      #     uns:
+      #         + cell_raster, cell_gene_features
+      # Crunching shape features...
+      # Crunching point features...
+      # Saving results...
+      # Done.
+      # AnnData object modified:
+      #     obs:
+      #         + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
+      #     uns:
+      #         + cell_raster, cell_gene_features, lpp, lp
+      # AnnData object modified:
+      #     uns:
+      #         + lp_stats
 
    .. code:: r
 
@@ -840,12 +658,10 @@ Large dataset may cause prolonged processing time for Bento.
                                        fname1='Bento_rna_forest_radvis.png',
                                        fname2='Bento_rna_forest_upset.png')
 
-   .. container:: cell-output cell-output-stdout
+   .. code:: r
 
-      ::
-
-         Saved to Bento_rna_forest_radvis.png
-         Saved to Bento_rna_forest_upset.png
+      # Saved to Bento_rna_forest_radvis.png
+      # Saved to Bento_rna_forest_upset.png
 
 |image5| |image6|
 
@@ -858,22 +674,20 @@ Large dataset may cause prolonged processing time for Bento.
 
       analysis_colocalization(adata=bento_adata, fname='Bento_colocalization_knee_pos.png', ranks=seq(10))
 
-   .. container:: cell-output cell-output-stdout
+   .. code:: r
 
-      ::
-
-         AnnData object modified:
-             uns:
-                 + clq
-         Preparing tensor...
-         (2, 19, 156)
-         :running: Decomposing tensor...
-         11:25:38 --- INFO: Knee found at rank 5
-         11:25:39 --- INFO: Saved to Bento_colocalization_knee_pos.png
-         :heavy_check_mark: Done.
-         AnnData object modified:
-             uns:
-                 + factors, tensor_labels, tensor_names, tensor, factors_error
+      # AnnData object modified:
+      #     uns:
+      #         + clq
+      # Preparing tensor...
+      # (2, 19, 156)
+      # :running: Decomposing tensor...
+      # 11:25:38 --- INFO: Knee found at rank 5
+      # 11:25:39 --- INFO: Saved to Bento_colocalization_knee_pos.png
+      # :heavy_check_mark: Done.
+      # AnnData object modified:
+      #     uns:
+      #         + factors, tensor_labels, tensor_names, tensor, factors_error
 
    .. code:: r
 
@@ -882,9 +696,7 @@ Large dataset may cause prolonged processing time for Bento.
 
    .. container:: cell-output cell-output-stdout
 
-      ::
-
-         Saved to Bento_colocalization.png
+      # Saved to Bento_colocalization.png
 
 .. image:: ../../../../images/tutorials/integrate_bento_analysis/Bento_colocalization.png
    :width: 100.0%
@@ -901,47 +713,45 @@ Large dataset may cause prolonged processing time for Bento.
 
       sessionInfo()
 
-   .. container:: cell-output cell-output-stdout
+   .. code:: r
 
-      ::
-
-         R version 4.2.3 (2023-03-15)
-         Platform: x86_64-conda-linux-gnu (64-bit)
-         Running under: Ubuntu 22.04.2 LTS
-
-         Matrix products: default
-         BLAS/LAPACK: /sc/arion/work/wangw32/conda-env/envs/giotto_suite_bento_install/lib/libopenblasp-r0.3.24.so
-
-         locale:
-          [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
-          [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
-          [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
-          [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
-          [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-         [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
-
-         attached base packages:
-         [1] stats     graphics  grDevices utils     datasets  methods   base     
-
-         other attached packages:
-         [1] Giotto_3.3.1
-
-         loaded via a namespace (and not attached):
-          [1] reticulate_1.32.0  tidyselect_1.2.0   terra_1.7-46       xfun_0.40         
-          [5] sf_1.0-14          lattice_0.21-8     colorspace_2.1-0   vctrs_0.6.3       
-          [9] generics_0.1.3     htmltools_0.5.6    yaml_2.3.7         utf8_1.2.3        
-         [13] rlang_1.1.1        R.oo_1.25.0        e1071_1.7-13       pillar_1.9.0      
-         [17] glue_1.6.2         withr_2.5.0        DBI_1.1.3          R.utils_2.12.2    
-         [21] rappdirs_0.3.3     bit64_4.0.5        lifecycle_1.0.3    munsell_0.5.0     
-         [25] gtable_0.3.4       R.methodsS3_1.8.2  codetools_0.2-19   evaluate_0.21     
-         [29] knitr_1.44         fastmap_1.1.1      class_7.3-22       parallel_4.2.3    
-         [33] fansi_1.0.4        Rcpp_1.0.11        KernSmooth_2.23-22 scales_1.2.1      
-         [37] classInt_0.4-10    jsonlite_1.8.7     bit_4.0.5          ggplot2_3.4.3     
-         [41] png_0.1-8          digest_0.6.33      dplyr_1.1.3        grid_4.2.3        
-         [45] scattermore_1.2    cli_3.6.1          tools_4.2.3        magrittr_2.0.3    
-         [49] proxy_0.4-27       tibble_3.2.1       pkgconfig_2.0.3    Matrix_1.6-1      
-         [53] data.table_1.14.8  rmarkdown_2.24     rstudioapi_0.15.0  R6_2.5.1          
-         [57] units_0.8-3        compiler_4.2.3    
+      # R version 4.2.3 (2023-03-15)
+      # Platform: x86_64-conda-linux-gnu (64-bit)
+      # Running under: Ubuntu 22.04.2 LTS
+      # 
+      # Matrix products: default
+      # BLAS/LAPACK: /sc/arion/work/wangw32/conda-env/envs/giotto_suite_bento_install/lib/libopenblasp-r0.3.24.so
+      # 
+      # locale:
+      #  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+      #  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+      #  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+      #  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+      #  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+      # [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+      # 
+      # attached base packages:
+      # [1] stats     graphics  grDevices utils     datasets  methods   base     
+      # 
+      # other attached packages:
+      # [1] Giotto_3.3.1
+      # 
+      # loaded via a namespace (and not attached):
+      #  [1] reticulate_1.32.0  tidyselect_1.2.0   terra_1.7-46       xfun_0.40         
+      #  [5] sf_1.0-14          lattice_0.21-8     colorspace_2.1-0   vctrs_0.6.3       
+      #  [9] generics_0.1.3     htmltools_0.5.6    yaml_2.3.7         utf8_1.2.3        
+      # [13] rlang_1.1.1        R.oo_1.25.0        e1071_1.7-13       pillar_1.9.0      
+      # [17] glue_1.6.2         withr_2.5.0        DBI_1.1.3          R.utils_2.12.2    
+      # [21] rappdirs_0.3.3     bit64_4.0.5        lifecycle_1.0.3    munsell_0.5.0     
+      # [25] gtable_0.3.4       R.methodsS3_1.8.2  codetools_0.2-19   evaluate_0.21     
+      # [29] knitr_1.44         fastmap_1.1.1      class_7.3-22       parallel_4.2.3    
+      # [33] fansi_1.0.4        Rcpp_1.0.11        KernSmooth_2.23-22 scales_1.2.1      
+      # [37] classInt_0.4-10    jsonlite_1.8.7     bit_4.0.5          ggplot2_3.4.3     
+      # [41] png_0.1-8          digest_0.6.33      dplyr_1.1.3        grid_4.2.3        
+      # [45] scattermore_1.2    cli_3.6.1          tools_4.2.3        magrittr_2.0.3    
+      # [49] proxy_0.4-27       tibble_3.2.1       pkgconfig_2.0.3    Matrix_1.6-1      
+      # [53] data.table_1.14.8  rmarkdown_2.24     rstudioapi_0.15.0  R6_2.5.1          
+      # [57] units_0.8-3        compiler_4.2.3    
 
 7.2 Python Session Info
 -----------------------
@@ -952,111 +762,109 @@ Large dataset may cause prolonged processing time for Bento.
 
       python_session_info()
 
-   .. container:: cell-output cell-output-stdout
+   .. code:: r
 
-      ::
+      # -----
+      # anndata     0.9.2
+      # bento       NA
+      # emoji       1.7.0
+      # geopandas   0.10.2
+      # kneed       0.8.5
+      # log         NA
+      # matplotlib  3.7.2
+      # pandas      2.1.0
+      # seaborn     0.12.2
+      # shapely     1.8.5.post1
+      # -----
+      # IPython             8.15.0
+      # PIL                 10.0.0
+      # adjustText          NA
+      # affine              2.4.0
+      # astropy             5.3.3
+      # asttokens           NA
+      # attr                23.1.0
+      # backcall            0.2.0
+      # certifi             2023.07.22
+      # click               8.1.7
+      # comm                0.1.4
+      # community           0.16
+      # contourpy           1.1.0
+      # cycler              0.10.0
+      # cython_runtime      NA
+      # dateutil            2.8.2
+      # decorator           5.1.1
+      # decoupler           1.5.0
+      # erfa                2.0.0.3
+      # exceptiongroup      1.1.3
+      # executing           1.2.0
+      # fiona               1.9.4.post1
+      # h5py                3.9.0
+      # igraph              0.10.6
+      # ipywidgets          8.1.0
+      # jedi                0.19.0
+      # joblib              1.3.2
+      # kiwisolver          1.4.5
+      # leidenalg           0.10.1
+      # llvmlite            0.40.1
+      # matplotlib_scalebar 0.8.1
+      # minisom             NA
+      # mpl_toolkits        NA
+      # natsort             8.4.0
+      # networkx            3.1
+      # numba               0.57.1
+      # numpy               1.24.4
+      # packaging           23.1
+      # parso               0.8.3
+      # patsy               0.5.3
+      # pexpect             4.8.0
+      # pickleshare         0.7.5
+      # pkg_resources       NA
+      # prompt_toolkit      3.0.39
+      # psutil              5.9.5
+      # ptyprocess          0.7.0
+      # pure_eval           0.2.2
+      # pygeos              0.12.0
+      # pygments            2.16.1
+      # pyparsing           3.0.9
+      # pyproj              3.6.0
+      # pytz                2023.3.post1
+      # rasterio            1.3.8
+      # rpycall             NA
+      # rpytools            NA
+      # scipy               1.11.2
+      # session_info        1.0.0
+      # setuptools          68.1.2
+      # six                 1.16.0
+      # sklearn             1.3.0
+      # sparse              0.13.0
+      # stack_data          0.6.2
+      # statsmodels         0.13.5
+      # tensorly            0.7.0
+      # texttable           1.6.7
+      # threadpoolctl       3.2.0
+      # tqdm                4.66.1
+      # traitlets           5.9.0
+      # typing_extensions   NA
+      # upsetplot           0.6.1
+      # wcwidth             0.2.6
+      # xgboost             1.4.2
+      # yaml                6.0.1
+      # zoneinfo            NA
+      # -----
+      # Python 3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:55:59) [GCC 12.3.0]
+      # Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.35
+      # -----
+      # Session information updated at 2023-09-22 11:25
 
-         -----
-         anndata     0.9.2
-         bento       NA
-         emoji       1.7.0
-         geopandas   0.10.2
-         kneed       0.8.5
-         log         NA
-         matplotlib  3.7.2
-         pandas      2.1.0
-         seaborn     0.12.2
-         shapely     1.8.5.post1
-         -----
-         IPython             8.15.0
-         PIL                 10.0.0
-         adjustText          NA
-         affine              2.4.0
-         astropy             5.3.3
-         asttokens           NA
-         attr                23.1.0
-         backcall            0.2.0
-         certifi             2023.07.22
-         click               8.1.7
-         comm                0.1.4
-         community           0.16
-         contourpy           1.1.0
-         cycler              0.10.0
-         cython_runtime      NA
-         dateutil            2.8.2
-         decorator           5.1.1
-         decoupler           1.5.0
-         erfa                2.0.0.3
-         exceptiongroup      1.1.3
-         executing           1.2.0
-         fiona               1.9.4.post1
-         h5py                3.9.0
-         igraph              0.10.6
-         ipywidgets          8.1.0
-         jedi                0.19.0
-         joblib              1.3.2
-         kiwisolver          1.4.5
-         leidenalg           0.10.1
-         llvmlite            0.40.1
-         matplotlib_scalebar 0.8.1
-         minisom             NA
-         mpl_toolkits        NA
-         natsort             8.4.0
-         networkx            3.1
-         numba               0.57.1
-         numpy               1.24.4
-         packaging           23.1
-         parso               0.8.3
-         patsy               0.5.3
-         pexpect             4.8.0
-         pickleshare         0.7.5
-         pkg_resources       NA
-         prompt_toolkit      3.0.39
-         psutil              5.9.5
-         ptyprocess          0.7.0
-         pure_eval           0.2.2
-         pygeos              0.12.0
-         pygments            2.16.1
-         pyparsing           3.0.9
-         pyproj              3.6.0
-         pytz                2023.3.post1
-         rasterio            1.3.8
-         rpycall             NA
-         rpytools            NA
-         scipy               1.11.2
-         session_info        1.0.0
-         setuptools          68.1.2
-         six                 1.16.0
-         sklearn             1.3.0
-         sparse              0.13.0
-         stack_data          0.6.2
-         statsmodels         0.13.5
-         tensorly            0.7.0
-         texttable           1.6.7
-         threadpoolctl       3.2.0
-         tqdm                4.66.1
-         traitlets           5.9.0
-         typing_extensions   NA
-         upsetplot           0.6.1
-         wcwidth             0.2.6
-         xgboost             1.4.2
-         yaml                6.0.1
-         zoneinfo            NA
-         -----
-         Python 3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:55:59) [GCC 12.3.0]
-         Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.35
-         -----
-         Session information updated at 2023-09-22 11:25
-
-.. |image1| image:: ../../../../images/tutorials/integrate_bento_analysis/gpoints_blnk.png
+.. |image1| image:: /images/tutorials/integrate_bento_analysis/gpoints_blnk.png
    :width: 32.0%
-.. |image2| image:: ../../../../images/tutorials/integrate_bento_analysis/gpoints_ngcode.png
+.. |image2| image:: /images/tutorials/integrate_bento_analysis/gpoints_ngcode.png
    :width: 32.0%
-.. |image3| image:: ../../../../images/tutorials/integrate_bento_analysis/gpoints_ngprbe.png
+.. |image3| image:: /images/tutorials/integrate_bento_analysis/gpoints_ngprbe.png
    :width: 32.0%
-.. |image4| image:: ../../../../images/tutorials/integrate_bento_analysis/gpoints_expr.png
+.. |image4| image:: /images/tutorials/integrate_bento_analysis/gpoints_expr.png
    :width: 100.0%
-.. |image5| image:: ../../../../images/tutorials/integrate_bento_analysis/Bento_rna_forest_radvis.png
+.. |image5| image:: /images/tutorials/integrate_bento_analysis/Bento_rna_forest_radvis.png
    :width: 70.0%
-.. |image6| image:: ../../../../images/tutorials/integrate_bento_analysis/Bento_rna_forest_upset.png
+.. |image6| image:: /images/tutorials/integrate_bento_analysis/Bento_rna_forest_upset.png
    :width: 70.0%
