@@ -2,7 +2,7 @@
 Integrate Bento Analysis
 ========================
 
-:Date: 2023-09-22
+:Date: 2023-09-28
 
 .. container:: cell
 
@@ -731,18 +731,24 @@ Large dataset may cause prolonged processing time for Bento.
 
       # -----
       # anndata     0.9.2
-      # bento       NA
+      # bento       2.0.1
       # emoji       1.7.0
       # geopandas   0.10.2
       # kneed       0.8.5
       # log         NA
-      # matplotlib  3.7.2
-      # pandas      2.1.0
+      # matplotlib  3.8.0
+      # minisom     NA
+      # numpy       1.25.2
+      # pandas      1.5.3
+      # rasterio    1.3.8
+      # scipy       1.11.3
       # seaborn     0.12.2
       # shapely     1.8.5.post1
+      # sklearn     1.3.1
+      # tqdm        4.66.1
       # -----
       # IPython             8.15.0
-      # PIL                 10.0.0
+      # PIL                 10.0.1
       # adjustText          NA
       # affine              2.4.0
       # astropy             5.3.3
@@ -753,31 +759,27 @@ Large dataset may cause prolonged processing time for Bento.
       # click               8.1.7
       # comm                0.1.4
       # community           0.16
-      # contourpy           1.1.0
+      # contourpy           1.1.1
       # cycler              0.10.0
       # cython_runtime      NA
       # dateutil            2.8.2
       # decorator           5.1.1
-      # decoupler           1.5.0
+      d ecoupler           1.5.0
       # erfa                2.0.0.3
       # exceptiongroup      1.1.3
       # executing           1.2.0
       # fiona               1.9.4.post1
       # h5py                3.9.0
-      # igraph              0.10.6
-      # ipywidgets          8.1.0
+      # ipywidgets          8.1.1
       # jedi                0.19.0
       # joblib              1.3.2
       # kiwisolver          1.4.5
-      # leidenalg           0.10.1
-      # llvmlite            0.40.1
+      # llvmlite            0.41.0
       # matplotlib_scalebar 0.8.1
-      # minisom             NA
       # mpl_toolkits        NA
       # natsort             8.4.0
       # networkx            3.1
-      # numba               0.57.1
-      # numpy               1.24.4
+      # numba               0.58.0
       # packaging           23.1
       # parso               0.8.3
       # patsy               0.5.3
@@ -790,36 +792,30 @@ Large dataset may cause prolonged processing time for Bento.
       # pure_eval           0.2.2
       # pygeos              0.12.0
       # pygments            2.16.1
-      # pyparsing           3.0.9
-      # pyproj              3.6.0
+      # pyparsing           3.1.1
+      # pyproj              3.6.1
       # pytz                2023.3.post1
-      # rasterio            1.3.8
       # rpycall             NA
       # rpytools            NA
-      # scipy               1.11.2
       # session_info        1.0.0
-      # setuptools          68.1.2
+      # setuptools          68.2.2
       # six                 1.16.0
-      # sklearn             1.3.0
       # sparse              0.13.0
       # stack_data          0.6.2
       # statsmodels         0.13.5
       # tensorly            0.7.0
-      # texttable           1.6.7
       # threadpoolctl       3.2.0
-      # tqdm                4.66.1
-      # traitlets           5.9.0
+      # traitlets           5.10.1
       # typing_extensions   NA
-      # upsetplot           0.6.1
+      # upsetplot           0.7.0
       # wcwidth             0.2.6
       # xgboost             1.4.2
       # yaml                6.0.1
-      # zoneinfo            NA
       # -----
-      # Python 3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:55:59) [GCC 12.3.0]
+      # Python 3.10.2 | packaged by conda-forge | (main, Mar  8 2022, 1 6:08:39) [GCC 9.4.0]
       # Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.35
       # -----
-      # Session information updated at 2023-09-22 11:25
+      # Session information updated at 2023-09-28 15:09
 
 .. |image1| image:: /images/tutorials/integrate_bento_analysis/gpoints_blnk.png
    :width: 32.0%
