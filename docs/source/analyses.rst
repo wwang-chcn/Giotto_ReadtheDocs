@@ -58,4 +58,4 @@ Integrate with Other Packages
         :link: /subsections/datasets/integrate_bento_analysis_230922
         :link-type: doc
 
-        .. image:: subsections/datasets/integrate_bento_analysis_230922/Bento_rna_forest_radvis.png
+        .. image:: subsections/datasets/integrate_bento_analysis_230922/figure-rst/Bento_rna_forest_radvis.png
