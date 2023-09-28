@@ -19,7 +19,7 @@ Integrate Bento Analysis
 
       # Set python path to your preferred python version path
       # Set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-      python_path = "/sc/arion/work/wangw32/conda-env/envs/giotto_suite_bento_install/bin/python" 
+      python_path = NULL
 
       genv_exists = checkGiottoEnvironment()
 
