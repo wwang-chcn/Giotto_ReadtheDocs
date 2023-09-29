@@ -4,6 +4,12 @@ format: rst
 date: 'Compiled 2023-09-28'
 number-sections: true
 ---
+## Introduction to Bento
+[Bento](https://bento-tools.readthedocs.io/en/latest/index.html) is a Python toolkit for performing subcellular analysis of spatial transcriptomics data.
+
+
+## Giotto installation
+
 ```{r, eval=FALSE}
 # Ensure Giotto Suite is installed.
 if(!"Giotto" %in% installed.packages()) {
@@ -27,8 +33,8 @@ if(!genv_exists & is.null(python_path)){
 ```{r, eval=FALSE}
 # Giotto Suite 3.3.1
 
-# giotto environment was expected, but NOT found at
-#    /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
+# giotto environment found at 
+#         /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
 
 ```
 
@@ -50,7 +56,7 @@ instrs = createGiottoInstructions(python_path = python_path,
 
 This vignette covers Giotto object creation and simple exploratory analysis with 10x Genomics' subcellular *Xenium In Situ* platform data using their [Human Breast Cancer Dataset](https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast) provided with their recent [bioRxiv pre-print](https://www.biorxiv.org/content/10.1101/2022.10.06.510405v1). The data from the first tissue replicate will be worked with.
 
-![](../../../../images/tutorials/integrate_bento_analysis/large_preview.png){width="70%"}
+![](/images/tutorials/integrate_bento_analysis/large_preview.png){width="70%"}
 
 ## Project data paths
 Xenium's exact output folder structure and which file/formats will be available in the final release are still subject to change. This tutorial will be updated for any differences at release.  
@@ -320,10 +326,10 @@ tx_dt_types$`Gene Expression`[feat_ID %in% c('KRT8', 'MS4A1'), table(feat_ID)]
 # 530190  20926 
 ```
 
-![](../../../../images/tutorials/integrate_bento_analysis/gpoints_blnk.png){width="32%"}
-![](../../../../images/tutorials/integrate_bento_analysis/gpoints_ngcode.png){width="32%"}
-![](../../../../images/tutorials/integrate_bento_analysis/gpoints_ngprbe.png){width="32%"}
-![](../../../../images/tutorials/integrate_bento_analysis/gpoints_expr.png){width="100%"}
+![](/images/tutorials/integrate_bento_analysis/gpoints_blnk.png){width="32%"}
+![](/images/tutorials/integrate_bento_analysis/gpoints_ngcode.png){width="32%"}
+![](/images/tutorials/integrate_bento_analysis/gpoints_ngprbe.png){width="32%"}
+![](/images/tutorials/integrate_bento_analysis/gpoints_expr.png){width="100%"}
 
 #### Load polygon data
 Xenium output provides segmentation/cell boundary information in .csv.gz files. These are represented within Giotto as `giottoPolygon` objects and can also be directly plotted. This function also determines the correct columns to use by looking for columns named `'poly_ID'`, `'x'`, and `'y'`.
@@ -350,7 +356,7 @@ gpoly_nucs = createGiottoPolygonsFromDfr(segmdfr = nucPoly_dt,
 ```{r, eval=FALSE}
 plot(x = gpoly_nucs, point_size = 0.1, type = 'centroid')
 ```
-![](../../../../images/tutorials/integrate_bento_analysis/gpolys_centroids.png){width="70%"}
+![](/images/tutorials/integrate_bento_analysis/gpolys_centroids.png){width="70%"}
 
 #### Create Giotto Object
 Now that both the feature data and the boundaries are loaded in, a subcellular Giotto object can be created.
@@ -376,14 +382,14 @@ subset_xenium_gobj <- subsetGiottoLocs(xenium_gobj, spat_unit='cell', feat_type=
                                        x_max=200,x_min=0,y_max=200,y_min=0)
 ```
 
-```{r, eval=FALSE}
-# 11:24:57 --- INFO: Batch information found in cell_shape, adding batch information to adata
-
-```
-
 #### Create AnnData Object
 ```{r, eval=FALSE}
 bento_adata <- createBentoAdata(subset_xenium_gobj)
+```
+
+```{r, eval=FALSE}
+# 11:24:57 --- INFO: Batch information found in cell_shape, adding batch information to adata
+
 ```
 
 ### Bento Analysis

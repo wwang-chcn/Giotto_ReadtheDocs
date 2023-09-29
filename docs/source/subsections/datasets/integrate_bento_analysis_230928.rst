@@ -4,6 +4,16 @@ Integrate Bento Analysis
 
 :Date: 2023-09-28
 
+1 Introduction to Bento
+=======================
+
+`Bento <https://bento-tools.readthedocs.io/en/latest/index.html>`__ is a
+Python toolkit for performing subcellular analysis of spatial
+transcriptomics data.
+
+2 Giotto installation
+=====================
+
 .. container:: cell
 
    .. code:: r
@@ -14,7 +24,6 @@ Integrate Bento Analysis
       }
 
       library(Giotto)
-
       # Ensure the Python environment for Giotto Has been installed.
 
       # Set python path to your preferred python version path
@@ -22,7 +31,6 @@ Integrate Bento Analysis
       python_path = NULL
 
       genv_exists = checkGiottoEnvironment()
-
       if(!genv_exists & is.null(python_path)){
         # The following command need only be run once to install the Giotto environment.
         installGiottoEnvironment()
@@ -32,11 +40,10 @@ Integrate Bento Analysis
 
       # Giotto Suite 3.3.1
 
-      # giotto environment was expected, but NOT found at
-      #    /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
+      # giotto environment found at 
+      #         /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
 
-
-1 Set up Giotto environment
+3 Set up Giotto environment
 ===========================
 
 .. container:: cell
@@ -52,13 +59,9 @@ Integrate Bento Analysis
                                         save_dir = results_folder,
                                         save_plot = TRUE,
                                         show_plot = FALSE,
-                                        return_plot = FALSE)
+                                        return_plot = FALSE
 
-   .. code:: r
-
-      # external python path provided and will be used
-
-2 Dataset explanation
+4 Dataset explanation
 =====================
 
 This vignette covers Giotto object creation and simple exploratory
@@ -72,7 +75,7 @@ The data from the first tissue replicate will be worked with.
 .. image:: /images/tutorials/integrate_bento_analysis/large_preview.png
    :width: 70.0%
 
-3 Project data paths
+5 Project data paths
 ====================
 
 | Xenium’s exact output folder structure and which file/formats will be
@@ -104,7 +107,7 @@ The data from the first tissue replicate will be worked with.
       expr_mat_path = paste0(xenium_folder, 'outs/cell_feature_matrix')
       cell_meta_path = paste0(xenium_folder, 'outs/cells.csv.gz') # contains spatlocs
 
-4 Xenium feature types exploration
+6 Xenium feature types exploration
 ==================================
 
 | ``features.tsv.gz`` within ``cell_feature_matrix.tar.gz`` provides
@@ -136,9 +139,6 @@ The data from the first tissue replicate will be worked with.
 
       # Find the feature IDs that belong to each feature type
       feature_dt[, table(feat_type)]
-
-   .. code:: r
-
       feat_types = names(feature_dt[, table(feat_type)])
 
       feat_types_IDs = lapply(
@@ -367,10 +367,10 @@ negative control probe IDs
 
    </details>
 
-5 Loading Xenium data
+7 Loading Xenium data
 =====================
 
-5.1 Manual Method
+7.1 Manual Method
 -----------------
 
 | Giotto objects can be manually assembled feeding data and subobjects
@@ -384,7 +384,7 @@ negative control probe IDs
   workflow to load in just the aggregated data is also available through
   the convenience function.
 
-5.1.1 Load transcript-level data
+7.1.1 Load transcript-level data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``transcripts.csv.gz`` is a file containing x, y, z coordinates for
@@ -403,13 +403,9 @@ contains a QC Phred score for which this tutorial will set a cutoff at
       cat('Transcripts info available:\n ', paste0('"', colnames(tx_dt), '"'), '\n',
       'with', tx_dt[,.N], 'unfiltered detections\n')
 
-   .. code:: r
-
       # filter by qv (Phred score)
       tx_dt_filtered = tx_dt[qv >= 20]
       cat('and', tx_dt_filtered[,.N], 'filtered detections\n\n')
-
-   .. code:: r
 
       # separate detections by feature type
       tx_dt_types = lapply(
@@ -452,7 +448,7 @@ contains a QC Phred score for which this tutorial will set a cutoff at
         tx_dt_types, function(x) createGiottoPoints(x = x)
       ) # 208.499 sec elapsed
 
-      # preview QC probe detections
+      # Preview QC probe detections
       plot(gpoints_list$`Blank Codeword`,
            point_size = 0.3,
            main = 'Blank Codeword')
@@ -463,7 +459,7 @@ contains a QC Phred score for which this tutorial will set a cutoff at
            point_size = 0.3,
            main = 'Negative Control Probe')
 
-      # preview two genes (slower)
+      # Preview two genes (slower)
       plot(gpoints_list$`Gene Expression`,  # 77.843 sec elapsed
            feats = c('KRT8', 'MS4A1'))
       tx_dt_types$`Gene Expression`[feat_ID %in% c('KRT8', 'MS4A1'), table(feat_ID)]
@@ -478,7 +474,7 @@ contains a QC Phred score for which this tutorial will set a cutoff at
 
 |image1| |image2| |image3| |image4|
 
-5.1.2 Load polygon data
+7.1.2 Load polygon data
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Xenium output provides segmentation/cell boundary information in .csv.gz
@@ -504,9 +500,6 @@ correct columns to use by looking for columns named ``'poly_ID'``,
       gpoly_cells = createGiottoPolygonsFromDfr(segmdfr = cellPoly_dt,
                                                 name = 'cell',
                                                 calc_centroids = TRUE)
-
-   .. code:: r
-
       gpoly_nucs = createGiottoPolygonsFromDfr(segmdfr = nucPoly_dt,
                                                name = 'nucleus',
                                                calc_centroids = TRUE)
@@ -526,7 +519,7 @@ the ``giottoPolygon``\ ’s ``spatVectorCentroids`` slot.
 .. image:: /images/tutorials/integrate_bento_analysis/gpolys_centroids.png
    :width: 70.0%
 
-5.1.3 Create Giotto Object
+7.1.3 Create Giotto Object
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now that both the feature data and the boundaries are loaded in, a
@@ -546,13 +539,13 @@ subcellular Giotto object can be created.
         instructions = instrs
       )
 
-6 Perform Bento Analysis
+8 Perform Bento Analysis
 ========================
 
-6.1 Create Bento AnnData Object
+8.1 Create Bento AnnData Object
 -------------------------------
 
-6.1.1 Subset Giotto Object First
+8.1.1 Subset Giotto Object First
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Large dataset may cause prolonged processing time for Bento.
@@ -564,7 +557,7 @@ Large dataset may cause prolonged processing time for Bento.
       subset_xenium_gobj <- subsetGiottoLocs(xenium_gobj, spat_unit='cell', feat_type='rna',
                                              x_max=200,x_min=0,y_max=200,y_min=0)
 
-6.1.2 Create AnnData Object
+8.1.2 Create AnnData Object
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: cell
@@ -577,10 +570,10 @@ Large dataset may cause prolonged processing time for Bento.
 
       # 11:24:57 --- INFO: Batch information found in cell_shape, adding batch information to adata
 
-6.2 Bento Analysis
+8.2 Bento Analysis
 ------------------
 
-6.2.1 Load Python Modules
+8.2.1 Load Python Modules
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: cell
@@ -590,7 +583,7 @@ Large dataset may cause prolonged processing time for Bento.
       bento_analysis_path <- system.file("python","python_bento_analysis.py",package="Giotto")
       reticulate::source_python(bento_analysis_path)
 
-6.2.2 RNA Forest Analysis
+8.2.2 RNA Forest Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: cell
@@ -636,7 +629,7 @@ Large dataset may cause prolonged processing time for Bento.
 
 |image5| |image6|
 
-6.2.3 Colocalization Analysis
+8.2.3 Colocalization Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. container:: cell
@@ -666,10 +659,10 @@ Large dataset may cause prolonged processing time for Bento.
 
 |image7| |image8|
 
-7 Session Info
+9 Session Info
 ==============
 
-7.1 R Session Info
+9.1 R Session Info
 ------------------
 
 .. container:: cell
@@ -718,7 +711,7 @@ Large dataset may cause prolonged processing time for Bento.
       # [53] data.table_1.14.8  rmarkdown_2.24     rstudioapi_0.15.0  R6_2.5.1          
       # [57] units_0.8-3        compiler_4.2.3    
 
-7.2 Python Session Info
+9.2 Python Session Info
 -----------------------
 
 .. container:: cell
