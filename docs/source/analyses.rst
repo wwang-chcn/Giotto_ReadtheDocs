@@ -49,3 +49,13 @@ Spatial Expression Analysis
         :link-type: doc
 
         .. image:: subsections/datasets/230407_binSpect_spatial_genes_example_files/figure-rst/unnamed-chunk-2-1.png
+
+Integrate with Other Packages
+=============================
+.. card-carousel:: 3
+
+    .. card:: Bento
+        :link: /subsections/datasets/integrate_bento_analysis_230928
+        :link-type: doc
+
+        .. image:: subsections/datasets/integrate_bento_analysis_230928/figure-rst/Bento_rna_forest_radvis.png
