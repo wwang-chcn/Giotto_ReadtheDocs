@@ -13,7 +13,7 @@ Follow these instructions to create your own Docker container and run Giotto:
 
 1. docker pull ``giottopackage/rstudio_suite:latest``
 
-2. docker run ``--rm -p 8787:8787 -e PASSWORD=mypassword giottopackage/rstudio_master:latest``
+2. docker run ``--rm -p 8787:8787 -e PASSWORD=mypassword giottopackage/rstudio_suite:latest``
 
    1. You may use *any* port as long as it is not in use.
    2. You can set the password to *whatever* you like.
