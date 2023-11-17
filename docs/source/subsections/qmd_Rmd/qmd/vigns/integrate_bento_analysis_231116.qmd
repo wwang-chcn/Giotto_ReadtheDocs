@@ -1,7 +1,7 @@
 ---
 title: "Integrate Bento Analysis"
 format: rst
-date: 'Compiled 2023-09-28'
+date: 'Compiled 2023-11-16'
 number-sections: true
 ---
 ## Introduction to Bento
@@ -13,15 +13,16 @@ number-sections: true
 ```{r, eval=FALSE}
 # Ensure Giotto Suite is installed.
 if(!"Giotto" %in% installed.packages()) {
-  devtools::install_github("drieslab/Giotto@suite")
+  devtools::install_github("drieslab/Giotto@suite_modular")
 }
 
 library(Giotto)
 # Ensure the Python environment for Giotto Has been installed.
 
-# Set python path to your preferred python version path
+# Set python path to your preferred python path. The python packages that Giotto depends on will be installed here if not installed before.
 # Set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-python_path = NULL
+python_path = "/sc/arion/work/wangw32/conda-env/envs/giotto/bin/python"
+# python_path = NULL
 
 genv_exists = checkGiottoEnvironment()
 if(!genv_exists & is.null(python_path)){
@@ -31,9 +32,12 @@ if(!genv_exists & is.null(python_path)){
 ```
 
 ```{r, eval=FALSE}
-# Giotto Suite 3.3.1
+# Loading required package: GiottoUtils
+# Loading required package: GiottoClass
+# Loading required package: GiottoVisuals
+# Giotto Suite 3.3.2
 
-# giotto environment found at 
+# giotto environment was expected, but NOT found at
 #         /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
 
 ```
@@ -49,7 +53,11 @@ instrs = createGiottoInstructions(python_path = python_path,
                                   save_dir = results_folder,
                                   save_plot = TRUE,
                                   show_plot = FALSE,
-                                  return_plot = FALSE
+                                  return_plot = FALSE)
+```
+
+```{r, eval=FALSE}
+# external python path provided and will be used
 ```
 
 ## Dataset explanation
@@ -384,11 +392,14 @@ subset_xenium_gobj <- subsetGiottoLocs(xenium_gobj, spat_unit='cell', feat_type=
 
 #### Create AnnData Object
 ```{r, eval=FALSE}
-bento_adata <- createBentoAdata(subset_xenium_gobj)
+bento_adata <- createBentoAdata(subset_xenium_gobj,
+                                env_to_use='/sc/arion/work/wangw32/conda-env/envs/giotto' # use the default value 'giotto_env' when you installed python dependencies automatically
+                                )
 ```
 
 ```{r, eval=FALSE}
-# 11:24:57 --- INFO: Batch information found in cell_shape, adding batch information to adata
+# 19:48:18 --- INFO: Creating cell and nucleus segmentation dataframes
+# 19:49:31 --- INFO: Batch information found in cell_shape, adding batch information to adata
 
 ```
 
@@ -439,8 +450,8 @@ plot_rna_forest_analysis_results(adata=bento_adata,
 # Saved to Bento_rna_forest_upset.png
 ```
 
-![](../../../../images/tutorials/integrate_bento_analysis/Bento_rna_forest_radvis.png){width="70%"}
-![](../../../../images/tutorials/integrate_bento_analysis/Bento_rna_forest_upset.png){width="70%"}
+![](/images/tutorials/integrate_bento_analysis/Bento_rna_forest_radvis.png){width="70%"}
+![](/images/tutorials/integrate_bento_analysis/Bento_rna_forest_upset.png){width="70%"}
 
 #### Colocalization Analysis
 ```{r, eval=FALSE}
@@ -456,8 +467,8 @@ plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='Bento_col
 # Preparing tensor...
 # (2, 19, 156)
 # :running: Decomposing tensor...
-# 11:25:38 --- INFO: Knee found at rank 5
-# 11:25:39 --- INFO: Saved to Bento_colocalization_knee_pos.png
+# 19:50:20 --- INFO: Knee found at rank 5
+# 19:50:20 --- INFO: Saved to Bento_colocalization_knee_pos.png
 # :heavy_check_mark: Done.
 # AnnData object modified:
 #     uns:
@@ -467,8 +478,8 @@ plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='Bento_col
 
 ```
 
-![](../../../../images/tutorials/integrate_bento_analysis/Bento_colocalization_knee_pos.png){width="70%"}
-![](../../../../images/tutorials/integrate_bento_analysis/Bento_colocalization.png){width="70%"}
+![](/images/tutorials/integrate_bento_analysis/Bento_colocalization_knee_pos.png){width="70%"}
+![](/images/tutorials/integrate_bento_analysis/Bento_colocalization.png){width="70%"}
 
 ## Session Info
 ### R Session Info
@@ -480,10 +491,10 @@ sessionInfo()
 # R version 4.2.3 (2023-03-15)
 # Platform: x86_64-conda-linux-gnu (64-bit)
 # Running under: Ubuntu 22.04.2 LTS
-# 
+#
 # Matrix products: default
-# BLAS/LAPACK: /sc/arion/work/wangw32/conda-env/envs/giotto_suite_bento_install/lib/libopenblasp-r0.3.24.so
-# 
+# BLAS/LAPACK: /sc/arion/work/wangw32/conda-env/envs/giotto/lib/libopenblasp-r0.3.24.so
+#
 # locale:
 #  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
 #  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
@@ -491,29 +502,32 @@ sessionInfo()
 #  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
 #  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
 # [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
-# 
+#
 # attached base packages:
 # [1] stats     graphics  grDevices utils     datasets  methods   base     
-# 
+#
 # other attached packages:
-# [1] Giotto_3.3.1
-# 
+# [1] Giotto_3.3.2             GiottoVisuals_0.0.0.9006 GiottoClass_0.0.0.9010  
+# [4] GiottoUtils_0.0.0.9004  
+#
 # loaded via a namespace (and not attached):
-#  [1] reticulate_1.32.0  tidyselect_1.2.0   terra_1.7-46       xfun_0.40         
-#  [5] sf_1.0-14          lattice_0.21-8     colorspace_2.1-0   vctrs_0.6.3       
-#  [9] generics_0.1.3     htmltools_0.5.6    yaml_2.3.7         utf8_1.2.3        
-# [13] rlang_1.1.1        R.oo_1.25.0        e1071_1.7-13       pillar_1.9.0      
-# [17] glue_1.6.2         withr_2.5.0        DBI_1.1.3          R.utils_2.12.2    
-# [21] rappdirs_0.3.3     bit64_4.0.5        lifecycle_1.0.3    munsell_0.5.0     
-# [25] gtable_0.3.4       R.methodsS3_1.8.2  codetools_0.2-19   evaluate_0.21     
-# [29] knitr_1.44         fastmap_1.1.1      class_7.3-22       parallel_4.2.3    
-# [33] fansi_1.0.4        Rcpp_1.0.11        KernSmooth_2.23-22 scales_1.2.1      
-# [37] classInt_0.4-10    jsonlite_1.8.7     bit_4.0.5          ggplot2_3.4.3     
-# [41] png_0.1-8          digest_0.6.33      dplyr_1.1.3        grid_4.2.3        
-# [45] scattermore_1.2    cli_3.6.1          tools_4.2.3        magrittr_2.0.3    
-# [49] proxy_0.4-27       tibble_3.2.1       pkgconfig_2.0.3    Matrix_1.6-1      
-# [53] data.table_1.14.8  rmarkdown_2.24     rstudioapi_0.15.0  R6_2.5.1          
-# [57] units_0.8-3        compiler_4.2.3    
+#  [1] reticulate_1.34.0  tidyselect_1.2.0   terra_1.7-55       xfun_0.41         
+#  [5] sf_1.0-14          lattice_0.21-9     colorspace_2.1-0   vctrs_0.6.4       
+#  [9] generics_0.1.3     htmltools_0.5.7    yaml_2.3.7         utf8_1.2.4        
+# [13] rlang_1.1.2        e1071_1.7-13       R.oo_1.25.0        pillar_1.9.0      
+# [17] glue_1.6.2         withr_2.5.2        DBI_1.1.3          R.utils_2.12.2    
+# [21] rappdirs_0.3.3     bit64_4.0.5        lifecycle_1.0.4    stringr_1.5.1     
+# [25] munsell_0.5.0      gtable_0.3.4       R.methodsS3_1.8.2  codetools_0.2-19  
+# [29] evaluate_0.23      knitr_1.45         fastmap_1.1.1      class_7.3-22      
+# [33] parallel_4.2.3     fansi_1.0.5        Rcpp_1.0.11        KernSmooth_2.23-22
+# [37] scales_1.2.1       backports_1.4.1    classInt_0.4-10    checkmate_2.3.0   
+# [41] jsonlite_1.8.7     bit_4.0.5          ggplot2_3.4.4      png_0.1-8         
+# [45] digest_0.6.33      stringi_1.8.1      dplyr_1.1.3        grid_4.2.3        
+# [49] scattermore_1.2    cli_3.6.1          tools_4.2.3        magrittr_2.0.3    
+# [53] proxy_0.4-27       tibble_3.2.1       colorRamp2_0.1.0   pkgconfig_2.0.3   
+# [57] Matrix_1.6-1.1     data.table_1.14.8  rmarkdown_2.25     rstudioapi_0.15.0 
+# [61] R6_2.5.1           units_0.8-4        compiler_4.2.3    
+ 
 
 ```
 
@@ -534,48 +548,51 @@ python_session_info()
 # matplotlib  3.8.0
 # minisom     NA
 # numpy       1.25.2
-# pandas      1.5.3
-# rasterio    1.3.8
+# pandas      1.5.1
+# rasterio    1.3.8.post2
 # scipy       1.11.3
 # seaborn     0.12.2
 # shapely     1.8.5.post1
-# sklearn     1.3.1
+# sklearn     1.1.3
 # tqdm        4.66.1
 # -----
-# IPython             8.15.0
+# IPython             8.17.2
 # PIL                 10.0.1
 # adjustText          NA
 # affine              2.4.0
-# astropy             5.3.3
+# astropy             5.3.4
 # asttokens           NA
 # attr                23.1.0
-# backcall            0.2.0
 # certifi             2023.07.22
+# cffi                1.16.0
 # click               8.1.7
 # comm                0.1.4
 # community           0.16
 # contourpy           1.1.1
-# cycler              0.10.0
+# cycler              0.12.1
 # cython_runtime      NA
 # dateutil            2.8.2
 # decorator           5.1.1
-d ecoupler           1.5.0
-# erfa                2.0.0.3
+# decoupler           1.5.0
+# defusedxml          0.7.1
+# erfa                2.0.1
 # exceptiongroup      1.1.3
-# executing           1.2.0
-# fiona               1.9.4.post1
-# h5py                3.9.0
+# executing           2.0.1
+# fiona               1.9.5
+# h5py                3.10.0
+# igraph              0.10.2
 # ipywidgets          8.1.1
-# jedi                0.19.0
+# jedi                0.19.1
 # joblib              1.3.2
 # kiwisolver          1.4.5
+# leidenalg           0.9.0
 # llvmlite            0.41.0
 # matplotlib_scalebar 0.8.1
 # mpl_toolkits        NA
 # natsort             8.4.0
-# networkx            3.1
+# networkx            2.8.8
 # numba               0.58.0
-# packaging           23.1
+# packaging           23.2
 # parso               0.8.3
 # patsy               0.5.3
 # pexpect             4.8.0
@@ -585,6 +602,7 @@ d ecoupler           1.5.0
 # psutil              5.9.5
 # ptyprocess          0.7.0
 # pure_eval           0.2.2
+# pycparser           2.21
 # pygeos              0.12.0
 # pygments            2.16.1
 # pyparsing           3.1.1
@@ -599,16 +617,18 @@ d ecoupler           1.5.0
 # stack_data          0.6.2
 # statsmodels         0.13.5
 # tensorly            0.7.0
+# texttable           1.7.0
 # threadpoolctl       3.2.0
-# traitlets           5.10.1
+# traitlets           5.13.0
 # typing_extensions   NA
 # upsetplot           0.7.0
-# wcwidth             0.2.6
+# wcwidth             0.2.9
 # xgboost             1.4.2
 # yaml                6.0.1
 # -----
-# Python 3.10.2 | packaged by conda-forge | (main, Mar  8 2022, 1 6:08:39) [GCC 9.4.0]
+# Python 3.10.2 | packaged by conda-forge | (main, Mar  8 2022, 16:08:39) [GCC 9.4.0]
 # Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.35
 # -----
-# Session information updated at 2023-09-28 15:09
+# Session information updated at 2023-11-16 19:50
+
 ```
