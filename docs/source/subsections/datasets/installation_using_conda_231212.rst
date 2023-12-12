@@ -71,6 +71,8 @@ These dependency packages are more likely to have troubles during Giotto install
 
    .. code:: r
 
+      options(timeout=1000)
+      
       # Necessary for installation from R
       if(!"devtools" %in% installed.packages()) {
         install.packages("devtools")
