@@ -49,7 +49,8 @@ These dependency packages are more likely to have troubles during Giotto install
 
       conda install -y -c conda-forge -c bioconda -c r -c defaults r-gert
       conda install -y -c conda-forge -c bioconda -c r -c defaults r-magick r-terra r-igraph
-      # If you have trouble when installing other dependency packages during installing Giotto, you can try to install it using conda
+      # If you have trouble when installing other dependency packages during installing Giotto, you can try to install it using conda.
+      # Take sf as an example:
       # conda install -y -c conda-forge -c bioconda -c r -c defaults r-sf
 
 
@@ -72,7 +73,7 @@ These dependency packages are more likely to have troubles during Giotto install
    .. code:: r
 
       options(timeout=1000)
-      
+
       # Necessary for installation from R
       if(!"devtools" %in% installed.packages()) {
         install.packages("devtools")
