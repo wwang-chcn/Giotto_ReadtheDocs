@@ -4,7 +4,7 @@ Installation
 
 :Date: 12/12/23
 
-0 Cean up
+0. Cean up
 =========================
 
 Clean conda temporary files
@@ -23,7 +23,7 @@ Clean pip temporary files
 
       pip cache purge
 
-1 Create conda environment
+1. Create conda environment
 =========================
 
 .. container:: cell
@@ -36,13 +36,12 @@ Clean pip temporary files
       export PKG_CONFIG_PATH=$CONDA_PREFIX/envs/giotto_suite/lib/pkgconfig
       # export PKG_CONFIG_PATH=/sc/arion/work/wangw32/conda-env/envs/giotto_suite_bento_install/lib/pkgconfig
 
-2 Instal Giotto
+2. Instal Giotto
 =========================
 
 2.1 Install dependency packages
-
-These dependency packages are more likely to have troubles during Giotto installation due to network issues. We can install those using conda.
 ------------------------
+These dependency packages are more likely to have troubles during Giotto installation due to network issues. We can install those using conda.
 
 .. container:: cell
 
@@ -79,7 +78,7 @@ These dependency packages are more likely to have troubles during Giotto install
 
       devtools::install_github("drieslab/Giotto")
 
-3 Install python dependency packages
+3. Install python dependency packages
 ====================================
 
 Install python dependency packages
