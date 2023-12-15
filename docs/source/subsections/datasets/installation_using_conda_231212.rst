@@ -83,7 +83,7 @@ Install these packages first, as they may encounter network issues during Giotto
 3. Install Python Dependency Packages
 ====================================
 
-Install necessary Python packages.
+Install Necessary Python Packages.
 
 .. container:: cell
 
@@ -93,7 +93,7 @@ Install necessary Python packages.
      conda install -y cmake
      pip install pandas python-igraph networkx python-louvain leidenalg scikit-learn smfishHmrf
 
-Install other packages (Optional).
+Install Other Packages (Optional).
 
 .. container:: cell
 
