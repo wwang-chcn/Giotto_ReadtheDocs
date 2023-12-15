@@ -4,10 +4,10 @@ Installation
 
 :Date: 12/12/23
 
-0. Cean up
+0. Clean up
 =========================
 
-Clean conda temporary files
+Clear Conda Temporary Files
 
 .. container:: cell
 
@@ -15,7 +15,7 @@ Clean conda temporary files
 
       conda clean -a
 
-Clean pip temporary files
+Clear Pip Temporary Files
 
 .. container:: cell
 
@@ -23,7 +23,7 @@ Clean pip temporary files
 
       pip cache purge
 
-1. Create conda environment
+1. Create Conda Environment
 =========================
 
 .. container:: cell
@@ -36,12 +36,12 @@ Clean pip temporary files
       export PKG_CONFIG_PATH=$CONDA_PREFIX/envs/giotto_suite/lib/pkgconfig
       # export PKG_CONFIG_PATH=/sc/arion/work/wangw32/conda-env/envs/giotto_suite_bento_install/lib/pkgconfig
 
-2. Instal Giotto
+2. Install Giotto
 =========================
 
-2.1 Install dependency packages
+2.1 Install Dependency Packages
 ------------------------
-These dependency packages are more likely to have troubles during Giotto installation due to network issues. We can install those using conda.
+Install these packages first, as they may encounter network issues during Giotto's installation. Use conda for installation.
 
 .. container:: cell
 
@@ -49,8 +49,7 @@ These dependency packages are more likely to have troubles during Giotto install
 
       conda install -y -c conda-forge -c bioconda -c r -c defaults r-gert
       conda install -y -c conda-forge -c bioconda -c r -c defaults r-magick r-terra r-igraph
-      # If you have trouble when installing other dependency packages during installing Giotto, you can try to install it using conda.
-      # Take sf as an example:
+      # For other dependencies with installation issues, use conda:
       # conda install -y -c conda-forge -c bioconda -c r -c defaults r-sf
 
 
@@ -65,7 +64,7 @@ These dependency packages are more likely to have troubles during Giotto install
       print(library_paths)
       # [1] "/sc/arion/work/wangw32/conda-env/envs/giotto_suite/lib/R/library"
 
-2.3 Install devtools & Giotto
+2.3 Install Devtools & Giotto
 -----------------------------------------
 
 .. container:: cell
@@ -81,10 +80,10 @@ These dependency packages are more likely to have troubles during Giotto install
 
       devtools::install_github("drieslab/Giotto")
 
-3. Install python dependency packages
+3. Install Python Dependency Packages
 ====================================
 
-Install python dependency packages
+Install necessary Python packages.
 
 .. container:: cell
 
@@ -94,5 +93,9 @@ Install python dependency packages
      conda install -y cmake
      pip install pandas python-igraph networkx python-louvain leidenalg scikit-learn smfishHmrf
 
-     # install bento if you need it
+Install other packages (Optional).
+
+.. container:: cell
+
+   .. code:: shell
      pip install git+https://github.com/wwang-chcn/bento-tools.git
