@@ -10,18 +10,23 @@ number-sections: true
 
 ## Giotto installation
 
+You can install Giotto and dependent python envrionment using conda
+
+[Giotto Installation Using Conda](https://giottosuite.readthedocs.io/en/latest/subsections/datasets/installation_using_conda_231212.html)
+
+or in R.
+
+[Giotto Installation](https://giottosuite.readthedocs.io/en/latest/subsections/datasets/installation_04122023.html)
+
 ```{r, eval=FALSE}
-# Ensure Giotto Suite is installed.
-if(!"Giotto" %in% installed.packages()) {
-  devtools::install_github("drieslab/Giotto@suite_modular")
-}
 
 library(Giotto)
+
 # Ensure the Python environment for Giotto Has been installed.
 
 # Set python path to your preferred python path. The python packages that Giotto depends on will be installed here if not installed before.
 # Set python path to NULL if you want to automatically install (only the 1st time) and use the giotto miniconda environment
-python_path = "/sc/arion/work/wangw32/conda-env/envs/giotto/bin/python"
+python_path = "/sc/arion/work/wangw32/conda-env/envs/giotto_suite/bin/python"
 # python_path = NULL
 
 genv_exists = checkGiottoEnvironment()
@@ -35,7 +40,7 @@ if(!genv_exists & is.null(python_path)){
 # Loading required package: GiottoUtils
 # Loading required package: GiottoClass
 # Loading required package: GiottoVisuals
-# Giotto Suite 3.3.2
+# Giotto Suite 4.0.0
 
 # giotto environment was expected, but NOT found at
 #         /hpc/users/wangw32/.local/share/r-miniconda/envs/giotto_env/bin/python
@@ -263,8 +268,7 @@ This dataset has 313 probes that are dedicated for gene expression transcript de
 
 ## Loading Xenium data
 ### Manual Method
-Giotto objects can be manually assembled feeding data and subobjects into a creation function. A convenience function for automatically loading the xenium data from the directory and generating a giotto object is also available. (See @sec-autoload)  
-Xenium outputs can be analyzed as either the subcellular information or as aggregated data where each detected cell's subcellular data has been spatially assigned to a cell centroid. This tutorial will work mainly with the subcellular data and how to work with it, however a workflow to load in just the aggregated data is also available through the convenience function.
+Giotto objects can be manually assembled feeding data and subobjects into a creation function.
 
 #### Load transcript-level data
 `transcripts.csv.gz` is a file containing x, y, z coordinates for individual transcript molecules detected during the Xenium run. It also contains a QC Phred score for which this tutorial will set a cutoff at 20, the same as what 10x uses.
@@ -293,13 +297,13 @@ invisible(lapply(seq_along(tx_dt_types), function(x) {
 ```{r, eval=FALSE}
 # Transcripts info available:
 #   "transcript_id" "cell_id" "overlaps_nucleus" "feat_ID" "x" "y" "z_location" "qv" 
-#  with 43664530 unfiltered detections
-#  and 34813341 filtered detections
+#  with 42638083 unfiltered detections
+#  and 34493510 filtered detections
 # 
-# Blank Codeword detections: 8805 
-# Gene Expression detections: 34764833 
-# Negative Control Codeword detections: 1855 
-# Negative Control Probe detections: 37848 
+# Blank Codeword detections: 10166 
+# Gene Expression detections: 34442716 
+# Negative Control Codeword detections: 2215 
+# Negative Control Probe detections: 38413 
 ```
 
 
@@ -331,7 +335,7 @@ tx_dt_types$`Gene Expression`[feat_ID %in% c('KRT8', 'MS4A1'), table(feat_ID)]
 ```{r, eval=FALSE}
 # feat_ID
 #   KRT8  MS4A1 
-# 530190  20926 
+# 530168  20875 
 ```
 
 ![](/images/tutorials/integrate_bento_analysis/gpoints_blnk.png){width="32%"}
@@ -360,10 +364,18 @@ gpoly_nucs = createGiottoPolygonsFromDfr(segmdfr = nucPoly_dt,
                                          calc_centroids = TRUE)
 ```
 
+```{r, eval=FALSE}
+# Selecting col "poly_ID" as poly_ID column
+# Selecting cols "x" and "y" as x and y respectively
+# Selecting col "poly_ID" as poly_ID column
+# Selecting cols "x" and "y" as x and y respectively
+```
+
 `giottoPolygon` objects can be directly plotted with `plot()`, but the field of view here is so large that it would take a long time and the details would be lost. Here, we will only plot the polygon centroids for the cell nucleus polygons by accessing the calculated results within the `giottoPolygon`'s `spatVectorCentroids` slot.
 ```{r, eval=FALSE}
 plot(x = gpoly_nucs, point_size = 0.1, type = 'centroid')
 ```
+
 ![](/images/tutorials/integrate_bento_analysis/gpolys_centroids.png){width="70%"}
 
 #### Create Giotto Object
@@ -379,6 +391,18 @@ xenium_gobj = createGiottoObjectSubcellular(
   instructions = instrs
 )
 ```
+
+```{r, eval=FALSE}
+# polygonlist is a list with names
+# [ cell ] Process polygon info...
+# [ nucleus ] Process polygon info...
+# pointslist is a named list
+# [ rna ] Process point info...
+# [ blank_code ] Process point info...
+# [ neg_code ] Process point info...
+# [ neg_probe ] Process point info...
+```
+
 
 ## Perform Bento Analysis
 
@@ -398,8 +422,8 @@ bento_adata <- createBentoAdata(subset_xenium_gobj,
 ```
 
 ```{r, eval=FALSE}
-# 19:48:18 --- INFO: Creating cell and nucleus segmentation dataframes
-# 19:49:31 --- INFO: Batch information found in cell_shape, adding batch information to adata
+# 14:27:41 --- INFO: Creating cell and nucleus segmentation dataframes
+# 14:28:58 --- INFO: Batch information found in cell_shape, adding batch information to adata
 
 ```
 
@@ -422,7 +446,7 @@ plot_rna_forest_analysis_results(adata=bento_adata,
 # Crunching shape features...
 # AnnData object modified:
 #     obs:
-#         + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
+#         + cell_maxy, cell_raster, cell_area, cell_miny, cell_radius, cell_minx, cell_span, cell_maxx
 #     uns:
 #         + cell_raster
 # Crunching point features...
@@ -430,18 +454,18 @@ plot_rna_forest_analysis_results(adata=bento_adata,
 # Done.
 # AnnData object modified:
 #     obs:
-#         + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
+#         + cell_maxy, cell_raster, cell_area, cell_miny, cell_radius, cell_minx, cell_span, cell_maxx
 #     uns:
-#         + cell_raster, cell_gene_features
+#         + cell_gene_features, cell_raster
 # Crunching shape features...
 # Crunching point features...
 # Saving results...
 # Done.
 # AnnData object modified:
 #     obs:
-#         + cell_raster, cell_span, cell_minx, cell_miny, cell_area, cell_maxx, cell_maxy, cell_radius
+#         + cell_maxy, cell_raster, cell_area, cell_miny, cell_radius, cell_minx, cell_span, cell_maxx
 #     uns:
-#         + cell_raster, cell_gene_features, lpp, lp
+#         + lp, cell_gene_features, cell_raster, lpp
 # AnnData object modified:
 #     uns:
 #         + lp_stats
@@ -467,12 +491,12 @@ plot_colocalization_analysis_results(adata=bento_adata, rank=5, fname='Bento_col
 # Preparing tensor...
 # (2, 19, 156)
 # :running: Decomposing tensor...
-# 19:50:20 --- INFO: Knee found at rank 5
-# 19:50:20 --- INFO: Saved to Bento_colocalization_knee_pos.png
+# 14:29:54 --- INFO: Knee found at rank 5
+# 14:29:54 --- INFO: Saved to Bento_colocalization_knee_pos.png
 # :heavy_check_mark: Done.
 # AnnData object modified:
 #     uns:
-#         + factors, tensor_labels, tensor_names, tensor, factors_error
+#         + tensor, tensor_names, tensor_labels, factors_error, factors
 
 # Saved to Bento_colocalization.png
 
@@ -507,27 +531,26 @@ sessionInfo()
 # [1] stats     graphics  grDevices utils     datasets  methods   base     
 #
 # other attached packages:
-# [1] Giotto_3.3.2             GiottoVisuals_0.0.0.9006 GiottoClass_0.0.0.9010  
-# [4] GiottoUtils_0.0.0.9004  
+# [1] Giotto_4.0.0        GiottoVisuals_0.1.0 GiottoClass_0.1.0  
+# [4] GiottoUtils_0.1.0  
 #
 # loaded via a namespace (and not attached):
 #  [1] reticulate_1.34.0  tidyselect_1.2.0   terra_1.7-55       xfun_0.41         
-#  [5] sf_1.0-14          lattice_0.21-9     colorspace_2.1-0   vctrs_0.6.4       
+#  [5] sf_1.0-14          lattice_0.22-5     colorspace_2.1-0   vctrs_0.6.5       
 #  [9] generics_0.1.3     htmltools_0.5.7    yaml_2.3.7         utf8_1.2.4        
 # [13] rlang_1.1.2        e1071_1.7-13       R.oo_1.25.0        pillar_1.9.0      
-# [17] glue_1.6.2         withr_2.5.2        DBI_1.1.3          R.utils_2.12.2    
+# [17] glue_1.6.2         withr_2.5.2        DBI_1.1.3          R.utils_2.12.3    
 # [21] rappdirs_0.3.3     bit64_4.0.5        lifecycle_1.0.4    stringr_1.5.1     
 # [25] munsell_0.5.0      gtable_0.3.4       R.methodsS3_1.8.2  codetools_0.2-19  
 # [29] evaluate_0.23      knitr_1.45         fastmap_1.1.1      class_7.3-22      
 # [33] parallel_4.2.3     fansi_1.0.5        Rcpp_1.0.11        KernSmooth_2.23-22
-# [37] scales_1.2.1       backports_1.4.1    classInt_0.4-10    checkmate_2.3.0   
+# [37] scales_1.3.0       backports_1.4.1    classInt_0.4-10    checkmate_2.3.1   
 # [41] jsonlite_1.8.7     bit_4.0.5          ggplot2_3.4.4      png_0.1-8         
-# [45] digest_0.6.33      stringi_1.8.1      dplyr_1.1.3        grid_4.2.3        
+# [45] digest_0.6.33      stringi_1.8.2      dplyr_1.1.4        grid_4.2.3        
 # [49] scattermore_1.2    cli_3.6.1          tools_4.2.3        magrittr_2.0.3    
 # [53] proxy_0.4-27       tibble_3.2.1       colorRamp2_0.1.0   pkgconfig_2.0.3   
-# [57] Matrix_1.6-1.1     data.table_1.14.8  rmarkdown_2.25     rstudioapi_0.15.0 
-# [61] R6_2.5.1           units_0.8-4        compiler_4.2.3    
- 
+# [57] Matrix_1.6-4       data.table_1.14.8  rmarkdown_2.25     rstudioapi_0.15.0 
+# [61] R6_2.5.1           units_0.8-5        compiler_4.2.3   
 
 ```
 
@@ -545,66 +568,66 @@ python_session_info()
 # geopandas   0.10.2
 # kneed       0.8.5
 # log         NA
-# matplotlib  3.8.0
+# matplotlib  3.8.2
 # minisom     NA
-# numpy       1.25.2
-# pandas      1.5.1
-# rasterio    1.3.8.post2
-# scipy       1.11.3
+# numpy       1.26.2
+# pandas      1.5.3
+# rasterio    1.3.9
+# scipy       1.11.4
 # seaborn     0.12.2
 # shapely     1.8.5.post1
-# sklearn     1.1.3
+# sklearn     1.3.2
 # tqdm        4.66.1
 # -----
-# IPython             8.17.2
-# PIL                 10.0.1
+# IPython             8.18.1
+# PIL                 10.1.0
 # adjustText          NA
 # affine              2.4.0
 # astropy             5.3.4
 # asttokens           NA
 # attr                23.1.0
-# certifi             2023.07.22
+# certifi             2023.11.17
 # cffi                1.16.0
 # click               8.1.7
 # comm                0.1.4
 # community           0.16
-# contourpy           1.1.1
+# contourpy           1.2.0
 # cycler              0.12.1
 # cython_runtime      NA
 # dateutil            2.8.2
 # decorator           5.1.1
 # decoupler           1.5.0
 # defusedxml          0.7.1
-# erfa                2.0.1
-# exceptiongroup      1.1.3
+# erfa                2.0.1.1
+# exceptiongroup      1.2.0
 # executing           2.0.1
 # fiona               1.9.5
 # h5py                3.10.0
-# igraph              0.10.2
+# igraph              0.11.3
 # ipywidgets          8.1.1
 # jedi                0.19.1
 # joblib              1.3.2
 # kiwisolver          1.4.5
-# leidenalg           0.9.0
-# llvmlite            0.41.0
+# leidenalg           0.8.8
+# llvmlite            0.41.1
 # matplotlib_scalebar 0.8.1
 # mpl_toolkits        NA
 # natsort             8.4.0
-# networkx            2.8.8
-# numba               0.58.0
+# networkx            3.2.1
+# numba               0.58.1
 # packaging           23.2
 # parso               0.8.3
-# patsy               0.5.3
+# patsy               0.5.4
 # pexpect             4.8.0
 # pickleshare         0.7.5
 # pkg_resources       NA
-# prompt_toolkit      3.0.39
+# prompt_toolkit      3.0.41
 # psutil              5.9.5
 # ptyprocess          0.7.0
 # pure_eval           0.2.2
 # pycparser           2.21
 # pygeos              0.12.0
-# pygments            2.16.1
+# pygments            2.17.2
 # pyparsing           3.1.1
 # pyproj              3.6.1
 # pytz                2023.3.post1
@@ -619,16 +642,17 @@ python_session_info()
 # tensorly            0.7.0
 # texttable           1.7.0
 # threadpoolctl       3.2.0
-# traitlets           5.13.0
+# traitlets           5.14.0
 # typing_extensions   NA
 # upsetplot           0.7.0
-# wcwidth             0.2.9
+# wcwidth             0.2.12
 # xgboost             1.4.2
 # yaml                6.0.1
+# zoneinfo            NA
 # -----
-# Python 3.10.2 | packaged by conda-forge | (main, Mar  8 2022, 16:08:39) [GCC 9.4.0]
+# Python 3.10.13 | packaged by conda-forge | (main, Oct 26 2023, 18:20:51) [GCC 12.3.0]
 # Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.35
 # -----
-# Session information updated at 2023-11-16 19:50
+# Session information updated at 2023-12-19 14:29
 
 ```
