@@ -19,6 +19,8 @@ You can install Giotto and dependent python envrionment using conda
 `Giotto Installation Using
 Conda <https://giottosuite.readthedocs.io/en/latest/subsections/datasets/installation_using_conda_231212.html>`__
 
+:doc:`Giotto Installation Using Conda </subsections/datasets/installation_using_conda_231212>`
+
 or in R.
 
 `Giotto
