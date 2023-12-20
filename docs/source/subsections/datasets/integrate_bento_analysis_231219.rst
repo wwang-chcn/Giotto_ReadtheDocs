@@ -22,6 +22,10 @@ Conda <https://giottosuite.readthedocs.io/en/latest/subsections/datasets/install
 :doc:`Giotto Installation Using
 Conda </subsections/datasets/installation_using_conda_231212>`__
 
+:doc:`Giotto Installation Using Conda </subsections/datasets/installation_using_conda_231212>`__
+
+:doc:`Giotto Installation Using Conda </subsections/datasets/installation_using_conda_231212>`
+
 or in R.
 
 `Giotto
