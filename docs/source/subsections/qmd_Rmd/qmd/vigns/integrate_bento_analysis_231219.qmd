@@ -1,7 +1,7 @@
 ---
 title: "Integrate Bento Analysis"
 format: rst
-date: 'Compiled 2023-11-16'
+date: 'Compiled 2023-12-22'
 number-sections: true
 ---
 ## Introduction to Bento
@@ -12,11 +12,13 @@ number-sections: true
 
 You can install Giotto and dependent python envrionment using conda
 
-[Giotto Installation Using Conda](https://giottosuite.readthedocs.io/en/latest/subsections/datasets/installation_using_conda_231212.html)
+
+
+`r I(":doc:\u0060Giotto Installation Using Conda </subsections/datasets/installation_using_conda_231212>\u0060")`
 
 or in R.
 
-[Giotto Installation](https://giottosuite.readthedocs.io/en/latest/subsections/datasets/installation_04122023.html)
+`r I(":doc:\u0060Giotto Installation </subsections/datasets/installation_04122023>\u0060")`
 
 ```{r, eval=FALSE}
 

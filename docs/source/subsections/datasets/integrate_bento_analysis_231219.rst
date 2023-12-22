@@ -2,7 +2,7 @@
 Integrate Bento Analysis
 ========================
 
-:Date: 2023-11-16
+:Date: 2023-12-22
 
 1 Introduction to Bento
 =======================
@@ -16,20 +16,11 @@ transcriptomics data.
 
 You can install Giotto and dependent python envrionment using conda
 
-`Giotto Installation Using
-Conda <https://giottosuite.readthedocs.io/en/latest/subsections/datasets/installation_using_conda_231212.html>`__
-
-:doc:`Giotto Installation Using
-Conda </subsections/datasets/installation_using_conda_231212>`__
-
-:doc:`Giotto Installation Using Conda </subsections/datasets/installation_using_conda_231212>`__
-
 :doc:`Giotto Installation Using Conda </subsections/datasets/installation_using_conda_231212>`
 
 or in R.
 
-`Giotto
-Installation <https://giottosuite.readthedocs.io/en/latest/subsections/datasets/installation_04122023.html>`__
+:doc:`Giotto Installation </subsections/datasets/installation_04122023>`
 
 .. container:: cell
 
