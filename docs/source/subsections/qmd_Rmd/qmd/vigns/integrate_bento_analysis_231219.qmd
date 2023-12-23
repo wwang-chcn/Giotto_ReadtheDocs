@@ -12,11 +12,11 @@ number-sections: true
 
 You can install Giotto and dependent python envrionment using conda
 
-`r I(":doc:\u0060Giotto Installation Using Conda </subsections/datasets/installation_using_conda_231212>\u0060")`
+<!-- :doc:`Giotto Installation Using Conda </subsections/datasets/installation_using_conda_231212>` -->
 
 or in R.
 
-`r I(":doc:\u0060Giotto Installation </subsections/datasets/installation_04122023>\u0060")`
+<!-- :doc:`Giotto Installation </subsections/datasets/installation_04122023>` -->
 
 ```{r, eval=FALSE}
 
