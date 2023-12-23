@@ -55,7 +55,7 @@ Integrate with Other Packages
 .. card-carousel:: 3
 
     .. card:: Bento
-        :link: /subsections/datasets/integrate_bento_analysis
+        :link: /subsections/datasets/integrate_bento_analysis_231219
         :link-type: doc
 
         .. image:: subsections/datasets/integrate_bento_analysis/figure-rst/Bento_rna_forest_radvis.png
