@@ -16,6 +16,12 @@ transcriptomics data.
 
 You can install Giotto and dependent python envrionment using conda
 
+`Giotto Installation Using
+Conda </subsections/datasets/installation_using_conda_231212>`__
+
+:doc:`Giotto Installation Using
+Conda </subsections/datasets/installation_using_conda_231212>`__
+
 :doc:`Giotto Installation Using Conda </subsections/datasets/installation_using_conda_231212>`
 
 or in R.
