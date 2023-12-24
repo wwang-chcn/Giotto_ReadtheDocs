@@ -1,8 +1,8 @@
 ============
-Installation
+Installation Using Conda
 ============
 
-:Date: 12/12/23
+:Date: 2023-12-12
 
 0. Clean up
 =========================
